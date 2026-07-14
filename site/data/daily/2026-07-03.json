@@ -191,6 +191,71 @@
       ]
     },
     {
+      "id": "arxiv-2607-03529",
+      "source": "arxiv_discover",
+      "title": "Current as Touch: Proprioceptive Contact Feedback for Compliant Dexterous Manipulation",
+      "title_zh": "电流即触觉：基于本体感知的接触反馈用于灵巧柔顺操作",
+      "tldr_zh": "利用电机电流作为触觉信号，实现无外部传感器的灵巧柔顺操作。",
+      "cover_zh": "不用触觉传感器也能灵巧抓取？电机电流就是你的新触觉！",
+      "abstract_zh": "柔顺性对于灵巧操作至关重要，但现有解决方案通常依赖外部触觉或力传感器，这些传感器成本高、易损坏且难以部署在低成本机器人手上。我们提出了一种基于本体感知的框架，从电机电流和关节状态中学习接触感知的柔顺线索。由于电机电流与执行器扭矩密切相关，它提供了一种无需额外传感硬件即可感知接触力、物体阻力和抓取稳定性的内在信号。我们的方法不估计外部力或命令扭矩，而是预测一个柔顺参考位置：标准PD控制器的理想关节位置目标，其产生的位置误差会生成适当的抓取力。这种基于位置的公式与主流遥操作和策略学习流程兼容，同时使机器人能够通过实时本体感知反馈调整交互力。因此，电机电流不仅作为力的代理，还作为可学习的本体感知接触信号用于柔顺参考预测。在多个灵巧手和接触密集型任务上的实验，包括易碎物体处理、持续表面接触、薄物体检索和动态负载适应，展示了稳定的柔顺抓取、更安全高效的遥操作以及改进的下游策略学习，而无需外部触觉或力传感器。",
+      "authors": [
+        "Chenyang Ma",
+        "Yunchao Yao",
+        "Zhenyu Wei"
+      ],
+      "authors_all": [
+        "Chenyang Ma",
+        "Yunchao Yao",
+        "Zhenyu Wei",
+        "Ruogu Li",
+        "Daniel Szafir",
+        "Mingyu Ding"
+      ],
+      "primary_category": "",
+      "published": "2026-07-03",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-03529.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-03529-p2.jpg",
+        "assets/img/covers/arxiv-2607-03529-p3.jpg",
+        "assets/img/covers/arxiv-2607-03529-p4.jpg"
+      ],
+      "arxiv_id": "2607.03529",
+      "abs_url": "http://arxiv.org/abs/2607.03529v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.03529v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出基于电机电流的本体感知接触反馈框架，实现灵巧手柔顺操作，无需外部触觉传感器，具有实用价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of North Carolina at Chapel Hill"
+      ],
+      "method_tags": [
+        "proprioception-driven compliance",
+        "compliance reference position"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-03570",
       "source": "arxiv_discover",
       "title": "Cross-Embodiment Robot Manipulation via a Unified Hand Action Space",
@@ -357,70 +422,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
-      "id": "arxiv-2607-03529",
-      "source": "arxiv_discover",
-      "title": "Current as Touch: Proprioceptive Contact Feedback for Compliant Dexterous Manipulation",
-      "title_zh": "电流即触觉：基于本体感知的接触反馈用于灵巧柔顺操作",
-      "tldr_zh": "利用电机电流作为触觉信号，实现无外部传感器的灵巧柔顺操作。",
-      "cover_zh": "不用触觉传感器也能灵巧抓取？电机电流就是你的新触觉！",
-      "abstract_zh": "柔顺性对于灵巧操作至关重要，但现有解决方案通常依赖外部触觉或力传感器，这些传感器成本高、易损坏且难以部署在低成本机器人手上。我们提出了一种基于本体感知的框架，从电机电流和关节状态中学习接触感知的柔顺线索。由于电机电流与执行器扭矩密切相关，它提供了一种无需额外传感硬件即可感知接触力、物体阻力和抓取稳定性的内在信号。我们的方法不估计外部力或命令扭矩，而是预测一个柔顺参考位置：标准PD控制器的理想关节位置目标，其产生的位置误差会生成适当的抓取力。这种基于位置的公式与主流遥操作和策略学习流程兼容，同时使机器人能够通过实时本体感知反馈调整交互力。因此，电机电流不仅作为力的代理，还作为可学习的本体感知接触信号用于柔顺参考预测。在多个灵巧手和接触密集型任务上的实验，包括易碎物体处理、持续表面接触、薄物体检索和动态负载适应，展示了稳定的柔顺抓取、更安全高效的遥操作以及改进的下游策略学习，而无需外部触觉或力传感器。",
-      "authors": [
-        "Chenyang Ma",
-        "Yunchao Yao",
-        "Zhenyu Wei"
-      ],
-      "authors_all": [
-        "Chenyang Ma",
-        "Yunchao Yao",
-        "Zhenyu Wei",
-        "Ruogu Li",
-        "Daniel Szafir",
-        "Mingyu Ding"
-      ],
-      "primary_category": "",
-      "published": "2026-07-03",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-03529.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-03529-p2.jpg",
-        "assets/img/covers/arxiv-2607-03529-p3.jpg",
-        "assets/img/covers/arxiv-2607-03529-p4.jpg"
-      ],
-      "arxiv_id": "2607.03529",
-      "abs_url": "http://arxiv.org/abs/2607.03529v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.03529v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出基于电机电流的本体感知接触反馈框架，实现灵巧手柔顺操作，无需外部触觉传感器，具有实用价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of North Carolina at Chapel Hill"
-      ],
-      "method_tags": [
-        "proprioception-driven compliance",
-        "compliance reference position"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
