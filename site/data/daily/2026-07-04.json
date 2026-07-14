@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "count": 1,
+  "count": 2,
   "papers": [
     {
       "id": "arxiv-2607-04044",
@@ -55,6 +55,79 @@
       "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2607-03723",
+      "source": "arxiv_discover",
+      "title": "OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies",
+      "title_zh": "OmniTacTune：面向触觉残差适配视觉策略的策略无关真实世界强化学习",
+      "tldr_zh": "通过残差强化学习将触觉反馈适配到视觉策略，显著提升接触丰富任务成功率。",
+      "cover_zh": "视觉策略总在接触任务翻车？触觉残差适配40分钟逆袭到100%成功率",
+      "abstract_zh": "从人类视频、遥操作和机器人演示中学习到的视觉策略提供了可扩展的运动先验，但在接触丰富的操作中常常失败，因为成功很大程度上依赖于局部力和接触几何。触觉传感提供了这些互补信号，然而触觉数据收集成本高昂，且难以跨传感器、机器人和任务泛化。我们提出OmniTacTune，一个策略无关的真实世界强化学习流程，通过残差校正将触觉反馈适配到预训练的视觉策略上。OmniTacTune采用两阶段设计：首先从自主基础策略 rollout 中引导触觉感知学习，然后通过在线交互学习轻量级触觉残差策略。大量实验表明，OmniTacTune能够跨多种接触丰富任务、视觉基础策略和触觉表示进行泛化。在四个真实世界接触丰富任务中，它在40-80分钟内将视觉基础策略的成功率从5-40%提升至85-100%，展示了将触觉反馈适配到可扩展视觉机器人策略的高效路径。项目页面：https://colinyu1.github.io/omnitactune-site/",
+      "authors": [
+        "Kelin Yu",
+        "Haode Zhang",
+        "Harish Ravichandar"
+      ],
+      "authors_all": [
+        "Kelin Yu",
+        "Haode Zhang",
+        "Harish Ravichandar",
+        "Yunhai Han",
+        "Ruohan Gao"
+      ],
+      "primary_category": "",
+      "published": "2026-07-04",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-03723.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-03723-p2.jpg",
+        "assets/img/covers/arxiv-2607-03723-p3.jpg",
+        "assets/img/covers/arxiv-2607-03723-p4.jpg"
+      ],
+      "arxiv_id": "2607.03723",
+      "abs_url": "http://arxiv.org/abs/2607.03723v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.03723v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出策略无关的触觉残差强化学习，显著提升接触丰富操作成功率，方法新颖高效。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Maryland, College Park",
+        "Georgia Institute of Technology"
+      ],
+      "method_tags": [
+        "Real-World RL",
+        "Residual Correction",
+        "Contact-rich Manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=anRD7lhhwH4",
+          "embed_url": "https://www.youtube.com/embed/anRD7lhhwH4",
+          "title": "OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies",
+          "source": "project_page"
+        }
+      ],
       "github": {},
       "source_tags": [
         "llm_discover"
