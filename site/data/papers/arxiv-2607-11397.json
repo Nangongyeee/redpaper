@@ -84,10 +84,15 @@
   "abs_url": "http://arxiv.org/abs/2607.11397v1",
   "venue": "",
   "venue_announced": "",
-  "cover_image": "",
-  "preview_pages": [],
+  "cover_image": "assets/img/covers/arxiv-2607-11397.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-11397-p2.jpg",
+    "assets/img/covers/arxiv-2607-11397-p3.jpg",
+    "assets/img/covers/arxiv-2607-11397-p4.jpg"
+  ],
   "channels": [
-    "manipulation"
+    "manipulation",
+    "world-model"
   ],
   "badges": [
     {
@@ -96,21 +101,33 @@
     }
   ],
   "related_links": [],
-  "page_count": 0,
+  "page_count": 12,
   "source_tags": [],
-  "score": 19,
+  "score": 30,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
-      "points": 9,
-      "hint": "频道关键词命中 3 个（manipulation、robocasa、robotwin）"
+      "points": 12,
+      "hint": "频道关键词命中 5 个（manipulation、robocasa、robotwin、world model）"
     },
     {
       "id": "freshness",
       "label": "刚出锅 (≤2 天)",
       "points": 10,
       "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
     }
   ],
   "judge": {
@@ -120,11 +137,16 @@
     "reason": "提出从视频学习可执行隐式动作的框架，结合语义几何潜动作模型与未来动态预测，在多个基准上达到SOTA，对操作策略泛化有重要贡献。",
     "model": "deepseek-v4-flash"
   },
-  "institutions": [],
+  "institutions": [
+    "CASIA",
+    "Anyverse Dynamics",
+    "UCAS",
+    "NUS"
+  ],
   "method_tags": [
     "latent action model",
-    "pretraining from videos",
-    "policy learning"
+    "future dynamics prediction",
+    "vision-language-action model"
   ],
   "platform": [],
   "sim_stack": [],

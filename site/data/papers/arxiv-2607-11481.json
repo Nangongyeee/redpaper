@@ -68,12 +68,27 @@
   "abs_url": "http://arxiv.org/abs/2607.11481v1",
   "venue": "",
   "venue_announced": "",
-  "cover_image": "",
-  "preview_pages": [],
+  "cover_image": "assets/img/covers/arxiv-2607-11481.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-11481-p2.jpg",
+    "assets/img/covers/arxiv-2607-11481-p3.jpg",
+    "assets/img/covers/arxiv-2607-11481-p4.jpg"
+  ],
   "channels": [
+    "manipulation",
+    "teleop",
+    "locomotion",
     "sim2real"
   ],
   "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
+    },
     {
       "kind": "lab",
       "label": "⭐ Siyuan Huang"
@@ -84,10 +99,16 @@
     }
   ],
   "related_links": [],
-  "page_count": 0,
+  "page_count": 27,
   "source_tags": [],
-  "score": 33,
+  "score": 75,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -97,14 +118,26 @@
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
-      "points": 3,
-      "hint": "频道关键词命中 1 个（domain randomization）"
+      "points": 12,
+      "hint": "频道关键词命中 10 个（dexterous、dexterous hand、grasp、in-hand）"
     },
     {
       "id": "freshness",
       "label": "刚出锅 (≤2 天)",
       "points": 10,
       "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 27 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 4 个频道"
     }
   ],
   "judge": {
@@ -114,11 +147,15 @@
     "reason": "提出TeleDexter手-物协同跟踪控制器，实现高灵巧度遥操作，方法新颖且实验成功",
     "model": "deepseek-v4-flash"
   },
-  "institutions": [],
+  "institutions": [
+    "Tsinghua University",
+    "State Key Lab of General Artificial Intelligence, BIGAI",
+    "Peking University"
+  ],
   "method_tags": [
     "RL",
-    "Domain Randomization",
-    "teleoperation"
+    "sim-to-real",
+    "dexterous teleoperation"
   ],
   "platform": [],
   "sim_stack": [],
