@@ -1,0 +1,96 @@
+{
+  "id": "arxiv-2607-11498",
+  "source": "arxiv",
+  "title": "See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models",
+  "title_zh": "像机器人一样看：面向视觉-语言-动作模型的机器人中心点图",
+  "abstract": "Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize a single observation-to-action mapping, but grows harder as large-scale datasets aggregate demonstrations across diverse camera setups and the policy must generalize this mapping across viewpoints. We address this mismatch with robot-centric pointmaps, images whose pixels store the 3D coordinates of scene points in the robot frame. Pointmaps provide robot-frame 3D geometry while preserving the dense H x W grid expected by pretrained 2D VLAs, so they integrate into existing VLAs with minimal architectural change. On RoboCasa, pointmaps improve both pi0.5 and SmolVLA and outperform representative camera-viewpoint and 3D-aware baselines. In real-robot experiments, their advantage over an RGB-only policy widens when the camera is moved to a placement unseen during training.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型根据视觉观察和语言指令预测机器人动作。这些动作在机器人自身的3D坐标系中定义，然而大多数VLA模型在相机帧中观察场景，导致观察场景与定义动作之间存在帧不匹配。在固定视角下，这种不匹配是良性的，因为策略可以记忆单一的观察-动作映射；但随着大规模数据集聚合来自不同相机设置的演示，策略需要跨视角泛化该映射，不匹配问题变得更加困难。我们通过机器人中心点图来解决这一不匹配问题，这种图像的像素存储场景点在机器人坐标系中的3D坐标。点图在提供机器人坐标系3D几何信息的同时，保留了预训练2D VLA模型所需的密集H×W网格，因此只需最小的架构改动即可集成到现有VLA中。在RoboCasa上，点图改进了pi0.5和SmolVLA，并优于代表性的相机视角和3D感知基线。在真实机器人实验中，当相机被移动到训练中未见过的位置时，点图相对于纯RGB策略的优势更加明显。",
+  "tldr_zh": "用机器人坐标系点图解决VLA模型视角不匹配问题，提升跨视角泛化能力。",
+  "cover_zh": "相机一换就失灵？｜机器人视角点图让VLA模型跨视角照样稳",
+  "authors": [
+    {
+      "name": "Byungkun Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Dongyoon Hwang",
+      "affiliation": ""
+    },
+    {
+      "name": "Dongjin Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Hojoon Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Minho Park",
+      "affiliation": ""
+    },
+    {
+      "name": "Jaegul Choo",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-07-13",
+  "updated": "2026-07-13",
+  "arxiv_id": "2607.11498",
+  "pdf_url": "https://arxiv.org/pdf/2607.11498v1",
+  "abs_url": "http://arxiv.org/abs/2607.11498v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（vision-language-action、robocasa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出机器人中心点图解决VLA视角错配，提升泛化性，实验充分，有实际价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "Vision-Language-Action",
+    "robot-centric pointmaps"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,117 @@
+{
+  "id": "arxiv-2607-11027",
+  "source": "arxiv",
+  "title": "SegDiff: Segmented Trajectory Diffusion for Consistent and Adaptive Robot Manipulation",
+  "title_zh": "SegDiff：用于一致且自适应机器人操作的分段轨迹扩散",
+  "abstract": "Imitation learning enables robots to acquire manipulation skills from demonstrations by mapping observations to actions. Existing approaches predict either short-horizon continuous action sequences or discrete keyposes. However, continuous prediction methods suffer from compounding errors due to short prediction horizons and struggle with multi-modal action distributions, whereas keypose-based methods necessitate an external planner, constraining real-time applicability. To address these challenges, we introduce SegDiff, a closed-loop visuomotor policy that integrates the strengths of both paradigms. SegDiff decomposes demonstrations into motion segments between keyposes and learns to predict the continuous trajectory from the current state to the next keypose, enabling long-horizon prediction with real-time refinement. Furthermore, we leverage the capability of diffusion models and DDIM inversion to propose a Dynamic Temporal Ensembling mechanism, which allows the policy to efficiently respond to dynamic environments and mitigate discontinuities caused by inconsistent multi-modal sampling. SegDiff demonstrates significant performance gains over existing approaches across various simulated and real-world scenarios, indicating its strong ability to reason over extended temporal dependencies while maintaining real-time adaptability and control stability.",
+  "abstract_zh": "模仿学习通过将观测映射到动作，使机器人能够从演示中获取操作技能。现有方法要么预测短视界的连续动作序列，要么预测离散的关键位姿。然而，连续预测方法因预测视界短而遭受累积误差，且难以处理多模态动作分布；而基于关键位姿的方法需要外部规划器，限制了实时应用。为解决这些挑战，我们提出了SegDiff，一种闭环视觉运动策略，融合了两种范式的优势。SegDiff将演示分解为关键位姿之间的运动片段，并学习预测从当前状态到下一个关键位姿的连续轨迹，从而实现长视界预测与实时精化。此外，我们利用扩散模型和DDIM反转的能力，提出了一种动态时间集成机制，使策略能够高效响应动态环境，并缓解因不一致的多模态采样导致的间断。SegDiff在多种模拟和真实场景中均显著优于现有方法，表明其在保持实时适应性和控制稳定性的同时，具备对长时间依赖进行推理的强大能力。",
+  "tldr_zh": "提出SegDiff，结合连续预测与关键位姿优势，实现长视界、实时自适应的机器人操作。",
+  "cover_zh": "机器人操作新突破｜融合连续与离散，长视界预测还能实时调整",
+  "authors": [
+    {
+      "name": "Haidong Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenjun Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Quanhao Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Sicheng Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhiying Du",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaqi Leng",
+      "affiliation": ""
+    },
+    {
+      "name": "Zuxuan Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu-Gang Jiang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-13",
+  "updated": "2026-07-13",
+  "arxiv_id": "2607.11027",
+  "pdf_url": "https://arxiv.org/pdf/2607.11027v1",
+  "abs_url": "http://arxiv.org/abs/2607.11027v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-11027.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-11027-p2.jpg",
+    "assets/img/covers/arxiv-2607-11027-p3.jpg",
+    "assets/img/covers/arxiv-2607-11027-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 26,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（manipulation、imitation learning）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 26 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出分段轨迹扩散策略，结合关键姿态与连续预测优势，提升长时域推理与实时适应性，实验充分",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Institute of Trustworthy Embodied AI, Fudan University",
+    "Shanghai Key Laboratory of Multimodal Embodied AI"
+  ],
+  "method_tags": [
+    "Diffusion",
+    "Imitation Learning",
+    "Behavior Cloning"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

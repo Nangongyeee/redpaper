@@ -1,0 +1,110 @@
+{
+  "id": "arxiv-2607-11836",
+  "source": "arxiv",
+  "title": "Cycle-World: Mitigating Error Accumulation in Long-term Video World Models via Reverse-Prediction Cycle Consistency",
+  "title_zh": "Cycle-World：通过反向预测循环一致性缓解长时视频世界模型中的误差累积",
+  "abstract": "Autoregressive diffusion models have enabled high-quality video generation, yet their sequential nature inherently suffers from error accumulation. In long-horizon video synthesis, minor prediction deviations compound over time, inevitably leading to unconstrained generative drift, structural collapse, and severe visual degradation. To address this, we propose Cycle-World, a novel framework designed for stable and temporally consistent long-video generation. Our approach tackles error drift by enforcing strict temporal reversibility across both the training and inference phases. Theoretically, we demonstrate that forward generative drift can be strictly bottlenecked by a cycle-consistency objective. During training, we integrate an efficient reverse-prediction model to implicitly embed causal constraints into the forward generator, compelling it to produce reversible sequences that tightly adhere to the natural video manifold. At inference time, we repurpose this frozen reverse model as a runtime corrector. Through gradient-based cycle guidance, it iteratively refines the generated latent representations, actively suppressing accumulated errors before they are committed to the historical context. Extensive experiments on the VBench benchmark demonstrate that Cycle-World's dual-phase synergy significantly mitigates error drift, achieving state-of-the-art overall generation quality and long-horizon temporal consistency in 60-second synthesis.",
+  "abstract_zh": "自回归扩散模型实现了高质量视频生成，但其顺序特性固有地遭受误差累积。在长时程视频合成中，微小的预测偏差随时间累积，不可避免地导致无约束的生成漂移、结构崩溃和严重的视觉退化。为解决这一问题，我们提出Cycle-World，一种旨在实现稳定且时间一致的长视频生成的新框架。我们的方法通过在训练和推理阶段强制严格的时间可逆性来应对误差漂移。理论上，我们证明前向生成漂移可以通过循环一致性目标严格受限。在训练期间，我们集成一个高效的反向预测模型，将因果约束隐式嵌入前向生成器，迫使其产生紧密贴合自然视频流形的可逆序列。在推理时，我们将这个冻结的反向模型重新用作运行时校正器。通过基于梯度的循环引导，它迭代地细化生成的潜在表示，在累积误差被提交到历史上下文之前主动抑制它们。在VBench基准上的大量实验表明，Cycle-World的双阶段协同显著缓解了误差漂移，在60秒合成中实现了最先进的整体生成质量和长时程时间一致性。",
+  "tldr_zh": "提出Cycle-World，通过循环一致性约束和反向预测校正，缓解长视频生成中的误差累积。",
+  "cover_zh": "视频生成老崩坏？Cycle-World用反向预测循环一致性，60秒长视频稳如老狗",
+  "authors": [
+    {
+      "name": "Zihan Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Teng Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiangning Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ruiyan Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ran Yi",
+      "affiliation": ""
+    },
+    {
+      "name": "Lizhuang Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Dacheng Tao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-07-13",
+  "updated": "2026-07-13",
+  "arxiv_id": "2607.11836",
+  "pdf_url": "https://arxiv.org/pdf/2607.11836v1",
+  "abs_url": "http://arxiv.org/abs/2607.11836v1",
+  "venue": "ECCV 2026",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 ECCV 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 29,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（world model、world models、video world model）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「ECCV 2026」收录"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出循环一致性约束缓解长视频世界模型误差累积，理论创新且实验验证有效",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "diffusion model",
+    "cycle consistency",
+    "long-horizon video generation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

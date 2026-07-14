@@ -1,0 +1,117 @@
+{
+  "id": "arxiv-2607-11031",
+  "source": "arxiv",
+  "title": "GraspGraphNet: Graph-Structured Multi-Embodiment Dexterous Grasp Generation",
+  "title_zh": "GraspGraphNet：基于图结构的多机械手灵巧抓取生成",
+  "abstract": "Dexterous grasp generation across robot hands is challenging because hands differ in kinematic topology, actuation dimensions, and native command spaces. We introduce GraspGraphNet, a topology-aware grasp generation framework that represents each hand as a URDF-derived kinematic graph and directly generates executable palm poses and joint configurations. GraspGraphNet combines hierarchical object surface encoding, differentiable forward kinematics, and dynamic world-edge message passing to model evolving robot-object interactions. It applies conditional flow matching directly in executable palm-pose and joint-state space, avoiding post-processing optimization, inverse kinematics, and retargeting. Using a shared model trained on Barrett Hand, Allegro Hand, and Shadow Hand, GraspGraphNet achieves an average success rate of 83.48% with 40ms inference time per grasp on a 40-object benchmark. Without retraining, the same model achieves 72.70% success on controlled finger-removal variants, demonstrating robustness to hand-topology variations. These results suggest that graph-structured hand representations can effectively support dexterous grasp generation across robot hands with different kinematic structures. Project: https://lysees.github.io/graspgraphnet-page",
+  "abstract_zh": "跨机器人手的灵巧抓取生成具有挑战性，因为不同手在运动学拓扑、驱动维度和原生指令空间上存在差异。我们提出 GraspGraphNet，一种拓扑感知的抓取生成框架，它将每只手表示为从 URDF 导出的运动学图，并直接生成可执行的掌心姿态和关节配置。GraspGraphNet 结合了层次化物体表面编码、可微分正向运动学和动态世界边消息传递，以建模不断演化的机器人-物体交互。它直接在可执行的掌心姿态和关节状态空间中应用条件流匹配，避免了后处理优化、逆运动学和重定向。使用在 Barrett Hand、Allegro Hand 和 Shadow Hand 上训练的共享模型，GraspGraphNet 在 40 个物体的基准测试中实现了平均 83.48% 的成功率，每个抓取推理时间 40 毫秒。无需重新训练，同一模型在受控的手指移除变体上实现了 72.70% 的成功率，展示了对手拓扑变化的鲁棒性。这些结果表明，图结构的手部表示可以有效支持不同运动学结构的机器人手的灵巧抓取生成。项目：https://lysees.github.io/graspgraphnet-page",
+  "tldr_zh": "提出图结构手部表示，实现跨不同机器人手的灵巧抓取生成，无需后处理优化。",
+  "cover_zh": "不同机械手也能通用抓取？这个图结构框架直接生成，无需后处理！",
+  "authors": [
+    {
+      "name": "Yeonseo Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Taeyeop Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Hyosup Shin",
+      "affiliation": ""
+    },
+    {
+      "name": "Guebin Hwang",
+      "affiliation": ""
+    },
+    {
+      "name": "Sungho Jo",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-13",
+  "updated": "2026-07-13",
+  "arxiv_id": "2607.11031",
+  "pdf_url": "https://arxiv.org/pdf/2607.11031v1",
+  "abs_url": "http://arxiv.org/abs/2607.11031v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-11031.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-11031-p2.jpg",
+    "assets/img/covers/arxiv-2607-11031-p3.jpg",
+    "assets/img/covers/arxiv-2607-11031-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ KAIST"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 50,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “KAIST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（dexterous、grasp、robot hand、robot hands）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出图结构多灵巧手抓取生成框架，跨手拓扑泛化，方法新颖且实验扎实。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Korea Advanced Institute of Science and Technology (KAIST)"
+  ],
+  "method_tags": [
+    "conditional flow matching",
+    "graph-structured hand representation"
+  ],
+  "platform": [
+    "Barrett Hand",
+    "Allegro Hand",
+    "Shadow Hand"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
