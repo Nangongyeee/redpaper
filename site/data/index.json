@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T05:32:17.345358+00:00",
+  "generated_at": "2026-07-15T07:25:50.748047+00:00",
   "count": 1654,
   "papers": [
     {
@@ -24319,9 +24319,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，用更少内存实现更优重建，精度提升77%。",
-      "cover_zh": "内存砍掉70%｜VGGT-$Ω$让动态场景重建精度飙升77%",
-      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文中，我们展示了这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著提升。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代了全局注意力。通过这种方式，在训练时，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上，相机姿态估计精度相比之前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，显著提升静态与动态场景重建精度和效率。",
+      "cover_zh": "GPU内存仅需30%｜VGGT-$Ω$让重建精度飙升77%",
+      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著改进。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机姿态估计精度比之前最佳方法提升77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -36279,8 +36279,8 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas机器人展示旋转等新动作。",
-      "cover_zh": "机器人Atlas玩起了旋转｜新动作太惊艳",
+      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
+      "cover_zh": "机器人也能玩转圈？Atlas 的新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -45120,9 +45120,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率的机器人灵巧操作。",
-      "cover_zh": "10个演示就能学会？3D扩散策略让机器人模仿学习效率飙升",
-      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，稳健且泛化地学习复杂技能通常需要大量人类演示。为了解决这一挑战性问题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，展现了精确控制，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "提出3D扩散策略，利用3D点云表示实现少样本模仿学习，性能显著提升。",
+      "cover_zh": "仅需10个演示｜3D扩散策略让机器人学技能又快又安全",
+      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，鲁棒且泛化地学习复杂技能通常需要大量人类演示。为解决这一挑战性问题，我们提出了3D Diffusion Policy (DP3)，一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，展现出精确控制能力，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -101315,10 +101315,10 @@
       "id": "arxiv-2607-12466",
       "source": "arxiv",
       "title": "Deployable Human Preference Alignment in Robotics: Learning Representative Rewards from Diverse Human Preferences",
-      "title_zh": "Deployable Human Preference Alignment in Robotics: Learning Representative Rewards from Diverse Human Preferences",
-      "tldr_zh": "Aligning robot policies with human preferences is essential",
-      "cover_zh": "Aligning robot policies with human preferences is essential",
-      "abstract_zh": "Aligning robot policies with human preferences is essential for deployment to diverse end users. In per-user alignment approach, preference feedback is often sparse, so learning becomes unstable and vulnerable to human preference noise, and a growing number of individualized policies makes validation difficult before deployment. A single shared policy approach to user alignment avoids this cost but fails to capture heterogeneous preferences and often neglects minority preferences. To address these challenges, we introduce Preference-based REward Clustering (PREC), a novel framework that learns a compact set of policies from binary preference labels provided by diverse users. From a dataset of user trajectories and their preference labels, PREC first sets the labels aside and aggregates trajectories across users to learn a population-level shared trajectory encoder, alleviating limited per-user coverage and avoiding label noise during representation learning. Using this representation, PREC jointly assigns users to preference-coherent clusters and learns a representative reward model per cluster using preference labels, from which a policy is optimized for each cluster. Clustering similar users compensates for the limited number of labels available from each user and mitigates the effect of label noise. At the same time, maintaining a manageable number of reward models reduces the validation burden at deployment. Experiments across diverse simulated locomotion environments show that PREC groups users who label different trajectory subsets into preference-coherent clusters more accurately than baseline methods. Under sparse and noisy feedback, policies trained with PREC improve all three social welfare metrics over an existing single shared-policy user-alignment approach and even outperform per-user alignment approaches.",
+      "title_zh": "机器人中可部署的人类偏好对齐：从多样的人类偏好中学习代表性奖励",
+      "tldr_zh": "提出PREC框架，通过聚类用户偏好学习代表性奖励，实现鲁棒的机器人策略对齐。",
+      "cover_zh": "用户偏好太杂？PREC一招聚类，机器人策略对齐更准更稳！",
+      "abstract_zh": "将机器人策略与人类偏好对齐对于部署给多样化的最终用户至关重要。在每用户对齐方法中，偏好反馈通常稀疏，导致学习不稳定且易受人类偏好噪声影响，且越来越多的个性化策略使得部署前的验证变得困难。单一共享策略方法避免了这一成本，但无法捕捉异质偏好，且常常忽视少数偏好。为解决这些挑战，我们引入了基于偏好的奖励聚类（PREC），一种新颖的框架，从多样用户提供的二元偏好标签中学习紧凑的策略集。从用户轨迹及其偏好标签的数据集中，PREC首先将标签搁置，跨用户聚合轨迹以学习群体级别的共享轨迹编码器，缓解每用户覆盖有限的问题，并在表示学习期间避免标签噪声。利用该表示，PREC联合将用户分配到偏好一致的聚类中，并使用偏好标签为每个聚类学习一个代表性奖励模型，进而为每个聚类优化策略。对相似用户进行聚类补偿了每个用户可用标签数量有限的问题，并减轻了标签噪声的影响。同时，维持可管理的奖励模型数量减少了部署时的验证负担。在多种模拟运动环境中的实验表明，PREC比基线方法更准确地将标记不同轨迹子集的用户分组到偏好一致的聚类中。在稀疏和噪声反馈下，使用PREC训练的策略在三个社会福利指标上均优于现有的单一共享策略用户对齐方法，甚至超过了每用户对齐方法。",
       "authors": [
         "Taehyung Kim",
         "Gwangmo Lee",
