@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2607-07196",
+  "source": "arxiv_discover",
+  "title": "Validate the Dream Before You Trust Its Verdict: Admissibility for World-Model Simulators",
+  "title_zh": "在相信它的判决之前先验证这个梦：世界模型模拟器的可采性",
+  "abstract": "Across robotics, World Models (WMs) are increasingly used to evaluate action policies by simulating the consequences of actions in an imagined world, and returning a success or safety verdict. Yet a verdict is only as trustworthy as the WM that produced it, and the WM itself needs to be certified. In video-generation WMs, fidelity metrics such as Fréchet Video Distance (FVD) reward visual realism, but ignore whether the world responds correctly to the policy's actions, including those unseen in training. Classical simulation-based validation assumes a trusted simulator evaluating an untrusted policy, whereas generative WMs are themselves unverified learned artifacts. Hence, we argue that any WM used as a test oracle must first be accredited before its verdicts can serve as evidence. Building on credibility practices from safety-critical simulation, including Verification, Validation & Accreditation (VV&A), Safety of the Intended Functionality (SOTIF), and scenario-based testing standards, we define an admissibility ladder (L0-L4) that a WM must climb before its closed-loop verdicts are accepted as assurance evidence. Our framework is embodiment-agnostic, and is instantiated in autonomous driving (AD), where assurance methods for traditional simulation are most mature. Applied to two driving WMs, the lower rungs reveal a reversal: the model that ranks higher on visual generation quality (L0) ranks lower on action-following (L1-L2), so visual fidelity does not predict the action-robustness a closed-loop verdict depends on.",
+  "abstract_zh": "在机器人领域，世界模型（WM）越来越多地被用于评估行动策略，通过在想象世界中模拟行动后果并返回成功或安全判决。然而，判决的可信度取决于产生它的世界模型，而世界模型本身需要被认证。在视频生成世界模型中，Fréchet视频距离（FVD）等保真度指标奖励视觉真实感，但忽略了世界是否对策略的动作（包括训练中未见过的动作）做出正确响应。经典的基于模拟的验证假设一个可信的模拟器评估不可信的策略，而生成式世界模型本身是未经验证的学习产物。因此，我们认为任何用作测试预言机的世界模型必须首先获得认证，然后其判决才能作为证据。借鉴安全关键模拟中的可信度实践，包括验证、确认与认证（VV&A）、预期功能安全（SOTIF）和基于场景的测试标准，我们定义了一个可采性阶梯（L0-L4），世界模型必须攀登此阶梯后其闭环判决才能被接受为保证证据。我们的框架与具体具身形式无关，并在自动驾驶（AD）中实例化，其中传统模拟的保证方法最为成熟。应用于两个驾驶世界模型时，较低阶梯揭示了一个反转：在视觉生成质量（L0）上排名较高的模型在动作跟随（L1-L2）上排名较低，因此视觉保真度不能预测闭环判决所依赖的动作鲁棒性。",
+  "tldr_zh": "提出世界模型可采性阶梯，视觉保真度高的模型动作跟随能力反而差。",
+  "cover_zh": "视觉满分但动作拉胯？世界模型的可信度阶梯颠覆你的认知",
+  "authors": [
+    {
+      "name": "Christian Oefinger",
+      "affiliation": ""
+    },
+    {
+      "name": "Finn Rasmus Schäfer",
+      "affiliation": ""
+    },
+    {
+      "name": "Korbinian Moller",
+      "affiliation": ""
+    },
+    {
+      "name": "Mattia Piccinini",
+      "affiliation": ""
+    },
+    {
+      "name": "Johannes Betz",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.RO",
+    "cs.SE",
+    "cs.AI"
+  ],
+  "published": "2026-07-08",
+  "updated": "2026-07-08",
+  "arxiv_id": "2607.07196",
+  "pdf_url": "https://arxiv.org/pdf/2607.07196v1",
+  "abs_url": "http://arxiv.org/abs/2607.07196v1",
+  "venue": "RSS 2026",
+  "venue_announced": "2026-07-15",
+  "cover_image": "assets/img/covers/arxiv-2607-07196.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-07196-p2.jpg",
+    "assets/img/covers/arxiv-2607-07196-p3.jpg",
+    "assets/img/covers/arxiv-2607-07196-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ TUM"
+    }
+  ],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 34,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “TUM” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出世界模型作为测试oracle的可信度框架，具身通用，高科研价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Technical University of Munich"
+  ],
+  "method_tags": [
+    "World Model",
+    "Verification, Validation & Accreditation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
