@@ -1,0 +1,112 @@
+{
+  "id": "arxiv-2607-13033",
+  "source": "arxiv",
+  "title": "DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation",
+  "title_zh": "DenseReward：通过失败合成进行密集奖励学习以用于机器人操作",
+  "abstract": "Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning. However, its practical adoption remains bottlenecked by the lack of reliable vision-language reward models that provide dense and informative feedback. Two key challenges remain: acquiring diverse failure data at scale and obtaining fine-grained reward signals beyond sparse trajectory-level success labels. Collecting failure trajectories typically requires laborious human effort, while pseudo-failures constructed by relabeling successful demonstrations fail to capture the diverse physical failure modes that arise during robot execution. Meanwhile, existing reward models often predict sparse binary or trajectory-level rewards, which provide limited guidance for efficient policy optimization. We introduce DenseReward, a dense robotic reward model that addresses both challenges. To train DenseReward, we develop an automated failure data generation pipeline that synthesizes physically realistic failure trajectories in simulation without human labeling, covering diverse failure modes such as collisions, missed grasps, object drops, and recovery behaviors. DenseReward predicts dense frame-level reward scores from visual observations and language instructions, enabling fine-grained estimation of task progress throughout an episode. Experiments show that DenseReward outperforms general-purpose VLMs and existing robotic reward models in dense reward prediction across both simulated and real-world manipulation. We further demonstrate that DenseReward provides effective reward guidance for downstream model predictive control and reinforcement learning. We release the dataset, trained reward models, and evaluation suite to support the development of failure-aware dense reward modeling for robot learning.",
+  "abstract_zh": "强化学习在超越模仿学习限制以改进机器人策略方面具有巨大潜力。然而，其实际应用仍受限于缺乏可靠且能提供密集、信息丰富反馈的视觉语言奖励模型。两个关键挑战依然存在：大规模获取多样化的失败数据，以及获得超越稀疏轨迹级成功标签的细粒度奖励信号。收集失败轨迹通常需要大量人工努力，而通过重新标记成功演示构建的伪失败无法捕捉机器人执行过程中出现的多样化物理失败模式。同时，现有奖励模型通常预测稀疏的二元或轨迹级奖励，这为高效策略优化提供的指导有限。我们提出了DenseReward，一种密集机器人奖励模型，解决了这两个挑战。为了训练DenseReward，我们开发了一个自动化的失败数据生成流水线，在仿真中无需人工标注即可合成物理上真实的失败轨迹，涵盖多种失败模式，如碰撞、抓取失败、物体掉落和恢复行为。DenseReward从视觉观察和语言指令中预测密集的帧级奖励分数，从而在整个回合中实现细粒度的任务进度估计。实验表明，DenseReward在仿真和真实世界的操作任务中，在密集奖励预测方面优于通用视觉语言模型和现有机器人奖励模型。我们进一步证明，DenseReward为下游模型预测控制和强化学习提供了有效的奖励指导。我们发布了数据集、训练好的奖励模型和评估套件，以支持机器人学习中失败感知的密集奖励建模的发展。",
+  "tldr_zh": "提出自动合成失败轨迹的方法，训练密集帧级奖励模型，提升机器人操作策略学习。",
+  "cover_zh": "不用人工标注失败数据｜这个奖励模型让机器人学会从错误中学习",
+  "authors": [
+    {
+      "name": "Yu Fang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wanxi Dong",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaqi Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yue Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingxiao Huo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yao Mu",
+      "affiliation": ""
+    },
+    {
+      "name": "Huaxiu Yao",
+      "affiliation": ""
+    },
+    {
+      "name": "Li Erran Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Daniel Szafir",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingyu Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-14",
+  "updated": "2026-07-14",
+  "arxiv_id": "2607.13033",
+  "pdf_url": "https://arxiv.org/pdf/2607.13033v1",
+  "abs_url": "http://arxiv.org/abs/2607.13033v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、grasp、imitation learning）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出密集奖励模型，通过自动合成失败数据提升RL效率，实验在仿真和真实操作中验证，对操作学习有高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "Reinforcement Learning",
+    "Reward Model",
+    "Failure Synthesis"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

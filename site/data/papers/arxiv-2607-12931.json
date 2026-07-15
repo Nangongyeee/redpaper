@@ -1,0 +1,100 @@
+{
+  "id": "arxiv-2607-12931",
+  "source": "arxiv",
+  "title": "ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning",
+  "title_zh": "ExToken：面向高效视觉-语言-动作强化微调的结构化探索",
+  "abstract": "Reinforcement Learning (RL) has demonstrated significant potential for improving Vision-Language-Action (VLA) models on complex manipulation tasks. However, its practical scalability remains severely limited by the substantial cost of environmental interactions. In this work, we first investigate the exploration stagnation bottleneck in current VLA-RL frameworks and reveal that trajectory diversity is fundamentally more important to sample efficiency than the sheer quantity of collected rollouts. Motivated by these insights, we introduce RL Exploration Token (ExToken), a simple yet general framework that condition VLA policies on discrete behavioral priors derived from offline demonstrations for structured exploration. By conditioning the policy on different tokens during rollout collection, ExToken encourages the agent to explore diverse behavioral modes, substantially improving state-action coverage and exploration efficiency. To bridge exploration during training with deterministic inference at deployment, ExToken further incorporates a state-conditioned token selector that adaptively predicts effective behavioral modes for unseen scenarios. Extensive experiments across simulated and real-world robotic manipulation tasks demonstrate that ExToken consistently accelerates convergence, improves task performance, and exhibits strong robustness under highly constrained interaction budgets.",
+  "abstract_zh": "强化学习（RL）在提升视觉-语言-动作（VLA）模型处理复杂操作任务方面展现出巨大潜力。然而，其实际可扩展性受到环境交互成本高昂的严重制约。本文首先研究了当前VLA-RL框架中的探索停滞瓶颈，揭示出轨迹多样性对样本效率的重要性远高于收集的轨迹数量。基于这些发现，我们提出了RL探索令牌（ExToken），一个简单而通用的框架，它通过将VLA策略条件化于从离线演示中提取的离散行为先验，实现结构化探索。在轨迹收集过程中，通过使策略条件化于不同的令牌，ExToken鼓励智能体探索多样化的行为模式，显著提升了状态-动作覆盖率和探索效率。为了弥合训练时的探索与部署时的确定性推理之间的差距，ExToken进一步引入了一个状态条件令牌选择器，能够自适应地为未见场景预测有效的行为模式。在模拟和真实机器人操作任务上的大量实验表明，ExToken能够持续加速收敛、提升任务性能，并在交互预算极度受限的情况下展现出强大的鲁棒性。",
+  "tldr_zh": "提出ExToken框架，通过条件化离散行为先验实现结构化探索，提升VLA模型强化微调的样本效率。",
+  "cover_zh": "探索不够多样？ExToken用行为令牌让机器人学会高效试错｜交互成本直降",
+  "authors": [
+    {
+      "name": "Yilun Kong",
+      "affiliation": ""
+    },
+    {
+      "name": "Yunpeng Qing",
+      "affiliation": ""
+    },
+    {
+      "name": "Guozheng Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoyu Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Li Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhi Hou",
+      "affiliation": ""
+    },
+    {
+      "name": "Dacheng Tao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-14",
+  "updated": "2026-07-14",
+  "arxiv_id": "2607.12931",
+  "pdf_url": "https://arxiv.org/pdf/2607.12931v1",
+  "abs_url": "http://arxiv.org/abs/2607.12931v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（vision-language-action、manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出ExToken框架提升VLA模型RL微调的探索效率，实验覆盖仿真和真实操作任务，对操作领域有高参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "RL",
+    "VLA",
+    "exploration"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
