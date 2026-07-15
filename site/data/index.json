@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T03:01:46.600715+00:00",
+  "generated_at": "2026-07-15T05:32:17.345358+00:00",
   "count": 1654,
   "papers": [
     {
@@ -24319,9 +24319,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，显著提升静态与动态场景重建精度和效率。",
-      "cover_zh": "GPU内存砍掉70%｜这个重建模型用15倍数据训练，精度飙升77%",
-      "abstract_zh": "近期前馈重建模型（如VGGT）已证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入VGGT-$Ω$，显著提高了静态和动态场景的重建精度、效率及能力。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，使用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。通过这种方式，训练时VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如在Sintel上将先前最佳相机估计精度提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，用更少内存实现更优重建，精度提升77%。",
+      "cover_zh": "内存砍掉70%｜VGGT-$Ω$让动态场景重建精度飙升77%",
+      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文中，我们展示了这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著提升。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代了全局注意力。通过这种方式，在训练时，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上，相机姿态估计精度相比之前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -36279,9 +36279,9 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas机器人展示旋转和新动作。",
-      "cover_zh": "机器人也能玩转圈？Atlas新动作太酷了！",
-      "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
+      "tldr_zh": "Atlas机器人展示旋转等新动作。",
+      "cover_zh": "机器人Atlas玩起了旋转｜新动作太惊艳",
+      "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -45120,9 +45120,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率和强泛化能力。",
-      "cover_zh": "10个演示就能学会？这个3D扩散策略让机器人技能学习效率飙升",
-      "abstract_zh": "模仿学习为机器人灵巧技能的教授提供了高效途径；然而，鲁棒且泛化地学习复杂技能通常需要大量人类演示。为解决这一难题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出卓越的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率的机器人灵巧操作。",
+      "cover_zh": "10个演示就能学会？3D扩散策略让机器人模仿学习效率飙升",
+      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，稳健且泛化地学习复杂技能通常需要大量人类演示。为了解决这一挑战性问题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，展现了精确控制，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -63757,6 +63757,134 @@
       ]
     },
     {
+      "id": "arxiv-2607-12861",
+      "source": "arxiv",
+      "title": "Unveiling Complex Collective Behaviors from Simple Rewards",
+      "title_zh": "从简单奖励中揭示复杂集体行为",
+      "tldr_zh": "提出ARM工具，揭示机器人集群从简单奖励中涌现复杂行为的隐藏几何机制。",
+      "cover_zh": "简单奖励竟能涌现复杂集群行为？新工具ARM揭示隐藏几何机制",
+      "abstract_zh": "多智能体强化学习（MARL）在机器人集群中具有巨大潜力，但神经策略的黑箱特性使得策略分析复杂化，限制了多机器人应用。此外，复杂的集群行为可以从简单奖励中惊人地涌现，而无需明确的聚合激励。揭示这种涌现背后的机制至关重要，但简单奖励与集体行为之间的脱节加剧了可解释性挑战。本文旨在揭示这一过程中的隐藏机制。我们提出了一个两阶段的EEC（LinkIII）解释框架，其中包括一种名为智能体响应图（ARM）的新型分析工具，该工具揭示了智能体在空间上的决策模式，并识别出聚合和回避区域。ARM揭示了机器人隐式地学习环境的几何场，并利用这些结构作为协调运动的期望目标。我们在两个不同的任务中验证了这一发现：合作的多机器人形状组装和竞争的捕食者-猎物追逐-逃避。1）在合作任务中，ARM将未占据的目标内部识别为机器人导航的期望目的地。随着中心被占据，该目标区域自动向边界移动，展示了机器人自主探索未占据区域的能力。2）在竞争任务中，ARM惊人地将捕食者Voronoi图的边界识别为猎物智能体的收敛目的地。这两个任务共同展示了ARM在机器人集群中发现MARL策略背后隐藏几何结构的能力。",
+      "authors": [
+        "Yize Mi",
+        "Jianan Li",
+        "Liang Li"
+      ],
+      "authors_all": [
+        "Yize Mi",
+        "Jianan Li",
+        "Liang Li",
+        "Shiyu Zhao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-14",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 IROS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2607.12861",
+      "abs_url": "http://arxiv.org/abs/2607.12861v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12861v1",
+      "venue": "IROS 2026",
+      "venue_announced": "",
+      "score": 28,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "locomotion",
+        "reason": "研究多机器人涌现行为，涉及群体决策与可解释性，与具身机器人相关",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "Multi-agent Reinforcement Learning",
+        "explainability"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-12965",
+      "source": "arxiv",
+      "title": "MAMMOTH: A Multi-Modal End-to-End Policy for Off-Road Mobility Robust to Missing Modality",
+      "title_zh": "MAMMOTH：一种对缺失模态鲁棒的多模态端到端越野移动策略",
+      "tldr_zh": "提出一种多模态端到端越野导航策略，通过模态丢弃训练实现缺失模态下的鲁棒导航。",
+      "cover_zh": "传感器坏了也能开？这个越野导航策略靠热成像和点云照样跑",
+      "abstract_zh": "在非结构化越野环境中实现可靠的自主导航仍然是一个关键未解决的挑战，原因在于极端地形多样性、剧烈的光照变化以及严重的传感器退化。最近的研究将这一问题视为可通行性代价地图估计或视觉导航任务。然而，许多方法过度依赖RGB模态，导致在眩光、阴影或低环境光等不同光照条件下性能不佳。要在这些条件下实现鲁棒泛化，需要集成提供补充场景信息的模态。这类多模态方法存在对近乎完美传感器输入的刚性依赖，无法鲁棒地处理传感器退化或单个模态故障。为解决这些限制，我们提出了MAMMOTH（Masking Multi-Modal inputs for Off-road Traversability Heuristic-informed navigation），一种统一的端到端导航策略，用于鲁棒的越野视觉目标条件导航和无向探索。具体来说，MAMMOTH高效融合多模态观测（RGB、热成像、3D点云和自车速度），并通过模态丢弃方案进行训练，使其能够在推理时泛化到缺失模态。此外，我们采用扩散策略来学习物理基础轨迹和内在可通行性启发式的联合条件概率分布。MAMMOTH利用该启发式偏好更安全、更平滑的轨迹。我们通过在包括夜间操作在内的不同越野环境中进行大量真实机器人实验来验证MAMMOTH。结果表明其性能优越，在碰撞避免、地形感知规划和缺失模态泛化方面有显著改进。本工作使用的代码和数据集将公开提供。",
+      "authors": [
+        "Ahaan Kotian",
+        "Shivani Subramanyan",
+        "Suresh Sundaram"
+      ],
+      "authors_all": [
+        "Ahaan Kotian",
+        "Shivani Subramanyan",
+        "Suresh Sundaram"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-14",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 IROS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2607.12965",
+      "abs_url": "http://arxiv.org/abs/2607.12965v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12965v1",
+      "venue": "IROS 2026",
+      "venue_announced": "",
+      "score": 28,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "locomotion",
+        "reason": "多模态端到端越野导航策略，融合RGB/热/点云/速度，模态缺失鲁棒，真实实验验证，对非结构化环境自主导航有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "diffusion policy",
+        "modality dropout",
+        "off-road navigation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-b2b337573c",
       "source": "qbitai",
       "title": "高德发布通用世界模型工坊ABot-World Studio：5090单卡可生成小时级实时交互式视频与3D场景",
@@ -66648,7 +66776,8 @@
       "institutions": [],
       "method_tags": [
         "Reinforcement Learning",
-        "Privileged Representation Learning"
+        "Privileged Representation Learning",
+        "loco-manipulation"
       ],
       "platform": [
         "Booster T1"
@@ -69865,132 +69994,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-12861",
-      "source": "arxiv",
-      "title": "Unveiling Complex Collective Behaviors from Simple Rewards",
-      "title_zh": "从简单奖励中揭示复杂集体行为",
-      "tldr_zh": "提出ARM工具，揭示机器人集群从简单奖励中涌现复杂行为的隐藏几何机制。",
-      "cover_zh": "简单奖励竟能涌现复杂集群行为？新工具ARM揭示隐藏几何机制",
-      "abstract_zh": "多智能体强化学习（MARL）在机器人集群中具有巨大潜力，但神经策略的黑箱特性使得策略分析复杂化，限制了多机器人应用。此外，复杂的集群行为可以从简单奖励中惊人地涌现，而无需明确的聚合激励。揭示这种涌现背后的机制至关重要，但简单奖励与集体行为之间的脱节加剧了可解释性挑战。本文旨在揭示这一过程中的隐藏机制。我们提出了一个两阶段的EEC（LinkIII）解释框架，其中包括一种名为智能体响应图（ARM）的新型分析工具，该工具揭示了智能体在空间上的决策模式，并识别出聚合和回避区域。ARM揭示了机器人隐式地学习环境的几何场，并利用这些结构作为协调运动的期望目标。我们在两个不同的任务中验证了这一发现：合作的多机器人形状组装和竞争的捕食者-猎物追逐-逃避。1）在合作任务中，ARM将未占据的目标内部识别为机器人导航的期望目的地。随着中心被占据，该目标区域自动向边界移动，展示了机器人自主探索未占据区域的能力。2）在竞争任务中，ARM惊人地将捕食者Voronoi图的边界识别为猎物智能体的收敛目的地。这两个任务共同展示了ARM在机器人集群中发现MARL策略背后隐藏几何结构的能力。",
-      "authors": [
-        "Yize Mi",
-        "Jianan Li",
-        "Liang Li"
-      ],
-      "authors_all": [
-        "Yize Mi",
-        "Jianan Li",
-        "Liang Li",
-        "Shiyu Zhao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-14",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 IROS 2026"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "2607.12861",
-      "abs_url": "http://arxiv.org/abs/2607.12861v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12861v1",
-      "venue": "IROS 2026",
-      "venue_announced": "",
-      "score": 23,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "locomotion",
-        "reason": "研究多机器人涌现行为，涉及群体决策与可解释性，与具身机器人相关",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [],
-      "method_tags": [
-        "Multi-agent Reinforcement Learning",
-        "explainability"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-12965",
-      "source": "arxiv",
-      "title": "MAMMOTH: A Multi-Modal End-to-End Policy for Off-Road Mobility Robust to Missing Modality",
-      "title_zh": "MAMMOTH：一种对缺失模态鲁棒的多模态端到端越野移动策略",
-      "tldr_zh": "提出一种多模态端到端越野导航策略，通过模态丢弃训练实现缺失模态下的鲁棒导航。",
-      "cover_zh": "传感器坏了也能开？这个越野导航策略靠热成像和点云照样跑",
-      "abstract_zh": "在非结构化越野环境中实现可靠的自主导航仍然是一个关键未解决的挑战，原因在于极端地形多样性、剧烈的光照变化以及严重的传感器退化。最近的研究将这一问题视为可通行性代价地图估计或视觉导航任务。然而，许多方法过度依赖RGB模态，导致在眩光、阴影或低环境光等不同光照条件下性能不佳。要在这些条件下实现鲁棒泛化，需要集成提供补充场景信息的模态。这类多模态方法存在对近乎完美传感器输入的刚性依赖，无法鲁棒地处理传感器退化或单个模态故障。为解决这些限制，我们提出了MAMMOTH（Masking Multi-Modal inputs for Off-road Traversability Heuristic-informed navigation），一种统一的端到端导航策略，用于鲁棒的越野视觉目标条件导航和无向探索。具体来说，MAMMOTH高效融合多模态观测（RGB、热成像、3D点云和自车速度），并通过模态丢弃方案进行训练，使其能够在推理时泛化到缺失模态。此外，我们采用扩散策略来学习物理基础轨迹和内在可通行性启发式的联合条件概率分布。MAMMOTH利用该启发式偏好更安全、更平滑的轨迹。我们通过在包括夜间操作在内的不同越野环境中进行大量真实机器人实验来验证MAMMOTH。结果表明其性能优越，在碰撞避免、地形感知规划和缺失模态泛化方面有显著改进。本工作使用的代码和数据集将公开提供。",
-      "authors": [
-        "Ahaan Kotian",
-        "Shivani Subramanyan",
-        "Suresh Sundaram"
-      ],
-      "authors_all": [
-        "Ahaan Kotian",
-        "Shivani Subramanyan",
-        "Suresh Sundaram"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-14",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 IROS 2026"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "2607.12965",
-      "abs_url": "http://arxiv.org/abs/2607.12965v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12965v1",
-      "venue": "IROS 2026",
-      "venue_announced": "",
-      "score": 23,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "locomotion",
-        "reason": "多模态端到端越野导航策略，融合RGB/热/点云/速度，模态缺失鲁棒，真实实验验证，对非结构化环境自主导航有高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [],
-      "method_tags": [
-        "diffusion policy",
-        "modality dropout",
-        "off-road navigation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -73731,7 +73734,8 @@
       "published": "2026-07-14",
       "channels": [
         "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "world-model"
       ],
       "badges": [
         {
@@ -82216,6 +82220,78 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-10132",
+      "source": "arxiv_discover",
+      "title": "TAC-LOCO: Unified Whole-Body Control for Quadrupedal TACtile-Informed LOCO-Manipulation",
+      "title_zh": "TAC-LOCO：基于触觉感知的四足机器人全身控制与操作",
+      "tldr_zh": "提出触觉增强的强化学习框架，实现四足机器人动态移动操作，抓取力降低47%",
+      "cover_zh": "触觉让四足机器人学会温柔抓取｜抓取力降低47%还防滑落",
+      "abstract_zh": "动态移动操作要求足式机器人在不确定外力下协调全身运动，同时保持与抓取物体的稳定物理交互。尽管触觉传感在机器人操作中已被广泛研究，但其在动态全身控制中的作用仍鲜有探索。现有无触觉反馈的工作通常采用紧抓取而非根据交互调节抓取力。我们提出TAC-LOCO，一种触觉增强的统一强化学习框架，将来自柔性夹爪的触觉阵列观测编码为紧凑的潜在表示，并与本体感受结合，实现对腿部、手臂和夹爪的统一控制。通过有效的抓取稳定性奖励设计，策略学会同时跟踪身体速度和末端执行器轨迹、调节抓取力，并在逐渐负载变化和突然释放事件下防止物体滑落。我们将策略零样本部署在配备Interbotix WidowX 250手臂和触觉夹爪的Unitree Go2上，展示了在不同外部交互下的动态触觉感知移动操作，实现了抓取力降低47%，物体掉落率低于1%。",
+      "authors": [
+        "Muqun Hu",
+        "Yuhao Zhou",
+        "Kabir Ray Malik"
+      ],
+      "authors_all": [
+        "Muqun Hu",
+        "Yuhao Zhou",
+        "Kabir Ray Malik",
+        "Chi Lin",
+        "Won Suk Lee",
+        "Yu She",
+        "Yan Gu"
+      ],
+      "primary_category": "",
+      "published": "2026-07-11",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-10132.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-10132-p2.jpg",
+        "assets/img/covers/arxiv-2607-10132-p3.jpg",
+        "assets/img/covers/arxiv-2607-10132-p4.jpg"
+      ],
+      "arxiv_id": "2607.10132",
+      "abs_url": "http://arxiv.org/abs/2607.10132v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.10132v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出触觉增强的全身控制框架，结合强化学习实现四足动态移动操作，显著降低抓取力并保持稳定。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Purdue University",
+        "University of Florida"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Whole-Body Control",
+        "Tactile-Informed Loco-Manipulation"
+      ],
+      "platform": [
+        "Unitree Go2",
+        "Interbotix WidowX 250"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "s2-20e66cc5a66790f7e2b19ec365c5a0e0fffd4701",
@@ -94173,76 +94249,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-10132",
-      "source": "arxiv_discover",
-      "title": "TAC-LOCO: Unified Whole-Body Control for Quadrupedal TACtile-Informed LOCO-Manipulation",
-      "title_zh": "TAC-LOCO：基于触觉感知的四足机器人全身控制与操作",
-      "tldr_zh": "提出触觉增强的强化学习框架，实现四足机器人动态移动操作，抓取力降低47%",
-      "cover_zh": "触觉让四足机器人学会温柔抓取｜抓取力降低47%还防滑落",
-      "abstract_zh": "动态移动操作要求足式机器人在不确定外力下协调全身运动，同时保持与抓取物体的稳定物理交互。尽管触觉传感在机器人操作中已被广泛研究，但其在动态全身控制中的作用仍鲜有探索。现有无触觉反馈的工作通常采用紧抓取而非根据交互调节抓取力。我们提出TAC-LOCO，一种触觉增强的统一强化学习框架，将来自柔性夹爪的触觉阵列观测编码为紧凑的潜在表示，并与本体感受结合，实现对腿部、手臂和夹爪的统一控制。通过有效的抓取稳定性奖励设计，策略学会同时跟踪身体速度和末端执行器轨迹、调节抓取力，并在逐渐负载变化和突然释放事件下防止物体滑落。我们将策略零样本部署在配备Interbotix WidowX 250手臂和触觉夹爪的Unitree Go2上，展示了在不同外部交互下的动态触觉感知移动操作，实现了抓取力降低47%，物体掉落率低于1%。",
-      "authors": [
-        "Muqun Hu",
-        "Yuhao Zhou",
-        "Kabir Ray Malik"
-      ],
-      "authors_all": [
-        "Muqun Hu",
-        "Yuhao Zhou",
-        "Kabir Ray Malik",
-        "Chi Lin",
-        "Won Suk Lee",
-        "Yu She",
-        "Yan Gu"
-      ],
-      "primary_category": "",
-      "published": "2026-07-11",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-10132.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-10132-p2.jpg",
-        "assets/img/covers/arxiv-2607-10132-p3.jpg",
-        "assets/img/covers/arxiv-2607-10132-p4.jpg"
-      ],
-      "arxiv_id": "2607.10132",
-      "abs_url": "http://arxiv.org/abs/2607.10132v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.10132v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出触觉增强的全身控制框架，结合强化学习实现四足动态移动操作，显著降低抓取力并保持稳定。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Purdue University",
-        "University of Florida"
-      ],
-      "method_tags": [
-        "Reinforcement Learning",
-        "Whole-Body Control",
-        "Tactile-Informed Loco-Manipulation"
-      ],
-      "platform": [
-        "Unitree Go2",
-        "Interbotix WidowX 250"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "github-iit-dlslab-fault-locomotion-isaaclab",
       "source": "github",
       "title": "iit-DLSLab/fault-locomotion-isaaclab",
@@ -101355,7 +101361,7 @@
       "method_tags": [
         "Preference-based REward Clustering",
         "reward learning",
-        "user alignment"
+        "human preference alignment"
       ],
       "platform": [],
       "sim_stack": [],
@@ -101475,9 +101481,9 @@
       },
       "institutions": [],
       "method_tags": [
-        "chunked policy learning",
-        "continuity consistency",
-        "VLA"
+        "chunked policy",
+        "continuity loss",
+        "AWAC fine-tuning"
       ],
       "platform": [],
       "sim_stack": [],
