@@ -1,0 +1,211 @@
+{
+  "id": "arxiv-2607-13960",
+  "source": "arxiv",
+  "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
+  "title_zh": "GigaWorld-Policy-0.5：由AutoResearch驱动的更快更强的WAM",
+  "abstract": "World Action Models (WAMs) improve robot policy learning by jointly modeling actions and future visual observations, using future scene evolution as dense supervision for physically grounded action generation. However, a common design in existing WAMs is to explicitly generate future videos at inference time, incurring substantial computational overhead and hindering real-time closed-loop deployment. GigaWorld-Policy addresses this issue with an action-centered formulation, where future visual dynamics are used during training while action-only decoding is used at inference time. Building upon this framework, we present GigaWorld-Policy-0.5, an enhanced action-centered WAM designed for more efficient robot control. During pretraining, GigaWorld-Policy-0.5 adopts a mixed Action-Conditioned World Modeling (AC-WM) and WAM training strategy. This strengthens the coupling between visual dynamics and robot actions and improves the transferability of action representations for downstream policy learning. For efficient inference, GigaWorld-Policy-0.5 introduces a Mixture-of-Transformers architecture that separates visual dynamics modeling and action generation into specialized experts, reducing active computation during action-only inference and achieving 85 ms inference latency on a local RTX 4090 setup. In addition, we employ an agent-based AutoResearch pipeline to systematically search training configurations, enabling more efficient identification of optimal experimental setups while reducing the time and manual intervention required for hyperparameter tuning. Experiments and ablations show that GigaWorld-Policy-0.5 preserves the training benefits of future visual dynamics while improving inference efficiency for robot control.",
+  "abstract_zh": "世界动作模型（WAM）通过联合建模动作和未来视觉观测，利用未来场景演化作为物理接地动作生成的密集监督，改进了机器人策略学习。然而，现有WAM的一个常见设计是在推理时显式生成未来视频，这带来了巨大的计算开销，阻碍了实时闭环部署。GigaWorld-Policy通过以动作为中心的公式解决了这个问题：训练时使用未来视觉动态，推理时仅进行动作解码。基于此框架，我们提出了GigaWorld-Policy-0.5，一个增强的以动作为中心的WAM，用于更高效的机器人控制。在预训练阶段，GigaWorld-Policy-0.5采用了混合的动作条件世界建模（AC-WM）和WAM训练策略。这加强了视觉动态与机器人动作之间的耦合，并提高了动作表示在下游策略学习中的可迁移性。为了实现高效推理，GigaWorld-Policy-0.5引入了混合Transformer架构，将视觉动态建模和动作生成分离到专门的专家中，减少了仅动作推理时的活跃计算量，在本地RTX 4090上实现了85毫秒的推理延迟。此外，我们采用基于智能体的AutoResearch流水线来系统搜索训练配置，从而更高效地识别最优实验设置，同时减少超参数调优所需的时间和人工干预。实验和消融研究表明，GigaWorld-Policy-0.5保留了未来视觉动态的训练优势，同时提高了机器人控制的推理效率。",
+  "tldr_zh": "提出GigaWorld-Policy-0.5，推理时不生成未来视频，延迟仅85毫秒。",
+  "cover_zh": "推理时不再生成未来视频｜新WAM模型延迟仅85ms，机器人控制更快更强",
+  "authors": [
+    {
+      "name": "GigaWorld Team",
+      "affiliation": ""
+    },
+    {
+      "name": "Angen Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Angyuan Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Boyuan Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chaojun Ni",
+      "affiliation": ""
+    },
+    {
+      "name": "Fangzheng Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Guan Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Guo Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Guosheng Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Haodong Yan",
+      "affiliation": ""
+    },
+    {
+      "name": "Hengtao Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiwen Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Kai Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingming Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Qitang Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiuping Deng",
+      "affiliation": ""
+    },
+    {
+      "name": "Songling Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoyu Tian",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaofeng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinyu Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiuwei Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinze Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yejun Zeng",
+      "affiliation": ""
+    },
+    {
+      "name": "Yifan Chang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yun Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenyu Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhanqian Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zheng Zhu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-15",
+  "updated": "2026-07-15",
+  "arxiv_id": "2607.13960",
+  "pdf_url": "https://arxiv.org/pdf/2607.13960v1",
+  "abs_url": "http://arxiv.org/abs/2607.13960v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-13960.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-13960-p2.jpg",
+    "assets/img/covers/arxiv-2607-13960-p3.jpg",
+    "assets/img/covers/arxiv-2607-13960-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 17,
+  "source_tags": [],
+  "score": 47,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（world model、world modeling、action-conditioned world）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 17 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出动作中心的世界动作模型，提升推理效率，属于世界模型在机器人策略中的创新应用",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "GigaAI",
+    "Tsinghua University"
+  ],
+  "method_tags": [
+    "World Action Model",
+    "Mixture-of-Transformers",
+    "AutoResearch"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
