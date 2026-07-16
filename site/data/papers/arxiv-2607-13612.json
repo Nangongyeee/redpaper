@@ -1,0 +1,96 @@
+{
+  "id": "arxiv-2607-13612",
+  "source": "arxiv_discover",
+  "title": "The SIGReg Objective as Variational Free Energy: A Theoretical Active-Inference Account of JEPA World Models",
+  "title_zh": "SIGReg目标作为变分自由能：JEPA世界模型的理论主动推理解释",
+  "abstract": "Joint-Embedding Predictive Architectures (JEPAs) are the dominant design for latent world models, yet they are usually justified by empirical performance rather than a normative principle. We show that the choice of anti-collapse regulariser determines whether a JEPA's training objective, a prediction loss plus a weighted embedding regulariser, is a valid Active Inference (AIF) variational free energy. We organise four non-contrastive regularisers (VICReg, LogDet, PairDist, and SIGReg) into an entropy-estimator hierarchy indexed by a prior-miscalibration gap, and show that the gap's sign, whether the estimator bounds the latent entropy from above or below, decides whether the AIF surprise bound survives: VICReg and LogDet are unsafe upper bounds, PairDist a safe lower bound, and SIGReg eliminates the gap. We then prove a correspondence theorem: under the standard constant-noise encoder model and successful SIGReg enforcement (isotropic-Gaussian embeddings), the gap vanishes, the objective becomes an exact information bottleneck, the surprise bound is preserved, and the latent goal cost becomes an exact proxy for AIF pragmatic value, whereas VICReg leaves an irreducible second-order anisotropy term. We extend the correspondence to multi-step expected free energy, ensemble epistemic value, and a learned-policy regime, and we identify the one AIF term no current JEPA world model computes: the state-epistemic value, a future-state coverage signal. The predictions differ in kind, not degree, and are stated here as theoretical consequences left for empirical test in separate work; full proofs are in Appendix A, and the algebraic core of every result is machine-verified in Lean 4 (Appendix D).",
+  "abstract_zh": "联合嵌入预测架构（JEPA）是潜在世界模型的主流设计，但其合理性通常基于经验性能而非规范性原则。我们表明，反坍缩正则化器的选择决定了JEPA的训练目标（预测损失加加权嵌入正则化器）是否为有效的主动推理（AIF）变分自由能。我们将四种非对比正则化器（VICReg、LogDet、PairDist和SIGReg）组织成一个由先验校准差距索引的熵估计器层次结构，并表明该差距的符号（即估计器是从上界还是下界约束潜在熵）决定了AIF惊奇界是否成立：VICReg和LogDet是不安全的上界，PairDist是安全的下界，而SIGReg消除了差距。然后我们证明了一个对应定理：在标准常数噪声编码器模型和成功实施SIGReg（各向同性高斯嵌入）下，差距消失，目标成为精确的信息瓶颈，惊奇界得以保留，潜在目标成本成为AIF实用价值的精确代理，而VICReg留下不可约的二阶各向异性项。我们将对应关系扩展到多步期望自由能、集成认知价值和习得策略机制，并识别出当前JEPA世界模型未计算的AIF项：状态认知价值，一种未来状态覆盖信号。这些预测在种类上而非程度上不同，并作为理论结果陈述，留待后续工作的实证检验；完整证明见附录A，每个结果的代数核心在Lean 4中机器验证（附录D）。",
+  "tldr_zh": "SIGReg正则化器使JEPA目标成为精确的主动推理自由能，消除先验校准差距。",
+  "cover_zh": "JEPA世界模型的理论漏洞被补上了？SIGReg让主动推理自由能精确成立！",
+  "authors": [
+    {
+      "name": "Fabio Arnez",
+      "affiliation": ""
+    },
+    {
+      "name": "Alexandra Gomez-Villa",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "published": "2026-07-15",
+  "updated": "2026-07-15",
+  "arxiv_id": "2607.13612",
+  "pdf_url": "https://arxiv.org/pdf/2607.13612v1",
+  "abs_url": "http://arxiv.org/abs/2607.13612v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-13612.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-13612-p2.jpg",
+    "assets/img/covers/arxiv-2607-13612-p3.jpg",
+    "assets/img/covers/arxiv-2607-13612-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 29,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（world model、world models、latent world model、jepa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 29 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "从理论角度统一JEPA世界模型与主动推理，提出SIGReg正则化器，对世界模型设计有指导意义。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Université Paris-Saclay, CEA, List",
+    "Computer Vision Center"
+  ],
+  "method_tags": [
+    "Active Inference",
+    "Joint-Embedding Predictive Architecture",
+    "SIGReg"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
