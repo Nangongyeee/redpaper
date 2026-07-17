@@ -1,0 +1,132 @@
+{
+  "id": "arxiv-2607-14997",
+  "source": "arxiv",
+  "title": "AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight",
+  "title_zh": "AeroAct：面向语言条件四旋翼飞行的以动作为中心的世界-动作模型",
+  "abstract": "Language-conditioned quadrotor flight requires a policy to ground semantic goals, anticipate the visual consequences of ego-motion, and output control references that remain smooth and dynamically executable under rapidly changing first-person views. Existing aerial vision-language navigation and vision-language-action methods commonly use discrete actions, high-level waypoints, or instantaneous velocity commands, which provide limited supervision about how flight actions change future observations. We present AeroAct, an action-centered world-action model (WAM) for quadrotor navigation. To the best of our knowledge, AeroAct is the first WAM instantiated and demonstrated for real-world aerial flight. The model adapts a pretrained video diffusion Transformer to predict local trajectory-action chunks from egocentric visual history, proprioception, and language. Future first-person frames are used during training as dense consequence supervision, while deployment directly decodes actions without generating future video. To obtain aligned visual, state, language, and dynamically feasible action data, we build a DiffAero-based pipeline with complementary Isaac Lab and 3D Gaussian splatting renderers. We further introduce a low-cost handheld collection device that couples camera observations with motion estimates to recreate flight-like egocentric trajectories, and a self-guidance procedure that improves temporal consistency across overlapping trajectory chunks. Closed-loop simulation and real-world experiments show that temporal visual context improves target tracking and object-search performance, and that WAM-based policies can be executed on a physical quadrotor.",
+  "abstract_zh": "语言条件四旋翼飞行要求策略能够理解语义目标、预测自身运动带来的视觉变化，并在快速变化的第一人称视角下输出平滑且动态可执行的控制指令。现有的空中视觉语言导航和视觉语言动作方法通常使用离散动作、高层航点或瞬时速度指令，这些方法对飞行动作如何改变未来观测提供的监督有限。我们提出AeroAct，一种以动作为中心的四旋翼导航世界-动作模型（WAM）。据我们所知，AeroAct是首个在真实世界空中飞行中实例化并演示的WAM。该模型适配预训练的视频扩散Transformer，从第一人称视觉历史、本体感知和语言中预测局部轨迹-动作块。训练时使用未来第一人称帧作为密集后果监督，而部署时直接解码动作，无需生成未来视频。为了获取对齐的视觉、状态、语言和动态可行动作数据，我们构建了基于DiffAero的流水线，并辅以Isaac Lab和3D高斯泼溅渲染器。我们进一步引入了一种低成本手持采集设备，将相机观测与运动估计耦合，以重现类似飞行的第一人称轨迹，以及一种自引导过程，用于改善重叠轨迹块的时间一致性。闭环仿真和真实世界实验表明，时间视觉上下文改善了目标跟踪和物体搜索性能，并且基于WAM的策略可以在物理四旋翼上执行。",
+  "tldr_zh": "首个在真实四旋翼上部署的世界-动作模型，通过预测未来视觉来监督动作学习。",
+  "cover_zh": "四旋翼也能听懂人话？这个模型用未来视觉教它飞得更稳！",
+  "authors": [
+    {
+      "name": "Xinhong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiyuan Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yubo Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haolin Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Runqing Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhao Mo",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhongxin Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinjiang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jian Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Gang Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-16",
+  "updated": "2026-07-16",
+  "arxiv_id": "2607.14997",
+  "pdf_url": "https://arxiv.org/pdf/2607.14997v1",
+  "abs_url": "http://arxiv.org/abs/2607.14997v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-14997.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-14997-p2.jpg",
+    "assets/img/covers/arxiv-2607-14997-p3.jpg",
+    "assets/img/covers/arxiv-2607-14997-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（isaac lab）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "首次将世界-动作模型（WAM）用于真实四旋翼飞行，结合视频扩散预测与动作解码，具身世界模型新范式。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Beijing Institute of Technology",
+    "Independent researcher"
+  ],
+  "method_tags": [
+    "World-Action Model",
+    "video diffusion Transformer",
+    "language-conditioned navigation"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "Isaac Lab",
+    "Isaac Sim"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

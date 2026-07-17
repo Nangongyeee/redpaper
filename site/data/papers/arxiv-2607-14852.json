@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2607-14852",
+  "source": "arxiv",
+  "title": "Towards Human-like Physical Intelligence: LifelongVision-Language-Action Learning for Robotic Manipulation",
+  "title_zh": "迈向类人物理智能：面向机器人操作的生命周期视觉-语言-动作学习",
+  "abstract": "Similar to the natural capabilities of humans to sequentially learn new tasks, robots with Vision-Language-Action (VLA) models should possess lifelong learning ability to learn a new task when deployed in open-world environments. However, most recently proposed lifelong learning models aim to effectively learn the current task (plasticity) or maintain high accuracy on previous tasks (stability), while the plasticity-stability trade-off remains largely unsolved in robotic manipulation models. To address this fundamental challenge, we propose a cache-efficient lifelong Vision-Language-Action learning framework for robotic manipulation (i.e., LifelongVLA), which alleviates the plasticity-stability trade-off with a dual-timescale adaptation mechanism while achieving low-cost robotic deployment with a cache-efficient replay strategy. More concretely, we propose a dual-timescale LoRA gating module to decompose VLA adaptation into two lightweight pathways: a short-term adapter for plasticity and a long-term adapter for stable consolidation. These pathways are integrated via a task-aware gate, enabling explicit control of the plasticity-stability trade-off. In the skill replay phase, a cache-efficient stochastic replay strategy is proposed to preserve more balanced retention signals without full-trajectory storage. Finally, experiments show that LifelongVLA outperforms existing baselines, demonstrating efficient skill expansion, robust retention of learned manipulation behaviors, and reduced reliance on retraining for real-world deployment on an xArm robot.",
+  "abstract_zh": "类似于人类顺序学习新任务的自然能力，配备视觉-语言-动作（VLA）模型的机器人在开放世界环境中部署时，应具备终身学习能力以学习新任务。然而，大多数近期提出的终身学习模型旨在有效学习当前任务（可塑性）或保持对先前任务的高精度（稳定性），而在机器人操作模型中，可塑性-稳定性权衡仍未得到解决。为应对这一基本挑战，我们提出了一种面向机器人操作的高效缓存终身视觉-语言-动作学习框架（即LifelongVLA），该框架通过双时间尺度适应机制缓解可塑性-稳定性权衡，同时通过高效缓存重放策略实现低成本机器人部署。具体而言，我们提出了一种双时间尺度LoRA门控模块，将VLA适应分解为两个轻量级路径：用于可塑性的短期适配器和用于稳定巩固的长期适配器。这些路径通过任务感知门集成，从而实现对可塑性-稳定性权衡的显式控制。在技能重放阶段，提出了一种高效缓存随机重放策略，无需存储完整轨迹即可保留更平衡的保留信号。最后，实验表明LifelongVLA优于现有基线，展示了高效的技能扩展、对已学操作行为的稳健保留，以及在xArm机器人上实际部署时对重新训练的依赖减少。",
+  "tldr_zh": "提出LifelongVLA框架，通过双时间尺度适应机制解决机器人操作中的可塑性-稳定性权衡。",
+  "cover_zh": "机器人学新任务忘旧任务？这个框架用双时间尺度门控让技能扩展与保留两不误",
+  "authors": [
+    {
+      "name": "Yao He",
+      "affiliation": ""
+    },
+    {
+      "name": "Gan Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenqi Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Fazeng Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yang Cong",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-16",
+  "updated": "2026-07-16",
+  "arxiv_id": "2607.14852",
+  "pdf_url": "https://arxiv.org/pdf/2607.14852v1",
+  "abs_url": "http://arxiv.org/abs/2607.14852v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-14852.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-14852-p2.jpg",
+    "assets/img/covers/arxiv-2607-14852-p3.jpg",
+    "assets/img/covers/arxiv-2607-14852-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（real-world deployment）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出终身学习VLA框架，解决塑性-稳定性权衡，有真实机器人实验，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "South China University of Technology",
+    "University of Trento"
+  ],
+  "method_tags": [
+    "Lifelong Learning",
+    "Vision-Language-Action",
+    "Dual-timescale Adaptation"
+  ],
+  "platform": [
+    "xArm"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,137 @@
+{
+  "id": "arxiv-2607-14635",
+  "source": "arxiv",
+  "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+  "title_zh": "Action QFormer：视觉-语言-动作模型中动作监督下的结构化表示塑造",
+  "abstract": "Action supervision in vision-language-action (VLA) models is often treated as a downstream objective for learning action prediction. In this paper, we study it instead as a force that shapes inherited multimodal representations. We show that this shaping has a dual effect: it is necessary for forming action-compatible representations, but when action supervision is applied too directly to the inherited multimodal pathway, it can also destabilize representations that support language-side processing and object grounding. To address this tension, we introduce Action QFormer, a query-based action-facing interface that uses instruction-conditioned queries to reorganize inherited multimodal information into action-facing representations before downstream action generation. In zero-shot sim-to-real navigation, Action QFormer improves average closed-loop task success from 18.8% to 56.3%, raises fixed-instruction action-generation correctness from 22.5% to 75.5%, and nearly eliminates out-of-distribution instruction generations. Further analyses show that Action QFormer changes how action supervision shapes inherited multimodal representations, reducing broad upstream rewriting while preserving targeted and sometimes constructive action-supervised adaptation. These results suggest that improving VLA performance requires not only stronger pretrained backbones, but also better ways of selecting and organizing inherited multimodal information while controlling how it is shaped under action supervision.",
+  "abstract_zh": "在视觉-语言-动作（VLA）模型中，动作监督通常被视为学习动作预测的下游目标。本文则将其视为一种塑造继承的多模态表示的力量。我们表明这种塑造具有双重效应：它对于形成与动作兼容的表示是必要的，但当动作监督过于直接地应用于继承的多模态通路时，它也可能破坏支持语言处理和对象定位的表示的稳定性。为了解决这一矛盾，我们引入了Action QFormer，一种基于查询的面向动作的接口，它使用指令条件查询在下游动作生成之前将继承的多模态信息重新组织为面向动作的表示。在零样本仿真到真实导航中，Action QFormer将平均闭环任务成功率从18.8%提升至56.3%，将固定指令动作生成正确率从22.5%提升至75.5%，并几乎消除了分布外指令生成。进一步分析表明，Action QFormer改变了动作监督塑造继承的多模态表示的方式，减少了广泛的上游重写，同时保留了有针对性的、有时是建设性的动作监督适应。这些结果表明，提高VLA性能不仅需要更强的预训练骨干，还需要更好的方法来选择和组织继承的多模态信息，同时控制其在动作监督下的塑造方式。",
+  "tldr_zh": "提出Action QFormer，通过查询接口重塑多模态表示，显著提升VLA模型零样本导航性能。",
+  "cover_zh": "动作监督竟会破坏语言表示？这个新接口让VLA模型导航成功率翻三倍",
+  "authors": [
+    {
+      "name": "Yufeng Ji",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenhao Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoyi Niu",
+      "affiliation": ""
+    },
+    {
+      "name": "Koushil Sreenath",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhongyu Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.AI",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.RO"
+  ],
+  "published": "2026-07-16",
+  "updated": "2026-07-16",
+  "arxiv_id": "2607.14635",
+  "pdf_url": "https://arxiv.org/pdf/2607.14635v1",
+  "abs_url": "http://arxiv.org/abs/2607.14635v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-14635.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-14635-p2.jpg",
+    "assets/img/covers/arxiv-2607-14635-p3.jpg",
+    "assets/img/covers/arxiv-2607-14635-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Koushil Sreenath"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 23,
+  "source_tags": [],
+  "score": 64,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Koushil Sreenath"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（sim-to-real、zero-shot sim-to-real）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 23 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出Action QFormer改进VLA模型的动作监督与表征塑造，零样本sim-to-real导航性能大幅提升，具有科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Shanghai Qizhi Institute",
+    "The Chinese University of Hong Kong",
+    "Hong Kong Embodied AI Lab",
+    "Tsinghua University"
+  ],
+  "method_tags": [
+    "Action QFormer",
+    "sim-to-real",
+    "navigation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
