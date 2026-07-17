@@ -1,6 +1,6 @@
 {
   "date": "2026-07-05",
-  "count": 3,
+  "count": 4,
   "papers": [
     {
       "id": "arxiv-2607-04434",
@@ -212,6 +212,62 @@
       "github": {},
       "source_tags": [
         "qbitai"
+      ]
+    },
+    {
+      "id": "arxiv-2607-04500",
+      "source": "arxiv_discover",
+      "title": "Geographic Diversity Beats Data Volume for Cross-Domain Generalization in Zero-Label JEPA Driving World Models",
+      "title_zh": "地理多样性胜过数据量：零标签JEPA驾驶世界模型的跨域泛化",
+      "tldr_zh": "地理多样性数据比单纯增加数据量更能提升驾驶世界模型的跨域泛化能力",
+      "cover_zh": "数据量多不一定好？地理多样性让驾驶模型泛化能力飙升16.5%",
+      "abstract_zh": "自监督潜在世界模型可以在没有任何人工标签的情况下为驾驶场景分配一个惊喜分数。一个自然的后续问题是，这种在一个地理区域的驾驶数据上训练的模型，能否将其复杂性概念泛化到未见过的城市和传感器配置。我们通过一个受控迁移实验来研究这个问题：我们在nuPlan数据（匹兹堡、波士顿、新加坡）上训练基于JEPA的世界模型，并在来自迈阿密和奥斯汀的保留Argoverse 2验证场景上进行零样本评估。我们发现，在地理多样性数据上训练的模型比在等量的单一地理数据上训练的模型泛化能力显著更好。在每种条件63,000个场景的匹配规模消融实验中（每种3个种子），联合训练相对于仅nuPlan训练将平均惊喜分数降低了16.5%（0.228 ± 0.015 vs 0.273 ± 0.008）。值得注意的是，使用200,000个仅AV2场景（来自单一地理区域的3倍数据）训练仍然产生更高的惊喜分数（0.264），这表明地理多样性比原始数据量更能预测跨域泛化能力。",
+      "authors": [
+        "Santosh Jaiswal"
+      ],
+      "authors_all": [
+        "Santosh Jaiswal"
+      ],
+      "primary_category": "",
+      "published": "2026-07-05",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-04500.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-04500-p2.jpg",
+        "assets/img/covers/arxiv-2607-04500-p3.jpg",
+        "assets/img/covers/arxiv-2607-04500-p4.jpg"
+      ],
+      "arxiv_id": "2607.04500",
+      "abs_url": "http://arxiv.org/abs/2607.04500v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.04500v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "研究JEPA世界模型的地理多样性泛化，核心贡献在world model，实验严谨，有实际价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "JEPA",
+        "world model",
+        "zero-shot generalization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
       ]
     }
   ]
