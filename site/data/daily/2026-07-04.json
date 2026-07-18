@@ -1,7 +1,88 @@
 {
   "date": "2026-07-04",
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "id": "arxiv-2607-03964",
+      "source": "arxiv_discover",
+      "title": "Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control",
+      "title_zh": "Worldscape-MoE：面向可扩展异构动作控制的统一混合专家世界模型",
+      "tldr_zh": "提出统一混合专家世界模型，利用异构动作监督提升多类控制能力。",
+      "cover_zh": "不同动作信号也能一起训练？这个世界模型让机器人、手控和运动控制全提升",
+      "abstract_zh": "世界模型正迅速成为具身智能和交互智能体的核心基础设施：它们提供可控的模拟器，智能体可以在其中感知、行动、预测并获取可扩展的经验。然而，当前的视频生成世界模型仍然围绕孤立的控制接口组织，例如相机轨迹、机器人动作或手部关节信号。这种碎片化日益成为扩展瓶颈。核心挑战并非缺乏可控生成器，而是缺乏一个统一且可扩展的学习框架，该框架能够吸收异构动作监督，同时保留共享的世界动态模型。在这项工作中，我们提出了Worldscape-MoE，一个基于扩散Transformer的混合专家世界模型，用于可扩展的异构动作控制。我们的关键观察是：不同的控制指定了同一底层世界的不同接口——尽管它们的表示不同，但它们约束了共享的物理规律、场景动态和交互语义。Worldscape-MoE通过模态感知控制注入、共享和特定控制专家，以及支持持续扩展到新动作模态的渐进式MoE调优策略，将这一观察付诸实践。在运动、机器人操作和以自我为中心的手部控制上的实验表明，异构监督改善而非干扰了单个控制能力。Worldscape-MoE在WorldArena上取得了强劲结果，提升了运动和控制指标，展现出鲁棒的分布外泛化能力，并随着更多控制数据和专家的集成而表现出扩展行为。",
+      "authors": [
+        "Jianjie Fang",
+        "Yongyan Xu",
+        "Ziyou Wang"
+      ],
+      "authors_all": [
+        "Jianjie Fang",
+        "Yongyan Xu",
+        "Ziyou Wang",
+        "Chen Gao",
+        "Yuchao Huang",
+        "Zhaolu Wang",
+        "Rongze Tang",
+        "Mingyuan Jia",
+        "Baining Zhao",
+        "Weichen Zhang",
+        "Xin Zhang",
+        "Haisheng Su",
+        "Yu Shang",
+        "Wei Wu",
+        "Xinlei Chen",
+        "Yong Li"
+      ],
+      "primary_category": "",
+      "published": "2026-07-04",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-03964.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-03964-p2.jpg",
+        "assets/img/covers/arxiv-2607-03964-p3.jpg",
+        "assets/img/covers/arxiv-2607-03964-p4.jpg"
+      ],
+      "arxiv_id": "2607.03964",
+      "abs_url": "http://arxiv.org/abs/2607.03964v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.03964v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出统一MoE世界模型，融合异构动作控制，实验覆盖locomotion/manipulation/hand control，具身世界模型前沿",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Manifold AI"
+      ],
+      "method_tags": [
+        "Mixture-of-Experts",
+        "Diffusion Transformers",
+        "heterogeneous action control"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
     {
       "id": "arxiv-2607-03723",
       "source": "arxiv_discover",
