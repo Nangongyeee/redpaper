@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2607-12114",
+  "source": "arxiv_discover",
+  "title": "GaitSpan: Growing Humanoid Locomotion from Walking to Running",
+  "title_zh": "GaitSpan：从行走到奔跑的人形机器人步态扩展",
+  "abstract": "A humanoid that can walk should not relearn locomotion from scratch to jog or run. Yet current approaches often obtain gait diversity by prescribing gait schedules, imitating motion clips, training experts to switch between or distilling skills into one policy. These strategies can produce impressive behaviors, but offer limited flexibility across continuous speed commands, terrains, and morphologies. We study skill growth with GaitSpan, a framework that expands a pretrained, basic walking policy into faster locomotion. It treats walking as a seed skill: reusable motor structure for balance, support, body coordination, and contact transition that can be regenerated at new rhythms, extended into longer/higher strides, and corrected by residual adaptation. This expansion has three aspects: 1) rhythm generation, which modulates the frozen walking policy with multiple internal clocks and learns command-conditioned combinations of the resulting canonical actions; 2) stride shaping, which rewards dynamic locomotion patterns appropriate for higher commanded speeds using a physically grounded objective inspired by spring-loaded inverted pendulum dynamics; and 3) residual adaptation, which captures motion details not accounted for by rhythm generation or stride shaping. GaitSpan is the first to deliver a single command-conditioned humanoid policy that spans walking, jogging, and running-like regimes covering a continuous speed range, transfers across morphologies, and deploys zero-shot on unseen sim-to-sim, and real-world terrains. Compared with baselines either trained with multi-experts or imitation from humans, it learns faster and achieves stronger gait performance.",
+  "abstract_zh": "一个能行走的人形机器人不应为了慢跑或奔跑而从头学习运动。然而，当前的方法通常通过预设步态调度、模仿运动片段、训练专家切换或将技能蒸馏到一个策略中来获得步态多样性。这些策略可以产生令人印象深刻的行为，但在连续速度指令、地形和形态上的灵活性有限。我们研究了GaitSpan框架下的技能增长，该框架将预训练的基本行走策略扩展为更快的运动。它将行走视为种子技能：可重复使用的运动结构，用于平衡、支撑、身体协调和接触过渡，可以在新的节奏下再生，扩展到更长/更高的步幅，并通过残差适应进行修正。这种扩展包含三个方面：1）节奏生成，通过多个内部时钟调制冻结的行走策略，并学习基于指令的条件组合产生的规范动作；2）步幅塑造，利用受弹簧加载倒立摆动力学启发的物理基础目标，奖励适合更高指令速度的动态运动模式；3）残差适应，捕捉节奏生成或步幅塑造未考虑的运动细节。GaitSpan是首个提供单一指令条件的人形机器人策略，涵盖行走、慢跑和类似奔跑的步态，覆盖连续速度范围，跨形态迁移，并在未见过的仿真到仿真和真实世界地形上零样本部署。与使用多专家或从人类模仿训练的基线相比，它学习更快，并实现了更强的步态性能。",
+  "tldr_zh": "GaitSpan将行走策略扩展为奔跑，实现连续速度指令下的单一策略。",
+  "cover_zh": "行走策略直接变奔跑？这个框架让机器人一步到位",
+  "authors": [
+    {
+      "name": "Kwan-Yee Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Zilin Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Janelle J. Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Stella X. Yu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.CV",
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-07-13",
+  "updated": "2026-07-13",
+  "arxiv_id": "2607.12114",
+  "pdf_url": "https://arxiv.org/pdf/2607.12114v1",
+  "abs_url": "http://arxiv.org/abs/2607.12114v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-12114.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-12114-p2.jpg",
+    "assets/img/covers/arxiv-2607-12114-p3.jpg",
+    "assets/img/covers/arxiv-2607-12114-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Berkeley (BAIR)"
+    }
+  ],
+  "related_links": [],
+  "page_count": 30,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 37,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Berkeley (BAIR)” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（locomotion、gait、dynamic locomotion）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 30 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "locomotion",
+    "reason": "提出GaitSpan框架，实现人形机器人从行走到跑步的连续速度控制，具有高科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Michigan",
+    "Skyline High School",
+    "UC Berkeley"
+  ],
+  "method_tags": [
+    "skill growth",
+    "gait expansion",
+    "residual adaptation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
