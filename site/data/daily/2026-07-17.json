@@ -1,0 +1,399 @@
+{
+  "date": "2026-07-17",
+  "count": 6,
+  "papers": [
+    {
+      "id": "arxiv-2607-16187",
+      "source": "arxiv",
+      "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+      "title_zh": "Handroid：桥接灵巧手与人形机器人",
+      "tldr_zh": "一个可重构的桌面机器人，既能当灵巧手又能当人形机器人。",
+      "cover_zh": "一个机器人两种形态｜灵巧手秒变人形机器人，还能自己走路抓东西",
+      "abstract_zh": "灵巧手和人形机器人通常被开发为不同的实体：前者在物体尺度上实现接触丰富的操作，而后者在以人为中心的环境中提供移动性和全身交互。我们提出Handroid，一种桌面级双实体机器人，在单个可重构平台中集成了这两种能力。Handroid重复使用一个27自由度的机电本体，既可以作为灵巧手，也可以作为桌面人形机器人，高度0.33米，重量2.05千克。在灵巧手实体中，20个自由度构成一个与人类手部运动学结构紧密匹配的拟人化手。在人形机器人实体中，相同的关节模块被重新配置为具有头部、手臂和腿的人形机器人，包括用于移动和全身运动的12自由度下肢结构。Handroid还提供了一个统一的控制和学习框架，支持手部遥操作、灵巧抓取、手内操作、人形机器人移动、步态生成和交互式动作创作。我们通过真实世界的灵巧操作、基于强化学习的移动、关键帧动作部署以及一个涉及实体重配置、移动、对接和灵巧拾取放置的长时域任务来验证该平台。这些结果使Handroid成为推动形态可重构机器人和跨实体机器人学习的紧凑且可复现的平台。",
+      "authors": [
+        "Ruogu Li",
+        "Chenyang Ma",
+        "Sikai Li"
+      ],
+      "authors_all": [
+        "Ruogu Li",
+        "Chenyang Ma",
+        "Sikai Li",
+        "Zhenyu Wei",
+        "Yunchao Yao",
+        "Haochen Shi",
+        "C. Karen Liu",
+        "Shuran Song",
+        "Mingyu Ding"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ C. Karen Liu"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Shuran Song"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-16187.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-16187-p2.jpg",
+        "assets/img/covers/arxiv-2607-16187-p3.jpg",
+        "assets/img/covers/arxiv-2607-16187-p4.jpg"
+      ],
+      "arxiv_id": "2607.16187",
+      "abs_url": "http://arxiv.org/abs/2607.16187v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16187v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 57,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出可重构双形态机器人平台，兼具灵巧手与人形，支持全身控制与操作，创新性强。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of North Carolina at Chapel Hill",
+        "Stanford University"
+      ],
+      "method_tags": [
+        "reinforcement learning",
+        "teleoperation",
+        "loco-manipulation"
+      ],
+      "platform": [
+        "Handroid"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-16095",
+      "source": "arxiv",
+      "title": "Let the Body Follow: Coupled Egocentric Control for Whole-Body Robot Teleoperation",
+      "title_zh": "让身体跟随：用于全身机器人遥操作的耦合自我中心控制",
+      "tldr_zh": "提出耦合自我中心控制，让机器人躯干和底座自动跟随操作者头部和手臂运动，提升遥操作效率。",
+      "cover_zh": "不用再手忙脚乱｜机器人躯干自动跟随你的头和手",
+      "abstract_zh": "全身遥操作要求用户协调多个机器人组件的感知、操作、姿态和移动。这种协调很困难，因为用户必须同时控制机器人的头部、手臂、躯干和底座，同时保持任务意识并避免运动学或环境约束。在本文中，我们提出了耦合自我中心控制，一种身体跟随遥操作方法，其中机器人的躯干和底座自动响应操作者的头部和手臂运动。系统不需要对每个躯干或底座调整进行明确的触控板命令，而是让用户专注于注视和手部控制：头部俯仰调整躯干高度，头部偏航驱动底座旋转，末端执行器高度调整躯干运动，末端执行器工作空间边界触发底座平移。我们在一个用户研究中评估了该方法，该研究涉及对TIAGo移动操作器进行全身遥操作，执行家庭护理启发的任务。与基线混合界面相比，耦合自我中心控制提高了物体操作效率，减少了基于按钮的控制努力和手臂奇异性，降低了心理需求和整体工作负荷，并提高了易用性、易学性、信心以及用户对躯干和底座控制的偏好。",
+      "authors": [
+        "Tsung-Chi Lin",
+        "Yichen Xie",
+        "Chien-Ming Huang"
+      ],
+      "authors_all": [
+        "Tsung-Chi Lin",
+        "Yichen Xie",
+        "Chien-Ming Huang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 Humanoids 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-16095.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-16095-p2.jpg",
+        "assets/img/covers/arxiv-2607-16095-p3.jpg",
+        "assets/img/covers/arxiv-2607-16095-p4.jpg"
+      ],
+      "arxiv_id": "2607.16095",
+      "abs_url": "http://arxiv.org/abs/2607.16095v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16095v1",
+      "venue": "Humanoids 2026",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "提出耦合自我中心控制用于全身遥操作，降低用户负担，有用户研究验证。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "New Jersey Institute of Technology",
+        "Johns Hopkins University"
+      ],
+      "method_tags": [
+        "teleoperation",
+        "whole-body control"
+      ],
+      "platform": [
+        "TIAGo"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15642",
+      "source": "arxiv",
+      "title": "Difference-Based Relational Learning for Zero-Shot Object-Goal Visual Navigation With Direct Sim-to-Real Transfer",
+      "title_zh": "基于差异的关系学习用于零样本目标物体视觉导航及直接仿真到现实迁移",
+      "tldr_zh": "提出T-DRN网络，通过差异特征和时序缓冲实现零样本目标导航的仿真到现实直接迁移。",
+      "cover_zh": "零样本导航也能直接迁移到真实机器人？这个网络用差异特征搞定仿真到现实",
+      "abstract_zh": "端到端深度强化学习（DRL）在零样本目标物体视觉导航中仍面临仿真到现实差距的挑战，尤其是物体外观变化和受限的相机视场角（FoV）。本文提出了一种时序差异关系网络（T-DRN），用于鲁棒的零样本仿真到现实迁移。T-DRN结合了基于孪生网络的差异特征提取器（计算目标与观测物体之间的关系差异以产生域无关表示）和双帧时序缓冲区（在窄FoV下保持短期物体连续性）。在AI2-THOR中的大量实验表明，T-DRN在成功率上相比强基线提升了零样本泛化能力。此外，T-DRN在物理轮式机器人上进行了系统验证，展示了在真实感知和驱动约束下的鲁棒性能，支持直接仿真到现实迁移的可行性。",
+      "authors": [
+        "Guolei Qi",
+        "Feitian Zhang"
+      ],
+      "authors_all": [
+        "Guolei Qi",
+        "Feitian Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15642.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15642-p2.jpg",
+        "assets/img/covers/arxiv-2607-15642-p3.jpg",
+        "assets/img/covers/arxiv-2607-15642-p4.jpg"
+      ],
+      "arxiv_id": "2607.15642",
+      "abs_url": "http://arxiv.org/abs/2607.15642v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15642v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "sim2real",
+        "reason": "提出T-DRN网络实现零样本sim-to-real迁移，在仿真和真机上验证，属于sim2real方向",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "reinforcement learning",
+        "zero-shot object-goal navigation",
+        "sim-to-real"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "AI2-THOR"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15898",
+      "source": "arxiv",
+      "title": "Orbis 2: A Hierarchical World Model for Driving",
+      "title_zh": "Orbis 2：一种用于驾驶的分层世界模型",
+      "tldr_zh": "提出分层驾驶世界模型，结合扩散与教师强迫训练，实现高保真与稳定展开。",
+      "cover_zh": "驾驶世界模型也能分层？两阶段训练让预测更稳更准！",
+      "abstract_zh": "当前的世界模型在单一抽象层次上运行，大多数模型优先考虑感知保真度，但缺乏实际下游任务所需的空间推理和语义理解。我们提出了一种分层驾驶世界模型，该模型将未来预测分解为两个不同时间和抽象尺度的层次：一个高层预测器，用于在长时间范围内预测粗略的场景结构；以及一个低层生成器，用于根据高层输出生成详细的预测。这种分解在实现高感知保真度的同时，也捕获了强大的空间和语义表示。我们进一步表明，使用扩散强迫目标进行预训练比标准教师强迫目标产生更丰富的内部表示，而教师强迫——仅从干净上下文预测下一帧——产生更稳定的自回归展开。因此，我们引入了一种通用的两阶段训练范式，先用扩散强迫预训练模型，再用教师强迫微调，结合了前者的表示优势和后者的展开稳定性。我们的方法在标准驾驶世界模型评估套件上取得了最先进的结果，包括长时生成保真度、基于反事实场景的转向响应性以及内部表示质量。项目页面（含代码、演示、检查点和定性结果）：https://lmb-freiburg.github.io/orbis2.github.io/",
+      "authors": [
+        "Sudhanshu Mittal",
+        "Arian Mousakhan",
+        "Silvio Galesso"
+      ],
+      "authors_all": [
+        "Sudhanshu Mittal",
+        "Arian Mousakhan",
+        "Silvio Galesso",
+        "Karim Farid",
+        "Jonannes Dienert",
+        "Rajat Sahay",
+        "Thomas Brox"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-17",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15898.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15898-p2.jpg",
+        "assets/img/covers/arxiv-2607-15898-p3.jpg",
+        "assets/img/covers/arxiv-2607-15898-p4.jpg"
+      ],
+      "arxiv_id": "2607.15898",
+      "abs_url": "http://arxiv.org/abs/2607.15898v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15898v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出层次化驾驶世界模型，含扩散强迫预训练，SOTA结果，核心贡献在world model",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Freiburg"
+      ],
+      "method_tags": [
+        "hierarchical world model",
+        "diffusion forcing",
+        "teacher forcing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15701",
+      "source": "arxiv",
+      "title": "RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC",
+      "title_zh": "RAVEN：基于强化学习自适应可见性图规划的鲁棒人形导航与无碰撞MPC",
+      "tldr_zh": "提出RL自适应可见性图规划结合MPC，提升人形导航在延迟和噪声下的鲁棒性。",
+      "cover_zh": "机器人导航总撞墙？RL+MPC让它在延迟噪声下也能稳如老狗",
+      "abstract_zh": "在动态环境中，人形机器人导航需要在长期规划的同时满足短期动态和安全约束。经典的可见性图规划器结合模型预测控制（MPC）能够高效生成无碰撞轨迹，但其性能依赖于手动调参和精确的系统建模。在实际机器人系统中，控制延迟、状态估计噪声和运动不确定性可能导致超调量和约束违反，即使名义路径在几何上是最优的。我们提出RAVEN，一种分层强化学习（RL）-MPC框架，用于鲁棒的人形导航。与先前使用学习来调整成本权重或完全替代规划的方法不同，RAVEN通过修改障碍物膨胀和相关图参数，利用RL自适应调整可见性图规划器的几何构建。通过直接重塑自由空间几何，学习到的规划器改变全局路径的拓扑结构，以补偿延迟和跟踪缺陷。然后，一个无碰撞MPC层跟踪规划轨迹，同时显式强制执行速度边界和避障约束。通过在真实延迟和观测噪声下训练，RAVEN学习规划自适应，从而提高鲁棒性，同时保留显式的长期几何规划和约束优化，这与端到端学习方法形成对比。我们将RAVEN与手动调参的可见性图MPC基线和纯RL导航策略进行了评估。结果表明，在障碍物附近超调量减少，狭窄通道中的鲁棒性提高，并且在延迟和噪声下导航更可靠。这些发现表明，强化自适应图构建结合约束MPC为鲁棒人形导航提供了一种有效且可解释的端到端学习替代方案。",
+      "authors": [
+        "Ruochen Hou",
+        "Shiqi Wang",
+        "Beom Jun Kim"
+      ],
+      "authors_all": [
+        "Ruochen Hou",
+        "Shiqi Wang",
+        "Beom Jun Kim",
+        "Hanzhang Fang",
+        "Mehak Singal",
+        "Dennis W. Hong"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15701.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15701-p2.jpg",
+        "assets/img/covers/arxiv-2607-15701-p3.jpg",
+        "assets/img/covers/arxiv-2607-15701-p4.jpg"
+      ],
+      "arxiv_id": "2607.15701",
+      "abs_url": "http://arxiv.org/abs/2607.15701v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15701v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形机器人导航结合RL与MPC，提出鲁棒规划框架，属于loco-manip-wbc方向",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of California, Los Angeles"
+      ],
+      "method_tags": [
+        "RL",
+        "MPC",
+        "visibility-graph planning"
+      ],
+      "platform": [
+        "T1 Booster"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15733",
+      "source": "arxiv",
+      "title": "A Task-Space Receding Horizon Controller for Fast Collision Avoidance",
+      "title_zh": "面向快速避障的任务空间滚动时域控制器",
+      "tldr_zh": "提出一种任务空间滚动时域控制器，通过短时滚动生成参考轨迹，实现快速避障且计算高效。",
+      "cover_zh": "避障还能这么快？短时滚动+最小加速度，动态杂乱环境成功率飙升",
+      "abstract_zh": "机器人操作臂的实时避障需要快速响应意外障碍物运动，并具备前瞻性以避免被近未来约束困住。全模型预测控制能提供这种预见性，但其在线计算成本会随预测时域长度、模型保真度和活跃几何约束数量快速增长。相反，无时域的反应式方法计算高效，但在动态杂乱环境中可能短视。我们提出一种任务空间滚动时域控制器，利用短时接触一致滚动生成满足内部非穿透约束的终端运动学参考，然后仅计算朝向该参考的光滑最小加速度过渡的第一个输入。从闭环逆运动学调节律出发，滚动通过迭代动力学求解器在膨胀的凸机器人和障碍物几何体上执行，使得机器人-障碍物接触、动态障碍物运动和自碰撞能够塑造终端参考，而无需完整的约束轨迹优化。我们分析了无接触闭环，并展示了在标准正则性假设下的局部指数任务空间调节。对于滚动内激活的接触，我们描述了相应的离散更新，并界定了移动障碍物对正则工作集的影响。在40自由度多链系统上的仿真表明，中等时域长度在预见性、响应性和计算成本之间取得平衡。在6自由度平台上的硬件实验展示了无需精确惯性参数估计的一致仿真到现实行为，与动态优化织物和模型预测控制基线的比较表明，在动态杂乱环境中成功率提高，同时保持与测试场景中实时执行兼容的求解时间。",
+      "authors": [
+        "Mattia Penzotti",
+        "Marco Controzzi"
+      ],
+      "authors_all": [
+        "Mattia Penzotti",
+        "Marco Controzzi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15733.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15733-p2.jpg",
+        "assets/img/covers/arxiv-2607-15733-p3.jpg",
+        "assets/img/covers/arxiv-2607-15733-p4.jpg"
+      ],
+      "arxiv_id": "2607.15733",
+      "abs_url": "http://arxiv.org/abs/2607.15733v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15733v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出任务空间滚动时域控制器，结合短时滚动与避碰，实验验证效果好，对操作规划有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Scuola Superiore Sant'Anna"
+      ],
+      "method_tags": [
+        "task-space receding-horizon control",
+        "collision avoidance"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}

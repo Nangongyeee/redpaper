@@ -422,6 +422,91 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-13059",
+      "source": "arxiv_discover",
+      "title": "GPUSimBench: Towards Scalable and Reliable GPU-Accelerated Simulators in Embodied AI",
+      "title_zh": "GPUSimBench：迈向具身AI中可扩展且可靠的GPU加速模拟器",
+      "tldr_zh": "提出GPUSimBench基准，揭示GPU模拟器在扩展时存在非确定性和物理不一致问题。",
+      "cover_zh": "GPU模拟器竟有隐藏bug？新基准揭示扩展时的不确定性陷阱",
+      "abstract_zh": "数据驱动的具身AI正迅速转向通过大规模并行模拟进行训练的范式，其中GPU加速模拟器作为基础数据基础设施。然而，随着计算吞吐量的扩展，并行效率、物理保真度和执行确定性之间的潜在权衡仍未得到充分研究，阻碍了可靠机器人学习的发展。本文通过引入GPUSimBench，揭示了主流基于GPU的机器人模拟器（如Isaac Lab、Genesis）的隐藏限制，重点关注可扩展性、物理一致性和计算确定性。首先，GPUSimBench通过一个受控的斜面任务建立物理基础评估，量化模拟动力学与其真实世界对应物之间的分布对齐。其次，我们通过测量跨扩展环境数量的吞吐量和内存占用，对并行可扩展性进行基准测试。关键的是，除了标准性能指标外，我们揭示并量化了GPU批处理执行引入的固有非确定性，其特征是在相同初始条件下存在显著的运行间和环境间变异性。最后，我们识别了当前模拟器堆栈中随机性的四个经验区域，强调无约束扩展可能在没有明确约束的情况下损害可重复性。",
+      "authors": [
+        "Huzhenyu Zhang",
+        "Shenghai Yuan",
+        "Wenrui Yan"
+      ],
+      "authors_all": [
+        "Huzhenyu Zhang",
+        "Shenghai Yuan",
+        "Wenrui Yan",
+        "Li Ma",
+        "Hengjie Li",
+        "Jingcheng Pang",
+        "Dmitry Yudin"
+      ],
+      "primary_category": "",
+      "published": "2026-07-06",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 上海 AI Lab"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · IROS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-13059.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-13059-p2.jpg",
+        "assets/img/covers/arxiv-2607-13059-p3.jpg",
+        "assets/img/covers/arxiv-2607-13059-p4.jpg"
+      ],
+      "arxiv_id": "2607.13059",
+      "abs_url": "http://arxiv.org/abs/2607.13059v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13059v1",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-07-19",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "聚焦GPU加速仿真器的可扩展性、物理一致性与确定性，对sim2real和机器人学习有重要价值",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shanghai AI Laboratory",
+        "MIRAI",
+        "Nanyang Technological University",
+        "Nanjing University"
+      ],
+      "method_tags": [
+        "GPU-accelerated simulation",
+        "parallel scalability",
+        "physical consistency"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "Isaac Lab",
+        "Genesis"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-04816",
       "source": "arxiv",
       "title": "CAC-VLA: Context-Gated Action Conditioning for Vision-Language-Action Models",
@@ -854,87 +939,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-13059",
-      "source": "arxiv_discover",
-      "title": "GPUSimBench: Towards Scalable and Reliable GPU-Accelerated Simulators in Embodied AI",
-      "title_zh": "GPUSimBench：迈向具身AI中可扩展且可靠的GPU加速模拟器",
-      "tldr_zh": "提出GPUSimBench基准，揭示GPU模拟器在扩展时存在非确定性和物理不一致问题。",
-      "cover_zh": "GPU模拟器竟有隐藏bug？新基准揭示扩展时的不确定性陷阱",
-      "abstract_zh": "数据驱动的具身AI正迅速转向通过大规模并行模拟进行训练的范式，其中GPU加速模拟器作为基础数据基础设施。然而，随着计算吞吐量的扩展，并行效率、物理保真度和执行确定性之间的潜在权衡仍未得到充分研究，阻碍了可靠机器人学习的发展。本文通过引入GPUSimBench，揭示了主流基于GPU的机器人模拟器（如Isaac Lab、Genesis）的隐藏限制，重点关注可扩展性、物理一致性和计算确定性。首先，GPUSimBench通过一个受控的斜面任务建立物理基础评估，量化模拟动力学与其真实世界对应物之间的分布对齐。其次，我们通过测量跨扩展环境数量的吞吐量和内存占用，对并行可扩展性进行基准测试。关键的是，除了标准性能指标外，我们揭示并量化了GPU批处理执行引入的固有非确定性，其特征是在相同初始条件下存在显著的运行间和环境间变异性。最后，我们识别了当前模拟器堆栈中随机性的四个经验区域，强调无约束扩展可能在没有明确约束的情况下损害可重复性。",
-      "authors": [
-        "Huzhenyu Zhang",
-        "Shenghai Yuan",
-        "Wenrui Yan"
-      ],
-      "authors_all": [
-        "Huzhenyu Zhang",
-        "Shenghai Yuan",
-        "Wenrui Yan",
-        "Li Ma",
-        "Hengjie Li",
-        "Jingcheng Pang",
-        "Dmitry Yudin"
-      ],
-      "primary_category": "",
-      "published": "2026-07-06",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 上海 AI Lab"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ NTU"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-13059.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-13059-p2.jpg",
-        "assets/img/covers/arxiv-2607-13059-p3.jpg",
-        "assets/img/covers/arxiv-2607-13059-p4.jpg"
-      ],
-      "arxiv_id": "2607.13059",
-      "abs_url": "http://arxiv.org/abs/2607.13059v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.13059v1",
-      "venue": "IROS 2026",
-      "venue_announced": "2026-07-19",
-      "score": 31,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "sim2real",
-        "reason": "聚焦GPU加速仿真器的可扩展性、物理一致性与确定性，对sim2real和机器人学习有重要价值",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Shanghai AI Laboratory",
-        "MIRAI",
-        "Nanyang Technological University",
-        "Nanjing University"
-      ],
-      "method_tags": [
-        "GPU-accelerated simulation",
-        "parallel scalability",
-        "physical consistency"
-      ],
-      "platform": [],
-      "sim_stack": [
-        "Isaac Lab",
-        "Genesis"
-      ],
-      "method_family": "",
-      "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2607-04591",
