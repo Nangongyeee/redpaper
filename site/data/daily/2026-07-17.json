@@ -1,6 +1,6 @@
 {
   "date": "2026-07-17",
-  "count": 6,
+  "count": 13,
   "papers": [
     {
       "id": "arxiv-2607-16187",
@@ -29,7 +29,10 @@
       "primary_category": "cs.RO",
       "published": "2026-07-17",
       "channels": [
-        "loco-manip-wbc"
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop",
+        "locomotion"
       ],
       "badges": [
         {
@@ -56,7 +59,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.16187v1",
       "venue": "",
       "venue_announced": "",
-      "score": 57,
+      "score": 65,
       "judge": {
         "relevant": true,
         "research_value": "high",
@@ -76,6 +79,79 @@
       "platform": [
         "Handroid"
       ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15982",
+      "source": "arxiv",
+      "title": "Data and Learning Where it Matters for Contact-Rich Manipulation",
+      "title_zh": "数据与学习用在接触密集操作的关键之处",
+      "tldr_zh": "仅用2小时自主数据收集，在接触密集任务中实现96%成功率",
+      "cover_zh": "端到端训练总翻车？这个新方法只收集关键数据，成功率飙到96%",
+      "abstract_zh": "在大规模数据集上端到端训练的学习策略在高精度任务中往往表现脆弱，且难以泛化。我们发现这些限制主要源于数据收集缺乏结构和重点。我们的关键洞察是仅在接触密集任务的关键部分进行密集数据收集，而在简单的自由空间运动中依赖传统规划。我们提出了一种自动数据收集方案，结合离线深度强化学习用于任务的关键部分，消除了对遥操作员技能和在线策略更新的依赖。在四个具有挑战性的真实世界任务中，仅使用2到2.5小时的自主数据收集，我们实现了平均96%的成功率，而最强基线为55%。值得注意的是，在端到端方法难以应对的分布外场景中，性能仍然保持高水平。我们的结果为接触密集任务的定向数据收集以及高精度应用中的高成功率铺平了道路。",
+      "authors": [
+        "Oliver Hausdörfer",
+        "Linus Schwarz",
+        "Gabor Marko"
+      ],
+      "authors_all": [
+        "Oliver Hausdörfer",
+        "Linus Schwarz",
+        "Gabor Marko",
+        "Christian Dietz",
+        "Timo Class",
+        "Luka Hofer",
+        "Jim Yun-Jin Li",
+        "Johannes Hechtl",
+        "Ralf Römer",
+        "Angela P. Schoellig"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ TUM"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-15982.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15982-p2.jpg",
+        "assets/img/covers/arxiv-2607-15982-p3.jpg",
+        "assets/img/covers/arxiv-2607-15982-p4.jpg"
+      ],
+      "arxiv_id": "2607.15982",
+      "abs_url": "http://arxiv.org/abs/2607.15982v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15982v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出针对接触密集操作的关键段密集数据收集+离线强化学习，显著提升精度和泛化，实验扎实。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "TU Munich",
+        "Siemens AG"
+      ],
+      "method_tags": [
+        "offline deep reinforcement learning",
+        "contact-rich manipulation"
+      ],
+      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -105,7 +181,9 @@
       "primary_category": "cs.RO",
       "published": "2026-07-17",
       "channels": [
-        "loco-manip-wbc"
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop"
       ],
       "badges": [
         {
@@ -124,7 +202,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.16095v1",
       "venue": "Humanoids 2026",
       "venue_announced": "",
-      "score": 19,
+      "score": 30,
       "judge": {
         "relevant": true,
         "research_value": "medium",
@@ -142,6 +220,146 @@
       ],
       "platform": [
         "TIAGo"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15641",
+      "source": "arxiv",
+      "title": "IMBench: A Benchmark for Intuitive Robotic Manipulation",
+      "title_zh": "IMBench：直觉式机器人操作基准",
+      "tldr_zh": "新基准IMBENCH揭示现有模型在直觉式操作中推理与执行脱节。",
+      "cover_zh": "机器人只会模仿？新基准发现：AI推理强但动手弱，差距惊人！",
+      "abstract_zh": "人类结合推理与运动控制，在多种约束下解决复杂操作任务。他们建立对物理世界的理解，从而将推理转化为行动，并快速适应新场景、任务和规则。我们将这种能力称为直觉式操作。现有基准未能捕捉这种整合：它们要么孤立地评估物理推理而不考虑执行，要么衡量策略性能而不要求显式推理。我们提出IMBENCH，一个旨在评估直觉式操作作为涵盖感知、物理推理、动作生成和迭代执行的整合能力的基准。我们的任务要求模型推断任务相关的物理结构，并在显式约束下生成可行的动作序列，包括接触丰富的操作、工具使用和多阶段依赖。我们引入了一个包含35个任务、14K条过滤轨迹以及用于生成多样化场景的可扩展工具的基准。实验揭示了一个一致的差距：视觉语言模型展现出部分物理推理能力，但无法生成可执行的计划，而最先进的视觉-语言-动作模型难以满足任务约束并在场景间泛化。这些结果将直觉式操作识别为当前基础模型和通用机器人策略中缺失的维度，并将IMBENCH定位为迈向评估和实现更集成、更自适应的物理智能的一步。",
+      "authors": [
+        "Anurag Maurya",
+        "Sukhvansh Jain",
+        "Prajwal Avhad"
+      ],
+      "authors_all": [
+        "Anurag Maurya",
+        "Sukhvansh Jain",
+        "Prajwal Avhad",
+        "Gautham Balachandran",
+        "Ziyi Zhou",
+        "Atharva Kshirsagar",
+        "Satyam Singh",
+        "Bowen Li. Rishabh Mukund",
+        "Ritul Singh",
+        "Jatin Vira",
+        "Suvonil Chatterjee",
+        "Devesh K. Jha"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 RSS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-15641.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15641-p2.jpg",
+        "assets/img/covers/arxiv-2607-15641-p3.jpg",
+        "assets/img/covers/arxiv-2607-15641-p4.jpg"
+      ],
+      "arxiv_id": "2607.15641",
+      "abs_url": "http://arxiv.org/abs/2607.15641v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15641v1",
+      "venue": "RSS 2026",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出直觉操作基准，评估感知-推理-执行一体化能力，对VLA和物理推理研究有重要价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Manav Robotics, Bengaluru, India"
+      ],
+      "method_tags": [
+        "intuitive manipulation",
+        "physical reasoning",
+        "vision-language-action models"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15701",
+      "source": "arxiv",
+      "title": "RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC",
+      "title_zh": "RAVEN：基于强化学习自适应可见性图规划的鲁棒人形导航与无碰撞MPC",
+      "tldr_zh": "提出RL自适应可见性图规划结合MPC，提升人形导航在延迟和噪声下的鲁棒性。",
+      "cover_zh": "机器人导航总撞墙？RL+MPC让它在延迟噪声下也能稳如老狗",
+      "abstract_zh": "在动态环境中，人形机器人导航需要在长期规划的同时满足短期动态和安全约束。经典的可见性图规划器结合模型预测控制（MPC）能够高效生成无碰撞轨迹，但其性能依赖于手动调参和精确的系统建模。在实际机器人系统中，控制延迟、状态估计噪声和运动不确定性可能导致超调量和约束违反，即使名义路径在几何上是最优的。我们提出RAVEN，一种分层强化学习（RL）-MPC框架，用于鲁棒的人形导航。与先前使用学习来调整成本权重或完全替代规划的方法不同，RAVEN通过修改障碍物膨胀和相关图参数，利用RL自适应调整可见性图规划器的几何构建。通过直接重塑自由空间几何，学习到的规划器改变全局路径的拓扑结构，以补偿延迟和跟踪缺陷。然后，一个无碰撞MPC层跟踪规划轨迹，同时显式强制执行速度边界和避障约束。通过在真实延迟和观测噪声下训练，RAVEN学习规划自适应，从而提高鲁棒性，同时保留显式的长期几何规划和约束优化，这与端到端学习方法形成对比。我们将RAVEN与手动调参的可见性图MPC基线和纯RL导航策略进行了评估。结果表明，在障碍物附近超调量减少，狭窄通道中的鲁棒性提高，并且在延迟和噪声下导航更可靠。这些发现表明，强化自适应图构建结合约束MPC为鲁棒人形导航提供了一种有效且可解释的端到端学习替代方案。",
+      "authors": [
+        "Ruochen Hou",
+        "Shiqi Wang",
+        "Beom Jun Kim"
+      ],
+      "authors_all": [
+        "Ruochen Hou",
+        "Shiqi Wang",
+        "Beom Jun Kim",
+        "Hanzhang Fang",
+        "Mehak Singal",
+        "Dennis W. Hong"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "locomotion",
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15701.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15701-p2.jpg",
+        "assets/img/covers/arxiv-2607-15701-p3.jpg",
+        "assets/img/covers/arxiv-2607-15701-p4.jpg"
+      ],
+      "arxiv_id": "2607.15701",
+      "abs_url": "http://arxiv.org/abs/2607.15701v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15701v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形机器人导航结合RL与MPC，提出鲁棒规划框架，属于loco-manip-wbc方向",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of California, Los Angeles"
+      ],
+      "method_tags": [
+        "RL",
+        "MPC",
+        "visibility-graph planning"
+      ],
+      "platform": [
+        "T1 Booster"
       ],
       "sim_stack": [],
       "method_family": "",
@@ -204,6 +422,318 @@
       ],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15714",
+      "source": "arxiv",
+      "title": "AC-VLA: Robust Out-of-Distribution Action Execution via Compositional Learning",
+      "title_zh": "AC-VLA：通过组合学习实现鲁棒的分布外动作执行",
+      "tldr_zh": "AC-VLA通过组合学习解决VLA模型分布外泛化问题，在OOD任务上提升28%。",
+      "cover_zh": "机器人学不会新组合？这个框架让VLA模型OOD任务暴涨28%",
+      "abstract_zh": "视觉-语言-动作（VLA）模型在端到端机器人操作中表现出色，但当熟悉的子任务以未见过的配置重新组合时，它们在分布外（OOD）泛化方面存在困难。我们识别出两种相互强化的失败模式：轨迹过拟合，即模型过度拟合整体轨迹模式而非组合性子技能语义；以及感知捷径，即动作标记过度依赖腕部视角纹理而牺牲全局空间定位。为解决这两个问题，我们提出了AC-VLA，一个即插即用的动作组合学习框架，包含两个与架构无关的组件：（i）组合学习模块，使用LLM驱动的指令分解器和本体感受轨迹对齐器生成密集的子任务监督，然后对完整演示和分解数据进行混合训练，赋予模型组合泛化能力；（ii）状态条件非对称掩码策略，在夹爪闭合阶段抑制腕部视角输入，强制全局语义定位。所有组件无需架构修改，可直接集成到任何VLA骨干中。在π_{0.5}上实例化，并在LIBERO和LIBERO-OOD基准上评估，AC-VLA在组合OOD任务上实现了约28%的绝对提升，同时保持近乎完美的分布内性能。",
+      "authors": [
+        "Xiaojiang Peng",
+        "Kai Peng",
+        "Jie Lu"
+      ],
+      "authors_all": [
+        "Xiaojiang Peng",
+        "Kai Peng",
+        "Jie Lu",
+        "Zheng Lian",
+        "Zitong YU",
+        "Xiaobo Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15714.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15714-p2.jpg",
+        "assets/img/covers/arxiv-2607-15714-p3.jpg",
+        "assets/img/covers/arxiv-2607-15714-p4.jpg"
+      ],
+      "arxiv_id": "2607.15714",
+      "abs_url": "http://arxiv.org/abs/2607.15714v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15714v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出VLA组合泛化方法，解决OOD问题，实验提升显著，有科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shenzhen Technology University",
+        "Shenzhen University of Advanced Technology",
+        "Tongji University",
+        "Great Bay University"
+      ],
+      "method_tags": [
+        "Compositional Learning",
+        "Vision-Language-Action"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-16123",
+      "source": "arxiv",
+      "title": "BayesContact: Uncertain Pose Estimation via Visuo-Tactile Proposals and Simulation-based Inference",
+      "title_zh": "BayesContact：基于视觉-触觉提议和仿真推理的不确定位姿估计",
+      "tldr_zh": "提出BayesContact框架，融合视觉与触觉，通过仿真推理提升位姿估计精度。",
+      "cover_zh": "视觉+触觉融合｜BayesContact让机器人插销成功率飙升30%",
+      "abstract_zh": "接触丰富的操作需要比纯深度传感更精确的位姿估计。现有方法依赖视觉和接触，采用昂贵的离线训练流程，且需要针对新环境和几何形状重新训练。我们提出BayesContact，一种用于销孔插入中视觉-触觉位姿估计的仿真推理框架。BayesContact维护关于物体位姿的粒子信念，并融合深度观测与力/力矩导出的接触证据。我们采用基于仿真的前向模型来近似这些观测似然。对于每个位姿假设，渲染器预测深度测量值，物理模拟器在保护性探测动作下预测接触结果；两者均与真实观测进行评分以更新信念。由此产生的多模态信念还能实现基于信息增益的探测，用于主动消歧。在模拟几何体和真实机器人实验中，BayesContact相比纯视觉推理将位姿可观测性和插入成功率提高了30%。",
+      "authors": [
+        "Aditya Kamireddypalli",
+        "Matias Mattamala",
+        "Joao Moura"
+      ],
+      "authors_all": [
+        "Aditya Kamireddypalli",
+        "Matias Mattamala",
+        "Joao Moura",
+        "Russell Buchanan",
+        "Sethu Vijayakumar",
+        "Subramanian Ramamoorthy"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-16123.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-16123-p2.jpg",
+        "assets/img/covers/arxiv-2607-16123-p3.jpg",
+        "assets/img/covers/arxiv-2607-16123-p4.jpg"
+      ],
+      "arxiv_id": "2607.16123",
+      "abs_url": "http://arxiv.org/abs/2607.16123v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16123v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出贝叶斯接触+仿真推理框架，提升插拔任务位姿估计精度，方法新颖且实验充分。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "Simulation-Based Inference",
+        "pose estimation",
+        "peg-in-hole insertion"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15733",
+      "source": "arxiv",
+      "title": "A Task-Space Receding Horizon Controller for Fast Collision Avoidance",
+      "title_zh": "面向快速避障的任务空间滚动时域控制器",
+      "tldr_zh": "提出一种任务空间滚动时域控制器，通过短时滚动生成参考轨迹，实现快速避障且计算高效。",
+      "cover_zh": "避障还能这么快？短时滚动+最小加速度，动态杂乱环境成功率飙升",
+      "abstract_zh": "机器人操作臂的实时避障需要快速响应意外障碍物运动，并具备前瞻性以避免被近未来约束困住。全模型预测控制能提供这种预见性，但其在线计算成本会随预测时域长度、模型保真度和活跃几何约束数量快速增长。相反，无时域的反应式方法计算高效，但在动态杂乱环境中可能短视。我们提出一种任务空间滚动时域控制器，利用短时接触一致滚动生成满足内部非穿透约束的终端运动学参考，然后仅计算朝向该参考的光滑最小加速度过渡的第一个输入。从闭环逆运动学调节律出发，滚动通过迭代动力学求解器在膨胀的凸机器人和障碍物几何体上执行，使得机器人-障碍物接触、动态障碍物运动和自碰撞能够塑造终端参考，而无需完整的约束轨迹优化。我们分析了无接触闭环，并展示了在标准正则性假设下的局部指数任务空间调节。对于滚动内激活的接触，我们描述了相应的离散更新，并界定了移动障碍物对正则工作集的影响。在40自由度多链系统上的仿真表明，中等时域长度在预见性、响应性和计算成本之间取得平衡。在6自由度平台上的硬件实验展示了无需精确惯性参数估计的一致仿真到现实行为，与动态优化织物和模型预测控制基线的比较表明，在动态杂乱环境中成功率提高，同时保持与测试场景中实时执行兼容的求解时间。",
+      "authors": [
+        "Mattia Penzotti",
+        "Marco Controzzi"
+      ],
+      "authors_all": [
+        "Mattia Penzotti",
+        "Marco Controzzi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "sim2real",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15733.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15733-p2.jpg",
+        "assets/img/covers/arxiv-2607-15733-p3.jpg",
+        "assets/img/covers/arxiv-2607-15733-p4.jpg"
+      ],
+      "arxiv_id": "2607.15733",
+      "abs_url": "http://arxiv.org/abs/2607.15733v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15733v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 11,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出任务空间滚动时域控制器，结合短时滚动与避碰，实验验证效果好，对操作规划有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Scuola Superiore Sant'Anna"
+      ],
+      "method_tags": [
+        "task-space receding-horizon control",
+        "collision avoidance"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15880",
+      "source": "arxiv",
+      "title": "Dynamics-Aware Meta-Imitation for Generalization to Unseen Robotic Manipulation",
+      "title_zh": "动力学感知元模仿学习实现未知机器人操作任务的泛化",
+      "tldr_zh": "提出DAMI框架，通过元学习和动力学感知实现机器人操作任务泛化。",
+      "cover_zh": "机器人学新招｜看一次演示就能搞定没见过的任务？",
+      "abstract_zh": "模仿学习旨在从大量观察和演示中为机器人学习技能，因此面临数据稀缺和环境泛化问题。现有方法主要关注领域内任务的模仿，难以泛化到未知任务。为弥合这一泛化差距，我们提出了动力学感知元模仿（DAMI）框架。通过整合元学习构建共享技能空间，DAMI使智能体能够快速适应新任务。我们引入了视觉-运动轨迹（VMT）模块，以捕捉任务潜在空间中的复杂时空动力学。此外，我们提出了非配对统一任务（U2T）模块，用于融合非结构化多模态观测。为协调这些表示，我们集成了任务条件特征调制（TCFM）机制，专门用于调制低级3D特征。通过从随机完整参考演示中捕获内在动力学，我们的框架学习底层任务逻辑而非记忆静态线索，确保有效泛化。在仿真和真实环境中的大量实验表明，我们的方法在直接推理已知任务和通过少样本微调适应未知任务方面均优于最先进的基线。",
+      "authors": [
+        "Zhenduo Shang",
+        "Xiyao Liu",
+        "Bohan Li"
+      ],
+      "authors_all": [
+        "Zhenduo Shang",
+        "Xiyao Liu",
+        "Bohan Li",
+        "Xudong Wang",
+        "Teng Ren",
+        "Lianqing Liu",
+        "Zhi Han"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15880.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15880-p2.jpg",
+        "assets/img/covers/arxiv-2607-15880-p3.jpg",
+        "assets/img/covers/arxiv-2607-15880-p4.jpg"
+      ],
+      "arxiv_id": "2607.15880",
+      "abs_url": "http://arxiv.org/abs/2607.15880v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15880v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出元模仿学习框架，结合动力学感知与多模态融合，提升机器人操作泛化能力，实验充分。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "State Key Laboratory of Robotics and Intelligent Systems, Shenyang Institute of Automation, Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "Shenyang University of Technology"
+      ],
+      "method_tags": [
+        "Meta-Learning",
+        "Imitation Learning",
+        "Few-shot Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-15890",
+      "source": "arxiv",
+      "title": "Exo2EgoPose: Leveraging Exocentric Demonstrations for Vision-Language guided Egocentric 3D Hand Pose Forecasting",
+      "title_zh": "Exo2EgoPose：利用外中心演示进行视觉语言引导的自我中心3D手部姿态预测",
+      "tldr_zh": "利用外中心演示引导自我中心3D手部姿态预测，显著提升性能。",
+      "cover_zh": "手部姿态预测新突破｜外中心视角竟能补全自我中心盲区",
+      "abstract_zh": "从自我中心视角感知多模态线索并预测细粒度动作对于机器人操作等应用至关重要。然而，以往的研究要么主要依赖信息不足的视觉输入来预测粗略的人体运动，要么遵循VRM/VLA范式，但受限于机器人数据不足以及人体与机器人形态之间的差距。我们观察到3D手部姿态自然可以作为连接人体与机器人动作的统一表示。因此，我们探索了一个未被充分研究的视觉语言引导的自我中心3D手部姿态预测任务，旨在根据视觉观察、语言指令和姿态状态预测未来的自我中心3D手部姿态。为了克服自我中心视角视野有限和运动高度动态的问题，我们提出了一个名为Exo2EgoPose的框架，创新性地利用整体且稳定的外中心演示作为指导，以补偿部分且动态的自我中心线索。具体而言，我们引入了双层次外中心重建模块，该模块利用配对的外中心视频作为监督，重建其视频级别和分块帧级别的表示，从而建模空间上下文和时间动态。然后，全局到局部调制模块利用重建的分层外中心表示，通过注意力机制和自适应调制进行渐进式特征细化，实现全面的外中心指导，以准确预测自我中心手部姿态。在AssemblyHands、Ego-Exo4D和我们新构建的EgoMe-pose基准上的大量实验表明，我们的方法优于现有最先进方法，且具有显著优势。此外，它展示了有效的人到机器人迁移能力，并在CALVIN数据集上取得了改进。代码将开源。",
+      "authors": [
+        "Zhaofeng Shi",
+        "Heqian Qiu",
+        "Lanxiao Wang"
+      ],
+      "authors_all": [
+        "Zhaofeng Shi",
+        "Heqian Qiu",
+        "Lanxiao Wang",
+        "Xiang Li",
+        "Hongliang Li"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-15890.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-15890-p2.jpg",
+        "assets/img/covers/arxiv-2607-15890-p3.jpg",
+        "assets/img/covers/arxiv-2607-15890-p4.jpg"
+      ],
+      "arxiv_id": "2607.15890",
+      "abs_url": "http://arxiv.org/abs/2607.15890v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15890v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出VL-EHPF任务，用Exo引导Ego手部姿态预测，提升机器人操作，实验验证有效",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Electronic Science and Technology of China"
+      ],
+      "method_tags": [
+        "3D Hand Pose Forecasting",
+        "Exocentric-to-Egocentric Knowledge Transfer",
+        "Vision-Language-Pose Multimodal Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -274,101 +804,38 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-15701",
+      "id": "arxiv-2607-16146",
       "source": "arxiv",
-      "title": "RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC",
-      "title_zh": "RAVEN：基于强化学习自适应可见性图规划的鲁棒人形导航与无碰撞MPC",
-      "tldr_zh": "提出RL自适应可见性图规划结合MPC，提升人形导航在延迟和噪声下的鲁棒性。",
-      "cover_zh": "机器人导航总撞墙？RL+MPC让它在延迟噪声下也能稳如老狗",
-      "abstract_zh": "在动态环境中，人形机器人导航需要在长期规划的同时满足短期动态和安全约束。经典的可见性图规划器结合模型预测控制（MPC）能够高效生成无碰撞轨迹，但其性能依赖于手动调参和精确的系统建模。在实际机器人系统中，控制延迟、状态估计噪声和运动不确定性可能导致超调量和约束违反，即使名义路径在几何上是最优的。我们提出RAVEN，一种分层强化学习（RL）-MPC框架，用于鲁棒的人形导航。与先前使用学习来调整成本权重或完全替代规划的方法不同，RAVEN通过修改障碍物膨胀和相关图参数，利用RL自适应调整可见性图规划器的几何构建。通过直接重塑自由空间几何，学习到的规划器改变全局路径的拓扑结构，以补偿延迟和跟踪缺陷。然后，一个无碰撞MPC层跟踪规划轨迹，同时显式强制执行速度边界和避障约束。通过在真实延迟和观测噪声下训练，RAVEN学习规划自适应，从而提高鲁棒性，同时保留显式的长期几何规划和约束优化，这与端到端学习方法形成对比。我们将RAVEN与手动调参的可见性图MPC基线和纯RL导航策略进行了评估。结果表明，在障碍物附近超调量减少，狭窄通道中的鲁棒性提高，并且在延迟和噪声下导航更可靠。这些发现表明，强化自适应图构建结合约束MPC为鲁棒人形导航提供了一种有效且可解释的端到端学习替代方案。",
+      "title": "VTLoc: Learning-based Tactile Contact Localization in Visual Point Clouds",
+      "title_zh": "VTLoc：基于学习的视觉点云触觉接触定位",
+      "tldr_zh": "提出VTLoc框架，利用视觉点云和触觉数据实现精确接触定位。",
+      "cover_zh": "触觉+视觉融合定位｜VTLoc让机器人精准感知接触点",
+      "abstract_zh": "视觉和触觉是机器人感知与操作中互补的模态。视觉提供全局物体上下文，而触觉提供接触点的精确局部信息。将这两种模态整合用于接触定位（即预测触点在物体表面的位置）面临重大挑战，因为需要触觉数据与视觉几何之间的精确空间对齐。为解决这一问题，我们提出VTLoc，一种新颖的视觉-触觉框架，它利用3D点云作为视觉输入，从触觉读数中定位接触点。VTLoc引入两个关键组件：几何多模态对齐模块，从融合的视觉-触觉特征重建伪点云，并将其与视觉点云对齐以强制跨模态空间一致性；以及迭代定位更新器，利用融合的视觉-触觉特征迭代优化预测的接触位置。在包含100个真实物体的新基准上评估，VTLoc通过减少局部到全局的对应歧义，提升了单次触觉接触定位的准确性。",
       "authors": [
-        "Ruochen Hou",
-        "Shiqi Wang",
-        "Beom Jun Kim"
+        "Zhiyuan Wu",
+        "Zhuo Chen",
+        "Shan Luo"
       ],
       "authors_all": [
-        "Ruochen Hou",
-        "Shiqi Wang",
-        "Beom Jun Kim",
-        "Hanzhang Fang",
-        "Mehak Singal",
-        "Dennis W. Hong"
+        "Zhiyuan Wu",
+        "Zhuo Chen",
+        "Shan Luo"
       ],
       "primary_category": "cs.RO",
       "published": "2026-07-17",
       "channels": [
-        "locomotion"
+        "manipulation"
       ],
       "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-15701.jpg",
+      "cover_image": "assets/img/covers/arxiv-2607-16146.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2607-15701-p2.jpg",
-        "assets/img/covers/arxiv-2607-15701-p3.jpg",
-        "assets/img/covers/arxiv-2607-15701-p4.jpg"
+        "assets/img/covers/arxiv-2607-16146-p2.jpg",
+        "assets/img/covers/arxiv-2607-16146-p3.jpg",
+        "assets/img/covers/arxiv-2607-16146-p4.jpg"
       ],
-      "arxiv_id": "2607.15701",
-      "abs_url": "http://arxiv.org/abs/2607.15701v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15701v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形机器人导航结合RL与MPC，提出鲁棒规划框架，属于loco-manip-wbc方向",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of California, Los Angeles"
-      ],
-      "method_tags": [
-        "RL",
-        "MPC",
-        "visibility-graph planning"
-      ],
-      "platform": [
-        "T1 Booster"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-15733",
-      "source": "arxiv",
-      "title": "A Task-Space Receding Horizon Controller for Fast Collision Avoidance",
-      "title_zh": "面向快速避障的任务空间滚动时域控制器",
-      "tldr_zh": "提出一种任务空间滚动时域控制器，通过短时滚动生成参考轨迹，实现快速避障且计算高效。",
-      "cover_zh": "避障还能这么快？短时滚动+最小加速度，动态杂乱环境成功率飙升",
-      "abstract_zh": "机器人操作臂的实时避障需要快速响应意外障碍物运动，并具备前瞻性以避免被近未来约束困住。全模型预测控制能提供这种预见性，但其在线计算成本会随预测时域长度、模型保真度和活跃几何约束数量快速增长。相反，无时域的反应式方法计算高效，但在动态杂乱环境中可能短视。我们提出一种任务空间滚动时域控制器，利用短时接触一致滚动生成满足内部非穿透约束的终端运动学参考，然后仅计算朝向该参考的光滑最小加速度过渡的第一个输入。从闭环逆运动学调节律出发，滚动通过迭代动力学求解器在膨胀的凸机器人和障碍物几何体上执行，使得机器人-障碍物接触、动态障碍物运动和自碰撞能够塑造终端参考，而无需完整的约束轨迹优化。我们分析了无接触闭环，并展示了在标准正则性假设下的局部指数任务空间调节。对于滚动内激活的接触，我们描述了相应的离散更新，并界定了移动障碍物对正则工作集的影响。在40自由度多链系统上的仿真表明，中等时域长度在预见性、响应性和计算成本之间取得平衡。在6自由度平台上的硬件实验展示了无需精确惯性参数估计的一致仿真到现实行为，与动态优化织物和模型预测控制基线的比较表明，在动态杂乱环境中成功率提高，同时保持与测试场景中实时执行兼容的求解时间。",
-      "authors": [
-        "Mattia Penzotti",
-        "Marco Controzzi"
-      ],
-      "authors_all": [
-        "Mattia Penzotti",
-        "Marco Controzzi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-17",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-15733.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-15733-p2.jpg",
-        "assets/img/covers/arxiv-2607-15733-p3.jpg",
-        "assets/img/covers/arxiv-2607-15733-p4.jpg"
-      ],
-      "arxiv_id": "2607.15733",
-      "abs_url": "http://arxiv.org/abs/2607.15733v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15733v1",
+      "arxiv_id": "2607.16146",
+      "abs_url": "http://arxiv.org/abs/2607.16146v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16146v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
@@ -376,15 +843,15 @@
         "relevant": true,
         "research_value": "high",
         "primary_channel": "manipulation",
-        "reason": "提出任务空间滚动时域控制器，结合短时滚动与避碰，实验验证效果好，对操作规划有参考价值。",
+        "reason": "提出视觉-触觉接触定位新方法，结合点云与触觉，提升操作感知精度，有真实世界基准。",
         "model": "deepseek-v4-flash"
       },
       "institutions": [
-        "Scuola Superiore Sant'Anna"
+        "King's College London"
       ],
       "method_tags": [
-        "task-space receding-horizon control",
-        "collision avoidance"
+        "visual-tactile learning",
+        "contact localization"
       ],
       "platform": [],
       "sim_stack": [],

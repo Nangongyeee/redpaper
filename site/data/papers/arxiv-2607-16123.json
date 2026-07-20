@@ -1,0 +1,95 @@
+{
+  "id": "arxiv-2607-16123",
+  "source": "arxiv",
+  "title": "BayesContact: Uncertain Pose Estimation via Visuo-Tactile Proposals and Simulation-based Inference",
+  "title_zh": "BayesContact：基于视觉-触觉提议和仿真推理的不确定位姿估计",
+  "abstract": "Contact-rich manipulation requires pose estimates that are often more accurate than what depth-only sensing provides. Existing methods, relying on vision and contact, employ costly offline training procedures that need to be retrained for new environments and geometries. We propose BayesContact, a Simulation-Based Inference framework for visuo-tactile pose estimation in peg-in-hole insertion. BayesContact maintains a particle belief over object pose and fuses depth observations with force/torque-derived contact evidence. We employ simulation based forward models to approximate these observation likelihoods. For each pose hypothesis, a renderer predicts depth measurements and a physics simulator predicts contact outcomes under guarded probing actions; both are scored against real observations to update the belief. The resulting multimodal belief also enables information-gain-based probing for active disambiguation. Across simulated geometries and real-robot experiments, BayesContact improves pose observability and insertion success over vision-only inference by 30%",
+  "abstract_zh": "接触丰富的操作需要比纯深度传感更精确的位姿估计。现有方法依赖视觉和接触，采用昂贵的离线训练流程，且需要针对新环境和几何形状重新训练。我们提出BayesContact，一种用于销孔插入中视觉-触觉位姿估计的仿真推理框架。BayesContact维护关于物体位姿的粒子信念，并融合深度观测与力/力矩导出的接触证据。我们采用基于仿真的前向模型来近似这些观测似然。对于每个位姿假设，渲染器预测深度测量值，物理模拟器在保护性探测动作下预测接触结果；两者均与真实观测进行评分以更新信念。由此产生的多模态信念还能实现基于信息增益的探测，用于主动消歧。在模拟几何体和真实机器人实验中，BayesContact相比纯视觉推理将位姿可观测性和插入成功率提高了30%。",
+  "tldr_zh": "提出BayesContact框架，融合视觉与触觉，通过仿真推理提升位姿估计精度。",
+  "cover_zh": "视觉+触觉融合｜BayesContact让机器人插销成功率飙升30%",
+  "authors": [
+    {
+      "name": "Aditya Kamireddypalli",
+      "affiliation": ""
+    },
+    {
+      "name": "Matias Mattamala",
+      "affiliation": ""
+    },
+    {
+      "name": "Joao Moura",
+      "affiliation": ""
+    },
+    {
+      "name": "Russell Buchanan",
+      "affiliation": ""
+    },
+    {
+      "name": "Sethu Vijayakumar",
+      "affiliation": ""
+    },
+    {
+      "name": "Subramanian Ramamoorthy",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-17",
+  "updated": "2026-07-17",
+  "arxiv_id": "2607.16123",
+  "pdf_url": "https://arxiv.org/pdf/2607.16123v1",
+  "abs_url": "http://arxiv.org/abs/2607.16123v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-16123.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-16123-p2.jpg",
+    "assets/img/covers/arxiv-2607-16123-p3.jpg",
+    "assets/img/covers/arxiv-2607-16123-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 12,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、contact-rich、peg-in-hole）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出贝叶斯接触+仿真推理框架，提升插拔任务位姿估计精度，方法新颖且实验充分。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "Simulation-Based Inference",
+    "pose estimation",
+    "peg-in-hole insertion"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
