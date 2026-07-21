@@ -1,0 +1,86 @@
+{
+  "id": "arxiv-2607-07252",
+  "source": "arxiv_discover",
+  "title": "Safe Reinforcement Learning using Ideas from Model Predictive Control",
+  "title_zh": "利用模型预测控制思想的安全强化学习",
+  "abstract": "Reinforcement learning (RL) enables the synthesis of control policies directly from data, making it highly appealing for complex cyber-physical systems (CPSs) and robotics. A persistent challenge, however, is ensuring strict, hard safety constraints during the active learning phase. In real-world physical systems, violating mechanical limits can cause irreversible damage, necessitating that exploration remains strictly within safe operational regions. We propose a generalized framework that combines the adaptive, high-performance nature of deep reinforcement learning (DRL) with the formal safety guarantees of model predictive control (MPC). Using a mathematical model of the system dynamics, offline MPC computations define a feasible state-action space, representing all safe combinations of system states and control inputs that guarantee constraint satisfaction. During training and deployment, the RL agent's instantaneous actions are projected onto this globally verified feasible set via a safety filter. We systematically evaluate our generalized approach on a non-linear 1-DoF laboratory testbed, demonstrating successful exploration and stable policy convergence on physical hardware.",
+  "abstract_zh": "强化学习能够直接从数据中合成控制策略，因此对于复杂的网络物理系统和机器人技术极具吸引力。然而，一个持续的挑战是在主动学习阶段确保严格、硬性的安全约束。在现实世界的物理系统中，违反机械限制可能导致不可逆的损坏，因此需要探索严格保持在安全操作区域内。我们提出了一个通用框架，将深度强化学习的自适应高性能特性与模型预测控制的形式化安全保证相结合。利用系统动力学的数学模型，离线MPC计算定义了一个可行的状态-动作空间，代表所有保证约束满足的系统状态和控制输入的安全组合。在训练和部署期间，RL智能体的即时动作通过安全过滤器投影到这个全局验证的可行集上。我们在一个非线性1自由度实验室测试台上系统评估了我们的通用方法，展示了在物理硬件上的成功探索和稳定策略收敛。",
+  "tldr_zh": "结合MPC安全保证与DRL自适应性的通用安全强化学习框架",
+  "cover_zh": "RL探索总怕撞坏机器？这个框架用MPC画好安全区，随便学也不越界",
+  "authors": [
+    {
+      "name": "Georg Schäfer",
+      "affiliation": ""
+    },
+    {
+      "name": "Jakob Rehrl",
+      "affiliation": ""
+    },
+    {
+      "name": "Stefan Huber",
+      "affiliation": ""
+    },
+    {
+      "name": "Simon Hirlaender",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-07-08",
+  "updated": "2026-07-08",
+  "arxiv_id": "2607.07252",
+  "pdf_url": "https://arxiv.org/pdf/2607.07252v1",
+  "abs_url": "http://arxiv.org/abs/2607.07252v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-07252.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-07252-p2.jpg",
+    "assets/img/covers/arxiv-2607-07252-p3.jpg",
+    "assets/img/covers/arxiv-2607-07252-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 13,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 3,
+  "score_breakdown": [
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 13 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "sim2real",
+    "reason": "结合MPC与RL实现安全探索，有硬件验证，对sim2real有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Salzburg University of Applied Sciences",
+    "Paris Lodron University of Salzburg"
+  ],
+  "method_tags": [
+    "Safe Reinforcement Learning",
+    "Model Predictive Control"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

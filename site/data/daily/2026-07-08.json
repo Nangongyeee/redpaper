@@ -1,6 +1,6 @@
 {
   "date": "2026-07-08",
-  "count": 20,
+  "count": 21,
   "papers": [
     {
       "id": "arxiv-2607-06990",
@@ -1431,6 +1431,69 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-07252",
+      "source": "arxiv_discover",
+      "title": "Safe Reinforcement Learning using Ideas from Model Predictive Control",
+      "title_zh": "利用模型预测控制思想的安全强化学习",
+      "tldr_zh": "结合MPC安全保证与DRL自适应性的通用安全强化学习框架",
+      "cover_zh": "RL探索总怕撞坏机器？这个框架用MPC画好安全区，随便学也不越界",
+      "abstract_zh": "强化学习能够直接从数据中合成控制策略，因此对于复杂的网络物理系统和机器人技术极具吸引力。然而，一个持续的挑战是在主动学习阶段确保严格、硬性的安全约束。在现实世界的物理系统中，违反机械限制可能导致不可逆的损坏，因此需要探索严格保持在安全操作区域内。我们提出了一个通用框架，将深度强化学习的自适应高性能特性与模型预测控制的形式化安全保证相结合。利用系统动力学的数学模型，离线MPC计算定义了一个可行的状态-动作空间，代表所有保证约束满足的系统状态和控制输入的安全组合。在训练和部署期间，RL智能体的即时动作通过安全过滤器投影到这个全局验证的可行集上。我们在一个非线性1自由度实验室测试台上系统评估了我们的通用方法，展示了在物理硬件上的成功探索和稳定策略收敛。",
+      "authors": [
+        "Georg Schäfer",
+        "Jakob Rehrl",
+        "Stefan Huber"
+      ],
+      "authors_all": [
+        "Georg Schäfer",
+        "Jakob Rehrl",
+        "Stefan Huber",
+        "Simon Hirlaender"
+      ],
+      "primary_category": "",
+      "published": "2026-07-08",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-07252.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-07252-p2.jpg",
+        "assets/img/covers/arxiv-2607-07252-p3.jpg",
+        "assets/img/covers/arxiv-2607-07252-p4.jpg"
+      ],
+      "arxiv_id": "2607.07252",
+      "abs_url": "http://arxiv.org/abs/2607.07252v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07252v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 3,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "sim2real",
+        "reason": "结合MPC与RL实现安全探索，有硬件验证，对sim2real有参考价值",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Salzburg University of Applied Sciences",
+        "Paris Lodron University of Salzburg"
+      ],
+      "method_tags": [
+        "Safe Reinforcement Learning",
+        "Model Predictive Control"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     }
   ]
 }

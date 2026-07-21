@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T06:05:52.802215+00:00",
-  "count": 1740,
+  "generated_at": "2026-07-21T07:43:07.049411+00:00",
+  "count": 1741,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -25071,9 +25071,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，用更少内存实现更优重建，精度提升77%。",
-      "cover_zh": "内存砍掉70%｜重建精度反超77%，这个新模型让3D重建直接起飞",
-      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著提升。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。通过这种方式，在训练时VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如在Sintel上将先前最佳相机估计精度提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构改进和数据扩展，大幅提升重建精度与效率，内存仅需前代30%。",
+      "cover_zh": "内存砍掉70%！这个3D重建模型用更少资源实现更高精度",
+      "abstract_zh": "近期前馈重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线，以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机估计精度比之前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -37567,7 +37567,7 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人展示旋转和新动作。",
+      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
       "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
@@ -46518,9 +46518,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率和强泛化能力",
-      "cover_zh": "10个演示就能学会？3D扩散策略让机器人模仿学习效率飙升",
-      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，鲁棒且可泛化地学习复杂技能通常需要大量人类演示。为解决这一挑战性问题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大部分任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出卓越的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "3D Diffusion Policy用少量演示实现高成功率机器人技能学习，泛化性强且安全。",
+      "cover_zh": "仅需10个演示｜3D扩散策略让机器人学技能又快又安全",
+      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，稳健且可泛化地学习复杂技能通常需要大量人类演示。为解决这一挑战性问题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -48599,7 +48599,7 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互的自主居家护理与健康任务。",
+      "tldr_zh": "单一模型实现全模态交互的自主居家护理操作。",
       "cover_zh": "一个模型搞定全屋护理｜全模态交互自主执行",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个单一模型处理多种居家护理与健康任务，具备全模态交互理解能力，实现全自主、稳定且抗干扰的执行。",
       "authors": [],
@@ -117218,6 +117218,69 @@
       "github": {},
       "source_tags": [
         "robohub"
+      ]
+    },
+    {
+      "id": "arxiv-2607-07252",
+      "source": "arxiv_discover",
+      "title": "Safe Reinforcement Learning using Ideas from Model Predictive Control",
+      "title_zh": "利用模型预测控制思想的安全强化学习",
+      "tldr_zh": "结合MPC安全保证与DRL自适应性的通用安全强化学习框架",
+      "cover_zh": "RL探索总怕撞坏机器？这个框架用MPC画好安全区，随便学也不越界",
+      "abstract_zh": "强化学习能够直接从数据中合成控制策略，因此对于复杂的网络物理系统和机器人技术极具吸引力。然而，一个持续的挑战是在主动学习阶段确保严格、硬性的安全约束。在现实世界的物理系统中，违反机械限制可能导致不可逆的损坏，因此需要探索严格保持在安全操作区域内。我们提出了一个通用框架，将深度强化学习的自适应高性能特性与模型预测控制的形式化安全保证相结合。利用系统动力学的数学模型，离线MPC计算定义了一个可行的状态-动作空间，代表所有保证约束满足的系统状态和控制输入的安全组合。在训练和部署期间，RL智能体的即时动作通过安全过滤器投影到这个全局验证的可行集上。我们在一个非线性1自由度实验室测试台上系统评估了我们的通用方法，展示了在物理硬件上的成功探索和稳定策略收敛。",
+      "authors": [
+        "Georg Schäfer",
+        "Jakob Rehrl",
+        "Stefan Huber"
+      ],
+      "authors_all": [
+        "Georg Schäfer",
+        "Jakob Rehrl",
+        "Stefan Huber",
+        "Simon Hirlaender"
+      ],
+      "primary_category": "",
+      "published": "2026-07-08",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-07252.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-07252-p2.jpg",
+        "assets/img/covers/arxiv-2607-07252-p3.jpg",
+        "assets/img/covers/arxiv-2607-07252-p4.jpg"
+      ],
+      "arxiv_id": "2607.07252",
+      "abs_url": "http://arxiv.org/abs/2607.07252v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07252v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 3,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "sim2real",
+        "reason": "结合MPC与RL实现安全探索，有硬件验证，对sim2real有参考价值",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Salzburg University of Applied Sciences",
+        "Paris Lodron University of Salzburg"
+      ],
+      "method_tags": [
+        "Safe Reinforcement Learning",
+        "Model Predictive Control"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
       ]
     }
   ]
