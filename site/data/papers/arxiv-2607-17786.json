@@ -1,0 +1,99 @@
+{
+  "id": "arxiv-2607-17786",
+  "source": "arxiv",
+  "title": "Reasoning as a Double-Edged Sword: Architecture and Cross-Stage Robustness in Vision-Language-Action Models",
+  "title_zh": "推理是一把双刃剑：视觉-语言-动作模型中的架构与跨阶段鲁棒性",
+  "abstract": "Does adding a reasoning step make a Vision-Language-Action (VLA) model more robust to perturbation? Intuitively, a policy that reasons before acting should absorb a perturbed input better than one that maps observations directly to actions. We test this premise head-on across three models that span the reasoning spectrum (no reasoning, a text chain-of-thought, and a latent iterative loop), perturbing each at the vision, reasoning, and action stages on LIBERO and SimplerEnv. Two questions organize the study: does the reasoning design shift robustness, and can the reasoning be read back at runtime as a safety signal? We find that the latent-iterative model is by far the least robust: under both stochastic noise and white-box perturbation its task success collapses, while the other two hold. This fragility is structural rather than cumulative: varying the reasoning depth at inference barely moves it. Reasoning outputs can in principle be monitored, but the monitors fail under fair tests. A plan--action consistency probe that looks near-perfect under naive evaluation falls to chance under adaptive attack. Under matched-FPR calibration, fusing it with an action-anomaly probe never lifts defended success above undefended. Scoped to these output-level behavioral probes under white-box vision-stage attack, this ceiling is a precondition that any viable defense must first satisfy.",
+  "abstract_zh": "增加推理步骤是否能让视觉-语言-动作（VLA）模型对扰动更鲁棒？直觉上，先推理再行动的策略应该比直接将观测映射到动作的策略更能吸收扰动输入。我们直接检验这一前提，在三个覆盖推理谱系（无推理、文本思维链、潜在迭代循环）的模型上，分别在视觉、推理和动作阶段施加扰动，在LIBERO和SimplerEnv上进行测试。两个问题组织研究：推理设计是否改变鲁棒性，以及推理输出能否在运行时作为安全信号回读？我们发现，潜在迭代模型是最不鲁棒的：在随机噪声和白盒扰动下，其任务成功率崩溃，而其他两个模型保持稳定。这种脆弱性是结构性的而非累积性的：推理深度在推理时的变化几乎不影响它。推理输出原则上可以被监控，但在公平测试下监控器失效。一个在朴素评估下看似完美的计划-动作一致性探针，在自适应攻击下退化为随机。在匹配FPR校准下，将其与动作异常探针融合从未将防御成功率提升到无防御之上。限于这些白盒视觉阶段攻击下的输出级行为探针，这个上限是任何可行防御必须首先满足的前提条件。",
+  "tldr_zh": "研究发现潜在迭代推理模型在扰动下最脆弱，推理深度变化影响小，监控探针在自适应攻击下失效。",
+  "cover_zh": "推理反而更脆弱？VLA模型在扰动下崩溃，监控探针也失效！",
+  "authors": [
+    {
+      "name": "Tuan Duong Trinh",
+      "affiliation": ""
+    },
+    {
+      "name": "Naveed Akhtar",
+      "affiliation": ""
+    },
+    {
+      "name": "Basim Azam",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+  ],
+  "published": "2026-07-20",
+  "updated": "2026-07-20",
+  "arxiv_id": "2607.17786",
+  "pdf_url": "https://arxiv.org/pdf/2607.17786v1",
+  "abs_url": "http://arxiv.org/abs/2607.17786v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-17786.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-17786-p2.jpg",
+    "assets/img/covers/arxiv-2607-17786-p3.jpg",
+    "assets/img/covers/arxiv-2607-17786-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 27,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（vision-language-action、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 27 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "系统研究VLA模型推理步骤对鲁棒性的影响，实验扎实，对安全部署有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Melbourne"
+  ],
+  "method_tags": [
+    "Vision-Language-Action",
+    "chain-of-thought",
+    "latent iterative"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

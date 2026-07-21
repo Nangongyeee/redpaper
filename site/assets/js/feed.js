@@ -6,7 +6,7 @@
 // 把页面塞爆。
 // before the user hits the bottom.
 
-import { Favorites, Curated, Reads, Theme } from './storage.js?v=cfde8338';
+import { Favorites, Curated, Reads, Theme } from './storage.js?v=c3896df8';
 import {
   pickCover,
   loadPalettes,
@@ -18,7 +18,7 @@ import {
   HEART_SVG_FILL,
   showToast,
   fetchJSON,
-} from './utils.js?v=cfde8338';
+} from './utils.js?v=c3896df8';
 
 const STATE = {
   channels: [],

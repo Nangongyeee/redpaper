@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2607-18200",
+  "source": "arxiv",
+  "title": "Learning Adaptive Safety Margins for Visual Navigation",
+  "title_zh": "学习自适应安全裕度用于视觉导航",
+  "abstract": "Robots in cluttered indoor spaces often fail not because they cannot generate collision-free paths, but because a fixed safety margin is mis-calibrated: conservative margins cause detours and timeouts, while permissive margins lead to near-boundary shortcuts under perception bias. Diffusion-based planners propose diverse trajectory candidates from egocentric RGB-D, yet reliable selection remains the bottleneck. We propose a context-conditioned safety critic that learns an adaptive clearance preference for ranking diffusion proposals, decomposed into three complementary terms: (i) a safety term with a clearance-budget penalty and a control-barrier-function residual for waypoint- and transition-wise safety, (ii) an efficiency term combining a smoothness penalty with a safety-gated detour-ratio penalty that avoids detours without incentivizing risky shortcuts, and (iii) a distance-constraint matching term that anchors the learned budget to realized ESDF clearances to prevent margin collapse. We train the critic with privileged ESDF geometry in simulation and distill it into a perception-only selector via a two-stage teacher-student procedure. On PointGoal navigation in HM3D and MP3D, including cross-dataset transfer, our method achieves the highest success rate (SR) and success weighted by path length (SPL) among strong diffusion, optimization, and RL baselines. Trained purely in simulation, it transfers to a Unitree G1 humanoid and navigates cluttered indoor scenes without task-specific tuning.",
+  "abstract_zh": "机器人在杂乱室内空间中失败往往不是因为无法生成无碰撞路径，而是因为固定的安全裕度校准不当：保守的裕度导致绕路和超时，而宽松的裕度在感知偏差下导致近边界捷径。基于扩散的规划器从自我中心RGB-D生成多样化的轨迹候选，但可靠的选择仍是瓶颈。我们提出一个上下文条件的安全评判器，学习用于排序扩散提案的自适应间隙偏好，分解为三个互补项：(i) 安全项，包含间隙预算惩罚和控制障碍函数残差，用于航点和过渡安全；(ii) 效率项，结合平滑惩罚和安全门控绕路比惩罚，避免绕路而不鼓励危险捷径；(iii) 距离约束匹配项，将学习到的预算锚定到实际ESDF间隙以防止裕度崩溃。我们在仿真中使用特权ESDF几何训练评判器，并通过两阶段教师-学生过程将其蒸馏为仅感知的选择器。在HM3D和MP3D上的PointGoal导航（包括跨数据集迁移）中，我们的方法在强扩散、优化和RL基线中实现了最高的成功率（SR）和路径长度加权成功率（SPL）。仅在仿真中训练，它迁移到Unitree G1人形机器人并在杂乱室内场景中导航，无需任务特定调参。",
+  "tldr_zh": "提出自适应安全裕度评判器，提升视觉导航成功率与效率。",
+  "cover_zh": "固定安全距离总翻车？这个新方法让机器人自己学会调裕度｜导航成功率直接起飞",
+  "authors": [
+    {
+      "name": "Junyi Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuaihang Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Geeta Chandra Raju Bethala",
+      "affiliation": ""
+    },
+    {
+      "name": "Anthony Tzes",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi Fang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-07-20",
+  "updated": "2026-07-20",
+  "arxiv_id": "2607.18200",
+  "pdf_url": "https://arxiv.org/pdf/2607.18200v1",
+  "abs_url": "http://arxiv.org/abs/2607.18200v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-18200.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-18200-p2.jpg",
+    "assets/img/covers/arxiv-2607-18200-p3.jpg",
+    "assets/img/covers/arxiv-2607-18200-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 6,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（unitree g1）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 6 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "提出自适应安全裕度视觉导航方法，在Unitree G1人形机器人上验证，涉及移动操作与全身控制",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "New York University Abu Dhabi"
+  ],
+  "method_tags": [
+    "Diffusion Policy",
+    "Safety Critic",
+    "Visual Navigation"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
