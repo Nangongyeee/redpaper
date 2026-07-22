@@ -1,6 +1,6 @@
 {
   "date": "2026-07-08",
-  "count": 21,
+  "count": 22,
   "papers": [
     {
       "id": "arxiv-2607-06990",
@@ -699,6 +699,80 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-07830",
+      "source": "arxiv_discover",
+      "title": "Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains",
+      "title_zh": "物理引导的生物力学步态自适应：面向极端坡度地形的人形机器人 locomotion",
+      "tldr_zh": "提出HumoSlope框架，通过物理引导和生物力学步态适配，实现人形机器人在极端斜坡上的鲁棒运动。",
+      "cover_zh": "陡坡上人形机器人不再蹲着走｜物理引导步态让爬坡像人类一样自然",
+      "abstract_zh": "无模型强化学习已实现令人印象深刻的人形机器人运动控制，然而在陡坡上的控制仍鲜有探索。与平坦或离散地形不同，斜坡地形施加了持续的引力偏差，要求同时保持稳定性和姿态控制。因此，在通用奖励函数下，策略可能收敛到缓慢、保守的低重心蹲伏步态。本文提出一种新颖的两阶段物理引导框架，名为HumoSlope，专门用于在多样斜坡地形上实现鲁棒的人形机器人运动。具体而言，第一阶段通过引入坡度自适应的零力矩点（ZMP）正则化器，直接在局部倾斜支撑平面而非世界水平参考上评估，建立地形一致的平衡先验。为防止策略默认采用蹲伏姿态，第二阶段引入生物力学斜坡步态适配器（BSGA）。利用提取的宏观地形描述符作为特权训练信号，BSGA根据估计的坡度几何动态门控软奖励先验，以调节重心高度和下肢协调——鼓励髋部主导的上坡推进和膝盖主导的下坡制动。关键的是，部署的actor完全基于本体感觉，无需在线外部感知。大量的Sim-to-Real实验表明，我们的框架有效缓解了姿态退化，并实现了在户外草地斜坡上盲态连续穿越，坡度高达62.7%（32.1°），验证了物理引导方法在挑战性斜坡地形适应中的有效性。",
+      "authors": [
+        "Xuanyu Chen",
+        "Mohan Liu",
+        "Dengchen Mei"
+      ],
+      "authors_all": [
+        "Xuanyu Chen",
+        "Mohan Liu",
+        "Dengchen Mei",
+        "Zhihao Gu",
+        "Haitian Zhang",
+        "Kaimin Mao",
+        "Haiyue Zhu",
+        "Shijun Yan",
+        "Lin Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-07-08",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-07830.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-07830-p2.jpg",
+        "assets/img/covers/arxiv-2607-07830-p3.jpg",
+        "assets/img/covers/arxiv-2607-07830-p4.jpg"
+      ],
+      "arxiv_id": "2607.07830",
+      "abs_url": "http://arxiv.org/abs/2607.07830v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07830v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形机器人陡坡运动，结合物理引导与生物力学步态适应，Sim-to-Real验证，创新性强",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Nanyang Technological University",
+        "A*STAR"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Sim-to-Real",
+        "Biomechanical Gait Adaptation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2607-07880",

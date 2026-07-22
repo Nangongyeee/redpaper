@@ -1,6 +1,6 @@
 {
   "date": "2026-07-15",
-  "count": 22,
+  "count": 23,
   "papers": [
     {
       "id": "arxiv-2607-13653",
@@ -1140,6 +1140,64 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2607-16314",
+      "source": "arxiv_discover",
+      "title": "Depth-Regularized JEPA World Models Learn More Transferable Representations from Real Outdoor Robot Data",
+      "title_zh": "深度正则化JEPA世界模型从真实户外机器人数据中学习更可迁移的表征",
+      "tldr_zh": "引入深度正则化使JEPA世界模型在户外机器人数据上表征更鲁棒且可迁移。",
+      "cover_zh": "不用增加推理时间｜给世界模型加个深度先验，户外数据表征直接起飞",
+      "abstract_zh": "世界模型，尤其是基于JEPA架构的模型，已被证明能够学习各种环境的鲁棒动态。然而，从视觉复杂的真实世界数据中学习仍然是一个挑战，尤其是在不可预测的户外环境中。我们引入深度作为训练期间的几何先验，直接从机器人视频数据中学习更鲁棒的潜在动态并处理视觉复杂性。这结合了深度监督与各向同性诱导的潜在正则化器（SIGReg），在约束多样性组织方式的同时最大化任务无关的潜在多样性，其联合目标针对与场景几何一致的最高熵表征。为了在不增加推理时间的情况下满足这种更高的复杂性，我们还添加了仅训练时的过参数化。在来自真实农业机器人的视频上训练一个18M参数的模型，我们通过冻结表征的视觉里程计探测、基于预测器的意外检测和多步潜在展开保真度进行评估。与基线LeWM相比，我们的方法将视觉里程计探测误差降低了33%，在域内和域外TartanGround基准上显著增加了意外分数分离度，并提高了域偏移下的多步展开保真度，且增益随展开步长增加。值得注意的是，我们在物理理解（如光照和阴影）上也看到了意外分数分离度的提升，而这并不直接与3D几何相关。这些结果表明，轻量级的训练时几何先验使紧凑的JEPA世界模型在真实户外数据上更有用、更可迁移，且具有强大的底层表征，同时不增加推理开销。我们的工作表明，深度作为物理基础先验可以增强世界模型在各种任务上的泛化能力。",
+      "authors": [
+        "Usman M. Khan"
+      ],
+      "authors_all": [
+        "Usman M. Khan"
+      ],
+      "primary_category": "",
+      "published": "2026-07-15",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-16314.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-16314-p2.jpg",
+        "assets/img/covers/arxiv-2607-16314-p3.jpg",
+        "assets/img/covers/arxiv-2607-16314-p4.jpg"
+      ],
+      "arxiv_id": "2607.16314",
+      "abs_url": "http://arxiv.org/abs/2607.16314v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16314v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出深度正则化JEPA世界模型，在真实户外机器人数据上提升表征迁移性，属于world model核心方向",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Aigen"
+      ],
+      "method_tags": [
+        "JEPA",
+        "depth regularization",
+        "world model"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
