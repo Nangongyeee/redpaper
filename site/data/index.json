@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-22T02:52:28.912698+00:00",
-  "count": 1749,
+  "generated_at": "2026-07-22T05:50:18.915762+00:00",
+  "count": 1752,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -3228,6 +3228,90 @@
       "source_tags": [
         "github"
       ]
+    },
+    {
+      "id": "arxiv-2607-19343",
+      "source": "arxiv",
+      "title": "Masked Visual Actions for Unified World Modeling",
+      "title_zh": "掩码视觉动作：面向统一世界建模",
+      "tldr_zh": "提出掩码视觉动作接口，用少量数据微调实现统一世界建模与机器人控制。",
+      "cover_zh": "只用15小时数据｜这个视觉模型竟能同时预测和规划机器人动作",
+      "abstract_zh": "视频模型能够从视觉世界的运动、交互和接触响应中学习丰富的先验知识，因此成为机器人世界建模的理想基础。核心挑战在于如何以与视觉空间对齐的形式向这些模型传达动作，使它们能够利用已习得的交互先验，同时仍基于物理操作。我们提出了掩码视觉动作（Masked Visual Actions），一种像素空间控制接口，它将动作表示为视频中任意实体的部分揭示轨迹。揭示机器人运动使模型充当正向动力学模型，预测场景对低级机器人动作的响应；而揭示期望的物体运动则使同一模型恢复与该结果一致的机器人行为。仅使用来自真实视频和模拟的15小时掩码示例进行微调，单个检查点即可在多种场景和多种实体上实现强大的视觉保真度和可控性。在下游操作设置中，该模型生成的想象轨迹结果与真实世界执行相关，可用于策略评估；通过基于模型的规划中对候选未来进行排序来改进决策；并支持逆向建模，从期望的物体运动合成机器人运动。",
+      "authors": [
+        "Hadi Alzayer",
+        "Wenlong Huang",
+        "Haonan Chen"
+      ],
+      "authors_all": [
+        "Hadi Alzayer",
+        "Wenlong Huang",
+        "Haonan Chen",
+        "Christopher Luey",
+        "Lvmin Zhang",
+        "Maneesh Agrawala",
+        "Gordon Wetzstein",
+        "Li Fei-Fei",
+        "Yilun Du",
+        "Jiajun Wu",
+        "Jia-Bin Huang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jiajun Wu"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19343.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19343-p2.jpg",
+        "assets/img/covers/arxiv-2607-19343-p3.jpg",
+        "assets/img/covers/arxiv-2607-19343-p4.jpg"
+      ],
+      "arxiv_id": "2607.19343",
+      "abs_url": "http://arxiv.org/abs/2607.19343v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19343v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 72,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出Masked Visual Actions，将动作表示为像素空间轨迹，实现统一世界建模，支持前向/逆向动力学，对机器人世界模型有重要贡献。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Stanford University",
+        "University of Maryland, College Park",
+        "Harvard University"
+      ],
+      "method_tags": [
+        "Masked Visual Actions",
+        "forward dynamics model",
+        "inverse modeling"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     },
     {
       "id": "github-facebookresearch-habitat-lab",
@@ -9787,89 +9871,6 @@
           "source": "project_page"
         }
       ],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-19343",
-      "source": "arxiv",
-      "title": "Masked Visual Actions for Unified World Modeling",
-      "title_zh": "掩码视觉动作：面向统一世界建模",
-      "tldr_zh": "提出掩码视觉动作接口，用少量数据微调实现统一世界建模与机器人控制。",
-      "cover_zh": "只用15小时数据｜这个视觉模型竟能同时预测和规划机器人动作",
-      "abstract_zh": "视频模型能够从视觉世界的运动、交互和接触响应中学习丰富的先验知识，因此成为机器人世界建模的理想基础。核心挑战在于如何以与视觉空间对齐的形式向这些模型传达动作，使它们能够利用已习得的交互先验，同时仍基于物理操作。我们提出了掩码视觉动作（Masked Visual Actions），一种像素空间控制接口，它将动作表示为视频中任意实体的部分揭示轨迹。揭示机器人运动使模型充当正向动力学模型，预测场景对低级机器人动作的响应；而揭示期望的物体运动则使同一模型恢复与该结果一致的机器人行为。仅使用来自真实视频和模拟的15小时掩码示例进行微调，单个检查点即可在多种场景和多种实体上实现强大的视觉保真度和可控性。在下游操作设置中，该模型生成的想象轨迹结果与真实世界执行相关，可用于策略评估；通过基于模型的规划中对候选未来进行排序来改进决策；并支持逆向建模，从期望的物体运动合成机器人运动。",
-      "authors": [
-        "Hadi Alzayer",
-        "Wenlong Huang",
-        "Haonan Chen"
-      ],
-      "authors_all": [
-        "Hadi Alzayer",
-        "Wenlong Huang",
-        "Haonan Chen",
-        "Christopher Luey",
-        "Lvmin Zhang",
-        "Maneesh Agrawala",
-        "Gordon Wetzstein",
-        "Li Fei-Fei",
-        "Yilun Du",
-        "Jiajun Wu",
-        "Jia-Bin Huang"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-07-21",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Stanford"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jiajun Wu"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-19343.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-19343-p2.jpg",
-        "assets/img/covers/arxiv-2607-19343-p3.jpg",
-        "assets/img/covers/arxiv-2607-19343-p4.jpg"
-      ],
-      "arxiv_id": "2607.19343",
-      "abs_url": "http://arxiv.org/abs/2607.19343v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19343v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 64,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出Masked Visual Actions，将动作表示为像素空间轨迹，实现统一世界建模，支持前向/逆向动力学，对机器人世界模型有重要贡献。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Stanford University",
-        "University of Maryland, College Park",
-        "Harvard University"
-      ],
-      "method_tags": [
-        "Masked Visual Actions",
-        "forward dynamics model",
-        "inverse modeling"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -21258,6 +21259,7 @@
       "primary_category": "cs.RO",
       "published": "2026-07-21",
       "channels": [
+        "manipulation",
         "world-model",
         "sim2real"
       ],
@@ -25438,9 +25440,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，以更低内存实现更高精度的静态与动态场景重建。",
-      "cover_zh": "内存砍掉70%！这个新模型重建精度却飙升77%｜VGGT-$Ω$",
-      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率及能力上均有显著提升。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们简化了VGGT的架构，使用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标注视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机估计精度比之前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构改进和数据扩展，大幅提升重建精度与效率，内存仅需前身30%。",
+      "cover_zh": "内存砍掉70%！这个3D重建模型用更少资源实现更高精度",
+      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著改进。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，使用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。通过这种方式，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机估计精度比之前最佳方法提高了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -35240,6 +35242,82 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-07830",
+      "source": "arxiv_discover",
+      "title": "Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains",
+      "title_zh": "物理引导的生物力学步态自适应：面向极端坡度地形的人形机器人 locomotion",
+      "tldr_zh": "提出HumoSlope框架，通过物理引导和生物力学步态适配，实现人形机器人在极端斜坡上的鲁棒运动。",
+      "cover_zh": "陡坡上人形机器人不再蹲着走｜物理引导步态让爬坡像人类一样自然",
+      "abstract_zh": "无模型强化学习已实现令人印象深刻的人形机器人运动控制，然而在陡坡上的控制仍鲜有探索。与平坦或离散地形不同，斜坡地形施加了持续的引力偏差，要求同时保持稳定性和姿态控制。因此，在通用奖励函数下，策略可能收敛到缓慢、保守的低重心蹲伏步态。本文提出一种新颖的两阶段物理引导框架，名为HumoSlope，专门用于在多样斜坡地形上实现鲁棒的人形机器人运动。具体而言，第一阶段通过引入坡度自适应的零力矩点（ZMP）正则化器，直接在局部倾斜支撑平面而非世界水平参考上评估，建立地形一致的平衡先验。为防止策略默认采用蹲伏姿态，第二阶段引入生物力学斜坡步态适配器（BSGA）。利用提取的宏观地形描述符作为特权训练信号，BSGA根据估计的坡度几何动态门控软奖励先验，以调节重心高度和下肢协调——鼓励髋部主导的上坡推进和膝盖主导的下坡制动。关键的是，部署的actor完全基于本体感觉，无需在线外部感知。大量的Sim-to-Real实验表明，我们的框架有效缓解了姿态退化，并实现了在户外草地斜坡上盲态连续穿越，坡度高达62.7%（32.1°），验证了物理引导方法在挑战性斜坡地形适应中的有效性。",
+      "authors": [
+        "Xuanyu Chen",
+        "Mohan Liu",
+        "Dengchen Mei"
+      ],
+      "authors_all": [
+        "Xuanyu Chen",
+        "Mohan Liu",
+        "Dengchen Mei",
+        "Zhihao Gu",
+        "Haitian Zhang",
+        "Kaimin Mao",
+        "Haiyue Zhu",
+        "Shijun Yan",
+        "Lin Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-07-08",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-07830.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-07830-p2.jpg",
+        "assets/img/covers/arxiv-2607-07830-p3.jpg",
+        "assets/img/covers/arxiv-2607-07830-p4.jpg"
+      ],
+      "arxiv_id": "2607.07830",
+      "abs_url": "http://arxiv.org/abs/2607.07830v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07830v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形机器人陡坡运动，结合物理引导与生物力学步态适应，Sim-to-Real验证，创新性强",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Nanyang Technological University",
+        "A*STAR"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Sim-to-Real",
+        "Biomechanical Gait Adaptation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-08341",
       "source": "arxiv",
       "title": "AnyDexRT: Calibration-Free Dexterous Hand Retargeting with Few-Shot Human Guidance",
@@ -37934,8 +38012,8 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas机器人展示旋转和新动作。",
-      "cover_zh": "机器人也能玩转圈？Atlas新动作太惊艳",
+      "tldr_zh": "Atlas 机器人展示旋转和新动作。",
+      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -42318,6 +42396,94 @@
         "decision tree",
         "concept-based",
         "long-horizon"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-18840",
+      "source": "arxiv",
+      "title": "WorldScape Policy 2.0: Empowering Steerable World Action Modeling with Reasoning-Augmented Memory",
+      "title_zh": "WorldScape Policy 2.0：利用推理增强记忆实现可控的世界动作建模",
+      "tldr_zh": "提出推理增强记忆的世界动作模型，实现长时域自主规划和细粒度多模态控制。",
+      "cover_zh": "机器人也能看懂长视频了？这个新模型用记忆推理实现自主规划｜WorldScape Policy 2.0",
+      "abstract_zh": "世界动作模型（WAM）通过联合建模视觉状态转换和机器人动作，为机器人操作提供了一种有前景的范式。然而，现有的WAM受限于有限的时间上下文、粗粒度的回合级语言监督以及主要基于文本的条件设置，这阻碍了任务进度跟踪和细粒度语言-视频-动作对齐，同时限制了视觉上下文推理和跨实体迁移。本文提出了WorldScape Policy 2.0，一种具有推理增强长短时记忆的可控WAM。其因果短期视觉记忆提供最近的观测作为DiT预填充，以保留局部交互动态；而长短时事件记忆将历史VLM输出组织为全局历史、局部活跃和事件边界表示，用于进度感知检索。检索到的历史增强了感知和自回归生成的规划令牌，为自主规划提供了隐式子目标条件；语义强制进一步将事件级指令语义转移到这个潜在规划路径中。为了建立细粒度的多模态可控性，我们构建了ManipEvent-5M，一个事件基础的具身预训练数据集，包含近500万个事件片段，并配有对齐的动作轨迹、回合级任务指令、片段级子任务描述、目标图像和视频演示。这些设计为从高层指令进行自主规划和从细粒度文本、目标图像或视频上下文提示进行可控执行提供了统一接口。在仿真和真实世界平台上的实验展示了在长时域自主规划、细粒度指令跟随和上下文适应方面的卓越能力。",
+      "authors": [
+        "Haisheng Su",
+        "Zongdai Liu",
+        "Xin Jin"
+      ],
+      "authors_all": [
+        "Haisheng Su",
+        "Zongdai Liu",
+        "Xin Jin",
+        "Haoxuan Dou",
+        "Chengming Hu",
+        "Baorun Li",
+        "Zhanwang Liu",
+        "Ruiyan Xu",
+        "Jianjie Fang",
+        "Xin Zhang",
+        "Zhenjie Yang",
+        "Xue Yang",
+        "Chen Gao",
+        "Junchi Yan",
+        "Yong Li",
+        "Wei Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-18840.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18840-p2.jpg",
+        "assets/img/covers/arxiv-2607-18840-p3.jpg",
+        "assets/img/covers/arxiv-2607-18840-p4.jpg"
+      ],
+      "arxiv_id": "2607.18840",
+      "abs_url": "http://arxiv.org/abs/2607.18840v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18840v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出World Action Model，结合推理增强记忆与事件级数据集，属于世界模型方向，科研价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Manifold AI",
+        "Tsinghua University",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "reasoning-augmented memory",
+        "long-horizon planning"
       ],
       "platform": [],
       "sim_stack": [],
@@ -46885,9 +47051,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率和强泛化，且安全违规极少。",
-      "cover_zh": "10个演示就能学会复杂技能？3D扩散策略让机器人模仿学习效率飙升",
-      "abstract_zh": "模仿学习为机器人灵巧技能教学提供了高效途径，然而，稳健且泛化地学习复杂技能通常需要大量人类演示。为解决这一难题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出卓越的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率的机器人灵巧操作。",
+      "cover_zh": "10个演示就能学会复杂操作？这个3D扩散策略让机器人更安全更精准",
+      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，鲁棒且泛化地学习复杂技能通常需要大量人类演示。为解决这一挑战性问题，我们提出了3D Diffusion Policy (DP3)，一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在我们涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对改进超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，展示了精确的控制能力，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -49014,6 +49180,78 @@
           "source": "channel"
         }
       ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-18709",
+      "source": "arxiv",
+      "title": "RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation",
+      "title_zh": "RoboInter1.5：面向具身世界建模与机器人操作的统一中间表示套件",
+      "tldr_zh": "提出统一中间表示套件，含超23万操作片段，支持推理、执行与世界建模。",
+      "cover_zh": "机器人数据不够用？这个新套件用23万段操作+10种中间表示，让推理和执行一起起飞",
+      "abstract_zh": "现有的机器人数据集仍然昂贵、具身特定，并且缺乏细粒度标注，难以支持泛化推理、执行或长程环境动力学模拟。基于我们之前的工作RoboInter1.0，我们提出了RoboInter1.5，这是一个扩展且统一的中间表示套件，用于机器人操作和具身世界建模。RoboInter1.5提供了以密集操作导向中间表示为核心的数据、基准和模型的统一资源。具体来说，RoboInter-Data包含超过23万个操作片段，覆盖571个场景，具有密集的逐帧标注，涵盖十多种中间表示类型，包括子任务、原始技能、物体和夹爪定位、分割、可供性、抓取姿态、接触点、运动轨迹等。基于这些标注，RoboInter-VQA引入了空间和时间具身VQA任务，以基准测试并提升RoboInter-VLM的中间表示推理能力。RoboInter-VLA进一步研究了这些表示如何通过隐式、显式和模块化的规划-执行范式有益于动作执行。为了更好地建模物理世界，我们进一步引入了RoboInter-World，它利用中间表示作为结构化条件信号，用于可控的未来世界状态预测。大量评估表明，RoboInter1.5为中间表示提供了统一的时空支架。RoboInter1.5不仅将中间表示视为可解释信号，还将其概念化为一个双向接口，既能规范低级动作空间，又能约束开放世界物理模拟器的潜在展开。",
+      "authors": [
+        "Ziqin Wang",
+        "Hao Li",
+        "Weijun Wang"
+      ],
+      "authors_all": [
+        "Ziqin Wang",
+        "Hao Li",
+        "Weijun Wang",
+        "Junhao Cai",
+        "Jia Zeng",
+        "Yilun Chen",
+        "Jiangmiao Pang",
+        "Si Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Jiangmiao Pang"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-18709.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18709-p2.jpg",
+        "assets/img/covers/arxiv-2607-18709-p3.jpg",
+        "assets/img/covers/arxiv-2607-18709-p4.jpg"
+      ],
+      "arxiv_id": "2607.18709",
+      "abs_url": "http://arxiv.org/abs/2607.18709v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18709v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出RoboInter-World世界模型，利用中间表示进行可控未来状态预测，属于world-model频道",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "VLA",
+        "world model",
+        "intermediate representation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -59000,80 +59238,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-07830",
-      "source": "arxiv_discover",
-      "title": "Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains",
-      "title_zh": "物理引导的生物力学步态自适应：面向极端坡度地形的人形机器人 locomotion",
-      "tldr_zh": "提出HumoSlope框架，通过物理引导和生物力学步态适配，实现人形机器人在极端斜坡上的鲁棒运动。",
-      "cover_zh": "陡坡上人形机器人不再蹲着走｜物理引导步态让爬坡像人类一样自然",
-      "abstract_zh": "无模型强化学习已实现令人印象深刻的人形机器人运动控制，然而在陡坡上的控制仍鲜有探索。与平坦或离散地形不同，斜坡地形施加了持续的引力偏差，要求同时保持稳定性和姿态控制。因此，在通用奖励函数下，策略可能收敛到缓慢、保守的低重心蹲伏步态。本文提出一种新颖的两阶段物理引导框架，名为HumoSlope，专门用于在多样斜坡地形上实现鲁棒的人形机器人运动。具体而言，第一阶段通过引入坡度自适应的零力矩点（ZMP）正则化器，直接在局部倾斜支撑平面而非世界水平参考上评估，建立地形一致的平衡先验。为防止策略默认采用蹲伏姿态，第二阶段引入生物力学斜坡步态适配器（BSGA）。利用提取的宏观地形描述符作为特权训练信号，BSGA根据估计的坡度几何动态门控软奖励先验，以调节重心高度和下肢协调——鼓励髋部主导的上坡推进和膝盖主导的下坡制动。关键的是，部署的actor完全基于本体感觉，无需在线外部感知。大量的Sim-to-Real实验表明，我们的框架有效缓解了姿态退化，并实现了在户外草地斜坡上盲态连续穿越，坡度高达62.7%（32.1°），验证了物理引导方法在挑战性斜坡地形适应中的有效性。",
-      "authors": [
-        "Xuanyu Chen",
-        "Mohan Liu",
-        "Dengchen Mei"
-      ],
-      "authors_all": [
-        "Xuanyu Chen",
-        "Mohan Liu",
-        "Dengchen Mei",
-        "Zhihao Gu",
-        "Haitian Zhang",
-        "Kaimin Mao",
-        "Haiyue Zhu",
-        "Shijun Yan",
-        "Lin Wang"
-      ],
-      "primary_category": "",
-      "published": "2026-07-08",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ NTU"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-07830.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-07830-p2.jpg",
-        "assets/img/covers/arxiv-2607-07830-p3.jpg",
-        "assets/img/covers/arxiv-2607-07830-p4.jpg"
-      ],
-      "arxiv_id": "2607.07830",
-      "abs_url": "http://arxiv.org/abs/2607.07830v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.07830v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 34,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形机器人陡坡运动，结合物理引导与生物力学步态适应，Sim-to-Real验证，创新性强",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Nanyang Technological University",
-        "A*STAR"
-      ],
-      "method_tags": [
-        "Reinforcement Learning",
-        "Sim-to-Real",
-        "Biomechanical Gait Adaptation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2607-09365",
       "source": "arxiv",
       "title": "PhysV2A: Reachability-Gated and Semantic-Mask-Constrained Feasibility Completion for Video-to-Robot Manipulation",
@@ -64667,6 +64831,59 @@
       "source_tags": []
     },
     {
+      "id": "qbitai-79075c996b",
+      "source": "qbitai",
+      "title": "酷哇科技亮相WAIC 2026，解密行业首个双层智能体世界模型",
+      "title_zh": "酷哇科技亮相WAIC 2026，解密行业首个双层智能体世界模型",
+      "tldr_zh": "机器人真正需要的世界模型，并不是单一物理世界模型，而是物理世界模型与人类社会世界模型的统一",
+      "cover_zh": "机器人真正需要的世界模型，并不是单一物理世界模型，而是物理世界模型与人类社会世界模型的统一",
+      "abstract_zh": "机器人真正需要的世界模型，并不是单一物理世界模型，而是物理世界模型与人类社会世界模型的统一",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "2026-07-22",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/07/456178.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {
+        "relevant": true,
+        "research_value": "low",
+        "primary_channel": "world-model",
+        "reason": "标题含世界模型关键词，但内容偏公司宣传，科研价值低",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "酷哇科技"
+      ],
+      "method_tags": [
+        "双层智能体世界模型"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
+    },
+    {
       "id": "github-manutdmoon-zprl",
       "source": "github",
       "title": "ManUtdMoon/ZPRL",
@@ -66970,59 +67187,6 @@
       "github": {},
       "source_tags": [
         "llm_discover"
-      ]
-    },
-    {
-      "id": "qbitai-79075c996b",
-      "source": "qbitai",
-      "title": "酷哇科技亮相WAIC 2026，解密行业首个双层智能体世界模型",
-      "title_zh": "酷哇科技亮相WAIC 2026，解密行业首个双层智能体世界模型",
-      "tldr_zh": "酷哇科技发布首个双层智能体世界模型，提升复杂场景泛化与实时响应。",
-      "cover_zh": "WAIC 2026惊现双层智能体｜酷哇科技让机器看懂世界",
-      "abstract_zh": "酷哇科技在WAIC 2026上展示了行业首个双层智能体世界模型，该模型通过分层架构实现环境感知与决策推理的协同优化，在复杂场景下展现出更强的泛化能力和实时响应性能。",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "",
-      "published": "2026-07-22",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.qbitai.com/2026/07/456178.html",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 28,
-      "judge": {
-        "relevant": true,
-        "research_value": "low",
-        "primary_channel": "world-model",
-        "reason": "标题含世界模型关键词，但内容偏公司宣传，科研价值低",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "酷哇科技"
-      ],
-      "method_tags": [
-        "双层智能体世界模型"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "qbitai"
       ]
     },
     {
@@ -87507,6 +87671,74 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-18580",
+      "source": "arxiv",
+      "title": "STeP: Signal Temporal Logic for Precise Specifications for Action Generation with Vision Language Models",
+      "title_zh": "STeP：面向视觉语言模型动作生成的信号时序逻辑精确规范",
+      "tldr_zh": "用信号时序逻辑作为中间表示，提升VLA模型执行语言指令的精确性和可解释性。",
+      "cover_zh": "VLA模型总听不懂指令？用信号时序逻辑做中间翻译，精度飙升还自带可解释性！",
+      "abstract_zh": "视觉-语言-动作（VLA）模型展现出令人印象深刻的泛化能力，但往往缺乏可解释性，且难以遵循编码了空间、时间和逻辑要求的精确自然语言指令。我们提出了一种分层框架，使用信号时序逻辑（STL）作为连接高层语言理解与低层机器人执行的共享表示。高层策略利用VLM将语言指令分解为高层子任务，为每个子任务生成STL规范，并选择执行每个子任务的低层策略。STL规范将语言衍生的意图转化为精确约束，低层策略选择决定这些约束是直接通过STL引导的模型预测控制来强制执行，还是在执行学习策略（用于感知复杂或接触丰富的行为）期间进行监控。通过将STL集成到计划验证、低层策略、子任务监控和重新规划中，我们的框架使得语言衍生的计划能够在运行时使用共同的正式结构进行检查、优化和修订。我们在真实世界的桌面领域评估了该方法，展示了形式化规范如何提高语言条件机器人规划的精度、可靠性和可解释性。",
+      "authors": [
+        "Kasra Torshizi",
+        "Anukriti Singh",
+        "Sidharth Mathur"
+      ],
+      "authors_all": [
+        "Kasra Torshizi",
+        "Anukriti Singh",
+        "Sidharth Mathur",
+        "Khuzema Habib",
+        "Leo Du",
+        "Pratap Tokekar"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-20",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-18580.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18580-p2.jpg",
+        "assets/img/covers/arxiv-2607-18580-p3.jpg",
+        "assets/img/covers/arxiv-2607-18580-p4.jpg"
+      ],
+      "arxiv_id": "2607.18580",
+      "abs_url": "http://arxiv.org/abs/2607.18580v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18580v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "将STL与VLA结合提升语言指令的精确性和可解释性，有创新性和实用价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Maryland"
+      ],
+      "method_tags": [
+        "Signal Temporal Logic",
+        "VLA",
+        "model-predictive control"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},

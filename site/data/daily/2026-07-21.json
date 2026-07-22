@@ -1,7 +1,91 @@
 {
   "date": "2026-07-21",
-  "count": 5,
+  "count": 7,
   "papers": [
+    {
+      "id": "arxiv-2607-19343",
+      "source": "arxiv",
+      "title": "Masked Visual Actions for Unified World Modeling",
+      "title_zh": "掩码视觉动作：面向统一世界建模",
+      "tldr_zh": "提出掩码视觉动作接口，用少量数据微调实现统一世界建模与机器人控制。",
+      "cover_zh": "只用15小时数据｜这个视觉模型竟能同时预测和规划机器人动作",
+      "abstract_zh": "视频模型能够从视觉世界的运动、交互和接触响应中学习丰富的先验知识，因此成为机器人世界建模的理想基础。核心挑战在于如何以与视觉空间对齐的形式向这些模型传达动作，使它们能够利用已习得的交互先验，同时仍基于物理操作。我们提出了掩码视觉动作（Masked Visual Actions），一种像素空间控制接口，它将动作表示为视频中任意实体的部分揭示轨迹。揭示机器人运动使模型充当正向动力学模型，预测场景对低级机器人动作的响应；而揭示期望的物体运动则使同一模型恢复与该结果一致的机器人行为。仅使用来自真实视频和模拟的15小时掩码示例进行微调，单个检查点即可在多种场景和多种实体上实现强大的视觉保真度和可控性。在下游操作设置中，该模型生成的想象轨迹结果与真实世界执行相关，可用于策略评估；通过基于模型的规划中对候选未来进行排序来改进决策；并支持逆向建模，从期望的物体运动合成机器人运动。",
+      "authors": [
+        "Hadi Alzayer",
+        "Wenlong Huang",
+        "Haonan Chen"
+      ],
+      "authors_all": [
+        "Hadi Alzayer",
+        "Wenlong Huang",
+        "Haonan Chen",
+        "Christopher Luey",
+        "Lvmin Zhang",
+        "Maneesh Agrawala",
+        "Gordon Wetzstein",
+        "Li Fei-Fei",
+        "Yilun Du",
+        "Jiajun Wu",
+        "Jia-Bin Huang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jiajun Wu"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19343.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19343-p2.jpg",
+        "assets/img/covers/arxiv-2607-19343-p3.jpg",
+        "assets/img/covers/arxiv-2607-19343-p4.jpg"
+      ],
+      "arxiv_id": "2607.19343",
+      "abs_url": "http://arxiv.org/abs/2607.19343v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19343v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 72,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出Masked Visual Actions，将动作表示为像素空间轨迹，实现统一世界建模，支持前向/逆向动力学，对机器人世界模型有重要贡献。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Stanford University",
+        "University of Maryland, College Park",
+        "Harvard University"
+      ],
+      "method_tags": [
+        "Masked Visual Actions",
+        "forward dynamics model",
+        "inverse modeling"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
     {
       "id": "arxiv-2607-19191",
       "source": "arxiv",
@@ -108,89 +192,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-19343",
-      "source": "arxiv",
-      "title": "Masked Visual Actions for Unified World Modeling",
-      "title_zh": "掩码视觉动作：面向统一世界建模",
-      "tldr_zh": "提出掩码视觉动作接口，用少量数据微调实现统一世界建模与机器人控制。",
-      "cover_zh": "只用15小时数据｜这个视觉模型竟能同时预测和规划机器人动作",
-      "abstract_zh": "视频模型能够从视觉世界的运动、交互和接触响应中学习丰富的先验知识，因此成为机器人世界建模的理想基础。核心挑战在于如何以与视觉空间对齐的形式向这些模型传达动作，使它们能够利用已习得的交互先验，同时仍基于物理操作。我们提出了掩码视觉动作（Masked Visual Actions），一种像素空间控制接口，它将动作表示为视频中任意实体的部分揭示轨迹。揭示机器人运动使模型充当正向动力学模型，预测场景对低级机器人动作的响应；而揭示期望的物体运动则使同一模型恢复与该结果一致的机器人行为。仅使用来自真实视频和模拟的15小时掩码示例进行微调，单个检查点即可在多种场景和多种实体上实现强大的视觉保真度和可控性。在下游操作设置中，该模型生成的想象轨迹结果与真实世界执行相关，可用于策略评估；通过基于模型的规划中对候选未来进行排序来改进决策；并支持逆向建模，从期望的物体运动合成机器人运动。",
-      "authors": [
-        "Hadi Alzayer",
-        "Wenlong Huang",
-        "Haonan Chen"
-      ],
-      "authors_all": [
-        "Hadi Alzayer",
-        "Wenlong Huang",
-        "Haonan Chen",
-        "Christopher Luey",
-        "Lvmin Zhang",
-        "Maneesh Agrawala",
-        "Gordon Wetzstein",
-        "Li Fei-Fei",
-        "Yilun Du",
-        "Jiajun Wu",
-        "Jia-Bin Huang"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-07-21",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Stanford"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jiajun Wu"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-19343.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-19343-p2.jpg",
-        "assets/img/covers/arxiv-2607-19343-p3.jpg",
-        "assets/img/covers/arxiv-2607-19343-p4.jpg"
-      ],
-      "arxiv_id": "2607.19343",
-      "abs_url": "http://arxiv.org/abs/2607.19343v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19343v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 64,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出Masked Visual Actions，将动作表示为像素空间轨迹，实现统一世界建模，支持前向/逆向动力学，对机器人世界模型有重要贡献。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Stanford University",
-        "University of Maryland, College Park",
-        "Harvard University"
-      ],
-      "method_tags": [
-        "Masked Visual Actions",
-        "forward dynamics model",
-        "inverse modeling"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -317,6 +318,7 @@
       "primary_category": "cs.RO",
       "published": "2026-07-21",
       "channels": [
+        "manipulation",
         "world-model",
         "sim2real"
       ],
@@ -359,6 +361,166 @@
         "Real2Sim",
         "vision-language agents",
         "physics-based world modeling"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-18840",
+      "source": "arxiv",
+      "title": "WorldScape Policy 2.0: Empowering Steerable World Action Modeling with Reasoning-Augmented Memory",
+      "title_zh": "WorldScape Policy 2.0：利用推理增强记忆实现可控的世界动作建模",
+      "tldr_zh": "提出推理增强记忆的世界动作模型，实现长时域自主规划和细粒度多模态控制。",
+      "cover_zh": "机器人也能看懂长视频了？这个新模型用记忆推理实现自主规划｜WorldScape Policy 2.0",
+      "abstract_zh": "世界动作模型（WAM）通过联合建模视觉状态转换和机器人动作，为机器人操作提供了一种有前景的范式。然而，现有的WAM受限于有限的时间上下文、粗粒度的回合级语言监督以及主要基于文本的条件设置，这阻碍了任务进度跟踪和细粒度语言-视频-动作对齐，同时限制了视觉上下文推理和跨实体迁移。本文提出了WorldScape Policy 2.0，一种具有推理增强长短时记忆的可控WAM。其因果短期视觉记忆提供最近的观测作为DiT预填充，以保留局部交互动态；而长短时事件记忆将历史VLM输出组织为全局历史、局部活跃和事件边界表示，用于进度感知检索。检索到的历史增强了感知和自回归生成的规划令牌，为自主规划提供了隐式子目标条件；语义强制进一步将事件级指令语义转移到这个潜在规划路径中。为了建立细粒度的多模态可控性，我们构建了ManipEvent-5M，一个事件基础的具身预训练数据集，包含近500万个事件片段，并配有对齐的动作轨迹、回合级任务指令、片段级子任务描述、目标图像和视频演示。这些设计为从高层指令进行自主规划和从细粒度文本、目标图像或视频上下文提示进行可控执行提供了统一接口。在仿真和真实世界平台上的实验展示了在长时域自主规划、细粒度指令跟随和上下文适应方面的卓越能力。",
+      "authors": [
+        "Haisheng Su",
+        "Zongdai Liu",
+        "Xin Jin"
+      ],
+      "authors_all": [
+        "Haisheng Su",
+        "Zongdai Liu",
+        "Xin Jin",
+        "Haoxuan Dou",
+        "Chengming Hu",
+        "Baorun Li",
+        "Zhanwang Liu",
+        "Ruiyan Xu",
+        "Jianjie Fang",
+        "Xin Zhang",
+        "Zhenjie Yang",
+        "Xue Yang",
+        "Chen Gao",
+        "Junchi Yan",
+        "Yong Li",
+        "Wei Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-18840.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18840-p2.jpg",
+        "assets/img/covers/arxiv-2607-18840-p3.jpg",
+        "assets/img/covers/arxiv-2607-18840-p4.jpg"
+      ],
+      "arxiv_id": "2607.18840",
+      "abs_url": "http://arxiv.org/abs/2607.18840v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18840v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出World Action Model，结合推理增强记忆与事件级数据集，属于世界模型方向，科研价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Manifold AI",
+        "Tsinghua University",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "reasoning-augmented memory",
+        "long-horizon planning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-18709",
+      "source": "arxiv",
+      "title": "RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation",
+      "title_zh": "RoboInter1.5：面向具身世界建模与机器人操作的统一中间表示套件",
+      "tldr_zh": "提出统一中间表示套件，含超23万操作片段，支持推理、执行与世界建模。",
+      "cover_zh": "机器人数据不够用？这个新套件用23万段操作+10种中间表示，让推理和执行一起起飞",
+      "abstract_zh": "现有的机器人数据集仍然昂贵、具身特定，并且缺乏细粒度标注，难以支持泛化推理、执行或长程环境动力学模拟。基于我们之前的工作RoboInter1.0，我们提出了RoboInter1.5，这是一个扩展且统一的中间表示套件，用于机器人操作和具身世界建模。RoboInter1.5提供了以密集操作导向中间表示为核心的数据、基准和模型的统一资源。具体来说，RoboInter-Data包含超过23万个操作片段，覆盖571个场景，具有密集的逐帧标注，涵盖十多种中间表示类型，包括子任务、原始技能、物体和夹爪定位、分割、可供性、抓取姿态、接触点、运动轨迹等。基于这些标注，RoboInter-VQA引入了空间和时间具身VQA任务，以基准测试并提升RoboInter-VLM的中间表示推理能力。RoboInter-VLA进一步研究了这些表示如何通过隐式、显式和模块化的规划-执行范式有益于动作执行。为了更好地建模物理世界，我们进一步引入了RoboInter-World，它利用中间表示作为结构化条件信号，用于可控的未来世界状态预测。大量评估表明，RoboInter1.5为中间表示提供了统一的时空支架。RoboInter1.5不仅将中间表示视为可解释信号，还将其概念化为一个双向接口，既能规范低级动作空间，又能约束开放世界物理模拟器的潜在展开。",
+      "authors": [
+        "Ziqin Wang",
+        "Hao Li",
+        "Weijun Wang"
+      ],
+      "authors_all": [
+        "Ziqin Wang",
+        "Hao Li",
+        "Weijun Wang",
+        "Junhao Cai",
+        "Jia Zeng",
+        "Yilun Chen",
+        "Jiangmiao Pang",
+        "Si Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Jiangmiao Pang"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-18709.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18709-p2.jpg",
+        "assets/img/covers/arxiv-2607-18709-p3.jpg",
+        "assets/img/covers/arxiv-2607-18709-p4.jpg"
+      ],
+      "arxiv_id": "2607.18709",
+      "abs_url": "http://arxiv.org/abs/2607.18709v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18709v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出RoboInter-World世界模型，利用中间表示进行可控未来状态预测，属于world-model频道",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "VLA",
+        "world model",
+        "intermediate representation"
       ],
       "platform": [],
       "sim_stack": [],
