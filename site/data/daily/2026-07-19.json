@@ -1,6 +1,6 @@
 {
   "date": "2026-07-19",
-  "count": 1,
+  "count": 2,
   "papers": [
     {
       "id": "qbitai-e67f02c635",
@@ -44,6 +44,72 @@
       "github": {},
       "source_tags": [
         "qbitai"
+      ]
+    },
+    {
+      "id": "arxiv-2607-17326",
+      "source": "arxiv_discover",
+      "title": "Rethinking the Suitability of Reinforcement Learning Algorithms Under Practical Transfer Constraints",
+      "title_zh": "重新思考强化学习算法在实际迁移约束下的适用性",
+      "tldr_zh": "PPO虽样本效率低，但挂钟时间更快；域随机化对三种RL范式影响相似。",
+      "cover_zh": "谁说样本效率低就是差？PPO挂钟时间反杀SAC和TD-MPC2｜域随机化竟对三种RL范式一视同仁",
+      "abstract_zh": "面向迁移的强化学习需要在标准样本效率之外的维度上评估算法。我们关注两个维度：实际效率（即关于算法适用性的结论在基于挂钟时间而非交互次数的预算下是否改变）和动力学失配下的鲁棒性（即不同学习范式如何应对由域随机化引起的训练分布变化）。我们为强化学习从业者提供两个见解。第一，在迁移场景中，比较不同算法的样本效率往往是不够的。训练一个像样策略所需的挂钟时间是实践者考虑的重要因素，我们发现样本效率较低的PPO算法能比相对更高效的SAC和TD-MPC2更快地产生性能良好的策略，这验证了大规模并行训练范式的普遍认知。第二，域随机化可以帮助不同类型的算法学习鲁棒策略。特别是，尽管PPO、SAC和TD-MPC2代表不同的RL范式——分别是在策略、离策略和基于模型的学习与规划——我们发现域随机化以类似方式影响所有三种算法。据我们所知，这是首次在相同迁移协议下对域随机化覆盖范围对PPO、SAC和TD-MPC2的影响进行受控比较。综合来看，这两个见解强调了评估RL算法不仅应考虑样本效率，还应考虑训练时间等实际因素以及算法产生可用策略的能力。",
+      "authors": [
+        "Hany Hamed",
+        "Abhishek Naik",
+        "Colin Bellinger"
+      ],
+      "authors_all": [
+        "Hany Hamed",
+        "Abhishek Naik",
+        "Colin Bellinger",
+        "A. Rupam Mahmood"
+      ],
+      "primary_category": "",
+      "published": "2026-07-19",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-17326.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-17326-p2.jpg",
+        "assets/img/covers/arxiv-2607-17326-p3.jpg",
+        "assets/img/covers/arxiv-2607-17326-p4.jpg"
+      ],
+      "arxiv_id": "2607.17326",
+      "abs_url": "http://arxiv.org/abs/2607.17326v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.17326v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "聚焦迁移RL的实用效率与域随机化鲁棒性，对sim2real实践有指导意义",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Alberta",
+        "University of Ottawa",
+        "Alberta Machine Intelligence Institute (Amii)",
+        "National Research Council Canada"
+      ],
+      "method_tags": [
+        "PPO",
+        "SAC",
+        "TD-MPC2"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
       ]
     }
   ]

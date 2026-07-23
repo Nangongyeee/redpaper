@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-23T05:57:23.210051+00:00",
-  "count": 1767,
+  "generated_at": "2026-07-23T07:42:58.008005+00:00",
+  "count": 1769,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -2716,6 +2716,171 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-19479",
+      "source": "arxiv",
+      "title": "ModPack: An Extensible Teleoperation Interface for Bimanual Mobile Manipulation",
+      "title_zh": "ModPack：一种可扩展的双臂移动操作遥操作接口",
+      "tldr_zh": "提出模块化可穿戴背包式遥操作系统，支持多种机器人平台和任务。",
+      "cover_zh": "一个背包搞定所有机器人遥操作？这个开源系统让双臂移动操作更灵活",
+      "abstract_zh": "现有的遥操作系统通常针对特定的机器人硬件和任务领域定制，限制了其可扩展性和适应性。我们提出了ModPack，一个模块化且可扩展的遥操作系统，旨在统一框架内支持多种机器人形态和任务需求。ModPack的核心是一个自包含的可穿戴“背包”，集成了机载计算、电源、通信和数据存储。在此共享接口之上，系统支持即插即用的功能模块，包括带触觉反馈的关节级遥操作、移动操作和主动感知。在两个不同的机器人平台和真实世界移动操作任务上的实验表明，ModPack为数据收集和策略学习提供了灵活且可复用的框架。为支持未来研究，我们开源了完整的硬件设计和软件栈。项目网站：https://modpack-robotics.github.io/",
+      "authors": [
+        "Joshua Citron",
+        "Renee Zbizika",
+        "Zeyi Liu"
+      ],
+      "authors_all": [
+        "Joshua Citron",
+        "Renee Zbizika",
+        "Zeyi Liu",
+        "Shuran Song"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-21",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Shuran Song"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19479.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19479-p2.jpg",
+        "assets/img/covers/arxiv-2607-19479-p3.jpg",
+        "assets/img/covers/arxiv-2607-19479-p4.jpg"
+      ],
+      "arxiv_id": "2607.19479",
+      "abs_url": "http://arxiv.org/abs/2607.19479v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19479v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 75,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "teleop",
+        "reason": "模块化遥操作接口，支持双臂移动操作，开源硬件软件，对数据采集和策略学习有高价值",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Stanford University"
+      ],
+      "method_tags": [
+        "Teleoperation",
+        "Imitation Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-19876",
+      "source": "arxiv",
+      "title": "KineBench: Benchmarking Embodied World Models via IDM-Free Kinematic Grounding",
+      "title_zh": "KineBench：通过无IDM的运动学基准确立具身世界模型的基准",
+      "tldr_zh": "提出无IDM的闭环基准KineBench，通过运动学基准确立评估具身世界模型的物理一致性。",
+      "cover_zh": "告别IDM误差｜新基准让具身世界模型评估更可靠",
+      "abstract_zh": "评估具身世界模型（EWM）的物理一致性是一个关键且开放的挑战。虽然通过模拟器展开的闭环评估比开环替代方案能更忠实地评估物理合理性，但现有框架几乎完全依赖逆动力学模型（IDM）进行动作提取。由于从2D像素空间到3D运动学空间的映射复杂，学习到的IDM对训练分布外的数据可能脆弱，导致从包含新物体和场景的生成视频中提取动作不可靠。这造成了世界模型不准确与提取器错误之间不可避免的归因模糊性。为减少这种模糊性，我们提出了KineBench，一个基于显式运动学基准确立管线的无IDM闭环基准。给定一个生成视频，KineBench使用级联视觉基础模型直接从各帧提取6D末端执行器位姿，然后在物理模拟器中执行以进行闭环验证。除了基于执行的任务成功，KineBench还引入了两个经典3D运动学指标——频谱弧长（SPARC）和丸山可操作性指数——以从机器人视角表征轨迹平滑度和运动学可行性。基于ManiSkill3中的20个多样化操作任务，KineBench在四个渐进套件中评估EWM：基本执行、任务迁移、视觉分布外泛化和复杂度条件缩放。对前沿模型的评估揭示了具身视频生成中任务复杂度有界的非线性缩放，为未来数据缩放策略提供了经验指导。",
+      "authors": [
+        "Zeyu Liu",
+        "Zhangzhe Zhu",
+        "Yang Zhang"
+      ],
+      "authors_all": [
+        "Zeyu Liu",
+        "Zhangzhe Zhu",
+        "Yang Zhang",
+        "Chenyou Fan",
+        "Chenjia Bai",
+        "Xuelong Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-22",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ TeleAI"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Xuelong Li"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19876.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19876-p2.jpg",
+        "assets/img/covers/arxiv-2607-19876-p3.jpg",
+        "assets/img/covers/arxiv-2607-19876-p4.jpg"
+      ],
+      "arxiv_id": "2607.19876",
+      "abs_url": "http://arxiv.org/abs/2607.19876v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19876v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 75,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出具身世界模型benchmark，聚焦物理一致性评估，方法新颖，价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Institute of Artificial Intelligence (TeleAI), China Telecom, China",
+        "National University of Singapore, Singapore",
+        "Fudan University, China",
+        "Tsinghua University, China"
+      ],
+      "method_tags": [
+        "IDM-free kinematic grounding",
+        "closed-loop evaluation",
+        "3D kinematic metrics"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "ManiSkill3"
+      ],
+      "method_family": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -9875,79 +10040,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-19479",
-      "source": "arxiv",
-      "title": "ModPack: An Extensible Teleoperation Interface for Bimanual Mobile Manipulation",
-      "title_zh": "ModPack：一种可扩展的双臂移动操作遥操作接口",
-      "tldr_zh": "提出模块化可穿戴背包式遥操作系统，支持多种机器人平台和任务。",
-      "cover_zh": "一个背包搞定所有机器人遥操作？这个开源系统让双臂移动操作更灵活",
-      "abstract_zh": "现有的遥操作系统通常针对特定的机器人硬件和任务领域定制，限制了其可扩展性和适应性。我们提出了ModPack，一个模块化且可扩展的遥操作系统，旨在统一框架内支持多种机器人形态和任务需求。ModPack的核心是一个自包含的可穿戴“背包”，集成了机载计算、电源、通信和数据存储。在此共享接口之上，系统支持即插即用的功能模块，包括带触觉反馈的关节级遥操作、移动操作和主动感知。在两个不同的机器人平台和真实世界移动操作任务上的实验表明，ModPack为数据收集和策略学习提供了灵活且可复用的框架。为支持未来研究，我们开源了完整的硬件设计和软件栈。项目网站：https://modpack-robotics.github.io/",
-      "authors": [
-        "Joshua Citron",
-        "Renee Zbizika",
-        "Zeyi Liu"
-      ],
-      "authors_all": [
-        "Joshua Citron",
-        "Renee Zbizika",
-        "Zeyi Liu",
-        "Shuran Song"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-21",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Stanford"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Shuran Song"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-19479.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-19479-p2.jpg",
-        "assets/img/covers/arxiv-2607-19479-p3.jpg",
-        "assets/img/covers/arxiv-2607-19479-p4.jpg"
-      ],
-      "arxiv_id": "2607.19479",
-      "abs_url": "http://arxiv.org/abs/2607.19479v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19479v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 64,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "teleop",
-        "reason": "模块化遥操作接口，支持双臂移动操作，开源硬件软件，对数据采集和策略学习有高价值",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Stanford University"
-      ],
-      "method_tags": [
-        "Teleoperation",
-        "Imitation Learning"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "github-erwincoumans-motion-imitation",
       "source": "github",
       "title": "erwincoumans/motion_imitation",
@@ -10146,11 +10238,11 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=CP7h-tWWABU",
           "embed_url": "https://www.youtube.com/embed/CP7h-tWWABU",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "GitHub - MedlarTea/referTrack: ReferTrack: Referring Then Tracking for Embodied Visual Tracking · GitHub",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=CP7h-tWWABU"
         }
       ],
       "github": {},
@@ -11128,95 +11220,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-19876",
-      "source": "arxiv",
-      "title": "KineBench: Benchmarking Embodied World Models via IDM-Free Kinematic Grounding",
-      "title_zh": "KineBench：通过无IDM的运动学基准确立具身世界模型的基准",
-      "tldr_zh": "提出无IDM的闭环基准KineBench，通过运动学基准确立评估具身世界模型的物理一致性。",
-      "cover_zh": "告别IDM误差｜新基准让具身世界模型评估更可靠",
-      "abstract_zh": "评估具身世界模型（EWM）的物理一致性是一个关键且开放的挑战。虽然通过模拟器展开的闭环评估比开环替代方案能更忠实地评估物理合理性，但现有框架几乎完全依赖逆动力学模型（IDM）进行动作提取。由于从2D像素空间到3D运动学空间的映射复杂，学习到的IDM对训练分布外的数据可能脆弱，导致从包含新物体和场景的生成视频中提取动作不可靠。这造成了世界模型不准确与提取器错误之间不可避免的归因模糊性。为减少这种模糊性，我们提出了KineBench，一个基于显式运动学基准确立管线的无IDM闭环基准。给定一个生成视频，KineBench使用级联视觉基础模型直接从各帧提取6D末端执行器位姿，然后在物理模拟器中执行以进行闭环验证。除了基于执行的任务成功，KineBench还引入了两个经典3D运动学指标——频谱弧长（SPARC）和丸山可操作性指数——以从机器人视角表征轨迹平滑度和运动学可行性。基于ManiSkill3中的20个多样化操作任务，KineBench在四个渐进套件中评估EWM：基本执行、任务迁移、视觉分布外泛化和复杂度条件缩放。对前沿模型的评估揭示了具身视频生成中任务复杂度有界的非线性缩放，为未来数据缩放策略提供了经验指导。",
-      "authors": [
-        "Zeyu Liu",
-        "Zhangzhe Zhu",
-        "Yang Zhang"
-      ],
-      "authors_all": [
-        "Zeyu Liu",
-        "Zhangzhe Zhu",
-        "Yang Zhang",
-        "Chenyou Fan",
-        "Chenjia Bai",
-        "Xuelong Li"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-22",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ TeleAI"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ NUS"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Xuelong Li"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-19876.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-19876-p2.jpg",
-        "assets/img/covers/arxiv-2607-19876-p3.jpg",
-        "assets/img/covers/arxiv-2607-19876-p4.jpg"
-      ],
-      "arxiv_id": "2607.19876",
-      "abs_url": "http://arxiv.org/abs/2607.19876v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19876v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 61,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出具身世界模型benchmark，聚焦物理一致性评估，方法新颖，价值高。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Institute of Artificial Intelligence (TeleAI), China Telecom, China",
-        "National University of Singapore, Singapore",
-        "Fudan University, China",
-        "Tsinghua University, China"
-      ],
-      "method_tags": [
-        "IDM-free kinematic grounding",
-        "closed-loop evaluation",
-        "3D kinematic metrics"
-      ],
-      "platform": [],
-      "sim_stack": [
-        "ManiSkill3"
-      ],
-      "method_family": "",
-      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -25276,9 +25279,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，用更少内存实现更优重建，精度提升77%。",
-      "cover_zh": "内存砍掉70%！这个重建模型精度反而飙升77%｜VGGT-$Ω$",
-      "abstract_zh": "近期前馈重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著提升。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，使用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机估计精度相比先前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，在静态和动态场景重建上取得显著提升。",
+      "cover_zh": "GPU内存仅需30%｜新模型VGGT-$Ω$重建精度飙升77%",
+      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著改进。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相机估计精度相比之前最佳方法提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -38159,7 +38162,7 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人展示旋转和新动作。",
+      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
       "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
@@ -47275,8 +47278,8 @@
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
       "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率的机器人灵巧操作。",
-      "cover_zh": "10个演示就能学会？3D扩散策略让机器人模仿学习效率飙升",
-      "abstract_zh": "模仿学习为机器人灵巧技能的教授提供了高效途径；然而，鲁棒且泛化地学习复杂技能通常需要大量的人类演示。为解决这一难题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出卓越的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "cover_zh": "10个演示就能学会？这个3D扩散策略让机器人操作稳如老狗",
+      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，稳健且可泛化地学习复杂技能通常需要大量人类演示。为了解决这一挑战性问题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在我们涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对改进超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，展示了精确的控制能力，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -66873,9 +66876,9 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互的自主居家护理与健康任务。",
-      "cover_zh": "一个模型搞定全屋护理｜还能实时交互抗干扰",
-      "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个单一模型处理多种居家护理与健康任务，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
+      "tldr_zh": "单一模型实现全模态交互的自主家庭护理与健康任务。",
+      "cover_zh": "一个模型搞定全屋家务｜还能抗干扰自主执行",
+      "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个单一模型处理多种家庭护理和健康任务，具备全模态交互理解能力，完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -70148,36 +70151,81 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=0ofX1lrGMc8",
           "embed_url": "https://www.youtube.com/embed/0ofX1lrGMc8",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "LENS: LLM-guided Environment Simplification for Planning and Control in Clutter",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=0ofX1lrGMc8"
         },
         {
-          "kind": "mp4",
-          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutter.mp4",
           "embed_url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutter.mp4",
+          "kind": "mp4",
+          "source": "project_page",
           "title": "LENS: LLM-guided Environment Simplification for Planning and Control in Clutter",
-          "source": "project_page"
+          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutter.mp4"
         },
         {
-          "kind": "mp4",
-          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutterandstack.mp4",
           "embed_url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutterandstack.mp4",
+          "kind": "mp4",
+          "source": "project_page",
           "title": "LENS: LLM-guided Environment Simplification for Planning and Control in Clutter",
-          "source": "project_page"
+          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/tamp_clutterandstack.mp4"
         },
         {
-          "kind": "mp4",
-          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/c3_pruning.mp4",
           "embed_url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/c3_pruning.mp4",
+          "kind": "mp4",
+          "source": "project_page",
           "title": "LENS: LLM-guided Environment Simplification for Planning and Control in Clutter",
-          "source": "project_page"
+          "url": "https://media.githubusercontent.com/media/lens-2026/lens-2026.github.io/main/static/videos/c3_pruning.mp4"
         }
       ],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "qbitai-b875390b87",
+      "source": "qbitai",
+      "title": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
+      "title_zh": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
+      "tldr_zh": "中国团队用1B参数模型超越π0，登顶具身智能榜单。",
+      "cover_zh": "1B参数模型竟超越π0？中国团队登顶具身智能榜单！",
+      "abstract_zh": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/07/457537.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 26,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "1B参数模型超越π0，具身智能榜单登顶，有科研价值",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
     },
     {
       "id": "vid-youtube-CAdTjePDBfc",
@@ -77787,6 +77835,73 @@
         "off-road navigation"
       ],
       "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-19850",
+      "source": "arxiv",
+      "title": "SOPD-SocialNav: Selective On-Policy Distillation for Vision-Language Social Navigation",
+      "title_zh": "SOPD-SocialNav：面向视觉语言社交导航的选择性在策略蒸馏",
+      "tldr_zh": "提出选择性在策略蒸馏方法，将大模型社交导航知识高效迁移至轻量模型",
+      "cover_zh": "大模型太重跑不动？这个蒸馏方法让轻量模型也能学会社交导航",
+      "abstract_zh": "视觉语言模型通过利用复杂环境和人类行为的丰富语义理解，在社交机器人导航中展现出巨大潜力。然而，大规模VLM难以部署在资源受限的机器人平台上，而轻量级VLM往往缺乏足够的社交推理能力。为解决这一问题，我们提出SOPD-SocialNav，一种选择性在策略蒸馏（SOPD）方法，将社交导航知识从大型教师VLM迁移到轻量级学生VLM。SOPD引入基于熵的令牌选择机制，利用教师不确定性识别社交信息丰富的决策令牌，同时抑制对应于平凡导航状态的低熵令牌的梯度。然后使用温度控制的Jensen-Shannon散度目标来对齐学生和教师在所选令牌上的分布。在SNEI和MUSON基准上的实验表明，SOPD在动作预测、感知一致性和推理一致性方面始终优于监督微调、离策略蒸馏和标准在策略蒸馏基线。在Scout Mini机器人上的实际部署进一步表明，蒸馏后的模型能够在对话和排队场景中生成更符合社交规范的导航行为。这些结果表明，SOPD是构建轻量级且具有社交意识的VLM导航系统的有效策略。",
+      "authors": [
+        "Xinyu Zhang",
+        "Zishuo Wang",
+        "Ling Xiao"
+      ],
+      "authors_all": [
+        "Xinyu Zhang",
+        "Zishuo Wang",
+        "Ling Xiao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-22",
+      "channels": [
+        "sim2real",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19850.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19850-p2.jpg",
+        "assets/img/covers/arxiv-2607-19850-p3.jpg",
+        "assets/img/covers/arxiv-2607-19850-p4.jpg"
+      ],
+      "arxiv_id": "2607.19850",
+      "abs_url": "http://arxiv.org/abs/2607.19850v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19850v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "locomotion",
+        "reason": "提出选择性策略蒸馏方法，将VLM知识迁移至轻量模型用于社交导航，有真实机器人验证。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Hokkaido University"
+      ],
+      "method_tags": [
+        "on-policy distillation",
+        "social navigation"
+      ],
+      "platform": [
+        "Scout Mini"
+      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -96071,72 +96186,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-19850",
-      "source": "arxiv",
-      "title": "SOPD-SocialNav: Selective On-Policy Distillation for Vision-Language Social Navigation",
-      "title_zh": "SOPD-SocialNav：面向视觉语言社交导航的选择性在策略蒸馏",
-      "tldr_zh": "提出选择性在策略蒸馏方法，将大模型社交导航知识高效迁移至轻量模型",
-      "cover_zh": "大模型太重跑不动？这个蒸馏方法让轻量模型也能学会社交导航",
-      "abstract_zh": "视觉语言模型通过利用复杂环境和人类行为的丰富语义理解，在社交机器人导航中展现出巨大潜力。然而，大规模VLM难以部署在资源受限的机器人平台上，而轻量级VLM往往缺乏足够的社交推理能力。为解决这一问题，我们提出SOPD-SocialNav，一种选择性在策略蒸馏（SOPD）方法，将社交导航知识从大型教师VLM迁移到轻量级学生VLM。SOPD引入基于熵的令牌选择机制，利用教师不确定性识别社交信息丰富的决策令牌，同时抑制对应于平凡导航状态的低熵令牌的梯度。然后使用温度控制的Jensen-Shannon散度目标来对齐学生和教师在所选令牌上的分布。在SNEI和MUSON基准上的实验表明，SOPD在动作预测、感知一致性和推理一致性方面始终优于监督微调、离策略蒸馏和标准在策略蒸馏基线。在Scout Mini机器人上的实际部署进一步表明，蒸馏后的模型能够在对话和排队场景中生成更符合社交规范的导航行为。这些结果表明，SOPD是构建轻量级且具有社交意识的VLM导航系统的有效策略。",
-      "authors": [
-        "Xinyu Zhang",
-        "Zishuo Wang",
-        "Ling Xiao"
-      ],
-      "authors_all": [
-        "Xinyu Zhang",
-        "Zishuo Wang",
-        "Ling Xiao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-22",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-19850.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-19850-p2.jpg",
-        "assets/img/covers/arxiv-2607-19850-p3.jpg",
-        "assets/img/covers/arxiv-2607-19850-p4.jpg"
-      ],
-      "arxiv_id": "2607.19850",
-      "abs_url": "http://arxiv.org/abs/2607.19850v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19850v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "locomotion",
-        "reason": "提出选择性策略蒸馏方法，将VLM知识迁移至轻量模型用于社交导航，有真实机器人验证。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Hokkaido University"
-      ],
-      "method_tags": [
-        "on-policy distillation",
-        "social navigation"
-      ],
-      "platform": [
-        "Scout Mini"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -118707,6 +118756,72 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-17326",
+      "source": "arxiv_discover",
+      "title": "Rethinking the Suitability of Reinforcement Learning Algorithms Under Practical Transfer Constraints",
+      "title_zh": "重新思考强化学习算法在实际迁移约束下的适用性",
+      "tldr_zh": "PPO虽样本效率低，但挂钟时间更快；域随机化对三种RL范式影响相似。",
+      "cover_zh": "谁说样本效率低就是差？PPO挂钟时间反杀SAC和TD-MPC2｜域随机化竟对三种RL范式一视同仁",
+      "abstract_zh": "面向迁移的强化学习需要在标准样本效率之外的维度上评估算法。我们关注两个维度：实际效率（即关于算法适用性的结论在基于挂钟时间而非交互次数的预算下是否改变）和动力学失配下的鲁棒性（即不同学习范式如何应对由域随机化引起的训练分布变化）。我们为强化学习从业者提供两个见解。第一，在迁移场景中，比较不同算法的样本效率往往是不够的。训练一个像样策略所需的挂钟时间是实践者考虑的重要因素，我们发现样本效率较低的PPO算法能比相对更高效的SAC和TD-MPC2更快地产生性能良好的策略，这验证了大规模并行训练范式的普遍认知。第二，域随机化可以帮助不同类型的算法学习鲁棒策略。特别是，尽管PPO、SAC和TD-MPC2代表不同的RL范式——分别是在策略、离策略和基于模型的学习与规划——我们发现域随机化以类似方式影响所有三种算法。据我们所知，这是首次在相同迁移协议下对域随机化覆盖范围对PPO、SAC和TD-MPC2的影响进行受控比较。综合来看，这两个见解强调了评估RL算法不仅应考虑样本效率，还应考虑训练时间等实际因素以及算法产生可用策略的能力。",
+      "authors": [
+        "Hany Hamed",
+        "Abhishek Naik",
+        "Colin Bellinger"
+      ],
+      "authors_all": [
+        "Hany Hamed",
+        "Abhishek Naik",
+        "Colin Bellinger",
+        "A. Rupam Mahmood"
+      ],
+      "primary_category": "",
+      "published": "2026-07-19",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-17326.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-17326-p2.jpg",
+        "assets/img/covers/arxiv-2607-17326-p3.jpg",
+        "assets/img/covers/arxiv-2607-17326-p4.jpg"
+      ],
+      "arxiv_id": "2607.17326",
+      "abs_url": "http://arxiv.org/abs/2607.17326v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.17326v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "聚焦迁移RL的实用效率与域随机化鲁棒性，对sim2real实践有指导意义",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Alberta",
+        "University of Ottawa",
+        "Alberta Machine Intelligence Institute (Amii)",
+        "National Research Council Canada"
+      ],
+      "method_tags": [
+        "PPO",
+        "SAC",
+        "TD-MPC2"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2607-17651",
