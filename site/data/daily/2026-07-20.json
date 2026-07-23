@@ -1,6 +1,6 @@
 {
   "date": "2026-07-20",
-  "count": 23,
+  "count": 24,
   "papers": [
     {
       "id": "arxiv-2607-18016",
@@ -608,9 +608,9 @@
       "id": "vid-youtube-IiNbFPOUrz8",
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
-      "title_zh": "实时全模态交互驱动的全身移动操控",
+      "title_zh": "实时全模态交互驱动的全身移动操作",
       "tldr_zh": "单一模型实现全模态交互的自主居家护理与健康任务。",
-      "cover_zh": "一个模型搞定全屋护理｜还能实时交互抗干扰",
+      "cover_zh": "一个模型搞定全屋护理｜全模态交互还能抗干扰",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个单一模型处理多种居家护理与健康任务，具备全模态交互理解能力，实现全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
@@ -953,6 +953,71 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-18365",
+      "source": "arxiv_discover",
+      "title": "Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion",
+      "title_zh": "面向四足机器人运动的力矩驱动强化学习",
+      "tldr_zh": "提出力矩驱动强化学习框架，使重型四足机器人无需速度估计即可穿越复杂地形。",
+      "cover_zh": "不用速度传感器也能跑｜重型四足机器人靠力矩控制征服楼梯",
+      "abstract_zh": "强化学习（RL）在腿式机器人领域正推动运动能力的发展，展现出适应新挑战性地形的能力。传统上，这些RL运动框架基于位置控制，使得策略对地形类型的适应性较差，并且需要在观测空间中引入状态估计技术（例如线速度）。此外，这些RL框架通常使用小型轻量四足机器人，由于硬件限制，它们在执行高复杂度任务时的可行性有限。本文探索了一种适用于重型高扭矩四足机器人的RL力矩控制框架。本文提出的RL框架能够在无需获知当前速度的情况下穿越崎岖地形并有效跟踪期望线速度。利用Nvidia的Isaac Sim和Isaac Lab，在Unitree B1四足机器人上展示了RL力矩控制策略的仿真结果，实现了3.5 m/s的线速度和1.5 rad/s的角速度。此外，该四足机器人无需外部传感器即可上下楼梯。",
+      "authors": [
+        "Jordan Dowdy",
+        "Jean Chagas Vaz"
+      ],
+      "authors_all": [
+        "Jordan Dowdy",
+        "Jean Chagas Vaz"
+      ],
+      "primary_category": "",
+      "published": "2026-07-20",
+      "channels": [
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-18365.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-18365-p2.jpg",
+        "assets/img/covers/arxiv-2607-18365-p3.jpg",
+        "assets/img/covers/arxiv-2607-18365-p4.jpg"
+      ],
+      "arxiv_id": "2607.18365",
+      "abs_url": "http://arxiv.org/abs/2607.18365v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18365v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "locomotion",
+        "reason": "提出面向重型四足机器人的扭矩驱动RL框架，无需速度估计，在Isaac Sim中验证，有实际价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Louisville"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Torque Control"
+      ],
+      "platform": [
+        "Unitree B1"
+      ],
+      "sim_stack": [
+        "Isaac Sim",
+        "Isaac Lab"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-17778",
       "source": "arxiv",
       "title": "CDIS: Cross-Dimensional Class-Agnostic 3D Instance Segmentation via 2D Mask Tracking and 3D-2D Projection Merging",
@@ -1078,62 +1143,75 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-18365",
+      "id": "arxiv-2607-18367",
       "source": "arxiv_discover",
-      "title": "Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion",
-      "title_zh": "面向四足机器人运动的力矩驱动强化学习",
-      "tldr_zh": "提出力矩驱动强化学习框架，使重型四足机器人无需速度估计即可穿越复杂地形。",
-      "cover_zh": "不用速度传感器也能跑｜重型四足机器人靠力矩控制征服楼梯",
-      "abstract_zh": "强化学习（RL）在腿式机器人领域正推动运动能力的发展，展现出适应新挑战性地形的能力。传统上，这些RL运动框架基于位置控制，使得策略对地形类型的适应性较差，并且需要在观测空间中引入状态估计技术（例如线速度）。此外，这些RL框架通常使用小型轻量四足机器人，由于硬件限制，它们在执行高复杂度任务时的可行性有限。本文探索了一种适用于重型高扭矩四足机器人的RL力矩控制框架。本文提出的RL框架能够在无需获知当前速度的情况下穿越崎岖地形并有效跟踪期望线速度。利用Nvidia的Isaac Sim和Isaac Lab，在Unitree B1四足机器人上展示了RL力矩控制策略的仿真结果，实现了3.5 m/s的线速度和1.5 rad/s的角速度。此外，该四足机器人无需外部传感器即可上下楼梯。",
+      "title": "AlayaWorld: Interactive Long-Horizon World Modeling -- Full Technical Report",
+      "title_zh": "AlayaWorld：交互式长程世界建模——完整技术报告",
+      "tldr_zh": "AlayaWorld是一个15B参数的交互式长程视频世界模型，支持自回归生成和高效蒸馏推理。",
+      "cover_zh": "15B参数｜视频世界模型自回归生成，推理步骤从30步压缩到4步",
+      "abstract_zh": "与依赖劳动密集型管线进行资产制作、动画、物理和编程的传统视频游戏开发不同，视频世界模型能够根据用户输入即时生成交互式环境。它使我们能够从文本、图像或视频创建可定制、可探索且持续演化的虚拟世界。实现这一愿景需要四种紧密耦合的能力：交互性、持久时空一致性、稳定长程生成以及高效响应。我们提出了AlayaWorld，一个交互式长程视频世界模型，能够生成24fps、540p和720p的视频。该模型基于一个15B参数的视频扩散Transformer，在相机轨迹和可切换文本提示下自回归地生成短潜变量块。其有界视觉上下文结合了持久锚定帧、压缩时间历史、几何对齐空间记忆和最近帧条件。为减少长期漂移，模型使用自身展开中收集的损坏历史和预测残差进行训练。我们进一步引入了一种离散自回归蒸馏公式，结合了分布匹配蒸馏、self-forcing++和一致性蒸馏，将每个块的推理从约30步采样减少到4步。在iWorld-Bench上，AlayaWorld在长程生成任务中取得了最佳性能。作为一个全栈、开源且长期的项目，AlayaWorld旨在为未来交互式视频世界模型的研究提供可扩展的基础。",
       "authors": [
-        "Jordan Dowdy",
-        "Jean Chagas Vaz"
+        "AlayaWorld Team",
+        "Kaipeng Zhang",
+        "Chuanhao Li"
       ],
       "authors_all": [
-        "Jordan Dowdy",
-        "Jean Chagas Vaz"
+        "AlayaWorld Team",
+        "Kaipeng Zhang",
+        "Chuanhao Li",
+        "Yifan Zhan",
+        "Yongtao Ge",
+        "Yuanyang Yin",
+        "Jiaming Tan",
+        "Kang He",
+        "Liaoyuan Fan",
+        "Mingliang Zhai",
+        "Ruicong Liu",
+        "Xiaojie Xu",
+        "Xuangeng Chu",
+        "Zhen Li",
+        "Zhengyuan Lin",
+        "Zhixiang Wang",
+        "Zian Meng",
+        "Zihui Gao"
       ],
       "primary_category": "",
       "published": "2026-07-20",
       "channels": [
-        "locomotion"
+        "world-model"
       ],
       "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-18365.jpg",
+      "cover_image": "assets/img/covers/arxiv-2607-18367.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2607-18365-p2.jpg",
-        "assets/img/covers/arxiv-2607-18365-p3.jpg",
-        "assets/img/covers/arxiv-2607-18365-p4.jpg"
+        "assets/img/covers/arxiv-2607-18367-p2.jpg",
+        "assets/img/covers/arxiv-2607-18367-p3.jpg",
+        "assets/img/covers/arxiv-2607-18367-p4.jpg"
       ],
-      "arxiv_id": "2607.18365",
-      "abs_url": "http://arxiv.org/abs/2607.18365v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.18365v1",
+      "arxiv_id": "2607.18367",
+      "abs_url": "http://arxiv.org/abs/2607.18367v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18367v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
       "judge": {
         "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "locomotion",
-        "reason": "提出面向重型四足机器人的扭矩驱动RL框架，无需速度估计，在Isaac Sim中验证，有实际价值。",
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出交互式长时域视频世界模型，含持久时空一致性与蒸馏加速，对具身规划有参考价值",
         "model": "deepseek-v4-flash"
       },
       "institutions": [
-        "University of Louisville"
+        "Alaya Lab"
       ],
       "method_tags": [
-        "Reinforcement Learning",
-        "Torque Control"
+        "video diffusion transformer",
+        "autoregressive distillation",
+        "long-horizon generation"
       ],
-      "platform": [
-        "Unitree B1"
-      ],
-      "sim_stack": [
-        "Isaac Sim",
-        "Isaac Lab"
-      ],
+      "platform": [],
+      "sim_stack": [],
       "method_family": "",
-      "real_robot": "no",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
