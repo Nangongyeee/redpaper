@@ -1,0 +1,131 @@
+{
+  "id": "arxiv-2607-19745",
+  "source": "arxiv",
+  "title": "EgoRecovery: Acquiring Failure Recovery Ability Through Human Recovery Demonstration",
+  "title_zh": "EgoRecovery：通过人类恢复演示获取故障恢复能力",
+  "abstract": "Robust embodied robots should be able to recover from failures and retry tasks in order to operate reliably in unstructured and noisy real-world environments. Achieving this capability requires training policies on data that captures recovery behaviors. However, collecting such data through robot teleoperation is difficult to scale, as it is time-consuming to induce diverse failure states, perform corrective actions, and reset the environment. This challenge is further exacerbated by the high diversity of failure modes, which demands substantially more recovery data than success demonstrations. In this work, we show that egocentric human data capturing failure recovery processes provides a scalable alternative. By efficiently arranging task-level failure configurations and recording short recovery segments, human operators can generate more than 10x as much valid recovery data per hour compared to robot teleoperation under our protocol. To address the embodiment gap between human and robot, we propose EgoRecovery, a co-training framework for learning recovery behavior, where human recovery demonstrations are aligned to a compact corrective-intent space shared with robot data, which captures the timing and magnitude of correction. Only a small number of robot recovery demonstrations are required to connect this intent to executable robot actions. At deployment, a learned recovery gate predicts when correction is needed from robot observations and activates the corrective intent only in recovery states. Experiments on real-world recovery tasks show that EgoRecovery improves success from failure starts over robot-only recovery, direct co-training with human recovery data, and direct intent-transfer baselines.",
+  "abstract_zh": "鲁棒的具身机器人应能从故障中恢复并重试任务，以便在非结构化和嘈杂的真实环境中可靠运行。实现这一能力需要在捕捉恢复行为的数据上训练策略。然而，通过机器人遥操作收集此类数据难以规模化，因为诱导多样化的故障状态、执行纠正动作以及重置环境非常耗时。由于故障模式的高度多样性，这一挑战更加严峻，所需的恢复数据远多于成功演示。在这项工作中，我们展示了利用第一人称人类数据捕捉故障恢复过程是一种可扩展的替代方案。通过高效安排任务级故障配置并记录短恢复片段，人类操作员在我们的协议下每小时可生成比机器人遥操作多10倍以上的有效恢复数据。为了解决人与机器人之间的具身差距，我们提出了EgoRecovery，一种用于学习恢复行为的协同训练框架，其中人类恢复演示被对齐到一个与机器人数据共享的紧凑纠正意图空间，该空间捕捉纠正的时机和幅度。仅需少量机器人恢复演示即可将此意图连接到可执行的机器人动作。在部署时，一个学习到的恢复门控从机器人观测中预测何时需要纠正，并仅在恢复状态下激活纠正意图。在真实世界恢复任务上的实验表明，EgoRecovery在从故障状态启动的成功率上优于仅机器人恢复、直接与人类恢复数据协同训练以及直接意图迁移基线。",
+  "tldr_zh": "利用人类第一人称恢复演示，通过协同训练框架使机器人高效学习故障恢复能力。",
+  "cover_zh": "机器人摔倒了？用人类第一视角数据教它自己爬起来，效率提升10倍！",
+  "authors": [
+    {
+      "name": "Zuhao Ge",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuchen Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Weitao Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Minglei Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinyu Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Chao Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hanwen Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Haotian Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zuxuan Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaosong Jia",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu-Gang Jiang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-07-22",
+  "updated": "2026-07-22",
+  "arxiv_id": "2607.19745",
+  "pdf_url": "https://arxiv.org/pdf/2607.19745v1",
+  "abs_url": "http://arxiv.org/abs/2607.19745v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-19745.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-19745-p2.jpg",
+    "assets/img/covers/arxiv-2607-19745-p3.jpg",
+    "assets/img/covers/arxiv-2607-19745-p4.jpg"
+  ],
+  "channels": [
+    "teleop"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 31,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（teleoperation、teleop、robot teleoperation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 31 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "teleop",
+    "reason": "利用人类示教数据解决机器人失败恢复，提出共训练框架，具身智能重要方向",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Institute of Trustworthy Embodied AI (TEAI), Fudan University",
+    "Shanghai Key Laboratory of Multimodal Embodied AI",
+    "Simple AI"
+  ],
+  "method_tags": [
+    "co-training",
+    "corrective-intent space",
+    "recovery gate"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
