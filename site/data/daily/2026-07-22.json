@@ -1,6 +1,6 @@
 {
   "date": "2026-07-22",
-  "count": 14,
+  "count": 17,
   "papers": [
     {
       "id": "arxiv-2607-19876",
@@ -702,6 +702,144 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-19719",
+      "source": "arxiv_discover",
+      "title": "Koopman Dreamer: Spectrally Constrained Latent Dynamics for Stable World-Model Imagination",
+      "title_zh": "Koopman Dreamer：谱约束潜动力学实现稳定世界模型想象",
+      "tldr_zh": "提出谱约束潜动力学世界模型，提升长时域想象稳定性与控制性能。",
+      "cover_zh": "世界模型总崩坏？谱约束让长程想象稳如老狗｜Koopman Dreamer",
+      "abstract_zh": "潜世界模型通过在想象的潜轨迹上优化策略来提高连续控制中的样本效率，但常见的神经转移对模态持久性和长展开中的误差累积提供的直接控制有限。我们提出Koopman Dreamer，一种具有谱约束确定性潜动力学核心的Dreamer风格世界模型。其受Koopman启发的骨干网络使用二维旋转-缩放块（半径有界）来表示阻尼、旋转和近周期模态。线性和低秩双线性动作项捕获全局和状态相关的控制效应，而随机状态调制提供局部校正信息。为了减少后验条件训练与仅先验想象之间的不匹配，模型将后验条件EMA教师目标与一步一致性、多步展开和开环观测预测目标相结合。我们进一步推导了多步展开误差界，将谱骨干和双线性交互的放大与随机状态不匹配和建模残差的加性效应分离，阐明了误差衰减与长期信息保留之间的权衡。在DeepMind Control Suite和UAV-LiDAR自主导航的本体感觉连续控制任务上的实验结果表明，Koopman Dreamer提高了长时域潜展开的稳定性，并在依赖高质量多步想象的任务上实现了更强的闭环控制性能。",
+      "authors": [
+        "Jiaqi Li",
+        "Xinglong Zhang",
+        "Haibin Xie"
+      ],
+      "authors_all": [
+        "Jiaqi Li",
+        "Xinglong Zhang",
+        "Haibin Xie",
+        "Yixing Lan",
+        "Wei Pan",
+        "Xin Xu"
+      ],
+      "primary_category": "",
+      "published": "2026-07-22",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19719.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19719-p2.jpg",
+        "assets/img/covers/arxiv-2607-19719-p3.jpg",
+        "assets/img/covers/arxiv-2607-19719-p4.jpg"
+      ],
+      "arxiv_id": "2607.19719",
+      "abs_url": "http://arxiv.org/abs/2607.19719v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19719v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出Koopman Dreamer，改进Dreamer世界模型的长期稳定性，属于世界模型核心方法创新。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National University of Defense Technology"
+      ],
+      "method_tags": [
+        "world model",
+        "spectral constraint",
+        "latent dynamics"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2607-19809",
+      "source": "arxiv_discover",
+      "title": "Dreamer-CPC: Message Learning with World Models for Decentralized Multi-agent Reinforcement Learning",
+      "title_zh": "Dreamer-CPC：基于世界模型的消息学习用于去中心化多智能体强化学习",
+      "tldr_zh": "将消息学习融入世界模型，使去中心化智能体在观测缺失时仍能有效协调。",
+      "cover_zh": "观测缺失也能协作？Dreamer-CPC用世界模型让智能体通信效率翻倍",
+      "abstract_zh": "在多智能体强化学习（MARL）中，智能体间的通信能有效提升部分可观测环境下的性能。基于表示学习的方法使去中心化智能体能够学习基于自身观测的消息，但这些方法仅依赖当前观测，无法传递随时间累积的信息。我们提出Dreamer-CPC，一种去中心化的基于模型的MARL方法，它将基于集体预测编码（CPC）的消息学习集成到DreamerV3的世界模型中。每个智能体独立维护一个世界模型和一个消息模块，并从反映过去观测和动作历史的世界模型潜在状态中推断和交换消息。我们在两个环境中评估了Dreamer-CPC：Observer（一个非合作信息共享任务）和CatchApple（一个新引入的任务，其中任务相关观测暂时缺失）。在两个环境中，Dreamer-CPC均优于IPPO-CPC（一种基于当前观测生成消息的现有CPC方法）以及无通信基线。特别是在CatchApple中，Dreamer-CPC的回合回报是IPPO-CPC的4到5倍，展示了在其他方法因观测缺失而失败的情况下的有效协调。这些结果表明，当仅凭当前观测不足时，基于世界模型潜在动力学的通信可以支持去中心化决策。",
+      "authors": [
+        "Taisuke Takayama",
+        "Naoto Yoshida",
+        "Tadahiro Taniguchi"
+      ],
+      "authors_all": [
+        "Taisuke Takayama",
+        "Naoto Yoshida",
+        "Tadahiro Taniguchi"
+      ],
+      "primary_category": "",
+      "published": "2026-07-22",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19809.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19809-p2.jpg",
+        "assets/img/covers/arxiv-2607-19809-p3.jpg",
+        "assets/img/covers/arxiv-2607-19809-p4.jpg"
+      ],
+      "arxiv_id": "2607.19809",
+      "abs_url": "http://arxiv.org/abs/2607.19809v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19809v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "将DreamerV3世界模型与CPC结合用于多智能体通信，方法新颖且实验充分，对具身多机器人协作有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Graduate School of Informatics, Kyoto University",
+        "Research Organization of Science and Technology, Ritsumeikan University"
+      ],
+      "method_tags": [
+        "World Model",
+        "Collective Predictive Coding",
+        "Multi-agent Reinforcement Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-19745",
       "source": "arxiv",
       "title": "EgoRecovery: Acquiring Failure Recovery Ability Through Human Recovery Demonstration",
@@ -775,6 +913,69 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-19749",
+      "source": "arxiv_discover",
+      "title": "The World Model Remembers, the Actor Forgets: Dream Rehearsal for Continual Model-Based RL",
+      "title_zh": "世界模型记住，演员遗忘：用于持续基于模型强化学习的梦境排练",
+      "tldr_zh": "持续RL中，世界模型不遗忘，但演员遗忘；分级梦境排练可零环境交互恢复技能。",
+      "cover_zh": "演员全忘了，世界模型还记得｜梦境排练让AI持续学习不遗忘",
+      "abstract_zh": "基于模型的强化学习智能体（如DreamerV3系列）在任务序列训练时会灾难性地遗忘，即使无限制的重放缓冲区保留了所有早期经验。我们提出了持续强化学习文献中假设有答案但从未测量过的问题：哪个组件在遗忘？在永不清除的重放下，预注册的组件级探测（全程n=3个种子）显示，世界模型几乎保留了旧任务的所有可测量内容——奖励区分（保留比率~1.0）、价值估计和终止结构——而演员的行为则崩溃了。这种遗忘是通道问题，而非记忆问题。我们通过干预证明了这一点：冻结世界模型并使用相同的想象轨迹，在想象中进行强化学习无法恢复丢失的技能（0/3种子），而基于世界模型自身分级梦境的监督自我模仿在零环境交互下恢复了技能（3/3种子）。在训练期间交错进行这种分级梦境排练，产生了一个无需任务标签、参数不变的持续学习器：3/3的四任务链（普通重放为0/3），3/3的八任务链，并且相对于匹配的真实情节克隆有一致的提升（配对差异+0.13，bootstrap 95% CI [0.07, 0.24]，完全种子分离）。梦境分级步骤是关键：我们描述了两种评分失败模式，提供了一个离线选择量规，在它们污染结果之前捕获了它们，并给出了一个实现优先的分级规则来消除它们。所有实验均使用承诺协议预注册；每个被反驳的假设都已报告。",
+      "authors": [
+        "Gurp Nijjer"
+      ],
+      "authors_all": [
+        "Gurp Nijjer"
+      ],
+      "primary_category": "",
+      "published": "2026-07-22",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-19749.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-19749-p2.jpg",
+        "assets/img/covers/arxiv-2607-19749-p3.jpg",
+        "assets/img/covers/arxiv-2607-19749-p4.jpg"
+      ],
+      "arxiv_id": "2607.19749",
+      "abs_url": "http://arxiv.org/abs/2607.19749v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19749v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "聚焦DreamerV3世界模型在持续RL中的遗忘问题，提出梦境排练方法，核心贡献在世界模型与行为者分离分析，属于world-model频道",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Quantegra Research, Canada"
+      ],
+      "method_tags": [
+        "Dream Rehearsal",
+        "continual RL",
+        "model-based RL"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2607-19903",

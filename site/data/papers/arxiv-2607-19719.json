@@ -1,0 +1,111 @@
+{
+  "id": "arxiv-2607-19719",
+  "source": "arxiv_discover",
+  "title": "Koopman Dreamer: Spectrally Constrained Latent Dynamics for Stable World-Model Imagination",
+  "title_zh": "Koopman Dreamer：谱约束潜动力学实现稳定世界模型想象",
+  "abstract": "Latent world models improve sample efficiency in continuous control by optimizing policies over imagined latent trajectories, but common neural transitions offer limited direct control over modal persistence and error accumulation in long rollouts. We propose Koopman Dreamer, a Dreamer-style world model with a spectrally constrained deterministic latent dynamics core. Its Koopman-inspired backbone uses two-dimensional rotation--scaling blocks with bounded radii to represent damping, rotation, and near-periodic modes. Linear and low-rank bilinear action terms capture global and state-dependent control effects, while stochastic-state modulation supplies local correction information. To reduce the mismatch between posterior-conditioned training and prior-only imagination, the model combines posterior-conditioned EMA teacher targets with one-step consistency, multi-step rollout, and open-loop observation-prediction objectives. We further derive a multi-step rollout-error bound that separates amplification by the spectral backbone and bilinear interaction from the additive effects of stochastic-state mismatch and modeling residuals, clarifying the trade-off between error attenuation and long-term information retention. Experimental results on proprioceptive continuous-control tasks from the DeepMind Control Suite and UAV-LiDAR autonomous navigation demonstrate that Koopman Dreamer improves the stability of long-horizon latent rollouts and achieves stronger closed-loop control performance on tasks that rely on high-quality multi-step imagination.",
+  "abstract_zh": "潜世界模型通过在想象的潜轨迹上优化策略来提高连续控制中的样本效率，但常见的神经转移对模态持久性和长展开中的误差累积提供的直接控制有限。我们提出Koopman Dreamer，一种具有谱约束确定性潜动力学核心的Dreamer风格世界模型。其受Koopman启发的骨干网络使用二维旋转-缩放块（半径有界）来表示阻尼、旋转和近周期模态。线性和低秩双线性动作项捕获全局和状态相关的控制效应，而随机状态调制提供局部校正信息。为了减少后验条件训练与仅先验想象之间的不匹配，模型将后验条件EMA教师目标与一步一致性、多步展开和开环观测预测目标相结合。我们进一步推导了多步展开误差界，将谱骨干和双线性交互的放大与随机状态不匹配和建模残差的加性效应分离，阐明了误差衰减与长期信息保留之间的权衡。在DeepMind Control Suite和UAV-LiDAR自主导航的本体感觉连续控制任务上的实验结果表明，Koopman Dreamer提高了长时域潜展开的稳定性，并在依赖高质量多步想象的任务上实现了更强的闭环控制性能。",
+  "tldr_zh": "提出谱约束潜动力学世界模型，提升长时域想象稳定性与控制性能。",
+  "cover_zh": "世界模型总崩坏？谱约束让长程想象稳如老狗｜Koopman Dreamer",
+  "authors": [
+    {
+      "name": "Jiaqi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinglong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haibin Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Yixing Lan",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei Pan",
+      "affiliation": ""
+    },
+    {
+      "name": "Xin Xu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-07-22",
+  "updated": "2026-07-22",
+  "arxiv_id": "2607.19719",
+  "pdf_url": "https://arxiv.org/pdf/2607.19719v1",
+  "abs_url": "http://arxiv.org/abs/2607.19719v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-19719.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-19719-p2.jpg",
+    "assets/img/covers/arxiv-2607-19719-p3.jpg",
+    "assets/img/covers/arxiv-2607-19719-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（world model、world models、latent world model、dreamer）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出Koopman Dreamer，改进Dreamer世界模型的长期稳定性，属于世界模型核心方法创新。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "National University of Defense Technology"
+  ],
+  "method_tags": [
+    "world model",
+    "spectral constraint",
+    "latent dynamics"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

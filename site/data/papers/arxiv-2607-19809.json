@@ -1,0 +1,100 @@
+{
+  "id": "arxiv-2607-19809",
+  "source": "arxiv_discover",
+  "title": "Dreamer-CPC: Message Learning with World Models for Decentralized Multi-agent Reinforcement Learning",
+  "title_zh": "Dreamer-CPC：基于世界模型的消息学习用于去中心化多智能体强化学习",
+  "abstract": "In multi-agent reinforcement learning (MARL), inter-agent communication is effective for improving performance under partial observability. Representation learning-based approaches enable decentralized agents to learn messages grounded in their own observations, but they rely only on current observations and cannot convey information accumulated over time. We propose Dreamer-CPC, a decentralized model-based MARL method that integrates message learning based on Collective Predictive Coding (CPC) into the world model of DreamerV3. Each agent independently maintains a world model and a message module, and infers and exchanges messages from the latent states of the world model that reflect the history of past observations and actions. We evaluated Dreamer-CPC in two environments: Observer, a non-cooperative information-sharing task, and CatchApple, a newly introduced task in which task-relevant observations are temporarily missing. In both environments, Dreamer-CPC outperformed IPPO-CPC, an existing CPC-based method that generates messages from current observations, as well as no-communication baselines. In particular, in CatchApple, Dreamer-CPC achieved 4 to 5 times the episode return of IPPO-CPC, demonstrating effective coordination where other methods fail due to missing observations. These results suggest that communication grounded in the latent dynamics of world models can support decentralized decision-making when current observations alone are insufficient.",
+  "abstract_zh": "在多智能体强化学习（MARL）中，智能体间的通信能有效提升部分可观测环境下的性能。基于表示学习的方法使去中心化智能体能够学习基于自身观测的消息，但这些方法仅依赖当前观测，无法传递随时间累积的信息。我们提出Dreamer-CPC，一种去中心化的基于模型的MARL方法，它将基于集体预测编码（CPC）的消息学习集成到DreamerV3的世界模型中。每个智能体独立维护一个世界模型和一个消息模块，并从反映过去观测和动作历史的世界模型潜在状态中推断和交换消息。我们在两个环境中评估了Dreamer-CPC：Observer（一个非合作信息共享任务）和CatchApple（一个新引入的任务，其中任务相关观测暂时缺失）。在两个环境中，Dreamer-CPC均优于IPPO-CPC（一种基于当前观测生成消息的现有CPC方法）以及无通信基线。特别是在CatchApple中，Dreamer-CPC的回合回报是IPPO-CPC的4到5倍，展示了在其他方法因观测缺失而失败的情况下的有效协调。这些结果表明，当仅凭当前观测不足时，基于世界模型潜在动力学的通信可以支持去中心化决策。",
+  "tldr_zh": "将消息学习融入世界模型，使去中心化智能体在观测缺失时仍能有效协调。",
+  "cover_zh": "观测缺失也能协作？Dreamer-CPC用世界模型让智能体通信效率翻倍",
+  "authors": [
+    {
+      "name": "Taisuke Takayama",
+      "affiliation": ""
+    },
+    {
+      "name": "Naoto Yoshida",
+      "affiliation": ""
+    },
+    {
+      "name": "Tadahiro Taniguchi",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.MA"
+  ],
+  "published": "2026-07-22",
+  "updated": "2026-07-22",
+  "arxiv_id": "2607.19809",
+  "pdf_url": "https://arxiv.org/pdf/2607.19809v1",
+  "abs_url": "http://arxiv.org/abs/2607.19809v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-19809.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-19809-p2.jpg",
+    "assets/img/covers/arxiv-2607-19809-p3.jpg",
+    "assets/img/covers/arxiv-2607-19809-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 15,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（world model、world models、dreamer、dreamerv3）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 15 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "将DreamerV3世界模型与CPC结合用于多智能体通信，方法新颖且实验充分，对具身多机器人协作有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Graduate School of Informatics, Kyoto University",
+    "Research Organization of Science and Technology, Ritsumeikan University"
+  ],
+  "method_tags": [
+    "World Model",
+    "Collective Predictive Coding",
+    "Multi-agent Reinforcement Learning"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
