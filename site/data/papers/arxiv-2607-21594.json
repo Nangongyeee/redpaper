@@ -1,0 +1,105 @@
+{
+  "id": "arxiv-2607-21594",
+  "source": "arxiv",
+  "title": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
+  "title_zh": "流式多智能体自回归扩散模型与世界状态寄存器",
+  "abstract": "Multi-agent interactive world models should not only generate consistent observations, but also maintain world states that persist across agents and evolve across views. Existing autoregressive video diffusion pipelines carry forward observation history as conditioning context, which makes shared state difficult to maintain in multi-agent and multi-view settings. We present WorldWeaver (W^2), a streaming multi-agent video diffusion model that augments rollout with cross-agent world state registers: learnable tokens that store shared world information, track individual agent status, and are dynamically updated after each generated chunk. We ground these registers with supervision signals spanning individual agent status, global state views including bird's-eye views, and scene text. We further improve the architecture with a Mixture-of-Transformers design that uses separate weights for world state modeling and visual frame modeling. Extensive experiments in two-agent Minecraft video generation show that explicit world-state modeling improves logical consistency and generation quality.",
+  "abstract_zh": "多智能体交互世界模型不仅应生成一致的观测，还应维护跨智能体持久存在且随视角演化的世界状态。现有的自回归视频扩散流水线将观测历史作为条件上下文传递，这使得在多智能体和多视角设置下难以维护共享状态。我们提出WorldWeaver (W^2)，一种流式多智能体视频扩散模型，通过跨智能体世界状态寄存器增强生成过程：这些可学习令牌存储共享世界信息、跟踪个体智能体状态，并在每个生成块后动态更新。我们利用涵盖个体智能体状态、全局状态视图（包括鸟瞰图）和场景文本的监督信号来约束这些寄存器。我们还通过混合Transformer设计改进架构，该设计使用独立的权重进行世界状态建模和视觉帧建模。在双智能体Minecraft视频生成的大量实验表明，显式世界状态建模提高了逻辑一致性和生成质量。",
+  "tldr_zh": "提出带世界状态寄存器的流式多智能体扩散模型，提升视频生成一致性",
+  "cover_zh": "多智能体视频生成新突破｜世界状态寄存器让逻辑一致性飙升",
+  "authors": [
+    {
+      "name": "Sicheng Mo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuheng Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziyang Leng",
+      "affiliation": ""
+    },
+    {
+      "name": "Krishna Kumar Singh",
+      "affiliation": ""
+    },
+    {
+      "name": "Bolei Zhou",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-07-23",
+  "updated": "2026-07-23",
+  "arxiv_id": "2607.21594",
+  "pdf_url": "https://arxiv.org/pdf/2607.21594v1",
+  "abs_url": "http://arxiv.org/abs/2607.21594v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-21594.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-21594-p2.jpg",
+    "assets/img/covers/arxiv-2607-21594-p3.jpg",
+    "assets/img/covers/arxiv-2607-21594-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 19,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 19 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出多智能体世界模型，创新性地引入世界状态寄存器，提升视频生成一致性，属于世界模型前沿工作。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of California, Los Angeles",
+    "Adobe Research"
+  ],
+  "method_tags": [
+    "autoregressive video diffusion",
+    "world state registers",
+    "Mixture-of-Transformers"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
