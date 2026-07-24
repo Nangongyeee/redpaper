@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T05:51:09.937964+00:00",
+  "generated_at": "2026-07-24T07:41:47.253422+00:00",
   "count": 1784,
   "papers": [
     {
@@ -25175,9 +25175,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，显著提升静态与动态场景重建精度和效率。",
-      "cover_zh": "只用30%显存，重建精度却飙升77%？这个新模型做到了！",
-      "abstract_zh": "近期前馈式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它显著提高了静态和动态场景的重建精度、效率及能力。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相比之前最佳相机估计精度提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构简化和寄存器注意力，在降低显存的同时大幅提升重建精度。",
+      "cover_zh": "显存砍掉70%！这个新模型重建精度反而飙升77%？",
+      "abstract_zh": "近期前馈式重建模型（如VGGT）已证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入VGGT-$Ω$，显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，使用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。通过这种方式，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上相比之前最佳相机估计精度提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -37969,8 +37969,8 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人展示旋转等新动作。",
-      "cover_zh": "机器人也能玩转圈？Atlas 新动作太惊艳！",
+      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
+      "cover_zh": "机器人也能玩转旋转？Atlas 新动作太惊艳！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -47394,9 +47394,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率和强泛化，且安全违规极少。",
-      "cover_zh": "10个演示就学会？3D扩散策略让机器人模仿学习效率飙升",
-      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，要稳健且泛化地学习复杂技能通常需要大量人类演示。为了解决这一挑战性问题，我们提出了3D Diffusion Policy (DP3)，一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在我们涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出卓越的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人类干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "提出3D扩散策略，利用3D点云表示实现少样本模仿学习，性能显著提升。",
+      "cover_zh": "仅需10个演示｜3D扩散策略让机器人学技能又快又安全",
+      "abstract_zh": "模仿学习为机器人灵巧技能的教授提供了高效途径；然而，要稳健且泛化地学习复杂技能通常需要大量人类演示。为解决这一难题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用从稀疏点云中通过高效点编码器提取的紧凑3D视觉表示。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大部分任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，每个任务仅需40个演示，DP3便展现出精确控制能力，成功率达85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违规，需要人类干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -55305,8 +55305,8 @@
       "source": "qbitai",
       "title": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
       "title_zh": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
-      "tldr_zh": "具身智能正在从「参数竞赛」进入「架构竞赛」。",
-      "cover_zh": "具身智能正在从「参数竞赛」进入「架构竞赛」。",
+      "tldr_zh": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
+      "cover_zh": "超越π0，中国团队用1B参数模型登顶具身智能榜单",
       "abstract_zh": "具身智能正在从「参数竞赛」进入「架构竞赛」。",
       "authors": [],
       "authors_all": [],
@@ -78278,6 +78278,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-21025",
+      "source": "arxiv",
+      "title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environments",
+      "title_zh": "ZONDA：多楼层环境下的零样本物体导航与动态避障",
+      "tldr_zh": "提出零样本多楼层物体导航框架，集成跨楼层规划与动态避障。",
+      "cover_zh": "机器人也能跨楼层找东西？零样本导航+动态避障，现实场景直接可用！",
+      "abstract_zh": "在物体目标导航任务中，现有方法通常局限于静态单楼层环境，忽略了跨楼层拓扑和动态行人，限制了其实际部署。为解决这些限制，我们提出ZONDA，一个零样本物体导航与动态避障框架。具体而言，ZONDA集成了三个核心组件：(i) 启发式多楼层规划：基于高度差可通行地图，无需特定平台的学习控制器即可实现楼梯穿越和跨楼层探索；(ii) 多视角目标验证：使用视觉语言模型交叉检查多尺度观测，显著减少误报；(iii) 动态行人避障：显式跟踪和预测移动行人以生成预期行为。在真实的Direct Drive Tech TITA双足机器人以及HM3D和MP3D上的大量仿真评估中，ZONDA取得了显著改进的结果。此外，与现有基线相比，ZONDA在动态基准HM3D-DYNA上能保持鲁棒的导航。",
+      "authors": [
+        "Shaomin Liang",
+        "Xuanhong Liao",
+        "Shiyao Zhang"
+      ],
+      "authors_all": [
+        "Shaomin Liang",
+        "Xuanhong Liao",
+        "Shiyao Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-23",
+      "channels": [
+        "sim2real",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-21025.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-21025-p2.jpg",
+        "assets/img/covers/arxiv-2607-21025-p3.jpg",
+        "assets/img/covers/arxiv-2607-21025-p4.jpg"
+      ],
+      "arxiv_id": "2607.21025",
+      "abs_url": "http://arxiv.org/abs/2607.21025v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21025v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "locomotion",
+        "reason": "零样本物体导航结合动态避障，在双足机器人上验证，涉及跨楼层规划与行人预测",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Southern University of Science and Technology",
+        "Guangdong Direct Drive Technology Limited",
+        "South China University of Technology",
+        "Great Bay University"
+      ],
+      "method_tags": [
+        "zero-shot",
+        "object goal navigation",
+        "dynamic avoidance"
+      ],
+      "platform": [
+        "Direct Drive Tech TITA"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2607-21522",
       "source": "arxiv",
       "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
@@ -96914,76 +96985,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-21025",
-      "source": "arxiv",
-      "title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environments",
-      "title_zh": "ZONDA：多楼层环境下的零样本物体导航与动态避障",
-      "tldr_zh": "提出零样本多楼层物体导航框架，集成跨楼层规划与动态避障。",
-      "cover_zh": "机器人也能跨楼层找东西？零样本导航+动态避障，现实场景直接可用！",
-      "abstract_zh": "在物体目标导航任务中，现有方法通常局限于静态单楼层环境，忽略了跨楼层拓扑和动态行人，限制了其实际部署。为解决这些限制，我们提出ZONDA，一个零样本物体导航与动态避障框架。具体而言，ZONDA集成了三个核心组件：(i) 启发式多楼层规划：基于高度差可通行地图，无需特定平台的学习控制器即可实现楼梯穿越和跨楼层探索；(ii) 多视角目标验证：使用视觉语言模型交叉检查多尺度观测，显著减少误报；(iii) 动态行人避障：显式跟踪和预测移动行人以生成预期行为。在真实的Direct Drive Tech TITA双足机器人以及HM3D和MP3D上的大量仿真评估中，ZONDA取得了显著改进的结果。此外，与现有基线相比，ZONDA在动态基准HM3D-DYNA上能保持鲁棒的导航。",
-      "authors": [
-        "Shaomin Liang",
-        "Xuanhong Liao",
-        "Shiyao Zhang"
-      ],
-      "authors_all": [
-        "Shaomin Liang",
-        "Xuanhong Liao",
-        "Shiyao Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-23",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-21025.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-21025-p2.jpg",
-        "assets/img/covers/arxiv-2607-21025-p3.jpg",
-        "assets/img/covers/arxiv-2607-21025-p4.jpg"
-      ],
-      "arxiv_id": "2607.21025",
-      "abs_url": "http://arxiv.org/abs/2607.21025v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21025v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "locomotion",
-        "reason": "零样本物体导航结合动态避障，在双足机器人上验证，涉及跨楼层规划与行人预测",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Southern University of Science and Technology",
-        "Guangdong Direct Drive Technology Limited",
-        "South China University of Technology",
-        "Great Bay University"
-      ],
-      "method_tags": [
-        "zero-shot",
-        "object goal navigation",
-        "dynamic avoidance"
-      ],
-      "platform": [
-        "Direct Drive Tech TITA"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
