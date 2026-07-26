@@ -1,6 +1,6 @@
 // Detail page: load /data/papers/{id}.json, render hero + bilingual content.
 
-import { Favorites, Curated, Reads, Theme } from './storage.js?v=a23af8fc';
+import { Favorites, Curated, Reads, Theme } from './storage.js?v=c22f33a7';
 import {
   escapeHTML,
   formatAuthors,
@@ -13,7 +13,7 @@ import {
   HEART_SVG_OUTLINE,
   HEART_SVG_FILL,
   fetchJSON,
-} from './utils.js?v=a23af8fc';
+} from './utils.js?v=c22f33a7';
 
 let _palettes = [];
 
