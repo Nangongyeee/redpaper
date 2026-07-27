@@ -1,0 +1,81 @@
+{
+  "id": "github-nvlabs-curobo",
+  "source": "github",
+  "title": "NVlabs/curobo",
+  "title_zh": "NVlabs/curobo",
+  "abstract": "CUDA Accelerated Robot Library\n\n# cuRobo *CUDA Accelerated Robot Library* **[Documentation](https://nvlabs.github.io/curobo) | [Paper](https://arxiv.org/abs/2603.05493)** > [!NOTE] > cuRoboV2 is a significant rewrite and the public API has changed from cuRobo v1. > If you depend on the v1 API, pin to the [`v0.7.8`](https://github.com/NVlabs/curobo/tree/v0.7.8) tag. cuRobo is a CUDA-accelerated library for robot motion generation, built on PyTorch, CUDA, and Warp. It provides GPU-parallel algorithms for forward/inverse kinematics, collision checking, trajectory optimization, geometric planning, GPU-native perception, and whole-body motion generation, scaling from single-arm manipulators to high-DoF humanoids. Key capabilities: - **Dynamics-aware trajectory optimization** with B-spline representation enforcing smoothness and torque limits - **GPU-native ESDF perception** that generates dense signed distance fields from depth images, up to 10x faster than state-of-the-art - **Scalable whole-body computation** including topology-aware kinematics, differentiable inverse dynamics, and map-reduce self-collision for high-DoF robots - **Collision-free motion generation** combining IK, geometric planning, and trajectory optimization. ## Citation If you found this work useful, please cite cuRoboV2, ## Contributing Contributions are welcome. Bugs: [open an issue](https://github.com/NVlabs/curobo/issues). General usage questions: [GitHub Discussions](https://github.com/NVlabs/curobo/discussions). For pull requests, please read [`CONTRIBUTING.md`](CONTRIBUTING.md). All commits must include a DCO sign-off (`git commit -s`). ## License cuRobo is released under the [Apache 2.0 license](LICENSE). The example robot assets bundled in this repository are provided under their respective licenses. See [LICENSE_ASSETS](LICENSE_ASSETS) for details. ## Third-Party Software This project will download and install additional third-party open source software projects. Review the license terms of these open source projects befo",
+  "abstract_zh": "cuRobo 是一个基于 PyTorch、CUDA 和 Warp 构建的 CUDA 加速机器人运动生成库。它提供 GPU 并行算法，涵盖正/逆运动学、碰撞检测、轨迹优化、几何规划、GPU 原生感知以及全身运动生成，可扩展至从单臂机械臂到高自由度人形机器人。关键能力包括：基于 B 样条表示、考虑动力学约束的轨迹优化，确保平滑性和力矩限制；GPU 原生 ESDF 感知，从深度图像生成密集有符号距离场，速度比现有最优方法快 10 倍；可扩展的全身计算，包括拓扑感知运动学、可微逆动力学以及高自由度机器人的 map-reduce 自碰撞检测；结合逆运动学、几何规划和轨迹优化的无碰撞运动生成。",
+  "tldr_zh": "cuRobo 是 CUDA 加速的机器人运动生成库，支持 GPU 并行算法。",
+  "cover_zh": "机器人运动规划慢？cuRobo 用 GPU 加速，速度提升 10 倍！",
+  "authors": [
+    {
+      "name": "NVlabs",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-07-23",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/NVlabs/curobo",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 65,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 65,
+      "hint": "⭐ 1730"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "CUDA加速的机器人运动生成库，支持全身控制与操作，官方出品，高影响力。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "全身控制"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "NVlabs",
+    "repo": "curobo",
+    "stars": 1730,
+    "language": "Python",
+    "pushed_at": "2026-07-23",
+    "created_at": "2023-10-13",
+    "topics": [
+      "cuda",
+      "inverse-kinematics",
+      "motion-planning",
+      "pytorch",
+      "robotics",
+      "trajectory-optimization",
+      "tsdf"
+    ],
+    "archived": false
+  }
+}
