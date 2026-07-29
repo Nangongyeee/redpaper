@@ -1,0 +1,149 @@
+{
+  "id": "arxiv-2607-25541",
+  "source": "arxiv",
+  "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
+  "title_zh": "P3：面向稳定VAE机器人学习的概率策略传播",
+  "abstract": "Variational Autoencoders are widely used to encode high-dimensional and noisy observations in robotics. However, their stochastic latent creates a mismatch with Proximal Policy Optimization (PPO): an effective policy marginalizes over the latent distribution, whereas former implementations estimate its probability ratio and KL divergence using only one latent sample. We identify a fundamental but overlooked theoretical cause: naive single-sample approximations in stochastic latent space induce significant variance and bias in the surrogate loss. To address this, we introduce P^3 (Probabilistic Policy Propagation), a distribution-aware optimization framework for VAE-based policies. $P^3$ couples moment-based probabilistic method for stable and efficient learning with sampling-based calibration for robust policy behavior under latent uncertainty. In our experiments, P^3 boosts data efficiency from 64.6% to >96%, reduces convergence steps by >20%. Furthermore, P^3 is evaluated on challenging humanoid parkour tasks and shows an effective foundation for VAE-based PPO. Code is available at https://github.com/ylyem9x/P3_Open.",
+  "abstract_zh": "变分自编码器被广泛用于编码机器人领域的高维和噪声观测。然而，其随机潜变量与近端策略优化（PPO）存在不匹配：有效的策略需要对潜变量分布进行边缘化，而先前的实现仅使用单个潜变量样本来估计概率比和KL散度。我们识别出一个根本但被忽视的理论原因：在随机潜空间中的朴素单样本近似会导致替代损失出现显著的方差和偏差。为解决此问题，我们提出了P³（概率策略传播），一种面向VAE策略的分布感知优化框架。P³结合了基于矩的概率方法以实现稳定高效的学习，以及基于采样的校准以确保在潜变量不确定性下的鲁棒策略行为。在我们的实验中，P³将数据效率从64.6%提升至>96%，并将收敛步数减少>20%。此外，P³在具有挑战性的人形跑酷任务上进行了评估，展示了VAE-PPO的有效基础。代码可在https://github.com/ylyem9x/P3_Open获取。",
+  "tldr_zh": "提出P³框架，通过分布感知优化解决VAE与PPO的潜变量采样不匹配问题。",
+  "cover_zh": "VAE+PPO一直不稳定？这个新框架把数据效率拉到96%以上",
+  "authors": [
+    {
+      "name": "Liyun Yan",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianming Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Yang Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Shengcheng Fu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhanxiang Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Keqi Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yizhi Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yue Gao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-28",
+  "updated": "2026-07-28",
+  "arxiv_id": "2607.25541",
+  "pdf_url": "https://arxiv.org/pdf/2607.25541v1",
+  "abs_url": "http://arxiv.org/abs/2607.25541v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-25541.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-25541-p2.jpg",
+    "assets/img/covers/arxiv-2607-25541-p3.jpg",
+    "assets/img/covers/arxiv-2607-25541-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ ZJU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ SJTU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Yue Gao"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 69,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ZJU” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Yue Gao"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（parkour）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "提出VAE-PPO稳定优化方法，在人形跑酷任务上验证，属于loco-manip-wbc",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Shanghai Jiao Tong University",
+    "Tongji University",
+    "Zhejiang University",
+    "Shanghai Innovation Institute"
+  ],
+  "method_tags": [
+    "VAE",
+    "PPO",
+    "Probabilistic Policy Propagation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

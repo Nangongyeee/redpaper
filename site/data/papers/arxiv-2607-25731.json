@@ -1,0 +1,104 @@
+{
+  "id": "arxiv-2607-25731",
+  "source": "arxiv",
+  "title": "Tri-Manual Visuomotor Imitation Learning of Robot Policies",
+  "title_zh": "三臂视觉运动模仿学习机器人策略",
+  "abstract": "Bimanual teleoperation provides an effective way to collect robot demonstrations, but it assumes that the operator and robot have matching numbers of simultaneous control channels. This assumption breaks for tri-manual systems: the robot can coordinate three arms concurrently, whereas a single operator can continuously control only two. Pairwise mode switching may therefore record otherwise independent motions sequentially, causing behaviour cloning to reproduce delays imposed by the interface rather than required by the task. We present TriManPolicy, a tri-manual imitation learning system that allows one operator to demonstrate behaviours for three arms. Its central component is Dependency-Aware Tri-Arm Scheduling (DATS). The key idea is to preserve the demonstrated arm motions while reconsidering when they occur. DATS retimes demonstrations offline by preserving local sensorimotor segments of fixed duration and repositioning them according to constraints on task order and arm usage that are reviewed by a human. The resulting data train a single synchronous policy for all three arms, while deployment requires neither the dependency graph nor the scheduler. Across six challenging tasks performed in the real world, policies trained on demonstrations retimed by DATS exhibit more efficient coordination while maintaining comparable observed task success. Offline analysis further shows that DATS changes the supervision across arms rather than merely removing idle periods.",
+  "abstract_zh": "双臂遥操作是收集机器人示教的有效方式，但它假设操作员与机器人拥有匹配的同步控制通道数。这一假设在三臂系统中不成立：机器人可同时协调三只手臂，而单个操作员只能连续控制两只。因此，成对模式切换可能顺序记录原本独立的手臂运动，导致行为克隆复现的是界面强加的延迟而非任务所需的延迟。我们提出TriManPolicy，一种三臂模仿学习系统，允许单个操作员演示三只手臂的行为。其核心组件是依赖感知的三臂调度（DATS）。关键思想是保留演示的手臂运动，同时重新考虑其发生时间。DATS离线重新定时示教，通过保留固定时长的局部感觉运动片段，并根据人工审查的任务顺序和手臂使用约束重新定位它们。所得数据训练一个同步的三臂策略，部署时无需依赖图或调度器。在真实世界执行的六个挑战性任务中，基于DATS重新定时示教训练的策略展现出更高效的协调，同时保持可比的观测任务成功率。离线分析进一步表明，DATS改变了跨手臂的监督，而不仅仅是移除空闲时段。",
+  "tldr_zh": "提出三臂模仿学习系统TriManPolicy，通过离线重定时解决操作员与机器人控制通道数不匹配问题。",
+  "cover_zh": "三只手比两只手难教？这个新方法让一个人同时教三个机械臂",
+  "authors": [
+    {
+      "name": "James Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingyuan Ba",
+      "affiliation": ""
+    },
+    {
+      "name": "Weiming Zhi",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-28",
+  "updated": "2026-07-28",
+  "arxiv_id": "2607.25731",
+  "pdf_url": "https://arxiv.org/pdf/2607.25731v1",
+  "abs_url": "http://arxiv.org/abs/2607.25731v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-25731.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-25731-p2.jpg",
+    "assets/img/covers/arxiv-2607-25731-p3.jpg",
+    "assets/img/covers/arxiv-2607-25731-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "teleop"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（bimanual、imitation learning、teleoperation、teleop）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出三臂模仿学习系统TriManPolicy，解决多臂协调问题，具有创新性和实际价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "School of Computer Science, The University of Sydney",
+    "Australian Center For Robotics, The University of Sydney",
+    "College of Connected Computing, Vanderbilt University"
+  ],
+  "method_tags": [
+    "Imitation Learning",
+    "Dependency-Aware Tri-Arm Scheduling (DATS)"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

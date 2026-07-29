@@ -1,0 +1,110 @@
+{
+  "id": "arxiv-2607-26037",
+  "source": "arxiv",
+  "title": "Wonder: Video World Model Done Better",
+  "title_zh": "Wonder：更好的视频世界模型",
+  "abstract": "We present Wonder, a general-purpose video world model for real-time, camera-controllable world exploration. Given an image or a conditional video, Wonder constructs a playable world where users can navigate interactively by moving the camera, discovering unseen regions, and revisiting previously observed areas in real time and over a long-term horizon. Achieving this capability requires a system-level co-design of control method, memory mechanism, and training strategy. We introduce a novel camera conditioning with a dense coordinate field whose renderings provide spatially aligned motion and orientation cues, allowing the model to interpret camera motion directly as visual evidence. To support fast and precise memory retrieval over a growing generation context, we propose an efficient sparse attention-based memory mechanism, enabling the model to selectively attend to a small set of relevant context tokens at inference time, regardless of actual context length. We further develop several techniques to rectify the self-forcing-style distillation pipeline, improving the student model's ability to respect control signals, as well as maintaining diverse generation modes and long-term memory from the teacher. Together, these components enable Wonder to synthesize diverse, minute-scale videos at 16 FPS while preserving coherent geometry, appearance, and dynamics across long rollouts. Beyond image-to-video generation, Wonder naturally supports video-conditioned generation, allowing existing dynamic scenes to be re-shot in real time.",
+  "abstract_zh": "我们提出了Wonder，一个通用的视频世界模型，用于实时、可控摄像头的世界探索。给定一张图像或一段条件视频，Wonder构建了一个可玩的虚拟世界，用户可以通过移动摄像头进行交互式导航，实时发现未见区域，并重新访问之前观察过的区域，且支持长期视野。实现这一能力需要控制方法、记忆机制和训练策略的系统级协同设计。我们引入了一种新颖的摄像头条件化方法，使用密集坐标场，其渲染结果提供空间对齐的运动和方向线索，使模型能够直接将摄像头运动解释为视觉证据。为了在增长的生成上下文中支持快速且精确的记忆检索，我们提出了一种高效的基于稀疏注意力的记忆机制，使模型在推理时能够选择性地关注少量相关上下文标记，而不管实际上下文长度如何。我们进一步开发了几种技术来纠正自强制式蒸馏流程，提高了学生模型遵循控制信号的能力，同时保持了教师模型的多样化生成模式和长期记忆。这些组件共同使Wonder能够以16 FPS合成多样化的分钟级视频，并在长序列中保持连贯的几何、外观和动态。除了图像到视频的生成，Wonder还自然支持视频条件生成，允许实时重新拍摄现有的动态场景。",
+  "tldr_zh": "Wonder是一个支持实时摄像头控制、长时记忆和分钟级视频生成的通用视频世界模型。",
+  "cover_zh": "视频世界模型新突破｜实时操控摄像头探索未知场景，还能记住之前去过的地方",
+  "authors": [
+    {
+      "name": "Jiacong Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hanwen Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhixin Shu",
+      "affiliation": ""
+    },
+    {
+      "name": "Kalyan Sunkavalli",
+      "affiliation": ""
+    },
+    {
+      "name": "Vishal M. Patel",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiqun Mei",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.GR"
+  ],
+  "published": "2026-07-28",
+  "updated": "2026-07-28",
+  "arxiv_id": "2607.26037",
+  "pdf_url": "https://arxiv.org/pdf/2607.26037v1",
+  "abs_url": "http://arxiv.org/abs/2607.26037v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-26037.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-26037-p2.jpg",
+    "assets/img/covers/arxiv-2607-26037-p3.jpg",
+    "assets/img/covers/arxiv-2607-26037-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 21,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、video world model）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 21 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出通用视频世界模型，支持实时相机控制探索，创新记忆机制与训练策略，对具身规划有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Adobe Research",
+    "Johns Hopkins University"
+  ],
+  "method_tags": [
+    "video world model",
+    "camera conditioning",
+    "sparse attention memory"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
