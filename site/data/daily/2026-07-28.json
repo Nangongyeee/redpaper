@@ -109,7 +109,8 @@
       "primary_category": "cs.RO",
       "published": "2026-07-28",
       "channels": [
-        "locomotion"
+        "locomotion",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -140,7 +141,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.25541v1",
       "venue": "",
       "venue_announced": "",
-      "score": 69,
+      "score": 74,
       "judge": {
         "relevant": true,
         "research_value": "high",
@@ -196,7 +197,8 @@
       "primary_category": "cs.RO",
       "published": "2026-07-28",
       "channels": [
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -227,7 +229,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.25593v1",
       "venue": "",
       "venue_announced": "",
-      "score": 67,
+      "score": 72,
       "judge": {
         "relevant": true,
         "research_value": "high",
@@ -564,6 +566,82 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-25918",
+      "source": "arxiv",
+      "title": "DC-WAM: Dynamic-Centric Visual Supervision and Reasoning for World-Action Models",
+      "title_zh": "DC-WAM：面向世界-动作模型的动态中心视觉监督与推理",
+      "tldr_zh": "DC-WAM通过动态中心监督和推理，提升机器人策略在分布外扰动下的性能。",
+      "cover_zh": "机器人看视频学控制？DC-WAM只关注动态变化，性能飙升！",
+      "abstract_zh": "世界-动作模型（WAM）通过未来视觉预测增强机器人策略，但视觉模态应学习什么以实现控制仍不明确。虽然逼真的未来预测提供了密集监督，但也带来了大量计算，并可能将容量分配给与动作选择弱相关的纹理、光照和背景变化。近期高效的WAM变体表明，视频分支的主要益处可能不在于渲染的未来本身，而在于训练过程中诱导出的与控制相关的视觉表征。在这项工作中，我们从动态中心视角重新审视未来视频预测，并探究是否可以将现有的基于RGB的WAM从外观主导的重建转向交互诱导的视觉动态，而无需在部署时引入额外的模态特定预测或在线输入。我们提出DC-WAM，一种动态中心的WAM框架，它在RGB视频分支中重新分配监督和计算。在监督层面，DC-WAM结合了时间差分流匹配与轨迹引导加权，强调密集的时间变化以及夹爪、操作物体和接触区域移动的局部区域。在推理层面，DynaRoute预测令牌级别的动态相关性并将其转换为注意力偏置，引导模型关注与控制相关的未来令牌。在仿真和真实世界操作任务上的实验表明，DC-WAM一致地提升了策略性能，尤其是在光照、物体外观和背景纹理的分布外扰动下。",
+      "authors": [
+        "Haoyuan Ji",
+        "Lingxiang Fan",
+        "Shang Su"
+      ],
+      "authors_all": [
+        "Haoyuan Ji",
+        "Lingxiang Fan",
+        "Shang Su",
+        "Yinqiao Lu",
+        "Mengkai Shi",
+        "Jun Gao",
+        "Shuo Feng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-28",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-25918.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-25918-p2.jpg",
+        "assets/img/covers/arxiv-2607-25918-p3.jpg",
+        "assets/img/covers/arxiv-2607-25918-p4.jpg"
+      ],
+      "arxiv_id": "2607.25918",
+      "abs_url": "http://arxiv.org/abs/2607.25918v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25918v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 49,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动态中心的世界动作模型，改进未来视觉预测，提升策略泛化，属于世界模型与操作结合的前沿工作。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Dense-AI",
+        "University of Michigan"
+      ],
+      "method_tags": [
+        "World-Action Models",
+        "dynamic-centric visual supervision",
+        "temporal-difference flow matching"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2607-25516",
       "source": "arxiv",
       "title": "A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models",
@@ -641,75 +719,63 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-25918",
+      "id": "arxiv-2607-25236",
       "source": "arxiv",
-      "title": "DC-WAM: Dynamic-Centric Visual Supervision and Reasoning for World-Action Models",
-      "title_zh": "DC-WAM：面向世界-动作模型的动态中心视觉监督与推理",
-      "tldr_zh": "DC-WAM通过动态中心监督和推理，提升机器人策略在分布外扰动下的性能。",
-      "cover_zh": "机器人看视频学控制？DC-WAM只关注动态变化，性能飙升！",
-      "abstract_zh": "世界-动作模型（WAM）通过未来视觉预测增强机器人策略，但视觉模态应学习什么以实现控制仍不明确。虽然逼真的未来预测提供了密集监督，但也带来了大量计算，并可能将容量分配给与动作选择弱相关的纹理、光照和背景变化。近期高效的WAM变体表明，视频分支的主要益处可能不在于渲染的未来本身，而在于训练过程中诱导出的与控制相关的视觉表征。在这项工作中，我们从动态中心视角重新审视未来视频预测，并探究是否可以将现有的基于RGB的WAM从外观主导的重建转向交互诱导的视觉动态，而无需在部署时引入额外的模态特定预测或在线输入。我们提出DC-WAM，一种动态中心的WAM框架，它在RGB视频分支中重新分配监督和计算。在监督层面，DC-WAM结合了时间差分流匹配与轨迹引导加权，强调密集的时间变化以及夹爪、操作物体和接触区域移动的局部区域。在推理层面，DynaRoute预测令牌级别的动态相关性并将其转换为注意力偏置，引导模型关注与控制相关的未来令牌。在仿真和真实世界操作任务上的实验表明，DC-WAM一致地提升了策略性能，尤其是在光照、物体外观和背景纹理的分布外扰动下。",
+      "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
+      "title_zh": "VisualPatchWorld：将代码世界模型作为用于规划的潜在结构化表示",
+      "tldr_zh": "将世界动力学表示为代码，通过自动拟合实现高效规划，成功率提升23.5个百分点。",
+      "cover_zh": "代码也能当世界模型？规划成功率暴涨23.5%｜自动构建可检查的动力学",
+      "abstract_zh": "不同的研究路线以不同方式使用“世界模型”一词，但它们有一个共同目标：以支持感知、模拟和规划的形式捕捉世界在行动下的演化。两种典型的实现是：在连续向量空间中学习动力学的神经预测器，以及暴露显式状态和物理定律的手工构建物理引擎。神经预测器可从数据中扩展，但动力学形式是隐式的；物理引擎可检查可编辑，但难以大规模构建。我们提出VisualPatchWorld（VPW），它将世界动力学表示为代码。VPW首先通过短时主动探测选择一种定性动力学形式，然后通过最小化多步预测误差，从记录的状态-动作轨迹中拟合该形式的自由参数。生成的程序可以像模拟器一样向前滚动，以源代码形式检查，并用于模型预测控制；图像派生的场景图可以在重新规划时提供实时状态。与先前的基于代码的世界模型相比，VPW实现了69.0%的平均规划成功率，比最强的代码基线高出23.5个百分点。最大的提升出现在选择正确的定性动力学至关重要时。在相同规划器下，诱导模型在导航和抓取丰富的控制中接近真实引擎的成功率；对于接触丰富的推动任务仍存在残余差距，而在引擎中检查少量有希望的规划方案可以弥补大部分差距。这些结果为自动构建可用于规划的代码世界模型建立了一条实用路径。代码见https://github.com/HKBU-KnowComp/VisualPatchWorld/。",
       "authors": [
-        "Haoyuan Ji",
-        "Lingxiang Fan",
-        "Shang Su"
+        "Jiaxin Bai",
+        "Jiaxuan Xiong"
       ],
       "authors_all": [
-        "Haoyuan Ji",
-        "Lingxiang Fan",
-        "Shang Su",
-        "Yinqiao Lu",
-        "Mengkai Shi",
-        "Jun Gao",
-        "Shuo Feng"
+        "Jiaxin Bai",
+        "Jiaxuan Xiong"
       ],
-      "primary_category": "cs.RO",
+      "primary_category": "cs.CL",
       "published": "2026-07-28",
       "channels": [
+        "manipulation",
         "world-model"
       ],
       "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
         {
           "kind": "fresh",
           "label": "⚡ 新鲜出炉"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2607-25918.jpg",
+      "cover_image": "assets/img/covers/arxiv-2607-25236.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2607-25918-p2.jpg",
-        "assets/img/covers/arxiv-2607-25918-p3.jpg",
-        "assets/img/covers/arxiv-2607-25918-p4.jpg"
+        "assets/img/covers/arxiv-2607-25236-p2.jpg",
+        "assets/img/covers/arxiv-2607-25236-p3.jpg",
+        "assets/img/covers/arxiv-2607-25236-p4.jpg"
       ],
-      "arxiv_id": "2607.25918",
-      "abs_url": "http://arxiv.org/abs/2607.25918v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25918v1",
+      "arxiv_id": "2607.25236",
+      "abs_url": "http://arxiv.org/abs/2607.25236v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25236v1",
       "venue": "",
       "venue_announced": "",
-      "score": 41,
+      "score": 38,
       "judge": {
         "relevant": true,
         "research_value": "high",
         "primary_channel": "world-model",
-        "reason": "提出动态中心的世界动作模型，改进未来视觉预测，提升策略泛化，属于世界模型与操作结合的前沿工作。",
+        "reason": "提出代码世界模型，结合神经预测与物理引擎优势，规划性能显著提升",
         "model": "deepseek-v4-flash"
       },
       "institutions": [
-        "Tsinghua University",
-        "Dense-AI",
-        "University of Michigan"
+        "Hong Kong Baptist University"
       ],
       "method_tags": [
-        "World-Action Models",
-        "dynamic-centric visual supervision",
-        "temporal-difference flow matching"
+        "code world model",
+        "model-predictive control"
       ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "yes",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -915,68 +981,6 @@
       "source_tags": [
         "qbitai"
       ]
-    },
-    {
-      "id": "arxiv-2607-25236",
-      "source": "arxiv",
-      "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
-      "title_zh": "VisualPatchWorld：将代码世界模型作为用于规划的潜在结构化表示",
-      "tldr_zh": "将世界动力学表示为代码，通过自动拟合实现高效规划，成功率提升23.5个百分点。",
-      "cover_zh": "代码也能当世界模型？规划成功率暴涨23.5%｜自动构建可检查的动力学",
-      "abstract_zh": "不同的研究路线以不同方式使用“世界模型”一词，但它们有一个共同目标：以支持感知、模拟和规划的形式捕捉世界在行动下的演化。两种典型的实现是：在连续向量空间中学习动力学的神经预测器，以及暴露显式状态和物理定律的手工构建物理引擎。神经预测器可从数据中扩展，但动力学形式是隐式的；物理引擎可检查可编辑，但难以大规模构建。我们提出VisualPatchWorld（VPW），它将世界动力学表示为代码。VPW首先通过短时主动探测选择一种定性动力学形式，然后通过最小化多步预测误差，从记录的状态-动作轨迹中拟合该形式的自由参数。生成的程序可以像模拟器一样向前滚动，以源代码形式检查，并用于模型预测控制；图像派生的场景图可以在重新规划时提供实时状态。与先前的基于代码的世界模型相比，VPW实现了69.0%的平均规划成功率，比最强的代码基线高出23.5个百分点。最大的提升出现在选择正确的定性动力学至关重要时。在相同规划器下，诱导模型在导航和抓取丰富的控制中接近真实引擎的成功率；对于接触丰富的推动任务仍存在残余差距，而在引擎中检查少量有希望的规划方案可以弥补大部分差距。这些结果为自动构建可用于规划的代码世界模型建立了一条实用路径。代码见https://github.com/HKBU-KnowComp/VisualPatchWorld/。",
-      "authors": [
-        "Jiaxin Bai",
-        "Jiaxuan Xiong"
-      ],
-      "authors_all": [
-        "Jiaxin Bai",
-        "Jiaxuan Xiong"
-      ],
-      "primary_category": "cs.CL",
-      "published": "2026-07-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-25236.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-25236-p2.jpg",
-        "assets/img/covers/arxiv-2607-25236-p3.jpg",
-        "assets/img/covers/arxiv-2607-25236-p4.jpg"
-      ],
-      "arxiv_id": "2607.25236",
-      "abs_url": "http://arxiv.org/abs/2607.25236v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25236v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 27,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出代码世界模型，结合神经预测与物理引擎优势，规划性能显著提升",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Hong Kong Baptist University"
-      ],
-      "method_tags": [
-        "code world model",
-        "model-predictive control"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
     },
     {
       "id": "arxiv-2607-25487",

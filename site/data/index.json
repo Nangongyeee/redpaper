@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T02:59:06.284025+00:00",
+  "generated_at": "2026-07-29T05:52:03.528611+00:00",
   "count": 1835,
   "papers": [
     {
@@ -2803,6 +2803,92 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-25541",
+      "source": "arxiv",
+      "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
+      "title_zh": "P3：面向稳定VAE机器人学习的概率策略传播",
+      "tldr_zh": "提出P³框架，通过分布感知优化解决VAE与PPO的潜变量采样不匹配问题。",
+      "cover_zh": "VAE+PPO一直不稳定？这个新框架把数据效率拉到96%以上",
+      "abstract_zh": "变分自编码器被广泛用于编码机器人领域的高维和噪声观测。然而，其随机潜变量与近端策略优化（PPO）存在不匹配：有效的策略需要对潜变量分布进行边缘化，而先前的实现仅使用单个潜变量样本来估计概率比和KL散度。我们识别出一个根本但被忽视的理论原因：在随机潜空间中的朴素单样本近似会导致替代损失出现显著的方差和偏差。为解决此问题，我们提出了P³（概率策略传播），一种面向VAE策略的分布感知优化框架。P³结合了基于矩的概率方法以实现稳定高效的学习，以及基于采样的校准以确保在潜变量不确定性下的鲁棒策略行为。在我们的实验中，P³将数据效率从64.6%提升至>96%，并将收敛步数减少>20%。此外，P³在具有挑战性的人形跑酷任务上进行了评估，展示了VAE-PPO的有效基础。代码可在https://github.com/ylyem9x/P3_Open获取。",
+      "authors": [
+        "Liyun Yan",
+        "Jianming Ma",
+        "Yang Zhang"
+      ],
+      "authors_all": [
+        "Liyun Yan",
+        "Jianming Ma",
+        "Yang Zhang",
+        "Shengcheng Fu",
+        "Zhanxiang Cao",
+        "Keqi Zhu",
+        "Yizhi Chen",
+        "Yue Gao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-28",
+      "channels": [
+        "locomotion",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ZJU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Yue Gao"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-25541.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-25541-p2.jpg",
+        "assets/img/covers/arxiv-2607-25541-p3.jpg",
+        "assets/img/covers/arxiv-2607-25541-p4.jpg"
+      ],
+      "arxiv_id": "2607.25541",
+      "abs_url": "http://arxiv.org/abs/2607.25541v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25541v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 74,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出VAE-PPO稳定优化方法，在人形跑酷任务上验证，属于loco-manip-wbc",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "Tongji University",
+        "Zhejiang University",
+        "Shanghai Innovation Institute"
+      ],
+      "method_tags": [
+        "VAE",
+        "PPO",
+        "Probabilistic Policy Propagation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "github-rlinf-rlinf",
       "source": "github",
       "title": "RLinf/RLinf",
@@ -3302,6 +3388,95 @@
         "MPC-RL"
       ],
       "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-25593",
+      "source": "arxiv",
+      "title": "When Does Legacy Data Start to Help? Emergent Transfer in Cross-Configuration Robot Learning",
+      "title_zh": "旧数据何时开始有用？跨配置机器人学习中的涌现迁移",
+      "tldr_zh": "旧数据在机器人升级后并非立即有用，需达到能力阈值才产生迁移收益。",
+      "cover_zh": "旧数据不是越多越好？机器人升级后竟要跨过能力阈值才有效",
+      "abstract_zh": "机器人硬件随时间不断演进，但演示数据通常与特定的传感器和执行器配置绑定。这引出一个实际且尚未充分探索的问题：旧数据何时开始对升级后的机器人有益？我们在一个轮式人形平台上，跨越两代硬件研究该问题，其中相机和夹爪均发生变化，而整体形态保持不变。与“更多跨配置数据总是有益”的常见假设相反，我们观察到一种类似“顿悟”的转变：旧数据在升级配置获得最低任务能力之前一直无效，之后协同训练收益急剧上升，直至接近饱和时递减。我们假设这种任务依赖的转变由迁移阈值控制，并刻画了相应的三阶段模式。在真实机器人操作任务中，我们观察到所有三个阶段：低能力时无显著收益（10.0% → 10.0%），跨过阈值后收益剧增（插花任务 23.3% → 86.7%），高能力时收益递减（插笔任务 85.0% → 93.3%）。我们基于梯度对齐和残差策略不确定性提供了理论解释，并推导出一个阶段感知规则，用于决定何时收集更多新硬件数据、何时重用旧演示。我们进一步在移动双臂浇水任务上验证了这一三阶段模式，结果与预测一致。",
+      "authors": [
+        "Tao Wang",
+        "Hudson Hou",
+        "Yingdong Hu"
+      ],
+      "authors_all": [
+        "Tao Wang",
+        "Hudson Hou",
+        "Yingdong Hu",
+        "Yufeng Liu",
+        "Qinghai Li",
+        "Yingjie Jiang",
+        "Yingzhi Wang",
+        "Cheng Ma",
+        "Richard Wang",
+        "Yang Gao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-28",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Yang Gao (清华)"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-25593.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-25593-p2.jpg",
+        "assets/img/covers/arxiv-2607-25593-p3.jpg",
+        "assets/img/covers/arxiv-2607-25593-p4.jpg"
+      ],
+      "arxiv_id": "2607.25593",
+      "abs_url": "http://arxiv.org/abs/2607.25593v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25593v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 72,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "研究跨配置机器人学习中的迁移现象，涉及轮式人形平台和操作任务，对数据利用策略有重要指导意义。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Huazhong University of Science and Technology",
+        "Spirit AI",
+        "Peking University",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "co-training",
+        "transfer learning"
+      ],
+      "platform": [
+        "wheeled humanoid"
+      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -4017,91 +4192,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-25541",
-      "source": "arxiv",
-      "title": "P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning",
-      "title_zh": "P3：面向稳定VAE机器人学习的概率策略传播",
-      "tldr_zh": "提出P³框架，通过分布感知优化解决VAE与PPO的潜变量采样不匹配问题。",
-      "cover_zh": "VAE+PPO一直不稳定？这个新框架把数据效率拉到96%以上",
-      "abstract_zh": "变分自编码器被广泛用于编码机器人领域的高维和噪声观测。然而，其随机潜变量与近端策略优化（PPO）存在不匹配：有效的策略需要对潜变量分布进行边缘化，而先前的实现仅使用单个潜变量样本来估计概率比和KL散度。我们识别出一个根本但被忽视的理论原因：在随机潜空间中的朴素单样本近似会导致替代损失出现显著的方差和偏差。为解决此问题，我们提出了P³（概率策略传播），一种面向VAE策略的分布感知优化框架。P³结合了基于矩的概率方法以实现稳定高效的学习，以及基于采样的校准以确保在潜变量不确定性下的鲁棒策略行为。在我们的实验中，P³将数据效率从64.6%提升至>96%，并将收敛步数减少>20%。此外，P³在具有挑战性的人形跑酷任务上进行了评估，展示了VAE-PPO的有效基础。代码可在https://github.com/ylyem9x/P3_Open获取。",
-      "authors": [
-        "Liyun Yan",
-        "Jianming Ma",
-        "Yang Zhang"
-      ],
-      "authors_all": [
-        "Liyun Yan",
-        "Jianming Ma",
-        "Yang Zhang",
-        "Shengcheng Fu",
-        "Zhanxiang Cao",
-        "Keqi Zhu",
-        "Yizhi Chen",
-        "Yue Gao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-28",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ ZJU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Yue Gao"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-25541.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-25541-p2.jpg",
-        "assets/img/covers/arxiv-2607-25541-p3.jpg",
-        "assets/img/covers/arxiv-2607-25541-p4.jpg"
-      ],
-      "arxiv_id": "2607.25541",
-      "abs_url": "http://arxiv.org/abs/2607.25541v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25541v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 69,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出VAE-PPO稳定优化方法，在人形跑酷任务上验证，属于loco-manip-wbc",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Shanghai Jiao Tong University",
-        "Tongji University",
-        "Zhejiang University",
-        "Shanghai Innovation Institute"
-      ],
-      "method_tags": [
-        "VAE",
-        "PPO",
-        "Probabilistic Policy Propagation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "github-yanjieze-gmr",
       "source": "github",
       "title": "YanjieZe/GMR",
@@ -4647,94 +4737,6 @@
         "multi-agent"
       ],
       "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-25593",
-      "source": "arxiv",
-      "title": "When Does Legacy Data Start to Help? Emergent Transfer in Cross-Configuration Robot Learning",
-      "title_zh": "旧数据何时开始有用？跨配置机器人学习中的涌现迁移",
-      "tldr_zh": "旧数据在机器人升级后并非立即有用，需达到能力阈值才产生迁移收益。",
-      "cover_zh": "旧数据不是越多越好？机器人升级后竟要跨过能力阈值才有效",
-      "abstract_zh": "机器人硬件随时间不断演进，但演示数据通常与特定的传感器和执行器配置绑定。这引出一个实际且尚未充分探索的问题：旧数据何时开始对升级后的机器人有益？我们在一个轮式人形平台上，跨越两代硬件研究该问题，其中相机和夹爪均发生变化，而整体形态保持不变。与“更多跨配置数据总是有益”的常见假设相反，我们观察到一种类似“顿悟”的转变：旧数据在升级配置获得最低任务能力之前一直无效，之后协同训练收益急剧上升，直至接近饱和时递减。我们假设这种任务依赖的转变由迁移阈值控制，并刻画了相应的三阶段模式。在真实机器人操作任务中，我们观察到所有三个阶段：低能力时无显著收益（10.0% → 10.0%），跨过阈值后收益剧增（插花任务 23.3% → 86.7%），高能力时收益递减（插笔任务 85.0% → 93.3%）。我们基于梯度对齐和残差策略不确定性提供了理论解释，并推导出一个阶段感知规则，用于决定何时收集更多新硬件数据、何时重用旧演示。我们进一步在移动双臂浇水任务上验证了这一三阶段模式，结果与预测一致。",
-      "authors": [
-        "Tao Wang",
-        "Hudson Hou",
-        "Yingdong Hu"
-      ],
-      "authors_all": [
-        "Tao Wang",
-        "Hudson Hou",
-        "Yingdong Hu",
-        "Yufeng Liu",
-        "Qinghai Li",
-        "Yingjie Jiang",
-        "Yingzhi Wang",
-        "Cheng Ma",
-        "Richard Wang",
-        "Yang Gao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 北大"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Yang Gao (清华)"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-25593.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-25593-p2.jpg",
-        "assets/img/covers/arxiv-2607-25593-p3.jpg",
-        "assets/img/covers/arxiv-2607-25593-p4.jpg"
-      ],
-      "arxiv_id": "2607.25593",
-      "abs_url": "http://arxiv.org/abs/2607.25593v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25593v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 67,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "研究跨配置机器人学习中的迁移现象，涉及轮式人形平台和操作任务，对数据利用策略有重要指导意义。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Huazhong University of Science and Technology",
-        "Spirit AI",
-        "Peking University",
-        "Shanghai Jiao Tong University"
-      ],
-      "method_tags": [
-        "co-training",
-        "transfer learning"
-      ],
-      "platform": [
-        "wheeled humanoid"
-      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -22817,6 +22819,82 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-25918",
+      "source": "arxiv",
+      "title": "DC-WAM: Dynamic-Centric Visual Supervision and Reasoning for World-Action Models",
+      "title_zh": "DC-WAM：面向世界-动作模型的动态中心视觉监督与推理",
+      "tldr_zh": "DC-WAM通过动态中心监督和推理，提升机器人策略在分布外扰动下的性能。",
+      "cover_zh": "机器人看视频学控制？DC-WAM只关注动态变化，性能飙升！",
+      "abstract_zh": "世界-动作模型（WAM）通过未来视觉预测增强机器人策略，但视觉模态应学习什么以实现控制仍不明确。虽然逼真的未来预测提供了密集监督，但也带来了大量计算，并可能将容量分配给与动作选择弱相关的纹理、光照和背景变化。近期高效的WAM变体表明，视频分支的主要益处可能不在于渲染的未来本身，而在于训练过程中诱导出的与控制相关的视觉表征。在这项工作中，我们从动态中心视角重新审视未来视频预测，并探究是否可以将现有的基于RGB的WAM从外观主导的重建转向交互诱导的视觉动态，而无需在部署时引入额外的模态特定预测或在线输入。我们提出DC-WAM，一种动态中心的WAM框架，它在RGB视频分支中重新分配监督和计算。在监督层面，DC-WAM结合了时间差分流匹配与轨迹引导加权，强调密集的时间变化以及夹爪、操作物体和接触区域移动的局部区域。在推理层面，DynaRoute预测令牌级别的动态相关性并将其转换为注意力偏置，引导模型关注与控制相关的未来令牌。在仿真和真实世界操作任务上的实验表明，DC-WAM一致地提升了策略性能，尤其是在光照、物体外观和背景纹理的分布外扰动下。",
+      "authors": [
+        "Haoyuan Ji",
+        "Lingxiang Fan",
+        "Shang Su"
+      ],
+      "authors_all": [
+        "Haoyuan Ji",
+        "Lingxiang Fan",
+        "Shang Su",
+        "Yinqiao Lu",
+        "Mengkai Shi",
+        "Jun Gao",
+        "Shuo Feng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-28",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-25918.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-25918-p2.jpg",
+        "assets/img/covers/arxiv-2607-25918-p3.jpg",
+        "assets/img/covers/arxiv-2607-25918-p4.jpg"
+      ],
+      "arxiv_id": "2607.25918",
+      "abs_url": "http://arxiv.org/abs/2607.25918v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25918v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 49,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动态中心的世界动作模型，改进未来视觉预测，提升策略泛化，属于世界模型与操作结合的前沿工作。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Dense-AI",
+        "University of Michigan"
+      ],
+      "method_tags": [
+        "World-Action Models",
+        "dynamic-centric visual supervision",
+        "temporal-difference flow matching"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2603-12260",
       "source": "arxiv",
       "title": "HumDex: Humanoid Dexterous Manipulation Made Easy",
@@ -26278,9 +26356,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$Ω$",
-      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，显著提升静态与动态场景重建精度和效率。",
-      "cover_zh": "GPU内存砍掉70%｜这个3D重建模型用更少资源实现更高精度",
-      "abstract_zh": "最近的馈送式重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构变化、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们通过使用单一密集预测头和多任务监督简化了VGGT的架构，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代了全局注意力。这样，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上将先前最佳的相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$Ω$通过架构改进和更大规模训练，在重建精度和效率上大幅提升，并支持动态场景。",
+      "cover_zh": "GPU内存仅需30%｜重建精度却飙升77%？这个新模型太强了",
+      "abstract_zh": "近期前馈重建模型（如VGGT）已被证明与传统基于优化的重建方法具有竞争力，同时还能提供对其他任务有用的几何感知特征。本文表明，这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$Ω$，它在静态和动态场景的重建精度、效率和能力上均有显著改进。为了以前所未有的规模训练该模型，我们引入了提升训练效率的架构改进、支持动态场景的高质量数据标注流水线以及自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头进行多任务监督，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代了全局注意力。通过这种方式，在训练过程中，VGGT-$Ω$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$Ω$在多个基准测试中实现了静态和动态场景重建的强结果，例如，在Sintel上将先前最佳相机估计精度提升了77%。我们还展示了学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -39141,7 +39219,7 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人展示旋转和新动作。",
+      "tldr_zh": "Atlas 机器人展示旋转等新动作。",
       "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并展示了一些新动作。",
       "authors": [],
@@ -43739,81 +43817,6 @@
         "trajectory optimization",
         "multiple-shooting",
         "state-machine-based coordination"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-25918",
-      "source": "arxiv",
-      "title": "DC-WAM: Dynamic-Centric Visual Supervision and Reasoning for World-Action Models",
-      "title_zh": "DC-WAM：面向世界-动作模型的动态中心视觉监督与推理",
-      "tldr_zh": "DC-WAM通过动态中心监督和推理，提升机器人策略在分布外扰动下的性能。",
-      "cover_zh": "机器人看视频学控制？DC-WAM只关注动态变化，性能飙升！",
-      "abstract_zh": "世界-动作模型（WAM）通过未来视觉预测增强机器人策略，但视觉模态应学习什么以实现控制仍不明确。虽然逼真的未来预测提供了密集监督，但也带来了大量计算，并可能将容量分配给与动作选择弱相关的纹理、光照和背景变化。近期高效的WAM变体表明，视频分支的主要益处可能不在于渲染的未来本身，而在于训练过程中诱导出的与控制相关的视觉表征。在这项工作中，我们从动态中心视角重新审视未来视频预测，并探究是否可以将现有的基于RGB的WAM从外观主导的重建转向交互诱导的视觉动态，而无需在部署时引入额外的模态特定预测或在线输入。我们提出DC-WAM，一种动态中心的WAM框架，它在RGB视频分支中重新分配监督和计算。在监督层面，DC-WAM结合了时间差分流匹配与轨迹引导加权，强调密集的时间变化以及夹爪、操作物体和接触区域移动的局部区域。在推理层面，DynaRoute预测令牌级别的动态相关性并将其转换为注意力偏置，引导模型关注与控制相关的未来令牌。在仿真和真实世界操作任务上的实验表明，DC-WAM一致地提升了策略性能，尤其是在光照、物体外观和背景纹理的分布外扰动下。",
-      "authors": [
-        "Haoyuan Ji",
-        "Lingxiang Fan",
-        "Shang Su"
-      ],
-      "authors_all": [
-        "Haoyuan Ji",
-        "Lingxiang Fan",
-        "Shang Su",
-        "Yinqiao Lu",
-        "Mengkai Shi",
-        "Jun Gao",
-        "Shuo Feng"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-28",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-25918.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-25918-p2.jpg",
-        "assets/img/covers/arxiv-2607-25918-p3.jpg",
-        "assets/img/covers/arxiv-2607-25918-p4.jpg"
-      ],
-      "arxiv_id": "2607.25918",
-      "abs_url": "http://arxiv.org/abs/2607.25918v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25918v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出动态中心的世界动作模型，改进未来视觉预测，提升策略泛化，属于世界模型与操作结合的前沿工作。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tsinghua University",
-        "Dense-AI",
-        "University of Michigan"
-      ],
-      "method_tags": [
-        "World-Action Models",
-        "dynamic-centric visual supervision",
-        "temporal-difference flow matching"
       ],
       "platform": [],
       "sim_stack": [],
@@ -48758,9 +48761,9 @@
       "source": "conf",
       "title": "3D Diffusion Policy",
       "title_zh": "3D Diffusion Policy",
-      "tldr_zh": "3D扩散策略仅需少量演示即可实现高成功率的机器人灵巧操作。",
-      "cover_zh": "仅需10个演示｜3D扩散策略让机器人学会灵巧操作",
-      "abstract_zh": "模仿学习为教授机器人灵巧技能提供了一种高效方式；然而，稳健且可泛化地学习复杂技能通常需要大量人类演示。为解决这一难题，我们提出了3D Diffusion Policy（DP3），一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大多数任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，DP3在仅提供每个任务40个演示的情况下，实现了85%的高成功率，并在空间、视角、外观和实例等多个方面展现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
+      "tldr_zh": "提出3D扩散策略，用少量演示实现高成功率的机器人灵巧操作。",
+      "cover_zh": "10个演示就能学会？3D扩散策略让机器人灵巧操作不再需要海量数据",
+      "abstract_zh": "模仿学习为机器人灵巧技能的教授提供了高效途径；然而，要稳健且泛化地学习复杂技能通常需要大量人类演示。为解决这一挑战性问题，我们提出了3D Diffusion Policy (DP3)，一种新颖的视觉模仿学习方法，它将3D视觉表示的力量融入扩散策略（一类条件动作生成模型）中。DP3的核心设计是利用紧凑的3D视觉表示，该表示通过高效的点编码器从稀疏点云中提取。在涉及72个模拟任务的实验中，DP3仅用10个演示就成功处理了大部分任务，并以24.2%的相对提升超越了基线。在4个真实机器人任务中，每个任务仅需40个演示，DP3便展现出精确控制，成功率达到85%，并在空间、视角、外观和实例等多个方面表现出优异的泛化能力。有趣的是，在真实机器人实验中，DP3很少违反安全要求，而基线方法则频繁违反，需要人工干预。我们的广泛评估凸显了3D表示在真实世界机器人学习中的关键重要性。视频、代码和数据可在https://3d-diffusion-policy.github.io获取。",
       "authors": [
         "Yanjie Ze",
         "Gu Zhang",
@@ -50988,6 +50991,69 @@
         "diffusion model",
         "reinforcement learning",
         "MCTS"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-25236",
+      "source": "arxiv",
+      "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
+      "title_zh": "VisualPatchWorld：将代码世界模型作为用于规划的潜在结构化表示",
+      "tldr_zh": "将世界动力学表示为代码，通过自动拟合实现高效规划，成功率提升23.5个百分点。",
+      "cover_zh": "代码也能当世界模型？规划成功率暴涨23.5%｜自动构建可检查的动力学",
+      "abstract_zh": "不同的研究路线以不同方式使用“世界模型”一词，但它们有一个共同目标：以支持感知、模拟和规划的形式捕捉世界在行动下的演化。两种典型的实现是：在连续向量空间中学习动力学的神经预测器，以及暴露显式状态和物理定律的手工构建物理引擎。神经预测器可从数据中扩展，但动力学形式是隐式的；物理引擎可检查可编辑，但难以大规模构建。我们提出VisualPatchWorld（VPW），它将世界动力学表示为代码。VPW首先通过短时主动探测选择一种定性动力学形式，然后通过最小化多步预测误差，从记录的状态-动作轨迹中拟合该形式的自由参数。生成的程序可以像模拟器一样向前滚动，以源代码形式检查，并用于模型预测控制；图像派生的场景图可以在重新规划时提供实时状态。与先前的基于代码的世界模型相比，VPW实现了69.0%的平均规划成功率，比最强的代码基线高出23.5个百分点。最大的提升出现在选择正确的定性动力学至关重要时。在相同规划器下，诱导模型在导航和抓取丰富的控制中接近真实引擎的成功率；对于接触丰富的推动任务仍存在残余差距，而在引擎中检查少量有希望的规划方案可以弥补大部分差距。这些结果为自动构建可用于规划的代码世界模型建立了一条实用路径。代码见https://github.com/HKBU-KnowComp/VisualPatchWorld/。",
+      "authors": [
+        "Jiaxin Bai",
+        "Jiaxuan Xiong"
+      ],
+      "authors_all": [
+        "Jiaxin Bai",
+        "Jiaxuan Xiong"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-07-28",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-25236.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-25236-p2.jpg",
+        "assets/img/covers/arxiv-2607-25236-p3.jpg",
+        "assets/img/covers/arxiv-2607-25236-p4.jpg"
+      ],
+      "arxiv_id": "2607.25236",
+      "abs_url": "http://arxiv.org/abs/2607.25236v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25236v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 38,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出代码世界模型，结合神经预测与物理引擎优势，规划性能显著提升",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Hong Kong Baptist University"
+      ],
+      "method_tags": [
+        "code world model",
+        "model-predictive control"
       ],
       "platform": [],
       "sim_stack": [],
@@ -72728,68 +72794,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-25236",
-      "source": "arxiv",
-      "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
-      "title_zh": "VisualPatchWorld：将代码世界模型作为用于规划的潜在结构化表示",
-      "tldr_zh": "将世界动力学表示为代码，通过自动拟合实现高效规划，成功率提升23.5个百分点。",
-      "cover_zh": "代码也能当世界模型？规划成功率暴涨23.5%｜自动构建可检查的动力学",
-      "abstract_zh": "不同的研究路线以不同方式使用“世界模型”一词，但它们有一个共同目标：以支持感知、模拟和规划的形式捕捉世界在行动下的演化。两种典型的实现是：在连续向量空间中学习动力学的神经预测器，以及暴露显式状态和物理定律的手工构建物理引擎。神经预测器可从数据中扩展，但动力学形式是隐式的；物理引擎可检查可编辑，但难以大规模构建。我们提出VisualPatchWorld（VPW），它将世界动力学表示为代码。VPW首先通过短时主动探测选择一种定性动力学形式，然后通过最小化多步预测误差，从记录的状态-动作轨迹中拟合该形式的自由参数。生成的程序可以像模拟器一样向前滚动，以源代码形式检查，并用于模型预测控制；图像派生的场景图可以在重新规划时提供实时状态。与先前的基于代码的世界模型相比，VPW实现了69.0%的平均规划成功率，比最强的代码基线高出23.5个百分点。最大的提升出现在选择正确的定性动力学至关重要时。在相同规划器下，诱导模型在导航和抓取丰富的控制中接近真实引擎的成功率；对于接触丰富的推动任务仍存在残余差距，而在引擎中检查少量有希望的规划方案可以弥补大部分差距。这些结果为自动构建可用于规划的代码世界模型建立了一条实用路径。代码见https://github.com/HKBU-KnowComp/VisualPatchWorld/。",
-      "authors": [
-        "Jiaxin Bai",
-        "Jiaxuan Xiong"
-      ],
-      "authors_all": [
-        "Jiaxin Bai",
-        "Jiaxuan Xiong"
-      ],
-      "primary_category": "cs.CL",
-      "published": "2026-07-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-25236.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-25236-p2.jpg",
-        "assets/img/covers/arxiv-2607-25236-p3.jpg",
-        "assets/img/covers/arxiv-2607-25236-p4.jpg"
-      ],
-      "arxiv_id": "2607.25236",
-      "abs_url": "http://arxiv.org/abs/2607.25236v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.25236v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 27,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出代码世界模型，结合神经预测与物理引擎优势，规划性能显著提升",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Hong Kong Baptist University"
-      ],
-      "method_tags": [
-        "code world model",
-        "model-predictive control"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
