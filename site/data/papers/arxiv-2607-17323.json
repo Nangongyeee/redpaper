@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2607-17323",
+  "source": "arxiv_discover",
+  "title": "From Perception to Assistance: Open-Vocabulary Shared Autonomy for Robotic Manipulation",
+  "title_zh": "从感知到辅助：面向机器人操作的开词汇共享自主",
+  "abstract": "Teleoperating a robotic manipulator in industrial environments demands precision that camera-based interfaces alone struggle to deliver. The operator must align the end-effector with a target in clutter, under limited depth perception, and without colliding with the surrounding structures. This paper presents a shared-autonomy framework that assists the operator throughout this process. A single RGB-D camera captures the operator's arm motion and hand gestures without wearables, fiducials, or a calibration stage. The intended target is specified by a free-form text prompt, grounded by a vision-language model in the robot's gripper camera, and tracked across its onboard cameras by a promptable video-segmentation model, resulting in a grasp frame continuously separated from the obstacle map. Every commanded motion is executed by a GPU-accelerated model-predictive controller that enforces self- and environment-collision avoidance against an online volumetric reconstruction, while a potential field corrects the operator's reference toward the grounded target during the final approach. An autonomous mode can be gesture-triggered to complete the grasp on the same target without a separate perception pipeline. The framework is validated on a quadruped mobile manipulator. The interface achieves a positional RMSE of 59 mm relative to motion-capture ground truth, and the controller keeps the arm at least 18 cm from obstacles while the operator deliberately commands the arm into them by 6 cm. In an industrial valve manipulation and a pick-and-place task, the full framework succeeded in all trials, while ablating either the collision or the assistance module produced failures through complementary mechanisms, and autonomous execution succeeded in four of five trials per task.",
+  "abstract_zh": "在工业环境中远程操作机器人操作器需要高精度，而仅基于摄像头的界面难以满足这一要求。操作员必须在杂乱环境中对准末端执行器与目标，在有限的深度感知下，且避免与周围结构碰撞。本文提出了一种共享自主框架，在整个过程中辅助操作员。单个RGB-D摄像头无需可穿戴设备、标记或校准阶段即可捕捉操作员的手臂运动和手势。预期目标通过自由形式的文本提示指定，由视觉语言模型在机器人夹爪摄像头中定位，并通过可提示的视频分割模型在其机载摄像头中跟踪，从而生成一个与障碍物地图持续分离的抓取框架。每个指令运动由GPU加速的模型预测控制器执行，该控制器基于在线体积重建强制执行自身和环境避碰，同时势场在最终接近阶段将操作员的参考修正到定位目标。自主模式可通过手势触发，在同一目标上完成抓取，无需单独感知流程。该框架在四足移动操作器上进行了验证。该界面相对于运动捕捉真值的位置均方根误差为59毫米，控制器在操作员故意将手臂向障碍物移动6厘米时，仍保持手臂与障碍物至少18厘米的距离。在工业阀门操作和拾取放置任务中，完整框架在所有试验中均成功，而消融碰撞或辅助模块则通过互补机制产生失败，自主执行在每个任务中五次试验成功四次。",
+  "tldr_zh": "提出共享自主框架，用文本提示和视觉模型辅助机器人操作，实现避碰与精准抓取。",
+  "cover_zh": "不用穿戴设备｜说句话机器人就懂你要抓什么",
+  "authors": [
+    {
+      "name": "Murilo Vinicius da Silva",
+      "affiliation": ""
+    },
+    {
+      "name": "Ricardo V. Godoy",
+      "affiliation": ""
+    },
+    {
+      "name": "Juliano Negri",
+      "affiliation": ""
+    },
+    {
+      "name": "Gustavo J. G. Lahr",
+      "affiliation": ""
+    },
+    {
+      "name": "Ranulfo Bezerra",
+      "affiliation": ""
+    },
+    {
+      "name": "Marcelo Becker",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.HC",
+    "cs.RO",
+    "cs.CV",
+    "eess.SY"
+  ],
+  "published": "2026-07-19",
+  "updated": "2026-07-19",
+  "arxiv_id": "2607.17323",
+  "pdf_url": "https://arxiv.org/pdf/2607.17323v1",
+  "abs_url": "http://arxiv.org/abs/2607.17323v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-17323.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-17323-p2.jpg",
+    "assets/img/covers/arxiv-2607-17323-p3.jpg",
+    "assets/img/covers/arxiv-2607-17323-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 12,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、grasp、pick-and-place）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "teleop",
+    "reason": "提出开放词汇共享自主框架，结合VLM和MPC，提升遥操作精度与安全性",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of São Paulo",
+    "Instituto Israelita de Ensino e Pesquisa Albert Einstein",
+    "Tohoku University"
+  ],
+  "method_tags": [
+    "shared autonomy",
+    "model-predictive control",
+    "vision-language model"
+  ],
+  "platform": [
+    "quadruped mobile manipulator"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
