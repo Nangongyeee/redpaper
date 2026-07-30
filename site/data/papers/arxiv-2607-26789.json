@@ -1,0 +1,155 @@
+{
+  "id": "arxiv-2607-26789",
+  "source": "arxiv",
+  "title": "CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation",
+  "title_zh": "CheckVLA：基于动作条件世界模型的长时域移动操作执行时验证",
+  "abstract": "Vision-language-action (VLA) policies commonly execute long-horizon mobile manipulation through open-loop action chunks, issuing multiple actions without receiving new high-level visual input. A committed chunk therefore implies how observations should evolve, but accidental deviations can violate this expectation while the remaining actions continue to propagate the error: commit-time policy confidence cannot react to a deviation that occurs after dispatch, and observation-only anomaly scores lack an action-conditioned reference for separating expected effects from unexplained changes. We propose CheckVLA, which verifies execution with a separately trained, frozen action-conditioned world model. A conformally calibrated risk threshold bounds the episode-level probability of an unnecessary first intervention and determines when to intervene, its exceedance controls how strongly the rewritten suffix retains the superseded chunk, latency-aware hard prefixing restricts replacement to actions that remain deployable, and an event-driven keyframe bank preserves evidence of prior progress across repairs. On RoboCasa365, under a common training recipe and a matched invocation budget, CheckVLA attains a 36.1% average success rate against 27.6% for periodic replanning (+8.5 points). At a matched 5% episode-level false-alarm target, action conditioning raises timely recall to 77.9%, against 48.6% for an observation-only control and 37.9% for an action-shuffled control. These simulation results support action-conditioned verification as a way to restore feedback during chunked execution while keeping the repair consistent with inference latency.",
+  "abstract_zh": "视觉-语言-动作（VLA）策略通常通过开环动作块执行长时域移动操作，即在没有新高层视觉输入的情况下发出多个动作。因此，一个已提交的动作块隐含了观测应如何演变的预期，但意外偏差可能违背这一预期，而剩余动作会继续传播错误：提交时的策略置信度无法对调度后发生的偏差做出反应，仅基于观测的异常分数缺乏动作条件参考来区分预期效果与无法解释的变化。我们提出CheckVLA，它使用一个单独训练、冻结的动作条件世界模型来验证执行。一个经保形校准的风险阈值界定了不必要首次干预的情节级概率，并决定何时干预；其超出程度控制重写后缀保留被取代块的程度；延迟感知的硬前缀限制将替换限制在仍可部署的动作上；事件驱动的关键帧库跨修复保留先前进展的证据。在RoboCasa365上，在常见训练方案和匹配调用预算下，CheckVLA的平均成功率为36.1%，而周期性重规划为27.6%（+8.5个百分点）。在匹配的5%情节级误报目标下，动作条件将及时召回率提升至77.9%，而仅观测控制为48.6%，动作打乱控制为37.9%。这些模拟结果支持动作条件验证作为在分块执行期间恢复反馈的一种方式，同时保持修复与推理延迟一致。",
+  "tldr_zh": "CheckVLA用动作条件世界模型在开环执行中验证动作块，提升长时域操作成功率。",
+  "cover_zh": "开环执行总翻车？CheckVLA用世界模型实时验证，成功率飙升8.5%",
+  "authors": [
+    {
+      "name": "Yushan Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Peibo Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Xintao Chao",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenyang Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yifan Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Lingfeng Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Shoujie Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenyu Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Fang Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiao-Ping Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-29",
+  "updated": "2026-07-29",
+  "arxiv_id": "2607.26789",
+  "pdf_url": "https://arxiv.org/pdf/2607.26789v1",
+  "abs_url": "http://arxiv.org/abs/2607.26789v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-26789.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-26789-p2.jpg",
+    "assets/img/covers/arxiv-2607-26789-p3.jpg",
+    "assets/img/covers/arxiv-2607-26789-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ SJTU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NTU"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 27,
+  "source_tags": [],
+  "score": 44,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、action-conditioned world）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 27 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出动作条件世界模型用于长程移动操作执行验证，结合VLA策略，具有高科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University",
+    "Shanghai Jiao Tong University",
+    "Peking University",
+    "Nanyang Technological University"
+  ],
+  "method_tags": [
+    "action-conditioned world model",
+    "execution-time verification",
+    "long-horizon mobile manipulation"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "RoboCasa365"
+  ],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,109 @@
+{
+  "id": "arxiv-2607-26924",
+  "source": "arxiv",
+  "title": "Temporally Centered SIGReg Improves Multi-Task LeWorldModel Learning: From Analysis to Method",
+  "title_zh": "时间中心化SIGReg改进多任务LeWorldModel学习：从分析到方法",
+  "abstract": "Recent work on LeWorldModel (LeWM) has shown that the Sketched Isotropic Gaussian Regularizer (SIGReg) enables stable end-to-end world-model learning from pixels by regularizing the latent marginal distribution toward an isotropic Gaussian, thereby preventing representation collapse. While effective and elegant in single-task settings, this recipe does not extend reliably to multi-task training, leading to substantially worse downstream behavior-cloning performance. In this paper, we show that marginal Gaussianization compresses the separation between task-dependent latent clusters relative to within-cluster variation. This compression introduces representation aliasing across tasks and states, and makes the learned representations highly sensitive to small visual perturbations. To address this problem, we apply SIGReg to temporally centered residuals rather than to the latent marginal distribution. This surrogate target places no direct regularization pressure on the separation among cluster centers, removes the requirement that the full latent follow a single isotropic Gaussian, and retains the anti-collapse effect of SIGReg. On the LIBERO benchmark, our method improves downstream success on the long-horizon suite by 1.7x and raises the average success rate across four suites from 53.2% to 73.6%. Without external pretraining, it slightly outperforms Diffusion Policy trained from scratch and approaches the performance of large-scale pretrained policy baselines. These results reveal a structural incompatibility between marginal Gaussian priors and multi-task latent structure, and provide a simple route toward stable and scalable end-to-end multi-task world-model learning.",
+  "abstract_zh": "近期关于LeWorldModel（LeWM）的研究表明，Sketched Isotropic Gaussian Regularizer（SIGReg）通过将潜在边际分布正则化为各向同性高斯分布，能够防止表征坍塌，从而实现从像素到世界模型的稳定端到端学习。尽管在单任务设置中有效且优雅，但该方法无法可靠地扩展到多任务训练，导致下游行为克隆性能显著下降。本文表明，边际高斯化压缩了任务相关潜在簇之间的分离度（相对于簇内变异），从而引入跨任务和跨状态的表征混叠，并使学到的表征对微小视觉扰动高度敏感。为解决此问题，我们将SIGReg应用于时间中心化残差，而非潜在边际分布。这一替代目标不对簇中心之间的分离施加直接正则化压力，消除了整个潜在变量服从单一各向同性高斯分布的要求，同时保留了SIGReg的抗坍塌效果。在LIBERO基准上，我们的方法将长时域套件的下游成功率提升了1.7倍，并将四个套件的平均成功率从53.2%提高到73.6%。无需外部预训练，它略优于从头训练的Diffusion Policy，并接近大规模预训练策略基线的性能。这些结果揭示了边际高斯先验与多任务潜在结构之间的结构性不兼容，并为稳定且可扩展的端到端多任务世界模型学习提供了一条简单途径。",
+  "tldr_zh": "将SIGReg应用于时间中心化残差，解决多任务世界模型学习中边际高斯化导致的表征混叠问题。",
+  "cover_zh": "多任务学习总翻车？换个正则化目标，成功率从53%飙到74%",
+  "authors": [
+    {
+      "name": "Chang Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Fei Suo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanzhou Jin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yusuke Iwasawa",
+      "affiliation": ""
+    },
+    {
+      "name": "Yutaka Matsuo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yaonan Zhu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG",
+    "cs.RO"
+  ],
+  "published": "2026-07-29",
+  "updated": "2026-07-29",
+  "arxiv_id": "2607.26924",
+  "pdf_url": "https://arxiv.org/pdf/2607.26924v1",
+  "abs_url": "http://arxiv.org/abs/2607.26924v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-26924.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-26924-p2.jpg",
+    "assets/img/covers/arxiv-2607-26924-p3.jpg",
+    "assets/img/covers/arxiv-2607-26924-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（leworldmodel、lewm）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出LeWorldModel多任务改进方法，显著提升性能，属于世界模型核心方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Graduate School of Engineering, The University of Tokyo"
+  ],
+  "method_tags": [
+    "SIGReg",
+    "world model",
+    "multi-task learning"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

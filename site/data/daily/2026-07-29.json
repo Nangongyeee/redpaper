@@ -1,0 +1,312 @@
+{
+  "date": "2026-07-29",
+  "count": 4,
+  "papers": [
+    {
+      "id": "arxiv-2607-27017",
+      "source": "arxiv",
+      "title": "What Can Latent World Models Know? Physical Parameter Identifiability in Multimodal Predictive Representations",
+      "title_zh": "潜在世界模型能知道什么？多模态预测表示中的物理参数可辨识性",
+      "tldr_zh": "预测目标决定潜在世界模型能学到哪些物理参数，而非仅靠输入数据。",
+      "cover_zh": "预测目标决定模型能学到什么物理量？｜潜在世界模型的物理参数可辨识性揭秘",
+      "abstract_zh": "潜在世界模型的一个核心前提是，预测未来会迫使表示内化其环境的物理规律。但训练后的潜在表示实际包含哪些物理量？又是什么决定了这一点？我们通过在POKEWORLD（一个交互环境，其中视觉上相同的物体隐藏了质量、阻力和接触刚度）中进行受控干预来回答这个问题。一个证书门控协议首先认证每个参数是否可从原始观测中恢复，然后测量它是否进入潜在表示，从而将零结果归因于目标而非环境。由此得到的可辨识性地图有两个组织机制和一个前沿。输入限制了可知的内容，而预测目标决定了保留的内容。刚度仅在预测触觉时进入潜在表示（R²=0.50，而相同信号仅融合到输入中时为-0.02），并且在单步预测下，仅视觉的潜在表示甚至丢弃了完全可见的物体状态。阻力标志着前沿。它的可恢复性证书为0.89，但在我们测试的每个确定性预测目标下都停滞在0.13附近，而同一主干上的监督头达到了0.45。那些读出速度慢且在感知坐标下为比率型的参数超出了这些目标所能获取的范围。在RH20T上，跨缩放曲线的输入-目标因子分析在两个机器人和4258个片段中重现了这两种机制。每个缺失信息或预测压力的手臂在五倍数据范围内保持平坦，只有完整的多模态目标能预测超出持久性基线的力，且保留的增益随规模增长。目标结构决定了潜在表示获取哪些物理参数，而额外的数据仅改善它已获取的参数。",
+      "authors": [
+        "Kaizhen Tan",
+        "Xin Xu",
+        "Siru Tao"
+      ],
+      "authors_all": [
+        "Kaizhen Tan",
+        "Xin Xu",
+        "Siru Tao",
+        "Hanzhe Hong",
+        "Yang Feng",
+        "Heqing Du"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-27017.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-27017-p2.jpg",
+        "assets/img/covers/arxiv-2607-27017-p3.jpg",
+        "assets/img/covers/arxiv-2607-27017-p4.jpg"
+      ],
+      "arxiv_id": "2607.27017",
+      "abs_url": "http://arxiv.org/abs/2607.27017v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27017v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 47,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "研究潜世界模型能学到哪些物理参数，核心贡献在world model的可解释性，实验严谨，对具身智能有指导意义。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "New York University",
+        "Carnegie Mellon University",
+        "Columbia University"
+      ],
+      "method_tags": [
+        "World Model",
+        "Predictive Representation",
+        "Physical Parameter Identifiability"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "POKEWORLD"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-27036",
+      "source": "arxiv",
+      "title": "Mitigating Compounding Error via Video Representation Regularization",
+      "title_zh": "通过视频表示正则化缓解复合误差",
+      "tldr_zh": "发现视频自回归生成误差源于表示维度坍塌，提出正则化方法显著提升长视频质量。",
+      "cover_zh": "视频生成越跑越崩？原来问题出在表示坍塌｜一个正则化轻松搞定",
+      "abstract_zh": "基于视频扩散的世界模型能够实现用于机器人、自动驾驶和模拟任务的长时间自回归视频生成，然而滑动窗口自回归推理会遭受严重的误差累积，导致帧质量随时间下降。尽管这一现象已被广泛观察，但复合误差的潜在机制以及如何实现稳定的长程生成仍未得到充分解决。本文研究了视频世界模型的内部表示动态，发现复合误差与隐藏表示的维度坍塌紧密相关。具体而言，模型表示的有效秩在生成漂移开始时急剧下降，揭示了表示退化与长程生成不稳定性之间的强关联。此外，我们发现纯训练数据扩展无法提升模型对误差漂移的抵抗力，这与主流扩展范式相矛盾。为解决此问题，我们提出视频表示正则化，一种轻量级训练约束，能够稳定潜在表示并抑制迭代误差累积。与Diffusion Forcing相比，我们的方法在VBench的美学质量和成像质量指标上分别从38.65提升至55.56，从44.37提升至72.08。我们的工作首次建立了自回归视频漂移与模型内部表示之间的联系，采用有效秩作为误差累积的定量指标，揭示了视频世界模型反直觉的扩展局限性，并提出了一种简单有效的正则化策略以提高长视频生成的鲁棒性。",
+      "authors": [
+        "Taiye Chen",
+        "Qi Zhang",
+        "Yisen Wang"
+      ],
+      "authors_all": [
+        "Taiye Chen",
+        "Qi Zhang",
+        "Yisen Wang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-07-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-27036.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-27036-p2.jpg",
+        "assets/img/covers/arxiv-2607-27036-p3.jpg",
+        "assets/img/covers/arxiv-2607-27036-p4.jpg"
+      ],
+      "arxiv_id": "2607.27036",
+      "abs_url": "http://arxiv.org/abs/2607.27036v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27036v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 47,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "研究视频世界模型中的误差累积机制，提出表示正则化方法，对长时域生成有重要价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University"
+      ],
+      "method_tags": [
+        "video representation regularization",
+        "autoregressive video generation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-26789",
+      "source": "arxiv",
+      "title": "CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation",
+      "title_zh": "CheckVLA：基于动作条件世界模型的长时域移动操作执行时验证",
+      "tldr_zh": "CheckVLA用动作条件世界模型在开环执行中验证动作块，提升长时域操作成功率。",
+      "cover_zh": "开环执行总翻车？CheckVLA用世界模型实时验证，成功率飙升8.5%",
+      "abstract_zh": "视觉-语言-动作（VLA）策略通常通过开环动作块执行长时域移动操作，即在没有新高层视觉输入的情况下发出多个动作。因此，一个已提交的动作块隐含了观测应如何演变的预期，但意外偏差可能违背这一预期，而剩余动作会继续传播错误：提交时的策略置信度无法对调度后发生的偏差做出反应，仅基于观测的异常分数缺乏动作条件参考来区分预期效果与无法解释的变化。我们提出CheckVLA，它使用一个单独训练、冻结的动作条件世界模型来验证执行。一个经保形校准的风险阈值界定了不必要首次干预的情节级概率，并决定何时干预；其超出程度控制重写后缀保留被取代块的程度；延迟感知的硬前缀限制将替换限制在仍可部署的动作上；事件驱动的关键帧库跨修复保留先前进展的证据。在RoboCasa365上，在常见训练方案和匹配调用预算下，CheckVLA的平均成功率为36.1%，而周期性重规划为27.6%（+8.5个百分点）。在匹配的5%情节级误报目标下，动作条件将及时召回率提升至77.9%，而仅观测控制为48.6%，动作打乱控制为37.9%。这些模拟结果支持动作条件验证作为在分块执行期间恢复反馈的一种方式，同时保持修复与推理延迟一致。",
+      "authors": [
+        "Yushan Liu",
+        "Peibo Sun",
+        "Xintao Chao"
+      ],
+      "authors_all": [
+        "Yushan Liu",
+        "Peibo Sun",
+        "Xintao Chao",
+        "Zhenyang Yang",
+        "Yifan Xie",
+        "Lingfeng Zhang",
+        "Shoujie Li",
+        "Chenyu Tang",
+        "Fang Chen",
+        "Xiao-Ping Zhang",
+        "Wenbo Ding"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-26789.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-26789-p2.jpg",
+        "assets/img/covers/arxiv-2607-26789-p3.jpg",
+        "assets/img/covers/arxiv-2607-26789-p4.jpg"
+      ],
+      "arxiv_id": "2607.26789",
+      "abs_url": "http://arxiv.org/abs/2607.26789v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26789v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 44,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动作条件世界模型用于长程移动操作执行验证，结合VLA策略，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Shanghai Jiao Tong University",
+        "Peking University",
+        "Nanyang Technological University"
+      ],
+      "method_tags": [
+        "action-conditioned world model",
+        "execution-time verification",
+        "long-horizon mobile manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "RoboCasa365"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-26924",
+      "source": "arxiv",
+      "title": "Temporally Centered SIGReg Improves Multi-Task LeWorldModel Learning: From Analysis to Method",
+      "title_zh": "时间中心化SIGReg改进多任务LeWorldModel学习：从分析到方法",
+      "tldr_zh": "将SIGReg应用于时间中心化残差，解决多任务世界模型学习中边际高斯化导致的表征混叠问题。",
+      "cover_zh": "多任务学习总翻车？换个正则化目标，成功率从53%飙到74%",
+      "abstract_zh": "近期关于LeWorldModel（LeWM）的研究表明，Sketched Isotropic Gaussian Regularizer（SIGReg）通过将潜在边际分布正则化为各向同性高斯分布，能够防止表征坍塌，从而实现从像素到世界模型的稳定端到端学习。尽管在单任务设置中有效且优雅，但该方法无法可靠地扩展到多任务训练，导致下游行为克隆性能显著下降。本文表明，边际高斯化压缩了任务相关潜在簇之间的分离度（相对于簇内变异），从而引入跨任务和跨状态的表征混叠，并使学到的表征对微小视觉扰动高度敏感。为解决此问题，我们将SIGReg应用于时间中心化残差，而非潜在边际分布。这一替代目标不对簇中心之间的分离施加直接正则化压力，消除了整个潜在变量服从单一各向同性高斯分布的要求，同时保留了SIGReg的抗坍塌效果。在LIBERO基准上，我们的方法将长时域套件的下游成功率提升了1.7倍，并将四个套件的平均成功率从53.2%提高到73.6%。无需外部预训练，它略优于从头训练的Diffusion Policy，并接近大规模预训练策略基线的性能。这些结果揭示了边际高斯先验与多任务潜在结构之间的结构性不兼容，并为稳定且可扩展的端到端多任务世界模型学习提供了一条简单途径。",
+      "authors": [
+        "Chang Liu",
+        "Fei Suo",
+        "Yanzhou Jin"
+      ],
+      "authors_all": [
+        "Chang Liu",
+        "Fei Suo",
+        "Yanzhou Jin",
+        "Yusuke Iwasawa",
+        "Yutaka Matsuo",
+        "Yaonan Zhu"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-07-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-26924.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-26924-p2.jpg",
+        "assets/img/covers/arxiv-2607-26924-p3.jpg",
+        "assets/img/covers/arxiv-2607-26924-p4.jpg"
+      ],
+      "arxiv_id": "2607.26924",
+      "abs_url": "http://arxiv.org/abs/2607.26924v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26924v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出LeWorldModel多任务改进方法，显著提升性能，属于世界模型核心方向。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Graduate School of Engineering, The University of Tokyo"
+      ],
+      "method_tags": [
+        "SIGReg",
+        "world model",
+        "multi-task learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
