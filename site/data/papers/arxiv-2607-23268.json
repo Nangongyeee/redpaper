@@ -1,0 +1,104 @@
+{
+  "id": "arxiv-2607-23268",
+  "source": "arxiv_discover",
+  "title": "Sling2Sim2Real: One-Shot Elastic System Identification for Non-Destructive Slingshot Policy Learning",
+  "title_zh": "Sling2Sim2Real：用于非破坏性弹弓策略学习的单次弹性系统辨识",
+  "abstract": "Elastic object manipulation (EOM) involves highdimensional, nonlinear, and elastic deformations. The diverse deformation properties of elastic objects substantially expand the relevant state space, requiring extensive exploration to learn accurate manipulation policies for tasks such as slingshot manipulation. While simulation enables large-scale and safe exploration compared to costly and potentially destructive real-world trials (e.g., repeated projectile launches), accurately calibrating elastic behavior between the real world and simulation remains challenging since elastic properties are largely indistinguishable from visual observations alone. To address these challenges, we propose Sling2Sim2Real, a one-shot Real2Sim2Real framework that identifies elastic parameters from a single non-destructive interaction and enables policy learning in simulation. The framework consists of two stages: 1) a multi-start Real2Sim system identification method that exploits parameter covariance to estimate elastic properties, and 2) simulation-based policy learning followed by zero-shot Sim2Real transfer using the calibrated simulator. We evaluate Sling2Sim2Real on a slingshot manipulation task using a Franka Emika Panda arm and elastic bands with diverse physical properties across varying target distances. Experimental results demonstrate that Sling2Sim2Real achieves accurate policy learning and robust generalization while significantly reducing the amount of required real-world interaction.",
+  "abstract_zh": "弹性物体操控涉及高维、非线性和弹性变形。弹性物体的多样化变形特性显著扩展了相关状态空间，需要大量探索才能学习精确的操控策略（例如弹弓操控）。虽然仿真相比昂贵且可能具有破坏性的真实世界试验（如重复发射抛射物）能够实现大规模且安全的探索，但准确校准真实世界与仿真之间的弹性行为仍然具有挑战性，因为仅凭视觉观察难以区分弹性属性。为解决这些挑战，我们提出了Sling2Sim2Real，一种单次Real2Sim2Real框架，通过一次非破坏性交互辨识弹性参数，并在仿真中学习策略。该框架包含两个阶段：1）一种利用参数协方差估计弹性属性的多起点Real2Sim系统辨识方法；2）基于仿真的策略学习，随后使用校准后的仿真器进行零样本Sim2Real迁移。我们在弹弓操控任务上评估了Sling2Sim2Real，使用Franka Emika Panda机械臂和具有不同物理属性的弹性带，目标距离各异。实验结果表明，Sling2Sim2Real实现了准确的策略学习和鲁棒的泛化，同时显著减少了所需的真实世界交互量。",
+  "tldr_zh": "单次非破坏性交互即可辨识弹性参数，实现仿真到真实的零样本策略迁移。",
+  "cover_zh": "弹弓也能学？一次轻拉就搞定仿真到现实的策略迁移｜零破坏高精度",
+  "authors": [
+    {
+      "name": "Wonjae Kang",
+      "affiliation": ""
+    },
+    {
+      "name": "Geonwoo Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Minseok Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Daehyung Park",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-25",
+  "updated": "2026-07-25",
+  "arxiv_id": "2607.23268",
+  "pdf_url": "https://arxiv.org/pdf/2607.23268v1",
+  "abs_url": "http://arxiv.org/abs/2607.23268v1",
+  "venue": "IROS 2026",
+  "venue_announced": "2026-07-30",
+  "cover_image": "assets/img/covers/arxiv-2607-23268.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-23268-p2.jpg",
+    "assets/img/covers/arxiv-2607-23268-p3.jpg",
+    "assets/img/covers/arxiv-2607-23268-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ KAIST"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 34,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “KAIST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（sim2real、real2sim）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "提出单次弹性系统辨识的Sim2Real框架，解决弹性物体操作中的仿真校准难题，方法新颖且实用。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Korea Advanced Institute of Science and Technology"
+  ],
+  "method_tags": [
+    "Real2Sim",
+    "Sim2Real",
+    "system identification"
+  ],
+  "platform": [
+    "Franka Emika Panda"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

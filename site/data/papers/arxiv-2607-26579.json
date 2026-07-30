@@ -1,0 +1,110 @@
+{
+  "id": "arxiv-2607-26579",
+  "source": "arxiv",
+  "title": "ContactFlow: A video action conditioning that transfers across embodiments",
+  "title_zh": "ContactFlow：一种跨本体的视频动作条件控制方法",
+  "abstract": "World models offer a promising route toward robot planning by enabling agents to imagine and verify the consequences of actions before execution. However, current video-based world models often struggle to capture the physical constraints that govern manipulation, particularly contact. Further, their action conditioning is often constrained to specific embodiments such as parallel grippers. We propose \\emph{Contact Flow}, an embodiment-agnostic action representation that encodes manipulation through the trajectory of 3D contact points between an actor and a target object. By discarding actor-specific appearance and kinematics, Contact Flow provides a shared conditioning signal for both human demonstrations and robotic execution. Therefore, we can train a large-scale video generative model on both human and robotic object interaction videos conditioned on Contact Flow, yielding a world model that predicts physically plausible manipulation outcomes. We integrate this model into a propose-imagine-verify-act pipeline, where generated rollouts are assessed by a vision-language model before execution. Experiments on the DROID dataset and real-world tabletop manipulation tasks demonstrate that Contact Flow enables transfer between human demonstrations and different robotic embodiments.",
+  "abstract_zh": "世界模型通过让智能体在执行前想象并验证动作后果，为机器人规划提供了有前景的途径。然而，当前的基于视频的世界模型往往难以捕捉控制操作过程的物理约束，特别是接触。此外，它们的动作条件通常局限于特定本体，例如平行夹爪。我们提出Contact Flow，一种与本体无关的动作表示，通过编码操作者与目标物体之间3D接触点的轨迹来表示操作。通过丢弃操作者特定的外观和运动学，Contact Flow为人类演示和机器人执行提供了共享的条件信号。因此，我们可以在人类和机器人物体交互视频上训练一个大规模视频生成模型，以Contact Flow为条件，得到一个能预测物理上合理的操作结果的世界模型。我们将该模型集成到一个“提出-想象-验证-执行”流程中，在执行前由视觉语言模型评估生成的轨迹。在DROID数据集和真实桌面操作任务上的实验表明，Contact Flow能够实现人类演示与不同机器人本体之间的迁移。",
+  "tldr_zh": "提出Contact Flow表示，实现人类与机器人跨本体操作视频生成与规划。",
+  "cover_zh": "机器人也能学人类动作？这个新方法让跨本体操作成为现实",
+  "authors": [
+    {
+      "name": "Sami Azirar",
+      "affiliation": ""
+    },
+    {
+      "name": "Enrico Pallotta",
+      "affiliation": ""
+    },
+    {
+      "name": "Jan Nogga",
+      "affiliation": ""
+    },
+    {
+      "name": "Jürgen Gall",
+      "affiliation": ""
+    },
+    {
+      "name": "Sven Behnke",
+      "affiliation": ""
+    },
+    {
+      "name": "Hermann Blum",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-07-29",
+  "updated": "2026-07-29",
+  "arxiv_id": "2607.26579",
+  "pdf_url": "https://arxiv.org/pdf/2607.26579v1",
+  "abs_url": "http://arxiv.org/abs/2607.26579v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-26579.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-26579-p2.jpg",
+    "assets/img/covers/arxiv-2607-26579-p3.jpg",
+    "assets/img/covers/arxiv-2607-26579-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 13,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（manipulation、droid dataset）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 13 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出接触流动作表示，训练视频世界模型，实现跨本体规划与验证。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Bonn",
+    "Lamarr Institute"
+  ],
+  "method_tags": [
+    "World Model",
+    "Contact Flow",
+    "Video Generation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
