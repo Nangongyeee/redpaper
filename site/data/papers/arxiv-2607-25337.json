@@ -1,0 +1,90 @@
+{
+  "id": "arxiv-2607-25337",
+  "source": "arxiv_discover",
+  "title": "Temporal-Distance JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control",
+  "title_zh": "时间距离 JEPA：用于潜在世界模型预测控制的规划感知表示学习",
+  "abstract": "Joint-Embedding Predictive Architectures (JEPAs) learn world models by predicting in representation space rather than reconstructing pixels, making them a natural backbone for latent model predictive control from offline demonstration logs. JEPA-style training optimizes short-horizon latent prediction, whereas planning requires a multi-step ranking of imagined futures by goal progress. Prior JEPA planners often inherit that ranking from embedding geometry, typically latent Euclidean distance, which arises as a byproduct of representation learning rather than as a progress cost mined from the logs. We propose Temporal-Distance-JEPA, which retains the LeWM encoder--predictor backbone and mines a directed temporal cost from reward-free trajectories: same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. The mined supervision serves two roles: as the deployed planning cost when progress is topological, and as a representation signal that improves Euclidean planning when contact geometry dominates. Under locked evaluation, deploying the mined cost raises Two-Room success to 100.0% versus LeWM's 97.4%, while shared Euclidean planning on the same temporally trained checkpoint raises OGB-Cube by 14.2 points over LeWM and improves Push-T. Against LeWM and the concurrent RC-aux baseline under locked evaluation, Temporal-Distance-JEPA matches or exceeds both methods on every environment. Ablations show that the directed head, cross-trajectory negatives, and rollout consistency each contribute. Temporal-Distance-JEPA narrows the train--plan gap for JEPA world-model planners by discovering temporal progress structure in offline logs and co-designing cost form with plan-time deployment. Code is available at https://github.com/HKBU-KnowComp/Temporal-Distance-JEPA.",
+  "abstract_zh": "联合嵌入预测架构（JEPA）通过在表示空间中进行预测而非重建像素来学习世界模型，使其成为从离线演示日志中进行潜在模型预测控制的自然骨干。JEPA 风格的训练优化短时程潜在预测，而规划需要根据目标进展对想象未来进行多步排序。先前的 JEPA 规划器通常从嵌入几何（通常是潜在欧氏距离）继承这种排序，而该距离是表示学习的副产品，而非从日志中挖掘的进展成本。我们提出 Temporal-Distance-JEPA，它保留 LeWM 的编码器-预测器骨干，并从无奖励轨迹中挖掘有向时间成本：同轨迹步序提供正样本，跨轨迹对作为启发式负样本，以及一个 rollout 一致性项匹配规划器时域。挖掘的监督有两个作用：当进展是拓扑性时作为部署的规划成本，以及作为改进欧氏规划（当接触几何占主导时）的表示信号。在锁定评估下，部署挖掘成本将 Two-Room 成功率提升至 100.0%，而 LeWM 为 97.4%；而在同一时间训练检查点上共享欧氏规划，OGB-Cube 比 LeWM 提高 14.2 个百分点，并改进 Push-T。与 LeWM 和并发 RC-aux 基线在锁定评估下相比，Temporal-Distance-JEPA 在每个环境上均达到或超过两者。消融实验表明，有向头、跨轨迹负样本和 rollout 一致性各有贡献。Temporal-Distance-JEPA 通过发现离线日志中的时间进展结构并共同设计成本形式与规划时部署，缩小了 JEPA 世界模型规划器的训练-规划差距。代码可在 https://github.com/HKBU-KnowComp/Temporal-Distance-JEPA 获取。",
+  "tldr_zh": "提出时间距离JEPA，从离线轨迹挖掘时间成本，提升潜在世界模型规划性能。",
+  "cover_zh": "JEPA规划新突破｜从离线日志挖出时间成本，成功率直接拉满",
+  "authors": [
+    {
+      "name": "Jiaxin Bai",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaxuan Xiong",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO",
+    "cs.CL"
+  ],
+  "published": "2026-07-28",
+  "updated": "2026-07-29",
+  "arxiv_id": "2607.25337",
+  "pdf_url": "https://arxiv.org/pdf/2607.25337v2",
+  "abs_url": "http://arxiv.org/abs/2607.25337v2",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-25337.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-25337-p2.jpg",
+    "assets/img/covers/arxiv-2607-25337-p3.jpg",
+    "assets/img/covers/arxiv-2607-25337-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 23,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（world model、world models、latent world model、jepa）"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出JEPA世界模型规划新方法，改进潜在模型预测控制，具有高科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Hong Kong Baptist University"
+  ],
+  "method_tags": [
+    "JEPA",
+    "World Model",
+    "Model Predictive Control"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
