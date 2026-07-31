@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T11:26:38.374153+00:00",
+  "generated_at": "2026-07-31T13:00:22.326960+00:00",
   "count": 1880,
   "papers": [
     {
@@ -16502,6 +16502,84 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-28251",
+      "source": "arxiv_discover",
+      "title": "Self-Evolving Learning for Embodied AI with Criticality Model",
+      "title_zh": "具身智能的自进化学习：基于关键性模型",
+      "tldr_zh": "提出自进化方法，用关键性模型引导采样，降低具身智能失败率。",
+      "cover_zh": "别再随机采样了！这个自进化方法让机器人失败率狂降67%",
+      "abstract_zh": "尽管策略预训练取得了快速进展，具身智能系统在特定任务微调阶段通常会遇到性能瓶颈。根本原因在于微调数据的收集方式：默认流程随机收集数据，将每个样本视为同等信息量。这导致数据集被常规场景主导，而罕见的失败案例——这些对改进最有价值的样本——却被遗漏。我们提出了一种自进化方法，打破了这一瓶颈。我们的核心见解是，从策略自身的执行结果中学习到的状态级关键性模型，能够预测未来失败的概率，从而引导重要性采样偏向于易失败场景。在用多样化的易失败场景替换冗余的常规场景后，使用重要性权重在训练期间对数据进行重采样。这有效地保持了无偏的学习目标，同时从根本上提高了训练池的信息密度。在四足运动、多任务操作、视觉-语言-动作基准测试以及真实机器人任务中，我们的方法相对于训练基线将失败率降低了51%至67%，相对于最先进的视觉-语言-动作模型降低了8%至25%。",
+      "authors": [
+        "Linxuan He",
+        "Yuying Tian",
+        "Lingxiang Fan"
+      ],
+      "authors_all": [
+        "Linxuan He",
+        "Yuying Tian",
+        "Lingxiang Fan",
+        "Jiaqi Pi",
+        "Yinqiao Lu",
+        "Shang Su",
+        "Mengkai Shi",
+        "Shuo Feng"
+      ],
+      "primary_category": "",
+      "published": "2026-07-30",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-28251.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-28251-p2.jpg",
+        "assets/img/covers/arxiv-2607-28251-p3.jpg",
+        "assets/img/covers/arxiv-2607-28251-p4.jpg"
+      ],
+      "arxiv_id": "2607.28251",
+      "abs_url": "http://arxiv.org/abs/2607.28251v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28251v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出基于关键性模型的自进化数据采样方法，提升具身策略微调效果，跨多任务验证，对IL/VLA研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Dense-AI"
+      ],
+      "method_tags": [
+        "importance sampling",
+        "criticality model",
+        "self-evolving"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-28391",
       "source": "arxiv",
       "title": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction",
@@ -27231,9 +27309,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构简化和寄存器注意力，大幅提升重建精度，并支持动态场景。",
-      "cover_zh": "重建模型也能扩展？VGGT-$\\Omega$用更少内存，精度提升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模呈可预测的扩展。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，并降低训练内存。",
+      "cover_zh": "重建模型也能这么强？VGGT-Ω让精度飙升77%｜训练还更省内存",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -40073,83 +40151,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2607-28251",
-      "source": "arxiv_discover",
-      "title": "Self-Evolving Learning for Embodied AI with Criticality Model",
-      "title_zh": "具身智能的自进化学习：基于关键性模型",
-      "tldr_zh": "提出自进化方法，用关键性模型引导采样，降低具身智能失败率。",
-      "cover_zh": "别再随机采样了！这个自进化方法让机器人失败率狂降67%",
-      "abstract_zh": "尽管策略预训练取得了快速进展，具身智能系统在特定任务微调阶段通常会遇到性能瓶颈。根本原因在于微调数据的收集方式：默认流程随机收集数据，将每个样本视为同等信息量。这导致数据集被常规场景主导，而罕见的失败案例——这些对改进最有价值的样本——却被遗漏。我们提出了一种自进化方法，打破了这一瓶颈。我们的核心见解是，从策略自身的执行结果中学习到的状态级关键性模型，能够预测未来失败的概率，从而引导重要性采样偏向于易失败场景。在用多样化的易失败场景替换冗余的常规场景后，使用重要性权重在训练期间对数据进行重采样。这有效地保持了无偏的学习目标，同时从根本上提高了训练池的信息密度。在四足运动、多任务操作、视觉-语言-动作基准测试以及真实机器人任务中，我们的方法相对于训练基线将失败率降低了51%至67%，相对于最先进的视觉-语言-动作模型降低了8%至25%。",
-      "authors": [
-        "Linxuan He",
-        "Yuying Tian",
-        "Lingxiang Fan"
-      ],
-      "authors_all": [
-        "Linxuan He",
-        "Yuying Tian",
-        "Lingxiang Fan",
-        "Jiaqi Pi",
-        "Yinqiao Lu",
-        "Shang Su",
-        "Mengkai Shi",
-        "Shuo Feng"
-      ],
-      "primary_category": "",
-      "published": "2026-07-30",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-28251.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-28251-p2.jpg",
-        "assets/img/covers/arxiv-2607-28251-p3.jpg",
-        "assets/img/covers/arxiv-2607-28251-p4.jpg"
-      ],
-      "arxiv_id": "2607.28251",
-      "abs_url": "http://arxiv.org/abs/2607.28251v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.28251v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 44,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出基于关键性模型的自进化数据采样方法，提升具身策略微调效果，跨多任务验证，对IL/VLA研究有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tsinghua University",
-        "Dense-AI"
-      ],
-      "method_tags": [
-        "importance sampling",
-        "criticality model",
-        "self-evolving"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "vid-youtube-zj07hHJnrto",
       "source": "video_youtube",
       "title": "How do you make a reliable backflip? | Boston Dynamics",
@@ -40479,8 +40480,8 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也爱转圈圈？Atlas 新动作太酷了！",
+      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
+      "cover_zh": "机器人转圈圈？Atlas 的新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -71022,8 +71023,8 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互与自主稳定操作。",
-      "cover_zh": "一个模型搞定全屋护理？还能抗干扰自主执行！",
+      "tldr_zh": "单一模型实现全模态交互与自主移动操作",
+      "cover_zh": "一个模型搞定全屋家务？还能抗干扰自主执行！",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
