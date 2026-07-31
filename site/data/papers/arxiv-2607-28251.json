@@ -1,0 +1,129 @@
+{
+  "id": "arxiv-2607-28251",
+  "source": "arxiv_discover",
+  "title": "Self-Evolving Learning for Embodied AI with Criticality Model",
+  "title_zh": "具身智能的自进化学习：基于关键性模型",
+  "abstract": "Despite rapid advances in policy pretraining, embodied AI systems routinely plateau during task-specific finetuning. The root cause lies in how finetuning data are collected: the default pipeline gathers data randomly, treating every sample as informative. Datasets become dominated by nominal scenarios, while rare failure cases--the most valuable for improvement--are missed. We propose a self-evolving method that breaks this plateau. Our core insight is that a state-wise criticality model, learned from the policy's own execution outcomes to predict the probability of future failure, can guide importance sampling toward failure-prone scenarios. After replacing redundant nominal scenarios with diverse failure-prone ones, importance weights are used to resample the data during training. This effectively preserves an unbiased learning objective while fundamentally increasing the information density of the training pool. Across quadrupedal locomotion, multi-task manipulation, vision-language-action benchmarks, and a real-robot task, our method reduces failure rates by 51--67% relative to trained baselines and by 8-25% relative to state-of-the-art vision-language-action models.",
+  "abstract_zh": "尽管策略预训练取得了快速进展，具身智能系统在特定任务微调阶段通常会遇到性能瓶颈。根本原因在于微调数据的收集方式：默认流程随机收集数据，将每个样本视为同等信息量。这导致数据集被常规场景主导，而罕见的失败案例——这些对改进最有价值的样本——却被遗漏。我们提出了一种自进化方法，打破了这一瓶颈。我们的核心见解是，从策略自身的执行结果中学习到的状态级关键性模型，能够预测未来失败的概率，从而引导重要性采样偏向于易失败场景。在用多样化的易失败场景替换冗余的常规场景后，使用重要性权重在训练期间对数据进行重采样。这有效地保持了无偏的学习目标，同时从根本上提高了训练池的信息密度。在四足运动、多任务操作、视觉-语言-动作基准测试以及真实机器人任务中，我们的方法相对于训练基线将失败率降低了51%至67%，相对于最先进的视觉-语言-动作模型降低了8%至25%。",
+  "tldr_zh": "提出自进化方法，用关键性模型引导采样，降低具身智能失败率。",
+  "cover_zh": "别再随机采样了！这个自进化方法让机器人失败率狂降67%",
+  "authors": [
+    {
+      "name": "Linxuan He",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuying Tian",
+      "affiliation": ""
+    },
+    {
+      "name": "Lingxiang Fan",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaqi Pi",
+      "affiliation": ""
+    },
+    {
+      "name": "Yinqiao Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shang Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Mengkai Shi",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuo Feng",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "eess.SY"
+  ],
+  "published": "2026-07-30",
+  "updated": "2026-07-30",
+  "arxiv_id": "2607.28251",
+  "pdf_url": "https://arxiv.org/pdf/2607.28251v1",
+  "abs_url": "http://arxiv.org/abs/2607.28251v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-28251.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-28251-p2.jpg",
+    "assets/img/covers/arxiv-2607-28251-p3.jpg",
+    "assets/img/covers/arxiv-2607-28251-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 25,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 44,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（locomotion、quadruped）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 25 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出基于关键性模型的自进化数据采样方法，提升具身策略微调效果，跨多任务验证，对IL/VLA研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University",
+    "Dense-AI"
+  ],
+  "method_tags": [
+    "importance sampling",
+    "criticality model",
+    "self-evolving"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

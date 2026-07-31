@@ -1,6 +1,6 @@
 {
   "date": "2026-07-30",
-  "count": 19,
+  "count": 20,
   "papers": [
     {
       "id": "arxiv-2607-28623",
@@ -656,6 +656,83 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-28251",
+      "source": "arxiv_discover",
+      "title": "Self-Evolving Learning for Embodied AI with Criticality Model",
+      "title_zh": "具身智能的自进化学习：基于关键性模型",
+      "tldr_zh": "提出自进化方法，用关键性模型引导采样，降低具身智能失败率。",
+      "cover_zh": "别再随机采样了！这个自进化方法让机器人失败率狂降67%",
+      "abstract_zh": "尽管策略预训练取得了快速进展，具身智能系统在特定任务微调阶段通常会遇到性能瓶颈。根本原因在于微调数据的收集方式：默认流程随机收集数据，将每个样本视为同等信息量。这导致数据集被常规场景主导，而罕见的失败案例——这些对改进最有价值的样本——却被遗漏。我们提出了一种自进化方法，打破了这一瓶颈。我们的核心见解是，从策略自身的执行结果中学习到的状态级关键性模型，能够预测未来失败的概率，从而引导重要性采样偏向于易失败场景。在用多样化的易失败场景替换冗余的常规场景后，使用重要性权重在训练期间对数据进行重采样。这有效地保持了无偏的学习目标，同时从根本上提高了训练池的信息密度。在四足运动、多任务操作、视觉-语言-动作基准测试以及真实机器人任务中，我们的方法相对于训练基线将失败率降低了51%至67%，相对于最先进的视觉-语言-动作模型降低了8%至25%。",
+      "authors": [
+        "Linxuan He",
+        "Yuying Tian",
+        "Lingxiang Fan"
+      ],
+      "authors_all": [
+        "Linxuan He",
+        "Yuying Tian",
+        "Lingxiang Fan",
+        "Jiaqi Pi",
+        "Yinqiao Lu",
+        "Shang Su",
+        "Mengkai Shi",
+        "Shuo Feng"
+      ],
+      "primary_category": "",
+      "published": "2026-07-30",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-28251.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-28251-p2.jpg",
+        "assets/img/covers/arxiv-2607-28251-p3.jpg",
+        "assets/img/covers/arxiv-2607-28251-p4.jpg"
+      ],
+      "arxiv_id": "2607.28251",
+      "abs_url": "http://arxiv.org/abs/2607.28251v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28251v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 44,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出基于关键性模型的自进化数据采样方法，提升具身策略微调效果，跨多任务验证，对IL/VLA研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Dense-AI"
+      ],
+      "method_tags": [
+        "importance sampling",
+        "criticality model",
+        "self-evolving"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-28382",
       "source": "arxiv",
       "title": "SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer",
@@ -802,55 +879,6 @@
       "source_tags": []
     },
     {
-      "id": "qbitai-32f37cd6a7",
-      "source": "qbitai",
-      "title": "李飞飞的世界模型，终于开始训练机器人了",
-      "title_zh": "李飞飞的世界模型，终于开始训练机器人了",
-      "tldr_zh": "李飞飞老师的World Labs，补了块关键拼图",
-      "cover_zh": "李飞飞老师的World Labs，补了块关键拼图",
-      "abstract_zh": "李飞飞老师的World Labs，补了块关键拼图",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "",
-      "published": "2026-07-30",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.qbitai.com/2026/07/463217.html",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 31,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "李飞飞World Labs训练机器人，结合世界模型，高价值研究",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "qbitai"
-      ]
-    },
-    {
       "id": "arxiv-2607-27784",
       "source": "arxiv",
       "title": "DexDirect: Direct Kinesthetic Arm Guidance for Efficient Dexterous Demonstration Collection",
@@ -995,6 +1023,55 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "qbitai-32f37cd6a7",
+      "source": "qbitai",
+      "title": "李飞飞的世界模型，终于开始训练机器人了",
+      "title_zh": "李飞飞的世界模型，终于开始训练机器人了",
+      "tldr_zh": "李飞飞的世界模型，终于开始训练机器人了",
+      "cover_zh": "李飞飞的世界模型，终于开始训练机器人了",
+      "abstract_zh": "李飞飞老师的World Labs，补了块关键拼图",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "2026-07-30",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/07/463217.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 28,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "李飞飞World Labs训练机器人，结合世界模型，高价值研究",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
     },
     {
       "id": "arxiv-2607-28362",
