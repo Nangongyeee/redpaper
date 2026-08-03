@@ -1,0 +1,99 @@
+{
+  "id": "arxiv-2607-29271",
+  "source": "arxiv",
+  "title": "MDIR: A Task-Manifold Impedance Retargeting Method for Contact-Rich Teleoperation",
+  "title_zh": "MDIR：一种用于接触丰富遥操作的任务流形阻抗重定向方法",
+  "abstract": "Fixed Cartesian impedance makes contact-rich teleoperation demonstrations practical, but gains that secure progress and contact support also determine impact and force variability. We study single-demonstration controller-to-controller impedance retargeting. Given one fixed Cartesian impedance command sequence {K0, D0, xcmd}, Manifold-Decomposed Impedance Retargeting (MDIR) deterministically reparameterizes the recorded controller into an executable task-channel variable-impedance command. MDIR targets this local retargeting problem by preserving projected task-channel responses near the demonstrated trajectory. It represents the source response in operational work, exertion, and support channels with a passive residual complement under a control-chain metric, computes an executable Cartesian-to-Manifold Retargeting (C2M) baseline, and applies Manifold-Constrained Parameter Optimization (MPO) to select a feasible representative with lower wrist-force peaks, impulse, force variability, and nominal controller power. Across planar wiping, pick-and-place, and pushing on a Franka Panda, the full MDIR controller passes Task Check in all 15 closed-loop executions and reduces all four aggressiveness metrics relative to the fixed-impedance demonstrations.",
+  "abstract_zh": "固定的笛卡尔阻抗使得接触丰富的遥操作演示变得实用，但确保进度和接触支持的增益也决定了冲击力和力的变异性。我们研究了单次演示的控制器到控制器阻抗重定向问题。给定一个固定的笛卡尔阻抗命令序列 {K0, D0, xcmd}，流形分解阻抗重定向（MDIR）将记录的控制器确定性地重新参数化为可执行的任务通道可变阻抗命令。MDIR 通过保持演示轨迹附近投影的任务通道响应来针对这一局部重定向问题。它在控制链度量下，以被动残差补集表示源响应在操作功、施力和支撑通道中的表现，计算可执行的笛卡尔到流形重定向（C2M）基线，并应用流形约束参数优化（MPO）来选择具有较低腕部力峰值、冲量、力变异性和标称控制器功率的可行代表。在 Franka Panda 上的平面擦拭、拾放和推动任务中，完整的 MDIR 控制器在所有 15 次闭环执行中均通过任务检查，并相对于固定阻抗演示降低了所有四个激进性指标。",
+  "tldr_zh": "MDIR 通过流形分解重定向固定阻抗，降低接触任务中的力峰值和变异性。",
+  "cover_zh": "固定阻抗太死板？MDIR 让遥操作更稳更省力，15 次全通过！",
+  "authors": [
+    {
+      "name": "Liu Jiahao",
+      "affiliation": ""
+    },
+    {
+      "name": "Kento Kawaharazuka",
+      "affiliation": ""
+    },
+    {
+      "name": "Tasuku Makabe",
+      "affiliation": ""
+    },
+    {
+      "name": "Kei Okada",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-31",
+  "updated": "2026-07-31",
+  "arxiv_id": "2607.29271",
+  "pdf_url": "https://arxiv.org/pdf/2607.29271v1",
+  "abs_url": "http://arxiv.org/abs/2607.29271v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-29271.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-29271-p2.jpg",
+    "assets/img/covers/arxiv-2607-29271-p3.jpg",
+    "assets/img/covers/arxiv-2607-29271-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation",
+    "teleop"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 20,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（retargeting、contact-rich、pick-and-place、teleoperation）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 3 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "teleop",
+    "reason": "接触丰富遥操作中的阻抗重定向方法，提升演示质量，对遥操作研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The University of Tokyo"
+  ],
+  "method_tags": [
+    "Impedance Retargeting",
+    "Contact-Rich Teleoperation",
+    "Optimization"
+  ],
+  "platform": [
+    "Franka Panda"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

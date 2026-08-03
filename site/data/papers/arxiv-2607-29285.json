@@ -1,0 +1,89 @@
+{
+  "id": "arxiv-2607-29285",
+  "source": "arxiv",
+  "title": "TRACT: Temporally Routed Action Chunks with Chronological Phase Authority for Contact-Rich Manipulation",
+  "title_zh": "TRACT：面向接触丰富操作的时间路由动作块与时间阶段权威",
+  "abstract": "Action chunking shortens the effective decision horizon of robot imitation learning by predicting multiple future actions, while conventional phase conditioning describes the current control instant. When a predicted horizon crosses a procedural boundary, assigning the current phase to the entire chunk creates a structural temporal mismatch. We present TRACT, which factorizes phase-structured action chunking into an accepted current phase and a single CURRENT-to-NEXT boundary inside the future horizon. A task-local graph constrains chronological phase authority, and a cumulative boundary distribution monotonically routes future queries through phase-specific query and action paths. For contact execution, a causal response-deficit integrator compares policy intent with ACK-eligible subsequent motion, accumulates arm compensation when directional response is suppressed, and decays after confirmed recovery. Across six real-robot variants with ten trials each, full TRACT achieves 10/10 full-sequence success, 99.00 [88.75, 100.00]% median [min, max] wipe completion, zero observed phase ambiguity, and zero stalls. Under the current complete method package and evaluation setting, the routed representation obtains better observed task results than the flat package (6/10 vs. 3/10 success; 77.08% vs. 8.03% median wipe completion). Chronological authority reduces observed phase ambiguity from 8/10 to 0/10, and response integration reduces stalls from 4/10 to 0/10. The package comparison does not isolate routing from other generator-package differences.",
+  "abstract_zh": "动作分块通过预测多个未来动作来缩短机器人模仿学习的有效决策范围，而传统的阶段条件描述的是当前控制时刻。当预测的范围跨越程序边界时，将当前阶段分配给整个块会造成结构性的时间不匹配。我们提出了TRACT，它将阶段结构化的动作分块分解为已接受的当前阶段和未来范围内的单个当前到下一个边界。任务局部图约束时间阶段的权威，累积边界分布单调地将未来查询路由到特定阶段的查询和动作路径。对于接触执行，因果响应缺陷积分器将策略意图与ACK合格的后继运动进行比较，当方向响应被抑制时累积手臂补偿，并在确认恢复后衰减。在六个真实机器人变体上，每个变体进行十次试验，完整的TRACT实现了10/10的全序列成功，99.00 [88.75, 100.00]%的中位数[最小，最大]擦拭完成度，零观察到的阶段模糊，零停滞。在当前完整的方法包和评估设置下，路由表示比平坦包获得了更好的观察任务结果（6/10对3/10成功；77.08%对8.03%的中位擦拭完成度）。时间权威将观察到的阶段模糊从8/10降低到0/10，响应积分将停滞从4/10降低到0/10。包比较并未将路由与其他生成器包的差异隔离开来。",
+  "tldr_zh": "TRACT通过时间路由和阶段权威，在接触操作中实现零阶段模糊和零停滞。",
+  "cover_zh": "机器人操作总卡壳？TRACT用时间路由让阶段模糊和停滞全消失！",
+  "authors": [
+    {
+      "name": "Jiahao Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Kento Kawaharazuka",
+      "affiliation": ""
+    },
+    {
+      "name": "Tasuku Makabe",
+      "affiliation": ""
+    },
+    {
+      "name": "Kei Okada",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-31",
+  "updated": "2026-07-31",
+  "arxiv_id": "2607.29285",
+  "pdf_url": "https://arxiv.org/pdf/2607.29285v1",
+  "abs_url": "http://arxiv.org/abs/2607.29285v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-29285.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-29285-p2.jpg",
+    "assets/img/covers/arxiv-2607-29285-p3.jpg",
+    "assets/img/covers/arxiv-2607-29285-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 6,
+  "source_tags": [],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、imitation learning、action chunking、contact-rich）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 6 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出时序路由动作块方法，解决接触丰富操作中的相位时序错配，真实机器人实验验证，对模仿学习有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The University of Tokyo"
+  ],
+  "method_tags": [
+    "Action Chunking",
+    "Phase Conditioning",
+    "Contact-Rich Manipulation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
