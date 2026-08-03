@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-31",
+  "count": 1,
+  "papers": [
+    {
+      "id": "arxiv-2607-29613",
+      "source": "arxiv",
+      "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+      "title_zh": "WCM：用于视觉-语言-动作强化学习的世界评论家模型",
+      "tldr_zh": "WCM通过联合预测未来状态与价值估计，提升VLA模型RL后训练的时间动态捕捉能力。",
+      "cover_zh": "评论家模型也能预测未来？WCM让机器人操作泛化能力飙升",
+      "abstract_zh": "视觉-语言-动作（VLA）模型的强化学习（RL）后训练在机器人操作中展现出巨大潜力。在RL方法中，基于评论家的方法依赖于价值估计器，该估计器主要基于单帧观测或单帧VLM骨干网络潜在特征，这与机器人控制的部分可观测性本质不匹配。将观测历史简单纳入评论家会导致高维视觉空间的指数复杂度，并且由于纯标量回报回归无法为跨时间动态学习提供足够的监督，仍然会失败。我们确定根本原因是一个状态近似问题：没有显式的世界建模目标，评论家的表示无法捕捉准确价值估计所需的时间结构。为解决此问题，我们提出世界评论家模型（WCM），基于轻量级LeJEPA架构；WCM联合预测未来潜在状态并估计价值，使得评论家的表示被显式训练以捕捉时间动态，而不仅仅是回归标量回报。WCM无缝集成到在线和离线训练流程中，并与最先进的VLA骨干网络（包括Pi0、Pi0.5和OpenVLA-OFT）兼容。在四个基准的149个任务上的大量实验表明，WCM在分布内和分布外设置中均持续达到最先进性能，尤其在泛化方面有显著提升。我们进一步在七个真实世界操作任务上使用OpenVLA-OFT和Pi0.5进行离线RL验证，确认了在不同设置下的稳定部署。",
+      "authors": [
+        "Senyu Fei",
+        "Xiaopeng Yu",
+        "Siyin Wang"
+      ],
+      "authors_all": [
+        "Senyu Fei",
+        "Xiaopeng Yu",
+        "Siyin Wang",
+        "Xianzhong Zhao",
+        "Jingjing Gong",
+        "Xipeng Qiu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-31",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Xipeng Qiu"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-29613.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-29613-p2.jpg",
+        "assets/img/covers/arxiv-2607-29613-p3.jpg",
+        "assets/img/covers/arxiv-2607-29613-p4.jpg"
+      ],
+      "arxiv_id": "2607.29613",
+      "abs_url": "http://arxiv.org/abs/2607.29613v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.29613v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 32,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出基于LeJEPA的世界评论家模型，将世界模型与VLA强化学习结合，提升泛化，具身智能领域高价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tongji University",
+        "Shanghai Innovation Institute",
+        "Fudan University"
+      ],
+      "method_tags": [
+        "RL",
+        "World Model",
+        "VLA"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
