@@ -1,0 +1,73 @@
+{
+  "id": "github-manutdmoon-zprl",
+  "source": "github",
+  "title": "ManUtdMoon/ZPRL",
+  "title_zh": "ManUtdMoon/ZPRL",
+  "abstract": "Implementation of the paper \"Beyond Action Residuals: Steering Robot Manipulation Policies with Bottleneck Latent Reinforcement Learning\" (https://arxiv.org/abs/2605.19919).\n\n# Beyond Action Residuals: Steering Robot Manipulation Policies with Bottleneck Latent Reinforcement Learning (ZPRL) [Dongjie Yu](https://manutdmoon.github.io/) &#42;,1,2 , [Kun Lei](https://lei-kun.github.io/) &#42;,2,3 , [Zhennan Jiang](https://jzndd.github.io/) 4 , [Jia Pan](https://www.ai.hku.hk/people/academic-staff/jpan) &#35;,1 , [Huazhe Xu](http://hxu.rocks/) &#35;,2,5 &#42; Equal contribution &#35; Corresponding authors 1 School of Computing and Data Science, HKU; 2 Shanghai Qi Zhi Institute; 3 Shanghai Jiao Tong University; 4 Institute of Automation, CAS; 5 IIIS, THU **TL;DR**: ZPRL is an RL finetuning framework that perturbs bottleneck latents to steer robot manipulation policies, achieving efficient steering and smooth robot actions. ## Installation 1. Clone the repository. 2. Create a virtual environment and install the required dependencies. We used [mamba](https://github.com/conda-forge/miniforge) for fast env management, but you can also use conda. Then add `export MUJOCO_GL=egl` to your `~/.bashrc`. If osmesa/glfw/glew issues still exist during training, check this [page](https://docs.pytorch.org/rl/0.6/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html) for possible solutions. 3. Check your `~/.bashrc` and locate `MAMBA_ROOT_PREFIX` or `CONDA_PREFIX`. Then add either or correspondingly to your `~/.bashrc` if there is no such command. 4. Install `robosuite` and `robomimic`. We use specific versions for both to leverage Python bindings of `mujoco` so we do not have to install `mujoco-py` and download more files. 5. We made a small patch to `robosuite` to correct its GPU rendering on the specified device and enable faster parallel simulation. Replace `/your/path/to/dependencies/robosuite/robosuite/renderers/context/egl_context.py` with [this](patches/egl_context.py) and replace `/your/path/to/dependencies/robosuite/robosuite/utils/binding_utils.py` with [this](patches/binding_utils.py). You may need to change the `conversion_map` in `egl_cont",
+  "abstract_zh": "本文实现了论文“超越动作残差：通过瓶颈潜在强化学习引导机器人操作策略”（https://arxiv.org/abs/2605.19919）。# 超越动作残差：通过瓶颈潜在强化学习引导机器人操作策略（ZPRL）[Dongjie Yu](https://manutdmoon.github.io/) *，1,2，[Kun Lei](https://lei-kun.github.io/) *，2,3，[Zhennan Jiang](https://jzndd.github.io/) 4，[Jia Pan](https://www.ai.hku.hk/people/academic-staff/jpan) #，1，[Huazhe Xu](http://hxu.rocks/) #，2,5 * 同等贡献 # 通讯作者 1 香港大学计算与数据科学学院；2 上海期智研究院；3 上海交通大学；4 中国科学院自动化研究所；5 清华大学交叉信息研究院 **TL;DR**：ZPRL 是一个强化学习微调框架，通过扰动瓶颈潜在变量来引导机器人操作策略，实现高效引导和平滑的机器人动作。## 安装 1. 克隆仓库。2. 创建虚拟环境并安装所需依赖。我们使用 [mamba](https://github.com/conda-forge/miniforge) 进行快速环境管理，但也可以使用 conda。然后将 `export MUJOCO_GL=egl` 添加到你的 `~/.bashrc` 中。如果训练过程中仍然存在 osmesa/glfw/glew 问题，请查看此 [页面](https://docs.pytorch.org/rl/0.6/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html) 获取可能的解决方案。3. 检查你的 `~/.bashrc` 并找到 `MAMBA_ROOT_PREFIX` 或 `CONDA_PREFIX`。如果不存在相应命令，则将对应的路径添加到 `~/.bashrc` 中。4. 安装 `robosuite` 和 `robomimic`。我们使用特定版本以利用 `mujoco` 的 Python 绑定，从而无需安装 `mujoco-py` 和下载更多文件。5. 我们对 `robosuite` 做了一个小补丁，以纠正其在指定设备上的 GPU 渲染并启用更快的并行模拟。将 `/your/path/to/dependencies/robosuite/robosuite/renderers/context/egl_context.py` 替换为 [此文件](patches/egl_context.py)，并将 `/your/path/to/dependencies/robosuite/robosuite/utils/binding_utils.py` 替换为 [此文件](patches/binding_utils.py)。你可能需要更改 `egl_cont` 中的 `conversion_map`。",
+  "tldr_zh": "ZPRL 通过扰动瓶颈潜在变量微调机器人策略，实现高效引导和平滑动作。",
+  "cover_zh": "还在用动作残差？这个新框架直接扰动潜在变量，机器人动作更平滑！",
+  "authors": [
+    {
+      "name": "ManUtdMoon",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-05-20",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/ManUtdMoon/ZPRL",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 32,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 32,
+      "hint": "⭐ 39"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "官方算法实现，基于瓶颈潜变量的RL微调框架，提升操作策略平滑性",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "操作"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "ManUtdMoon",
+    "repo": "ZPRL",
+    "stars": 39,
+    "language": "Python",
+    "pushed_at": "2026-05-20",
+    "created_at": "2026-03-24",
+    "topics": [],
+    "archived": false
+  }
+}
