@@ -1,0 +1,129 @@
+{
+  "id": "arxiv-2608-02547",
+  "source": "arxiv",
+  "title": "Why Does Action Chunking Improve Behavioral Cloning Performance in Robotic Control?",
+  "title_zh": "为什么动作分块能提升机器人控制中的行为克隆性能？",
+  "abstract": "Action chunking---predicting and executing multiple actions instead of a single action---has proven to be a critical component for learning effective robotic control policies. However, our precise understanding of why action chunking improves performance has remained limited. In this work we seek to close this gap. Through rigorous experimental evaluations in both simulated and real-world settings, we show that existing hypotheses for the success of action chunking---temporal consistency, horizon reduction, and representation learning---fail to explain the success of action chunking. Instead, we find that action chunking benefits from greater non-Markovian expressivity and reduced compounding error compared to Markovian policies, but, in many settings of interest, these effects can be fully captured by delayed policies, which at each step predict a single action based on the observation $k$ steps in the past. We then show that there exists an additional benefit of action chunking that we refer to as implicit ensembling. In particular, by learning a diversity of temporal relationships (that is, $a_t | o_t, a_t | o_{t-1}, \\ldots$), action-chunked policies exhibit behavior matching that of a model ensemble, increasing their robustness and generalization ability over policies that only learn a single temporal relationship. Building on these insights, we show that in simulated and real-world robotic control settings, we can match the performance of action chunking without action chunking---by deploying an action chunking policy as an ensemble of policies with randomized delays. Furthermore, we propose a policy class that amplifies the benefits of action chunking by explicitly instantiating an ensemble, and which we show significantly improves over the performance of action chunking in many domains.",
+  "abstract_zh": "动作分块——预测并执行多个动作而非单个动作——已被证明是学习有效机器人控制策略的关键组成部分。然而，我们对动作分块为何能提升性能的精确理解仍然有限。在这项工作中，我们力求弥合这一差距。通过在模拟和真实世界环境中的严格实验评估，我们表明现有的关于动作分块成功的假设——时间一致性、视野缩减和表示学习——无法解释动作分块的成功。相反，我们发现动作分块相比马尔可夫策略，受益于更强的非马尔可夫表达性和更低的复合误差，但在许多感兴趣的场景中，这些效应可以被延迟策略完全捕获，延迟策略在每一步基于过去$k$步的观测预测单个动作。然后我们表明，动作分块还存在一个额外的好处，我们称之为隐式集成。特别是，通过学习多样化的时间关系（即$a_t | o_t, a_t | o_{t-1}, \\ldots$），动作分块策略表现出与模型集成相匹配的行为，增加了其鲁棒性和泛化能力，而仅学习单一时间关系的策略则不具备这一点。基于这些见解，我们表明在模拟和真实世界的机器人控制环境中，我们可以通过将动作分块策略部署为具有随机延迟的策略集成，在不进行动作分块的情况下匹配动作分块的性能。此外，我们提出了一类策略，通过显式实例化集成来放大动作分块的好处，并表明在许多领域中，该策略显著优于动作分块的性能。",
+  "tldr_zh": "动作分块提升行为克隆性能，其成功源于隐式集成效应，而非传统假设。",
+  "cover_zh": "动作分块为何有效？真相竟是隐式集成，比传统假设更强大！",
+  "authors": [
+    {
+      "name": "Filippo Lazzati",
+      "affiliation": ""
+    },
+    {
+      "name": "Kyle Stachowicz",
+      "affiliation": ""
+    },
+    {
+      "name": "William Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Alberto Maria Metelli",
+      "affiliation": ""
+    },
+    {
+      "name": "Andrew Wagenmaker",
+      "affiliation": ""
+    },
+    {
+      "name": "Sergey Levine",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-03",
+  "updated": "2026-08-03",
+  "arxiv_id": "2608.02547",
+  "pdf_url": "https://arxiv.org/pdf/2608.02547v1",
+  "abs_url": "http://arxiv.org/abs/2608.02547v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-02547.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-02547-p2.jpg",
+    "assets/img/covers/arxiv-2608-02547-p3.jpg",
+    "assets/img/covers/arxiv-2608-02547-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Berkeley (BAIR)"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Sergey Levine"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 42,
+  "source_tags": [],
+  "score": 61,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Berkeley (BAIR)” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Sergey Levine"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（action chunking）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 42 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "深入剖析动作分块提升行为克隆性能的机理，提出隐式集成新解释，对模仿学习研究有重要理论价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Politecnico di Milano",
+    "UC Berkeley"
+  ],
+  "method_tags": [
+    "Behavior Cloning",
+    "Action Chunking",
+    "Ensembling"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

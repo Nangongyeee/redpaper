@@ -76,7 +76,8 @@
     "assets/img/covers/arxiv-2608-02208-p4.jpg"
   ],
   "channels": [
-    "loco-manip-wbc"
+    "loco-manip-wbc",
+    "world-model"
   ],
   "badges": [
     {
@@ -87,13 +88,13 @@
   "related_links": [],
   "page_count": 62,
   "source_tags": [],
-  "score": 16,
+  "score": 27,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
-      "points": 3,
-      "hint": "频道关键词命中 1 个（whole-body）"
+      "points": 9,
+      "hint": "频道关键词命中 3 个（whole-body、jepa、joint-embedding predictive）"
     },
     {
       "id": "freshness",
@@ -106,11 +107,25 @@
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 62 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Weizmann Institute of Science",
+    "Tel Aviv University",
+    "New York University",
+    "Brown University"
+  ],
+  "method_tags": [
+    "Self-Supervised Learning",
+    "JEPA"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
