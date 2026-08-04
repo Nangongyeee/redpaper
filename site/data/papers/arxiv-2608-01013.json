@@ -1,0 +1,99 @@
+{
+  "id": "arxiv-2608-01013",
+  "source": "arxiv_discover",
+  "title": "RL Bootstrapping of OpenVLA-OFT for a Novel Robot Embodiment",
+  "title_zh": "RL 引导 OpenVLA-OFT 适配新型机器人本体",
+  "abstract": "Adapting a pretrained vision-language-action (VLA) policy to a new robot usually assumes embodiment-specific demonstrations. This assumption is especially restrictive for custom robots whose morphology differs strongly from the manipulators seen in large robot datasets. We study a harder setting: zero-demo embodiment alignment of OpenVLA-OFT on a cable-driven parallel robot (CDPR) with a simple gripper and a previously unseen control interface. Instead of supervised fine-tuning, we use reinforcement learning in simulation with dense geometric rewards computed from simulator state. The training is performed in two stages: a PPO stage for directional motion primitives, followed by GRPO continuation from the PPO checkpoint with an expanded instruction space that includes object-conditioned commands. On the four shared directional instructions, the average held-out success rate improves from 34.25\\% after PPO to 53.50\\% after PPO$\\rightarrow$GRPO, with especially large gains on \\texttt{move left} and \\texttt{move backward}. In the GRPO stage we additionally introduce \\texttt{move to <object>} over eight target objects and obtain 39/400 = 9.75\\% strict success, while qualitative rollouts frequently show correct target-directed approach behavior before late-stage instability. Compared with prior OpenVLA and OpenVLA-OFT results, which rely on demonstration datasets and mostly standard rigid-arm embodiments, our method uses no embodiment-specific dataset at all. The results do not yet establish robust manipulation, but they provide stronger evidence that RL-only bootstrapping can create the first usable language-conditioned controller for a genuinely novel embodiment.",
+  "abstract_zh": "将预训练的视觉-语言-动作（VLA）策略适配到新机器人通常需要特定于本体的演示。这一假设对于自定义机器人尤其受限，因为其形态与大型机器人数据集中常见的机械臂差异很大。我们研究了一个更难的设置：在具有简单夹爪和前所未见的控制接口的缆驱动并联机器人（CDPR）上，对 OpenVLA-OFT 进行零演示本体对齐。我们不用监督微调，而是在仿真中使用强化学习，利用从仿真器状态计算的密集几何奖励。训练分两个阶段：PPO 阶段学习方向运动原语，然后从 PPO 检查点继续 GRPO，扩展指令空间以包含对象条件命令。在四个共享方向指令上，平均保留成功率从 PPO 后的 34.25% 提升到 PPO→GRPO 后的 53.50%，尤其在“向左移动”和“向后移动”上提升显著。在 GRPO 阶段，我们还引入了“移动到<对象>”指令，涉及八个目标对象，严格成功率为 39/400 = 9.75%，而定性 rollout 经常显示在后期不稳定之前有正确的目标定向接近行为。与先前依赖演示数据集且主要针对标准刚性臂本体的 OpenVLA 和 OpenVLA-OFT 结果相比，我们的方法完全不需要特定于本体的数据集。结果尚未建立稳健的操作能力，但提供了更强的证据表明，仅用 RL 引导可以为真正新颖的本体创建第一个可用的语言条件控制器。",
+  "tldr_zh": "零演示下用 RL 引导 OpenVLA-OFT 适配新型机器人，成功率显著提升。",
+  "cover_zh": "零演示也能让 VLA 模型学会操控新机器人？RL 引导效果惊人！",
+  "authors": [
+    {
+      "name": "Damir Nurtdinov",
+      "affiliation": ""
+    },
+    {
+      "name": "Alexei Kornaev",
+      "affiliation": ""
+    },
+    {
+      "name": "Alexander Maloletov",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-02",
+  "updated": "2026-08-02",
+  "arxiv_id": "2608.01013",
+  "pdf_url": "https://arxiv.org/pdf/2608.01013v1",
+  "abs_url": "http://arxiv.org/abs/2608.01013v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-01013.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-01013-p2.jpg",
+    "assets/img/covers/arxiv-2608-01013-p3.jpg",
+    "assets/img/covers/arxiv-2608-01013-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 4,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、openvla、manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 4 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "零演示RL引导VLA适配新机器人，方法新颖但效果有限，对操作领域有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Innopolis University",
+    "Volgograd State Technical University"
+  ],
+  "method_tags": [
+    "RL",
+    "PPO",
+    "GRPO"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

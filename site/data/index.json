@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-04T07:51:36.833990+00:00",
-  "count": 1920,
+  "generated_at": "2026-08-04T09:42:34.788590+00:00",
+  "count": 1922,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -26538,9 +26538,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，并降低训练内存。",
-      "cover_zh": "重建模型也能这么强？VGGT-Ω让精度飙升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳的相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度，并提升下游任务性能。",
+      "cover_zh": "重建模型也能扩展？VGGT-$\\Omega$用30%内存实现精度飙升77%",
+      "abstract_zh": "最近的馈送式重建模型（如VGGT）已被证明与传统基于优化的重建器相比具有竞争力，同时还提供了对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模呈可预测的扩展。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -40101,7 +40101,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "波士顿动力 Atlas 玩转旋转新动作，机器人又进化了？",
+      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -50177,6 +50177,76 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-26434",
+      "source": "arxiv_discover",
+      "title": "Reinforcement Learning on Cost-Constrained Quadrupedal Hardware",
+      "title_zh": "成本受限四足硬件上的强化学习",
+      "tldr_zh": "利用时间感知网络和延迟模型，在低成本四足硬件上实现鲁棒运动。",
+      "cover_zh": "延迟 50ms 也能稳走？时间感知网络让四足机器人学会自组织步态",
+      "abstract_zh": "在低成本机器人平台上部署学习控制策略会引入传输延迟和噪声电机反馈，这系统性地扩大了模拟到现实的差距。模拟与硬件部署之间的鸿沟在于执行器达到指令位置的延迟。在诸如 Mini Pupper 2 这样的平台上，实测超过 50 毫秒的传输延迟将运动任务从标准马尔可夫决策过程转变为部分可观测过程。本文采用一种受生物学启发的方法来处理噪声和延迟反馈，以缩小模拟到现实的差距，从而扩展强化学习在成本受限硬件上的能力。在低成本四足硬件平台上，我们发现使用平均执行器延迟的前向模型，结合时间感知神经网络，能够实现鲁棒的运动。此外，我们的时间感知神经网络学习了一个中枢模式发生器（CPG）：一种自维持的节律性步态，对 +320 毫秒的延迟扰动具有鲁棒性，这反映了脊椎动物脊髓中的 CPG。我们认为，时间自组织可能是成本受限运动的一种通用策略。",
+      "authors": [
+        "Javier C. Weddington",
+        "Bence P. Ölveczky",
+        "Stephen A. Baccus"
+      ],
+      "authors_all": [
+        "Javier C. Weddington",
+        "Bence P. Ölveczky",
+        "Stephen A. Baccus"
+      ],
+      "primary_category": "",
+      "published": "2026-07-29",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-26434.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-26434-p2.jpg",
+        "assets/img/covers/arxiv-2607-26434-p3.jpg",
+        "assets/img/covers/arxiv-2607-26434-p4.jpg"
+      ],
+      "arxiv_id": "2607.26434",
+      "abs_url": "http://arxiv.org/abs/2607.26434v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.26434v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "sim2real",
+        "reason": "针对低成本四足硬件延迟导致的sim-to-real gap，提出时间感知网络与CPG，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Stanford University",
+        "Harvard University"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "sim-to-real",
+        "central pattern generator"
+      ],
+      "platform": [
+        "Mini Pupper 2"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2607-26513",
@@ -80721,6 +80791,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-01013",
+      "source": "arxiv_discover",
+      "title": "RL Bootstrapping of OpenVLA-OFT for a Novel Robot Embodiment",
+      "title_zh": "RL 引导 OpenVLA-OFT 适配新型机器人本体",
+      "tldr_zh": "零演示下用 RL 引导 OpenVLA-OFT 适配新型机器人，成功率显著提升。",
+      "cover_zh": "零演示也能让 VLA 模型学会操控新机器人？RL 引导效果惊人！",
+      "abstract_zh": "将预训练的视觉-语言-动作（VLA）策略适配到新机器人通常需要特定于本体的演示。这一假设对于自定义机器人尤其受限，因为其形态与大型机器人数据集中常见的机械臂差异很大。我们研究了一个更难的设置：在具有简单夹爪和前所未见的控制接口的缆驱动并联机器人（CDPR）上，对 OpenVLA-OFT 进行零演示本体对齐。我们不用监督微调，而是在仿真中使用强化学习，利用从仿真器状态计算的密集几何奖励。训练分两个阶段：PPO 阶段学习方向运动原语，然后从 PPO 检查点继续 GRPO，扩展指令空间以包含对象条件命令。在四个共享方向指令上，平均保留成功率从 PPO 后的 34.25% 提升到 PPO→GRPO 后的 53.50%，尤其在“向左移动”和“向后移动”上提升显著。在 GRPO 阶段，我们还引入了“移动到<对象>”指令，涉及八个目标对象，严格成功率为 39/400 = 9.75%，而定性 rollout 经常显示在后期不稳定之前有正确的目标定向接近行为。与先前依赖演示数据集且主要针对标准刚性臂本体的 OpenVLA 和 OpenVLA-OFT 结果相比，我们的方法完全不需要特定于本体的数据集。结果尚未建立稳健的操作能力，但提供了更强的证据表明，仅用 RL 引导可以为真正新颖的本体创建第一个可用的语言条件控制器。",
+      "authors": [
+        "Damir Nurtdinov",
+        "Alexei Kornaev",
+        "Alexander Maloletov"
+      ],
+      "authors_all": [
+        "Damir Nurtdinov",
+        "Alexei Kornaev",
+        "Alexander Maloletov"
+      ],
+      "primary_category": "",
+      "published": "2026-08-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-01013.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-01013-p2.jpg",
+        "assets/img/covers/arxiv-2608-01013-p3.jpg",
+        "assets/img/covers/arxiv-2608-01013-p4.jpg"
+      ],
+      "arxiv_id": "2608.01013",
+      "abs_url": "http://arxiv.org/abs/2608.01013v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01013v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "manipulation",
+        "reason": "零演示RL引导VLA适配新机器人，方法新颖但效果有限，对操作领域有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Innopolis University",
+        "Volgograd State Technical University"
+      ],
+      "method_tags": [
+        "RL",
+        "PPO",
+        "GRPO"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-02069",

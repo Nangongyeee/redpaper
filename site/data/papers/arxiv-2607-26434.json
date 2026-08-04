@@ -1,0 +1,102 @@
+{
+  "id": "arxiv-2607-26434",
+  "source": "arxiv_discover",
+  "title": "Reinforcement Learning on Cost-Constrained Quadrupedal Hardware",
+  "title_zh": "成本受限四足硬件上的强化学习",
+  "abstract": "Deploying learned control policies on low-cost robotic platforms introduces transport latencies and noisy motor feedback that systematically widens the sim-to-real gap. The chasm of simulation to deployment in hardware lies in the delay of the actuator reaching the commanded position. On platforms such as the Mini Pupper 2, a measured >50 ms transport delay transforms the locomotion task from a standard Markov decision process into a partially observable one. In this paper, we take a biologically inspired approach of handling noisy and delayed feedback to close the sim-to-real gap, thereby expanding the capability of reinforcement learning on cost-constrained hardware. Using a low-cost quadrupedal hardware platform, we find that using a forward model of the average actuator delay, paired with a time-aware neural network results in robust locomotion. Additionally, our time-aware neural network learned a central pattern generator (CPG): a self-sustaining rhythmic gait that is robust to +320 ms latency perturbations, mirroring the CPGs found in the spinal cords of vertebrates. We posit that temporal self-organization may be a general strategy for cost-constrained locomotion.",
+  "abstract_zh": "在低成本机器人平台上部署学习控制策略会引入传输延迟和噪声电机反馈，这系统性地扩大了模拟到现实的差距。模拟与硬件部署之间的鸿沟在于执行器达到指令位置的延迟。在诸如 Mini Pupper 2 这样的平台上，实测超过 50 毫秒的传输延迟将运动任务从标准马尔可夫决策过程转变为部分可观测过程。本文采用一种受生物学启发的方法来处理噪声和延迟反馈，以缩小模拟到现实的差距，从而扩展强化学习在成本受限硬件上的能力。在低成本四足硬件平台上，我们发现使用平均执行器延迟的前向模型，结合时间感知神经网络，能够实现鲁棒的运动。此外，我们的时间感知神经网络学习了一个中枢模式发生器（CPG）：一种自维持的节律性步态，对 +320 毫秒的延迟扰动具有鲁棒性，这反映了脊椎动物脊髓中的 CPG。我们认为，时间自组织可能是成本受限运动的一种通用策略。",
+  "tldr_zh": "利用时间感知网络和延迟模型，在低成本四足硬件上实现鲁棒运动。",
+  "cover_zh": "延迟 50ms 也能稳走？时间感知网络让四足机器人学会自组织步态",
+  "authors": [
+    {
+      "name": "Javier C. Weddington",
+      "affiliation": ""
+    },
+    {
+      "name": "Bence P. Ölveczky",
+      "affiliation": ""
+    },
+    {
+      "name": "Stephen A. Baccus",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.AI",
+    "cs.RO"
+  ],
+  "published": "2026-07-29",
+  "updated": "2026-07-30",
+  "arxiv_id": "2607.26434",
+  "pdf_url": "https://arxiv.org/pdf/2607.26434v2",
+  "abs_url": "http://arxiv.org/abs/2607.26434v2",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2607-26434.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2607-26434-p2.jpg",
+    "assets/img/covers/arxiv-2607-26434-p3.jpg",
+    "assets/img/covers/arxiv-2607-26434-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Stanford"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（locomotion、quadruped、gait、robust locomotion）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "sim2real",
+    "reason": "针对低成本四足硬件延迟导致的sim-to-real gap，提出时间感知网络与CPG，具科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Stanford University",
+    "Harvard University"
+  ],
+  "method_tags": [
+    "Reinforcement Learning",
+    "sim-to-real",
+    "central pattern generator"
+  ],
+  "platform": [
+    "Mini Pupper 2"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
