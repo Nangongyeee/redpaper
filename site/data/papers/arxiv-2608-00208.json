@@ -1,0 +1,83 @@
+{
+  "id": "arxiv-2608-00208",
+  "source": "arxiv_discover",
+  "title": "Developing Combined Manipulation and Locomotion Skills with Interaction Representation and Skill Composition",
+  "title_zh": "结合交互表示与技能组合，开发操作与运动技能",
+  "abstract": "This paper addresses how to enable a humanoid robot to learn motion policies based on developmental principles and combine policies to create more sophisticated and useful behaviors. Specifically, we present an approach to (1) learning a whole-body reaching and grasping policy and (2) combining it and a standing-up and walking policy to compose a more complex policy of manipulation and locomotion: grasping, standing up, and walking.\n  In (1), our method draws inspiration from harmonic analysis and adopts cubic harmonics as weights to represent the hand-object spatial relationship via spatial convolution. Utilizing an intra-episode finger joint decoupling curriculum based on developmental principles, a robot can autonomously learn a generalizable grasping policy without relying on external datasets or pretrained models.\n  In (2), our method combines the grasping policy with a separately learned getting-up policy by providing both policies with their respective observation vectors and using hand-object interaction scores to determine when each policy should control which robot joints. Our results show a 93% zero-shot success rate for grasping unseen objects and a 96-100% success rate for standing up while holding the object. Our work also demonstrates that combining different policies is only effective if each policy learning happens on the same whole humanoid body even if a policy (such as for locomotion) does not seem to need all the body parts (such as fingers).",
+  "abstract_zh": "本文探讨如何使类人机器人基于发展原则学习运动策略，并通过组合策略来创造更复杂、更有用的行为。具体而言，我们提出了一种方法：(1) 学习全身伸手抓取策略；(2) 将其与站立和行走策略相结合，以组成更复杂的操作与运动策略：抓取、站立和行走。在(1)中，我们的方法借鉴调和分析，采用三次谐波作为权重，通过空间卷积表示手-物空间关系。利用基于发展原则的回合内手指关节解耦课程，机器人可以自主学习可泛化的抓取策略，而无需依赖外部数据集或预训练模型。在(2)中，我们的方法将抓取策略与单独学习的起身策略相结合，为两种策略提供各自的观测向量，并使用手-物交互得分来决定每个策略何时控制机器人的哪些关节。我们的结果显示，对未见物体的抓取零样本成功率为93%，在手持物体时站立的成功率为96-100%。我们的工作还表明，只有当每个策略的学习发生在同一个完整的人形身体上时，组合不同策略才有效，即使某个策略（如运动策略）似乎不需要所有身体部位（如手指）。",
+  "tldr_zh": "提出结合交互表示与技能组合，使机器人学习抓取并组合站立行走，零样本抓取成功率达93%。",
+  "cover_zh": "机器人也能边抓边站？新方法让技能组合更高效！",
+  "authors": [
+    {
+      "name": "Fanxing Meng",
+      "affiliation": ""
+    },
+    {
+      "name": "Jing Xiao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-07-31",
+  "updated": "2026-07-31",
+  "arxiv_id": "2608.00208",
+  "pdf_url": "https://arxiv.org/pdf/2608.00208v1",
+  "abs_url": "http://arxiv.org/abs/2608.00208v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-00208.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-00208-p2.jpg",
+    "assets/img/covers/arxiv-2608-00208-p3.jpg",
+    "assets/img/covers/arxiv-2608-00208-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 9,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（whole-body、humanoid robot）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "人形机器人全身控制与移动操作结合，策略组合方法有创新，符合频道主题。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Worcester Polytechnic Institute"
+  ],
+  "method_tags": [
+    "skill composition",
+    "grasping",
+    "whole-body control"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
