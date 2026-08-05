@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T09:39:02.952904+00:00",
+  "generated_at": "2026-08-05T11:19:02.446935+00:00",
   "count": 1940,
   "papers": [
     {
@@ -27120,9 +27120,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督学习，以更低内存实现更高重建精度，并提升下游任务性能。",
-      "cover_zh": "重建模型也能逆袭？VGGT-Ω用30%内存实现精度飙升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度。",
+      "cover_zh": "重建模型也能逆袭？VGGT-$\\Omega$用30%内存提升77%精度！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -40835,7 +40835,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能旋转跳跃？Atlas 新动作太酷了！",
+      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -73292,7 +73292,7 @@
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
       "tldr_zh": "单一模型实现全模态交互与自主稳定执行",
-      "cover_zh": "一个模型搞定全屋护理？还能抗干扰自主执行！",
+      "cover_zh": "一个模型搞定全屋家务？还能抗干扰自主执行！",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
@@ -95025,6 +95025,67 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-27599",
+      "source": "arxiv_discover",
+      "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
+      "title_zh": "世界动作规划器：基于动作条件世界模型的通用决策",
+      "tldr_zh": "提出世界动作规划器，结合VLM与世界模型，实现零样本泛化决策。",
+      "cover_zh": "零样本也能规划？VLM+世界模型让机器人决策更通用",
+      "abstract_zh": "构建适用于多种应用的通用智能体仍是一个根本性挑战。虽然基于模仿学习的策略在特定训练环境中表现出色，但它们往往难以泛化到新场景和新任务。在这项工作中，我们提出了世界动作规划器（World Action Planner），一个机器人规划系统，它利用视觉语言模型（VLM）的推理能力和多任务姿态图像条件世界模型的物理基础。我们的系统使智能体能够提出初始动作计划，并通过优化和搜索迭代改进，对想象的世界模型展开进行推理。我们证明，我们的方法在组合任务、新布局和零样本泛化场景中取得了优越性能，显著优于最先进的端到端策略模型，如VLA和WAM。项目网站：worldactionplanner.github.io",
+      "authors": [
+        "Xiangcheng Zhang",
+        "Yilun Du"
+      ],
+      "authors_all": [
+        "Xiangcheng Zhang",
+        "Yilun Du"
+      ],
+      "primary_category": "",
+      "published": "2026-07-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2607-27599.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-27599-p2.jpg",
+        "assets/img/covers/arxiv-2607-27599-p3.jpg",
+        "assets/img/covers/arxiv-2607-27599-p4.jpg"
+      ],
+      "arxiv_id": "2607.27599",
+      "abs_url": "http://arxiv.org/abs/2607.27599v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27599v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动作条件世界模型用于规划，结合VLM推理，提升泛化，属世界模型频道。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Harvard University"
+      ],
+      "method_tags": [
+        "World Model",
+        "VLM",
+        "Planning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2607-27784",
       "source": "arxiv",
       "title": "DexDirect: Direct Kinesthetic Arm Guidance for Efficient Dexterous Demonstration Collection",
@@ -109369,66 +109430,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-27599",
-      "source": "arxiv_discover",
-      "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
-      "title_zh": "世界动作规划器：基于动作条件世界模型的通用决策",
-      "tldr_zh": "提出世界动作规划器，结合VLM与世界模型，实现零样本泛化决策。",
-      "cover_zh": "零样本也能规划？VLM+世界模型让机器人决策更通用",
-      "abstract_zh": "构建适用于多种应用的通用智能体仍是一个根本性挑战。虽然基于模仿学习的策略在特定训练环境中表现出色，但它们往往难以泛化到新场景和新任务。在这项工作中，我们提出了世界动作规划器（World Action Planner），一个机器人规划系统，它利用视觉语言模型（VLM）的推理能力和多任务姿态图像条件世界模型的物理基础。我们的系统使智能体能够提出初始动作计划，并通过优化和搜索迭代改进，对想象的世界模型展开进行推理。我们证明，我们的方法在组合任务、新布局和零样本泛化场景中取得了优越性能，显著优于最先进的端到端策略模型，如VLA和WAM。项目网站：worldactionplanner.github.io",
-      "authors": [
-        "Xiangcheng Zhang",
-        "Yilun Du"
-      ],
-      "authors_all": [
-        "Xiangcheng Zhang",
-        "Yilun Du"
-      ],
-      "primary_category": "",
-      "published": "2026-07-30",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2607-27599.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-27599-p2.jpg",
-        "assets/img/covers/arxiv-2607-27599-p3.jpg",
-        "assets/img/covers/arxiv-2607-27599-p4.jpg"
-      ],
-      "arxiv_id": "2607.27599",
-      "abs_url": "http://arxiv.org/abs/2607.27599v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.27599v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出动作条件世界模型用于规划，结合VLM推理，提升泛化，属世界模型频道。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Harvard University"
-      ],
-      "method_tags": [
-        "World Model",
-        "VLM",
-        "Planning"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2607-28362",
