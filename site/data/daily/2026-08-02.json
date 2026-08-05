@@ -1,7 +1,170 @@
 {
   "date": "2026-08-02",
-  "count": 1,
+  "count": 3,
   "papers": [
+    {
+      "id": "arxiv-2608-01506",
+      "source": "arxiv_discover",
+      "title": "Rapid Embodiment Adaptation for Quadrupedal Locomotion",
+      "title_zh": "四足机器人运动的快速本体适应",
+      "tldr_zh": "提出在线本体适应框架，使四足机器人在半秒内适应关节锁定和负载变化。",
+      "cover_zh": "腿锁死、负重5kg照样稳走？这个新框架让四足机器人秒适应",
+      "abstract_zh": "人类会随着衰老、受伤或负重而改变身体，并迅速调整自己的动作，但基于学习的机器人策略在硬件属性发生变化时往往会失效。我们提出了一种用于四足运动的在线本体适应框架，该框架从短暂的交互历史中推断本体参数，并根据推断出的硬件状态进行控制。我们的方法将一种在随机化本体下训练的通才策略与一个轻量级适应模块配对，该模块能在半秒内识别物理变化。我们评估了两种具有代表性的本体变化形式：关节范围约束和躯干质量变化，分别对应关节级运动学退化和身体级动态变化。在仿真中，该模块能准确估计这些变化，并实现闭环控制，其性能显著优于直接基于交互历史进行控制的策略。在真实的Unitree Go2机器人上，我们的系统在评估的严重变化情况下（包括完全锁死的腿和5公斤负载）仍能保持稳定运动，而非自适应方法则失败。这些结果证明了显式在线本体识别对于快速适应关节限制和负载质量变化的实用性，并为处理更广泛的不确定、退化或变化的机器人硬件迈出了一步。",
+      "authors": [
+        "Dichen Li",
+        "Bo Ai",
+        "Nico Bohlinger"
+      ],
+      "authors_all": [
+        "Dichen Li",
+        "Bo Ai",
+        "Nico Bohlinger",
+        "Jan Peters",
+        "Hao Su",
+        "Henrik I. Christensen"
+      ],
+      "primary_category": "",
+      "published": "2026-08-02",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hao Su"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-01506.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-01506-p2.jpg",
+        "assets/img/covers/arxiv-2608-01506-p3.jpg",
+        "assets/img/covers/arxiv-2608-01506-p4.jpg"
+      ],
+      "arxiv_id": "2608.01506",
+      "abs_url": "http://arxiv.org/abs/2608.01506v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01506v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 57,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "locomotion",
+        "reason": "提出四足机器人快速本体适应框架，结合在线参数估计与通用策略，仿真和真机验证有效，对运动鲁棒性研究有较高价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "UC San Diego",
+        "Stanford University",
+        "TU Darmstadt",
+        "hessian.AI"
+      ],
+      "method_tags": [
+        "embodiment adaptation",
+        "embodiment randomization",
+        "online identification"
+      ],
+      "platform": [
+        "Unitree Go2"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-01452",
+      "source": "arxiv_discover",
+      "title": "DynamicManip: Enabling Dynamic Manipulation from a Single Static Demonstration",
+      "title_zh": "DynamicManip：从单个静态演示实现动态操作",
+      "tldr_zh": "提出DynamicManip，从单个静态演示生成动态操作数据，实现高效低延迟的动态操作。",
+      "cover_zh": "一个静态演示就能学会动态操作？成功率提升18.4%！",
+      "abstract_zh": "动态操作是机器人在复杂动态环境中运行的关键能力，机器人必须与移动的物体交互或需要快速调整。然而，学习动态操作任务的模型面临两大挑战：（1）动态场景的组合复杂性导致大量数据需求，（2）动态的快速变化需要实时且准确的策略执行。在本文中，我们提出DynamicManip，通过高效的数据增强管道和低延迟的模仿策略来解决这些挑战。我们首先提出一个静态到动态的增强管道，从单个静态演示合成多样化的动态操作演示。其次，我们引入一个动态感知的自适应策略，根据任务动态调整其推理频率，实现响应迅速且有效的动态操作。第三，我们构建了一个动态操作基准，包括多样化的动态任务和自动评估系统，用于可扩展且一致的评估。在仿真和真实世界中的大量实验表明，DynamicManip不仅在数据效率上提供了显著改进，而且在动态操作任务中取得了更好的性能，平均成功率提高了18.4个百分点，策略查询延迟降低了32.9%。",
+      "authors": [
+        "Haoran Liao",
+        "Pengyue Wang",
+        "Shuoyu Chen"
+      ],
+      "authors_all": [
+        "Haoran Liao",
+        "Pengyue Wang",
+        "Shuoyu Chen",
+        "Kehan Cheng",
+        "Xuhang Chen",
+        "Yuhao Lin",
+        "Mu Lin",
+        "Zhizhao Liang",
+        "Xiaoyi Fan",
+        "Chengyi Xing",
+        "Dan Niu",
+        "Yi-Lin Wei",
+        "Wei-Shi Zheng"
+      ],
+      "primary_category": "",
+      "published": "2026-08-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Wei-Shi Zheng"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-01452.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-01452-p2.jpg",
+        "assets/img/covers/arxiv-2608-01452-p3.jpg",
+        "assets/img/covers/arxiv-2608-01452-p4.jpg"
+      ],
+      "arxiv_id": "2608.01452",
+      "abs_url": "http://arxiv.org/abs/2608.01452v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01452v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出动态操作的数据增强与自适应策略，含基准测试，对操作学习有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Sun Yat-sen University",
+        "Stanford University",
+        "Southeast University",
+        "Jiangxing Intelligence"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Data Augmentation",
+        "Dynamic Manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
     {
       "id": "arxiv-2608-01013",
       "source": "arxiv_discover",

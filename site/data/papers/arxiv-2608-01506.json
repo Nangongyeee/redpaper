@@ -1,0 +1,127 @@
+{
+  "id": "arxiv-2608-01506",
+  "source": "arxiv_discover",
+  "title": "Rapid Embodiment Adaptation for Quadrupedal Locomotion",
+  "title_zh": "四足机器人运动的快速本体适应",
+  "abstract": "Humans readily adapt their movements as their bodies change through aging, injury, or load carrying, but learning-based robot policies often break when hardware properties shift. We introduce an online embodiment adaptation framework for quadrupedal locomotion that infers embodiment parameters from short interaction histories and conditions control on the inferred hardware state. Our method pairs a generalist policy trained under embodiment randomization with a lightweight adaptation module that identifies physical changes within half a second. We evaluate two representative forms of embodiment variation: joint-range constraints and trunk-mass changes, corresponding to joint-level kinematic degradation and body-level dynamic variation. In simulation, the module accurately estimates these changes and enables closed-loop control that substantially outperforms policies conditioned directly on interaction history. On a real Unitree Go2 robot, our system maintains stable locomotion under severe instances of the evaluated changes, including a fully locked leg and a 5 kg payload, where non-adaptive methods fail. These results demonstrate the practicality of explicit online embodiment identification for rapid adaptation to joint-limit and payload-mass changes, and provide a step toward handling broader forms of uncertain, degraded, or changing robot hardware.",
+  "abstract_zh": "人类会随着衰老、受伤或负重而改变身体，并迅速调整自己的动作，但基于学习的机器人策略在硬件属性发生变化时往往会失效。我们提出了一种用于四足运动的在线本体适应框架，该框架从短暂的交互历史中推断本体参数，并根据推断出的硬件状态进行控制。我们的方法将一种在随机化本体下训练的通才策略与一个轻量级适应模块配对，该模块能在半秒内识别物理变化。我们评估了两种具有代表性的本体变化形式：关节范围约束和躯干质量变化，分别对应关节级运动学退化和身体级动态变化。在仿真中，该模块能准确估计这些变化，并实现闭环控制，其性能显著优于直接基于交互历史进行控制的策略。在真实的Unitree Go2机器人上，我们的系统在评估的严重变化情况下（包括完全锁死的腿和5公斤负载）仍能保持稳定运动，而非自适应方法则失败。这些结果证明了显式在线本体识别对于快速适应关节限制和负载质量变化的实用性，并为处理更广泛的不确定、退化或变化的机器人硬件迈出了一步。",
+  "tldr_zh": "提出在线本体适应框架，使四足机器人在半秒内适应关节锁定和负载变化。",
+  "cover_zh": "腿锁死、负重5kg照样稳走？这个新框架让四足机器人秒适应",
+  "authors": [
+    {
+      "name": "Dichen Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Bo Ai",
+      "affiliation": ""
+    },
+    {
+      "name": "Nico Bohlinger",
+      "affiliation": ""
+    },
+    {
+      "name": "Jan Peters",
+      "affiliation": ""
+    },
+    {
+      "name": "Hao Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Henrik I. Christensen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.AI",
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-08-02",
+  "updated": "2026-08-02",
+  "arxiv_id": "2608.01506",
+  "pdf_url": "https://arxiv.org/pdf/2608.01506v1",
+  "abs_url": "http://arxiv.org/abs/2608.01506v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-01506.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-01506-p2.jpg",
+    "assets/img/covers/arxiv-2608-01506-p3.jpg",
+    "assets/img/covers/arxiv-2608-01506-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Stanford"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Hao Su"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 57,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Hao Su"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（locomotion、quadruped、unitree go）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "locomotion",
+    "reason": "提出四足机器人快速本体适应框架，结合在线参数估计与通用策略，仿真和真机验证有效，对运动鲁棒性研究有较高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "UC San Diego",
+    "Stanford University",
+    "TU Darmstadt",
+    "hessian.AI"
+  ],
+  "method_tags": [
+    "embodiment adaptation",
+    "embodiment randomization",
+    "online identification"
+  ],
+  "platform": [
+    "Unitree Go2"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
