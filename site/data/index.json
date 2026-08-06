@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T07:50:17.015392+00:00",
+  "generated_at": "2026-08-06T09:44:03.154362+00:00",
   "count": 1955,
   "papers": [
     {
@@ -16234,6 +16234,78 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-03002",
+      "source": "arxiv_discover",
+      "title": "A Wearable Stiffness-Rendering Haptic Device with a Honeycomb Jamming Mechanism for Bilateral Teleoperation",
+      "title_zh": "一种采用蜂窝堵塞机构的可穿戴刚度渲染触觉装置，用于双边遥操作",
+      "tldr_zh": "20克可穿戴触觉装置利用蜂窝堵塞机构，在遥操作中实现刚度渲染，误差小且安全。",
+      "cover_zh": "20克触觉装置，蜂窝堵塞机构，让遥操作手感真实又安全！",
+      "abstract_zh": "本文针对双边遥操作中提供动觉反馈的挑战，设计了一种可穿戴、轻量（20克）且紧凑的触觉装置HJ-Haptic，利用蜂窝堵塞机构进行物体刚度渲染。HJ-Haptic装置可在30 kPa真空压力下，将其刚度从1.15 N/mm变化到2.64 N/mm。我们展示了其在遥操作框架中的实现，使操作员能够根据可靠的物体刚度触觉反馈调整握力。对蜂窝堵塞机构进行了三点弯曲试验，并执行了遥操作物体抓取任务，以评估该装置的功能。实验表明，在遥操作运动、刚度渲染和交互力反馈方面，均方根误差较小且相关性较强。HJ-Haptic能根据实时夹爪反馈有效调整其刚度，模拟直接用手抓取物体的感觉。该装置使用真空压力，通过防止气体泄漏或材料失效时的危险后果，确保操作员安全。将HJ-Haptic集成到遥操作框架中，提供了可靠的物体刚度感知和稳定的遥操作。本研究凸显了蜂窝堵塞机构在增强触觉反馈方面的潜力，适用于遥操作场景以及与扩展现实环境的交互等多种应用。",
+      "authors": [
+        "Thomas M. Kwok",
+        "Bohan Zhang",
+        "Wai Tuck Chow"
+      ],
+      "authors_all": [
+        "Thomas M. Kwok",
+        "Bohan Zhang",
+        "Wai Tuck Chow"
+      ],
+      "primary_category": "",
+      "published": "2026-08-04",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-03002.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-03002-p2.jpg",
+        "assets/img/covers/arxiv-2608-03002-p3.jpg",
+        "assets/img/covers/arxiv-2608-03002-p4.jpg"
+      ],
+      "arxiv_id": "2608.03002",
+      "abs_url": "http://arxiv.org/abs/2608.03002v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03002v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "面向遥操作的可穿戴力觉反馈装置，具新颖性，但偏硬件设计，算法创新有限。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Nanyang Technological University"
+      ],
+      "method_tags": [
+        "haptic feedback",
+        "bilateral teleoperation",
+        "stiffness rendering"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-03387",
       "source": "arxiv",
       "title": "RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation",
@@ -27137,9 +27209,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督学习，大幅提升重建精度，仅用30%显存，数据量增15倍。",
-      "cover_zh": "显存砍70%精度反升77%？这个重建模型让静态动态场景都起飞",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更少内存实现更高重建精度，并提升下游任务性能。",
+      "cover_zh": "重建模型也能这么强？VGGT-$\\Omega$用30%内存实现精度飙升77%！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -40599,77 +40671,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2608-03002",
-      "source": "arxiv_discover",
-      "title": "A Wearable Stiffness-Rendering Haptic Device with a Honeycomb Jamming Mechanism for Bilateral Teleoperation",
-      "title_zh": "一种采用蜂窝堵塞机构的可穿戴刚度渲染触觉装置，用于双边遥操作",
-      "tldr_zh": "20克可穿戴触觉装置利用蜂窝堵塞机构，在遥操作中实现刚度渲染，误差小且安全。",
-      "cover_zh": "20克触觉装置，蜂窝堵塞机构，让遥操作手感真实又安全！",
-      "abstract_zh": "本文针对双边遥操作中提供动觉反馈的挑战，设计了一种可穿戴、轻量（20克）且紧凑的触觉装置HJ-Haptic，利用蜂窝堵塞机构进行物体刚度渲染。HJ-Haptic装置可在30 kPa真空压力下，将其刚度从1.15 N/mm变化到2.64 N/mm。我们展示了其在遥操作框架中的实现，使操作员能够根据可靠的物体刚度触觉反馈调整握力。对蜂窝堵塞机构进行了三点弯曲试验，并执行了遥操作物体抓取任务，以评估该装置的功能。实验表明，在遥操作运动、刚度渲染和交互力反馈方面，均方根误差较小且相关性较强。HJ-Haptic能根据实时夹爪反馈有效调整其刚度，模拟直接用手抓取物体的感觉。该装置使用真空压力，通过防止气体泄漏或材料失效时的危险后果，确保操作员安全。将HJ-Haptic集成到遥操作框架中，提供了可靠的物体刚度感知和稳定的遥操作。本研究凸显了蜂窝堵塞机构在增强触觉反馈方面的潜力，适用于遥操作场景以及与扩展现实环境的交互等多种应用。",
-      "authors": [
-        "Thomas M. Kwok",
-        "Bohan Zhang",
-        "Wai Tuck Chow"
-      ],
-      "authors_all": [
-        "Thomas M. Kwok",
-        "Bohan Zhang",
-        "Wai Tuck Chow"
-      ],
-      "primary_category": "",
-      "published": "2026-08-04",
-      "channels": [
-        "teleop"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ NTU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-03002.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-03002-p2.jpg",
-        "assets/img/covers/arxiv-2608-03002-p3.jpg",
-        "assets/img/covers/arxiv-2608-03002-p4.jpg"
-      ],
-      "arxiv_id": "2608.03002",
-      "abs_url": "http://arxiv.org/abs/2608.03002v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03002v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 44,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "teleop",
-        "reason": "面向遥操作的可穿戴力觉反馈装置，具新颖性，但偏硬件设计，算法创新有限。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Nanyang Technological University"
-      ],
-      "method_tags": [
-        "haptic feedback",
-        "bilateral teleoperation",
-        "stiffness rendering"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2608-03872",
       "source": "arxiv",
       "title": "EvoHIL: Self-Evolving Reward and Flow-Matched Policy Optimization for Robust Human-in-the-Loop Reinforcement Learning",
@@ -41161,7 +41162,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
+      "cover_zh": "机器人 Atlas 玩转旋转新动作，太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -73969,8 +73970,8 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互与全身移动操作，自主稳定抗干扰。",
-      "cover_zh": "一个模型搞定全屋护理？还能抗干扰自主执行！",
+      "tldr_zh": "单一模型实现全模态交互与自主稳定执行",
+      "cover_zh": "一个模型搞定全屋家务？还能抗干扰自主执行！",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
@@ -96212,6 +96213,75 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-02780",
+      "source": "arxiv_discover",
+      "title": "Semantic Haptic Feedback Enhances Dexterous Robotic Teleoperation",
+      "title_zh": "语义触觉反馈增强灵巧机器人遥操作",
+      "tldr_zh": "语义触觉反馈在双臂遥操作中优于传统反馈，降低负荷并提升感知。",
+      "cover_zh": "触觉反馈还能这么玩？抽象模式让双臂遥操作效率飙升",
+      "abstract_zh": "在机器人遥操作中，触觉反馈可用于帮助人类操作员完成灵巧操作任务。然而，现有的触觉反馈方法试图复制真实世界交互中感受到的高保真感官触觉，这受限于传感和反馈硬件能力，并可能导致更高的工作负荷。为解决这些限制，本研究引入了用于遥操作的语义触觉，它使用抽象的触觉模式来传达关于机器人状态的关键信息。我们将机器人状态分为“确认”和“异常”两类，在机器人仿真中实现模块化触觉渲染管线，并通过气动和振动触觉腕带向操作员传递语义触觉反馈。这简化了硬件要求，并实现了触觉模式与机器人状态之间的一对多映射。通过三项评估研究，我们确定了常见拾取和放置遥操作任务中最有效的语义触觉设计，并将语义触觉与其他遥操作反馈方法（包括感官触觉和视觉反馈）进行比较。结果表明，虽然语义触觉在单臂任务中表现与其他反馈相似，但在双臂任务中实现了更优性能，降低了任务工作负荷，提高了态势感知能力，并获得了整体偏好。",
+      "authors": [
+        "Bingjian Huang",
+        "Sahar Aseeri",
+        "Jonas Schmidtler"
+      ],
+      "authors_all": [
+        "Bingjian Huang",
+        "Sahar Aseeri",
+        "Jonas Schmidtler",
+        "Joseph Zhang",
+        "Sonny Chan",
+        "Andrew Doxon",
+        "Jom Preechayasomboon",
+        "Evan Pezent",
+        "Alberto Rigo",
+        "Amir Memar",
+        "Nicholas Colonnese",
+        "Chase Tymms"
+      ],
+      "primary_category": "",
+      "published": "2026-08-03",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-02780.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-02780-p2.jpg",
+        "assets/img/covers/arxiv-2608-02780-p3.jpg",
+        "assets/img/covers/arxiv-2608-02780-p4.jpg"
+      ],
+      "arxiv_id": "2608.02780",
+      "abs_url": "http://arxiv.org/abs/2608.02780v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02780v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "提出语义触觉反馈用于遥操作，提升双臂灵巧操作性能，属于遥操作方向创新。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "semantic haptics",
+        "teleoperation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "s2-20e66cc5a66790f7e2b19ec365c5a0e0fffd4701",
@@ -121947,74 +122017,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-02780",
-      "source": "arxiv_discover",
-      "title": "Semantic Haptic Feedback Enhances Dexterous Robotic Teleoperation",
-      "title_zh": "语义触觉反馈增强灵巧机器人遥操作",
-      "tldr_zh": "语义触觉反馈在双臂遥操作中优于传统反馈，降低负荷并提升感知。",
-      "cover_zh": "触觉反馈还能这么玩？抽象模式让双臂遥操作效率飙升",
-      "abstract_zh": "在机器人遥操作中，触觉反馈可用于帮助人类操作员完成灵巧操作任务。然而，现有的触觉反馈方法试图复制真实世界交互中感受到的高保真感官触觉，这受限于传感和反馈硬件能力，并可能导致更高的工作负荷。为解决这些限制，本研究引入了用于遥操作的语义触觉，它使用抽象的触觉模式来传达关于机器人状态的关键信息。我们将机器人状态分为“确认”和“异常”两类，在机器人仿真中实现模块化触觉渲染管线，并通过气动和振动触觉腕带向操作员传递语义触觉反馈。这简化了硬件要求，并实现了触觉模式与机器人状态之间的一对多映射。通过三项评估研究，我们确定了常见拾取和放置遥操作任务中最有效的语义触觉设计，并将语义触觉与其他遥操作反馈方法（包括感官触觉和视觉反馈）进行比较。结果表明，虽然语义触觉在单臂任务中表现与其他反馈相似，但在双臂任务中实现了更优性能，降低了任务工作负荷，提高了态势感知能力，并获得了整体偏好。",
-      "authors": [
-        "Bingjian Huang",
-        "Sahar Aseeri",
-        "Jonas Schmidtler"
-      ],
-      "authors_all": [
-        "Bingjian Huang",
-        "Sahar Aseeri",
-        "Jonas Schmidtler",
-        "Joseph Zhang",
-        "Sonny Chan",
-        "Andrew Doxon",
-        "Jom Preechayasomboon",
-        "Evan Pezent",
-        "Alberto Rigo",
-        "Amir Memar",
-        "Nicholas Colonnese",
-        "Chase Tymms"
-      ],
-      "primary_category": "",
-      "published": "2026-08-03",
-      "channels": [
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-02780.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-02780-p2.jpg",
-        "assets/img/covers/arxiv-2608-02780-p3.jpg",
-        "assets/img/covers/arxiv-2608-02780-p4.jpg"
-      ],
-      "arxiv_id": "2608.02780",
-      "abs_url": "http://arxiv.org/abs/2608.02780v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.02780v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "teleop",
-        "reason": "提出语义触觉反馈用于遥操作，提升双臂灵巧操作性能，属于遥操作方向创新。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [],
-      "method_tags": [
-        "semantic haptics",
-        "teleoperation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2605-13815",
