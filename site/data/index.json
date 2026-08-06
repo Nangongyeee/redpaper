@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-06T05:51:08.224211+00:00",
-  "count": 1953,
+  "generated_at": "2026-08-06T07:50:17.015392+00:00",
+  "count": 1955,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -16314,6 +16314,258 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-04425",
+      "source": "arxiv",
+      "title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
+      "title_zh": "SSC：一种用于双手操作标注的可验证结构化表示",
+      "tldr_zh": "提出结构化子任务链，实现双手操作标注的可验证表示。",
+      "cover_zh": "标注新范式｜结构化子任务链让操作标注可验证",
+      "abstract_zh": "子任务标签将长时间的操作演示分解为较短的语义片段，用于策略训练和评估。自然语言描述易于阅读，但其语言变异性使得自动验证变得困难。严格的模板格式，如BEHAVIOR-1K的skill_annotation，在语言上过度分割，阻碍了可读性和标注一致性。我们提出了结构化子任务链（SSC），一种状态转换表示，弥合了这些极端。一个演示是一系列结构化子任务模板（SST）条目。每个SST存储核心动作组件（主语、谓语、宾语）、灵活条件（状语修饰语，如空间或工具短语）、与手臂动作分离的基础运动字段，以及后状态场景图。基于此格式，SSC支持三种视觉-语言辅助功能：将SST渲染为自然语言、根据四条状态转换规则检查组装链、以及通过查询解析级联完成未指定的字段。我们在BEHAVIOR-1K（50个任务，每个任务3个片段，2,357个标注动作单元）上实例化该流程，进行逻辑验证和内容补全，评估13个选定的最先进视觉语言模型作为候选验证器，并报告标注异常。",
+      "authors": [
+        "Yupu Lu",
+        "Shuang Wu",
+        "Sihan Chen"
+      ],
+      "authors_all": [
+        "Yupu Lu",
+        "Shuang Wu",
+        "Sihan Chen",
+        "Ruihua Han",
+        "Yichen Zhang",
+        "Marcus Kalander",
+        "Jia Pan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-05",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-04425.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-04425-p2.jpg",
+        "assets/img/covers/arxiv-2608-04425-p3.jpg",
+        "assets/img/covers/arxiv-2608-04425-p4.jpg"
+      ],
+      "arxiv_id": "2608.04425",
+      "abs_url": "http://arxiv.org/abs/2608.04425v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04425v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出结构化子任务链表示，用于双臂操作标注与验证，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Hong Kong",
+        "Artificial Intelligence Laboratory (Leibniz)"
+      ],
+      "method_tags": [
+        "Structured Subtask Chain",
+        "Vision-Language Verifier",
+        "Subtask Labelling"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-04527",
+      "source": "arxiv",
+      "title": "Retrieve in Time, Correct in Frequency",
+      "title_zh": "按时检索，按频校正",
+      "tldr_zh": "RTCF无需训练，通过分离检索与传输，提升冻结VLA策略在长时程操作中的成功率。",
+      "cover_zh": "无需训练！这个新框架让冻结VLA策略成功率飙升，长时程任务不再翻车",
+      "abstract_zh": "冻结的视觉-语言-动作（VLA）策略生成时间上扩展的动作块，但长时程操作仍然容易受到累积执行误差和跨任务阶段的视觉混淆的影响。成功的轨迹提供了有用的纠正证据，然而当前的帧检索可能返回与进度不对齐的动作，而直接重放或时域融合可能覆盖策略提议的反应性结构。我们引入了按时检索，按频校正（RTCF），一个无需训练的测试时校正框架，以低模型侧开销提升冻结VLA的性能。RTCF将检索哪些经验与传输其动作的哪些部分分开。渐进记忆对齐（PMA）通过逐步更新的单调前沿，将增长的视觉执行历史与完整的成功轨迹因果对齐，无需阶段标签即可联合识别相关记忆和当前对齐的记忆位置。从对齐的动作块中，RTCF在运动通道上传输系数裁剪的低频残差。高频分量和夹爪决策保留自冻结策略。在四个LIBERO套件和每个条件2000个回合中，RTCF将总体成功率从86.4%提升至88.4%，并将LIBERO-Long从61.6%提升至68.6%。这些提升无需参数更新、重复VLA推理或额外GPU资源：在单次策略调用后，校正可在客户端CPU上执行，每个动作块的中位延迟总和仅为10.99毫秒。",
+      "authors": [
+        "Yuze Fan",
+        "Yue Cao",
+        "Pengjie Gao"
+      ],
+      "authors_all": [
+        "Yuze Fan",
+        "Yue Cao",
+        "Pengjie Gao",
+        "Haojia Gao",
+        "Guangqiu Guo",
+        "Ziyue Zhang",
+        "Junbo Tan",
+        "Bokui Chen",
+        "Zhuo Zou",
+        "Xueqian Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-05",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-04527.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-04527-p2.jpg",
+        "assets/img/covers/arxiv-2608-04527-p3.jpg",
+        "assets/img/covers/arxiv-2608-04527-p4.jpg"
+      ],
+      "arxiv_id": "2608.04527",
+      "abs_url": "http://arxiv.org/abs/2608.04527v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04527v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "manipulation",
+        "reason": "提出免训练测试时修正框架提升冻结VLA性能，属于操作策略改进，有实验验证。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Research Institute of Tsinghua University in Shenzhen",
+        "Everwise-Tech Co., Ltd.",
+        "Tongji University",
+        "Fudan University"
+      ],
+      "method_tags": [
+        "test-time correction",
+        "retrieval-augmented",
+        "frequency-domain fusion"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-04657",
+      "source": "arxiv",
+      "title": "MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight",
+      "title_zh": "MobileWAM：以预见链弥合世界行动模型与移动操作之间的鸿沟",
+      "tldr_zh": "MobileWAM将世界行动模型扩展至移动操作，通过预见链实现全身控制并超越SOTA。",
+      "cover_zh": "世界模型不再只玩桌面！MobileWAM让机器人边动边操作，反超SOTA",
+      "abstract_zh": "基于视频生成骨干网络构建的世界行动模型（WAMs）是机器人学习的一种新兴方案，但至今仍局限于桌面操作。移动操作要求在场景级动态中同时进行移动和全身操作，然而目前仍由手工协调的动态盲视觉编码器主导。我们通过MobileWAM弥合了这一差距，这是一种混合Transformer架构，通过逐层联合注意力将预训练的视频扩散Transformer与轻量级动作专家融合，将互联网规模的运动先验转化为全身控制。为了协调移动和操作中的异质动态，动作专家的每个前馈层都变成了共享、移动和操作专家的三专家混合体，由动作令牌中的运动意图进行软路由。为了强化监督，我们进一步提出了预见链（CoF）：中间表示依次预测未来潜在块链，每一步都以其前驱为条件。CoF与我们解耦的视频-动作去噪方案自然配合。在部署时，WAM仅作为当前帧编码器；预见仅通过梯度起作用，因此在推理时，预见链和视频生成被丢弃，仅留下策略级成本。MobileWAM在ManiSkill-HAB上超越了最先进的移动操作策略，并微调至真实的ARX Lift2移动操作器，在多种任务中展现出强大的泛化能力。代码即将发布。",
+      "authors": [
+        "Zehua Fan",
+        "Junjie He",
+        "Wenxuan Song"
+      ],
+      "authors_all": [
+        "Zehua Fan",
+        "Junjie He",
+        "Wenxuan Song",
+        "Xi Wang",
+        "Wenqi Lyu",
+        "Linge Zhao",
+        "Fuhao Li",
+        "Zihan You",
+        "Yifei Yang",
+        "Kaiming Xu",
+        "Qi Jiang",
+        "Yue Jiang",
+        "Haoang Li",
+        "Cheng Chi",
+        "Bailin Li",
+        "Yan Wang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-05",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-04657.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-04657-p2.jpg",
+        "assets/img/covers/arxiv-2608-04657-p3.jpg",
+        "assets/img/covers/arxiv-2608-04657-p4.jpg"
+      ],
+      "arxiv_id": "2608.04657",
+      "abs_url": "http://arxiv.org/abs/2608.04657v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04657v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出MobileWAM，融合视频世界模型与动作专家，实现移动操作全身控制，具创新性与高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Shanghai Jiao Tong University",
+        "HKUST (Guangzhou)",
+        "The University of Adelaide"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "Mixture-of-Transformers",
+        "Chain-of-Foresight"
+      ],
+      "platform": [
+        "ARX Lift2"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "github-andrejorsula-drl-grasping",
       "source": "github",
       "title": "AndrejOrsula/drl_grasping",
@@ -26797,159 +27049,6 @@
       ]
     },
     {
-      "id": "arxiv-2608-04425",
-      "source": "arxiv",
-      "title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
-      "title_zh": "SSC：一种用于双手操作标注的可验证结构化表示",
-      "tldr_zh": "提出结构化子任务链，实现双手操作标注的可验证表示。",
-      "cover_zh": "标注新范式｜结构化子任务链让操作标注可验证",
-      "abstract_zh": "子任务标签将长时间的操作演示分解为较短的语义片段，用于策略训练和评估。自然语言描述易于阅读，但其语言变异性使得自动验证变得困难。严格的模板格式，如BEHAVIOR-1K的skill_annotation，在语言上过度分割，阻碍了可读性和标注一致性。我们提出了结构化子任务链（SSC），一种状态转换表示，弥合了这些极端。一个演示是一系列结构化子任务模板（SST）条目。每个SST存储核心动作组件（主语、谓语、宾语）、灵活条件（状语修饰语，如空间或工具短语）、与手臂动作分离的基础运动字段，以及后状态场景图。基于此格式，SSC支持三种视觉-语言辅助功能：将SST渲染为自然语言、根据四条状态转换规则检查组装链、以及通过查询解析级联完成未指定的字段。我们在BEHAVIOR-1K（50个任务，每个任务3个片段，2,357个标注动作单元）上实例化该流程，进行逻辑验证和内容补全，评估13个选定的最先进视觉语言模型作为候选验证器，并报告标注异常。",
-      "authors": [
-        "Yupu Lu",
-        "Shuang Wu",
-        "Sihan Chen"
-      ],
-      "authors_all": [
-        "Yupu Lu",
-        "Shuang Wu",
-        "Sihan Chen",
-        "Ruihua Han",
-        "Yichen Zhang",
-        "Marcus Kalander",
-        "Jia Pan"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-04425.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-04425-p2.jpg",
-        "assets/img/covers/arxiv-2608-04425-p3.jpg",
-        "assets/img/covers/arxiv-2608-04425-p4.jpg"
-      ],
-      "arxiv_id": "2608.04425",
-      "abs_url": "http://arxiv.org/abs/2608.04425v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04425v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 47,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出结构化子任务链表示，用于双臂操作标注与验证，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The University of Hong Kong",
-        "Artificial Intelligence Laboratory (Leibniz)"
-      ],
-      "method_tags": [
-        "Structured Subtask Chain",
-        "Vision-Language Verifier",
-        "Subtask Labelling"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-04527",
-      "source": "arxiv",
-      "title": "Retrieve in Time, Correct in Frequency",
-      "title_zh": "按时检索，按频校正",
-      "tldr_zh": "RTCF无需训练，通过分离检索与传输，提升冻结VLA策略在长时程操作中的成功率。",
-      "cover_zh": "无需训练！这个新框架让冻结VLA策略成功率飙升，长时程任务不再翻车",
-      "abstract_zh": "冻结的视觉-语言-动作（VLA）策略生成时间上扩展的动作块，但长时程操作仍然容易受到累积执行误差和跨任务阶段的视觉混淆的影响。成功的轨迹提供了有用的纠正证据，然而当前的帧检索可能返回与进度不对齐的动作，而直接重放或时域融合可能覆盖策略提议的反应性结构。我们引入了按时检索，按频校正（RTCF），一个无需训练的测试时校正框架，以低模型侧开销提升冻结VLA的性能。RTCF将检索哪些经验与传输其动作的哪些部分分开。渐进记忆对齐（PMA）通过逐步更新的单调前沿，将增长的视觉执行历史与完整的成功轨迹因果对齐，无需阶段标签即可联合识别相关记忆和当前对齐的记忆位置。从对齐的动作块中，RTCF在运动通道上传输系数裁剪的低频残差。高频分量和夹爪决策保留自冻结策略。在四个LIBERO套件和每个条件2000个回合中，RTCF将总体成功率从86.4%提升至88.4%，并将LIBERO-Long从61.6%提升至68.6%。这些提升无需参数更新、重复VLA推理或额外GPU资源：在单次策略调用后，校正可在客户端CPU上执行，每个动作块的中位延迟总和仅为10.99毫秒。",
-      "authors": [
-        "Yuze Fan",
-        "Yue Cao",
-        "Pengjie Gao"
-      ],
-      "authors_all": [
-        "Yuze Fan",
-        "Yue Cao",
-        "Pengjie Gao",
-        "Haojia Gao",
-        "Guangqiu Guo",
-        "Ziyue Zhang",
-        "Junbo Tan",
-        "Bokui Chen",
-        "Zhuo Zou",
-        "Xueqian Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-04527.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-04527-p2.jpg",
-        "assets/img/covers/arxiv-2608-04527-p3.jpg",
-        "assets/img/covers/arxiv-2608-04527-p4.jpg"
-      ],
-      "arxiv_id": "2608.04527",
-      "abs_url": "http://arxiv.org/abs/2608.04527v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04527v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 47,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "manipulation",
-        "reason": "提出免训练测试时修正框架提升冻结VLA性能，属于操作策略改进，有实验验证。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Research Institute of Tsinghua University in Shenzhen",
-        "Everwise-Tech Co., Ltd.",
-        "Tongji University",
-        "Fudan University"
-      ],
-      "method_tags": [
-        "test-time correction",
-        "retrieval-augmented",
-        "frequency-domain fusion"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2608-04964",
       "source": "arxiv",
       "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
@@ -27038,9 +27137,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，内存仅用30%。",
-      "cover_zh": "内存砍掉70%？这个重建模型精度还暴涨77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-Ω通过架构改进和自监督学习，大幅提升重建精度，仅用30%显存，数据量增15倍。",
+      "cover_zh": "显存砍70%精度反升77%？这个重建模型让静态动态场景都起飞",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -40500,6 +40599,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-03002",
+      "source": "arxiv_discover",
+      "title": "A Wearable Stiffness-Rendering Haptic Device with a Honeycomb Jamming Mechanism for Bilateral Teleoperation",
+      "title_zh": "一种采用蜂窝堵塞机构的可穿戴刚度渲染触觉装置，用于双边遥操作",
+      "tldr_zh": "20克可穿戴触觉装置利用蜂窝堵塞机构，在遥操作中实现刚度渲染，误差小且安全。",
+      "cover_zh": "20克触觉装置，蜂窝堵塞机构，让遥操作手感真实又安全！",
+      "abstract_zh": "本文针对双边遥操作中提供动觉反馈的挑战，设计了一种可穿戴、轻量（20克）且紧凑的触觉装置HJ-Haptic，利用蜂窝堵塞机构进行物体刚度渲染。HJ-Haptic装置可在30 kPa真空压力下，将其刚度从1.15 N/mm变化到2.64 N/mm。我们展示了其在遥操作框架中的实现，使操作员能够根据可靠的物体刚度触觉反馈调整握力。对蜂窝堵塞机构进行了三点弯曲试验，并执行了遥操作物体抓取任务，以评估该装置的功能。实验表明，在遥操作运动、刚度渲染和交互力反馈方面，均方根误差较小且相关性较强。HJ-Haptic能根据实时夹爪反馈有效调整其刚度，模拟直接用手抓取物体的感觉。该装置使用真空压力，通过防止气体泄漏或材料失效时的危险后果，确保操作员安全。将HJ-Haptic集成到遥操作框架中，提供了可靠的物体刚度感知和稳定的遥操作。本研究凸显了蜂窝堵塞机构在增强触觉反馈方面的潜力，适用于遥操作场景以及与扩展现实环境的交互等多种应用。",
+      "authors": [
+        "Thomas M. Kwok",
+        "Bohan Zhang",
+        "Wai Tuck Chow"
+      ],
+      "authors_all": [
+        "Thomas M. Kwok",
+        "Bohan Zhang",
+        "Wai Tuck Chow"
+      ],
+      "primary_category": "",
+      "published": "2026-08-04",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-03002.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-03002-p2.jpg",
+        "assets/img/covers/arxiv-2608-03002-p3.jpg",
+        "assets/img/covers/arxiv-2608-03002-p4.jpg"
+      ],
+      "arxiv_id": "2608.03002",
+      "abs_url": "http://arxiv.org/abs/2608.03002v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03002v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 44,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "面向遥操作的可穿戴力觉反馈装置，具新颖性，但偏硬件设计，算法创新有限。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Nanyang Technological University"
+      ],
+      "method_tags": [
+        "haptic feedback",
+        "bilateral teleoperation",
+        "stiffness rendering"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-03872",
       "source": "arxiv",
       "title": "EvoHIL: Self-Evolving Reward and Flow-Matched Policy Optimization for Robust Human-in-the-Loop Reinforcement Learning",
@@ -40991,7 +41161,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能转圈圈？Atlas 新动作太酷了！",
+      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -45653,101 +45823,6 @@
         "state-machine-based coordination"
       ],
       "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-04657",
-      "source": "arxiv",
-      "title": "MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight",
-      "title_zh": "MobileWAM：以预见链弥合世界行动模型与移动操作之间的鸿沟",
-      "tldr_zh": "MobileWAM将世界行动模型扩展至移动操作，通过预见链实现全身控制并超越SOTA。",
-      "cover_zh": "世界模型不再只玩桌面！MobileWAM让机器人边动边操作，反超SOTA",
-      "abstract_zh": "基于视频生成骨干网络构建的世界行动模型（WAMs）是机器人学习的一种新兴方案，但至今仍局限于桌面操作。移动操作要求在场景级动态中同时进行移动和全身操作，然而目前仍由手工协调的动态盲视觉编码器主导。我们通过MobileWAM弥合了这一差距，这是一种混合Transformer架构，通过逐层联合注意力将预训练的视频扩散Transformer与轻量级动作专家融合，将互联网规模的运动先验转化为全身控制。为了协调移动和操作中的异质动态，动作专家的每个前馈层都变成了共享、移动和操作专家的三专家混合体，由动作令牌中的运动意图进行软路由。为了强化监督，我们进一步提出了预见链（CoF）：中间表示依次预测未来潜在块链，每一步都以其前驱为条件。CoF与我们解耦的视频-动作去噪方案自然配合。在部署时，WAM仅作为当前帧编码器；预见仅通过梯度起作用，因此在推理时，预见链和视频生成被丢弃，仅留下策略级成本。MobileWAM在ManiSkill-HAB上超越了最先进的移动操作策略，并微调至真实的ARX Lift2移动操作器，在多种任务中展现出强大的泛化能力。代码即将发布。",
-      "authors": [
-        "Zehua Fan",
-        "Junjie He",
-        "Wenxuan Song"
-      ],
-      "authors_all": [
-        "Zehua Fan",
-        "Junjie He",
-        "Wenxuan Song",
-        "Xi Wang",
-        "Wenqi Lyu",
-        "Linge Zhao",
-        "Fuhao Li",
-        "Zihan You",
-        "Yifei Yang",
-        "Kaiming Xu",
-        "Qi Jiang",
-        "Yue Jiang",
-        "Haoang Li",
-        "Cheng Chi",
-        "Bailin Li",
-        "Yan Wang"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-08-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKUST"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-04657.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-04657-p2.jpg",
-        "assets/img/covers/arxiv-2608-04657-p3.jpg",
-        "assets/img/covers/arxiv-2608-04657-p4.jpg"
-      ],
-      "arxiv_id": "2608.04657",
-      "abs_url": "http://arxiv.org/abs/2608.04657v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04657v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出MobileWAM，融合视频世界模型与动作专家，实现移动操作全身控制，具创新性与高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tsinghua University",
-        "Shanghai Jiao Tong University",
-        "HKUST (Guangzhou)",
-        "The University of Adelaide"
-      ],
-      "method_tags": [
-        "World Action Model",
-        "Mixture-of-Transformers",
-        "Chain-of-Foresight"
-      ],
-      "platform": [
-        "ARX Lift2"
-      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -73894,7 +73969,7 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互与自主稳定执行",
+      "tldr_zh": "单一模型实现全模态交互与全身移动操作，自主稳定抗干扰。",
       "cover_zh": "一个模型搞定全屋护理？还能抗干扰自主执行！",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
@@ -121872,6 +121947,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-02780",
+      "source": "arxiv_discover",
+      "title": "Semantic Haptic Feedback Enhances Dexterous Robotic Teleoperation",
+      "title_zh": "语义触觉反馈增强灵巧机器人遥操作",
+      "tldr_zh": "语义触觉反馈在双臂遥操作中优于传统反馈，降低负荷并提升感知。",
+      "cover_zh": "触觉反馈还能这么玩？抽象模式让双臂遥操作效率飙升",
+      "abstract_zh": "在机器人遥操作中，触觉反馈可用于帮助人类操作员完成灵巧操作任务。然而，现有的触觉反馈方法试图复制真实世界交互中感受到的高保真感官触觉，这受限于传感和反馈硬件能力，并可能导致更高的工作负荷。为解决这些限制，本研究引入了用于遥操作的语义触觉，它使用抽象的触觉模式来传达关于机器人状态的关键信息。我们将机器人状态分为“确认”和“异常”两类，在机器人仿真中实现模块化触觉渲染管线，并通过气动和振动触觉腕带向操作员传递语义触觉反馈。这简化了硬件要求，并实现了触觉模式与机器人状态之间的一对多映射。通过三项评估研究，我们确定了常见拾取和放置遥操作任务中最有效的语义触觉设计，并将语义触觉与其他遥操作反馈方法（包括感官触觉和视觉反馈）进行比较。结果表明，虽然语义触觉在单臂任务中表现与其他反馈相似，但在双臂任务中实现了更优性能，降低了任务工作负荷，提高了态势感知能力，并获得了整体偏好。",
+      "authors": [
+        "Bingjian Huang",
+        "Sahar Aseeri",
+        "Jonas Schmidtler"
+      ],
+      "authors_all": [
+        "Bingjian Huang",
+        "Sahar Aseeri",
+        "Jonas Schmidtler",
+        "Joseph Zhang",
+        "Sonny Chan",
+        "Andrew Doxon",
+        "Jom Preechayasomboon",
+        "Evan Pezent",
+        "Alberto Rigo",
+        "Amir Memar",
+        "Nicholas Colonnese",
+        "Chase Tymms"
+      ],
+      "primary_category": "",
+      "published": "2026-08-03",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-02780.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-02780-p2.jpg",
+        "assets/img/covers/arxiv-2608-02780-p3.jpg",
+        "assets/img/covers/arxiv-2608-02780-p4.jpg"
+      ],
+      "arxiv_id": "2608.02780",
+      "abs_url": "http://arxiv.org/abs/2608.02780v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02780v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "提出语义触觉反馈用于遥操作，提升双臂灵巧操作性能，属于遥操作方向创新。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "semantic haptics",
+        "teleoperation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2605-13815",
