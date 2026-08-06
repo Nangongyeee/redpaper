@@ -1,7 +1,88 @@
 {
   "date": "2026-08-01",
-  "count": 2,
+  "count": 3,
   "papers": [
+    {
+      "id": "arxiv-2608-00820",
+      "source": "arxiv_discover",
+      "title": "LooperMuscle: Fast and Stable Learning of Humanoid Whole-Body Tracking via Structured Mixture-of-Experts",
+      "title_zh": "LooperMuscle：通过结构化专家混合实现人形全身跟踪的快速稳定学习",
+      "tldr_zh": "LooperMuscle 用约45分钟训练达到接近PPO的跟踪精度，远超FastSAC。",
+      "cover_zh": "15分钟训练不够准？6小时又太久？这个新框架45分钟就追平PPO！",
+      "abstract_zh": "FastSAC 类方法显著减少了人形机器人运动训练时间，但在全身跟踪任务中，与 PPO 相比，其性能往往明显下降。我们针对这一速度-性能差距，引入了 LooperMuscle，一个组合专家策略学习框架，在保持高训练效率的同时恢复跟踪质量。LooperMuscle 结合了语义结构化的专家混合 actor、专家感知的分布式 critic，以及带有延迟课程调度的贡献路由回放。这三个组件形成了一个闭环训练循环，其中专家贡献指导数据路由，路由数据塑造价值学习，而价值梯度反过来细化专家专业化。实验上，我们的方法在运动跟踪精度上大幅优于 vanilla FastSAC，同时所需墙钟时间远少于 PPO：FastSAC 训练约 15 分钟但表现不佳，PPO 达到更强结果但需要约 6 小时，而 LooperMuscle 在约 45 分钟的模拟训练中恢复了与 PPO 之间剩余差距的相当大一部分，为快速策略迭代提供了实用效率。代码将发布以惠及研究社区，网址为 https://loopermuscle.github.io/。",
+      "authors": [
+        "Boyi Liu",
+        "Qijin Li",
+        "Tianqi Yu"
+      ],
+      "authors_all": [
+        "Boyi Liu",
+        "Qijin Li",
+        "Tianqi Yu",
+        "Qinrui Yan",
+        "Xingxing Zuo"
+      ],
+      "primary_category": "",
+      "published": "2026-08-01",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-00820.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-00820-p2.jpg",
+        "assets/img/covers/arxiv-2608-00820-p3.jpg",
+        "assets/img/covers/arxiv-2608-00820-p4.jpg"
+      ],
+      "arxiv_id": "2608.00820",
+      "abs_url": "http://arxiv.org/abs/2608.00820v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.00820v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形全身跟踪学习，提出结构化MoE加速训练，兼具算法创新与效率，对WBC研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "DeepMirror Inc.",
+        "HKUST",
+        "MBZUAI"
+      ],
+      "method_tags": [
+        "Mixture-of-Experts",
+        "FastSAC",
+        "Whole-Body Tracking"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=JkaxUblCGz0",
+          "embed_url": "https://www.youtube.com/embed/JkaxUblCGz0",
+          "title": "PAPER_TITLE - AUTHOR_NAMES | Academic Research",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
     {
       "id": "arxiv-2608-02653",
       "source": "arxiv_discover",

@@ -1,0 +1,118 @@
+{
+  "id": "arxiv-2608-00820",
+  "source": "arxiv_discover",
+  "title": "LooperMuscle: Fast and Stable Learning of Humanoid Whole-Body Tracking via Structured Mixture-of-Experts",
+  "title_zh": "LooperMuscle：通过结构化专家混合实现人形全身跟踪的快速稳定学习",
+  "abstract": "FastSAC-style methods significantly reduce humanoid motion training time but often suffer from notable performance degradation compared with PPO in whole-body tracking tasks. We target this speed-performance gap by introducing LooperMuscle, a composed expert policy learning framework that restores tracking quality while preserving high training efficiency. LooperMuscle combines a semantically structured mixture-of-experts actor, an expert-aware distributional critic, and contribution-routed replay with deferred curriculum scheduling. These three components form a closed training loop in which expert contributions guide data routing, routed data shape value learning, and value gradients in turn refine expert specialization. Empirically, our approach substantially outperforms vanilla FastSAC in motion tracking accuracy while requiring far less wall-clock time than PPO: where FastSAC trains in about 15 minutes but underperforms, and PPO achieves stronger results but requires about 6 hours, LooperMuscle recovers a substantial fraction of the remaining gap to PPO in roughly 45 minutes of simulation training, delivering practical efficiency for rapid policy iteration. The code will be released to benefit the research community at https://loopermuscle.github.io/.",
+  "abstract_zh": "FastSAC 类方法显著减少了人形机器人运动训练时间，但在全身跟踪任务中，与 PPO 相比，其性能往往明显下降。我们针对这一速度-性能差距，引入了 LooperMuscle，一个组合专家策略学习框架，在保持高训练效率的同时恢复跟踪质量。LooperMuscle 结合了语义结构化的专家混合 actor、专家感知的分布式 critic，以及带有延迟课程调度的贡献路由回放。这三个组件形成了一个闭环训练循环，其中专家贡献指导数据路由，路由数据塑造价值学习，而价值梯度反过来细化专家专业化。实验上，我们的方法在运动跟踪精度上大幅优于 vanilla FastSAC，同时所需墙钟时间远少于 PPO：FastSAC 训练约 15 分钟但表现不佳，PPO 达到更强结果但需要约 6 小时，而 LooperMuscle 在约 45 分钟的模拟训练中恢复了与 PPO 之间剩余差距的相当大一部分，为快速策略迭代提供了实用效率。代码将发布以惠及研究社区，网址为 https://loopermuscle.github.io/。",
+  "tldr_zh": "LooperMuscle 用约45分钟训练达到接近PPO的跟踪精度，远超FastSAC。",
+  "cover_zh": "15分钟训练不够准？6小时又太久？这个新框架45分钟就追平PPO！",
+  "authors": [
+    {
+      "name": "Boyi Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Qijin Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianqi Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Qinrui Yan",
+      "affiliation": ""
+    },
+    {
+      "name": "Xingxing Zuo",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-01",
+  "updated": "2026-08-01",
+  "arxiv_id": "2608.00820",
+  "pdf_url": "https://arxiv.org/pdf/2608.00820v1",
+  "abs_url": "http://arxiv.org/abs/2608.00820v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-00820.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-00820-p2.jpg",
+    "assets/img/covers/arxiv-2608-00820-p3.jpg",
+    "assets/img/covers/arxiv-2608-00820-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ HKUST"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKUST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（whole-body、humanoid whole-body、whole-body tracking、motion tracking）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "人形全身跟踪学习，提出结构化MoE加速训练，兼具算法创新与效率，对WBC研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "DeepMirror Inc.",
+    "HKUST",
+    "MBZUAI"
+  ],
+  "method_tags": [
+    "Mixture-of-Experts",
+    "FastSAC",
+    "Whole-Body Tracking"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=JkaxUblCGz0",
+      "embed_url": "https://www.youtube.com/embed/JkaxUblCGz0",
+      "title": "PAPER_TITLE - AUTHOR_NAMES | Academic Research",
+      "source": "project_page"
+    }
+  ],
+  "github": {}
+}
