@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-05",
+  "count": 1,
+  "papers": [
+    {
+      "id": "arxiv-2608-05070",
+      "source": "arxiv",
+      "title": "HelloWorld: Enabling Socially Interactive Characters in Video World Models",
+      "title_zh": "HelloWorld：在视频世界模型中实现社交互动角色",
+      "tldr_zh": "HelloWorld让视频世界模型中的角色能响应按钮与用户互动，且不影响画质。",
+      "cover_zh": "按一下按钮，视频里的角色就对你挥手点头？这个新模型让世界活了起来！",
+      "abstract_zh": "尽管视频世界模型近期取得了显著进展，但用户与这些世界中的角色之间的社交互动仍未被支持。为填补这一空白，我们提出了HelloWorld，一种能够与世界内角色进行社交互动的视频世界模型。只需按一下按钮，用户即可提示屏幕上的角色对镜头做出回应，例如转向观众、挥手、点头或说一句简短的问候。为了使这些互动自然，我们提出了一种自蒸馏流程，在模型自身合成的数据上微调视频生成模型。每个合成片段同时包含社交互动和相机运动，使模型能够学习相机姿态条件而不降低互动质量。在推理时，我们进一步引入了一个无需训练模块，用于确定互动发生的时间。按下按钮后，该模块调制DiT的交叉注意力掩码，使与互动相关的文本提示仅关注按下窗口内的帧，从而在时间上定位角色的回应。我们还构建了HelloWorldBench，一个包含400个样本的基准，包含三个社交互动指标以及三个常规指标，用于评估。实验表明，HelloWorld在互动质量上超越了多种基线，同时保持了最先进的画面美学和相机姿态跟随。项目页面：https://github.com/AlayaLab/HelloWorld",
+      "authors": [
+        "Liangyang Ouyang",
+        "Ruicong Liu",
+        "Xuangeng Chu"
+      ],
+      "authors_all": [
+        "Liangyang Ouyang",
+        "Ruicong Liu",
+        "Xuangeng Chu",
+        "Kaipeng Zhang",
+        "Yoichi Sato"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-05",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-05070.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-05070-p2.jpg",
+        "assets/img/covers/arxiv-2608-05070-p3.jpg",
+        "assets/img/covers/arxiv-2608-05070-p4.jpg"
+      ],
+      "arxiv_id": "2608.05070",
+      "abs_url": "http://arxiv.org/abs/2608.05070v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05070v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "world-model",
+        "reason": "视频世界模型支持社交交互，属于world-model方向，有创新和benchmark。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Tokyo",
+        "Alaya Lab"
+      ],
+      "method_tags": [
+        "self-distillation",
+        "video world model",
+        "social interaction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
