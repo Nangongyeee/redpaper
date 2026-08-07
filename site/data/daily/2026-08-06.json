@@ -1,0 +1,237 @@
+{
+  "date": "2026-08-06",
+  "count": 3,
+  "papers": [
+    {
+      "id": "arxiv-2608-06332",
+      "source": "arxiv",
+      "title": "GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions",
+      "title_zh": "GeniWorld：通过视觉动作实现机器人操作的可泛化交互世界模型",
+      "tldr_zh": "GeniWorld利用视觉动作表示，实现机器人操作世界模型的零样本泛化。",
+      "cover_zh": "机器人操作也能零样本泛化？GeniWorld用视觉动作让世界模型更可控",
+      "abstract_zh": "通用机器人策略展现出强大的能力，但在复杂和未见环境中的鲁棒性仍然有限。在多样化的真实环境中扩展机器人学习和评估仍然成本高昂且具有挑战性。动作条件世界模型提供了一种有前景的替代方案，但通常存在动作可控性有限和对分布外（OOD）场景泛化能力差的问题。为此，我们提出了GeniWorld，一个能够跨未见场景稳健泛化的机器人交互世界模型。基于预训练的视频生成模型，我们使用URDF-based渲染将数值动作转换为视觉动作表示，实现空间上的动作控制。通过明确解耦本体运动学与环境动力学，我们的模型减轻了场景过拟合，并促进了机器人-环境交互的建模。为了实现闭环控制，我们构建了一个自回归视频预测模型，并与高频机器人运动控制集成，支持与机器人策略和人类远程操作者的交互。在我们的实验中，即使仅在有限的固定场景数据上训练，我们的模型也能在域内实现优越性能，并对高度随机化的未见环境进行稳健的零样本泛化。对于下游应用，GeniWorld作为一个可扩展的策略评估器，在环境扰动下保持可靠。此外，即使使用有限的真实世界演示，GeniWorld也能在世界模型内生成多样化的操作轨迹，提高下游策略在复杂环境中的性能和鲁棒性。",
+      "authors": [
+        "Chenghao Gu",
+        "Hanyang Yu",
+        "Jingbo Zhang"
+      ],
+      "authors_all": [
+        "Chenghao Gu",
+        "Hanyang Yu",
+        "Jingbo Zhang",
+        "Haitao Lin",
+        "Wenyao Zhang",
+        "Jinghe Wang",
+        "Hanglei Jin",
+        "Shuzhao Xie",
+        "Jingyan Jiang",
+        "Zhi Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-06",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 腾讯"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-06332.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06332-p2.jpg",
+        "assets/img/covers/arxiv-2608-06332-p3.jpg",
+        "assets/img/covers/arxiv-2608-06332-p4.jpg"
+      ],
+      "arxiv_id": "2608.06332",
+      "abs_url": "http://arxiv.org/abs/2608.06332v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06332v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出可泛化的交互式世界模型GeniWorld，用于机器人操作，具备视觉动作控制与零样本泛化，符合world-model频道。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University",
+        "Tencent Robotics X",
+        "The Hong Kong University of Science and Technology",
+        "Shenzhen Technology University"
+      ],
+      "method_tags": [
+        "World Model",
+        "Visual Actions",
+        "URDF-based Rendering"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-06219",
+      "source": "arxiv",
+      "title": "Design and Evaluation of a Touchscreen-Based Teleoperation Interface for Robotic Manipulators",
+      "title_zh": "基于触摸屏的机器人操作器遥操作界面设计与评估",
+      "tldr_zh": "触摸屏遥操作界面比操纵杆更高效，完成时间减少53.5%，认知负荷降低。",
+      "cover_zh": "告别笨重操纵杆！触摸屏遥操作让机器人更听话，效率提升超乎想象",
+      "abstract_zh": "直观的遥操作界面对于在挑战性环境中安全有效地操作机器人操作器至关重要。在核工业中，表面接触任务如拭子采样需要精确的力和路径跟踪、避障以及持续的注意力，而传统的操纵杆界面难以有效支持这些需求。本研究设计并评估了一种新颖的触摸屏遥操作界面，该界面将连续的手指运动直接映射到机器人操作器的运动，提供更精细的速度控制，并将控制与可视化集成，从而比传统控制器实现更自然、更精确、更直观的表面交互。一项包含20名参与者的对比用户研究评估了使用所提出的触摸屏、传统操纵杆和单击自主模式的任务表现和工作负荷。任务使用Franka Emika Panda机械臂模拟真实表面操作，并从另一个国家远程控制。记录了运动学、生理和行为数据，以全面评估每种控制条件下的任务表现、认知负荷和操作员信任度。参与者使用触摸屏界面更高效、更准确地完成了遥操作任务，完成时间减少了53.5%（中位数：2.50分钟对比5.38分钟），正弦路径上的区域覆盖率更高（90.7%对比84.1%），并且在两种路径几何形状上的超调量更低，与操纵杆相比。通过NASA-TLX（0-100）量化的认知负荷从操纵杆到触摸屏有所降低（平均TLX从52降至43；-9分，-17.3%），在自主一键模式下最低（31；与操纵杆相比-21分，-40.4%；与触摸屏相比-12分，-27.9%）。这项研究提出了一种易于实现的触摸屏界面，在降低认知负荷的同时提高了遥操作表面任务的性能。",
+      "authors": [
+        "Juan José García Cárdenas",
+        "Alperen Kenan",
+        "Hamidreza Raei"
+      ],
+      "authors_all": [
+        "Juan José García Cárdenas",
+        "Alperen Kenan",
+        "Hamidreza Raei",
+        "Paul Bremner",
+        "Manuel Giuliani",
+        "Arash Ajoudani",
+        "Adriana Tapus"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-06",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-06219.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06219-p2.jpg",
+        "assets/img/covers/arxiv-2608-06219-p3.jpg",
+        "assets/img/covers/arxiv-2608-06219-p4.jpg"
+      ],
+      "arxiv_id": "2608.06219",
+      "abs_url": "http://arxiv.org/abs/2608.06219v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06219v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "新型触摸屏遥操作界面，用户实验验证性能提升，对遥操作研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "ENSTA, Institut Polytechnique de Paris",
+        "Bristol Robotics Laboratory, University of the West of England",
+        "IIT",
+        "Kempten University of Applied Sciences"
+      ],
+      "method_tags": [
+        "Teleoperation",
+        "Touchscreen Interface",
+        "User Study"
+      ],
+      "platform": [
+        "Franka Emika Panda"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-06221",
+      "source": "arxiv",
+      "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
+      "title_zh": "从人类示教中学习机器人动作：手写字母轨迹与拟人度评估",
+      "tldr_zh": "提出从示教学习类人机器人运动框架，生成轨迹拟人度得分71.5",
+      "cover_zh": "机器人学手写字母，竟能如此像人？｜拟人度评分71.5",
+      "abstract_zh": "从示教中学习（LfD）提供了一个发展性框架，使机器人能够通过观察和模仿人类动态来发展运动技能，从而减少对显式编程的依赖。由此产生的类人机器人运动被认为是建立信任和实现人机自然协作的关键因素。本文提出了一个从示教中学习类人机器人运动的框架，包括数据收集、概率轨迹学习和感知用户评估。通过触摸屏遥操作界面，从22名参与者中收集了涵盖所有52种拉丁字母大小写组合的3,142个手写示教数据集，记录了平面位置、接触力和时间信息。在广泛使用的高斯混合模型和高斯混合回归方法的基础上，本工作通过引入力和归一化时间维度来扩展框架，以更丰富地表示人类动态，并使其适应非连续、多段轨迹，从而实现跨示教的泛化。一项有21名参与者参与的用户研究，使用介于机器人和类人运动之间的连续量表评估生成轨迹的感知拟人度，归一化为0-100，其中50代表中性中点。生成轨迹的整体拟人度得分为71.50（标准差=22.56），表明大多数轨迹被认为更接近人类。参与者认为几何定位和轨迹顺序是最有影响力的感知因素，并对类人机器人行为持积极态度。数据集已开源发布，为开发和评估类人机器人运动方法提供了可复现的基准。",
+      "authors": [
+        "Alperen Kenan",
+        "Paul Bremner",
+        "Manuel Giuliani"
+      ],
+      "authors_all": [
+        "Alperen Kenan",
+        "Paul Bremner",
+        "Manuel Giuliani"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-06",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-06221.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06221-p2.jpg",
+        "assets/img/covers/arxiv-2608-06221-p3.jpg",
+        "assets/img/covers/arxiv-2608-06221-p4.jpg"
+      ],
+      "arxiv_id": "2608.06221",
+      "abs_url": "http://arxiv.org/abs/2608.06221v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06221v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "提供遥操作数据集与LfD框架，含人类相似度评估，对具身研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of the West of England",
+        "Kempten University of Applied Sciences"
+      ],
+      "method_tags": [
+        "Learning from Demonstration",
+        "Gaussian Mixture Model",
+        "Gaussian Mixture Regression"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
