@@ -1,6 +1,6 @@
 {
   "date": "2026-08-06",
-  "count": 18,
+  "count": 19,
   "papers": [
     {
       "id": "arxiv-2608-05948",
@@ -727,6 +727,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-05774",
+      "source": "arxiv_discover",
+      "title": "SR-JEPA: Learning Predictive Latent State in 3D Scenes",
+      "title_zh": "SR-JEPA：在3D场景中学习预测性潜在状态",
+      "tldr_zh": "SR-JEPA通过预测缺失物体的潜在状态，实现场景级点云的语义识别，性能显著。",
+      "cover_zh": "物体消失也能猜出身份？这个3D预测模型有点东西",
+      "abstract_zh": "联合嵌入预测架构通过预测缺失观测的潜在表示来学习，然而许多掩码JEPA主要评估其产生的编码器。我们探究当整个实体从原生3D场景中缺失时，训练好的预测路径本身能推断出什么。我们提出SR-JEPA，一种针对场景级点云的点原生JEPA，其原始冻结的预测路径可在指定位置进行查询。在评估时，先移除一个物体的所有点，然后在其质心处用相同的无形状32点查询替换。训练仅使用自包含的3D EMA目标：无重建、无语义标签、无语言或提升的2D特征。在5,953个保留的ARKitScenes物体上，插补的潜在状态达到43.13%的语义身份宏准确率，比最强基线高出22.18个百分点。随机化预测路径会降低9.78个百分点，而替换匹配的供体上下文则降低21.98个百分点。在8,570个Sr3D支持对上，完整潜在状态达到41.15 AP；从缺失物体潜在状态解码的身份，结合锚点身份和几何，达到39.37 AP，留下未解决的1.78个百分点残差。这些结果揭示了一种可查询、组合的3D预测状态：模型完成上下文相关的实体内容，下游计算将其与度量几何结合。",
+      "authors": [
+        "Zihan Zhou",
+        "Qifu Wen",
+        "Xi Zeng"
+      ],
+      "authors_all": [
+        "Zihan Zhou",
+        "Qifu Wen",
+        "Xi Zeng"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-05774.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-05774-p2.jpg",
+        "assets/img/covers/arxiv-2608-05774-p3.jpg",
+        "assets/img/covers/arxiv-2608-05774-p4.jpg"
+      ],
+      "arxiv_id": "2608.05774",
+      "abs_url": "http://arxiv.org/abs/2608.05774v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05774v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出点云原生JEPA，预测缺失实体潜在状态，属世界模型范畴，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Boston University",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "JEPA",
+        "3D scene understanding",
+        "predictive latent"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-05799",
