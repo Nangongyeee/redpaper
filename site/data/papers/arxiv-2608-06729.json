@@ -1,0 +1,128 @@
+{
+  "id": "arxiv-2608-06729",
+  "source": "arxiv",
+  "title": "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models",
+  "title_zh": "AtlasVLA：面向视觉-语言-动作模型的持久世界-自我状态建模",
+  "abstract": "While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, and temporal task-progress forgetting} during multi-step execution. To overcome these bottlenecks, we propose AtlasVLA, a novel framework that transitions from direct reactive manipulation to proactive reasoning through a persistent world-ego state. AtlasVLA features a dual-memory architecture: a 4D Persistent World State Memory that lifts transient 2D observations into a globally updated, voxel-hashed spatial state to resolve visual blind spots, and an Ego-Working State Memory that tracks historical ego state and task progress. By conditioning a diffusion transformer (DiT) on this joint World-Ego state, AtlasVLA enables robust spatial reasoning. Extensive evaluations across LIBERO, RLBench, and real-world benchmarks demonstrate that AtlasVLA achieves state-of-the-art performance using solely a wrist camera. Remarkably, it decisively outperforms multi-view baselines, yielding absolute success rate improvements of 9.4% on LIBERO-Long and 17.5% in real-world long-horizon tasks.",
+  "abstract_zh": "尽管视觉-语言-动作（VLA）模型推动了具身AI的发展，但其根本上的反应式范式严重限制了在部分可观测和长时程任务中的性能。当仅使用单个腕部相机时，模型不可避免地会因物体离开视野而遭受感知遗忘，以及在多步执行过程中出现时间任务进度遗忘。为克服这些瓶颈，我们提出AtlasVLA，一种新颖的框架，通过持久的世界-自我状态从直接反应式操作转变为主动推理。AtlasVLA采用双记忆架构：一个4D持久世界状态记忆，将瞬时的2D观测提升为全局更新的体素哈希空间状态，以解决视觉盲区；以及一个自我工作状态记忆，跟踪历史自我状态和任务进度。通过将扩散变换器（DiT）基于这个联合的世界-自我状态进行条件化，AtlasVLA实现了稳健的空间推理。在LIBERO、RLBench和真实世界基准上的广泛评估表明，AtlasVLA仅使用腕部相机就达到了最先进的性能。值得注意的是，它显著优于多视图基线，在LIBERO-Long上绝对成功率提高了9.4%，在真实世界长时程任务中提高了17.5%。",
+  "tldr_zh": "AtlasVLA通过持久世界-自我状态记忆，仅用腕部相机超越多视图基线。",
+  "cover_zh": "仅用腕部相机？AtlasVLA用持久记忆让长时程任务成功率飙升！",
+  "authors": [
+    {
+      "name": "Guiyu Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Longteng Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanghong Mei",
+      "affiliation": ""
+    },
+    {
+      "name": "Zilin Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Bin Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingming Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xingjian He",
+      "affiliation": ""
+    },
+    {
+      "name": "Jie Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jing Liu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-08-07",
+  "updated": "2026-08-07",
+  "arxiv_id": "2608.06729",
+  "pdf_url": "https://arxiv.org/pdf/2608.06729v1",
+  "abs_url": "http://arxiv.org/abs/2608.06729v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-06729.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-06729-p2.jpg",
+    "assets/img/covers/arxiv-2608-06729-p3.jpg",
+    "assets/img/covers/arxiv-2608-06729-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Beihang (BUAA)"
+    }
+  ],
+  "related_links": [],
+  "page_count": 17,
+  "source_tags": [],
+  "score": 37,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Beihang (BUAA)” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、manipulation、libero）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 17 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出持久世界-自我状态建模的VLA框架，解决部分可观测和长时程任务，性能SOTA，具科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Institute of Automation, Chinese Academy of Sciences",
+    "University of Chinese Academy of Sciences",
+    "Beijing Freedo Technology Co., Ltd.",
+    "Beihang University"
+  ],
+  "method_tags": [
+    "VLA",
+    "Diffusion Transformer",
+    "long-horizon"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,89 @@
+{
+  "id": "arxiv-2608-07420",
+  "source": "arxiv",
+  "title": "Beyond Myopic World Models: Long-Horizon End-to-End Training for Direct Future Prediction",
+  "title_zh": "超越短视世界模型：面向直接未来预测的长时程端到端训练",
+  "abstract": "World models are expected to support imagination over extended temporal horizons, yet most are still trained through local few-step prediction objectives and deployed by recursively rolling out their own predictions. This creates a fundamental mismatch: few-step losses optimize local transition fidelity, while long-horizon prediction depends on how errors and gradients propagate through the entire trajectory. As a result, transitions with different downstream influence on the endpoint are treated uniformly during training, and small local errors are amplified through recursive inference. We argue that long-horizon accuracy is better achieved by optimizing directly, through an end-to-end endpoint prediction objective. To instantiate this paradigm, we introduce the Direct Prediction World Model (DPWM), a non-recursive architecture that compresses an action sequence of arbitrary length into a single embedding and predicts the endpoint observation in a single forward pass. This design avoids recurrent rollout in both prediction and gradient propagation, making long-horizon end-to-end training practical at horizons where unrolled autoregressive training becomes unstable. Empirically, DPWM substantially improves long-horizon endpoint prediction over recursive world-model baselines on continuous-control and pixel-based benchmarks, with larger gains as the prediction horizon increases. We further show that recurrent baselines benefit similarly when retrained with the same long-horizon endpoint objective, supporting our central claim that the training objective, rather than the particular backbone choice, is the main driver of long-horizon prediction accuracy. Our results suggest that world models can benefit from being trained and evaluated at the temporal scales where they are ultimately used, shifting the focus from local transition modeling toward long-horizon predictive accuracy.",
+  "abstract_zh": "世界模型本应支持长时间跨度的想象，但大多数模型仍通过局部几步预测目标进行训练，并通过递归展开自身预测来部署。这造成了根本性的不匹配：几步损失优化局部转换保真度，而长时程预测依赖于误差和梯度如何在整个轨迹中传播。因此，对终点具有不同下游影响的转换在训练中被一视同仁，而小的局部误差在递归推理中被放大。我们认为，通过端到端的终点预测目标直接优化，能更好地实现长时程准确性。为实例化这一范式，我们引入了直接预测世界模型（DPWM），这是一种非递归架构，将任意长度的动作序列压缩为单个嵌入，并在单次前向传播中预测终点观测。该设计避免了预测和梯度传播中的递归展开，使得在展开自回归训练不稳定的时间跨度上，长时程端到端训练变得可行。实验上，DPWM在连续控制和基于像素的基准上，显著优于递归世界模型基线的长时程终点预测，且随着预测跨度的增加，增益更大。我们进一步表明，当使用相同的长时程终点目标重新训练时，递归基线也获得类似收益，这支持了我们的核心主张：训练目标而非特定骨干网络选择，是长时程预测准确性的主要驱动因素。我们的结果表明，世界模型可以在其最终使用的时间尺度上进行训练和评估，从而将焦点从局部转换建模转向长时程预测准确性。",
+  "tldr_zh": "提出直接预测世界模型，通过端到端终点目标显著提升长时程预测准确性。",
+  "cover_zh": "别再递归预测了！直接一步到位，长时程预测准确率飙升",
+  "authors": [
+    {
+      "name": "Xinyi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Zaishuo Xia",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenjie Hao",
+      "affiliation": ""
+    },
+    {
+      "name": "Yubei Chen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG"
+  ],
+  "published": "2026-08-07",
+  "updated": "2026-08-07",
+  "arxiv_id": "2608.07420",
+  "pdf_url": "https://arxiv.org/pdf/2608.07420v1",
+  "abs_url": "http://arxiv.org/abs/2608.07420v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-07420.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-07420-p2.jpg",
+    "assets/img/covers/arxiv-2608-07420-p3.jpg",
+    "assets/img/covers/arxiv-2608-07420-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 16,
+  "source_tags": [],
+  "score": 12,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（world model、world models、long-horizon prediction）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 16 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出直接预测世界模型DPWM，优化长时程端点预测，对世界模型训练范式有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of California, Davis"
+  ],
+  "method_tags": [
+    "World Model",
+    "End-to-End Training",
+    "Long-Horizon Prediction"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

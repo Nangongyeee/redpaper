@@ -1,0 +1,118 @@
+{
+  "id": "arxiv-2608-06833",
+  "source": "arxiv",
+  "title": "Unordered Landmark Visual Navigation",
+  "title_zh": "无序地标视觉导航",
+  "abstract": "Image-goal navigation is a fundamental capability for embodied AI, yet its practical deployment is strained by strong prior assumptions. Existing methods predominantly rely on temporally ordered video streams or auxiliary sensors (e.g., depth, LiDAR) to maintain spatial consistency. These sequential and multimodal dependencies severely restrict scalability, especially when deploying robots using crowd-sourced or pre-recorded unordered image collections. When temporal priors are removed, current methods struggle with severe perceptual aliasing, noisy associations, and catastrophic mapping failures. To address this underexplored challenge, we propose Unordered Landmark Visual Navigation (ULVN), a unified RGB-only framework free from temporal and odometric priors. ULVN systematically mitigates error accumulation by integrating mapping, localization, and planning. Specifically, it constructs a robust 2D topological map directly from unstructured images via calibrated geometric verification and maximum spanning forest refinement. For closed-loop execution, ULVN abandons sequential heuristics, utilizing a graph-based belief propagation filter with entropy-adaptive fusion for global localization and dynamic subgoal planning. Extensive experiments in simulation and real-world deployments demonstrate that ULVN significantly outperforms state-of-the-art methods.",
+  "abstract_zh": "图像目标导航是具身智能的一项基本能力，但其实际部署受到强先验假设的制约。现有方法主要依赖时间有序的视频流或辅助传感器（如深度、激光雷达）来维持空间一致性。这些顺序和多模态依赖严重限制了可扩展性，尤其是在使用众包或预录的无序图像集合部署机器人时。当去除时间先验后，现有方法面临严重的感知混叠、噪声关联和灾难性建图失败。为解决这一未被充分探索的挑战，我们提出了无序地标视觉导航（ULVN），一个统一的仅RGB框架，无需时间和里程计先验。ULVN通过集成建图、定位和规划来系统性地缓解误差累积。具体而言，它通过校准几何验证和最大生成森林细化，直接从非结构化图像构建鲁棒的2D拓扑地图。对于闭环执行，ULVN摒弃顺序启发式，利用基于图的置信传播滤波器，结合熵自适应融合进行全局定位和动态子目标规划。在仿真和真实世界部署中的大量实验表明，ULVN显著优于最先进的方法。",
+  "tldr_zh": "提出ULVN，仅用RGB图像实现无序地标导航，无需时间或里程计先验。",
+  "cover_zh": "扔掉视频和雷达！仅凭一堆乱序照片，机器人也能精准导航？",
+  "authors": [
+    {
+      "name": "Hao Ren",
+      "affiliation": ""
+    },
+    {
+      "name": "Junzhe Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yihan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Zetong Bi",
+      "affiliation": ""
+    },
+    {
+      "name": "Le Zheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiqing Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhaoliang Wan",
+      "affiliation": ""
+    },
+    {
+      "name": "Dizhe Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Lu Qi",
+      "affiliation": ""
+    },
+    {
+      "name": "Hui Cheng",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-07",
+  "updated": "2026-08-07",
+  "arxiv_id": "2608.06833",
+  "pdf_url": "https://arxiv.org/pdf/2608.06833v1",
+  "abs_url": "http://arxiv.org/abs/2608.06833v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-06833.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-06833-p2.jpg",
+    "assets/img/covers/arxiv-2608-06833-p3.jpg",
+    "assets/img/covers/arxiv-2608-06833-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 44,
+  "source_tags": [],
+  "score": 6,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（real-world deployment）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 44 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出无序地标视觉导航框架，解决图像目标导航中的时序依赖问题，具有科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Sun Yat-sen University",
+    "Insta360 Research"
+  ],
+  "method_tags": [
+    "Topological Mapping",
+    "Visual Localization",
+    "Visual Navigation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
