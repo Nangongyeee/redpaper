@@ -1,0 +1,370 @@
+{
+  "id": "arxiv-2608-09892",
+  "source": "arxiv",
+  "title": "XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment",
+  "title_zh": "XPolicyLab：面向机器人策略评估与部署的统一标准与开放生态系统",
+  "abstract": "Robot policy evaluation and deployment remain fragmented by model-specific software dependencies, data representations, and runtime interfaces, so that connecting N policies to M evaluation environments requires O(NM) separate integrations. We present XPolicyLab, a unified standard and open ecosystem that reduces this cost to O(N+M). XPolicyLab specifies common observation, action, and trajectory schemas together with a minimal adapter interface for observation updates, action prediction, batched execution, and episode reset, while a dependency-isolated client/server architecture separates policy inference from environment execution, so that each side retains its native software stack and may run locally or remotely. The ecosystem integrates 42 robot policies and standardizes their installation, debugging, serving, and evaluation workflows. Across these adapters, model-specific code varies by an order of magnitude while the environment-facing loop stays within a few lines of a fixed reference, confirming that the contract confines heterogeneity to the policy side. In a controlled study, conforming to the standard reduces the integration effort of a representative policy from over five hours to two hours, and packaged agent skills reduce it further to thirty minutes. The same adapters serve RoboTwin, RoboDojo simulation, and standardized real-robot evaluation through one interface. XPolicyLab is released as shared infrastructure for reproducible policy comparison and standardized deployment across simulation and physical platforms. Project website: https://xpolicylab.github.io/.",
+  "abstract_zh": "机器人策略的评估与部署因模型特定的软件依赖、数据表示和运行时接口而碎片化，导致将N个策略连接到M个评估环境需要O(NM)次独立集成。我们提出XPolicyLab，一个统一标准与开放生态系统，将这一成本降低至O(N+M)。XPolicyLab规定了通用的观测、动作和轨迹模式，以及用于观测更新、动作预测、批量执行和回合重置的最小适配器接口，同时采用依赖隔离的客户端/服务器架构，将策略推理与环境执行分离，使双方保留各自的软件栈，并可本地或远程运行。该生态系统集成了42个机器人策略，并标准化了其安装、调试、服务和评估流程。在这些适配器中，模型特定代码变化达一个数量级，而面向环境的循环保持在固定参考的几行代码内，证实了该契约将异构性限制在策略侧。在一项受控研究中，符合该标准将代表性策略的集成工作量从超过五小时减少到两小时，而打包的智能体技能进一步将其降至三十分钟。相同的适配器通过一个接口服务于RoboTwin、RoboDojo仿真和标准化真实机器人评估。XPolicyLab作为可复现策略比较和跨仿真与物理平台标准化部署的共享基础设施发布。项目网站：https://xpolicylab.github.io/。",
+  "tldr_zh": "XPolicyLab统一标准将机器人策略集成成本从O(NM)降至O(N+M)，集成时间从5小时减至30分钟。",
+  "cover_zh": "集成成本从5小时降到30分钟？这个机器人策略标准太香了！",
+  "authors": [
+    {
+      "name": "XPolicyLab Community",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianxing Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yue Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Tian Nian",
+      "affiliation": ""
+    },
+    {
+      "name": "Zijian Cai",
+      "affiliation": ""
+    },
+    {
+      "name": "Guangyu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenwei Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiwei Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Peicheng Xiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Kailun Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Zixuan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Junyuan Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yan Qin",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiangyu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Shaolong Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiang Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiahao Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Weijie Wan",
+      "affiliation": ""
+    },
+    {
+      "name": "Baijun Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Honghao Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Kehe Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Shujia Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaixuan Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haotian Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yunze Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingleyang Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuran Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Boyu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongzhe Bi",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuhe Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Hengkai Tan",
+      "affiliation": ""
+    },
+    {
+      "name": "Jisong Cai",
+      "affiliation": ""
+    },
+    {
+      "name": "Yao Mu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jun Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaofeng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zheng Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Weijie Ke",
+      "affiliation": ""
+    },
+    {
+      "name": "Hengtao Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhang Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaofan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Ganlin Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhangzheng Tu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuai Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenxuan Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Pengxiang Ding",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaidong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Junliang Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Tong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yixing Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Rongxu Cui",
+      "affiliation": ""
+    },
+    {
+      "name": "Zongzheng Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoxiang Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Junhao Cai",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoyu Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Senqiao Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinhui Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Pengguang Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Shu Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiu Su",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenhan Fang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenhao Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yichao Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Chengyao Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiang Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Ping Luo",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "arxiv_id": "2608.09892",
+  "pdf_url": "https://arxiv.org/pdf/2608.09892v1",
+  "abs_url": "http://arxiv.org/abs/2608.09892v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-09892.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-09892-p2.jpg",
+    "assets/img/covers/arxiv-2608-09892-p3.jpg",
+    "assets/img/covers/arxiv-2608-09892-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Hao Su"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Ping Luo"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 36,
+  "score_breakdown": [
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Hao Su"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（robotwin）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "统一机器人策略评估与部署生态，降低集成成本，对具身研究有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "MMLab@HKU",
+    "THU"
+  ],
+  "method_tags": [
+    "policy evaluation",
+    "deployment",
+    "standardization"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "RoboTwin",
+    "RoboDojo"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
