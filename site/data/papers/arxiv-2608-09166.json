@@ -1,0 +1,98 @@
+{
+  "id": "arxiv-2608-09166",
+  "source": "arxiv",
+  "title": "Particle-Based Conformal Prediction for Contact-Aware Uncertainty Calibration in Stratified Configuration Spaces",
+  "title_zh": "基于粒子的共形预测用于分层配置空间中接触感知的不确定性校准",
+  "abstract": "Reliable uncertainty representation is essential for deploying autonomous systems that interact with their environment, as robots must reason about how uncertainty arising from both stochasticity and model mismatch is impacted by contacts with obstacles (e.g., when navigating through a cluttered environment or inserting a part into an assembly). We propose Calibrated Particle-sets for Trans-dimensional Uncertainty Representation (CaPTURe), a geometry-aware, conformal prediction-based algorithm that generates probabilistically valid prediction regions of the unknown future system configuration using particle-based models of arbitrary fidelity. While calibrated uncertainty predictions are essential for safe and efficient planning, analytical or learned motion models are often inaccurate - due to limited data, simplifying assumptions, unmodeled effects, etc. - which can lead to unsafe executions or task failure. Additionally, when a robot contacts an obstacle, the distribution of its future configurations can become multimodal or disjoint, or lie along manifolds of lower intrinsic dimension than the space of possible robot configurations. Our method uses a calibration dataset of system transitions to locally calibrate motion uncertainty estimates, constructing regions guaranteed to contain the future robot configuration at a user-set probability. Our calibration procedure captures how motion uncertainty varies between contact-rich and contactless motions, leading to sufficient coverage in both cases. We evaluate our method on two simulated planning tasks: controlling a marble around a labyrinth and performing tight-tolerance peg-in-hole insertion with a manipulator. Compared to relevant baselines, CaPTURe achieves the user-specified coverage requirement both in and out of contact and achieves up to a 30% absolute improvement in task success rate over the best baseline.",
+  "abstract_zh": "可靠的不确定性表示对于部署与环境交互的自主系统至关重要，因为机器人必须推理由随机性和模型失配引起的不确定性如何受到与障碍物接触的影响（例如，在杂乱环境中导航或将零件插入装配体中）。我们提出了 CaPTURe（Calibrated Particle-sets for Trans-dimensional Uncertainty Representation），一种基于几何感知的共形预测算法，利用任意保真度的粒子模型生成未知未来系统配置的概率有效预测区域。虽然校准的不确定性预测对于安全高效的规划至关重要，但解析或学习的运动模型往往不准确——由于数据有限、简化假设、未建模效应等——这可能导致不安全的执行或任务失败。此外，当机器人与障碍物接触时，其未来配置的分布可能变为多模态或不相交，或位于比可能机器人配置空间更低内在维度的流形上。我们的方法使用系统转移的校准数据集来局部校准运动不确定性估计，构建以用户设定概率保证包含未来机器人配置的区域。我们的校准过程捕捉了运动不确定性在接触丰富和无接触运动之间的变化，从而在两种情况下都实现了足够的覆盖率。我们在两个模拟规划任务上评估了我们的方法：控制弹珠穿越迷宫，以及使用机械臂进行紧公差销孔插入。与相关基线相比，CaPTURe 在接触和非接触情况下均达到了用户指定的覆盖率要求，并且任务成功率比最佳基线绝对提高了 30%。",
+  "tldr_zh": "提出 CaPTURe，基于共形预测的几何感知算法，校准接触感知的不确定性，提升任务成功率。",
+  "cover_zh": "接触也能精准预测？这个新算法让机器人不确定性校准更可靠 ｜ 成功率提升 30%",
+  "authors": [
+    {
+      "name": "Luís Marques",
+      "affiliation": ""
+    },
+    {
+      "name": "Kristian Popov",
+      "affiliation": ""
+    },
+    {
+      "name": "Dmitry Berenson",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.LG",
+    "stat.ME"
+  ],
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "arxiv_id": "2608.09166",
+  "pdf_url": "https://arxiv.org/pdf/2608.09166v1",
+  "abs_url": "http://arxiv.org/abs/2608.09166v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-09166.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-09166-p2.jpg",
+    "assets/img/covers/arxiv-2608-09166-p3.jpg",
+    "assets/img/covers/arxiv-2608-09166-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 31,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（contact-rich、assembly、peg-in-hole）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 31 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出接触感知的共形预测不确定性校准方法，提升操作任务成功率，对具身操作研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Michigan"
+  ],
+  "method_tags": [
+    "Conformal Prediction",
+    "Uncertainty Calibration",
+    "Contact-Aware Planning"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

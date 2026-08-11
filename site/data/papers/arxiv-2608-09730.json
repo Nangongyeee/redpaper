@@ -1,0 +1,116 @@
+{
+  "id": "arxiv-2608-09730",
+  "source": "arxiv",
+  "title": "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling",
+  "title_zh": "世界令牌：通过训练时世界建模增强具身策略",
+  "abstract": "Vision-language-action (VLA) models are a widely adopted paradigm for embodied policies. They excel at efficient closed-loop control but do not explicitly model how physical scenes evolve as a task unfolds. Recently emerging world-action models (WAMs) leverage pretrained video world models to capture spatiotemporal evolution, yet retaining future generation or a large video backbone in the control loop substantially increases inference cost. We introduce World Tokens, an embodied policy architecture built around a World Adapter that bridges visual-language understanding, world-dynamics modeling, and action generation. It uses world modeling during training to enhance the action policy while preserving efficient deployment. Specifically, the World Adapter transforms VLM features into a fixed set of world tokens, which condition a jointly fine-tuned future-video denoiser and simultaneously serve as the action expert's sole visual-language context. This shared conditioning allows gradients from future-video denoising to directly shape the representation used for action prediction, while exclusive routing prevents the policy from bypassing that representation. At deployment, the world-model branch is removed, leaving only the VLM, World Adapter, and action expert, with no online video-model inference. With a 2B backbone and no embodied action pretraining, World Tokens is highly competitive on LIBERO, attains the best reported averages on SIMPLER, substantially improves real-world R1 Pro success over a matched action-only baseline, and generates each action chunk at VLA-level latency.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型是具身策略中广泛采用的范式。它们擅长高效的闭环控制，但并未显式建模物理场景在任务展开过程中如何演变。最近出现的世界-动作模型（WAMs）利用预训练的视频世界模型来捕捉时空演变，然而在控制循环中保留未来生成或大型视频骨干会显著增加推理成本。我们引入了世界令牌（World Tokens），这是一种围绕世界适配器（World Adapter）构建的具身策略架构，它桥接了视觉-语言理解、世界动态建模和动作生成。它在训练期间使用世界建模来增强动作策略，同时保持高效的部署。具体来说，世界适配器将VLM特征转换为固定数量的世界令牌，这些令牌条件化一个联合微调的未来视频去噪器，并同时作为动作专家的唯一视觉-语言上下文。这种共享条件允许未来视频去噪的梯度直接塑造用于动作预测的表示，而独占路由则防止策略绕过该表示。在部署时，世界模型分支被移除，仅留下VLM、世界适配器和动作专家，无需在线视频模型推理。凭借2B骨干且无具身动作预训练，世界令牌在LIBERO上极具竞争力，在SIMPLER上取得了最佳平均结果，在真实世界R1 Pro成功率上显著优于匹配的动作-only基线，并以VLA级延迟生成每个动作块。",
+  "tldr_zh": "世界令牌通过在训练时引入世界建模，提升具身策略性能，且部署时无额外推理成本。",
+  "cover_zh": "训练时偷偷学世界模型？部署时零负担，动作策略直接起飞！",
+  "authors": [
+    {
+      "name": "Qu Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Benhui Zhuang",
+      "affiliation": ""
+    },
+    {
+      "name": "Bo Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Xue Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Longteng Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Junlan Feng",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "arxiv_id": "2608.09730",
+  "pdf_url": "https://arxiv.org/pdf/2608.09730v1",
+  "abs_url": "http://arxiv.org/abs/2608.09730v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-09730.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-09730-p2.jpg",
+    "assets/img/covers/arxiv-2608-09730-p3.jpg",
+    "assets/img/covers/arxiv-2608-09730-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 7 个（vision-language-action、embodied policy、libero、world model）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出World Tokens架构，训练时用世界模型增强策略，部署时移除，兼顾性能与效率，对具身策略研究有高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "JIUTIAN Research",
+    "Zhongguancun Academy"
+  ],
+  "method_tags": [
+    "World Model",
+    "VLA",
+    "Training-Time"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

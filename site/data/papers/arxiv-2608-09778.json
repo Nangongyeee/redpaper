@@ -1,0 +1,102 @@
+{
+  "id": "arxiv-2608-09778",
+  "source": "arxiv",
+  "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
+  "title_zh": "RoboSeg：通过单目眼在手相机实现机器人操作的在线部件级语义重建",
+  "abstract": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
+  "abstract_zh": "机器人操作需要能够识别可操作部件（如手柄、边缘、触发器和工具尖端）的感知系统，而不仅仅是物体类别或点云。本文提出了RoboSeg，一个部件级语义重建系统，它将视觉语言模型（VLM）的功能部件发现、异步在线RGB-D语义重建以及面向任务的抓取生成相结合，无需CAD模型或预扫描网格。RoboSeg在初始RGB观测上查询VLM以获得紧凑的功能部件提示，然后通过两个异步流进行扫描：一个高频几何线程用于RGB-D里程计和截断符号距离函数（TSDF）融合，以及一个关键帧触发的语义线程用于SAM3部件掩码。投影的掩码通过体素级时间投票融合到持久的部件标记点云中；RoboSeg利用此映射将AnyGrasp的6自由度候选分配给语义部件，并选择与任务相关部件标签一致的抓取。RoboSeg在手动标记对象上达到了83.4%的平均部件交并比（mIoU）；在涉及四个对象和八个任务的24次物理试验中，所选抓取在所有试验中都接触到了请求的部件，并实现了21/24的综合任务成功。这些结果将RoboSeg描述为任务条件操作的一个语义索引层，而AnyGrasp保留为提议生成器。",
+  "tldr_zh": "RoboSeg通过单目相机实现部件级语义重建，提升机器人操作抓取准确性。",
+  "cover_zh": "单目相机也能精准抓取？RoboSeg让机器人看懂部件！",
+  "authors": [
+    {
+      "name": "Zhaochen Lan",
+      "affiliation": ""
+    },
+    {
+      "name": "Mengxiang Lin",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "arxiv_id": "2608.09778",
+  "pdf_url": "https://arxiv.org/pdf/2608.09778v1",
+  "abs_url": "http://arxiv.org/abs/2608.09778v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-09778.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-09778-p2.jpg",
+    "assets/img/covers/arxiv-2608-09778-p3.jpg",
+    "assets/img/covers/arxiv-2608-09778-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Beihang (BUAA)"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 7,
+  "source_tags": [],
+  "score": 47,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Beihang (BUAA)” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、grasp、in-hand）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 7 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "面向操作的部分级语义重建与抓取生成，结合VLM与TSDF，有真机验证，属具身操作方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Beihang University"
+  ],
+  "method_tags": [
+    "VLM",
+    "semantic reconstruction",
+    "grasp generation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

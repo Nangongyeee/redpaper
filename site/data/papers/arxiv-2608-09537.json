@@ -1,0 +1,120 @@
+{
+  "id": "arxiv-2608-09537",
+  "source": "arxiv",
+  "title": "verdi: retrieval is not transfer for continual world model optimization",
+  "title_zh": "verdi：检索并非迁移，用于持续世界模型优化",
+  "abstract": "Foundation world models have made remarkable progress in planning, simulation, and embodied intelligence. However, optimizing a pretrained world model toward a user-specified objective remains difficult: each campaign typically rediscovers optimization strategies from scratch, and the resulting knowledge rarely transfers to the next model. Existing research agents automate the optimization loop but treat successful strategies as directly reusable recipes, without principled safeguards for when transfer is appropriate. We argue instead that retrieval is not transfer: a strategy validated on one model is at best an optimization hypothesis for another, and becomes transferable knowledge only after target-side experimental valida- tion. Guided by this principle, we propose VERDI , a continual framework for evidence-licensed world model optimization. VERDI characterizes each world model through shared inference-time probes to construct an Optimization Fin- gerprint, retrieves relevant prior experience as ranked hypotheses, and validates every candidate under a frozen target-side verifier before admitting it as reusable evidence; contradictions among nearby fingerprints further trigger probe evolution, continually refining the diagnostic representation itself. Experiments on Ctrl-World, the Cosmos family, and RoboCoin show that VERDI reduces search cost by 68%, GPU cost by 69%, and negative transfer from 0.34 to 0.06, while predicting transfer outcomes with 83% sign accuracy.",
+  "abstract_zh": "基础世界模型在规划、模拟和具身智能方面取得了显著进展。然而，将预训练的世界模型朝着用户指定的目标进行优化仍然困难：每次活动通常从头开始重新发现优化策略，所得知识很少迁移到下一个模型。现有的研究代理自动化了优化循环，但将成功的策略视为可直接复用的配方，没有对何时适合迁移进行原则性保障。我们认为检索并非迁移：在一个模型上验证的策略对另一个模型最多只是一个优化假设，只有在目标端实验验证后才成为可迁移的知识。基于这一原则，我们提出了VERDI，一个用于证据许可的世界模型优化的持续框架。VERDI通过共享的推理时探针来表征每个世界模型，构建优化指纹，检索相关先验经验作为排序假设，并在冻结的目标端验证器下验证每个候选，然后才将其接纳为可复用证据；相邻指纹之间的矛盾进一步触发探针演化，持续改进诊断表示本身。在Ctrl-World、Cosmos系列和RoboCoin上的实验表明，VERDI将搜索成本降低了68%，GPU成本降低了69%，负迁移从0.34降至0.06，同时以83%的符号准确率预测迁移结果。",
+  "tldr_zh": "VERDI框架通过证据许可和指纹验证，减少世界模型优化中的负迁移。",
+  "cover_zh": "别再盲目迁移！VERDI让世界模型优化成本直降68%",
+  "authors": [
+    {
+      "name": "Junyu Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shiqin Nie",
+      "affiliation": ""
+    },
+    {
+      "name": "Youyi Kou",
+      "affiliation": ""
+    },
+    {
+      "name": "Baohua Yin",
+      "affiliation": ""
+    },
+    {
+      "name": "Guocai Yao",
+      "affiliation": ""
+    },
+    {
+      "name": "Qingyu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Jingheng Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Shiji Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongyong Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingchen Zhuge",
+      "affiliation": ""
+    },
+    {
+      "name": "Sen Cui",
+      "affiliation": ""
+    },
+    {
+      "name": "Changshui Zhang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.AI",
+  "categories": [
+    "cs.AI"
+  ],
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "arxiv_id": "2608.09537",
+  "pdf_url": "https://arxiv.org/pdf/2608.09537v1",
+  "abs_url": "http://arxiv.org/abs/2608.09537v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（world model、world models、cosmos）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出世界模型持续优化框架VERDI，含优化指纹与迁移验证，实验于Cosmos等，对world model研究有高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "continual learning",
+    "world model optimization",
+    "retrieval"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
