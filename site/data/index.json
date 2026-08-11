@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T08:17:17.266674+00:00",
+  "generated_at": "2026-08-11T09:57:27.045988+00:00",
   "count": 2018,
   "papers": [
     {
@@ -22900,6 +22900,89 @@
       ]
     },
     {
+      "id": "arxiv-2605-01518",
+      "source": "arxiv_discover",
+      "title": "VOFA: Visual Object Goal Pushing with Force-Adaptive Control for Humanoids",
+      "title_zh": "VOFA：基于力自适应控制的仿人机器人视觉目标推拉",
+      "tldr_zh": "仿人机器人VOFA系统通过视觉和力自适应控制，成功推动超半体重物体。",
+      "cover_zh": "仿人机器人也能推重物？VOFA系统用视觉+力控，推动17kg物体成功率超80%！",
+      "abstract_zh": "利用机载自我中心感知以目标导向的方式推动大型物体是仿人机器人执行仓库物料搬运等复杂任务的基本技能。为了稳健地将重物操纵到任意目标配置，机器人必须应对未知的物体质量和地面摩擦、嘈杂的机载感知以及执行误差，所有这些都在实时反馈回路中完成。现有解决方案要么依赖无机载感知的特权物体状态信息，要么缺乏对目标配置和物体物理属性变化的鲁棒性。在这项工作中，我们提出了VOFA，一种视觉目标条件的仿人机器人移动操纵系统，能够将具有未知物理属性的物体推到任意目标位置。VOFA由两级层次架构组成：高层视觉运动策略和低层力自适应全身控制器。高层策略处理嘈杂的机载观测，并生成目标条件的命令，以在多样化的物体-目标配置中闭环运行，而低层全身控制器则提供对物体物理属性变化的鲁棒性。VOFA在Booster T1仿人机器人上的仿真和真实世界实验中进行了广泛评估。我们的结果展示了强劲性能，在仿真中成功率超过90%，在真实世界试验中成功率超过80%。此外，VOFA成功推动了重达17kg的物体，超过了Booster T1体重的一半。",
+      "authors": [
+        "Zichao Hu",
+        "Zifan Xu",
+        "Dongsik Chang"
+      ],
+      "authors_all": [
+        "Zichao Hu",
+        "Zifan Xu",
+        "Dongsik Chang",
+        "He Yin",
+        "Linh Tran",
+        "Roberto Martín-Martín",
+        "Peter Stone",
+        "Jingyu Qiao",
+        "Joydeep Biswas"
+      ],
+      "primary_category": "",
+      "published": "2026-05-02",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Peter Stone"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · IROS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2605-01518.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2605-01518-p2.jpg",
+        "assets/img/covers/arxiv-2605-01518-p3.jpg",
+        "assets/img/covers/arxiv-2605-01518-p4.jpg"
+      ],
+      "arxiv_id": "2605.01518",
+      "abs_url": "http://arxiv.org/abs/2605.01518v3",
+      "pdf_url": "https://arxiv.org/pdf/2605.01518v3",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-08-11",
+      "score": 50,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形机器人全身控制+移动操作，视觉目标推动，有仿真和真机验证，科研价值高",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Texas at Austin",
+        "Amazon Inc.",
+        "Sony AI"
+      ],
+      "method_tags": [
+        "visuomotor policy",
+        "force-adaptive whole-body controller",
+        "loco-manipulation"
+      ],
+      "platform": [
+        "Booster T1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2605-06247",
       "source": "arxiv",
       "title": "CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models",
@@ -27625,9 +27708,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，内存仅需30%，数据量增15倍。",
-      "cover_zh": "重建模型也能逆袭？VGGT-Ω用30%内存实现77%精度提升，动态场景也稳！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还提供了对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-Ω通过架构改进和自监督学习，大幅提升重建精度，内存仅用30%。",
+      "cover_zh": "内存砍70%！VGGT-Ω让重建精度飙升，动态场景也稳了？",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -42350,7 +42433,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能转圈圈？Atlas 的新动作太酷了！",
+      "cover_zh": "机器人也能玩转旋转？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -47520,85 +47603,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
-      "id": "arxiv-2605-01518",
-      "source": "arxiv_discover",
-      "title": "VOFA: Visual Object Goal Pushing with Force-Adaptive Control for Humanoids",
-      "title_zh": "VOFA：基于力自适应控制的仿人机器人视觉目标推拉",
-      "tldr_zh": "仿人机器人VOFA系统通过视觉和力自适应控制，成功推动超半体重物体。",
-      "cover_zh": "仿人机器人也能推重物？VOFA系统用视觉+力控，推动17kg物体成功率超80%！",
-      "abstract_zh": "利用机载自我中心感知以目标导向的方式推动大型物体是仿人机器人执行仓库物料搬运等复杂任务的基本技能。为了稳健地将重物操纵到任意目标配置，机器人必须应对未知的物体质量和地面摩擦、嘈杂的机载感知以及执行误差，所有这些都在实时反馈回路中完成。现有解决方案要么依赖无机载感知的特权物体状态信息，要么缺乏对目标配置和物体物理属性变化的鲁棒性。在这项工作中，我们提出了VOFA，一种视觉目标条件的仿人机器人移动操纵系统，能够将具有未知物理属性的物体推到任意目标位置。VOFA由两级层次架构组成：高层视觉运动策略和低层力自适应全身控制器。高层策略处理嘈杂的机载观测，并生成目标条件的命令，以在多样化的物体-目标配置中闭环运行，而低层全身控制器则提供对物体物理属性变化的鲁棒性。VOFA在Booster T1仿人机器人上的仿真和真实世界实验中进行了广泛评估。我们的结果展示了强劲性能，在仿真中成功率超过90%，在真实世界试验中成功率超过80%。此外，VOFA成功推动了重达17kg的物体，超过了Booster T1体重的一半。",
-      "authors": [
-        "Zichao Hu",
-        "Zifan Xu",
-        "Dongsik Chang"
-      ],
-      "authors_all": [
-        "Zichao Hu",
-        "Zifan Xu",
-        "Dongsik Chang",
-        "He Yin",
-        "Linh Tran",
-        "Roberto Martín-Martín",
-        "Peter Stone",
-        "Jingyu Qiao",
-        "Joydeep Biswas"
-      ],
-      "primary_category": "",
-      "published": "2026-05-02",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation",
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Peter Stone"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2605-01518.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2605-01518-p2.jpg",
-        "assets/img/covers/arxiv-2605-01518-p3.jpg",
-        "assets/img/covers/arxiv-2605-01518-p4.jpg"
-      ],
-      "arxiv_id": "2605.01518",
-      "abs_url": "http://arxiv.org/abs/2605.01518v3",
-      "pdf_url": "https://arxiv.org/pdf/2605.01518v3",
-      "venue": "",
-      "venue_announced": "",
-      "score": 40,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形机器人全身控制+移动操作，视觉目标推动，有仿真和真机验证，科研价值高",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The University of Texas at Austin",
-        "Amazon Inc.",
-        "Sony AI"
-      ],
-      "method_tags": [
-        "visuomotor policy",
-        "force-adaptive whole-body controller",
-        "loco-manipulation"
-      ],
-      "platform": [
-        "Booster T1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -76798,8 +76802,8 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互与全身移动操作，自主稳定抗干扰。",
-      "cover_zh": "一个模型搞定全屋家务？还能抗干扰自主执行！",
+      "tldr_zh": "单一模型实现全模态交互与自主稳定执行，用于家庭护理。",
+      "cover_zh": "一个模型搞定全屋护理？还能抗干扰自主执行！",
       "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
