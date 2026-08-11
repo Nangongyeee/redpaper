@@ -625,6 +625,78 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-09816",
+      "source": "arxiv",
+      "title": "Hierarchical Fast--Slow ReAct Agent for Zero-Shot Object-Goal Navigation",
+      "title_zh": "分层快慢 ReAct Agent 用于零样本目标导航",
+      "tldr_zh": "分层快慢智能体通过记忆与深思提升零样本目标导航成功率。",
+      "cover_zh": "机器人找东西总迷路？这个新方法让它记住走过的路，成功率直接飙升！",
+      "abstract_zh": "零样本目标导航（ZSON）要求机器人在从未进入过的建筑中找到指定类别的物体。主流方法使用视觉-语言价值图对前沿进行评分：每个决策都是对当前地图的 argmax，而该分数背后的证据在做出决策时就被丢弃了。将大型视觉-语言模型置于感知-行动循环中的系统通常仅从当前视图按固定计划查询它；机器人几分钟前走过的房间永远不会被重新考虑，失败的调用也没有明确的回退。我们将机器人已经看到的内容转化为思考的对象。我们的分层快慢智能体每一步都保持价值图控制器运行，并在移动时写入坐标锚定记忆：一个包含房间类型和确认物体实例的语义网格，以及一个有界的关键帧存储（带姿态标签）。VLM 在写入前筛选每个候选检测。一个深思层在有界的推理-检索-行动循环中读取此记忆。它由反应层计算的结构事件唤醒，首先在文本上进行推理，并且仅对文本无法区分的候选者回忆第一人称视角。每次调用和每次运行的上限限制了其调用次数，无调用的第一层解决了最常见的停滞问题，任何失败都将控制权返回给反应控制器。我们的系统在 HM3D v1 val 上达到 68.75% 的 SR，在 MP3D val 上达到 47.29%，是这里比较的零样本方法中最高的成功率。在全部 2000 个 HM3D 情节的配对比较中，通过 argmax 选择远前沿而不是深思熟虑损失了 3.40 个 SR 点（95% CI [1.70, 5.05]）；对每个前沿进行深思并不能恢复这些点。",
+      "authors": [
+        "Zhaochen Lan",
+        "Zhi Yang",
+        "Yuxiang Fu"
+      ],
+      "authors_all": [
+        "Zhaochen Lan",
+        "Zhi Yang",
+        "Yuxiang Fu",
+        "Mengxiang Lin"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-10",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Beihang (BUAA)"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-09816.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-09816-p2.jpg",
+        "assets/img/covers/arxiv-2608-09816-p3.jpg",
+        "assets/img/covers/arxiv-2608-09816-p4.jpg"
+      ],
+      "arxiv_id": "2608.09816",
+      "abs_url": "http://arxiv.org/abs/2608.09816v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09816v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 46,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出分层快慢ReAct智能体用于零样本目标导航，结合价值图与VLM记忆推理，显著提升成功率，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Beihang University",
+        "Beijing Institute of Technology"
+      ],
+      "method_tags": [
+        "hierarchical fast-slow agent",
+        "zero-shot object-goal navigation",
+        "VLM"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-09448",
       "source": "arxiv",
       "title": "VANE: Reliable Test-Time Training for Vision-Language-Action Models via Future Visual Representation Prediction",
@@ -991,77 +1063,6 @@
         "Diffusion Planning",
         "Safe Planning",
         "Latent Graphs"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-09816",
-      "source": "arxiv",
-      "title": "Hierarchical Fast--Slow ReAct Agent for Zero-Shot Object-Goal Navigation",
-      "title_zh": "分层快慢 ReAct Agent 用于零样本目标导航",
-      "tldr_zh": "分层快慢智能体通过记忆与深思提升零样本目标导航成功率。",
-      "cover_zh": "机器人找东西总迷路？这个新方法让它记住走过的路，成功率直接飙升！",
-      "abstract_zh": "零样本目标导航（ZSON）要求机器人在从未进入过的建筑中找到指定类别的物体。主流方法使用视觉-语言价值图对前沿进行评分：每个决策都是对当前地图的 argmax，而该分数背后的证据在做出决策时就被丢弃了。将大型视觉-语言模型置于感知-行动循环中的系统通常仅从当前视图按固定计划查询它；机器人几分钟前走过的房间永远不会被重新考虑，失败的调用也没有明确的回退。我们将机器人已经看到的内容转化为思考的对象。我们的分层快慢智能体每一步都保持价值图控制器运行，并在移动时写入坐标锚定记忆：一个包含房间类型和确认物体实例的语义网格，以及一个有界的关键帧存储（带姿态标签）。VLM 在写入前筛选每个候选检测。一个深思层在有界的推理-检索-行动循环中读取此记忆。它由反应层计算的结构事件唤醒，首先在文本上进行推理，并且仅对文本无法区分的候选者回忆第一人称视角。每次调用和每次运行的上限限制了其调用次数，无调用的第一层解决了最常见的停滞问题，任何失败都将控制权返回给反应控制器。我们的系统在 HM3D v1 val 上达到 68.75% 的 SR，在 MP3D val 上达到 47.29%，是这里比较的零样本方法中最高的成功率。在全部 2000 个 HM3D 情节的配对比较中，通过 argmax 选择远前沿而不是深思熟虑损失了 3.40 个 SR 点（95% CI [1.70, 5.05]）；对每个前沿进行深思并不能恢复这些点。",
-      "authors": [
-        "Zhaochen Lan",
-        "Zhi Yang",
-        "Yuxiang Fu"
-      ],
-      "authors_all": [
-        "Zhaochen Lan",
-        "Zhi Yang",
-        "Yuxiang Fu",
-        "Mengxiang Lin"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-10",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Beihang (BUAA)"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-09816.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-09816-p2.jpg",
-        "assets/img/covers/arxiv-2608-09816-p3.jpg",
-        "assets/img/covers/arxiv-2608-09816-p4.jpg"
-      ],
-      "arxiv_id": "2608.09816",
-      "abs_url": "http://arxiv.org/abs/2608.09816v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09816v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出分层快慢ReAct智能体用于零样本目标导航，结合价值图与VLM记忆推理，显著提升成功率，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Beihang University",
-        "Beijing Institute of Technology"
-      ],
-      "method_tags": [
-        "hierarchical fast-slow agent",
-        "zero-shot object-goal navigation",
-        "VLM"
       ],
       "platform": [],
       "sim_stack": [],
