@@ -1,6 +1,6 @@
 {
   "date": "2026-08-03",
-  "count": 23,
+  "count": 24,
   "papers": [
     {
       "id": "arxiv-2608-02547",
@@ -675,6 +675,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-02332",
+      "source": "arxiv_discover",
+      "title": "Diffusion Policy with Behavioral Advantage Correction for Offline Reinforcement Learning",
+      "title_zh": "离线强化学习中具有行为优势校正的扩散策略",
+      "tldr_zh": "提出DPBAC算法，结合行为优势校正与扩散策略，缓解离线RL中的Q值估计偏差。",
+      "cover_zh": "离线RL新突破｜扩散策略+行为校正，Q值估计不再跑偏",
+      "abstract_zh": "在离线强化学习（RL）中，行为数据与学习策略之间的分布偏移可能导致错误的Q值估计，从而误导策略优化的方向。为了解决这个问题，我们开发了一种行为优势校正策略评估（BAC-PE）方法，该方法利用行为策略的Q函数来校正学习策略的Q函数，从而减轻悲观保守性和过估计偏差。此外，我们从理论上分析了BAC-PE的收敛性，并推导了学习Q函数与真实Q函数之间差异的上界。为了缓解分布偏移，本工作采用扩散模型来表示行为策略和学习策略，通过分布匹配进行精确的策略正则化。此外，在训练过程中引入了Q值引导，以实现有效的策略改进。通过将BAC-PE与扩散策略建模相结合，我们提出了具有行为优势校正的扩散策略（DPBAC）算法。与现有的离线方法相比，DPBAC表现出更强的策略表示能力，并有效缓解了Q值估计的偏差。在D4RL任务的多个领域上的实验结果表明，DPBAC取得了优越的性能，与最先进的（SOTA）算法相比具有显著优势。",
+      "authors": [
+        "Botao Dong",
+        "Longyang Huang",
+        "Ning Pang"
+      ],
+      "authors_all": [
+        "Botao Dong",
+        "Longyang Huang",
+        "Ning Pang",
+        "Hongtian Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-08-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-02332.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-02332-p2.jpg",
+        "assets/img/covers/arxiv-2608-02332-p3.jpg",
+        "assets/img/covers/arxiv-2608-02332-p4.jpg"
+      ],
+      "arxiv_id": "2608.02332",
+      "abs_url": "http://arxiv.org/abs/2608.02332v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02332v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "离线RL结合扩散策略，提出DPBAC算法，在D4RL上超越SOTA，对具身操作策略学习有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Nanyang Technological University"
+      ],
+      "method_tags": [
+        "Offline RL",
+        "Diffusion Policy",
+        "Q-value correction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-02433",
