@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T02:39:33.113130+00:00",
+  "generated_at": "2026-08-13T04:53:01.211328+00:00",
   "count": 2046,
   "papers": [
     {
@@ -23609,7 +23609,8 @@
       "published": "2026-08-12",
       "channels": [
         "manipulation",
-        "sim2real"
+        "sim2real",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -27691,13 +27692,100 @@
       ]
     },
     {
+      "id": "arxiv-2608-07600",
+      "source": "arxiv_discover",
+      "title": "AdaDexGrasp: Adaptive Dexterous Grasping via 3D Visuo-Tactile Representation Fusion",
+      "title_zh": "AdaDexGrasp：通过3D视觉-触觉表征融合实现自适应灵巧抓取",
+      "tldr_zh": "提出视觉-触觉融合框架，通过接触后触觉引导优化，显著提升灵巧抓取成功率与泛化性。",
+      "cover_zh": "视觉+触觉融合，机器人抓取终于能像人一样自适应调整了！",
+      "abstract_zh": "人类通过无缝整合视觉感知和触觉反馈来实现稳定且自适应的抓取，这一能力在机器人系统中仍然难以复现。现有的机器人抓取方法主要依赖视觉输入，缺乏接触后触觉引导的自适应机制，限制了鲁棒性和泛化能力。为解决这一挑战，我们提出一个统一的视觉-触觉融合抓取框架，集成了抓取生成、可行性预测和自适应优化。其核心是一种高效的视觉-触觉表征，通过将触觉信号与手指身份关联，紧密融合物体几何与触觉反馈。这种统一表征支持规划阶段的接触感知抓取姿态生成和接触后的触觉引导优化，使系统能够推理细粒度的手指-物体交互并动态调整抓取。在仿真和真实环境中的综合实验表明，我们的方法显著提高了抓取成功率和跨不同物体的泛化能力。",
+      "authors": [
+        "Xirui Liang",
+        "Jiaqi Liang",
+        "Jingkai Xu"
+      ],
+      "authors_all": [
+        "Xirui Liang",
+        "Jiaqi Liang",
+        "Jingkai Xu",
+        "Yuran Wang",
+        "Ruochong Li",
+        "Yuanpei Chen",
+        "Masayoshi Tomizuka",
+        "Wei Zhan",
+        "Ruihai Wu"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · ECCV 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-07600.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-07600-p2.jpg",
+        "assets/img/covers/arxiv-2608-07600-p3.jpg",
+        "assets/img/covers/arxiv-2608-07600-p4.jpg"
+      ],
+      "arxiv_id": "2608.07600",
+      "abs_url": "http://arxiv.org/abs/2608.07600v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.07600v1",
+      "venue": "ECCV 2026",
+      "venue_announced": "2026-08-13",
+      "score": 47,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "融合视觉触觉的灵巧抓取框架，含抓取生成与自适应优化，仿真与真机验证，对操作研究有较高价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University",
+        "The Hong Kong University of Science and Technology",
+        "University of California, Berkeley"
+      ],
+      "method_tags": [
+        "visuo-tactile fusion",
+        "grasp generation",
+        "adaptive refinement"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2605-15195",
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，内存仅用30%，数据量增15倍。",
-      "cover_zh": "重建模型也能预测缩放？VGGT-Ω用30%内存实现精度飙升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分替代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度，并提升下游任务性能。",
+      "cover_zh": "重建模型也能这么强？内存砍70%，精度反超77%！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地扩展。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -27904,6 +27992,77 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-11901",
+      "source": "arxiv",
+      "title": "DaViNCi: A Dataset Towards Outdoor Vision-and-Language Navigation with Continuous Actions and Dynamic Elements",
+      "title_zh": "DaViNCi：面向户外视觉语言导航的连续动作与动态元素数据集",
+      "tldr_zh": "首个引入连续动作与动态元素的户外VLN数据集，成功率显著下降，挑战真实环境。",
+      "cover_zh": "户外导航新难题｜连续动作+动态元素，成功率暴跌超10%？",
+      "abstract_zh": "视觉语言导航（VLN）已从室内逐步扩展到室外环境。然而，现有的户外VLN数据集仍依赖固定的离散拓扑图进行构建，这无法适应快速变化的真实户外环境，并阻碍了VLN智能体的模拟到现实迁移。为解决这一局限，我们提出了DaViNCi（动态环境中的连续视觉语言导航），这是首个同时引入连续和动态因素的户外VLN数据集。智能体不仅要在户外环境中使用连续动作移动，还需处理不可预测的动态元素。该数据集包含六个不同的地图，共6,933条轨迹。通过全面的对比实验，我们发现，在离散环境中，DaViNCi上的成功率相比以往数据集下降了超过10%，而在连续设置中下降更为显著，这证明了DaViNCi的挑战性。此外，我们阐明了动作粒度和动态元素的影响。这些结果展示了DaViNCi在推动户外VLN向更真实环境发展方面的实用价值。网站：https://xzh0312.github.io/DaViNCi/。",
+      "authors": [
+        "Zihao Xie",
+        "Pingrui Lai",
+        "Yitong Wu"
+      ],
+      "authors_all": [
+        "Zihao Xie",
+        "Pingrui Lai",
+        "Yitong Wu",
+        "Hua Yang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-12",
+      "channels": [
+        "sim2real",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-11901.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-11901-p2.jpg",
+        "assets/img/covers/arxiv-2608-11901-p3.jpg",
+        "assets/img/covers/arxiv-2608-11901-p4.jpg"
+      ],
+      "arxiv_id": "2608.11901",
+      "abs_url": "http://arxiv.org/abs/2608.11901v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11901v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 46,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "首个户外连续动态VLN数据集，具挑战性，对具身导航研究有高价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "Vision-and-Language Navigation",
+        "Continuous Environment",
+        "Dynamic Elements"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -42500,8 +42659,8 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能转圈圈？Atlas 新动作太酷了！",
-      "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
+      "cover_zh": "机器人也能玩转体？Atlas 新动作太酷了！",
+      "abstract_zh": "Atlas 进行了一次旋转，并尝试了一些新动作。",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -47232,76 +47391,6 @@
         "VQ-VAE",
         "action tokenizer",
         "language grounding"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-11901",
-      "source": "arxiv",
-      "title": "DaViNCi: A Dataset Towards Outdoor Vision-and-Language Navigation with Continuous Actions and Dynamic Elements",
-      "title_zh": "DaViNCi：面向户外视觉语言导航的连续动作与动态元素数据集",
-      "tldr_zh": "首个引入连续动作与动态元素的户外VLN数据集，成功率显著下降，挑战真实环境。",
-      "cover_zh": "户外导航新难题｜连续动作+动态元素，成功率暴跌超10%？",
-      "abstract_zh": "视觉语言导航（VLN）已从室内逐步扩展到室外环境。然而，现有的户外VLN数据集仍依赖固定的离散拓扑图进行构建，这无法适应快速变化的真实户外环境，并阻碍了VLN智能体的模拟到现实迁移。为解决这一局限，我们提出了DaViNCi（动态环境中的连续视觉语言导航），这是首个同时引入连续和动态因素的户外VLN数据集。智能体不仅要在户外环境中使用连续动作移动，还需处理不可预测的动态元素。该数据集包含六个不同的地图，共6,933条轨迹。通过全面的对比实验，我们发现，在离散环境中，DaViNCi上的成功率相比以往数据集下降了超过10%，而在连续设置中下降更为显著，这证明了DaViNCi的挑战性。此外，我们阐明了动作粒度和动态元素的影响。这些结果展示了DaViNCi在推动户外VLN向更真实环境发展方面的实用价值。网站：https://xzh0312.github.io/DaViNCi/。",
-      "authors": [
-        "Zihao Xie",
-        "Pingrui Lai",
-        "Yitong Wu"
-      ],
-      "authors_all": [
-        "Zihao Xie",
-        "Pingrui Lai",
-        "Yitong Wu",
-        "Hua Yang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-12",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-11901.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-11901-p2.jpg",
-        "assets/img/covers/arxiv-2608-11901-p3.jpg",
-        "assets/img/covers/arxiv-2608-11901-p4.jpg"
-      ],
-      "arxiv_id": "2608.11901",
-      "abs_url": "http://arxiv.org/abs/2608.11901v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.11901v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "首个户外连续动态VLN数据集，具挑战性，对具身导航研究有高价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Shanghai Jiao Tong University"
-      ],
-      "method_tags": [
-        "Vision-and-Language Navigation",
-        "Continuous Environment",
-        "Dynamic Elements"
       ],
       "platform": [],
       "sim_stack": [],
@@ -60938,89 +61027,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-07600",
-      "source": "arxiv_discover",
-      "title": "AdaDexGrasp: Adaptive Dexterous Grasping via 3D Visuo-Tactile Representation Fusion",
-      "title_zh": "AdaDexGrasp：通过3D视觉-触觉表征融合实现自适应灵巧抓取",
-      "tldr_zh": "提出视觉-触觉融合框架，通过接触后触觉引导优化，显著提升灵巧抓取成功率与泛化性。",
-      "cover_zh": "视觉+触觉融合，机器人抓取终于能像人一样自适应调整了！",
-      "abstract_zh": "人类通过无缝整合视觉感知和触觉反馈来实现稳定且自适应的抓取，这一能力在机器人系统中仍然难以复现。现有的机器人抓取方法主要依赖视觉输入，缺乏接触后触觉引导的自适应机制，限制了鲁棒性和泛化能力。为解决这一挑战，我们提出一个统一的视觉-触觉融合抓取框架，集成了抓取生成、可行性预测和自适应优化。其核心是一种高效的视觉-触觉表征，通过将触觉信号与手指身份关联，紧密融合物体几何与触觉反馈。这种统一表征支持规划阶段的接触感知抓取姿态生成和接触后的触觉引导优化，使系统能够推理细粒度的手指-物体交互并动态调整抓取。在仿真和真实环境中的综合实验表明，我们的方法显著提高了抓取成功率和跨不同物体的泛化能力。",
-      "authors": [
-        "Xirui Liang",
-        "Jiaqi Liang",
-        "Jingkai Xu"
-      ],
-      "authors_all": [
-        "Xirui Liang",
-        "Jiaqi Liang",
-        "Jingkai Xu",
-        "Yuran Wang",
-        "Ruochong Li",
-        "Yuanpei Chen",
-        "Masayoshi Tomizuka",
-        "Wei Zhan",
-        "Ruihai Wu"
-      ],
-      "primary_category": "",
-      "published": "2026-08-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 北大"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKUST"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-07600.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-07600-p2.jpg",
-        "assets/img/covers/arxiv-2608-07600-p3.jpg",
-        "assets/img/covers/arxiv-2608-07600-p4.jpg"
-      ],
-      "arxiv_id": "2608.07600",
-      "abs_url": "http://arxiv.org/abs/2608.07600v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.07600v1",
-      "venue": "ECCV 2026",
-      "venue_announced": "2026-08-13",
-      "score": 37,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "融合视觉触觉的灵巧抓取框架，含抓取生成与自适应优化，仿真与真机验证，对操作研究有较高价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Peking University",
-        "The Hong Kong University of Science and Technology",
-        "University of California, Berkeley"
-      ],
-      "method_tags": [
-        "visuo-tactile fusion",
-        "grasp generation",
-        "adaptive refinement"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2608-06729",
@@ -80997,6 +81003,139 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-11521",
+      "source": "arxiv",
+      "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models",
+      "title_zh": "保留未来，丢弃展开：RIFT 用于世界动作模型",
+      "tldr_zh": "RIFT 通过一次前向传播构建未来缓存，无需迭代展开，保持高性能并大幅降低延迟。",
+      "cover_zh": "告别视频展开！RIFT 让机器人动作预测一次搞定，延迟大降还保精度",
+      "abstract_zh": "世界动作模型（WAMs）根据预测的未来来调节机器人动作，但迭代视频展开会增加部署延迟。我们探究动作生成是否需要逐步展开的轨迹，还是仅需要其未来表示。在全部 40 个 LIBERO 任务上的四个 WAM 中，成对的闭环干预表明，掩蔽或重新分配未来缓存值会改变执行并降低成功率，表明对未来值及其分配位置的敏感性。然而，对于 Joint 和 Cosmos-2，重放一个固定的最终干净键/值（K/V）缓存几乎保持未修改的执行，末端执行器平均位移误差为 1.7 至 1.9 厘米，成功率为 97.9% 至 98.2%。这将缓存消费与生产分开：这些模型可以重用固定缓存，但仍需要迭代展开来构建它。因此，我们提出 RIFT（无展开的未来令牌想象），它使用学习到的预期令牌在一次骨干网络传递中构建完整的未来 K/V 缓存，同时保留原始的未来读取接口。在 LIBERO 上，RIFT 实现了 98.8% 的成功率，接近基于展开的 Joint、IDM 和 LingBot-VA 的 98.4% 至 98.6%，同时将动作块延迟降低了 68.2% 至 89.1%。在 RoboTwin 2.0 上，RIFT 在干净/随机场景中达到 92.9/92.6%，是评估方法中观察到的最高值。这些结果支持在部署时无需迭代视频生成的无展开未来条件化。",
+      "authors": [
+        "Chushan Zhang",
+        "Jinguang Tong",
+        "Xuesong Li"
+      ],
+      "authors_all": [
+        "Chushan Zhang",
+        "Jinguang Tong",
+        "Xuesong Li",
+        "Yikai Wang",
+        "Hongdong Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-12",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-11521.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-11521-p2.jpg",
+        "assets/img/covers/arxiv-2608-11521-p3.jpg",
+        "assets/img/covers/arxiv-2608-11521-p4.jpg"
+      ],
+      "arxiv_id": "2608.11521",
+      "abs_url": "http://arxiv.org/abs/2608.11521v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11521v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出世界动作模型的高效推理方法，涉及未来表征与缓存复用，对具身世界模型研究有重要价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Australian National University",
+        "Beijing Normal University"
+      ],
+      "method_tags": [
+        "World Action Models",
+        "rollout-free future conditioning",
+        "latency reduction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-11769",
+      "source": "arxiv",
+      "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
+      "title_zh": "人形双臂操作中的策略诱导手部先验：诊断与缓解初始姿态依赖性",
+      "tldr_zh": "研究发现VLA策略存在初始姿态依赖的手部先验，扩大训练数据覆盖可提升鲁棒性。",
+      "cover_zh": "机器人手部选择竟受初始姿势影响？新研究揭示并缓解这一隐藏偏差！",
+      "abstract_zh": "视觉-语言-动作（VLA）策略预期能在机器人初始配置变化时稳健运行，但总体任务成功率可能掩盖特定姿态下的失败和不恰当的手部选择。本研究探讨了基于VLA的人形双臂操作中的初始姿态依赖性。我们将依赖于初始条件的早期手部偏好特征化为策略诱导的手部先验，并使用HandPriorScore、残余手部偏差和目标响应性对其进行量化。对多种策略和17种初始配置的评估揭示了强烈的初始姿态-策略交互作用：同一姿态在不同策略下产生显著不同的成功率，而单一策略在不同姿态下表现出较大的性能变化。特定的初始手臂配置可以抑制或诱发不对称的手部偏好，其效果在不同策略中方向和强度各异。腕部相机观察也影响手部选择和任务性能。在训练数据集中扩大初始姿态覆盖范围显著提高了鲁棒性，而针对低性能配置的定向增强则提高了其成功率。跨训练配置的比较表明，对目标模拟任务的充分暴露是有益的，而真实或辅助数据的效果取决于姿态覆盖、模拟比例和观察可用性。这些发现刻画了姿态条件的手部先验，确定了局部初始手臂配置作为手部选择行为的因果手柄，并展示了数据覆盖和训练组成如何影响初始姿态鲁棒性。",
+      "authors": [
+        "Chaeyeon Jung",
+        "Juyoun Park"
+      ],
+      "authors_all": [
+        "Chaeyeon Jung",
+        "Juyoun Park"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-12",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-11769.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-11769-p2.jpg",
+        "assets/img/covers/arxiv-2608-11769-p3.jpg",
+        "assets/img/covers/arxiv-2608-11769-p4.jpg"
+      ],
+      "arxiv_id": "2608.11769",
+      "abs_url": "http://arxiv.org/abs/2608.11769v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11769v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "针对人形双臂VLA策略的初始位姿依赖与手部先验诊断，提出量化指标与缓解方法，对全身控制鲁棒性有重要参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Center for Humanoid Research, Korea Institute of Science and Technology (KIST)"
+      ],
+      "method_tags": [
+        "VLA",
+        "initial-pose dependence",
+        "hand prior"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "vid-youtube-CAdTjePDBfc",
       "source": "video_youtube",
       "title": "Helix 02 Living Room Tidy",
@@ -84746,6 +84885,71 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-12308",
+      "source": "arxiv",
+      "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
+      "title_zh": "DreamFly：用于空中视觉语言导航的因果记忆与滚动时域扩散规划",
+      "tldr_zh": "DreamFly通过因果记忆和滚动时域扩散规划，提升空中视觉语言导航性能。",
+      "cover_zh": "空中导航新突破｜因果记忆+滚动规划，让无人机看懂指令",
+      "abstract_zh": "空中视觉语言导航（VLN）要求具身智能体在部分可观测条件下，随时间整合视觉证据、规划未来动作，并判断是否到达导航目标。尽管最近的VLA模型提供了一种有前景的感知到动作范式，但由于历史上下文有限、规划视野短以及隐式终止不可靠，将其适应于空中导航仍然具有挑战性。为解决这些问题，我们提出了DreamFly，一个基于Dream-VLA的扩散式空中VLN框架。DreamFly引入了一个因果对齐的历史记忆，仅使用当前决策步骤之前的观测来增强当前视觉表示，从而在不泄露未来信息的情况下实现时间推理。我们进一步将导航表述为滚动时域扩散规划，其中策略预测一个$K$步动作块，但仅执行第一个动作后重新规划。这种“计划K步，执行一步”的策略将未来动作作为辅助规划目标，同时保持闭环视觉反馈。最后，LiteStop直接从初始全掩码状态的动作logits估计停止概率，将显式终止与动作生成解耦。在OpenFly基准上的实验表明，在可见和不可见环境中均取得了一致的改进。DreamFly在测试可见/测试不可见分割上分别实现了32.04%/29.46%的SR和28.22%/23.54%的SPL，在两个指标上均优于所有对比方法，同时实现了最低的导航误差。这些结果证明了联合建模历史上下文、未来动作结构和显式终止对于空中VLN的有效性。",
+      "authors": [
+        "Yan Deng",
+        "Fei Xu"
+      ],
+      "authors_all": [
+        "Yan Deng",
+        "Fei Xu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-12",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-12308.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-12308-p2.jpg",
+        "assets/img/covers/arxiv-2608-12308-p3.jpg",
+        "assets/img/covers/arxiv-2608-12308-p4.jpg"
+      ],
+      "arxiv_id": "2608.12308",
+      "abs_url": "http://arxiv.org/abs/2608.12308v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.12308v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出基于扩散的航拍VLN规划框架，结合因果记忆与滚动时域规划，对具身导航有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "School of Electronic Information Engineering, Xi'an Technological University",
+        "School of Computer Science and Engineering, Xi'an Technological University"
+      ],
+      "method_tags": [
+        "Diffusion Policy",
+        "Vision-Language-Action Models",
+        "Receding-Horizon Planning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-efea3ad233",
       "source": "qbitai",
       "title": "世界模型能实时玩了，蚂蚁灵波开源LingBot-World-Fast",
@@ -86557,69 +86761,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-11769",
-      "source": "arxiv",
-      "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
-      "title_zh": "人形双臂操作中的策略诱导手部先验：诊断与缓解初始姿态依赖性",
-      "tldr_zh": "研究发现VLA策略存在初始姿态依赖的手部先验，扩大训练数据覆盖可提升鲁棒性。",
-      "cover_zh": "机器人手部选择竟受初始姿势影响？新研究揭示并缓解这一隐藏偏差！",
-      "abstract_zh": "视觉-语言-动作（VLA）策略预期能在机器人初始配置变化时稳健运行，但总体任务成功率可能掩盖特定姿态下的失败和不恰当的手部选择。本研究探讨了基于VLA的人形双臂操作中的初始姿态依赖性。我们将依赖于初始条件的早期手部偏好特征化为策略诱导的手部先验，并使用HandPriorScore、残余手部偏差和目标响应性对其进行量化。对多种策略和17种初始配置的评估揭示了强烈的初始姿态-策略交互作用：同一姿态在不同策略下产生显著不同的成功率，而单一策略在不同姿态下表现出较大的性能变化。特定的初始手臂配置可以抑制或诱发不对称的手部偏好，其效果在不同策略中方向和强度各异。腕部相机观察也影响手部选择和任务性能。在训练数据集中扩大初始姿态覆盖范围显著提高了鲁棒性，而针对低性能配置的定向增强则提高了其成功率。跨训练配置的比较表明，对目标模拟任务的充分暴露是有益的，而真实或辅助数据的效果取决于姿态覆盖、模拟比例和观察可用性。这些发现刻画了姿态条件的手部先验，确定了局部初始手臂配置作为手部选择行为的因果手柄，并展示了数据覆盖和训练组成如何影响初始姿态鲁棒性。",
-      "authors": [
-        "Chaeyeon Jung",
-        "Juyoun Park"
-      ],
-      "authors_all": [
-        "Chaeyeon Jung",
-        "Juyoun Park"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-12",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-11769.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-11769-p2.jpg",
-        "assets/img/covers/arxiv-2608-11769-p3.jpg",
-        "assets/img/covers/arxiv-2608-11769-p4.jpg"
-      ],
-      "arxiv_id": "2608.11769",
-      "abs_url": "http://arxiv.org/abs/2608.11769v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.11769v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 22,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "针对人形双臂VLA策略的初始位姿依赖与手部先验诊断，提出量化指标与缓解方法，对全身控制鲁棒性有重要参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Center for Humanoid Research, Korea Institute of Science and Technology (KIST)"
-      ],
-      "method_tags": [
-        "VLA",
-        "initial-pose dependence",
-        "hand prior"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -102879,138 +103020,6 @@
         "change point detection",
         "multimodal analysis",
         "teleoperation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-11521",
-      "source": "arxiv",
-      "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models",
-      "title_zh": "保留未来，丢弃展开：RIFT 用于世界动作模型",
-      "tldr_zh": "RIFT 通过一次前向传播构建未来缓存，无需迭代展开，保持高性能并大幅降低延迟。",
-      "cover_zh": "告别视频展开！RIFT 让机器人动作预测一次搞定，延迟大降还保精度",
-      "abstract_zh": "世界动作模型（WAMs）根据预测的未来来调节机器人动作，但迭代视频展开会增加部署延迟。我们探究动作生成是否需要逐步展开的轨迹，还是仅需要其未来表示。在全部 40 个 LIBERO 任务上的四个 WAM 中，成对的闭环干预表明，掩蔽或重新分配未来缓存值会改变执行并降低成功率，表明对未来值及其分配位置的敏感性。然而，对于 Joint 和 Cosmos-2，重放一个固定的最终干净键/值（K/V）缓存几乎保持未修改的执行，末端执行器平均位移误差为 1.7 至 1.9 厘米，成功率为 97.9% 至 98.2%。这将缓存消费与生产分开：这些模型可以重用固定缓存，但仍需要迭代展开来构建它。因此，我们提出 RIFT（无展开的未来令牌想象），它使用学习到的预期令牌在一次骨干网络传递中构建完整的未来 K/V 缓存，同时保留原始的未来读取接口。在 LIBERO 上，RIFT 实现了 98.8% 的成功率，接近基于展开的 Joint、IDM 和 LingBot-VA 的 98.4% 至 98.6%，同时将动作块延迟降低了 68.2% 至 89.1%。在 RoboTwin 2.0 上，RIFT 在干净/随机场景中达到 92.9/92.6%，是评估方法中观察到的最高值。这些结果支持在部署时无需迭代视频生成的无展开未来条件化。",
-      "authors": [
-        "Chushan Zhang",
-        "Jinguang Tong",
-        "Xuesong Li"
-      ],
-      "authors_all": [
-        "Chushan Zhang",
-        "Jinguang Tong",
-        "Xuesong Li",
-        "Yikai Wang",
-        "Hongdong Li"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-12",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-11521.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-11521-p2.jpg",
-        "assets/img/covers/arxiv-2608-11521-p3.jpg",
-        "assets/img/covers/arxiv-2608-11521-p4.jpg"
-      ],
-      "arxiv_id": "2608.11521",
-      "abs_url": "http://arxiv.org/abs/2608.11521v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.11521v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出世界动作模型的高效推理方法，涉及未来表征与缓存复用，对具身世界模型研究有重要价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Australian National University",
-        "Beijing Normal University"
-      ],
-      "method_tags": [
-        "World Action Models",
-        "rollout-free future conditioning",
-        "latency reduction"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-12308",
-      "source": "arxiv",
-      "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
-      "title_zh": "DreamFly：用于空中视觉语言导航的因果记忆与滚动时域扩散规划",
-      "tldr_zh": "DreamFly通过因果记忆和滚动时域扩散规划，提升空中视觉语言导航性能。",
-      "cover_zh": "空中导航新突破｜因果记忆+滚动规划，让无人机看懂指令",
-      "abstract_zh": "空中视觉语言导航（VLN）要求具身智能体在部分可观测条件下，随时间整合视觉证据、规划未来动作，并判断是否到达导航目标。尽管最近的VLA模型提供了一种有前景的感知到动作范式，但由于历史上下文有限、规划视野短以及隐式终止不可靠，将其适应于空中导航仍然具有挑战性。为解决这些问题，我们提出了DreamFly，一个基于Dream-VLA的扩散式空中VLN框架。DreamFly引入了一个因果对齐的历史记忆，仅使用当前决策步骤之前的观测来增强当前视觉表示，从而在不泄露未来信息的情况下实现时间推理。我们进一步将导航表述为滚动时域扩散规划，其中策略预测一个$K$步动作块，但仅执行第一个动作后重新规划。这种“计划K步，执行一步”的策略将未来动作作为辅助规划目标，同时保持闭环视觉反馈。最后，LiteStop直接从初始全掩码状态的动作logits估计停止概率，将显式终止与动作生成解耦。在OpenFly基准上的实验表明，在可见和不可见环境中均取得了一致的改进。DreamFly在测试可见/测试不可见分割上分别实现了32.04%/29.46%的SR和28.22%/23.54%的SPL，在两个指标上均优于所有对比方法，同时实现了最低的导航误差。这些结果证明了联合建模历史上下文、未来动作结构和显式终止对于空中VLN的有效性。",
-      "authors": [
-        "Yan Deng",
-        "Fei Xu"
-      ],
-      "authors_all": [
-        "Yan Deng",
-        "Fei Xu"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-08-12",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-12308.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-12308-p2.jpg",
-        "assets/img/covers/arxiv-2608-12308-p3.jpg",
-        "assets/img/covers/arxiv-2608-12308-p4.jpg"
-      ],
-      "arxiv_id": "2608.12308",
-      "abs_url": "http://arxiv.org/abs/2608.12308v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.12308v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出基于扩散的航拍VLN规划框架，结合因果记忆与滚动时域规划，对具身导航有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "School of Electronic Information Engineering, Xi'an Technological University",
-        "School of Computer Science and Engineering, Xi'an Technological University"
-      ],
-      "method_tags": [
-        "Diffusion Policy",
-        "Vision-Language-Action Models",
-        "Receding-Horizon Planning"
       ],
       "platform": [],
       "sim_stack": [],
