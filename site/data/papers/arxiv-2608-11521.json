@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2608-11521",
+  "source": "arxiv",
+  "title": "Keep the Future, Drop the Rollout: RIFT for World Action Models",
+  "title_zh": "保留未来，丢弃展开：RIFT 用于世界动作模型",
+  "abstract": "World action models (WAMs) condition robot actions on predicted futures, but iterative video rollout increases deployment latency. We ask whether action generation requires the evolving rollout trajectory or only its future representation. Across four WAMs on all 40 LIBERO tasks, paired closed-loop interventions show that masking or reassigning future-cache values changes execution and reduces success, indicating sensitivity to future values and their assigned positions. For Joint and Cosmos-2, however, replaying one fixed final-clean key/value (K/V) cache nearly preserves unmodified execution, with $1.7$ to $1.9$~cm end-effector average displacement error and $97.9\\%$ to $98.2\\%$ success. This separates cache consumption from production: these models can reuse a fixed cache but still require iterative rollout to construct it. We therefore propose RIFT (\\emph{Rollout-free Imagination via Future Tokens}), which uses learned anticipation tokens to construct a complete future K/V cache in one backbone pass while retaining the original future-read interface. On LIBERO, RIFT achieves $98.8\\%$ success, close to rollout-based Joint, IDM, and LingBot-VA at $98.4\\%$ to $98.6\\%$, while reducing action-chunk latency by $68.2\\%$ to $89.1\\%$. On RoboTwin~2.0, RIFT reaches $92.9/92.6\\%$ on clean/randomized scenes, the highest observed among the evaluated methods. These results support rollout-free future conditioning without iterative video generation at deployment.",
+  "abstract_zh": "世界动作模型（WAMs）根据预测的未来来调节机器人动作，但迭代视频展开会增加部署延迟。我们探究动作生成是否需要逐步展开的轨迹，还是仅需要其未来表示。在全部 40 个 LIBERO 任务上的四个 WAM 中，成对的闭环干预表明，掩蔽或重新分配未来缓存值会改变执行并降低成功率，表明对未来值及其分配位置的敏感性。然而，对于 Joint 和 Cosmos-2，重放一个固定的最终干净键/值（K/V）缓存几乎保持未修改的执行，末端执行器平均位移误差为 1.7 至 1.9 厘米，成功率为 97.9% 至 98.2%。这将缓存消费与生产分开：这些模型可以重用固定缓存，但仍需要迭代展开来构建它。因此，我们提出 RIFT（无展开的未来令牌想象），它使用学习到的预期令牌在一次骨干网络传递中构建完整的未来 K/V 缓存，同时保留原始的未来读取接口。在 LIBERO 上，RIFT 实现了 98.8% 的成功率，接近基于展开的 Joint、IDM 和 LingBot-VA 的 98.4% 至 98.6%，同时将动作块延迟降低了 68.2% 至 89.1%。在 RoboTwin 2.0 上，RIFT 在干净/随机场景中达到 92.9/92.6%，是评估方法中观察到的最高值。这些结果支持在部署时无需迭代视频生成的无展开未来条件化。",
+  "tldr_zh": "RIFT 通过一次前向传播构建未来缓存，无需迭代展开，保持高性能并大幅降低延迟。",
+  "cover_zh": "告别视频展开！RIFT 让机器人动作预测一次搞定，延迟大降还保精度",
+  "authors": [
+    {
+      "name": "Chushan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinguang Tong",
+      "affiliation": ""
+    },
+    {
+      "name": "Xuesong Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yikai Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongdong Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "arxiv_id": "2608.11521",
+  "pdf_url": "https://arxiv.org/pdf/2608.11521v1",
+  "abs_url": "http://arxiv.org/abs/2608.11521v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-11521.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-11521-p2.jpg",
+    "assets/img/covers/arxiv-2608-11521-p3.jpg",
+    "assets/img/covers/arxiv-2608-11521-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出世界动作模型的高效推理方法，涉及未来表征与缓存复用，对具身世界模型研究有重要价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Australian National University",
+    "Beijing Normal University"
+  ],
+  "method_tags": [
+    "World Action Models",
+    "rollout-free future conditioning",
+    "latency reduction"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
