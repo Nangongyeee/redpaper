@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2608-13026",
+  "source": "arxiv",
+  "title": "Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning",
+  "title_zh": "时间GRPO：超越视觉-语言-动作强化学习中的轨迹级信用分配",
+  "abstract": "Outcome-driven reinforcement learning offers a scalable way to post-train vision-language-action (VLA) policies from sparse task-success feedback. In common GRPO-based VLA post-training, one rollout-level advantage is applied to every action in the trajectory. A rollout that completes several valid stages but fails later can therefore penalize the actions that produced its earlier progress. We call this trajectory-level credit aliasing. Temporal GRPO addresses this problem by constructing detectable task stages, aligning each rollout with stage-specific action intervals, and comparing only rollouts that have entered the same stage. The resulting stage advantages are applied to their corresponding intervals in a single policy update. On RoboTwin 2.0, Temporal GRPO improves task success and sample efficiency, with consistent gains across task horizons. Controlled updates on LIBERO-Long preserve shared prerequisite stages and concentrate improvement at the first stage where rollout outcomes diverge.",
+  "abstract_zh": "结果驱动的强化学习提供了一种可扩展的方式，从稀疏的任务成功反馈中对视觉-语言-动作（VLA）策略进行后训练。在常见的基于GRPO的VLA后训练中，一个 rollout 级别的优势被应用于轨迹中的每个动作。一个完成了几个有效阶段但后来失败的 rollout 可能会惩罚那些产生早期进展的动作。我们称这种问题为轨迹级信用混淆。时间GRPO通过构建可检测的任务阶段，将每个 rollout 与阶段特定的动作区间对齐，并且只比较进入相同阶段的 rollout 来解决这个问题。由此产生的阶段优势在单次策略更新中应用于相应的区间。在 RoboTwin 2.0 上，时间GRPO提高了任务成功率和样本效率，并在不同任务长度上保持一致增益。在 LIBERO-Long 上的受控更新保留了共享的先决阶段，并将改进集中在 rollout 结果首次出现分歧的阶段。",
+  "tldr_zh": "时间GRPO通过阶段级信用分配改进VLA强化学习，提升任务成功率与样本效率。",
+  "cover_zh": "别再一刀切！这个新方法让机器人学习更精准，成功率飙升",
+  "authors": [
+    {
+      "name": "Yao Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Hang Gao",
+      "affiliation": ""
+    },
+    {
+      "name": "Fengge Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Changwen Zheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenwen Qiang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-13",
+  "updated": "2026-08-13",
+  "arxiv_id": "2608.13026",
+  "pdf_url": "https://arxiv.org/pdf/2608.13026v1",
+  "abs_url": "http://arxiv.org/abs/2608.13026v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-13026.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-13026-p2.jpg",
+    "assets/img/covers/arxiv-2608-13026-p3.jpg",
+    "assets/img/covers/arxiv-2608-13026-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出Temporal GRPO改进VLA强化学习信用分配，提升成功率与样本效率，对操作策略训练有高参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Institute of Software Chinese Academy of Sciences",
+    "University of Chinese Academy of Sciences"
+  ],
+  "method_tags": [
+    "GRPO",
+    "Reinforcement Learning",
+    "VLA"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "RoboTwin 2.0",
+    "LIBERO-Long"
+  ],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2608-13556",
+  "source": "arxiv",
+  "title": "V-RAE: Rethinking Video Latent Spaces for Generation",
+  "title_zh": "V-RAE：重新思考用于生成的视频潜空间",
+  "abstract": "Latent video generation relies on autoencoders to define a compact space in which generative models operate. Although video autoencoder architectures have evolved substantially, their latent spaces are still optimized primarily for pixel-level reconstruction and provide limited high-level semantic organization. A reconstruction-optimal latent space, however, need not be well suited to generative modeling. We propose V-RAE, a video representation autoencoder that builds compact generative latents on top of frozen vision foundation model representations. A lightweight temporal pooling module removes temporal redundancy while preserving semantic structure, and a video decoder reconstructs continuous motion from the compressed features. We evaluate V-RAE with four representative frozen encoders on video reconstruction, semantic probing, and class-conditional generation. V-RAE achieves 2.13 rFVD on K600, outperforming all evaluated large-scale pretrained video VAEs. Its latents retain substantially more semantic information than conventional video tokenizer latents. Under matched generation settings, our best variant achieves gFVD scores of 117.86 and 19.16 on UCF101 and K600, respectively, while converging up to 6x faster}. We further show that reconstruction quality alone is insufficient to characterize generative utility and introduce tFVD, a temporal-coherence diagnostic that correlates more reliably with downstream generation quality. Beyond video generation, V-RAE also improves future video prediction on Cityscapes over the Wan 2.2 VAE latent space under matched prediction settings. Taken together, the experiments show that frozen semantic representations can support video reconstruction, generation, and predictive modeling. The project page: https://v-rae.github.io/.",
+  "abstract_zh": "潜在视频生成依赖于自编码器来定义一个紧凑的空间，生成模型在其中运作。尽管视频自编码器架构已经大幅演进，但其潜空间仍主要针对像素级重建进行优化，提供的高级语义组织有限。然而，重建最优的潜空间不一定适合生成建模。我们提出V-RAE，一种视频表示自编码器，在冻结的视觉基础模型表示之上构建紧凑的生成潜变量。一个轻量级的时间池化模块在保留语义结构的同时去除时间冗余，视频解码器从压缩特征中重建连续运动。我们使用四个具有代表性的冻结编码器在视频重建、语义探测和类条件生成上评估V-RAE。V-RAE在K600上达到2.13 rFVD，优于所有评估的大规模预训练视频VAE。其潜变量比传统视频分词器潜变量保留更多语义信息。在匹配的生成设置下，我们最好的变体在UCF101和K600上分别达到117.86和19.16的gFVD分数，同时收敛速度最多快6倍。我们进一步表明，仅重建质量不足以表征生成效用，并引入tFVD，一种时间一致性诊断，与下游生成质量更可靠地相关。除了视频生成，V-RAE在匹配预测设置下，在Cityscapes上的未来视频预测也优于Wan 2.2 VAE潜空间。综合来看，实验表明冻结的语义表示可以支持视频重建、生成和预测建模。项目页面：https://v-rae.github.io/。",
+  "tldr_zh": "V-RAE利用冻结视觉基础模型构建视频潜空间，重建与生成均优于现有VAE。",
+  "cover_zh": "冻结的视觉模型也能做视频生成？V-RAE重建性能反超大型VAE",
+  "authors": [
+    {
+      "name": "Minghui Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Shengqiong Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hao Fei",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-08-13",
+  "updated": "2026-08-13",
+  "arxiv_id": "2608.13556",
+  "pdf_url": "https://arxiv.org/pdf/2608.13556v1",
+  "abs_url": "http://arxiv.org/abs/2608.13556v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-13556.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-13556-p2.jpg",
+    "assets/img/covers/arxiv-2608-13556-p3.jpg",
+    "assets/img/covers/arxiv-2608-13556-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 26,
+  "source_tags": [],
+  "score": 41,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NUS” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（future video prediction）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 26 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出视频表示自编码器V-RAE，构建生成式潜在空间，与视频世界模型相关，具科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "National University of Singapore",
+    "University of Oxford"
+  ],
+  "method_tags": [
+    "Video Representation Autoencoder",
+    "frozen vision foundation model",
+    "temporal pooling"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
