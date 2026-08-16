@@ -1,6 +1,6 @@
 {
   "date": "2026-08-02",
-  "count": 3,
+  "count": 4,
   "papers": [
     {
       "id": "arxiv-2608-01506",
@@ -159,6 +159,76 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-01127",
+      "source": "arxiv_discover",
+      "title": "MiniWorld: Democratizing the Training of Video World Models from Scratch",
+      "title_zh": "MiniWorld：从零开始民主化视频世界模型的训练",
+      "tldr_zh": "MiniWorld：从零训练视频世界模型，单机8卡几天完成，开源可复现。",
+      "cover_zh": "从零训练视频世界模型？MiniWorld让单机8卡几天搞定，开源可复现！",
+      "abstract_zh": "视频世界模型根据历史观测和控制信号预测未来观测，通过自回归状态转换实现长时程生成。与主要捕捉视觉外观和运动的传统视频生成模型不同，视频世界模型学习在智能体动作下环境演化的底层动力学，为具身AI和交互式模拟提供基础。最近的进展主要依赖于通过后训练或蒸馏来调整预训练的视频生成模型。虽然有效，但这些方法通常需要复杂的训练流程、大量的计算资源，并且存在双向预训练与因果流式推理之间的不匹配问题。近期研究表明，从零开始训练自回归视频世界模型是可行且可扩展的。然而，社区仍然缺乏一个轻量级、透明且完全可复现的基线，能够在适度的计算资源下端到端训练。我们提出了MiniWorld，一个用于从零开始训练流式视频世界模型的可复现框架。MiniWorld采用块因果视频扩散Transformer，在预训练视频VAE的潜空间中使用流匹配进行训练。基于Diffusion Forcing，它采用分块非递减噪声调度和两阶段持续训练，以改善时间建模和稳定性。在推理时，MiniWorld结合滚动KV缓存和流水线异步去噪，在有限计算下实现高效流式生成。整个模型可以在单个8-GPU服务器上几天内完成训练。通过发布训练和推理代码库以及预训练检查点，我们希望MiniWorld能促进视频世界建模的未来研究。",
+      "authors": [
+        "Yian Zhao",
+        "Ruochong Zheng",
+        "Hongcan Guo"
+      ],
+      "authors_all": [
+        "Yian Zhao",
+        "Ruochong Zheng",
+        "Hongcan Guo",
+        "Yu Yan",
+        "Jian Zhang",
+        "Jie Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-08-02",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-01127.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-01127-p2.jpg",
+        "assets/img/covers/arxiv-2608-01127-p3.jpg",
+        "assets/img/covers/arxiv-2608-01127-p4.jpg"
+      ],
+      "arxiv_id": "2608.01127",
+      "abs_url": "http://arxiv.org/abs/2608.01127v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.01127v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出从零训练视频世界模型的轻量可复现框架，方法新颖且开源，对具身世界模型研究有高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University"
+      ],
+      "method_tags": [
+        "Flow Matching",
+        "Diffusion Forcing",
+        "Video World Model"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
