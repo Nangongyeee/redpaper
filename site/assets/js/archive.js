@@ -1,6 +1,6 @@
 // Archive page: pick a day, list papers from that day.
 
-import { Theme } from './storage.js?v=fc89db92';
+import { Theme } from './storage.js?v=23641464';
 import {
   pickCover,
   loadPalettes,
@@ -11,8 +11,8 @@ import {
   attachSearchRedirect,
   showToast,
   fetchJSON,
-} from './utils.js?v=fc89db92';
-import { chipRowsHTML, videoBadgeHTML } from './feed.js?v=fc89db92';
+} from './utils.js?v=23641464';
+import { chipRowsHTML, videoBadgeHTML } from './feed.js?v=23641464';
 
 let _palettes = [];
 
