@@ -1,0 +1,115 @@
+{
+  "id": "arxiv-2608-14490",
+  "source": "arxiv",
+  "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
+  "title_zh": "Twin：通过测试时数字孪生玩未知游戏",
+  "abstract": "We present a Test-time World-model Inference (Twin) system, in which a frontier coding agent writes an executable world model for completing continual learning tasks, such as ARC-AGI-3 games. Traditional approaches hand-engineer such models, one custom design per task. Each game hides its rules and goal, and our system constructs them from simulation and interaction alone. Its inductive prior over grid games is strong enough to recover the true transitions of the game and the goal on nearly all levels. Replay validation happens in a twin world model. The harness enforces that an action is not made until the program reproduces every previous observed game transition. Each mismatch between a world model prediction and the actual action result becomes a counterexample that is used to repair the world model. Twin clears 179 out of 183 levels (97.8%), and does so more efficiently than humans in 158 out of 179 levels (88.3%). The system infers the goal before any reward on 156 of the levels it clears (87.2%), and in the remaining levels automatically discovers the goal by search. The benchmark scores completion and action efficiency, between 0 and 100, against humans playing each game for the first time. Played directly, the base model scores only 7.8%; an off-the-shelf harness increases it to 61.1%, whereas our twin world model increases the same base model to 93.3%, clearing 23 out of 25 games. Building a usable world model is simpler than anticipated, whereas the harder problem is inferring the right goal.",
+  "abstract_zh": "我们提出了一种测试时世界模型推理（Twin）系统，其中前沿编码智能体编写一个可执行的世界模型，用于完成持续学习任务，如ARC-AGI-3游戏。传统方法为每个任务手工设计定制模型。每个游戏隐藏其规则和目标，而我们的系统仅通过模拟和交互来构建它们。其对网格游戏的归纳先验足够强大，几乎在所有关卡中都能恢复游戏的真实转换和目标。重放验证在孪生世界模型中进行。框架确保在程序重现所有先前观察到的游戏转换之前，不会执行任何动作。世界模型预测与实际动作结果之间的每次不匹配都成为用于修复世界模型的反例。Twin清除了183个关卡中的179个（97.8%），并且在179个关卡中的158个（88.3%）中比人类更高效。系统在清除的156个关卡（87.2%）中，在获得任何奖励之前推断出目标，在其余关卡中通过搜索自动发现目标。基准测试根据人类首次玩每个游戏的表现，对完成度和动作效率进行评分，范围在0到100之间。直接播放时，基础模型得分仅为7.8%；现成的框架将其提高到61.1%，而我们的孪生世界模型将相同的基础模型提高到93.3%，清除了25个游戏中的23个。构建一个可用的世界模型比预期的要简单，而更难的问题是推断正确的目标。",
+  "tldr_zh": "Twin系统通过测试时数字孪生，让编码智能体自动构建世界模型，在ARC-AGI-3游戏中达到97.8%的完成率。",
+  "cover_zh": "不用手工设计模型｜这个系统自己写世界模型，游戏通关率97.8%",
+  "authors": [
+    {
+      "name": "Alexy Skoutnev",
+      "affiliation": ""
+    },
+    {
+      "name": "Kirill Acharya",
+      "affiliation": ""
+    },
+    {
+      "name": "Gaston Longhitano",
+      "affiliation": ""
+    },
+    {
+      "name": "Madeleine Udell",
+      "affiliation": ""
+    },
+    {
+      "name": "Kevin Ellis",
+      "affiliation": ""
+    },
+    {
+      "name": "Iddo Drori",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.AI",
+  "categories": [
+    "cs.AI"
+  ],
+  "published": "2026-08-14",
+  "updated": "2026-08-14",
+  "arxiv_id": "2608.14490",
+  "pdf_url": "https://arxiv.org/pdf/2608.14490v1",
+  "abs_url": "http://arxiv.org/abs/2608.14490v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-14490.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-14490-p2.jpg",
+    "assets/img/covers/arxiv-2608-14490-p3.jpg",
+    "assets/img/covers/arxiv-2608-14490-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Stanford"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Cornell"
+    }
+  ],
+  "related_links": [],
+  "page_count": 32,
+  "source_tags": [],
+  "score": 31,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（world model）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 32 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出测试时数字孪生世界模型，用于ARC-AGI任务，强调世界模型构建与目标推断，符合world-model频道。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Stanford University",
+    "Cornell University",
+    "University of Southern California",
+    "Yeshiva University"
+  ],
+  "method_tags": [
+    "World Model",
+    "Test-time",
+    "ARC-AGI-3"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

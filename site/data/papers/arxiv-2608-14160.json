@@ -1,0 +1,119 @@
+{
+  "id": "arxiv-2608-14160",
+  "source": "arxiv",
+  "title": "OccPlanner: Goal-Aware Occupancy-Conditioned Diffusion Planner for Pixel-Goal Navigation",
+  "title_zh": "OccPlanner：用于像素目标导航的目标感知占用条件扩散规划器",
+  "abstract": "Pixel-goal navigation specifies targets directly in the agent's camera view, but a target pixel provides neither metric depth nor traversability, making 3D goal grounding and collision-free continuous planning challenging. We present OccPlanner, a goal-aware occupancy-conditioned diffusion planner that grounds pixel goals in egocentric metric space and sequentially conditions the goal representation on temporal visual context and learned local 3D occupancy features. To provide occupancy supervision at scale, we introduce L3ROcc, which converts monocular RGB navigation videos into robot-centric local 3D occupancy annotations through geometric reconstruction and ray-based visibility reasoning. We train OccPlanner on InternData-N1 and evaluate it in closed-loop simulation across four unseen scene categories from InternScenes and two goal-distance ranges. In the 5-8 m setting, OccPlanner increases the average success rate (SR) over NavDP from 20.81% to 71.55% across the four categories, reaching 86.20% and 84.92% in cluttered-easy and cluttered-hard scenes, respectively. Real-world open-loop experiments on a Unitree Go2 further provide initial evidence of sim-to-real transfer and adaptation with L3ROcc-generated supervision.",
+  "abstract_zh": "像素目标导航直接在智能体的相机视图中指定目标，但目标像素既不提供度量深度，也不提供可通行性，这使得3D目标定位和无碰撞的连续规划具有挑战性。我们提出了OccPlanner，一种目标感知的占用条件扩散规划器，它在自我中心的度量空间中定位像素目标，并依次将目标表示与时间视觉上下文和学习到的局部3D占用特征进行条件化。为了提供大规模的占用监督，我们引入了L3ROcc，它通过几何重建和基于射线的可见性推理，将单目RGB导航视频转换为以机器人为中心的局部3D占用标注。我们在InternData-N1上训练OccPlanner，并在InternScenes的四个未见场景类别和两个目标距离范围内进行闭环模拟评估。在5-8米设置中，OccPlanner将四个类别的平均成功率（SR）从NavDP的20.81%提高到71.55%，在杂乱简单和杂乱困难场景中分别达到86.20%和84.92%。在Unitree Go2上的真实世界开环实验进一步提供了模拟到现实迁移和L3ROcc生成监督适应的初步证据。",
+  "tldr_zh": "OccPlanner通过占用条件扩散规划，将像素目标导航成功率从20.81%提升至71.55%。",
+  "cover_zh": "像素目标导航新突破！成功率从20%飙到71%，扩散模型立功了？",
+  "authors": [
+    {
+      "name": "Binling Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Nianjin Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Xi Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Liang Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhou Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuang Wei",
+      "affiliation": ""
+    },
+    {
+      "name": "Longrui Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanchi Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Lanpeng Jia",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-14",
+  "updated": "2026-08-14",
+  "arxiv_id": "2608.14160",
+  "pdf_url": "https://arxiv.org/pdf/2608.14160v1",
+  "abs_url": "http://arxiv.org/abs/2608.14160v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-14160.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-14160-p2.jpg",
+    "assets/img/covers/arxiv-2608-14160-p3.jpg",
+    "assets/img/covers/arxiv-2608-14160-p4.jpg"
+  ],
+  "channels": [
+    "locomotion",
+    "sim2real"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 11,
+  "source_tags": [],
+  "score": 14,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（unitree go、sim-to-real）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 11 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "提出占用条件扩散规划器，结合仿真与真机验证，具身导航与sim2real价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Changhong Intelligent Robot",
+    "University of Electronic Science and Technology of China"
+  ],
+  "method_tags": [
+    "Diffusion Planner",
+    "Occupancy-Conditioned",
+    "Pixel-Goal Navigation"
+  ],
+  "platform": [
+    "Unitree Go2"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

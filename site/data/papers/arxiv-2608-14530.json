@@ -1,0 +1,96 @@
+{
+  "id": "arxiv-2608-14530",
+  "source": "arxiv",
+  "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
+  "title_zh": "Marionette：预测世界状态，渲染几何，绘制外观",
+  "abstract": "Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making consistency and controllability fragile. We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural model to synthesize appearance. We instantiate this idea as Marionette, a world model for interactive games with articulated characters. First, a two-stage autoregressive dynamics model predicts an explicit and interpretable 276-dimensional 3D world state comprising multi-entity articulated skeletons, metric root trajectories, and rotations. Second, a zero-parameter graphics bridge converts the predicted state into pose-control videos, computing world-space geometry and occlusion in closed form. Third, a control-conditioned video-diffusion observation model synthesizes photorealistic RGB observations from the resulting structured controls. Our experiments establish two properties of Marionette. First, the predicted world state is directly controllable. Forcing a mismatched action stream changes root-aligned joint error by 31% across 48 held-out segments. Second, long-horizon behaviour is determined in the state, and can be repaired there. Left free, the two generated characters drift to 21.2 m apart (recorded sessions stay near 5 m) and a third of frames show ground penetration. Two rules imposed on the explicit state, a terrain collider and a separation cap, cut penetration by 66% and keep the pair engaged, with no change to the observation model. Routing appearance through the predicted state costs no fidelity we can detect, at an FVD of 831 against 799 for recorded pose.",
+  "abstract_zh": "交互式游戏世界模型通常直接在像素或潜在空间中自回归地观察视觉信息，迫使姿态、几何和遮挡等结构化属性由同一生成序列隐式维护。在长时间跨度上，这些潜在世界属性的误差会累积，使得一致性和可控性变得脆弱。我们显式地建模不断演变的世界状态，将精确的几何计算委托给固定的、零参数的渲染器，而让神经模型负责合成外观。我们将这一思想实例化为Marionette，一个用于具有关节角色的交互式游戏的世界模型。首先，一个两阶段自回归动力学模型预测一个显式且可解释的276维3D世界状态，包括多实体关节骨架、度量根轨迹和旋转。其次，一个零参数的图形桥接器将预测状态转换为姿态控制视频，以闭合形式计算世界空间几何和遮挡。第三，一个控制条件的视频扩散观测模型从生成的结构化控制中合成逼真的RGB观测。我们的实验确立了Marionette的两个特性。首先，预测的世界状态是直接可控的。强制一个不匹配的动作流在48个保留片段上将根对齐的关节误差改变了31%。其次，长时间行为在状态中决定，并且可以在那里修复。自由运行时，两个生成的角色漂移到相距21.2米（记录的会话保持在5米附近），三分之一的帧显示地面穿透。在显式状态上施加两条规则，即地形碰撞器和分离上限，将穿透减少了66%，并保持两者互动，而观测模型不变。通过预测状态路由外观不会损失我们可检测的保真度，FVD为831，而记录姿态为799。",
+  "tldr_zh": "Marionette显式预测3D世界状态，用零参数渲染器处理几何，实现可控且长时间一致的游戏世界模型。",
+  "cover_zh": "游戏世界模型还能这样？显式状态让角色不再穿模，长时可控性直接起飞！",
+  "authors": [
+    {
+      "name": "Zian Meng",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhen Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Chuanhao Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiang Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaipeng Zhang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "published": "2026-08-14",
+  "updated": "2026-08-14",
+  "arxiv_id": "2608.14530",
+  "pdf_url": "https://arxiv.org/pdf/2608.14530v1",
+  "abs_url": "http://arxiv.org/abs/2608.14530v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-14530.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-14530-p2.jpg",
+    "assets/img/covers/arxiv-2608-14530-p3.jpg",
+    "assets/img/covers/arxiv-2608-14530-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 25,
+  "source_tags": [],
+  "score": 9,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 25 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出显式世界状态+可微渲染+扩散观测的交互世界模型，具身规划可借鉴，归world-model。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Alaya Lab",
+    "Shanghai Innovation Institute",
+    "Huazhong University of Science and Technology"
+  ],
+  "method_tags": [
+    "World Model",
+    "Video Diffusion",
+    "Autoregressive Dynamics"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
