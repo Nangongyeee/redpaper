@@ -1,0 +1,131 @@
+{
+  "id": "arxiv-2608-16712",
+  "source": "arxiv",
+  "title": "H-PAC Hand: Control-Oriented Modeling and Tendon-Elasticity Compensation for an Underactuated Robotic Hand",
+  "title_zh": "H-PAC 手：欠驱动机器人手控制导向建模与肌腱弹性补偿",
+  "abstract": "Underactuated tendon-driven hands offer compact actuation and passive compliance, but tendon elongation under restoring-spring loading introduces configuration-dependent joint deviations. This paper presents H-PAC, a modular 6-actuator, 15-DoF robotic hand with a control-oriented modeling and implementation framework. A sparse analytical actuator-joint model is derived from the tendon-routing geometry, and a mechanics-based compensation model is developed to account for tendon-elasticity-induced joint errors.   The proposed method is implemented in a hierarchical architecture: a host computer performs workspace-constrained posture mapping and compensation, while an ESP32 generates synchronized commands for six position-controlled servos. The same control parameters and execution strategy are used across all tasks without task-specific retuning.   Monotonic servo-sweep experiments show that the compensation substantially improves joint-angle prediction. The MAE of the index DIP joint decreases from 1.15 degrees to 0.18 degrees, and all nine evaluated joints achieve an MAE below 0.23 degrees. Representative postures and grasping configurations are further executed using the same control pipeline without external joint or force sensing in the control loop. The results demonstrate a practical approach to improving posture reproducibility in compact underactuated robotic end-effectors.",
+  "abstract_zh": "欠驱动腱驱动手提供紧凑的驱动和被动柔顺性，但恢复弹簧载荷下的肌腱伸长会引入与构型相关的关节偏差。本文介绍了 H-PAC，一种模块化的 6 执行器、15 自由度机器人手，并提出了控制导向的建模与实现框架。从肌腱布线几何中推导出稀疏解析执行器-关节模型，并开发了基于力学的补偿模型以考虑肌腱弹性引起的关节误差。所提方法在分层架构中实现：主机执行工作空间约束的姿态映射和补偿，而 ESP32 为六个位置控制舵机生成同步命令。所有任务使用相同的控制参数和执行策略，无需针对特定任务重新调整。单调舵机扫描实验表明，补偿显著提高了关节角预测精度。食指 DIP 关节的 MAE 从 1.15 度降至 0.18 度，所有九个评估关节的 MAE 均低于 0.23 度。使用相同的控制流程执行了代表性姿态和抓取配置，控制回路中无外部关节或力传感。结果展示了一种在紧凑欠驱动机器人末端执行器中提高姿态可重复性的实用方法。",
+  "tldr_zh": "提出 H-PAC 手，通过肌腱弹性补偿将关节角预测误差降至 0.23 度以下。",
+  "cover_zh": "欠驱动手也能精准控制？这个新方法让关节误差直降 84% ！",
+  "authors": [
+    {
+      "name": "Teng Yan",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiongxu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Teng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yue Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Qixiang Hua",
+      "affiliation": ""
+    },
+    {
+      "name": "Zihang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yongru Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Bingzhuo Zhong",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-17",
+  "updated": "2026-08-17",
+  "arxiv_id": "2608.16712",
+  "pdf_url": "https://arxiv.org/pdf/2608.16712v1",
+  "abs_url": "http://arxiv.org/abs/2608.16712v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-16712.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-16712-p2.jpg",
+    "assets/img/covers/arxiv-2608-16712-p3.jpg",
+    "assets/img/covers/arxiv-2608-16712-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ HKUST"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 7,
+  "source_tags": [],
+  "score": 44,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKUST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（grasp、grasping）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 7 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "欠驱动灵巧手建模与补偿，提升关节预测精度，对操作研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The Hong Kong University of Science and Technology (Guangzhou)",
+    "Southeast University"
+  ],
+  "method_tags": [
+    "control-oriented modeling",
+    "tendon-elasticity compensation",
+    "underactuated"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
