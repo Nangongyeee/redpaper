@@ -1094,6 +1094,81 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-06434",
+      "source": "arxiv_discover",
+      "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection",
+      "title_zh": "快速且准确：通过环境感知模型选择的自适应VLA推理框架",
+      "tldr_zh": "提出EMS框架，通过环境感知模型选择在双系统间切换，实现高成功率和高频控制。",
+      "cover_zh": "双系统VLA也能解耦？新框架让推理速度与成功率兼得！",
+      "abstract_zh": "具身智能既需要长时程推理，也需要实时闭环响应。最近的双系统视觉-语言-动作（VLA）架构将快速反应控制与慢速深思推理相结合，以平衡推理速度和任务成功率。然而，现有的双过程VLA将快速模块与慢速模块的中间表示紧密耦合，需要端到端联合训练，限制了模块化、可扩展性和灵活的系统切换。在本文中，我们提出了环境感知模型选择（EMS），一种自适应VLA推理框架，通过环境感知模型选择在两个完全解耦的不同规模系统之间切换。大规模深思系统提供全局一致的轨迹规划以确保任务成功，而轻量级反应系统则实现高频闭环控制。基于强化学习的切换策略根据实时反馈动态选择调用哪个系统，从而稀疏使用慢速系统，平衡预训练知识利用与运行效率。我们的设计相比先前的分层VLA框架具有三个关键优势：（1）完全解耦和模块化的双系统架构，支持即插即用的模型替换；（2）自适应、环境感知的切换策略；（3）高频推理以实现响应式闭环控制。我们在仿真和真实环境中广泛评估了EMS。在LIBERO基准上，EMS实现了与大规模基线相当的成功率，同时将有效动作频率提高到93.4 Hz。该框架在真实世界的双臂操作任务中进一步展示了强大的可扩展性，在保持稳健性能的同时加速了任务完成。",
+      "authors": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian"
+      ],
+      "authors_all": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian",
+        "Jingwen Li",
+        "Guiqin Wang",
+        "Shengzeng Huo",
+        "Wenxin Ren",
+        "Tao Fang",
+        "Xiaochen Zhang",
+        "Guanqing Deng",
+        "Xiang Wang",
+        "Xiaowen Dong",
+        "Qinghai Guo",
+        "Yuxin Ma"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-06434.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06434-p2.jpg",
+        "assets/img/covers/arxiv-2608-06434-p3.jpg",
+        "assets/img/covers/arxiv-2608-06434-p4.jpg"
+      ],
+      "arxiv_id": "2608.06434",
+      "abs_url": "http://arxiv.org/abs/2608.06434v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06434v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出自适应VLA推理框架，通过环境感知模型选择平衡速度与成功率，在LIBERO和真机双臂任务上验证，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "ACSLab, Huawei Technologies",
+        "Southern University of Science and Technology"
+      ],
+      "method_tags": [
+        "VLA",
+        "Reinforcement Learning",
+        "model selection"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-05674",
       "source": "arxiv",
       "title": "JoyAI-RA 0.5: Scaling Robot Manipulation Learning via Dual Action Alignment",
@@ -1282,80 +1357,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-06434",
-      "source": "arxiv_discover",
-      "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection",
-      "title_zh": "快速且准确：通过环境感知模型选择的自适应VLA推理框架",
-      "tldr_zh": "提出EMS框架，通过环境感知模型选择在双系统间切换，实现高成功率和高频控制。",
-      "cover_zh": "双系统VLA也能解耦？新框架让推理速度与成功率兼得！",
-      "abstract_zh": "具身智能既需要长时程推理，也需要实时闭环响应。最近的双系统视觉-语言-动作（VLA）架构将快速反应控制与慢速深思推理相结合，以平衡推理速度和任务成功率。然而，现有的双过程VLA将快速模块与慢速模块的中间表示紧密耦合，需要端到端联合训练，限制了模块化、可扩展性和灵活的系统切换。在本文中，我们提出了环境感知模型选择（EMS），一种自适应VLA推理框架，通过环境感知模型选择在两个完全解耦的不同规模系统之间切换。大规模深思系统提供全局一致的轨迹规划以确保任务成功，而轻量级反应系统则实现高频闭环控制。基于强化学习的切换策略根据实时反馈动态选择调用哪个系统，从而稀疏使用慢速系统，平衡预训练知识利用与运行效率。我们的设计相比先前的分层VLA框架具有三个关键优势：（1）完全解耦和模块化的双系统架构，支持即插即用的模型替换；（2）自适应、环境感知的切换策略；（3）高频推理以实现响应式闭环控制。我们在仿真和真实环境中广泛评估了EMS。在LIBERO基准上，EMS实现了与大规模基线相当的成功率，同时将有效动作频率提高到93.4 Hz。该框架在真实世界的双臂操作任务中进一步展示了强大的可扩展性，在保持稳健性能的同时加速了任务完成。",
-      "authors": [
-        "Yuewei Sun",
-        "Lang Qin",
-        "Zechuan Tian"
-      ],
-      "authors_all": [
-        "Yuewei Sun",
-        "Lang Qin",
-        "Zechuan Tian",
-        "Jingwen Li",
-        "Guiqin Wang",
-        "Shengzeng Huo",
-        "Wenxin Ren",
-        "Tao Fang",
-        "Xiaochen Zhang",
-        "Guanqing Deng",
-        "Xiang Wang",
-        "Xiaowen Dong",
-        "Qinghai Guo",
-        "Yuxin Ma"
-      ],
-      "primary_category": "",
-      "published": "2026-08-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-06434.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-06434-p2.jpg",
-        "assets/img/covers/arxiv-2608-06434-p3.jpg",
-        "assets/img/covers/arxiv-2608-06434-p4.jpg"
-      ],
-      "arxiv_id": "2608.06434",
-      "abs_url": "http://arxiv.org/abs/2608.06434v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.06434v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出自适应VLA推理框架，通过环境感知模型选择平衡速度与成功率，在LIBERO和真机双臂任务上验证，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "ACSLab, Huawei Technologies",
-        "Southern University of Science and Technology"
-      ],
-      "method_tags": [
-        "VLA",
-        "Reinforcement Learning",
-        "model selection"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2608-06544",
