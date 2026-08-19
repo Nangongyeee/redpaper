@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T02:42:25.758917+00:00",
-  "count": 2142,
+  "generated_at": "2026-08-19T03:50:46.837902+00:00",
+  "count": 2145,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -17399,6 +17399,84 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-17584",
+      "source": "arxiv",
+      "title": "HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction",
+      "title_zh": "HODAgent：面向物理世界人际交互的按需响应式人形机器人",
+      "tldr_zh": "提出HODAgent，一种System-2具身智能体，在仿真和物理人形机器人上实现自适应服务，性能优于基线。",
+      "cover_zh": "人形机器人也能边动边思考？HODAgent让服务更智能",
+      "abstract_zh": "我们提出了HODAgent，一种用于服务场景中人形机器人的System-2具身智能体，旨在处理情境意图、响应执行、任务修订和结果验证。其半双工架构集成了环境交互器、规划器、执行器和分层记忆，以在服务过程中维持连贯的交互、规划和任务状态。这使得机器人能够在运动过程中处理新请求、保留进度、修订动作，并将执行结果作为任务完成的依据。一个共享接口连接仿真和物理机器人（Unitree G1），隔离平台特定的控制。在包含164个案例的交互式仿真中，HODAgent在两种VLM骨干下分别实现了84.8%和91.5%的联合成功率，比基线高出9.8和18.9个百分点。在物理机器人上，通过率分别为92%（原子任务）、72%（复合任务）和63.3%（完整任务）。在多个具身基准上，它比基线提高了0.7-9.0个百分点。结果表明，一个统一的System-2智能体能够在仿真和现实中实现自适应的人形服务。",
+      "authors": [
+        "Wang Warren Chen",
+        "Jiahao Zhang",
+        "Zhenjiang Li"
+      ],
+      "authors_all": [
+        "Wang Warren Chen",
+        "Jiahao Zhang",
+        "Zhenjiang Li",
+        "Mingxu Wang",
+        "Lei Yi",
+        "Yuchen Kang",
+        "Shuo Sun",
+        "Ziping Chen",
+        "Jie Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-18",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ XPENG Robotics"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-17584.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-17584-p2.jpg",
+        "assets/img/covers/arxiv-2608-17584-p3.jpg",
+        "assets/img/covers/arxiv-2608-17584-p4.jpg"
+      ],
+      "arxiv_id": "2608.17584",
+      "abs_url": "http://arxiv.org/abs/2608.17584v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17584v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形服务机器人系统级智能体，涉及全身交互与任务执行，但偏系统集成，算法创新一般。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "XPENG ROBOTICS"
+      ],
+      "method_tags": [
+        "System-2 embodied agent",
+        "semi-duplex architecture",
+        "interactive simulation"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-17717",
       "source": "arxiv",
       "title": "CompCPZ: Preserving Multi-Modal Intent in Language-Guided Robot Manipulation",
@@ -17550,11 +17628,11 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=X1uIIsTOtGc",
           "embed_url": "https://www.youtube.com/embed/X1uIIsTOtGc",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "PRISM Dataset",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=X1uIIsTOtGc"
         }
       ],
       "github": {},
@@ -28775,9 +28853,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度。",
-      "cover_zh": "内存砍掉70%？这个新模型重建精度还暴涨77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，大幅提升重建精度，内存占用降低，数据量增加。",
+      "cover_zh": "内存砍掉70%？这个重建模型精度还暴涨，动态场景也稳了！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还提供了对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地扩展。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -44264,7 +44342,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人转圈圈？Atlas 的新动作太酷了！",
+      "cover_zh": "波士顿动力 Atlas 玩转旋转新动作！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -49285,83 +49363,6 @@
         "Long-tail Analysis"
       ],
       "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-17584",
-      "source": "arxiv",
-      "title": "HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction",
-      "title_zh": "HODAgent：面向物理世界人际交互的按需响应式人形机器人",
-      "tldr_zh": "提出HODAgent，一种System-2具身智能体，在仿真和物理人形机器人上实现自适应服务，性能优于基线。",
-      "cover_zh": "人形机器人也能边动边思考？HODAgent让服务更智能",
-      "abstract_zh": "我们提出了HODAgent，一种用于服务场景中人形机器人的System-2具身智能体，旨在处理情境意图、响应执行、任务修订和结果验证。其半双工架构集成了环境交互器、规划器、执行器和分层记忆，以在服务过程中维持连贯的交互、规划和任务状态。这使得机器人能够在运动过程中处理新请求、保留进度、修订动作，并将执行结果作为任务完成的依据。一个共享接口连接仿真和物理机器人（Unitree G1），隔离平台特定的控制。在包含164个案例的交互式仿真中，HODAgent在两种VLM骨干下分别实现了84.8%和91.5%的联合成功率，比基线高出9.8和18.9个百分点。在物理机器人上，通过率分别为92%（原子任务）、72%（复合任务）和63.3%（完整任务）。在多个具身基准上，它比基线提高了0.7-9.0个百分点。结果表明，一个统一的System-2智能体能够在仿真和现实中实现自适应的人形服务。",
-      "authors": [
-        "Wang Warren Chen",
-        "Jiahao Zhang",
-        "Zhenjiang Li"
-      ],
-      "authors_all": [
-        "Wang Warren Chen",
-        "Jiahao Zhang",
-        "Zhenjiang Li",
-        "Mingxu Wang",
-        "Lei Yi",
-        "Yuchen Kang",
-        "Shuo Sun",
-        "Ziping Chen",
-        "Jie Chen"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-18",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ XPENG Robotics"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-17584.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-17584-p2.jpg",
-        "assets/img/covers/arxiv-2608-17584-p3.jpg",
-        "assets/img/covers/arxiv-2608-17584-p4.jpg"
-      ],
-      "arxiv_id": "2608.17584",
-      "abs_url": "http://arxiv.org/abs/2608.17584v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.17584v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形服务机器人系统级智能体，涉及全身交互与任务执行，但偏系统集成，算法创新一般。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "XPENG ROBOTICS"
-      ],
-      "method_tags": [
-        "System-2 embodied agent",
-        "semi-duplex architecture",
-        "interactive simulation"
-      ],
-      "platform": [
-        "Unitree G1"
-      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -56046,7 +56047,8 @@
       "channels": [
         "manipulation",
         "locomotion",
-        "sim2real"
+        "sim2real",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -81026,6 +81028,147 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-17453",
+      "source": "arxiv",
+      "title": "EATR-Stereo: Embodiment-Aware Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control",
+      "title_zh": "EATR-Stereo：面向人形视觉-语言-动作控制的具身感知配对立体证据路由",
+      "tldr_zh": "EATR-Stereo通过具身感知路由立体证据，提升人形VLA长时程任务成功率。",
+      "cover_zh": "立体视觉新突破｜人形机器人长时程任务成功率提升至60%",
+      "abstract_zh": "长时程人形视觉-语言-动作（VLA）控制，使用头戴式立体相机，需要能够利用互补视图同时保持与预训练表示兼容的视觉接口。现有接口往往丢弃互补的立体证据，或在不保留原生主视图路径、不将辅助信息适应机器人具身的情况下融合额外观测。我们提出EATR-Stereo，一种具身感知的令牌路由框架，它保留主视图令牌，并通过查询同步的辅助视图令牌序列来构建主对齐的跨视图辅助令牌（CVATs）。一个身体分割的本体感觉编码器进一步根据机器人配置历史来调节令牌级的辅助使用，从而在动作生成过程中选择性纳入立体证据。路由的辅助流增强了预训练VLA的语言和主视觉上下文，同时保持其视觉-语言模型冻结。在具有37维本体感觉状态的33自由度物理人形机器人上，我们在超过100秒的搜索-接近-抓取-放置-返回任务中评估了九种配置。EATR-Stereo实现了60.0%的全任务成功率、100.0%的抓取成功率和80.0%的阶段成功率。在严重不对称遮挡下，它将恢复率提高到80%，而单独使用CVAT时为30%。消融研究进一步表明，保留主令牌以及将跨视图辅助特征与结构化本体感觉路由相结合的重要性。这些结果表明，选择性路由的配对立体证据改善了空间接地，从而实现可靠的长时程人形VLA控制。",
+      "authors": [
+        "Songwei Wu",
+        "Rui Zhao",
+        "Fan Yang"
+      ],
+      "authors_all": [
+        "Songwei Wu",
+        "Rui Zhao",
+        "Fan Yang",
+        "Zhongqiang Nie",
+        "Zhiduo Jiang",
+        "Wandong Sun",
+        "Yuwei Li",
+        "Yang Liu",
+        "Hong Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-18",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-17453.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-17453-p2.jpg",
+        "assets/img/covers/arxiv-2608-17453-p3.jpg",
+        "assets/img/covers/arxiv-2608-17453-p4.jpg"
+      ],
+      "arxiv_id": "2608.17453",
+      "abs_url": "http://arxiv.org/abs/2608.17453v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17453v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形VLA全身控制，结合立体视觉与本体感知路由，长时程任务成功率高，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Harbin Institute of Technology",
+        "Honor"
+      ],
+      "method_tags": [
+        "VLA",
+        "token-routing",
+        "stereo vision"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-17496",
+      "source": "arxiv",
+      "title": "Calibrated Predictive Safety for Heterogeneous Robots: An Action-Conditioned JEPA Framework with Model-Based Safety Shields",
+      "title_zh": "异构机器人的校准预测安全性：基于动作条件JEPA框架与模型安全盾",
+      "tldr_zh": "提出动作条件JEPA与安全盾结合，提升异构机器人任务成功率并降低碰撞风险。",
+      "cover_zh": "机器人安全新突破｜JEPA预测+安全盾，成功率飙升还防碰撞",
+      "abstract_zh": "视觉-语言-动作策略泛化能力强，但缺乏执行时的保证；经典的基于模型的规划器尊重运动学和几何约束，但泛化能力差。我们研究动作条件的联合嵌入预测架构（JEPA）世界模型是否能在执行前预测候选动作块的任务进展和物理风险，以及将这些预测与特定具身模型的安全盾相结合是否能产生适用于异构机器人的可部署流程。我们提出了一种滚动时域的决策流程：（1）提议者生成K个候选动作块；（2）动作条件的JEPA在冻结编码器的潜在空间中，以具身嵌入为条件，对每个候选进行滚动预测；（3）校准的风险和进展头对每次滚动进行评分并报告不确定性；（4）确定性的每具身安全盾过滤不可接受的候选；（5）回退阶梯处理空可接受集的情况。学习到的排序仅对可接受的候选进行重排；执行保证来自确定性的安全盾和回退阶梯。我们在仿真（LIBERO-Long）中使用预注册协议进行评估。在600个回合的配置中，完整框架相比仅安全盾的基线提高了成功率，并在匹配召回率下减少了碰撞假阴性。包含了目标机器人和边缘加速器上的部署效率测量。真实机器人实验和离线重排显著性检验留待未来工作；详见论文中的披露。",
+      "authors": [
+        "Kaiming Zhong",
+        "Tianhua Liu",
+        "Yue Wang"
+      ],
+      "authors_all": [
+        "Kaiming Zhong",
+        "Tianhua Liu",
+        "Yue Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-18",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-17496.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-17496-p2.jpg",
+        "assets/img/covers/arxiv-2608-17496-p3.jpg",
+        "assets/img/covers/arxiv-2608-17496-p4.jpg"
+      ],
+      "arxiv_id": "2608.17496",
+      "abs_url": "http://arxiv.org/abs/2608.17496v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17496v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动作条件JEPA世界模型用于机器人安全预测，结合模型安全盾，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Guangdong Bifang Intelligent Control Technology Co., Ltd."
+      ],
+      "method_tags": [
+        "JEPA",
+        "model-based safety shield",
+        "calibrated risk prediction"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "LIBERO-Long"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-17628",
       "source": "arxiv",
       "title": "Iterative Grasp Pose Refinement: A Deep Reinforcement Learning Approach for 2D Vision",
@@ -81371,9 +81514,9 @@
       "source": "video_youtube",
       "title": "Real-Time Omni-Modal Interaction Driven Whole-Body Mobile Manipulation",
       "title_zh": "实时全模态交互驱动的全身移动操作",
-      "tldr_zh": "单一模型实现全模态交互与全身移动操作，自主稳定执行居家任务。",
-      "cover_zh": "一个模型搞定全屋家务？还能抗干扰自主执行！",
-      "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个单一模型处理多样化的居家照护与健康任务，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
+      "tldr_zh": "单一模型实现全模态交互与自主稳定执行，用于家庭护理。",
+      "cover_zh": "一个模型搞定全模态交互，家庭护理从此全自动？",
+      "abstract_zh": "Unitree UnifoLM-OminiA-0.3——一个处理多种家庭护理和健康任务的单一模型，具备全模态交互理解能力，实现完全自主、稳定且抗干扰的执行。",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -107449,145 +107592,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2608-17453",
-      "source": "arxiv",
-      "title": "EATR-Stereo: Embodiment-Aware Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control",
-      "title_zh": "EATR-Stereo：面向人形视觉-语言-动作控制的具身感知配对立体证据路由",
-      "tldr_zh": "EATR-Stereo通过具身感知路由立体证据，提升人形VLA长时程任务成功率。",
-      "cover_zh": "立体视觉新突破｜人形机器人长时程任务成功率提升至60%",
-      "abstract_zh": "长时程人形视觉-语言-动作（VLA）控制，使用头戴式立体相机，需要能够利用互补视图同时保持与预训练表示兼容的视觉接口。现有接口往往丢弃互补的立体证据，或在不保留原生主视图路径、不将辅助信息适应机器人具身的情况下融合额外观测。我们提出EATR-Stereo，一种具身感知的令牌路由框架，它保留主视图令牌，并通过查询同步的辅助视图令牌序列来构建主对齐的跨视图辅助令牌（CVATs）。一个身体分割的本体感觉编码器进一步根据机器人配置历史来调节令牌级的辅助使用，从而在动作生成过程中选择性纳入立体证据。路由的辅助流增强了预训练VLA的语言和主视觉上下文，同时保持其视觉-语言模型冻结。在具有37维本体感觉状态的33自由度物理人形机器人上，我们在超过100秒的搜索-接近-抓取-放置-返回任务中评估了九种配置。EATR-Stereo实现了60.0%的全任务成功率、100.0%的抓取成功率和80.0%的阶段成功率。在严重不对称遮挡下，它将恢复率提高到80%，而单独使用CVAT时为30%。消融研究进一步表明，保留主令牌以及将跨视图辅助特征与结构化本体感觉路由相结合的重要性。这些结果表明，选择性路由的配对立体证据改善了空间接地，从而实现可靠的长时程人形VLA控制。",
-      "authors": [
-        "Songwei Wu",
-        "Rui Zhao",
-        "Fan Yang"
-      ],
-      "authors_all": [
-        "Songwei Wu",
-        "Rui Zhao",
-        "Fan Yang",
-        "Zhongqiang Nie",
-        "Zhiduo Jiang",
-        "Wandong Sun",
-        "Yuwei Li",
-        "Yang Liu",
-        "Hong Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-18",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-17453.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-17453-p2.jpg",
-        "assets/img/covers/arxiv-2608-17453-p3.jpg",
-        "assets/img/covers/arxiv-2608-17453-p4.jpg"
-      ],
-      "arxiv_id": "2608.17453",
-      "abs_url": "http://arxiv.org/abs/2608.17453v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.17453v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形VLA全身控制，结合立体视觉与本体感知路由，长时程任务成功率高，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Harbin Institute of Technology",
-        "Honor"
-      ],
-      "method_tags": [
-        "VLA",
-        "token-routing",
-        "stereo vision"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-17496",
-      "source": "arxiv",
-      "title": "Calibrated Predictive Safety for Heterogeneous Robots: An Action-Conditioned JEPA Framework with Model-Based Safety Shields",
-      "title_zh": "异构机器人的校准预测安全性：基于动作条件JEPA框架与模型安全盾",
-      "tldr_zh": "提出动作条件JEPA与安全盾结合，提升异构机器人任务成功率并降低碰撞风险。",
-      "cover_zh": "机器人安全新突破｜JEPA预测+安全盾，成功率飙升还防碰撞",
-      "abstract_zh": "视觉-语言-动作策略泛化能力强，但缺乏执行时的保证；经典的基于模型的规划器尊重运动学和几何约束，但泛化能力差。我们研究动作条件的联合嵌入预测架构（JEPA）世界模型是否能在执行前预测候选动作块的任务进展和物理风险，以及将这些预测与特定具身模型的安全盾相结合是否能产生适用于异构机器人的可部署流程。我们提出了一种滚动时域的决策流程：（1）提议者生成K个候选动作块；（2）动作条件的JEPA在冻结编码器的潜在空间中，以具身嵌入为条件，对每个候选进行滚动预测；（3）校准的风险和进展头对每次滚动进行评分并报告不确定性；（4）确定性的每具身安全盾过滤不可接受的候选；（5）回退阶梯处理空可接受集的情况。学习到的排序仅对可接受的候选进行重排；执行保证来自确定性的安全盾和回退阶梯。我们在仿真（LIBERO-Long）中使用预注册协议进行评估。在600个回合的配置中，完整框架相比仅安全盾的基线提高了成功率，并在匹配召回率下减少了碰撞假阴性。包含了目标机器人和边缘加速器上的部署效率测量。真实机器人实验和离线重排显著性检验留待未来工作；详见论文中的披露。",
-      "authors": [
-        "Kaiming Zhong",
-        "Tianhua Liu",
-        "Yue Wang"
-      ],
-      "authors_all": [
-        "Kaiming Zhong",
-        "Tianhua Liu",
-        "Yue Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-18",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-17496.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-17496-p2.jpg",
-        "assets/img/covers/arxiv-2608-17496-p3.jpg",
-        "assets/img/covers/arxiv-2608-17496-p4.jpg"
-      ],
-      "arxiv_id": "2608.17496",
-      "abs_url": "http://arxiv.org/abs/2608.17496v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.17496v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出动作条件JEPA世界模型用于机器人安全预测，结合模型安全盾，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Guangdong Bifang Intelligent Control Technology Co., Ltd."
-      ],
-      "method_tags": [
-        "JEPA",
-        "model-based safety shield",
-        "calibrated risk prediction"
-      ],
-      "platform": [],
-      "sim_stack": [
-        "LIBERO-Long"
-      ],
-      "method_family": "",
-      "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2608-17601",
       "source": "arxiv",
       "title": "Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement",
@@ -121456,6 +121460,140 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-06434",
+      "source": "arxiv_discover",
+      "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection",
+      "title_zh": "快速且准确：通过环境感知模型选择的自适应VLA推理框架",
+      "tldr_zh": "提出EMS框架，通过环境感知模型选择在双系统间切换，实现高成功率和高频控制。",
+      "cover_zh": "双系统VLA也能解耦？新框架让推理速度与成功率兼得！",
+      "abstract_zh": "具身智能既需要长时程推理，也需要实时闭环响应。最近的双系统视觉-语言-动作（VLA）架构将快速反应控制与慢速深思推理相结合，以平衡推理速度和任务成功率。然而，现有的双过程VLA将快速模块与慢速模块的中间表示紧密耦合，需要端到端联合训练，限制了模块化、可扩展性和灵活的系统切换。在本文中，我们提出了环境感知模型选择（EMS），一种自适应VLA推理框架，通过环境感知模型选择在两个完全解耦的不同规模系统之间切换。大规模深思系统提供全局一致的轨迹规划以确保任务成功，而轻量级反应系统则实现高频闭环控制。基于强化学习的切换策略根据实时反馈动态选择调用哪个系统，从而稀疏使用慢速系统，平衡预训练知识利用与运行效率。我们的设计相比先前的分层VLA框架具有三个关键优势：（1）完全解耦和模块化的双系统架构，支持即插即用的模型替换；（2）自适应、环境感知的切换策略；（3）高频推理以实现响应式闭环控制。我们在仿真和真实环境中广泛评估了EMS。在LIBERO基准上，EMS实现了与大规模基线相当的成功率，同时将有效动作频率提高到93.4 Hz。该框架在真实世界的双臂操作任务中进一步展示了强大的可扩展性，在保持稳健性能的同时加速了任务完成。",
+      "authors": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian"
+      ],
+      "authors_all": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian",
+        "Jingwen Li",
+        "Guiqin Wang",
+        "Shengzeng Huo",
+        "Wenxin Ren",
+        "Tao Fang",
+        "Xiaochen Zhang",
+        "Guanqing Deng",
+        "Xiang Wang",
+        "Xiaowen Dong",
+        "Qinghai Guo",
+        "Yuxin Ma"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-06434.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06434-p2.jpg",
+        "assets/img/covers/arxiv-2608-06434-p3.jpg",
+        "assets/img/covers/arxiv-2608-06434-p4.jpg"
+      ],
+      "arxiv_id": "2608.06434",
+      "abs_url": "http://arxiv.org/abs/2608.06434v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06434v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出自适应VLA推理框架，通过环境感知模型选择平衡速度与成功率，在LIBERO和真机双臂任务上验证，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "ACSLab, Huawei Technologies",
+        "Southern University of Science and Technology"
+      ],
+      "method_tags": [
+        "VLA",
+        "Reinforcement Learning",
+        "model selection"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-06544",
+      "source": "arxiv_discover",
+      "title": "TaskSense: Focusing on What Matters in World Models",
+      "title_zh": "TaskSense：在世界模型中聚焦重要信息",
+      "tldr_zh": "TaskSense通过空间注意力聚焦任务相关区域，提升世界模型在视觉干扰下的鲁棒性。",
+      "cover_zh": "世界模型总被背景干扰？TaskSense用注意力聚焦关键，抗干扰能力飙升！",
+      "abstract_zh": "用于视觉控制的世界模型通常通过重建观测来学习紧凑的潜在状态，这隐式地鼓励表示保留整个视觉输入的信息。然而，任务相关的内容往往只占观测的一小部分，而背景杂乱和干扰物消耗了宝贵的表示容量。这种视觉重建与控制目标之间的不匹配，使得潜在表示偏向于建模与任务无关的视觉内容，稀释了控制相关特征的学习信号，并在视觉干扰下严重降低下游性能。我们引入了TaskSense，一种以任务为中心的世界建模框架，通过一种可微分的随机空间注意力机制（以前一个潜在状态为条件）在潜在编码之前强制执行任务相关性。为了将注意力引导到控制相关区域，我们使用辅助逆动力学目标来增强训练。世界模型不是重建整个观测，而是仅重建被注意的区域，鼓励潜在表示保留任务相关信息，同时丢弃无关的视觉内容。解码器进一步以采样的注意力图为条件，使得在随机注意力下也能实现一致的重建。与DreamerV3基线相比，TaskSense在DeepMind Control Suite上保持了竞争性能，同时在Distracting Control Suite上持续优于DreamerV3，展示了对视觉干扰的显著改进的鲁棒性。定性分析进一步证实，由逆动力学监督引导的学习到的注意力，始终定位控制相关区域，同时抑制无关的视觉内容。",
+      "authors": [
+        "SM Mazharul Islam",
+        "Manfred Huber"
+      ],
+      "authors_all": [
+        "SM Mazharul Islam",
+        "Manfred Huber"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-06544.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06544-p2.jpg",
+        "assets/img/covers/arxiv-2608-06544-p3.jpg",
+        "assets/img/covers/arxiv-2608-06544-p4.jpg"
+      ],
+      "arxiv_id": "2608.06544",
+      "abs_url": "http://arxiv.org/abs/2608.06544v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06544v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出任务中心的世界模型，通过空间注意力与逆动力学提升抗干扰能力，对具身控制有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Texas at Arlington"
+      ],
+      "method_tags": [
+        "World Model",
+        "Spatial Attention",
+        "Inverse Dynamics"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-07065",
@@ -141041,6 +141179,71 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-01697",
+      "source": "arxiv_discover",
+      "title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
+      "title_zh": "通过模拟器侧动力学归一化弥合并联连杆腿机构中的仿真到现实差距",
+      "tldr_zh": "提出模拟器侧动力学归一化，显著缩小并联腿机构的仿真到现实差距。",
+      "cover_zh": "仿真到现实差距太大？这个新方法让并联腿机器人动起来更真实！",
+      "abstract_zh": "本文解决了当并联连杆机构在仿真中由串联树代理表示时，动力学方面的仿真到现实差距。传统的基于雅可比的状态和力矩映射保持了运动学和虚功关系的一致性，但没有考虑坐标引起的执行器惯性和阻尼的重新分布，以及串联树简化过程中省略的连杆惯性。为了弥补这一差距，提出了模拟器侧系统归一化（S3N），在保持串联树拓扑结构的同时，对串联树模拟器的有效动力学进行归一化。S3N-Act通过坐标变换将执行器惯性和阻尼纳入串联坐标动力学，而S3N-Full通过分别识别执行器和腿部级别的频率响应来恢复残余连杆惯性。在2自由度验证中，相对于雅可比映射基线，S3N-Full将关节位置和力矩的均方根误差分别降低了80.9%和82.1%。在定点俯仰运动中，S3N-Act和S3N-Full将地面反作用力范数的均方根误差分别降低了65.1%和62.4%。在圆形运动中，S3N-Full将相位平均、命令归一化的仿真到现实差距从17.3%降低到9.9%。这些结果表明，模拟器侧归一化提高了运动和力层面的仿真到现实一致性。它使得在串联树框架中进行策略训练成为可能，该框架具有与硬件一致的动力学，能更好地代表物理并联连杆机构。",
+      "authors": [
+        "Jinsong Hong",
+        "Jangho Kim",
+        "Jihwan Lee"
+      ],
+      "authors_all": [
+        "Jinsong Hong",
+        "Jangho Kim",
+        "Jihwan Lee",
+        "Donghyun Kim",
+        "Sehoon Oh"
+      ],
+      "primary_category": "",
+      "published": "2026-08-03",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-01697.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-01697-p2.jpg",
+        "assets/img/covers/arxiv-2608-01697-p3.jpg",
+        "assets/img/covers/arxiv-2608-01697-p4.jpg"
+      ],
+      "arxiv_id": "2608.01697",
+      "abs_url": "http://arxiv.org/abs/2608.01697v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.01697v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "提出S3N方法解决并联腿机构仿真到真机的动力学差异，显著提升一致性，对sim2real研究有高价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "DGIST",
+        "University of Massachusetts Amherst"
+      ],
+      "method_tags": [
+        "sim-to-real",
+        "dynamics normalization",
+        "system identification"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-02449",

@@ -1,6 +1,6 @@
 {
   "date": "2026-08-06",
-  "count": 21,
+  "count": 23,
   "papers": [
     {
       "id": "arxiv-2608-05948",
@@ -1282,6 +1282,140 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-06434",
+      "source": "arxiv_discover",
+      "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection",
+      "title_zh": "快速且准确：通过环境感知模型选择的自适应VLA推理框架",
+      "tldr_zh": "提出EMS框架，通过环境感知模型选择在双系统间切换，实现高成功率和高频控制。",
+      "cover_zh": "双系统VLA也能解耦？新框架让推理速度与成功率兼得！",
+      "abstract_zh": "具身智能既需要长时程推理，也需要实时闭环响应。最近的双系统视觉-语言-动作（VLA）架构将快速反应控制与慢速深思推理相结合，以平衡推理速度和任务成功率。然而，现有的双过程VLA将快速模块与慢速模块的中间表示紧密耦合，需要端到端联合训练，限制了模块化、可扩展性和灵活的系统切换。在本文中，我们提出了环境感知模型选择（EMS），一种自适应VLA推理框架，通过环境感知模型选择在两个完全解耦的不同规模系统之间切换。大规模深思系统提供全局一致的轨迹规划以确保任务成功，而轻量级反应系统则实现高频闭环控制。基于强化学习的切换策略根据实时反馈动态选择调用哪个系统，从而稀疏使用慢速系统，平衡预训练知识利用与运行效率。我们的设计相比先前的分层VLA框架具有三个关键优势：（1）完全解耦和模块化的双系统架构，支持即插即用的模型替换；（2）自适应、环境感知的切换策略；（3）高频推理以实现响应式闭环控制。我们在仿真和真实环境中广泛评估了EMS。在LIBERO基准上，EMS实现了与大规模基线相当的成功率，同时将有效动作频率提高到93.4 Hz。该框架在真实世界的双臂操作任务中进一步展示了强大的可扩展性，在保持稳健性能的同时加速了任务完成。",
+      "authors": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian"
+      ],
+      "authors_all": [
+        "Yuewei Sun",
+        "Lang Qin",
+        "Zechuan Tian",
+        "Jingwen Li",
+        "Guiqin Wang",
+        "Shengzeng Huo",
+        "Wenxin Ren",
+        "Tao Fang",
+        "Xiaochen Zhang",
+        "Guanqing Deng",
+        "Xiang Wang",
+        "Xiaowen Dong",
+        "Qinghai Guo",
+        "Yuxin Ma"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-06434.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06434-p2.jpg",
+        "assets/img/covers/arxiv-2608-06434-p3.jpg",
+        "assets/img/covers/arxiv-2608-06434-p4.jpg"
+      ],
+      "arxiv_id": "2608.06434",
+      "abs_url": "http://arxiv.org/abs/2608.06434v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06434v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出自适应VLA推理框架，通过环境感知模型选择平衡速度与成功率，在LIBERO和真机双臂任务上验证，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "ACSLab, Huawei Technologies",
+        "Southern University of Science and Technology"
+      ],
+      "method_tags": [
+        "VLA",
+        "Reinforcement Learning",
+        "model selection"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-06544",
+      "source": "arxiv_discover",
+      "title": "TaskSense: Focusing on What Matters in World Models",
+      "title_zh": "TaskSense：在世界模型中聚焦重要信息",
+      "tldr_zh": "TaskSense通过空间注意力聚焦任务相关区域，提升世界模型在视觉干扰下的鲁棒性。",
+      "cover_zh": "世界模型总被背景干扰？TaskSense用注意力聚焦关键，抗干扰能力飙升！",
+      "abstract_zh": "用于视觉控制的世界模型通常通过重建观测来学习紧凑的潜在状态，这隐式地鼓励表示保留整个视觉输入的信息。然而，任务相关的内容往往只占观测的一小部分，而背景杂乱和干扰物消耗了宝贵的表示容量。这种视觉重建与控制目标之间的不匹配，使得潜在表示偏向于建模与任务无关的视觉内容，稀释了控制相关特征的学习信号，并在视觉干扰下严重降低下游性能。我们引入了TaskSense，一种以任务为中心的世界建模框架，通过一种可微分的随机空间注意力机制（以前一个潜在状态为条件）在潜在编码之前强制执行任务相关性。为了将注意力引导到控制相关区域，我们使用辅助逆动力学目标来增强训练。世界模型不是重建整个观测，而是仅重建被注意的区域，鼓励潜在表示保留任务相关信息，同时丢弃无关的视觉内容。解码器进一步以采样的注意力图为条件，使得在随机注意力下也能实现一致的重建。与DreamerV3基线相比，TaskSense在DeepMind Control Suite上保持了竞争性能，同时在Distracting Control Suite上持续优于DreamerV3，展示了对视觉干扰的显著改进的鲁棒性。定性分析进一步证实，由逆动力学监督引导的学习到的注意力，始终定位控制相关区域，同时抑制无关的视觉内容。",
+      "authors": [
+        "SM Mazharul Islam",
+        "Manfred Huber"
+      ],
+      "authors_all": [
+        "SM Mazharul Islam",
+        "Manfred Huber"
+      ],
+      "primary_category": "",
+      "published": "2026-08-06",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-06544.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-06544-p2.jpg",
+        "assets/img/covers/arxiv-2608-06544-p3.jpg",
+        "assets/img/covers/arxiv-2608-06544-p4.jpg"
+      ],
+      "arxiv_id": "2608.06544",
+      "abs_url": "http://arxiv.org/abs/2608.06544v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06544v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出任务中心的世界模型，通过空间注意力与逆动力学提升抗干扰能力，对具身控制有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Texas at Arlington"
+      ],
+      "method_tags": [
+        "World Model",
+        "Spatial Attention",
+        "Inverse Dynamics"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-05647",
