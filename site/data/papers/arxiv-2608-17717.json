@@ -1,0 +1,129 @@
+{
+  "id": "arxiv-2608-17717",
+  "source": "arxiv",
+  "title": "CompCPZ: Preserving Multi-Modal Intent in Language-Guided Robot Manipulation",
+  "title_zh": "CompCPZ：在语言引导的机器人操作中保持多模态意图",
+  "abstract": "A robot asked to \"place the cup near the red plate or the blue plate\" may reach the centroid between them and appear geometrically successful, while satisfying neither disjunct of the instruction. This silent semantic failure exposes a structural limitation of language-conditioned robot policies: representations that collapse a disjunctive instruction into a single connected set cannot preserve all feasible modes, and planners that commit to one action degrade under run-time mode uncertainty. We address this limitation with CompCPZ, a sound algebraic layer that language-conditioned learning systems wrap to recover multi-modal disjunctive representation, recursively composing per-primitive constrained polynomial zonotope enclosures along the language parse tree with distribution-free conformal coverage and sub-millisecond runtime. On a closed-loop ManiSkill3 tabletop-manipulation benchmark, CompCPZ outperforms convex set baselines, multi-peak decoders, and a zero-shot vision-language-action model (1,900/1,918 paired wins, p << 10^(-30)); the same compiler also transfers without retuning to planar real-robot trials on a Unitree Go2 quadruped under motion capture. These results suggest that compositional language grounding should be evaluated not only by reaching a decoded target, but by whether the represented feasibility set preserves the connected-component structure of the user's intent.",
+  "abstract_zh": "当机器人被要求“将杯子放在红色盘子或蓝色盘子附近”时，它可能会到达两者之间的质心，并在几何上看似成功，但实际上并未满足指令中的任何一个分支。这种无声的语义失败暴露了语言条件机器人策略的结构性局限：将析取指令压缩为单一连通集的表示无法保留所有可行模式，而承诺单一动作的规划器在运行时模式不确定性下会退化。我们通过CompCPZ解决了这一局限，这是一个健全的代数层，语言条件学习系统可以包裹它来恢复多模态析取表示，沿着语言解析树递归地组合每个原语的约束多项式 zonotope 包络，具有无分布保形覆盖和亚毫秒级运行时间。在闭环 ManiSkill3 桌面操作基准上，CompCPZ 优于凸集基线、多峰解码器和零样本视觉-语言-动作模型（1,900/1,918 配对胜利，p << 10^(-30)）；同一编译器无需重新调整即可迁移到 Unitree Go2 四足机器人上的平面真实机器人试验，在运动捕捉下进行。这些结果表明，组合语言接地不仅应通过是否到达解码目标来评估，还应通过所表示的可行性集是否保留用户意图的连通分量结构来评估。",
+  "tldr_zh": "CompCPZ 通过代数层保留多模态意图，在机器人操作中显著优于现有方法。",
+  "cover_zh": "机器人听指令总选中间？新方法让它真正理解“或”｜操作成功率碾压基线",
+  "authors": [
+    {
+      "name": "Zhen Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ahmad Hafez",
+      "affiliation": ""
+    },
+    {
+      "name": "Peng Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanliang Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenyuan Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Amr Alanwar",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "arxiv_id": "2608.17717",
+  "pdf_url": "https://arxiv.org/pdf/2608.17717v1",
+  "abs_url": "http://arxiv.org/abs/2608.17717v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-17717.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-17717-p2.jpg",
+    "assets/img/covers/arxiv-2608-17717-p3.jpg",
+    "assets/img/covers/arxiv-2608-17717-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ TUM"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 29,
+  "source_tags": [],
+  "score": 55,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “TUM” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、manipulation、quadruped、unitree go）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 29 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出语言引导操作中多模态意图保持的代数方法，具理论创新与实验验证，对具身操作研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Technical University of Munich"
+  ],
+  "method_tags": [
+    "compositional language grounding",
+    "constrained polynomial zonotope",
+    "conformal coverage"
+  ],
+  "platform": [
+    "Unitree Go2"
+  ],
+  "sim_stack": [
+    "ManiSkill3"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

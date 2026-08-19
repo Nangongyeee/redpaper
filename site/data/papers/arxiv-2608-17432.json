@@ -1,0 +1,117 @@
+{
+  "id": "arxiv-2608-17432",
+  "source": "arxiv",
+  "title": "UniReflex: Plug-and-Play Force Control for Pretrained Generative Policies via Fast-Slow Reflex",
+  "title_zh": "UniReflex：通过快慢反射为预训练生成策略实现即插即用的力控制",
+  "abstract": "Generative imitation learning policies excel at trajectory planning but lack closed-loop force regulation, while directly incorporating force modalities often requires redesigning or retraining the network. We present UniReflex, a universal plug-and-play framework that equips frozen generative policies with variable impedance control (VIC) for contact regulation, guided by force-direction intent collected during demonstration, without further slow-backbone fine-tuning. By non-invasively intercepting deep latent representations from the action head, UniReflex drives a fast reflex network that decouples active force exertion from external interaction response. This scheme predicts normalized anisotropic stiffness directions for directional compliance allocation. Furthermore, UniReflex integrates an adaptive gating mechanism that enables seamless transitions between position-dominant planning and force-dominant execution. Real-world bimanual experiments demonstrate that UniReflex significantly improves contact stability and success rates while preserving original position accuracy. Our approach achieves 25-66x lower per-step backward latency relative to joint training strategies on the evaluated backbones.",
+  "abstract_zh": "生成式模仿学习策略在轨迹规划方面表现出色，但缺乏闭环力调节能力，而直接融入力模态通常需要重新设计或重新训练网络。我们提出了UniReflex，一个通用的即插即用框架，为冻结的生成策略配备可变阻抗控制（VIC）以进行接触调节，该控制由演示过程中收集的力方向意图引导，无需对慢速骨干网络进行微调。通过非侵入式地拦截来自动作头的深层潜在表示，UniReflex驱动一个快速反射网络，将主动力施加与外部交互响应解耦。该方案预测归一化的各向异性刚度方向，以实现方向性顺应性分配。此外，UniReflex集成了自适应门控机制，能够在位置主导的规划和力主导的执行之间无缝切换。真实世界的双臂实验表明，UniReflex在保持原始位置精度的同时，显著提高了接触稳定性和成功率。在评估的骨干网络上，我们的方法相对于联合训练策略实现了每步反向延迟降低25-66倍。",
+  "tldr_zh": "UniReflex为冻结生成策略提供即插即用力控制，无需微调，显著提升接触稳定性。",
+  "cover_zh": "无需重新训练！即插即用让生成策略学会力控，接触稳定性飙升",
+  "authors": [
+    {
+      "name": "Yan Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Shoujie Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziwu Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenbo Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "arxiv_id": "2608.17432",
+  "pdf_url": "https://arxiv.org/pdf/2608.17432v1",
+  "abs_url": "http://arxiv.org/abs/2608.17432v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-17432.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-17432-p2.jpg",
+    "assets/img/covers/arxiv-2608-17432-p3.jpg",
+    "assets/img/covers/arxiv-2608-17432-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NTU"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 13,
+  "source_tags": [],
+  "score": 44,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（bimanual、imitation learning）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 13 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出即插即用力控框架，增强生成式策略的接触调节能力，具科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University Shenzhen International Graduate School",
+    "Nanyang Technological University",
+    "X Square Robot",
+    "Xspark AI"
+  ],
+  "method_tags": [
+    "Variable Impedance Control",
+    "Fast-Slow Control",
+    "Force Control"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

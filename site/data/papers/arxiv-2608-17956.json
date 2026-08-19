@@ -1,0 +1,90 @@
+{
+  "id": "arxiv-2608-17956",
+  "source": "arxiv",
+  "title": "An Omitted Mode Is a Rare Rule: The Sampling-Verification Danger Law in Continuous Code World Models",
+  "title_zh": "被忽略的模式是罕见规则：连续代码世界模型中的采样-验证危险定律",
+  "abstract": "In the Code World Model paradigm an LLM synthesizes an executable world model that a classical planner searches, and the model is accepted when it reproduces sampled transitions. We ask what that acceptance certifies in continuous control. We define the pipeline's danger as an expected risk and isolate its exact factor: the probability that N i.i.d. gate rollouts all miss a critical event of probability r is exactly (1-r)^N; an independent acceptance sample adds its budget to the exponent. On three hybrid instruments the accepted mode-blind model is exploited: the planner is pinned at the mode boundary at a regret of nearly the whole attainable return. We prove a localization budget, valid at boundary points: models with Lipschitz constant at most L differing by eta at a point disagree above tolerance eps on a region of volume at least kappa((eta-eps)/L)^(d+m); the discontinuous reset modes studied pay no such budget. With real LLM synthesis, GPT-5.x repairs an omitted 1D clamp in 105 of 111 mode-containing draws -- every attempt exact on 50 of 56 instrument-stream blocks (95% CI [0.781, 0.960]). On 2D regions no artifact recovers the rule (0/156); eight targeted interventions leave the failure in place, and positive controls locate it: a located rule is not induced, while given form and location the constants follow exactly. A version-space certificate proves identification is class-relative: at the widest dose the declared fit succeeds in 20/20 blocks and every sample-consistent circle is within tolerance in 18/20. We prove a class of entry rules exactly consistent with every sample yet harmless at play, so identifiability is a measurable property of the instrument. Re-scoring all 1034 artifacts on independent samples confirms acceptance certifies sample consistency and no more: where the gate is provably informative it covers about two percent of the exploited planner's queries.",
+  "abstract_zh": "在代码世界模型范式中，LLM 合成一个可执行的世界模型，经典规划器对其进行搜索，当模型重现采样转换时被接受。我们询问这种接受在连续控制中证明了什么。我们将流程的危险定义为预期风险，并分离出其确切因素：N 个独立同分布的闸门 rollout 全部错过概率为 r 的关键事件的概率恰好是 (1-r)^N；独立的接受样本将其预算添加到指数中。在三个混合仪器上，被接受的模式盲模型被利用：规划器被固定在模式边界，遗憾几乎达到整个可获得的回报。我们证明了一个局部化预算，在边界点有效：Lipschitz 常数至多为 L 的模型在一点处相差 eta，在体积至少为 kappa((eta-eps)/L)^(d+m) 的区域上，差异超过容差 eps；所研究的不连续重置模式不支付这样的预算。使用真实的 LLM 合成，GPT-5.x 在 111 个包含模式的抽取中修复了 105 个被忽略的一维钳位——在 50 个仪器流块中的 50 个上每次尝试都精确（95% CI [0.781, 0.960]）。在二维区域，没有工件恢复规则（0/156）；八次有针对性的干预使失败保持不变，阳性对照定位了它：定位的规则未被诱导，而给定形式和位置，常数完全遵循。版本空间证书证明识别是类相对的：在最宽的剂量下，声明的拟合在 20/20 块中成功，并且在 18/20 中每个样本一致的圆都在容差内。我们证明了一类入口规则与每个样本完全一致但在游戏中无害，因此可识别性是仪器的可测量属性。对所有 1034 个工件在独立样本上重新评分确认接受证明了样本一致性，仅此而已：在闸门可证明信息丰富的地方，它覆盖了被利用的规划器查询的约 2%。",
+  "tldr_zh": "代码世界模型中，采样验证仅保证样本一致性，无法识别被忽略的模式，导致规划器被利用。",
+  "cover_zh": "采样验证竟有盲区？被忽略的模式让规划器翻车，GPT-5.x 也救不回 2D 规则！",
+  "authors": [
+    {
+      "name": "Javier Aguilar Martín",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "eess.SY"
+  ],
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "arxiv_id": "2608.17956",
+  "pdf_url": "https://arxiv.org/pdf/2608.17956v1",
+  "abs_url": "http://arxiv.org/abs/2608.17956v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-17956.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-17956-p2.jpg",
+    "assets/img/covers/arxiv-2608-17956-p3.jpg",
+    "assets/img/covers/arxiv-2608-17956-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 92,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 92 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "聚焦连续控制中的代码世界模型采样验证风险，理论分析与实验结合，对world model安全评估有高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "AGILabs"
+  ],
+  "method_tags": [
+    "Code World Model",
+    "sampling-verification",
+    "continuous control"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
