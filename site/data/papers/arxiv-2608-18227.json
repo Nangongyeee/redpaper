@@ -1,0 +1,98 @@
+{
+  "id": "arxiv-2608-18227",
+  "source": "arxiv",
+  "title": "Revisiting the \"Push-T\" Robot Manipulation Task with Agentic Robotics",
+  "title_zh": "重新审视“Push-T”机器人操作任务：智能体机器人技术的视角",
+  "abstract": "Push-T is an iconic benchmark for learning manipulation policies from human demonstrations. The robot must use a single point of contact to push a T-shaped block into a target pose. In this short paper, we revisit the Push-T task in the context of emerging advances in Agentic Robotics where an LLM coding agent -- Claude Code with Fable 5 -- is prompted to create an algorithmic solution that does not require any demonstration data. We study how effective the agentic coding loop can solve the Push-T task, and compare the resulting code as policy with the visuomotor imitation learning policy. Results suggest that the agent found the 2D gym simulation online, and used sim experiments to learn push mechanics, iteratively optimizing to achieve 100% success rate using 46% fewer steps than the best diffusion policy trained with 200 human demonstrations. The coding agent also solve extensions from T to the full alphabet (Push-A to Push-Z) using a self generated curriculum and generated simulation code for the Franka and UR5 robot arms in 3D cross-embodiment simulations with visual feedback. Videos, policies and details will be posted online.",
+  "abstract_zh": "Push-T 是一个从人类演示中学习操作策略的标志性基准任务。机器人必须使用单点接触将 T 形块推至目标姿态。在这篇短文中，我们在智能体机器人技术新兴进展的背景下重新审视 Push-T 任务，其中 LLM 编码智能体——Claude Code 与 Fable 5——被提示创建一个不需要任何演示数据的算法解决方案。我们研究了智能体编码循环在解决 Push-T 任务上的有效性，并将生成的代码作为策略与视觉运动模仿学习策略进行比较。结果表明，智能体在线找到了 2D 健身房模拟，并利用模拟实验学习推动机制，通过迭代优化实现了 100% 的成功率，且比使用 200 个人类演示训练的最佳扩散策略少用了 46% 的步骤。编码智能体还通过自生成的课程解决了从 T 到完整字母表（Push-A 到 Push-Z）的扩展问题，并为 Franka 和 UR5 机械臂生成了带有视觉反馈的 3D 跨具身模拟代码。视频、策略和详细信息将在线发布。",
+  "tldr_zh": "LLM编码智能体无需演示数据，在Push-T任务上以更少步骤达到100%成功率。",
+  "cover_zh": "无需人类演示，LLM编码智能体竟在机器人任务上超越模仿学习？",
+  "authors": [
+    {
+      "name": "Shuangyu Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaiyuan Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Ken Goldberg",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "arxiv_id": "2608.18227",
+  "pdf_url": "https://arxiv.org/pdf/2608.18227v1",
+  "abs_url": "http://arxiv.org/abs/2608.18227v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-18227.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-18227-p2.jpg",
+    "assets/img/covers/arxiv-2608-18227-p3.jpg",
+    "assets/img/covers/arxiv-2608-18227-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、imitation learning、diffusion policy）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "重新审视Push-T基准，对比agentic coding与模仿学习策略，虽非全新算法，但对具身操作研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of California, Berkeley"
+  ],
+  "method_tags": [
+    "Agentic Robotics",
+    "LLM coding agent"
+  ],
+  "platform": [
+    "Franka",
+    "UR5"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

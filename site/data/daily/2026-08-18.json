@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "count": 21,
+  "count": 23,
   "papers": [
     {
       "id": "arxiv-2608-18077",
@@ -967,6 +967,75 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-18258",
+      "source": "arxiv",
+      "title": "VERAGMIL: Virtual Environment for Scooping Granular Foods with Imitation Learning Models",
+      "title_zh": "VERAGMIL：基于模仿学习的颗粒状食物舀取虚拟环境",
+      "tldr_zh": "提出VERAGMIL虚拟环境，结合VR演示训练模仿学习模型，有效提升颗粒食物舀取性能。",
+      "cover_zh": "VR训练让机器人舀饭更稳？BCQ模型接近人类水平，溢出大减！",
+      "abstract_zh": "机器人辅助喂食（RAF）系统对于帮助残疾或运动障碍人士完成进食任务至关重要。处理颗粒状食物（如米饭和豆类）因其动态物理特性而面临重大挑战。从人类演示中学习提供了一种有前景的解决方案，但获取高质量的演示数据较为复杂。为此，我们提出了VERAGMIL，一个结合高保真模拟器与直观虚拟现实（VR）界面的框架，用于记录演示并支持不同的模仿学习方法。VERAGMIL为训练RAF系统处理颗粒材料提供了逼真的环境，包括机器人、传感器以及具有不同物理特性的多种食物。我们通过训练三种模仿学习模型（BC、BC-RNN和BCQ）来评估VERAGMIL，在颗粒舀取和搬运任务中使用VR界面和3D空间鼠标演示，并与人类专家基线进行比较。模型评估指标包括成功率、溢出量、对未见食物的泛化能力以及任务完成时间。结果表明，基于VR的演示显著优于3D空间鼠标数据，其中BCQ取得了最佳整体性能，尤其在减少溢出方面接近人类水平。这些发现强调了我们的框架在训练RAF系统处理颗粒材料方面的有效性。框架代码已公开：https://github.com/AmanuelErgogo/VERAGMIL.git。",
+      "authors": [
+        "Amanuel Ergogo",
+        "Diego Dall'Alba",
+        "Przemyslaw Korzeniowski"
+      ],
+      "authors_all": [
+        "Amanuel Ergogo",
+        "Diego Dall'Alba",
+        "Przemyslaw Korzeniowski"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-18258.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-18258-p2.jpg",
+        "assets/img/covers/arxiv-2608-18258-p3.jpg",
+        "assets/img/covers/arxiv-2608-18258-p4.jpg"
+      ],
+      "arxiv_id": "2608.18258",
+      "abs_url": "http://arxiv.org/abs/2608.18258v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18258v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "结合VR遥操作与仿真环境，用于机器人喂食的模仿学习，涉及遥操作和sim2real，但核心是遥操作数据采集。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "SANO Centre for Computational Personalized Medicine",
+        "University of Verona",
+        "University of South Florida"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "BC",
+        "BC-RNN"
+      ],
+      "platform": [
+        "Ufactory xArm7"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-17423",
       "source": "arxiv",
       "title": "Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups",
@@ -1229,6 +1298,73 @@
         "Zero-shot Transfer"
       ],
       "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-18227",
+      "source": "arxiv",
+      "title": "Revisiting the \"Push-T\" Robot Manipulation Task with Agentic Robotics",
+      "title_zh": "重新审视“Push-T”机器人操作任务：智能体机器人技术的视角",
+      "tldr_zh": "LLM编码智能体无需演示数据，在Push-T任务上以更少步骤达到100%成功率。",
+      "cover_zh": "无需人类演示，LLM编码智能体竟在机器人任务上超越模仿学习？",
+      "abstract_zh": "Push-T 是一个从人类演示中学习操作策略的标志性基准任务。机器人必须使用单点接触将 T 形块推至目标姿态。在这篇短文中，我们在智能体机器人技术新兴进展的背景下重新审视 Push-T 任务，其中 LLM 编码智能体——Claude Code 与 Fable 5——被提示创建一个不需要任何演示数据的算法解决方案。我们研究了智能体编码循环在解决 Push-T 任务上的有效性，并将生成的代码作为策略与视觉运动模仿学习策略进行比较。结果表明，智能体在线找到了 2D 健身房模拟，并利用模拟实验学习推动机制，通过迭代优化实现了 100% 的成功率，且比使用 200 个人类演示训练的最佳扩散策略少用了 46% 的步骤。编码智能体还通过自生成的课程解决了从 T 到完整字母表（Push-A 到 Push-Z）的扩展问题，并为 Franka 和 UR5 机械臂生成了带有视觉反馈的 3D 跨具身模拟代码。视频、策略和详细信息将在线发布。",
+      "authors": [
+        "Shuangyu Xie",
+        "Kaiyuan Chen",
+        "Ken Goldberg"
+      ],
+      "authors_all": [
+        "Shuangyu Xie",
+        "Kaiyuan Chen",
+        "Ken Goldberg"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-18227.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-18227-p2.jpg",
+        "assets/img/covers/arxiv-2608-18227-p3.jpg",
+        "assets/img/covers/arxiv-2608-18227-p4.jpg"
+      ],
+      "arxiv_id": "2608.18227",
+      "abs_url": "http://arxiv.org/abs/2608.18227v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18227v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "manipulation",
+        "reason": "重新审视Push-T基准，对比agentic coding与模仿学习策略，虽非全新算法，但对具身操作研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of California, Berkeley"
+      ],
+      "method_tags": [
+        "Agentic Robotics",
+        "LLM coding agent"
+      ],
+      "platform": [
+        "Franka",
+        "UR5"
+      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
