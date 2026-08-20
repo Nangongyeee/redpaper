@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T07:42:42.236252+00:00",
-  "count": 2162,
+  "generated_at": "2026-08-20T09:29:27.914806+00:00",
+  "count": 2163,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -18767,6 +18767,83 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-16164",
+      "source": "arxiv_discover",
+      "title": "Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain",
+      "title_zh": "非结构化地形上腿部运动的轨迹级自动课程学习",
+      "tldr_zh": "提出轨迹级自动课程学习框架，提升非结构化地形腿部运动成功率。",
+      "cover_zh": "不用再手动设计课程！新框架让机器人越野成功率飙升",
+      "abstract_zh": "针对复杂非结构化地形训练运动策略需要课程学习以避免早期探索失败。然而，由于非结构化地形缺乏明确的难度排序，现有方法在参数化地形上采用启发式课程。这种抽象限制了泛化能力，因为策略可能过度适应近乎固定的感知模式。为解决这一问题，我们提出了ourname{}，一个轨迹级自动课程学习框架，直接从非结构化地形图中生成训练任务。在每次课程更新时，评估器学习当前策略的难度函数，将给定的轨迹任务映射到难度分数。然后，采样器根据学习到的评估器提出新的轨迹，作为下一次策略更新的课程。这形成了一个闭环，课程迭代地与不断演化的策略相匹配。定量和定性实验表明，ourname{}在非结构化地形上持续提供有效的课程，与无课程直接训练相比，轨迹成功率提高了56.3%。与手工设计的课程学习相比，我们的方法在最难地形任务上成功率提高了18.5%，在从不同接近方向评估同一障碍类型时，成功率提高了高达39.74%。",
+      "authors": [
+        "Rocky Liu",
+        "Tengyu Liu",
+        "Baoxiong Jia"
+      ],
+      "authors_all": [
+        "Rocky Liu",
+        "Tengyu Liu",
+        "Baoxiong Jia",
+        "Fangwei Zhong",
+        "Xinyi Tong",
+        "Hongzhao Xie",
+        "Siyuan Huang"
+      ],
+      "primary_category": "",
+      "published": "2026-08-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Siyuan Huang"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-16164.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-16164-p2.jpg",
+        "assets/img/covers/arxiv-2608-16164-p3.jpg",
+        "assets/img/covers/arxiv-2608-16164-p4.jpg"
+      ],
+      "arxiv_id": "2608.16164",
+      "abs_url": "http://arxiv.org/abs/2608.16164v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16164v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 54,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "locomotion",
+        "reason": "针对非结构化地形的四足运动策略自动课程学习，方法新颖且实验充分，对足式运动研究有较高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "BIGAI",
+        "Communication University of China",
+        "Shanghai Jiao Tong University",
+        "Beijing Normal University"
+      ],
+      "method_tags": [
+        "Curriculum Learning",
+        "Automatic Curriculum Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "github-danijar-daydreamer",
       "source": "github",
       "title": "danijar/daydreamer",
@@ -28668,9 +28745,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构简化和寄存器注意力，大幅提升重建精度，并显著降低训练内存。",
-      "cover_zh": "重建模型也能扩展？VGGT-$\\Omega$用30%内存实现精度飙升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模呈可预测的扩展。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳的相机姿态估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，大幅提升重建精度，并降低训练内存。",
+      "cover_zh": "重建模型也能这么强？VGGT-$\\Omega$精度提升77%，内存还省70%！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -44314,7 +44391,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "Atlas 机器人玩出新花样，旋转跳跃不停歇！",
+      "cover_zh": "机器人也能转圈圈？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -106257,6 +106334,70 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-10220",
+      "source": "arxiv_discover",
+      "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+      "title_zh": "通过自碰撞避免参考实现人形机器人在受限空间中的全身规划",
+      "tldr_zh": "提出三阶段全身规划框架，解决人形机器人在受限空间中的运动规划难题。",
+      "cover_zh": "人形机器人也能钻缝？新框架让它在狭小空间里如鱼得水",
+      "abstract_zh": "高度受限环境中的人形机器人运动需要穿越密集的环境障碍和复杂的自碰撞边界，同时保持多接触动态可行性。传统的轨迹优化器在这些受限空间中常常难以应对，因为基于粒子抽象的样条在大碰撞空间中导航不足，容易陷入较差的局部最小值。为了解决这个问题，我们提出了一个三阶段全身规划框架，直接在运动学可达的刚体体积上进行运动学路径规划。通过将可微碰撞避免集成到可达性约束的公式中，我们的框架合成了体积信息引导，能够可靠地引导全阶轨迹优化器在长时域内进行优化。我们表明，这些优化计划可作为高质量参考，用于训练残差强化学习策略，以实现鲁棒的在线执行。我们在Unitree G1人形机器人上验证了我们的方法，跨越三个超过NIST应急响应标准的基准测试平台，实现了受限空间比率（$C_r < 1.5$）。我们的框架在12至18秒的任务中生成可行轨迹，涉及复杂的手脚接触，而标准基线在这些任务中失败，同时学习到的策略在物理模拟中的广泛域随机化下成功跟踪这些计划。",
+      "authors": [
+        "Carlos Gonzalez",
+        "Luis Sentis"
+      ],
+      "authors_all": [
+        "Carlos Gonzalez",
+        "Luis Sentis"
+      ],
+      "primary_category": "",
+      "published": "2026-08-10",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-10220.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-10220-p2.jpg",
+        "assets/img/covers/arxiv-2608-10220-p3.jpg",
+        "assets/img/covers/arxiv-2608-10220-p4.jpg"
+      ],
+      "arxiv_id": "2608.10220",
+      "abs_url": "http://arxiv.org/abs/2608.10220v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10220v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形全身规划与自碰撞避免，结合轨迹优化和残差RL，面向受限空间，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Whole-Body Planning",
+        "Reinforcement Learning",
+        "Self-Collision Avoidance"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-10718",
       "source": "arxiv",
       "title": "TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4",
@@ -122242,68 +122383,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-10220",
-      "source": "arxiv_discover",
-      "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
-      "title_zh": "通过自碰撞避免参考实现人形机器人在受限空间中的全身规划",
-      "tldr_zh": "提出三阶段全身规划框架，解决人形机器人在受限空间中的运动规划难题。",
-      "cover_zh": "人形机器人也能钻缝？新框架让它在狭小空间里如鱼得水",
-      "abstract_zh": "高度受限环境中的人形机器人运动需要穿越密集的环境障碍和复杂的自碰撞边界，同时保持多接触动态可行性。传统的轨迹优化器在这些受限空间中常常难以应对，因为基于粒子抽象的样条在大碰撞空间中导航不足，容易陷入较差的局部最小值。为了解决这个问题，我们提出了一个三阶段全身规划框架，直接在运动学可达的刚体体积上进行运动学路径规划。通过将可微碰撞避免集成到可达性约束的公式中，我们的框架合成了体积信息引导，能够可靠地引导全阶轨迹优化器在长时域内进行优化。我们表明，这些优化计划可作为高质量参考，用于训练残差强化学习策略，以实现鲁棒的在线执行。我们在Unitree G1人形机器人上验证了我们的方法，跨越三个超过NIST应急响应标准的基准测试平台，实现了受限空间比率（$C_r < 1.5$）。我们的框架在12至18秒的任务中生成可行轨迹，涉及复杂的手脚接触，而标准基线在这些任务中失败，同时学习到的策略在物理模拟中的广泛域随机化下成功跟踪这些计划。",
-      "authors": [
-        "Carlos Gonzalez",
-        "Luis Sentis"
-      ],
-      "authors_all": [
-        "Carlos Gonzalez",
-        "Luis Sentis"
-      ],
-      "primary_category": "",
-      "published": "2026-08-10",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-10220.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-10220-p2.jpg",
-        "assets/img/covers/arxiv-2608-10220-p3.jpg",
-        "assets/img/covers/arxiv-2608-10220-p4.jpg"
-      ],
-      "arxiv_id": "2608.10220",
-      "abs_url": "http://arxiv.org/abs/2608.10220v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.10220v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形全身规划与自碰撞避免，结合轨迹优化和残差RL，面向受限空间，具科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The University of Texas at Austin"
-      ],
-      "method_tags": [
-        "Whole-Body Planning",
-        "Reinforcement Learning",
-        "Self-Collision Avoidance"
-      ],
-      "platform": [
-        "Unitree G1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2608-10860",
