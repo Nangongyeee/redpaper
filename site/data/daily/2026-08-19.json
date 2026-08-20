@@ -340,6 +340,153 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-18827",
+      "source": "arxiv",
+      "title": "MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models",
+      "title_zh": "MLREF：通过大型语言模型实现强化学习中奖励设计的高效模块复用",
+      "tldr_zh": "MLREF通过模块池复用奖励组件，提升强化学习奖励设计的稳定性和性能。",
+      "cover_zh": "奖励设计不再从头开始｜模块复用让强化学习性能飙升25%",
+      "abstract_zh": "奖励函数设计仍然是强化学习中的一个瓶颈。虽然大型语言模型（LLM）已经实现了自动奖励生成，但现有方法将奖励函数作为整体程序生成和修改，难以可靠地保留和重用早期迭代中发现的有效组件，导致跨迭代的性能不稳定。为了解决这个问题，我们提出了模块级奖励进化框架（MLREF）。MLREF的核心是一个模块池，一个可重用奖励组件的持久存储库。MLREF将模块池作为主要优化对象：池通过跨迭代积累成功模块、改进表现不佳的模块以及重用经过验证的组件来进化；而奖励函数则从该池中抽取模块，构建为线性组合。为了驱动这种进化，MLREF集成了三种机制：基于反思的细化、混合信用分配以及带回滚的合并策略，这些机制共同提高了奖励优化的有效性和鲁棒性。在17个任务上的实验表明，MLREF在运动任务上比强基线高出25.2%，在操作任务上高出6.6%，并且优化动态更加稳定。",
+      "authors": [
+        "Chenglin Liu",
+        "Xun Wang",
+        "Ruishuo Chen"
+      ],
+      "authors_all": [
+        "Chenglin Liu",
+        "Xun Wang",
+        "Ruishuo Chen",
+        "Zhuoran Li",
+        "Longbo Huang"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-19",
+      "channels": [
+        "locomotion",
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-18827.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-18827-p2.jpg",
+        "assets/img/covers/arxiv-2608-18827-p3.jpg",
+        "assets/img/covers/arxiv-2608-18827-p4.jpg"
+      ],
+      "arxiv_id": "2608.18827",
+      "abs_url": "http://arxiv.org/abs/2608.18827v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18827v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 49,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出基于LLM的模块化奖励设计框架，在locomotion和manipulation任务上验证，对RL奖励设计有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University"
+      ],
+      "method_tags": [
+        "LLM",
+        "reward design",
+        "module reuse"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-18840",
+      "source": "arxiv",
+      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
+      "title_zh": "超越放置与关节：面向具身交互的用法驱动代码场景",
+      "tldr_zh": "提出RoomWright，用代码生成用法驱动的3D场景，支持具身交互。",
+      "cover_zh": "代码生成场景只重外观？RoomWright让AI真正会用物体！",
+      "abstract_zh": "室内场景合成为具身AI、机器人操作和基于仿真的策略学习提供了必要的环境。最近的基于代码的场景生成方法产生了可编辑和可扩展的环境，但它们仍然专注于视觉构建和对象级关节，场景的功能性使用在很大程度上未被建模。为了解决这个问题，我们提出了RoomWright，一个代理式的、用法驱动的框架，用于生成完全以代码表示的3D场景，以支持具身交互。RoomWright执行用法驱动的对象推理，将每个锚点视为任务中心，并接纳任务所需的对象及其功能。一个代码代理通过将每个交互编译成触发、条件、效果规则来进一步实现多部分交互，更新结构化对象状态，捕获对象间的因果依赖。此外，由于操作对象的朝向是模糊的且难以从像素中恢复，RoomWright通过注释信息引导的用法导向来缓解这一问题。大量实验证明了我们方法的有效性。生成的场景是可执行、可编辑且可直接用于仿真的，为具身AI和策略学习提供了交互环境。",
+      "authors": [
+        "Zijian Xiao",
+        "Zipeng Ye",
+        "Jinkun Hao"
+      ],
+      "authors_all": [
+        "Zijian Xiao",
+        "Zipeng Ye",
+        "Jinkun Hao",
+        "Xiong Yang",
+        "Yuchen Xie",
+        "Ran Yi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-19",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-18840.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-18840-p2.jpg",
+        "assets/img/covers/arxiv-2608-18840-p3.jpg",
+        "assets/img/covers/arxiv-2608-18840-p4.jpg"
+      ],
+      "arxiv_id": "2608.18840",
+      "abs_url": "http://arxiv.org/abs/2608.18840v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18840v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 46,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "提出代码化场景生成框架，支持具身交互与策略学习，仿真环境构建有科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "Meituan"
+      ],
+      "method_tags": [
+        "code-based scene generation",
+        "usage-driven object reasoning",
+        "trigger-condition-effect rule"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-19085",
       "source": "arxiv",
       "title": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
@@ -413,150 +560,6 @@
         "World Model",
         "Action-conditioned future modeling",
         "Trajectory scoring"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-18827",
-      "source": "arxiv",
-      "title": "MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models",
-      "title_zh": "MLREF：通过大型语言模型实现强化学习中奖励设计的高效模块复用",
-      "tldr_zh": "MLREF通过模块池复用奖励组件，提升强化学习奖励设计的稳定性和性能。",
-      "cover_zh": "奖励设计不再从头开始｜模块复用让强化学习性能飙升25%",
-      "abstract_zh": "奖励函数设计仍然是强化学习中的一个瓶颈。虽然大型语言模型（LLM）已经实现了自动奖励生成，但现有方法将奖励函数作为整体程序生成和修改，难以可靠地保留和重用早期迭代中发现的有效组件，导致跨迭代的性能不稳定。为了解决这个问题，我们提出了模块级奖励进化框架（MLREF）。MLREF的核心是一个模块池，一个可重用奖励组件的持久存储库。MLREF将模块池作为主要优化对象：池通过跨迭代积累成功模块、改进表现不佳的模块以及重用经过验证的组件来进化；而奖励函数则从该池中抽取模块，构建为线性组合。为了驱动这种进化，MLREF集成了三种机制：基于反思的细化、混合信用分配以及带回滚的合并策略，这些机制共同提高了奖励优化的有效性和鲁棒性。在17个任务上的实验表明，MLREF在运动任务上比强基线高出25.2%，在操作任务上高出6.6%，并且优化动态更加稳定。",
-      "authors": [
-        "Chenglin Liu",
-        "Xun Wang",
-        "Ruishuo Chen"
-      ],
-      "authors_all": [
-        "Chenglin Liu",
-        "Xun Wang",
-        "Ruishuo Chen",
-        "Zhuoran Li",
-        "Longbo Huang"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-08-19",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-18827.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-18827-p2.jpg",
-        "assets/img/covers/arxiv-2608-18827-p3.jpg",
-        "assets/img/covers/arxiv-2608-18827-p4.jpg"
-      ],
-      "arxiv_id": "2608.18827",
-      "abs_url": "http://arxiv.org/abs/2608.18827v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.18827v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出基于LLM的模块化奖励设计框架，在locomotion和manipulation任务上验证，对RL奖励设计有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tsinghua University"
-      ],
-      "method_tags": [
-        "LLM",
-        "reward design",
-        "module reuse"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-18840",
-      "source": "arxiv",
-      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
-      "title_zh": "超越放置与关节：面向具身交互的用法驱动代码场景",
-      "tldr_zh": "提出RoomWright，用代码生成用法驱动的3D场景，支持具身交互。",
-      "cover_zh": "代码生成场景只重外观？RoomWright让AI真正会用物体！",
-      "abstract_zh": "室内场景合成为具身AI、机器人操作和基于仿真的策略学习提供了必要的环境。最近的基于代码的场景生成方法产生了可编辑和可扩展的环境，但它们仍然专注于视觉构建和对象级关节，场景的功能性使用在很大程度上未被建模。为了解决这个问题，我们提出了RoomWright，一个代理式的、用法驱动的框架，用于生成完全以代码表示的3D场景，以支持具身交互。RoomWright执行用法驱动的对象推理，将每个锚点视为任务中心，并接纳任务所需的对象及其功能。一个代码代理通过将每个交互编译成触发、条件、效果规则来进一步实现多部分交互，更新结构化对象状态，捕获对象间的因果依赖。此外，由于操作对象的朝向是模糊的且难以从像素中恢复，RoomWright通过注释信息引导的用法导向来缓解这一问题。大量实验证明了我们方法的有效性。生成的场景是可执行、可编辑且可直接用于仿真的，为具身AI和策略学习提供了交互环境。",
-      "authors": [
-        "Zijian Xiao",
-        "Zipeng Ye",
-        "Jinkun Hao"
-      ],
-      "authors_all": [
-        "Zijian Xiao",
-        "Zipeng Ye",
-        "Jinkun Hao",
-        "Xiong Yang",
-        "Yuchen Xie",
-        "Ran Yi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-19",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-18840.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-18840-p2.jpg",
-        "assets/img/covers/arxiv-2608-18840-p3.jpg",
-        "assets/img/covers/arxiv-2608-18840-p4.jpg"
-      ],
-      "arxiv_id": "2608.18840",
-      "abs_url": "http://arxiv.org/abs/2608.18840v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.18840v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "sim2real",
-        "reason": "提出代码化场景生成框架，支持具身交互与策略学习，仿真环境构建有科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Shanghai Jiao Tong University",
-        "Meituan"
-      ],
-      "method_tags": [
-        "code-based scene generation",
-        "usage-driven object reasoning",
-        "trigger-condition-effect rule"
       ],
       "platform": [],
       "sim_stack": [],
@@ -770,6 +773,79 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-18433",
+      "source": "arxiv",
+      "title": "The Embodiment Gap in Robot Foundation Models",
+      "title_zh": "机器人基础模型中的具身差距",
+      "tldr_zh": "综述机器人基础模型中的具身差距，提出两轴图与报告框架。",
+      "cover_zh": "机器人模型泛化≠能跑？具身差距才是落地关键！",
+      "abstract_zh": "机器人基础模型（RFMs），包括视觉-语言-动作（VLA）策略，通常通过扩展视角来讨论：更多的数据、更大的模型和更广泛的基准应该能提高泛化能力。然而，在机器人学中，一个模型可以泛化，但在它能在具有特定身体的机器人上运行之前，仍有工作要做。所需的工作因方法和目标机器人而异，这些差异影响实际部署。我们将可重用模型、表示或数据与其在目标机器人上执行之间的差距称为具身差距。本综述考察了哪些可以在机器人具身之间重用，哪些必须在新机器人上实现。我们将现有方法放在一个两轴图上，该图显示了共享结构的类型以及为目标机器人执行所需适应的阶段。然后，我们通过三个重叠的研究方向来审视近期工作：共享语义和感知、共享机器人数据和接口，以及跨具身学习对应关系。我们还提出了一个适应工作的报告框架，仅凭成功率无法揭示这些工作。该框架识别了在比较跨具身学习时应检查的工作，并强调了在新机器人上仍需完成的工作以及未来研究的问题。",
+      "authors": [
+        "Yukiyasu Domae",
+        "Keisuke Shirai",
+        "Hanbit Oh"
+      ],
+      "authors_all": [
+        "Yukiyasu Domae",
+        "Keisuke Shirai",
+        "Hanbit Oh",
+        "Ryoichi Nakajo",
+        "Tomohiro Motoda",
+        "Koshi Makihara",
+        "Masaki Murooka",
+        "Takuma Yagi",
+        "Yoshiaki Bando",
+        "Ryo Hanai"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-19",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-18433.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-18433-p2.jpg",
+        "assets/img/covers/arxiv-2608-18433-p3.jpg",
+        "assets/img/covers/arxiv-2608-18433-p4.jpg"
+      ],
+      "arxiv_id": "2608.18433",
+      "abs_url": "http://arxiv.org/abs/2608.18433v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18433v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "综述聚焦机器人基础模型的跨本体泛化与部署差距，对具身智能研究有重要参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National Institute of Advanced Industrial Science and Technology (AIST), Japan"
+      ],
+      "method_tags": [
+        "survey",
+        "cross-embodiment",
+        "embodiment gap"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-18552",
       "source": "arxiv",
       "title": "Real-Time Control-Constrained DDP for Underactuated Balancing of Legged Robots",
@@ -832,78 +908,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-18433",
-      "source": "arxiv",
-      "title": "The Embodiment Gap in Robot Foundation Models",
-      "title_zh": "机器人基础模型中的具身差距",
-      "tldr_zh": "综述机器人基础模型中的具身差距，提出两轴图与报告框架。",
-      "cover_zh": "机器人模型泛化≠能跑？具身差距才是落地关键！",
-      "abstract_zh": "机器人基础模型（RFMs），包括视觉-语言-动作（VLA）策略，通常通过扩展视角来讨论：更多的数据、更大的模型和更广泛的基准应该能提高泛化能力。然而，在机器人学中，一个模型可以泛化，但在它能在具有特定身体的机器人上运行之前，仍有工作要做。所需的工作因方法和目标机器人而异，这些差异影响实际部署。我们将可重用模型、表示或数据与其在目标机器人上执行之间的差距称为具身差距。本综述考察了哪些可以在机器人具身之间重用，哪些必须在新机器人上实现。我们将现有方法放在一个两轴图上，该图显示了共享结构的类型以及为目标机器人执行所需适应的阶段。然后，我们通过三个重叠的研究方向来审视近期工作：共享语义和感知、共享机器人数据和接口，以及跨具身学习对应关系。我们还提出了一个适应工作的报告框架，仅凭成功率无法揭示这些工作。该框架识别了在比较跨具身学习时应检查的工作，并强调了在新机器人上仍需完成的工作以及未来研究的问题。",
-      "authors": [
-        "Yukiyasu Domae",
-        "Keisuke Shirai",
-        "Hanbit Oh"
-      ],
-      "authors_all": [
-        "Yukiyasu Domae",
-        "Keisuke Shirai",
-        "Hanbit Oh",
-        "Ryoichi Nakajo",
-        "Tomohiro Motoda",
-        "Koshi Makihara",
-        "Masaki Murooka",
-        "Takuma Yagi",
-        "Yoshiaki Bando",
-        "Ryo Hanai"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-19",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-18433.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-18433-p2.jpg",
-        "assets/img/covers/arxiv-2608-18433-p3.jpg",
-        "assets/img/covers/arxiv-2608-18433-p4.jpg"
-      ],
-      "arxiv_id": "2608.18433",
-      "abs_url": "http://arxiv.org/abs/2608.18433v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.18433v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "综述聚焦机器人基础模型的跨本体泛化与部署差距，对具身智能研究有重要参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "National Institute of Advanced Industrial Science and Technology (AIST), Japan"
-      ],
-      "method_tags": [
-        "survey",
-        "cross-embodiment",
-        "embodiment gap"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
