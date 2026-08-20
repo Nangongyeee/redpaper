@@ -1,6 +1,6 @@
 {
   "date": "2026-08-10",
-  "count": 21,
+  "count": 22,
   "papers": [
     {
       "id": "arxiv-2608-09298",
@@ -1347,6 +1347,68 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-10220",
+      "source": "arxiv_discover",
+      "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+      "title_zh": "通过自碰撞避免参考实现人形机器人在受限空间中的全身规划",
+      "tldr_zh": "提出三阶段全身规划框架，解决人形机器人在受限空间中的运动规划难题。",
+      "cover_zh": "人形机器人也能钻缝？新框架让它在狭小空间里如鱼得水",
+      "abstract_zh": "高度受限环境中的人形机器人运动需要穿越密集的环境障碍和复杂的自碰撞边界，同时保持多接触动态可行性。传统的轨迹优化器在这些受限空间中常常难以应对，因为基于粒子抽象的样条在大碰撞空间中导航不足，容易陷入较差的局部最小值。为了解决这个问题，我们提出了一个三阶段全身规划框架，直接在运动学可达的刚体体积上进行运动学路径规划。通过将可微碰撞避免集成到可达性约束的公式中，我们的框架合成了体积信息引导，能够可靠地引导全阶轨迹优化器在长时域内进行优化。我们表明，这些优化计划可作为高质量参考，用于训练残差强化学习策略，以实现鲁棒的在线执行。我们在Unitree G1人形机器人上验证了我们的方法，跨越三个超过NIST应急响应标准的基准测试平台，实现了受限空间比率（$C_r < 1.5$）。我们的框架在12至18秒的任务中生成可行轨迹，涉及复杂的手脚接触，而标准基线在这些任务中失败，同时学习到的策略在物理模拟中的广泛域随机化下成功跟踪这些计划。",
+      "authors": [
+        "Carlos Gonzalez",
+        "Luis Sentis"
+      ],
+      "authors_all": [
+        "Carlos Gonzalez",
+        "Luis Sentis"
+      ],
+      "primary_category": "",
+      "published": "2026-08-10",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-10220.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-10220-p2.jpg",
+        "assets/img/covers/arxiv-2608-10220-p3.jpg",
+        "assets/img/covers/arxiv-2608-10220-p4.jpg"
+      ],
+      "arxiv_id": "2608.10220",
+      "abs_url": "http://arxiv.org/abs/2608.10220v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10220v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形全身规划与自碰撞避免，结合轨迹优化和残差RL，面向受限空间，具科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Whole-Body Planning",
+        "Reinforcement Learning",
+        "Self-Collision Avoidance"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-09166",
