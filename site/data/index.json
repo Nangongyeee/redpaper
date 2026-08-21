@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T09:35:45.026492+00:00",
+  "generated_at": "2026-08-21T11:30:16.747023+00:00",
   "count": 2191,
   "papers": [
     {
@@ -29237,9 +29237,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督，用更少内存训练更大模型，重建精度大幅提升。",
-      "cover_zh": "内存砍70%！这个重建模型精度暴涨，还能理解空间？",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改动、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层，简化了VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代了全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，内存仅用30%，数据量增15倍。",
+      "cover_zh": "内存砍掉70%！这个重建模型精度暴涨，还顺手提升了语言对齐？",
+      "abstract_zh": "最近的馈送式重建模型（如VGGT）已被证明与传统基于优化的重建器相比具有竞争力，同时还提供了对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程以及自监督学习协议。我们通过使用具有多任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言对齐，这表明重建可以成为空间理解的强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -42840,6 +42840,79 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-16556",
+      "source": "arxiv_discover",
+      "title": "DeepInsight II: One Trace from Benchmark to Robot",
+      "title_zh": "DeepInsight II：从基准测试到机器人的一条轨迹",
+      "tldr_zh": "DeepInsight II量化具身层评估，实现从基准到机器人的实证连续性。",
+      "cover_zh": "基准到机器人，一条轨迹打通模拟与真实｜DeepInsight II让差距无处遁形",
+      "abstract_zh": "在物理AI技术栈中，评估成熟度与部署风险呈反比：基础模型拥有成熟、标准化的测试框架，而实际部署所依赖的具身层仍分散在特定于基准的模拟器、具身和接口中。第一份DeepInsight报告（v1）通过三个抽象——任务、资源和结果——统一了整个技术栈的评估，但其定量证据集中在基础模型层；导航和操作（系统1）以及全身控制（系统0）仍停留在模拟案例研究，物理执行不在其实证范围内。DeepInsight II保持该基础不变，并量化具身部分。首先，它在两个导航和四个操作基准上，按照其原生协议复现了已发布检查点的参考结果。其次，MotionBench将四个已发布的全身控制器置于统一的工作负载和度量契约下，然后将一个合格的家族内队列从并行模拟转移到匹配的真实机器人试验中，其中模拟和物理展开共享父轨迹身份，同时保留执行域特定记录，使模拟到真实的差距成为原生缩减，而非跨工具链的对账。第三，一项组合的系统2-1-0研究将轨迹定位扩展到五个基于证据的交接标签，每个标签映射到具体的修复动作，具有可测量的可修复性标准，并在硬件可观测状态下测试相同归因的物理情节。因此，贡献不是新的评估架构，而是从基准执行到匹配机器人证据和面向修复的诊断的实证连续性。",
+      "authors": [
+        "Siyi Li",
+        "Yuchen Kang",
+        "Wuliang Wang"
+      ],
+      "authors_all": [
+        "Siyi Li",
+        "Yuchen Kang",
+        "Wuliang Wang",
+        "Zhengjie Zhang",
+        "Jiangpin Liu",
+        "Jianhao Yao",
+        "Jie Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-08-17",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ XPENG Robotics"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-16556.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-16556-p2.jpg",
+        "assets/img/covers/arxiv-2608-16556-p3.jpg",
+        "assets/img/covers/arxiv-2608-16556-p4.jpg"
+      ],
+      "arxiv_id": "2608.16556",
+      "abs_url": "http://arxiv.org/abs/2608.16556v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16556v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "系统评估全身控制与操作，含仿真到真机迁移，提供基准与诊断，科研价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "XPENG Robotics"
+      ],
+      "method_tags": [
+        "sim-to-real",
+        "whole-body control",
+        "benchmark evaluation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-16837",
       "source": "arxiv",
       "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
@@ -45117,8 +45190,8 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人尝试旋转并展示新动作。",
-      "cover_zh": "机器人转圈圈？Atlas 的新动作让人直呼内行！",
+      "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
+      "cover_zh": "机器人转圈圈？Atlas 的新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -73692,77 +73765,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-16556",
-      "source": "arxiv_discover",
-      "title": "DeepInsight II: One Trace from Benchmark to Robot",
-      "title_zh": "DeepInsight II：从基准测试到机器人的一条轨迹",
-      "tldr_zh": "DeepInsight II量化具身层评估，实现从基准到机器人的实证连续性。",
-      "cover_zh": "基准到机器人，一条轨迹打通模拟与真实｜DeepInsight II让差距无处遁形",
-      "abstract_zh": "在物理AI技术栈中，评估成熟度与部署风险呈反比：基础模型拥有成熟、标准化的测试框架，而实际部署所依赖的具身层仍分散在特定于基准的模拟器、具身和接口中。第一份DeepInsight报告（v1）通过三个抽象——任务、资源和结果——统一了整个技术栈的评估，但其定量证据集中在基础模型层；导航和操作（系统1）以及全身控制（系统0）仍停留在模拟案例研究，物理执行不在其实证范围内。DeepInsight II保持该基础不变，并量化具身部分。首先，它在两个导航和四个操作基准上，按照其原生协议复现了已发布检查点的参考结果。其次，MotionBench将四个已发布的全身控制器置于统一的工作负载和度量契约下，然后将一个合格的家族内队列从并行模拟转移到匹配的真实机器人试验中，其中模拟和物理展开共享父轨迹身份，同时保留执行域特定记录，使模拟到真实的差距成为原生缩减，而非跨工具链的对账。第三，一项组合的系统2-1-0研究将轨迹定位扩展到五个基于证据的交接标签，每个标签映射到具体的修复动作，具有可测量的可修复性标准，并在硬件可观测状态下测试相同归因的物理情节。因此，贡献不是新的评估架构，而是从基准执行到匹配机器人证据和面向修复的诊断的实证连续性。",
-      "authors": [
-        "Siyi Li",
-        "Yuchen Kang",
-        "Wuliang Wang"
-      ],
-      "authors_all": [
-        "Siyi Li",
-        "Yuchen Kang",
-        "Wuliang Wang",
-        "Zhengjie Zhang",
-        "Jiangpin Liu",
-        "Jianhao Yao",
-        "Jie Chen"
-      ],
-      "primary_category": "",
-      "published": "2026-08-17",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ XPENG Robotics"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-16556.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-16556-p2.jpg",
-        "assets/img/covers/arxiv-2608-16556-p3.jpg",
-        "assets/img/covers/arxiv-2608-16556-p4.jpg"
-      ],
-      "arxiv_id": "2608.16556",
-      "abs_url": "http://arxiv.org/abs/2608.16556v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.16556v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 34,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "系统评估全身控制与操作，含仿真到真机迁移，提供基准与诊断，科研价值高。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "XPENG Robotics"
-      ],
-      "method_tags": [
-        "sim-to-real",
-        "whole-body control",
-        "benchmark evaluation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2608-16712",
