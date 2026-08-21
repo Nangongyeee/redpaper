@@ -1,0 +1,145 @@
+{
+  "date": "2026-08-16",
+  "count": 2,
+  "papers": [
+    {
+      "id": "arxiv-2608-15560",
+      "source": "arxiv_discover",
+      "title": "ReForce: Learning Force-aware Retargeting for Dexterous Manipulation",
+      "title_zh": "ReForce：学习力感知的重定向用于灵巧操作",
+      "tldr_zh": "ReForce提出力感知重定向，将人类力信息融入机器人操作，提升接触任务表现。",
+      "cover_zh": "别再只看运动学｜力感知重定向让机器人抓握更稳更准",
+      "abstract_zh": "人类演示为灵巧操作提供了可扩展的数据来源，但由于具身差异，将其转移到机器人动作仍然具有挑战性。当前的重定向方法大多是运动学层面的，然而操作是由力决定的，力控制着手与物体的交互以及物体的运动。在本文中，我们提出了ReForce，一种力感知的重定向方法，将人类运动和力转化为能够再现预期接触的机器人动作。ReForce通过在大规模仿真交互上训练的通用力跟踪器，在运动学重定向的动作上预测残差以达到期望的力。它支持在线力感知遥操作和离线数据转换。在仿真和真实硬件上，ReForce在接触丰富的任务（如纸杯抓取和钳子操作）中实现了更低的力跟踪误差和更强的多指接触参与。",
+      "authors": [
+        "Yuhang Wu",
+        "Lingqi Zeng",
+        "Changwei Jing"
+      ],
+      "authors_all": [
+        "Yuhang Wu",
+        "Lingqi Zeng",
+        "Changwei Jing",
+        "Jianglong Ye",
+        "Xiaolong Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-08-16",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Xiaolong Wang"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-15560.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-15560-p2.jpg",
+        "assets/img/covers/arxiv-2608-15560-p3.jpg",
+        "assets/img/covers/arxiv-2608-15560-p4.jpg"
+      ],
+      "arxiv_id": "2608.15560",
+      "abs_url": "http://arxiv.org/abs/2608.15560v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15560v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出力感知重定向方法，结合仿真训练与真机验证，对灵巧操作和遥操作有高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "UC San Diego"
+      ],
+      "method_tags": [
+        "Force-aware Retargeting",
+        "Imitation Learning",
+        "Tactile Feedback"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-15897",
+      "source": "arxiv_discover",
+      "title": "Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction",
+      "title_zh": "无需触觉仿真的触觉 Sim2Real：基于瓶颈潜在重建",
+      "tldr_zh": "提出SBLR框架，无需触觉仿真，通过瓶颈潜在重建实现零样本触觉Sim2Real，成功率高达97.5%。",
+      "cover_zh": "不建模传感器也能迁移？这个新框架让触觉零样本成功率飙升",
+      "abstract_zh": "机器人传感器设计，尤其是触觉传感器，种类繁多且发展迅速。在仿真中对每种传感器建模需要大量的领域专业知识，而计算近似可能会降低仿真信号的保真度。我们提出了基于瓶颈潜在重建的 Sim2Real（SBLR）框架，该框架完全避免了特定于传感器的仿真，方法是：（1）在仿真器原生的“神谕”传感器上训练策略，该传感器易于构建，无需对任何特定传感器建模（例如，我们使用点云和指尖力作为触觉神谕），以及（2）在推理时将真实传感器的潜在嵌入与神谕传感器的潜在嵌入对齐。策略训练分两个阶段进行：策略首先从神谕传感器潜在中学习，然后通过瓶颈潜在重建使其适应使用真实传感器而非神谕时预期的信息损失。神谕与真实传感器之间的对齐是从仿真和真实世界中收集的未配对随机播放数据中学习的，使用基于最近邻伪对训练的整流流变换网络。在三个接触密集型任务上的仿真实验表明，SBLR 匹配或接近直接访问触觉仿真的神谕的性能。在 GelSight Mini 和 DIGIT 传感器上的插销插入和齿轮啮合硬件实验中，实现了 85-97.5% 的零样本成功率，无需任何特定于传感器的建模或校准，比基于物理的触觉仿真基线高出 7.5-15%。",
+      "authors": [
+        "Fan Yang",
+        "Youngsun Wi",
+        "Jinhao Yu"
+      ],
+      "authors_all": [
+        "Fan Yang",
+        "Youngsun Wi",
+        "Jinhao Yu",
+        "Nima Fazeli",
+        "Dmitry Berenson"
+      ],
+      "primary_category": "",
+      "published": "2026-08-16",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Google DeepMind"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-15897.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-15897-p2.jpg",
+        "assets/img/covers/arxiv-2608-15897-p3.jpg",
+        "assets/img/covers/arxiv-2608-15897-p4.jpg"
+      ],
+      "arxiv_id": "2608.15897",
+      "abs_url": "http://arxiv.org/abs/2608.15897v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.15897v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "sim2real",
+        "reason": "提出无需触觉仿真的sim2real框架，通过瓶颈潜在重建对齐真实传感器，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Michigan",
+        "Google DeepMind"
+      ],
+      "method_tags": [
+        "Sim2Real",
+        "Bottlenecked Latent Reconstruction",
+        "tactile sensing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    }
+  ]
+}

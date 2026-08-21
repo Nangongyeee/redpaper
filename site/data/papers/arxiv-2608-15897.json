@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2608-15897",
+  "source": "arxiv_discover",
+  "title": "Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction",
+  "title_zh": "无需触觉仿真的触觉 Sim2Real：基于瓶颈潜在重建",
+  "abstract": "Robot sensor designs, particularly tactile sensors, are highly diverse and evolve rapidly. Modeling each sensor in simulation demands substantial domain expertise and computational approximations can degrade the fidelity of the simulated signals. We propose Sim2Real via Bottlenecked Latent Reconstruction (SBLR), a framework that avoids sensor-specific simulation entirely by (1) training policies on a simulator-native oracle sensor that is easy to construct without modeling any particular sensor (e.g. we use a point-cloud and finger-tip forces as a tactile oracle), and (2) aligning real sensor latent embeddings to those of the oracle sensor at inference time. Policy training proceeds in two-stage: the policy first learns from the oracle sensor latents, then a bottlenecked latent reconstruction adapts it to the information loss expected when using the real sensor instead of the oracle. The alignment between oracle and real sensor is learned from unpaired random-play data collected in both simulation and the real world, using rectified-flow-based transformation networks trained on nearest-neighbor pseudo-pairs. Simulation experiments on three contact-rich tasks show that SBLR matches or approaches the performance of an oracle with direct access to tactile simulation. Hardware experiments on Peg Insertion and Gear Meshing with GelSight Mini and DIGIT sensors demonstrate 85-97.5% zero-shot success without requiring any sensor-specific modeling or calibration, outperforming a physics-based tactile simulation baseline by 7.5-15%.",
+  "abstract_zh": "机器人传感器设计，尤其是触觉传感器，种类繁多且发展迅速。在仿真中对每种传感器建模需要大量的领域专业知识，而计算近似可能会降低仿真信号的保真度。我们提出了基于瓶颈潜在重建的 Sim2Real（SBLR）框架，该框架完全避免了特定于传感器的仿真，方法是：（1）在仿真器原生的“神谕”传感器上训练策略，该传感器易于构建，无需对任何特定传感器建模（例如，我们使用点云和指尖力作为触觉神谕），以及（2）在推理时将真实传感器的潜在嵌入与神谕传感器的潜在嵌入对齐。策略训练分两个阶段进行：策略首先从神谕传感器潜在中学习，然后通过瓶颈潜在重建使其适应使用真实传感器而非神谕时预期的信息损失。神谕与真实传感器之间的对齐是从仿真和真实世界中收集的未配对随机播放数据中学习的，使用基于最近邻伪对训练的整流流变换网络。在三个接触密集型任务上的仿真实验表明，SBLR 匹配或接近直接访问触觉仿真的神谕的性能。在 GelSight Mini 和 DIGIT 传感器上的插销插入和齿轮啮合硬件实验中，实现了 85-97.5% 的零样本成功率，无需任何特定于传感器的建模或校准，比基于物理的触觉仿真基线高出 7.5-15%。",
+  "tldr_zh": "提出SBLR框架，无需触觉仿真，通过瓶颈潜在重建实现零样本触觉Sim2Real，成功率高达97.5%。",
+  "cover_zh": "不建模传感器也能迁移？这个新框架让触觉零样本成功率飙升",
+  "authors": [
+    {
+      "name": "Fan Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Youngsun Wi",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinhao Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Nima Fazeli",
+      "affiliation": ""
+    },
+    {
+      "name": "Dmitry Berenson",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-16",
+  "updated": "2026-08-19",
+  "arxiv_id": "2608.15897",
+  "pdf_url": "https://arxiv.org/pdf/2608.15897v2",
+  "abs_url": "http://arxiv.org/abs/2608.15897v2",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-15897.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-15897-p2.jpg",
+    "assets/img/covers/arxiv-2608-15897-p3.jpg",
+    "assets/img/covers/arxiv-2608-15897-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Google DeepMind"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 31,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Google DeepMind” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（sim2real）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "提出无需触觉仿真的sim2real框架，通过瓶颈潜在重建对齐真实传感器，具有高科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Michigan",
+    "Google DeepMind"
+  ],
+  "method_tags": [
+    "Sim2Real",
+    "Bottlenecked Latent Reconstruction",
+    "tactile sensing"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

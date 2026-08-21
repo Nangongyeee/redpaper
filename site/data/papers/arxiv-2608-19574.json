@@ -1,0 +1,110 @@
+{
+  "id": "arxiv-2608-19574",
+  "source": "arxiv",
+  "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
+  "title_zh": "HiTac-WAM：用于接触丰富机器人操作的分层触觉世界动作模型",
+  "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend to the video-action context of each candidate while preventing video and action queries from attending to tactile tokens. For planning, HiTac-WAM ranks candidate action chunks using tactile forecasts and task-progress estimates. For execution, the selected tactile forecast is retained as a reference; persistent discrepancies between predicted and observed tactile states trigger corrective replanning. HiTac-WAM achieves a mean contact F1 of 0.921; under matched training budgets, the directed hierarchy reduces 3D displacement L2 error by 17.6% relative to the deformation-only predictor and improves slip AUPRC by 60.4% relative to the slip-only predictor. Across chip grasping, blackboard erasing, and USB insertion, selection guided by the hierarchical forecasts increases the average real-robot success rate from 31.1% to 61.1%, while the full system attains 72.2%.",
+  "abstract_zh": "世界动作模型联合预测未来的视觉观察和动作，而现有的触觉感知变体通常将未来触觉表示为图像或潜在流，而不建模以分层方式组织触觉状态的物理依赖关系。我们提出HiTac-WAM，一种分层触觉世界动作模型，在执行前为每个候选动作块预测一系列未来触觉状态。预测分解为接触状态、3D变形场和滑移风险，组织为有向层次结构，其中每个下游阶段以前一阶段的停止梯度信号为条件。有向注意力掩码允许触觉查询关注每个候选的视频-动作上下文，同时防止视频和动作查询关注触觉标记。对于规划，HiTac-WAM使用触觉预测和任务进度估计对候选动作块进行排序。对于执行，选定的触觉预测保留为参考；预测与观察到的触觉状态之间的持续差异触发纠正性重新规划。HiTac-WAM实现了平均接触F1为0.921；在匹配的训练预算下，有向层次结构相对于仅变形预测器将3D位移L2误差降低了17.6%，相对于仅滑移预测器将滑移AUPRC提高了60.4%。在芯片抓取、黑板擦除和USB插入任务中，由分层预测引导的选择将平均真实机器人成功率从31.1%提高到61.1%，而完整系统达到72.2%。",
+  "tldr_zh": "HiTac-WAM通过分层触觉预测提升机器人操作成功率，从31.1%增至61.1%。",
+  "cover_zh": "触觉预测也能分层？机器人操作成功率翻倍，秘诀在这！",
+  "authors": [
+    {
+      "name": "Chao Xue",
+      "affiliation": ""
+    },
+    {
+      "name": "Chaofan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenxuan Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Guocai Yao",
+      "affiliation": ""
+    },
+    {
+      "name": "Shaowei Cui",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuo Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-20",
+  "updated": "2026-08-20",
+  "arxiv_id": "2608.19574",
+  "pdf_url": "https://arxiv.org/pdf/2608.19574v1",
+  "abs_url": "http://arxiv.org/abs/2608.19574v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-19574.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-19574-p2.jpg",
+    "assets/img/covers/arxiv-2608-19574-p3.jpg",
+    "assets/img/covers/arxiv-2608-19574-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、grasp、grasping、contact-rich）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出分层触觉世界动作模型，预测接触状态、形变与滑移，提升真实机器人操作成功率，具科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Institute of Automation, Chinese Academy of Sciences",
+    "ImprintX Robotics",
+    "Beijing Academy of Artificial Intelligence"
+  ],
+  "method_tags": [
+    "World Action Model",
+    "Hierarchical Tactile Forecasting",
+    "Replanning"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
