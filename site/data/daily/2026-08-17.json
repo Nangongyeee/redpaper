@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "count": 29,
+  "count": 30,
   "papers": [
     {
       "id": "arxiv-2608-16195",
@@ -870,6 +870,77 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-16556",
+      "source": "arxiv_discover",
+      "title": "DeepInsight II: One Trace from Benchmark to Robot",
+      "title_zh": "DeepInsight II：从基准测试到机器人的一条轨迹",
+      "tldr_zh": "DeepInsight II量化具身层评估，实现从基准到机器人的实证连续性。",
+      "cover_zh": "基准到机器人，一条轨迹打通模拟与真实｜DeepInsight II让差距无处遁形",
+      "abstract_zh": "在物理AI技术栈中，评估成熟度与部署风险呈反比：基础模型拥有成熟、标准化的测试框架，而实际部署所依赖的具身层仍分散在特定于基准的模拟器、具身和接口中。第一份DeepInsight报告（v1）通过三个抽象——任务、资源和结果——统一了整个技术栈的评估，但其定量证据集中在基础模型层；导航和操作（系统1）以及全身控制（系统0）仍停留在模拟案例研究，物理执行不在其实证范围内。DeepInsight II保持该基础不变，并量化具身部分。首先，它在两个导航和四个操作基准上，按照其原生协议复现了已发布检查点的参考结果。其次，MotionBench将四个已发布的全身控制器置于统一的工作负载和度量契约下，然后将一个合格的家族内队列从并行模拟转移到匹配的真实机器人试验中，其中模拟和物理展开共享父轨迹身份，同时保留执行域特定记录，使模拟到真实的差距成为原生缩减，而非跨工具链的对账。第三，一项组合的系统2-1-0研究将轨迹定位扩展到五个基于证据的交接标签，每个标签映射到具体的修复动作，具有可测量的可修复性标准，并在硬件可观测状态下测试相同归因的物理情节。因此，贡献不是新的评估架构，而是从基准执行到匹配机器人证据和面向修复的诊断的实证连续性。",
+      "authors": [
+        "Siyi Li",
+        "Yuchen Kang",
+        "Wuliang Wang"
+      ],
+      "authors_all": [
+        "Siyi Li",
+        "Yuchen Kang",
+        "Wuliang Wang",
+        "Zhengjie Zhang",
+        "Jiangpin Liu",
+        "Jianhao Yao",
+        "Jie Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-08-17",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ XPENG Robotics"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-16556.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-16556-p2.jpg",
+        "assets/img/covers/arxiv-2608-16556-p3.jpg",
+        "assets/img/covers/arxiv-2608-16556-p4.jpg"
+      ],
+      "arxiv_id": "2608.16556",
+      "abs_url": "http://arxiv.org/abs/2608.16556v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16556v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "系统评估全身控制与操作，含仿真到真机迁移，提供基准与诊断，科研价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "XPENG Robotics"
+      ],
+      "method_tags": [
+        "sim-to-real",
+        "whole-body control",
+        "benchmark evaluation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-16712",
