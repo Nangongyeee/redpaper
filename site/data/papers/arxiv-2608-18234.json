@@ -1,0 +1,174 @@
+{
+  "id": "arxiv-2608-18234",
+  "source": "arxiv_discover",
+  "title": "GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction",
+  "title_zh": "GigaBrain-WBC-0.5：用于环境交互的鲁棒全身控制行为世界模型",
+  "abstract": "Whole-body motion tracking policies turn a humanoid into a robust control interface: the teleoperator---or an upstream model---only supplies a coarse movement intent, while the low-level policy keeps the robot balanced and physically feasible. Existing trackers deliver this interface only on flat ground: trained in empty scenes, they never learn how contact with terrain and objects reshapes their dynamics, and they attempt to teach the policy to balance under any command by continually enlarging the reference-motion corpus, which stops working once feasible behaviors become environment-dependent. We present GigaBrain-WBC-0.5, the first Behavior World Model (BWM) for humanoid whole-body control. Rather than a purely reactive tracker, we train a causal Transformer to jointly predict its next action, next state, and the distribution over its next latent behavior command, so the network that acts also models how the environment shapes what it can do next. An automatic terrain-annotation pipeline recovers full 3D contact geometry from retargeted motion, enabling terrain annotation at the scale of existing motion datasets. The predicted distribution is reused at deployment to detect implausible commands online and retract them onto learned behaviors, so the robot attempts tasks in a \"best-effort\" manner. The result is a unified policy that takes real-time command, interacts with environment, and stays robust to implausible commands, falls, and disturbances. GigaBrain-WBC-0.5 achieves the highest success rate across all four regimes among three large-scale tracker baselines: 81.3% on terrain interaction (4.3x the strongest baseline), 83.1% under implausible commands, and 99.3% fall recovery (16.8x the strongest baseline). Hardware trials show robust interaction under missing supports and disturbances; the Unitree G1 checkpoint transfers to the Maker L01 robot with simple fine-tuning.",
+  "abstract_zh": "全身运动跟踪策略将人形机器人转变为鲁棒的控制接口：远程操作员或上游模型仅提供粗略的运动意图，而底层策略则保持机器人平衡和物理可行性。现有的跟踪器仅在平坦地面上提供此接口：在空场景中训练，它们从未学习到与地形和物体的接触如何重塑其动力学，并且它们试图通过不断扩充参考运动语料库来教策略在任何命令下保持平衡，一旦可行行为变得依赖环境，这种方法就会失效。我们提出了GigaBrain-WBC-0.5，这是首个用于人形机器人全身控制的行为世界模型（BWM）。与纯粹的反应式跟踪器不同，我们训练了一个因果Transformer来联合预测其下一个动作、下一个状态以及下一个潜在行为命令的分布，因此，执行动作的网络也建模了环境如何影响其下一步能做什么。一个自动地形标注流程从重定向的运动中恢复完整的3D接触几何，使得地形标注能够达到现有运动数据集的规模。在部署时，预测的分布被重用，以在线检测不合理的命令并将其回退到已学习的行为上，从而使机器人以“尽力而为”的方式尝试任务。结果是一个统一的策略，它接收实时命令、与环境交互，并对不合理的命令、跌倒和干扰保持鲁棒性。GigaBrain-WBC-0.5在三个大规模跟踪器基线的所有四个场景中取得了最高的成功率：地形交互81.3%（是最强基线的4.3倍），不合理命令下83.1%，跌倒恢复99.3%（是最强基线的16.8倍）。硬件试验表明，在缺少支撑和干扰下具有鲁棒交互；Unitree G1检查点通过简单微调即可迁移到Maker L01机器人。",
+  "tldr_zh": "首个行为世界模型实现人形机器人全身控制，鲁棒应对环境交互与不合理命令。",
+  "cover_zh": "人形机器人不再怕绊倒？这个行为世界模型让它在复杂地形稳如泰山",
+  "authors": [
+    {
+      "name": "Ziyang Cheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianshu Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinxin Lan",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinze Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhan Gong",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhichao Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Changzhong Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yahao Mao",
+      "affiliation": ""
+    },
+    {
+      "name": "Zongyan Deng",
+      "affiliation": ""
+    },
+    {
+      "name": "Mingxuan Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Huasen Xi",
+      "affiliation": ""
+    },
+    {
+      "name": "Yilong Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yutong Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaofeng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yun Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Guan Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaojie Jin",
+      "affiliation": ""
+    },
+    {
+      "name": "Zheng Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiwen Lu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "arxiv_id": "2608.18234",
+  "pdf_url": "https://arxiv.org/pdf/2608.18234v1",
+  "abs_url": "http://arxiv.org/abs/2608.18234v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-18234.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-18234-p2.jpg",
+    "assets/img/covers/arxiv-2608-18234-p3.jpg",
+    "assets/img/covers/arxiv-2608-18234-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（whole-body、wbc、whole-body control、humanoid whole-body）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "提出人形全身控制的行为世界模型，结合地形交互与鲁棒控制，创新性强且实验充分。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University",
+    "GigaAI",
+    "University of Shanghai for Science and Technology",
+    "Beijing Jiaotong University"
+  ],
+  "method_tags": [
+    "Behavior World Model",
+    "Whole-Body Control",
+    "terrain interaction"
+  ],
+  "platform": [
+    "Unitree G1",
+    "Maker L01"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
