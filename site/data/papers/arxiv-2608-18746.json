@@ -1,0 +1,97 @@
+{
+  "id": "arxiv-2608-18746",
+  "source": "arxiv_discover",
+  "title": "Decision-Metric Alignment in Latent World Models: Diagnostics and Action-Conditioned Objectives for MPC Planning",
+  "title_zh": "潜在世界模型中的决策度量对齐：MPC 规划的诊断与动作条件目标",
+  "abstract": "JEPA-style latent world models can use Euclidean distance to a goal latent as the cost for model-predictive control (MPC). Strong decoding of task variables, however, does not guarantee that this particular cost ranks candidate action sequences by real task progress. We call the latter property \\emph{decision-metric alignment}. We introduce Plan-Real Spearman, which measures latent--real rank agreement on random plans, and CEM-stage Spearman, which measures the same agreement as cross-entropy-method (CEM) search concentrates its proposal. We analyze sufficient conditions under which latent distance preserves real-cost rankings, identifying encoder distortion, terminal rollout error, and candidate margins as the controlling quantities. Guided by the observed empirical alignment gap, DA-LeWM augments LeWM with inverse-dynamics and demonstration-conditioned goal-action heads. Across all our experiments, DA-LeWM accelerates convergence and achieves higher online success than LeWM, while probe scores remain similar. These results show that action-conditioned objectives improve the geometry used by Euclidean-cost, CEM-based latent MPC.",
+  "abstract_zh": "JEPA 风格的潜在世界模型可以使用到目标潜在向量的欧氏距离作为模型预测控制（MPC）的成本。然而，任务变量的强解码并不能保证该特定成本能根据真实任务进展对候选动作序列进行排序。我们将后者称为“决策度量对齐”。我们引入了 Plan-Real Spearman，它衡量随机计划上潜在与真实排序的一致性，以及 CEM 阶段 Spearman，它衡量交叉熵方法（CEM）搜索集中其提议时的一致性。我们分析了潜在距离保持真实成本排序的充分条件，确定了编码器失真、终端 rollout 误差和候选边际作为控制量。在观察到的经验对齐差距的指导下，DA-LeWM 用逆动力学和演示条件目标-动作头增强了 LeWM。在我们所有的实验中，DA-LeWM 加速了收敛，并实现了比 LeWM 更高的在线成功率，而探针分数保持相似。这些结果表明，动作条件目标改善了欧氏成本、基于 CEM 的潜在 MPC 所使用的几何结构。",
+  "tldr_zh": "提出诊断指标并改进潜在世界模型，使 MPC 规划更对齐真实任务进展。",
+  "cover_zh": "潜在模型规划不准？新方法让 MPC 决策对齐真实任务进展",
+  "authors": [
+    {
+      "name": "Jiawei Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ke Rui",
+      "affiliation": ""
+    },
+    {
+      "name": "Yushen Zuo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yichun Feng",
+      "affiliation": ""
+    },
+    {
+      "name": "Minglei Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.CV"
+  ],
+  "published": "2026-08-19",
+  "updated": "2026-08-19",
+  "arxiv_id": "2608.18746",
+  "pdf_url": "https://arxiv.org/pdf/2608.18746v1",
+  "abs_url": "http://arxiv.org/abs/2608.18746v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-18746.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-18746-p2.jpg",
+    "assets/img/covers/arxiv-2608-18746-p3.jpg",
+    "assets/img/covers/arxiv-2608-18746-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 13,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（world model、world models、latent world model、jepa）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 13 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出潜在世界模型决策度量对齐诊断与目标，改进MPC规划，属世界模型核心方法。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Simple AI",
+    "University of Chinese Academy of Sciences"
+  ],
+  "method_tags": [
+    "MPC",
+    "World Model",
+    "latent world model"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
