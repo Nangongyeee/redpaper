@@ -1,0 +1,122 @@
+{
+  "id": "arxiv-2608-17163",
+  "source": "arxiv_discover",
+  "title": "Q-Learning With World Models",
+  "title_zh": "Q-Learning 与世界模型",
+  "abstract": "Off-policy reinforcement learning (RL) has become increasingly sample-efficient, enabling applications such as RL fine-tuning of Vision-Language-Action models into reliable, high-performing policies. World models offer a further lever for sample efficiency, as they predict state changes rather than actions alone, but their success has largely been confined to supervised policy learning. Prior model-based RL methods often optimize the policy or value function directly on imagined rollouts, which is prone to compounding bias and struggles to scale to large, high-dimensional problems such as real-world robotics, a problem that worsens with task horizon and visual complexity. In this work, we instead ask whether we can leverage world models directly on top of standard Q-learning to improve performance, while remaining trained and grounded in the real, online setting. We propose QWM, a framework that leverages world models to perform test-time search over imagined trajectories on top of Q-learning to select high-value actions during both online rollouts and evaluation. Since the policy and value function are trained only on real transitions, QWM avoids compounding model bias while still gaining the sample-efficiency benefits of predictive search. On challenging manipulation benchmarks Robomimic and LIBERO, QWM significantly outperforms strong prior state-of-the-art methods on both sample efficiency and performance.",
+  "abstract_zh": "离策略强化学习（RL）在样本效率上日益提升，使得诸如将视觉-语言-动作模型微调为可靠、高性能策略等应用成为可能。世界模型提供了进一步提升样本效率的杠杆，因为它们预测状态变化而非仅预测动作，但其成功主要局限于监督策略学习。先前的基于模型的强化学习方法通常直接在想象轨迹上优化策略或价值函数，这容易产生复合偏差，并且难以扩展到大规模、高维问题，如真实世界机器人技术，该问题随着任务时域和视觉复杂性的增加而加剧。在这项工作中，我们转而询问是否可以在标准 Q-learning 之上直接利用世界模型来提升性能，同时保持训练和基于真实在线环境的接地。我们提出了 QWM，一个利用世界模型在 Q-learning 之上对想象轨迹进行测试时搜索的框架，以在在线 rollout 和评估期间选择高价值动作。由于策略和价值函数仅在真实转移上训练，QWM 避免了复合模型偏差，同时仍然获得预测搜索的样本效率优势。在具有挑战性的操作基准 Robomimic 和 LIBERO 上，QWM 在样本效率和性能上显著优于强先前的 state-of-the-art 方法。",
+  "tldr_zh": "QWM 将世界模型与 Q-learning 结合，通过测试时搜索提升样本效率和性能。",
+  "cover_zh": "世界模型+Q-learning？新框架 QWM 在机器人操作上大幅超越 SOTA！",
+  "authors": [
+    {
+      "name": "Perry Dong",
+      "affiliation": ""
+    },
+    {
+      "name": "Yueru Jia",
+      "affiliation": ""
+    },
+    {
+      "name": "Chelsea Finn",
+      "affiliation": ""
+    },
+    {
+      "name": "Dorsa Sadigh",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "published": "2026-08-17",
+  "updated": "2026-08-17",
+  "arxiv_id": "2608.17163",
+  "pdf_url": "https://arxiv.org/pdf/2608.17163v1",
+  "abs_url": "http://arxiv.org/abs/2608.17163v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-17163.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-17163-p2.jpg",
+    "assets/img/covers/arxiv-2608-17163-p3.jpg",
+    "assets/img/covers/arxiv-2608-17163-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Stanford"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Chelsea Finn"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Dorsa Sadigh"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 54,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Chelsea Finn"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出QWM框架，将世界模型与Q-learning结合，提升样本效率，属于世界模型在机器人操作中的应用。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Stanford University",
+    "Peking University"
+  ],
+  "method_tags": [
+    "Q-learning",
+    "World Model",
+    "test-time search"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

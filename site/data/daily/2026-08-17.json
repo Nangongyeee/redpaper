@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "count": 30,
+  "count": 31,
   "papers": [
     {
       "id": "arxiv-2608-16195",
@@ -164,6 +164,87 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2608-17163",
+      "source": "arxiv_discover",
+      "title": "Q-Learning With World Models",
+      "title_zh": "Q-Learning 与世界模型",
+      "tldr_zh": "QWM 将世界模型与 Q-learning 结合，通过测试时搜索提升样本效率和性能。",
+      "cover_zh": "世界模型+Q-learning？新框架 QWM 在机器人操作上大幅超越 SOTA！",
+      "abstract_zh": "离策略强化学习（RL）在样本效率上日益提升，使得诸如将视觉-语言-动作模型微调为可靠、高性能策略等应用成为可能。世界模型提供了进一步提升样本效率的杠杆，因为它们预测状态变化而非仅预测动作，但其成功主要局限于监督策略学习。先前的基于模型的强化学习方法通常直接在想象轨迹上优化策略或价值函数，这容易产生复合偏差，并且难以扩展到大规模、高维问题，如真实世界机器人技术，该问题随着任务时域和视觉复杂性的增加而加剧。在这项工作中，我们转而询问是否可以在标准 Q-learning 之上直接利用世界模型来提升性能，同时保持训练和基于真实在线环境的接地。我们提出了 QWM，一个利用世界模型在 Q-learning 之上对想象轨迹进行测试时搜索的框架，以在在线 rollout 和评估期间选择高价值动作。由于策略和价值函数仅在真实转移上训练，QWM 避免了复合模型偏差，同时仍然获得预测搜索的样本效率优势。在具有挑战性的操作基准 Robomimic 和 LIBERO 上，QWM 在样本效率和性能上显著优于强先前的 state-of-the-art 方法。",
+      "authors": [
+        "Perry Dong",
+        "Yueru Jia",
+        "Chelsea Finn"
+      ],
+      "authors_all": [
+        "Perry Dong",
+        "Yueru Jia",
+        "Chelsea Finn",
+        "Dorsa Sadigh"
+      ],
+      "primary_category": "",
+      "published": "2026-08-17",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Chelsea Finn"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Dorsa Sadigh"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-17163.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-17163-p2.jpg",
+        "assets/img/covers/arxiv-2608-17163-p3.jpg",
+        "assets/img/covers/arxiv-2608-17163-p4.jpg"
+      ],
+      "arxiv_id": "2608.17163",
+      "abs_url": "http://arxiv.org/abs/2608.17163v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17163v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 54,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出QWM框架，将世界模型与Q-learning结合，提升样本效率，属于世界模型在机器人操作中的应用。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Stanford University",
+        "Peking University"
+      ],
+      "method_tags": [
+        "Q-learning",
+        "World Model",
+        "test-time search"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
