@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T07:40:58.540734+00:00",
+  "generated_at": "2026-08-23T09:31:46.125325+00:00",
   "count": 2219,
   "papers": [
     {
@@ -28436,9 +28436,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，大幅提升重建精度，并降低训练内存。",
-      "cover_zh": "内存砍半，精度反超？这个重建模型用30%显存实现77%精度提升！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改动、支持动态场景的高质量数据标注流程，以及一种自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度。",
+      "cover_zh": "重建模型也能这么强？VGGT-$\\Omega$让相机估计精度飙升77%！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它显著提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改进、支持动态场景的高质量数据标注流程，以及一种自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分替代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -44628,7 +44628,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人也能玩转圈？Atlas 新动作太酷了！",
+      "cover_zh": "机器人也能旋转跳跃？Atlas 新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -127067,10 +127067,10 @@
       "id": "arxiv-2403-19773",
       "source": "conf",
       "title": "ShapeFusion: A 3D diffusion model for localized shape editing",
-      "title_zh": "ShapeFusion: A 3D diffusion model for localized shape editing",
-      "tldr_zh": "In the realm of 3D computer vision, parametric models have e",
-      "cover_zh": "In the realm of 3D computer vision, parametric models have e",
-      "abstract_zh": "In the realm of 3D computer vision, parametric models have emerged as a ground-breaking methodology for the creation of realistic and expressive 3D avatars. Traditionally, they rely on Principal Component Analysis (PCA), given its ability to decompose data to an orthonormal space that maximally captures shape variations. However, due to the orthogonality constraints and the global nature of PCA's decomposition, these models struggle to perform localized and disentangled editing of 3D shapes, which severely affects their use in applications requiring fine control such as face sculpting. In this paper, we leverage diffusion models to enable diverse and fully localized edits on 3D meshes, while completely preserving the un-edited regions. We propose an effective diffusion masking training strategy that, by design, facilitates localized manipulation of any shape region, without being limited to predefined regions or to sparse sets of predefined control vertices. Following our framework, a user can explicitly set their manipulation region of choice and define an arbitrary set of vertices as handles to edit a 3D mesh. Compared to the current state-of-the-art our method leads to more interpretable shape manipulations than methods relying on latent code state, greater localization and generation diversity while offering faster inference than optimization based approaches. Project page: https://rolpotamias.github.io/Shapefusion/",
+      "title_zh": "ShapeFusion：用于局部形状编辑的3D扩散模型",
+      "tldr_zh": "ShapeFusion利用扩散模型实现3D网格的局部编辑，保留未编辑区域，支持任意区域和顶点控制。",
+      "cover_zh": "3D编辑新突破｜扩散模型实现局部雕刻，未编辑区域完美保留",
+      "abstract_zh": "在3D计算机视觉领域，参数化模型已成为创建逼真且富有表现力的3D化身的一种突破性方法。传统上，它们依赖于主成分分析（PCA），因为PCA能够将数据分解到最大程度捕捉形状变化的正交空间中。然而，由于PCA分解的正交约束和全局性，这些模型难以对3D形状进行局部和可解耦的编辑，这严重影响了它们在需要精细控制的应用（如面部雕刻）中的使用。在本文中，我们利用扩散模型实现对3D网格的多样且完全局部的编辑，同时完全保留未编辑区域。我们提出了一种有效的扩散掩码训练策略，该策略通过设计促进对任何形状区域的局部操作，而不限于预定义区域或稀疏的预定义控制顶点集。根据我们的框架，用户可以明确设置其操作区域，并定义任意顶点集作为手柄来编辑3D网格。与当前最先进的方法相比，我们的方法比依赖潜在代码状态的方法产生更可解释的形状操作，比基于优化的方法具有更好的局部性和生成多样性，同时提供更快的推理速度。项目页面：https://rolpotamias.github.io/Shapefusion/",
       "authors": [
         "Rolandos Alexandros Potamias",
         "Michail Tarasiou",
