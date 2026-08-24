@@ -1,0 +1,132 @@
+{
+  "id": "arxiv-2608-21031",
+  "source": "arxiv",
+  "title": "PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration",
+  "title_zh": "PhysCaP：基于物理信息探索的代码即策略智能体",
+  "abstract": "We present PhysCaP, a Physics-Informed Code-as-Policy agent for active perception in robotic manipulation. While vision-language-action policies excel at imitating demonstrations, they rely on passive observation and fail to infer latent physical properties critical for manipulation. PhysCaP augments code-as-policy frameworks with a physics-informed exploration layer that enables explicit information-seeking through interaction. It introduces training-free physical property extraction modules that estimate object mass and stiffness from robot proprioception without additional sensors. To balance exploration costs and the efficiency of information obtained, PhysCaP employs a dual-agent design: a Planner that decides when to explore and when to stop, and a Prioritizer that filters implausible interactions and ranks the remainder using a heuristic priority score, enabling efficient, targeted exploration. We evaluate PhysCaP on real-world tabletop manipulation tasks (searching for hidden objects, detecting empty cans, and finding ripe avocados) and a simulated task in LIBERO. The results show that existing passive and naive interactive baselines either fail when physical properties are hidden or over-explore, whereas PhysCaP achieves comparable performance with fewer interactions and reduced execution time. Ablation studies further validate the effectiveness of the proposed physical property extraction modules. Project page: https://physcap.github.io",
+  "abstract_zh": "我们提出了PhysCaP，一种用于机器人操作中主动感知的物理信息代码即策略智能体。尽管视觉-语言-动作策略擅长模仿演示，但它们依赖被动观察，无法推断对操作至关重要的潜在物理属性。PhysCaP通过物理信息探索层增强了代码即策略框架，使智能体能够通过交互进行显式信息寻求。它引入了无需训练的物理属性提取模块，仅从机器人本体感觉中估计物体质量和刚度，无需额外传感器。为了平衡探索成本和获取信息的效率，PhysCaP采用双智能体设计：一个规划器决定何时探索和何时停止，以及一个优先级排序器，过滤不合理的交互并使用启发式优先级分数对剩余交互进行排序，从而实现高效、有针对性的探索。我们在真实世界的桌面操作任务（搜索隐藏物体、检测空罐和寻找成熟牛油果）以及LIBERO中的模拟任务上评估了PhysCaP。结果表明，现有的被动和朴素交互基线在物理属性隐藏时要么失败，要么过度探索，而PhysCaP以更少的交互和更短的执行时间实现了相当的性能。消融研究进一步验证了所提出的物理属性提取模块的有效性。项目页面：https://physcap.github.io",
+  "tldr_zh": "PhysCaP通过物理信息探索，让机器人主动感知，减少交互次数。",
+  "cover_zh": "机器人不再瞎摸！这个新框架用物理信息探索，少动几次就找到目标",
+  "authors": [
+    {
+      "name": "Chen-Yu Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Jing-Wen Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Hsueh-En Chang",
+      "affiliation": ""
+    },
+    {
+      "name": "Hung-An Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Sheng-Hsun Chang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chi-Pin Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Fu-En Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Min-Hung Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi-Ting Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu-Chiang Frank Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Shao-Hua Sun",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-21",
+  "updated": "2026-08-21",
+  "arxiv_id": "2608.21031",
+  "pdf_url": "https://arxiv.org/pdf/2608.21031v1",
+  "abs_url": "http://arxiv.org/abs/2608.21031v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-21031.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-21031-p2.jpg",
+    "assets/img/covers/arxiv-2608-21031-p3.jpg",
+    "assets/img/covers/arxiv-2608-21031-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ NVIDIA"
+    }
+  ],
+  "related_links": [],
+  "page_count": 38,
+  "source_tags": [],
+  "score": 37,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NVIDIA” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、manipulation、libero）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 38 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "面向机器人操作的物理信息探索与代码策略，具身智能新方法，实验充分，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "National Taiwan University",
+    "NVIDIA Research",
+    "National Yang Ming Chiao Tung University"
+  ],
+  "method_tags": [
+    "Code-as-Policy",
+    "Physics-Informed Exploration",
+    "Active Perception"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "LIBERO"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
