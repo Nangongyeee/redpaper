@@ -1,0 +1,73 @@
+{
+  "id": "github-gwxuan-gesvla",
+  "source": "github",
+  "title": "GWxuan/GesVLA",
+  "title_zh": "GWxuan/GesVLA",
+  "abstract": "GesVLA: Gesture-Aware Vision-Language-Action Model with Embedded Representations\n\n# GesVLA: Gesture-Aware Vision-Language-Action Model with Embedded Representations &nbsp; &nbsp; 1\\* , Ziyuan Li 1\\* , Meng Zhang 2† , Yichen Liu 1 , Yimeng Dong 1 , Chuxi Xu 1 , Yunfei Wei 2 , Ze Chen 2 , Erjin Zhou 2 , [Jianjiang Feng](https://ivg.au.tsinghua.edu.cn/~jfeng/index.html) 1‡ 1 Tsinghua University, 2 Dexmal \\* Equal contributions. † Project leader. ‡ Corresponding author. --> ## 🛠️ Installation We manage Python dependencies with [uv](https://docs.astral.sh/uv/). If you haven't installed `uv`, please follow [uv installation instructions](https://docs.astral.sh/uv/getting-started/installation/) to set it up. Run the following to set up the environment: > NOTE: `GIT_LFS_SKIP_SMUDGE=1` is needed to pull LeRobot as a dependency. For more details, refer to the original [openpi repository](https://github.com/Physical-Intelligence/openpi.git). ## 🚀 Training GesVLA ### Data Preparation All data should be placed under the `data/` directory at the project root. The directory structure should look like the following: All datasets can be obtained from [here](https://cloud.tsinghua.edu.cn/d/41fa523bc7ae4565ac03/). We provide synthetic data for the block scene, which can be used to train and validate the Intent Reasoning model of GesVLA. Additional synthetic data can be generated using the data generation pipeline in `data_generation/`. We also provide robot arm action data for the block, jelly, and fruit/vegetable scenes. The amount of provided data exceeds the training requirement, so you can select as needed. ### Training Pipeline This project adopts a two-stage training paradigm. First, the Intent Reasoning model is pre-trained on synthetic gesture reasoning data. Before training, ensure that `data/datasets/pointing_dataset_xxxx` exists. Run: After training, the model checkpoint will be automatically saved to the `models/` directory. Then, proceed to train the GesVLA model. Before training, make sure the Intent Reasoning checkpoint path is correctly configured. G",
+  "abstract_zh": "GesVLA 是一种手势感知的视觉-语言-动作模型，通过嵌入表示来理解手势并生成机器人动作。该模型采用两阶段训练范式：首先在合成手势推理数据上预训练意图推理模型，然后在机器人操作数据上训练 GesVLA 模型。我们提供了合成数据生成流程和真实机器人手臂动作数据，涵盖积木、果冻和果蔬等场景。实验表明，GesVLA 能够有效利用手势信息提升机器人操作的准确性和泛化能力。",
+  "tldr_zh": "提出手势感知的视觉-语言-动作模型，两阶段训练提升机器人操作。",
+  "cover_zh": "手势控制机器人？这个新模型让操作更自然！",
+  "authors": [
+    {
+      "name": "GWxuan",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-05-22",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/GWxuan/GesVLA",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 29,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 29,
+      "hint": "⭐ 29"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "手势感知的VLA模型，结合嵌入式表示，提供训练数据和流程，具身操作新方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "操作"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "GWxuan",
+    "repo": "GesVLA",
+    "stars": 29,
+    "language": "Python",
+    "pushed_at": "2026-05-22",
+    "created_at": "2026-05-11",
+    "topics": [],
+    "archived": false
+  }
+}

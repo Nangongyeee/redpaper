@@ -1,0 +1,73 @@
+{
+  "id": "github-neuroagents-lab-tactile-genesis",
+  "source": "github",
+  "title": "neuroagents-lab/tactile-genesis",
+  "title_zh": "neuroagents-lab/tactile-genesis",
+  "abstract": "Code for our Tactile Genesis paper\n\n# Tactile Genesis > !! Please note, this is not the final version of the paper. We plan to update ALL experiments with latest version of Genesis World. !! https://github.com/user-attachments/assets/9d8bb278-fbc8-41f4-b1b2-ab9ce572c294 This repository reflects the self-contained code snapshot to reproduce the paper, [Tactile Genesis](https://arxiv.org/abs/2606.22332). **Please note**, if you wish to use tactile sensors for your own project, use the latest [Genesis World](https://github.com/Genesis-Embodied-AI/genesis-world) physics engine which includes our tactile sensors, and optionally, the official [Eden](https://github.com/embodied-ai-nexus/Eden) (not yet available, but will be released before end of 2026) if you require a managed learning framework. ## Structure | Directory | Package | Role | |---|---|---| | [`dexterous-hands/`](dexterous-hands/) | `tactile_genesis` | Tactile dexterous-hand RL tasks, robots, sensors, training/eval entrypoints. | | [`Eden/`](Eden/) | `eden` | RL environment framework built on Genesis + rsl_rl. Declarative Pydantic configs, manager/term registries. | | [`Genesis/`](Genesis/) | `genesis-world` | The physics-simulation backend (rigid/MPM/SPH/FEM/PBD). | | [`rsl_rl/`](rsl_rl/) | `rsl-rl-lib` | PPO + student/teacher distillation training loop. | Dependency topology: `dexterous-hands` → `Eden` → `Genesis`, with `rsl_rl` as the training loop. ## How the packages are wired `dexterous-hands/pyproject.toml` resolves the three dependencies from the sibling checkouts via `[tool.uv.sources]` (editable path installs). These sources override the package origin across the whole resolution graph, so Eden's own transitive `genesis-world` / `rsl-rl-lib` requirements also point at the local checkouts: ## Quickstart Everything is run from `dexterous-hands/`: See [`dexterous-hands/README.md`](dexterous-hands/README.md) for the full task/robot list, run modes, and tooling scripts. ## Citation If you use or reference our simulated tactile sensors in an",
+  "abstract_zh": "这是我们触觉创世纪论文的代码。# 触觉创世纪 > 请注意，这不是论文的最终版本。我们计划用最新版本的Genesis World更新所有实验。!! https://github.com/user-attachments/assets/9d8bb278-fbc8-41f4-b1b2-ab9ce572c294 本仓库是复现论文《触觉创世纪》的自包含代码快照。**请注意**，如果你希望在自己的项目中使用触觉传感器，请使用最新的Genesis World物理引擎，其中包含我们的触觉传感器，以及可选的官方Eden（尚未可用，但将在2026年底前发布），如果你需要托管学习框架。## 结构 | 目录 | 包 | 角色 | |---|---|---| | [`dexterous-hands/`](dexterous-hands/) | `tactile_genesis` | 触觉灵巧手RL任务、机器人、传感器、训练/评估入口。 | | [`Eden/`](Eden/) | `eden` | 基于Genesis + rsl_rl的RL环境框架。声明式Pydantic配置，管理器/术语注册表。 | | [`Genesis/`](Genesis/) | `genesis-world` | 物理仿真后端（刚体/MPM/SPH/FEM/PBD）。 | | [`rsl_rl/`](rsl_rl/) | `rsl-rl-lib` | PPO + 学生/教师蒸馏训练循环。 | 依赖拓扑：`dexterous-hands` → `Eden` → `Genesis`，`rsl_rl`作为训练循环。## 包如何连接 `dexterous-hands/pyproject.toml` 通过 `[tool.uv.sources]`（可编辑路径安装）从兄弟检出解析三个依赖。这些源覆盖整个解析图中的包来源，因此Eden自身的传递依赖`genesis-world` / `rsl-rl-lib`也指向本地检出：## 快速开始 所有内容从`dexterous-hands/`运行：参见[`dexterous-hands/README.md`](dexterous-hands/README.md)获取完整的任务/机器人列表、运行模式和工具脚本。## 引用 如果你在研究中使用了我们的模拟触觉传感器，请引用：",
+  "tldr_zh": "触觉创世纪论文代码，基于Genesis世界，提供触觉灵巧手RL任务和训练框架。",
+  "cover_zh": "触觉传感器也能仿真？这个开源框架让机器人手感真实到离谱！",
+  "authors": [
+    {
+      "name": "neuroagents-lab",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-08-13",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/neuroagents-lab/tactile-genesis",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 35,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 35,
+      "hint": "⭐ 58"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "官方触觉传感器仿真代码，基于Genesis，支持灵巧手RL训练，高价值sim2real资源",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "Sim2Real"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "neuroagents-lab",
+    "repo": "tactile-genesis",
+    "stars": 58,
+    "language": "Python",
+    "pushed_at": "2026-08-13",
+    "created_at": "2026-06-11",
+    "topics": [],
+    "archived": false
+  }
+}

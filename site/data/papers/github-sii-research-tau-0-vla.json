@@ -3,7 +3,7 @@
   "source": "github",
   "title": "sii-research/tau-0-vla",
   "title_zh": "sii-research/tau-0-vla",
-  "abstract": "This repo is the official implementation of  \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\".\n\n# τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation &nbsp; &nbsp; This repo is the official implementation of **τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation**. ## News - **[2026.07.27]** 🚀 We release the **τ₀-VLA** model [Paper](https://tau0-vla.github.io/tau0-vla.pdf), [Project Website](https://tau0-vla.github.io/), and [Hugging Face](https://huggingface.co/sii-research/tau-0-vla). ## Overview τ₀-VLA is a hierarchical robot foundation model for long-horizon manipulation. A memory-augmented high-level policy generates the next subtask and uses world-model-guided test-time computation to search over alternatives when additional reasoning is needed. A generalist low-level policy then executes the selected subtask across robot embodiments. The low-level policy combines a Qwen3.5 vision-language backbone with a Mixture-of-Transformers action expert trained through conditional flow matching. It uses a unified 40-dimensional state/action space and was trained on 40,115 hours of heterogeneous real-world robot data with multimodal co-training. ## Installation The reference environment uses Python 3.11, CUDA 12.8, and PyTorch 2.7.1. ## Example data and post-training [`example_data/`](example_data/README.md) contains a small AgiBot World subset in LeRobot v3.0 format. The matching post-training recipe is under [`configs/example_agibot_world_gong/`](configs/example_agibot_world_gong/README.md). For another dataset or robot, start from [`configs/_template/`](configs/_template/README.md) and [`src/tau0_vla/adapters/_template/`](src/tau0_vla/adapters/_template/README.md). ## Serving and evaluation Public v1 serving supports joint-control checkpoints only. Native EEF data may be used for training, but EEF serving is not supported in this release. Serve a post-trained joint-control checkpoint: Run open-loop evaluation: See [`deploy/`](deploy/README.md) for the payload and action-order contracts",
+  "abstract": "This repo is the official implementation of  \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\".\n\n# τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation &nbsp; &nbsp; This repo is the official implementation of **τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation**. ## News - **[2026.07.27]** 🚀 We release the **τ₀-VLA** model [Paper](https://arxiv.org/abs/2608.16885), [Project Website](https://tau0-vla.github.io/), and [Hugging Face](https://huggingface.co/sii-research/tau-0-vla). - **[2026.08.19]** 📢 We plan to progressively release components of the high-level policy. Please stay tuned for updates. ## Overview τ₀-VLA is a hierarchical robot foundation model for long-horizon manipulation. A memory-augmented high-level policy generates the next subtask and uses world-model-guided test-time computation to search over alternatives when additional reasoning is needed. A generalist low-level policy then executes the selected subtask across robot embodiments. The low-level policy combines a Qwen3.5 vision-language backbone with a Mixture-of-Transformers action expert trained through conditional flow matching. It uses a unified 40-dimensional state/action space and was trained on 40,115 hours of heterogeneous real-world robot data with multimodal co-training. ## Installation The reference environment uses Python 3.11, CUDA 12.8, and PyTorch 2.7.1. ## Example data and post-training [`example_data/`](example_data/README.md) contains a small AgiBot World subset in LeRobot v3.0 format. The matching post-training recipe is under [`configs/example_agibot_world_gong/`](configs/example_agibot_world_gong/README.md). For another dataset or robot, start from [`configs/_template/`](configs/_template/README.md) and [`src/tau0_vla/adapters/_template/`](src/tau0_vla/adapters/_template/README.md). ## Serving and evaluation Public v1 serving supports joint-control checkpoints only. Native EEF data may be used for training, but EEF serving is not supported in this release. Serve a post-trained joint-control",
   "abstract_zh": "本仓库是“τ₀-VLA：具有世界模型引导测试时计算的分层机器人基础模型”的官方实现。τ₀-VLA 是一个用于长时程操作的分层机器人基础模型。记忆增强的高层策略生成下一个子任务，并在需要额外推理时使用世界模型引导的测试时计算来搜索替代方案。通用低层策略随后在多种机器人本体上执行选定的子任务。低层策略结合了 Qwen3.5 视觉语言骨干网络和通过条件流匹配训练的 Mixture-of-Transformers 动作专家。它使用统一的 40 维状态/动作空间，并在 40,115 小时的异构真实世界机器人数据上进行训练，同时进行多模态协同训练。",
   "tldr_zh": "τ₀-VLA 是分层机器人基础模型，用世界模型引导测试时计算，提升长时程操作能力。",
   "cover_zh": "机器人也能“深思熟虑”？这个分层模型用世界模型引导推理，长时程操作稳了！",
@@ -16,7 +16,7 @@
   "primary_category": "",
   "categories": [],
   "published": "",
-  "updated": "2026-07-27",
+  "updated": "2026-08-18",
   "arxiv_id": "",
   "pdf_url": "",
   "abs_url": "https://github.com/sii-research/tau-0-vla",
@@ -33,13 +33,13 @@
   "source_tags": [
     "github"
   ],
-  "score": 53,
+  "score": 55,
   "score_breakdown": [
     {
       "id": "github_stars",
       "label": "GitHub 热度",
-      "points": 53,
-      "hint": "⭐ 452"
+      "points": 55,
+      "hint": "⭐ 540"
     }
   ],
   "judge": {
@@ -62,9 +62,9 @@
   "github": {
     "owner": "sii-research",
     "repo": "tau-0-vla",
-    "stars": 452,
+    "stars": 540,
     "language": "Python",
-    "pushed_at": "2026-07-27",
+    "pushed_at": "2026-08-18",
     "created_at": "2026-07-26",
     "topics": [],
     "archived": false
