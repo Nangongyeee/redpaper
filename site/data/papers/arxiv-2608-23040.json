@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2608-23040",
+  "source": "arxiv",
+  "title": "RoboRacer Arena: Scaling High-Fidelity Autonomous Racing in Isaac Sim",
+  "title_zh": "RoboRacer Arena：在 Isaac Sim 中实现高保真自动驾驶赛车的大规模扩展",
+  "abstract": "RoboRacer offers a standardized platform for research using 1:10-scale autonomous vehicles, but the variety of available tracks hinders the process of acquiring policies. Although existing occupancy-grid simulators allow for the quick addition of new maps, they fail to include physical contact, while 3D simulators require each circuit to be implemented as a separate asset, thus limiting their scalability. In order to overcome this issue, we have developed RoboRacer Arena, a system that creates 3D racing environments directly from occupancy maps. Our method starts by using a flood fill algorithm to extract the drivable corridors and to identify the track boundaries, which are then used to establish the barriers. A distance field is calculated to define the collision boundaries. The track surfaces, collision properties, and materials are assembled into a USD stage, which allows for the automated and reproducible generation of the environment in Isaac Sim. The input maps can be obtained from SLAM sessions, from rescaled Formula 1 circuits, or from natural-language descriptions. When the input is based on natural language, we use Gemma 4 31B to generate a track specification without specifying any coordinates or geometry. To guarantee consistency and reproducibility, we apply geometric screening, procedural generation, and raster-level validation. The simulation environments are initialized in a time range of 1.18 to 2.48 seconds, with the initialization time increasing linearly as the raster size increases. In 30 matched trials involving 10 tracks and 3 seeds, 21 maps were generated and all passed validation. RoboRacer Arena currently contains 130 tracks and supports the generation of tracks from natural language. In benchmark tests, the system attains 8,707 vehicle-steps per second when using 256 parallel rigid-body vehicles, excluding the time taken for rendering and policy execution.",
+  "abstract_zh": "RoboRacer 为使用 1:10 比例自动驾驶车辆的研究提供了一个标准化平台，但可用赛道的多样性阻碍了策略获取的过程。尽管现有的占用网格模拟器允许快速添加新地图，但它们缺乏物理接触，而 3D 模拟器则需要将每条赛道实现为单独的资产，从而限制了其可扩展性。为了解决这个问题，我们开发了 RoboRacer Arena，一个直接从占用地图创建 3D 赛车环境的系统。我们的方法首先使用洪水填充算法提取可驾驶走廊并识别赛道边界，然后用于建立障碍物。计算距离场以定义碰撞边界。赛道表面、碰撞属性和材质被组装到 USD 阶段中，从而允许在 Isaac Sim 中自动且可重复地生成环境。输入地图可以从 SLAM 会话、缩放的 F1 赛道或自然语言描述中获得。当输入基于自然语言时，我们使用 Gemma 4 31B 生成赛道规格，而不指定任何坐标或几何形状。为了保证一致性和可重复性，我们应用了几何筛选、程序化生成和栅格级验证。模拟环境的初始化时间在 1.18 到 2.48 秒之间，随着栅格尺寸的增加，初始化时间线性增加。在涉及 10 条赛道和 3 个种子的 30 次匹配试验中，生成了 21 张地图，全部通过验证。RoboRacer Arena 目前包含 130 条赛道，并支持从自然语言生成赛道。在基准测试中，系统在使用 256 个并行刚体车辆时达到每秒 8,707 个车辆步数，不包括渲染和策略执行的时间。",
+  "tldr_zh": "RoboRacer Arena 从占用地图自动生成 3D 赛道，支持自然语言，初始化快且可扩展。",
+  "cover_zh": "还在手动建赛道？这个系统用自然语言就能生成 3D 赛道，还支持 130 条！",
+  "authors": [
+    {
+      "name": "Mihaela-Larisa Clement",
+      "affiliation": ""
+    },
+    {
+      "name": "Agnes Poks",
+      "affiliation": ""
+    },
+    {
+      "name": "Ezio Bartocci",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "arxiv_id": "2608.23040",
+  "pdf_url": "https://arxiv.org/pdf/2608.23040v1",
+  "abs_url": "http://arxiv.org/abs/2608.23040v1",
+  "venue": "ICRA 2027",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-23040.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-23040-p2.jpg",
+    "assets/img/covers/arxiv-2608-23040-p3.jpg",
+    "assets/img/covers/arxiv-2608-23040-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 ICRA 2027"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 26,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（isaac sim）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「ICRA 2027」收录"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "sim2real",
+    "reason": "提供基于Isaac Sim的高保真自动驾驶赛道生成系统，支持从占用图或自然语言生成环境，对sim2real研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "TU Wien",
+    "AIT Austrian Institute of Technology"
+  ],
+  "method_tags": [
+    "procedural generation"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "Isaac Sim"
+  ],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

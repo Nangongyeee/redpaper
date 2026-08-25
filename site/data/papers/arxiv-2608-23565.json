@@ -1,0 +1,143 @@
+{
+  "id": "arxiv-2608-23565",
+  "source": "arxiv",
+  "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+  "title_zh": "ReWorld：具有长时记忆的交互式世界模型",
+  "abstract": "An interactive world model must follow the user's actions, remember the places it has shown, and stream in real time. The tension is structural: control wants a short horizon, memory wants an unbounded one. ReWorld separates the two during training and bounds them at inference. Mixed per-head attention windows confine most heads to the recent past while a small set of global heads attends over the entire history, and random head routing keeps either capability from binding to particular heads; random chunk dropping makes sparse histories in-distribution. At inference the whole past lives under a fixed budget: a bounded KV cache backed by a pose-indexed landmark bank, from which the model retrieves the landmarks nearest the current pose. A metric-scale-aligned data engine places eight sources -- Unreal-rendered fly-throughs, game roaming, and real-world footage -- on one physical action scale, so the same key press moves the camera the same distance in every source, and palindrome trajectories supply the revisit evidence that memory training needs. Distribution-matching distillation confined to a LoRA adapter then compresses sampling to four steps: one backbone serves both a high-fidelity multi-step mode and a real-time interactive one, streaming 704x1280 video across photorealistic, game-style, and stylized worlds. Under a three-axis protocol covering action following, long-horizon recall, and video quality, against six recent interactive world models it attains the best control fidelity ($11.95^\\circ$ rotation error and the best camera-motion consistency) and the best generation quality; and on minute-long out-and-back rollouts ($64$\\,s, $384$ latents), its fixed 12-chunk cache still regenerates the starting view -- at rollout lengths where a sliding window has long evicted the evidence and full-KV attention runs out of memory.",
+  "abstract_zh": "交互式世界模型必须遵循用户的操作，记住它展示过的场景，并实时生成。这种需求在结构上存在矛盾：控制需要短视界，而记忆需要无界视界。ReWorld 在训练时将两者分离，并在推理时加以约束。混合逐头注意力窗口将大多数头限制在近期，而少数全局头则关注整个历史；随机头路由防止任一能力绑定到特定头；随机块丢弃使稀疏历史在分布内。推理时，整个过去在固定预算下运行：一个由姿态索引地标库支持的受限 KV 缓存，模型从中检索最接近当前姿态的地标。一个度量尺度对齐的数据引擎将八个来源——虚幻引擎渲染的飞行穿越、游戏漫游和真实世界视频——置于同一物理动作尺度上，使得相同的按键在每个来源中移动相机相同的距离，而回文轨迹提供了记忆训练所需的重新访问证据。分布匹配蒸馏仅限于 LoRA 适配器，将采样压缩到四步：一个主干同时服务于高保真多步模式和实时交互模式，以 704x1280 分辨率流式生成照片级、游戏风格和风格化世界的视频。在涵盖动作跟随、长时记忆和视频质量的三轴协议下，与六个最近的交互式世界模型相比，它达到了最佳的控制保真度（11.95° 旋转误差和最佳的相机运动一致性）和最佳的生成质量；在长达一分钟的往返轨迹（64 秒，384 个潜在变量）上，其固定的 12 块缓存仍能重新生成起始视图——而在滑动窗口早已驱逐证据、全 KV 注意力内存不足的轨迹长度下。",
+  "tldr_zh": "ReWorld 通过分离控制与记忆，实现长时记忆下的实时交互世界模型。",
+  "cover_zh": "长时记忆+实时交互？这个新世界模型让控制与记忆兼得！",
+  "authors": [
+    {
+      "name": "Zhifei Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Luozhou Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Guibao Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Dongyu Yan",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuai Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianshuo Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yihua Du",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianyi Gui",
+      "affiliation": ""
+    },
+    {
+      "name": "Lianghua Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yingcong Chen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.AI",
+  "categories": [
+    "cs.AI"
+  ],
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "arxiv_id": "2608.23565",
+  "pdf_url": "https://arxiv.org/pdf/2608.23565v1",
+  "abs_url": "http://arxiv.org/abs/2608.23565v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-23565.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-23565-p2.jpg",
+    "assets/img/covers/arxiv-2608-23565-p3.jpg",
+    "assets/img/covers/arxiv-2608-23565-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ HKUST"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 阿里"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 21,
+  "source_tags": [],
+  "score": 44,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKUST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 21 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出交互式世界模型ReWorld，解决长时记忆与控制冲突，方法新颖且性能领先，对具身世界模型研究有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "HKUST(GZ)",
+    "ATH, Alibaba"
+  ],
+  "method_tags": [
+    "World Model",
+    "Long-Horizon Memory",
+    "Distillation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

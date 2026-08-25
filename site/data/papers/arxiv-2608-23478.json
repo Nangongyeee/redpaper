@@ -1,0 +1,109 @@
+{
+  "id": "arxiv-2608-23478",
+  "source": "arxiv",
+  "title": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action Models",
+  "title_zh": "有意图地行动：为视觉-语言-动作模型提炼行为意图",
+  "abstract": "Vision-Language-Action (VLA) models can turn multimodal context into robot actions, but their action decoders are still trained largely by behavior cloning. This supervises which motor command was demonstrated while leaving implicit the local objective served by the behavior under the instruction. Future-based supervision enriches action learning with frames, latent observations, trajectories, or motion representations, but these signals capture particular realizations of what may happen rather than the shared semantic objective of the forthcoming behavior. We propose Intention Distillation (INDI), which distills behavior-level intent into the action decoder. During training, a frozen teacher VLM interprets a demonstrated segment from the current observation, instruction, coarse action summary, and corresponding execution video. From its standard inputs, the deployed VLA recovers the resulting multimodal intent representation at an intermediate decoder layer and uses it to organize action prediction together with representations of how the behavior unfolds and what it achieves. On SimplerEnv-Bridge, INDI improves GR00T-N1.7 from 64.3% to 84.7%, and on RoboCasa Kitchen it improves the controlled GR00T-N1.7 baseline from 64.1% to 70.3%, with consistent gains on $π_{0.5}$ across both benchmarks. In real-world tasks, INDI improves average success from 62.0% to 68.7%, with gains of up to 12.0 pp on longer-horizon tasks. Further analyses show that the recovered latent is used by the decoder, captures behavior objective and execution progress, and organizes downstream predictions in an objective-dependent manner. These results show that action decoders benefit from explicitly modeling the semantic objective of the behavior they generate.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型能够将多模态上下文转化为机器人动作，但其动作解码器在很大程度上仍通过行为克隆进行训练。这种方式监督了演示中的电机指令，却隐含了行为在指令下所服务的局部目标。基于未来的监督通过帧、潜在观测、轨迹或运动表示来丰富动作学习，但这些信号捕捉的是可能发生的特定实现，而非即将发生行为的共享语义目标。我们提出了意图蒸馏（INDI），将行为级别的意图蒸馏到动作解码器中。在训练期间，一个冻结的教师VLM从当前观测、指令、粗略动作摘要和相应的执行视频中解释一个演示片段。部署的VLA从其标准输入中，在中间解码器层恢复产生的多模态意图表示，并利用它来组织动作预测，以及行为如何展开和实现什么的表示。在SimplerEnv-Bridge上，INDI将GR00T-N1.7从64.3%提升到84.7%，在RoboCasa Kitchen上，将受控的GR00T-N1.7基线从64.1%提升到70.3%，在两个基准上对π0.5均有一致的提升。在真实世界任务中，INDI将平均成功率从62.0%提升到68.7%，在更长时域任务上提升高达12.0个百分点。进一步分析表明，恢复的潜在表示被解码器使用，捕获行为目标和执行进度，并以目标依赖的方式组织下游预测。这些结果表明，动作解码器受益于显式建模其生成行为的语义目标。",
+  "tldr_zh": "提出意图蒸馏方法，将行为意图注入VLA模型解码器，显著提升机器人任务成功率。",
+  "cover_zh": "机器人只会模仿？新方法提炼行为意图，成功率飙升20%！",
+  "authors": [
+    {
+      "name": "Sangoh Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Sangwoo Mo",
+      "affiliation": ""
+    },
+    {
+      "name": "Wook-Shin Han",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "arxiv_id": "2608.23478",
+  "pdf_url": "https://arxiv.org/pdf/2608.23478v1",
+  "abs_url": "http://arxiv.org/abs/2608.23478v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-23478.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-23478-p2.jpg",
+    "assets/img/covers/arxiv-2608-23478-p3.jpg",
+    "assets/img/covers/arxiv-2608-23478-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 37,
+  "source_tags": [],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（gr00t、vision-language-action、robocasa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 37 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出意图蒸馏方法提升VLA动作解码，在多个基准和真机上验证，对操作学习有较高参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "GSAI, POSTECH",
+    "IME, POSTECH"
+  ],
+  "method_tags": [
+    "Intention Distillation",
+    "VLA",
+    "Behavior Cloning"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "SimplerEnv-Bridge",
+    "RoboCasa Kitchen"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
