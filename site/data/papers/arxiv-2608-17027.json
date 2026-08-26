@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2608-17027",
+  "source": "arxiv_discover",
+  "title": "FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences",
+  "title_zh": "FetchMan：从模拟经验学习视觉人形移动操作策略",
+  "abstract": "Visual loco-manipulation policies that can generalize to novel scenes and objects have long been a goal of robotics research. However, today's data-hungry algorithms make collecting sufficient demonstrations a struggle for tabletop manipulation, and even more so for humanoids that must also walk and balance. Learning from simulated data and transferring that behavior to the real world, as is commonly done in locomotion, sidesteps this struggle, so we replicate that recipe for loco-manipulation. In doing so, we find that cloning synthetic demonstrations results in a low performance ceiling no matter the amount of training data. Reinforcement learning breaks through it, and refining the cloned policy with Flow-GRPO on a single sparse reward yields performance that synthetic behavior cloning cannot match. Together, these stages form our end-to-end sim-to-real pipeline spanning more than 150,000 scenes, which we use to train FetchMan. We evaluate it on FetchMan-Bench, a simulation benchmark we release, and deploy it zero-shot on a real Unitree G1, where our single-object reach-and-pick policy walks to and grasps a target across unseen scenes at 73.3% success. Finally, we extend this recipe to multi-object training, a first step toward loco-manipulation generalist policies at this data scale.",
+  "abstract_zh": "能够泛化到新场景和新物体的视觉移动操作策略一直是机器人研究的目标。然而，当今数据饥渴的算法使得为桌面操作收集足够的演示变得困难，对于还必须行走和保持平衡的人形机器人来说更是如此。从模拟数据中学习并将行为迁移到现实世界，正如在运动控制中常见的那样，绕过了这一困难，因此我们将这一方法复制到移动操作中。在此过程中，我们发现无论训练数据量多少，克隆合成演示都会导致性能上限较低。强化学习突破了这一上限，并通过在单一稀疏奖励上使用Flow-GRPO对克隆策略进行精炼，获得了合成行为克隆无法匹敌的性能。这些阶段共同构成了我们的端到端模拟到现实流水线，涵盖超过15万个场景，我们用它来训练FetchMan。我们在我们发布的模拟基准FetchMan-Bench上评估了它，并在真实的Unitree G1上进行了零样本部署，其中我们的单物体到达抓取策略在未见场景中行走并抓取目标的成功率为73.3%。最后，我们将这一方法扩展到多物体训练，这是朝着这种数据规模下的移动操作通才策略迈出的第一步。",
+  "tldr_zh": "提出FetchMan，通过模拟到现实的流水线训练人形机器人视觉移动操作策略，零样本部署成功率达73.3%。",
+  "cover_zh": "人形机器人也能边走路边抓东西？零样本成功率73.3%！",
+  "authors": [
+    {
+      "name": "Omar Rayyan",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Max Argus",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuxin Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chang Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenfanfu Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuchen Cui",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-17",
+  "updated": "2026-08-17",
+  "arxiv_id": "2608.17027",
+  "pdf_url": "https://arxiv.org/pdf/2608.17027v1",
+  "abs_url": "http://arxiv.org/abs/2608.17027v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-17027.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-17027-p2.jpg",
+    "assets/img/covers/arxiv-2608-17027-p3.jpg",
+    "assets/img/covers/arxiv-2608-17027-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（loco-manipulation、loco-manip、humanoid loco-manipulation、humanoid loco）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "人形全身移动操作，结合仿真到真机迁移与强化学习，具高科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of California, Los Angeles",
+    "Allen Institute for AI",
+    "University of Washington"
+  ],
+  "method_tags": [
+    "Reinforcement Learning",
+    "Behavior Cloning",
+    "sim-to-real"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
