@@ -1,0 +1,143 @@
+{
+  "id": "arxiv-2608-24479",
+  "source": "arxiv",
+  "title": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
+  "title_zh": "WarpSAC：通过重新思考探索与利用，迈向可扩展离策略强化学习的巅峰",
+  "abstract": "Massively parallel simulation changes the data regime in which off-policy reinforcement learning (RL) is trained, challenging stabilizers designed for data-limited replay. Through controlled experiments across eight benchmark families, we show that these stabilizers are data-regime-dependent: parameter normalization helps with narrow replay coverage but restricts value fitting when data are abundant, while clipped double-Q can be relaxed in high-throughput manipulation. Age-biased replay weighting improves learning efficiency across regimes, especially with limited network capacity.   Based on these findings, we propose WarpSAC, a regime-aware family of off-policy RL algorithms. WarpSAC uses Sample Weight Decay for efficient exploitation and provides two variants: WarpSAC-L (Norm ON, clipped double-Q) for data-limited CPU-scale training, and WarpSAC-A (Norm OFF, single-Q) for data-abundant GPU-parallel training. WarpSAC improves normalized score--step AUC over FlashSAC by 4.5% across nine CPU-scale environments and 23.1% across fourteen GPU-parallel environments. It increases UnitreeG1TransportBox-v1 success rate from 19.8% to 96.4%, improves mean normalized wall-time AUC on MuJoCo Playground by 19.1%, and achieves 36.4% faster sim-to-real deployment on Unitree G1 than FlashSAC. These results show that scalable off-policy RL should adapt its stabilizers to the available data regime.",
+  "abstract_zh": "大规模并行模拟改变了离策略强化学习（RL）的训练数据分布，对为数据受限回放设计的稳定器提出了挑战。通过在八个基准家族上的受控实验，我们表明这些稳定器依赖于数据分布：参数归一化有助于窄回放覆盖，但在数据丰富时限制值拟合，而裁剪双Q可以在高吞吐操作中放宽。年龄偏置回放加权提高了跨数据分布的学习效率，尤其是在网络容量有限时。基于这些发现，我们提出了WarpSAC，一个数据分布感知的离策略RL算法家族。WarpSAC使用样本权重衰减以实现高效利用，并提供两个变体：WarpSAC-L（Norm ON，裁剪双Q）用于数据受限的CPU规模训练，以及WarpSAC-A（Norm OFF，单Q）用于数据丰富的GPU并行训练。WarpSAC在九个CPU规模环境中将归一化分数-步长AUC比FlashSAC提高了4.5%，在十四个GPU并行环境中提高了23.1%。它将UnitreeG1TransportBox-v1成功率从19.8%提高到96.4%，在MuJoCo Playground上将平均归一化墙钟时间AUC提高了19.1%，并在Unitree G1上实现了比FlashSAC快36.4%的仿真到现实部署。这些结果表明，可扩展的离策略RL应使其稳定器适应可用的数据分布。",
+  "tldr_zh": "WarpSAC根据数据规模调整稳定器，显著提升离策略RL性能。",
+  "cover_zh": "数据多就关掉稳定器？WarpSAC让离策略RL性能飙升",
+  "authors": [
+    {
+      "name": "Zihao Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongyao Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Huizhong Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Pengyi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yifu Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Fei Ni",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinyi Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei Wei",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianrong Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yan Zheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianye Hao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG"
+  ],
+  "published": "2026-08-25",
+  "updated": "2026-08-25",
+  "arxiv_id": "2608.24479",
+  "pdf_url": "https://arxiv.org/pdf/2608.24479v1",
+  "abs_url": "http://arxiv.org/abs/2608.24479v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-24479.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-24479-p2.jpg",
+    "assets/img/covers/arxiv-2608-24479-p3.jpg",
+    "assets/img/covers/arxiv-2608-24479-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 41,
+  "source_tags": [],
+  "score": 24,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（unitree g1、sim-to-real）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 41 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "提出可扩展离策略RL算法WarpSAC，在Unitree G1上实现移动操作与sim-to-real，兼具算法创新与机器人应用价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tianjin University",
+    "Shanxi University",
+    "Imperial College London"
+  ],
+  "method_tags": [
+    "off-policy RL",
+    "Sample Weight Decay",
+    "sim-to-real"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

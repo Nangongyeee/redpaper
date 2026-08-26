@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2608-24855",
+  "source": "arxiv",
+  "title": "LeFlow: Generative Latent Flow Planning for World Models",
+  "title_zh": "LeFlow：世界模型的生成式潜在流规划",
+  "abstract": "Latent world models are inherently strong encoders that transform image pixel to latent embedding, yet existing world models still rely on online trajectory optimization for action planning: for every state-goal pair, an iterative optimizer is run from scratch to search for optimal action sequences, treating the world model as a black-box simulator. This approach pays the full iterative optimization cost anew at every replanning step and reuses no planning experience across queries. In this work, we ask whether planning itself can be amortized once a latent world model has been learned. We present LeFlow, which learns a reusable latent trajectory prior operating directly in the latent dynamics space from the world model. LeFlow recasts planning as conditional latent trajectory generation: a rectified-flow model imagines a future latent path between the current and goal embeddings, an inverse dynamics decoder turns latent transitions into action chunks, and the frozen world model verifies each candidate by autoregressive rollout. Across four major goal-conditioned pixel-control benchmarks, LeFlow replaces iterative action-space optimization with amortized latent planning and fixed-budget rollout selection, achieving consistent success-rate gains with an order-of-magnitude reduction in planning time. Our results argue that latent world models should support not only prediction but reusable planning priors. Our code is available at https://github.com/hsiangwei0903/LeFlow.",
+  "abstract_zh": "潜在世界模型本质上是强大的编码器，将图像像素转换为潜在嵌入，然而现有的世界模型在动作规划时仍依赖在线轨迹优化：对于每个状态-目标对，迭代优化器从零开始搜索最优动作序列，将世界模型视为黑盒模拟器。这种方法在每次重新规划时都需重新承担完整的迭代优化成本，且不跨查询复用规划经验。在这项工作中，我们探讨一旦潜在世界模型被学习，规划本身是否可以被摊销。我们提出LeFlow，它学习一个可复用的潜在轨迹先验，直接在世界模型的潜在动力学空间中操作。LeFlow将规划重新定义为条件潜在轨迹生成：一个整流流模型在当前和目标嵌入之间想象未来的潜在路径，逆动力学解码器将潜在转换转化为动作块，冻结的世界模型通过自回归展开验证每个候选。在四个主要的目标条件像素控制基准上，LeFlow用摊销的潜在规划和固定预算的展开选择取代了迭代动作空间优化，实现了持续的成功率提升，并将规划时间减少了一个数量级。我们的结果论证了潜在世界模型不仅应支持预测，还应支持可复用的规划先验。我们的代码可在https://github.com/hsiangwei0903/LeFlow获取。",
+  "tldr_zh": "LeFlow用生成式潜在轨迹生成替代迭代优化，实现高效规划。",
+  "cover_zh": "告别反复试错｜新方法让世界模型规划速度提升一个量级",
+  "authors": [
+    {
+      "name": "Hsiang-Wei Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianxu Shangguan",
+      "affiliation": ""
+    },
+    {
+      "name": "Junbin Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jenq-Neng Hwang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-08-25",
+  "updated": "2026-08-25",
+  "arxiv_id": "2608.24855",
+  "pdf_url": "https://arxiv.org/pdf/2608.24855v1",
+  "abs_url": "http://arxiv.org/abs/2608.24855v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-24855.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-24855-p2.jpg",
+    "assets/img/covers/arxiv-2608-24855-p3.jpg",
+    "assets/img/covers/arxiv-2608-24855-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（world model、world models、latent world model）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出可复用潜在轨迹先验的生成式规划方法，显著提升世界模型规划效率，具身智能领域价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Washington"
+  ],
+  "method_tags": [
+    "World Model",
+    "Latent Planning",
+    "Rectified Flow"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
