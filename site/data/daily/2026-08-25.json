@@ -27,7 +27,8 @@
       "primary_category": "cs.RO",
       "published": "2026-08-25",
       "channels": [
-        "manipulation"
+        "manipulation",
+        "world-model"
       ],
       "badges": [
         {
@@ -54,7 +55,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.24101v1",
       "venue": "",
       "venue_announced": "",
-      "score": 67,
+      "score": 75,
       "judge": {
         "relevant": true,
         "research_value": "high",
@@ -74,6 +75,77 @@
       "platform": [
         "Franka"
       ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-24042",
+      "source": "arxiv",
+      "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
+      "title_zh": "面向视觉-语言-动作模型数据高效自适应的层次化技能检索",
+      "tldr_zh": "提出层次化技能检索，分解任务并检索相关演示，提升VLA模型数据高效自适应。",
+      "cover_zh": "别再盲目匹配整个任务了！层次化技能检索让机器人学得更快更准",
+      "abstract_zh": "虽然在大规模机器人数据集上预训练的视觉-语言-动作（VLA）模型为机器人操作提供了坚实基础，但在仅有少量任务特定演示的情况下适应新任务时，其性能可能会下降。检索提供了一种重用现有演示以实现数据高效自适应的实用方法，但现有方法往往依赖于视觉相似性、状态-动作表示或任务级语言匹配。这些方法可能忽略长时程操作任务的层次结构，其中完整的任务匹配很少见，但可重用的技能往往丰富。为解决这一挑战，我们提出了层次化技能检索（HSR），一种用于数据高效VLA自适应的检索框架。具体来说，HSR首先将目标任务分解为候选技能序列。它基于语义合理性和从先前数据集估计的技能可靠性来评估每个计划。然后，选定的分解用于混合检索，结合子任务级语言检索和行为特征重排序，以识别既语义相关又与目标任务兼容的演示。最后，我们通过两阶段预训练和微调流程来调整策略，该流程将通用技能获取与任务特定自适应分开。在LIBERO基准和几个真实世界机器人操作任务上的实验表明，HSR相对于最强基线分别将平均成功率提高了10.3%和21.3%。这些结果证明了结构化技能级检索对数据高效VLA自适应的有效性。视频和代码可在https://hoar012.github.io/HSR-Project获取。",
+      "authors": [
+        "Haoran Hao",
+        "Shahram Najam Syed",
+        "Jeff Schneider"
+      ],
+      "authors_all": [
+        "Haoran Hao",
+        "Shahram Najam Syed",
+        "Jeff Schneider",
+        "Jeffrey Ichnowski"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-25",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24042.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24042-p2.jpg",
+        "assets/img/covers/arxiv-2608-24042-p3.jpg",
+        "assets/img/covers/arxiv-2608-24042-p4.jpg"
+      ],
+      "arxiv_id": "2608.24042",
+      "abs_url": "http://arxiv.org/abs/2608.24042v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24042v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出分层技能检索提升VLA数据效率，在LIBERO和真机验证，对操作学习有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "Retrieval",
+        "VLA",
+        "Hierarchical Skill Retrieval"
+      ],
+      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -244,6 +316,79 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-24111",
+      "source": "arxiv",
+      "title": "Trajectory-Level Continuous Action Representation for Robotic Manipulation",
+      "title_zh": "机器人操作的轨迹级连续动作表示",
+      "tldr_zh": "提出轨迹级连续动作表示CAT，提升机器人操作在不同控制频率下的成功率。",
+      "cover_zh": "告别固定频率｜轨迹级连续动作让机器人操作更灵活高效",
+      "abstract_zh": "我们提出了CAT，一种用于机器人操作的轨迹级连续动作表示框架。现有的视觉运动系统常常将动作表示与控制频率纠缠在一起，或依赖于固定的时间参数化。这导致在高采样率下表示冗余，并限制了关键运动的建模。CAT将固定实时时间间隔内的动作轨迹编码为一组连续的潜在令牌。为了确保不同控制频率下的时间一致性，我们进一步引入了频率感知的位置编码，建立了一个共享的时间坐标系。轨迹级正则化进一步稳定了潜在表示。这种方法防止了表示随时间步密度增长，并避免了对预定义时间参数化的依赖。在LIBERO、MimicGen和真实世界长时程操作任务上的广泛系统级评估表明，基于CAT的策略在匹配的训练设置下始终优于竞争性的基于VQ和连续视觉运动基线。在各种模型主干和控制频率下，CAT持续提高了成功率。这些结果突显了轨迹级连续动作建模在不同控制速率下可扩展机器人操作的优势。",
+      "authors": [
+        "Tong Yang",
+        "Jingkai Jia",
+        "Yuecheng Xu"
+      ],
+      "authors_all": [
+        "Tong Yang",
+        "Jingkai Jia",
+        "Yuecheng Xu",
+        "Xueyao Chen",
+        "Chi Zhang",
+        "Wenqiang Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-25",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ TeleAI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24111.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24111-p2.jpg",
+        "assets/img/covers/arxiv-2608-24111-p3.jpg",
+        "assets/img/covers/arxiv-2608-24111-p4.jpg"
+      ],
+      "arxiv_id": "2608.24111",
+      "abs_url": "http://arxiv.org/abs/2608.24111v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24111v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 52,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出轨迹级连续动作表示，提升不同控制频率下的操作性能，对操作策略研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Fudan University",
+        "TeleAI, China Telecom"
+      ],
+      "method_tags": [
+        "trajectory-level continuous action representation",
+        "frequency-aware positional encoding"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-24217",
       "source": "arxiv",
       "title": "CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion",
@@ -390,148 +535,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2608-24042",
-      "source": "arxiv",
-      "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
-      "title_zh": "面向视觉-语言-动作模型数据高效自适应的层次化技能检索",
-      "tldr_zh": "提出层次化技能检索，分解任务并检索相关演示，提升VLA模型数据高效自适应。",
-      "cover_zh": "别再盲目匹配整个任务了！层次化技能检索让机器人学得更快更准",
-      "abstract_zh": "虽然在大规模机器人数据集上预训练的视觉-语言-动作（VLA）模型为机器人操作提供了坚实基础，但在仅有少量任务特定演示的情况下适应新任务时，其性能可能会下降。检索提供了一种重用现有演示以实现数据高效自适应的实用方法，但现有方法往往依赖于视觉相似性、状态-动作表示或任务级语言匹配。这些方法可能忽略长时程操作任务的层次结构，其中完整的任务匹配很少见，但可重用的技能往往丰富。为解决这一挑战，我们提出了层次化技能检索（HSR），一种用于数据高效VLA自适应的检索框架。具体来说，HSR首先将目标任务分解为候选技能序列。它基于语义合理性和从先前数据集估计的技能可靠性来评估每个计划。然后，选定的分解用于混合检索，结合子任务级语言检索和行为特征重排序，以识别既语义相关又与目标任务兼容的演示。最后，我们通过两阶段预训练和微调流程来调整策略，该流程将通用技能获取与任务特定自适应分开。在LIBERO基准和几个真实世界机器人操作任务上的实验表明，HSR相对于最强基线分别将平均成功率提高了10.3%和21.3%。这些结果证明了结构化技能级检索对数据高效VLA自适应的有效性。视频和代码可在https://hoar012.github.io/HSR-Project获取。",
-      "authors": [
-        "Haoran Hao",
-        "Shahram Najam Syed",
-        "Jeff Schneider"
-      ],
-      "authors_all": [
-        "Haoran Hao",
-        "Shahram Najam Syed",
-        "Jeff Schneider",
-        "Jeffrey Ichnowski"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-25",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ CMU RI"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-24042.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-24042-p2.jpg",
-        "assets/img/covers/arxiv-2608-24042-p3.jpg",
-        "assets/img/covers/arxiv-2608-24042-p4.jpg"
-      ],
-      "arxiv_id": "2608.24042",
-      "abs_url": "http://arxiv.org/abs/2608.24042v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.24042v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 47,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出分层技能检索提升VLA数据效率，在LIBERO和真机验证，对操作学习有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Carnegie Mellon University"
-      ],
-      "method_tags": [
-        "Retrieval",
-        "VLA",
-        "Hierarchical Skill Retrieval"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-24111",
-      "source": "arxiv",
-      "title": "Trajectory-Level Continuous Action Representation for Robotic Manipulation",
-      "title_zh": "机器人操作的轨迹级连续动作表示",
-      "tldr_zh": "提出轨迹级连续动作表示CAT，提升机器人操作在不同控制频率下的成功率。",
-      "cover_zh": "告别固定频率｜轨迹级连续动作让机器人操作更灵活高效",
-      "abstract_zh": "我们提出了CAT，一种用于机器人操作的轨迹级连续动作表示框架。现有的视觉运动系统常常将动作表示与控制频率纠缠在一起，或依赖于固定的时间参数化。这导致在高采样率下表示冗余，并限制了关键运动的建模。CAT将固定实时时间间隔内的动作轨迹编码为一组连续的潜在令牌。为了确保不同控制频率下的时间一致性，我们进一步引入了频率感知的位置编码，建立了一个共享的时间坐标系。轨迹级正则化进一步稳定了潜在表示。这种方法防止了表示随时间步密度增长，并避免了对预定义时间参数化的依赖。在LIBERO、MimicGen和真实世界长时程操作任务上的广泛系统级评估表明，基于CAT的策略在匹配的训练设置下始终优于竞争性的基于VQ和连续视觉运动基线。在各种模型主干和控制频率下，CAT持续提高了成功率。这些结果突显了轨迹级连续动作建模在不同控制速率下可扩展机器人操作的优势。",
-      "authors": [
-        "Tong Yang",
-        "Jingkai Jia",
-        "Yuecheng Xu"
-      ],
-      "authors_all": [
-        "Tong Yang",
-        "Jingkai Jia",
-        "Yuecheng Xu",
-        "Xueyao Chen",
-        "Chi Zhang",
-        "Wenqiang Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-25",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ TeleAI"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-24111.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-24111-p2.jpg",
-        "assets/img/covers/arxiv-2608-24111-p3.jpg",
-        "assets/img/covers/arxiv-2608-24111-p4.jpg"
-      ],
-      "arxiv_id": "2608.24111",
-      "abs_url": "http://arxiv.org/abs/2608.24111v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.24111v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 44,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出轨迹级连续动作表示，提升不同控制频率下的操作性能，对操作策略研究有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Fudan University",
-        "TeleAI, China Telecom"
-      ],
-      "method_tags": [
-        "trajectory-level continuous action representation",
-        "frequency-aware positional encoding"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2608-24212",
       "source": "arxiv",
       "title": "NeoWorld-Pro: Programming Interactive Scenes from Monocular Images for Embodied Simulation",
@@ -557,7 +560,8 @@
       "primary_category": "cs.CV",
       "published": "2026-08-25",
       "channels": [
-        "manipulation"
+        "manipulation",
+        "sim2real"
       ],
       "badges": [
         {
@@ -580,7 +584,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.24212v1",
       "venue": "",
       "venue_announced": "",
-      "score": 44,
+      "score": 49,
       "judge": {
         "relevant": true,
         "research_value": "high",
@@ -757,6 +761,82 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-23927",
+      "source": "arxiv",
+      "title": "GlanceWAM: Sparse Test-Time Imagination for World-Action Models",
+      "title_zh": "GlanceWAM：世界-动作模型的稀疏测试时想象",
+      "tldr_zh": "GlanceWAM通过异步想象实现实时控制，在机器人任务中同时提升速度与成功率。",
+      "cover_zh": "机器人控制不再卡顿？异步想象让速度与成功率兼得！",
+      "abstract_zh": "视频生成模型为机器人学习提供了丰富的物理先验，然而现有的世界-动作模型（WAMs）面临一个根本性的权衡：在控制频率下同步生成视频在延迟上不可行，而放弃测试时的视觉想象则会牺牲任务成功率。我们证明，当视觉想象在关键路径之外异步生成并直接在潜在空间中消费时，既能实现实时推理，又能获得更高的成功率。我们提出了GlanceWAM，它在单个视频DiT中将想象与控制解耦：一个异步提议器以慢时钟向前瞥视，在后台想象几秒后的单个前瞻帧，而动作头以控制频率（48毫秒）在潜在空间中解码动作块，无需阻塞。通过非干扰注意力掩码（隔离视频表示）和鲁棒性水平训练（适应异步前瞻老化），GlanceWAM打破了速度与成功率的困境。仅基于演示进行训练，它在24任务RoboCasa厨房基准上达到72.2%（超过同步Cosmos Policy的67.1%和无想象协同训练的64.4%），在LIBERO上达到99.0%，在NVIDIA A100 GPU上每块执行时间为48毫秒（比同步基线快24倍）。代码可在https://github.com/linhanwang/GlanceWAM获取。",
+      "authors": [
+        "Linhan Wang",
+        "Zijian An",
+        "Mingyuan Zhang"
+      ],
+      "authors_all": [
+        "Linhan Wang",
+        "Zijian An",
+        "Mingyuan Zhang",
+        "Chen Dai",
+        "Yi Xu",
+        "Can Cui",
+        "Zichong Yang",
+        "Yinlin Chen",
+        "Lifeng Zhou",
+        "Chang-Tien Lu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-25",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-23927.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-23927-p2.jpg",
+        "assets/img/covers/arxiv-2608-23927-p3.jpg",
+        "assets/img/covers/arxiv-2608-23927-p4.jpg"
+      ],
+      "arxiv_id": "2608.23927",
+      "abs_url": "http://arxiv.org/abs/2608.23927v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23927v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出异步测试时想象的世界动作模型，兼顾实时性与成功率，方法新颖且性能领先。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Virginia Tech",
+        "Drexel University",
+        "Northeastern University",
+        "Purdue University"
+      ],
+      "method_tags": [
+        "World-Action Model",
+        "asynchronous imagination",
+        "latent space"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1010,33 +1090,37 @@
       ]
     },
     {
-      "id": "arxiv-2608-23927",
+      "id": "arxiv-2608-24479",
       "source": "arxiv",
-      "title": "GlanceWAM: Sparse Test-Time Imagination for World-Action Models",
-      "title_zh": "GlanceWAM：世界-动作模型的稀疏测试时想象",
-      "tldr_zh": "GlanceWAM通过异步想象实现实时控制，在机器人任务中同时提升速度与成功率。",
-      "cover_zh": "机器人控制不再卡顿？异步想象让速度与成功率兼得！",
-      "abstract_zh": "视频生成模型为机器人学习提供了丰富的物理先验，然而现有的世界-动作模型（WAMs）面临一个根本性的权衡：在控制频率下同步生成视频在延迟上不可行，而放弃测试时的视觉想象则会牺牲任务成功率。我们证明，当视觉想象在关键路径之外异步生成并直接在潜在空间中消费时，既能实现实时推理，又能获得更高的成功率。我们提出了GlanceWAM，它在单个视频DiT中将想象与控制解耦：一个异步提议器以慢时钟向前瞥视，在后台想象几秒后的单个前瞻帧，而动作头以控制频率（48毫秒）在潜在空间中解码动作块，无需阻塞。通过非干扰注意力掩码（隔离视频表示）和鲁棒性水平训练（适应异步前瞻老化），GlanceWAM打破了速度与成功率的困境。仅基于演示进行训练，它在24任务RoboCasa厨房基准上达到72.2%（超过同步Cosmos Policy的67.1%和无想象协同训练的64.4%），在LIBERO上达到99.0%，在NVIDIA A100 GPU上每块执行时间为48毫秒（比同步基线快24倍）。代码可在https://github.com/linhanwang/GlanceWAM获取。",
+      "title": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
+      "title_zh": "WarpSAC：通过重新思考探索与利用，迈向可扩展离策略强化学习的巅峰",
+      "tldr_zh": "WarpSAC根据数据规模调整稳定器，显著提升离策略RL性能。",
+      "cover_zh": "数据多就关掉稳定器？WarpSAC让离策略RL性能飙升",
+      "abstract_zh": "大规模并行模拟改变了离策略强化学习（RL）的训练数据分布，对为数据受限回放设计的稳定器提出了挑战。通过在八个基准家族上的受控实验，我们表明这些稳定器依赖于数据分布：参数归一化有助于窄回放覆盖，但在数据丰富时限制值拟合，而裁剪双Q可以在高吞吐操作中放宽。年龄偏置回放加权提高了跨数据分布的学习效率，尤其是在网络容量有限时。基于这些发现，我们提出了WarpSAC，一个数据分布感知的离策略RL算法家族。WarpSAC使用样本权重衰减以实现高效利用，并提供两个变体：WarpSAC-L（Norm ON，裁剪双Q）用于数据受限的CPU规模训练，以及WarpSAC-A（Norm OFF，单Q）用于数据丰富的GPU并行训练。WarpSAC在九个CPU规模环境中将归一化分数-步长AUC比FlashSAC提高了4.5%，在十四个GPU并行环境中提高了23.1%。它将UnitreeG1TransportBox-v1成功率从19.8%提高到96.4%，在MuJoCo Playground上将平均归一化墙钟时间AUC提高了19.1%，并在Unitree G1上实现了比FlashSAC快36.4%的仿真到现实部署。这些结果表明，可扩展的离策略RL应使其稳定器适应可用的数据分布。",
       "authors": [
-        "Linhan Wang",
-        "Zijian An",
-        "Mingyuan Zhang"
+        "Zihao Wu",
+        "Hongyao Tang",
+        "Yi Ma"
       ],
       "authors_all": [
-        "Linhan Wang",
-        "Zijian An",
-        "Mingyuan Zhang",
-        "Chen Dai",
-        "Yi Xu",
-        "Can Cui",
-        "Zichong Yang",
-        "Yinlin Chen",
-        "Lifeng Zhou",
-        "Chang-Tien Lu"
+        "Zihao Wu",
+        "Hongyao Tang",
+        "Yi Ma",
+        "Huizhong Song",
+        "Pengyi Li",
+        "Yifu Yuan",
+        "Fei Ni",
+        "Jinyi Liu",
+        "Wei Wei",
+        "Jianrong Wang",
+        "Yan Zheng",
+        "Jianye Hao"
       ],
-      "primary_category": "cs.CV",
+      "primary_category": "cs.LG",
       "published": "2026-08-25",
       "channels": [
+        "loco-manip-wbc",
+        "sim2real",
         "manipulation"
       ],
       "badges": [
@@ -1045,15 +1129,95 @@
           "label": "⚡ 新鲜出炉"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2608-23927.jpg",
+      "cover_image": "assets/img/covers/arxiv-2608-24479.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2608-23927-p2.jpg",
-        "assets/img/covers/arxiv-2608-23927-p3.jpg",
-        "assets/img/covers/arxiv-2608-23927-p4.jpg"
+        "assets/img/covers/arxiv-2608-24479-p2.jpg",
+        "assets/img/covers/arxiv-2608-24479-p3.jpg",
+        "assets/img/covers/arxiv-2608-24479-p4.jpg"
       ],
-      "arxiv_id": "2608.23927",
-      "abs_url": "http://arxiv.org/abs/2608.23927v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.23927v1",
+      "arxiv_id": "2608.24479",
+      "abs_url": "http://arxiv.org/abs/2608.24479v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24479v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出可扩展离策略RL算法WarpSAC，在Unitree G1上实现移动操作与sim-to-real，兼具算法创新与机器人应用价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tianjin University",
+        "Shanxi University",
+        "Imperial College London"
+      ],
+      "method_tags": [
+        "off-policy RL",
+        "Sample Weight Decay",
+        "sim-to-real"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-24882",
+      "source": "arxiv",
+      "title": "Latent Action as Intention Enables Efficient Future Imagination for World Action Models",
+      "title_zh": "潜在动作作为意图实现世界动作模型的高效未来想象",
+      "tldr_zh": "LAWA 用潜在动作表示意图，实现高效未来想象，兼顾性能与低延迟。",
+      "cover_zh": "未来想象不用丢？这个新架构让机器人又快又准！",
+      "abstract_zh": "世界动作模型（WAMs）通过建模观测如何演变来改进机器人控制，但在测试时生成未来观测会带来大量延迟。Fast-WAM 移除了这一过程以提高效率；然而，我们的匹配实现显示，Fast-WAM 的泛化能力低于考虑未来的替代方案，尤其是在机器人演示稀缺和分布外场景中。为了弥合这一差距，我们引入了 LAWA，一种 WAM 架构，使用紧凑的潜在动作作为未来意图的操作性表示，从而在测试时无需生成未来观测即可实现高效的未来想象。具体来说，一个通过无动作预训练增强的离散分词器产生以操作为中心的码本目标。LAWA 联合去噪一个锚定到这些目标的连续潜在状态与可执行的动作块，同时在推理时省略未来视频分支。在 RoboCasa 上，LAWA 在少样本和全数据设置中分别取得了 65.6% 和 80.8% 的最先进平均成功率，比匹配的 Fast-WAM 基线分别提高了 9.6 和 4.5 个百分点。它还保持了匹配的 Joint-WAM 变体的性能水平，同时推理延迟降低了 42.9%。LAWA 还在 LIBERO-Plus 上展示了具有竞争力的零样本鲁棒性，并在真实世界任务中表现出优越性能。这些结果表明，未来想象不必被丢弃：用紧凑的潜在动作保留它，可以在性能、泛化和延迟之间取得有效权衡。代码和模型将发布。",
+      "authors": [
+        "Xiang Li",
+        "Yupeng Zheng",
+        "Songen Gu"
+      ],
+      "authors_all": [
+        "Xiang Li",
+        "Yupeng Zheng",
+        "Songen Gu",
+        "Huailiang Ma",
+        "Feng Yu",
+        "Xian Nie",
+        "Shanshuai Yuan",
+        "Yujie Zang",
+        "Weize Li",
+        "Shuai Tian",
+        "Moyang Liu",
+        "Ya-Qin Zhang",
+        "Wenchao Ding"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-25",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24882.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24882-p2.jpg",
+        "assets/img/covers/arxiv-2608-24882-p3.jpg",
+        "assets/img/covers/arxiv-2608-24882-p4.jpg"
+      ],
+      "arxiv_id": "2608.24882",
+      "abs_url": "http://arxiv.org/abs/2608.24882v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24882v1",
       "venue": "",
       "venue_announced": "",
       "score": 27,
@@ -1061,24 +1225,24 @@
         "relevant": true,
         "research_value": "high",
         "primary_channel": "world-model",
-        "reason": "提出异步测试时想象的世界动作模型，兼顾实时性与成功率，方法新颖且性能领先。",
+        "reason": "提出LAWA世界动作模型，用潜在动作实现高效未来想象，兼顾性能与延迟，具身世界模型前沿工作。",
         "model": "deepseek-v4-flash"
       },
       "institutions": [
-        "Virginia Tech",
-        "Drexel University",
-        "Northeastern University",
-        "Purdue University"
+        "CollegeAI, THU",
+        "AIR, THU",
+        "CASIA",
+        "TARS Robotics"
       ],
       "method_tags": [
-        "World-Action Model",
-        "asynchronous imagination",
-        "latent space"
+        "World Action Model",
+        "latent action",
+        "future imagination"
       ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1145,163 +1309,6 @@
       "platform": [
         "Franka"
       ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-24479",
-      "source": "arxiv",
-      "title": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
-      "title_zh": "WarpSAC：通过重新思考探索与利用，迈向可扩展离策略强化学习的巅峰",
-      "tldr_zh": "WarpSAC根据数据规模调整稳定器，显著提升离策略RL性能。",
-      "cover_zh": "数据多就关掉稳定器？WarpSAC让离策略RL性能飙升",
-      "abstract_zh": "大规模并行模拟改变了离策略强化学习（RL）的训练数据分布，对为数据受限回放设计的稳定器提出了挑战。通过在八个基准家族上的受控实验，我们表明这些稳定器依赖于数据分布：参数归一化有助于窄回放覆盖，但在数据丰富时限制值拟合，而裁剪双Q可以在高吞吐操作中放宽。年龄偏置回放加权提高了跨数据分布的学习效率，尤其是在网络容量有限时。基于这些发现，我们提出了WarpSAC，一个数据分布感知的离策略RL算法家族。WarpSAC使用样本权重衰减以实现高效利用，并提供两个变体：WarpSAC-L（Norm ON，裁剪双Q）用于数据受限的CPU规模训练，以及WarpSAC-A（Norm OFF，单Q）用于数据丰富的GPU并行训练。WarpSAC在九个CPU规模环境中将归一化分数-步长AUC比FlashSAC提高了4.5%，在十四个GPU并行环境中提高了23.1%。它将UnitreeG1TransportBox-v1成功率从19.8%提高到96.4%，在MuJoCo Playground上将平均归一化墙钟时间AUC提高了19.1%，并在Unitree G1上实现了比FlashSAC快36.4%的仿真到现实部署。这些结果表明，可扩展的离策略RL应使其稳定器适应可用的数据分布。",
-      "authors": [
-        "Zihao Wu",
-        "Hongyao Tang",
-        "Yi Ma"
-      ],
-      "authors_all": [
-        "Zihao Wu",
-        "Hongyao Tang",
-        "Yi Ma",
-        "Huizhong Song",
-        "Pengyi Li",
-        "Yifu Yuan",
-        "Fei Ni",
-        "Jinyi Liu",
-        "Wei Wei",
-        "Jianrong Wang",
-        "Yan Zheng",
-        "Jianye Hao"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-08-25",
-      "channels": [
-        "loco-manip-wbc",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-24479.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-24479-p2.jpg",
-        "assets/img/covers/arxiv-2608-24479-p3.jpg",
-        "assets/img/covers/arxiv-2608-24479-p4.jpg"
-      ],
-      "arxiv_id": "2608.24479",
-      "abs_url": "http://arxiv.org/abs/2608.24479v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.24479v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 24,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出可扩展离策略RL算法WarpSAC，在Unitree G1上实现移动操作与sim-to-real，兼具算法创新与机器人应用价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tianjin University",
-        "Shanxi University",
-        "Imperial College London"
-      ],
-      "method_tags": [
-        "off-policy RL",
-        "Sample Weight Decay",
-        "sim-to-real"
-      ],
-      "platform": [
-        "Unitree G1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-24882",
-      "source": "arxiv",
-      "title": "Latent Action as Intention Enables Efficient Future Imagination for World Action Models",
-      "title_zh": "潜在动作作为意图实现世界动作模型的高效未来想象",
-      "tldr_zh": "LAWA 用潜在动作表示意图，实现高效未来想象，兼顾性能与低延迟。",
-      "cover_zh": "未来想象不用丢？这个新架构让机器人又快又准！",
-      "abstract_zh": "世界动作模型（WAMs）通过建模观测如何演变来改进机器人控制，但在测试时生成未来观测会带来大量延迟。Fast-WAM 移除了这一过程以提高效率；然而，我们的匹配实现显示，Fast-WAM 的泛化能力低于考虑未来的替代方案，尤其是在机器人演示稀缺和分布外场景中。为了弥合这一差距，我们引入了 LAWA，一种 WAM 架构，使用紧凑的潜在动作作为未来意图的操作性表示，从而在测试时无需生成未来观测即可实现高效的未来想象。具体来说，一个通过无动作预训练增强的离散分词器产生以操作为中心的码本目标。LAWA 联合去噪一个锚定到这些目标的连续潜在状态与可执行的动作块，同时在推理时省略未来视频分支。在 RoboCasa 上，LAWA 在少样本和全数据设置中分别取得了 65.6% 和 80.8% 的最先进平均成功率，比匹配的 Fast-WAM 基线分别提高了 9.6 和 4.5 个百分点。它还保持了匹配的 Joint-WAM 变体的性能水平，同时推理延迟降低了 42.9%。LAWA 还在 LIBERO-Plus 上展示了具有竞争力的零样本鲁棒性，并在真实世界任务中表现出优越性能。这些结果表明，未来想象不必被丢弃：用紧凑的潜在动作保留它，可以在性能、泛化和延迟之间取得有效权衡。代码和模型将发布。",
-      "authors": [
-        "Xiang Li",
-        "Yupeng Zheng",
-        "Songen Gu"
-      ],
-      "authors_all": [
-        "Xiang Li",
-        "Yupeng Zheng",
-        "Songen Gu",
-        "Huailiang Ma",
-        "Feng Yu",
-        "Xian Nie",
-        "Shanshuai Yuan",
-        "Yujie Zang",
-        "Weize Li",
-        "Shuai Tian",
-        "Moyang Liu",
-        "Ya-Qin Zhang",
-        "Wenchao Ding"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-25",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-24882.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-24882-p2.jpg",
-        "assets/img/covers/arxiv-2608-24882-p3.jpg",
-        "assets/img/covers/arxiv-2608-24882-p4.jpg"
-      ],
-      "arxiv_id": "2608.24882",
-      "abs_url": "http://arxiv.org/abs/2608.24882v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.24882v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 22,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出LAWA世界动作模型，用潜在动作实现高效未来想象，兼顾性能与延迟，具身世界模型前沿工作。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "CollegeAI, THU",
-        "AIR, THU",
-        "CASIA",
-        "TARS Robotics"
-      ],
-      "method_tags": [
-        "World Action Model",
-        "latent action",
-        "future imagination"
-      ],
-      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
