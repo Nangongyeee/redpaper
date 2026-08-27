@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T18:12:34.528416+00:00",
-  "count": 2291,
+  "generated_at": "2026-08-27T19:27:30.376190+00:00",
+  "count": 2293,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -29908,9 +29908,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，以更低内存实现更高重建精度，并提升下游任务性能。",
-      "cover_zh": "内存砍半，精度反超？这个重建模型用30%显存刷新SOTA",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模呈可预测的扩展。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改动、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-$\\Omega$通过架构改进和数据扩展，大幅提升重建精度，并降低训练内存。",
+      "cover_zh": "重建模型也能这么强？VGGT-$\\Omega$精度飙升77%还省内存！",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改动、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -46310,7 +46310,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "波士顿动力 Atlas 玩转旋转新动作，太酷了！",
+      "cover_zh": "机器人转圈圈？Atlas 的新动作太酷了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -92192,6 +92192,74 @@
       ]
     },
     {
+      "id": "arxiv-2608-24044",
+      "source": "arxiv_discover",
+      "title": "JEPA-x: Cross-Predictive Physics Grounding for Forecastable Latent Dynamics",
+      "title_zh": "JEPA-x：用于可预测潜在动力学的交叉预测物理锚定",
+      "tldr_zh": "JEPA-x通过交叉预测物理轨迹，减少潜在动力学漂移，提升控制成功率。",
+      "cover_zh": "物理轨迹加持，潜在动力学不再漂移｜控制成功率飙升",
+      "abstract_zh": "潜在世界模型通过预测候选动作如何推进学习到的潜在动力学来进行规划。然而，在自预测模型中，编码器和预测器联合优化，可能共同适应那些易于预测但受场景物理演化约束较弱的潜在转换。我们引入了交叉预测JEPA（JEPA-x），它将视觉潜在动力学锚定在特权物理轨迹上。JEPA-x将视觉观察和物理状态视为同一动作条件轨迹的对应视图，通过共享预测器推进两者，并将任一视图的预测与两种模态的未来表示进行匹配。这要求动作条件预测器学习视觉和物理场景描述的公共转换规则。物理分支仅在训练期间使用，部署时无额外计算开销。实验结果表明，JEPA-x将新拟合预测器的滚动漂移从0.361降至0.104，并在涵盖六个评估子族的多任务套件上将平均控制成功率从53.6%提升至78.2%。我们还表明，使物理状态可解码并非关键因素；相反，收益源于交叉预测如何塑造学习到的潜在动力学的几何结构。",
+      "authors": [
+        "Kehan Wen",
+        "Ziming Li",
+        "Siyuan Luo"
+      ],
+      "authors_all": [
+        "Kehan Wen",
+        "Ziming Li",
+        "Siyuan Luo",
+        "Fan Shi"
+      ],
+      "primary_category": "",
+      "published": "2026-08-25",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24044.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24044-p2.jpg",
+        "assets/img/covers/arxiv-2608-24044-p3.jpg",
+        "assets/img/covers/arxiv-2608-24044-p4.jpg"
+      ],
+      "arxiv_id": "2608.24044",
+      "abs_url": "http://arxiv.org/abs/2608.24044v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.24044v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出跨预测JEPA，将视觉潜在动力学与物理轨迹结合，显著提升预测与控制，属世界模型核心方法。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NUS"
+      ],
+      "method_tags": [
+        "World Model",
+        "JEPA",
+        "Cross-Prediction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2608-25547",
       "source": "arxiv",
       "title": "A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation",
@@ -128894,6 +128962,74 @@
       ],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-22764",
+      "source": "arxiv_discover",
+      "title": "LpWM: A Case for Sparse Representations in World Models",
+      "title_zh": "LpWM：世界模型中稀疏表示的一个案例",
+      "tldr_zh": "稀疏表示可降低世界模型预测器复杂度，提升规划成功率并揭示可解释结构。",
+      "cover_zh": "稠密表示out了？稀疏世界模型让规划成功率飙升57%",
+      "abstract_zh": "联合嵌入预测架构（JEPAs）通过学习潜在动力学进行规划，并通过将特征匹配到最大熵分布（如各向同性高斯分布）来避免表示坍缩，从而产生稠密表示。然而，稠密表示是否是最有利于动力学建模的几何结构尚不清楚。在这项工作中，我们探讨了另一种几何结构——稀疏表示——是否能使动作条件下的潜在动力学更容易建模，以及这种表示会涌现出什么样的动力学结构。我们首先证明，在足够高维的one-hot潜在空间中，非线性Lipschitz动力学可以被动作条件下的线性动力学任意近似，且随着维度增长，展开误差趋于零。这促使我们将分布式稀疏表示作为one-hot稀疏性的实际松弛。我们引入了LpWorldModel（LpWM），一种使用修正分布匹配正则化（RDMReg）的JEPA模型，将编码器特征匹配到修正广义高斯分布，从而产生非负稀疏编码。实验上，稀疏性降低了成功规划所需的预测器复杂度：在PushT任务上，在中等预测器容量下，稀疏LpWM的规划成功率比稠密LeWM高出多达57%。这一优势也超越了高斯分布匹配，LpWM在多种预测器族中优于稠密VICReg表示。我们还发现，学习到的稀疏表示是模式分解的，支持编码离散动力学机制，特征幅度捕获连续的状态内机制。这些结果表明，稀疏表示可以降低控制所需的预测器复杂度，同时揭示可解释的结构。",
+      "authors": [
+        "Yilun Kuang",
+        "Yash Dagade",
+        "Quentin Le Lidec"
+      ],
+      "authors_all": [
+        "Yilun Kuang",
+        "Yash Dagade",
+        "Quentin Le Lidec",
+        "Lucas Maes",
+        "Randall Balestriero",
+        "Yann LeCun"
+      ],
+      "primary_category": "",
+      "published": "2026-08-24",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-22764.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-22764-p2.jpg",
+        "assets/img/covers/arxiv-2608-22764-p3.jpg",
+        "assets/img/covers/arxiv-2608-22764-p4.jpg"
+      ],
+      "arxiv_id": "2608.22764",
+      "abs_url": "http://arxiv.org/abs/2608.22764v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.22764v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出稀疏表示JEPA世界模型，理论分析与实验验证，对世界模型研究有重要价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NYU",
+        "AMI Labs",
+        "Duke University",
+        "Mila"
+      ],
+      "method_tags": [
+        "JEPA",
+        "sparse representations",
+        "MPC"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-23526",

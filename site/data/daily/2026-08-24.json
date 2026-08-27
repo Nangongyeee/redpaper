@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "count": 20,
+  "count": 21,
   "papers": [
     {
       "id": "arxiv-2608-22800",
@@ -1136,6 +1136,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-22764",
+      "source": "arxiv_discover",
+      "title": "LpWM: A Case for Sparse Representations in World Models",
+      "title_zh": "LpWM：世界模型中稀疏表示的一个案例",
+      "tldr_zh": "稀疏表示可降低世界模型预测器复杂度，提升规划成功率并揭示可解释结构。",
+      "cover_zh": "稠密表示out了？稀疏世界模型让规划成功率飙升57%",
+      "abstract_zh": "联合嵌入预测架构（JEPAs）通过学习潜在动力学进行规划，并通过将特征匹配到最大熵分布（如各向同性高斯分布）来避免表示坍缩，从而产生稠密表示。然而，稠密表示是否是最有利于动力学建模的几何结构尚不清楚。在这项工作中，我们探讨了另一种几何结构——稀疏表示——是否能使动作条件下的潜在动力学更容易建模，以及这种表示会涌现出什么样的动力学结构。我们首先证明，在足够高维的one-hot潜在空间中，非线性Lipschitz动力学可以被动作条件下的线性动力学任意近似，且随着维度增长，展开误差趋于零。这促使我们将分布式稀疏表示作为one-hot稀疏性的实际松弛。我们引入了LpWorldModel（LpWM），一种使用修正分布匹配正则化（RDMReg）的JEPA模型，将编码器特征匹配到修正广义高斯分布，从而产生非负稀疏编码。实验上，稀疏性降低了成功规划所需的预测器复杂度：在PushT任务上，在中等预测器容量下，稀疏LpWM的规划成功率比稠密LeWM高出多达57%。这一优势也超越了高斯分布匹配，LpWM在多种预测器族中优于稠密VICReg表示。我们还发现，学习到的稀疏表示是模式分解的，支持编码离散动力学机制，特征幅度捕获连续的状态内机制。这些结果表明，稀疏表示可以降低控制所需的预测器复杂度，同时揭示可解释的结构。",
+      "authors": [
+        "Yilun Kuang",
+        "Yash Dagade",
+        "Quentin Le Lidec"
+      ],
+      "authors_all": [
+        "Yilun Kuang",
+        "Yash Dagade",
+        "Quentin Le Lidec",
+        "Lucas Maes",
+        "Randall Balestriero",
+        "Yann LeCun"
+      ],
+      "primary_category": "",
+      "published": "2026-08-24",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-22764.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-22764-p2.jpg",
+        "assets/img/covers/arxiv-2608-22764-p3.jpg",
+        "assets/img/covers/arxiv-2608-22764-p4.jpg"
+      ],
+      "arxiv_id": "2608.22764",
+      "abs_url": "http://arxiv.org/abs/2608.22764v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.22764v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出稀疏表示JEPA世界模型，理论分析与实验验证，对世界模型研究有重要价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NYU",
+        "AMI Labs",
+        "Duke University",
+        "Mila"
+      ],
+      "method_tags": [
+        "JEPA",
+        "sparse representations",
+        "MPC"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-23526",

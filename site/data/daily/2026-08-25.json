@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "count": 20,
+  "count": 21,
   "papers": [
     {
       "id": "arxiv-2608-24101",
@@ -1247,6 +1247,74 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-24044",
+      "source": "arxiv_discover",
+      "title": "JEPA-x: Cross-Predictive Physics Grounding for Forecastable Latent Dynamics",
+      "title_zh": "JEPA-x：用于可预测潜在动力学的交叉预测物理锚定",
+      "tldr_zh": "JEPA-x通过交叉预测物理轨迹，减少潜在动力学漂移，提升控制成功率。",
+      "cover_zh": "物理轨迹加持，潜在动力学不再漂移｜控制成功率飙升",
+      "abstract_zh": "潜在世界模型通过预测候选动作如何推进学习到的潜在动力学来进行规划。然而，在自预测模型中，编码器和预测器联合优化，可能共同适应那些易于预测但受场景物理演化约束较弱的潜在转换。我们引入了交叉预测JEPA（JEPA-x），它将视觉潜在动力学锚定在特权物理轨迹上。JEPA-x将视觉观察和物理状态视为同一动作条件轨迹的对应视图，通过共享预测器推进两者，并将任一视图的预测与两种模态的未来表示进行匹配。这要求动作条件预测器学习视觉和物理场景描述的公共转换规则。物理分支仅在训练期间使用，部署时无额外计算开销。实验结果表明，JEPA-x将新拟合预测器的滚动漂移从0.361降至0.104，并在涵盖六个评估子族的多任务套件上将平均控制成功率从53.6%提升至78.2%。我们还表明，使物理状态可解码并非关键因素；相反，收益源于交叉预测如何塑造学习到的潜在动力学的几何结构。",
+      "authors": [
+        "Kehan Wen",
+        "Ziming Li",
+        "Siyuan Luo"
+      ],
+      "authors_all": [
+        "Kehan Wen",
+        "Ziming Li",
+        "Siyuan Luo",
+        "Fan Shi"
+      ],
+      "primary_category": "",
+      "published": "2026-08-25",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24044.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24044-p2.jpg",
+        "assets/img/covers/arxiv-2608-24044-p3.jpg",
+        "assets/img/covers/arxiv-2608-24044-p4.jpg"
+      ],
+      "arxiv_id": "2608.24044",
+      "abs_url": "http://arxiv.org/abs/2608.24044v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.24044v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出跨预测JEPA，将视觉潜在动力学与物理轨迹结合，显著提升预测与控制，属世界模型核心方法。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NUS"
+      ],
+      "method_tags": [
+        "World Model",
+        "JEPA",
+        "Cross-Prediction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-24026",
