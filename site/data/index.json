@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T02:44:05.799802+00:00",
+  "generated_at": "2026-08-27T13:43:53.993139+00:00",
   "count": 2291,
   "papers": [
     {
@@ -2900,6 +2900,91 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-25659",
+      "source": "arxiv",
+      "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation",
+      "title_zh": "GaussianDream++：面向机器人操作的高效3D高斯世界建模",
+      "tldr_zh": "提出紧凑世界令牌，训练时3D监督，推理时零开销，提升机器人操作成功率。",
+      "cover_zh": "训练时偷偷学3D，推理时零开销｜机器人成功率暴涨23%",
+      "abstract_zh": "视觉-语言-动作（VLA）策略推动了语言条件下的机器人操作，但动作模仿目标仅对度量3D结构和短时物理演化提供弱监督。几何增强策略主要改善当前场景的接地，而预测策略通常在RGB或潜在空间中建模未来动态，并可能产生大量部署成本。GaussianDream表明，训练时的当前高斯重建和未来高斯预测提供了有效的3D监督，但其基于VGGT/TGE的密集前缀同时携带状态、动态和动作条件信息。我们提出了methodname，一种紧凑的、策略原生的扩展，将世界状态令牌和世界预测令牌直接插入VLA主干。仅训练时的世界表示头将这些令牌解码为共享高斯原语上的当前世界和耦合的未来预测，而静态-动态分解保留了持久结构，并将残余运动集中在交互相关区域。在推理时，头、渲染器、辅助目标和VGGT/TGE路径被移除，仅留下20个世界令牌，无需在线高斯解码或展开。method在LIBERO上达到98.6%，在LIBERO-Plus上达到87.8%，在相机和布局变化下有明显增益。真实机器人实验进一步将平均成功率从复现的π0.5的29.2%提高到52.5%，同时保持高效的闭环控制。",
+      "authors": [
+        "Yuqing Jiang",
+        "Zijian Zhang",
+        "Weitao Zhou"
+      ],
+      "authors_all": [
+        "Yuqing Jiang",
+        "Zijian Zhang",
+        "Weitao Zhou",
+        "Jiawei Wang",
+        "Junjie He",
+        "Lei Yang",
+        "Haifang Qing",
+        "Si Liu",
+        "Ding Zhao",
+        "Ping Luo",
+        "Haibao Yu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-26",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Ping Luo"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-25659.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-25659-p2.jpg",
+        "assets/img/covers/arxiv-2608-25659-p3.jpg",
+        "assets/img/covers/arxiv-2608-25659-p4.jpg"
+      ],
+      "arxiv_id": "2608.25659",
+      "abs_url": "http://arxiv.org/abs/2608.25659v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25659v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 75,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出基于3D高斯的世界模型用于机器人操作，含当前重建与未来预测，归world-model频道。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tuojing Intelligence",
+        "University of Chinese Academy of Sciences",
+        "Institute of Automation, Chinese Academy of Sciences",
+        "Tsinghua University"
+      ],
+      "method_tags": [
+        "VLA",
+        "3D Gaussian World Modeling",
+        "World State Tokens"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "github-rlinf-rlinf",
       "source": "github",
       "title": "RLinf/RLinf",
@@ -4657,90 +4742,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-25659",
-      "source": "arxiv",
-      "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation",
-      "title_zh": "GaussianDream++：面向机器人操作的高效3D高斯世界建模",
-      "tldr_zh": "提出紧凑世界令牌，训练时3D监督，推理时零开销，提升机器人操作成功率。",
-      "cover_zh": "训练时偷偷学3D，推理时零开销｜机器人成功率暴涨23%",
-      "abstract_zh": "视觉-语言-动作（VLA）策略推动了语言条件下的机器人操作，但动作模仿目标仅对度量3D结构和短时物理演化提供弱监督。几何增强策略主要改善当前场景的接地，而预测策略通常在RGB或潜在空间中建模未来动态，并可能产生大量部署成本。GaussianDream表明，训练时的当前高斯重建和未来高斯预测提供了有效的3D监督，但其基于VGGT/TGE的密集前缀同时携带状态、动态和动作条件信息。我们提出了methodname，一种紧凑的、策略原生的扩展，将世界状态令牌和世界预测令牌直接插入VLA主干。仅训练时的世界表示头将这些令牌解码为共享高斯原语上的当前世界和耦合的未来预测，而静态-动态分解保留了持久结构，并将残余运动集中在交互相关区域。在推理时，头、渲染器、辅助目标和VGGT/TGE路径被移除，仅留下20个世界令牌，无需在线高斯解码或展开。method在LIBERO上达到98.6%，在LIBERO-Plus上达到87.8%，在相机和布局变化下有明显增益。真实机器人实验进一步将平均成功率从复现的π0.5的29.2%提高到52.5%，同时保持高效的闭环控制。",
-      "authors": [
-        "Yuqing Jiang",
-        "Zijian Zhang",
-        "Weitao Zhou"
-      ],
-      "authors_all": [
-        "Yuqing Jiang",
-        "Zijian Zhang",
-        "Weitao Zhou",
-        "Jiawei Wang",
-        "Junjie He",
-        "Lei Yang",
-        "Haifang Qing",
-        "Si Liu",
-        "Ding Zhao",
-        "Ping Luo",
-        "Haibao Yu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-26",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Ping Luo"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-25659.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-25659-p2.jpg",
-        "assets/img/covers/arxiv-2608-25659-p3.jpg",
-        "assets/img/covers/arxiv-2608-25659-p4.jpg"
-      ],
-      "arxiv_id": "2608.25659",
-      "abs_url": "http://arxiv.org/abs/2608.25659v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25659v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 67,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出基于3D高斯的世界模型用于机器人操作，含当前重建与未来预测，归world-model频道。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tuojing Intelligence",
-        "University of Chinese Academy of Sciences",
-        "Institute of Automation, Chinese Academy of Sciences",
-        "Tsinghua University"
-      ],
-      "method_tags": [
-        "VLA",
-        "3D Gaussian World Modeling",
-        "World State Tokens"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -17781,6 +17782,177 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-25308",
+      "source": "arxiv",
+      "title": "V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models",
+      "title_zh": "V-Link：在动作DiT中恢复视觉-语言-动作模型丢失的视觉表示",
+      "tldr_zh": "V-Link通过恢复视觉表示，提升VLA模型在机器人操作中的成功率。",
+      "cover_zh": "动作专家看不见？V-Link让机器人操作成功率飙升31%！",
+      "abstract_zh": "视觉-语言-动作（VLA）模型通过整合视觉感知、语言理解和连续动作控制，为通用机器人操作提供了一条可扩展的路径。然而，我们揭示了VLA架构的一个关键局限性：动作专家对VLM特征中可用的3D几何和2D语义信息的访问有限。这种可访问性差距削弱了感知基础，并限制了精细机器人操作的性能。为了解决这个问题，我们提出了V-Link，它在视觉-语言（VL）到动作（A）的特征转移过程中显式恢复视觉表示。具体来说，V-Link在VLM内学习互补的空间和语义查询表示，并通过不对称路径将它们注入动作DiT。语义查询补充了原始的VLM图像标记，而空间查询为空间接地动作生成提供专门的几何条件。在LIBERO、LIBERO-Plus和RoboTwin 2.0上，我们的V-Link将基础模型GR00T N1.6的平均成功率分别提高了+1.9%、+31.2%和+18.8%。在AGIBOT A3 Ultra上，V-Link在两个真实世界人形任务中进一步实现了+20%和+24%的提升。",
+      "authors": [
+        "Yehao Lu",
+        "Jiarui Yang",
+        "Yuning Su"
+      ],
+      "authors_all": [
+        "Yehao Lu",
+        "Jiarui Yang",
+        "Yuning Su",
+        "Yufeng Xie",
+        "Yu Zhong",
+        "Yazhou Zhang",
+        "Haiyu Lan",
+        "Kaixiang Lu",
+        "Peiwen Lin",
+        "Chuang Wang",
+        "Zequn Qin",
+        "Enyu Li",
+        "Xi Li"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-26",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ AgiBot"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ SFU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ZJU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-25308.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-25308-p2.jpg",
+        "assets/img/covers/arxiv-2608-25308-p3.jpg",
+        "assets/img/covers/arxiv-2608-25308-p4.jpg"
+      ],
+      "arxiv_id": "2608.25308",
+      "abs_url": "http://arxiv.org/abs/2608.25308v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25308v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "VLA模型改进，提升操作性能，实验充分，对具身操作研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Zhejiang University",
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "Simon Fraser University",
+        "AGIBOT"
+      ],
+      "method_tags": [
+        "VLA",
+        "Action DiT",
+        "feature transfer"
+      ],
+      "platform": [
+        "AGIBOT A3 Ultra"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-25572",
+      "source": "arxiv",
+      "title": "ConfAL-WM: Confidence-Guided Active Learning for Action-Conditioned World Models",
+      "title_zh": "ConfAL-WM：面向动作条件世界模型的置信度引导主动学习",
+      "tldr_zh": "提出置信度引导主动学习框架，提升具身世界模型后训练效率与预测质量。",
+      "cover_zh": "别再盲目采样！置信度引导主动学习让世界模型训练更高效",
+      "abstract_zh": "动作条件世界模型已成为具身预测、规划和合成数据生成的重要基础，但它们在新的任务和场景分布下的误差往往集中在局部时空区域，如机器人手臂、操作对象、接触区域和遮挡对象。本文提出了ConfAL-WM，一种用于具身世界模型后训练的置信度引导主动学习框架。基于EVAC，我们在UNet解码器特征上附加一个轻量级置信度探针，并在潜在空间中预测密集置信度图。这些图被聚合成任务级、帧级和补丁级分数，从而实现高效的数据选择和局部训练增强。我们的流程首先用目标域数据的小子集重新训练置信度探针并预热EVAC，然后执行任务级预筛选以分配采样预算，最后应用所选数据的重新训练，并可选地进行帧或补丁加权数据增强。在RoboTwin2.0上的实验表明，与基于标量奖励、进度和评判的评分基线相比，置信度引导的选择提高了后训练效率，而密集帧和补丁加权进一步提高了预测质量和具身轨迹一致性。本工作的快速视觉概览可在https://ConfAL-WM.github.io获取。",
+      "authors": [
+        "Xiang Liu",
+        "Sen Cui",
+        "Changshui Zhang"
+      ],
+      "authors_all": [
+        "Xiang Liu",
+        "Sen Cui",
+        "Changshui Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-26",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-25572.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-25572-p2.jpg",
+        "assets/img/covers/arxiv-2608-25572-p3.jpg",
+        "assets/img/covers/arxiv-2608-25572-p4.jpg"
+      ],
+      "arxiv_id": "2608.25572",
+      "abs_url": "http://arxiv.org/abs/2608.25572v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25572v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出动作条件世界模型的主动学习框架，提升预测质量，对具身世界模型研究有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tsinghua University"
+      ],
+      "method_tags": [
+        "Active Learning",
+        "World Model",
+        "Confidence-Guided"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-26053",
       "source": "arxiv",
       "title": "$R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning",
@@ -21704,6 +21876,81 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-25479",
+      "source": "arxiv",
+      "title": "4DStreamCtrl: Interactive Video Generation with Online 4D Control",
+      "title_zh": "4DStreamCtrl：具有在线4D控制的交互式视频生成",
+      "tldr_zh": "提出4DStreamCtrl，统一3D点轨迹实现相机和物体控制，支持实时流式生成。",
+      "cover_zh": "相机和物体都能控？这个视频生成模型还能实时流式输出！",
+      "abstract_zh": "生成式视频模型现在能够合成几乎与真实无法区分的画面。它们作为交互式工具的潜力取决于对物体和相机随时间运动的细粒度控制，然而现有方法各自只覆盖了其中一部分：相机参数方法可以控制视角但不能移动物体，2D轨迹方法在图像平面上操作而忽略深度和遮挡，最近的3D方法增加了几何信息但只能离线运行且长度固定。特别是，没有一种方法能将相机和物体的3D一致控制与实时流式生成结合起来。在这里，我们展示了相机运动、物体轨迹和深度可以统一到一个3D点轨迹表示中，通过该表示，一个模型可以在单次前向传播中联合控制相机和物体、进行深度编辑和运动迁移。为了大规模学习这一接口，我们从野外视频中挖掘3D运动监督，构建了OpenVidHD-Motion3D，并使用一个轻量级的几何运动头将其编码到预训练的视频扩散模型中。由于该编码器在时间上是可分离的，我们将模型蒸馏成一个因果流式学生模型，该模型可以在四个去噪步骤中生成任意长度的视频，且内存与长度无关。这种统一设计在运动控制精度上超越了先前的仅相机、2D和离线3D方法，同时覆盖了它们单独处理的模态。4DStreamCtrl在单个高端GPU上以20 FPS的速度生成480p视频，并在数百帧内保持时间一致性，据我们所知，这首次实现了交互式4D可控流式生成。更广泛地说，将生成基于显式3D几何并采用高效因果推理，指向了具有闭环时空控制的交互式世界模型，从可控模拟器到具身代理的实时视觉想象。",
+      "authors": [
+        "Shiqian Li",
+        "Chenguo Lin",
+        "Zhiguang Liu"
+      ],
+      "authors_all": [
+        "Shiqian Li",
+        "Chenguo Lin",
+        "Zhiguang Liu",
+        "Yu Tang",
+        "Jiarong Ou",
+        "Rui Chen",
+        "Yixin Zhu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-26",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-25479.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-25479-p2.jpg",
+        "assets/img/covers/arxiv-2608-25479-p3.jpg",
+        "assets/img/covers/arxiv-2608-25479-p4.jpg"
+      ],
+      "arxiv_id": "2608.25479",
+      "abs_url": "http://arxiv.org/abs/2608.25479v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25479v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 52,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出交互式4D可控视频生成，强调可作为具身智能的实时世界模型，符合world-model频道。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University",
+        "Tencent Hunyuan"
+      ],
+      "method_tags": [
+        "video diffusion model",
+        "3D point-track representation",
+        "causal autoregressive distillation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-26103",
       "source": "arxiv",
       "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
@@ -25083,106 +25330,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2608-25308",
-      "source": "arxiv",
-      "title": "V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models",
-      "title_zh": "V-Link：在动作DiT中恢复视觉-语言-动作模型丢失的视觉表示",
-      "tldr_zh": "V-Link通过恢复视觉表示，提升VLA模型在机器人操作中的成功率。",
-      "cover_zh": "动作专家看不见？V-Link让机器人操作成功率飙升31%！",
-      "abstract_zh": "视觉-语言-动作（VLA）模型通过整合视觉感知、语言理解和连续动作控制，为通用机器人操作提供了一条可扩展的路径。然而，我们揭示了VLA架构的一个关键局限性：动作专家对VLM特征中可用的3D几何和2D语义信息的访问有限。这种可访问性差距削弱了感知基础，并限制了精细机器人操作的性能。为了解决这个问题，我们提出了V-Link，它在视觉-语言（VL）到动作（A）的特征转移过程中显式恢复视觉表示。具体来说，V-Link在VLM内学习互补的空间和语义查询表示，并通过不对称路径将它们注入动作DiT。语义查询补充了原始的VLM图像标记，而空间查询为空间接地动作生成提供专门的几何条件。在LIBERO、LIBERO-Plus和RoboTwin 2.0上，我们的V-Link将基础模型GR00T N1.6的平均成功率分别提高了+1.9%、+31.2%和+18.8%。在AGIBOT A3 Ultra上，V-Link在两个真实世界人形任务中进一步实现了+20%和+24%的提升。",
-      "authors": [
-        "Yehao Lu",
-        "Jiarui Yang",
-        "Yuning Su"
-      ],
-      "authors_all": [
-        "Yehao Lu",
-        "Jiarui Yang",
-        "Yuning Su",
-        "Yufeng Xie",
-        "Yu Zhong",
-        "Yazhou Zhang",
-        "Haiyu Lan",
-        "Kaixiang Lu",
-        "Peiwen Lin",
-        "Chuang Wang",
-        "Zequn Qin",
-        "Enyu Li",
-        "Xi Li"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-08-26",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ AgiBot"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ SFU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ ZJU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKUST"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-25308.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-25308-p2.jpg",
-        "assets/img/covers/arxiv-2608-25308-p3.jpg",
-        "assets/img/covers/arxiv-2608-25308-p4.jpg"
-      ],
-      "arxiv_id": "2608.25308",
-      "abs_url": "http://arxiv.org/abs/2608.25308v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25308v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 50,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "VLA模型改进，提升操作性能，实验充分，对具身操作研究有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Zhejiang University",
-        "The Hong Kong University of Science and Technology (Guangzhou)",
-        "Simon Fraser University",
-        "AGIBOT"
-      ],
-      "method_tags": [
-        "VLA",
-        "Action DiT",
-        "feature transfer"
-      ],
-      "platform": [
-        "AGIBOT A3 Ultra"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2608-25872",
       "source": "arxiv",
       "title": "VISTA: Visually Inferred Spatial ConTact Attention for Contact-Rich Manipulation",
@@ -25256,11 +25403,11 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=SjYT7JP-in8",
           "embed_url": "https://www.youtube.com/embed/SjYT7JP-in8",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "VISTA",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=SjYT7JP-in8"
         }
       ],
       "github": {},
@@ -29761,9 +29908,9 @@
       "source": "arxiv",
       "title": "VGGT-$Ω$",
       "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-Ω通过架构改进和自监督学习，大幅提升重建精度，训练效率更高。",
-      "cover_zh": "重建模型也能预测性扩展？VGGT-Ω用30%显存实现精度飙升",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在此，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构改动、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们简化了VGGT的架构，使用带有多个任务监督的单一密集预测头，并移除了昂贵的高分辨率卷积层。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳的相机姿态估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "tldr_zh": "VGGT-Ω通过架构改进和自监督，大幅提升重建精度，内存降低70%，数据量增15倍。",
+      "cover_zh": "内存砍掉70%！这个新模型让重建精度飙升，还顺手提升了语言对齐？",
+      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地扩展。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器上，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型并支持与语言对齐，这表明重建可以成为空间理解的强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -46163,7 +46310,7 @@
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
       "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "Atlas 机器人玩转旋转新动作，太酷了！",
+      "cover_zh": "Atlas 机器人转圈圈？新动作太炫了！",
       "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
       "authors": [],
       "authors_all": [],
@@ -51338,149 +51485,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-25479",
-      "source": "arxiv",
-      "title": "4DStreamCtrl: Interactive Video Generation with Online 4D Control",
-      "title_zh": "4DStreamCtrl：具有在线4D控制的交互式视频生成",
-      "tldr_zh": "提出4DStreamCtrl，统一3D点轨迹实现相机和物体控制，支持实时流式生成。",
-      "cover_zh": "相机和物体都能控？这个视频生成模型还能实时流式输出！",
-      "abstract_zh": "生成式视频模型现在能够合成几乎与真实无法区分的画面。它们作为交互式工具的潜力取决于对物体和相机随时间运动的细粒度控制，然而现有方法各自只覆盖了其中一部分：相机参数方法可以控制视角但不能移动物体，2D轨迹方法在图像平面上操作而忽略深度和遮挡，最近的3D方法增加了几何信息但只能离线运行且长度固定。特别是，没有一种方法能将相机和物体的3D一致控制与实时流式生成结合起来。在这里，我们展示了相机运动、物体轨迹和深度可以统一到一个3D点轨迹表示中，通过该表示，一个模型可以在单次前向传播中联合控制相机和物体、进行深度编辑和运动迁移。为了大规模学习这一接口，我们从野外视频中挖掘3D运动监督，构建了OpenVidHD-Motion3D，并使用一个轻量级的几何运动头将其编码到预训练的视频扩散模型中。由于该编码器在时间上是可分离的，我们将模型蒸馏成一个因果流式学生模型，该模型可以在四个去噪步骤中生成任意长度的视频，且内存与长度无关。这种统一设计在运动控制精度上超越了先前的仅相机、2D和离线3D方法，同时覆盖了它们单独处理的模态。4DStreamCtrl在单个高端GPU上以20 FPS的速度生成480p视频，并在数百帧内保持时间一致性，据我们所知，这首次实现了交互式4D可控流式生成。更广泛地说，将生成基于显式3D几何并采用高效因果推理，指向了具有闭环时空控制的交互式世界模型，从可控模拟器到具身代理的实时视觉想象。",
-      "authors": [
-        "Shiqian Li",
-        "Chenguo Lin",
-        "Zhiguang Liu"
-      ],
-      "authors_all": [
-        "Shiqian Li",
-        "Chenguo Lin",
-        "Zhiguang Liu",
-        "Yu Tang",
-        "Jiarong Ou",
-        "Rui Chen",
-        "Yixin Zhu"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-08-26",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 北大"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-25479.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-25479-p2.jpg",
-        "assets/img/covers/arxiv-2608-25479-p3.jpg",
-        "assets/img/covers/arxiv-2608-25479-p4.jpg"
-      ],
-      "arxiv_id": "2608.25479",
-      "abs_url": "http://arxiv.org/abs/2608.25479v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25479v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出交互式4D可控视频生成，强调可作为具身智能的实时世界模型，符合world-model频道。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Peking University",
-        "Tencent Hunyuan"
-      ],
-      "method_tags": [
-        "video diffusion model",
-        "3D point-track representation",
-        "causal autoregressive distillation"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-25572",
-      "source": "arxiv",
-      "title": "ConfAL-WM: Confidence-Guided Active Learning for Action-Conditioned World Models",
-      "title_zh": "ConfAL-WM：面向动作条件世界模型的置信度引导主动学习",
-      "tldr_zh": "提出置信度引导主动学习框架，提升具身世界模型后训练效率与预测质量。",
-      "cover_zh": "别再盲目采样！置信度引导主动学习让世界模型训练更高效",
-      "abstract_zh": "动作条件世界模型已成为具身预测、规划和合成数据生成的重要基础，但它们在新的任务和场景分布下的误差往往集中在局部时空区域，如机器人手臂、操作对象、接触区域和遮挡对象。本文提出了ConfAL-WM，一种用于具身世界模型后训练的置信度引导主动学习框架。基于EVAC，我们在UNet解码器特征上附加一个轻量级置信度探针，并在潜在空间中预测密集置信度图。这些图被聚合成任务级、帧级和补丁级分数，从而实现高效的数据选择和局部训练增强。我们的流程首先用目标域数据的小子集重新训练置信度探针并预热EVAC，然后执行任务级预筛选以分配采样预算，最后应用所选数据的重新训练，并可选地进行帧或补丁加权数据增强。在RoboTwin2.0上的实验表明，与基于标量奖励、进度和评判的评分基线相比，置信度引导的选择提高了后训练效率，而密集帧和补丁加权进一步提高了预测质量和具身轨迹一致性。本工作的快速视觉概览可在https://ConfAL-WM.github.io获取。",
-      "authors": [
-        "Xiang Liu",
-        "Sen Cui",
-        "Changshui Zhang"
-      ],
-      "authors_all": [
-        "Xiang Liu",
-        "Sen Cui",
-        "Changshui Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-26",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-25572.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-25572-p2.jpg",
-        "assets/img/covers/arxiv-2608-25572-p3.jpg",
-        "assets/img/covers/arxiv-2608-25572-p4.jpg"
-      ],
-      "arxiv_id": "2608.25572",
-      "abs_url": "http://arxiv.org/abs/2608.25572v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25572v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 41,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出动作条件世界模型的主动学习框架，提升预测质量，对具身世界模型研究有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tsinghua University"
-      ],
-      "method_tags": [
-        "Active Learning",
-        "World Model",
-        "Confidence-Guided"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -85538,6 +85542,74 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-25405",
+      "source": "arxiv",
+      "title": "LAC: Linear and Angular Compliance for Humanoid Whole-body Control",
+      "title_zh": "LAC：人形全身控制的线性与角向柔顺",
+      "tldr_zh": "提出LAC控制器，实现人形机器人上半身线性与角向柔顺，经仿真和实验验证。",
+      "cover_zh": "人形机器人也能“软”了？新控制器同时搞定推拉和扭转｜全身柔顺黑科技",
+      "abstract_zh": "现实世界中的人形任务涉及与物体和人的物理交互，然而当前的控制器要么将外力视为干扰而拒绝，要么将柔顺限制在有限的肢体链接上，而忽略了角效应。我们提出了LAC，一种通用的全身控制器，能够同时实现对施加于上半身的力旋量的线性与角向柔顺。首先，我们将全身柔顺响应合成为一个大规模增强数据集。从人类交互数据中提取的接触框架上施加采样的力和力偶事件。在每个接触链接处，外部力和来自被动屈服运动链的虚拟扭矩在命令刚度下驱动虚拟导纳。随后，教师-学生强化学习训练一个单一策略来跟踪外部力旋量下的柔顺运动。最后，广泛的仿真和真实世界实验展示了全身对上半身力旋量的柔顺响应、对两种刚度命令全范围的单调调节，以及对遥操作移动操作任务的适用性。项目网站：https://lac-humanoid.github.io/",
+      "authors": [
+        "Yang Liu",
+        "Zhongkai Gu",
+        "Wei Zhu"
+      ],
+      "authors_all": [
+        "Yang Liu",
+        "Zhongkai Gu",
+        "Wei Zhu",
+        "Mitsuhiro Hayashibe"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-26",
+      "channels": [
+        "manipulation",
+        "teleop",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-25405.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-25405-p2.jpg",
+        "assets/img/covers/arxiv-2608-25405-p3.jpg",
+        "assets/img/covers/arxiv-2608-25405-p4.jpg"
+      ],
+      "arxiv_id": "2608.25405",
+      "abs_url": "http://arxiv.org/abs/2608.25405v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25405v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形全身控制+柔顺响应，含仿真与真机实验，对WBC和loco-manip有高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Tohoku University"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Whole-body Control",
+        "Compliance"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-25666",
       "source": "arxiv",
       "title": "PRISM: Projection-Integrated Sampling-Based MPC with Bayesian Cost Tuning for Bimanual Manipulation",
@@ -85560,7 +85632,8 @@
       "published": "2026-08-26",
       "channels": [
         "manipulation",
-        "sim2real"
+        "sim2real",
+        "world-model"
       ],
       "badges": [
         {
@@ -94053,73 +94126,6 @@
         "DOBOT CR3",
         "CRAFT hand"
       ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-25405",
-      "source": "arxiv",
-      "title": "LAC: Linear and Angular Compliance for Humanoid Whole-body Control",
-      "title_zh": "LAC：人形全身控制的线性与角向柔顺",
-      "tldr_zh": "提出LAC控制器，实现人形机器人上半身线性与角向柔顺，经仿真和实验验证。",
-      "cover_zh": "人形机器人也能“软”了？新控制器同时搞定推拉和扭转｜全身柔顺黑科技",
-      "abstract_zh": "现实世界中的人形任务涉及与物体和人的物理交互，然而当前的控制器要么将外力视为干扰而拒绝，要么将柔顺限制在有限的肢体链接上，而忽略了角效应。我们提出了LAC，一种通用的全身控制器，能够同时实现对施加于上半身的力旋量的线性与角向柔顺。首先，我们将全身柔顺响应合成为一个大规模增强数据集。从人类交互数据中提取的接触框架上施加采样的力和力偶事件。在每个接触链接处，外部力和来自被动屈服运动链的虚拟扭矩在命令刚度下驱动虚拟导纳。随后，教师-学生强化学习训练一个单一策略来跟踪外部力旋量下的柔顺运动。最后，广泛的仿真和真实世界实验展示了全身对上半身力旋量的柔顺响应、对两种刚度命令全范围的单调调节，以及对遥操作移动操作任务的适用性。项目网站：https://lac-humanoid.github.io/",
-      "authors": [
-        "Yang Liu",
-        "Zhongkai Gu",
-        "Wei Zhu"
-      ],
-      "authors_all": [
-        "Yang Liu",
-        "Zhongkai Gu",
-        "Wei Zhu",
-        "Mitsuhiro Hayashibe"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-26",
-      "channels": [
-        "manipulation",
-        "teleop"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-25405.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-25405-p2.jpg",
-        "assets/img/covers/arxiv-2608-25405-p3.jpg",
-        "assets/img/covers/arxiv-2608-25405-p4.jpg"
-      ],
-      "arxiv_id": "2608.25405",
-      "abs_url": "http://arxiv.org/abs/2608.25405v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.25405v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 24,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "人形全身控制+柔顺响应，含仿真与真机实验，对WBC和loco-manip有高参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Tohoku University"
-      ],
-      "method_tags": [
-        "Reinforcement Learning",
-        "Whole-body Control",
-        "Compliance"
-      ],
-      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
