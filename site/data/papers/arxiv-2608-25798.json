@@ -1,0 +1,139 @@
+{
+  "id": "arxiv-2608-25798",
+  "source": "arxiv",
+  "title": "TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback",
+  "title_zh": "TacForcing：利用执行时触觉反馈的流式动作生成",
+  "abstract": "Contact-rich manipulation requires adapting to contact states that can evolve substantially within an action horizon. However, chunk-based vision-language-action models predict complete action chunks from observations collected before execution, leaving tactile conditioning stale during execution. Existing tactile-reactive approaches typically rely on separate high-frequency controllers, which increase both architectural and training complexity. In this paper, we introduce TacForcing, a streaming action-generation framework that effectively incorporates execution-time tactile feedback. Instead of employing a separate reactive controller, TacForcing replaces the standard action expert with a streaming action expert to generate actions conditioned on the evolving tactile observations acquired during execution. TacForcing also introduces Execution-Aware Tactile Attention (EATA), which restricts tactile conditioning to actions nearing execution, thereby reducing the temporal mismatch between tactile acquisition and action execution. Across six simulated UniVTAC tasks and three real-world contact-rich manipulation tasks, TacForcing achieves average success rates of 65% and 69%, respectively, outperforming strong baselines in both settings.",
+  "abstract_zh": "接触丰富的操作需要适应在动作时间范围内可能显著演变的接触状态。然而，基于分块的视觉-语言-动作模型从执行前收集的观测中预测完整的动作块，导致在执行过程中触觉条件变得过时。现有的触觉反应式方法通常依赖独立的高频控制器，这增加了架构和训练的复杂性。在本文中，我们提出了TacForcing，一种有效整合执行时触觉反馈的流式动作生成框架。TacForcing不采用独立的反应式控制器，而是用流式动作专家替换标准的动作专家，根据执行过程中获取的不断演变的触觉观测来生成动作。TacForcing还引入了执行感知触觉注意力（EATA），将触觉条件限制在接近执行的动作上，从而减少触觉获取与动作执行之间的时间错配。在六个模拟UniVTAC任务和三个真实世界的接触丰富操作任务中，TacForcing分别实现了65%和69%的平均成功率，在两种设置下均优于强基线。",
+  "tldr_zh": "TacForcing利用执行时触觉反馈进行流式动作生成，在模拟和真实任务中均优于基线。",
+  "cover_zh": "触觉反馈不再滞后！TacForcing让机器人动作生成实时响应，成功率飙升",
+  "authors": [
+    {
+      "name": "Jianbo Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Boyuan Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuzheng Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiyang Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenxin Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiuyue Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiangyang Gu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhan Cao",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiao Xia",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanzhe Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhijie Deng",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-08-26",
+  "updated": "2026-08-26",
+  "arxiv_id": "2608.25798",
+  "pdf_url": "https://arxiv.org/pdf/2608.25798v1",
+  "abs_url": "http://arxiv.org/abs/2608.25798v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-25798.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-25798-p2.jpg",
+    "assets/img/covers/arxiv-2608-25798-p3.jpg",
+    "assets/img/covers/arxiv-2608-25798-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 15,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（reactive control、vision-language-action、manipulation、contact-rich）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 15 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出流式动作生成框架，融合执行时触觉反馈，提升接触丰富操作成功率，对操作策略研究有较高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "SJTU",
+    "SCUT",
+    "ECUST",
+    "ECNU"
+  ],
+  "method_tags": [
+    "streaming action generation",
+    "tactile feedback",
+    "VLA"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

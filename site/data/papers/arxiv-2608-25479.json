@@ -1,0 +1,124 @@
+{
+  "id": "arxiv-2608-25479",
+  "source": "arxiv",
+  "title": "4DStreamCtrl: Interactive Video Generation with Online 4D Control",
+  "title_zh": "4DStreamCtrl：具有在线4D控制的交互式视频生成",
+  "abstract": "Generative video models now synthesize footage nearly indistinguishable from reality. Their promise as interactive tools hinges on fine-grained control of how objects and the camera move over time, yet each existing approach captures only part of this: camera-parameter methods steer the viewpoint but cannot move objects, 2D-trajectory methods act in the image plane and ignore depth and occlusion, and recent 3D methods add geometry but run only offline at a fixed length. In particular, none combines 3D-consistent control of both camera and objects with real-time, streaming generation. Here we show that camera motion, object trajectories, and depth can be unified into a single 3D point-track representation, from which one model performs joint camera and object control, depth editing, and motion transfer in a single forward pass. To learn this interface at scale, we mine in-the-wild video for 3D motion supervision, yielding OpenVidHD-Motion3D, and encode it with a lightweight Geometric Motion Head that plugs into a pretrained video diffusion model. Because this encoder is temporally separable, we distill the model into a causal streaming student that generates arbitrarily long video in four denoising steps at memory independent of length. This unified design surpasses prior camera-only, 2D, and offline-3D methods in motion-control precision while covering modalities they address only in isolation. 4DStreamCtrl runs at 20 FPS on a single high-end GPU for 480p video and stays temporally coherent over hundreds of frames, enabling, to our knowledge, interactive 4D-controllable streaming generation for the first time. More broadly, grounding generation in explicit 3D geometry with efficient causal inference points toward interactive world models with closed-loop spatiotemporal control, from controllable simulators to real-time visual imagination for embodied agents.",
+  "abstract_zh": "生成式视频模型现在能够合成几乎与真实无法区分的画面。它们作为交互式工具的潜力取决于对物体和相机随时间运动的细粒度控制，然而现有方法各自只覆盖了其中一部分：相机参数方法可以控制视角但不能移动物体，2D轨迹方法在图像平面上操作而忽略深度和遮挡，最近的3D方法增加了几何信息但只能离线运行且长度固定。特别是，没有一种方法能将相机和物体的3D一致控制与实时流式生成结合起来。在这里，我们展示了相机运动、物体轨迹和深度可以统一到一个3D点轨迹表示中，通过该表示，一个模型可以在单次前向传播中联合控制相机和物体、进行深度编辑和运动迁移。为了大规模学习这一接口，我们从野外视频中挖掘3D运动监督，构建了OpenVidHD-Motion3D，并使用一个轻量级的几何运动头将其编码到预训练的视频扩散模型中。由于该编码器在时间上是可分离的，我们将模型蒸馏成一个因果流式学生模型，该模型可以在四个去噪步骤中生成任意长度的视频，且内存与长度无关。这种统一设计在运动控制精度上超越了先前的仅相机、2D和离线3D方法，同时覆盖了它们单独处理的模态。4DStreamCtrl在单个高端GPU上以20 FPS的速度生成480p视频，并在数百帧内保持时间一致性，据我们所知，这首次实现了交互式4D可控流式生成。更广泛地说，将生成基于显式3D几何并采用高效因果推理，指向了具有闭环时空控制的交互式世界模型，从可控模拟器到具身代理的实时视觉想象。",
+  "tldr_zh": "提出4DStreamCtrl，统一3D点轨迹实现相机和物体控制，支持实时流式生成。",
+  "cover_zh": "相机和物体都能控？这个视频生成模型还能实时流式输出！",
+  "authors": [
+    {
+      "name": "Shiqian Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenguo Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhiguang Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiarong Ou",
+      "affiliation": ""
+    },
+    {
+      "name": "Rui Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yixin Zhu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "published": "2026-08-26",
+  "updated": "2026-08-26",
+  "arxiv_id": "2608.25479",
+  "pdf_url": "https://arxiv.org/pdf/2608.25479v1",
+  "abs_url": "http://arxiv.org/abs/2608.25479v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-25479.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-25479-p2.jpg",
+    "assets/img/covers/arxiv-2608-25479-p3.jpg",
+    "assets/img/covers/arxiv-2608-25479-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 23,
+  "source_tags": [],
+  "score": 41,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “北大” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（embodied agent）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 23 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出交互式4D可控视频生成，强调可作为具身智能的实时世界模型，符合world-model频道。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Peking University",
+    "Tencent Hunyuan"
+  ],
+  "method_tags": [
+    "video diffusion model",
+    "3D point-track representation",
+    "causal autoregressive distillation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

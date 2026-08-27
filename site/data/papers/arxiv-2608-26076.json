@@ -1,0 +1,111 @@
+{
+  "id": "arxiv-2608-26076",
+  "source": "arxiv",
+  "title": "Fast Generative Grasping via Lie Group-Constrained MeanFlow",
+  "title_zh": "基于李群约束MeanFlow的快速生成式抓取",
+  "abstract": "Grasp synthesis is a core task in robotic manipulation, for which the solution typically forms a multimodal distribution rather than a point estimate. Generative robotic grasping aims to learn this distribution with deep generative models such as diffusion and flow-based approaches. The iterative nature of such generative models makes them flexible and generalizable; however, multi-step sampling impedes the time-critical operation required in robotics. We devise an approach to fast generative grasping based on MeanFlow on the product Lie group $\\mathcal{G} = \\mathrm{SO}(3) \\times \\mathbb{R}^3$. The training objective couples a purely algebraic semigroup consistency condition with Riemannian Conditional Flow Matching on $\\mathcal{G}$ that anchors the average velocity to the data distribution. The resulting Lie Group-constrained MeanFlow formulation samples reliable grasps in $\\leq 5$ network evaluations, matching the grasp generation performance of state-of-the-art diffusion and flow-based models on the ACRONYM dataset at millisecond-scale inference latency (up to $39\\times$ speed-up). We further demonstrate that the approach directly translates to real-world robotic grasping without additional training or domain adaptation, exhibiting robust grasp synthesis under observation noise.",
+  "abstract_zh": "抓取合成是机器人操作中的核心任务，其解通常形成多模态分布而非点估计。生成式机器人抓取旨在利用深度生成模型（如扩散和基于流的方法）学习该分布。这类生成模型的迭代特性使其灵活且具有泛化能力；然而，多步采样阻碍了机器人所需的时间关键操作。我们提出了一种基于乘积李群 $\\mathcal{G} = \\mathrm{SO}(3) × \\mathbb{R}^3$ 上MeanFlow的快速生成式抓取方法。训练目标将纯代数半群一致性条件与 $\\mathcal{G}$ 上的黎曼条件流匹配相结合，将平均速度锚定到数据分布。所得到的李群约束MeanFlow公式在 $≤ 5$ 次网络评估内采样出可靠的抓取，在ACRONYM数据集上匹配最先进的扩散和基于流模型的抓取生成性能，且推理延迟达到毫秒级（最高 $39×$ 加速）。我们进一步证明，该方法无需额外训练或域适应即可直接迁移到真实机器人抓取中，在观测噪声下展现出鲁棒的抓取合成能力。",
+  "tldr_zh": "提出李群约束MeanFlow，5次网络评估内生成可靠抓取，毫秒级推理并加速39倍。",
+  "cover_zh": "5步采样就够？李群约束MeanFlow让抓取生成快39倍，还能直接上真机！",
+  "authors": [
+    {
+      "name": "S. Talha Bukhari",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi Wei",
+      "affiliation": ""
+    },
+    {
+      "name": "Ruiqi Ni",
+      "affiliation": ""
+    },
+    {
+      "name": "Zachary Kingston",
+      "affiliation": ""
+    },
+    {
+      "name": "Aniket Bera",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-26",
+  "updated": "2026-08-26",
+  "arxiv_id": "2608.26076",
+  "pdf_url": "https://arxiv.org/pdf/2608.26076v1",
+  "abs_url": "http://arxiv.org/abs/2608.26076v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-26076.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-26076-p2.jpg",
+    "assets/img/covers/arxiv-2608-26076-p3.jpg",
+    "assets/img/covers/arxiv-2608-26076-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、grasp、grasping、domain adaptation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出基于李群约束MeanFlow的快速生成式抓取，显著加速推理，兼具仿真与真机验证，对操作研究有较高价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Purdue University"
+  ],
+  "method_tags": [
+    "Flow Matching",
+    "MeanFlow",
+    "Robotic Grasping"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
