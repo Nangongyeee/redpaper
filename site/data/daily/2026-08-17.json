@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "count": 32,
+  "count": 33,
   "papers": [
     {
       "id": "arxiv-2608-17163",
@@ -2089,6 +2089,69 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-17178",
+      "source": "arxiv_discover",
+      "title": "Mask What Matters: Saliency-Guided Video Self-Supervised Learning for Autonomous Driving",
+      "title_zh": "掩蔽关键：基于显著性的视频自监督学习用于自动驾驶",
+      "tldr_zh": "V-JEPA4A用显著性掩蔽提升自动驾驶视频自监督学习，减少身份切换25%。",
+      "cover_zh": "随机掩蔽out了！显著性掩蔽让自动驾驶视频学习更聪明，跟踪性能提升25%",
+      "abstract_zh": "通过掩蔽时空预测的视频自监督学习已成为从无标签数据中学习特征表示的一种有前景的方法。然而，现有方法通常依赖随机掩蔽，无论区域在语义或时间上的相关性如何，都无差别地移除。在自我中心的驾驶视频中，这会削弱预文本信号，因为诸如行人、车辆、车道边界和动态交互等安全关键线索通常只占帧的一小部分，但对下游感知至关重要。我们引入了V-JEPA4A，这是V-JEPA的一个领域专用变体，用于自动驾驶，它在公开可用的驾驶视频上使用一种新颖的显著性驱动的掩蔽策略进行预训练。该策略考虑了语义和时间相关的上下文。所提出的策略根据语义重要性和时间相关性保留和预测上下文，从而产生更有信息量的表示学习，同时保持掩蔽预测的效率。我们在四个驾驶基准上评估了生成的编码器，涵盖跟踪、语义分割和深度估计。结果表明，与随机掩蔽的V-JEPA相比，V-JEPA4A在BDD100k MOT上将身份切换减少了25%，在Cityscapes上达到73.2 mIoU，在KITTI-2015深度上达到3.75 RMSE，同时仅增加约14%的预训练迭代开销。",
+      "authors": [
+        "Christopher Lang",
+        "Alexander Braun",
+        "Abhinav Valada"
+      ],
+      "authors_all": [
+        "Christopher Lang",
+        "Alexander Braun",
+        "Abhinav Valada"
+      ],
+      "primary_category": "",
+      "published": "2026-08-17",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2608-17178.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-17178-p2.jpg",
+        "assets/img/covers/arxiv-2608-17178-p3.jpg",
+        "assets/img/covers/arxiv-2608-17178-p4.jpg"
+      ],
+      "arxiv_id": "2608.17178",
+      "abs_url": "http://arxiv.org/abs/2608.17178v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.17178v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "V-JEPA4A是V-JEPA的自动驾驶变体，属于世界模型/JEPA方向，且性能提升显著。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Robert Bosch GmbH",
+        "University of Freiburg"
+      ],
+      "method_tags": [
+        "Video Self-Supervised Learning",
+        "Masked-Latent Prediction",
+        "Saliency-Driven Masking"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-16153",
