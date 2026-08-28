@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2608-27225",
+  "source": "arxiv",
+  "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+  "title_zh": "STEP：基于多模态大语言模型的状态感知任务估计与规划用于人机协作",
+  "abstract": "Effective human-robot collaboration in industrial settings requires robots to understand human intentions and assist with task planning, reducing workload. Recent works have explored the use of Multi-modal Large Language Models (MM-LLMs) for task planning in such data-scarce scenarios, leveraging in-context learning to interpret user actions and generate long-horizon action plans in natural language. However, MM-LLMs inherently lack an understanding of system states and do not track state transitions, often leading to hallucinated actions that deviate from the intended goal. Additionally, generating action plans in natural language tends to limit the generated plans to a high level, introducing ambiguity in action execution. To address these limitations, we propose the State-aware Task Estimator and Planner (STEP), which prompts a MM-LLM to explicitly estimate the state of the system and predict the state transitions resulting from executed actions. By forecasting future states alongside actions, STEP ensures task-convergent planning while also providing additional assistance parameters necessary for executing the predicted actions. We evaluate STEP in a simulated environment using a robot assembly task. Our approach outperforms the state-of-the-art by 32.8% in action executability and 14.8% in final-state error.",
+  "abstract_zh": "在工业环境中，有效的人机协作要求机器人理解人类意图并协助任务规划，以减轻工作负担。近期研究探索了在多模态大语言模型（MM-LLMs）在数据稀缺场景下进行任务规划的应用，利用上下文学习来解读用户动作并生成自然语言的长时程动作计划。然而，MM-LLMs 本质上缺乏对系统状态的理解，也不跟踪状态转换，常常导致产生偏离预期目标的幻觉动作。此外，用自然语言生成动作计划往往使计划局限于高层级，给动作执行带来歧义。为解决这些局限，我们提出了状态感知任务估计与规划器（STEP），它提示 MM-LLM 显式估计系统状态并预测执行动作所导致的状态转换。通过同时预测未来状态和动作，STEP 确保任务收敛的规划，同时提供执行预测动作所需的额外辅助参数。我们在模拟环境中使用机器人装配任务评估了 STEP。我们的方法在动作可执行性上比现有最优方法提高了 32.8%，在最终状态误差上降低了 14.8%。",
+  "tldr_zh": "提出STEP，通过状态感知规划提升人机协作任务的可执行性。",
+  "cover_zh": "机器人不懂状态？STEP让多模态大模型预测未来，装配任务可执行性提升32.8%！",
+  "authors": [
+    {
+      "name": "Maitrey Gramopadhye",
+      "affiliation": ""
+    },
+    {
+      "name": "Prakash Baskaran",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiao Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Songpo Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Soshi Iba",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "arxiv_id": "2608.27225",
+  "pdf_url": "https://arxiv.org/pdf/2608.27225v1",
+  "abs_url": "http://arxiv.org/abs/2608.27225v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-27225.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-27225-p2.jpg",
+    "assets/img/covers/arxiv-2608-27225-p3.jpg",
+    "assets/img/covers/arxiv-2608-27225-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（assembly）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "利用多模态LLM进行状态感知的任务规划，提升人机协作中的动作可执行性，属于具身智能操作方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of North Carolina at Chapel Hill",
+    "Honda Research Institute"
+  ],
+  "method_tags": [
+    "MM-LLM",
+    "task planning",
+    "state estimation"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

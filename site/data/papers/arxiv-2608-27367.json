@@ -1,0 +1,89 @@
+{
+  "id": "arxiv-2608-27367",
+  "source": "arxiv",
+  "title": "Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models",
+  "title_zh": "连续容量增长：任务复杂度驱动的视觉Transformer编码器宽度与深度扩展在JEPA世界模型中的应用",
+  "abstract": "Joint-Embedding Predictive Architectures (JEPAs) for world modeling typically employ fixed-size Vision Transformer encoders that are over-provisioned for simple tasks and under-provisioned for complex ones, with significant redundancy across attention heads. We propose Successive Capacity Growth (SCG), a method that starts from a minimal encoder (1 head, 2 layers, 283K parameters) and grows incrementally in width (adding attention heads for low-level semantic capacity) or depth (adding transformer blocks for higher-order semantic abstraction), driven by a task-agnostic test-and-verify mechanism that exploits function-preserving expansion to safely trial architectural changes and roll back if they do not improve prediction loss. The Sketched Isotropic Gaussian Regularizer (SIGReg) ensures that all learned semantic dimensions remain statistically independent and aligned with the predictive objective, preventing collapse even as the architecture grows. On a 60-dimensional multi-object dynamics task, SCG naturally triggers depth expansion, improving prediction loss by 20.3% over the fixed small baseline with 56 times greater parameter efficiency than scaling to the fixed large model; on a 2D navigation task, a single width expansion yields even an 23% improvement over the fixed large model. Across all three tested environments of increasing complexity, the adaptive encoder matches or exceeds the fixed small baseline, with zero false-positive expansions and bit-exact function preservation (ratio = 1.0, absolute difference = 0.0). The take-away is that JEPA world model encoders need not be pre-allocated at maximum capacity - they can grow successively as the task demands, achieving significant compute and data efficiency while maintaining representation quality.",
+  "abstract_zh": "用于世界建模的联合嵌入预测架构（JEPA）通常采用固定大小的视觉Transformer编码器，这些编码器对于简单任务而言过度配置，对于复杂任务则配置不足，并且在注意力头之间存在显著冗余。我们提出了连续容量增长（SCG）方法，该方法从一个最小编码器（1个头、2层、283K参数）开始，并根据任务无关的测试与验证机制，通过利用函数保持扩展来安全地试验架构变化，并在预测损失未改善时回滚，从而逐步增加宽度（增加注意力头以提升低层语义容量）或深度（增加Transformer块以提升高层语义抽象）。草图各向同性高斯正则化器（SIGReg）确保所有学习到的语义维度保持统计独立并与预测目标对齐，即使在架构增长时也能防止坍缩。在60维多目标动力学任务上，SCG自然触发深度扩展，预测损失比固定小基线改善20.3%，参数效率比扩展到固定大模型高56倍；在2D导航任务上，单次宽度扩展甚至比固定大模型改善23%。在所有三个复杂度递增的测试环境中，自适应编码器达到或超过固定小基线，零误报扩展和位精确函数保持（比率=1.0，绝对差=0.0）。结论是JEPA世界模型编码器无需预先分配最大容量——它们可以根据任务需求连续增长，在保持表示质量的同时实现显著的计算和数据效率。",
+  "tldr_zh": "JEPA世界模型编码器可根据任务复杂度动态扩展，提升效率与性能。",
+  "cover_zh": "还在用固定大小的编码器？JEPA世界模型新方法让容量随任务增长，效率提升56倍！",
+  "authors": [
+    {
+      "name": "Frederik Berenz",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "arxiv_id": "2608.27367",
+  "pdf_url": "https://arxiv.org/pdf/2608.27367v1",
+  "abs_url": "http://arxiv.org/abs/2608.27367v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-27367.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-27367-p2.jpg",
+    "assets/img/covers/arxiv-2608-27367-p3.jpg",
+    "assets/img/covers/arxiv-2608-27367-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（world model、world models、world modeling、jepa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "提出JEPA世界模型编码器的自适应容量增长方法，提升效率，属world-model核心方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "121-labs.com"
+  ],
+  "method_tags": [
+    "JEPA",
+    "function-preserving expansion",
+    "adaptive architecture"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
