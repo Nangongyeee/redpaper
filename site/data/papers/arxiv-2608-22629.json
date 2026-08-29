@@ -1,0 +1,102 @@
+{
+  "id": "arxiv-2608-22629",
+  "source": "arxiv_discover",
+  "title": "Enhancing Sim2Real Transfer for Torque-Controlled Robots through Real2Sim Dynamics Estimation and Reinforcement Learning",
+  "title_zh": "通过Real2Sim动力学估计与强化学习增强扭矩控制机器人的Sim2Real迁移",
+  "abstract": "Transferring reinforcement learning policies from simulation to Real-World robots remains a major challenge, particularly when dealing with low-level torque control, where even small modelling inaccuracies can lead to unstable or unsafe behaviours. In this work, we propose a Real2Sim2Real pipeline that improves Sim2Real transfer for torque-controlled robotic arms by combining trajectory matching, parameter optimization via genetic algorithms, and domain randomization. Using the 7-DOF Franka Emika Panda robot, we first identify friction, inertia, and gravity compensation parameters by minimizing the error between real and simulated joint trajectories. These calibrated dynamics are then used to train a TQC-based reinforcement learning agent in simulation. The trained policy is evaluated in both Gazebo and MuJoCo environments, and finally deployed on the real robot. Our results demonstrate a significant improvement in tracking accuracy and policy robustness after parameter tuning, with smooth policy transfer from simulation to the Real-World across multiple target-reaching tasks. This work highlights the effectiveness of accurate physical modelling in enabling stable and generalizable torque-based reinforcement learning policies.",
+  "abstract_zh": "将强化学习策略从仿真迁移到真实世界机器人仍然是一个重大挑战，尤其是在处理低级扭矩控制时，即使是微小的建模误差也可能导致不稳定或不安全的行为。在这项工作中，我们提出了一种Real2Sim2Real流程，通过结合轨迹匹配、基于遗传算法的参数优化和域随机化，改善了扭矩控制机械臂的Sim2Real迁移。使用7自由度Franka Emika Panda机器人，我们首先通过最小化真实与仿真关节轨迹之间的误差来识别摩擦、惯性和重力补偿参数。然后，这些校准后的动力学参数被用于在仿真中训练基于TQC的强化学习智能体。训练后的策略在Gazebo和MuJoCo环境中进行评估，并最终部署到真实机器人上。我们的结果表明，在参数调整后，跟踪精度和策略鲁棒性显著提高，并且在多个目标到达任务中，策略从仿真到真实世界的迁移平滑。这项工作强调了精确物理建模在实现稳定且可泛化的基于扭矩的强化学习策略中的有效性。",
+  "tldr_zh": "提出Real2Sim2Real流程，通过动力学校准提升扭矩控制机器人的策略迁移效果。",
+  "cover_zh": "仿真到现实不再翻车｜扭矩控制机器人靠动力学校准实现平滑迁移",
+  "authors": [
+    {
+      "name": "Davide Bargellini",
+      "affiliation": ""
+    },
+    {
+      "name": "Alex Pasquali",
+      "affiliation": ""
+    },
+    {
+      "name": "Andrea Govoni",
+      "affiliation": ""
+    },
+    {
+      "name": "Riccardo Zanella",
+      "affiliation": ""
+    },
+    {
+      "name": "Gianluca Palli",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "eess.SY",
+    "cs.RO"
+  ],
+  "published": "2026-08-23",
+  "updated": "2026-08-23",
+  "arxiv_id": "2608.22629",
+  "pdf_url": "https://arxiv.org/pdf/2608.22629v1",
+  "abs_url": "http://arxiv.org/abs/2608.22629v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-22629.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-22629-p2.jpg",
+    "assets/img/covers/arxiv-2608-22629-p3.jpg",
+    "assets/img/covers/arxiv-2608-22629-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 6,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 12,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（sim2real、domain randomization、real2sim）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 6 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "sim2real",
+    "reason": "提出Real2Sim2Real管道，结合动力学辨识与域随机化提升扭矩控制机器人的Sim2Real迁移，方法实用但创新性一般。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Bologna",
+    "University of Twente"
+  ],
+  "method_tags": [
+    "Reinforcement Learning",
+    "Domain Randomization",
+    "Sim2Real"
+  ],
+  "platform": [
+    "Franka Emika Panda"
+  ],
+  "sim_stack": [
+    "Gazebo",
+    "MuJoCo"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

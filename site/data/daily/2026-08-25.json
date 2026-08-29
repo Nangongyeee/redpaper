@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "count": 21,
+  "count": 22,
   "papers": [
     {
       "id": "arxiv-2608-24101",
@@ -577,6 +577,83 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-24199",
+      "source": "arxiv_discover",
+      "title": "NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics",
+      "title_zh": "NVIDIA Cosmos-H-Dreams：用于手术机器人的实时生成式物理仿真",
+      "tldr_zh": "首个支持实时人类和策略控制的手术世界模型，实现约160FPS流式仿真。",
+      "cover_zh": "手术机器人仿真也能实时？这个系统让医生和AI在虚拟世界里练手",
+      "abstract_zh": "手术机器人的生成式仿真仍缺乏实时交互。物理机器人实验，通常涉及动物或尸体实验室，耗时、昂贵且难以复现，而经典仿真器难以捕捉逼真外观和软组织动力学。我们通过Cosmos-H-Dreams解决了这一差距，这是一个集成的实时手术世界模型系统，结合了动作条件生成模型、教师到学生蒸馏方案，以及基于NVIDIA FlashDreams流式推理库的部署栈。从Cosmos-H-Surgical-Simulator（一个在大规模Open-H-Embodiment语料库上微调的多具身动作条件手术视频世界模型）开始，我们在特定具身和手术数据上对检查点进行后训练。通过将所得双向教师蒸馏为具有自强迫的因果、少步学生，我们将被动视频生成器转变为可控手术仿真器，在单个NVIDIA RTX PRO 6000 Blackwell工作站GPU上以约160推理FPS流式传输。关键的是，Cosmos-H-Dreams与控制器无关：任何发射机器人运动学流的接口都可以驱动它。我们展示了通过WebRTC的浏览器键盘、通过WebXR的Meta Quest头显、商业手术机器人控制台（如CMR Surgical的Versius）以及闭环运行的习得策略的实时控制。据我们所知，这是第一个支持实时人类和策略控制的交互式手术世界模型。人类操作员和策略都可以在合成世界中行动并实时观察后果。我们发布Cosmos-H-Dreams作为开放手术仿真系统，为手术教育、可扩展合成数据生成和未来术中决策支持提供共同基础。",
+      "authors": [
+        "Javier Gamazo Tejero",
+        "Lukas Zbinden",
+        "Keyur Sheth"
+      ],
+      "authors_all": [
+        "Javier Gamazo Tejero",
+        "Lukas Zbinden",
+        "Keyur Sheth",
+        "Raghavendra K M",
+        "Nadim Daher",
+        "Diego Granero Maraña",
+        "Filip Binkiewicz",
+        "Patrick Thornycroft",
+        "Mahdi Azizian",
+        "Sean D. Huver"
+      ],
+      "primary_category": "",
+      "published": "2026-08-25",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-24199.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-24199-p2.jpg",
+        "assets/img/covers/arxiv-2608-24199-p3.jpg",
+        "assets/img/covers/arxiv-2608-24199-p4.jpg"
+      ],
+      "arxiv_id": "2608.24199",
+      "abs_url": "http://arxiv.org/abs/2608.24199v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.24199v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出实时手术世界模型，结合生成式模拟与蒸馏，支持交互控制，具身领域价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NVIDIA",
+        "CMR Surgical"
+      ],
+      "method_tags": [
+        "World Model",
+        "Distillation",
+        "Generative Simulation"
+      ],
+      "platform": [
+        "Versius"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2608-24242",
