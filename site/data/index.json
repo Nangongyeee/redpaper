@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T14:52:02.402864+00:00",
+  "generated_at": "2026-08-31T16:41:46.354617+00:00",
   "count": 2332,
   "papers": [
     {
@@ -10688,9 +10688,9 @@
       "primary_category": "cs.RO",
       "published": "2026-08-28",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
-        "locomotion"
+        "locomotion",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -28957,10 +28957,10 @@
       "id": "arxiv-2605-15195",
       "source": "arxiv",
       "title": "VGGT-$Ω$",
-      "title_zh": "VGGT-$\\Omega$",
-      "tldr_zh": "VGGT-$\\Omega$通过架构改进和自监督学习，大幅提升重建精度，并降低训练内存。",
-      "cover_zh": "重建模型也能这么强？VGGT-$\\Omega$精度飙升77%！",
-      "abstract_zh": "最近的馈送式重建模型，如VGGT，已被证明与传统基于优化的重建器相比具有竞争力，同时还能提供对其他任务有用的几何感知特征。在这里，我们表明这些模型的质量随模型和数据规模可预测地提升。为此，我们引入了VGGT-$\\Omega$，它大幅提高了静态和动态场景的重建精度、效率和能力。为了以前所未有的规模训练该模型，我们引入了提高训练效率的架构更改、支持动态场景的高质量数据标注流程，以及自监督学习协议。我们通过使用带有多个任务监督的单一密集预测头并移除昂贵的高分辨率卷积层来简化VGGT的架构。我们还使用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力，将帧间信息交换限制在这些寄存器中，部分取代全局注意力。这样，在训练期间，VGGT-$\\Omega$仅使用其前身约30%的GPU内存，使我们能够使用比先前工作多15倍的监督数据进行训练，并利用大量未标记的视频数据。VGGT-$\\Omega$在多个基准上对静态和动态场景的重建取得了强劲结果，例如，在Sintel上将先前最佳相机估计精度提高了77%。我们还表明，学习到的寄存器可以改进视觉-语言-动作模型，并支持与语言对齐，这表明重建可以成为空间理解的一个强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io/",
+      "title_zh": "VGGT-$Ω$",
+      "tldr_zh": "Recent feed-forward reconstruction models, such as VGGT, hav",
+      "cover_zh": "Recent feed-forward reconstruction models, such as VGGT, hav",
+      "abstract_zh": "Recent feed-forward reconstruction models, such as VGGT, have proven competitive with traditional optimization-based reconstructors while also providing geometry-aware features useful for other tasks. Here, we show that the quality of these models scales predictably with model and data size. We do so by introducing VGGT-$Ω$, which substantially improves reconstruction accuracy, efficiency, and capabilities for both static and dynamic scenes. To enable training this model at an unprecedented scale, we introduce architectural changes that improve training efficiency, a high-quality data annotation pipeline that supports dynamic scenes, and a self-supervised learning protocol. We simplify VGGT's architecture by using a single dense prediction head with multi-task supervision and removing the expensive high-resolution convolutional layers. We also use registers to aggregate scene information into a compact representation and introduce register attention, which restricts inter-frame information exchange to these registers, in part replacing global attention. In this way, during training, VGGT-$Ω$ uses only about 30% of the GPU memory of its predecessor, allowing us to train with 15x more supervised data than prior work and to leverage vast amounts of unlabeled video data. VGGT-$Ω$ achieves strong results for reconstruction of static and dynamic scenes across multiple benchmarks, for example, improving over the previous best camera estimation accuracy on Sintel by 77%. We also show that the learned registers can improve vision-language-action models and support alignment with language, suggesting that reconstruction can be a powerful and scalable proxy task for spatial understanding. Project Page: http://vggt-omega.github.io/",
       "authors": [
         "Jianyuan Wang",
         "Minghao Chen",
@@ -45740,9 +45740,9 @@
       "source": "video_youtube",
       "title": "Whirlybird | Atlas | Boston Dynamics",
       "title_zh": "Whirlybird | Atlas | Boston Dynamics",
-      "tldr_zh": "Atlas 机器人尝试旋转和新动作。",
-      "cover_zh": "机器人转圈圈？Atlas 的新动作太酷了！",
-      "abstract_zh": "Atlas 尝试旋转并尝试一些新动作。",
+      "tldr_zh": "Atlas goes for a spin and tries some new moves",
+      "cover_zh": "Atlas goes for a spin and tries some new moves",
+      "abstract_zh": "Atlas goes for a spin and tries some new moves",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -90131,6 +90131,76 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-21735",
+      "source": "arxiv_discover",
+      "title": "Safety-Critical Bilateral Teleoperation for Omnidirectional Aerial Manipulation Using Force-Sensorless Haptic Feedback",
+      "title_zh": "全向空中操控的安全关键双边遥操作：基于无力传感器触觉反馈",
+      "tldr_zh": "提出安全滤波器，避免自由飞行误触觉，提升空中操控稳定性。",
+      "cover_zh": "空中机器人不再乱抖｜这个安全滤波器让操控稳如老狗",
+      "abstract_zh": "本文提出了一种用于全向空中操控器的安全关键双边遥操作框架，该框架集成了视觉和无力传感器的触觉力/力矩反馈。与现有依赖机载力/力矩传感器或使用基于模型的力估计（在模型不确定下可能不可靠或在自由飞行中引起意外反馈）的方法不同，我们的方法实现了基于控制障碍函数的分层安全滤波器以避免这些限制。安全滤波器作为关键贡献，明确考虑了空中操控器与其周围环境物理交互产生的跟踪误差，同时强制执行推力限制，这一因素虽对飞行安全至关重要但常被忽视。该安全滤波器调整操作员的指令以确保安全稳定的空中操控并避免电机饱和。滤波器所做的调整被映射为触觉反馈，对操作员直观，并传达物理交互和即将发生的电机饱和的信息。通过使用基于六旋翼的全向空中操控器的实际实验，我们证明了所提方法在自由飞行中避免触觉反馈，在物理交互下提供方向一致的反馈，并可操作于多种操控任务。此外，消融研究进一步表明，饱和滤波器通过明确防止电机饱和并告知操作员纠正动作，提高了交互稳定性。",
+      "authors": [
+        "Yubin Kim",
+        "Jinwoo Lee",
+        "Yongjun You"
+      ],
+      "authors_all": [
+        "Yubin Kim",
+        "Jinwoo Lee",
+        "Yongjun You",
+        "H. Jin Kim",
+        "Jeonghyun Byun"
+      ],
+      "primary_category": "",
+      "published": "2026-08-22",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · IROS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-21735.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-21735-p2.jpg",
+        "assets/img/covers/arxiv-2608-21735-p3.jpg",
+        "assets/img/covers/arxiv-2608-21735-p4.jpg"
+      ],
+      "arxiv_id": "2608.21735",
+      "abs_url": "http://arxiv.org/abs/2608.21735v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21735v1",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-08-31",
+      "score": 27,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "teleop",
+        "reason": "面向空中操作机器人的安全关键双边遥操作，含力觉反馈与控制屏障，属遥操作方向。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Seoul National University"
+      ],
+      "method_tags": [
+        "Control Barrier Functions",
+        "Teleoperation",
+        "Force-Sensorless Haptic Feedback"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "vid-youtube-CAdTjePDBfc",
       "source": "video_youtube",
       "title": "Helix 02 Living Room Tidy",
@@ -112905,10 +112975,10 @@
       "primary_category": "cs.RO",
       "published": "2026-08-28",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
         "locomotion",
-        "sim2real"
+        "sim2real",
+        "loco-manip-wbc"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2608-28090.jpg",
@@ -120247,8 +120317,8 @@
       "primary_category": "cs.CV",
       "published": "2026-08-28",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2608-28386.jpg",
@@ -153064,70 +153134,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-21735",
-      "source": "arxiv_discover",
-      "title": "Safety-Critical Bilateral Teleoperation for Omnidirectional Aerial Manipulation Using Force-Sensorless Haptic Feedback",
-      "title_zh": "全向空中操控的安全关键双边遥操作：基于无力传感器触觉反馈",
-      "tldr_zh": "提出安全滤波器，避免自由飞行误触觉，提升空中操控稳定性。",
-      "cover_zh": "空中机器人不再乱抖｜这个安全滤波器让操控稳如老狗",
-      "abstract_zh": "本文提出了一种用于全向空中操控器的安全关键双边遥操作框架，该框架集成了视觉和无力传感器的触觉力/力矩反馈。与现有依赖机载力/力矩传感器或使用基于模型的力估计（在模型不确定下可能不可靠或在自由飞行中引起意外反馈）的方法不同，我们的方法实现了基于控制障碍函数的分层安全滤波器以避免这些限制。安全滤波器作为关键贡献，明确考虑了空中操控器与其周围环境物理交互产生的跟踪误差，同时强制执行推力限制，这一因素虽对飞行安全至关重要但常被忽视。该安全滤波器调整操作员的指令以确保安全稳定的空中操控并避免电机饱和。滤波器所做的调整被映射为触觉反馈，对操作员直观，并传达物理交互和即将发生的电机饱和的信息。通过使用基于六旋翼的全向空中操控器的实际实验，我们证明了所提方法在自由飞行中避免触觉反馈，在物理交互下提供方向一致的反馈，并可操作于多种操控任务。此外，消融研究进一步表明，饱和滤波器通过明确防止电机饱和并告知操作员纠正动作，提高了交互稳定性。",
-      "authors": [
-        "Yubin Kim",
-        "Jinwoo Lee",
-        "Yongjun You"
-      ],
-      "authors_all": [
-        "Yubin Kim",
-        "Jinwoo Lee",
-        "Yongjun You",
-        "H. Jin Kim",
-        "Jeonghyun Byun"
-      ],
-      "primary_category": "",
-      "published": "2026-08-22",
-      "channels": [
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-21735.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-21735-p2.jpg",
-        "assets/img/covers/arxiv-2608-21735-p3.jpg",
-        "assets/img/covers/arxiv-2608-21735-p4.jpg"
-      ],
-      "arxiv_id": "2608.21735",
-      "abs_url": "http://arxiv.org/abs/2608.21735v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.21735v1",
-      "venue": "IROS 2026",
-      "venue_announced": "2026-08-31",
-      "score": 9,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "teleop",
-        "reason": "面向空中操作机器人的安全关键双边遥操作，含力觉反馈与控制屏障，属遥操作方向。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Seoul National University"
-      ],
-      "method_tags": [
-        "Control Barrier Functions",
-        "Teleoperation",
-        "Force-Sensorless Haptic Feedback"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2608-23320",
