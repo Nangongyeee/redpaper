@@ -1,0 +1,95 @@
+{
+  "id": "arxiv-2608-21735",
+  "source": "arxiv_discover",
+  "title": "Safety-Critical Bilateral Teleoperation for Omnidirectional Aerial Manipulation Using Force-Sensorless Haptic Feedback",
+  "title_zh": "全向空中操控的安全关键双边遥操作：基于无力传感器触觉反馈",
+  "abstract": "This paper presents a safety-critical bilateral teleoperation framework for omnidirectional aerial manipulators that integrates visual and force-sensorless haptic wrench feedback. Unlike existing approaches that either rely on onboard force/torque sensors or use model-dependent wrench estimates, which may become unreliable under model uncertainties or induce unintended feedback during free-flight, our method implements a hierarchical safety filter based on control barrier functions to avoid such limitations. The safety filter, being the key contribution, explicitly accounts for tracking errors arising from physical interaction between the aerial manipulator and its surroundings while enforcing thrust limits, a factor overlooked despite its critical importance for flight safety. This safety filter adjusts the command from the operator to ensure safe and stable aerial manipulation and avoid motor saturation. The adjustment made by the filter is mapped to haptic feedback, which is intuitive to the operator and conveys information on physical interaction and impending motor saturation. By actual experiments with a hexarotor-based omnidirectional aerial manipulator, we demonstrate that the proposed method avoids haptic feedback during free-flight, provides directionally consistent feedback under physical interaction, and can be operated for diverse manipulative tasks. Moreover, an ablation study further shows that the saturation filter improves interaction stability by explicitly preventing motor saturation and informing the operator of corrective actions.",
+  "abstract_zh": "本文提出了一种用于全向空中操控器的安全关键双边遥操作框架，该框架集成了视觉和无力传感器的触觉力/力矩反馈。与现有依赖机载力/力矩传感器或使用基于模型的力估计（在模型不确定下可能不可靠或在自由飞行中引起意外反馈）的方法不同，我们的方法实现了基于控制障碍函数的分层安全滤波器以避免这些限制。安全滤波器作为关键贡献，明确考虑了空中操控器与其周围环境物理交互产生的跟踪误差，同时强制执行推力限制，这一因素虽对飞行安全至关重要但常被忽视。该安全滤波器调整操作员的指令以确保安全稳定的空中操控并避免电机饱和。滤波器所做的调整被映射为触觉反馈，对操作员直观，并传达物理交互和即将发生的电机饱和的信息。通过使用基于六旋翼的全向空中操控器的实际实验，我们证明了所提方法在自由飞行中避免触觉反馈，在物理交互下提供方向一致的反馈，并可操作于多种操控任务。此外，消融研究进一步表明，饱和滤波器通过明确防止电机饱和并告知操作员纠正动作，提高了交互稳定性。",
+  "tldr_zh": "提出安全滤波器，避免自由飞行误触觉，提升空中操控稳定性。",
+  "cover_zh": "空中机器人不再乱抖｜这个安全滤波器让操控稳如老狗",
+  "authors": [
+    {
+      "name": "Yubin Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinwoo Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Yongjun You",
+      "affiliation": ""
+    },
+    {
+      "name": "H. Jin Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Jeonghyun Byun",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-22",
+  "updated": "2026-08-22",
+  "arxiv_id": "2608.21735",
+  "pdf_url": "https://arxiv.org/pdf/2608.21735v1",
+  "abs_url": "http://arxiv.org/abs/2608.21735v1",
+  "venue": "IROS 2026",
+  "venue_announced": "2026-08-31",
+  "cover_image": "assets/img/covers/arxiv-2608-21735.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-21735-p2.jpg",
+    "assets/img/covers/arxiv-2608-21735-p3.jpg",
+    "assets/img/covers/arxiv-2608-21735-p4.jpg"
+  ],
+  "channels": [
+    "teleop"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 9,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（teleoperation、teleop）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "teleop",
+    "reason": "面向空中操作机器人的安全关键双边遥操作，含力觉反馈与控制屏障，属遥操作方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Seoul National University"
+  ],
+  "method_tags": [
+    "Control Barrier Functions",
+    "Teleoperation",
+    "Force-Sensorless Haptic Feedback"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
