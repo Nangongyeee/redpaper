@@ -1,0 +1,95 @@
+{
+  "id": "arxiv-2608-28075",
+  "source": "arxiv",
+  "title": "Plan Along the Way: Event-Triggered Foundation-Model Planning for TAMP Execution in Partially Observable Manipulation",
+  "title_zh": "沿途规划：部分可观测操作中TAMP执行的事件触发基础模型规划",
+  "abstract": "Manipulation in partially observable environments requires planning under incomplete scene information. In such settings, an initially valid plan may execute successfully yet remain insufficient for task completion. Existing foundation-model-guided task and motion planning (TAMP) systems can generate useful long-horizon task decompositions, subgoals, or constraints, but they often assume having access to a fully specified scene state or invoke model-level replanning after a subgoal, refinement, or execution attempt fails. We present ROBUST TAMP, a modular LLM/VLM-guided planning framework for reactive TAMP where unseen task-relevant and non-target objects may become visible during execution. The framework restricts the foundation-model planner to the currently visible relational scene state, validates generated task-level actions against a strict executable interface, and routes the accepted actions to scene-specific execution adapters. Object discovery is treated as a distinct replanning event and, after a stable execution horizon, the system reconstructs the visible scene state and replans using completed-action history and structured replanning event context. Evaluations are performed on six RLBench/CoppeliaSim kitchen and grill variants involving hidden objects, non-target object discovery, articulated-container interaction, and temporal manipulation procedures. We compare text-only LLM and VLM planners of different sizes under the same validation, execution, monitoring, and replanning pipeline, reporting task success, partial goal completion, discovery- and failure-triggered replanning behavior, implicit non-target-object handling, and planner inference cost.",
+  "abstract_zh": "在部分可观测环境中的操作需要在场景信息不完整的情况下进行规划。在这种情况下，初始有效的计划可能执行成功，但不足以完成任务。现有的基础模型引导的任务与运动规划（TAMP）系统可以生成有用的长时程任务分解、子目标或约束，但它们通常假设能够访问完全指定的场景状态，或者在子目标、细化或执行尝试失败后调用模型级重新规划。我们提出了ROBUST TAMP，一个模块化的LLM/VLM引导的规划框架，用于反应式TAMP，其中在执行过程中可能看到未见过的任务相关和非目标物体。该框架将基础模型规划器限制在当前可见的关系场景状态，通过严格的执行接口验证生成的任务级动作，并将接受的动作路由到特定场景的执行适配器。物体发现被视为一个独立的重新规划事件，在稳定的执行周期后，系统使用已完成动作历史和结构化的重新规划事件上下文重建可见场景状态并重新规划。在六个RLBench/CoppeliaSim厨房和烧烤变体上进行了评估，涉及隐藏物体、非目标物体发现、铰接容器交互和时间操作程序。我们在相同的验证、执行、监控和重新规划流程下比较了不同大小的纯文本LLM和VLM规划器，报告了任务成功率、部分目标完成度、发现和失败触发的重新规划行为、隐式非目标物体处理以及规划器推理成本。",
+  "tldr_zh": "提出ROBUST TAMP框架，利用事件触发重新规划处理部分可观测操作中的物体发现。",
+  "cover_zh": "机器人操作新突破！部分可观测环境下也能灵活规划，物体突然出现也能应对自如",
+  "authors": [
+    {
+      "name": "Puru Ojha",
+      "affiliation": ""
+    },
+    {
+      "name": "Narendhiran Vijayakumar",
+      "affiliation": ""
+    },
+    {
+      "name": "Nav Singhal",
+      "affiliation": ""
+    },
+    {
+      "name": "Girish Varma",
+      "affiliation": ""
+    },
+    {
+      "name": "Antony Thomas",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-28",
+  "updated": "2026-08-28",
+  "arxiv_id": "2608.28075",
+  "pdf_url": "https://arxiv.org/pdf/2608.28075v1",
+  "abs_url": "http://arxiv.org/abs/2608.28075v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-28075.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-28075-p2.jpg",
+    "assets/img/covers/arxiv-2608-28075-p3.jpg",
+    "assets/img/covers/arxiv-2608-28075-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 6,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（manipulation）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出事件触发的LLM/VLM规划框架，解决部分可观测操作中的TAMP问题，具有科研价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "IIIT Hyderabad"
+  ],
+  "method_tags": [
+    "TAMP",
+    "LLM/VLM-guided planning",
+    "replanning"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "CoppeliaSim"
+  ],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

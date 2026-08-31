@@ -1,0 +1,91 @@
+{
+  "id": "arxiv-2608-28108",
+  "source": "arxiv",
+  "title": "DeicticVLA: Unifying Instruction Modes Based on Language and Deictic Gestures in a Single VLA",
+  "title_zh": "DeicticVLA：在单一VLA中统一基于语言和指示手势的指令模式",
+  "abstract": "Vision-Language-Action models (VLAs) allow users to specify manipulation tasks in natural language, but distinguishing a target or placement goal among objects of the same category or similar appearance requires detailed expressions that VLAs may not use reliably. We propose DeicticVLA, which canonicalizes Language Instruction (LI), Vision-Language Instruction (VLI), and Visual Instruction (VI) into a text prompt and deictic masks through text-prompt completion and deictic gesture grounding, enabling a single pretrained VLA to handle all three instruction modes. With a shared backbone, demonstrations, and matched training steps, we compare two RGB visual prompting methods, two separate-channel mask prompting methods, and three training strategies in simulation. Under two-stage training, the four prompting methods achieve high in-distribution success but differ in their ability to use deictic masks in unseen layouts. Across methods, training-strategy ablations show that two-stage training improves such use, while retaining second-stage LI data mitigates forgetting without reducing VLI and VI performance. In three real-world tasks, one policy supports all modes. VLI and VI outperform LI under unseen expressions, appearance changes, and novel objects. For unseen categories, both achieve 100% success, compared with 16.7% for jointly trained LI. These results demonstrate the unified three-mode interface and guide DeicticVLA design.",
+  "abstract_zh": "视觉-语言-动作模型（VLA）允许用户以自然语言指定操作任务，但在同类或外观相似的物体中区分目标或放置位置时，需要详细的表达，而VLA可能无法可靠地使用这些表达。我们提出DeicticVLA，通过文本提示补全和指示手势接地，将语言指令（LI）、视觉-语言指令（VLI）和视觉指令（VI）规范化到文本提示和指示掩码中，使单个预训练VLA能够处理所有三种指令模式。在共享骨干网络、演示和匹配的训练步骤下，我们在仿真中比较了两种RGB视觉提示方法、两种分离通道掩码提示方法和三种训练策略。在两阶段训练下，四种提示方法在分布内任务中均取得高成功率，但在未见布局中使用指示掩码的能力上有所不同。跨方法的训练策略消融表明，两阶段训练提高了这种能力，而保留第二阶段LI数据可减轻遗忘，且不降低VLI和VI性能。在三个真实世界任务中，一个策略支持所有模式。在未见表达、外观变化和新物体下，VLI和VI优于LI。对于未见类别，两者均达到100%成功率，而联合训练的LI仅为16.7%。这些结果展示了统一的三模式接口，并指导了DeicticVLA的设计。",
+  "tldr_zh": "DeicticVLA统一语言和手势指令，在未见类别上VLI和VI成功率100%，远超LI的16.7%。",
+  "cover_zh": "手势+语言，一个模型全搞定？新VLA在未见物体上成功率100%！",
+  "authors": [
+    {
+      "name": "Kango Yanagida",
+      "affiliation": ""
+    },
+    {
+      "name": "Tatsuya Aoki",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuichiro Yoshikawa",
+      "affiliation": ""
+    },
+    {
+      "name": "Takato Horii",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-08-28",
+  "updated": "2026-08-28",
+  "arxiv_id": "2608.28108",
+  "pdf_url": "https://arxiv.org/pdf/2608.28108v1",
+  "abs_url": "http://arxiv.org/abs/2608.28108v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-28108.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-28108-p2.jpg",
+    "assets/img/covers/arxiv-2608-28108-p3.jpg",
+    "assets/img/covers/arxiv-2608-28108-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 9,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（vision-language-action、manipulation）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出统一语言与指示手势的VLA，多模态指令融合，仿真与真机验证，对操作策略研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The University of Osaka",
+    "The University of Tokyo"
+  ],
+  "method_tags": [
+    "VLA",
+    "deictic gesture grounding",
+    "visual prompting"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
