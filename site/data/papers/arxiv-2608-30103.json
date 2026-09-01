@@ -1,0 +1,93 @@
+{
+  "id": "arxiv-2608-30103",
+  "source": "arxiv",
+  "title": "Graph4BiLO: Graph Neural Network Approximation for Bilevel Mixed-Integer Linear Optimization",
+  "title_zh": "Graph4BiLO: Graph Neural Network Approximation for Bilevel Mixed-Integer Linear Optimization",
+  "abstract": "Bilevel mixed-integer linear optimization problems model hierarchical decision processes in which a leader anticipates the optimal response of a follower. Although expressive, these problems are computationally challenging because lower-level optimality is embedded in the leader's feasible region. Value-function reformulations replace the nested follower optimization with a constraint involving the follower's optimal value, but evaluating this value function exactly can itself be expensive. This paper introduces Graph4BiLO, a graph neural network (GNN) approach for learning bilevel value functions from variable--constraint graph representations. In contrast to fixed-length multilayer perceptron (MLP) representations, the GNN uses shared message-passing parameters and can therefore be applied across multiple problem sizes with a single trained model. The learned ReLU network is encoded exactly as mixed-integer linear constraints and embedded in an approximate single-level formulation. A repair step subsequently re-solves the follower problem for the selected leader decision to recover a bilevel-feasible follower response. We evaluate Graph4BiLO on knapsack interdiction instances with 20--100 items against the exact MibS solver and the learning-based Neur2BiLO method. Graph4BiLO obtains objective values comparable to Neur2BiLO across all tested sizes while avoiding size-specific neural networks. An additional out-of-distribution experiment demonstrates zero-shot transfer from 20-item training instances to previously unseen 40- and 60-item instances. However, embedding message passing at every graph node substantially increases the resulting mixed-integer formulation size and solve time. These results identify a central tradeoff between size-generalizable graph representations and the computational cost of embedding GNNs within optimization models.",
+  "abstract_zh": "Bilevel mixed-integer linear optimization problems model hierarchical decision processes in which a leader anticipates the optimal response of a follower. Although expressive, these problems are computationally challenging because lower-level optimality is embedded in the leader's feasible region. Value-function reformulations replace the nested follower optimization with a constraint involving the follower's optimal value, but evaluating this value function exactly can itself be expensive. This paper introduces Graph4BiLO, a graph neural network (GNN) approach for learning bilevel value functions from variable--constraint graph representations. In contrast to fixed-length multilayer perceptron (MLP) representations, the GNN uses shared message-passing parameters and can therefore be applied across multiple problem sizes with a single trained model. The learned ReLU network is encoded exactly as mixed-integer linear constraints and embedded in an approximate single-level formulation. A repair step subsequently re-solves the follower problem for the selected leader decision to recover a bilevel-feasible follower response. We evaluate Graph4BiLO on knapsack interdiction instances with 20--100 items against the exact MibS solver and the learning-based Neur2BiLO method. Graph4BiLO obtains objective values comparable to Neur2BiLO across all tested sizes while avoiding size-specific neural networks. An additional out-of-distribution experiment demonstrates zero-shot transfer from 20-item training instances to previously unseen 40- and 60-item instances. However, embedding message passing at every graph node substantially increases the resulting mixed-integer formulation size and solve time. These results identify a central tradeoff between size-generalizable graph representations and the computational cost of embedding GNNs within optimization models.",
+  "tldr_zh": "Bilevel mixed-integer linear optimization problems model hie",
+  "cover_zh": "Bilevel mixed-integer linear optimization problems model hie",
+  "authors": [
+    {
+      "name": "Jessica D. Elrefaei",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaixun Hua",
+      "affiliation": ""
+    },
+    {
+      "name": "Seungbae Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Hoang Nam Tran",
+      "affiliation": ""
+    },
+    {
+      "name": "Juan S. Borrero",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "arxiv_id": "2608.30103",
+  "pdf_url": "https://arxiv.org/pdf/2608.30103v1",
+  "abs_url": "http://arxiv.org/abs/2608.30103v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-30103.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-30103-p2.jpg",
+    "assets/img/covers/arxiv-2608-30103-p3.jpg",
+    "assets/img/covers/arxiv-2608-30103-p4.jpg"
+  ],
+  "channels": [
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（zero-shot transfer）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,80 @@
+{
+  "id": "arxiv-2608-29770",
+  "source": "arxiv",
+  "title": "Sampling-based Certified Planning with Graphs of Convex Sets",
+  "title_zh": "Sampling-based Certified Planning with Graphs of Convex Sets",
+  "abstract": "Planners on graphs of convex sets return trajectories that are collision-free by construction, provided the convex regions are collision-free. The region generator only promises that property probabilistically, and no planner in the family verifies it. We report the first measurement of what the gap costs. On a scaled 14-DOF bimanual library, $3.2\\%$ of interface samples are in collision, and a search-based GCS planner (\\gcsstar) turns that volume error into a $62\\%$ answer error: $18$ of $29$ pick-and-place queries return trajectories that drive the arms through the shelves, up to $91$\\,mm deep, reported as successes. Repairing the library does not work; a ten times stricter acceptance contract, sums-of-squares certified regions, and uniform margins each destroy the connectivity planning needs before they deliver soundness. We instead build a planner that certifies its answers. It samples the overlaps and shared faces of the decomposition, prunes with an admissible informed bound, and verifies the one candidate each search round proposes, continuously, by a chain of clearance certificate balls with no resolution parameter; failures are repaired with local in-region detours, and the convex polish is re-verified. Head-to-head on all $29$ task queries it delivers zero invalid answers against $21$ for the reference, reaches its first certified answer in $0.11$\\,s against $1.59$\\,s for the reference's unverified one, and reproduces the reference optimum exactly on every query whose reference answer is physically valid.",
+  "abstract_zh": "Planners on graphs of convex sets return trajectories that are collision-free by construction, provided the convex regions are collision-free. The region generator only promises that property probabilistically, and no planner in the family verifies it. We report the first measurement of what the gap costs. On a scaled 14-DOF bimanual library, $3.2\\%$ of interface samples are in collision, and a search-based GCS planner (gcsstar) turns that volume error into a $62\\%$ answer error: $18$ of $29$ pick-and-place queries return trajectories that drive the arms through the shelves, up to $91$\\,mm deep, reported as successes. Repairing the library does not work; a ten times stricter acceptance contract, sums-of-squares certified regions, and uniform margins each destroy the connectivity planning needs before they deliver soundness. We instead build a planner that certifies its answers. It samples the overlaps and shared faces of the decomposition, prunes with an admissible informed bound, and verifies the one candidate each search round proposes, continuously, by a chain of clearance certificate balls with no resolution parameter; failures are repaired with local in-region detours, and the convex polish is re-verified. Head-to-head on all $29$ task queries it delivers zero invalid answers against $21$ for the reference, reaches its first certified answer in $0.11$\\,s against $1.59$\\,s for the reference's unverified one, and reproduces the reference optimum exactly on every query whose reference answer is physically valid.",
+  "tldr_zh": "Planners on graphs of convex sets return trajectories that a",
+  "cover_zh": "Planners on graphs of convex sets return trajectories that a",
+  "authors": [
+    {
+      "name": "Peng Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Amr Alanwar",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-08-30",
+  "updated": "2026-08-30",
+  "arxiv_id": "2608.29770",
+  "pdf_url": "https://arxiv.org/pdf/2608.29770v1",
+  "abs_url": "http://arxiv.org/abs/2608.29770v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-29770.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-29770-p2.jpg",
+    "assets/img/covers/arxiv-2608-29770-p3.jpg",
+    "assets/img/covers/arxiv-2608-29770-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（bimanual、pick-and-place）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

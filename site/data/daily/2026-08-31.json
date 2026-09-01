@@ -1,0 +1,1002 @@
+{
+  "date": "2026-08-31",
+  "count": 18,
+  "papers": [
+    {
+      "id": "vid-bilibili-BV1Vst861EbR",
+      "source": "video_bilibili",
+      "title": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+      "title_zh": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+      "tldr_zh": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+      "cover_zh": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+      "abstract_zh": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-08-31",
+      "channels": [],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ AgiBot"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1Vst861EbR",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 50,
+      "judge": {},
+      "institutions": [
+        "智元AGIBOT"
+      ],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Vst861EbR",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1Vst861EbR&high_quality=1&autoplay=0",
+          "title": "智元开源数据集AGIBOT WORLD 2026第三期：强化学习，让机器人从经验中学习。",
+          "source": "channel"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30536",
+      "source": "arxiv",
+      "title": "Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks",
+      "title_zh": "Behavior-Skill: A Fine-Grained Benchmark for Evaluating Vision-Language-Action Policies in Long-Horizon Tasks",
+      "tldr_zh": "Reliable execution of long-horizon mobile manipulation tasks",
+      "cover_zh": "Reliable execution of long-horizon mobile manipulation tasks",
+      "abstract_zh": "Reliable execution of long-horizon mobile manipulation tasks remains challenging because overall task success depends on the successful completion of multiple constituent skills. Existing benchmarks, however, still rely primarily on full-task rollouts and aggregate task-level metrics, making intermediate failures difficult to observe and analyze. We present Behavior-Skill, a benchmark that reformulates the learning and evaluation of long-horizon tasks around executable constituent skills. It contains 235,492 skill instances from 10,000 demonstrations across 50 household tasks and 34 semantic skill categories. Each instance pairs a skill instruction with an aligned observation-action segment, and is further associated with a restorable intermediate state and a skill success condition to enable independent evaluation under valid preconditions. We further introduce trajectory-level and skill-level metrics to characterize policy capability beyond aggregate task success. Extensive experiments across representative VLA policies including pi0.5 and GR00T on the complete 50-task benchmark show that failures are highly non-uniform across skills, with contact-rich manipulation skills forming persistent bottlenecks. These results demonstrate that Behavior-Skill complements full-task evaluation by exposing intermediate capability profiles for analyzing and improving long-horizon VLA policies. Behavior-Skill is publicly available at https://github.com/nubot-nudt/Behavior-Skill.",
+      "authors": [
+        "Chunyun Ma",
+        "Lun Luo",
+        "Xingjian Luo"
+      ],
+      "authors_all": [
+        "Chunyun Ma",
+        "Lun Luo",
+        "Xingjian Luo",
+        "Xiexing Feng",
+        "Hang Zhang",
+        "Wei Liu",
+        "Feng Qiao",
+        "Yaonan Wang",
+        "Huimin Lu",
+        "Xieyuanli Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30536",
+      "abs_url": "http://arxiv.org/abs/2608.30536v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30536v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30237",
+      "source": "arxiv",
+      "title": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
+      "title_zh": "Motus2: A Self-Evolving General World Model for Dexterous Manipulation",
+      "tldr_zh": "General embodied agents should perceive, predict, act, evalu",
+      "cover_zh": "General embodied agents should perceive, predict, act, evalu",
+      "abstract_zh": "General embodied agents should perceive, predict, act, evaluate, and improve within a unified system. World models have shown great promise in building such agents, yet existing models typically append an action output head to a world simulator, without coupling them into a closed decision-and-learning loop for policy improvement. We present Motus2, a self-evolving general world model for dexterous manipulation. Motus2 advances world modeling through model scaling and data scaling. For model scaling, a single model with shared weights exposes three control interfaces: a policy (world-action model), a simulator (action-conditioned world model), and an evaluator (value model). The policy proposes candidate action chunks, the simulator predicts their visual consequences, and the evaluator assesses the predicted outcomes. Their coupling forms a closed decision-and-learning loop for policy improvement. This formulation uses curated expert demonstrations for action learning, while failed and suboptimal interactions provide valuable evidence for dynamics modeling and value learning. For data scaling, Motus2 progresses from large-scale monocular egocentric data to synchronized stereo egocentric data, followed by robot-domain adaptation with robot trajectories and supplementary human-robot alignment data. Motus2 further studies global-autoregressive and hybrid-memory extensions of its sliding-window context, adds tactile feedback for contact-aware control, and is instantiated on a fully biomimetic platform with stereo vision, dual arms, dual dexterous hands, and tactile sensing. Together, egocentric data scaling and closed-loop general world model scaling provide a general path toward self-evolving dexterous manipulation.",
+      "authors": [
+        "Hongzhe Bi",
+        "Zihao Zhou",
+        "Yihang Tang"
+      ],
+      "authors_all": [
+        "Hongzhe Bi",
+        "Zihao Zhou",
+        "Yihang Tang",
+        "Jingrui Pang",
+        "Shuhe Huang",
+        "Haitian Liu",
+        "Runqing Wang",
+        "Shuai Huang",
+        "Yichen Wang",
+        "Yiming Cheng",
+        "Ruowen Zhao",
+        "Zhenghua Li",
+        "Hengkai Tan",
+        "Xiaolong Liu",
+        "Jinhui Wan",
+        "Jiabao Liu",
+        "Min Zhao",
+        "Fan Bao",
+        "Jun Zhu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30237.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30237-p2.jpg",
+        "assets/img/covers/arxiv-2608-30237-p3.jpg",
+        "assets/img/covers/arxiv-2608-30237-p4.jpg"
+      ],
+      "arxiv_id": "2608.30237",
+      "abs_url": "http://arxiv.org/abs/2608.30237v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30237v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30289",
+      "source": "arxiv",
+      "title": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
+      "title_zh": "CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding",
+      "tldr_zh": "Vision-language-action (VLA) models remain brittle in manipu",
+      "cover_zh": "Vision-language-action (VLA) models remain brittle in manipu",
+      "abstract_zh": "Vision-language-action (VLA) models remain brittle in manipulation tasks that require physical commonsense. Current physical VQA data is typically disembodied and misaligned with robot action domains. Egocentric videos are used only as auxiliary pre-training. It remains unclear whether improved VLM physical understanding actually benefits downstream action generation. Therefore, we present CometVLA to close this gap. We construct CometData and CometBench, an embodied physical VQA corpus and benchmark strictly aligned with the robot's action data and embodiment. We introduce Global Action Prior (GAP) tokens, a compact learnable bottleneck that isolates task-agnostic motion regularities and lets the action head consume physical commonsense without corrupting the pre-trained VLM backbone. We co-train CometVLA across the embodied data pyramid, spanning teleoperation, simulation, egocentric trajectories, and VQA layers. On real-world manipulation tasks and RoboTwin simulation, CometVLA consistently outperforms strong VLA baselines. Correlation analysis shows that stronger VLM performance on CometBench indicates higher VLA success rates. Results demonstrate that physical understanding pre-training genuinely benefits downstream manipulation.",
+      "authors": [
+        "Hanwen Wan",
+        "Dafeng Chi",
+        "Linbo Zhai"
+      ],
+      "authors_all": [
+        "Hanwen Wan",
+        "Dafeng Chi",
+        "Linbo Zhai",
+        "Tianao Shen",
+        "Yuzheng Zhuang",
+        "Tianle Zhang",
+        "Peidong Liu",
+        "Liang Lin",
+        "Xiaoqiang Ji"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30289.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30289-p2.jpg",
+        "assets/img/covers/arxiv-2608-30289-p3.jpg",
+        "assets/img/covers/arxiv-2608-30289-p4.jpg"
+      ],
+      "arxiv_id": "2608.30289",
+      "abs_url": "http://arxiv.org/abs/2608.30289v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30289v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30643",
+      "source": "arxiv",
+      "title": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models",
+      "title_zh": "Temporal Forcing: 4D Representation Alignment for Vision-Language-Action Models",
+      "tldr_zh": "Recent vision-language-action (VLA) methods improve manipula",
+      "cover_zh": "Recent vision-language-action (VLA) methods improve manipula",
+      "abstract_zh": "Recent vision-language-action (VLA) methods improve manipulation performance by aligning their representations with 3D scene geometry. However, these methods often struggle with long-horizon manipulation and observation aliasing between visually similar states due to a lack of temporal information: the 3D scene geometry captures only the current state, rather than how it has evolved over time. To resolve this, we present Temporal Forcing, a 4D representation alignment method for VLA models. Specifically, we first introduce a history pathway that enables a vanilla VLA model to summarize observation history into temporally aware latent representations. Then, the latent representations are aligned with the geometric features extracted by a pretrained 4D foundation model, which captures the evolving 3D world through temporally consistent geometric representations, enabling a deeper understanding of dynamic environments. Temporal Forcing reaches 98.8% on LIBERO, outperforming its base model by 2.2 points. On a physical hidden-placement task, it raises full-task success from 20.0% to 43.3%. Code will be publicly available.",
+      "authors": [
+        "Xingyu Ding",
+        "Yuzhong Zhao",
+        "Chunhai Zhao"
+      ],
+      "authors_all": [
+        "Xingyu Ding",
+        "Yuzhong Zhao",
+        "Chunhai Zhao",
+        "Yinghuan Shi",
+        "Chaoyang Zhao",
+        "Yifan Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30643",
+      "abs_url": "http://arxiv.org/abs/2608.30643v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30643v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30656",
+      "source": "arxiv",
+      "title": "APT: Anchor-aligned Perturbations for Tamper Localization in Fully Regenerated Images",
+      "title_zh": "APT: Anchor-aligned Perturbations for Tamper Localization in Fully Regenerated Images",
+      "tldr_zh": "Proactive tamper localization embeds an imperceptible signal",
+      "cover_zh": "Proactive tamper localization embeds an imperceptible signal",
+      "abstract_zh": "Proactive tamper localization embeds an imperceptible signal into an image prior to distribution, enabling pixel-level manipulation detection. Existing methods assume a spliced (SP) setting, where synthesized regions are composited onto the original background, leaving embedded signals intact. However, real-world diffusion-based inpainting operates in a fully regenerated (FR) setting, where the entire image undergoes denoising, disrupting background signals and rendering existing frameworks ineffective. We propose APT, a semi-fragile latent-space perturbation that embeds a dense, vector-wise localization signal. By aligning each spatial feature vector toward a fixed anchor direction, APT localizes tampering via the alignment disparity between synthesized foreground and anchor-aligned background features after inpainting. The proposed hard negative mining loss and noisy perturbation branch further enforce uniform alignment. Experiments on COCO demonstrate that APT achieves an FR IoU of 0.92, outperforming the strongest baseline (WAM, 0.84), while existing methods collapse to near-random performance (AUC 0.5), establishing APT as a practical forensic framework generalizable across tampering types unknown at test time.",
+      "authors": [
+        "Suhyeon Ha",
+        "Woo Jae Kim",
+        "Joonsung Jeon"
+      ],
+      "authors_all": [
+        "Suhyeon Ha",
+        "Woo Jae Kim",
+        "Joonsung Jeon",
+        "Sooel Son",
+        "Sung-eui Yoon"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 ECCV 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30656",
+      "abs_url": "http://arxiv.org/abs/2608.30656v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30656v1",
+      "venue": "ECCV 2026",
+      "venue_announced": "",
+      "score": 23,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30378",
+      "source": "arxiv",
+      "title": "PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies",
+      "title_zh": "PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies",
+      "tldr_zh": "Direct vision-language-action policies generate continuous r",
+      "cover_zh": "Direct vision-language-action policies generate continuous r",
+      "abstract_zh": "Direct vision-language-action policies generate continuous robot actions efficiently, but standard behavior cloning leaves two complementary gaps: their representations are not explicitly required to describe how the scene evolves over multiple time scales, and deployment trajectories of unequal quality are often reused without separating useful dynamics from undesirable behavior. We introduce method, a direct world-action policy that combines outcome-agnostic predictive learning with outcome-aware policy improvement. method first retains a local fixed-offset JEPA objective and adds trajectory-relative multi-horizon transition alignment at 25%, 50%, 75%, and 100% of the remaining episode. These training-only targets require the current policy representation to preserve both local physical changes and longer-range task progress, without supplying explicit future tokens to the action head. method then trains an independent distributional value critic on cumulative deployment trajectories, computes action-chunk-aligned $N$-step advantages, and converts them into positive, negative, or null text conditions for a flow-matching actor. Thus, every valid trajectory can teach what physically happened, while the actor is deployed only under the condition associated with relatively better actions. The multi-horizon predictor and critic are removed from online execution, preserving direct action generation from the current observation, language instruction, and proprioception. redclaim{Across the three simulation benchmarks, method achieves the strongest overall performance while preserving the direct actor's online execution path.}",
+      "authors": [
+        "Botong Zhao",
+        "Fang Yu",
+        "Tim"
+      ],
+      "authors_all": [
+        "Botong Zhao",
+        "Fang Yu",
+        "Tim",
+        "Senhua Zhu",
+        "Xinyuan Chen",
+        "Yue Lu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30378",
+      "abs_url": "http://arxiv.org/abs/2608.30378v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30378v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30122",
+      "source": "arxiv",
+      "title": "Aligning Multi-Trajectory Supervision with Policy Optimization for VLA Driving",
+      "title_zh": "Aligning Multi-Trajectory Supervision with Policy Optimization for VLA Driving",
+      "tldr_zh": "Vision-language-action (VLA) driving methods increasingly co",
+      "cover_zh": "Vision-language-action (VLA) driving methods increasingly co",
+      "abstract_zh": "Vision-language-action (VLA) driving methods increasingly combine multi-trajectory imitation learning with group-relative policy optimization (GRPO), making trajectory selection critical to final performance. However, some high-scoring trajectories that improve imitation can degrade subsequent GRPO by inducing advantage estimates misaligned with the current policy's feasible behavior distribution, driving updates away from safe and compliant behaviors. To address this, we propose a novel framework that aligns multi-trajectory supervision with policy optimization. To address the policy gradient bias induced by infeasible noisy trajectories outside the feasible region, augmented trajectories are constrained to a neighboring manifold of the ground-truth feasible region, and a Pareto-optimality criterion is adopted in place of the conventional aggregate score, retaining only non-dominated candidates and thereby filtering out conflicting samples at the source. To ensure that expanded trajectory supervision is effectively absorbed during policy optimization, we introduce two complementary mechanisms: feasibility-first advantage assignment and dynamic distillation. The former adapts Pareto credit to the feasibility composition of each rollout group and guides fully infeasible groups toward safe references. The latter updates teacher trajectories across refinement rounds to continually transfer useful supervision. Together, they progressively translate the benefits of expanded supervision into policy improvement. On NAVSIM v1 and v2, our method achieves 91.4 PDMS and 89.1 EPDMS, respectively, under single-trajectory inference, and recovers 440 of 658 initially failed scenes, 11.1\\% higher than the original GRPO baseline.",
+      "authors": [
+        "Tian Zhang",
+        "Zhuo Huang",
+        "Hongrui Ye"
+      ],
+      "authors_all": [
+        "Tian Zhang",
+        "Zhuo Huang",
+        "Hongrui Ye",
+        "Yu Wu",
+        "Zengmao Wang",
+        "Kaixuan Zhou"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30122.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30122-p2.jpg",
+        "assets/img/covers/arxiv-2608-30122-p3.jpg",
+        "assets/img/covers/arxiv-2608-30122-p4.jpg"
+      ],
+      "arxiv_id": "2608.30122",
+      "abs_url": "http://arxiv.org/abs/2608.30122v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30122v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30103",
+      "source": "arxiv",
+      "title": "Graph4BiLO: Graph Neural Network Approximation for Bilevel Mixed-Integer Linear Optimization",
+      "title_zh": "Graph4BiLO: Graph Neural Network Approximation for Bilevel Mixed-Integer Linear Optimization",
+      "tldr_zh": "Bilevel mixed-integer linear optimization problems model hie",
+      "cover_zh": "Bilevel mixed-integer linear optimization problems model hie",
+      "abstract_zh": "Bilevel mixed-integer linear optimization problems model hierarchical decision processes in which a leader anticipates the optimal response of a follower. Although expressive, these problems are computationally challenging because lower-level optimality is embedded in the leader's feasible region. Value-function reformulations replace the nested follower optimization with a constraint involving the follower's optimal value, but evaluating this value function exactly can itself be expensive. This paper introduces Graph4BiLO, a graph neural network (GNN) approach for learning bilevel value functions from variable--constraint graph representations. In contrast to fixed-length multilayer perceptron (MLP) representations, the GNN uses shared message-passing parameters and can therefore be applied across multiple problem sizes with a single trained model. The learned ReLU network is encoded exactly as mixed-integer linear constraints and embedded in an approximate single-level formulation. A repair step subsequently re-solves the follower problem for the selected leader decision to recover a bilevel-feasible follower response. We evaluate Graph4BiLO on knapsack interdiction instances with 20--100 items against the exact MibS solver and the learning-based Neur2BiLO method. Graph4BiLO obtains objective values comparable to Neur2BiLO across all tested sizes while avoiding size-specific neural networks. An additional out-of-distribution experiment demonstrates zero-shot transfer from 20-item training instances to previously unseen 40- and 60-item instances. However, embedding message passing at every graph node substantially increases the resulting mixed-integer formulation size and solve time. These results identify a central tradeoff between size-generalizable graph representations and the computational cost of embedding GNNs within optimization models.",
+      "authors": [
+        "Jessica D. Elrefaei",
+        "Kaixun Hua",
+        "Seungbae Kim"
+      ],
+      "authors_all": [
+        "Jessica D. Elrefaei",
+        "Kaixun Hua",
+        "Seungbae Kim",
+        "Hoang Nam Tran",
+        "Juan S. Borrero"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-31",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30103.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30103-p2.jpg",
+        "assets/img/covers/arxiv-2608-30103-p3.jpg",
+        "assets/img/covers/arxiv-2608-30103-p4.jpg"
+      ],
+      "arxiv_id": "2608.30103",
+      "abs_url": "http://arxiv.org/abs/2608.30103v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30103v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30144",
+      "source": "arxiv",
+      "title": "Rethinking Language's Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving",
+      "title_zh": "Rethinking Language's Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving",
+      "tldr_zh": "Vision-Language-Action (VLA) models are reshaping autonomous",
+      "cover_zh": "Vision-Language-Action (VLA) models are reshaping autonomous",
+      "abstract_zh": "Vision-Language-Action (VLA) models are reshaping autonomous driving (AD) by unifying perception, reasoning, and control through language, enabling semantic grounding, interpretable decisions, and better long-tail generalization. But language is expensive onboard: latency and memory budgets are tight, and autoregressive decoding is inherently sequential. This work reframes the central question as when and where language should act at inference, since inference cost recurs at every deployed frame while training cost is paid once. We introduce the Language Residue taxonomy to organize methods by their inference-time use of language: train-time-only supervision (L1), latent non-textual reasoning (L2), conditional invocation (L3), and full per-frame generation (L4). We review representative methods and tag each across five deployment axes (latency, parameters, memory, FLOPs, tokens), analyzing them on major open- and closed-loop driving benchmarks (e.g., nuScenes, NAVSIM, Bench2Drive). We further trace how efficient methods from NLP/LLM are adapted in AD, identifying the constraints and motivations driving these adaptations. A continuously updated repository will be available at Github.",
+      "authors": [
+        "Tongfei Guo",
+        "Lili Su"
+      ],
+      "authors_all": [
+        "Tongfei Guo",
+        "Lili Su"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30144.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30144-p2.jpg",
+        "assets/img/covers/arxiv-2608-30144-p3.jpg",
+        "assets/img/covers/arxiv-2608-30144-p4.jpg"
+      ],
+      "arxiv_id": "2608.30144",
+      "abs_url": "http://arxiv.org/abs/2608.30144v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30144v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30242",
+      "source": "arxiv",
+      "title": "CanonNav: Disentangling Navigation Behavior from Camera Geometry in Cross-Platform Visual Navigation",
+      "title_zh": "CanonNav: Disentangling Navigation Behavior from Camera Geometry in Cross-Platform Visual Navigation",
+      "tldr_zh": "While visual navigation has advanced through imitation learn",
+      "cover_zh": "While visual navigation has advanced through imitation learn",
+      "abstract_zh": "While visual navigation has advanced through imitation learning from cross-platform demonstrations, fully leveraging such data remains challenging. First, directly learning from image-trajectory pairs entangles navigation behavior with platform-dependent camera geometry. This hinders consistent learning by forcing the policy to implicitly infer camera geometry from visual observations, an inherently ill-posed problem. Second, imitation learning from demonstrated trajectories captures the expert's chosen motion but leaves the intermediate decisions underlying that motion implicit. To address these issues, we propose CanonNav, a visual navigation framework that disentangles navigation behavior from camera geometry and incorporates complementary planning supervision into learning from cross-platform demonstrations. CanonNav introduces camera geometry canonicalization, which transforms visual observations and trajectories into a camera-consistent representation space. Building on this representation, we derive safety and local-progress supervision using pseudo-labels from an offline traversability estimator. Safety supervision penalizes unsafe trajectories, while local-progress supervision guides where the robot should advance. Experiments across diverse camera configurations and environments show that, despite using only RGB at inference, CanonNav consistently outperforms RGB-based baselines and even surpasses RGB-D-based methods in challenging scenarios.",
+      "authors": [
+        "Dong-Wook Kim",
+        "Ji-Hoon Hwang",
+        "E-In Son"
+      ],
+      "authors_all": [
+        "Dong-Wook Kim",
+        "Ji-Hoon Hwang",
+        "E-In Son",
+        "Mintaek Oh",
+        "Seung-Woo Seo"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30242.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30242-p2.jpg",
+        "assets/img/covers/arxiv-2608-30242-p3.jpg",
+        "assets/img/covers/arxiv-2608-30242-p4.jpg"
+      ],
+      "arxiv_id": "2608.30242",
+      "abs_url": "http://arxiv.org/abs/2608.30242v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30242v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30301",
+      "source": "arxiv",
+      "title": "Data-Centric Neuromotor Interfaces for Portable Human-Machine Interaction",
+      "title_zh": "Data-Centric Neuromotor Interfaces for Portable Human-Machine Interaction",
+      "tldr_zh": "Dexterous human-machine interaction requires intuitive and e",
+      "cover_zh": "Dexterous human-machine interaction requires intuitive and e",
+      "abstract_zh": "Dexterous human-machine interaction requires intuitive and expressive interfaces that can be efficiently deployed on constrained edge devices. Flexible material-based neuromotor interfaces hold considerable promise, as they decode human movement intention into natural control. Although emerging flexible electronic skins enable wearable high-fidelity data acquisition, practical deployment inevitably involves trade-offs between computational resources and portability. We present a data-centric paradigm where physiological features yield fundamental separability, providing sufficient discriminative cues for recognition. A wireless, high-bandwidth system developed for collecting various electrophysiological signals, when integrated with muscle-specific electrodes, forms a surface electromyography-based interface. Exploiting highly separable data, a 2,210-parameter model achieves 94.36% accuracy across 34 gestures and can be rapidly deployed on edge devices, establishing a new thousand-parameter benchmark for dexterous decoding. The underlying data-algorithm interactions in the data-centric paradigm are further clarified, demonstrating its feasibility in real-world scenarios. This study provides a principled and validated pathway for practical deployment of reliable neuromotor interfaces.",
+      "authors": [
+        "Jiaxuan Li",
+        "Di Wu",
+        "Jianhua Liu"
+      ],
+      "authors_all": [
+        "Jiaxuan Li",
+        "Di Wu",
+        "Jianhua Liu",
+        "Yuxin Zhao",
+        "Jinnuo Li",
+        "Xiao Zhang",
+        "Zhenzhi Ying",
+        "Changsheng Dai",
+        "Xiang Li",
+        "Liming Shu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30301.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30301-p2.jpg",
+        "assets/img/covers/arxiv-2608-30301-p3.jpg",
+        "assets/img/covers/arxiv-2608-30301-p4.jpg"
+      ],
+      "arxiv_id": "2608.30301",
+      "abs_url": "http://arxiv.org/abs/2608.30301v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30301v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30368",
+      "source": "arxiv",
+      "title": "SpectraTac: A Compact Camera-Free Optical Tactile Sensor with Distributed Color Sensing",
+      "title_zh": "SpectraTac: A Compact Camera-Free Optical Tactile Sensor with Distributed Color Sensing",
+      "tldr_zh": "Tactile sensing is essential for physical interaction in rob",
+      "cover_zh": "Tactile sensing is essential for physical interaction in rob",
+      "abstract_zh": "Tactile sensing is essential for physical interaction in robotics and human--machine systems. However, combining rich tactile information with compact hardware, low cost, and low computational overhead remains challenging. This work presents SpectraTac, a compact, camera-free optical tactile sensor that combines active red--green--blue (RGB) illumination with spatially distributed color sensing. Contact deforms a compliant transparent elastomer and modulates its internal light field, producing spatially differentiated changes in color and intensity. Three distributed color sensors capture these responses as low-dimensional spatio-spectral features, avoiding cameras, imaging optics, and high-dimensional image processing. The device measures 19.2 mm in diameter and 4 mm in height, with a material cost below USD~5. A data-driven decoding framework simultaneously estimates three-dimensional (3D) force and the contact region from the optical measurements. For 3D force prediction, the sensor achieved mean absolute errors (MAEs) of 0.161, 0.164, and 0.429 N along the x-, y-, and z-axes, respectively. The nine-region contact-classification accuracy was 99.9%. We further evaluated real-time 3D force tracking and contact-region-based human--machine interaction through an interactive control task. These results indicate that distributed color-resolved optical sensing offers a compact, low-cost alternative to camera-based tactile sensing for robotics, wearable sensing, and interactive systems.",
+      "authors": [
+        "Hao Wu",
+        "Haotian Guo",
+        "Yu Feng"
+      ],
+      "authors_all": [
+        "Hao Wu",
+        "Haotian Guo",
+        "Yu Feng",
+        "Yutong Wang",
+        "Yanzhe Wang",
+        "Jianshu Zhou"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30368.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30368-p2.jpg",
+        "assets/img/covers/arxiv-2608-30368-p3.jpg",
+        "assets/img/covers/arxiv-2608-30368-p4.jpg"
+      ],
+      "arxiv_id": "2608.30368",
+      "abs_url": "http://arxiv.org/abs/2608.30368v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30368v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30456",
+      "source": "arxiv",
+      "title": "Self-Supervised Pretext Tasks for Infant Cry Analysis: A Controlled Comparison and a Cautionary Result on Donateacry",
+      "title_zh": "Self-Supervised Pretext Tasks for Infant Cry Analysis: A Controlled Comparison and a Cautionary Result on Donateacry",
+      "tldr_zh": "We compare six self-supervised pretext tasks for infant cry",
+      "cover_zh": "We compare six self-supervised pretext tasks for infant cry",
+      "abstract_zh": "We compare six self-supervised pretext tasks for infant cry analysis under a fixed budget, meaning the same compact encoder of 1.17M parameters, the same 115 hours of license-verified public pretraining audio, and the same evaluation protocol for every candidate. On cry detection the reconstructive objectives dominate, and a linear probe over a masked-spectrogram encoder reaches 0.988 AUC with subject-wise splits even though the encoder never observed a cry during pretraining. On cry-reason classification over donateacry, the de facto public benchmark for cry reasons, every encoder performs at chance (0.38 to 0.54 macro AUC over 5 classes), and neither domain adaptation on 1.8 hours of real cries nor end-to-end fine-tuning moves the result. Since a frozen HuBERT-base with 80 times more parameters shows the same pattern, the bottleneck must sit in the labels and not in model capacity. We then reproduce the 90\\%+ accuracies of the donateacry literature on our own system by changing nothing but the evaluation protocol: clip-wise splits raise accuracy to 85.2% (barely above the 83.8% majority-class baseline), and applying augmentation before splitting raises it to 97.9%, matching the reported state of the art, from the same model that measures 0.49 macro AUC under subject-wise splits. Under leakage-free splits, a twentyfold augmentation of the labeled set (vocoder speaker perturbation and noise mixing, 21 hours) leaves cross-subject AUC unchanged: for this task the effective sample size is the number of infants. We release code, seeds and per-clip license manifests.",
+      "authors": [
+        "Luigi Simeone"
+      ],
+      "authors_all": [
+        "Luigi Simeone"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-31",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30456.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30456-p2.jpg",
+        "assets/img/covers/arxiv-2608-30456-p3.jpg",
+        "assets/img/covers/arxiv-2608-30456-p4.jpg"
+      ],
+      "arxiv_id": "2608.30456",
+      "abs_url": "http://arxiv.org/abs/2608.30456v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30456v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30506",
+      "source": "arxiv",
+      "title": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
+      "title_zh": "Anomaly Detection on Small Industrial Components via Vision-Based Tactile Sensing",
+      "tldr_zh": "Automated inspection of small industrial components, includi",
+      "cover_zh": "Automated inspection of small industrial components, includi",
+      "abstract_zh": "Automated inspection of small industrial components, including sub-centimetre-scale parts where defects are geometry-driven and poorly resolved by standard optical cameras, calls for sensing modalities that can directly capture fine surface geometry. Vision-based tactile sensors address this need by converting contact imprints into high-resolution image-like data compatible with existing deep-learning pipelines, yet their effective use for industrial anomaly detection (AD) remains largely unexplored. This work systematically evaluates unsupervised AD methods on a real tactile dataset covering five genuine industrial components acquired with a GelSight Mini sensor mounted on a collaborative robot. Four feature-embedding methods, SPADE, PaDiM, FAPM, and InReaCh, are compared under three validations explicitly motivated by the deployment constraints of contact-based sensing: a Good Fraction analysis establishing the minimum number of nominal contacts for stable performance, directly bounded by gel wear since every acquisition degrades the soft interface; a cross-position evaluation assessing generalization across different contact locations observing the same recurring surface pattern; and a low- versus high-resolution comparison evaluating the cost-benefit of higher-resolution tactile acquisition. Overall, this systematic benchmarking study provides practical guidance for researchers and practitioners adopting vision-based tactile sensing for industrial AD and shows how this modality can serve as a viable alternative for industrial quality-control tasks.",
+      "authors": [
+        "G. F. Preziosa",
+        "M. Casiglia",
+        "M. Faroni"
+      ],
+      "authors_all": [
+        "G. F. Preziosa",
+        "M. Casiglia",
+        "M. Faroni",
+        "A. M. Zanchettin",
+        "P. Rocco"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-30506.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-30506-p2.jpg",
+        "assets/img/covers/arxiv-2608-30506-p3.jpg",
+        "assets/img/covers/arxiv-2608-30506-p4.jpg"
+      ],
+      "arxiv_id": "2608.30506",
+      "abs_url": "http://arxiv.org/abs/2608.30506v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30506v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30396",
+      "source": "arxiv",
+      "title": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "title_zh": "Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation",
+      "tldr_zh": "Long-horizon physical-world agents must reason over distant",
+      "cover_zh": "Long-horizon physical-world agents must reason over distant",
+      "abstract_zh": "Long-horizon physical-world agents must reason over distant goals while grounding decisions in reliable closed-loop behavior. Today's foundation models split these capabilities: vision-language models (VLMs) infer missing information and adapt high-level plans but remain brittle and inefficient at repeated navigation grounding, while navigation foundation models (NFMs) robustly execute semantic goals but operate as bounded episodes without persistent task-level reasoning. We introduce NavMCP, an agentic scaffolding framework that couples a VLM reasoning agent with an NFM executor for long-horizon exploration. The VLM decides what evidence to seek, where to search, and when to stop, while the NFM grounds each semantic sub-goal into closed-loop navigation. Three channels structure their collaboration: intent translates evidence needs into navigation calls, observation converts rollouts into source-grounded trajectory evidence, and memory accumulates findings, negative evidence, and unresolved goals across calls. This design turns isolated navigation rollouts into persistent embodied interaction without retraining either model. On Embodied Question Answering, NavMCP achieves state-of-the-art results on HM-EQA, MT-HM3D, and EXPRESS-Bench. Under matched agent and executor backbones, it outperforms an episodic interface by 14.9 percentage points on HM-EQA. On a Unitree Go2, NavMCP reaches 78.3% success, with its margin over the strongest baseline growing from 10 to 45 points as the task horizon increases. These results demonstrate the potential of scaffolding complementary foundation models into long-horizon physical-world agents.",
+      "authors": [
+        "Zixing Lei",
+        "Gengze Zhou",
+        "Xiong-Hui Chen"
+      ],
+      "authors_all": [
+        "Zixing Lei",
+        "Gengze Zhou",
+        "Xiong-Hui Chen",
+        "Jiazhao Zhang",
+        "Yiyang Huang",
+        "Hang Yin",
+        "Haoqi Yuan",
+        "Qi Wu",
+        "Weixin Li",
+        "Siheng Chen"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-31",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30396",
+      "abs_url": "http://arxiv.org/abs/2608.30396v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30396v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30451",
+      "source": "arxiv",
+      "title": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "title_zh": "SeqAlign3DVG: A Sequence-Aligned Benchmark and Voxel Reasoning Framework for 3D Visual Grounding",
+      "tldr_zh": "Image-based 3D visual grounding is critical for embodied age",
+      "cover_zh": "Image-based 3D visual grounding is critical for embodied age",
+      "abstract_zh": "Image-based 3D visual grounding is critical for embodied agents, yet existing benchmarks suffer from loose text-observation alignment and neglect temporal ordering. We introduce SeqAlign3DVG, a novel benchmark dedicated to temporally ordered and strictly observation-aligned image-based 3D visual grounding. Unlike prior works using order-agnostic views or global point clouds, SeqAlign3DVG ensures all expressions are human-verified and strictly grounded in the provided RGB observations (single frames or ordered observation sequences). It comprises 9,622 single-view and 14,493 sequence samples featuring rich descriptions, complex relations, and multi-instance ambiguities. To tackle this benchmark, we propose a unified voxel-based pipeline featuring Relevance-Ordered Voxel Memory (ROVM) and Progressive Language-Voxel Fusion (PLVF). ROVM dynamically ranks and aggregates multi-view evidence via a conservative memory to mitigate noisy observations, while PLVF performs coarse-to-fine spatial-linguistic reasoning for precise disambiguation. Our approach achieves state-of-the-art performance under the depth-free protocol, significantly improving localization for targets defined by complex relations and appearance cues.",
+      "authors": [
+        "Yi Zhang",
+        "Yi Wang",
+        "Yueting Wu"
+      ],
+      "authors_all": [
+        "Yi Zhang",
+        "Yi Wang",
+        "Yueting Wu",
+        "Kaiyue Yang",
+        "Yuejiao Su",
+        "Lap-Pui Chau"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30451",
+      "abs_url": "http://arxiv.org/abs/2608.30451v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30451v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-30654",
+      "source": "arxiv",
+      "title": "Season-Aware Hybrid Convolutional-Transformer for Antarctic Sea Ice Concentration Forecasting",
+      "title_zh": "Season-Aware Hybrid Convolutional-Transformer for Antarctic Sea Ice Concentration Forecasting",
+      "tldr_zh": "Antarctic sea ice concentration (SIC) forecasting is an impo",
+      "cover_zh": "Antarctic sea ice concentration (SIC) forecasting is an impo",
+      "abstract_zh": "Antarctic sea ice concentration (SIC) forecasting is an important yet challenging task due to the coexistence of complex spatial structure, long-range temporal dependencies, and strong seasonal variability. Conventional convolution-based models are effective at capturing local spatial patterns, but often have limited ability to model long-term temporal evolution. To address these challenges, we build on a hybrid Convolutional-Transformer forecasting framework for monthly Antarctic SIC forecasting. This framework combines convolutional encoding for spatial feature extraction with factorised self-attention for spatio-temporal dependency modelling. We further introduce two seasonal prior mechanisms: a month-aware positional encoding that injects calendar-month information into the token representation, and a seasonal temporal bias that encourages attention to periodically related historical states. Experimental results show that the proposed framework achieves better performance than convolutional and recurrent baselines across both classification and regression metrics. Ablation studies further indicate that the seasonal prior mechanisms provide consistent additional gains in both short- and long-horizon prediction. These results demonstrate the value of combining convolutional structures, attention mechanisms, and periodic prior information for Antarctic SIC forecasting.",
+      "authors": [
+        "Danyang Li",
+        "John Taylor",
+        "Thang Bui"
+      ],
+      "authors_all": [
+        "Danyang Li",
+        "John Taylor",
+        "Thang Bui",
+        "Quanling Deng"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-31",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2608.30654",
+      "abs_url": "http://arxiv.org/abs/2608.30654v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.30654v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
