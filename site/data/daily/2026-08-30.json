@@ -64,6 +64,234 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-29998",
+      "source": "arxiv",
+      "title": "The Intervention Gap in Latent World Models",
+      "title_zh": "The Intervention Gap in Latent World Models",
+      "tldr_zh": "Planning-time intervention fidelity is a distinct, measurabl",
+      "cover_zh": "Planning-time intervention fidelity is a distinct, measurabl",
+      "abstract_zh": "Planning-time intervention fidelity is a distinct, measurable property of a learned world model: whether the model's own open-loop transitions move task variables the way matched environment interventions do. In the settings we test, it is neither revealed by reward fit nor ensured by task-anchored training. Across released TD-MPC2 checkpoint sizes, episode return falls as an operator-error diagnostic on task observables grows, while reward-prediction error stays small and nearly flat, and a self-supervised world model trained without task signal preserves the same operator substantially better than a task-anchored model on the shared task. A capture-gated matched-intervention audit then localizes what fails. On Cheetah, three LeWorldModel checkpoints capture the current task query and support decodable real intervention effects; however, their imagined five-step effects are worse than predicting no effect and worse than an environment-endpoint oracle. The failure is task-direction rotation with excess gain, not feature collapse. This severe pattern is conditional: five PreJEPA seeds retain an oracle-relative deficit without it, Finger Spin experiments extend the deficit beyond locomotion with heterogeneous severity across seeds, and shared-bank effect geometry is both candidate- and support-dependent. We also test practice-side questions. In DreamerV3 the posterior distribution, not its sample, carries the current query; ensemble disagreement ranks error only near training support; and a frozen support-aware score degrades held-out error ranking in both tested transfer directions while native disagreement remains informative in both. We conclude that intervention fidelity must be audited directly, capture-first, on the model's native interface.",
+      "authors": [
+        "Donna Vakalis"
+      ],
+      "authors_all": [
+        "Donna Vakalis"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-30",
+      "channels": [
+        "locomotion",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-29998.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-29998-p2.jpg",
+        "assets/img/covers/arxiv-2608-29998-p3.jpg",
+        "assets/img/covers/arxiv-2608-29998-p4.jpg"
+      ],
+      "arxiv_id": "2608.29998",
+      "abs_url": "http://arxiv.org/abs/2608.29998v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29998v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-29768",
+      "source": "arxiv",
+      "title": "SmoothRL: Online Reinforcement Learning During Asynchronous Execution",
+      "title_zh": "SmoothRL: Online Reinforcement Learning During Asynchronous Execution",
+      "tldr_zh": "Deploying robot policies in the physical world requires sati",
+      "cover_zh": "Deploying robot policies in the physical world requires sati",
+      "abstract_zh": "Deploying robot policies in the physical world requires satisfying two fundamental desiderata: reliability and smooth real-time execution. However, deploying state-of-the-art generalist models presents challenges on both fronts. Achieving the precision and robustness required for real-world deployment necessitates sample-efficient online reinforcement learning (RL) to adapt pretrained models. Meanwhile, the increasing scale of robot foundation models has led to higher inference latency. To satisfy real-time constraints under high latency, modern systems adopt asynchronous inference with action chunking, overlapping policy computation with chunk execution to hide latency and enable smooth control. Despite their complementary roles, integrating asynchronous execution with gradient-based online RL remains underexplored. We present SmoothRL, an online RL framework that fine-tunes a pretrained policy within an asynchronous inference loop. SmoothRL follows a value-gradient paradigm, directly updating policy parameters using gradients of the action-value function with respect to policy actions. To enable correct optimization under asynchronous execution, SmoothRL explicitly models the asynchronous inference process during training. Specifically, each generated action chunk is partitioned by frame index into three regions: a committed region, consisting of actions committed by the previous inference cycle; an execution region, containing newly generated actions executed by the robot; and a discarded region, containing actions superseded by the next inference cycle. Gradients are propagated only through the execution region, ensuring policy optimization aligns with the trajectory distribution induced by asynchronous execution. We evaluate SmoothRL on real-world robotic tasks requiring high precision, as well as highly dynamic tasks that necessitate asynchronous execution.",
+      "authors": [
+        "Guang Gao",
+        "Yuxuan Nong",
+        "Baifu Huang"
+      ],
+      "authors_all": [
+        "Guang Gao",
+        "Yuxuan Nong",
+        "Baifu Huang",
+        "Jianan Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-30",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-29768.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-29768-p2.jpg",
+        "assets/img/covers/arxiv-2608-29768-p3.jpg",
+        "assets/img/covers/arxiv-2608-29768-p4.jpg"
+      ],
+      "arxiv_id": "2608.29768",
+      "abs_url": "http://arxiv.org/abs/2608.29768v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29768v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-29910",
+      "source": "arxiv",
+      "title": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory",
+      "title_zh": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory",
+      "tldr_zh": "Interactive world models extend video generation from offlin",
+      "cover_zh": "Interactive world models extend video generation from offlin",
+      "abstract_zh": "Interactive world models extend video generation from offline clip synthesis toward persistent simulation of interactive virtual worlds, enabling applications in games, robotics, embodied agents, and XR. Achieving stable long-horizon interactive generation, however, remains challenging, as the model must simultaneously preserve scene geometry, dynamic consistency, and camera control while supporting real-time autoregressive generation. Building upon Matrix-Game 3.0, we present Matrix-Game 3.5, as shown in Figure 1, which advances real-time interactive world generation toward geometry-aware and long-horizon consistent simulation through three key improvements. First, we propose a unified geometry-aware memory framework, whose patch-memory and tiled-PRoPE components introduce no additional learnable parameters, combining explicit 3D patch retrieval with projective camera conditioning to enable geometry-consistent camera control and faithful long-horizon scene recall. Second, we introduce a static-dynamic disentangled world representation that separately models static scene geometry and dynamic subjects, preserving both geometric consistency and subject identity throughout long-horizon generation. Third, we develop a two-stage progressive real-time distillation framework that converts a bidirectional diffusion model into a few-step causal generator through Perceptual Flow Matching and curriculum based Self-Rollout DMD, enabling minute-long real-time interactive generation. Extensive experiments demonstrate that, with a unified training corpus spanning Unreal simulation environments, open-world games, and internet videos, MatrixGame 3.5 achieves strong performance in long-horizon scene recall, precise camera control, subject consistency, prompt-driven world generation, and stable real-time open-world interaction.",
+      "authors": [
+        "Runjia Qian",
+        "Zile Wang",
+        "Jihai Zhang"
+      ],
+      "authors_all": [
+        "Runjia Qian",
+        "Zile Wang",
+        "Jihai Zhang",
+        "Kai Zou",
+        "Wei Yu",
+        "Jiaxing Li",
+        "Zexiang Liu",
+        "Yaokun Li",
+        "Fei Kang",
+        "Kaichen Huang",
+        "Mengyin An",
+        "Haobo Zhang",
+        "Biao Jiang",
+        "Jiahua Wang",
+        "Haofeng Sun",
+        "Yang Liu",
+        "Yangguang Li"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-08-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-29910.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-29910-p2.jpg",
+        "assets/img/covers/arxiv-2608-29910-p3.jpg",
+        "assets/img/covers/arxiv-2608-29910-p4.jpg"
+      ],
+      "arxiv_id": "2608.29910",
+      "abs_url": "http://arxiv.org/abs/2608.29910v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29910v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2608-29772",
+      "source": "arxiv",
+      "title": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
+      "title_zh": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
+      "tldr_zh": "Learning-based autonomous driving (AD) systems can perform r",
+      "cover_zh": "Learning-based autonomous driving (AD) systems can perform r",
+      "abstract_zh": "Learning-based autonomous driving (AD) systems can perform reliably in familiar conditions, yet rare distribution shifts and long-tail events remain a major source of abrupt failure. A central limitation is that most agents learn primarily from passive experience and lack mechanisms to estimate when their competence is insufficient, seek timely assistance, and convert safety-critical encounters into targeted improvement. Here we present self-aware guided exploration (SAGE), an active learning framework for post-training adaptation in AD. SAGE learns a predictive world model that generates two online intrinsic signals: fear, which estimates short-horizon predictive risk and model uncertainty, and curiosity, which measures novelty through prediction error. Curiosity adaptively calibrates the intervention threshold for fear, allowing the agent to regulate risk in a context-dependent manner. When predicted fear exceeds this adaptive threshold, the agent transfers control to an expert or fallback policy and uses the resulting takeover trajectories for focused imitation learning. In parallel, fear is integrated into policy optimization and evaluation as a safety-oriented constraint to reduce performance regressions during adaptation. We evaluate SAGE in simulated route-transfer tasks, Waymo-based logged driving scenarios, CARLA occlusion hazards, and real-world mobile robot navigation tests. Across these settings, SAGE improves robustness in novel and safety-critical scenarios, reduces safety violations, and maintains task performance comparable to strong baseline policies. These results suggest that agents can improve after initial training by estimating the limits of their competence, requesting guidance when needed, and learning selectively from rare high-value events.",
+      "authors": [
+        "Dong Hu",
+        "Chao Huang",
+        "Carman K. M. Lee"
+      ],
+      "authors_all": [
+        "Dong Hu",
+        "Chao Huang",
+        "Carman K. M. Lee",
+        "Dimitrios Kanoulas"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-29772.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-29772-p2.jpg",
+        "assets/img/covers/arxiv-2608-29772-p3.jpg",
+        "assets/img/covers/arxiv-2608-29772-p4.jpg"
+      ],
+      "arxiv_id": "2608.29772",
+      "abs_url": "http://arxiv.org/abs/2608.29772v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29772v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-29967",
       "source": "arxiv",
       "title": "Training-Free Action Correction for VLA Model Failures via Language Feedback",
@@ -105,60 +333,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 22,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-29768",
-      "source": "arxiv",
-      "title": "SmoothRL: Online Reinforcement Learning During Asynchronous Execution",
-      "title_zh": "SmoothRL: Online Reinforcement Learning During Asynchronous Execution",
-      "tldr_zh": "Deploying robot policies in the physical world requires sati",
-      "cover_zh": "Deploying robot policies in the physical world requires sati",
-      "abstract_zh": "Deploying robot policies in the physical world requires satisfying two fundamental desiderata: reliability and smooth real-time execution. However, deploying state-of-the-art generalist models presents challenges on both fronts. Achieving the precision and robustness required for real-world deployment necessitates sample-efficient online reinforcement learning (RL) to adapt pretrained models. Meanwhile, the increasing scale of robot foundation models has led to higher inference latency. To satisfy real-time constraints under high latency, modern systems adopt asynchronous inference with action chunking, overlapping policy computation with chunk execution to hide latency and enable smooth control. Despite their complementary roles, integrating asynchronous execution with gradient-based online RL remains underexplored. We present SmoothRL, an online RL framework that fine-tunes a pretrained policy within an asynchronous inference loop. SmoothRL follows a value-gradient paradigm, directly updating policy parameters using gradients of the action-value function with respect to policy actions. To enable correct optimization under asynchronous execution, SmoothRL explicitly models the asynchronous inference process during training. Specifically, each generated action chunk is partitioned by frame index into three regions: a committed region, consisting of actions committed by the previous inference cycle; an execution region, containing newly generated actions executed by the robot; and a discarded region, containing actions superseded by the next inference cycle. Gradients are propagated only through the execution region, ensuring policy optimization aligns with the trajectory distribution induced by asynchronous execution. We evaluate SmoothRL on real-world robotic tasks requiring high precision, as well as highly dynamic tasks that necessitate asynchronous execution.",
-      "authors": [
-        "Guang Gao",
-        "Yuxuan Nong",
-        "Baifu Huang"
-      ],
-      "authors_all": [
-        "Guang Gao",
-        "Yuxuan Nong",
-        "Baifu Huang",
-        "Jianan Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-29768.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-29768-p2.jpg",
-        "assets/img/covers/arxiv-2608-29768-p3.jpg",
-        "assets/img/covers/arxiv-2608-29768-p4.jpg"
-      ],
-      "arxiv_id": "2608.29768",
-      "abs_url": "http://arxiv.org/abs/2608.29768v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29768v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -264,176 +438,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-29772",
-      "source": "arxiv",
-      "title": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
-      "title_zh": "Self-Aware Active Learning Enables Continual Improvement in Autonomous Driving",
-      "tldr_zh": "Learning-based autonomous driving (AD) systems can perform r",
-      "cover_zh": "Learning-based autonomous driving (AD) systems can perform r",
-      "abstract_zh": "Learning-based autonomous driving (AD) systems can perform reliably in familiar conditions, yet rare distribution shifts and long-tail events remain a major source of abrupt failure. A central limitation is that most agents learn primarily from passive experience and lack mechanisms to estimate when their competence is insufficient, seek timely assistance, and convert safety-critical encounters into targeted improvement. Here we present self-aware guided exploration (SAGE), an active learning framework for post-training adaptation in AD. SAGE learns a predictive world model that generates two online intrinsic signals: fear, which estimates short-horizon predictive risk and model uncertainty, and curiosity, which measures novelty through prediction error. Curiosity adaptively calibrates the intervention threshold for fear, allowing the agent to regulate risk in a context-dependent manner. When predicted fear exceeds this adaptive threshold, the agent transfers control to an expert or fallback policy and uses the resulting takeover trajectories for focused imitation learning. In parallel, fear is integrated into policy optimization and evaluation as a safety-oriented constraint to reduce performance regressions during adaptation. We evaluate SAGE in simulated route-transfer tasks, Waymo-based logged driving scenarios, CARLA occlusion hazards, and real-world mobile robot navigation tests. Across these settings, SAGE improves robustness in novel and safety-critical scenarios, reduces safety violations, and maintains task performance comparable to strong baseline policies. These results suggest that agents can improve after initial training by estimating the limits of their competence, requesting guidance when needed, and learning selectively from rare high-value events.",
-      "authors": [
-        "Dong Hu",
-        "Chao Huang",
-        "Carman K. M. Lee"
-      ],
-      "authors_all": [
-        "Dong Hu",
-        "Chao Huang",
-        "Carman K. M. Lee",
-        "Dimitrios Kanoulas"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-29772.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-29772-p2.jpg",
-        "assets/img/covers/arxiv-2608-29772-p3.jpg",
-        "assets/img/covers/arxiv-2608-29772-p4.jpg"
-      ],
-      "arxiv_id": "2608.29772",
-      "abs_url": "http://arxiv.org/abs/2608.29772v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29772v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-29910",
-      "source": "arxiv",
-      "title": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory",
-      "title_zh": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory",
-      "tldr_zh": "Interactive world models extend video generation from offlin",
-      "cover_zh": "Interactive world models extend video generation from offlin",
-      "abstract_zh": "Interactive world models extend video generation from offline clip synthesis toward persistent simulation of interactive virtual worlds, enabling applications in games, robotics, embodied agents, and XR. Achieving stable long-horizon interactive generation, however, remains challenging, as the model must simultaneously preserve scene geometry, dynamic consistency, and camera control while supporting real-time autoregressive generation. Building upon Matrix-Game 3.0, we present Matrix-Game 3.5, as shown in Figure 1, which advances real-time interactive world generation toward geometry-aware and long-horizon consistent simulation through three key improvements. First, we propose a unified geometry-aware memory framework, whose patch-memory and tiled-PRoPE components introduce no additional learnable parameters, combining explicit 3D patch retrieval with projective camera conditioning to enable geometry-consistent camera control and faithful long-horizon scene recall. Second, we introduce a static-dynamic disentangled world representation that separately models static scene geometry and dynamic subjects, preserving both geometric consistency and subject identity throughout long-horizon generation. Third, we develop a two-stage progressive real-time distillation framework that converts a bidirectional diffusion model into a few-step causal generator through Perceptual Flow Matching and curriculum based Self-Rollout DMD, enabling minute-long real-time interactive generation. Extensive experiments demonstrate that, with a unified training corpus spanning Unreal simulation environments, open-world games, and internet videos, MatrixGame 3.5 achieves strong performance in long-horizon scene recall, precise camera control, subject consistency, prompt-driven world generation, and stable real-time open-world interaction.",
-      "authors": [
-        "Runjia Qian",
-        "Zile Wang",
-        "Jihai Zhang"
-      ],
-      "authors_all": [
-        "Runjia Qian",
-        "Zile Wang",
-        "Jihai Zhang",
-        "Kai Zou",
-        "Wei Yu",
-        "Jiaxing Li",
-        "Zexiang Liu",
-        "Yaokun Li",
-        "Fei Kang",
-        "Kaichen Huang",
-        "Mengyin An",
-        "Haobo Zhang",
-        "Biao Jiang",
-        "Jiahua Wang",
-        "Haofeng Sun",
-        "Yang Liu",
-        "Yangguang Li"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-08-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-29910.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-29910-p2.jpg",
-        "assets/img/covers/arxiv-2608-29910-p3.jpg",
-        "assets/img/covers/arxiv-2608-29910-p4.jpg"
-      ],
-      "arxiv_id": "2608.29910",
-      "abs_url": "http://arxiv.org/abs/2608.29910v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29910v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-29998",
-      "source": "arxiv",
-      "title": "The Intervention Gap in Latent World Models",
-      "title_zh": "The Intervention Gap in Latent World Models",
-      "tldr_zh": "Planning-time intervention fidelity is a distinct, measurabl",
-      "cover_zh": "Planning-time intervention fidelity is a distinct, measurabl",
-      "abstract_zh": "Planning-time intervention fidelity is a distinct, measurable property of a learned world model: whether the model's own open-loop transitions move task variables the way matched environment interventions do. In the settings we test, it is neither revealed by reward fit nor ensured by task-anchored training. Across released TD-MPC2 checkpoint sizes, episode return falls as an operator-error diagnostic on task observables grows, while reward-prediction error stays small and nearly flat, and a self-supervised world model trained without task signal preserves the same operator substantially better than a task-anchored model on the shared task. A capture-gated matched-intervention audit then localizes what fails. On Cheetah, three LeWorldModel checkpoints capture the current task query and support decodable real intervention effects; however, their imagined five-step effects are worse than predicting no effect and worse than an environment-endpoint oracle. The failure is task-direction rotation with excess gain, not feature collapse. This severe pattern is conditional: five PreJEPA seeds retain an oracle-relative deficit without it, Finger Spin experiments extend the deficit beyond locomotion with heterogeneous severity across seeds, and shared-bank effect geometry is both candidate- and support-dependent. We also test practice-side questions. In DreamerV3 the posterior distribution, not its sample, carries the current query; ensemble disagreement ranks error only near training support; and a frozen support-aware score degrades held-out error ranking in both tested transfer directions while native disagreement remains informative in both. We conclude that intervention fidelity must be audited directly, capture-first, on the model's native interface.",
-      "authors": [
-        "Donna Vakalis"
-      ],
-      "authors_all": [
-        "Donna Vakalis"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-08-30",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-29998.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-29998-p2.jpg",
-        "assets/img/covers/arxiv-2608-29998-p3.jpg",
-        "assets/img/covers/arxiv-2608-29998-p4.jpg"
-      ],
-      "arxiv_id": "2608.29998",
-      "abs_url": "http://arxiv.org/abs/2608.29998v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29998v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
       "judge": {},
       "institutions": [],
       "method_tags": [],

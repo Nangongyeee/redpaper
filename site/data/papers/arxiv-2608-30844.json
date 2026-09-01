@@ -1,0 +1,107 @@
+{
+  "id": "arxiv-2608-30844",
+  "source": "arxiv",
+  "title": "Pretrained, Curriculum-Tuned, and Ensembled: A Tracer-Aware Interactive Segmentation Pipeline for AutoPET V",
+  "title_zh": "Pretrained, Curriculum-Tuned, and Ensembled: A Tracer-Aware Interactive Segmentation Pipeline for AutoPET V",
+  "abstract": "Interactive lesion segmentation in whole-body PET/CT requires a model to provide a strong initial prediction while also responding efficiently to sparse corrective scribbles during inference. This setting is particularly challenging because tracer distributions, physiological uptake patterns, lesion appearance, and acquisition characteristics differ substantially between FDG and PSMA studies. We present TRIAGE, Tracer-aware Refinement via Interactive Anatomy-Guided sEgmentation. The core backbone is a 3D STU-Net initialized through masked autoencoding pre-training with an asynchronous masking strategy, aiming to learn transferable anatomical and cross-modal representations before task-specific fine-tuning. In parallel, we train an auxiliary organ segmentation model whose predictions provide explicit anatomical context and help distinguish physiological uptake from malignant lesions. A dedicated tracer classifier first routes each study to an FDG- or PSMA-specific branch. Within each branch, a first-stage segmentation model consumes CT, PET, and organ context to generate an initial lesion mask. The initial prediction is then combined with cumulative foreground/background scribbles and refined by a second interactive segmentation network. The FDG and PSMA branches share the same overall processing pipeline but are trained independently to account for tracer-specific appearance and error modes. We additionally employ curriculum-style training and model ensembling to improve robustness across interaction steps and heterogeneous cohorts. Experiments are conducted using the official AutoPET V data and ten-fold split; quantitative results, ablations, and final test-set performance are left as placeholders to be completed after the challenge evaluation. Code: https://github.com/Liiiii2101/AUTOPET2026-MEDAI.",
+  "abstract_zh": "Interactive lesion segmentation in whole-body PET/CT requires a model to provide a strong initial prediction while also responding efficiently to sparse corrective scribbles during inference. This setting is particularly challenging because tracer distributions, physiological uptake patterns, lesion appearance, and acquisition characteristics differ substantially between FDG and PSMA studies. We present TRIAGE, Tracer-aware Refinement via Interactive Anatomy-Guided sEgmentation. The core backbone is a 3D STU-Net initialized through masked autoencoding pre-training with an asynchronous masking strategy, aiming to learn transferable anatomical and cross-modal representations before task-specific fine-tuning. In parallel, we train an auxiliary organ segmentation model whose predictions provide explicit anatomical context and help distinguish physiological uptake from malignant lesions. A dedicated tracer classifier first routes each study to an FDG- or PSMA-specific branch. Within each branch, a first-stage segmentation model consumes CT, PET, and organ context to generate an initial lesion mask. The initial prediction is then combined with cumulative foreground/background scribbles and refined by a second interactive segmentation network. The FDG and PSMA branches share the same overall processing pipeline but are trained independently to account for tracer-specific appearance and error modes. We additionally employ curriculum-style training and model ensembling to improve robustness across interaction steps and heterogeneous cohorts. Experiments are conducted using the official AutoPET V data and ten-fold split; quantitative results, ablations, and final test-set performance are left as placeholders to be completed after the challenge evaluation. Code: https://github.com/Liiiii2101/AUTOPET2026-MEDAI.",
+  "tldr_zh": "Interactive lesion segmentation in whole-body PET/CT require",
+  "cover_zh": "Interactive lesion segmentation in whole-body PET/CT require",
+  "authors": [
+    {
+      "name": "Xinglong Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chunyao Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianyu Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaju Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Tao Tan",
+      "affiliation": ""
+    },
+    {
+      "name": "Yunchao Yin",
+      "affiliation": ""
+    },
+    {
+      "name": "Lishan Cai",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "arxiv_id": "2608.30844",
+  "pdf_url": "https://arxiv.org/pdf/2608.30844v1",
+  "abs_url": "http://arxiv.org/abs/2608.30844v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2608-30844.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2608-30844-p2.jpg",
+    "assets/img/covers/arxiv-2608-30844-p3.jpg",
+    "assets/img/covers/arxiv-2608-30844-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [],
+  "score": 24,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（whole-body）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

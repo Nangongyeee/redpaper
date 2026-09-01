@@ -1,0 +1,73 @@
+{
+  "id": "github-hustvl-dreamwam",
+  "source": "github",
+  "title": "hustvl/DreamWAM",
+  "title_zh": "hustvl/DreamWAM",
+  "abstract": "DreamWAM: Beyond RGB Future Prediction for World Action Models Shanglin Yuan 1,2,* &middot; Weiheng Zhao 1,2,* &middot; Xin Shi 2 &middot; Haoyi Jiang 1,2 &middot; Xianda Guo 3 &middot; Liu Liu 4 &middot; Wenyu Liu 1 &middot; Wei Sui 2,&dagger; &middot; Xinggang Wang 1,&Dagger; 1 Huazhong University of Science and Technology &middot; 2 D-Robotics &middot; 3 Wuhan University &middot; 4 Horizon Robotics * Equal contribution &middot; &dagger; Project Lead &middot; &Dagger; Corresponding Author This repository provides the official implementation of DreamWAM, which moves world action modeling beyond RGB by learning future appearance, motion, geometry, and semantics as complementary views of action-relevant state. It combines joint RGB-flow latent denoising with gated depth and DINO residual supervision, transferring structured future cues to action prediction through shared VideoDiT-ActionDiT attention. These beyond-RGB signals are used only during training, preserving RGB-only inference while improving robustness to visual perturbations. ## Contents - [Installation](#installation) - [Model Preparation](#model-preparation) - [Data Preparation](#data-preparation) - [Training](#training) - [Evaluation](#evaluation) - [Acknowledgments](#acknowledgments) - [Citation](#citation) ## Installation Run all commands from the repository root. Python 3.10 and CUDA 12.8 are recommended. ## Model Preparation Place the following upstream repositories and pretrained components at the repository-local targets shown below. | Component | Upstream source or weights | Local target | | --- | --- | --- | | DreamWAM checkpoints | [Hugging Face](https://huggingface.co/hustvl/DreamWAM) | `checkpoints/` | | Wan2.2 TI2V-5B | [Wan-AI/Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B) | `pretrained/Wan2.2-TI2V-5B/` | | RAFT | [source](https://github.com/princeton-vl/RAFT) and [weights](https://github.com/princeton-vl/RAFT/blob/master/download_models.sh) | `third_party/RAFT/`, `pretrained/",
+  "abstract_zh": "DreamWAM: Beyond RGB Future Prediction for World Action Models Shanglin Yuan 1,2,* &middot; Weiheng Zhao 1,2,* &middot; Xin Shi 2 &middot; Haoyi Jiang 1,2 &middot; Xianda Guo 3 &middot; Liu Liu 4 &middot; Wenyu Liu 1 &middot; Wei Sui 2,&dagger; &middot; Xinggang Wang 1,&Dagger; 1 Huazhong University of Science and Technology &middot; 2 D-Robotics &middot; 3 Wuhan University &middot; 4 Horizon Robotics * Equal contribution &middot; &dagger; Project Lead &middot; &Dagger; Corresponding Author This repository provides the official implementation of DreamWAM, which moves world action modeling beyond RGB by learning future appearance, motion, geometry, and semantics as complementary views of action-relevant state. It combines joint RGB-flow latent denoising with gated depth and DINO residual supervision, transferring structured future cues to action prediction through shared VideoDiT-ActionDiT attention. These beyond-RGB signals are used only during training, preserving RGB-only inference while improving robustness to visual perturbations. ## Contents - [Installation](#installation) - [Model Preparation](#model-preparation) - [Data Preparation](#data-preparation) - [Training](#training) - [Evaluation](#evaluation) - [Acknowledgments](#acknowledgments) - [Citation](#citation) ## Installation Run all commands from the repository root. Python 3.10 and CUDA 12.8 are recommended. ## Model Preparation Place the following upstream repositories and pretrained components at the repository-local targets shown below. | Component | Upstream source or weights | Local target | | --- | --- | --- | | DreamWAM checkpoints | [Hugging Face](https://huggingface.co/hustvl/DreamWAM) | `checkpoints/` | | Wan2.2 TI2V-5B | [Wan-AI/Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B) | `pretrained/Wan2.2-TI2V-5B/` | | RAFT | [source](https://github.com/princeton-vl/RAFT) and [weights](https://github.com/princeton-vl/RAFT/blob/master/download_models.sh) | `third_party/RAFT/`, `pretrained/",
+  "tldr_zh": "DreamWAM: Beyond RGB Future Prediction for World Action Mode",
+  "cover_zh": "DreamWAM: Beyond RGB Future Prediction for World Action Mode",
+  "authors": [
+    {
+      "name": "hustvl",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-08-28",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/hustvl/DreamWAM",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 31,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 31,
+      "hint": "⭐ 36"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "官方实现的世界动作模型，结合视频预测与操作，代码模型齐全，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "世界模型"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "hustvl",
+    "repo": "DreamWAM",
+    "stars": 36,
+    "language": "Python",
+    "pushed_at": "2026-08-28",
+    "created_at": "2026-08-05",
+    "topics": [],
+    "archived": false
+  }
+}
