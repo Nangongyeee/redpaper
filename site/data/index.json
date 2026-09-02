@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T07:44:33.496905+00:00",
-  "count": 2405,
+  "generated_at": "2026-09-02T09:33:23.834612+00:00",
+  "count": 2406,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -87249,6 +87249,115 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-00751",
+      "source": "arxiv",
+      "title": "One Print, Many Moves: Monolithic Origami-inspired Folding Actuator for Composable Soft Multi-DoF Systems",
+      "title_zh": "One Print, Many Moves: Monolithic Origami-inspired Folding Actuator for Composable Soft Multi-DoF Systems",
+      "tldr_zh": "Conventional soft robot actuators excel in compliance, but t",
+      "cover_zh": "Conventional soft robot actuators excel in compliance, but t",
+      "abstract_zh": "Conventional soft robot actuators excel in compliance, but their uncontrolled deformations compromise accuracy and hinder scaling to multi-degree-of-freedom (DoF) systems. We introduce a MONOlithic ORIGAMI-inspired soft folding actuator design (MONORIGAMI) that establishes a design strategy based on spatially programmed stiffness anisotropy to preserve material compliance along desired folding directions while selectively restricting deformation in unwanted directions. The actuator leverages stiffness tiers based on material thickness, patterned in an origami-inspired geometry with facets and creases, converting unconstrained soft deformation into accurate, repeatable, and composable folding motions without additional reinforcements. The design is fully 3D-printable through a single-material, single-print process that requires no assembly. Each actuator serves as a scalable motion primitive, and linking and orienting multiple actuators mechanically programs multi-DoF trajectories. Using the same fundamental module, we demonstrate three 3D-printed soft multi-DoF robotic systems spanning distinct application domains: (1) a compact 4-DoF wearable haptic device for high-fidelity cutaneous feedback in virtual reality (VR), (2) a 3-DoF joystick for kinesthetic feedback in teleoperation, and (3) a modular robotic gripper capable of underwater operation with geometry-encoded grasp trajectories. These systems demonstrate the module's capabilities for compact multi-axis integration, controlled physical interaction, and geometry-programmed operation across different environments. Together, these results show that MONORIGAMI provides a general, composable, accessible, reliable, and scalable platform for high-precision soft multi-DoF robotics, addressing long-standing limitations in both soft actuator design and fabrication.",
+      "authors": [
+        "Jaehyung Jang",
+        "Zhenish Zhakypov",
+        "Jasmin Elena Palmer"
+      ],
+      "authors_all": [
+        "Jaehyung Jang",
+        "Zhenish Zhakypov",
+        "Jasmin Elena Palmer",
+        "Melissa Klein",
+        "Jee-Hwan Ryu",
+        "Allison Mariko Okamura"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-01",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-00751.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-00751-p2.jpg",
+        "assets/img/covers/arxiv-2609-00751-p3.jpg",
+        "assets/img/covers/arxiv-2609-00751-p4.jpg"
+      ],
+      "arxiv_id": "2609.00751",
+      "abs_url": "http://arxiv.org/abs/2609.00751v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.00751v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-01215",
+      "source": "arxiv",
+      "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
+      "title_zh": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
+      "tldr_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$,",
+      "cover_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$,",
+      "abstract_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$, RT-2, RDT-1B -- are monolithic: they emit raw motor commands or short action chunks without organizing behavior into reusable abstractions, so they degrade on long-horizon tasks and resist interpretation. Existing skill-discovery methods sidestep the core question of when two action sequences are behaviorally equivalent, either clustering contrastive embeddings or delegating the judgment to a language model uncalibrated to the robot's dynamics. We introduce REFACTOR-VLA, a wake/sleep system for learning reusable skills. Its sleep phase clusters motor-program fragments under a Behavioral-Equivalence Kernel (BEK) computed from rollouts of a learned latent world model $M_φ$; its wake phase emits typed lambda terms over a Hindley--Milner-inspired vocabulary, consumed by a library-conditioned rectified-flow action decoder. Abstractions are admitted only if they pass Minimum Description Length and return-preservation gates. On LIBERO we report two findings. First, enlarging the world model from 188M to 430M parameters worsened performance on 4 of 4 suites, so capacity alone does not help. Second, the training objective matters far more: adding an auxiliary supervised contrastive (InfoNCE) loss during world-model warmup substantially improves sleep-phase clustering, giving Normalized Mutual Information at $n=3$ seeds of $0.462 ± 0.021$ (object), $0.867 ± 0.025$ (spatial), $0.915 ± 0.013$ (goal) and $0.754 ± 0.010$ (LIBERO-10), and beating the strongest published baseline on all 4 suites by a mean $Δ= +0.184$. Across providers ($n=12$) the 95% bootstrap confidence interval for mean pairwise NMI is $[0.683, 0.729]$ (mean $0.705$). The sleep phase also yields the first real-LIBERO task-language library: the decoder uses 2 of 3 admitted abstractions and rewrites all 256 sampled demonstrations.",
+      "authors": [
+        "Riyaaz Shaik",
+        "Chandru Venkataraman"
+      ],
+      "authors_all": [
+        "Riyaaz Shaik",
+        "Chandru Venkataraman"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-01",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-01215.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-01215-p2.jpg",
+        "assets/img/covers/arxiv-2609-01215-p3.jpg",
+        "assets/img/covers/arxiv-2609-01215-p4.jpg"
+      ],
+      "arxiv_id": "2609.01215",
+      "abs_url": "http://arxiv.org/abs/2609.01215v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01215v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2609-01518",
       "source": "arxiv",
       "title": "A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots",
@@ -87672,6 +87781,66 @@
       "github": {},
       "source_tags": [
         "qbitai"
+      ]
+    },
+    {
+      "id": "arxiv-2608-19891",
+      "source": "arxiv_discover",
+      "title": "EXIMO: VLM Guided Exploration of VLA Policies",
+      "title_zh": "EXIMO: VLM Guided Exploration of VLA Policies",
+      "tldr_zh": "How to efficiently finetune robot policies to learn new task",
+      "cover_zh": "How to efficiently finetune robot policies to learn new task",
+      "abstract_zh": "How to efficiently finetune robot policies to learn new tasks on the fly? State of the art robotic manipulation policies are based on behaviour cloning of large vision-language-action (VLA) models with billions of parameters on huge teleoperation datasets. While this simple approach has enabled significant advances for robotic manipulation, finetuning of VLA policies for learning new tasks still remains an open problem. In particular, collecting teleoperation datasets requires hundreds of hours of expensive human labour and the alternative, reinforcement learning (RL), can be notoriously sample-inefficient especially for long-horizon tasks. In addition, RL with VLAs imposes several challenges due to the model's size and architectural design. In this work, we propose EXIMO, an efficient algorithm for finetuning of VLA policies. EXIMO operates in three stages: explore, imitate, and optimize. During the explore phase, EXIMO equips the VLA with a vision language model (VLM) that acts as a planner. The VLM thinks and breaks down challenging long-horizon problems into shorter ones for the VLA. The VLM, together with the VLA, is used to collect an orchestrated dataset on new tasks. During the imitate phase, the VLA is finetuned with the orchestrated data. Finally, during the optimize stage, we use residual off-policy RL to further finetune the policy. In our experiments, we ablate all three stages of EXIMO and show that it outperforms existing approaches significantly in terms of sample-efficiency and final performance.",
+      "authors": [
+        "Bhavya Sukhija",
+        "Oliver Groth",
+        "Mohit Shridhar"
+      ],
+      "authors_all": [
+        "Bhavya Sukhija",
+        "Oliver Groth",
+        "Mohit Shridhar",
+        "Tim Hertweck",
+        "Michael Bloesch",
+        "Markus Wulfmeier",
+        "Abbas Abdolmaleki",
+        "Martin Riedmiller"
+      ],
+      "primary_category": "",
+      "published": "2026-08-20",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Mohit Shridhar"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-19891.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-19891-p2.jpg",
+        "assets/img/covers/arxiv-2608-19891-p3.jpg",
+        "assets/img/covers/arxiv-2608-19891-p4.jpg"
+      ],
+      "arxiv_id": "2608.19891",
+      "abs_url": "http://arxiv.org/abs/2608.19891v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19891v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 29,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
       ]
     },
     {
@@ -93692,57 +93861,6 @@
       "arxiv_id": "2609.00908",
       "abs_url": "http://arxiv.org/abs/2609.00908v1",
       "pdf_url": "https://arxiv.org/pdf/2609.00908v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 25,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-01215",
-      "source": "arxiv",
-      "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
-      "title_zh": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
-      "tldr_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$,",
-      "cover_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$,",
-      "abstract_zh": "Most vision-language-action (VLA) models -- OpenVLA, $π_0$, RT-2, RDT-1B -- are monolithic: they emit raw motor commands or short action chunks without organizing behavior into reusable abstractions, so they degrade on long-horizon tasks and resist interpretation. Existing skill-discovery methods sidestep the core question of when two action sequences are behaviorally equivalent, either clustering contrastive embeddings or delegating the judgment to a language model uncalibrated to the robot's dynamics. We introduce REFACTOR-VLA, a wake/sleep system for learning reusable skills. Its sleep phase clusters motor-program fragments under a Behavioral-Equivalence Kernel (BEK) computed from rollouts of a learned latent world model $M_φ$; its wake phase emits typed lambda terms over a Hindley--Milner-inspired vocabulary, consumed by a library-conditioned rectified-flow action decoder. Abstractions are admitted only if they pass Minimum Description Length and return-preservation gates. On LIBERO we report two findings. First, enlarging the world model from 188M to 430M parameters worsened performance on 4 of 4 suites, so capacity alone does not help. Second, the training objective matters far more: adding an auxiliary supervised contrastive (InfoNCE) loss during world-model warmup substantially improves sleep-phase clustering, giving Normalized Mutual Information at $n=3$ seeds of $0.462 ± 0.021$ (object), $0.867 ± 0.025$ (spatial), $0.915 ± 0.013$ (goal) and $0.754 ± 0.010$ (LIBERO-10), and beating the strongest published baseline on all 4 suites by a mean $Δ= +0.184$. Across providers ($n=12$) the 95% bootstrap confidence interval for mean pairwise NMI is $[0.683, 0.729]$ (mean $0.705$). The sleep phase also yields the first real-LIBERO task-language library: the decoder uses 2 of 3 admitted abstractions and rewrites all 256 sampled demonstrations.",
-      "authors": [
-        "Riyaaz Shaik",
-        "Chandru Venkataraman"
-      ],
-      "authors_all": [
-        "Riyaaz Shaik",
-        "Chandru Venkataraman"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-09-01",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-01215.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-01215-p2.jpg",
-        "assets/img/covers/arxiv-2609-01215-p3.jpg",
-        "assets/img/covers/arxiv-2609-01215-p4.jpg"
-      ],
-      "arxiv_id": "2609.01215",
-      "abs_url": "http://arxiv.org/abs/2609.01215v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.01215v1",
       "venue": "",
       "venue_announced": "",
       "score": 25,
@@ -116682,62 +116800,6 @@
       "arxiv_id": "2608.31002",
       "abs_url": "http://arxiv.org/abs/2608.31002v1",
       "pdf_url": "https://arxiv.org/pdf/2608.31002v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-00751",
-      "source": "arxiv",
-      "title": "One Print, Many Moves: Monolithic Origami-inspired Folding Actuator for Composable Soft Multi-DoF Systems",
-      "title_zh": "One Print, Many Moves: Monolithic Origami-inspired Folding Actuator for Composable Soft Multi-DoF Systems",
-      "tldr_zh": "Conventional soft robot actuators excel in compliance, but t",
-      "cover_zh": "Conventional soft robot actuators excel in compliance, but t",
-      "abstract_zh": "Conventional soft robot actuators excel in compliance, but their uncontrolled deformations compromise accuracy and hinder scaling to multi-degree-of-freedom (DoF) systems. We introduce a MONOlithic ORIGAMI-inspired soft folding actuator design (MONORIGAMI) that establishes a design strategy based on spatially programmed stiffness anisotropy to preserve material compliance along desired folding directions while selectively restricting deformation in unwanted directions. The actuator leverages stiffness tiers based on material thickness, patterned in an origami-inspired geometry with facets and creases, converting unconstrained soft deformation into accurate, repeatable, and composable folding motions without additional reinforcements. The design is fully 3D-printable through a single-material, single-print process that requires no assembly. Each actuator serves as a scalable motion primitive, and linking and orienting multiple actuators mechanically programs multi-DoF trajectories. Using the same fundamental module, we demonstrate three 3D-printed soft multi-DoF robotic systems spanning distinct application domains: (1) a compact 4-DoF wearable haptic device for high-fidelity cutaneous feedback in virtual reality (VR), (2) a 3-DoF joystick for kinesthetic feedback in teleoperation, and (3) a modular robotic gripper capable of underwater operation with geometry-encoded grasp trajectories. These systems demonstrate the module's capabilities for compact multi-axis integration, controlled physical interaction, and geometry-programmed operation across different environments. Together, these results show that MONORIGAMI provides a general, composable, accessible, reliable, and scalable platform for high-precision soft multi-DoF robotics, addressing long-standing limitations in both soft actuator design and fabrication.",
-      "authors": [
-        "Jaehyung Jang",
-        "Zhenish Zhakypov",
-        "Jasmin Elena Palmer"
-      ],
-      "authors_all": [
-        "Jaehyung Jang",
-        "Zhenish Zhakypov",
-        "Jasmin Elena Palmer",
-        "Melissa Klein",
-        "Jee-Hwan Ryu",
-        "Allison Mariko Okamura"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-01",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-00751.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-00751-p2.jpg",
-        "assets/img/covers/arxiv-2609-00751-p3.jpg",
-        "assets/img/covers/arxiv-2609-00751-p4.jpg"
-      ],
-      "arxiv_id": "2609.00751",
-      "abs_url": "http://arxiv.org/abs/2609.00751v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.00751v1",
       "venue": "",
       "venue_announced": "",
       "score": 19,
