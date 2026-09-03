@@ -1,0 +1,104 @@
+{
+  "id": "arxiv-2609-02222",
+  "source": "arxiv",
+  "title": "FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry",
+  "title_zh": "FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry",
+  "abstract": "Foot forward kinematics (FK) is widely used to improve proprioceptive legged odometry by providing reliable velocity constraints during foot support. Existing contact-aided estimators generally rely on binary contact decisions to determine whether the FK measurements of an entire foot should be trusted. However, contact does not necessarily imply FK reliability. Dynamic locomotion often involves partial support, toe dragging, and foot slip, causing binary contact decisions to accumulate significant drift over long trajectories. To address this limitation, we propose FOCUS (Foot Observation Confidence from Unannotated Simulation), which predicts a continuous FK reliability weight for each foot instead of estimating binary foot contact. Rather than replacing the model-based estimator, the predicted reliability weights are used to blend FK velocity observations with IMU-propagated body velocity and to adapt the observation covariance of an extended Kalman filter (EKF), enabling smooth reliability-aware fusion without hard contact switching. The network is trained from automatically generated simulation signals using an FK-weighted velocity consistency loss with lightweight simulator-contact regularization, without manually annotated continuous FK-reliability labels. The deployed model relies only on IMU and joint kinematic measurements, making it suitable for hardware platforms with unreliable torque sensing. Experiments demonstrate that FOCUS reduces absolute trajectory error (ATE) by 83.7% on simulated walking episodes, preserves simulated dynamic-motion fidelity in motion scale and spectral energy, reduces ATE by 70.8% across 19 real walking segments, and reduces mean ATE by 42.7% across four real dynamic-motion routines.",
+  "abstract_zh": "Foot forward kinematics (FK) is widely used to improve proprioceptive legged odometry by providing reliable velocity constraints during foot support. Existing contact-aided estimators generally rely on binary contact decisions to determine whether the FK measurements of an entire foot should be trusted. However, contact does not necessarily imply FK reliability. Dynamic locomotion often involves partial support, toe dragging, and foot slip, causing binary contact decisions to accumulate significant drift over long trajectories. To address this limitation, we propose FOCUS (Foot Observation Confidence from Unannotated Simulation), which predicts a continuous FK reliability weight for each foot instead of estimating binary foot contact. Rather than replacing the model-based estimator, the predicted reliability weights are used to blend FK velocity observations with IMU-propagated body velocity and to adapt the observation covariance of an extended Kalman filter (EKF), enabling smooth reliability-aware fusion without hard contact switching. The network is trained from automatically generated simulation signals using an FK-weighted velocity consistency loss with lightweight simulator-contact regularization, without manually annotated continuous FK-reliability labels. The deployed model relies only on IMU and joint kinematic measurements, making it suitable for hardware platforms with unreliable torque sensing. Experiments demonstrate that FOCUS reduces absolute trajectory error (ATE) by 83.7% on simulated walking episodes, preserves simulated dynamic-motion fidelity in motion scale and spectral energy, reduces ATE by 70.8% across 19 real walking segments, and reduces mean ATE by 42.7% across four real dynamic-motion routines.",
+  "tldr_zh": "Foot forward kinematics (FK) is widely used to improve propr",
+  "cover_zh": "Foot forward kinematics (FK) is widely used to improve propr",
+  "authors": [
+    {
+      "name": "Kaixin Feng",
+      "affiliation": ""
+    },
+    {
+      "name": "Angsong Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Shaopeng Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Enyu Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Peiwen Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Chuang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "You Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Haiyu Lan",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "arxiv_id": "2609.02222",
+  "pdf_url": "https://arxiv.org/pdf/2609.02222v1",
+  "abs_url": "http://arxiv.org/abs/2609.02222v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-02222.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-02222-p2.jpg",
+    "assets/img/covers/arxiv-2609-02222-p3.jpg",
+    "assets/img/covers/arxiv-2609-02222-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（locomotion、dynamic locomotion）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
