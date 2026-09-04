@@ -55,7 +55,9 @@
     "assets/img/covers/arxiv-2609-01938-p4.jpg"
   ],
   "channels": [
-    "manipulation"
+    "manipulation",
+    "teleop",
+    "sim2real"
   ],
   "badges": [
     {
@@ -76,7 +78,7 @@
   "source_tags": [
     "llm_discover"
   ],
-  "score": 35,
+  "score": 40,
   "score_breakdown": [
     {
       "id": "key_author",
@@ -88,13 +90,19 @@
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
-      "hint": "频道关键词命中 6 个（manipulation、dexterous、dexterous manipulation、robot hand）"
+      "hint": "频道关键词命中 10 个（manipulation、dexterous、dexterous manipulation、robot hand）"
     },
     {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 21 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 3 个频道"
     }
   ],
   "judge": {},
