@@ -1,0 +1,88 @@
+{
+  "id": "arxiv-2609-09148",
+  "source": "arxiv",
+  "title": "Proxy Policy Steering",
+  "title_zh": "Proxy Policy Steering",
+  "abstract": "Generalist robot policies carry broad manipulation priors from large-scale data, but specializing them to a new task remains the deployment bottleneck. This requires eliciting task-specific behavior from limited demonstrations without degrading their broad capabilities. We introduce Proxy Policy Steering (PPS), an inference-time adaptation method that resolves this challenge by training two lightweight proxy policies whose calibrated velocity-space difference steers the frozen base sampler. A reference proxy models the frozen base's behavior on target-task observations, and a task proxy, initialized from the reference, captures how this behavior changes under task supervision. Their difference forms a calibrated velocity-space residual that steers the frozen base sampler at every denoising step. We identify the conditions under which this residual isolates the change induced by task supervision, and validate them empirically. Because the base is never directly modified, its broad capabilities remain available at inference, including behaviors such as recovery from failure that the demonstrations themselves do not exercise. Adaptation requires only forward velocity predictions from the base, making PPS lightweight to train and applicable even without access to the base's parameters. On 8 real-world and 4 simulation manipulation tasks, PPS lifts the state-of-the-art pi 0.5 base policy by 53% absolute success rate on average, with zero-to-one gains on tasks the base never solves, while preserving the base's broad capabilities. PPS outperforms LoRA fine-tuning, from-scratch specialists, residual policies, and prior inference-time steering methods.",
+  "abstract_zh": "Generalist robot policies carry broad manipulation priors from large-scale data, but specializing them to a new task remains the deployment bottleneck. This requires eliciting task-specific behavior from limited demonstrations without degrading their broad capabilities. We introduce Proxy Policy Steering (PPS), an inference-time adaptation method that resolves this challenge by training two lightweight proxy policies whose calibrated velocity-space difference steers the frozen base sampler. A reference proxy models the frozen base's behavior on target-task observations, and a task proxy, initialized from the reference, captures how this behavior changes under task supervision. Their difference forms a calibrated velocity-space residual that steers the frozen base sampler at every denoising step. We identify the conditions under which this residual isolates the change induced by task supervision, and validate them empirically. Because the base is never directly modified, its broad capabilities remain available at inference, including behaviors such as recovery from failure that the demonstrations themselves do not exercise. Adaptation requires only forward velocity predictions from the base, making PPS lightweight to train and applicable even without access to the base's parameters. On 8 real-world and 4 simulation manipulation tasks, PPS lifts the state-of-the-art pi 0.5 base policy by 53% absolute success rate on average, with zero-to-one gains on tasks the base never solves, while preserving the base's broad capabilities. PPS outperforms LoRA fine-tuning, from-scratch specialists, residual policies, and prior inference-time steering methods.",
+  "tldr_zh": "Generalist robot policies carry broad manipulation priors fr",
+  "cover_zh": "Generalist robot policies carry broad manipulation priors fr",
+  "authors": [
+    {
+      "name": "Chuanruo Ning",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianrui Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei-Chiu Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Kuan Fang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-08",
+  "updated": "2026-09-08",
+  "arxiv_id": "2609.09148",
+  "pdf_url": "https://arxiv.org/pdf/2609.09148v1",
+  "abs_url": "http://arxiv.org/abs/2609.09148v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-09148.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-09148-p2.jpg",
+    "assets/img/covers/arxiv-2609-09148-p3.jpg",
+    "assets/img/covers/arxiv-2609-09148-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 19,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（generalist robot、pi 0.5、manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 19 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
