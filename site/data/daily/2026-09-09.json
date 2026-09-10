@@ -122,6 +122,65 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-10187",
+      "source": "arxiv",
+      "title": "3rd Place Solution to Human Motion Challenges in Real-World and Clinical Settings (MoCha) @ECCV2026: Language-Aligned Motion Representations for Domain-Generalizable UPDRS-Gait Severity Estimation",
+      "title_zh": "3rd Place Solution to Human Motion Challenges in Real-World and Clinical Settings (MoCha) @ECCV2026: Language-Aligned Motion Representations for Domain-Generalizable UPDRS-Gait Severity Estimation",
+      "tldr_zh": "In this work, we introduce language-aligned motion represent",
+      "cover_zh": "In this work, we introduce language-aligned motion represent",
+      "abstract_zh": "In this work, we introduce language-aligned motion representations for domain-generalizable UPDRS-Gait severity estimation, aiming to learn semantically structured motion features that generalize across heterogeneous clinical domains. We first learn motion representations using a Bi-GRU backbone that captures the temporal dynamics of SMPL sequences. Prior to model training, motion captions are generated offline using Qwen2.5-7B-Instruct. The backbone is then trained with both classification and text-alignment objectives to learn discriminative and semantically structured motion representations while accounting for the class imbalance present in the training data. We subsequently adapt the learned backbone independently to each source domain so that the model can capture domain-specific motion characteristics. The resulting source-specific models are then merged at the parameter level to consolidate complementary knowledge across source domains into a single domain-generalized model. To further mitigate class imbalance, we perform GPT-5.5-based pseudo labeling, and our final merged models for each site do not use any class-prior correction during inference. The resulting model is evaluated under the unseen-site setting of the MoCha Challenge, using Macro F1 as the primary evaluation metric. Our method achieves a macro-F1 of 0.57 on the hidden test set with only 637K active parameters at inference, ranking 3rd among 58 leaderboard entries in the MoCha 2026 Challenge. The challenge attracted 1,669 submissions from 112 participants and offered monetary prizes sponsored by Machine Medicine Technologies.",
+      "authors": [
+        "Soojie Kim",
+        "Muhammad Munsif",
+        "Minkyung Kim"
+      ],
+      "authors_all": [
+        "Soojie Kim",
+        "Muhammad Munsif",
+        "Minkyung Kim",
+        "Seungryul Baek"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-09",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 ECCV 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-10187.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-10187-p2.jpg",
+        "assets/img/covers/arxiv-2609-10187-p3.jpg",
+        "assets/img/covers/arxiv-2609-10187-p4.jpg"
+      ],
+      "arxiv_id": "2609.10187",
+      "abs_url": "http://arxiv.org/abs/2609.10187v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10187v1",
+      "venue": "ECCV 2026",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-b223936cf4",
       "source": "qbitai",
       "title": "具身机器人能搞定超市盘点吗？全球七万门店正在给出答案",
@@ -188,7 +247,8 @@
       "channels": [
         "manipulation",
         "locomotion",
-        "sim2real"
+        "sim2real",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -278,6 +338,61 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-09941",
+      "source": "arxiv",
+      "title": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy",
+      "title_zh": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy",
+      "tldr_zh": "Generalist robot policies have demonstrated strong generaliz",
+      "cover_zh": "Generalist robot policies have demonstrated strong generaliz",
+      "abstract_zh": "Generalist robot policies have demonstrated strong generalization across robotic manipulation tasks, yet their success rates remain limited in com- plex long-horizon scenarios. Recent methods improve Visual-Language-Action (VLA) policies through online reinforcement learning on real robots, but such training relies on costly physical interactions, suffers from low sample efficiency, and may introduce hardware and safety risks. World models offer a promising alternative by enabling policy optimization with imagined rollouts. However, long-horizon rollouts generated by world models often suffer from prediction hal- lucinations, producing biased state transitions that can mislead policy learning. To address this issue, we propose Hallucination-aware World Model-based Pol- icy Optimization (HaWMPO), a closed-loop reinforcement learning pipeline for VLA policy post-training with world models. Specifically, HaWMPO introduces an action-conditioned hallucination-aware model to estimate the reliability of gen- erated image sequences, and incorporates hallucination scores into group relative policy optimization through a Reward-Soft mechanism, suppressing unreliable ac- tion chunks during training. On the LIBERO benchmark, HaWMPO achieves the best average success rate, with gains of 15.0% over the base model and 2.8% over the strongest baseline; real-world experiments on a G1 robot further validate its effectiveness, raising the average success rate on two manipulation tasks from 67.5% to 80.0%.",
+      "authors": [
+        "Zengjue Chen",
+        "Peidong Liu",
+        "Jiawei Li"
+      ],
+      "authors_all": [
+        "Zengjue Chen",
+        "Peidong Liu",
+        "Jiawei Li",
+        "Qi Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-09",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-09941.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-09941-p2.jpg",
+        "assets/img/covers/arxiv-2609-09941-p3.jpg",
+        "assets/img/covers/arxiv-2609-09941-p4.jpg"
+      ],
+      "arxiv_id": "2609.09941",
+      "abs_url": "http://arxiv.org/abs/2609.09941v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09941v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2609-10506",
       "source": "arxiv",
       "title": "DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation",
@@ -324,6 +439,117 @@
       "venue": "",
       "venue_announced": "",
       "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-09597",
+      "source": "arxiv",
+      "title": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
+      "title_zh": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
+      "tldr_zh": "Accurate contact prediction is useful for robotic manipulati",
+      "cover_zh": "Accurate contact prediction is useful for robotic manipulati",
+      "abstract_zh": "Accurate contact prediction is useful for robotic manipulation only if it supports effective decisions. We investigate this connection using a compact, randomly initialized visuotactile world model, trajectory-level uncertainty calibration, and behavior-initialized actor-critic learning in imagination. On 160 MuJoCo Lift episodes, adding touch reduces endpoint-force prediction error from 1.058 to 0.228 N and interval-peak error from 2.724 to 0.523 N across three training seeds. However, tactile persistence achieves lower errors of 0.095 and 0.498 N, respectively. Two exploratory control rounds comprise 680 executions on 40 independent test initial conditions. A matched reward revision on fresh test environments increases in-distribution 10 cm lifting success from 20.0% to 93.3%, while success within an 8 N per-finger budget reaches only 33.3%, compared with 70.0% for force feedback. Calibration margins reduce force violations at the cost of task completion. In a separate study of public GelSight recordings, a force regressor achieves 0.04234 N error, but frame-level calibration covers only 15.80% of complete trajectories; trajectory-level calibration raises this to 87.36% at nominal 90% coverage. Together, these findings distinguish improvements in sensing and task reward from improvements in force-constrained control. The evidence is limited to public sensing records and simulator execution, without a demonstrated transfer between them.",
+      "authors": [
+        "Qinzhen Ma",
+        "Sida Peng"
+      ],
+      "authors_all": [
+        "Qinzhen Ma",
+        "Sida Peng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-09",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-09597.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-09597-p2.jpg",
+        "assets/img/covers/arxiv-2609-09597-p3.jpg",
+        "assets/img/covers/arxiv-2609-09597-p4.jpg"
+      ],
+      "arxiv_id": "2609.09597",
+      "abs_url": "http://arxiv.org/abs/2609.09597v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09597v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-09630",
+      "source": "arxiv",
+      "title": "JEPA Policy: Diffusion-Free Imitation Learning via Paired Action and Future Representation Prediction",
+      "title_zh": "JEPA Policy: Diffusion-Free Imitation Learning via Paired Action and Future Representation Prediction",
+      "tldr_zh": "Standard behavior cloning supervises actions without explici",
+      "cover_zh": "Standard behavior cloning supervises actions without explici",
+      "abstract_zh": "Standard behavior cloning supervises actions without explicitly constraining the future representation paired with each demonstrated action chunk. We introduce JEPA Policy, a diffusion-free framework that uses the action chunk and its observed future representation as paired training targets. Action and future-representation tokens interact in a shared Transformer and are refined through two forward passes. Future prediction can therefore shape the representation used to generate actions. Dual-branch and gradient-routing controls attribute the gain to this shared topology rather than to an auxiliary prediction head alone. Across nine simulated tasks, JEPA Policy improves mean success over the action-only MIP baseline and outperforms Diffusion Policy under the evaluated configurations, while adding 0.29 ms to MIP's model latency. A five-task, 630-episode physical-robot study produces the same pooled ranking. Further audits find no complete representation collapse under action supervision and identify a task-conditioned failure-ranking signal in future-prediction error. These results support paired future-representation supervision as a practical approach to low-latency visuomotor imitation without iterative generative sampling.",
+      "authors": [
+        "Jie Xu",
+        "Kangjin Yu",
+        "Ziyi Jin"
+      ],
+      "authors_all": [
+        "Jie Xu",
+        "Kangjin Yu",
+        "Ziyi Jin",
+        "Junjie Gao",
+        "Liqing Chen",
+        "Yixian Li",
+        "Shuai Tian",
+        "Zhongpu Xia"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-09",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-09630.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-09630-p2.jpg",
+        "assets/img/covers/arxiv-2609-09630-p3.jpg",
+        "assets/img/covers/arxiv-2609-09630-p4.jpg"
+      ],
+      "arxiv_id": "2609.09630",
+      "abs_url": "http://arxiv.org/abs/2609.09630v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09630v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -458,64 +684,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-10187",
-      "source": "arxiv",
-      "title": "3rd Place Solution to Human Motion Challenges in Real-World and Clinical Settings (MoCha) @ECCV2026: Language-Aligned Motion Representations for Domain-Generalizable UPDRS-Gait Severity Estimation",
-      "title_zh": "3rd Place Solution to Human Motion Challenges in Real-World and Clinical Settings (MoCha) @ECCV2026: Language-Aligned Motion Representations for Domain-Generalizable UPDRS-Gait Severity Estimation",
-      "tldr_zh": "In this work, we introduce language-aligned motion represent",
-      "cover_zh": "In this work, we introduce language-aligned motion represent",
-      "abstract_zh": "In this work, we introduce language-aligned motion representations for domain-generalizable UPDRS-Gait severity estimation, aiming to learn semantically structured motion features that generalize across heterogeneous clinical domains. We first learn motion representations using a Bi-GRU backbone that captures the temporal dynamics of SMPL sequences. Prior to model training, motion captions are generated offline using Qwen2.5-7B-Instruct. The backbone is then trained with both classification and text-alignment objectives to learn discriminative and semantically structured motion representations while accounting for the class imbalance present in the training data. We subsequently adapt the learned backbone independently to each source domain so that the model can capture domain-specific motion characteristics. The resulting source-specific models are then merged at the parameter level to consolidate complementary knowledge across source domains into a single domain-generalized model. To further mitigate class imbalance, we perform GPT-5.5-based pseudo labeling, and our final merged models for each site do not use any class-prior correction during inference. The resulting model is evaluated under the unseen-site setting of the MoCha Challenge, using Macro F1 as the primary evaluation metric. Our method achieves a macro-F1 of 0.57 on the hidden test set with only 637K active parameters at inference, ranking 3rd among 58 leaderboard entries in the MoCha 2026 Challenge. The challenge attracted 1,669 submissions from 112 participants and offered monetary prizes sponsored by Machine Medicine Technologies.",
-      "authors": [
-        "Soojie Kim",
-        "Muhammad Munsif",
-        "Minkyung Kim"
-      ],
-      "authors_all": [
-        "Soojie Kim",
-        "Muhammad Munsif",
-        "Minkyung Kim",
-        "Seungryul Baek"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-09-09",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 ECCV 2026"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-10187.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-10187-p2.jpg",
-        "assets/img/covers/arxiv-2609-10187-p3.jpg",
-        "assets/img/covers/arxiv-2609-10187-p4.jpg"
-      ],
-      "arxiv_id": "2609.10187",
-      "abs_url": "http://arxiv.org/abs/2609.10187v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.10187v1",
-      "venue": "ECCV 2026",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2609-10292",
       "source": "arxiv",
       "title": "Isotropic Embedding Perturbations for Robust Vision Language Encoders",
@@ -565,60 +733,6 @@
       "venue": "ECCV 2026",
       "venue_announced": "",
       "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-09941",
-      "source": "arxiv",
-      "title": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy",
-      "title_zh": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy",
-      "tldr_zh": "Generalist robot policies have demonstrated strong generaliz",
-      "cover_zh": "Generalist robot policies have demonstrated strong generaliz",
-      "abstract_zh": "Generalist robot policies have demonstrated strong generalization across robotic manipulation tasks, yet their success rates remain limited in com- plex long-horizon scenarios. Recent methods improve Visual-Language-Action (VLA) policies through online reinforcement learning on real robots, but such training relies on costly physical interactions, suffers from low sample efficiency, and may introduce hardware and safety risks. World models offer a promising alternative by enabling policy optimization with imagined rollouts. However, long-horizon rollouts generated by world models often suffer from prediction hal- lucinations, producing biased state transitions that can mislead policy learning. To address this issue, we propose Hallucination-aware World Model-based Pol- icy Optimization (HaWMPO), a closed-loop reinforcement learning pipeline for VLA policy post-training with world models. Specifically, HaWMPO introduces an action-conditioned hallucination-aware model to estimate the reliability of gen- erated image sequences, and incorporates hallucination scores into group relative policy optimization through a Reward-Soft mechanism, suppressing unreliable ac- tion chunks during training. On the LIBERO benchmark, HaWMPO achieves the best average success rate, with gains of 15.0% over the base model and 2.8% over the strongest baseline; real-world experiments on a G1 robot further validate its effectiveness, raising the average success rate on two manipulation tasks from 67.5% to 80.0%.",
-      "authors": [
-        "Zengjue Chen",
-        "Peidong Liu",
-        "Jiawei Li"
-      ],
-      "authors_all": [
-        "Zengjue Chen",
-        "Peidong Liu",
-        "Jiawei Li",
-        "Qi Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-09941.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-09941-p2.jpg",
-        "assets/img/covers/arxiv-2609-09941-p3.jpg",
-        "assets/img/covers/arxiv-2609-09941-p4.jpg"
-      ],
-      "arxiv_id": "2609.09941",
-      "abs_url": "http://arxiv.org/abs/2609.09941v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.09941v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 25,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -783,6 +897,60 @@
       "venue": "",
       "venue_announced": "",
       "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-09821",
+      "source": "arxiv",
+      "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
+      "title_zh": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
+      "tldr_zh": "Physics-based character control is a long-standing challenge",
+      "cover_zh": "Physics-based character control is a long-standing challenge",
+      "abstract_zh": "Physics-based character control is a long-standing challenge in computer graphics and robotics, requiring policies that satisfy complex dynamics while producing realistic motion. Recent Deep RL approaches, particularly imitation learning methods such as DeepMimic, have had broad impact beyond animation, influencing robotics by enabling agile and expressive behaviors. While these approaches achieve impressive results, they remain computationally inefficient to train in practice. Despite GPU-accelerated simulation, we find that end-to-end pipelines often underutilize hardware due to overheads outside the physics solver, caused by fragmented GPU kernels and CPU memory access in the critical path. We present InstantMimic, a system that addresses these inefficiencies by making the entire training loop GPU-native. Built on a GPU-native physics backend, our unified pipeline integrates simulation, environment computation, policy inference, and policy updates within a single execution flow. As a result, InstantMimic reduces training time for diverse physics-based skills to a few seconds and makes LLM-agent-driven hyperparameter search practical.",
+      "authors": [
+        "Ikjun Choi",
+        "Geonho Leem",
+        "Jungdam Won"
+      ],
+      "authors_all": [
+        "Ikjun Choi",
+        "Geonho Leem",
+        "Jungdam Won"
+      ],
+      "primary_category": "cs.GR",
+      "published": "2026-09-09",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-09821.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-09821-p2.jpg",
+        "assets/img/covers/arxiv-2609-09821-p3.jpg",
+        "assets/img/covers/arxiv-2609-09821-p4.jpg"
+      ],
+      "arxiv_id": "2609.09821",
+      "abs_url": "http://arxiv.org/abs/2609.09821v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09821v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -964,11 +1132,11 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=PQu57V2XnlM",
           "embed_url": "https://www.youtube.com/embed/PQu57V2XnlM",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "GALATEA",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=PQu57V2XnlM"
         }
       ],
       "github": {},
@@ -1091,64 +1259,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-09630",
-      "source": "arxiv",
-      "title": "JEPA Policy: Diffusion-Free Imitation Learning via Paired Action and Future Representation Prediction",
-      "title_zh": "JEPA Policy: Diffusion-Free Imitation Learning via Paired Action and Future Representation Prediction",
-      "tldr_zh": "Standard behavior cloning supervises actions without explici",
-      "cover_zh": "Standard behavior cloning supervises actions without explici",
-      "abstract_zh": "Standard behavior cloning supervises actions without explicitly constraining the future representation paired with each demonstrated action chunk. We introduce JEPA Policy, a diffusion-free framework that uses the action chunk and its observed future representation as paired training targets. Action and future-representation tokens interact in a shared Transformer and are refined through two forward passes. Future prediction can therefore shape the representation used to generate actions. Dual-branch and gradient-routing controls attribute the gain to this shared topology rather than to an auxiliary prediction head alone. Across nine simulated tasks, JEPA Policy improves mean success over the action-only MIP baseline and outperforms Diffusion Policy under the evaluated configurations, while adding 0.29 ms to MIP's model latency. A five-task, 630-episode physical-robot study produces the same pooled ranking. Further audits find no complete representation collapse under action supervision and identify a task-conditioned failure-ranking signal in future-prediction error. These results support paired future-representation supervision as a practical approach to low-latency visuomotor imitation without iterative generative sampling.",
-      "authors": [
-        "Jie Xu",
-        "Kangjin Yu",
-        "Ziyi Jin"
-      ],
-      "authors_all": [
-        "Jie Xu",
-        "Kangjin Yu",
-        "Ziyi Jin",
-        "Junjie Gao",
-        "Liqing Chen",
-        "Yixian Li",
-        "Shuai Tian",
-        "Zhongpu Xia"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-09630.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-09630-p2.jpg",
-        "assets/img/covers/arxiv-2609-09630-p3.jpg",
-        "assets/img/covers/arxiv-2609-09630-p4.jpg"
-      ],
-      "arxiv_id": "2609.09630",
-      "abs_url": "http://arxiv.org/abs/2609.09630v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.09630v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2609-09808",
       "source": "arxiv",
       "title": "GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes",
@@ -1244,110 +1354,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-09597",
-      "source": "arxiv",
-      "title": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
-      "title_zh": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
-      "tldr_zh": "Accurate contact prediction is useful for robotic manipulati",
-      "cover_zh": "Accurate contact prediction is useful for robotic manipulati",
-      "abstract_zh": "Accurate contact prediction is useful for robotic manipulation only if it supports effective decisions. We investigate this connection using a compact, randomly initialized visuotactile world model, trajectory-level uncertainty calibration, and behavior-initialized actor-critic learning in imagination. On 160 MuJoCo Lift episodes, adding touch reduces endpoint-force prediction error from 1.058 to 0.228 N and interval-peak error from 2.724 to 0.523 N across three training seeds. However, tactile persistence achieves lower errors of 0.095 and 0.498 N, respectively. Two exploratory control rounds comprise 680 executions on 40 independent test initial conditions. A matched reward revision on fresh test environments increases in-distribution 10 cm lifting success from 20.0% to 93.3%, while success within an 8 N per-finger budget reaches only 33.3%, compared with 70.0% for force feedback. Calibration margins reduce force violations at the cost of task completion. In a separate study of public GelSight recordings, a force regressor achieves 0.04234 N error, but frame-level calibration covers only 15.80% of complete trajectories; trajectory-level calibration raises this to 87.36% at nominal 90% coverage. Together, these findings distinguish improvements in sensing and task reward from improvements in force-constrained control. The evidence is limited to public sensing records and simulator execution, without a demonstrated transfer between them.",
-      "authors": [
-        "Qinzhen Ma",
-        "Sida Peng"
-      ],
-      "authors_all": [
-        "Qinzhen Ma",
-        "Sida Peng"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-09597.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-09597-p2.jpg",
-        "assets/img/covers/arxiv-2609-09597-p3.jpg",
-        "assets/img/covers/arxiv-2609-09597-p4.jpg"
-      ],
-      "arxiv_id": "2609.09597",
-      "abs_url": "http://arxiv.org/abs/2609.09597v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.09597v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-09821",
-      "source": "arxiv",
-      "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
-      "title_zh": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
-      "tldr_zh": "Physics-based character control is a long-standing challenge",
-      "cover_zh": "Physics-based character control is a long-standing challenge",
-      "abstract_zh": "Physics-based character control is a long-standing challenge in computer graphics and robotics, requiring policies that satisfy complex dynamics while producing realistic motion. Recent Deep RL approaches, particularly imitation learning methods such as DeepMimic, have had broad impact beyond animation, influencing robotics by enabling agile and expressive behaviors. While these approaches achieve impressive results, they remain computationally inefficient to train in practice. Despite GPU-accelerated simulation, we find that end-to-end pipelines often underutilize hardware due to overheads outside the physics solver, caused by fragmented GPU kernels and CPU memory access in the critical path. We present InstantMimic, a system that addresses these inefficiencies by making the entire training loop GPU-native. Built on a GPU-native physics backend, our unified pipeline integrates simulation, environment computation, policy inference, and policy updates within a single execution flow. As a result, InstantMimic reduces training time for diverse physics-based skills to a few seconds and makes LLM-agent-driven hyperparameter search practical.",
-      "authors": [
-        "Ikjun Choi",
-        "Geonho Leem",
-        "Jungdam Won"
-      ],
-      "authors_all": [
-        "Ikjun Choi",
-        "Geonho Leem",
-        "Jungdam Won"
-      ],
-      "primary_category": "cs.GR",
-      "published": "2026-09-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-09821.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-09821-p2.jpg",
-        "assets/img/covers/arxiv-2609-09821-p3.jpg",
-        "assets/img/covers/arxiv-2609-09821-p4.jpg"
-      ],
-      "arxiv_id": "2609.09821",
-      "abs_url": "http://arxiv.org/abs/2609.09821v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.09821v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
       "judge": {},
       "institutions": [],
       "method_tags": [],
