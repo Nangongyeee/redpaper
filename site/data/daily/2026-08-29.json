@@ -3,41 +3,44 @@
   "count": 3,
   "papers": [
     {
-      "id": "arxiv-2608-29029",
+      "id": "arxiv-2608-29078",
       "source": "arxiv_discover",
-      "title": "Flow-JEPA: Flow Matching for Robust Latent Dynamics in JEPA World Models",
-      "title_zh": "Flow-JEPA: Flow Matching for Robust Latent Dynamics in JEPA World Models",
-      "tldr_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown",
-      "cover_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown",
-      "abstract_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown strong potential for learning compact predictive representations, and LeWorldModel (LeWM) extends this paradigm to reconstruction-free latent world modeling from pixels. However, its deterministic autoregressive predictor generates future states through repeated one-step transitions, which can accumulate errors and remain sensitive to task-irrelevant visual perturbations. In this work, we propose Flow-JEPA (F-JEPA), a conditional flow matching dynamics model that jointly generates a sequence of future latent states conditioned on the current observation and actions. A Gaussian distribution serves as the flow source, exposing the vector field to perturbed latent trajectories as it learns to transport them toward clean future representations. This formulation retains the reconstruction-free JEPA framework while replacing point-wise transition regression with stochastic trajectory-level prediction. F-JEPA raises mean success from $86\\%$ to $92\\%$ under clean observations and from $67\\%$ to $86\\%$ under noisy conditions, suggesting that conditional flow matching provides a promising alternative to deterministic autoregressive dynamics in JEPA world models.",
+      "title": "DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation",
+      "title_zh": "DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation",
+      "tldr_zh": "Vision-language-action (VLA) models have made strong progres",
+      "cover_zh": "Vision-language-action (VLA) models have made strong progres",
+      "abstract_zh": "Vision-language-action (VLA) models have made strong progress in language-conditioned robot manipulation, but improving their performance in a new workspace still often requires action-labeled data from that environment. Collecting such data by human teleoperation is costly, especially when each workspace, object arrangement, or task may require new demonstrations. We present DREAM, a framework that generates fine-tuning data for a pretrained VLA from a captured workspace and a language instruction, without requiring a task-specific human demonstration. DREAM reconstructs the workspace, automatically translates the instruction into symbolic task goals and success criteria using a large language model, and uses task-and-motion planning to generate feasible robot trajectories. The planned trajectories are augmented across randomized object configurations, verified by the generated success criteria, and rendered into image-action examples for VLA fine-tuning. Through real-robot experiments on language-conditioned manipulation tasks, we study whether DREAM can serve as a scalable data-collection system for the deployment workspace by examining whether fine-tuning on its automatically generated data improves success over direct deployment and how its data-collection cost compares with human teleoperation when adapting a VLA to a new workspace.",
       "authors": [
-        "Yanchen Huo",
-        "Ziying Song",
-        "Yadan Luo"
+        "Makoto Sato",
+        "Tatsuya Matsushima",
+        "Yutaka Matsuo"
       ],
       "authors_all": [
-        "Yanchen Huo",
-        "Ziying Song",
-        "Yadan Luo"
+        "Makoto Sato",
+        "Tatsuya Matsushima",
+        "Yutaka Matsuo",
+        "Yusuke Iwasawa"
       ],
       "primary_category": "",
       "published": "2026-08-29",
       "channels": [
-        "world-model"
+        "manipulation",
+        "teleop",
+        "sim2real"
       ],
       "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-29029.jpg",
+      "cover_image": "assets/img/covers/arxiv-2608-29078.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2608-29029-p2.jpg",
-        "assets/img/covers/arxiv-2608-29029-p3.jpg",
-        "assets/img/covers/arxiv-2608-29029-p4.jpg"
+        "assets/img/covers/arxiv-2608-29078-p2.jpg",
+        "assets/img/covers/arxiv-2608-29078-p3.jpg",
+        "assets/img/covers/arxiv-2608-29078-p4.jpg"
       ],
-      "arxiv_id": "2608.29029",
-      "abs_url": "http://arxiv.org/abs/2608.29029v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29029v1",
+      "arxiv_id": "2608.29078",
+      "abs_url": "http://arxiv.org/abs/2608.29078v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29078v1",
       "venue": "",
       "venue_announced": "",
-      "score": 15,
+      "score": 20,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -78,6 +81,7 @@
       "primary_category": "",
       "published": "2026-08-29",
       "channels": [
+        "loco-manip-wbc",
         "teleop"
       ],
       "badges": [],
@@ -92,7 +96,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.29080v1",
       "venue": "",
       "venue_announced": "",
-      "score": 15,
+      "score": 20,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -108,42 +112,41 @@
       ]
     },
     {
-      "id": "arxiv-2608-29078",
+      "id": "arxiv-2608-29029",
       "source": "arxiv_discover",
-      "title": "DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation",
-      "title_zh": "DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation",
-      "tldr_zh": "Vision-language-action (VLA) models have made strong progres",
-      "cover_zh": "Vision-language-action (VLA) models have made strong progres",
-      "abstract_zh": "Vision-language-action (VLA) models have made strong progress in language-conditioned robot manipulation, but improving their performance in a new workspace still often requires action-labeled data from that environment. Collecting such data by human teleoperation is costly, especially when each workspace, object arrangement, or task may require new demonstrations. We present DREAM, a framework that generates fine-tuning data for a pretrained VLA from a captured workspace and a language instruction, without requiring a task-specific human demonstration. DREAM reconstructs the workspace, automatically translates the instruction into symbolic task goals and success criteria using a large language model, and uses task-and-motion planning to generate feasible robot trajectories. The planned trajectories are augmented across randomized object configurations, verified by the generated success criteria, and rendered into image-action examples for VLA fine-tuning. Through real-robot experiments on language-conditioned manipulation tasks, we study whether DREAM can serve as a scalable data-collection system for the deployment workspace by examining whether fine-tuning on its automatically generated data improves success over direct deployment and how its data-collection cost compares with human teleoperation when adapting a VLA to a new workspace.",
+      "title": "Flow-JEPA: Flow Matching for Robust Latent Dynamics in JEPA World Models",
+      "title_zh": "Flow-JEPA: Flow Matching for Robust Latent Dynamics in JEPA World Models",
+      "tldr_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown",
+      "cover_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown",
+      "abstract_zh": "Joint-Embedding Predictive Architectures (JEPAs) have shown strong potential for learning compact predictive representations, and LeWorldModel (LeWM) extends this paradigm to reconstruction-free latent world modeling from pixels. However, its deterministic autoregressive predictor generates future states through repeated one-step transitions, which can accumulate errors and remain sensitive to task-irrelevant visual perturbations. In this work, we propose Flow-JEPA (F-JEPA), a conditional flow matching dynamics model that jointly generates a sequence of future latent states conditioned on the current observation and actions. A Gaussian distribution serves as the flow source, exposing the vector field to perturbed latent trajectories as it learns to transport them toward clean future representations. This formulation retains the reconstruction-free JEPA framework while replacing point-wise transition regression with stochastic trajectory-level prediction. F-JEPA raises mean success from $86\\%$ to $92\\%$ under clean observations and from $67\\%$ to $86\\%$ under noisy conditions, suggesting that conditional flow matching provides a promising alternative to deterministic autoregressive dynamics in JEPA world models.",
       "authors": [
-        "Makoto Sato",
-        "Tatsuya Matsushima",
-        "Yutaka Matsuo"
+        "Yanchen Huo",
+        "Ziying Song",
+        "Yadan Luo"
       ],
       "authors_all": [
-        "Makoto Sato",
-        "Tatsuya Matsushima",
-        "Yutaka Matsuo",
-        "Yusuke Iwasawa"
+        "Yanchen Huo",
+        "Ziying Song",
+        "Yadan Luo"
       ],
       "primary_category": "",
       "published": "2026-08-29",
       "channels": [
-        "sim2real"
+        "world-model"
       ],
       "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2608-29078.jpg",
+      "cover_image": "assets/img/covers/arxiv-2608-29029.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2608-29078-p2.jpg",
-        "assets/img/covers/arxiv-2608-29078-p3.jpg",
-        "assets/img/covers/arxiv-2608-29078-p4.jpg"
+        "assets/img/covers/arxiv-2608-29029-p2.jpg",
+        "assets/img/covers/arxiv-2608-29029-p3.jpg",
+        "assets/img/covers/arxiv-2608-29029-p4.jpg"
       ],
-      "arxiv_id": "2608.29078",
-      "abs_url": "http://arxiv.org/abs/2608.29078v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.29078v1",
+      "arxiv_id": "2608.29029",
+      "abs_url": "http://arxiv.org/abs/2608.29029v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.29029v1",
       "venue": "",
       "venue_announced": "",
-      "score": 6,
+      "score": 15,
       "judge": {},
       "institutions": [],
       "method_tags": [],
