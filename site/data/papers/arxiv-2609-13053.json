@@ -1,0 +1,91 @@
+{
+  "id": "arxiv-2609-13053",
+  "source": "arxiv",
+  "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+  "title_zh": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+  "abstract": "Visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependent scene changes. We bring these predictions into action generation and selection through a shared trajectory model. Dynin-Robotics implements this formulation on Dynin-Omni, an omnimodal masked-diffusion backbone, representing language, visual observations, goals, and actions as discrete tokens. By varying conditioning and target spans, the same model learns action prediction, action-conditioned next-observation prediction, terminal goal-state prediction, and trajectory-to-instruction reconstruction. These interfaces support test-time scaling through goal prediction, action-candidate evaluation, and joint refinement of action and future-state predictions. We continually pretrain the model on approximately 1.33 million trajectories from 48 Open X-Embodiment datasets and adapt it separately to downstream domains. On two VLABench tasks, robot pretraining improves adaptation within a fixed Stage-2 step budget, and the full objective mixture improves shifted-instruction success over Policy-only post-training under the same coupled decoder. Combining goal guidance with joint action-next-state denoising further improves shifted-instruction success over action-only decoding; the benefit depends on how the predictions are composed. Dynin-Robotics achieves competitive performance on LIBERO and zero-shot LIBERO-Plus, together with a 78.4% average success rate across four manipulation conditions on a Franka Research 3 robot. An optimized block-parallel implementation accelerates model-side action decoding by up to 29.2x relative to the base implementation under the reported profiling setup. These results support shared trajectory modeling as a common interface for learning complementary robot objectives and composing their predictions during control.",
+  "abstract_zh": "Visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependent scene changes. We bring these predictions into action generation and selection through a shared trajectory model. Dynin-Robotics implements this formulation on Dynin-Omni, an omnimodal masked-diffusion backbone, representing language, visual observations, goals, and actions as discrete tokens. By varying conditioning and target spans, the same model learns action prediction, action-conditioned next-observation prediction, terminal goal-state prediction, and trajectory-to-instruction reconstruction. These interfaces support test-time scaling through goal prediction, action-candidate evaluation, and joint refinement of action and future-state predictions. We continually pretrain the model on approximately 1.33 million trajectories from 48 Open X-Embodiment datasets and adapt it separately to downstream domains. On two VLABench tasks, robot pretraining improves adaptation within a fixed Stage-2 step budget, and the full objective mixture improves shifted-instruction success over Policy-only post-training under the same coupled decoder. Combining goal guidance with joint action-next-state denoising further improves shifted-instruction success over action-only decoding; the benefit depends on how the predictions are composed. Dynin-Robotics achieves competitive performance on LIBERO and zero-shot LIBERO-Plus, together with a 78.4% average success rate across four manipulation conditions on a Franka Research 3 robot. An optimized block-parallel implementation accelerates model-side action decoding by up to 29.2x relative to the base implementation under the reported profiling setup. These results support shared trajectory modeling as a common interface for learning complementary robot objectives and composing their predictions during control.",
+  "tldr_zh": "Visual goal and dynamics prediction can provide language-con",
+  "cover_zh": "Visual goal and dynamics prediction can provide language-con",
+  "authors": [
+    {
+      "name": "Hoeun Lee",
+      "affiliation": ""
+    },
+    {
+      "name": "Jaeik Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Jusang Oh",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinhyeok Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Geon Choi",
+      "affiliation": ""
+    },
+    {
+      "name": "Hyeonggeun Kim",
+      "affiliation": ""
+    },
+    {
+      "name": "Jaeyoung Do",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "published": "2026-09-11",
+  "updated": "2026-09-11",
+  "arxiv_id": "2609.13053",
+  "pdf_url": "https://arxiv.org/pdf/2609.13053v1",
+  "abs_url": "http://arxiv.org/abs/2609.13053v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-13053.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-13053-p2.jpg",
+    "assets/img/covers/arxiv-2609-13053-p3.jpg",
+    "assets/img/covers/arxiv-2609-13053-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 36,
+  "source_tags": [],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、manipulation、open x-embodiment、libero）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 36 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

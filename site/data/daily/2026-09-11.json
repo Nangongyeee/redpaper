@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "count": 10,
+  "count": 17,
   "papers": [
     {
       "id": "vid-bilibili-BV1PpYj6MEpf",
@@ -54,6 +54,66 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-12498",
+      "source": "arxiv",
+      "title": "ArtManip: Category-Level Articulated In-Hand Manipulation",
+      "title_zh": "ArtManip: Category-Level Articulated In-Hand Manipulation",
+      "tldr_zh": "Category-level in-hand manipulation of articulated objects i",
+      "cover_zh": "Category-level in-hand manipulation of articulated objects i",
+      "abstract_zh": "Category-level in-hand manipulation of articulated objects is a formidable yet underexplored challenge for dexterous robotic hands. This difficulty stems from two core bottlenecks: first, controlling an object's internal degrees of freedom is tightly coupled with maintaining grasp stability on a free-floating base; second, acquiring diverse object models and functional grasps at scale is highly labor-intensive, yet vital for generalization given the system's sensitivity to initial configurations. In this work, we present ArtManip, the first category-level articulated in-hand manipulation method that generalizes across object instances and diverse initial grasps. For initial configuration construction, we develop an automated pipeline that procedurally generates diverse articulated objects and synthesizes task-oriented functional grasps. For policy learning, we propose a robust two-stage training strategy that incorporates articulation physics randomization, reward curriculum, and latent representation distillation to handle complex contact and joint dynamics during deployment. Extensive experiments across four object categories demonstrate that our policy generalizes to unseen instances and varied configurations in simulation, and achieves zero-shot transfer to 12 real-world objects featuring diverse shapes and joint mechanics.",
+      "authors": [
+        "Yang Yang",
+        "Tengyu Liu",
+        "Puhao Li"
+      ],
+      "authors_all": [
+        "Yang Yang",
+        "Tengyu Liu",
+        "Puhao Li",
+        "Zeyuan Chen",
+        "Yuyang Li",
+        "Xingwan Wang",
+        "Yingying Wu",
+        "Zhaopeng Cui",
+        "Siyuan Huang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Siyuan Huang"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-12498.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-12498-p2.jpg",
+        "assets/img/covers/arxiv-2609-12498-p3.jpg",
+        "assets/img/covers/arxiv-2609-12498-p4.jpg"
+      ],
+      "arxiv_id": "2609.12498",
+      "abs_url": "http://arxiv.org/abs/2609.12498v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.12498v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2609-12898",
       "source": "arxiv",
       "title": "UniPart: Towards Zero-shot Language-Grounded 3D Part Segmentation for Embodied Interaction",
@@ -80,8 +140,8 @@
       "primary_category": "cs.CV",
       "published": "2026-09-11",
       "channels": [
-        "sim2real",
-        "manipulation"
+        "manipulation",
+        "sim2real"
       ],
       "badges": [
         {
@@ -114,52 +174,47 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-12498",
+      "id": "arxiv-2609-12737",
       "source": "arxiv",
-      "title": "ArtManip: Category-Level Articulated In-Hand Manipulation",
-      "title_zh": "ArtManip: Category-Level Articulated In-Hand Manipulation",
-      "tldr_zh": "Category-level in-hand manipulation of articulated objects i",
-      "cover_zh": "Category-level in-hand manipulation of articulated objects i",
-      "abstract_zh": "Category-level in-hand manipulation of articulated objects is a formidable yet underexplored challenge for dexterous robotic hands. This difficulty stems from two core bottlenecks: first, controlling an object's internal degrees of freedom is tightly coupled with maintaining grasp stability on a free-floating base; second, acquiring diverse object models and functional grasps at scale is highly labor-intensive, yet vital for generalization given the system's sensitivity to initial configurations. In this work, we present ArtManip, the first category-level articulated in-hand manipulation method that generalizes across object instances and diverse initial grasps. For initial configuration construction, we develop an automated pipeline that procedurally generates diverse articulated objects and synthesizes task-oriented functional grasps. For policy learning, we propose a robust two-stage training strategy that incorporates articulation physics randomization, reward curriculum, and latent representation distillation to handle complex contact and joint dynamics during deployment. Extensive experiments across four object categories demonstrate that our policy generalizes to unseen instances and varied configurations in simulation, and achieves zero-shot transfer to 12 real-world objects featuring diverse shapes and joint mechanics.",
+      "title": "Control Architecture for Safe Grasping of Fragile Objects Using a Coarse Position-Controlled Gripper",
+      "title_zh": "Control Architecture for Safe Grasping of Fragile Objects Using a Coarse Position-Controlled Gripper",
+      "tldr_zh": "Robots are increasingly used in unstructured environments. T",
+      "cover_zh": "Robots are increasingly used in unstructured environments. T",
+      "abstract_zh": "Robots are increasingly used in unstructured environments. The need for them to safely grasp unknown objects without damaging them becomes crucial. Humans achieve this by sensing and quickly responding by adjusting their grasping force. Similarly, effective grasp acquisition in robots requires compliant interaction strategies that can adapt to uncertain object properties and adjust to any instabilities during manipulation. We present a geometry-aware force/torque-based contact estimation method for a coarse position-controlled gripper, combined with an adaptive admittance controller for safe grasp acquisition. The desired contact forces are estimated online to keep stable contact with objects of unknown properties. This enables compliant and stable grasps while avoiding excessive forces. Experiments with objects of different sizes, shapes, stiffnesses, and weights show that the proposed algorithm not only prevents slippage but also applies minimal force to safely grasp an object without causing excessive deformation.",
       "authors": [
-        "Yang Yang",
-        "Tengyu Liu",
-        "Puhao Li"
+        "Marko Pavlic",
+        "Moritz Geier",
+        "Timo Markert"
       ],
       "authors_all": [
-        "Yang Yang",
-        "Tengyu Liu",
-        "Puhao Li",
-        "Zeyuan Chen",
-        "Yuyang Li",
-        "Xingwan Wang",
-        "Yingying Wu",
-        "Zhaopeng Cui",
-        "Siyuan Huang"
+        "Marko Pavlic",
+        "Moritz Geier",
+        "Timo Markert",
+        "Darius Burschka"
       ],
       "primary_category": "cs.RO",
       "published": "2026-09-11",
       "channels": [
-        "sim2real"
+        "manipulation"
       ],
       "badges": [
         {
-          "kind": "lab",
-          "label": "⭐ Siyuan Huang"
+          "kind": "venue",
+          "label": "🎓 IROS 2026"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2609-12498.jpg",
+      "cover_image": "assets/img/covers/arxiv-2609-12737.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2609-12498-p2.jpg",
-        "assets/img/covers/arxiv-2609-12498-p3.jpg",
-        "assets/img/covers/arxiv-2609-12498-p4.jpg"
+        "assets/img/covers/arxiv-2609-12737-p2.jpg",
+        "assets/img/covers/arxiv-2609-12737-p3.jpg",
+        "assets/img/covers/arxiv-2609-12737-p4.jpg"
       ],
-      "arxiv_id": "2609.12498",
-      "abs_url": "http://arxiv.org/abs/2609.12498v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.12498v1",
-      "venue": "",
+      "arxiv_id": "2609.12737",
+      "abs_url": "http://arxiv.org/abs/2609.12737v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.12737v1",
+      "venue": "IROS 2026",
       "venue_announced": "",
-      "score": 26,
+      "score": 22,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -206,6 +261,233 @@
       "venue": "",
       "venue_announced": "",
       "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-12883",
+      "source": "arxiv",
+      "title": "From Transportation to Manipulation: Enabling Grasping in Magnetic Robotics",
+      "title_zh": "From Transportation to Manipulation: Enabling Grasping in Magnetic Robotics",
+      "tldr_zh": "Magnetic levitation (MagLev) systems have great potential fo",
+      "cover_zh": "Magnetic levitation (MagLev) systems have great potential fo",
+      "abstract_zh": "Magnetic levitation (MagLev) systems have great potential for application in high-mix, low-volume manufacturing due to their scalability and flexibility, enabling highly reconfigurable in-machine material flow. However, their manipulation capabilities remain largely unexploited, as current applications almost exclusively focus on transportation. To enable grasping and manipulation directly on MagLev systems without requiring additional costly handling equipment, such as industrial robot arms, we present the Gripper MagBot, a low-cost parallel 6-DoF manipulator with an integrated 1-DoF gripper that mechanically couples three MagLev movers. The Gripper MagBot supports two operating configurations: a default mode and a single-track mode, selectable depending on the required stability and workspace footprint. To reconfigure a machine, the MagBot can be autonomously dropped off and picked up using a docking station. We showcase pick-and-place examples in simulation, as well as with the real Gripper MagBot using our inverse kinematics controller. CAD files, assembly instructions, a component list, and videos are available at https://sites.google.com/view/gripper-magbot.",
+      "authors": [
+        "Lara Bergmann",
+        "Noah Greis",
+        "Cedric Grothues"
+      ],
+      "authors_all": [
+        "Lara Bergmann",
+        "Noah Greis",
+        "Cedric Grothues",
+        "Lisa-Marie Weigelt",
+        "Klaus Neumann"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-12883.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-12883-p2.jpg",
+        "assets/img/covers/arxiv-2609-12883-p3.jpg",
+        "assets/img/covers/arxiv-2609-12883-p4.jpg"
+      ],
+      "arxiv_id": "2609.12883",
+      "abs_url": "http://arxiv.org/abs/2609.12883v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.12883v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=92BZnGduFDo",
+          "embed_url": "https://www.youtube.com/embed/92BZnGduFDo",
+          "title": "Gripper MagBot",
+          "source": "project_page"
+        },
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=mh_W_ojLemk",
+          "embed_url": "https://www.youtube.com/embed/mh_W_ojLemk",
+          "title": "Gripper MagBot",
+          "source": "project_page"
+        },
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=NXQb-yS_qwM",
+          "embed_url": "https://www.youtube.com/embed/NXQb-yS_qwM",
+          "title": "Gripper MagBot",
+          "source": "project_page"
+        },
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=Kkm97Z7T94c",
+          "embed_url": "https://www.youtube.com/embed/Kkm97Z7T94c",
+          "title": "Gripper MagBot",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-13053",
+      "source": "arxiv",
+      "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+      "title_zh": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+      "tldr_zh": "Visual goal and dynamics prediction can provide language-con",
+      "cover_zh": "Visual goal and dynamics prediction can provide language-con",
+      "abstract_zh": "Visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependent scene changes. We bring these predictions into action generation and selection through a shared trajectory model. Dynin-Robotics implements this formulation on Dynin-Omni, an omnimodal masked-diffusion backbone, representing language, visual observations, goals, and actions as discrete tokens. By varying conditioning and target spans, the same model learns action prediction, action-conditioned next-observation prediction, terminal goal-state prediction, and trajectory-to-instruction reconstruction. These interfaces support test-time scaling through goal prediction, action-candidate evaluation, and joint refinement of action and future-state predictions. We continually pretrain the model on approximately 1.33 million trajectories from 48 Open X-Embodiment datasets and adapt it separately to downstream domains. On two VLABench tasks, robot pretraining improves adaptation within a fixed Stage-2 step budget, and the full objective mixture improves shifted-instruction success over Policy-only post-training under the same coupled decoder. Combining goal guidance with joint action-next-state denoising further improves shifted-instruction success over action-only decoding; the benefit depends on how the predictions are composed. Dynin-Robotics achieves competitive performance on LIBERO and zero-shot LIBERO-Plus, together with a 78.4% average success rate across four manipulation conditions on a Franka Research 3 robot. An optimized block-parallel implementation accelerates model-side action decoding by up to 29.2x relative to the base implementation under the reported profiling setup. These results support shared trajectory modeling as a common interface for learning complementary robot objectives and composing their predictions during control.",
+      "authors": [
+        "Hoeun Lee",
+        "Jaeik Kim",
+        "Jusang Oh"
+      ],
+      "authors_all": [
+        "Hoeun Lee",
+        "Jaeik Kim",
+        "Jusang Oh",
+        "Jinhyeok Kim",
+        "Geon Choi",
+        "Hyeonggeun Kim",
+        "Jaeyoung Do"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-13053.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-13053-p2.jpg",
+        "assets/img/covers/arxiv-2609-13053-p3.jpg",
+        "assets/img/covers/arxiv-2609-13053-p4.jpg"
+      ],
+      "arxiv_id": "2609.13053",
+      "abs_url": "http://arxiv.org/abs/2609.13053v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.13053v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-12894",
+      "source": "arxiv",
+      "title": "Before the Tipping Point: Force-Guided Active Perception for Shape-Agnostic Estimation of 3D Centers of Mass",
+      "title_zh": "Before the Tipping Point: Force-Guided Active Perception for Shape-Agnostic Estimation of 3D Centers of Mass",
+      "tldr_zh": "Estimating the 3D center of mass of unknown objects is chall",
+      "cover_zh": "Estimating the 3D center of mass of unknown objects is chall",
+      "abstract_zh": "Estimating the 3D center of mass of unknown objects is challenging when grasping is infeasible, geometry is irregular, or mass distribution is uneven. We present a force-based method that estimates CoM height and mass from a single sub-critical tipping experiment by a robot manipulator. The robot applies a quasistatic elevated push and retract motion, using force-angle measurements recorded during tipping to identify parameters from the object trajectory. Our proposed push-retract cycle mitigates frictional bias, enabling generalized fitting. We experimentally validate our method using a robot manipulator with a six-axis force torque sensor on varying types of objects without prior shape information and without specific models. We also propose a method to prevent toppling, keeping the object in a sub-critical tipping regime by leveraging a safety margin. In experimental studies, our method recovers mass, CoM height, and toppling angle with relative errors below 5.0 percent across all unknown objects. This work demonstrates reliable 3D inertial parameter estimation under proper safety thresholds in tipping. Our proposed method informs and enables reliable non-prehensile manipulation and robotic grasping of challenging objects that were previously infeasible.",
+      "authors": [
+        "Steven M. Hyland",
+        "Jing Xiao",
+        "Cagdas D. Onal"
+      ],
+      "authors_all": [
+        "Steven M. Hyland",
+        "Jing Xiao",
+        "Cagdas D. Onal"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-12894.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-12894-p2.jpg",
+        "assets/img/covers/arxiv-2609-12894-p3.jpg",
+        "assets/img/covers/arxiv-2609-12894-p4.jpg"
+      ],
+      "arxiv_id": "2609.12894",
+      "abs_url": "http://arxiv.org/abs/2609.12894v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.12894v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-12927",
+      "source": "arxiv",
+      "title": "Robust Underwater Grasping of Sloped Objects with a Waterproof Passive Adaptive Gripper",
+      "title_zh": "Robust Underwater Grasping of Sloped Objects with a Waterproof Passive Adaptive Gripper",
+      "tldr_zh": "Robust grasping of everyday objects remains challenging for",
+      "cover_zh": "Robust grasping of everyday objects remains challenging for",
+      "abstract_zh": "Robust grasping of everyday objects remains challenging for parallel-jaw grippers, particularly when handling sloped or asymmetric items that induce torque-driven rolling and shear slip. These challenges become even more severe in domestic environments such as kitchens, where objects are often wet or submerged, drastically reducing friction between the gripper and the object. To address these issues, we present a waterproof passive adaptive gripper that combines local and global adaptability for high-performance grasping in the submerged environments. The proposed gripper features a fully waterproof design that integrates a passive rotational joint for global self-alignment on sloped surfaces and passive variable-stiffness pads for local surface adaptation. Experiments in both dry and underwater conditions on various cylindrical and conical objects demonstrate superior holding capability and grasp robustness compared to rigid-pad and fixed-joint baselines. The proposed design offers a practical and robust solution that successfully enables stable underwater manipulation of diverse everyday objects, effectively addressing a critical gap in current underwater robotic grasping for daily-life applications.",
+      "authors": [
+        "Jooyoung Hong",
+        "Daewon Hong",
+        "Joohyung Kim"
+      ],
+      "authors_all": [
+        "Jooyoung Hong",
+        "Daewon Hong",
+        "Joohyung Kim"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-12927.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-12927-p2.jpg",
+        "assets/img/covers/arxiv-2609-12927-p3.jpg",
+        "assets/img/covers/arxiv-2609-12927-p4.jpg"
+      ],
+      "arxiv_id": "2609.12927",
+      "abs_url": "http://arxiv.org/abs/2609.12927v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.12927v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -515,6 +797,106 @@
       "arxiv_id": "2609.13039",
       "abs_url": "http://arxiv.org/abs/2609.13039v1",
       "pdf_url": "https://arxiv.org/pdf/2609.13039v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-13083",
+      "source": "arxiv",
+      "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+      "title_zh": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+      "tldr_zh": "In urban search and rescue, articulated tracked robots (ATRs",
+      "cover_zh": "In urban search and rescue, articulated tracked robots (ATRs",
+      "abstract_zh": "In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells and cluttered building interiors. Reliable autonomy remains challenging because robot-terrain interaction (RTI) is hybrid and discontinuous, and effective flipper-track coordination is difficult to model analytically. We present ASTRIL-MPC, a language-guided neural kinematics model predictive control (MPC) framework for autonomous traversal. A learned kinematics model predicts short-horizon task-state increments from a height sequence and recent trajectories; NMPC plans with multi-objective costs and strict feasibility constraints; and a large language model (LLM) proposes bounded updates to selected weights and bounds through a safety-checked interface with range clipping, rate limiting, and consistency checks. The compiled predictor enables a full control cycle within 100 ms. Across three traversal tasks and a multi-height generalization setting, ASTRIL-MPC improves an aggregate traversal-quality score by up to 71% over a non-adaptive NMPC and by 67% over a PPO baseline, while eliminating measurable collision impacts during descent. These results indicate that combining learned kinematics, optimization-based planning, and language-guided retuning yields data-efficient and robust autonomy for articulated tracked robots.",
+      "authors": [
+        "Zhenfeng Gan",
+        "Yanbo Chen",
+        "Lirong Che"
+      ],
+      "authors_all": [
+        "Zhenfeng Gan",
+        "Yanbo Chen",
+        "Lirong Che",
+        "Junbo Tan",
+        "Xueqian Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-13083.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-13083-p2.jpg",
+        "assets/img/covers/arxiv-2609-13083-p3.jpg",
+        "assets/img/covers/arxiv-2609-13083-p4.jpg"
+      ],
+      "arxiv_id": "2609.13083",
+      "abs_url": "http://arxiv.org/abs/2609.13083v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.13083v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-13146",
+      "source": "arxiv",
+      "title": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image",
+      "title_zh": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image",
+      "tldr_zh": "Part-aware 3D asset generation enables applications such as",
+      "cover_zh": "Part-aware 3D asset generation enables applications such as",
+      "abstract_zh": "Part-aware 3D asset generation enables applications such as editing, articulation, simulation, and fabrication, yet existing methods can generate visually complete individual parts without ensuring that they form a valid physical assembly. Consequently, generated neighboring parts may interpenetrate, lack valid connections, or collapse under gravity. We propose a physics-guided framework for improving single-image part-aware 3D generation with physically compatible geometry and stable connections. Our method resolves inter-part penetration, recovers a contact graph between neighboring parts, and introduces parameterized connectors at their contact surfaces. Using feedback from physical simulation, we refine connector placement, orientation, and dimensions to improve assembly stability while preserving the generated geometry. We further introduce a physics-based evaluation protocol that complements conventional geometric metrics by directly testing assembly validity and stability under gravity. Experiments comparing against multiple part-aware 3D generators show substantial improvements in physical realizability and stability while maintaining geometric quality. We additionally validate the resulting parts through 3D printing and real-world assembly.",
+      "authors": [
+        "Yu-Rou Tuan",
+        "Hao-Tang Tsui",
+        "Nicolas Ugrinovic"
+      ],
+      "authors_all": [
+        "Yu-Rou Tuan",
+        "Hao-Tang Tsui",
+        "Nicolas Ugrinovic",
+        "Kris Kitani",
+        "Xiaoxuan Ma"
+      ],
+      "primary_category": "cs.GR",
+      "published": "2026-09-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-13146.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-13146-p2.jpg",
+        "assets/img/covers/arxiv-2609-13146-p3.jpg",
+        "assets/img/covers/arxiv-2609-13146-p4.jpg"
+      ],
+      "arxiv_id": "2609.13146",
+      "abs_url": "http://arxiv.org/abs/2609.13146v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.13146v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
