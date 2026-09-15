@@ -1,0 +1,128 @@
+{
+  "id": "arxiv-2609-15570",
+  "source": "arxiv",
+  "title": "DIDO: Distilling Interaction-Centric Dynamics into One-Step Denoising for World Action Models",
+  "title_zh": "DIDO: Distilling Interaction-Centric Dynamics into One-Step Denoising for World Action Models",
+  "abstract": "World Action Models (WAMs) use video generation models to predict future visual dynamics for robotic manipulation, but iterative denoising introduces additional latency for closed-loop control. We empirically find that visual content converges at different rates during denoising. Static background structure forms early, whereas the gripper and manipulated object remain blurry after the first step, with their interaction dynamics emerging only through subsequent denoising. Consequently, naively truncating a multi-step video model to one step preserves scene structure but loses the interaction-centric dynamics most critical for manipulation. To address this issue, we propose DIDO, which distills the converged dynamics of a multi-step video model into a single denoising step. DIDO combines distribution matching distillation with interaction-centric representation guidance. Beyond compressing multi-step generation into one forward pass, DIDO explicitly models the gripper, manipulated object, and their interaction using supervised bounding-box visual reasoning tokens. Additionally, DIDO aligns the target object's representations across multiple model layers with features from a pretrained DINOv3 encoder. This interaction-centric guidance helps the distilled model preserve both the relevant entities and their future dynamics in a single step, while substantially reducing inference latency. DIDO achieves an average success rate of 99.0\\% on LIBERO, 76.6\\% on LIBERO-Plus, and 92.0\\% on RoboTwin, while also demonstrating effective transfer to long-horizon and generalization tasks in real-world robotic manipulation.",
+  "abstract_zh": "World Action Models (WAMs) use video generation models to predict future visual dynamics for robotic manipulation, but iterative denoising introduces additional latency for closed-loop control. We empirically find that visual content converges at different rates during denoising. Static background structure forms early, whereas the gripper and manipulated object remain blurry after the first step, with their interaction dynamics emerging only through subsequent denoising. Consequently, naively truncating a multi-step video model to one step preserves scene structure but loses the interaction-centric dynamics most critical for manipulation. To address this issue, we propose DIDO, which distills the converged dynamics of a multi-step video model into a single denoising step. DIDO combines distribution matching distillation with interaction-centric representation guidance. Beyond compressing multi-step generation into one forward pass, DIDO explicitly models the gripper, manipulated object, and their interaction using supervised bounding-box visual reasoning tokens. Additionally, DIDO aligns the target object's representations across multiple model layers with features from a pretrained DINOv3 encoder. This interaction-centric guidance helps the distilled model preserve both the relevant entities and their future dynamics in a single step, while substantially reducing inference latency. DIDO achieves an average success rate of 99.0\\% on LIBERO, 76.6\\% on LIBERO-Plus, and 92.0\\% on RoboTwin, while also demonstrating effective transfer to long-horizon and generalization tasks in real-world robotic manipulation.",
+  "tldr_zh": "World Action Models (WAMs) use video generation models to pr",
+  "cover_zh": "World Action Models (WAMs) use video generation models to pr",
+  "authors": [
+    {
+      "name": "Jing Lyu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuanghao Bai",
+      "affiliation": ""
+    },
+    {
+      "name": "Runze Xiao",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenyu Liao",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenxing Tan",
+      "affiliation": ""
+    },
+    {
+      "name": "Zihan Tang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ruochuan Shi",
+      "affiliation": ""
+    },
+    {
+      "name": "Cheng Peng",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuheng Ji",
+      "affiliation": ""
+    },
+    {
+      "name": "Yihao Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Badong Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Pengwei Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhongyuan Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoguang Zhao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "arxiv_id": "2609.15570",
+  "pdf_url": "https://arxiv.org/pdf/2609.15570v1",
+  "abs_url": "http://arxiv.org/abs/2609.15570v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-15570.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-15570-p2.jpg",
+    "assets/img/covers/arxiv-2609-15570-p3.jpg",
+    "assets/img/covers/arxiv-2609-15570-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 22,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 22 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
