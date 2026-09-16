@@ -1,6 +1,6 @@
 {
   "date": "2026-09-07",
-  "count": 8,
+  "count": 9,
   "papers": [
     {
       "id": "vid-bilibili-BV1A5bK6FEwb",
@@ -350,6 +350,61 @@
       "venue": "",
       "venue_announced": "",
       "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2609-07111",
+      "source": "arxiv_discover",
+      "title": "From LLM-Generated Specifications to Learned Quadruped Locomotion",
+      "title_zh": "From LLM-Generated Specifications to Learned Quadruped Locomotion",
+      "tldr_zh": "Quadruped robot locomotion policies are often trained using",
+      "cover_zh": "Quadruped robot locomotion policies are often trained using",
+      "abstract_zh": "Quadruped robot locomotion policies are often trained using reinforcement learning, which in turn relies heavily on hand-crafted reward functions. Designing reward functions requires substantial manual engineering, and it is often unclear which local rewards will induce the desired global behavior. Shaped rewards from formal specifications in languages like Signal Temporal Logic (STL) can make rewards more interpretable, but writing STL specifications itself still requires domain expertise. We study whether large language models (LLMs) can fill this gap by generating Parametric Signal Temporal Logic (PSTL) specifications that are subsequently used for policy learning. Given a natural language locomotion objective and a constrained specification grammar, GPT-5.5 and Qwen 3.6 independently propose STL templates for command tracking, safety, and gait structure. We instantiate the parameters of the generated PSTL templates using expert trajectories and retain only specifications that are consistent with demonstrated expert behavior. The resulting specifications are then transformed into smooth, finite-history reward functions and used to train a quadruped locomotion policy with Proximal Policy Optimization (PPO) in MuJoCo XLA (MJX). We evaluate both emph{gait-aware} and emph{gait-agnostic} settings. The former specifies walking-trot, trot, and bound regimes, while the latter allows contact patterns to emerge from the task objective. We compare against hand-engineered rewards, Text2Reward-style LLM-generated reward code, and an expert-switching oracle. Gait-aware Qwen 3.6 specifications achieved 100\\% survival and command success across all tested speeds (0.3--2.1 m/s) and matched the target gait at high speeds, whereas Text2Reward achieved 0\\% for both metrics at $≥ 1.9$ m/s. Videos: https://stl-locomotion.github.io/",
+      "authors": [
+        "Merve Atasever",
+        "Keyan Azbijari",
+        "Cagan Bakirci"
+      ],
+      "authors_all": [
+        "Merve Atasever",
+        "Keyan Azbijari",
+        "Cagan Bakirci",
+        "Alfredo Reina Corona",
+        "Tolga Izdas",
+        "Richard Yang",
+        "Erdem Biyik",
+        "Jyotirmoy V. Deshmukh"
+      ],
+      "primary_category": "",
+      "published": "2026-09-07",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-07111.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-07111-p2.jpg",
+        "assets/img/covers/arxiv-2609-07111-p3.jpg",
+        "assets/img/covers/arxiv-2609-07111-p4.jpg"
+      ],
+      "arxiv_id": "2609.07111",
+      "abs_url": "http://arxiv.org/abs/2609.07111v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.07111v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
       "judge": {},
       "institutions": [],
       "method_tags": [],
