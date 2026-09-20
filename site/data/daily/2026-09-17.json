@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "count": 47,
+  "count": 48,
   "papers": [
     {
       "id": "arxiv-2609-20649",
@@ -1010,6 +1010,62 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-19661",
+      "source": "arxiv_discover",
+      "title": "ReShoot: Generative Visual Domain Randomization of Recorded Robot Demonstrations for Visuomotor Policy Learning",
+      "title_zh": "ReShoot: Generative Visual Domain Randomization of Recorded Robot Demonstrations for Visuomotor Policy Learning",
+      "tldr_zh": "Imitation-learned robot policies are frequently overfit to t",
+      "cover_zh": "Imitation-learned robot policies are frequently overfit to t",
+      "abstract_zh": "Imitation-learned robot policies are frequently overfit to the visual conditions present in their training demonstrations. Consequently, variations in object color or background appearance often induce substantial performance degradation. A common mitigation strategy is to acquire additional demonstrations in each novel visual context; however, this approach is resource-intensive, requiring repeated access to a robot, a controlled environment, and human operation for every appearance condition to be covered. We introduce ReShoot, a framework that synthesizes visual diversity by re-rendering previously recorded demonstrations under altered appearances, thereby shifting the burden from data collection to generation. A vision-language model captions the scene, edits a targeted attribute (e.g., background, object color, or material), and an edge-conditioned video generator re-renders both camera views to match. The instruction is updated accordingly. The action sequence and proprioceptive trajectory are copied verbatim without relabeling, so each generated episode retains the recorded action and proprioceptive labels. On LIBERO, a policy trained on an equal mixture of recorded and re-rendered demonstrations matches the performance of recorded-only training (96.5% vs. 96.9%). Moreover, the mixed training set improves robustness to scene perturbations on LIBERO-Plus (85.5% vs. 82.3%). Across two physical robotic platforms, deploying ReShoot with 43 and 100 pre-collected demonstrations increased the success rate on recolored objects from 0.0% to 42.9% and 47.5%, respectively, while maintaining performance under the original recorded appearance.",
+      "authors": [
+        "Chiyoung Kim",
+        "Min Sung Choi",
+        "Jinho Ju"
+      ],
+      "authors_all": [
+        "Chiyoung Kim",
+        "Min Sung Choi",
+        "Jinho Ju",
+        "Chanhoe Gu",
+        "Donghwan Hwang",
+        "Wonseok Choi",
+        "Woongsun Jeon",
+        "Minhyeok Lee"
+      ],
+      "primary_category": "",
+      "published": "2026-09-17",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-19661.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-19661-p2.jpg",
+        "assets/img/covers/arxiv-2609-19661-p3.jpg",
+        "assets/img/covers/arxiv-2609-19661-p4.jpg"
+      ],
+      "arxiv_id": "2609.19661",
+      "abs_url": "http://arxiv.org/abs/2609.19661v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19661v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-19974",
       "source": "arxiv",
       "title": "MaskHarness-WAM: Instance-Grounded Harnessing for Long-Horizon Robot Manipulation",
@@ -1986,61 +2042,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-19661",
-      "source": "arxiv_discover",
-      "title": "ReShoot: Generative Visual Domain Randomization of Recorded Robot Demonstrations for Visuomotor Policy Learning",
-      "title_zh": "ReShoot: Generative Visual Domain Randomization of Recorded Robot Demonstrations for Visuomotor Policy Learning",
-      "tldr_zh": "Imitation-learned robot policies are frequently overfit to t",
-      "cover_zh": "Imitation-learned robot policies are frequently overfit to t",
-      "abstract_zh": "Imitation-learned robot policies are frequently overfit to the visual conditions present in their training demonstrations. Consequently, variations in object color or background appearance often induce substantial performance degradation. A common mitigation strategy is to acquire additional demonstrations in each novel visual context; however, this approach is resource-intensive, requiring repeated access to a robot, a controlled environment, and human operation for every appearance condition to be covered. We introduce ReShoot, a framework that synthesizes visual diversity by re-rendering previously recorded demonstrations under altered appearances, thereby shifting the burden from data collection to generation. A vision-language model captions the scene, edits a targeted attribute (e.g., background, object color, or material), and an edge-conditioned video generator re-renders both camera views to match. The instruction is updated accordingly. The action sequence and proprioceptive trajectory are copied verbatim without relabeling, so each generated episode retains the recorded action and proprioceptive labels. On LIBERO, a policy trained on an equal mixture of recorded and re-rendered demonstrations matches the performance of recorded-only training (96.5% vs. 96.9%). Moreover, the mixed training set improves robustness to scene perturbations on LIBERO-Plus (85.5% vs. 82.3%). Across two physical robotic platforms, deploying ReShoot with 43 and 100 pre-collected demonstrations increased the success rate on recolored objects from 0.0% to 42.9% and 47.5%, respectively, while maintaining performance under the original recorded appearance.",
-      "authors": [
-        "Chiyoung Kim",
-        "Min Sung Choi",
-        "Jinho Ju"
-      ],
-      "authors_all": [
-        "Chiyoung Kim",
-        "Min Sung Choi",
-        "Jinho Ju",
-        "Chanhoe Gu",
-        "Donghwan Hwang",
-        "Wonseok Choi",
-        "Woongsun Jeon",
-        "Minhyeok Lee"
-      ],
-      "primary_category": "",
-      "published": "2026-09-17",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2609-19661.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-19661-p2.jpg",
-        "assets/img/covers/arxiv-2609-19661-p3.jpg",
-        "assets/img/covers/arxiv-2609-19661-p4.jpg"
-      ],
-      "arxiv_id": "2609.19661",
-      "abs_url": "http://arxiv.org/abs/2609.19661v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.19661v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2609-19872",
       "source": "arxiv",
       "title": "PART: Learning 3D Part Assembly and Retrieval with Transformers",
@@ -2237,6 +2238,54 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-20034",
+      "source": "arxiv_discover",
+      "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation",
+      "title_zh": "Astronex-World 1.0: Real-Time Interactive World Model Foundation",
+      "tldr_zh": "We present Astronex-World 1.0, an open controllable video wo",
+      "cover_zh": "We present Astronex-World 1.0, an open controllable video wo",
+      "abstract_zh": "We present Astronex-World 1.0, an open controllable video world-model foundation. Given a text prompt (text-to-video) or an initial observation (image-to-video), the model predicts future visual states under frame-aligned camera trajectories, continuous actions, and an embodiment identifier, and accepts text events inserted at a specified position of a rollout. The family provides a bidirectional model for full-context generation and a causal model with block-causal attention and cross-block KV caching for persistent generation, both built on the Wan2.2-TI2V-5B prior. PRoPE injects camera intrinsics and extrinsics, while a 64-dimensional action stream modulates every Transformer layer. A five-stage training path develops bidirectional camera and action control, converts the backbone to block-causal generation, distills a few-step student, restores mixed-domain dynamics, and applies asymmetric DMD/DMD2 distribution matching. The causal model generates 832x480 video at 24 fps. All five training stages run on two NVIDIA L20 48 GB GPUs, and the causal model streams in real time on one. It scores 73.5 on WBench Navi and 70.0 on WBench Full. On Full, this 5B model is above the 13.6B LongCat-Video and the 14B Helios, within one point of the 22B LTX-2.3, and above YUME 1.5, which is post-trained from the same 5B prior on NVIDIA A100 GPUs. The reserved action input and output interfaces allow post-training for embodied intelligence and autonomous driving.",
+      "authors": [
+        "Xin Zhou",
+        "Cong Miao"
+      ],
+      "authors_all": [
+        "Xin Zhou",
+        "Cong Miao"
+      ],
+      "primary_category": "",
+      "published": "2026-09-17",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-20034.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-20034-p2.jpg",
+        "assets/img/covers/arxiv-2609-20034-p3.jpg",
+        "assets/img/covers/arxiv-2609-20034-p4.jpg"
+      ],
+      "arxiv_id": "2609.20034",
+      "abs_url": "http://arxiv.org/abs/2609.20034v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20034v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-20106",
