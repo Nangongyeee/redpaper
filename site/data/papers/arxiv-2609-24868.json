@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2609-24868",
+  "source": "arxiv",
+  "title": "DualWAM: Dual-System World Action Models for Asynchronous Global Planning and Local Refinement",
+  "title_zh": "DualWAM: Dual-System World Action Models for Asynchronous Global Planning and Local Refinement",
+  "abstract": "World Action Models (WAMs) jointly generate robot actions and predict future world states, transferring priors from video pretraining to robot control. However, future visual prediction is computationally expensive, so existing WAMs often rely on long action chunks to amortize inference cost across control steps, at the cost of closed-loop responsiveness. We present \\method, a dual-system WAM that preserves broader-horizon world-action generation while enabling high-frequency closed-loop action updates by decoupling global planning and local refinement. \\systwo periodically performs high-noise bidirectional denoising over a broader world-action chunk to establish a global plan, while wrist-only \\sysone extracts a temporally aligned short window from the intermediate denoising state and completes low-noise refinement using the latest wrist observations, which provide action-aligned cues about local geometry, motion, and contact during interaction. The two systems operate asynchronously along a shared denoising trajectory: each global plan is reused across multiple local updates, while \\sysone repeatedly incorporates fresh interaction feedback. Across zero-shot manipulation tasks on Franka and Galbot, \\method improves success over the strongest evaluated baseline by 4.5 percentage points on average, while achieving a 16.6$\\times$ critical-path speedup. Further studies show that role-matched egocentric and UMI data improve success by 14 percentage points, and that the decoupled design naturally supports edge--cloud deployment with substantially lower communication overhead than the baseline.",
+  "abstract_zh": "World Action Models (WAMs) jointly generate robot actions and predict future world states, transferring priors from video pretraining to robot control. However, future visual prediction is computationally expensive, so existing WAMs often rely on long action chunks to amortize inference cost across control steps, at the cost of closed-loop responsiveness. We present method, a dual-system WAM that preserves broader-horizon world-action generation while enabling high-frequency closed-loop action updates by decoupling global planning and local refinement. systwo periodically performs high-noise bidirectional denoising over a broader world-action chunk to establish a global plan, while wrist-only sysone extracts a temporally aligned short window from the intermediate denoising state and completes low-noise refinement using the latest wrist observations, which provide action-aligned cues about local geometry, motion, and contact during interaction. The two systems operate asynchronously along a shared denoising trajectory: each global plan is reused across multiple local updates, while sysone repeatedly incorporates fresh interaction feedback. Across zero-shot manipulation tasks on Franka and Galbot, method improves success over the strongest evaluated baseline by 4.5 percentage points on average, while achieving a 16.6$×$ critical-path speedup. Further studies show that role-matched egocentric and UMI data improve success by 14 percentage points, and that the decoupled design naturally supports edge--cloud deployment with substantially lower communication overhead than the baseline.",
+  "tldr_zh": "World Action Models (WAMs) jointly generate robot actions an",
+  "cover_zh": "World Action Models (WAMs) jointly generate robot actions an",
+  "authors": [
+    {
+      "name": "Yixin Zheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiangran Lyu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuntian Deng",
+      "affiliation": ""
+    },
+    {
+      "name": "Kai Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yizhou Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Yizhou Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoguang Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "He Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhizheng Zhang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "arxiv_id": "2609.24868",
+  "pdf_url": "https://arxiv.org/pdf/2609.24868v1",
+  "abs_url": "http://arxiv.org/abs/2609.24868v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-24868.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-24868-p2.jpg",
+    "assets/img/covers/arxiv-2609-24868-p3.jpg",
+    "assets/img/covers/arxiv-2609-24868-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 17,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 17 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,132 @@
+{
+  "id": "arxiv-2609-24840",
+  "source": "arxiv",
+  "title": "PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control",
+  "title_zh": "PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control",
+  "abstract": "Diffusion models offer flexible motion generation, but translating this flexibility into feedback-responsive humanoid control remains challenging. Hierarchical systems steer motion through references that may exceed a separate tracker's capabilities, leaving recovery and physical execution largely to the tracker. Action-only diffusion generates actions directly but lacks an explicit future-state trajectory for test-time motion objectives. Joint state-action diffusion provides this representation, yet representative controllers often depend on privileged full-body states, and support for learned behavior selection and test-time motion steering remains fragmented. We present PredActor, a predictive action diffusion policy that brings these complementary steering capabilities into one directly executed policy using proprioceptive observations. Conditioned on proprioceptive history and optional task context, PredActor jointly generates executable actions and an internal future-state trajectory. Classifier-free guidance strengthens text-conditioned behavior, while classifier guidance steers predicted states toward test-time objectives. Only actions are executed, without a separate motion-reference tracker or externally estimated full-body states as policy inputs. In simulation, PredActor reaches all 15 destination targets and achieves a text retrieval score of 0.580, compared with 0.373 for conditional action diffusion, with similar observed disturbance survival. To make this guided policy practical onboard, rolling denoising and computation-preserving runtime optimizations reduce the complete callback to 16.790 ms median and 19.383 ms p95 on a Jetson Orin NX, both below the 20 ms control period. We deploy PredActor on a Unitree G1; evaluations across simulation and physical hardware demonstrate text-conditioned motion, disturbance response, joystick control, and semantic interpolation.",
+  "abstract_zh": "Diffusion models offer flexible motion generation, but translating this flexibility into feedback-responsive humanoid control remains challenging. Hierarchical systems steer motion through references that may exceed a separate tracker's capabilities, leaving recovery and physical execution largely to the tracker. Action-only diffusion generates actions directly but lacks an explicit future-state trajectory for test-time motion objectives. Joint state-action diffusion provides this representation, yet representative controllers often depend on privileged full-body states, and support for learned behavior selection and test-time motion steering remains fragmented. We present PredActor, a predictive action diffusion policy that brings these complementary steering capabilities into one directly executed policy using proprioceptive observations. Conditioned on proprioceptive history and optional task context, PredActor jointly generates executable actions and an internal future-state trajectory. Classifier-free guidance strengthens text-conditioned behavior, while classifier guidance steers predicted states toward test-time objectives. Only actions are executed, without a separate motion-reference tracker or externally estimated full-body states as policy inputs. In simulation, PredActor reaches all 15 destination targets and achieves a text retrieval score of 0.580, compared with 0.373 for conditional action diffusion, with similar observed disturbance survival. To make this guided policy practical onboard, rolling denoising and computation-preserving runtime optimizations reduce the complete callback to 16.790 ms median and 19.383 ms p95 on a Jetson Orin NX, both below the 20 ms control period. We deploy PredActor on a Unitree G1; evaluations across simulation and physical hardware demonstrate text-conditioned motion, disturbance response, joystick control, and semantic interpolation.",
+  "tldr_zh": "Diffusion models offer flexible motion generation, but trans",
+  "cover_zh": "Diffusion models offer flexible motion generation, but trans",
+  "authors": [
+    {
+      "name": "Lei Ye",
+      "affiliation": ""
+    },
+    {
+      "name": "Haibo Gao",
+      "affiliation": ""
+    },
+    {
+      "name": "Yitang Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Peng Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zetong Jing",
+      "affiliation": ""
+    },
+    {
+      "name": "Junhan Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Fanrong Dong",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziqi Han",
+      "affiliation": ""
+    },
+    {
+      "name": "Xue Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianhua Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Cewu Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hao Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Liang Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "arxiv_id": "2609.24840",
+  "pdf_url": "https://arxiv.org/pdf/2609.24840v1",
+  "abs_url": "http://arxiv.org/abs/2609.24840v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-24840.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-24840-p2.jpg",
+    "assets/img/covers/arxiv-2609-24840-p3.jpg",
+    "assets/img/covers/arxiv-2609-24840-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 25,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（humanoid control、full-body、unitree g1、diffusion policy）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 25 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
