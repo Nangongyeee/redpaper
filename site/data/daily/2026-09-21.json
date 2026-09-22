@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "count": 2,
+  "count": 14,
   "papers": [
     {
       "id": "vid-youtube-LAT2RIKjhTo",
@@ -58,6 +58,259 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-24308",
+      "source": "arxiv",
+      "title": "HappyWorld-Bench",
+      "title_zh": "HappyWorld-Bench",
+      "tldr_zh": "Evaluating world models requires assessing both the quality",
+      "cover_zh": "Evaluating world models requires assessing both the quality",
+      "abstract_zh": "Evaluating world models requires assessing both the quality of the worlds they generate and their consistency and responsiveness under exploration, interaction, and modification. We introduce HappyWorld-Bench, a comprehensive benchmark that evaluates whether generated worlds remain reliable as agents interact with them. Our design is built on a hierarchical capability framework of six world capabilities (W1-W6), from generative construction to unified world modeling, instantiated across three independent evaluation tracks: video world models, spatial world models, and embodied world models. HappyWorld-Bench comprises 1,138 video prompts, 300 spatial scenes, and 254 embodied test cases. Across all three tracks, we build and operate HappyWorld-Arena to organize human A/B comparisons and derive model-level Elo ratings, which complement newly designed automated metrics that capture behavioral correctness. We evaluate 14 video world models, 9 spatial systems, and 8 embodied candidates under this unified framework. Results reveal remaining reliability gaps across all three tracks: video models exhibit reduced consistency during extended rollouts and revisits, spatial models achieve at best 70.14% placement accuracy and 73.33% edit execution, and embodied models struggle to preserve state across multi-step actions and respond precisely to altered action conditions and physical rules. These findings highlight the need to evaluate world models not only by visual quality, but also by state consistency and the correctness of their responses to actions and interventions.",
+      "authors": [
+        "Zhiqi Bai",
+        "Junai Cai",
+        "Yixin Chen"
+      ],
+      "authors_all": [
+        "Zhiqi Bai",
+        "Junai Cai",
+        "Yixin Chen",
+        "Jingrun Du",
+        "Tao Feng",
+        "Wei Gong",
+        "Siyuan Huang",
+        "Xiao Lin",
+        "Jiaheng Liu",
+        "Jun Luo",
+        "Yongzhe Lyu",
+        "Liya Ma",
+        "Zenan Meng",
+        "Lin Qu",
+        "Wenbo Su",
+        "Jiaming Wang",
+        "Qinghe Wang",
+        "Shaofei Wang",
+        "Yanghai Wang",
+        "Zequn Wang",
+        "Ziming Wang",
+        "Hu Wei",
+        "Jiangtao Wu",
+        "Ruiqi Wu",
+        "Jiaxin Xie",
+        "Yuchi Xu",
+        "Ze Xu",
+        "Chengting Yu",
+        "Liangyu Yuan",
+        "Gang Zeng",
+        "Yawen Zeng",
+        "Xingyao Zhang",
+        "Zizheng Zhang",
+        "Bo Zheng",
+        "Jiancheng Zhu",
+        "Song-Chun Zhu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-21",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Siyuan Huang"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24308",
+      "abs_url": "http://arxiv.org/abs/2609.24308v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24308v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24054",
+      "source": "arxiv",
+      "title": "AquaOrbit: Sim-to-Real Reinforcement Learning for Underwater Target Orbiting under Intermittent Visual Feedback",
+      "title_zh": "AquaOrbit: Sim-to-Real Reinforcement Learning for Underwater Target Orbiting under Intermittent Visual Feedback",
+      "tldr_zh": "Intermittent visual loss disrupts target-relative feedback d",
+      "cover_zh": "Intermittent visual loss disrupts target-relative feedback d",
+      "abstract_zh": "Intermittent visual loss disrupts target-relative feedback during underwater orbiting, making it difficult to maintain coordinated motion and reacquire a moving target. We present AquaOrbit, a reinforcement-learning controller with a recovery module for underwater target orbiting under interrupted visual feedback. During detection loss, the recovery module uses latched line-of-sight, roll, and depth references to support stabilization and target reacquisition. We train the controller in Isaac Sim with dynamics, observation, and vision-loss randomization. Evaluated without retraining in Gazebo/ROS2 under a different physics engine and perception perturbations, AquaOrbit completes 20/20 orbiting trials in each of the static- and moving-target conditions on an unseen variable-depth 3-D trajectory. In the moving-target condition, it reduces mean line-of-sight error by approximately 46% relative to a PID-based visual servoing controller with recovery while maintaining comparable path-tracking accuracy; removing the recovery module reduces completion to 9/20. Zero-shot physical deployment with fully onboard perception and control demonstrates elliptical, figure-eight, and variable-depth circular trajectories, including the latter two trajectory types absent from training. The robot maintains attitude stability during manual occlusions lasting up to 8s and reacquires the target within 2.5s in the reported attitude-induced field-of-view loss events.",
+      "authors": [
+        "Kanzhong Yao",
+        "Jinyi Leng",
+        "Hao Zhang"
+      ],
+      "authors_all": [
+        "Kanzhong Yao",
+        "Jinyi Leng",
+        "Hao Zhang",
+        "Zhe Sun",
+        "Xuelong Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Xuelong Li"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-24054.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-24054-p2.jpg",
+        "assets/img/covers/arxiv-2609-24054-p3.jpg",
+        "assets/img/covers/arxiv-2609-24054-p4.jpg"
+      ],
+      "arxiv_id": "2609.24054",
+      "abs_url": "http://arxiv.org/abs/2609.24054v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24054v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24313",
+      "source": "arxiv",
+      "title": "NeuIDO: Neural Intrinsic Dynamics Operator for Physics-Informed 4D World Models",
+      "title_zh": "NeuIDO: Neural Intrinsic Dynamics Operator for Physics-Informed 4D World Models",
+      "tldr_zh": "World models aim to capture environmental dynamics and predi",
+      "cover_zh": "World models aim to capture environmental dynamics and predi",
+      "abstract_zh": "World models aim to capture environmental dynamics and predict future trajectories, showing growing potential for embodied intelligence. Physics-informed 4D generation integrates physical simulation to predict 3D object interactions, offering a promising pathway toward world models. However, this paradigm relies on manually imposed dynamical assumptions rather than internalizing world dynamics, and thus still leaves a gap toward a true world model. To bridge this gap, we propose NeuIDO, a novel world dynamics modeling framework that learns a unified intrinsic dynamics representation from visual observations, advancing physics-informed 4D generation toward a world model. Specifically, we formulate world modeling as a neural operator learning problem and introduce a two-stage training strategy to learn a generalizable mapping from the visual observation distribution to the intrinsic dynamics distribution. Building on this observation-dynamics mapping, NeuIDO enables zero-shot dynamics inference directly from videos and can be further aligned with complex real-world dynamics via few-shot adaptation. Extensive experiments demonstrate that NeuIDO effectively unifies the intrinsic dynamics underlying diverse visual observations into a shared representation and rapidly infers dynamics in novel scenes.",
+      "authors": [
+        "Jiajing Lin",
+        "Xin Zhang",
+        "Jianhua Sun"
+      ],
+      "authors_all": [
+        "Jiajing Lin",
+        "Xin Zhang",
+        "Jianhua Sun"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-21",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 ECCV 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24313",
+      "abs_url": "http://arxiv.org/abs/2609.24313v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24313v1",
+      "venue": "ECCV 2026",
+      "venue_announced": "",
+      "score": 32,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24552",
+      "source": "arxiv",
+      "title": "Smoothness as a Constraint for Stable Humanoid Locomotion",
+      "title_zh": "Smoothness as a Constraint for Stable Humanoid Locomotion",
+      "tldr_zh": "Embodied AI systems, particularly humanoid robots deployed i",
+      "cover_zh": "Embodied AI systems, particularly humanoid robots deployed i",
+      "abstract_zh": "Embodied AI systems, particularly humanoid robots deployed in real world scenarios require whole-body control policies that are both task-responsive and physically smooth. However, smoothness is not uniform across the body: lower body must remain sufficiently reactive, while the upper body must be tightly regulated to preserve stability. Existing reinforcement learning approaches typically impose smoothness through auxiliary terms in the reward function, which compete with task objectives, treating the body as uniform and provide no direct control over the physical quantities responsible for smooth behavior. We introduce DeCap (Decoupled Constraint-aware policy), a constrained reinforcement learning algorithm that decouples whole-body smoothness into separate upper- and lower-body constraint groups, each formulates smoothness as explicit constraints on physical motion limits. To improve constraint satisfaction near feasibility boundaries, DeCap incorporates a bounded barrier penalty that activates proactively as limits are approached and remains bounded at the constraint limit. On real-world humanoid whole-body control task, DeCap reduces upper-body action rate by 2.50x and acceleration by 2.18x relative to reward-based smoothness policies, while also improving lower-body smoothness and reducing transient motion. We demonstrate that a fixed set of smoothness constraints transfers across diverse terrains, alleviating the need of extensive reward tuning.",
+      "authors": [
+        "Utsav Panchal",
+        "Denis Kleyko",
+        "Unal Artan"
+      ],
+      "authors_all": [
+        "Utsav Panchal",
+        "Denis Kleyko",
+        "Unal Artan",
+        "Amy Loutfi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-24552.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-24552-p2.jpg",
+        "assets/img/covers/arxiv-2609-24552-p3.jpg",
+        "assets/img/covers/arxiv-2609-24552-p4.jpg"
+      ],
+      "arxiv_id": "2609.24552",
+      "abs_url": "http://arxiv.org/abs/2609.24552v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24552v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-513a5289cc",
       "source": "qbitai",
       "title": "GPT-6 Astra开进机器人身体！清华联手无问芯穹等开源RPent",
@@ -99,6 +352,456 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2609-24385",
+      "source": "arxiv",
+      "title": "Tactile-JEPA: Topology-Aware Self-Supervised Representation Learning for Distributed Tactile Sensors",
+      "title_zh": "Tactile-JEPA: Topology-Aware Self-Supervised Representation Learning for Distributed Tactile Sensors",
+      "tldr_zh": "Tactile sensing is an essential modality for robots performi",
+      "cover_zh": "Tactile sensing is an essential modality for robots performi",
+      "abstract_zh": "Tactile sensing is an essential modality for robots performing contact-rich, dexterous manipulation, particularly under visual occlusion. While pre-trained image encoders are standard in robot learning pipelines, tactile encoders are still commonly trained from scratch from raw, noisy signals, which might limit their expressivity. Existing self-supervised learning (SSL) approaches focus predominantly on vision-based tactile sensors, leaving distributed electronic skins largely unaddressed. These sensors, however, have a distinctive property: their sensing elements are sparse and irregularly arranged over the surface they cover, which makes direct reuse of visual SSL methods suboptimal. We present Tactile-JEPA, an efficient self-supervised pre-training method that uses the spatial arrangement of tactile sensors to learn topology-aware representations. Specifically, it is trained to predict the embeddings of masked sensing elements from the unmasked remainder, using the sensor connectivity graph to guide spatial masking. Our analysis shows that effective tactile representations require capturing both local contact details and the global state of the tactile surface, which we achieve through dual-scale masking. Across three diverse datasets spanning magnetic and piezoresistive sensors, different robot embodiments, and single- and paired-sensor configurations, Tactile-JEPA reduces force estimation error by 6.3% and in-hand orientation error by 20.8% over the prior state-of-the-art, with consistent gains in other downstream applications, including policy learning. Overall, our results demonstrate that the benefit of tactile sensing depends critically on the quality of encoder pre-training, a problem which Tactile-JEPA addresses directly. Code is available at https://github.com/E-Kovtun/tactile.",
+      "authors": [
+        "Elizaveta Kovtun",
+        "Matvey Konovalov",
+        "Andrey Sakhovskiy"
+      ],
+      "authors_all": [
+        "Elizaveta Kovtun",
+        "Matvey Konovalov",
+        "Andrey Sakhovskiy",
+        "Semen Budennyy"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24385",
+      "abs_url": "http://arxiv.org/abs/2609.24385v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24385v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=lJ4JGNmo-do",
+          "embed_url": "https://www.youtube.com/embed/lJ4JGNmo-do",
+          "title": "GitHub - E-Kovtun/tactile · GitHub",
+          "source": "project_page"
+        },
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=T_ha7fH7qKM",
+          "embed_url": "https://www.youtube.com/embed/T_ha7fH7qKM",
+          "title": "GitHub - E-Kovtun/tactile · GitHub",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-23976",
+      "source": "arxiv",
+      "title": "Anticipatory Robot Goalkeeping via Monotone Optimal Stopping",
+      "title_zh": "Anticipatory Robot Goalkeeping via Monotone Optimal Stopping",
+      "tldr_zh": "Robots engaged in fast physical interactions often need to a",
+      "cover_zh": "Robots engaged in fast physical interactions often need to a",
+      "abstract_zh": "Robots engaged in fast physical interactions often need to act before the intent of another agent is fully known. Anticipatory goalkeeping illustrates this challenge. Waiting provides more reliable information about the target but reduces the physical opportunity for interception, whereas acting early preserves reachability but requires initiating motion under uncertainty. Given a fixed closed-loop save controller, we formulate the decision of when to initiate motion as a policy-conditional finite-horizon optimal stopping problem. Building on this formulation, we propose monotone optimal stopping (MOS), a structured release-timing method for dynamic robotic interception. The quadruped save policy is trained with reinforcement learning, while MOS determines when the policy should be activated from the evolving robot state and target belief. Rather than predicting a release time or relying on confidence alone, MOS learns the return advantage of acting now over waiting for one more observation. We derive a direct Bellman recursion for this act-versus-wait margin and impose monotonicity only with respect to physical urgency, reflecting the irreversible loss of interception opportunity as time elapses. This structure enables early activation for dynamically demanding saves while preserving closed-loop adaptation when later observations change the predicted target. Under a single-crossing condition, MOS admits a threshold release boundary with a bounded approximation error. Extensive simulation studies show that MOS improves the mean save rate from 67.7% to 74.4% over a parameter-matched learned gate and increases reversal saves from 52.1% to 66.5%. Real-robot experiments further demonstrate rapid interception and post-release direction correction under human shot-direction feints.",
+      "authors": [
+        "Hao E. Zhang",
+        "Ruize Geng",
+        "Yisen Li"
+      ],
+      "authors_all": [
+        "Hao E. Zhang",
+        "Ruize Geng",
+        "Yisen Li",
+        "Yaru Niu",
+        "Yikai Wang",
+        "Raihan Haque",
+        "Khalil Zbiss",
+        "Guanyang Luo",
+        "Hui-ping Wang",
+        "H. Eric Tseng",
+        "Ding Zhao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-23976.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-23976-p2.jpg",
+        "assets/img/covers/arxiv-2609-23976-p3.jpg",
+        "assets/img/covers/arxiv-2609-23976-p4.jpg"
+      ],
+      "arxiv_id": "2609.23976",
+      "abs_url": "http://arxiv.org/abs/2609.23976v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.23976v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24145",
+      "source": "arxiv",
+      "title": "MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation",
+      "title_zh": "MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation",
+      "tldr_zh": "We present MimicAgent, a prompt-to-trajectory generation fra",
+      "cover_zh": "We present MimicAgent, a prompt-to-trajectory generation fra",
+      "abstract_zh": "We present MimicAgent, a prompt-to-trajectory generation framework for learning dynamic quadruped skills. Although reward shaping is extensively used when training quadruped policies, navigating the resulting reward landscape is notoriously difficult, requiring hours of \"graduate student descent\". Eureka attempts to automate reward design with LLMs, but we find that it struggles to generalize across diverse skills and morphologies. Our key observation is that it is far easier for a human - and by association, an LLM - to generate reference motions than to shape reward functions. Our hypothesis is motivated by the success of example-guided RL for humanoids, which exploits large-scale motion capture datasets as references for training locomotion policies. Unlike humanoids, quadrupeds lack such reference motion data. Towards this end, we propose MimicAgent, an agentic harness that, given a skill prompt, generates quadruped reference trajectories with coding agents. These coarse reference trajectories are then used to train example-guided RL policies that are deployable in simulation and in the real-world. Notably, we find that when prompting Claude Fable 5.1 within our agentic harness, 87% of prompts yield semantically aligned reference trajectories.",
+      "authors": [
+        "Lucky Kant Nayak",
+        "Narayanan Palghat Parameswaran",
+        "Neehar Peri"
+      ],
+      "authors_all": [
+        "Lucky Kant Nayak",
+        "Narayanan Palghat Parameswaran",
+        "Neehar Peri",
+        "Deva Ramanan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24145",
+      "abs_url": "http://arxiv.org/abs/2609.24145v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24145v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24352",
+      "source": "arxiv",
+      "title": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs",
+      "title_zh": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs",
+      "tldr_zh": "Large language models (LLMs), when acting as agents, are exp",
+      "cover_zh": "Large language models (LLMs), when acting as agents, are exp",
+      "abstract_zh": "Large language models (LLMs), when acting as agents, are expected to take observed data in context, infer the latent state space underlying the world, and leverage it for downstream prediction. However, prior work demonstrated that LLMs struggle to use representations learned in context on a graph tracking task, where the model needs to construct a representation of the graph governing data generation process and use it for subsequent predictions. In this paper, we show that extending this to few-shot settings, where each demonstration is generated from a different world with either the same or different graph topologies, enhances its prediction on 6 models from 4 model families. To understand this improvement, we linearly probe a low-dimensional world representation that encodes graph information in the hidden states. Notably, we find that few-shot demonstrations relocate the world representation and increase its predictive use. Specifically, for each model, these world representations shift in directions nearly orthogonal to their original subspace, and interventions on these representations selectively impair performance more than interventions on other subspaces. Consistent with this insight, we show that few-shot demonstrations with observations from different worlds improve performance on ARC-AGI-1&2, web agent tasks, and Othello. Our findings elucidate the role and internal mechanisms of few-shot demonstrations in in-context world modeling. More broadly, our work advances our understanding of how LLM agents learn from in-context observations and provides implications for their further improvement.",
+      "authors": [
+        "Kohsei Matsutani",
+        "Gouki Minegishi",
+        "Core Francisco Park"
+      ],
+      "authors_all": [
+        "Kohsei Matsutani",
+        "Gouki Minegishi",
+        "Core Francisco Park",
+        "Takeshi Kojima",
+        "Yusuke Iwasawa",
+        "Yutaka Matsuo"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-21",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24352",
+      "abs_url": "http://arxiv.org/abs/2609.24352v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24352v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24433",
+      "source": "arxiv",
+      "title": "FoldQuantVLA: Native Low-Bit Quantization of Vision-Language-Action Models via Consistent Folding",
+      "title_zh": "FoldQuantVLA: Native Low-Bit Quantization of Vision-Language-Action Models via Consistent Folding",
+      "tldr_zh": "Low-bit vision-language-action inference must reduce observa",
+      "cover_zh": "Low-bit vision-language-action inference must reduce observa",
+      "abstract_zh": "Low-bit vision-language-action inference must reduce observation-to-action latency while preserving robot behavior. We present FoldQuantVLA, a post-training quantization framework that carries a consistent activation representation through calibration, weight rounding, and native integer execution. It combines channel scaling and block Hadamard transforms with dynamic per-token quantization, without policy retraining. Custom TensorRT plugins execute projections in both the language backbone and iterative action expert with four-bit weights and activations (W4A4) on Ada GPUs and Jetson AGX Orin. Evaluation spans LIBERO, SimplerEnv, and two robot platforms. Across three GR00T checkpoints and $π_{0.5}$, W4A4 achieves $1.20$ to $1.33×$ speedups over floating-point TensorRT on Orin and $1.25$ to $1.52×$ on desktop. Retaining language attention-output and feed-forward down projections at eight bits (W8A8) improves held-out action fidelity on all four checkpoints. Across four real-robot tasks, this configuration raises observed GR00T N1.7 success from $80.0\\%$ with uniform W4A4 to $92.5\\%$ over 80 trials per configuration, with a measured additional Orin latency of 1 ms.",
+      "authors": [
+        "Hung T. Ho",
+        "Khanh D. Nguyen",
+        "Quang D. Nguyen"
+      ],
+      "authors_all": [
+        "Hung T. Ho",
+        "Khanh D. Nguyen",
+        "Quang D. Nguyen",
+        "Thanh Q. Duong",
+        "Ngan Le",
+        "Meng Guo",
+        "Vien A. Ngo",
+        "An T. Le"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-24433.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-24433-p2.jpg",
+        "assets/img/covers/arxiv-2609-24433-p3.jpg",
+        "assets/img/covers/arxiv-2609-24433-p4.jpg"
+      ],
+      "arxiv_id": "2609.24433",
+      "abs_url": "http://arxiv.org/abs/2609.24433v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24433v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24547",
+      "source": "arxiv",
+      "title": "MIRA: Real-Time Full-Duplex Human-Robot Interaction for Embodied Companions",
+      "title_zh": "MIRA: Real-Time Full-Duplex Human-Robot Interaction for Embodied Companions",
+      "tldr_zh": "Real-time embodied companion interaction requires a robot to",
+      "cover_zh": "Real-time embodied companion interaction requires a robot to",
+      "abstract_zh": "Real-time embodied companion interaction requires a robot to infer user intent from streaming speech, generate timely responses, and execute expressive, interruptible motions. Existing systems typically decouple dialogue orchestration from gesture synthesis, relying on offline motion generation from complete audio. This separation leaves open how a deployed robot can dynamically synchronize response content, prosodic timing, and physical safety under incremental inputs and uncertain turn boundaries. We present MIRA, a unified framework for full-duplex embodied companion interaction. Given streaming user speech, dialogue history, and vocal affect, MIRA predicts both the response text and an explicit embodiment cue. Discrete social behaviors (eg listening, greeting) are mapped to validated robot trajectories, while open-ended speaking is paired with streaming, co-speech motion. This generative motion is governed by a predict-more-than-commit sliding window that provides temporal look-ahead for motion continuity while limiting physical commitment to a short, cancellable prefix. Crucially, we design CORTEX, a dual-timescale interaction policy that manages low-latency streaming and deliberative turn decisions, backed by a robot-side execution layer that enforces physical safety constraints at the control rate. We deploy MIRA on an Astribot S1 humanoid robot. Quantitative evaluations demonstrate competitive audio-motion alignment relative to state-of-the-art motion-generation baselines, while real-robot deployment measurements characterize streaming responsiveness and interruption handling.",
+      "authors": [
+        "Lijian Lin",
+        "Ye Zhu",
+        "Fan Zhang"
+      ],
+      "authors_all": [
+        "Lijian Lin",
+        "Ye Zhu",
+        "Fan Zhang",
+        "Yunfei Liu",
+        "Baofeng Li",
+        "Xianwen Zeng",
+        "Jianan Wang",
+        "Yu Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-24547.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-24547-p2.jpg",
+        "assets/img/covers/arxiv-2609-24547-p3.jpg",
+        "assets/img/covers/arxiv-2609-24547-p4.jpg"
+      ],
+      "arxiv_id": "2609.24547",
+      "abs_url": "http://arxiv.org/abs/2609.24547v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24547v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24511",
+      "source": "arxiv",
+      "title": "InsertAnything: Generalizable Contact-Rich Precision Insertion from Simulation to Reality",
+      "title_zh": "InsertAnything: Generalizable Contact-Rich Precision Insertion from Simulation to Reality",
+      "tldr_zh": "Contact-rich precision insertion is a key manipulation skill",
+      "cover_zh": "Contact-rich precision insertion is a key manipulation skill",
+      "abstract_zh": "Contact-rich precision insertion is a key manipulation skill in robotic assembly. Tight clearances make insertion more sensitive to alignment errors and prone to collisions and jamming, while variations in geometry and clearance across parts further complicate policy reuse. We present a reinforcement learning framework that trains insertion policies entirely in simulation for direct deployment without real-world demonstrations or policy fine-tuning. By combining target poses with compact three-dimensional fingertip force feedback, the policy learns to search for alignment and correct its motion despite errors in the estimated hole position. A decoupled gated reward coordinates alignment and insertion. Force-signal smoothing and state-independent standard deviations stabilize the learning process. The resulting policies perform real-world insertion across multiple hole geometries with a minimum nominal clearance of 0.02 mm and improve success while reducing peak contact forces under hole-position errors. Cross-clearance and cross-geometry evaluations further confirm policy generalization. The system achieved the first perfect score of 20/20 on ManipulationNet's peg-in-hole benchmark under its Human-in-the-Loop protocol, with fully autonomous insertion motions. A single policy trained only on a simulated hexagonal insertion task achieved an overall success rate of 95.0% across eight unseen real-world insertion tasks. These results show that learning entirely in simulation can yield precision insertion skills that can be deployed directly and reused across real-world tasks. The project website (https://mzhsoul.github.io/InsertAnything/) provides open-source simulation and real-robot experiment scripts, assets, and trained checkpoints.",
+      "authors": [
+        "Zhenghua Ma",
+        "Xinpan Meng",
+        "Zeyu Liu"
+      ],
+      "authors_all": [
+        "Zhenghua Ma",
+        "Xinpan Meng",
+        "Zeyu Liu",
+        "Muyuan Ma",
+        "Hengdi Zhang",
+        "Houcheng Li",
+        "Long Cheng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-21",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24511",
+      "abs_url": "http://arxiv.org/abs/2609.24511v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24511v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-24537",
+      "source": "arxiv",
+      "title": "MIRAGE: Full-Body Bystander Privacy for Smart Glasses with Consent-Based Restoration",
+      "title_zh": "MIRAGE: Full-Body Bystander Privacy for Smart Glasses with Consent-Based Restoration",
+      "tldr_zh": "Video recording on smart glasses exposes more than faces. Co",
+      "cover_zh": "Video recording on smart glasses exposes more than faces. Co",
+      "abstract_zh": "Video recording on smart glasses exposes more than faces. Continuous capture reveals full-body biometric signatures, including gait, posture, and silhouette, that enable person re-identification (ReID) even after conventional face sanitization. We present MIRAGE, a three-tier architecture for privacy-preserving smart glasses that enforces full-body privacy, supports synthetic full-body replacement, and retains encrypted recovery material for consent-based restoration. We implement MIRAGE on a Raspberry Pi~5 (a CPU-only proxy for smart-glasses compute), companion phones, and a cloud generative backend. Compared to prior systems, MIRAGE achieves 0.948 AP and 0.976 AR while accurately detecting the complete visible body. Its bounding box masking reduces learned silhouette-based ReID to essentially random guessing, with 10.86% Rank-1 accuracy compared with an 11.12% measured chance level. Even against an adaptive adversary retrained on MIRAGE's sanitized pose signals, Rank-1 gait identification drops from 90.25% to 26.20%, removing 72.5% of the adversary's identification advantage.",
+      "authors": [
+        "Muhammad Umair",
+        "Muhammad Danial Maqbool",
+        "Fatima Arshad Cheema"
+      ],
+      "authors_all": [
+        "Muhammad Umair",
+        "Muhammad Danial Maqbool",
+        "Fatima Arshad Cheema",
+        "Kapal Dev",
+        "Muhammad Hamad Alizai",
+        "Muhammad Ali Siddiqi",
+        "Naveed Anwar Bhatti"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-21",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2609.24537",
+      "abs_url": "http://arxiv.org/abs/2609.24537v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24537v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }

@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2609-24433",
+  "source": "arxiv",
+  "title": "FoldQuantVLA: Native Low-Bit Quantization of Vision-Language-Action Models via Consistent Folding",
+  "title_zh": "FoldQuantVLA: Native Low-Bit Quantization of Vision-Language-Action Models via Consistent Folding",
+  "abstract": "Low-bit vision-language-action inference must reduce observation-to-action latency while preserving robot behavior. We present FoldQuantVLA, a post-training quantization framework that carries a consistent activation representation through calibration, weight rounding, and native integer execution. It combines channel scaling and block Hadamard transforms with dynamic per-token quantization, without policy retraining. Custom TensorRT plugins execute projections in both the language backbone and iterative action expert with four-bit weights and activations (W4A4) on Ada GPUs and Jetson AGX Orin. Evaluation spans LIBERO, SimplerEnv, and two robot platforms. Across three GR00T checkpoints and $π_{0.5}$, W4A4 achieves $1.20$ to $1.33\\times$ speedups over floating-point TensorRT on Orin and $1.25$ to $1.52\\times$ on desktop. Retaining language attention-output and feed-forward down projections at eight bits (W8A8) improves held-out action fidelity on all four checkpoints. Across four real-robot tasks, this configuration raises observed GR00T N1.7 success from $80.0\\%$ with uniform W4A4 to $92.5\\%$ over 80 trials per configuration, with a measured additional Orin latency of 1 ms.",
+  "abstract_zh": "Low-bit vision-language-action inference must reduce observation-to-action latency while preserving robot behavior. We present FoldQuantVLA, a post-training quantization framework that carries a consistent activation representation through calibration, weight rounding, and native integer execution. It combines channel scaling and block Hadamard transforms with dynamic per-token quantization, without policy retraining. Custom TensorRT plugins execute projections in both the language backbone and iterative action expert with four-bit weights and activations (W4A4) on Ada GPUs and Jetson AGX Orin. Evaluation spans LIBERO, SimplerEnv, and two robot platforms. Across three GR00T checkpoints and $π_{0.5}$, W4A4 achieves $1.20$ to $1.33×$ speedups over floating-point TensorRT on Orin and $1.25$ to $1.52×$ on desktop. Retaining language attention-output and feed-forward down projections at eight bits (W8A8) improves held-out action fidelity on all four checkpoints. Across four real-robot tasks, this configuration raises observed GR00T N1.7 success from $80.0\\%$ with uniform W4A4 to $92.5\\%$ over 80 trials per configuration, with a measured additional Orin latency of 1 ms.",
+  "tldr_zh": "Low-bit vision-language-action inference must reduce observa",
+  "cover_zh": "Low-bit vision-language-action inference must reduce observa",
+  "authors": [
+    {
+      "name": "Hung T. Ho",
+      "affiliation": ""
+    },
+    {
+      "name": "Khanh D. Nguyen",
+      "affiliation": ""
+    },
+    {
+      "name": "Quang D. Nguyen",
+      "affiliation": ""
+    },
+    {
+      "name": "Thanh Q. Duong",
+      "affiliation": ""
+    },
+    {
+      "name": "Ngan Le",
+      "affiliation": ""
+    },
+    {
+      "name": "Meng Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Vien A. Ngo",
+      "affiliation": ""
+    },
+    {
+      "name": "An T. Le",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "eess.SY"
+  ],
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "arxiv_id": "2609.24433",
+  "pdf_url": "https://arxiv.org/pdf/2609.24433v1",
+  "abs_url": "http://arxiv.org/abs/2609.24433v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-24433.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-24433-p2.jpg",
+    "assets/img/covers/arxiv-2609-24433-p3.jpg",
+    "assets/img/covers/arxiv-2609-24433-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（gr00t）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
