@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T10:19:58.307237+00:00",
-  "count": 2972,
+  "generated_at": "2026-09-23T12:50:41.210823+00:00",
+  "count": 2975,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -99032,6 +99032,59 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-25687",
+      "source": "arxiv_discover",
+      "title": "SG-CPG: Severity-Gated Central Pattern Generators for Adaptive Quadruped Locomotion under Continuous Actuator Degradation",
+      "title_zh": "SG-CPG: Severity-Gated Central Pattern Generators for Adaptive Quadruped Locomotion under Continuous Actuator Degradation",
+      "tldr_zh": "An animal with a weakened limb does not necessarily switch i",
+      "cover_zh": "An animal with a weakened limb does not necessarily switch i",
+      "abstract_zh": "An animal with a weakened limb does not necessarily switch its gait, instead it unloads the affected limb, re-coordinates the remaining limbs, and scales its response with injury severity. This graded adaptation allows locomotion to persist despite partial loss of limb strength, rather than requiring a discrete transition between healthy and failed. Inspired by this behavior, we propose SG-CPG, a central pattern generator (CPG) for quadruped locomotion under continuous actuator degradation. SG-CPG preserves a frozen healthy CPG policy and introduces two severity-driven gates: a residual gate that re-coordinates all four legs and an amplitude gate that progressively shortens the weakened leg's stride as degradation increases. We emulate progressive degradation through two mechanisms: lowering the joint torque ceiling (ceiling mechanism) and scaling its low-level controller gains (gain mechanism), representing distinct forms of actuator weakening. Our simulations on a Unitree Go2 show that SG-CPG maintains a trot gait with 100% survival across an omnidirectional command schedule under 95% joint strength loss while tracking commands within 8%. Under a lowered torque ceiling, removing either severity path, the residual's severity observation or the amplitude gate, raises clipping at the weakened joint from 4.4% to 13.6% and 26.3% of steps at an 80% loss. On a real Go2, SG-CPG survives 28 of 29 forward and turning trials with up to 93% calf torque degradation. These results show that severity-gated adaptation can extend a healthy locomotion policy to progressive actuator degradation without treating the fault as a discrete failure.",
+      "authors": [
+        "Adarsh Kumar Kosta",
+        "Kaushik Roy"
+      ],
+      "authors_all": [
+        "Adarsh Kumar Kosta",
+        "Kaushik Roy"
+      ],
+      "primary_category": "",
+      "published": "2026-09-22",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-25687.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-25687-p2.jpg",
+        "assets/img/covers/arxiv-2609-25687-p3.jpg",
+        "assets/img/covers/arxiv-2609-25687-p4.jpg"
+      ],
+      "arxiv_id": "2609.25687",
+      "abs_url": "http://arxiv.org/abs/2609.25687v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.25687v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-25756",
       "source": "arxiv",
       "title": "MedVLA: A Hierarchical Vision-Language-Action Framework for Closed-Loop Precision Medical Robot Manipulation",
@@ -127335,6 +127388,62 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-25631",
+      "source": "arxiv_discover",
+      "title": "DynaForge: Planning-Guided Residual Learning for Dynamic Manipulation Demonstration Generation",
+      "title_zh": "DynaForge: Planning-Guided Residual Learning for Dynamic Manipulation Demonstration Generation",
+      "tldr_zh": "Dynamic object manipulation is essential for robots operatin",
+      "cover_zh": "Dynamic object manipulation is essential for robots operatin",
+      "abstract_zh": "Dynamic object manipulation is essential for robots operating in real-world environments, yet methods for generating high-quality demonstrations remain limited. Methods designed for static tasks do not readily transfer to dynamic settings. Among dynamic demonstration generators, planning-based methods can fail near contact, while DOMINO-style replay simplifies dynamic interactions and may limit the experience available for policy learning. We present DynaForge, a planning-guided framework that learns residual corrections for dynamic manipulation demonstration generation. DynaForge combines low-frequency global planning with high-frequency object-centric inverse kinematics across task phases, and applies a residual policy to correct actions during dynamic interaction. An implicit curriculum groups rollouts under matched conditions and selects mixed-success groups, focusing residual reinforcement learning on the evolving competence frontier. On Can and Bottle, it uses 0.73x as many optimizer steps as vanilla GRPO at the same nominal environment-step budget, with higher observed final success rates. Across nine simulation tasks, DynaForge increases mean demonstration-generation success from 41.30% of the planning prior to 78.37%. With 800 demonstrations per task, DP3 policies trained on DynaForge data achieve 49.11% mean success, compared with 7.07% for DOMINO data. On three real-world dynamic tasks, DynaForge-trained policies achieve 30-60% success, compared with 0-10% for DOMINO-trained policies, showing the ability of DynaForge for sim-to-real transfer.",
+      "authors": [
+        "Yiyang Jin",
+        "Yu Zheng",
+        "Xiao He"
+      ],
+      "authors_all": [
+        "Yiyang Jin",
+        "Yu Zheng",
+        "Xiao He",
+        "Hesheng Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-09-22",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-25631.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-25631-p2.jpg",
+        "assets/img/covers/arxiv-2609-25631-p3.jpg",
+        "assets/img/covers/arxiv-2609-25631-p4.jpg"
+      ],
+      "arxiv_id": "2609.25631",
+      "abs_url": "http://arxiv.org/abs/2609.25631v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.25631v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-25820",
@@ -190501,6 +190610,57 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-19690",
+      "source": "arxiv_discover",
+      "title": "UniExo: Unified Multi-Skill Policies for Musculoskeletal Locomotion and Co-Adaptive Exoskeleton Control",
+      "title_zh": "UniExo: Unified Multi-Skill Policies for Musculoskeletal Locomotion and Co-Adaptive Exoskeleton Control",
+      "tldr_zh": "Daily locomotion encompasses diverse activities and frequent",
+      "cover_zh": "Daily locomotion encompasses diverse activities and frequent",
+      "abstract_zh": "Daily locomotion encompasses diverse activities and frequent transitions between them, yet most exoskeleton controllers are designed for a single activity or a narrow set of related movements. Changes in activity therefore typically require explicit mode switching and separately tuned or retrained controllers. Simulation-based learning reduces the need for hardware-based tuning but generally retains this limitation. Here we present UniExo, a framework that first constructs a multi-skill musculoskeletal human policy and then jointly trains an exoskeleton control policy with it. Four single-skill imitation experts for walking, turning, running and backward walking are distilled into a single network structured by a skill latent and subsequently fine-tuned through reinforcement learning on transition sequences. The resultant unified human policy achieves a mean tracking success rate of 94.7% on unseen clips of the four skills and exhibits greater robustness to perturbations than its constituent experts. A single hip exoskeleton controller (UniExo) is initialized from hip moment prediction of the human policy and co-adapted with it through multi-agent reinforcement learning across the four skills. This co-adaptation shifts the timing of the assistance torque and raises the fraction of positive work delivered to the hip. When deployed on a custom hip exoskeleton, the controller generalizes across four treadmill speeds in six participants and assists one participant through a continuous route of all four skills and their transitions, without skill labels or explicit mode switching. UniExo thus provides a step towards replacing activity-specific controllers with unified, user-specific controllers that support diverse locomotor activities and the transitions between them.",
+      "authors": [
+        "Yifei Yuan",
+        "Jakob Wolf",
+        "Ghaith Androwis"
+      ],
+      "authors_all": [
+        "Yifei Yuan",
+        "Jakob Wolf",
+        "Ghaith Androwis",
+        "Xianlian Zhou"
+      ],
+      "primary_category": "",
+      "published": "2026-09-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-19690.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-19690-p2.jpg",
+        "assets/img/covers/arxiv-2609-19690-p3.jpg",
+        "assets/img/covers/arxiv-2609-19690-p4.jpg"
+      ],
+      "arxiv_id": "2609.19690",
+      "abs_url": "http://arxiv.org/abs/2609.19690v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19690v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-19872",
