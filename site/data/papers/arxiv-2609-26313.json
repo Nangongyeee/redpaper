@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2609-26313",
+  "source": "arxiv",
+  "title": "SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation",
+  "title_zh": "SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation",
+  "abstract": "Recent vision-language-action (VLA) models are promising for general-purpose manipulation, but long-horizon execution remains fragile. Small state-estimation or control errors can lead to irreversible failures (e.g., collisions and object drops). Avoiding these risks requires a proactive safety mechanism capable of anticipating hazards. In this paper, we introduce SafeLoop, a non-invasive external wrapper that adds hazard prediction and rollback-based recovery to a VLA model without changing its parameters. SafeLoop trains a risk predictor from vision and proprioception to output four values: the probability and time-to-hazard for body collisions and for object failures. A lightweight controller then chooses one of three actions based on the predicted risk: continue execution (noop), save a safety checkpoint (record), or retreat in joint space (rollback). Rollback moves the robot back to a recent safe waypoint and queries the base policy again, which may yield an alternative continuation. Across 24 LIBERO tasks (16 random seeds each) and three real-robot tasks (25 rollouts each), SafeLoop achieves a stronger overall safety-success trade-off than alternative methods, reducing hazard cases by roughly 70% while preserving task success and the base-policy control rate. Project code is available at https://github.com/Loule0-0/SafeLoop/tree/release/safeloop.",
+  "abstract_zh": "Recent vision-language-action (VLA) models are promising for general-purpose manipulation, but long-horizon execution remains fragile. Small state-estimation or control errors can lead to irreversible failures (e.g., collisions and object drops). Avoiding these risks requires a proactive safety mechanism capable of anticipating hazards. In this paper, we introduce SafeLoop, a non-invasive external wrapper that adds hazard prediction and rollback-based recovery to a VLA model without changing its parameters. SafeLoop trains a risk predictor from vision and proprioception to output four values: the probability and time-to-hazard for body collisions and for object failures. A lightweight controller then chooses one of three actions based on the predicted risk: continue execution (noop), save a safety checkpoint (record), or retreat in joint space (rollback). Rollback moves the robot back to a recent safe waypoint and queries the base policy again, which may yield an alternative continuation. Across 24 LIBERO tasks (16 random seeds each) and three real-robot tasks (25 rollouts each), SafeLoop achieves a stronger overall safety-success trade-off than alternative methods, reducing hazard cases by roughly 70% while preserving task success and the base-policy control rate. Project code is available at https://github.com/Loule0-0/SafeLoop/tree/release/safeloop.",
+  "tldr_zh": "Recent vision-language-action (VLA) models are promising for",
+  "cover_zh": "Recent vision-language-action (VLA) models are promising for",
+  "authors": [
+    {
+      "name": "Zeyu Lou",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianran Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinquan Yue",
+      "affiliation": ""
+    },
+    {
+      "name": "Ya Jing",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenyang Si",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "arxiv_id": "2609.26313",
+  "pdf_url": "https://arxiv.org/pdf/2609.26313v1",
+  "abs_url": "http://arxiv.org/abs/2609.26313v1",
+  "venue": "IROS 2026",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-26313.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-26313-p2.jpg",
+    "assets/img/covers/arxiv-2609-26313-p3.jpg",
+    "assets/img/covers/arxiv-2609-26313-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 IROS 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 43,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、vla model、manipulation、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「IROS 2026」收录"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

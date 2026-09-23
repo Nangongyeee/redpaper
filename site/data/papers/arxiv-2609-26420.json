@@ -1,0 +1,81 @@
+{
+  "id": "arxiv-2609-26420",
+  "source": "arxiv",
+  "title": "Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training",
+  "title_zh": "Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training",
+  "abstract": "Text-to-motion models generate plausible human motion but do not model a robot's dynamics; whole-body tracking controllers execute robot references reliably but cannot replan an infeasible one. Recent language-to-humanoid systems bridge this gap by training. We measure how much of the gap closes with no training at all, by putting the deployment controller itself in the loop. Sample-simulate-select (S$^3$) draws $N$ motions per prompt from a frozen text-to-motion model, retargets each to a Unitree G1 by direction-matching inverse kinematics, rolls all of them out under full rigid-body dynamics with the pretrained SONIC tracking policy, and keeps the candidate the policy executed best. Because the verifier is the deterministic simulator itself, S$^3$ attains the any-of-$N$ ceiling by construction; what we measure is where that ceiling lies and what falls short of it. On 200 stratified HumanML3D test prompts with $N=8$, upright execution rises from 83.5% to 89.5% and hardware-gate passes from 33 to 85; on the complete test split (4,184 prompts) it rises from 80.5% to 89.5%. A kinematic verifier that predicts falls well (AUROC 0.90) recovers only a quarter of this gain: ranking a prompt's own candidates is harder than classifying the population. What selection cannot fix is one class, prompts that lower the pelvis, which a generator trained on retargeted robot data does execute. We further score the semantic fidelity of the executed motion with the standard text-motion evaluator, with a real-mocap control that attributes the loss to the robot projection, ablate the retargeter against GMR (complementary failures: the any-of-8 ceiling rises to 95.0% over both), and execute all 177 gate-selected clips on the real G1: every one completes standing, with hardware tracking error matching simulation ($r=0.94$).",
+  "abstract_zh": "Text-to-motion models generate plausible human motion but do not model a robot's dynamics; whole-body tracking controllers execute robot references reliably but cannot replan an infeasible one. Recent language-to-humanoid systems bridge this gap by training. We measure how much of the gap closes with no training at all, by putting the deployment controller itself in the loop. Sample-simulate-select (S$^3$) draws $N$ motions per prompt from a frozen text-to-motion model, retargets each to a Unitree G1 by direction-matching inverse kinematics, rolls all of them out under full rigid-body dynamics with the pretrained SONIC tracking policy, and keeps the candidate the policy executed best. Because the verifier is the deterministic simulator itself, S$^3$ attains the any-of-$N$ ceiling by construction; what we measure is where that ceiling lies and what falls short of it. On 200 stratified HumanML3D test prompts with $N=8$, upright execution rises from 83.5% to 89.5% and hardware-gate passes from 33 to 85; on the complete test split (4,184 prompts) it rises from 80.5% to 89.5%. A kinematic verifier that predicts falls well (AUROC 0.90) recovers only a quarter of this gain: ranking a prompt's own candidates is harder than classifying the population. What selection cannot fix is one class, prompts that lower the pelvis, which a generator trained on retargeted robot data does execute. We further score the semantic fidelity of the executed motion with the standard text-motion evaluator, with a real-mocap control that attributes the loss to the robot projection, ablate the retargeter against GMR (complementary failures: the any-of-8 ceiling rises to 95.0% over both), and execute all 177 gate-selected clips on the real G1: every one completes standing, with hardware tracking error matching simulation ($r=0.94$).",
+  "tldr_zh": "Text-to-motion models generate plausible human motion but do",
+  "cover_zh": "Text-to-motion models generate plausible human motion but do",
+  "authors": [
+    {
+      "name": "Raphael Memmesheimer",
+      "affiliation": ""
+    },
+    {
+      "name": "Sven Behnke",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "arxiv_id": "2609.26420",
+  "pdf_url": "https://arxiv.org/pdf/2609.26420v1",
+  "abs_url": "http://arxiv.org/abs/2609.26420v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-26420.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-26420-p2.jpg",
+    "assets/img/covers/arxiv-2609-26420-p3.jpg",
+    "assets/img/covers/arxiv-2609-26420-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（whole-body、whole-body tracking、humanoids、unitree g1）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
