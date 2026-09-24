@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T10:16:28.835282+00:00",
-  "count": 3020,
+  "generated_at": "2026-09-24T12:50:55.338324+00:00",
+  "count": 3023,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -17049,6 +17049,91 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2605-23568",
+      "source": "arxiv",
+      "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+      "title_zh": "TactileReflex：基于噪声统计的视觉-触觉反射控制用于力敏感操作",
+      "tldr_zh": "利用传感器噪声统计直接设定阈值，实现易碎容器抓取的三通道反射控制。",
+      "cover_zh": "不用力传感器也能精准抓杯子？噪声统计直接算出阈值，成功率拉满！",
+      "abstract_zh": "操作易碎的可变形容器（例如装有液体的一次性塑料杯）需要在极窄的力裕度内实时调整抓取力：力不足会导致滑落，力过大则会不可逆地使薄壁变形。现有方法难以实现此类力敏感操作任务。我们提出了一种基于噪声统计的标定驱动反射控制范式，结合基于视觉的触觉传感：通过分析传感器固有的噪声特性（通过简短的静态保持和卸载协议），直接推导出所有控制器阈值，消除了外部力标定、试错手动调参或材料特定的物理模型。实例化该范式，我们提出了TactileReflex，一个三通道闭环控制器，从双视觉-触觉传感器中提取三个图像级代理：剪切强度（$S_y$）、接触强度（$F_n$）和压力中心（$C$），并以约12 Hz的频率驱动优先级反射通道，用于滑移抑制、重量自适应释放和力保护。每个通道通过噪声导出的阈值直接在其代理上闭环。消融实验表明，只有完整的三通道系统能够防止不可逆的容器变形（5/5成功，而部分配置最多1/5）。在动态倒水任务中，固定力基线由于姿态漂移在所有10次尝试中均失败，而TactileReflex在两种水量下实现了9/10的成功率。作为一个自包含且可解释的控制器，TactileReflex可作为高层操作管线（包括无触觉VR遥操作和视觉-语言-动作（VLA）策略）的即插即用安全层。",
+      "authors": [
+        "Ziyan Feng",
+        "Yulong Fu",
+        "Zheng Li"
+      ],
+      "authors_all": [
+        "Ziyan Feng",
+        "Yulong Fu",
+        "Zheng Li",
+        "Yuxin He",
+        "Jieji Ren",
+        "Lujia Wang",
+        "Jinni Zhou",
+        "Yudong Zhong",
+        "Qiang Nie"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-05-22",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · IROS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2605-23568.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2605-23568-p2.jpg",
+        "assets/img/covers/arxiv-2605-23568-p3.jpg",
+        "assets/img/covers/arxiv-2605-23568-p4.jpg"
+      ],
+      "arxiv_id": "2605.23568",
+      "abs_url": "http://arxiv.org/abs/2605.23568v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23568v1",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-09-24",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出基于触觉的力敏感操作反射控制，方法新颖且实验充分，对灵巧操作有重要参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "reflex control",
+        "vision-based tactile sensing",
+        "noise-statistics-based calibration"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-06218",
       "source": "arxiv",
       "title": "TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation",
@@ -32502,87 +32587,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2605-23568",
-      "source": "arxiv",
-      "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
-      "title_zh": "TactileReflex：基于噪声统计的视觉-触觉反射控制用于力敏感操作",
-      "tldr_zh": "利用传感器噪声统计直接设定阈值，实现易碎容器抓取的三通道反射控制。",
-      "cover_zh": "不用力传感器也能精准抓杯子？噪声统计直接算出阈值，成功率拉满！",
-      "abstract_zh": "操作易碎的可变形容器（例如装有液体的一次性塑料杯）需要在极窄的力裕度内实时调整抓取力：力不足会导致滑落，力过大则会不可逆地使薄壁变形。现有方法难以实现此类力敏感操作任务。我们提出了一种基于噪声统计的标定驱动反射控制范式，结合基于视觉的触觉传感：通过分析传感器固有的噪声特性（通过简短的静态保持和卸载协议），直接推导出所有控制器阈值，消除了外部力标定、试错手动调参或材料特定的物理模型。实例化该范式，我们提出了TactileReflex，一个三通道闭环控制器，从双视觉-触觉传感器中提取三个图像级代理：剪切强度（$S_y$）、接触强度（$F_n$）和压力中心（$C$），并以约12 Hz的频率驱动优先级反射通道，用于滑移抑制、重量自适应释放和力保护。每个通道通过噪声导出的阈值直接在其代理上闭环。消融实验表明，只有完整的三通道系统能够防止不可逆的容器变形（5/5成功，而部分配置最多1/5）。在动态倒水任务中，固定力基线由于姿态漂移在所有10次尝试中均失败，而TactileReflex在两种水量下实现了9/10的成功率。作为一个自包含且可解释的控制器，TactileReflex可作为高层操作管线（包括无触觉VR遥操作和视觉-语言-动作（VLA）策略）的即插即用安全层。",
-      "authors": [
-        "Ziyan Feng",
-        "Yulong Fu",
-        "Zheng Li"
-      ],
-      "authors_all": [
-        "Ziyan Feng",
-        "Yulong Fu",
-        "Zheng Li",
-        "Yuxin He",
-        "Jieji Ren",
-        "Lujia Wang",
-        "Jinni Zhou",
-        "Yudong Zhong",
-        "Qiang Nie"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-05-22",
-      "channels": [
-        "manipulation",
-        "teleop"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ SJTU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKUST"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2605-23568.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2605-23568-p2.jpg",
-        "assets/img/covers/arxiv-2605-23568-p3.jpg",
-        "assets/img/covers/arxiv-2605-23568-p4.jpg"
-      ],
-      "arxiv_id": "2605.23568",
-      "abs_url": "http://arxiv.org/abs/2605.23568v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.23568v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 45,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出基于触觉的力敏感操作反射控制，方法新颖且实验充分，对灵巧操作有重要参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The Hong Kong University of Science and Technology (Guangzhou)",
-        "Shanghai Jiao Tong University"
-      ],
-      "method_tags": [
-        "reflex control",
-        "vision-based tactile sensing",
-        "noise-statistics-based calibration"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -73978,6 +73982,69 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-23755",
+      "source": "arxiv_discover",
+      "title": "EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience",
+      "title_zh": "EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience",
+      "tldr_zh": "Egocentric human data provide a principled source of supervi",
+      "cover_zh": "Egocentric human data provide a principled source of supervi",
+      "abstract_zh": "Egocentric human data provide a principled source of supervision for learning dexterous robot manipulation. Unlike prior approaches that often collect such data in constrained or specially constructed environments, we collect in-the-wild egocentric demonstrations in real-world settings, including homes, factories, and pharmacies, etc., where people perform their ordinary tasks while wearing head-mounted cameras. This collection protocol captures diverse workflows and hand-object interactions across long-tailed object and skill distributions, but also yields visually challenging observations due to scene clutter and head-motion-induced viewpoint changes (a mean cumulative rotation of $15.93^{circ}$/s). To address these issues, we introduce EgoWild2Dex, which transfers in-the-wild ego-human experience to dual-arm robots with dexterous hands by jointly aligning unstable egocentric views and human motions with robot observations and actions, respectively. This work offers three benefits. First, we introduce GeoFormer, a differentiable geometric transformer that warps noisy human observations toward robot observations. Second, we design a human-robot training scheme to bridge the embodiment gap, enabling high task success with limited robot supervision. Third, we release EgoWild, a 538.9-hour in-the-wild egocentric human dataset comprising 179,049 episodes, 125,961 unique task descriptions, and 1,282 object categories. On real robots, EgoWild2Dex achieves an average success rate of 96.7% across three long-horizon bimanual dexterous manipulation tasks and an average object-level zero-shot success rate of 33.3%. The data, models, and code will be released.",
+      "authors": [
+        "Kunyang Lin",
+        "Xutao Wen",
+        "Jingxi Lin"
+      ],
+      "authors_all": [
+        "Kunyang Lin",
+        "Xutao Wen",
+        "Jingxi Lin",
+        "Lanyong Lin",
+        "Jiaming Liu",
+        "Tianshuo Yang",
+        "Xianchi Chen",
+        "Yue Han",
+        "Yiduo Li",
+        "Zhanpeng Zhang",
+        "Ping Luo"
+      ],
+      "primary_category": "",
+      "published": "2026-09-20",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Ping Luo"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-23755.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-23755-p2.jpg",
+        "assets/img/covers/arxiv-2609-23755-p3.jpg",
+        "assets/img/covers/arxiv-2609-23755-p4.jpg"
+      ],
+      "arxiv_id": "2609.23755",
+      "abs_url": "http://arxiv.org/abs/2609.23755v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.23755v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-24308",
@@ -150379,6 +150446,52 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-19588",
+      "source": "arxiv_discover",
+      "title": "Quantifying Mechanical Intelligence in Legged Robots with Information Theory",
+      "title_zh": "Quantifying Mechanical Intelligence in Legged Robots with Information Theory",
+      "tldr_zh": "Mechanical intelligence, loosely defined as the reduction in",
+      "cover_zh": "Mechanical intelligence, loosely defined as the reduction in",
+      "abstract_zh": "Mechanical intelligence, loosely defined as the reduction in control burden afforded by a robot's physical form, has become a prominent concept in robotics, with instantiations in bioinspired robotics, soft robotics, robotic swarms, and many other areas. However, rigorous theoretical understanding and quantitative measures of mechanical intelligence have lagged behind the engineering systems that the community has developed. In this work, using modern legged robots as a benchmark and exemplar, we propose several information-theoretic metrics for quantifying mechanical intelligence. By viewing body dynamics as both a computational process and a communication channel, we show that several prior insights in legged-robot engineering can be described using information theory, and we quantify how bits are processed by mechanical modes and across robot coordinates. Specifically, we examine the trade-off between explicitly incorporating compliance through series-elastic actuation and using so-called proprioceptive, low-gear-ratio transmissions, and we explore how these mechanisms interact with control policies during locomotion. We develop these results on systems of increasing complexity: a simplified linear model of a robot-leg transmission, a nonlinear single-leg simulation, and simulated quadruped robots controlled by a learned policy while navigating challenging terrain. These results lay the groundwork for broader study of robot mechanisms and their role in embodied computation.",
+      "authors": [
+        "Zach J. Patterson"
+      ],
+      "authors_all": [
+        "Zach J. Patterson"
+      ],
+      "primary_category": "",
+      "published": "2026-09-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-19588.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-19588-p2.jpg",
+        "assets/img/covers/arxiv-2609-19588-p3.jpg",
+        "assets/img/covers/arxiv-2609-19588-p4.jpg"
+      ],
+      "arxiv_id": "2609.19588",
+      "abs_url": "http://arxiv.org/abs/2609.19588v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19588v1",
+      "venue": "ICRA 2027",
+      "venue_announced": "2026-09-24",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-19666",
       "source": "arxiv_discover",
       "title": "Towards High-DoF Dexterous Manipulation through VLA Post-Training",
@@ -169127,6 +169240,54 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-19452",
+      "source": "arxiv_discover",
+      "title": "GLAMDRING: Gait Learning And Morphology co-Design via Reinforcement LearnING of CPGs",
+      "title_zh": "GLAMDRING: Gait Learning And Morphology co-Design via Reinforcement LearnING of CPGs",
+      "tldr_zh": "Robots are moving out of the structured factory floor and in",
+      "cover_zh": "Robots are moving out of the structured factory floor and in",
+      "abstract_zh": "Robots are moving out of the structured factory floor and into unstructured environments such as disaster sites, planetary surfaces, and agricultural fields, for which the right robot often does not yet exist. We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it. For the given specifications of forward-velocity bounds, a per-actuator power budget, an actuator library, and a payload requirement, GLAMDRING returns a matched quadruped morphology (link geometry and per-joint actuators) and a Hopf-oscillator Central Pattern Generator (CPG) gait policy. We rank feasible designs against a target design objective, viz., maximum speed, minimum Cost of Transport (CoT), or max Payload Margin. Because body and locomotion are coupled, the optimal morphology dictates how a robot is driven, while optimal gait depends on the physical body. We train a small number of CPG policies by reinforcement learning across the space of candidate morphologies, co-learning the gait with the underlying robot hardware. Link lengths and actuators are then resolved post-hoc from the policy's logged operating envelope, reducing synthesis cost to a small, fixed number of reinforcement-learning runs instead of one per candidate. Our experiments show three key findings: co-designing body and gait is necessary to satisfy locomotion constraints; actuator-envelope feasibility, rather than locomotion success alone, determines realizable payload capacity; and canonical animal gaits emerge naturally in most designs from morphology and constraints alone. A real-world demonstration further highlights the efficacy of our work.",
+      "authors": [
+        "Amogh Joshi",
+        "Kaushik Roy"
+      ],
+      "authors_all": [
+        "Amogh Joshi",
+        "Kaushik Roy"
+      ],
+      "primary_category": "",
+      "published": "2026-09-16",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-19452.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-19452-p2.jpg",
+        "assets/img/covers/arxiv-2609-19452-p3.jpg",
+        "assets/img/covers/arxiv-2609-19452-p4.jpg"
+      ],
+      "arxiv_id": "2609.19452",
+      "abs_url": "http://arxiv.org/abs/2609.19452v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19452v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-19846",
