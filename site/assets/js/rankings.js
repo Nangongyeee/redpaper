@@ -2,7 +2,7 @@
 // Each ranking row is a slim list item (medal + score + title + meta)
 // so the user can scan top-N quickly.
 
-import { Theme } from './storage.js?v=de156d7f';
+import { Theme } from './storage.js?v=d0fd7c43';
 import {
   escapeHTML,
   formatAuthors,
@@ -10,7 +10,7 @@ import {
   attachSearchRedirect,
   showToast,
   fetchJSON,
-} from './utils.js?v=de156d7f';
+} from './utils.js?v=d0fd7c43';
 
 const DAY_MS = 86400000;
 
