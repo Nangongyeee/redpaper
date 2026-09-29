@@ -95,7 +95,8 @@
       "primary_category": "cs.RO",
       "published": "2026-09-28",
       "channels": [
-        "manipulation"
+        "manipulation",
+        "world-model"
       ],
       "badges": [
         {
@@ -122,7 +123,69 @@
       "pdf_url": "https://arxiv.org/pdf/2609.35375v1",
       "venue": "",
       "venue_announced": "",
-      "score": 39,
+      "score": 50,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-35032",
+      "source": "arxiv",
+      "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
+      "title_zh": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
+      "tldr_zh": "In complex embodied visual reasoning scenarios, an agent oft",
+      "cover_zh": "In complex embodied visual reasoning scenarios, an agent oft",
+      "abstract_zh": "In complex embodied visual reasoning scenarios, an agent often has only a limited field of view, and the evidence needed to answer a question may be distributed across time, viewpoint, and interacting objects. A model may therefore give a plausible answer without ever observing the relevant object, time, or view that supports it. Current visual reasoning benchmarks largely evaluate passive observations and final answers, overlooking settings that require active reasoning and evidence acquisition. We introduce JRDB-AVR, a benchmark derived from existing real-world JRDB robotics data through a structured question-generation engine that turns this gap into an explicit evaluation: an embodied agentic system receives a visual reasoning question, requests bounded observations by timestamp and viewing angle, and is evaluated on both the final answer and the grounded visual evidence supporting it. The benchmark contains diverse questions over multiple real-world environments involving temporal search, viewpoint selection, and human-oriented compositional reasoning. We also introduce JRDB-AVR-Agent, a reference active reasoning agentic method that maintains an explicit observation-grounded graph-based world model and answers through solving. Experiments reveal a substantial gap between answer accuracy and evidence accuracy in current baselines, showing that current VLMs can produce unsupported correct answers and that active evidence-aware evaluation is necessary for embodied visual reasoning. Code and benchmark are available at https://github.com/ControlNet/JRDB-AVR.",
+      "authors": [
+        "Zhixi Cai",
+        "Fucai Ke",
+        "Sukai Huang"
+      ],
+      "authors_all": [
+        "Zhixi Cai",
+        "Fucai Ke",
+        "Sukai Huang",
+        "Maria Garcia de la Banda",
+        "Peter J. Stuckey",
+        "Gholamreza Haffari",
+        "Hamid Rezatofighi"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-35032.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-35032-p2.jpg",
+        "assets/img/covers/arxiv-2609-35032-p3.jpg",
+        "assets/img/covers/arxiv-2609-35032-p4.jpg"
+      ],
+      "arxiv_id": "2609.35032",
+      "abs_url": "http://arxiv.org/abs/2609.35032v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35032v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 42,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -201,30 +264,27 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-35032",
+      "id": "arxiv-2609-35615",
       "source": "arxiv",
-      "title": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
-      "title_zh": "JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments",
-      "tldr_zh": "In complex embodied visual reasoning scenarios, an agent oft",
-      "cover_zh": "In complex embodied visual reasoning scenarios, an agent oft",
-      "abstract_zh": "In complex embodied visual reasoning scenarios, an agent often has only a limited field of view, and the evidence needed to answer a question may be distributed across time, viewpoint, and interacting objects. A model may therefore give a plausible answer without ever observing the relevant object, time, or view that supports it. Current visual reasoning benchmarks largely evaluate passive observations and final answers, overlooking settings that require active reasoning and evidence acquisition. We introduce JRDB-AVR, a benchmark derived from existing real-world JRDB robotics data through a structured question-generation engine that turns this gap into an explicit evaluation: an embodied agentic system receives a visual reasoning question, requests bounded observations by timestamp and viewing angle, and is evaluated on both the final answer and the grounded visual evidence supporting it. The benchmark contains diverse questions over multiple real-world environments involving temporal search, viewpoint selection, and human-oriented compositional reasoning. We also introduce JRDB-AVR-Agent, a reference active reasoning agentic method that maintains an explicit observation-grounded graph-based world model and answers through solving. Experiments reveal a substantial gap between answer accuracy and evidence accuracy in current baselines, showing that current VLMs can produce unsupported correct answers and that active evidence-aware evaluation is necessary for embodied visual reasoning. Code and benchmark are available at https://github.com/ControlNet/JRDB-AVR.",
+      "title": "Behavioral Foundation Models for Quality Diversity",
+      "title_zh": "Behavioral Foundation Models for Quality Diversity",
+      "tldr_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm",
+      "cover_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm",
+      "abstract_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm in reinforcement learning, playing a role analogous to large language models in natural language processing: they have shown remarkable versatility, enabling zero-shot performance, fast imitation, and online adaptation, all by exploiting the structure of a latent space. In this work, we investigate whether the latent behavioral space induced by BFMs can serve as an effective search space to discover large repertoires of behaviorally diverse and high-performing policies through Quality-Diversity (QD) methods. While QD methods generally search directly in high-dimensional policy parameter space, in this paper, we present BFM-QD, a framework that performs QD search in the compact latent space of a BFM. We further show that the BFM-QD framework provides a closed-form, gradient-free policy improvement operator that approximates a policy gradient update, but requires no critic training and no backpropagation. Across continuous-control benchmarks spanning dense locomotion, sparse navigation, and contact-rich manipulation, BFM-QD consistently outperforms parameter-space baselines, with particularly stark gains in sparse and deceptive settings, where all tested parameter-space QD methods collapse to near-zero performance. These results show the effectiveness of the BFM-QD framework, benefiting from the synergy between dimensionality reduction of the search space and offline pretraining from diverse behavioral data. This positions BFMs as a general-purpose backbone for QD optimization, extending their utility beyond zero-shot task solving to the discovery of diverse behavioral repertoires.",
       "authors": [
-        "Zhixi Cai",
-        "Fucai Ke",
-        "Sukai Huang"
+        "Nazim Bendib",
+        "Nicolas Perrin-Gilbert",
+        "Olivier Sigaud"
       ],
       "authors_all": [
-        "Zhixi Cai",
-        "Fucai Ke",
-        "Sukai Huang",
-        "Maria Garcia de la Banda",
-        "Peter J. Stuckey",
-        "Gholamreza Haffari",
-        "Hamid Rezatofighi"
+        "Nazim Bendib",
+        "Nicolas Perrin-Gilbert",
+        "Olivier Sigaud"
       ],
-      "primary_category": "cs.AI",
+      "primary_category": "cs.LG",
       "published": "2026-09-28",
       "channels": [
+        "locomotion",
         "manipulation"
       ],
       "badges": [
@@ -237,18 +297,18 @@
           "label": "⚡ 新鲜出炉"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2609-35032.jpg",
+      "cover_image": "assets/img/covers/arxiv-2609-35615.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2609-35032-p2.jpg",
-        "assets/img/covers/arxiv-2609-35032-p3.jpg",
-        "assets/img/covers/arxiv-2609-35032-p4.jpg"
+        "assets/img/covers/arxiv-2609-35615-p2.jpg",
+        "assets/img/covers/arxiv-2609-35615-p3.jpg",
+        "assets/img/covers/arxiv-2609-35615-p4.jpg"
       ],
-      "arxiv_id": "2609.35032",
-      "abs_url": "http://arxiv.org/abs/2609.35032v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35032v1",
+      "arxiv_id": "2609.35615",
+      "abs_url": "http://arxiv.org/abs/2609.35615v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35615v1",
       "venue": "NeurIPS 2026",
       "venue_announced": "",
-      "score": 34,
+      "score": 37,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -310,6 +370,121 @@
       "venue": "ECCV 2026",
       "venue_announced": "",
       "score": 34,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-35003",
+      "source": "arxiv",
+      "title": "Learning to Act under Visual Interruptions with Vision-Language-Action Models",
+      "title_zh": "Learning to Act under Visual Interruptions with Vision-Language-Action Models",
+      "tldr_zh": "Vision-language-action (VLA) models have demonstrated strong",
+      "cover_zh": "Vision-language-action (VLA) models have demonstrated strong",
+      "abstract_zh": "Vision-language-action (VLA) models have demonstrated strong capabilities in robotic manipulation, but they are typically developed and evaluated with all camera streams available throughout task execution. When a camera stops delivering frames during task execution, the policy must continue acting without access to subsequent observations from the missing view. Despite its practical importance, how such interruptions affect closed-loop manipulation remains insufficiently understood. To investigate this problem, we introduce MAIL-Bench, a benchmark that evaluates visual interruptions with VLA models. By interrupting different cameras at multiple stages of each policy's successful reference trajectory, MAIL-Bench measures how well policies retain their capabilities when visual inputs become unavailable. Building on this benchmark, we propose MINT, which first trains VLA policies to remain functional under missing visual inputs. At inference time, MINT selectively supplements missing observations using optical-flow extrapolation or an action-conditioned world model, and withdraws predicted views when they become unreliable. Experiments on $π_{0.5}$ and GR00T N1.5 show that MINT significantly improves task success under camera loss over the original models. Experiments on AgiBot G2 further demonstrate the real-robot deployment under camera loss. The benchmark is available at https://minglejiang.github.io/Mail-Bench/",
+      "authors": [
+        "Mingle Jiang",
+        "Rui Xu",
+        "Yunke Wang"
+      ],
+      "authors_all": [
+        "Mingle Jiang",
+        "Rui Xu",
+        "Yunke Wang",
+        "Chang Xu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-28",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-35003.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-35003-p2.jpg",
+        "assets/img/covers/arxiv-2609-35003-p3.jpg",
+        "assets/img/covers/arxiv-2609-35003-p4.jpg"
+      ],
+      "arxiv_id": "2609.35003",
+      "abs_url": "http://arxiv.org/abs/2609.35003v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35003v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-35249",
+      "source": "arxiv",
+      "title": "Spatial Grafting: Grounding 3D Features for Flow-Matching Robot Policies",
+      "title_zh": "Spatial Grafting: Grounding 3D Features for Flow-Matching Robot Policies",
+      "tldr_zh": "Pretrained robot manipulation policies such as vision-langua",
+      "cover_zh": "Pretrained robot manipulation policies such as vision-langua",
+      "abstract_zh": "Pretrained robot manipulation policies such as vision-language-action models (VLAs) or world-action models (WAMs) leave interaction-relevant metric geometry implicit. Recent breakthroughs in spatial reconstruction can supply the necessary geometry reliably, but their features describe local shape without stating where it lies with respect to the robot. How best to deliver these features to a pretrained policy remains unresolved. We propose Spatial Grafting, a versatile, lightweight spatial module that binds frozen reconstruction features to metric, robot-relative geometry. Spatial Grafting constructs metric-grounded spatial tokens and injects them into the flow-matching action expert through cross-attention, without modifying the host's perceptual pathway, so the host retains the full benefit of its pretraining. We evaluate it more broadly than any geometry-aware policy we compare against: one graft architecture, with no per-host redesign, on two VLAs and two WAMs, across four simulation benchmarks that span short-horizon manipulation, visual robustness, clutter and long-horizon mobile manipulation, and on three real-robot platforms with single- and dual-arm configurations. On RoboTwin 2.0, a dual-arm manipulation benchmark, the graft improves every host across VLAs and WAMs. Grafted $π_{0.5}$ gains 11.3% and 15.6% on clean and randomized scenes, reaching 94.0% and 92.4%, above the strongest published 3D-conditioned policy, WAM4D (93.8% and 89.9%). The margin widens as the horizon lengthens: on tasks from BEHAVIOR-1K, a dual-arm mobile manipulation challenge scored by average task progress, it surpasses the 2025 challenge winner on five of six tasks,by up to 0.47 Q-score, and exceeds a map-conditioned spatial policy on average across the three tasks both report.",
+      "authors": [
+        "Dingsheng Liu",
+        "Yangzheng Wu",
+        "Mahboubeh Asadi"
+      ],
+      "authors_all": [
+        "Dingsheng Liu",
+        "Yangzheng Wu",
+        "Mahboubeh Asadi",
+        "Zhiyuan Li",
+        "Jinbang Huang",
+        "Yixin Xiao",
+        "Tongtong Cao",
+        "Yingxue Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-28",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-35249.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-35249-p2.jpg",
+        "assets/img/covers/arxiv-2609-35249-p3.jpg",
+        "assets/img/covers/arxiv-2609-35249-p4.jpg"
+      ],
+      "arxiv_id": "2609.35249",
+      "abs_url": "http://arxiv.org/abs/2609.35249v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35249v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -738,89 +913,41 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-35615",
+      "id": "arxiv-2609-35047",
       "source": "arxiv",
-      "title": "Behavioral Foundation Models for Quality Diversity",
-      "title_zh": "Behavioral Foundation Models for Quality Diversity",
-      "tldr_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm",
-      "cover_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm",
-      "abstract_zh": "Behavioral Foundation Models (BFMs) are an emerging paradigm in reinforcement learning, playing a role analogous to large language models in natural language processing: they have shown remarkable versatility, enabling zero-shot performance, fast imitation, and online adaptation, all by exploiting the structure of a latent space. In this work, we investigate whether the latent behavioral space induced by BFMs can serve as an effective search space to discover large repertoires of behaviorally diverse and high-performing policies through Quality-Diversity (QD) methods. While QD methods generally search directly in high-dimensional policy parameter space, in this paper, we present BFM-QD, a framework that performs QD search in the compact latent space of a BFM. We further show that the BFM-QD framework provides a closed-form, gradient-free policy improvement operator that approximates a policy gradient update, but requires no critic training and no backpropagation. Across continuous-control benchmarks spanning dense locomotion, sparse navigation, and contact-rich manipulation, BFM-QD consistently outperforms parameter-space baselines, with particularly stark gains in sparse and deceptive settings, where all tested parameter-space QD methods collapse to near-zero performance. These results show the effectiveness of the BFM-QD framework, benefiting from the synergy between dimensionality reduction of the search space and offline pretraining from diverse behavioral data. This positions BFMs as a general-purpose backbone for QD optimization, extending their utility beyond zero-shot task solving to the discovery of diverse behavioral repertoires.",
+      "title": "EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning",
+      "title_zh": "EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning",
+      "tldr_zh": "A robot should be able to learn through experiments how unfa",
+      "cover_zh": "A robot should be able to learn through experiments how unfa",
+      "abstract_zh": "A robot should be able to learn through experiments how unfamiliar objects behave and interact, then plan with that knowledge. It need not start from scratch: physics engines supply knowledge of motion and contact, but can omit entire mechanisms, such as glue curing, water heating, or wind. We present EMPIRIC, an agent that learns a residual world model: a physics engine extended with code for the missing mechanisms. The learned programs can introduce new forces, constraints, and hidden state, and Bayesian inference estimates their parameters and states from noisy observations. The resulting model lets the agent predict the outcomes of actions, choose informative experiments, and revise its hypotheses when predictions fail. Across five simulated domains, EMPIRIC learns interpretable, reusable models, and solves more tasks with fewer environment interactions than all three baselines. On a physical robot, it learns wind forces and domino masses to solve a manipulation task. Website and code: https://yichao-liang.github.io/empiric",
       "authors": [
-        "Nazim Bendib",
-        "Nicolas Perrin-Gilbert",
-        "Olivier Sigaud"
+        "Yichao Liang",
+        "Amber Li",
+        "Dat Nguyen"
       ],
       "authors_all": [
-        "Nazim Bendib",
-        "Nicolas Perrin-Gilbert",
-        "Olivier Sigaud"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-09-28",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 NeurIPS 2026"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-35615.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-35615-p2.jpg",
-        "assets/img/covers/arxiv-2609-35615-p3.jpg",
-        "assets/img/covers/arxiv-2609-35615-p4.jpg"
-      ],
-      "arxiv_id": "2609.35615",
-      "abs_url": "http://arxiv.org/abs/2609.35615v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35615v1",
-      "venue": "NeurIPS 2026",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-35249",
-      "source": "arxiv",
-      "title": "Spatial Grafting: Grounding 3D Features for Flow-Matching Robot Policies",
-      "title_zh": "Spatial Grafting: Grounding 3D Features for Flow-Matching Robot Policies",
-      "tldr_zh": "Pretrained robot manipulation policies such as vision-langua",
-      "cover_zh": "Pretrained robot manipulation policies such as vision-langua",
-      "abstract_zh": "Pretrained robot manipulation policies such as vision-language-action models (VLAs) or world-action models (WAMs) leave interaction-relevant metric geometry implicit. Recent breakthroughs in spatial reconstruction can supply the necessary geometry reliably, but their features describe local shape without stating where it lies with respect to the robot. How best to deliver these features to a pretrained policy remains unresolved. We propose Spatial Grafting, a versatile, lightweight spatial module that binds frozen reconstruction features to metric, robot-relative geometry. Spatial Grafting constructs metric-grounded spatial tokens and injects them into the flow-matching action expert through cross-attention, without modifying the host's perceptual pathway, so the host retains the full benefit of its pretraining. We evaluate it more broadly than any geometry-aware policy we compare against: one graft architecture, with no per-host redesign, on two VLAs and two WAMs, across four simulation benchmarks that span short-horizon manipulation, visual robustness, clutter and long-horizon mobile manipulation, and on three real-robot platforms with single- and dual-arm configurations. On RoboTwin 2.0, a dual-arm manipulation benchmark, the graft improves every host across VLAs and WAMs. Grafted $π_{0.5}$ gains 11.3% and 15.6% on clean and randomized scenes, reaching 94.0% and 92.4%, above the strongest published 3D-conditioned policy, WAM4D (93.8% and 89.9%). The margin widens as the horizon lengthens: on tasks from BEHAVIOR-1K, a dual-arm mobile manipulation challenge scored by average task progress, it surpasses the 2025 challenge winner on five of six tasks,by up to 0.47 Q-score, and exceeds a map-conditioned spatial policy on average across the three tasks both report.",
-      "authors": [
-        "Dingsheng Liu",
-        "Yangzheng Wu",
-        "Mahboubeh Asadi"
-      ],
-      "authors_all": [
-        "Dingsheng Liu",
-        "Yangzheng Wu",
-        "Mahboubeh Asadi",
-        "Zhiyuan Li",
-        "Jinbang Huang",
-        "Yixin Xiao",
-        "Tongtong Cao",
-        "Yingxue Zhang"
+        "Yichao Liang",
+        "Amber Li",
+        "Dat Nguyen",
+        "Emily Bunnapradist",
+        "Michelangelo Naim",
+        "Sreela Kodali",
+        "Matteo Merler",
+        "Bowen Li",
+        "Kiran Gopinathan",
+        "Yiyun Liu",
+        "Nikhil Pimpalkhare",
+        "Joshua B. Tenenbaum",
+        "Adrian Weller",
+        "Zenna Tavares",
+        "Tom Silver",
+        "Kevin Ellis"
       ],
       "primary_category": "cs.RO",
       "published": "2026-09-28",
       "channels": [
-        "manipulation"
+        "manipulation",
+        "world-model"
       ],
       "badges": [
         {
@@ -828,18 +955,18 @@
           "label": "⚡ 新鲜出炉"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2609-35249.jpg",
+      "cover_image": "assets/img/covers/arxiv-2609-35047.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2609-35249-p2.jpg",
-        "assets/img/covers/arxiv-2609-35249-p3.jpg",
-        "assets/img/covers/arxiv-2609-35249-p4.jpg"
+        "assets/img/covers/arxiv-2609-35047-p2.jpg",
+        "assets/img/covers/arxiv-2609-35047-p3.jpg",
+        "assets/img/covers/arxiv-2609-35047-p4.jpg"
       ],
-      "arxiv_id": "2609.35249",
-      "abs_url": "http://arxiv.org/abs/2609.35249v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35249v1",
+      "arxiv_id": "2609.35047",
+      "abs_url": "http://arxiv.org/abs/2609.35047v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35047v1",
       "venue": "",
       "venue_announced": "",
-      "score": 25,
+      "score": 27,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -904,6 +1031,64 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-35094",
+      "source": "arxiv",
+      "title": "QuadHand: A Compact Quadrotor Aerial Manipulator with MRC-SDF-Based Whole-Body Motion Planning",
+      "title_zh": "QuadHand: A Compact Quadrotor Aerial Manipulator with MRC-SDF-Based Whole-Body Motion Planning",
+      "tldr_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms w",
+      "cover_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms w",
+      "abstract_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms with aerial platforms for three-dimensional physical interaction. However, enlarging the workspace increases arm-induced disturbances, while existing geometric representations face a trade-off between geometric fidelity and computational efficiency in close-proximity interaction. This paper presents QuadHand, a compact quadrotor aerial manipulator with a 3-DoF arm, gripper, and battery-assisted passive CoG compensation module to reduce dominant arm-induced disturbances. We further propose MRC-SDF, a Multi-articulated Robot-Centric Signed Distance Field that preserves fine geometric detail with tractable computation, and a spatiotemporal whole-body trajectory optimization framework that jointly optimizes the quadrotor and manipulator for safe and executable trajectory generation. Simulations and real-world experiments demonstrate safe and executable aerial manipulation in complex environments.",
+      "authors": [
+        "Rui Jin",
+        "Ruiyang Liu",
+        "Xinhang Xu"
+      ],
+      "authors_all": [
+        "Rui Jin",
+        "Ruiyang Liu",
+        "Xinhang Xu",
+        "Haotian Jin",
+        "Yi Wang",
+        "Yizhuo Yang",
+        "Lihua Xi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-28",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-35094.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-35094-p2.jpg",
+        "assets/img/covers/arxiv-2609-35094-p3.jpg",
+        "assets/img/covers/arxiv-2609-35094-p4.jpg"
+      ],
+      "arxiv_id": "2609.35094",
+      "abs_url": "http://arxiv.org/abs/2609.35094v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35094v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2609-35717",
       "source": "arxiv",
       "title": "RoboCompiler: Graph-Native Compilation of Closed-Chain Robots for Consistent Modeling, Control, and Simulation",
@@ -945,60 +1130,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 24,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-35003",
-      "source": "arxiv",
-      "title": "Learning to Act under Visual Interruptions with Vision-Language-Action Models",
-      "title_zh": "Learning to Act under Visual Interruptions with Vision-Language-Action Models",
-      "tldr_zh": "Vision-language-action (VLA) models have demonstrated strong",
-      "cover_zh": "Vision-language-action (VLA) models have demonstrated strong",
-      "abstract_zh": "Vision-language-action (VLA) models have demonstrated strong capabilities in robotic manipulation, but they are typically developed and evaluated with all camera streams available throughout task execution. When a camera stops delivering frames during task execution, the policy must continue acting without access to subsequent observations from the missing view. Despite its practical importance, how such interruptions affect closed-loop manipulation remains insufficiently understood. To investigate this problem, we introduce MAIL-Bench, a benchmark that evaluates visual interruptions with VLA models. By interrupting different cameras at multiple stages of each policy's successful reference trajectory, MAIL-Bench measures how well policies retain their capabilities when visual inputs become unavailable. Building on this benchmark, we propose MINT, which first trains VLA policies to remain functional under missing visual inputs. At inference time, MINT selectively supplements missing observations using optical-flow extrapolation or an action-conditioned world model, and withdraws predicted views when they become unreliable. Experiments on $π_{0.5}$ and GR00T N1.5 show that MINT significantly improves task success under camera loss over the original models. Experiments on AgiBot G2 further demonstrate the real-robot deployment under camera loss. The benchmark is available at https://minglejiang.github.io/Mail-Bench/",
-      "authors": [
-        "Mingle Jiang",
-        "Rui Xu",
-        "Yunke Wang"
-      ],
-      "authors_all": [
-        "Mingle Jiang",
-        "Rui Xu",
-        "Yunke Wang",
-        "Chang Xu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-35003.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-35003-p2.jpg",
-        "assets/img/covers/arxiv-2609-35003-p3.jpg",
-        "assets/img/covers/arxiv-2609-35003-p4.jpg"
-      ],
-      "arxiv_id": "2609.35003",
-      "abs_url": "http://arxiv.org/abs/2609.35003v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35003v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 22,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -1294,72 +1425,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-35047",
-      "source": "arxiv",
-      "title": "EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning",
-      "title_zh": "EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning",
-      "tldr_zh": "A robot should be able to learn through experiments how unfa",
-      "cover_zh": "A robot should be able to learn through experiments how unfa",
-      "abstract_zh": "A robot should be able to learn through experiments how unfamiliar objects behave and interact, then plan with that knowledge. It need not start from scratch: physics engines supply knowledge of motion and contact, but can omit entire mechanisms, such as glue curing, water heating, or wind. We present EMPIRIC, an agent that learns a residual world model: a physics engine extended with code for the missing mechanisms. The learned programs can introduce new forces, constraints, and hidden state, and Bayesian inference estimates their parameters and states from noisy observations. The resulting model lets the agent predict the outcomes of actions, choose informative experiments, and revise its hypotheses when predictions fail. Across five simulated domains, EMPIRIC learns interpretable, reusable models, and solves more tasks with fewer environment interactions than all three baselines. On a physical robot, it learns wind forces and domino masses to solve a manipulation task. Website and code: https://yichao-liang.github.io/empiric",
-      "authors": [
-        "Yichao Liang",
-        "Amber Li",
-        "Dat Nguyen"
-      ],
-      "authors_all": [
-        "Yichao Liang",
-        "Amber Li",
-        "Dat Nguyen",
-        "Emily Bunnapradist",
-        "Michelangelo Naim",
-        "Sreela Kodali",
-        "Matteo Merler",
-        "Bowen Li",
-        "Kiran Gopinathan",
-        "Yiyun Liu",
-        "Nikhil Pimpalkhare",
-        "Joshua B. Tenenbaum",
-        "Adrian Weller",
-        "Zenna Tavares",
-        "Tom Silver",
-        "Kevin Ellis"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-35047.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-35047-p2.jpg",
-        "assets/img/covers/arxiv-2609-35047-p3.jpg",
-        "assets/img/covers/arxiv-2609-35047-p4.jpg"
-      ],
-      "arxiv_id": "2609.35047",
-      "abs_url": "http://arxiv.org/abs/2609.35047v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35047v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2609-35078",
       "source": "arxiv",
       "title": "RefineDrive: Reliable Failure-Guided Learning for Vision-Language-Action Driving",
@@ -1399,63 +1464,6 @@
       "arxiv_id": "2609.35078",
       "abs_url": "http://arxiv.org/abs/2609.35078v1",
       "pdf_url": "https://arxiv.org/pdf/2609.35078v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-35094",
-      "source": "arxiv",
-      "title": "QuadHand: A Compact Quadrotor Aerial Manipulator with MRC-SDF-Based Whole-Body Motion Planning",
-      "title_zh": "QuadHand: A Compact Quadrotor Aerial Manipulator with MRC-SDF-Based Whole-Body Motion Planning",
-      "tldr_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms w",
-      "cover_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms w",
-      "abstract_zh": "Uncrewed aerial manipulators (UAMs) integrate robotic arms with aerial platforms for three-dimensional physical interaction. However, enlarging the workspace increases arm-induced disturbances, while existing geometric representations face a trade-off between geometric fidelity and computational efficiency in close-proximity interaction. This paper presents QuadHand, a compact quadrotor aerial manipulator with a 3-DoF arm, gripper, and battery-assisted passive CoG compensation module to reduce dominant arm-induced disturbances. We further propose MRC-SDF, a Multi-articulated Robot-Centric Signed Distance Field that preserves fine geometric detail with tractable computation, and a spatiotemporal whole-body trajectory optimization framework that jointly optimizes the quadrotor and manipulator for safe and executable trajectory generation. Simulations and real-world experiments demonstrate safe and executable aerial manipulation in complex environments.",
-      "authors": [
-        "Rui Jin",
-        "Ruiyang Liu",
-        "Xinhang Xu"
-      ],
-      "authors_all": [
-        "Rui Jin",
-        "Ruiyang Liu",
-        "Xinhang Xu",
-        "Haotian Jin",
-        "Yi Wang",
-        "Yizhuo Yang",
-        "Lihua Xi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-09-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-35094.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-35094-p2.jpg",
-        "assets/img/covers/arxiv-2609-35094-p3.jpg",
-        "assets/img/covers/arxiv-2609-35094-p4.jpg"
-      ],
-      "arxiv_id": "2609.35094",
-      "abs_url": "http://arxiv.org/abs/2609.35094v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.35094v1",
       "venue": "",
       "venue_announced": "",
       "score": 16,
