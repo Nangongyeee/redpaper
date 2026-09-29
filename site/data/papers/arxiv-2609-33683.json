@@ -1,0 +1,77 @@
+{
+  "id": "arxiv-2609-33683",
+  "source": "arxiv",
+  "title": "MAD-Guard: Controlled Study of Autoregressive Generation versus Direct Decision Interfaces for Closed Multimodal Forensic Tasks",
+  "title_zh": "MAD-Guard: Controlled Study of Autoregressive Generation versus Direct Decision Interfaces for Closed Multimodal Forensic Tasks",
+  "abstract": "When should multimodal foundation models generate tokens, and when should they directly output a decision? We present MAD-Guard, a controlled study of output-decision interfaces for closed multimodal forensic tasks. Once a multimodal representation is computed, is autoregressive generation necessary for closed forensic decisions with high input complexity but low output entropy? Under a matched Qwen3-VL-8B backbone, 2,400 FakeClue training samples, and LoRA budget ($r=16, α=32$) on Huawei Ascend 910C NPUs, we evaluate a progression of decision interfaces (AR-SFT [generate] $\\to$ Logit Slice $\\to$ Binary Direct Head $\\to$ +choice $\\to$ +act $\\to$ CLM-Head) and decompose latency into backbone representation (53.12 ms), 151,643-way vocabulary projection (+85.04 ms $\\to$ 138.16 ms), and decoding (+248.26 ms $\\to$ 386.42 ms). Under 1-to-1 binary supervision ($\\mathcal{L}_{\\mathrm{BCE}}$), a Binary Direct Head cuts latency by $2.60\\times$-$7.27\\times$ (53.12 ms) and lowers calibration error by $1.88\\times$ (ECE = 0.0450 vs. 0.0845), with a -1.80% accuracy trade-off (93.10% vs. 94.90%; 0.9795 vs. 0.9871 ROC-AUC) from forfeiting token priors. Gains above AR-SFT arise either from multi-task attribution and uncertainty gating (+choice+act: 96.44% accuracy, 0.9940 ROC-AUC, 0.0187 ECE at 53.71 ms) or from a disaggregated contrastive head (CLM-Head: 96.55% binary and 96.44% multi-task accuracy, 0.0166 ECE, 98.79% 7-class attribution at 54.42 ms) retaining semantic priors without token decoding. Across 5,000 out-of-sample images from five benchmarks, our framework excels on synthetic, camouflage, and document forgeries (96.44% GenImage, 97.73% Chameleon, 91.84% Doc) while showing a clear boundary on compressed face manipulation (FF++ ROC-AUC = 0.5913).",
+  "abstract_zh": "When should multimodal foundation models generate tokens, and when should they directly output a decision? We present MAD-Guard, a controlled study of output-decision interfaces for closed multimodal forensic tasks. Once a multimodal representation is computed, is autoregressive generation necessary for closed forensic decisions with high input complexity but low output entropy? Under a matched Qwen3-VL-8B backbone, 2,400 FakeClue training samples, and LoRA budget ($r=16, α=32$) on Huawei Ascend 910C NPUs, we evaluate a progression of decision interfaces (AR-SFT [generate] $to$ Logit Slice $to$ Binary Direct Head $to$ +choice $to$ +act $to$ CLM-Head) and decompose latency into backbone representation (53.12 ms), 151,643-way vocabulary projection (+85.04 ms $to$ 138.16 ms), and decoding (+248.26 ms $to$ 386.42 ms). Under 1-to-1 binary supervision ($mathcal{L}_{mathrm{BCE}}$), a Binary Direct Head cuts latency by $2.60×$-$7.27×$ (53.12 ms) and lowers calibration error by $1.88×$ (ECE = 0.0450 vs. 0.0845), with a -1.80% accuracy trade-off (93.10% vs. 94.90%; 0.9795 vs. 0.9871 ROC-AUC) from forfeiting token priors. Gains above AR-SFT arise either from multi-task attribution and uncertainty gating (+choice+act: 96.44% accuracy, 0.9940 ROC-AUC, 0.0187 ECE at 53.71 ms) or from a disaggregated contrastive head (CLM-Head: 96.55% binary and 96.44% multi-task accuracy, 0.0166 ECE, 98.79% 7-class attribution at 54.42 ms) retaining semantic priors without token decoding. Across 5,000 out-of-sample images from five benchmarks, our framework excels on synthetic, camouflage, and document forgeries (96.44% GenImage, 97.73% Chameleon, 91.84% Doc) while showing a clear boundary on compressed face manipulation (FF++ ROC-AUC = 0.5913).",
+  "tldr_zh": "When should multimodal foundation models generate tokens, an",
+  "cover_zh": "When should multimodal foundation models generate tokens, an",
+  "authors": [
+    {
+      "name": "Hao Chen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.CR"
+  ],
+  "published": "2026-09-27",
+  "updated": "2026-09-27",
+  "arxiv_id": "2609.33683",
+  "pdf_url": "https://arxiv.org/pdf/2609.33683v1",
+  "abs_url": "http://arxiv.org/abs/2609.33683v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-33683.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-33683-p2.jpg",
+    "assets/img/covers/arxiv-2609-33683-p3.jpg",
+    "assets/img/covers/arxiv-2609-33683-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 7,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 7 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,98 @@
+{
+  "id": "arxiv-2609-33944",
+  "source": "arxiv",
+  "title": "ReSync: Re-Aligning the Two Clocks of Asynchronous World-Action Models",
+  "title_zh": "ReSync: Re-Aligning the Two Clocks of Asynchronous World-Action Models",
+  "abstract": "Jointly generating future video and actions has become a standard recipe for world-action models, and the strongest systems denoise the two streams on separate schedules: actions are decoded in few steps so control stays fast, while the video stream runs longer to keep the predicted future sharp. The design is deliberate, but it leaves the two streams on different clocks, and an action can become executable while the future that should justify it is still largely unresolved. We formalize this as a two-clock view of asynchronous inference and introduce the commitment-evidence gap, a quantity read directly from a model's own sampling schedule rather than measured by search. The gap is predictive: as it widens, candidate utility becomes harder to identify and extra candidate sampling buys less, while advancing the world stream buys more, and the two cross. Spending more world computation is therefore not simply better. The useful interval is closed at both ends, and both ends can be read off the schedule before any rollout. ReSync places the computation inside it: hold the action state, advance only the world within the supported window, then resume native denoising. No parameters change and no candidates are compared. On a frozen paired RoboCasa panel this improves success by 4.48 points, while an equal-compute control that waits without advancing the world does not move, and the same rule transfers to a second benchmark and a second backbone without retuning.",
+  "abstract_zh": "Jointly generating future video and actions has become a standard recipe for world-action models, and the strongest systems denoise the two streams on separate schedules: actions are decoded in few steps so control stays fast, while the video stream runs longer to keep the predicted future sharp. The design is deliberate, but it leaves the two streams on different clocks, and an action can become executable while the future that should justify it is still largely unresolved. We formalize this as a two-clock view of asynchronous inference and introduce the commitment-evidence gap, a quantity read directly from a model's own sampling schedule rather than measured by search. The gap is predictive: as it widens, candidate utility becomes harder to identify and extra candidate sampling buys less, while advancing the world stream buys more, and the two cross. Spending more world computation is therefore not simply better. The useful interval is closed at both ends, and both ends can be read off the schedule before any rollout. ReSync places the computation inside it: hold the action state, advance only the world within the supported window, then resume native denoising. No parameters change and no candidates are compared. On a frozen paired RoboCasa panel this improves success by 4.48 points, while an equal-compute control that waits without advancing the world does not move, and the same rule transfers to a second benchmark and a second backbone without retuning.",
+  "tldr_zh": "Jointly generating future video and actions has become a sta",
+  "cover_zh": "Jointly generating future video and actions has become a sta",
+  "authors": [
+    {
+      "name": "Xi Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Feihong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yulong Shi",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanghong Mei",
+      "affiliation": ""
+    },
+    {
+      "name": "Zuxing Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaofan Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zihao Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhirui Gao",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhaowen Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-27",
+  "updated": "2026-09-27",
+  "arxiv_id": "2609.33944",
+  "pdf_url": "https://arxiv.org/pdf/2609.33944v1",
+  "abs_url": "http://arxiv.org/abs/2609.33944v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [],
+  "score": 13,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（robocasa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,113 @@
+{
+  "id": "arxiv-2609-33269",
+  "source": "arxiv",
+  "title": "Q-WAM: 4-Bit Quantization of World Action Models with Action-Subspace Protection",
+  "title_zh": "Q-WAM: 4-Bit Quantization of World Action Models with Action-Subspace Protection",
+  "abstract": "World Action Models (WAMs) jointly generate video and robot actions through iterative diffusion and perform strongly in robotic manipulation. However, their prohibitive compute and memory costs pose substantial deployment challenges. Post-training quantization (PTQ) can reduce these costs, but existing PTQ methods such as smoothing and rotation are insufficient to maintain the precision of action generation. To overcome this limitation, we propose Q-WAM, a new 4-bit weight-activation quantization for WAMs that preserves the actions the model generates. Specifically, we introduce the \\textit{Action Observability Gramian (AOG)}, which measures how much rounding errors in each weighted combination of a layer's input channels change the final action through all denoising steps. We also develop Action-Subspace Protection (ASP), which keeps the few most action-sensitive channel combinations in a tiny 16-bit low-rank branch and quantizes the complementary weights and activations to 4 bits, both as dense matrix multiplications that run efficiently on GPUs. Finally, to preserve action quality with minimal overhead, we identify the experts that matter most for the generated action by aggregating the AOG-derived action mass across the layers of each expert and apply ASP only to those experts. We evaluate Q-WAM on three WAMs, both in simulation and in real-world deployment. On the RoboTwin 2.0 benchmark, it reaches 89.6--93.0\\% average success rate, within 1.1 percentage points of the 16-bit models, while reducing the memory of the quantized blocks by 3.1--3.4$\\times$. Our method outperforms the strongest baseline, SVDQuant, by 2.5--8.7 percentage points. On a Unitree G1 humanoid and a bimanual UR3 robot, it improves success over SVDQuant by 12.8-17.6 percentage points.",
+  "abstract_zh": "World Action Models (WAMs) jointly generate video and robot actions through iterative diffusion and perform strongly in robotic manipulation. However, their prohibitive compute and memory costs pose substantial deployment challenges. Post-training quantization (PTQ) can reduce these costs, but existing PTQ methods such as smoothing and rotation are insufficient to maintain the precision of action generation. To overcome this limitation, we propose Q-WAM, a new 4-bit weight-activation quantization for WAMs that preserves the actions the model generates. Specifically, we introduce the textit{Action Observability Gramian (AOG)}, which measures how much rounding errors in each weighted combination of a layer's input channels change the final action through all denoising steps. We also develop Action-Subspace Protection (ASP), which keeps the few most action-sensitive channel combinations in a tiny 16-bit low-rank branch and quantizes the complementary weights and activations to 4 bits, both as dense matrix multiplications that run efficiently on GPUs. Finally, to preserve action quality with minimal overhead, we identify the experts that matter most for the generated action by aggregating the AOG-derived action mass across the layers of each expert and apply ASP only to those experts. We evaluate Q-WAM on three WAMs, both in simulation and in real-world deployment. On the RoboTwin 2.0 benchmark, it reaches 89.6--93.0\\% average success rate, within 1.1 percentage points of the 16-bit models, while reducing the memory of the quantized blocks by 3.1--3.4$×$. Our method outperforms the strongest baseline, SVDQuant, by 2.5--8.7 percentage points. On a Unitree G1 humanoid and a bimanual UR3 robot, it improves success over SVDQuant by 12.8-17.6 percentage points.",
+  "tldr_zh": "World Action Models (WAMs) jointly generate video and robot",
+  "cover_zh": "World Action Models (WAMs) jointly generate video and robot",
+  "authors": [
+    {
+      "name": "Arash Akbari",
+      "affiliation": ""
+    },
+    {
+      "name": "Arman Akbari",
+      "affiliation": ""
+    },
+    {
+      "name": "Jingwu Luo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhao Lei",
+      "affiliation": ""
+    },
+    {
+      "name": "Yi Gao",
+      "affiliation": ""
+    },
+    {
+      "name": "Weiwei Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Xuan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenman Fang",
+      "affiliation": ""
+    },
+    {
+      "name": "Geng Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanzhi Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-09-27",
+  "updated": "2026-09-27",
+  "arxiv_id": "2609.33269",
+  "pdf_url": "https://arxiv.org/pdf/2609.33269v1",
+  "abs_url": "http://arxiv.org/abs/2609.33269v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-33269.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-33269-p2.jpg",
+    "assets/img/covers/arxiv-2609-33269-p3.jpg",
+    "assets/img/covers/arxiv-2609-33269-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 22,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、bimanual、robotwin）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 22 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

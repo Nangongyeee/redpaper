@@ -1,0 +1,92 @@
+{
+  "id": "arxiv-2609-33484",
+  "source": "arxiv",
+  "title": "AMBIT: Anticipatory Multimodal Body Recruitment for Bimanual Tracking on a Humanoid",
+  "title_zh": "AMBIT: Anticipatory Multimodal Body Recruitment for Bimanual Tracking on a Humanoid",
+  "abstract": "A humanoid with 5-DoF arms cannot track generic bimanual end-effector trajectories with its arms alone; pelvis and waist motion must be recruited, but which motion, and when, is not uniquely determined. On a Unitree R1 in fixed double support, the set of dynamically valid recruitment strategies (pelvis pose and waist trajectories) for a task is a diverse continuous manifold, and a deterministic regressor trained on it mode-averages into strategies valid only 35% of the time, against 52% for a conditional variational autoencoder (CVAE) and 82% for the best of 16 CVAE samples. We introduce AMBIT: the CVAE proposes strategies from a preview of the commanded trajectory, a non-learned selector filters, ranks and verifies them, and a receding-horizon loop commits to one with hysteresis. The committed strategy is the reference of the same whole-body differential-IK QP a reactive tracker runs, which keeps authority over residual error. On 160 held-out episodes that admit a valid strategy, in full MuJoCo dynamics under a torque controller, AMBIT reaches 85% success at a 3 cm/15 deg tolerance against 74% for the tracker (disjoint confidence intervals) and recruits the body before the arms saturate in 48% of episodes against 35%. Because diversity is preserved, constraints unknown at training time are enforced by selection alone: under five zero-shot shifts AMBIT beats the warm-started tracker on every shift and matches a test-time re-optimisation baseline 17x more expensive. On a Unitree G1, with hyperparameters unchanged, the protocol reproduces the structure of the valid set and widens the gap over the tracker to 0.85 against 0.53. Five selected strategies execute on the externally supported physical R1, distinct in pelvis excursion and tracking the planned end-effector motion to a median of 11 mm by encoder forward kinematics, which establishes kinematic realisability, not balance.",
+  "abstract_zh": "A humanoid with 5-DoF arms cannot track generic bimanual end-effector trajectories with its arms alone; pelvis and waist motion must be recruited, but which motion, and when, is not uniquely determined. On a Unitree R1 in fixed double support, the set of dynamically valid recruitment strategies (pelvis pose and waist trajectories) for a task is a diverse continuous manifold, and a deterministic regressor trained on it mode-averages into strategies valid only 35% of the time, against 52% for a conditional variational autoencoder (CVAE) and 82% for the best of 16 CVAE samples. We introduce AMBIT: the CVAE proposes strategies from a preview of the commanded trajectory, a non-learned selector filters, ranks and verifies them, and a receding-horizon loop commits to one with hysteresis. The committed strategy is the reference of the same whole-body differential-IK QP a reactive tracker runs, which keeps authority over residual error. On 160 held-out episodes that admit a valid strategy, in full MuJoCo dynamics under a torque controller, AMBIT reaches 85% success at a 3 cm/15 deg tolerance against 74% for the tracker (disjoint confidence intervals) and recruits the body before the arms saturate in 48% of episodes against 35%. Because diversity is preserved, constraints unknown at training time are enforced by selection alone: under five zero-shot shifts AMBIT beats the warm-started tracker on every shift and matches a test-time re-optimisation baseline 17x more expensive. On a Unitree G1, with hyperparameters unchanged, the protocol reproduces the structure of the valid set and widens the gap over the tracker to 0.85 against 0.53. Five selected strategies execute on the externally supported physical R1, distinct in pelvis excursion and tracking the planned end-effector motion to a median of 11 mm by encoder forward kinematics, which establishes kinematic realisability, not balance.",
+  "tldr_zh": "A humanoid with 5-DoF arms cannot track generic bimanual end",
+  "cover_zh": "A humanoid with 5-DoF arms cannot track generic bimanual end",
+  "authors": [
+    {
+      "name": "Hanlong Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Sihan Tan",
+      "affiliation": ""
+    },
+    {
+      "name": "Takeshi Ashizawa",
+      "affiliation": ""
+    },
+    {
+      "name": "Benjamin Yen",
+      "affiliation": ""
+    },
+    {
+      "name": "Kazuhiro Nakadai",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-27",
+  "updated": "2026-09-27",
+  "arxiv_id": "2609.33484",
+  "pdf_url": "https://arxiv.org/pdf/2609.33484v1",
+  "abs_url": "http://arxiv.org/abs/2609.33484v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-33484.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-33484-p2.jpg",
+    "assets/img/covers/arxiv-2609-33484-p3.jpg",
+    "assets/img/covers/arxiv-2609-33484-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（bimanual）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
