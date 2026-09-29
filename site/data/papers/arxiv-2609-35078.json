@@ -1,0 +1,92 @@
+{
+  "id": "arxiv-2609-35078",
+  "source": "arxiv",
+  "title": "RefineDrive: Reliable Failure-Guided Learning for Vision-Language-Action Driving",
+  "title_zh": "RefineDrive: Reliable Failure-Guided Learning for Vision-Language-Action Driving",
+  "abstract": "Vision-Language-Action (VLA) models for autonomous driving rely heavily on successful expert demonstrations, leaving model-specific failures underexploited. Learning from these failures is hindered by unreliable diagnoses, poorly matched correction targets, and coarse rewards. We propose RefineDrive, a failure-guided post-training framework that learns from self-generated failures through targeted supervision and safety-aware reinforcement learning. Reliable Diagnosis derives structured, verifiable feedback on collisions and drivable-area violations directly from simulator states. Minimum-Correction Target Retrieval searches a clustered human trajectory bank for nearby corrections that satisfy hard-safety constraints in the current scene, prioritizing preservation of the failed prediction's motion pattern. Conditioned on the driving context and failed trajectory, Correction SFT learns to generate the diagnosis followed by the retrieved correction as a training-only auxiliary task. We then apply GRPO with a Safety-Layered Reward that strictly prioritizes hard-safe trajectories, retains continuous safety feedback for both unsafe and hard-safe trajectories, and rewards driving progress only after hard safety is satisfied. At inference, the policy directly predicts trajectories from the driving context without an explicit diagnosis or repair stage. On NAVSIM v1, RefineDrive improves the 4B base SFT policy from 87.7 to 91.7 PDMS. Using the same checkpoint without additional training, RefineDrive achieves 89.4 EPDMS on the original NAVTEST scenes evaluated with NAVSIM v2 extended metrics. Controlled ablations support the benefits of structured diagnosis supervision, retrieved corrections, and safety-layered optimization for direct planning.",
+  "abstract_zh": "Vision-Language-Action (VLA) models for autonomous driving rely heavily on successful expert demonstrations, leaving model-specific failures underexploited. Learning from these failures is hindered by unreliable diagnoses, poorly matched correction targets, and coarse rewards. We propose RefineDrive, a failure-guided post-training framework that learns from self-generated failures through targeted supervision and safety-aware reinforcement learning. Reliable Diagnosis derives structured, verifiable feedback on collisions and drivable-area violations directly from simulator states. Minimum-Correction Target Retrieval searches a clustered human trajectory bank for nearby corrections that satisfy hard-safety constraints in the current scene, prioritizing preservation of the failed prediction's motion pattern. Conditioned on the driving context and failed trajectory, Correction SFT learns to generate the diagnosis followed by the retrieved correction as a training-only auxiliary task. We then apply GRPO with a Safety-Layered Reward that strictly prioritizes hard-safe trajectories, retains continuous safety feedback for both unsafe and hard-safe trajectories, and rewards driving progress only after hard safety is satisfied. At inference, the policy directly predicts trajectories from the driving context without an explicit diagnosis or repair stage. On NAVSIM v1, RefineDrive improves the 4B base SFT policy from 87.7 to 91.7 PDMS. Using the same checkpoint without additional training, RefineDrive achieves 89.4 EPDMS on the original NAVTEST scenes evaluated with NAVSIM v2 extended metrics. Controlled ablations support the benefits of structured diagnosis supervision, retrieved corrections, and safety-layered optimization for direct planning.",
+  "tldr_zh": "Vision-Language-Action (VLA) models for autonomous driving r",
+  "cover_zh": "Vision-Language-Action (VLA) models for autonomous driving r",
+  "authors": [
+    {
+      "name": "Zhe Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziyi Luo",
+      "affiliation": ""
+    },
+    {
+      "name": "Yehao Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Lei Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Xi Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-09-28",
+  "updated": "2026-09-28",
+  "arxiv_id": "2609.35078",
+  "pdf_url": "https://arxiv.org/pdf/2609.35078v1",
+  "abs_url": "http://arxiv.org/abs/2609.35078v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-35078.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-35078-p2.jpg",
+    "assets/img/covers/arxiv-2609-35078-p3.jpg",
+    "assets/img/covers/arxiv-2609-35078-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（vision-language-action）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
