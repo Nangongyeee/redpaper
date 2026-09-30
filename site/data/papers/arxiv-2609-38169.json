@@ -1,0 +1,116 @@
+{
+  "id": "arxiv-2609-38169",
+  "source": "arxiv",
+  "title": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+  "title_zh": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+  "abstract": "Linear attention replaces growing KV caches with fixed-size recurrent states, yet these persistent states can become a substantial memory bottleneck under concurrent serving. Directly quantizing recurrent states to low precision often leads to severe accuracy degradation, as quantization errors propagate through successive state updates. We discover that the impact of these errors depends on two complementary dimensions: temporally, errors in long-lived memory can persist across many decoding steps; spatially, errors in different key rows affect model outputs differently, while state magnitudes vary substantially along both rows and columns. Motivated by these observations, we propose STEPQuant, a spatial-temporal post-training quantization framework for Delta-rule recurrent states. STEPQuant allocates precision according to error magnitude and memory lifetime, and jointly fits key-row and value-column scales based on state distributions and key-row impact on output error. Experiments on Qwen3.8-27B and Kimi-Linear-48B-A3B-Instruct across both long- and short-generation benchmarks show that STEPQuant closely matches FP32-state accuracy under a nominal 6-bit budget and outperforms uniform INT8 in its 4-bit configuration. Integrated into SGLang with optimized GPU kernels, 6-bit STEPQuant achieves over 5x recurrent-state compression and reduces total serving memory by up to 68.7%. Our code is available at https://github.com/Dreamer-Toby/STEPQuant.",
+  "abstract_zh": "Linear attention replaces growing KV caches with fixed-size recurrent states, yet these persistent states can become a substantial memory bottleneck under concurrent serving. Directly quantizing recurrent states to low precision often leads to severe accuracy degradation, as quantization errors propagate through successive state updates. We discover that the impact of these errors depends on two complementary dimensions: temporally, errors in long-lived memory can persist across many decoding steps; spatially, errors in different key rows affect model outputs differently, while state magnitudes vary substantially along both rows and columns. Motivated by these observations, we propose STEPQuant, a spatial-temporal post-training quantization framework for Delta-rule recurrent states. STEPQuant allocates precision according to error magnitude and memory lifetime, and jointly fits key-row and value-column scales based on state distributions and key-row impact on output error. Experiments on Qwen3.8-27B and Kimi-Linear-48B-A3B-Instruct across both long- and short-generation benchmarks show that STEPQuant closely matches FP32-state accuracy under a nominal 6-bit budget and outperforms uniform INT8 in its 4-bit configuration. Integrated into SGLang with optimized GPU kernels, 6-bit STEPQuant achieves over 5x recurrent-state compression and reduces total serving memory by up to 68.7%. Our code is available at https://github.com/Dreamer-Toby/STEPQuant.",
+  "tldr_zh": "Linear attention replaces growing KV caches with fixed-size",
+  "cover_zh": "Linear attention replaces growing KV caches with fixed-size",
+  "authors": [
+    {
+      "name": "Bingchen Yao",
+      "affiliation": ""
+    },
+    {
+      "name": "Haobo Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Haokun Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yichen Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziyu Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Renrui Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhichao Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenan Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Ying Wei",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CL",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "published": "2026-09-29",
+  "updated": "2026-09-29",
+  "arxiv_id": "2609.38169",
+  "pdf_url": "https://arxiv.org/pdf/2609.38169v1",
+  "abs_url": "http://arxiv.org/abs/2609.38169v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-38169.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-38169-p2.jpg",
+    "assets/img/covers/arxiv-2609-38169-p3.jpg",
+    "assets/img/covers/arxiv-2609-38169-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 27,
+  "source_tags": [],
+  "score": 24,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（dreamer）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 27 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
