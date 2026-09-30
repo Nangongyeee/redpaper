@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "count": 35,
+  "count": 37,
   "papers": [
     {
       "id": "vid-bilibili-BV1Wtav6XEDz",
@@ -927,6 +927,56 @@
       ]
     },
     {
+      "id": "arxiv-2609-33497",
+      "source": "arxiv_discover",
+      "title": "Hamiltonian JEPA: Action-Conditioned World Models with an Inherited Control State",
+      "title_zh": "Hamiltonian JEPA: Action-Conditioned World Models with an Inherited Control State",
+      "tldr_zh": "Planning from pixels needs more than a latent space that is",
+      "cover_zh": "Planning from pixels needs more than a latent space that is",
+      "abstract_zh": "Planning from pixels needs more than a latent space that is stable and predictable. The state the planner scores must also be organized by how actions move the system. Joint-embedding predictive architectures (JEPAs) avoid pixel reconstruction by predicting future representations, but existing action-conditioned JEPAs ask one embedding to serve both perception and control. We introduce H-JEPA, which separates the two. A wide perceptual code is regularized toward a well-scaled isotropic geometry with a Bures-Wasserstein prior, and a fixed orthonormal slice of that code is the control state, which inherits the code's covariance without any objective of its own. The state evolves under phase-conditioned dissipative port-Hamiltonian dynamics whose input port has orthonormal columns. Port-inverse consistency (PIC) reads the executed action back through the transpose of that port. We show that this readout is exactly the rollout error projected onto the port directions, so PIC is a parameter-free reweighting of prediction error and not an auxiliary action decoder. Untying the readout from the port breaks this identity and loses half of the gain. H-JEPA matches or exceeds reconstruction-free baselines, including the action-decoding Delta-JEPA, on four pixel-based control benchmarks after at most $10$ training epochs, and its largest gain is on OGB-Cube ($91.9$ against $79.3$ percent). Ablations on PushT and OGB-Cube separate the contributions of the structured predictor, PIC, the prediction horizon, the state rank, and the anti-collapse prior.",
+      "authors": [
+        "Tamim Zoabi",
+        "Ameen Ali",
+        "Lior Wolf"
+      ],
+      "authors_all": [
+        "Tamim Zoabi",
+        "Ameen Ali",
+        "Lior Wolf"
+      ],
+      "primary_category": "",
+      "published": "2026-09-27",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-33497.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-33497-p2.jpg",
+        "assets/img/covers/arxiv-2609-33497-p3.jpg",
+        "assets/img/covers/arxiv-2609-33497-p4.jpg"
+      ],
+      "arxiv_id": "2609.33497",
+      "abs_url": "http://arxiv.org/abs/2609.33497v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.33497v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-33551",
       "source": "arxiv",
       "title": "FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation",
@@ -1516,6 +1566,58 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-33104",
+      "source": "arxiv_discover",
+      "title": "VPTwin: Real-Sim-Real Video Prediction for Robotic Manipulation Planning",
+      "title_zh": "VPTwin: Real-Sim-Real Video Prediction for Robotic Manipulation Planning",
+      "tldr_zh": "While action-conditioned video prediction provides an intuit",
+      "cover_zh": "While action-conditioned video prediction provides an intuit",
+      "abstract_zh": "While action-conditioned video prediction provides an intuitive world model for robotics, purely data-driven predictors often suffer from compounding errors and physically implausible hallucinations in long-horizon rollouts, severely undermining downstream action planning. We propose VPTwin, a Real-Sim-Real video prediction framework that anchors real-world future prediction using real-synchronized simulation twins. For a target manipulation task, a VLM reconstructs an executable digital twin from a real demonstration episode. To accommodate the ill-posed estimation of unobserved physical properties, Isaac Sim simulates multiple forward dynamic rollouts across randomized physical configurations under candidate action trajectories. Using these rollouts as in-context references, VPTwin harmonizes both domains, using simulation dynamics to enforce physical plausibility while capturing unmodeled contact interactions from real video. Furthermore, we establish a predictive planning loop using VPTwin to visually verify VLM-proposed actions and guide reliable real-world execution. Evaluations show substantial reductions in physical hallucinations during video prediction and marked improvements in manipulation planning performance.",
+      "authors": [
+        "Zhenghao Xiao",
+        "Minting Pan",
+        "Nantian He"
+      ],
+      "authors_all": [
+        "Zhenghao Xiao",
+        "Minting Pan",
+        "Nantian He",
+        "Dongzhan Zhou",
+        "Yunbo Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-09-27",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-33104.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-33104-p2.jpg",
+        "assets/img/covers/arxiv-2609-33104-p3.jpg",
+        "assets/img/covers/arxiv-2609-33104-p4.jpg"
+      ],
+      "arxiv_id": "2609.33104",
+      "abs_url": "http://arxiv.org/abs/2609.33104v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.33104v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-33412",
