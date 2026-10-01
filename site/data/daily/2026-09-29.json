@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 36,
+  "count": 37,
   "papers": [
     {
       "id": "arxiv-2609-38172",
@@ -805,6 +805,59 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-37378",
+      "source": "arxiv_discover",
+      "title": "Do-JEPA: From Masking to Intervention in Latent World Models",
+      "title_zh": "Do-JEPA: From Masking to Intervention in Latent World Models",
+      "tldr_zh": "Latent world models are trained to predict what happens next",
+      "cover_zh": "Latent world models are trained to predict what happens next",
+      "abstract_zh": "Latent world models are trained to predict what happens next, so nothing in their objective separates what an action caused from what merely co-occurred with it. Object-masking models such as C-JEPA intervene on what the predictor can see; we intervene on what physically happens. From one saved simulator state we run the dynamics under an action $a$ and under a reference action $a_{varnothing}$, and train the model to predict the difference $Δz=z^{a}-z^{a_{varnothing}}$ between the two latent futures. The resulting objective, Do-JEPA, has an effect loss, a support loss (where the action enters), a propagation loss (where its effect travels) and invariance losses (what must not change). In a synthetic system with object-aligned variables, support supervision finds the directly intervened object in 99.95% of test cases, where a sparse action mask sends the action to a nuisance slot in every case, and response-onset supervision recovers the ring-shaped propagation graph (edge AUROC 0.975 vs. 0.624). From pixels, the effect loss beats a control trained on exactly the same data: it lowers latent effect error by 28.4% on an end-to-end LeWM model and physical effect error by 13.5% when trained and tested on natural action sequences, and on three independently generated CausalWorld benchmarks it lowers responsive effect error by about 20% under physics shifts and the latent context sensitivity of predicted effects by 66%. Trained from scratch it costs factual accuracy; fine-tuning an existing model with it removes this cost. Together, these results show that intervening on the world, rather than on what the model sees, helps latent world models predict what their actions cause.",
+      "authors": [
+        "Hossein Resani",
+        "Javen Qinfeng Shi"
+      ],
+      "authors_all": [
+        "Hossein Resani",
+        "Javen Qinfeng Shi"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-37378.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-37378-p2.jpg",
+        "assets/img/covers/arxiv-2609-37378-p3.jpg",
+        "assets/img/covers/arxiv-2609-37378-p4.jpg"
+      ],
+      "arxiv_id": "2609.37378",
+      "abs_url": "http://arxiv.org/abs/2609.37378v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37378v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-37771",

@@ -1,0 +1,81 @@
+{
+  "id": "arxiv-2609-40007",
+  "source": "arxiv",
+  "title": "Multi-Link Safety Filtering for VLA Policies Around Moving Hazards",
+  "title_zh": "Multi-Link Safety Filtering for VLA Policies Around Moving Hazards",
+  "abstract": "A vision-language-action (VLA) policy can finish a manipulation task while knocking over objects unrelated to it, so task success alone does not show that the policy is safe to deploy in clutter. We study how to keep a pretrained VLA policy clear of such hazards at run time without retraining it, which requires guarding more of the arm than the end effector, following the hazard as it moves, and sharing onboard compute with the policy. Our training-free shield covers the gripper, wrist, and forearm with five ellipsoids and filters every commanded motion through one barrier program against a keep-out ellipsoid fitted from RGB-D perception at reset. Sparse optical flow then carries that ellipsoid's center along with the hazard, with no repeated detection or refitting. Over six simulated hazard-motion conditions, the shield lowers collision from $65.62\\%$ to $27.27\\%$ and raises safe-success, task completion without collision, from $29.35\\%$ to $50.43\\%$. Ablations show that guarding the arm links protects beyond end-effector shielding, and that tracking recovers most of the protection lost when the hazard estimate is frozen at reset. On heterogeneous edge hardware, the five-ellipsoid barrier runs on the CPU in $2.2$~ms at the 99th percentile, and trimming the vision--language prefix and taking fewer flow-matching steps shortens each $π_{0.5}$ policy call on the integrated GPU from $343$ to $177.3$~ms. On a physical SO-101 arm across four tasks, the arm touched the hazard in 3 of 16 shielded episodes versus 11 of 16 unshielded ones. Project page: https://yathag.github.io/multilink-safety-filter/",
+  "abstract_zh": "A vision-language-action (VLA) policy can finish a manipulation task while knocking over objects unrelated to it, so task success alone does not show that the policy is safe to deploy in clutter. We study how to keep a pretrained VLA policy clear of such hazards at run time without retraining it, which requires guarding more of the arm than the end effector, following the hazard as it moves, and sharing onboard compute with the policy. Our training-free shield covers the gripper, wrist, and forearm with five ellipsoids and filters every commanded motion through one barrier program against a keep-out ellipsoid fitted from RGB-D perception at reset. Sparse optical flow then carries that ellipsoid's center along with the hazard, with no repeated detection or refitting. Over six simulated hazard-motion conditions, the shield lowers collision from $65.62\\%$ to $27.27\\%$ and raises safe-success, task completion without collision, from $29.35\\%$ to $50.43\\%$. Ablations show that guarding the arm links protects beyond end-effector shielding, and that tracking recovers most of the protection lost when the hazard estimate is frozen at reset. On heterogeneous edge hardware, the five-ellipsoid barrier runs on the CPU in $2.2$~ms at the 99th percentile, and trimming the vision--language prefix and taking fewer flow-matching steps shortens each $π_{0.5}$ policy call on the integrated GPU from $343$ to $177.3$~ms. On a physical SO-101 arm across four tasks, the arm touched the hazard in 3 of 16 shielded episodes versus 11 of 16 unshielded ones. Project page: https://yathag.github.io/multilink-safety-filter/",
+  "tldr_zh": "A vision-language-action (VLA) policy can finish a manipulat",
+  "cover_zh": "A vision-language-action (VLA) policy can finish a manipulat",
+  "authors": [
+    {
+      "name": "Yatharth Agarwal",
+      "affiliation": ""
+    },
+    {
+      "name": "Vijay Raghunathan",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "arxiv_id": "2609.40007",
+  "pdf_url": "https://arxiv.org/pdf/2609.40007v1",
+  "abs_url": "http://arxiv.org/abs/2609.40007v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-40007.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-40007-p2.jpg",
+    "assets/img/covers/arxiv-2609-40007-p3.jpg",
+    "assets/img/covers/arxiv-2609-40007-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、vla policy、manipulation）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

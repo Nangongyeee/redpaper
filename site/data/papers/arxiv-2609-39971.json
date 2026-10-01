@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2609-39971",
+  "source": "arxiv",
+  "title": "When Instructions Retrieve Trajectories: Diagnosing and Mitigating Generalization Failures in VLA Models",
+  "title_zh": "When Instructions Retrieve Trajectories: Diagnosing and Mitigating Generalization Failures in VLA Models",
+  "abstract": "Vision-language-action (VLA) models can exceed 90% success on in-distribution tasks and withstand nuisance changes that preserve the required action, yet fail under counterfactual changes that demand a different action. Aggregate robustness scores can therefore conceal a more specific failure, in which a policy responds to both language and vision yet does not combine them to select the action the task requires. We call this failure instruction-action binding. Instructions cue familiar trajectory families, and visual feedback adjusts their execution. Behavioral analyses of fine-tuned $π_{0.5}$ and GR00T-N1.7 policies reveal that failed rollouts often retain the source behavior or switch to another demonstrated task. These switches show that language is not simply ignored. Readouts and interventions connect these choices to task-conditioned internal states. Our analysis of the imitation objective shows how narrow conditional action support can leave grounded and instruction-keyed solutions indistinguishable on the demonstrations. This motivates Equivariant Counterfactual Training (ECT), which acts at two levels. ECT data supply valid demonstrations in which the same instruction requires different actions in distinguishable scenes, while the ECT loss trains each demonstration with its counterpart in the same update. In a controlled LIBERO-PRO comparison, full ECT raises $π_{0.5}$'s mean position-swap success from 36% to 59%. On CALVIN, where counterparts already occur in the original data, the ECT loss improves five-task completion without new demonstrations. On a real UR5e under a fixed demonstration budget, full ECT raises unseen-position success from 8% to 88%.",
+  "abstract_zh": "Vision-language-action (VLA) models can exceed 90% success on in-distribution tasks and withstand nuisance changes that preserve the required action, yet fail under counterfactual changes that demand a different action. Aggregate robustness scores can therefore conceal a more specific failure, in which a policy responds to both language and vision yet does not combine them to select the action the task requires. We call this failure instruction-action binding. Instructions cue familiar trajectory families, and visual feedback adjusts their execution. Behavioral analyses of fine-tuned $π_{0.5}$ and GR00T-N1.7 policies reveal that failed rollouts often retain the source behavior or switch to another demonstrated task. These switches show that language is not simply ignored. Readouts and interventions connect these choices to task-conditioned internal states. Our analysis of the imitation objective shows how narrow conditional action support can leave grounded and instruction-keyed solutions indistinguishable on the demonstrations. This motivates Equivariant Counterfactual Training (ECT), which acts at two levels. ECT data supply valid demonstrations in which the same instruction requires different actions in distinguishable scenes, while the ECT loss trains each demonstration with its counterpart in the same update. In a controlled LIBERO-PRO comparison, full ECT raises $π_{0.5}$'s mean position-swap success from 36% to 59%. On CALVIN, where counterparts already occur in the original data, the ECT loss improves five-task completion without new demonstrations. On a real UR5e under a fixed demonstration budget, full ECT raises unseen-position success from 8% to 88%.",
+  "tldr_zh": "Vision-language-action (VLA) models can exceed 90% success o",
+  "cover_zh": "Vision-language-action (VLA) models can exceed 90% success o",
+  "authors": [
+    {
+      "name": "Hung-Jen Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu-Hsun Hou",
+      "affiliation": ""
+    },
+    {
+      "name": "Yan-Hong Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yan-Fu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Binghua Cai",
+      "affiliation": ""
+    },
+    {
+      "name": "Min Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Chun-Yi Lee",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.LG"
+  ],
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "arxiv_id": "2609.39971",
+  "pdf_url": "https://arxiv.org/pdf/2609.39971v1",
+  "abs_url": "http://arxiv.org/abs/2609.39971v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-39971.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-39971-p2.jpg",
+    "assets/img/covers/arxiv-2609-39971-p3.jpg",
+    "assets/img/covers/arxiv-2609-39971-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 31,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（gr00t、vision-language-action、vla model、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 31 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

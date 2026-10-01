@@ -1,0 +1,112 @@
+{
+  "id": "arxiv-2609-39873",
+  "source": "arxiv",
+  "title": "SplineWAM: Adaptive Action Horizons for World Action Models via B-Spline Representations",
+  "title_zh": "SplineWAM: Adaptive Action Horizons for World Action Models via B-Spline Representations",
+  "abstract": "World action models (WAMs) are large embodied policies that jointly predict future video and the actions to execute, emitting a fixed-length action chunk per inference call. Such a policy allocates its computational budget uniformly in time, unable to execute for longer over free-space motion or to spend more inference on contact-rich manipulation, which limits the throughput a WAM can reach when served in the cloud. We present SplineWAM, which adaptively compresses the action trajectory into a fixed-size window of cubic B-spline parameters, fitting the knot times to the characteristics of the motion. One parameter budget then decodes into chunks of varying temporal resolution and duration, and both the executed span and the interval until the next policy call follow from the prediction itself. Aligning the video supervision to the fitted knot times of the demonstration rather than to a uniform grid concentrates the supervised frames where the action trajectory is complex. For asynchronous deployment we introduce Jacobian-Pullback Real-Time Chunking (JP-RTC), which imposes chunk continuity on the decoded raw actions the robot executes rather than on the spline parameters, and corrects the parameters through the decoder so that the executed prefix agrees with the actions already committed. On LIBERO-Plus and RoboCasa, SplineWAM improves success rate over an action chunking WAM by $8.2$ and $4.4$ points while cutting policy calls per episode by 22% and 26%. On three bimanual real-robot tasks under asynchronous execution, it leads or matches the baseline while decoding 1.2 to 1.6 times as much executed motion per call.",
+  "abstract_zh": "World action models (WAMs) are large embodied policies that jointly predict future video and the actions to execute, emitting a fixed-length action chunk per inference call. Such a policy allocates its computational budget uniformly in time, unable to execute for longer over free-space motion or to spend more inference on contact-rich manipulation, which limits the throughput a WAM can reach when served in the cloud. We present SplineWAM, which adaptively compresses the action trajectory into a fixed-size window of cubic B-spline parameters, fitting the knot times to the characteristics of the motion. One parameter budget then decodes into chunks of varying temporal resolution and duration, and both the executed span and the interval until the next policy call follow from the prediction itself. Aligning the video supervision to the fitted knot times of the demonstration rather than to a uniform grid concentrates the supervised frames where the action trajectory is complex. For asynchronous deployment we introduce Jacobian-Pullback Real-Time Chunking (JP-RTC), which imposes chunk continuity on the decoded raw actions the robot executes rather than on the spline parameters, and corrects the parameters through the decoder so that the executed prefix agrees with the actions already committed. On LIBERO-Plus and RoboCasa, SplineWAM improves success rate over an action chunking WAM by $8.2$ and $4.4$ points while cutting policy calls per episode by 22% and 26%. On three bimanual real-robot tasks under asynchronous execution, it leads or matches the baseline while decoding 1.2 to 1.6 times as much executed motion per call.",
+  "tldr_zh": "World action models (WAMs) are large embodied policies that",
+  "cover_zh": "World action models (WAMs) are large embodied policies that",
+  "authors": [
+    {
+      "name": "Jun Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoshen Han",
+      "affiliation": ""
+    },
+    {
+      "name": "Qiwei Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Nan Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Peiyan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Heyun Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Hang Lai",
+      "affiliation": ""
+    },
+    {
+      "name": "Weinan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinghang Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Huaping Liu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "arxiv_id": "2609.39873",
+  "pdf_url": "https://arxiv.org/pdf/2609.39873v1",
+  "abs_url": "http://arxiv.org/abs/2609.39873v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-39873.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-39873-p2.jpg",
+    "assets/img/covers/arxiv-2609-39873-p3.jpg",
+    "assets/img/covers/arxiv-2609-39873-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 23,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（manipulation、bimanual、action chunking、robocasa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 23 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
