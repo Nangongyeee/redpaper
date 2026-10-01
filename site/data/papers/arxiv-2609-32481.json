@@ -1,0 +1,72 @@
+{
+  "id": "arxiv-2609-32481",
+  "source": "arxiv_discover",
+  "title": "JEPA Learns What the Mask Leaves Unrecoverable",
+  "title_zh": "JEPA Learns What the Mask Leaves Unrecoverable",
+  "abstract": "Joint-embedding predictive architectures are unusually sensitive to how the input is masked: block masks work, scattered masks do not, and the explanations are empirical. We give a measurement account. A mask is a linear measurement, and in a compactly supported wavelet basis every atom whose support lies inside the hidden region falls in the measurement's null space and leaves no trace in the data. The JEPA loss asks only that the encoded context suffice for the target, so a target that a low-level prior can recover admits a shortcut, one the moving-average target encoder can make self-consistent. What removes the shortcut is the coarse-scale content the mask leaves unrecoverable, provided enough context stays within reach of each target. We score that content before training and test the account's distinctive predictions in 151 pre-training runs. On ImageNet-100, strip masks match blocks in area and contiguity yet are recoverable, and they land at 40.3% linear top-1, beside random masks at 40.8%, against 64.3% for blocks; within one geometry family, the placements that leave the least unrecoverable content lose 6.5 points to those that leave the most, over five seed pairs; pixel targets span 7 points where latent targets span 25; and against a frozen target the gap between random and block masks, 19 points on the same kind of GPU, closes to 1.5, so the geometry acts through the target the encoder produces for itself. On UCF101 the masking ratio decides which condition, content or reach, binds; removing whole frames, unrecoverable in space but recoverable from neighbouring frames, is worst at both ratios; and on V-JEPA's own masks, batching them intact instead of truncated changes little (36.0% against 35.1%), whereas making 100 target tokens inside the blocks visible lifts them to 48.7% and hiding 100 context tokens outside the blocks does not (33.7%).",
+  "abstract_zh": "Joint-embedding predictive architectures are unusually sensitive to how the input is masked: block masks work, scattered masks do not, and the explanations are empirical. We give a measurement account. A mask is a linear measurement, and in a compactly supported wavelet basis every atom whose support lies inside the hidden region falls in the measurement's null space and leaves no trace in the data. The JEPA loss asks only that the encoded context suffice for the target, so a target that a low-level prior can recover admits a shortcut, one the moving-average target encoder can make self-consistent. What removes the shortcut is the coarse-scale content the mask leaves unrecoverable, provided enough context stays within reach of each target. We score that content before training and test the account's distinctive predictions in 151 pre-training runs. On ImageNet-100, strip masks match blocks in area and contiguity yet are recoverable, and they land at 40.3% linear top-1, beside random masks at 40.8%, against 64.3% for blocks; within one geometry family, the placements that leave the least unrecoverable content lose 6.5 points to those that leave the most, over five seed pairs; pixel targets span 7 points where latent targets span 25; and against a frozen target the gap between random and block masks, 19 points on the same kind of GPU, closes to 1.5, so the geometry acts through the target the encoder produces for itself. On UCF101 the masking ratio decides which condition, content or reach, binds; removing whole frames, unrecoverable in space but recoverable from neighbouring frames, is worst at both ratios; and on V-JEPA's own masks, batching them intact instead of truncated changes little (36.0% against 35.1%), whereas making 100 target tokens inside the blocks visible lifts them to 48.7% and hiding 100 context tokens outside the blocks does not (33.7%).",
+  "tldr_zh": "Joint-embedding predictive architectures are unusually sensi",
+  "cover_zh": "Joint-embedding predictive architectures are unusually sensi",
+  "authors": [
+    {
+      "name": "Peng Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Amr Alanwar",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.CV"
+  ],
+  "published": "2026-09-26",
+  "updated": "2026-09-26",
+  "arxiv_id": "2609.32481",
+  "pdf_url": "https://arxiv.org/pdf/2609.32481v1",
+  "abs_url": "http://arxiv.org/abs/2609.32481v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2609-32481.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2609-32481-p2.jpg",
+    "assets/img/covers/arxiv-2609-32481-p3.jpg",
+    "assets/img/covers/arxiv-2609-32481-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 26,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 12,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（jepa、v-jepa、joint-embedding predictive）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 26 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
