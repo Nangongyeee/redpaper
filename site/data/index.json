@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T16:13:28.767292+00:00",
-  "count": 3281,
+  "generated_at": "2026-10-01T17:57:18.682013+00:00",
+  "count": 3286,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -4578,6 +4578,63 @@
       "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "vid-youtube-4whgw2gLBS8",
+      "source": "video_youtube",
+      "title": "New Hands for Atlas | Boston Dynamics",
+      "title_zh": "New Hands for Atlas | Boston Dynamics",
+      "tldr_zh": "This new generation hand is the perfect companion for Atlas.",
+      "cover_zh": "This new generation hand is the perfect companion for Atlas.",
+      "abstract_zh": "This new generation hand is the perfect companion for Atlas. With 13 degrees of freedom, these hands are directly actuated, built for high fidelity simulation to enable sim-to-real RL, and designed from the ground up for dexterous physical work. Learn how we built robot hands for modern AI and real work: https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-10-01",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Boston Dynamics"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.youtube.com/watch?v=4whgw2gLBS8",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 67,
+      "judge": {},
+      "institutions": [
+        "Boston Dynamics"
+      ],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=4whgw2gLBS8",
+          "embed_url": "https://www.youtube.com/embed/4whgw2gLBS8",
+          "title": "New Hands for Atlas | Boston Dynamics",
+          "source": "channel"
+        }
+      ],
       "github": {},
       "source_tags": []
     },
@@ -25514,59 +25571,6 @@
       ]
     },
     {
-      "id": "vid-youtube-4whgw2gLBS8",
-      "source": "video_youtube",
-      "title": "New Hands for Atlas | Boston Dynamics",
-      "title_zh": "New Hands for Atlas | Boston Dynamics",
-      "tldr_zh": "This new generation hand is the perfect companion for Atlas.",
-      "cover_zh": "This new generation hand is the perfect companion for Atlas.",
-      "abstract_zh": "This new generation hand is the perfect companion for Atlas. With 13 degrees of freedom, these hands are directly actuated, built for high fidelity simulation to enable sim-to-real RL, and designed from the ground up for dexterous physical work. Learn how we built robot hands for modern AI and real work: https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
-      "published": "2026-10-01",
-      "channels": [],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Boston Dynamics"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.youtube.com/watch?v=4whgw2gLBS8",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 50,
-      "judge": {},
-      "institutions": [
-        "Boston Dynamics"
-      ],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=4whgw2gLBS8",
-          "embed_url": "https://www.youtube.com/embed/4whgw2gLBS8",
-          "title": "New Hands for Atlas | Boston Dynamics",
-          "source": "channel"
-        }
-      ],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "openreview-NCnplCf4wo",
       "source": "openreview",
       "title": "Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation",
@@ -45123,6 +45127,74 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-36596",
+      "source": "arxiv_discover",
+      "title": "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation",
+      "title_zh": "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation",
+      "tldr_zh": "Contact-rich dexterous manipulation requires policies that t",
+      "cover_zh": "Contact-rich dexterous manipulation requires policies that t",
+      "abstract_zh": "Contact-rich dexterous manipulation requires policies that translate physical feedback into motion commands while regulating interaction loads across evolving multi-contact interactions. This requires haptic observations of contact state and action supervision showing how commands should adapt. Existing policies often overlook complementary fingertip tactile and joint-torque feedback, while common action targets either encode excessive loading or omit motion constrained by the object. We introduce HACo, a Haptic Active Compliance policy that learns force-regulating actions directly from haptic feedback. Compliance-regulated teleoperation converts operator inputs into controller-executable compliant actions that preserve motion intent while regulating loads. HACo learns these actions directly, using command-state discrepancy as auxiliary compliant-intent supervision. It combines local fingertip tactile responses with joint-torque feedback capturing load transmission through the articulated hand, including contacts beyond tactile coverage. A Compliance Grounding Module uses gated haptic cross-attention to ground action generation in the evolving haptic state, enabling closed-loop force regulation without explicit online contact modeling. We evaluate HACo on a real-world benchmark covering multi-contact friction, tangential interaction, fragile curved-surface contact, rotational torque, and deformable-object manipulation. Across 20 trials per task, HACo achieves an 83% mean success rate, compared with 35% for the strongest evaluated baseline. These results demonstrate active compliance across diverse force-sensitive dexterous manipulation tasks.",
+      "authors": [
+        "Naisheng Ye",
+        "Yinzhe Zhou",
+        "Junkai Zhao"
+      ],
+      "authors_all": [
+        "Naisheng Ye",
+        "Yinzhe Zhou",
+        "Junkai Zhao",
+        "Yuhang Lu",
+        "Checheng Yu",
+        "Zhenjie Yang",
+        "Pengwei Wang",
+        "Hongyang Li"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li (SAIL)"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-36596.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-36596-p2.jpg",
+        "assets/img/covers/arxiv-2609-36596-p3.jpg",
+        "assets/img/covers/arxiv-2609-36596-p4.jpg"
+      ],
+      "arxiv_id": "2609.36596",
+      "abs_url": "http://arxiv.org/abs/2609.36596v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.36596v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-39601",
       "source": "arxiv",
       "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
@@ -46822,8 +46894,8 @@
       "primary_category": "cs.LG",
       "published": "2026-09-30",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -92504,6 +92576,65 @@
       ]
     },
     {
+      "id": "arxiv-2609-37250",
+      "source": "arxiv_discover",
+      "title": "V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents",
+      "title_zh": "V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents",
+      "tldr_zh": "World-action models (WAMs) couple future visual-state predic",
+      "cover_zh": "World-action models (WAMs) couple future visual-state predic",
+      "abstract_zh": "World-action models (WAMs) couple future visual-state prediction with action generation. By adapting video generators or image-editing models pretrained at scale, a prominent line of recent WAMs inherits both predictive knowledge and the models in which it was learned. We ask whether a predictive visual latent space induced by large-scale predictive pretraining can instead provide a sufficient foundation for effective WAM learning without inheriting a complete pretrained visual generative model. To answer this question, we introduce V-JEPA Policy, a simple framework that builds a WAM on the latent space of a frozen V-JEPA 2.1 encoder. An instruction-conditioned future-latent predictor and a flow-matching action expert are jointly learned from scratch in a single downstream stage, with the predictor's future-informed context key--value states conditioning action generation. With 0.9B total parameters, of which 0.6B are trainable, V-JEPA Policy achieves competitive performance with representative WAM and vision-language-action baselines across LIBERO, LIBERO-Plus, and RoboCasa-GR1. Comparing visual foundations under the same downstream framework and training budget identifies V-JEPA latents as more effective than the discriminative, reconstructive, and video-understanding-oriented alternatives, particularly under distribution shifts. Beyond task-specific learning, pretraining the predictor on DROID video--instruction pairs without action labels and adapting it into a WAM yields substantial gains in downstream control and out-of-distribution generalization. Together, these findings establish predictive visual latents as a foundation for effective WAM learning from task-specific demonstrations and for transferring future-modeling knowledge acquired from broader in-the-wild videos. Our code is available at https://github.com/breez3young/VJEPA-Policy.",
+      "authors": [
+        "Yang Zhang",
+        "Jiangyuan Zhao",
+        "Chenyou Fan"
+      ],
+      "authors_all": [
+        "Yang Zhang",
+        "Jiangyuan Zhao",
+        "Chenyou Fan",
+        "Jiayu Hu",
+        "Xiu Yuan",
+        "Chenjia Bai",
+        "Xiu Li"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-37250.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-37250-p2.jpg",
+        "assets/img/covers/arxiv-2609-37250-p3.jpg",
+        "assets/img/covers/arxiv-2609-37250-p4.jpg"
+      ],
+      "arxiv_id": "2609.37250",
+      "abs_url": "http://arxiv.org/abs/2609.37250v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37250v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-37552",
       "source": "arxiv",
       "title": "Wrench-ACT: Enhancing Robot Policies for Contact Rich Behavior Using Direct Wrench Control",
@@ -92880,8 +93011,8 @@
       "primary_category": "cs.RO",
       "published": "2026-09-30",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -98688,8 +98819,8 @@
       "primary_category": "cs.RO",
       "published": "2026-09-30",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -143004,6 +143135,59 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-28807",
+      "source": "arxiv_discover",
+      "title": "An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics",
+      "title_zh": "An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics",
+      "tldr_zh": "Over the course of a lifetime, robots may encounter novel sc",
+      "cover_zh": "Over the course of a lifetime, robots may encounter novel sc",
+      "abstract_zh": "Over the course of a lifetime, robots may encounter novel scenarios unaccounted for in its original training that result in performance degradation. One common approach to mitigating this issue is to further grow the offline training dataset in hopes of producing a policy robust to these changes. In contrast, biological learning occurs moment-to-moment via a stream of experience, unlike the predominantly batch-based and offline nature of deep learning. Although recent works show the feasibility of stream-based deep reinforcement learning, where updates use only the latest experience, none have shown it to be a viable continual learning framework for adapting robotic policies to unseen changes. In this paper, we present the first analysis of streaming deep reinforcement learning for adaptive continual learning in robotics. In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals. Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy. Furthermore, we perform additional evaluations on robotic manipulation tasks to determine if our previous observations extend to different robotic morphologies and scenarios. Our results show that the successes observed in quadruped locomotion can be partially realized in manipulation with stability and performance limitations. We conclude with a discussion on the limitations of our work and its implications for the future of continual robot learning.",
+      "authors": [
+        "Teeratham Vitchutripop",
+        "Alyssa Quarles",
+        "Wenhe Zhang"
+      ],
+      "authors_all": [
+        "Teeratham Vitchutripop",
+        "Alyssa Quarles",
+        "Wenhe Zhang",
+        "Richard Xue",
+        "Daniel Rakita"
+      ],
+      "primary_category": "",
+      "published": "2026-09-23",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-28807.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-28807-p2.jpg",
+        "assets/img/covers/arxiv-2609-28807-p3.jpg",
+        "assets/img/covers/arxiv-2609-28807-p4.jpg"
+      ],
+      "arxiv_id": "2609.28807",
+      "abs_url": "http://arxiv.org/abs/2609.28807v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.28807v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-33354",
       "source": "arxiv",
       "title": "Traceable Human-to-Humanoid Sign Language Benchmarking",
@@ -178564,6 +178748,59 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-25450",
+      "source": "arxiv_discover",
+      "title": "REDACT: Robust Perceptive Locomotion under Unseen Visual Corruption",
+      "title_zh": "REDACT: Robust Perceptive Locomotion under Unseen Visual Corruption",
+      "tldr_zh": "Depth-conditioned locomotion policies have demonstrated impr",
+      "cover_zh": "Depth-conditioned locomotion policies have demonstrated impr",
+      "abstract_zh": "Depth-conditioned locomotion policies have demonstrated impressive agile maneuvers, but can be steered to unpredictable actions when observations are outside their training distribution. Occlusion, invalid returns, sensor noise, and visual distractors can shift deployment observations away from nominal simulated depth. While synthetic sensor augmentation targets specified degradations, it does not by itself define behavior under corruption families omitted from training. To address gaps in training-time coverage, we present REDACT (Retaining Evidence Despite Artifacts for Continued Traversal), a teacher-student framework combining an improved visual encoder architecture, persistent feature masking, and a novel consensus-gating algorithm to retain useful depth information under unmodeled corruption. The gate uses approximate conformal calibration on clean observations alone, requiring no prior knowledge of the corruption type. Trained on clean simulated depth, REDACT retains useful visual information under unseen corruption, supporting higher traversal success than existing parkour baselines. Evaluation of depth augmentation across corruption families further shows that REDACT improves robustness where augmentation coverage is missing. Real-world trials demonstrate zero-shot transfer to structured and forested environments with unfamiliar scene content.",
+      "authors": [
+        "Natapat Kirdwichai",
+        "Tobias Driskell-Poole",
+        "Andrei Sontea"
+      ],
+      "authors_all": [
+        "Natapat Kirdwichai",
+        "Tobias Driskell-Poole",
+        "Andrei Sontea",
+        "Jadu Dash",
+        "Muhammad Burhan Hafez",
+        "Danesh Tarapore"
+      ],
+      "primary_category": "",
+      "published": "2026-09-21",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-25450.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-25450-p2.jpg",
+        "assets/img/covers/arxiv-2609-25450-p3.jpg",
+        "assets/img/covers/arxiv-2609-25450-p4.jpg"
+      ],
+      "arxiv_id": "2609.25450",
+      "abs_url": "http://arxiv.org/abs/2609.25450v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.25450v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-25695",
       "source": "arxiv",
       "title": "Induced Riemannian Metrics for Motion Planning with Constraints",
@@ -179693,6 +179930,70 @@
       "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2609-34233",
+      "source": "arxiv_discover",
+      "title": "GAE: General Action Expert for Real-Time Humanoid Teleoperation",
+      "title_zh": "GAE: General Action Expert for Real-Time Humanoid Teleoperation",
+      "tldr_zh": "Humanoid avatars extend human physical presence beyond the b",
+      "cover_zh": "Humanoid avatars extend human physical presence beyond the b",
+      "abstract_zh": "Humanoid avatars extend human physical presence beyond the body, enabling people to participate in social, service, and labor activities through remotely operated robots. This requires teleoperation systems capable of realizing diverse and dynamic whole-body behaviors while maintaining responsive human-robot synchronization. We present General Action Expert(GAE), a unified learning framework for general-purpose, low-latency humanoid whole-body teleoperation. To cover diverse human behaviors, GAE builds a large-scale human motion dataset from heterogeneous sources, including videos, animations, and motion capture, followed by standardization and augmentation. GAE then addresses the noise and embodiment mismatch in human motions with a two-stage training paradigm: a privileged generator policy first tracks human motion references in simulation and rolls out feasible humanoid trajectories; a deployable executor policy then learns to track these generated trajectories under curriculum domain randomization. For responsive human-robot synchronization, GAE introduces a latency-conditioned anticipation mechanism that adaptively compensates for end-to-end delay during real-time teleoperation. Simulation and real-world experiments on Unitree G1 and Westlake O1 robots demonstrate that GAE enables humanoids to smoothly mirror diverse, agile, and expressive human behaviors. Project website: https://wangyf0928.github.io/gae-wlrobotics/",
+      "authors": [
+        "Yuefan Wang",
+        "Huaicheng Zhou",
+        "Xiao He"
+      ],
+      "authors_all": [
+        "Yuefan Wang",
+        "Huaicheng Zhou",
+        "Xiao He",
+        "Zhijie He",
+        "Mingchuan Yang",
+        "Huayi Zhang",
+        "Li Chai",
+        "Jinxin Liu",
+        "Donglin Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-34233.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-34233-p2.jpg",
+        "assets/img/covers/arxiv-2609-34233-p3.jpg",
+        "assets/img/covers/arxiv-2609-34233-p4.jpg"
+      ],
+      "arxiv_id": "2609.34233",
+      "abs_url": "http://arxiv.org/abs/2609.34233v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34233v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1zEnizBEek",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1zEnizBEek&high_quality=1&autoplay=0",
+          "title": "GAE: General Action Expert for Real-Time Humanoid Teleoperation",
+          "source": "project_page"
+        }
+      ],
       "github": {},
       "source_tags": [
         "llm_discover"
@@ -193023,58 +193324,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-28807",
-      "source": "arxiv_discover",
-      "title": "An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics",
-      "title_zh": "An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics",
-      "tldr_zh": "Over the course of a lifetime, robots may encounter novel sc",
-      "cover_zh": "Over the course of a lifetime, robots may encounter novel sc",
-      "abstract_zh": "Over the course of a lifetime, robots may encounter novel scenarios unaccounted for in its original training that result in performance degradation. One common approach to mitigating this issue is to further grow the offline training dataset in hopes of producing a policy robust to these changes. In contrast, biological learning occurs moment-to-moment via a stream of experience, unlike the predominantly batch-based and offline nature of deep learning. Although recent works show the feasibility of stream-based deep reinforcement learning, where updates use only the latest experience, none have shown it to be a viable continual learning framework for adapting robotic policies to unseen changes. In this paper, we present the first analysis of streaming deep reinforcement learning for adaptive continual learning in robotics. In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals. Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy. Furthermore, we perform additional evaluations on robotic manipulation tasks to determine if our previous observations extend to different robotic morphologies and scenarios. Our results show that the successes observed in quadruped locomotion can be partially realized in manipulation with stability and performance limitations. We conclude with a discussion on the limitations of our work and its implications for the future of continual robot learning.",
-      "authors": [
-        "Teeratham Vitchutripop",
-        "Alyssa Quarles",
-        "Wenhe Zhang"
-      ],
-      "authors_all": [
-        "Teeratham Vitchutripop",
-        "Alyssa Quarles",
-        "Wenhe Zhang",
-        "Richard Xue",
-        "Daniel Rakita"
-      ],
-      "primary_category": "",
-      "published": "2026-09-23",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2609-28807.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-28807-p2.jpg",
-        "assets/img/covers/arxiv-2609-28807-p3.jpg",
-        "assets/img/covers/arxiv-2609-28807-p4.jpg"
-      ],
-      "arxiv_id": "2609.28807",
-      "abs_url": "http://arxiv.org/abs/2609.28807v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.28807v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2609-29310",
@@ -207595,6 +207844,64 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-34702",
+      "source": "arxiv_discover",
+      "title": "MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation",
+      "title_zh": "MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation",
+      "tldr_zh": "Future Mars missions will require rover autonomy that can op",
+      "cover_zh": "Future Mars missions will require rover autonomy that can op",
+      "abstract_zh": "Future Mars missions will require rover autonomy that can operate across unstructured terrain, changing illumination, atmospheric dust, and limited communication. Simulation is a practical way to study these conditions before deployment, but existing Mars-relevant resources differ in scope, including mission-oriented simulators, fixed analog datasets, task-specific environments, and open robotics interfaces. In this context, we present MarsLab, an open-source, ROS2-native Mars rover simulator for autonomy and navigation algorithm development. MarsLab combines HiRISE-derived and procedural terrain with customizable rock, crater, solar-illumination, and atmospheric-dust settings, and runs a Perseverance-class rover model in NVIDIA Isaac Sim. The runtime publishes RGB, depth, RGB-D point clouds, LiDAR, IMU, wheel odometry, and Ground Truth (GT) pose data through standard ROS2 topics. We demonstrate MarsLab with Simultaneous Localization and Mapping (SLAM) benchmarks across sensing modalities, dust levels, scene geometry, and route length, and with Visual Place Recognition (VPR) benchmarks over repeated Mars Base traversals under illumination and dust changes. The results illustrate how controlled scene variation and shared GT trajectories can be used to compare trajectory-level estimation and image-level place recognition within the same simulator. Our Project Page: https://kimhoyun-robotair.github.io/MarsLab/.",
+      "authors": [
+        "Hoyun Kim",
+        "Beomsu Kim",
+        "Giseop Kim"
+      ],
+      "authors_all": [
+        "Hoyun Kim",
+        "Beomsu Kim",
+        "Giseop Kim"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-34702.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-34702-p2.jpg",
+        "assets/img/covers/arxiv-2609-34702-p3.jpg",
+        "assets/img/covers/arxiv-2609-34702-p4.jpg"
+      ],
+      "arxiv_id": "2609.34702",
+      "abs_url": "http://arxiv.org/abs/2609.34702v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34702v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=gkr9NTTGlTw",
+          "embed_url": "https://www.youtube.com/embed/gkr9NTTGlTw",
+          "title": "MarsLab — A Martian Rover Simulator for Autonomous Navigation",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-35078",

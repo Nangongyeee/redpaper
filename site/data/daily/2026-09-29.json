@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 41,
+  "count": 43,
   "papers": [
     {
       "id": "arxiv-2609-38172",
@@ -201,6 +201,74 @@
       "venue": "",
       "venue_announced": "",
       "score": 50,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2609-36596",
+      "source": "arxiv_discover",
+      "title": "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation",
+      "title_zh": "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation",
+      "tldr_zh": "Contact-rich dexterous manipulation requires policies that t",
+      "cover_zh": "Contact-rich dexterous manipulation requires policies that t",
+      "abstract_zh": "Contact-rich dexterous manipulation requires policies that translate physical feedback into motion commands while regulating interaction loads across evolving multi-contact interactions. This requires haptic observations of contact state and action supervision showing how commands should adapt. Existing policies often overlook complementary fingertip tactile and joint-torque feedback, while common action targets either encode excessive loading or omit motion constrained by the object. We introduce HACo, a Haptic Active Compliance policy that learns force-regulating actions directly from haptic feedback. Compliance-regulated teleoperation converts operator inputs into controller-executable compliant actions that preserve motion intent while regulating loads. HACo learns these actions directly, using command-state discrepancy as auxiliary compliant-intent supervision. It combines local fingertip tactile responses with joint-torque feedback capturing load transmission through the articulated hand, including contacts beyond tactile coverage. A Compliance Grounding Module uses gated haptic cross-attention to ground action generation in the evolving haptic state, enabling closed-loop force regulation without explicit online contact modeling. We evaluate HACo on a real-world benchmark covering multi-contact friction, tangential interaction, fragile curved-surface contact, rotational torque, and deformable-object manipulation. Across 20 trials per task, HACo achieves an 83% mean success rate, compared with 35% for the strongest evaluated baseline. These results demonstrate active compliance across diverse force-sensitive dexterous manipulation tasks.",
+      "authors": [
+        "Naisheng Ye",
+        "Yinzhe Zhou",
+        "Junkai Zhao"
+      ],
+      "authors_all": [
+        "Naisheng Ye",
+        "Yinzhe Zhou",
+        "Junkai Zhao",
+        "Yuhang Lu",
+        "Checheng Yu",
+        "Zhenjie Yang",
+        "Pengwei Wang",
+        "Hongyang Li"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li (SAIL)"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-36596.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-36596-p2.jpg",
+        "assets/img/covers/arxiv-2609-36596-p3.jpg",
+        "assets/img/covers/arxiv-2609-36596-p4.jpg"
+      ],
+      "arxiv_id": "2609.36596",
+      "abs_url": "http://arxiv.org/abs/2609.36596v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.36596v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -475,6 +543,65 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-37250",
+      "source": "arxiv_discover",
+      "title": "V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents",
+      "title_zh": "V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents",
+      "tldr_zh": "World-action models (WAMs) couple future visual-state predic",
+      "cover_zh": "World-action models (WAMs) couple future visual-state predic",
+      "abstract_zh": "World-action models (WAMs) couple future visual-state prediction with action generation. By adapting video generators or image-editing models pretrained at scale, a prominent line of recent WAMs inherits both predictive knowledge and the models in which it was learned. We ask whether a predictive visual latent space induced by large-scale predictive pretraining can instead provide a sufficient foundation for effective WAM learning without inheriting a complete pretrained visual generative model. To answer this question, we introduce V-JEPA Policy, a simple framework that builds a WAM on the latent space of a frozen V-JEPA 2.1 encoder. An instruction-conditioned future-latent predictor and a flow-matching action expert are jointly learned from scratch in a single downstream stage, with the predictor's future-informed context key--value states conditioning action generation. With 0.9B total parameters, of which 0.6B are trainable, V-JEPA Policy achieves competitive performance with representative WAM and vision-language-action baselines across LIBERO, LIBERO-Plus, and RoboCasa-GR1. Comparing visual foundations under the same downstream framework and training budget identifies V-JEPA latents as more effective than the discriminative, reconstructive, and video-understanding-oriented alternatives, particularly under distribution shifts. Beyond task-specific learning, pretraining the predictor on DROID video--instruction pairs without action labels and adapting it into a WAM yields substantial gains in downstream control and out-of-distribution generalization. Together, these findings establish predictive visual latents as a foundation for effective WAM learning from task-specific demonstrations and for transferring future-modeling knowledge acquired from broader in-the-wild videos. Our code is available at https://github.com/breez3young/VJEPA-Policy.",
+      "authors": [
+        "Yang Zhang",
+        "Jiangyuan Zhao",
+        "Chenyou Fan"
+      ],
+      "authors_all": [
+        "Yang Zhang",
+        "Jiangyuan Zhao",
+        "Chenyou Fan",
+        "Jiayu Hu",
+        "Xiu Yuan",
+        "Chenjia Bai",
+        "Xiu Li"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-37250.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-37250-p2.jpg",
+        "assets/img/covers/arxiv-2609-37250-p3.jpg",
+        "assets/img/covers/arxiv-2609-37250-p4.jpg"
+      ],
+      "arxiv_id": "2609.37250",
+      "abs_url": "http://arxiv.org/abs/2609.37250v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37250v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-37552",
