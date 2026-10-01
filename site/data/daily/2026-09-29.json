@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 39,
+  "count": 41,
   "papers": [
     {
       "id": "arxiv-2609-38172",
@@ -171,7 +171,9 @@
       "primary_category": "",
       "published": "2026-09-29",
       "channels": [
-        "loco-manip-wbc"
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop"
       ],
       "badges": [
         {
@@ -198,7 +200,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.37181v1",
       "venue": "",
       "venue_announced": "",
-      "score": 45,
+      "score": 50,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -933,6 +935,62 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-37070",
+      "source": "arxiv_discover",
+      "title": "Predictive Safety Curricula for Robust Legged Locomotion",
+      "title_zh": "Predictive Safety Curricula for Robust Legged Locomotion",
+      "tldr_zh": "Rare but consequential failures can persist in learned locom",
+      "cover_zh": "Rare but consequential failures can persist in learned locom",
+      "abstract_zh": "Rare but consequential failures can persist in learned locomotion policies for legged robots even when average task performance is high, in part because standard curricula primarily adapt task difficulty rather than the distribution of safety-critical experience. We introduce Predictive Safety Curricula (PSC), a framework for allocating locomotion training experience using learned predictions of future safety cost. PSC trains a distributional safety critic from policy rollouts and uses its predictions to prioritize both terrain contexts and previously encountered randomized events. The resulting curriculum modifies the training distribution while leaving the task reward and policy-optimization loss unchanged. We evaluate PSC in controlled rough-terrain locomotion and in production locomotion systems. PSC improves reliability relative to standard terrain progression, advantage-based replay, and learning-progress curricula, with the largest gains on difficult terrain and under degraded observations. The same allocation principle transfers to two production locomotion stacks. On ANYmal-D hardware, PSC reduces shank-collision incidence by $63\\%$ relative to the learning-progress curriculum across three matched training seeds, with a reduction in every seed. On a production stair-climbing platform, PSC eliminates observed shank collisions in the evaluated hardware trials. These results show that learned predictions of future safety cost can provide an effective signal for allocating training experience toward rare failure modes and improving locomotion reliability.",
+      "authors": [
+        "Ivan Ovinnikov",
+        "Pascal Sutter",
+        "Christian Gehring"
+      ],
+      "authors_all": [
+        "Ivan Ovinnikov",
+        "Pascal Sutter",
+        "Christian Gehring",
+        "Jordis Herrmann"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-37070.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-37070-p2.jpg",
+        "assets/img/covers/arxiv-2609-37070-p3.jpg",
+        "assets/img/covers/arxiv-2609-37070-p4.jpg"
+      ],
+      "arxiv_id": "2609.37070",
+      "abs_url": "http://arxiv.org/abs/2609.37070v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37070v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-37378",
       "source": "arxiv_discover",
       "title": "Do-JEPA: From Masking to Intervention in Latent World Models",
@@ -1575,6 +1633,64 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-37560",
+      "source": "arxiv_discover",
+      "title": "RoboFin3D: A Sim-to-Real Platform for Robotic Surface Finishing",
+      "title_zh": "RoboFin3D: A Sim-to-Real Platform for Robotic Surface Finishing",
+      "tldr_zh": "Grinding and sanding are fundamental processes in industrial",
+      "cover_zh": "Grinding and sanding are fundamental processes in industrial",
+      "abstract_zh": "Grinding and sanding are fundamental processes in industrial robotic surface finishing. However, physical trials are expensive and consume workpieces, making reproducible experiments difficult. We present RoboFin3D, a sim-to-real platform built on Isaac Sim and the Newton physics engine, that provides physics-based grinding and sanding simulation for cheap and repeatable robotic surface finishing experiments. RoboFin3D utilizes a signed distance field (SDF) to model the changing geometry of the workpiece, enabling contact computation, live updates and rendering without an intermediate mesh. It additionally uses a separate surface field to model progressive surface appearance change during sanding. We also introduce WeldGen, a weld sampling module, to generate weld beads on 8,918 real-world workpiece meshes for providing diverse simulation assets. The simulation parameters are calibrated on real experimental results and our evaluation demonstrates our simulation's fidelity against the real world. We also demonstrate that simulation-generated data can be used to improve the performance of perception models. Simulation-only fine-tuning of SAM2 improves IoU for segmentation of unsanded regions from 77.15% to 84.47%, while combined synthetic and real training reaches 97.41%.",
+      "authors": [
+        "Haowei Wen",
+        "Shangtao Li",
+        "Vaibhav Sanjay"
+      ],
+      "authors_all": [
+        "Haowei Wen",
+        "Shangtao Li",
+        "Vaibhav Sanjay",
+        "Philip Huang",
+        "Jiaoyang Li",
+        "Changliu Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-09-29",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-37560.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-37560-p2.jpg",
+        "assets/img/covers/arxiv-2609-37560-p3.jpg",
+        "assets/img/covers/arxiv-2609-37560-p4.jpg"
+      ],
+      "arxiv_id": "2609.37560",
+      "abs_url": "http://arxiv.org/abs/2609.37560v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37560v1",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-10-01",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-37721",
