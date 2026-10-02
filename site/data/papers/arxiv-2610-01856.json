@@ -1,0 +1,112 @@
+{
+  "id": "arxiv-2610-01856",
+  "source": "arxiv",
+  "title": "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing",
+  "title_zh": "ChunkVLA-AM: Parallel Action Chunking for Vision-Language-Action Robot Control in Additive Manufacturing",
+  "abstract": "Vision-language-action (VLA) models unify visual perception, language understanding, and action generation, offering new opportunities for automation in additive manufacturing (AM). However, deployment in AM remains challenging because adapting these models to unseen robot embodiments is costly, and performance can degrade under environment changes. In this work, we present a framework for deploying OpenVLA-OFT on a FAIRINO FR3 robot in a fixed AM workcell. A data pipeline converts monocular real-world demonstrations into OpenVLA-compatible TFDS/RLDS datasets to support adaptation to the FR3 embodiment. At runtime, each inference request predicts an eight-step chunk of 7-D actions. The FR3 executes each chunk open loop before capturing a new observation, providing closed-loop feedback between chunks. The system uses a cloud-edge architecture in which the FR3 client streams observations to a remote inference server through a FastAPI interface. In 42 physical A-to-B object-transfer trials, evenly split between red and blue targets, the system succeeded in 39 (92.9%). All three failures occurred during final placement, when insufficient release-height control caused the object to topple. An illumination sweep identified a low-error luminance range of 85-125 on a 0-255 scale, with the lowest mean spatial error at 95.",
+  "abstract_zh": "Vision-language-action (VLA) models unify visual perception, language understanding, and action generation, offering new opportunities for automation in additive manufacturing (AM). However, deployment in AM remains challenging because adapting these models to unseen robot embodiments is costly, and performance can degrade under environment changes. In this work, we present a framework for deploying OpenVLA-OFT on a FAIRINO FR3 robot in a fixed AM workcell. A data pipeline converts monocular real-world demonstrations into OpenVLA-compatible TFDS/RLDS datasets to support adaptation to the FR3 embodiment. At runtime, each inference request predicts an eight-step chunk of 7-D actions. The FR3 executes each chunk open loop before capturing a new observation, providing closed-loop feedback between chunks. The system uses a cloud-edge architecture in which the FR3 client streams observations to a remote inference server through a FastAPI interface. In 42 physical A-to-B object-transfer trials, evenly split between red and blue targets, the system succeeded in 39 (92.9%). All three failures occurred during final placement, when insufficient release-height control caused the object to topple. An illumination sweep identified a low-error luminance range of 85-125 on a 0-255 scale, with the lowest mean spatial error at 95.",
+  "tldr_zh": "Vision-language-action (VLA) models unify visual perception,",
+  "cover_zh": "Vision-language-action (VLA) models unify visual perception,",
+  "authors": [
+    {
+      "name": "Zhugang Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Kaichuang Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinman Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Pu Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Martha Asare",
+      "affiliation": ""
+    },
+    {
+      "name": "Jose Hernandez",
+      "affiliation": ""
+    },
+    {
+      "name": "Maxim Ermolinsky",
+      "affiliation": ""
+    },
+    {
+      "name": "Efren Saenz",
+      "affiliation": ""
+    },
+    {
+      "name": "Qi Lu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinghao Yang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "arxiv_id": "2610.01856",
+  "pdf_url": "https://arxiv.org/pdf/2610.01856v1",
+  "abs_url": "http://arxiv.org/abs/2610.01856v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-01856.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-01856-p2.jpg",
+    "assets/img/covers/arxiv-2610-01856-p3.jpg",
+    "assets/img/covers/arxiv-2610-01856-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、openvla、action chunking）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
