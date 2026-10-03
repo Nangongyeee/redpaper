@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T12:38:34.755762+00:00",
-  "count": 3328,
+  "generated_at": "2026-10-03T14:28:06.041385+00:00",
+  "count": 3330,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -158945,6 +158945,57 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-34375",
+      "source": "arxiv_discover",
+      "title": "LRC-JEPA: Disentangling Dynamics and Residual Context for Efficient World Models",
+      "title_zh": "LRC-JEPA: Disentangling Dynamics and Residual Context for Efficient World Models",
+      "tldr_zh": "Compact JEPA world models enable efficient latent-space plan",
+      "cover_zh": "Compact JEPA world models enable efficient latent-space plan",
+      "abstract_zh": "Compact JEPA world models enable efficient latent-space planning, but low-dimensional representation trained under reward-free self-supervision must encode both action-conditioned dynamics and predictable visual context. This competition can entangle controllable state with high-rank nuisance appearance and degrade planning as scenes become more complex. We introduce LRC-JEPA, a lightweight end-to-end world model that routes information into a compact predictive latent $mathbf{z}$ and learned-query residual-context embeddings $mathbf{u}$. Only $mathbf{z}$ is propagated by the dynamics model and used for planning, while $mathbf{u}$ captures temporally persistent information for cross-attention reconstruction; a differentiable residual connection encourages the latent to retain complementary dynamic content. Under explicit assumptions, we show that the resulting representation is sufficient, minimal, nuisance-invariant, and disentangled. Across four simulated control environments, LRC-JEPA improves average planning success over a parameter-matched JEPA baseline by 9 percentage points and matches or exceeds substantially larger pretrained models. On the real-world Bridge-v2 set, its 5.5M-parameter active encoder outperforms DINO-WM (22.1M) and V-JEPA2 (303.9M) encoders while also enabling faster planning. Physical-state probes, reconstruction interventions, and ablations confirm the effectiveness of LRC-JEPA's representation disentanglement.",
+      "authors": [
+        "Luzhe Huang",
+        "Lei Chu",
+        "Jingyi Liang"
+      ],
+      "authors_all": [
+        "Luzhe Huang",
+        "Lei Chu",
+        "Jingyi Liang",
+        "Yuhuan Zhao"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-34375.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-34375-p2.jpg",
+        "assets/img/covers/arxiv-2609-34375-p3.jpg",
+        "assets/img/covers/arxiv-2609-34375-p4.jpg"
+      ],
+      "arxiv_id": "2609.34375",
+      "abs_url": "http://arxiv.org/abs/2609.34375v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34375v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-35603",
       "source": "arxiv",
       "title": "Control-Geometry Straightening for Sampling-Based Latent Planning",
@@ -193591,6 +193642,84 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2609-28654",
+      "source": "arxiv_discover",
+      "title": "Training Object Permanence in World Models",
+      "title_zh": "Training Object Permanence in World Models",
+      "tldr_zh": "Object permanence and solidity are hallmarks of human cognit",
+      "cover_zh": "Object permanence and solidity are hallmarks of human cognit",
+      "abstract_zh": "Object permanence and solidity are hallmarks of human cognitive priors. Recent studies show that video generation models, a paradigmatic class of current world models, have begun to show emerged reasoning abilities, making them ideal candidates for building human-like physical intelligence. Do video models have emerged object permanence in them? If not, could we train them with a core-cognition inspired dataset? We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories. We build Blender generators that randomize speed, lighting, camera angle, and other nuisance parameters while preserving each task's cognitive structure, yielding 10,000+ samples per task. We release a 1.5M-sample training corpus and a 300-question exam. On this exam we evaluate 14 video models: 3 reference-to-video, 7 edit, and 4 continuation, among which PWM-WROP, our 16B world model. In a blind pairwise Elo study, PWM-WROP ranks first among continuation models and third overall, behind only a statistical tie between two reference-to-video models. We release the data, exam, model answers, scores, weights, and PWM, our native-PyTorch training stack on AWS Trainium2.",
+      "authors": [
+        "Haotian Zhang",
+        "Fengyuan Yu",
+        "Dezhi Luo"
+      ],
+      "authors_all": [
+        "Haotian Zhang",
+        "Fengyuan Yu",
+        "Dezhi Luo",
+        "Haoran Sun",
+        "Zehong Zhao",
+        "Qingying Gao",
+        "Yihan Li",
+        "Siyuan An",
+        "Huayi Qin",
+        "Yilan Zhang",
+        "Zhengze Jiang",
+        "Pinyuan Feng",
+        "Renrui Zhang",
+        "Ziyu Guo",
+        "Letian Wang",
+        "Mengyue Yang",
+        "Kangfu Mei",
+        "Maijunxian Wang",
+        "Ran Ji",
+        "Vikash Kumar",
+        "Freda Shi",
+        "Chandra Sripada",
+        "Vincent C. Muller",
+        "Philip Torr",
+        "Alan Yuille",
+        "Nikolaus Kriegeskorte",
+        "Felix Juefei-Xu",
+        "Lvmin Zhang",
+        "Jieneng Chen",
+        "Yilun Du",
+        "Hokin Deng"
+      ],
+      "primary_category": "",
+      "published": "2026-09-23",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-28654.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-28654-p2.jpg",
+        "assets/img/covers/arxiv-2609-28654-p3.jpg",
+        "assets/img/covers/arxiv-2609-28654-p4.jpg"
+      ],
+      "arxiv_id": "2609.28654",
+      "abs_url": "http://arxiv.org/abs/2609.28654v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.28654v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-29310",
