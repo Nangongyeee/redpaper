@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T09:24:20.594733+00:00",
-  "count": 3325,
+  "generated_at": "2026-10-03T10:42:59.676667+00:00",
+  "count": 3327,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -130933,6 +130933,62 @@
       ]
     },
     {
+      "id": "arxiv-2609-34724",
+      "source": "arxiv_discover",
+      "title": "DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations",
+      "title_zh": "DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations",
+      "tldr_zh": "Learning dexterous humanoid loco-manipulation from human dem",
+      "cover_zh": "Learning dexterous humanoid loco-manipulation from human dem",
+      "abstract_zh": "Learning dexterous humanoid loco-manipulation from human demonstrations requires transferring not only human motion, but also the coordinated interaction structure underlying the demonstrated behavior. This is challenging because embodiment differences distort the coupling among body motion, wrist placement, finger articulation, and object interaction, while kinematically accurate references may still be difficult to realize under robot dynamics. We present DexWeave, a unified framework that connects interaction-consistent motion retargeting with anatomy-aware whole-body policy learning. DexWeave first employs a two-stage retargeting procedure that initializes body and hand motions with specialized solvers and subsequently performs coupled refinement over the upper-body interaction chain while preserving lower-body support. The resulting references are tracked by an anatomy-aware Transformer policy that represents anatomical regions as structured tokens and uses directed masked attention to model their dependencies, with object information selectively conditioning the upper-body pathway for dexterous interaction. The policy jointly outputs body and dexterous-hand actions and is trained directly with reinforcement learning, without pretrained tracking policies, teacher-student distillation, or subsequent residual refinement. DexWeave improves retargeting fidelity and interaction consistency while achieving higher manipulation performance and faster policy convergence than MLP baselines. We further deploy the learned policies on a physical Unitree G1 humanoid equipped with Inspire dexterous hands, demonstrating dexterous whole-body loco-manipulation in the real world. See our project page (https://dexweave.github.io) for videos.",
+      "authors": [
+        "Naichuan Sun",
+        "Haotian Shen",
+        "Yizhang Zhang"
+      ],
+      "authors_all": [
+        "Naichuan Sun",
+        "Haotian Shen",
+        "Yizhang Zhang",
+        "Luying Feng",
+        "Haoze Wang",
+        "Yuanbo Xiangli",
+        "Yaochu Jin",
+        "Peidong Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-34724.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-34724-p2.jpg",
+        "assets/img/covers/arxiv-2609-34724-p3.jpg",
+        "assets/img/covers/arxiv-2609-34724-p4.jpg"
+      ],
+      "arxiv_id": "2609.34724",
+      "abs_url": "http://arxiv.org/abs/2609.34724v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34724v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-34782",
       "source": "arxiv_discover",
       "title": "CoHuB: A Simulation Benchmark for Multi-Humanoid Collaboration",
@@ -131690,6 +131746,57 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-39235",
+      "source": "arxiv_discover",
+      "title": "The Planning Limits of Latent World Models",
+      "title_zh": "The Planning Limits of Latent World Models",
+      "tldr_zh": "World models offer a promising way to help robots understand",
+      "cover_zh": "World models offer a promising way to help robots understand",
+      "abstract_zh": "World models offer a promising way to help robots understand how the physical world evolves and plan complex behaviours through imagination. Yet existing studies mainly demonstrate what these models can accomplish, leaving unclear when their predictions remain useful for planning and where they fail. We study this question using action-conditioned predictors built on five frozen self-supervised visual backbones: V-JEPA 2, V-JEPA 2.1, VideoMAEv2, VideoPrism, and DINOv2. We use frozen backbones to test representations intended to transfer across environments. We evaluate these models on diverse Meta-World manipulation tasks and real-robot interactions from BridgeData V2. We find that a world model guides action selection reliably only when the goal lies within, or slightly beyond, the trajectory it imagines during planning. With five-step rollouts, the length the predictor was trained on, the world model ranks actions reliably only for targets five to ten control steps ahead, whereas task goals lie 16 to 53 steps away. Neither an 81-fold larger predictor nor longer-rollout training extends this range; the encoder affects both range and closed-loop success, with V-JEPA 2.1 performing most consistently. More fundamentally, the limit persists under perfect prediction: using the real simulator, success falls from 92% to 41% as the target moves from five to twenty steps ahead of a five-step rollout. Planning therefore requires either longer imagined trajectories or closer subgoals. For distant goals, pure imagination succeeds in 23% of episodes, planning with feedback (MPC) raises success to 30%, imagining as far as the goal to 47%, and nearby expert subgoals to 76%. Used within its plannable range, a world model can also improve a vision-language-action (VLA) policy: choosing among eight actions the VLA proposes raises its success from 65% to 77% across 16 different tasks.",
+      "authors": [
+        "Ali Alrasheed",
+        "Basim Azam",
+        "Naveed Akhtar"
+      ],
+      "authors_all": [
+        "Ali Alrasheed",
+        "Basim Azam",
+        "Naveed Akhtar"
+      ],
+      "primary_category": "",
+      "published": "2026-09-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-39235.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-39235-p2.jpg",
+        "assets/img/covers/arxiv-2609-39235-p3.jpg",
+        "assets/img/covers/arxiv-2609-39235-p4.jpg"
+      ],
+      "arxiv_id": "2609.39235",
+      "abs_url": "http://arxiv.org/abs/2609.39235v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39235v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-39670",
       "source": "arxiv",
       "title": "From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation",
@@ -131891,6 +131998,68 @@
       "arxiv_id": "2610.00360",
       "abs_url": "http://arxiv.org/abs/2610.00360v1",
       "pdf_url": "https://arxiv.org/pdf/2610.00360v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2610-00438",
+      "source": "arxiv_discover",
+      "title": "Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining",
+      "title_zh": "Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining",
+      "tldr_zh": "Humanoid whole-body manipulation has advanced rapidly, enabl",
+      "cover_zh": "Humanoid whole-body manipulation has advanced rapidly, enabl",
+      "abstract_zh": "Humanoid whole-body manipulation has advanced rapidly, enabling policies to coordinate locomotion, posture, bimanual interaction, and dexterous hand movements. Meanwhile, egocentric human videos provide diverse examples of everyday interactions across objects and scenes, offering scalable supervision without robot operation. However, existing supervision from these videos provides limited coverage of whole-body movement and coordination with hand-object interaction, while obtaining such supervision through humanoid teleoperation is also costly and difficult to scale. We therefore explore how human experience can support scalable learning of humanoid loco-manipulation. To support this study, we introduce HumanVerse-500, a 500-hour dataset of diverse human loco-manipulation behaviors in open-world environments, collected with a lightweight wearable system that synchronizes egocentric video with body and hand motion. Building on this dataset, we develop $λ_0$, a whole-body humanoid vision-language-action policy, through three-stage training that first learns interaction from diverse egocentric datasets, then coordinates body and hand motion using HumanVerse-500, and finally adapts the policy to downstream tasks and robot embodiments. Across these stages, $λ_0$ learns a shared representation space for human experience transfer, while domain-specific interfaces handle differences between human and robot states and actions. We evaluate $λ_0$ on SIMPLE and 4 real-world loco-manipulation tasks, achieving state-of-the-art performance, and further analyze its scaling behavior, generalization, and training-stage contributions to understand how human data support downstream whole-body humanoid control. We will release our code, models, and data to support further research.",
+      "authors": [
+        "Chongyang Xu",
+        "Zhao Wu",
+        "Jin Chen"
+      ],
+      "authors_all": [
+        "Chongyang Xu",
+        "Zhao Wu",
+        "Jin Chen",
+        "Yiming Jiang",
+        "Jinhui Ye",
+        "Yuming Jiang",
+        "Shifeng Zhang",
+        "Ziliang Feng",
+        "Mu Xu",
+        "Yilun Chen",
+        "Li Lu",
+        "Steven C. H. Hoi"
+      ],
+      "primary_category": "",
+      "published": "2026-09-30",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-00438.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-00438-p2.jpg",
+        "assets/img/covers/arxiv-2610-00438-p3.jpg",
+        "assets/img/covers/arxiv-2610-00438-p4.jpg"
+      ],
+      "arxiv_id": "2610.00438",
+      "abs_url": "http://arxiv.org/abs/2610.00438v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00438v1",
       "venue": "",
       "venue_announced": "",
       "score": 20,
@@ -158663,61 +158832,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-34724",
-      "source": "arxiv_discover",
-      "title": "DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations",
-      "title_zh": "DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations",
-      "tldr_zh": "Learning dexterous humanoid loco-manipulation from human dem",
-      "cover_zh": "Learning dexterous humanoid loco-manipulation from human dem",
-      "abstract_zh": "Learning dexterous humanoid loco-manipulation from human demonstrations requires transferring not only human motion, but also the coordinated interaction structure underlying the demonstrated behavior. This is challenging because embodiment differences distort the coupling among body motion, wrist placement, finger articulation, and object interaction, while kinematically accurate references may still be difficult to realize under robot dynamics. We present DexWeave, a unified framework that connects interaction-consistent motion retargeting with anatomy-aware whole-body policy learning. DexWeave first employs a two-stage retargeting procedure that initializes body and hand motions with specialized solvers and subsequently performs coupled refinement over the upper-body interaction chain while preserving lower-body support. The resulting references are tracked by an anatomy-aware Transformer policy that represents anatomical regions as structured tokens and uses directed masked attention to model their dependencies, with object information selectively conditioning the upper-body pathway for dexterous interaction. The policy jointly outputs body and dexterous-hand actions and is trained directly with reinforcement learning, without pretrained tracking policies, teacher-student distillation, or subsequent residual refinement. DexWeave improves retargeting fidelity and interaction consistency while achieving higher manipulation performance and faster policy convergence than MLP baselines. We further deploy the learned policies on a physical Unitree G1 humanoid equipped with Inspire dexterous hands, demonstrating dexterous whole-body loco-manipulation in the real world. See our project page (https://dexweave.github.io) for videos.",
-      "authors": [
-        "Naichuan Sun",
-        "Haotian Shen",
-        "Yizhang Zhang"
-      ],
-      "authors_all": [
-        "Naichuan Sun",
-        "Haotian Shen",
-        "Yizhang Zhang",
-        "Luying Feng",
-        "Haoze Wang",
-        "Yuanbo Xiangli",
-        "Yaochu Jin",
-        "Peidong Liu"
-      ],
-      "primary_category": "",
-      "published": "2026-09-28",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2609-34724.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-34724-p2.jpg",
-        "assets/img/covers/arxiv-2609-34724-p3.jpg",
-        "assets/img/covers/arxiv-2609-34724-p4.jpg"
-      ],
-      "arxiv_id": "2609.34724",
-      "abs_url": "http://arxiv.org/abs/2609.34724v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.34724v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2609-35603",
       "source": "arxiv",
       "title": "Control-Geometry Straightening for Sampling-Based Latent Planning",
@@ -159071,56 +159185,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-39235",
-      "source": "arxiv_discover",
-      "title": "The Planning Limits of Latent World Models",
-      "title_zh": "The Planning Limits of Latent World Models",
-      "tldr_zh": "World models offer a promising way to help robots understand",
-      "cover_zh": "World models offer a promising way to help robots understand",
-      "abstract_zh": "World models offer a promising way to help robots understand how the physical world evolves and plan complex behaviours through imagination. Yet existing studies mainly demonstrate what these models can accomplish, leaving unclear when their predictions remain useful for planning and where they fail. We study this question using action-conditioned predictors built on five frozen self-supervised visual backbones: V-JEPA 2, V-JEPA 2.1, VideoMAEv2, VideoPrism, and DINOv2. We use frozen backbones to test representations intended to transfer across environments. We evaluate these models on diverse Meta-World manipulation tasks and real-robot interactions from BridgeData V2. We find that a world model guides action selection reliably only when the goal lies within, or slightly beyond, the trajectory it imagines during planning. With five-step rollouts, the length the predictor was trained on, the world model ranks actions reliably only for targets five to ten control steps ahead, whereas task goals lie 16 to 53 steps away. Neither an 81-fold larger predictor nor longer-rollout training extends this range; the encoder affects both range and closed-loop success, with V-JEPA 2.1 performing most consistently. More fundamentally, the limit persists under perfect prediction: using the real simulator, success falls from 92% to 41% as the target moves from five to twenty steps ahead of a five-step rollout. Planning therefore requires either longer imagined trajectories or closer subgoals. For distant goals, pure imagination succeeds in 23% of episodes, planning with feedback (MPC) raises success to 30%, imagining as far as the goal to 47%, and nearby expert subgoals to 76%. Used within its plannable range, a world model can also improve a vision-language-action (VLA) policy: choosing among eight actions the VLA proposes raises its success from 65% to 77% across 16 different tasks.",
-      "authors": [
-        "Ali Alrasheed",
-        "Basim Azam",
-        "Naveed Akhtar"
-      ],
-      "authors_all": [
-        "Ali Alrasheed",
-        "Basim Azam",
-        "Naveed Akhtar"
-      ],
-      "primary_category": "",
-      "published": "2026-09-30",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2609-39235.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-39235-p2.jpg",
-        "assets/img/covers/arxiv-2609-39235-p3.jpg",
-        "assets/img/covers/arxiv-2609-39235-p4.jpg"
-      ],
-      "arxiv_id": "2609.39235",
-      "abs_url": "http://arxiv.org/abs/2609.39235v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.39235v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2609-39873",
       "source": "arxiv",
       "title": "SplineWAM: Adaptive Action Horizons for World Action Models via B-Spline Representations",
@@ -159236,65 +159300,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-00438",
-      "source": "arxiv_discover",
-      "title": "Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining",
-      "title_zh": "Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining",
-      "tldr_zh": "Humanoid whole-body manipulation has advanced rapidly, enabl",
-      "cover_zh": "Humanoid whole-body manipulation has advanced rapidly, enabl",
-      "abstract_zh": "Humanoid whole-body manipulation has advanced rapidly, enabling policies to coordinate locomotion, posture, bimanual interaction, and dexterous hand movements. Meanwhile, egocentric human videos provide diverse examples of everyday interactions across objects and scenes, offering scalable supervision without robot operation. However, existing supervision from these videos provides limited coverage of whole-body movement and coordination with hand-object interaction, while obtaining such supervision through humanoid teleoperation is also costly and difficult to scale. We therefore explore how human experience can support scalable learning of humanoid loco-manipulation. To support this study, we introduce HumanVerse-500, a 500-hour dataset of diverse human loco-manipulation behaviors in open-world environments, collected with a lightweight wearable system that synchronizes egocentric video with body and hand motion. Building on this dataset, we develop $λ_0$, a whole-body humanoid vision-language-action policy, through three-stage training that first learns interaction from diverse egocentric datasets, then coordinates body and hand motion using HumanVerse-500, and finally adapts the policy to downstream tasks and robot embodiments. Across these stages, $λ_0$ learns a shared representation space for human experience transfer, while domain-specific interfaces handle differences between human and robot states and actions. We evaluate $λ_0$ on SIMPLE and 4 real-world loco-manipulation tasks, achieving state-of-the-art performance, and further analyze its scaling behavior, generalization, and training-stage contributions to understand how human data support downstream whole-body humanoid control. We will release our code, models, and data to support further research.",
-      "authors": [
-        "Chongyang Xu",
-        "Zhao Wu",
-        "Jin Chen"
-      ],
-      "authors_all": [
-        "Chongyang Xu",
-        "Zhao Wu",
-        "Jin Chen",
-        "Yiming Jiang",
-        "Jinhui Ye",
-        "Yuming Jiang",
-        "Shifeng Zhang",
-        "Ziliang Feng",
-        "Mu Xu",
-        "Yilun Chen",
-        "Li Lu",
-        "Steven C. H. Hoi"
-      ],
-      "primary_category": "",
-      "published": "2026-09-30",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-00438.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-00438-p2.jpg",
-        "assets/img/covers/arxiv-2610-00438-p3.jpg",
-        "assets/img/covers/arxiv-2610-00438-p4.jpg"
-      ],
-      "arxiv_id": "2610.00438",
-      "abs_url": "http://arxiv.org/abs/2610.00438v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.00438v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2602-05855",
@@ -194216,6 +194221,54 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-34300",
+      "source": "arxiv_discover",
+      "title": "When World Models Lie: Adaptive Safety Analysis Under Wrong Imaginations",
+      "title_zh": "When World Models Lie: Adaptive Safety Analysis Under Wrong Imaginations",
+      "tldr_zh": "World models offer a powerful substrate for safety reasoning",
+      "cover_zh": "World models offer a powerful substrate for safety reasoning",
+      "abstract_zh": "World models offer a powerful substrate for safety reasoning in high-dimensional robotic systems, but they are also fallible: their predictions can be biased, miscalibrated, or confidently wrong. This creates a central challenge for latent-space safety filters, which often learn Hamilton-Jacobi safety value functions on the dynamics of a world model. If the world model is incorrect, the resulting value function can inherit its errors and produce overconfident safety estimates. Existing latent safety filters often rely on auxiliary signals such as ensemble disagreement or value-target consistency residuals for adaptation, but these signals can remain small even when the world model's predictions deviate from observations. We propose an adaptive latent safety filter that calibrates safety reasoning using directly observed world-model error. Our method uses Adaptive Conformal Inference to construct online uncertainty sets from discrepancies between predicted and observation-inferred latent states, then evaluates safety pessimistically by minimizing the learned value function over these sets. This allows the filter to remain minimally conservative when the world model is accurate, while becoming more cautious when observations reveal model mismatch. We provide a finite-time coverage guarantee for the adaptive uncertainty radius. Through simulation and hardware experiments, we show that our method significantly reduces failures relative to state-of-the-art latent safety filters while preserving task completion.",
+      "authors": [
+        "John Cao",
+        "Somil Bansal"
+      ],
+      "authors_all": [
+        "John Cao",
+        "Somil Bansal"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2609-34300.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-34300-p2.jpg",
+        "assets/img/covers/arxiv-2609-34300-p3.jpg",
+        "assets/img/covers/arxiv-2609-34300-p4.jpg"
+      ],
+      "arxiv_id": "2609.34300",
+      "abs_url": "http://arxiv.org/abs/2609.34300v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34300v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-35039",
       "source": "arxiv",
       "title": "Do Not Cut When Uncertain: Rejectable and Calibrated Decision Heads for VLA Policies in Robotic Harvesting",
@@ -194946,6 +194999,62 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-00718",
+      "source": "arxiv_discover",
+      "title": "Toward Humanoid Robots in Construction: A Teleoperation Feasibility Study",
+      "title_zh": "Toward Humanoid Robots in Construction: A Teleoperation Feasibility Study",
+      "tldr_zh": "We present a teleoperation system that enables a single oper",
+      "cover_zh": "We present a teleoperation system that enables a single oper",
+      "abstract_zh": "We present a teleoperation system that enables a single operator to perform construction tasks on a Unitree G1 humanoid, combining extended reality (XR) based upper body control with pedal-based locomotion to enable simultaneous manipulation and locomotion. Motivated by persistent labor shortages, hazardous working conditions, and challenges in humanoid autonomy, we investigate teleoperation as a practical near-term approach for reducing physical strain on workers while generating high quality demonstration data. We evaluate the system on two representative construction tasks drawn from O*NET occupational database, and report task success and completion time relative to a manual baseline. The system achieved 100% success on tool transport and 80% success on surface painting, with teleoperation requiring substantially more time compared to manual execution.",
+      "authors": [
+        "Parastoo Ali Pour",
+        "David R. Martin",
+        "Chang Min Hur"
+      ],
+      "authors_all": [
+        "Parastoo Ali Pour",
+        "David R. Martin",
+        "Chang Min Hur",
+        "Bo Zhang",
+        "Tommy Zhou",
+        "Brandon Thomas Lichter",
+        "Shane Stanfield",
+        "Pramod Khargonekar",
+        "Mohammad Abdullah Al Faruque"
+      ],
+      "primary_category": "",
+      "published": "2026-09-30",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-00718.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-00718-p2.jpg",
+        "assets/img/covers/arxiv-2610-00718-p3.jpg",
+        "assets/img/covers/arxiv-2610-00718-p4.jpg"
+      ],
+      "arxiv_id": "2610.00718",
+      "abs_url": "http://arxiv.org/abs/2610.00718v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.00718v1",
+      "venue": "IROS 2026",
+      "venue_announced": "2026-10-03",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "ieee_spectrum-dab7518fc5",
