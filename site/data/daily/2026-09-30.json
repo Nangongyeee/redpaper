@@ -54,6 +54,69 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-39000",
+      "source": "arxiv_discover",
+      "title": "NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation",
+      "title_zh": "NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation",
+      "tldr_zh": "Whole-body teleoperation requires a humanoid robot to reprod",
+      "cover_zh": "Whole-body teleoperation requires a humanoid robot to reprod",
+      "abstract_zh": "Whole-body teleoperation requires a humanoid robot to reproduce a human operator's behavior even when their terrains differ. This demands that the robot perceive local terrain and adapt its posture and contacts accordingly, rather than copy the operator's motion frame by frame. However, paired motion data linking the same behaviors across flat ground and different terrains remain scarce, limiting supervision for learning terrain-adaptive control. To enable whole-body teleoperation across mismatched terrains, we introduce NEXUS, a perceptive whole-body control framework that combines human motion commands with onboard sensory feedback. We first develop a scalable terrain-aware adaptation algorithm that efficiently generates high-quality motion pairs across motions and terrains without per-motion or per-terrain tuning. Using a paired motion corpus totaling nearly 1,000 hours, we train a perceptive whole-body controller through teacher-student learning to reproduce commanded behaviors across terrains. Experiments demonstrate efficient, scalable generation of high-quality motion data and show that NEXUS combines broad behavioral coverage with terrain adaptability and tracking fidelity, outperforming existing whole-body controllers on the evaluated benchmarks. Zero-shot real-world deployment enables real-time whole-body teleoperation on diverse unseen terrains, further validating the generalization of our method. Project website: https://nexus-humanoid.github.io/",
+      "authors": [
+        "Xiangyu Miao",
+        "Junsong Wu",
+        "Jiyuan Shi"
+      ],
+      "authors_all": [
+        "Xiangyu Miao",
+        "Junsong Wu",
+        "Jiyuan Shi",
+        "Weiji Xie",
+        "Jinrui Han",
+        "Xingyi Wang",
+        "Weinan Zhang",
+        "Chenjia Bai",
+        "Xuelong Li"
+      ],
+      "primary_category": "",
+      "published": "2026-09-30",
+      "channels": [
+        "loco-manip-wbc",
+        "teleop",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Xuelong Li"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-39000.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-39000-p2.jpg",
+        "assets/img/covers/arxiv-2609-39000-p3.jpg",
+        "assets/img/covers/arxiv-2609-39000-p4.jpg"
+      ],
+      "arxiv_id": "2609.39000",
+      "abs_url": "http://arxiv.org/abs/2609.39000v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39000v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2609-39601",
       "source": "arxiv",
       "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
@@ -242,52 +305,50 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2609-39000",
+      "id": "arxiv-2609-38852",
       "source": "arxiv_discover",
-      "title": "NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation",
-      "title_zh": "NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation",
-      "tldr_zh": "Whole-body teleoperation requires a humanoid robot to reprod",
-      "cover_zh": "Whole-body teleoperation requires a humanoid robot to reprod",
-      "abstract_zh": "Whole-body teleoperation requires a humanoid robot to reproduce a human operator's behavior even when their terrains differ. This demands that the robot perceive local terrain and adapt its posture and contacts accordingly, rather than copy the operator's motion frame by frame. However, paired motion data linking the same behaviors across flat ground and different terrains remain scarce, limiting supervision for learning terrain-adaptive control. To enable whole-body teleoperation across mismatched terrains, we introduce NEXUS, a perceptive whole-body control framework that combines human motion commands with onboard sensory feedback. We first develop a scalable terrain-aware adaptation algorithm that efficiently generates high-quality motion pairs across motions and terrains without per-motion or per-terrain tuning. Using a paired motion corpus totaling nearly 1,000 hours, we train a perceptive whole-body controller through teacher-student learning to reproduce commanded behaviors across terrains. Experiments demonstrate efficient, scalable generation of high-quality motion data and show that NEXUS combines broad behavioral coverage with terrain adaptability and tracking fidelity, outperforming existing whole-body controllers on the evaluated benchmarks. Zero-shot real-world deployment enables real-time whole-body teleoperation on diverse unseen terrains, further validating the generalization of our method. Project website: https://nexus-humanoid.github.io/",
+      "title": "Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library",
+      "title_zh": "Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library",
+      "tldr_zh": "Recent humanoid soccer systems make motion tracking the subs",
+      "cover_zh": "Recent humanoid soccer systems make motion tracking the subs",
+      "abstract_zh": "Recent humanoid soccer systems make motion tracking the substrate and derive locomotion from it, typically by steering a motion-reference anchor toward the ball. This yields strong shooting results, but locomotion is trained only on the narrow, deterministic command distribution ball approach induces, never evaluated as a capability in its own right. We invert the stack: a general, command-conditioned locomotion policy is trained first as the substrate, and N motion-guided kicking skills are added on top as task-gated layers, so the reachable gait space is set by the locomotion curriculum rather than any reference clip. Because every skill starts from and returns to this same commandable state, locomotion also becomes a composition hub (O(N) transitions rather than O(N^2)), and post-strike stabilisation is handed back to the trained controller rather than scripted per clip. We instantiate this on a 29-DoF Unitree G1 with seven retargeted kicking skills spanning 259.5 degrees of nominal aim direction, including lateral, rearward and weak-foot strikes a single forward-facing reference cannot express, and report shooting accuracy alongside command-tracking, terrain and push-recovery results with the full skill library attached, an axis prior humanoid soccer systems do not report. The library is validated on hardware across forward, lateral, rearward and commanded approaches.",
       "authors": [
-        "Xiangyu Miao",
-        "Junsong Wu",
-        "Jiyuan Shi"
+        "Abu Hanif Muhammad Syarubany",
+        "Jaehyun Jang",
+        "Hwanhee Kim"
       ],
       "authors_all": [
-        "Xiangyu Miao",
-        "Junsong Wu",
-        "Jiyuan Shi",
-        "Weiji Xie",
-        "Jinrui Han",
-        "Xingyi Wang",
-        "Weinan Zhang",
-        "Chenjia Bai",
-        "Xuelong Li"
+        "Abu Hanif Muhammad Syarubany",
+        "Jaehyun Jang",
+        "Hwanhee Kim",
+        "Kyuwon Kim",
+        "Seungyeon Ryu",
+        "Chang D. Yoo"
       ],
       "primary_category": "",
       "published": "2026-09-30",
       "channels": [
-        "loco-manip-wbc"
+        "loco-manip-wbc",
+        "locomotion"
       ],
       "badges": [
         {
-          "kind": "lab",
-          "label": "⭐ Xuelong Li"
+          "kind": "venue",
+          "label": "🎉 最新收录 · ICRA 2027"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2609-39000.jpg",
+      "cover_image": "assets/img/covers/arxiv-2609-38852.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2609-39000-p2.jpg",
-        "assets/img/covers/arxiv-2609-39000-p3.jpg",
-        "assets/img/covers/arxiv-2609-39000-p4.jpg"
+        "assets/img/covers/arxiv-2609-38852-p2.jpg",
+        "assets/img/covers/arxiv-2609-38852-p3.jpg",
+        "assets/img/covers/arxiv-2609-38852-p4.jpg"
       ],
-      "arxiv_id": "2609.39000",
-      "abs_url": "http://arxiv.org/abs/2609.39000v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.39000v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 32,
+      "arxiv_id": "2609.38852",
+      "abs_url": "http://arxiv.org/abs/2609.38852v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38852v1",
+      "venue": "ICRA 2027",
+      "venue_announced": "2026-10-04",
+      "score": 30,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -1708,59 +1769,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-38852",
-      "source": "arxiv_discover",
-      "title": "Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library",
-      "title_zh": "Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library",
-      "tldr_zh": "Recent humanoid soccer systems make motion tracking the subs",
-      "cover_zh": "Recent humanoid soccer systems make motion tracking the subs",
-      "abstract_zh": "Recent humanoid soccer systems make motion tracking the substrate and derive locomotion from it, typically by steering a motion-reference anchor toward the ball. This yields strong shooting results, but locomotion is trained only on the narrow, deterministic command distribution ball approach induces, never evaluated as a capability in its own right. We invert the stack: a general, command-conditioned locomotion policy is trained first as the substrate, and N motion-guided kicking skills are added on top as task-gated layers, so the reachable gait space is set by the locomotion curriculum rather than any reference clip. Because every skill starts from and returns to this same commandable state, locomotion also becomes a composition hub (O(N) transitions rather than O(N^2)), and post-strike stabilisation is handed back to the trained controller rather than scripted per clip. We instantiate this on a 29-DoF Unitree G1 with seven retargeted kicking skills spanning 259.5 degrees of nominal aim direction, including lateral, rearward and weak-foot strikes a single forward-facing reference cannot express, and report shooting accuracy alongside command-tracking, terrain and push-recovery results with the full skill library attached, an axis prior humanoid soccer systems do not report. The library is validated on hardware across forward, lateral, rearward and commanded approaches.",
-      "authors": [
-        "Abu Hanif Muhammad Syarubany",
-        "Jaehyun Jang",
-        "Hwanhee Kim"
-      ],
-      "authors_all": [
-        "Abu Hanif Muhammad Syarubany",
-        "Jaehyun Jang",
-        "Hwanhee Kim",
-        "Kyuwon Kim",
-        "Seungyeon Ryu",
-        "Chang D. Yoo"
-      ],
-      "primary_category": "",
-      "published": "2026-09-30",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2609-38852.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-38852-p2.jpg",
-        "assets/img/covers/arxiv-2609-38852-p3.jpg",
-        "assets/img/covers/arxiv-2609-38852-p4.jpg"
-      ],
-      "arxiv_id": "2609.38852",
-      "abs_url": "http://arxiv.org/abs/2609.38852v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.38852v1",
-      "venue": "ICRA 2027",
-      "venue_announced": "2026-10-04",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2609-39797",
