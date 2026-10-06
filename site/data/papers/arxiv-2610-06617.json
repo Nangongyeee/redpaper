@@ -1,0 +1,120 @@
+{
+  "id": "arxiv-2610-06617",
+  "source": "arxiv",
+  "title": "RealtimeWAM: One-Step Asynchronous World Action Models",
+  "title_zh": "RealtimeWAM: One-Step Asynchronous World Action Models",
+  "abstract": "World Action Models (WAMs) incorporate visual representations from video generation backbones to guide action prediction. Recent efficient WAMs adopt Mixture-of-Transformers (MoT) architectures and compute video representations once for reuse by the action expert. However, intra-expert iteration (\\ie, multi-step action denoising) and inter-expert waiting (\\ie, sequential execution of the video and action experts) still limit inference efficiency. To this end, we present RealtimeWAM, an extremely efficient WAM variant with one-step action generation and asynchronous inference, addressing these two bottlenecks. To reduce intra-expert iteration, we propose Teacher-Anchored Consistency Distillation (TACD) to address a local-global error gap: low local consistency error alone does not guarantee accurate final actions. TACD supplements local consistency with explicit supervision from the frozen teacher's multi-step rollout endpoint, enabling accurate one-step action generation. Additionally, we propose Cross-Expert Wavefront Pipelining (CEWP) to eliminate unnecessary expert-level waiting. It overlaps the two experts through block-wise sharing of the video KV cache, synchronizing only immediately before the corresponding action attention consumes it. Extensive experiments across diverse benchmarks (\\eg, LIBERO, LIBERO-Plus and RoboTwin) and model variants (\\eg, Fast-WAM and Faster-WAM) demonstrate the superiority of RealtimeWAM. Notably, RealtimeWAM maintains near-lossless performance (\\ie, $<1\\%$ drop) across these benchmarks while delivering significant end-to-end speedup (\\eg, $\\sim25\\times$ on H100). Our code and checkpoints are available via this \\href{https://github.com/ModelTC/LightX2V/tree/main/examples/realtimewam}{link}.",
+  "abstract_zh": "World Action Models (WAMs) incorporate visual representations from video generation backbones to guide action prediction. Recent efficient WAMs adopt Mixture-of-Transformers (MoT) architectures and compute video representations once for reuse by the action expert. However, intra-expert iteration (ie, multi-step action denoising) and inter-expert waiting (ie, sequential execution of the video and action experts) still limit inference efficiency. To this end, we present RealtimeWAM, an extremely efficient WAM variant with one-step action generation and asynchronous inference, addressing these two bottlenecks. To reduce intra-expert iteration, we propose Teacher-Anchored Consistency Distillation (TACD) to address a local-global error gap: low local consistency error alone does not guarantee accurate final actions. TACD supplements local consistency with explicit supervision from the frozen teacher's multi-step rollout endpoint, enabling accurate one-step action generation. Additionally, we propose Cross-Expert Wavefront Pipelining (CEWP) to eliminate unnecessary expert-level waiting. It overlaps the two experts through block-wise sharing of the video KV cache, synchronizing only immediately before the corresponding action attention consumes it. Extensive experiments across diverse benchmarks (eg, LIBERO, LIBERO-Plus and RoboTwin) and model variants (eg, Fast-WAM and Faster-WAM) demonstrate the superiority of RealtimeWAM. Notably, RealtimeWAM maintains near-lossless performance (ie, $<1\\%$ drop) across these benchmarks while delivering significant end-to-end speedup (eg, $sim25×$ on H100). Our code and checkpoints are available via this href{https://github.com/ModelTC/LightX2V/tree/main/examples/realtimewam}{link}.",
+  "tldr_zh": "World Action Models (WAMs) incorporate visual representation",
+  "cover_zh": "World Action Models (WAMs) incorporate visual representation",
+  "authors": [
+    {
+      "name": "Chengtao Lv",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinyang Du",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuyi Feng",
+      "affiliation": ""
+    },
+    {
+      "name": "Yang Yong",
+      "affiliation": ""
+    },
+    {
+      "name": "Shiqiao Gu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shunzi Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ruihao Gong",
+      "affiliation": ""
+    },
+    {
+      "name": "Shen Ren",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianwei Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenya Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+  ],
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "arxiv_id": "2610.06617",
+  "pdf_url": "https://arxiv.org/pdf/2610.06617v1",
+  "abs_url": "http://arxiv.org/abs/2610.06617v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-06617.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-06617-p2.jpg",
+    "assets/img/covers/arxiv-2610-06617-p3.jpg",
+    "assets/img/covers/arxiv-2610-06617-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

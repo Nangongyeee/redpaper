@@ -1,0 +1,95 @@
+{
+  "id": "arxiv-2610-05969",
+  "source": "arxiv",
+  "title": "Reachability-Aware Diffusion Policy Optimization",
+  "title_zh": "Reachability-Aware Diffusion Policy Optimization",
+  "abstract": "Diffusion policies provide expressive action distributions for continuous-control reinforcement learning. However, safety-aware online diffusion policy optimization remains underexplored, particularly methods that use predictive reachability information without an explicit dynamics model. We propose Reachability-Aware Diffusion Policy Optimization (RADPO), a model-free method that combines predictive first-hit safety estimation with cumulative-cost budget feedback. RADPO learns a discounted first-hit reachability value that captures the discounted risk of a cost event, assigns larger weight to events that occur sooner, and uses this signal to shape the reward. A separate dual-like multiplier adjusts the shaping strength according to realized episodic costs relative to a prescribed budget. The diffusion actor improves through weighted denoising regression on candidate actions scored by the reward critic. Our approach requires neither a learned dynamics model, action gradients through the critics, nor differentiation through the reverse diffusion sampler. We establish theoretical properties of the reachability value and show that accumulated reachability penalty provides a conservative surrogate for future discounted cumulative cost. Across ten continuous-control safety tasks, RADPO achieves competitive reward-cost trade-offs, with substantial reductions in constraint violations on several tasks relative to the compared baselines. Our theoretical and empirical analysis supports that combining reachability with cumulative budget feedback is a viable approach to safety-aware diffusion policies.",
+  "abstract_zh": "Diffusion policies provide expressive action distributions for continuous-control reinforcement learning. However, safety-aware online diffusion policy optimization remains underexplored, particularly methods that use predictive reachability information without an explicit dynamics model. We propose Reachability-Aware Diffusion Policy Optimization (RADPO), a model-free method that combines predictive first-hit safety estimation with cumulative-cost budget feedback. RADPO learns a discounted first-hit reachability value that captures the discounted risk of a cost event, assigns larger weight to events that occur sooner, and uses this signal to shape the reward. A separate dual-like multiplier adjusts the shaping strength according to realized episodic costs relative to a prescribed budget. The diffusion actor improves through weighted denoising regression on candidate actions scored by the reward critic. Our approach requires neither a learned dynamics model, action gradients through the critics, nor differentiation through the reverse diffusion sampler. We establish theoretical properties of the reachability value and show that accumulated reachability penalty provides a conservative surrogate for future discounted cumulative cost. Across ten continuous-control safety tasks, RADPO achieves competitive reward-cost trade-offs, with substantial reductions in constraint violations on several tasks relative to the compared baselines. Our theoretical and empirical analysis supports that combining reachability with cumulative budget feedback is a viable approach to safety-aware diffusion policies.",
+  "tldr_zh": "Diffusion policies provide expressive action distributions f",
+  "cover_zh": "Diffusion policies provide expressive action distributions f",
+  "authors": [
+    {
+      "name": "Hikmet Simsir",
+      "affiliation": ""
+    },
+    {
+      "name": "Kutay Demiray",
+      "affiliation": ""
+    },
+    {
+      "name": "Ozgur S. Oguz",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG",
+    "cs.RO"
+  ],
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "arxiv_id": "2610.05969",
+  "pdf_url": "https://arxiv.org/pdf/2610.05969v1",
+  "abs_url": "http://arxiv.org/abs/2610.05969v1",
+  "venue": "ICLR 2027",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-05969.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-05969-p2.jpg",
+    "assets/img/covers/arxiv-2610-05969-p3.jpg",
+    "assets/img/covers/arxiv-2610-05969-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 ICLR 2027"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 28,
+  "source_tags": [],
+  "score": 26,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（diffusion policy）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 28 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「ICLR 2027」收录"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
