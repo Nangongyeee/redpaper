@@ -1,0 +1,103 @@
+{
+  "id": "arxiv-2610-08780",
+  "source": "arxiv",
+  "title": "DepthWorld: 3D World Model for Robot Manipulation",
+  "title_zh": "DepthWorld: 3D World Model for Robot Manipulation",
+  "abstract": "World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consistent 3D world. Closing this gap requires progress on two fronts: large-scale 3D supervision for manipulation, and an architecture that can absorb it without disturbing strong pretrained video priors. We introduce a calibration pipeline that combines learned stereo depth with a joint factor graph, pooling all episodes collected from the same physical robot to recover its shared kinematic parameters alongside per-scene extrinsics. Applied to the DROID dataset, this yields DROID-3D, a calibrated 3D dataset providing dense metric depth and recalibrated multi-view extrinsics (achieving <0.7 px reprojection error on 90% of episodes for external cameras). We then train DepthWorld, a Stable Video Diffusion-based world model that jointly predicts multi-view RGB and depth via spatial latent tiling, leaving the pretrained Variational Autoencoder (VAE) unchanged. Depth supervision improves RGB prediction itself by +1.48 dB PSNR over an identical RGB-only baseline at equal training budget, while simultaneously yielding accurate metric depth for downstream geometric reasoning.",
+  "abstract_zh": "World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consistent 3D world. Closing this gap requires progress on two fronts: large-scale 3D supervision for manipulation, and an architecture that can absorb it without disturbing strong pretrained video priors. We introduce a calibration pipeline that combines learned stereo depth with a joint factor graph, pooling all episodes collected from the same physical robot to recover its shared kinematic parameters alongside per-scene extrinsics. Applied to the DROID dataset, this yields DROID-3D, a calibrated 3D dataset providing dense metric depth and recalibrated multi-view extrinsics (achieving <0.7 px reprojection error on 90% of episodes for external cameras). We then train DepthWorld, a Stable Video Diffusion-based world model that jointly predicts multi-view RGB and depth via spatial latent tiling, leaving the pretrained Variational Autoencoder (VAE) unchanged. Depth supervision improves RGB prediction itself by +1.48 dB PSNR over an identical RGB-only baseline at equal training budget, while simultaneously yielding accurate metric depth for downstream geometric reasoning.",
+  "tldr_zh": "World models offer a data-driven alternative to traditional",
+  "cover_zh": "World models offer a data-driven alternative to traditional",
+  "authors": [
+    {
+      "name": "Jai Bardhan",
+      "affiliation": ""
+    },
+    {
+      "name": "Josef Sivic",
+      "affiliation": ""
+    },
+    {
+      "name": "Vladimir Petrik",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "arxiv_id": "2610.08780",
+  "pdf_url": "https://arxiv.org/pdf/2610.08780v1",
+  "abs_url": "http://arxiv.org/abs/2610.08780v1",
+  "venue": "CoRL 2026",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-08780.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-08780-p2.jpg",
+    "assets/img/covers/arxiv-2610-08780-p3.jpg",
+    "assets/img/covers/arxiv-2610-08780-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 CoRL 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 32,
+  "source_tags": [],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、droid dataset、world model、world models）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 32 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「CoRL 2026」收录"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
