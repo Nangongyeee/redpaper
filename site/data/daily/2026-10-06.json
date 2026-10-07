@@ -96,7 +96,9 @@
       "published": "2026-10-06",
       "channels": [
         "manipulation",
-        "teleop"
+        "teleop",
+        "loco-manip-wbc",
+        "world-model"
       ],
       "badges": [
         {
@@ -310,6 +312,65 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-08120",
+      "source": "arxiv",
+      "title": "iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction",
+      "title_zh": "iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction",
+      "tldr_zh": "Humanoid robots operating in unstructured environments must",
+      "cover_zh": "Humanoid robots operating in unstructured environments must",
+      "abstract_zh": "Humanoid robots operating in unstructured environments must combine robust whole-body control with the ability to perceive and physically interact with surrounding objects. While large-scale human motion data provides powerful priors for natural and versatile humanoid control, effectively transferring such priors to perception-driven object interaction remains challenging. To address this bottleneck, we propose a framework that extends the recently proposed Generative Pretrained Controller (GPC) from general human motion to full-body humanoid-environment interaction. First, we adapt GPC into interaction experts conditioned on scene affordance cues and privileged state information. These experts leverage the pretrained human motion prior while learning task-specific contact behaviors, including reaching toward objects, grasping environmental supports for stabilization, and pushing movable objects. Second, we introduce a perception-driven student that retains the pretrained GPC policy and distills interaction skills from the experts using onboard sensory observations. To bridge the gap between privileged expert observations and sensory inputs, we propose two complementary training objectives that enable effective adaptation of the pretrained motion prior during distillation. Notably, our experiments across multiple whole-body interaction tasks demonstrate that large-scale generative human motion priors provide an effective foundation for learning deployable policies for humanoid interactions in contact-rich real-world environments.",
+      "authors": [
+        "Anujith Muraleedharan",
+        "Abdul Ahad Butt",
+        "Nolan Fey"
+      ],
+      "authors_all": [
+        "Anujith Muraleedharan",
+        "Abdul Ahad Butt",
+        "Nolan Fey",
+        "Yash Prabhu",
+        "Anamika J H",
+        "Sandor Felber",
+        "Maurice Rahme",
+        "Ivan Laptev"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-06",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-08120.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-08120-p2.jpg",
+        "assets/img/covers/arxiv-2610-08120-p3.jpg",
+        "assets/img/covers/arxiv-2610-08120-p4.jpg"
+      ],
+      "arxiv_id": "2610.08120",
+      "abs_url": "http://arxiv.org/abs/2610.08120v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08120v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-08220",
       "source": "arxiv",
       "title": "VOMMI: Collecting and Leveraging Portable Demonstrations for Mobile Manipulation",
@@ -343,7 +404,8 @@
       "published": "2026-10-06",
       "channels": [
         "manipulation",
-        "teleop"
+        "teleop",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -360,6 +422,120 @@
       "arxiv_id": "2610.08220",
       "abs_url": "http://arxiv.org/abs/2610.08220v1",
       "pdf_url": "https://arxiv.org/pdf/2610.08220v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-08320",
+      "source": "arxiv",
+      "title": "Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating",
+      "title_zh": "Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating",
+      "tldr_zh": "Cluttered indoor environments, where large and heavy objects",
+      "cover_zh": "Cluttered indoor environments, where large and heavy objects",
+      "abstract_zh": "Cluttered indoor environments, where large and heavy objects are scattered across diverse surfaces, require humanoid robots to sequentially navigate, grasp, transport, and accurately place each item at its target location within a single uninterrupted episode. This long-horizon, whole-body loco-manipulation task remains a significant challenge for current methods. Previous approaches often suffer from two main issues: easy-reward bias, where training overemphasizes early transport stages at the expense of later ones, and catastrophic forgetting, where focusing on later stages leads to a decline in earlier-stage performance. In this work, we introduce Humanoid Horizon, a unified policy framework designed to overcome these limitations through three interrelated mechanisms. The Parallel Training Strategy organizes $N$ scenes into $S$ concurrent stage streams governed by a shared policy, ensuring all transport stages receive continuous gradient updates and removing the bottleneck of sequential optimization. The Dynamic Starting Mechanism updates each environment's initial state with terminal states from upstream rollouts, gradually broadening transition coverage and enhancing robustness at stage boundaries. Reward Gating sets the reward to zero for the rest of the episode in later-stage streams when the immediately preceding object is displaced beyond a set threshold, so the shared policy learns not to disturb a just-placed object and earlier placements are preserved throughout the episode. Collectively, these strategies achieve per-stage success rates exceeding 80\\% on the two-object LHM-Humanoid benchmark (350 training scenes, 66 held-out scenes). As the number of sequentially transported objects grows beyond two, success declines with the horizon, but the degradation is graceful relative to the sharp drop seen in all baselines.",
+      "authors": [
+        "Haozhuo Zhang",
+        "Qiang Zhang",
+        "Jian Tang"
+      ],
+      "authors_all": [
+        "Haozhuo Zhang",
+        "Qiang Zhang",
+        "Jian Tang",
+        "Mingzhe Ni",
+        "Michele Caprio",
+        "Angelo Cangelosi",
+        "Wei Pan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-06",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-08320.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-08320-p2.jpg",
+        "assets/img/covers/arxiv-2610-08320-p3.jpg",
+        "assets/img/covers/arxiv-2610-08320-p4.jpg"
+      ],
+      "arxiv_id": "2610.08320",
+      "abs_url": "http://arxiv.org/abs/2610.08320v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08320v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-08381",
+      "source": "arxiv",
+      "title": "From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids",
+      "title_zh": "From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids",
+      "tldr_zh": "Human video offers a scalable source of robot demonstrations",
+      "cover_zh": "Human video offers a scalable source of robot demonstrations",
+      "abstract_zh": "Human video offers a scalable source of robot demonstrations, yet most human-to-humanoid retargeting methods assume a legged robot with human-like kinematics. This assumption does not hold for mobile-base humanoids equipped with a wheeled base, vertical lift, and two arms. Human walking must be expressed through base motion, while torso bending may require coordinated lift and arm motion. We address this mismatch with a task-conditioned framework that assigns reconstructed human motion to base, lift, and arm responsibilities before robot-specific realization. The allocator preserves the human-derived path, stabilizes heading, separates turn and translation when needed, retimes commands to satisfy base limits, and repairs lift and arm trajectories. A deployment adapter then converts the reference to 50 Hz commands using stationary-base detection, deadband and slew-rate filtering, time-consistent playback scaling, and separate linear and angular gains. We evaluate the resulting references with human-derived task-space comparisons, policy-free simulation replay, and a qualitative execution on a physical robot.",
+      "authors": [
+        "Jiyeon Koo",
+        "Eunseom Pyo",
+        "Jeonghee Seo"
+      ],
+      "authors_all": [
+        "Jiyeon Koo",
+        "Eunseom Pyo",
+        "Jeonghee Seo",
+        "Taehwa Kim",
+        "Andrew Jaeyong Choi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-06",
+      "channels": [
+        "locomotion",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-08381.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-08381-p2.jpg",
+        "assets/img/covers/arxiv-2610-08381-p3.jpg",
+        "assets/img/covers/arxiv-2610-08381-p4.jpg"
+      ],
+      "arxiv_id": "2610.08381",
+      "abs_url": "http://arxiv.org/abs/2610.08381v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08381v1",
       "venue": "",
       "venue_announced": "",
       "score": 30,
@@ -603,6 +779,61 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-08110",
+      "source": "arxiv",
+      "title": "Reactive Exploration of Unknown Environments for Redundant Robots using Virtual Model Control",
+      "title_zh": "Reactive Exploration of Unknown Environments for Redundant Robots using Virtual Model Control",
+      "tldr_zh": "The exploration of confined, occluded, and partially known s",
+      "cover_zh": "The exploration of confined, occluded, and partially known s",
+      "abstract_zh": "The exploration of confined, occluded, and partially known spaces poses significant challenges in robotic manipulation. The overall pose of the robotic arm must be carefully controlled to respect tight geometric constraints while avoiding newly discovered obstacles. We address this problem by proposing an active exploration approach for redundant robotic arms with an eye-in-hand camera configuration. Our approach navigates and acquires information in real-time based on a novel scoring method that directly selects a target voxel from the unexplored space using the robot's current state and expected information gain. To move the robot safely toward the target voxel, we utilize Virtual Model Control, which guarantees compliance and enables whole-body reactive obstacle avoidance without the need for path replanning. Simulated and real-robot experiments in both confined and open environments demonstrate the effectiveness of our approach, achieving over $90\\%$ mapping coverage across all tested environments in under $120$ seconds without colliding with obstacles.",
+      "authors": [
+        "Alessio Canzolino",
+        "Omar Faris",
+        "Alessandro De Blasi"
+      ],
+      "authors_all": [
+        "Alessio Canzolino",
+        "Omar Faris",
+        "Alessandro De Blasi",
+        "Fulvio Forni"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-06",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-08110.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-08110-p2.jpg",
+        "assets/img/covers/arxiv-2610-08110-p3.jpg",
+        "assets/img/covers/arxiv-2610-08110-p4.jpg"
+      ],
+      "arxiv_id": "2610.08110",
+      "abs_url": "http://arxiv.org/abs/2610.08110v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08110v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-08737",
       "source": "arxiv",
       "title": "PhoneBot: A Low-Cost Open Humanoid Robot Platform Reusing Smartphones",
@@ -719,18 +950,18 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "mp4",
-          "url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/hevc/overview.mp4",
           "embed_url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/hevc/overview.mp4",
+          "kind": "mp4",
+          "source": "project_page",
           "title": "WorldSonus: Bringing Sound to Worlds",
-          "source": "project_page"
+          "url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/hevc/overview.mp4"
         },
         {
-          "kind": "mp4",
-          "url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/h264/overview.mp4",
           "embed_url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/h264/overview.mp4",
+          "kind": "mp4",
+          "source": "project_page",
           "title": "WorldSonus: Bringing Sound to Worlds",
-          "source": "project_page"
+          "url": "https://soundreactor-wbench-public-728750562872-20260920.s3.us-east-2.amazonaws.com/demo-v1/overview-ust-l4-hq-20260930-v1/h264/overview.mp4"
         }
       ],
       "github": {},
@@ -1008,64 +1239,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 24,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-08120",
-      "source": "arxiv",
-      "title": "iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction",
-      "title_zh": "iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction",
-      "tldr_zh": "Humanoid robots operating in unstructured environments must",
-      "cover_zh": "Humanoid robots operating in unstructured environments must",
-      "abstract_zh": "Humanoid robots operating in unstructured environments must combine robust whole-body control with the ability to perceive and physically interact with surrounding objects. While large-scale human motion data provides powerful priors for natural and versatile humanoid control, effectively transferring such priors to perception-driven object interaction remains challenging. To address this bottleneck, we propose a framework that extends the recently proposed Generative Pretrained Controller (GPC) from general human motion to full-body humanoid-environment interaction. First, we adapt GPC into interaction experts conditioned on scene affordance cues and privileged state information. These experts leverage the pretrained human motion prior while learning task-specific contact behaviors, including reaching toward objects, grasping environmental supports for stabilization, and pushing movable objects. Second, we introduce a perception-driven student that retains the pretrained GPC policy and distills interaction skills from the experts using onboard sensory observations. To bridge the gap between privileged expert observations and sensory inputs, we propose two complementary training objectives that enable effective adaptation of the pretrained motion prior during distillation. Notably, our experiments across multiple whole-body interaction tasks demonstrate that large-scale generative human motion priors provide an effective foundation for learning deployable policies for humanoid interactions in contact-rich real-world environments.",
-      "authors": [
-        "Anujith Muraleedharan",
-        "Abdul Ahad Butt",
-        "Nolan Fey"
-      ],
-      "authors_all": [
-        "Anujith Muraleedharan",
-        "Abdul Ahad Butt",
-        "Nolan Fey",
-        "Yash Prabhu",
-        "Anamika J H",
-        "Sandor Felber",
-        "Maurice Rahme",
-        "Ivan Laptev"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-08120.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-08120-p2.jpg",
-        "assets/img/covers/arxiv-2610-08120-p3.jpg",
-        "assets/img/covers/arxiv-2610-08120-p4.jpg"
-      ],
-      "arxiv_id": "2610.08120",
-      "abs_url": "http://arxiv.org/abs/2610.08120v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.08120v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 22,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -1360,60 +1533,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-08110",
-      "source": "arxiv",
-      "title": "Reactive Exploration of Unknown Environments for Redundant Robots using Virtual Model Control",
-      "title_zh": "Reactive Exploration of Unknown Environments for Redundant Robots using Virtual Model Control",
-      "tldr_zh": "The exploration of confined, occluded, and partially known s",
-      "cover_zh": "The exploration of confined, occluded, and partially known s",
-      "abstract_zh": "The exploration of confined, occluded, and partially known spaces poses significant challenges in robotic manipulation. The overall pose of the robotic arm must be carefully controlled to respect tight geometric constraints while avoiding newly discovered obstacles. We address this problem by proposing an active exploration approach for redundant robotic arms with an eye-in-hand camera configuration. Our approach navigates and acquires information in real-time based on a novel scoring method that directly selects a target voxel from the unexplored space using the robot's current state and expected information gain. To move the robot safely toward the target voxel, we utilize Virtual Model Control, which guarantees compliance and enables whole-body reactive obstacle avoidance without the need for path replanning. Simulated and real-robot experiments in both confined and open environments demonstrate the effectiveness of our approach, achieving over $90\\%$ mapping coverage across all tested environments in under $120$ seconds without colliding with obstacles.",
-      "authors": [
-        "Alessio Canzolino",
-        "Omar Faris",
-        "Alessandro De Blasi"
-      ],
-      "authors_all": [
-        "Alessio Canzolino",
-        "Omar Faris",
-        "Alessandro De Blasi",
-        "Fulvio Forni"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-08110.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-08110-p2.jpg",
-        "assets/img/covers/arxiv-2610-08110-p3.jpg",
-        "assets/img/covers/arxiv-2610-08110-p4.jpg"
-      ],
-      "arxiv_id": "2610.08110",
-      "abs_url": "http://arxiv.org/abs/2610.08110v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.08110v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2610-08297",
       "source": "arxiv",
       "title": "Mitigating Concept Drift in QoS Prediction for Teleoperation of Autonomous Vehicles Using Historic Data",
@@ -1452,63 +1571,6 @@
       "arxiv_id": "2610.08297",
       "abs_url": "http://arxiv.org/abs/2610.08297v1",
       "pdf_url": "https://arxiv.org/pdf/2610.08297v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-08320",
-      "source": "arxiv",
-      "title": "Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating",
-      "title_zh": "Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating",
-      "tldr_zh": "Cluttered indoor environments, where large and heavy objects",
-      "cover_zh": "Cluttered indoor environments, where large and heavy objects",
-      "abstract_zh": "Cluttered indoor environments, where large and heavy objects are scattered across diverse surfaces, require humanoid robots to sequentially navigate, grasp, transport, and accurately place each item at its target location within a single uninterrupted episode. This long-horizon, whole-body loco-manipulation task remains a significant challenge for current methods. Previous approaches often suffer from two main issues: easy-reward bias, where training overemphasizes early transport stages at the expense of later ones, and catastrophic forgetting, where focusing on later stages leads to a decline in earlier-stage performance. In this work, we introduce Humanoid Horizon, a unified policy framework designed to overcome these limitations through three interrelated mechanisms. The Parallel Training Strategy organizes $N$ scenes into $S$ concurrent stage streams governed by a shared policy, ensuring all transport stages receive continuous gradient updates and removing the bottleneck of sequential optimization. The Dynamic Starting Mechanism updates each environment's initial state with terminal states from upstream rollouts, gradually broadening transition coverage and enhancing robustness at stage boundaries. Reward Gating sets the reward to zero for the rest of the episode in later-stage streams when the immediately preceding object is displaced beyond a set threshold, so the shared policy learns not to disturb a just-placed object and earlier placements are preserved throughout the episode. Collectively, these strategies achieve per-stage success rates exceeding 80\\% on the two-object LHM-Humanoid benchmark (350 training scenes, 66 held-out scenes). As the number of sequentially transported objects grows beyond two, success declines with the horizon, but the degradation is graceful relative to the sharp drop seen in all baselines.",
-      "authors": [
-        "Haozhuo Zhang",
-        "Qiang Zhang",
-        "Jian Tang"
-      ],
-      "authors_all": [
-        "Haozhuo Zhang",
-        "Qiang Zhang",
-        "Jian Tang",
-        "Mingzhe Ni",
-        "Michele Caprio",
-        "Angelo Cangelosi",
-        "Wei Pan"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-08320.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-08320-p2.jpg",
-        "assets/img/covers/arxiv-2610-08320-p3.jpg",
-        "assets/img/covers/arxiv-2610-08320-p4.jpg"
-      ],
-      "arxiv_id": "2610.08320",
-      "abs_url": "http://arxiv.org/abs/2610.08320v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.08320v1",
       "venue": "",
       "venue_announced": "",
       "score": 19,
@@ -1836,61 +1898,6 @@
       "arxiv_id": "2610.08306",
       "abs_url": "http://arxiv.org/abs/2610.08306v1",
       "pdf_url": "https://arxiv.org/pdf/2610.08306v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-08381",
-      "source": "arxiv",
-      "title": "From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids",
-      "title_zh": "From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids",
-      "tldr_zh": "Human video offers a scalable source of robot demonstrations",
-      "cover_zh": "Human video offers a scalable source of robot demonstrations",
-      "abstract_zh": "Human video offers a scalable source of robot demonstrations, yet most human-to-humanoid retargeting methods assume a legged robot with human-like kinematics. This assumption does not hold for mobile-base humanoids equipped with a wheeled base, vertical lift, and two arms. Human walking must be expressed through base motion, while torso bending may require coordinated lift and arm motion. We address this mismatch with a task-conditioned framework that assigns reconstructed human motion to base, lift, and arm responsibilities before robot-specific realization. The allocator preserves the human-derived path, stabilizes heading, separates turn and translation when needed, retimes commands to satisfy base limits, and repairs lift and arm trajectories. A deployment adapter then converts the reference to 50 Hz commands using stationary-base detection, deadband and slew-rate filtering, time-consistent playback scaling, and separate linear and angular gains. We evaluate the resulting references with human-derived task-space comparisons, policy-free simulation replay, and a qualitative execution on a physical robot.",
-      "authors": [
-        "Jiyeon Koo",
-        "Eunseom Pyo",
-        "Jeonghee Seo"
-      ],
-      "authors_all": [
-        "Jiyeon Koo",
-        "Eunseom Pyo",
-        "Jeonghee Seo",
-        "Taehwa Kim",
-        "Andrew Jaeyong Choi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-06",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-08381.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-08381-p2.jpg",
-        "assets/img/covers/arxiv-2610-08381-p3.jpg",
-        "assets/img/covers/arxiv-2610-08381-p4.jpg"
-      ],
-      "arxiv_id": "2610.08381",
-      "abs_url": "http://arxiv.org/abs/2610.08381v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.08381v1",
       "venue": "",
       "venue_announced": "",
       "score": 16,
