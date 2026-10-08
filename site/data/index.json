@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T03:05:37.403785+00:00",
+  "generated_at": "2026-10-08T10:29:15.347982+00:00",
   "count": 3548,
   "papers": [
     {
@@ -45075,11 +45075,11 @@
       "training_summary": "",
       "demo_videos": [
         {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=9b29rSzqaKw",
           "embed_url": "https://www.youtube.com/embed/9b29rSzqaKw",
+          "kind": "youtube",
+          "source": "project_page",
           "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
-          "source": "project_page"
+          "url": "https://www.youtube.com/watch?v=9b29rSzqaKw"
         }
       ],
       "github": {},
@@ -93613,6 +93613,185 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-09940",
+      "source": "arxiv",
+      "title": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
+      "title_zh": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
+      "tldr_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
+      "cover_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
+      "abstract_zh": "Joint-embedding predictive architectures (JEPAs) predict masked or future observations in representation space, offering a natural source of predictive latents for vision-language-action (VLA) models. Yet making these latents useful across pretraining, policy learning, and deployment requires addressing three failures: mismatch with embodiment-specific control, interference with action learning, and teacher miscalibration under distribution shifts. We introduce Juno, a unified framework built around one action-conditioned JEPA that serves as a control-aligned representation backbone, a predictive teacher, and an adaptable dynamics model. During pretraining, we train it on embodiment-matched trajectories and use a dynamic CLS loss to transfer motion-weighted patch dynamics to a compact global state. During policy learning, we fuse current-frame JEPA patches into VLA perception and use a decoupled reasoning branch with separate transformation parameters to distill future latent states for action generation. During deployment, we adapt the world model on all observed transitions, including failed rollouts, freeze the adapted teacher, and re-align the policy on verified executions using LoRA adapters and a trainable action head, without expert corrections or task rewards. On SimplerEnv, Juno raises average success from $60.9\\%$ to $68.5\\%$ over Qwen3GR00T, the strongest baseline, and test-time adaptation further reaches $72.7\\%$; on a real robot, it retains $70\\%$--$75\\%$ success under background, height, and object shifts where the base policy collapses to $0\\%$.",
+      "authors": [
+        "Yuchen Zhu",
+        "Chenyi Xu",
+        "Yulin Zhang"
+      ],
+      "authors_all": [
+        "Yuchen Zhu",
+        "Chenyi Xu",
+        "Yulin Zhang",
+        "Gang Xu",
+        "Wentao Zhu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-07",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-09940.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-09940-p2.jpg",
+        "assets/img/covers/arxiv-2610-09940-p3.jpg",
+        "assets/img/covers/arxiv-2610-09940-p4.jpg"
+      ],
+      "arxiv_id": "2610.09940",
+      "abs_url": "http://arxiv.org/abs/2610.09940v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09940v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-10178",
+      "source": "arxiv",
+      "title": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
+      "title_zh": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
+      "tldr_zh": "Vision-Language-Action models are designed to generalise acr",
+      "cover_zh": "Vision-Language-Action models are designed to generalise acr",
+      "abstract_zh": "Vision-Language-Action models are designed to generalise across environments and task descriptions, raising the question of whether their action generation actually depends on the language instruction, or whether they largely rely on visual cues and superficial correlations. Robustness to variance in the visual and linguistic observation space is critical for real-world deployment, yet VLAs lack explicit grounding modules and instead rely on the intrinsic language grounding capabilities of their Vision-Language model backbones. For this reason, we conduct a controlled mechanistic interpretability study on the language grounding capabilities of two state-of-the-art Vision-Language-Action models, $π_{0.5}$ and GR00T N1.7, by applying activation and attribution patching to the residual stream of the action generation modules. We systematically corrupt the task instruction of input samples of the LIBERO benchmark following five strategies: synonym replacement, semantic scaling, directional corruption, random object substitution, and empty string. Our experiments find that both models are comparatively insensitive to abstract rephrasing and to referencing non-existent objects, but react strongly to empty task descriptions and, especially, to directional language. During action generation, this sensitivity is concentrated in different loci for each model: mainly in the early, periodic cross-attention layers for GR00T N1.7, versus distributed across the earliest and selected later layers for $π_{0.5}$. For GR00T N1.7, directional perturbations drive some of the largest causal effects while leaving the internal representational geometry comparatively unchanged, a dissociation we do not observe clearly for $π_{0.5}$. Finally, the reliability of attribution patching is model-dependent: it closely tracks activation patching for GR00T N1.7 but not for $π_{0.5}$.",
+      "authors": [
+        "Theodor Wulff",
+        "Angelo Cangelosi"
+      ],
+      "authors_all": [
+        "Theodor Wulff",
+        "Angelo Cangelosi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-07",
+      "channels": [
+        "manipulation",
+        "sim2real",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-10178.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-10178-p2.jpg",
+        "assets/img/covers/arxiv-2610-10178-p3.jpg",
+        "assets/img/covers/arxiv-2610-10178-p4.jpg"
+      ],
+      "arxiv_id": "2610.10178",
+      "abs_url": "http://arxiv.org/abs/2610.10178v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10178v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-10270",
+      "source": "arxiv",
+      "title": "Video Prediction Policy 2: Predict Better, Act Better",
+      "title_zh": "Video Prediction Policy 2: Predict Better, Act Better",
+      "tldr_zh": "World action models (WAMs) have emerged as an important clas",
+      "cover_zh": "World action models (WAMs) have emerged as an important clas",
+      "abstract_zh": "World action models (WAMs) have emerged as an important class of generalist robot policies, aiming to transfer video prediction priors to action learning. However, we find that existing WAMs frequently produce incorrect motion predictions in open-ended environment, leading to erroneous actions. We attribute this limitation to two factors: (1) base video models are not optimized for manipulation, and (2) naively incorporating action components into video models can substantially degrade their generalization capabilities. We introduce Video Prediction Policy 2 (VPP2), a WAM that enables strong zero-shot generalization in both video prediction and action generation. First, we curate a large-scale, diverse dataset of manipulation videos to continue pretraining the base video foundation model. We annotate video clips with detailed captions and perform textit{event-level} video pretraining to promote generalization across open-ended manipulation tasks. Second, we post-train and distill the video model into a single-step visual planner with fixed prediction horizon. Finally, we introduce action module via a mixture-of-transformers (MoT) architecture to learn implicit inverse dynamics model. Experiments demonstrate three key results: (1) VPP2-14B outperforms Cosmos3-64B by 11.0\\% points in video prediction instruction-following success rate on open-ended tasks; (2) VPP2 surpasses the strongest baseline by 18.5\\% points in success rate on real-world zero-shot ALOHA manipulation tasks; and (3) following benchmark-specific post-training, VPP2 achieves the highest success rates among evaluated methods on the challenging LIBERO-Pro, LIBERO-OOD, and RoboDojo benchmarks.",
+      "authors": [
+        "Yanjiang Guo",
+        "Haodong Yan",
+        "Zhide Zhong"
+      ],
+      "authors_all": [
+        "Yanjiang Guo",
+        "Haodong Yan",
+        "Zhide Zhong",
+        "Zhongru Zhang",
+        "Qingyuan Yang",
+        "Qingzhou Lu",
+        "Xiaoyu Chen",
+        "Yen-Jen Wang",
+        "Shuying Deng",
+        "Chenghan Yang",
+        "Puzhen Yuan",
+        "Chenxin Liu",
+        "Tun Ban",
+        "Xiang Zhu",
+        "Yichen Liu",
+        "Kun Feng",
+        "Haoang Li",
+        "Jianyu Chen"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-07",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-10270.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-10270-p2.jpg",
+        "assets/img/covers/arxiv-2610-10270-p3.jpg",
+        "assets/img/covers/arxiv-2610-10270-p4.jpg"
+      ],
+      "arxiv_id": "2610.10270",
+      "abs_url": "http://arxiv.org/abs/2610.10270v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10270v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-10465",
       "source": "arxiv",
       "title": "LLA-MPPI: Rapidly Adaptive Whole-body Control of Legged Robots with GPU-Accelerated Parallel Simulations",
@@ -99541,58 +99720,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-10178",
-      "source": "arxiv",
-      "title": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
-      "title_zh": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
-      "tldr_zh": "Vision-Language-Action models are designed to generalise acr",
-      "cover_zh": "Vision-Language-Action models are designed to generalise acr",
-      "abstract_zh": "Vision-Language-Action models are designed to generalise across environments and task descriptions, raising the question of whether their action generation actually depends on the language instruction, or whether they largely rely on visual cues and superficial correlations. Robustness to variance in the visual and linguistic observation space is critical for real-world deployment, yet VLAs lack explicit grounding modules and instead rely on the intrinsic language grounding capabilities of their Vision-Language model backbones. For this reason, we conduct a controlled mechanistic interpretability study on the language grounding capabilities of two state-of-the-art Vision-Language-Action models, $π_{0.5}$ and GR00T N1.7, by applying activation and attribution patching to the residual stream of the action generation modules. We systematically corrupt the task instruction of input samples of the LIBERO benchmark following five strategies: synonym replacement, semantic scaling, directional corruption, random object substitution, and empty string. Our experiments find that both models are comparatively insensitive to abstract rephrasing and to referencing non-existent objects, but react strongly to empty task descriptions and, especially, to directional language. During action generation, this sensitivity is concentrated in different loci for each model: mainly in the early, periodic cross-attention layers for GR00T N1.7, versus distributed across the earliest and selected later layers for $π_{0.5}$. For GR00T N1.7, directional perturbations drive some of the largest causal effects while leaving the internal representational geometry comparatively unchanged, a dissociation we do not observe clearly for $π_{0.5}$. Finally, the reliability of attribution patching is model-dependent: it closely tracks activation patching for GR00T N1.7 but not for $π_{0.5}$.",
-      "authors": [
-        "Theodor Wulff",
-        "Angelo Cangelosi"
-      ],
-      "authors_all": [
-        "Theodor Wulff",
-        "Angelo Cangelosi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-07",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-10178.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-10178-p2.jpg",
-        "assets/img/covers/arxiv-2610-10178-p3.jpg",
-        "assets/img/covers/arxiv-2610-10178-p4.jpg"
-      ],
-      "arxiv_id": "2610.10178",
-      "abs_url": "http://arxiv.org/abs/2610.10178v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.10178v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 27,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2610-10479",
       "source": "arxiv",
       "title": "Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies",
@@ -103842,74 +103969,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-10270",
-      "source": "arxiv",
-      "title": "Video Prediction Policy 2: Predict Better, Act Better",
-      "title_zh": "Video Prediction Policy 2: Predict Better, Act Better",
-      "tldr_zh": "World action models (WAMs) have emerged as an important clas",
-      "cover_zh": "World action models (WAMs) have emerged as an important clas",
-      "abstract_zh": "World action models (WAMs) have emerged as an important class of generalist robot policies, aiming to transfer video prediction priors to action learning. However, we find that existing WAMs frequently produce incorrect motion predictions in open-ended environment, leading to erroneous actions. We attribute this limitation to two factors: (1) base video models are not optimized for manipulation, and (2) naively incorporating action components into video models can substantially degrade their generalization capabilities. We introduce Video Prediction Policy 2 (VPP2), a WAM that enables strong zero-shot generalization in both video prediction and action generation. First, we curate a large-scale, diverse dataset of manipulation videos to continue pretraining the base video foundation model. We annotate video clips with detailed captions and perform textit{event-level} video pretraining to promote generalization across open-ended manipulation tasks. Second, we post-train and distill the video model into a single-step visual planner with fixed prediction horizon. Finally, we introduce action module via a mixture-of-transformers (MoT) architecture to learn implicit inverse dynamics model. Experiments demonstrate three key results: (1) VPP2-14B outperforms Cosmos3-64B by 11.0\\% points in video prediction instruction-following success rate on open-ended tasks; (2) VPP2 surpasses the strongest baseline by 18.5\\% points in success rate on real-world zero-shot ALOHA manipulation tasks; and (3) following benchmark-specific post-training, VPP2 achieves the highest success rates among evaluated methods on the challenging LIBERO-Pro, LIBERO-OOD, and RoboDojo benchmarks.",
-      "authors": [
-        "Yanjiang Guo",
-        "Haodong Yan",
-        "Zhide Zhong"
-      ],
-      "authors_all": [
-        "Yanjiang Guo",
-        "Haodong Yan",
-        "Zhide Zhong",
-        "Zhongru Zhang",
-        "Qingyuan Yang",
-        "Qingzhou Lu",
-        "Xiaoyu Chen",
-        "Yen-Jen Wang",
-        "Shuying Deng",
-        "Chenghan Yang",
-        "Puzhen Yuan",
-        "Chenxin Liu",
-        "Tun Ban",
-        "Xiang Zhu",
-        "Yichen Liu",
-        "Kun Feng",
-        "Haoang Li",
-        "Jianyu Chen"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-10-07",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-10270.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-10270-p2.jpg",
-        "assets/img/covers/arxiv-2610-10270-p3.jpg",
-        "assets/img/covers/arxiv-2610-10270-p4.jpg"
-      ],
-      "arxiv_id": "2610.10270",
-      "abs_url": "http://arxiv.org/abs/2610.10270v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.10270v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 25,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2610-10384",
       "source": "arxiv",
       "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
@@ -106321,6 +106380,64 @@
       "arxiv_id": "2610.09830",
       "abs_url": "http://arxiv.org/abs/2610.09830v1",
       "pdf_url": "https://arxiv.org/pdf/2610.09830v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-09857",
+      "source": "arxiv",
+      "title": "Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching",
+      "title_zh": "Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching",
+      "tldr_zh": "Robot demonstration learning requires accurate and temporall",
+      "cover_zh": "Robot demonstration learning requires accurate and temporall",
+      "abstract_zh": "Robot demonstration learning requires accurate and temporally complete end-effector localization during close-range manipulation and camera occlusion. Existing SLAM benchmarks emphasize navigation motions, whereas manipulation datasets prioritize policy learning over localization evaluation. We introduce MILD, a Manipulation-Interface Localization Dataset with real-world and simulation sequences. The real-world subset provides 86 sensor sequences from Insta360 X5 and Insight9 across 15 repeated tabletop tasks, calibration assets, and a per-execution robot end-effector reference trajectory. The simulation subset, MILD-Sim, extends task coverage in Isaac Sim for controlled manipulation-replay studies. Benchmarking visual-inertial and fiducial-aided systems on instrumented real-world recordings reveals large differences in both TCP-relative trajectory error and temporal coverage, even under the same nominal task. To support marker-augmented teaching workspaces without a pre-surveyed fiducial map, we present AprilVINS, which combines fisheye visual-inertial estimation with sequence-local AprilTag geometry and separates prior admission from guarded export of the jointly optimized state. On Insta360 AprilTag4 recordings, AprilVINS(full) under a unified protocol with sequence-specific profiles reaches millimeter-level SE(3)-aligned TCP-relative APE RMSE with high time completion and lower reported error than the tested routes under their respective protocols, whereas fisheye VIO without tag factors remains at centimeter scale. Ablations separate accuracy from exportability, and a MILD-Sim replay study provides task-specific tolerance references for interpreting those error magnitudes. Together, MILD and AprilVINS provide a diagnostic benchmarking framework for UMI-style demonstration collection. Code, datasets, and evaluation manifests will be released upon acceptance.",
+      "authors": [
+        "Junjie Zhang",
+        "Deteng Zhang",
+        "Zhisong Xu"
+      ],
+      "authors_all": [
+        "Junjie Zhang",
+        "Deteng Zhang",
+        "Zhisong Xu",
+        "Bo Sun",
+        "Liuyang Li",
+        "Yihong Tian",
+        "Jie Yin"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-07",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-09857.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-09857-p2.jpg",
+        "assets/img/covers/arxiv-2610-09857-p3.jpg",
+        "assets/img/covers/arxiv-2610-09857-p4.jpg"
+      ],
+      "arxiv_id": "2610.09857",
+      "abs_url": "http://arxiv.org/abs/2610.09857v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09857v1",
       "venue": "",
       "venue_announced": "",
       "score": 24,
@@ -154867,118 +154984,6 @@
       "arxiv_id": "2610.09781",
       "abs_url": "http://arxiv.org/abs/2610.09781v1",
       "pdf_url": "https://arxiv.org/pdf/2610.09781v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-09857",
-      "source": "arxiv",
-      "title": "Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching",
-      "title_zh": "Towards Accurate End-Effector Localization for UMI-Style Robotic Manipulation Teaching",
-      "tldr_zh": "Robot demonstration learning requires accurate and temporall",
-      "cover_zh": "Robot demonstration learning requires accurate and temporall",
-      "abstract_zh": "Robot demonstration learning requires accurate and temporally complete end-effector localization during close-range manipulation and camera occlusion. Existing SLAM benchmarks emphasize navigation motions, whereas manipulation datasets prioritize policy learning over localization evaluation. We introduce MILD, a Manipulation-Interface Localization Dataset with real-world and simulation sequences. The real-world subset provides 86 sensor sequences from Insta360 X5 and Insight9 across 15 repeated tabletop tasks, calibration assets, and a per-execution robot end-effector reference trajectory. The simulation subset, MILD-Sim, extends task coverage in Isaac Sim for controlled manipulation-replay studies. Benchmarking visual-inertial and fiducial-aided systems on instrumented real-world recordings reveals large differences in both TCP-relative trajectory error and temporal coverage, even under the same nominal task. To support marker-augmented teaching workspaces without a pre-surveyed fiducial map, we present AprilVINS, which combines fisheye visual-inertial estimation with sequence-local AprilTag geometry and separates prior admission from guarded export of the jointly optimized state. On Insta360 AprilTag4 recordings, AprilVINS(full) under a unified protocol with sequence-specific profiles reaches millimeter-level SE(3)-aligned TCP-relative APE RMSE with high time completion and lower reported error than the tested routes under their respective protocols, whereas fisheye VIO without tag factors remains at centimeter scale. Ablations separate accuracy from exportability, and a MILD-Sim replay study provides task-specific tolerance references for interpreting those error magnitudes. Together, MILD and AprilVINS provide a diagnostic benchmarking framework for UMI-style demonstration collection. Code, datasets, and evaluation manifests will be released upon acceptance.",
-      "authors": [
-        "Junjie Zhang",
-        "Deteng Zhang",
-        "Zhisong Xu"
-      ],
-      "authors_all": [
-        "Junjie Zhang",
-        "Deteng Zhang",
-        "Zhisong Xu",
-        "Bo Sun",
-        "Liuyang Li",
-        "Yihong Tian",
-        "Jie Yin"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-07",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-09857.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-09857-p2.jpg",
-        "assets/img/covers/arxiv-2610-09857-p3.jpg",
-        "assets/img/covers/arxiv-2610-09857-p4.jpg"
-      ],
-      "arxiv_id": "2610.09857",
-      "abs_url": "http://arxiv.org/abs/2610.09857v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.09857v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-09940",
-      "source": "arxiv",
-      "title": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
-      "title_zh": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
-      "tldr_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
-      "cover_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
-      "abstract_zh": "Joint-embedding predictive architectures (JEPAs) predict masked or future observations in representation space, offering a natural source of predictive latents for vision-language-action (VLA) models. Yet making these latents useful across pretraining, policy learning, and deployment requires addressing three failures: mismatch with embodiment-specific control, interference with action learning, and teacher miscalibration under distribution shifts. We introduce Juno, a unified framework built around one action-conditioned JEPA that serves as a control-aligned representation backbone, a predictive teacher, and an adaptable dynamics model. During pretraining, we train it on embodiment-matched trajectories and use a dynamic CLS loss to transfer motion-weighted patch dynamics to a compact global state. During policy learning, we fuse current-frame JEPA patches into VLA perception and use a decoupled reasoning branch with separate transformation parameters to distill future latent states for action generation. During deployment, we adapt the world model on all observed transitions, including failed rollouts, freeze the adapted teacher, and re-align the policy on verified executions using LoRA adapters and a trainable action head, without expert corrections or task rewards. On SimplerEnv, Juno raises average success from $60.9\\%$ to $68.5\\%$ over Qwen3GR00T, the strongest baseline, and test-time adaptation further reaches $72.7\\%$; on a real robot, it retains $70\\%$--$75\\%$ success under background, height, and object shifts where the base policy collapses to $0\\%$.",
-      "authors": [
-        "Yuchen Zhu",
-        "Chenyi Xu",
-        "Yulin Zhang"
-      ],
-      "authors_all": [
-        "Yuchen Zhu",
-        "Chenyi Xu",
-        "Yulin Zhang",
-        "Gang Xu",
-        "Wentao Zhu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-07",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-09940.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-09940-p2.jpg",
-        "assets/img/covers/arxiv-2610-09940-p3.jpg",
-        "assets/img/covers/arxiv-2610-09940-p4.jpg"
-      ],
-      "arxiv_id": "2610.09940",
-      "abs_url": "http://arxiv.org/abs/2610.09940v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.09940v1",
       "venue": "",
       "venue_announced": "",
       "score": 16,
