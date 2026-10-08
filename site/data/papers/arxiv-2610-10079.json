@@ -1,0 +1,116 @@
+{
+  "id": "arxiv-2610-10079",
+  "source": "arxiv",
+  "title": "RealtimeWAM: How Fast Can I Run My World Action Model?",
+  "title_zh": "RealtimeWAM: How Fast Can I Run My World Action Model?",
+  "abstract": "World Action Models (WAMs) combine visual dynamics modeling with action generation, but their high inference latency limits responsive robot control. Recent efforts accelerate inference by removing explicit future-video generation at test time, as in FastWAM, an approach that requires a specially tailored architectural design. More general caching strategies exploit feature redundancy, but redundancy alone does not capture the changing computational demands of closed-loop control. To address these challenges, we present RealtimeWAM, a general, training-free framework that coordinates parallel execution with adaptive computation for low-latency inference across diverse WAM architectures. We exploit layerwise dependencies to overlap observation processing with prediction. However, concurrent branches still compete for GPU resources, limiting the benefit of parallel execution. We therefore adapt computation throughout the pipeline through selective reuse, caching observation features in visually stable regions and reusing Transformer residuals while reserving additional refinement for small predicted adjustments. We evaluate RealtimeWAM on FastWAM and OpenWAM across RoboTwin, LIBERO, and LIBERO-Plus. On an RTX 4090, measured mean inference latencies are 24.09 and 63.09 ms, corresponding to average speedups of 8.90$\\times$ and 10.67$\\times$. Average success rates are 82.75% and 87.41%, respectively, within 0.02 and 0.53 percentage points of native inference. Across five real-world tasks, RealtimeWAM improves average success rates over native inference by 17.2 and 37.2 percentage points on FastWAM and OpenWAM, respectively.",
+  "abstract_zh": "World Action Models (WAMs) combine visual dynamics modeling with action generation, but their high inference latency limits responsive robot control. Recent efforts accelerate inference by removing explicit future-video generation at test time, as in FastWAM, an approach that requires a specially tailored architectural design. More general caching strategies exploit feature redundancy, but redundancy alone does not capture the changing computational demands of closed-loop control. To address these challenges, we present RealtimeWAM, a general, training-free framework that coordinates parallel execution with adaptive computation for low-latency inference across diverse WAM architectures. We exploit layerwise dependencies to overlap observation processing with prediction. However, concurrent branches still compete for GPU resources, limiting the benefit of parallel execution. We therefore adapt computation throughout the pipeline through selective reuse, caching observation features in visually stable regions and reusing Transformer residuals while reserving additional refinement for small predicted adjustments. We evaluate RealtimeWAM on FastWAM and OpenWAM across RoboTwin, LIBERO, and LIBERO-Plus. On an RTX 4090, measured mean inference latencies are 24.09 and 63.09 ms, corresponding to average speedups of 8.90$×$ and 10.67$×$. Average success rates are 82.75% and 87.41%, respectively, within 0.02 and 0.53 percentage points of native inference. Across five real-world tasks, RealtimeWAM improves average success rates over native inference by 17.2 and 37.2 percentage points on FastWAM and OpenWAM, respectively.",
+  "tldr_zh": "World Action Models (WAMs) combine visual dynamics modeling",
+  "cover_zh": "World Action Models (WAMs) combine visual dynamics modeling",
+  "authors": [
+    {
+      "name": "Huanan Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Ye Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Kangye Ji",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoyu Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Hanyun Cui",
+      "affiliation": ""
+    },
+    {
+      "name": "Yutian Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuan Meng",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenglei Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jingyan Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Bo Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhi Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "arxiv_id": "2610.10079",
+  "pdf_url": "https://arxiv.org/pdf/2610.10079v1",
+  "abs_url": "http://arxiv.org/abs/2610.10079v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-10079.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-10079-p2.jpg",
+    "assets/img/covers/arxiv-2610-10079-p3.jpg",
+    "assets/img/covers/arxiv-2610-10079-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 24,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 24 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

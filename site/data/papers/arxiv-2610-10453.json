@@ -1,0 +1,121 @@
+{
+  "id": "arxiv-2610-10453",
+  "source": "arxiv",
+  "title": "RFPO: Rectified Flow Policy Optimization for Embodied Control",
+  "title_zh": "RFPO: Rectified Flow Policy Optimization for Embodied Control",
+  "abstract": "Flow-based policies provide an expressive framework for continuous robot control, but their iterative ODE integration incurs substantial inference cost. Naively reducing the integration budget can severely degrade control, since policies optimized under full-step execution are not explicitly constrained to remain reliable under coarse numerical integration. We refer to this mismatch as the few-step discretization gap. To address this problem, we introduce RFPO, a flow-policy optimization framework for reliable few-step execution. Reward-aware online Reflow rectifies student-induced transport paths during on-policy learning, making the resulting policy more robust to coarse integration. A frozen Gaussian PPO controller supplies complementary action-space supervision at full and intermediate integration budgets, while the deployed policy remains a single flow student executed with one Euler step. Across Unitree Go2, Boston Dynamics Spot, Unitree H1, and Unitree G1, RFPO consistently preserves full-step control performance under one-step execution, with one-step returns remaining within 2.4% of their corresponding 64-step values across both zero and random initialization. On Unitree Go2, one-step execution retains 98.5% of the 64-step reward while reducing onboard mean inference latency from 4.39 ms to 0.08 ms, yielding a 54.9x speedup. Real-robot experiments further validate stable one-step locomotion. Code: https://github.com/AIGeeksGroup/RFPO. Website: https://aigeeksgroup.github.io/RFPO.",
+  "abstract_zh": "Flow-based policies provide an expressive framework for continuous robot control, but their iterative ODE integration incurs substantial inference cost. Naively reducing the integration budget can severely degrade control, since policies optimized under full-step execution are not explicitly constrained to remain reliable under coarse numerical integration. We refer to this mismatch as the few-step discretization gap. To address this problem, we introduce RFPO, a flow-policy optimization framework for reliable few-step execution. Reward-aware online Reflow rectifies student-induced transport paths during on-policy learning, making the resulting policy more robust to coarse integration. A frozen Gaussian PPO controller supplies complementary action-space supervision at full and intermediate integration budgets, while the deployed policy remains a single flow student executed with one Euler step. Across Unitree Go2, Boston Dynamics Spot, Unitree H1, and Unitree G1, RFPO consistently preserves full-step control performance under one-step execution, with one-step returns remaining within 2.4% of their corresponding 64-step values across both zero and random initialization. On Unitree Go2, one-step execution retains 98.5% of the 64-step reward while reducing onboard mean inference latency from 4.39 ms to 0.08 ms, yielding a 54.9x speedup. Real-robot experiments further validate stable one-step locomotion. Code: https://github.com/AIGeeksGroup/RFPO. Website: https://aigeeksgroup.github.io/RFPO.",
+  "tldr_zh": "Flow-based policies provide an expressive framework for cont",
+  "cover_zh": "Flow-based policies provide an expressive framework for cont",
+  "authors": [
+    {
+      "name": "Ting Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Lisiyu Pan",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoyu Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zeyu Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Siyuan Qian",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanjun Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Yandong Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Boxin Shi",
+      "affiliation": ""
+    },
+    {
+      "name": "Hao Tang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "arxiv_id": "2610.10453",
+  "pdf_url": "https://arxiv.org/pdf/2610.10453v1",
+  "abs_url": "http://arxiv.org/abs/2610.10453v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-10453.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-10453-p2.jpg",
+    "assets/img/covers/arxiv-2610-10453-p3.jpg",
+    "assets/img/covers/arxiv-2610-10453-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 38,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（boston dynamics、unitree h1、unitree g1、locomotion）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,93 @@
+{
+  "id": "arxiv-2610-09940",
+  "source": "arxiv",
+  "title": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
+  "title_zh": "Juno: Taming Predictive Latents for Vision-Language-Action Models",
+  "abstract": "Joint-embedding predictive architectures (JEPAs) predict masked or future observations in representation space, offering a natural source of predictive latents for vision-language-action (VLA) models. Yet making these latents useful across pretraining, policy learning, and deployment requires addressing three failures: mismatch with embodiment-specific control, interference with action learning, and teacher miscalibration under distribution shifts. We introduce Juno, a unified framework built around one action-conditioned JEPA that serves as a control-aligned representation backbone, a predictive teacher, and an adaptable dynamics model. During pretraining, we train it on embodiment-matched trajectories and use a dynamic CLS loss to transfer motion-weighted patch dynamics to a compact global state. During policy learning, we fuse current-frame JEPA patches into VLA perception and use a decoupled reasoning branch with separate transformation parameters to distill future latent states for action generation. During deployment, we adapt the world model on all observed transitions, including failed rollouts, freeze the adapted teacher, and re-align the policy on verified executions using LoRA adapters and a trainable action head, without expert corrections or task rewards. On SimplerEnv, Juno raises average success from $60.9\\%$ to $68.5\\%$ over Qwen3GR00T, the strongest baseline, and test-time adaptation further reaches $72.7\\%$; on a real robot, it retains $70\\%$--$75\\%$ success under background, height, and object shifts where the base policy collapses to $0\\%$.",
+  "abstract_zh": "Joint-embedding predictive architectures (JEPAs) predict masked or future observations in representation space, offering a natural source of predictive latents for vision-language-action (VLA) models. Yet making these latents useful across pretraining, policy learning, and deployment requires addressing three failures: mismatch with embodiment-specific control, interference with action learning, and teacher miscalibration under distribution shifts. We introduce Juno, a unified framework built around one action-conditioned JEPA that serves as a control-aligned representation backbone, a predictive teacher, and an adaptable dynamics model. During pretraining, we train it on embodiment-matched trajectories and use a dynamic CLS loss to transfer motion-weighted patch dynamics to a compact global state. During policy learning, we fuse current-frame JEPA patches into VLA perception and use a decoupled reasoning branch with separate transformation parameters to distill future latent states for action generation. During deployment, we adapt the world model on all observed transitions, including failed rollouts, freeze the adapted teacher, and re-align the policy on verified executions using LoRA adapters and a trainable action head, without expert corrections or task rewards. On SimplerEnv, Juno raises average success from $60.9\\%$ to $68.5\\%$ over Qwen3GR00T, the strongest baseline, and test-time adaptation further reaches $72.7\\%$; on a real robot, it retains $70\\%$--$75\\%$ success under background, height, and object shifts where the base policy collapses to $0\\%$.",
+  "tldr_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
+  "cover_zh": "Joint-embedding predictive architectures (JEPAs) predict mas",
+  "authors": [
+    {
+      "name": "Yuchen Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenyi Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yulin Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Gang Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Wentao Zhu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "arxiv_id": "2610.09940",
+  "pdf_url": "https://arxiv.org/pdf/2610.09940v1",
+  "abs_url": "http://arxiv.org/abs/2610.09940v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-09940.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-09940-p2.jpg",
+    "assets/img/covers/arxiv-2610-09940-p3.jpg",
+    "assets/img/covers/arxiv-2610-09940-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 23,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（vision-language-action）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 23 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
