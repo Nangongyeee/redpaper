@@ -1,0 +1,127 @@
+{
+  "id": "arxiv-2610-12007",
+  "source": "arxiv",
+  "title": "REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models",
+  "title_zh": "REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models",
+  "abstract": "Flow-based vision-language-action (VLA) models generate action chunks for temporally coherent robot motion, but chunked control creates a fundamental closed-loop trade-off: long chunks provide smooth execution, whereas frequent replanning improves reactivity at the cost of action discontinuities. We introduce REACT, a rolling-denoising framework that makes flow-based VLAs more reactive while preserving long-horizon context. Instead of regenerating entire action chunks from scratch, REACT maintains a persistent action buffer with staggered flow timesteps. At each control step, the full horizon is denoised using the latest observation, the cleanest action block is executed, partially refined future blocks are shifted forward, and fresh noise is appended to the tail. As a result, each executed action block is refined across multiple recent observations before deployment. To support real-time control, we further introduce dual decoupling, which separates sensing, VLM encoding, DiT denoising, and action execution, enabling high-frequency observation updates and action streaming under practical compute constraints. Across the RoboTwin 2.0 simulation benchmark and real-world tasks spanning bimanual manipulation and dynamic control on multiple robot platforms, REACT improves task success and reduces reaction latency while producing smoother trajectories than frequent-replanning and asynchronous baselines.",
+  "abstract_zh": "Flow-based vision-language-action (VLA) models generate action chunks for temporally coherent robot motion, but chunked control creates a fundamental closed-loop trade-off: long chunks provide smooth execution, whereas frequent replanning improves reactivity at the cost of action discontinuities. We introduce REACT, a rolling-denoising framework that makes flow-based VLAs more reactive while preserving long-horizon context. Instead of regenerating entire action chunks from scratch, REACT maintains a persistent action buffer with staggered flow timesteps. At each control step, the full horizon is denoised using the latest observation, the cleanest action block is executed, partially refined future blocks are shifted forward, and fresh noise is appended to the tail. As a result, each executed action block is refined across multiple recent observations before deployment. To support real-time control, we further introduce dual decoupling, which separates sensing, VLM encoding, DiT denoising, and action execution, enabling high-frequency observation updates and action streaming under practical compute constraints. Across the RoboTwin 2.0 simulation benchmark and real-world tasks spanning bimanual manipulation and dynamic control on multiple robot platforms, REACT improves task success and reduces reaction latency while producing smoother trajectories than frequent-replanning and asynchronous baselines.",
+  "tldr_zh": "Flow-based vision-language-action (VLA) models generate acti",
+  "cover_zh": "Flow-based vision-language-action (VLA) models generate acti",
+  "authors": [
+    {
+      "name": "Houlong Xiong",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhenqi Qiu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zechen Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Suohang Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiyu Ren",
+      "affiliation": ""
+    },
+    {
+      "name": "Wanting Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongfei Niu",
+      "affiliation": ""
+    },
+    {
+      "name": "Chengyang He",
+      "affiliation": ""
+    },
+    {
+      "name": "Ge Sun",
+      "affiliation": ""
+    },
+    {
+      "name": "Ran Cheng",
+      "affiliation": ""
+    },
+    {
+      "name": "Qian Zhu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-10-08",
+  "updated": "2026-10-08",
+  "arxiv_id": "2610.12007",
+  "pdf_url": "https://arxiv.org/pdf/2610.12007v1",
+  "abs_url": "http://arxiv.org/abs/2610.12007v1",
+  "venue": "CoRL 2026",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-12007.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-12007-p2.jpg",
+    "assets/img/covers/arxiv-2610-12007-p3.jpg",
+    "assets/img/covers/arxiv-2610-12007-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 CoRL 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 28,
+  "source_tags": [],
+  "score": 35,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（vision-language-action、vla model、manipulation、bimanual）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 28 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「CoRL 2026」收录"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
