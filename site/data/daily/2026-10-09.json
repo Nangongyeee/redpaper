@@ -205,6 +205,164 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-13164",
+      "source": "arxiv",
+      "title": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
+      "title_zh": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
+      "tldr_zh": "Scaling robot manipulation policies requires large amounts o",
+      "cover_zh": "Scaling robot manipulation policies requires large amounts o",
+      "abstract_zh": "Scaling robot manipulation policies requires large amounts of diverse, action-labeled data, yet collecting such data in the real world remains expensive and difficult to scale. Existing methods either depend on human teleoperation, rely on simulation with limited visual realism, or use human videos that lack embodiment-specific annotations. In this paper, we introduce Grounded-Dreamer, a framework for synthesizing physically grounded robot manipulation data with video world models while avoiding human teleoperation demonstrations. Grounded-Dreamer combines the visual realism of generative video models with simulator physics engines. Starting from a small set of real images depicting robot task initial states, our method automatically reconstructs task-relevant objects and camera geometry, aligns them in simulation, and collects physically valid trajectories. These trajectories are used to post-train both a video world model and an inverse dynamics model, enabling the generation of visually realistic robot manipulation videos and corresponding robot actions from real images. To filter physically implausible rollouts, Grounded-Dreamer replays generated trajectories in the reconstructed simulation and retains only those that successfully complete the tasks. The real-world robot policies are trained solely on the grounded synthetic trajectories without any human demonstrations. Empirical results in real-world tasks demonstrate that Grounded-Dreamer can synthesize physically grounded data and substantially facilitate policy learning without requiring human teleoperation effort.",
+      "authors": [
+        "Feng Jiang",
+        "Shu Chen",
+        "Yuanfei Wang"
+      ],
+      "authors_all": [
+        "Feng Jiang",
+        "Shu Chen",
+        "Yuanfei Wang",
+        "Yuan Li",
+        "Zhenhao Shen",
+        "Jiaqi Liang",
+        "Yang Chen",
+        "Lei Wei",
+        "Chen Xie",
+        "Ruihai Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-09",
+      "channels": [
+        "manipulation",
+        "teleop",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-13164.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-13164-p2.jpg",
+        "assets/img/covers/arxiv-2610-13164-p3.jpg",
+        "assets/img/covers/arxiv-2610-13164-p4.jpg"
+      ],
+      "arxiv_id": "2610.13164",
+      "abs_url": "http://arxiv.org/abs/2610.13164v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13164v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-13195",
+      "source": "arxiv",
+      "title": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
+      "title_zh": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
+      "tldr_zh": "Fast whole-body motion planning enables continuous replannin",
+      "cover_zh": "Fast whole-body motion planning enables continuous replannin",
+      "abstract_zh": "Fast whole-body motion planning enables continuous replanning for humanoid robots in dynamic environments while satisfying collision avoidance and kinematic constraints. However, constrained motion planning incurs substantial computational cost due to repeated constraint projection in addition to collision checking and nearest-neighbor search. Recently, GPU-based massively parallel planners have been proposed to reduce computational cost. Nevertheless, these planners still steer in the ambient configuration space, so projecting candidates that deviate from the manifold remains a significant source of overhead, particularly in highly constrained, high-dimensional problems. In this work, we introduce PATACON, a GPU-parallel bidirectional planner that explores tangent space to exploit the local manifold geometry induced by known constraint functions. Experiments on dual-arm closed-chain and humanoid whole-body constrained planning tasks show that PATACON outperforms the prior work as configuration-space dimension and constraint codimension grow, achieving up to an 11.25 times speedup. These results suggest that GPU-parallel tangent-space exploration brings constrained whole-body motion planning closer to real-time performance.",
+      "authors": [
+        "Gahyun Oh",
+        "Junho An",
+        "Suhyun Jeon"
+      ],
+      "authors_all": [
+        "Gahyun Oh",
+        "Junho An",
+        "Suhyun Jeon",
+        "Suhan Park"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-09",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-13195.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-13195-p2.jpg",
+        "assets/img/covers/arxiv-2610-13195-p3.jpg",
+        "assets/img/covers/arxiv-2610-13195-p4.jpg"
+      ],
+      "arxiv_id": "2610.13195",
+      "abs_url": "http://arxiv.org/abs/2610.13195v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13195v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-13522",
+      "source": "arxiv",
+      "title": "Beyond Successful Robot Demonstrations: Learning from Human Interactions and Modeling Failure Dynamics",
+      "title_zh": "Beyond Successful Robot Demonstrations: Learning from Human Interactions and Modeling Failure Dynamics",
+      "tldr_zh": "Action-conditioned world models offer a promising foundation",
+      "cover_zh": "Action-conditioned world models offer a promising foundation",
+      "abstract_zh": "Action-conditioned world models offer a promising foundation for generalist robotic intelligence by predicting the consequences of actions. However, existing robotic datasets provide limited coverage of the diverse interaction dynamics required for generalizable world modeling. Large-scale egocentric human videos offer complementary interaction experience, yet the embodiment gap between human hands and robotic manipulators hinders effective cross-embodiment learning. Meanwhile, the predominance of successful demonstrations leaves failure dynamics substantially underrepresented, limiting the ability of world models to anticipate unsuccessful executions. To address these limitations, we introduce HF-WM, an action-conditioned world model that combines Human interaction learning with Failure-aware post-training. To bridge the embodiment gap, we develop a dual-branch framework that couples video generation with auxiliary pointflow prediction, using stabilized pointflow as a unified motion representation across human and robot interactions while suppressing egocentric camera motion. To improve failure modeling, we further perform Group Relative Policy Optimization (GRPO) post-training on perturbed actions derived from successful demonstrations, guided by action alignment and physical plausibility rewards, enabling the model to learn plausible failure dynamics without paired ground-truth videos. Extensive experiments demonstrate that HF-WM achieves state-of-the-art performance in action-conditioned video generation and exhibits strong utility for policy evaluation in downstream robotic tasks.",
+      "authors": [
+        "Peiyan Tu",
+        "Cong Wang",
+        "Hanxin Zhu"
+      ],
+      "authors_all": [
+        "Peiyan Tu",
+        "Cong Wang",
+        "Hanxin Zhu",
+        "Xin Jin",
+        "Zhibo Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-09",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-13522.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-13522-p2.jpg",
+        "assets/img/covers/arxiv-2610-13522-p3.jpg",
+        "assets/img/covers/arxiv-2610-13522-p4.jpg"
+      ],
+      "arxiv_id": "2610.13522",
+      "abs_url": "http://arxiv.org/abs/2610.13522v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13522v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-13578",
       "source": "arxiv",
       "title": "RARA: Robust Policy Fine-Tuning through Retrieval-Anchored Representation Alignment for Robotic Manipulation",
@@ -1037,110 +1195,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-13164",
-      "source": "arxiv",
-      "title": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
-      "title_zh": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
-      "tldr_zh": "Scaling robot manipulation policies requires large amounts o",
-      "cover_zh": "Scaling robot manipulation policies requires large amounts o",
-      "abstract_zh": "Scaling robot manipulation policies requires large amounts of diverse, action-labeled data, yet collecting such data in the real world remains expensive and difficult to scale. Existing methods either depend on human teleoperation, rely on simulation with limited visual realism, or use human videos that lack embodiment-specific annotations. In this paper, we introduce Grounded-Dreamer, a framework for synthesizing physically grounded robot manipulation data with video world models while avoiding human teleoperation demonstrations. Grounded-Dreamer combines the visual realism of generative video models with simulator physics engines. Starting from a small set of real images depicting robot task initial states, our method automatically reconstructs task-relevant objects and camera geometry, aligns them in simulation, and collects physically valid trajectories. These trajectories are used to post-train both a video world model and an inverse dynamics model, enabling the generation of visually realistic robot manipulation videos and corresponding robot actions from real images. To filter physically implausible rollouts, Grounded-Dreamer replays generated trajectories in the reconstructed simulation and retains only those that successfully complete the tasks. The real-world robot policies are trained solely on the grounded synthetic trajectories without any human demonstrations. Empirical results in real-world tasks demonstrate that Grounded-Dreamer can synthesize physically grounded data and substantially facilitate policy learning without requiring human teleoperation effort.",
-      "authors": [
-        "Feng Jiang",
-        "Shu Chen",
-        "Yuanfei Wang"
-      ],
-      "authors_all": [
-        "Feng Jiang",
-        "Shu Chen",
-        "Yuanfei Wang",
-        "Yuan Li",
-        "Zhenhao Shen",
-        "Jiaqi Liang",
-        "Yang Chen",
-        "Lei Wei",
-        "Chen Xie",
-        "Ruihai Wu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-13164.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-13164-p2.jpg",
-        "assets/img/covers/arxiv-2610-13164-p3.jpg",
-        "assets/img/covers/arxiv-2610-13164-p4.jpg"
-      ],
-      "arxiv_id": "2610.13164",
-      "abs_url": "http://arxiv.org/abs/2610.13164v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13164v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-13195",
-      "source": "arxiv",
-      "title": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
-      "title_zh": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
-      "tldr_zh": "Fast whole-body motion planning enables continuous replannin",
-      "cover_zh": "Fast whole-body motion planning enables continuous replannin",
-      "abstract_zh": "Fast whole-body motion planning enables continuous replanning for humanoid robots in dynamic environments while satisfying collision avoidance and kinematic constraints. However, constrained motion planning incurs substantial computational cost due to repeated constraint projection in addition to collision checking and nearest-neighbor search. Recently, GPU-based massively parallel planners have been proposed to reduce computational cost. Nevertheless, these planners still steer in the ambient configuration space, so projecting candidates that deviate from the manifold remains a significant source of overhead, particularly in highly constrained, high-dimensional problems. In this work, we introduce PATACON, a GPU-parallel bidirectional planner that explores tangent space to exploit the local manifold geometry induced by known constraint functions. Experiments on dual-arm closed-chain and humanoid whole-body constrained planning tasks show that PATACON outperforms the prior work as configuration-space dimension and constraint codimension grow, achieving up to an 11.25 times speedup. These results suggest that GPU-parallel tangent-space exploration brings constrained whole-body motion planning closer to real-time performance.",
-      "authors": [
-        "Gahyun Oh",
-        "Junho An",
-        "Suhyun Jeon"
-      ],
-      "authors_all": [
-        "Gahyun Oh",
-        "Junho An",
-        "Suhyun Jeon",
-        "Suhan Park"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-13195.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-13195-p2.jpg",
-        "assets/img/covers/arxiv-2610-13195-p3.jpg",
-        "assets/img/covers/arxiv-2610-13195-p4.jpg"
-      ],
-      "arxiv_id": "2610.13195",
-      "abs_url": "http://arxiv.org/abs/2610.13195v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13195v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2610-13316",
       "source": "arxiv",
       "title": "ThinkDrag: Semantic Drag-Based Image Editing with Visual Reasoning",
@@ -1331,56 +1385,6 @@
       "arxiv_id": "2610.13453",
       "abs_url": "http://arxiv.org/abs/2610.13453v1",
       "pdf_url": "https://arxiv.org/pdf/2610.13453v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-13522",
-      "source": "arxiv",
-      "title": "Beyond Successful Robot Demonstrations: Learning from Human Interactions and Modeling Failure Dynamics",
-      "title_zh": "Beyond Successful Robot Demonstrations: Learning from Human Interactions and Modeling Failure Dynamics",
-      "tldr_zh": "Action-conditioned world models offer a promising foundation",
-      "cover_zh": "Action-conditioned world models offer a promising foundation",
-      "abstract_zh": "Action-conditioned world models offer a promising foundation for generalist robotic intelligence by predicting the consequences of actions. However, existing robotic datasets provide limited coverage of the diverse interaction dynamics required for generalizable world modeling. Large-scale egocentric human videos offer complementary interaction experience, yet the embodiment gap between human hands and robotic manipulators hinders effective cross-embodiment learning. Meanwhile, the predominance of successful demonstrations leaves failure dynamics substantially underrepresented, limiting the ability of world models to anticipate unsuccessful executions. To address these limitations, we introduce HF-WM, an action-conditioned world model that combines Human interaction learning with Failure-aware post-training. To bridge the embodiment gap, we develop a dual-branch framework that couples video generation with auxiliary pointflow prediction, using stabilized pointflow as a unified motion representation across human and robot interactions while suppressing egocentric camera motion. To improve failure modeling, we further perform Group Relative Policy Optimization (GRPO) post-training on perturbed actions derived from successful demonstrations, guided by action alignment and physical plausibility rewards, enabling the model to learn plausible failure dynamics without paired ground-truth videos. Extensive experiments demonstrate that HF-WM achieves state-of-the-art performance in action-conditioned video generation and exhibits strong utility for policy evaluation in downstream robotic tasks.",
-      "authors": [
-        "Peiyan Tu",
-        "Cong Wang",
-        "Hanxin Zhu"
-      ],
-      "authors_all": [
-        "Peiyan Tu",
-        "Cong Wang",
-        "Hanxin Zhu",
-        "Xin Jin",
-        "Zhibo Chen"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-09",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-13522.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-13522-p2.jpg",
-        "assets/img/covers/arxiv-2610-13522-p3.jpg",
-        "assets/img/covers/arxiv-2610-13522-p4.jpg"
-      ],
-      "arxiv_id": "2610.13522",
-      "abs_url": "http://arxiv.org/abs/2610.13522v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.13522v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
