@@ -1,0 +1,94 @@
+{
+  "id": "arxiv-2610-13816",
+  "source": "arxiv",
+  "title": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
+  "title_zh": "Dream to Remember: Continual Steering of Generalist Robot Policies with World Models",
+  "abstract": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As the steering module learns a new task, a frozen pretrained world model rehearses prior tasks through imagined rollouts, anchoring the module to its earlier behavior without a replay buffer or new data. When the world model is faithful enough, D2R learns the new task entirely in imagination. Otherwise, it learns the task in the environment while using the world model only to rehearse prior tasks. On CALVIN, D2R improves eight tasks in sequence entirely in imagination, raising average success from 63.7% to 74.8%, while LoRA fine-tuning on the same sequence drops it to 11.7%. With a frozen off-the-shelf generalist policy and world model, $π_0$ and A2World, D2R learns unseen LIBERO-90 tasks in the environment while keeping $π_0$'s performance on the LIBERO suites it was fine-tuned on, even though the world model is not accurate enough for policy optimization. Finally, on a real Franka robot, D2R improves three tasks in sequence entirely in imagination while retaining the earlier improvements.",
+  "abstract_zh": "Generalist robot policies are trained with imitation learning and are bounded by the quality and coverage of their demonstrations. Reinforcement learning can improve and extend them, either by fine-tuning the policy weights or by training a small module to steer the input noise of a frozen generative policy. When tasks arrive sequentially, both approaches suffer from catastrophic forgetting. Fine-tuning on a task degrades prior tasks, and steering only shifts forgetting to the shared steering module. We propose Dream to Remember (D2R), which continually steers a frozen generalist policy toward new tasks, while retaining its earlier skills. As the steering module learns a new task, a frozen pretrained world model rehearses prior tasks through imagined rollouts, anchoring the module to its earlier behavior without a replay buffer or new data. When the world model is faithful enough, D2R learns the new task entirely in imagination. Otherwise, it learns the task in the environment while using the world model only to rehearse prior tasks. On CALVIN, D2R improves eight tasks in sequence entirely in imagination, raising average success from 63.7% to 74.8%, while LoRA fine-tuning on the same sequence drops it to 11.7%. With a frozen off-the-shelf generalist policy and world model, $π_0$ and A2World, D2R learns unseen LIBERO-90 tasks in the environment while keeping $π_0$'s performance on the LIBERO suites it was fine-tuned on, even though the world model is not accurate enough for policy optimization. Finally, on a real Franka robot, D2R improves three tasks in sequence entirely in imagination while retaining the earlier improvements.",
+  "tldr_zh": "Generalist robot policies are trained with imitation learnin",
+  "cover_zh": "Generalist robot policies are trained with imitation learnin",
+  "authors": [
+    {
+      "name": "Bahey Tharwat",
+      "affiliation": ""
+    },
+    {
+      "name": "Iman Nematollahi",
+      "affiliation": ""
+    },
+    {
+      "name": "Marvin Alles",
+      "affiliation": ""
+    },
+    {
+      "name": "Xingyuan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Akshay L Chandra",
+      "affiliation": ""
+    },
+    {
+      "name": "Abhinav Valada",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "arxiv_id": "2610.13816",
+  "pdf_url": "https://arxiv.org/pdf/2610.13816v1",
+  "abs_url": "http://arxiv.org/abs/2610.13816v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-13816.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-13816-p2.jpg",
+    "assets/img/covers/arxiv-2610-13816-p3.jpg",
+    "assets/img/covers/arxiv-2610-13816-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 31,
+  "source_tags": [],
+  "score": 20,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 7 个（generalist policy、generalist robot、π_0、imitation learning）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 31 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
