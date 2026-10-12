@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T13:47:20.196897+00:00",
-  "count": 3652,
+  "generated_at": "2026-10-12T17:05:41.344754+00:00",
+  "count": 3656,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -166862,6 +166862,67 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-10601",
+      "source": "arxiv_discover",
+      "title": "Teaching a Robot Dog New Tricks: Diverse Quadruped Skills via Combined Reinforcement and Imitation Learning with Adversarial Task Selection",
+      "title_zh": "Teaching a Robot Dog New Tricks: Diverse Quadruped Skills via Combined Reinforcement and Imitation Learning with Adversarial Task Selection",
+      "tldr_zh": "Reinforcement Learning (RL) has enabled legged robots to per",
+      "cover_zh": "Reinforcement Learning (RL) has enabled legged robots to per",
+      "abstract_zh": "Reinforcement Learning (RL) has enabled legged robots to perform a range of skills in single-task settings. However, applications such as farm robotics or space exploration require diverse skills such as locomotion, digging, or close-range surveying. Training an end-to-end policy to address this problem remains difficult due to challenges such as sample inefficiency and gradient conflict between tasks in multi-task learning. We propose a three-stage method that trains a single policy to perform distinct tasks such as walking, digging, and hopping, and compose them into novel behaviors such as crawling. First, multiple teacher policies are trained using RL on narrowly defined tasks. Then, two additional stages train a student policy with a multi-teacher distillation setup that uses a combined RL and Imitation Learning (IL) objective under an adversarial task selection process that focuses training on the worst-performing task. With this method, we train a student policy that performs 22 tasks using 8 teachers. Evaluations show our method preserves motion quality and tracks commands more accurately than PPO and distill-then-finetune baselines, and in some cases generalizes to new tasks without explicit training. Finally, we demonstrate real-world robustness by deploying the resulting policy on a Unitree B1 quadruped. Video: https://youtu.be/V9yX04EBcFA",
+      "authors": [
+        "Lemon Foxmere",
+        "Anthony Furman",
+        "Yizheng Du"
+      ],
+      "authors_all": [
+        "Lemon Foxmere",
+        "Anthony Furman",
+        "Yizheng Du",
+        "Oliver Chang",
+        "Leilani Gilpin",
+        "Steve McGuire"
+      ],
+      "primary_category": "",
+      "published": "2026-10-06",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-10601.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-10601-p2.jpg",
+        "assets/img/covers/arxiv-2610-10601-p3.jpg",
+        "assets/img/covers/arxiv-2610-10601-p4.jpg"
+      ],
+      "arxiv_id": "2610.10601",
+      "abs_url": "http://arxiv.org/abs/2610.10601v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10601v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=V9yX04EBcFA",
+          "embed_url": "https://www.youtube.com/embed/V9yX04EBcFA",
+          "title": "",
+          "source": "abstract"
+        }
+      ],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-09943",
       "source": "arxiv",
       "title": "Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization",
@@ -172723,6 +172784,57 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-02370",
+      "source": "arxiv_discover",
+      "title": "Network-in-the-Loop at Scale: GPU-Batched 5G Simulation for Massively Parallel Robot Learning",
+      "title_zh": "Network-in-the-Loop at Scale: GPU-Batched 5G Simulation for Massively Parallel Robot Learning",
+      "tldr_zh": "Massively parallel GPU simulators train multi-robot policies",
+      "cover_zh": "Massively parallel GPU simulators train multi-robot policies",
+      "abstract_zh": "Massively parallel GPU simulators train multi-robot policies in thousands of environments, and many fleets use private Fifth-Generation (5G) networks, where each robot's delay depends on its teammates' traffic. Network-in-the-loop training places a simulated 5G network inside this loop. However, GPU robot simulators reduce the network to an independent delay per message, while packet-level simulators run one scenario per CPU process and cannot keep pace with thousands of parallel environments. To bridge this gap, we present Isaac-Net, a GPU-batched 5G New Radio (NR) module that advances the uplink of thousands of environments in lockstep with Isaac Lab physics. Isaac-Net simulates every slot, the 0.5~ms interval in which the base station decides which robots transmit, for all environments at once. Extensive experiments confirm that its NR engine reproduces the median delay of ns-3 5G-LENA across loads, with a median delay 5--10\\% low on an unseen carrier and 9\\% high at 32 robots per environment in closed loop. The engine also reproduces the Age of Information (AoI), the age of each robot's newest delivered report, while an independent delay per message leaves the AoI tail about three times too light. In a configuration validated against 5G-LENA, Isaac-Net keeps the network in the loop for about one million robots on one GPU at 83\\% of the Isaac Lab rate without the network, measured under a random policy. Isaac-Net is open source at https://github.com/ZzZTripleZzZ/isaac-net",
+      "authors": [
+        "Zifan Zhang",
+        "Mingzhe Han",
+        "Kannan Athreya"
+      ],
+      "authors_all": [
+        "Zifan Zhang",
+        "Mingzhe Han",
+        "Kannan Athreya",
+        "Yuchen Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-01",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-02370.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-02370-p2.jpg",
+        "assets/img/covers/arxiv-2610-02370-p3.jpg",
+        "assets/img/covers/arxiv-2610-02370-p4.jpg"
+      ],
+      "arxiv_id": "2610.02370",
+      "abs_url": "http://arxiv.org/abs/2610.02370v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02370v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-02803",
@@ -193668,6 +193780,59 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-02023",
+      "source": "arxiv_discover",
+      "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+      "title_zh": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+      "tldr_zh": "While Large Language Models (LLMs) advance 3D indoor scene s",
+      "cover_zh": "While Large Language Models (LLMs) advance 3D indoor scene s",
+      "abstract_zh": "While Large Language Models (LLMs) advance 3D indoor scene synthesis, current pipelines fail to retain user-specific preferences across sessions, making immersive authoring a repetitive and physically fatiguing process. We present SPHERE, an adaptive VR generation framework that transforms isolated synthesis into continuous human-AI co-creation. SPHERE extracts persistent spatial preferences from natural multimodal interactions (speech and controller edits). To ensure geometric resilience against spatial distortions, it abstracts these raw edits into hierarchical constraints modeling both local functional and global topological contexts. Furthermore, a human-in-the-loop reinforcement learning mechanism dynamically updates retrieval policies based on the user's final edited scenes. A mixed-design user study ($N=42$) and an offline ablation demonstrate that SPHERE significantly reduces corrective edits and physical demand, preventing bias toward shallow object-level traits to yield geometrically resilient, profile-aligned layouts. Ultimately, SPHERE demonstrates how capturing demonstrated spatial logic enables controlled spatial adaptation, establishing a reliable, governed human-AI collaboration framework for immersive authoring. Project page and source code will be available at: https://github.com/hyeonmin11/SPHERE",
+      "authors": [
+        "Hyeonmin Lee",
+        "Zheng Wei",
+        "Kyungmin Kwon"
+      ],
+      "authors_all": [
+        "Hyeonmin Lee",
+        "Zheng Wei",
+        "Kyungmin Kwon",
+        "Jumin Seo",
+        "Jiwon Park",
+        "Hayoung Oh"
+      ],
+      "primary_category": "",
+      "published": "2026-10-01",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-02023.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-02023-p2.jpg",
+        "assets/img/covers/arxiv-2610-02023-p3.jpg",
+        "assets/img/covers/arxiv-2610-02023-p4.jpg"
+      ],
+      "arxiv_id": "2610.02023",
+      "abs_url": "http://arxiv.org/abs/2610.02023v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02023v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 11,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "openreview-EdVNB2kHv1",
@@ -227872,6 +228037,59 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-09891",
+      "source": "arxiv_discover",
+      "title": "A Scoping Review and Experimental Study on Reinforcement Learning from Human Feedback for Human-Robot Collaboration",
+      "title_zh": "A Scoping Review and Experimental Study on Reinforcement Learning from Human Feedback for Human-Robot Collaboration",
+      "tldr_zh": "Human-Robot Collaboration (HRC) can facilitate mass customis",
+      "cover_zh": "Human-Robot Collaboration (HRC) can facilitate mass customis",
+      "abstract_zh": "Human-Robot Collaboration (HRC) can facilitate mass customisation in Industry 4.0, with Reinforcement Learning from Human Feedback (RLHF) representing a promising approach for developing safe AI-based robots. Practical challenges remain regarding safety during AI development, human feedback quality, and bidirectional human-robot adaptation. We conducted a scoping review of RLHF in HRC systems, mapping methods that address these challenges. Following PRISMA guidelines, we screened 199 records and included 20 peer-reviewed publications (2020-2025) spanning multiple HRC domains. To our knowledge, this is the first review focused on the bidirectional, closed-loop design of RLHF. Our review found multiple feedback modalities enabling data collection in various feedback formats. Collected data can be integrated at different stages of AI training, resulting in a multi-step development process. Pilot experiments are commonly used to evaluate HRC systems based on both human and robot metrics. To empirically test a key gap identified in the review, we conducted a between-subjects VR experiment comparing system- and user-initiated feedback on robot proxemic behaviour for safe navigation. Using Bayesian models, we analysed the relation between the collected feedback and safety metrics: psychological safety (post-experiment questionnaire) and physical safety (inverse time-to-collision). Results show that user-initiated feedback captures perceived safety better than system-initiated feedback, indicating that feedback timing directly affects feedback quality. Our review and experiment findings show that RLHF relies on appropriate feedback methods to ensure AI safety in HRC, and future RLHF research should prioritise realistic HRC experiments evaluating the effects of feedback collection methods on relevant human and robot metrics.",
+      "authors": [
+        "Alexandra Coroiu",
+        "Andrea Vogt",
+        "Viktor Werbilo"
+      ],
+      "authors_all": [
+        "Alexandra Coroiu",
+        "Andrea Vogt",
+        "Viktor Werbilo",
+        "Andreas Poppele",
+        "Johann Christensen",
+        "Sven Hallerbach"
+      ],
+      "primary_category": "",
+      "published": "2026-10-07",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-09891.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-09891-p2.jpg",
+        "assets/img/covers/arxiv-2610-09891-p3.jpg",
+        "assets/img/covers/arxiv-2610-09891-p4.jpg"
+      ],
+      "arxiv_id": "2610.09891",
+      "abs_url": "http://arxiv.org/abs/2610.09891v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.09891v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 3,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     }
   ]
 }
