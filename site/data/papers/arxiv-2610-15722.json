@@ -1,0 +1,91 @@
+{
+  "id": "arxiv-2610-15722",
+  "source": "arxiv",
+  "title": "PhySimCode: A Benchmark and Evaluation Method for Physics Video to Code Generation",
+  "title_zh": "PhySimCode: A Benchmark and Evaluation Method for Physics Video to Code Generation",
+  "abstract": "Multimodal large language models (MLLMs) are good at video understanding and code generation, but it remains unclear whether they can recover the physical laws underlying videos, a capability essential for converting videos into executable simulations and for providing structured physical supervision in robotics. Captioning motion video does not imply that a model has inferred its governing dynamics, estimated quantitative parameters, or can regenerate the observed scene from code. Existing video-physics benchmarks evaluate plausibility, property estimation, or future-state prediction, but offer limited insight into whether models can translate visual dynamics into runnable simulation code. We introduce PhySimCode, a benchmark for physics video-to-code generation: given only a raw video, a model must infer the relevant physics, recover parameter values, and generate runnable Python that reproduces the input video. The dataset contains 160.6K procedurally generated samples spanning 162 physics phenomena across analytic SciPy simulations and PyBullet-rendered rigid-body, articulated, fluid, and contact-rich scenes; each sample bundles the simulation code, physical parameters, rendered video, and a structured chain-of-thought covering observations, laws, ODEs, numerical methods, and validation checks. We evaluate ten state-of-the-art closed- and open-source MLLMs along physical-law correctness, simulation equivalence, code executability, and parameter recovery. Models reliably state physics laws (4.27-4.93/5) yet score only 1.51-2.47/5 on inferring them from video, and the best system (Claude Sonnet 4.6) recovers just 7.7% of ground-truth parameters within $\\pm 20\\%$, exposing a substantial video-to-simulation gap. The 2,430-video evaluation set is available at https://huggingface.co/datasets/SourajaKundu123/PhySimCode and the evaluation code at https://github.com/SourajaKundu/PhySimCode",
+  "abstract_zh": "Multimodal large language models (MLLMs) are good at video understanding and code generation, but it remains unclear whether they can recover the physical laws underlying videos, a capability essential for converting videos into executable simulations and for providing structured physical supervision in robotics. Captioning motion video does not imply that a model has inferred its governing dynamics, estimated quantitative parameters, or can regenerate the observed scene from code. Existing video-physics benchmarks evaluate plausibility, property estimation, or future-state prediction, but offer limited insight into whether models can translate visual dynamics into runnable simulation code. We introduce PhySimCode, a benchmark for physics video-to-code generation: given only a raw video, a model must infer the relevant physics, recover parameter values, and generate runnable Python that reproduces the input video. The dataset contains 160.6K procedurally generated samples spanning 162 physics phenomena across analytic SciPy simulations and PyBullet-rendered rigid-body, articulated, fluid, and contact-rich scenes; each sample bundles the simulation code, physical parameters, rendered video, and a structured chain-of-thought covering observations, laws, ODEs, numerical methods, and validation checks. We evaluate ten state-of-the-art closed- and open-source MLLMs along physical-law correctness, simulation equivalence, code executability, and parameter recovery. Models reliably state physics laws (4.27-4.93/5) yet score only 1.51-2.47/5 on inferring them from video, and the best system (Claude Sonnet 4.6) recovers just 7.7% of ground-truth parameters within $± 20\\%$, exposing a substantial video-to-simulation gap. The 2,430-video evaluation set is available at https://huggingface.co/datasets/SourajaKundu123/PhySimCode and the evaluation code at https://github.com/SourajaKundu/PhySimCode",
+  "tldr_zh": "Multimodal large language models (MLLMs) are good at video u",
+  "cover_zh": "Multimodal large language models (MLLMs) are good at video u",
+  "authors": [
+    {
+      "name": "Souraja Kundu",
+      "affiliation": ""
+    },
+    {
+      "name": "Aditya Gupta",
+      "affiliation": ""
+    },
+    {
+      "name": "Joel Julin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yizhou Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Liuyue Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Laszlo A. Jeni",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-10-11",
+  "updated": "2026-10-11",
+  "arxiv_id": "2610.15722",
+  "pdf_url": "https://arxiv.org/pdf/2610.15722v1",
+  "abs_url": "http://arxiv.org/abs/2610.15722v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-15722.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-15722-p2.jpg",
+    "assets/img/covers/arxiv-2610-15722-p3.jpg",
+    "assets/img/covers/arxiv-2610-15722-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 34,
+  "source_tags": [],
+  "score": 14,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（contact-rich）"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 34 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

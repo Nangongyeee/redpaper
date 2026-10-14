@@ -1,0 +1,109 @@
+{
+  "id": "arxiv-2610-15794",
+  "source": "arxiv",
+  "title": "$Δ$ Flow Matching for Robot Foundation Models",
+  "title_zh": "$Δ$ Flow Matching for Robot Foundation Models",
+  "abstract": "Flow matching is a common generative recipe for robot foundation models. Vision-language-action models (VLAs) generate action chunks, while world-action models (WAMs) additionally generate future visual states. Both start generation from a fixed Gaussian prior, despite temporal continuity between past and future states and actions. This requires costly training and iterative sampling, especially for WAMs with an additional visual branch. We introduce $Δ$-flow, which constructs the source from recent history with mild noise rather than from a fixed Gaussian prior. This moves the source closer to the target, reducing transport to a small residual $Δ$ that can be learned efficiently and enables single-step inference. We integrate $Δ$-flow into the VLA policy $π_{0.5}$ and the WAM policies ImageWAM and Fast-WAM. On LIBERO, ImageWAM reaches 90% success in one epoch rather than six, and Fast-WAM reaches 95% in two epochs rather than eight. With LoRA fine-tuning, $π_{0.5}$ exceeds its baseline's five-epoch performance after one epoch. Single-step inference gives $1.54\\times$, $2.49\\times$, and $4.45\\times$ speedups on $π_{0.5}$, ImageWAM, and Fast-WAM, respectively. It preserves action smoothness, achieving a $4.5\\times$ reduction in action jerk compared with one-step Gaussian sampling. $Δ$-flow reaches state-of-the-art generalization performance on LIBERO-Plus. Action-history sources can be applied to pretrained WAM policies without retraining. Replacing the Gaussian action source at inference largely preserves task success with a single sampling step and can slightly improve it. We further study how action representation and visual information in action learning affect history-to-future prediction in $Δ$-flow. These results show that $Δ$-flow is simple yet effective, improving the efficiency and generalization of robot foundation models.",
+  "abstract_zh": "Flow matching is a common generative recipe for robot foundation models. Vision-language-action models (VLAs) generate action chunks, while world-action models (WAMs) additionally generate future visual states. Both start generation from a fixed Gaussian prior, despite temporal continuity between past and future states and actions. This requires costly training and iterative sampling, especially for WAMs with an additional visual branch. We introduce $Δ$-flow, which constructs the source from recent history with mild noise rather than from a fixed Gaussian prior. This moves the source closer to the target, reducing transport to a small residual $Δ$ that can be learned efficiently and enables single-step inference. We integrate $Δ$-flow into the VLA policy $π_{0.5}$ and the WAM policies ImageWAM and Fast-WAM. On LIBERO, ImageWAM reaches 90% success in one epoch rather than six, and Fast-WAM reaches 95% in two epochs rather than eight. With LoRA fine-tuning, $π_{0.5}$ exceeds its baseline's five-epoch performance after one epoch. Single-step inference gives $1.54×$, $2.49×$, and $4.45×$ speedups on $π_{0.5}$, ImageWAM, and Fast-WAM, respectively. It preserves action smoothness, achieving a $4.5×$ reduction in action jerk compared with one-step Gaussian sampling. $Δ$-flow reaches state-of-the-art generalization performance on LIBERO-Plus. Action-history sources can be applied to pretrained WAM policies without retraining. Replacing the Gaussian action source at inference largely preserves task success with a single sampling step and can slightly improve it. We further study how action representation and visual information in action learning affect history-to-future prediction in $Δ$-flow. These results show that $Δ$-flow is simple yet effective, improving the efficiency and generalization of robot foundation models.",
+  "tldr_zh": "Flow matching is a common generative recipe for robot founda",
+  "cover_zh": "Flow matching is a common generative recipe for robot founda",
+  "authors": [
+    {
+      "name": "Kuangji Zuo",
+      "affiliation": ""
+    },
+    {
+      "name": "Tuo An",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinying Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Gen Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Mengfei Zhao",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaqi Bai",
+      "affiliation": ""
+    },
+    {
+      "name": "Bofan Lyu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhuoyuan Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinghan Yang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiayi Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Jindou Jia",
+      "affiliation": ""
+    },
+    {
+      "name": "Jianfei Yang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-11",
+  "updated": "2026-10-11",
+  "arxiv_id": "2610.15794",
+  "pdf_url": "https://arxiv.org/pdf/2610.15794v1",
+  "abs_url": "http://arxiv.org/abs/2610.15794v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-15794.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-15794-p2.jpg",
+    "assets/img/covers/arxiv-2610-15794-p3.jpg",
+    "assets/img/covers/arxiv-2610-15794-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 23,
+  "source_tags": [],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、vla policy、robot foundation model、libero）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 23 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

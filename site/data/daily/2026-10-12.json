@@ -1,7 +1,118 @@
 {
   "date": "2026-10-12",
-  "count": 1,
+  "count": 8,
   "papers": [
+    {
+      "id": "arxiv-2610-16139",
+      "source": "arxiv",
+      "title": "Directional Pullback Regularization for Long-Horizon Rollout of Latent World Models in Autonomous Driving",
+      "title_zh": "Directional Pullback Regularization for Long-Horizon Rollout of Latent World Models in Autonomous Driving",
+      "tldr_zh": "Learned world models for autonomous driving operate in uncon",
+      "cover_zh": "Learned world models for autonomous driving operate in uncon",
+      "abstract_zh": "Learned world models for autonomous driving operate in unconstrained latent spaces, yet the physical systems they represent are governed by strict non-holonomic constraints: ground vehicles cannot realize instantaneous pure lateral motion. We study long-horizon latent rollout modeling for autonomous driving and ask whether rollout quality can be improved by assigning a motion-aware geometry to latent transitions, rather than by redesigning the predictor architecture. Starting from an unconstrained latent rollout baseline, we introduce Directional Pullback Regularization (DPR), a training time method that defines a kinematics-aware anisotropic Riemannian metric in decoded state space and pulls it back through the decoder Jacobian to the latent manifold. The resulting latent-space metric assigns higher cost to latent directions that decode to lateral vehicle motion, while preserving the original encoder-dynamics-decoder backbone. This yields a clean three-way comparison among an Unconstrained Latent Rollout model (ULR), an Euclidean Pullback Regularization ablation (EPR), and the full directional method (DPR). We evaluate all models on open-loop ego-motion rollout over a common 10-second test horizon, using training rollout lengths of 1, 3, 5, and 10 steps. Across all four training regimes, DPR achieves lower 10-second final displacement error than both ULR and EPR. The strongest relative accuracy gain appears for models trained with 3-step rollout supervision, where DPR reduces the 10-second final displacement error by approximately 44 percent relative to ULR. The strongest overall control-relevant tradeoff is obtained for longer rollout-trained models, especially at 10 steps, where DPR simultaneously improves displacement error, lateral motion consistency, and forward motion preservation relative to both ULR and EPR.",
+      "authors": [
+        "Shatadal Mishra",
+        "Ahmadreza Moradipari",
+        "Nejib Ammar"
+      ],
+      "authors_all": [
+        "Shatadal Mishra",
+        "Ahmadreza Moradipari",
+        "Nejib Ammar"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-12",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CDC 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-16139.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-16139-p2.jpg",
+        "assets/img/covers/arxiv-2610-16139-p3.jpg",
+        "assets/img/covers/arxiv-2610-16139-p4.jpg"
+      ],
+      "arxiv_id": "2610.16139",
+      "abs_url": "http://arxiv.org/abs/2610.16139v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16139v1",
+      "venue": "CDC 2026",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16160",
+      "source": "arxiv",
+      "title": "FlowVLA: Enabling World Dynamics Understanding through Pluggable 3D Flow Learning",
+      "title_zh": "FlowVLA: Enabling World Dynamics Understanding through Pluggable 3D Flow Learning",
+      "tldr_zh": "Recent advances in 3D reconstruction enable the extraction o",
+      "cover_zh": "Recent advances in 3D reconstruction enable the extraction o",
+      "abstract_zh": "Recent advances in 3D reconstruction enable the extraction of temporally consistent 3D motion from RGB observations; however, current Vision-Language-Action (VLA) models still predominantly rely on 2D image-text priors. Therefore, they do not accurately represent the fundamental dynamics of the 3D world associated with physical actions. This over-reliance on static 2D visual cues limits the capacity of VLA models in achieving robust robot manipulation. To address these limitations, we introduce FlowVLA, a reconstruction-guided, pluggable 3D flow learning framework aimed at empowering VLA models with an inherent understanding of action-relevant dynamics. Instead of requiring explicit 3D sensor inputs or altering the inference-time architecture, our method is designed to utilize temporally aligned 3D flow only during training. This allows the model to learn the dynamic evolution of the physical scene while preserving the computational efficiency of conventional 2D VLA backbones. To bridge scene-level dynamics with robotic manipulation, we propose a modular 3D flow learning framework with dual-level flow supervision. Specifically, point-level flow guides the model to forecast the future displacements of task-critical 3D points, while TCP-level flow aggregates these motions to align with the robot's TCP trajectories. This dual-level flow supervision encourages the model to focus on semantically meaningful dynamic regions, effectively coupling scene-level motion with precise control signals. Extensive evaluations across simulation and real-world experiments demonstrate that FlowVLA consistently improves manipulation performance, zero-shot robustness, and optimizes data efficiency. FlowVLA adds only lightweight auxiliary heads during training and discards them at inference. Therefore, FlowVLA introduces no additional 3D sensor inputs, architectural modifications, or inference-time computation.",
+      "authors": [
+        "Junhyeong Go",
+        "Mingyu Jung",
+        "Woobin Im"
+      ],
+      "authors_all": [
+        "Junhyeong Go",
+        "Mingyu Jung",
+        "Woobin Im",
+        "Jongbin Ryu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-12",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2610.16160",
+      "abs_url": "http://arxiv.org/abs/2610.16160v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16160v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 29,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
     {
       "id": "qbitai-c275c7b1cf",
       "source": "qbitai",
@@ -44,6 +155,278 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2610-16199",
+      "source": "arxiv",
+      "title": "MSC: Multi-Stage Caster-aware Control Framework with Uncertainty-Aware NMPC and RL-based Execution Layer",
+      "title_zh": "MSC: Multi-Stage Caster-aware Control Framework with Uncertainty-Aware NMPC and RL-based Execution Layer",
+      "tldr_zh": "Freely swiveling casters are widely adopted in industrial AM",
+      "cover_zh": "Freely swiveling casters are widely adopted in industrial AM",
+      "abstract_zh": "Freely swiveling casters are widely adopted in industrial AMRs/SDVs for their mechanical simplicity and load capacity. However, caster misalignment during low-speed or high-curvature maneuvers induces strong contact nonlinearities, widening the planning-execution gap between commanded $(v, ω)$ and realized motion. Existing caster-aware strategies are highly sensitive to state-estimation reliability, causing unstable execution in uncertain transition regimes. To address this, we present Multi-Stage Caster-aware Control (MSC), a planning-execution integrated hierarchical framework featuring two core mechanisms. First, an uncertainty-aware NMPC (CU-MPC) dynamically schedules caster-aware costs and input regularization using predictive uncertainty to suppress overly aggressive maneuvers. Second, a reinforcement learning-based execution layer estimates and predicts caster states under partial observability, transforming high-level velocity commands into physically executable wheel speeds adapted to current contact conditions. Validations in Isaac Sim and real robots demonstrate that MSC offers a clear comparative advantage over existing decoupled compensation approaches by significantly improving caster-state estimation accuracy, minimizing misalignment, and enhancing tracking robustness in caster-sensitive maneuvers.",
+      "authors": [
+        "Jinho Park",
+        "Jeongtae Lee",
+        "Jeonghyeok Lim"
+      ],
+      "authors_all": [
+        "Jinho Park",
+        "Jeongtae Lee",
+        "Jeonghyeok Lim",
+        "Keun Ha Choi",
+        "Kyung-Soo Kim"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-12",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 IROS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-16199.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-16199-p2.jpg",
+        "assets/img/covers/arxiv-2610-16199-p3.jpg",
+        "assets/img/covers/arxiv-2610-16199-p4.jpg"
+      ],
+      "arxiv_id": "2610.16199",
+      "abs_url": "http://arxiv.org/abs/2610.16199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16199v1",
+      "venue": "IROS 2026",
+      "venue_announced": "",
+      "score": 26,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16166",
+      "source": "arxiv",
+      "title": "Esports World Model Dataset",
+      "title_zh": "Esports World Model Dataset",
+      "tldr_zh": "Interactive world models must capture how multiple participa",
+      "cover_zh": "Interactive world models must capture how multiple participa",
+      "abstract_zh": "Interactive world models must capture how multiple participants jointly change a shared environment while observing different parts of it. Competitive games make this challenge concrete: players cooperate and compete, while fog of war, team vision and camera placement determine what each can see. Modeling these interactions requires data that connect individual observations and actions to shared state and events. We introduce the Esports World Model Dataset (EWM), a collection of human gameplay spanning StarCraft II, Dota 2 and Counter-Strike 2, with 3,053 games and maps and approximately 4,880 player-view hours, including estimated hours for the ongoing CS2 extension. It includes 4,628 completed StarCraft II views, all ten perspectives for 303 Dota 2 matches, and up to ten views per round in CS2. Across these views, replay-clock alignment connects rendered video with game-native actions, structured state and events from the same match. The three games expose complementary observation conditions: private fog of war, shared team vision and first-person viewpoints. In StarCraft II, player-specific entity records further distinguish live observations from remembered snapshots and link co-observed entities across opposing views. Together with temporal alignment, these records allow researchers to distinguish legitimate information differences from disagreement about shared state. By connecting human decisions, shared dynamics and player-specific information, EWM supports research toward jointly controlled multiplayer world models and interactive environments populated by teammates and opponents learned from human play.",
+      "authors": [
+        "Weiyu Ma",
+        "Zeyuan Gong",
+        "Xuhui Liu"
+      ],
+      "authors_all": [
+        "Weiyu Ma",
+        "Zeyuan Gong",
+        "Xuhui Liu",
+        "Wenxuan Zhang",
+        "Jian Ding",
+        "Xinyu Cui",
+        "Jian Zhao",
+        "Mohamed Elhoseiny"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-12",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2610.16166",
+      "abs_url": "http://arxiv.org/abs/2610.16166v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16166v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16173",
+      "source": "arxiv",
+      "title": "Extending Wire-Driven Parallel Robots to Multi-Floating-Link Systems with an Inter-Body Wire",
+      "title_zh": "Extending Wire-Driven Parallel Robots to Multi-Floating-Link Systems with an Inter-Body Wire",
+      "tldr_zh": "Parallel wire-driven systems are a framework in which multip",
+      "cover_zh": "Parallel wire-driven systems are a framework in which multip",
+      "abstract_zh": "Parallel wire-driven systems are a framework in which multiple wires are connected to an end effector, and the end effector is driven by the tensions of those wires. Because they can transmit large forces, up to the breaking strength of the wires, over lengths on the order of several tens of meters, they can realize powerful actuation in large workspaces. In recent years, studies have also investigated connecting wires to external environments such as trees and columns and forming parallel wire actuation on site. However, conventional parallel wire-driven systems often assume a single end effector, and because of interference between wires and links in a shared workspace, it has been difficult to handle multiple floating links simultaneously. In this study, we realize multi-floating-link parallel wire actuation by introducing an inter-body wire. In real-robot experiments, the two bodies supported and lifted a mannequin and transferred it onto a stretcher as a rescue motion. This shows that parallel wire actuation can be extended from a single end effector to a multi-floating-link system, and indicates its potential for broader tasks such as the manipulation of large objects and rescue support.",
+      "authors": [
+        "Shintaro Inoue",
+        "Kento Kawaharazuka",
+        "Temma Suzuki"
+      ],
+      "authors_all": [
+        "Shintaro Inoue",
+        "Kento Kawaharazuka",
+        "Temma Suzuki",
+        "Sota Yuzaki",
+        "Keita Yoneda",
+        "Kei Okada"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-12",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-16173.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-16173-p2.jpg",
+        "assets/img/covers/arxiv-2610-16173-p3.jpg",
+        "assets/img/covers/arxiv-2610-16173-p4.jpg"
+      ],
+      "arxiv_id": "2610.16173",
+      "abs_url": "http://arxiv.org/abs/2610.16173v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16173v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16220",
+      "source": "arxiv",
+      "title": "When Participant Disjoint Validation Is Not Enough to Establish Generalization in Parkinson's Gait Classification",
+      "title_zh": "When Participant Disjoint Validation Is Not Enough to Establish Generalization in Parkinson's Gait Classification",
+      "tldr_zh": "Participant-disjoint cross-validation prevents direct partic",
+      "cover_zh": "Participant-disjoint cross-validation prevents direct partic",
+      "abstract_zh": "Participant-disjoint cross-validation prevents direct participant overlap, but it may still produce optimistic estimates when acquisition site and diagnosis are structurally dependent. We examined Parkinson's disease classification using 159 pressure-walkway summary features from 133 WearGait-PD participants, including 65 participants with Parkinson's disease and 68 controls. The cohort was non-factorial: two sites contained only one diagnostic group, whereas VA-Seattle was the only site containing both groups. In repeated participant-level nested cross-validation, site alone achieved an area under the receiver operating characteristic curve (AUC) of 0.955 plus or minus 0.003, exceeding the gait-feature model (0.882 plus or minus 0.014). Under the evaluated logistic-regression pipelines, adding gait features to site, age, and sex produced no measurable improvement in pooled discrimination. More site-controlled evaluations produced lower and imprecise estimates: VA-Seattle same-site AUC was 0.668 (95% bootstrap confidence interval 0.477 to 0.836), and the JHOC + Bayview-to-VA-Seattle transport stress test achieved 0.576 (0.375 to 0.770). Supporting within-diagnosis site-prediction and site-conditioned permutation analyses showed that the gait representation retained substantial acquisition-site structure. These findings indicate that participant-disjoint pooled validation did not isolate disease-related discrimination from site-associated variation. They encourage careful examination of site-label dependence and, where possible, support for pooled results through within-site or independent validation before broader claims are made about generalization across institutions.",
+      "authors": [
+        "Md. Sifat",
+        "Sania Akter",
+        "Akif Islam"
+      ],
+      "authors_all": [
+        "Md. Sifat",
+        "Sania Akter",
+        "Akif Islam",
+        "Md. Ekramul Hamid"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-12",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-16220.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-16220-p2.jpg",
+        "assets/img/covers/arxiv-2610-16220-p3.jpg",
+        "assets/img/covers/arxiv-2610-16220-p4.jpg"
+      ],
+      "arxiv_id": "2610.16220",
+      "abs_url": "http://arxiv.org/abs/2610.16220v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16220v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16179",
+      "source": "arxiv",
+      "title": "One-Shot Learning for Double-Shot Latte Art: Adapting Cobot Pouring Skills with Dynamic Movement Primitives",
+      "title_zh": "One-Shot Learning for Double-Shot Latte Art: Adapting Cobot Pouring Skills with Dynamic Movement Primitives",
+      "tldr_zh": "Latte art is a complex task requiring dexterity and precisio",
+      "cover_zh": "Latte art is a complex task requiring dexterity and precisio",
+      "abstract_zh": "Latte art is a complex task requiring dexterity and precision, making it a challenging and commercially relevant task. A one-shot learning system is employed in which a single barista demonstration is segmented into five functionally distinct phases, each encoded as an independent Cartesian Dynamic Movement Primitive (CDMP) with its own parameters. Against a single-CDMP baseline, per-phase encoding reduces transition endpoint error by 3.2-4.5 times and art-stroke shape error by 2.7 times, reproducing jug tilt to below 1 degree RMS in the pouring phases. The learnt pour scales from a 280mL to a 400mL cup through a single spatial offset and a scaled recipe, with no re-demonstration. The phase-based CDMP approach generalises beyond latte art to any demonstration task whose phases have distinct spatial or temporal requirements whilst demonstrating the ability to adapt reproductions to suit different task requirements.",
+      "authors": [
+        "Zain Khan",
+        "Victor Hernandez Moreno",
+        "Dinh Tung Le"
+      ],
+      "authors_all": [
+        "Zain Khan",
+        "Victor Hernandez Moreno",
+        "Dinh Tung Le"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-12",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "2610.16179",
+      "abs_url": "http://arxiv.org/abs/2610.16179v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16179v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
