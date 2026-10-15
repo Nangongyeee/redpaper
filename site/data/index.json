@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T13:01:30.283309+00:00",
+  "generated_at": "2026-10-15T14:24:18.941190+00:00",
   "count": 3771,
   "papers": [
     {
@@ -115679,6 +115679,74 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-14585",
+      "source": "arxiv",
+      "title": "Sensitivity Shaping for Latent Modeling",
+      "title_zh": "潜变量建模中的灵敏度塑造",
+      "tldr_zh": "提出支持条件控制灵敏度正则化，提升动力学模型对分布外转移的检测能力。",
+      "cover_zh": "机器人避障总翻车？新方法让模型对异常动作更敏感，安全系数飙升！",
+      "abstract_zh": "生成式动力学模型使得在具有挑战性的机器人系统中进行规划成为可能，但安全部署需要可靠地检测策略引发的分布外（OOD）转移。现有方法通常将学习到的动力学视为固定的，并附加事后支持代理。我们表明，当动力学对关键动作选择局部不敏感时，这些代理可能会失效：不受支持的控制动作可能产生与演示转移相似的潜变量预测，从而抑制OOD信号，尽管真实预测误差很大。为解决这一问题，我们引入了支持条件控制灵敏度正则化，该正则化在高支持训练区域中促进学习动力学对控制输入变化的局部敏感响应。这保留了控制引起的变化，同时限制了因经验支持薄弱而导致的不稳定外推。在基于视觉的避障、操作和真实机器人导航中的实验表明，OOD检测得到改善，闭环规划更加安全。",
+      "authors": [
+        "Hongzhan Yu",
+        "Chenghao Li",
+        "Ruipeng Zhang"
+      ],
+      "authors_all": [
+        "Hongzhan Yu",
+        "Chenghao Li",
+        "Ruipeng Zhang",
+        "Henrik Christensen",
+        "Sicun Gao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-12",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-14585.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-14585-p2.jpg",
+        "assets/img/covers/arxiv-2606-14585-p3.jpg",
+        "assets/img/covers/arxiv-2606-14585-p4.jpg"
+      ],
+      "arxiv_id": "2606.14585",
+      "abs_url": "http://arxiv.org/abs/2606.14585v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14585v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-15",
+      "score": 21,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出生成动力学模型中的OOD检测新方法，涉及latent modeling和规划，适用于机器人领域。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of California San Diego"
+      ],
+      "method_tags": [
+        "generative dynamics model",
+        "out-of-distribution detection",
+        "support-conditioned control-sensitivity regularization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-27292",
       "source": "arxiv",
       "title": "BOWConnect: Parallel Bayesian Optimization over Windows with Learned Local Cost Maps for Sample-Efficient Kinodynamic Motion Planning",
@@ -140254,6 +140322,61 @@
       "arxiv_id": "2610.10855",
       "abs_url": "http://arxiv.org/abs/2610.10855v1",
       "pdf_url": "https://arxiv.org/pdf/2610.10855v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2610-11322",
+      "source": "arxiv_discover",
+      "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
+      "title_zh": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
+      "tldr_zh": "Geometrically faithful and functional articulated 3D assets",
+      "cover_zh": "Geometrically faithful and functional articulated 3D assets",
+      "abstract_zh": "Geometrically faithful and functional articulated 3D assets are essential for real-to-sim robot manipulation, where policies trained in simulation must transfer to physical objects. Recent mesh-based methods learn to infer articulation from annotated 3D assets, but deployment remains challenging when real-world objects fall outside the training distribution or their meshes are incomplete or corrupted. To address these limitations, we formulate articulated asset reconstruction as programmatic modeling grounded in partial geometric evidence and introduce USDCraft, a framework in which a pretrained LLM writes and revises executable programs for simulation-ready articulated assets without task-specific training. We propose source geometry analysis, which converts the source mesh into a metric textual description that distinguishes observed surface from unknown space, and iterative geometric rechecking, which re-encodes each candidate in the same representation so that discrepancies point to program edits while unobserved regions remain open to completion. Visual feedback and physical authoring guidance complete the modeling process, which produces articulated USD assets with explicit physical properties that load into Isaac Sim without manual adjustment. Experiments demonstrate leading articulation recovery on two benchmarks and validate USDCraft's effectiveness for real-to-sim-to-real robot manipulation.",
+      "authors": [
+        "Chuanrui Zhang",
+        "Zaijia Yang",
+        "Duomin Wang"
+      ],
+      "authors_all": [
+        "Chuanrui Zhang",
+        "Zaijia Yang",
+        "Duomin Wang",
+        "Lu Shi",
+        "Daquan Zhou",
+        "Ruihua Zhang",
+        "Ziwei Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-10-08",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-11322.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-11322-p2.jpg",
+        "assets/img/covers/arxiv-2610-11322-p3.jpg",
+        "assets/img/covers/arxiv-2610-11322-p4.jpg"
+      ],
+      "arxiv_id": "2610.11322",
+      "abs_url": "http://arxiv.org/abs/2610.11322v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.11322v1",
       "venue": "",
       "venue_announced": "",
       "score": 20,
@@ -178430,6 +178553,78 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-02274",
+      "source": "arxiv_discover",
+      "title": "Awomo-SimDataEngine: Agentic Simulation-ReadyWorld Generation",
+      "title_zh": "Awomo-SimDataEngine: Agentic Simulation-ReadyWorld Generation",
+      "tldr_zh": "Generating useful robot-training data requires more than vis",
+      "cover_zh": "Generating useful robot-training data requires more than vis",
+      "abstract_zh": "Generating useful robot-training data requires more than visually plausiblescenes: objects must support interaction, placements must remain physicallyvalid, and tasks must admit repeatable execution. We presenttextbf{Awomo-SimDataEngine}, an agentic system that connects asset and scenegeneration to robot demonstration synthesis. Shared asset services providerigid and articulated objects, including structure-grounded part and jointgeneration with ISArt. Scene generation supports two complementary routes:Unravel reconstructs editable scenes from images, while SimForge buildssingle-room and multi-room environments from text. A graph-native harnesscoordinates construction, validation, andbounded repair, routing failures to the responsible module while retainingunaffected scene state. PolicyForge binds validated worlds to tasks and robotembodiments to produce replayable demonstrations. Evaluations cover assetgeometry, scene quality, and downstream policy learning. On MuJoCo-basedLIBERO-Plus, co-training with Isaac Sim demonstrations improves the overallsuccess rate of a World-Action Model (WAM) from $77.17\\%$ to $89.43\\%$. Goal and spatialsuccess improve by $31.66$ and $6.25$ percentage points, respectively.These results support the utility of the generated data for cross-simulatorpolicy training, with more limited gains on long-horizon tasks.",
+      "authors": [
+        "Awomo-PhysicalRSI Team",
+        "Danjiao Ma",
+        "Enhui Ma"
+      ],
+      "authors_all": [
+        "Awomo-PhysicalRSI Team",
+        "Danjiao Ma",
+        "Enhui Ma",
+        "Haohan Liu",
+        "Heng Jia",
+        "Hui Shan",
+        "Jianhua Xu",
+        "Jiahuan Zhang",
+        "Jiangdi Xu",
+        "Kaiwen Guo",
+        "Kaicheng Yu",
+        "Linwei Zhang",
+        "Liyang Jin",
+        "Maochun Luo",
+        "Pengyao Niu",
+        "Shiwen Li",
+        "Shuangyu Feng",
+        "Tong Zhang",
+        "Tianheng Wang",
+        "Xin Wang",
+        "Xiangru Huang",
+        "Yongqiang Huang",
+        "Zhaozhi Wang",
+        "Zijian Ma"
+      ],
+      "primary_category": "",
+      "published": "2026-10-01",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-02274.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-02274-p2.jpg",
+        "assets/img/covers/arxiv-2610-02274-p3.jpg",
+        "assets/img/covers/arxiv-2610-02274-p4.jpg"
+      ],
+      "arxiv_id": "2610.02274",
+      "abs_url": "http://arxiv.org/abs/2610.02274v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02274v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-02370",
       "source": "arxiv_discover",
       "title": "Network-in-the-Loop at Scale: GPU-Batched 5G Simulation for Massively Parallel Robot Learning",
@@ -197004,60 +197199,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-11322",
-      "source": "arxiv_discover",
-      "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
-      "title_zh": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
-      "tldr_zh": "Geometrically faithful and functional articulated 3D assets",
-      "cover_zh": "Geometrically faithful and functional articulated 3D assets",
-      "abstract_zh": "Geometrically faithful and functional articulated 3D assets are essential for real-to-sim robot manipulation, where policies trained in simulation must transfer to physical objects. Recent mesh-based methods learn to infer articulation from annotated 3D assets, but deployment remains challenging when real-world objects fall outside the training distribution or their meshes are incomplete or corrupted. To address these limitations, we formulate articulated asset reconstruction as programmatic modeling grounded in partial geometric evidence and introduce USDCraft, a framework in which a pretrained LLM writes and revises executable programs for simulation-ready articulated assets without task-specific training. We propose source geometry analysis, which converts the source mesh into a metric textual description that distinguishes observed surface from unknown space, and iterative geometric rechecking, which re-encodes each candidate in the same representation so that discrepancies point to program edits while unobserved regions remain open to completion. Visual feedback and physical authoring guidance complete the modeling process, which produces articulated USD assets with explicit physical properties that load into Isaac Sim without manual adjustment. Experiments demonstrate leading articulation recovery on two benchmarks and validate USDCraft's effectiveness for real-to-sim-to-real robot manipulation.",
-      "authors": [
-        "Chuanrui Zhang",
-        "Zaijia Yang",
-        "Duomin Wang"
-      ],
-      "authors_all": [
-        "Chuanrui Zhang",
-        "Zaijia Yang",
-        "Duomin Wang",
-        "Lu Shi",
-        "Daquan Zhou",
-        "Ruihua Zhang",
-        "Ziwei Wang"
-      ],
-      "primary_category": "",
-      "published": "2026-10-08",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-11322.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-11322-p2.jpg",
-        "assets/img/covers/arxiv-2610-11322-p3.jpg",
-        "assets/img/covers/arxiv-2610-11322-p4.jpg"
-      ],
-      "arxiv_id": "2610.11322",
-      "abs_url": "http://arxiv.org/abs/2610.11322v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.11322v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2610-11971",
       "source": "arxiv",
       "title": "CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding",
@@ -197956,69 +198097,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-14585",
-      "source": "arxiv",
-      "title": "Sensitivity Shaping for Latent Modeling",
-      "title_zh": "潜变量建模中的灵敏度塑造",
-      "tldr_zh": "提出支持条件控制灵敏度正则化，提升动力学模型对分布外转移的检测能力。",
-      "cover_zh": "机器人避障总翻车？新方法让模型对异常动作更敏感，安全系数飙升！",
-      "abstract_zh": "生成式动力学模型使得在具有挑战性的机器人系统中进行规划成为可能，但安全部署需要可靠地检测策略引发的分布外（OOD）转移。现有方法通常将学习到的动力学视为固定的，并附加事后支持代理。我们表明，当动力学对关键动作选择局部不敏感时，这些代理可能会失效：不受支持的控制动作可能产生与演示转移相似的潜变量预测，从而抑制OOD信号，尽管真实预测误差很大。为解决这一问题，我们引入了支持条件控制灵敏度正则化，该正则化在高支持训练区域中促进学习动力学对控制输入变化的局部敏感响应。这保留了控制引起的变化，同时限制了因经验支持薄弱而导致的不稳定外推。在基于视觉的避障、操作和真实机器人导航中的实验表明，OOD检测得到改善，闭环规划更加安全。",
-      "authors": [
-        "Hongzhan Yu",
-        "Chenghao Li",
-        "Ruipeng Zhang"
-      ],
-      "authors_all": [
-        "Hongzhan Yu",
-        "Chenghao Li",
-        "Ruipeng Zhang",
-        "Henrik Christensen",
-        "Sicun Gao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-12",
-      "channels": [
-        "manipulation",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-14585.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-14585-p2.jpg",
-        "assets/img/covers/arxiv-2606-14585-p3.jpg",
-        "assets/img/covers/arxiv-2606-14585-p4.jpg"
-      ],
-      "arxiv_id": "2606.14585",
-      "abs_url": "http://arxiv.org/abs/2606.14585v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.14585v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 11,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出生成动力学模型中的OOD检测新方法，涉及latent modeling和规划，适用于机器人领域。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of California San Diego"
-      ],
-      "method_tags": [
-        "generative dynamics model",
-        "out-of-distribution detection",
-        "support-conditioned control-sensitivity regularization"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -230232,77 +230310,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-02274",
-      "source": "arxiv_discover",
-      "title": "Awomo-SimDataEngine: Agentic Simulation-ReadyWorld Generation",
-      "title_zh": "Awomo-SimDataEngine: Agentic Simulation-ReadyWorld Generation",
-      "tldr_zh": "Generating useful robot-training data requires more than vis",
-      "cover_zh": "Generating useful robot-training data requires more than vis",
-      "abstract_zh": "Generating useful robot-training data requires more than visually plausiblescenes: objects must support interaction, placements must remain physicallyvalid, and tasks must admit repeatable execution. We presenttextbf{Awomo-SimDataEngine}, an agentic system that connects asset and scenegeneration to robot demonstration synthesis. Shared asset services providerigid and articulated objects, including structure-grounded part and jointgeneration with ISArt. Scene generation supports two complementary routes:Unravel reconstructs editable scenes from images, while SimForge buildssingle-room and multi-room environments from text. A graph-native harnesscoordinates construction, validation, andbounded repair, routing failures to the responsible module while retainingunaffected scene state. PolicyForge binds validated worlds to tasks and robotembodiments to produce replayable demonstrations. Evaluations cover assetgeometry, scene quality, and downstream policy learning. On MuJoCo-basedLIBERO-Plus, co-training with Isaac Sim demonstrations improves the overallsuccess rate of a World-Action Model (WAM) from $77.17\\%$ to $89.43\\%$. Goal and spatialsuccess improve by $31.66$ and $6.25$ percentage points, respectively.These results support the utility of the generated data for cross-simulatorpolicy training, with more limited gains on long-horizon tasks.",
-      "authors": [
-        "Awomo-PhysicalRSI Team",
-        "Danjiao Ma",
-        "Enhui Ma"
-      ],
-      "authors_all": [
-        "Awomo-PhysicalRSI Team",
-        "Danjiao Ma",
-        "Enhui Ma",
-        "Haohan Liu",
-        "Heng Jia",
-        "Hui Shan",
-        "Jianhua Xu",
-        "Jiahuan Zhang",
-        "Jiangdi Xu",
-        "Kaiwen Guo",
-        "Kaicheng Yu",
-        "Linwei Zhang",
-        "Liyang Jin",
-        "Maochun Luo",
-        "Pengyao Niu",
-        "Shiwen Li",
-        "Shuangyu Feng",
-        "Tong Zhang",
-        "Tianheng Wang",
-        "Xin Wang",
-        "Xiangru Huang",
-        "Yongqiang Huang",
-        "Zhaozhi Wang",
-        "Zijian Ma"
-      ],
-      "primary_category": "",
-      "published": "2026-10-01",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-02274.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-02274-p2.jpg",
-        "assets/img/covers/arxiv-2610-02274-p3.jpg",
-        "assets/img/covers/arxiv-2610-02274-p4.jpg"
-      ],
-      "arxiv_id": "2610.02274",
-      "abs_url": "http://arxiv.org/abs/2610.02274v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.02274v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2610-02985",

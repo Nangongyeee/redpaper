@@ -893,6 +893,74 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-14585",
+      "source": "arxiv",
+      "title": "Sensitivity Shaping for Latent Modeling",
+      "title_zh": "潜变量建模中的灵敏度塑造",
+      "tldr_zh": "提出支持条件控制灵敏度正则化，提升动力学模型对分布外转移的检测能力。",
+      "cover_zh": "机器人避障总翻车？新方法让模型对异常动作更敏感，安全系数飙升！",
+      "abstract_zh": "生成式动力学模型使得在具有挑战性的机器人系统中进行规划成为可能，但安全部署需要可靠地检测策略引发的分布外（OOD）转移。现有方法通常将学习到的动力学视为固定的，并附加事后支持代理。我们表明，当动力学对关键动作选择局部不敏感时，这些代理可能会失效：不受支持的控制动作可能产生与演示转移相似的潜变量预测，从而抑制OOD信号，尽管真实预测误差很大。为解决这一问题，我们引入了支持条件控制灵敏度正则化，该正则化在高支持训练区域中促进学习动力学对控制输入变化的局部敏感响应。这保留了控制引起的变化，同时限制了因经验支持薄弱而导致的不稳定外推。在基于视觉的避障、操作和真实机器人导航中的实验表明，OOD检测得到改善，闭环规划更加安全。",
+      "authors": [
+        "Hongzhan Yu",
+        "Chenghao Li",
+        "Ruipeng Zhang"
+      ],
+      "authors_all": [
+        "Hongzhan Yu",
+        "Chenghao Li",
+        "Ruipeng Zhang",
+        "Henrik Christensen",
+        "Sicun Gao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-12",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-14585.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-14585-p2.jpg",
+        "assets/img/covers/arxiv-2606-14585-p3.jpg",
+        "assets/img/covers/arxiv-2606-14585-p4.jpg"
+      ],
+      "arxiv_id": "2606.14585",
+      "abs_url": "http://arxiv.org/abs/2606.14585v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14585v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-15",
+      "score": 21,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出生成动力学模型中的OOD检测新方法，涉及latent modeling和规划，适用于机器人领域。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of California San Diego"
+      ],
+      "method_tags": [
+        "generative dynamics model",
+        "out-of-distribution detection",
+        "support-conditioned control-sensitivity regularization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-14083",
       "source": "arxiv",
       "title": "The N2D Haptic Glove: A Multi-Finger Glove for 2D Directional Force Feedback for Contact Rich Manipulation",
@@ -1340,69 +1408,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-14585",
-      "source": "arxiv",
-      "title": "Sensitivity Shaping for Latent Modeling",
-      "title_zh": "潜变量建模中的灵敏度塑造",
-      "tldr_zh": "提出支持条件控制灵敏度正则化，提升动力学模型对分布外转移的检测能力。",
-      "cover_zh": "机器人避障总翻车？新方法让模型对异常动作更敏感，安全系数飙升！",
-      "abstract_zh": "生成式动力学模型使得在具有挑战性的机器人系统中进行规划成为可能，但安全部署需要可靠地检测策略引发的分布外（OOD）转移。现有方法通常将学习到的动力学视为固定的，并附加事后支持代理。我们表明，当动力学对关键动作选择局部不敏感时，这些代理可能会失效：不受支持的控制动作可能产生与演示转移相似的潜变量预测，从而抑制OOD信号，尽管真实预测误差很大。为解决这一问题，我们引入了支持条件控制灵敏度正则化，该正则化在高支持训练区域中促进学习动力学对控制输入变化的局部敏感响应。这保留了控制引起的变化，同时限制了因经验支持薄弱而导致的不稳定外推。在基于视觉的避障、操作和真实机器人导航中的实验表明，OOD检测得到改善，闭环规划更加安全。",
-      "authors": [
-        "Hongzhan Yu",
-        "Chenghao Li",
-        "Ruipeng Zhang"
-      ],
-      "authors_all": [
-        "Hongzhan Yu",
-        "Chenghao Li",
-        "Ruipeng Zhang",
-        "Henrik Christensen",
-        "Sicun Gao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-12",
-      "channels": [
-        "manipulation",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-14585.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-14585-p2.jpg",
-        "assets/img/covers/arxiv-2606-14585-p3.jpg",
-        "assets/img/covers/arxiv-2606-14585-p4.jpg"
-      ],
-      "arxiv_id": "2606.14585",
-      "abs_url": "http://arxiv.org/abs/2606.14585v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.14585v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 11,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出生成动力学模型中的OOD检测新方法，涉及latent modeling和规划，适用于机器人领域。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of California San Diego"
-      ],
-      "method_tags": [
-        "generative dynamics model",
-        "out-of-distribution detection",
-        "support-conditioned control-sensitivity regularization"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
