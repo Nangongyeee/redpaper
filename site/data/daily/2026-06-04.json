@@ -1464,6 +1464,72 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-06219",
+      "source": "arxiv",
+      "title": "CLEAR: Cognition and Latent Evaluation for Adaptive Routing in End-to-End Autonomous Driving",
+      "title_zh": "CLEAR：端到端自动驾驶中用于自适应路由的认知与潜在评估",
+      "tldr_zh": "提出CLEAR框架，用单步潜在漂移替代扩散模型多步去噪，实现高效多模态自动驾驶规划。",
+      "cover_zh": "告别扩散模型慢如蜗牛｜单步潜在漂移让自动驾驶规划又快又准",
+      "abstract_zh": "端到端自动驾驶模型通常难以平衡多模态轨迹生成与实时推理约束。虽然扩散模型成功捕捉了多样化的驾驶行为，但其迭代去噪过程在安全关键部署中引入了不可接受的延迟。为解决这一问题，我们提出了CLEAR（Cognition and Latent Evaluation for Adaptive Routing），一个结合超快生成规划与深度语义推理的框架。CLEAR采用Drive-JEPA作为视觉编码器，并将多步去噪链替换为VAE潜在空间中的单步条件漂移，引入条件系数以平衡多样性与专家精度。同时，我们在驾驶问答对上全微调Qwen~3.5~0.8B，以提取场景感知的隐藏状态。这些状态指导自适应调度器（从离散预定义方案中选择条件系数α和样本数量N）以及交叉注意力评分器（从候选中选择最优轨迹）。在NAVSIM v1基准上，CLEAR达到了最先进的PDMS 93.7。我们的结果表明，无需密集几何标注或迭代采样，即可高效执行高保真、多模态规划。",
+      "authors": [
+        "Yining Xing",
+        "Zehong Ke",
+        "Zhiyuan Liu"
+      ],
+      "authors_all": [
+        "Yining Xing",
+        "Zehong Ke",
+        "Zhiyuan Liu",
+        "Yanbo Jiang",
+        "Wenhao Yu",
+        "Jianqiang Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-04",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · ICLR 2027"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-06219.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-06219-p2.jpg",
+        "assets/img/covers/arxiv-2606-06219-p3.jpg",
+        "assets/img/covers/arxiv-2606-06219-p4.jpg"
+      ],
+      "arxiv_id": "2606.06219",
+      "abs_url": "http://arxiv.org/abs/2606.06219v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06219v1",
+      "venue": "ICLR 2027",
+      "venue_announced": "2026-10-16",
+      "score": 16,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "提出Drive-JEPA视觉编码器，属于JEPA世界模型方法，且用于端到端自动驾驶规划。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [],
+      "method_tags": [
+        "generative planning",
+        "VAE latent space",
+        "adaptive routing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-06323",
       "source": "arxiv",
       "title": "VOLT: Vision and Language Trajectory Segmentation for Faster-than-Demonstration Policies",
@@ -1653,67 +1719,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-06219",
-      "source": "arxiv",
-      "title": "CLEAR: Cognition and Latent Evaluation for Adaptive Routing in End-to-End Autonomous Driving",
-      "title_zh": "CLEAR：端到端自动驾驶中用于自适应路由的认知与潜在评估",
-      "tldr_zh": "提出CLEAR框架，用单步潜在漂移替代扩散模型多步去噪，实现高效多模态自动驾驶规划。",
-      "cover_zh": "告别扩散模型慢如蜗牛｜单步潜在漂移让自动驾驶规划又快又准",
-      "abstract_zh": "端到端自动驾驶模型通常难以平衡多模态轨迹生成与实时推理约束。虽然扩散模型成功捕捉了多样化的驾驶行为，但其迭代去噪过程在安全关键部署中引入了不可接受的延迟。为解决这一问题，我们提出了CLEAR（Cognition and Latent Evaluation for Adaptive Routing），一个结合超快生成规划与深度语义推理的框架。CLEAR采用Drive-JEPA作为视觉编码器，并将多步去噪链替换为VAE潜在空间中的单步条件漂移，引入条件系数以平衡多样性与专家精度。同时，我们在驾驶问答对上全微调Qwen~3.5~0.8B，以提取场景感知的隐藏状态。这些状态指导自适应调度器（从离散预定义方案中选择条件系数α和样本数量N）以及交叉注意力评分器（从候选中选择最优轨迹）。在NAVSIM v1基准上，CLEAR达到了最先进的PDMS 93.7。我们的结果表明，无需密集几何标注或迭代采样，即可高效执行高保真、多模态规划。",
-      "authors": [
-        "Yining Xing",
-        "Zehong Ke",
-        "Zhiyuan Liu"
-      ],
-      "authors_all": [
-        "Yining Xing",
-        "Zehong Ke",
-        "Zhiyuan Liu",
-        "Yanbo Jiang",
-        "Wenhao Yu",
-        "Jianqiang Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-04",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-06219.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-06219-p2.jpg",
-        "assets/img/covers/arxiv-2606-06219-p3.jpg",
-        "assets/img/covers/arxiv-2606-06219-p4.jpg"
-      ],
-      "arxiv_id": "2606.06219",
-      "abs_url": "http://arxiv.org/abs/2606.06219v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.06219v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "提出Drive-JEPA视觉编码器，属于JEPA世界模型方法，且用于端到端自动驾驶规划。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [],
-      "method_tags": [
-        "generative planning",
-        "VAE latent space",
-        "adaptive routing"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
