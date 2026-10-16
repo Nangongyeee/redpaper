@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T12:37:25.703944+00:00",
-  "count": 3805,
+  "generated_at": "2026-10-16T14:20:23.792556+00:00",
+  "count": 3807,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -10973,6 +10973,96 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-09314",
+      "source": "arxiv",
+      "title": "KPGrasp: Scalable Keypoint Flow Matching for Dexterous Grasp Generation",
+      "title_zh": "KPGrasp：面向灵巧抓取生成的可扩展关键点流匹配",
+      "tldr_zh": "KPGrasp用流匹配和关键点参数化实现高效灵巧抓取，无需接触损失。",
+      "cover_zh": "不用接触损失也能抓得稳？这个新框架在灵巧抓取上直接反超基线47%",
+      "abstract_zh": "生成高质量的灵巧抓取对基于学习的方法仍然具有挑战性，这些方法通常依赖于精心调整的接触损失或昂贵的基于接触的测试时优化。我们提出KPGrasp，一个流匹配框架，从大规模数据中学习灵巧抓取先验，而不依赖接触损失或基于接触的测试时优化。KPGrasp将全欧几里得3D手部关键点参数化与简单且可扩展的Transformer流模型相结合。该参数化避免了传统混合SE(3)姿态和关节角输出空间的缺点，在与物体点云相同的坐标系中表达抓取，从而实现原生空间推理；Transformer流模型仅使用标准流匹配损失进行训练，并随数据、模型容量和批大小有效扩展。实验在两个仿真基准上展示了最先进的性能。在Dexonomy基准上，它达到了76.3%的抓取成功率，比最强的直接可比基线提高了47.4%，同时将穿透深度减少到2.4毫米。同一模型在DexGrasp Anything基准上也无需微调即实现了最佳平均性能。对于批量推理，KPGrasp每个抓取仅需0.032秒。最后，在20个不同物体上的真实世界实验表明，该流程可以在实际环境中部署。",
+      "authors": [
+        "Yuansen Huang",
+        "Jiayi Chen",
+        "Haoran Liu"
+      ],
+      "authors_all": [
+        "Yuansen Huang",
+        "Jiayi Chen",
+        "Haoran Liu",
+        "Yubin Ke",
+        "Bing Han",
+        "Jiangran Lyu",
+        "Mi Yan",
+        "Li Yi",
+        "He Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-08",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Galbot"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Li Yi"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-09314.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-09314-p2.jpg",
+        "assets/img/covers/arxiv-2606-09314-p3.jpg",
+        "assets/img/covers/arxiv-2606-09314-p4.jpg"
+      ],
+      "arxiv_id": "2606.09314",
+      "abs_url": "http://arxiv.org/abs/2606.09314v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.09314v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-16",
+      "score": 64,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出可扩展的流匹配框架用于灵巧手抓取生成，性能显著提升，有仿真和真实实验",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University",
+        "Galbot",
+        "Xi'an Jiaotong University",
+        "Tsinghua University"
+      ],
+      "method_tags": [
+        "Flow Matching",
+        "Dexterous Grasping",
+        "Keypoint Parameterization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-12402",
       "source": "arxiv",
       "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
@@ -18593,92 +18683,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2606-09314",
-      "source": "arxiv",
-      "title": "KPGrasp: Scalable Keypoint Flow Matching for Dexterous Grasp Generation",
-      "title_zh": "KPGrasp：面向灵巧抓取生成的可扩展关键点流匹配",
-      "tldr_zh": "KPGrasp用流匹配和关键点参数化实现高效灵巧抓取，无需接触损失。",
-      "cover_zh": "不用接触损失也能抓得稳？这个新框架在灵巧抓取上直接反超基线47%",
-      "abstract_zh": "生成高质量的灵巧抓取对基于学习的方法仍然具有挑战性，这些方法通常依赖于精心调整的接触损失或昂贵的基于接触的测试时优化。我们提出KPGrasp，一个流匹配框架，从大规模数据中学习灵巧抓取先验，而不依赖接触损失或基于接触的测试时优化。KPGrasp将全欧几里得3D手部关键点参数化与简单且可扩展的Transformer流模型相结合。该参数化避免了传统混合SE(3)姿态和关节角输出空间的缺点，在与物体点云相同的坐标系中表达抓取，从而实现原生空间推理；Transformer流模型仅使用标准流匹配损失进行训练，并随数据、模型容量和批大小有效扩展。实验在两个仿真基准上展示了最先进的性能。在Dexonomy基准上，它达到了76.3%的抓取成功率，比最强的直接可比基线提高了47.4%，同时将穿透深度减少到2.4毫米。同一模型在DexGrasp Anything基准上也无需微调即实现了最佳平均性能。对于批量推理，KPGrasp每个抓取仅需0.032秒。最后，在20个不同物体上的真实世界实验表明，该流程可以在实际环境中部署。",
-      "authors": [
-        "Yuansen Huang",
-        "Jiayi Chen",
-        "Haoran Liu"
-      ],
-      "authors_all": [
-        "Yuansen Huang",
-        "Jiayi Chen",
-        "Haoran Liu",
-        "Yubin Ke",
-        "Bing Han",
-        "Jiangran Lyu",
-        "Mi Yan",
-        "Li Yi",
-        "He Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-08",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Galbot"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ 清华"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ 北大"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Li Yi"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-09314.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-09314-p2.jpg",
-        "assets/img/covers/arxiv-2606-09314-p3.jpg",
-        "assets/img/covers/arxiv-2606-09314-p4.jpg"
-      ],
-      "arxiv_id": "2606.09314",
-      "abs_url": "http://arxiv.org/abs/2606.09314v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.09314v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 54,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出可扩展的流匹配框架用于灵巧手抓取生成，性能显著提升，有仿真和真实实验",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Peking University",
-        "Galbot",
-        "Xi'an Jiaotong University",
-        "Tsinghua University"
-      ],
-      "method_tags": [
-        "Flow Matching",
-        "Dexterous Grasping",
-        "Keypoint Parameterization"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2606-12352",
       "source": "arxiv",
       "title": "CHORUS: Decentralized Multi-Embodiment Collaboration with One VLA Policy",
@@ -25542,6 +25546,59 @@
           "source": "project_page",
           "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
           "url": "https://cdn.xsparkai.com/spark-0/assets/video/arch/rgb.mp4"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "vid-bilibili-BV1DbJ96DEje",
+      "source": "video_bilibili",
+      "title": "宇树发布：UniUni 智能集群控制系统",
+      "title_zh": "宇树发布：UniUni 智能集群控制系统",
+      "tldr_zh": "可以非常快速地智能编排集群机器人的动作与走位，实时监测设备状态、安全制动等；大家喜欢多少台一起？",
+      "cover_zh": "可以非常快速地智能编排集群机器人的动作与走位，实时监测设备状态、安全制动等；大家喜欢多少台一起？",
+      "abstract_zh": "可以非常快速地智能编排集群机器人的动作与走位，实时监测设备状态、安全制动等；大家喜欢多少台一起？",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-10-16",
+      "channels": [],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Unitree"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1DbJ96DEje",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 50,
+      "judge": {},
+      "institutions": [
+        "宇树科技"
+      ],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1DbJ96DEje",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1DbJ96DEje&high_quality=1&autoplay=0",
+          "title": "宇树发布：UniUni 智能集群控制系统",
+          "source": "channel"
         }
       ],
       "github": {},
@@ -75882,6 +75939,50 @@
       "source_tags": []
     },
     {
+      "id": "qbitai-304c578cf2",
+      "source": "qbitai",
+      "title": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
+      "title_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
+      "tldr_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
+      "cover_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
+      "abstract_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "2026-10-16",
+      "channels": [
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/10/503865.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 36,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
+    },
+    {
       "id": "arxiv-2511-05809",
       "source": "conf",
       "title": "Adversarial Game-Theoretic Algorithm for Dexterous Grasp Synthesis",
@@ -102591,45 +102692,6 @@
       "source_tags": []
     },
     {
-      "id": "qbitai-304c578cf2",
-      "source": "qbitai",
-      "title": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
-      "title_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
-      "tldr_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
-      "cover_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
-      "abstract_zh": "从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "",
-      "published": "",
-      "channels": [
-        "loco-manip-wbc",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.qbitai.com/2026/10/503865.html",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "qbitai"
-      ]
-    },
-    {
       "id": "vid-youtube-CAdTjePDBfc",
       "source": "video_youtube",
       "title": "Helix 02 Living Room Tidy",
@@ -113693,6 +113755,44 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "qbitai-5199aaef7e",
+      "source": "qbitai",
+      "title": "清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型",
+      "title_zh": "清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型",
+      "tldr_zh": "清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型",
+      "cover_zh": "清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型",
+      "abstract_zh": "清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/10/503880.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
     },
     {
       "id": "s2-0ba3a2b15f2434e3842e2f1cd5ffe6e5da0c5e9c",
