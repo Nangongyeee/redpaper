@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "count": 43,
+  "count": 45,
   "papers": [
     {
       "id": "vid-youtube-dP_i7hRvGpE",
@@ -335,6 +335,65 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-19594",
+      "source": "arxiv_discover",
+      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "title_zh": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "tldr_zh": "Whole-body mobile manipulation suffers from two fundamental",
+      "cover_zh": "Whole-body mobile manipulation suffers from two fundamental",
+      "abstract_zh": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
+      "authors": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu"
+      ],
+      "authors_all": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu",
+        "Zhihua Wang",
+        "Tao Jian",
+        "Yunsheng Ma",
+        "Jiayi Wen",
+        "Xinran Li",
+        "Zhigong Song"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19594.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19594-p2.jpg",
+        "assets/img/covers/arxiv-2610-19594-p3.jpg",
+        "assets/img/covers/arxiv-2610-19594-p4.jpg"
+      ],
+      "arxiv_id": "2610.19594",
+      "abs_url": "http://arxiv.org/abs/2610.19594v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19594v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-19825",
@@ -1352,6 +1411,58 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-19795",
+      "source": "arxiv_discover",
+      "title": "StateCraft: Augmenting Video World Models with Abstract-State Reasoning",
+      "title_zh": "StateCraft: Augmenting Video World Models with Abstract-State Reasoning",
+      "tldr_zh": "Video world models aim to simulate complex environments with",
+      "cover_zh": "Video world models aim to simulate complex environments with",
+      "abstract_zh": "Video world models aim to simulate complex environments with realistic appearance and dynamics. Maintaining consistency over long interactions requires tracking past actions and understanding how those actions affect the environment. Video world models can only generate partial observations of the entire world at a time. Remembering past observations alone may not be sufficient in every scenario, as they may no longer reflect the world after a sequence of actions. We introduce a paradigm that decouples a persistent, updatable abstract state from the visual state. The abstract state keeps track of the entities' changes as the world evolves, and is used to condition the visual state, which represents the current view. We propose StateCraft, a novel architecture that pairs a language model with a video diffusion model to evolve the dynamic world. We evaluate our approach on generative interfaces, which pose a substantial challenge because a single action may change parts of the state that are not currently visible. To support training and evaluation, we develop a data collection pipeline that produces informative, densely annotated trajectories at scale without human or agent supervision, together with a benchmark measuring generation quality, memory, and controllability. On this benchmark, our approach improves surpasses the state-of-the-art baselines. We demonstrate that StateCraft maintains high self-consistency and strong generation quality over long trajectories. Because the abstract state is explicit, it can be edited directly, and generation follows edits to states never observed in the data. Finally, a proof-of-concept 3D experiment, in which actions change the illumination of an unobserved room, shows that the paradigm can also be applied to spatial environments. Project page: https://insait-institute.github.io/StateCraft/.",
+      "authors": [
+        "Lorenzo Venturoli",
+        "Nedko Savov",
+        "Xi Wang"
+      ],
+      "authors_all": [
+        "Lorenzo Venturoli",
+        "Nedko Savov",
+        "Xi Wang",
+        "Marc Pollefeys",
+        "Luc Van Gool"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19795.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19795-p2.jpg",
+        "assets/img/covers/arxiv-2610-19795-p3.jpg",
+        "assets/img/covers/arxiv-2610-19795-p4.jpg"
+      ],
+      "arxiv_id": "2610.19795",
+      "abs_url": "http://arxiv.org/abs/2610.19795v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19795v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-20524",
       "source": "arxiv",
       "title": "Physical Time as a Missing Dimension of Robot Policy Memory Dynamics",
@@ -1404,62 +1515,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-19594",
-      "source": "arxiv_discover",
-      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
-      "title_zh": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
-      "tldr_zh": "Whole-body mobile manipulation suffers from two fundamental",
-      "cover_zh": "Whole-body mobile manipulation suffers from two fundamental",
-      "abstract_zh": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
-      "authors": [
-        "Keqiang Ren",
-        "Xuecheng Ye",
-        "Hanyu Liu"
-      ],
-      "authors_all": [
-        "Keqiang Ren",
-        "Xuecheng Ye",
-        "Hanyu Liu",
-        "Zhihua Wang",
-        "Tao Jian",
-        "Yunsheng Ma",
-        "Jiayi Wen",
-        "Xinran Li",
-        "Zhigong Song"
-      ],
-      "primary_category": "",
-      "published": "2026-10-14",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-19594.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-19594-p2.jpg",
-        "assets/img/covers/arxiv-2610-19594-p3.jpg",
-        "assets/img/covers/arxiv-2610-19594-p4.jpg"
-      ],
-      "arxiv_id": "2610.19594",
-      "abs_url": "http://arxiv.org/abs/2610.19594v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.19594v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2610-19765",
@@ -1705,6 +1760,59 @@
       "pdf_url": "https://arxiv.org/pdf/2610.19413v1",
       "venue": "",
       "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2610-19479",
+      "source": "arxiv_discover",
+      "title": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "title_zh": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "tldr_zh": "Sim-and-real co-training is an effective way to scale robot",
+      "cover_zh": "Sim-and-real co-training is an effective way to scale robot",
+      "abstract_zh": "Sim-and-real co-training is an effective way to scale robot learning by augmenting limited real-world demonstrations with simulation data. However, existing approaches typically treat simulators as fixed data sources, relying on uniform generation, offline retrieval, or manual parameter alignment by domain experts. We formulate textit{Active Generative Simulation}: optimizing a simulator's data-generation distribution to maximize downstream real-world performance. To solve this problem, we propose MetaGenSim, a meta-learning framework that trains an auxiliary rater network via meta-gradients to automatically discover high-utility data-generation distributions within a user-specified simulation parameter space, without manual parameter alignment. Across simulation and real-world manipulation tasks, MetaGenSim outperforms uniform generation and retrieval baselines, achieves a 150% relative improvement in real-world full-task success over uniform generation, and matches expert manual alignment. We further show that distributions curated with a lightweight proxy policy transfer to VLA fine-tuning, and that MetaGenSim can exploit partial alignment through atomic skill stitching and object-receptacle composition when exact sim-and-real task alignment is unavailable. Project website: https://meta-gensim.github.io",
+      "authors": [
+        "Liqian Ma",
+        "Vaibhav Saxena",
+        "Utkarsh Aashu Mishra"
+      ],
+      "authors_all": [
+        "Liqian Ma",
+        "Vaibhav Saxena",
+        "Utkarsh Aashu Mishra",
+        "Shuo Cheng",
+        "Yongxin Chen",
+        "Danfei Xu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19479.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19479-p2.jpg",
+        "assets/img/covers/arxiv-2610-19479-p3.jpg",
+        "assets/img/covers/arxiv-2610-19479-p4.jpg"
+      ],
+      "arxiv_id": "2610.19479",
+      "abs_url": "http://arxiv.org/abs/2610.19479v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19479v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-17",
       "score": 6,
       "judge": {},
       "institutions": [],

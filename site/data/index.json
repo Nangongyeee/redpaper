@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T09:55:34.609372+00:00",
-  "count": 3813,
+  "generated_at": "2026-10-17T11:52:50.997095+00:00",
+  "count": 3819,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -17241,6 +17241,79 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-02486",
+      "source": "arxiv",
+      "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation",
+      "title_zh": "拦截未来：面向动态VLA操作的潜在空间预测世界模型",
+      "tldr_zh": "AHEAD通过预测未来令牌，使冻结VLA模型在动态操作中成功率大幅提升。",
+      "cover_zh": "机器人抓不住运动物体？这个4.9M参数插件让成功率从0飙到97%！",
+      "abstract_zh": "视觉-语言-动作（VLA）模型在静态操作中表现良好，但当物体在任务执行过程中移动时则失败。它们将当前观测映射为动作，并假设观测与执行之间场景静止，因此一旦物体速度非零，产生的延迟就会超过抓取所需的时间。我们通过AHEAD（自适应动力学前瞻性外推）弥合了这一差距，这是一种预测-然后-动作的包装器，为冻结的VLA增加了运动感知的潜在世界模型。一个在操作视频上训练的小型世界模型，在VLA特征空间中预测未来的补丁令牌，条件为来自光流的每个令牌的速度和加速度。语言与运动显著性掩码将预测集中在任务相关的补丁上，模型向前滚动自适应时间范围，当预测不确定性超过阈值时停止。冻结的动作解码器随后接收预测的未来令牌以替代当前令牌。AHEAD为冻结的7B OpenVLA增加了4.9M参数，在20个动态模拟场景中达到79%至97%的成功率，而最强基线为31%至58%。在物理UFactory xArm 7上，AHEAD在三个传送带和滚球任务中成功29/30至30/30，在球拍拦截中成功23/30，在抛射物接取中成功19/30，而所有基线均为0/30。",
+      "authors": [
+        "Shahram Najam Syed",
+        "Arthur Jakobsson",
+        "Haoran Hao"
+      ],
+      "authors_all": [
+        "Shahram Najam Syed",
+        "Arthur Jakobsson",
+        "Haoran Hao",
+        "Jeffrey Ichnowski"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-01",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-02486.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-02486-p2.jpg",
+        "assets/img/covers/arxiv-2606-02486-p3.jpg",
+        "assets/img/covers/arxiv-2606-02486-p4.jpg"
+      ],
+      "arxiv_id": "2606.02486",
+      "abs_url": "http://arxiv.org/abs/2606.02486v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02486v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-17",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出预测性潜在世界模型增强VLA动态操作，方法新颖且实验充分，对具身操作有高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "world model",
+        "VLA",
+        "dynamic manipulation"
+      ],
+      "platform": [
+        "UFactory xArm 7"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-06218",
       "source": "arxiv",
       "title": "TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation",
@@ -33744,75 +33817,6 @@
       "source_tags": [
         "llm_discover"
       ]
-    },
-    {
-      "id": "arxiv-2606-02486",
-      "source": "arxiv",
-      "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation",
-      "title_zh": "拦截未来：面向动态VLA操作的潜在空间预测世界模型",
-      "tldr_zh": "AHEAD通过预测未来令牌，使冻结VLA模型在动态操作中成功率大幅提升。",
-      "cover_zh": "机器人抓不住运动物体？这个4.9M参数插件让成功率从0飙到97%！",
-      "abstract_zh": "视觉-语言-动作（VLA）模型在静态操作中表现良好，但当物体在任务执行过程中移动时则失败。它们将当前观测映射为动作，并假设观测与执行之间场景静止，因此一旦物体速度非零，产生的延迟就会超过抓取所需的时间。我们通过AHEAD（自适应动力学前瞻性外推）弥合了这一差距，这是一种预测-然后-动作的包装器，为冻结的VLA增加了运动感知的潜在世界模型。一个在操作视频上训练的小型世界模型，在VLA特征空间中预测未来的补丁令牌，条件为来自光流的每个令牌的速度和加速度。语言与运动显著性掩码将预测集中在任务相关的补丁上，模型向前滚动自适应时间范围，当预测不确定性超过阈值时停止。冻结的动作解码器随后接收预测的未来令牌以替代当前令牌。AHEAD为冻结的7B OpenVLA增加了4.9M参数，在20个动态模拟场景中达到79%至97%的成功率，而最强基线为31%至58%。在物理UFactory xArm 7上，AHEAD在三个传送带和滚球任务中成功29/30至30/30，在球拍拦截中成功23/30，在抛射物接取中成功19/30，而所有基线均为0/30。",
-      "authors": [
-        "Shahram Najam Syed",
-        "Arthur Jakobsson",
-        "Haoran Hao"
-      ],
-      "authors_all": [
-        "Shahram Najam Syed",
-        "Arthur Jakobsson",
-        "Haoran Hao",
-        "Jeffrey Ichnowski"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-01",
-      "channels": [
-        "manipulation",
-        "world-model"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ CMU RI"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-02486.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-02486-p2.jpg",
-        "assets/img/covers/arxiv-2606-02486-p3.jpg",
-        "assets/img/covers/arxiv-2606-02486-p4.jpg"
-      ],
-      "arxiv_id": "2606.02486",
-      "abs_url": "http://arxiv.org/abs/2606.02486v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.02486v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 45,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出预测性潜在世界模型增强VLA动态操作，方法新颖且实验充分，对具身操作有高参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Carnegie Mellon University"
-      ],
-      "method_tags": [
-        "world model",
-        "VLA",
-        "dynamic manipulation"
-      ],
-      "platform": [
-        "UFactory xArm 7"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
     },
     {
       "id": "arxiv-2606-04718",
@@ -92946,6 +92950,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-27663",
+      "source": "arxiv",
+      "title": "Direct Action-Head Injection of A Grounded 3D Point Unlocks Spatial and Task Generalization",
+      "title_zh": "直接注入接地3D点的动作头解锁空间与任务泛化",
+      "tldr_zh": "将3D接地信号直接注入动作头，显著提升VLA模型的空间与任务泛化能力。",
+      "cover_zh": "3D点注入动作头｜VLA泛化能力飙升，轻量模块即可实现",
+      "abstract_zh": "视觉-语言-动作（VLA）模型利用大规模视觉-语言预训练实现灵活的机器人操作，但在测试时仍存在两个脆弱维度：空间泛化（物体位置与训练时不同）和任务泛化（熟悉场景搭配不同语言指令）。越来越多的方法通过赋予策略空间和任务感知信息（如用于物体定位和放置的2D像素坐标）来解决这一脆弱性。然而，我们发现现有的语言提示或视觉提示表示并未解决这些限制；相反，利用基于3D点的表示并将其直接馈送到动作头会带来显著改进——揭示了接地信号如何表示并注入VLA才是真正的关键。因此，我们提出一个轻量级、模型无关的模块，该模块以3D形式表示接地信号，计算其相对于夹爪的位移，并通过自适应层归一化将生成的空间嵌入直接注入动作头。整个模块是一个两层MLP，无需更改VLA主干或预训练流程。在LIBERO-PRO上，我们的方法在任务扰动下将GR00T-N1.6的平均成功率从31.2提高到77.5，在位置扰动下从28.1提高到60.2（分别提升46.3和32.1点）。对于π₀.₅也获得了类似的增益，表明该机制与主干无关。这些结果共同支持我们的核心发现：给定提升到3D的充分接地，将其直接注入动作头即可解锁VLA的空间和任务泛化——仅需在预训练主干之上添加一个轻量级模块即可实现。",
+      "authors": [
+        "Shiang-Feng Tsai",
+        "Jin-Cheng Jhang",
+        "Yen-Ling Tai"
+      ],
+      "authors_all": [
+        "Shiang-Feng Tsai",
+        "Jin-Cheng Jhang",
+        "Yen-Ling Tai",
+        "Jia-Hong Lai",
+        "Shih-Yun Wong",
+        "KangTung-Hsu",
+        "Yi-Ting Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-26",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-27663.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-27663-p2.jpg",
+        "assets/img/covers/arxiv-2606-27663-p3.jpg",
+        "assets/img/covers/arxiv-2606-27663-p4.jpg"
+      ],
+      "arxiv_id": "2606.27663",
+      "abs_url": "http://arxiv.org/abs/2606.27663v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27663v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-17",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出轻量3D点注入动作头模块，显著提升VLA空间与任务泛化，方法简洁有效",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National Tsing Hua University",
+        "National Yang Ming Chiao Tung University"
+      ],
+      "method_tags": [
+        "3D point-based representation",
+        "adaptive layer normalization",
+        "spatial and task generalization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-31993",
       "source": "arxiv",
       "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
@@ -122143,72 +122218,6 @@
       ]
     },
     {
-      "id": "arxiv-2606-27663",
-      "source": "arxiv",
-      "title": "Direct Action-Head Injection of A Grounded 3D Point Unlocks Spatial and Task Generalization",
-      "title_zh": "直接注入接地3D点的动作头解锁空间与任务泛化",
-      "tldr_zh": "将3D接地信号直接注入动作头，显著提升VLA模型的空间与任务泛化能力。",
-      "cover_zh": "3D点注入动作头｜VLA泛化能力飙升，轻量模块即可实现",
-      "abstract_zh": "视觉-语言-动作（VLA）模型利用大规模视觉-语言预训练实现灵活的机器人操作，但在测试时仍存在两个脆弱维度：空间泛化（物体位置与训练时不同）和任务泛化（熟悉场景搭配不同语言指令）。越来越多的方法通过赋予策略空间和任务感知信息（如用于物体定位和放置的2D像素坐标）来解决这一脆弱性。然而，我们发现现有的语言提示或视觉提示表示并未解决这些限制；相反，利用基于3D点的表示并将其直接馈送到动作头会带来显著改进——揭示了接地信号如何表示并注入VLA才是真正的关键。因此，我们提出一个轻量级、模型无关的模块，该模块以3D形式表示接地信号，计算其相对于夹爪的位移，并通过自适应层归一化将生成的空间嵌入直接注入动作头。整个模块是一个两层MLP，无需更改VLA主干或预训练流程。在LIBERO-PRO上，我们的方法在任务扰动下将GR00T-N1.6的平均成功率从31.2提高到77.5，在位置扰动下从28.1提高到60.2（分别提升46.3和32.1点）。对于π₀.₅也获得了类似的增益，表明该机制与主干无关。这些结果共同支持我们的核心发现：给定提升到3D的充分接地，将其直接注入动作头即可解锁VLA的空间和任务泛化——仅需在预训练主干之上添加一个轻量级模块即可实现。",
-      "authors": [
-        "Shiang-Feng Tsai",
-        "Jin-Cheng Jhang",
-        "Yen-Ling Tai"
-      ],
-      "authors_all": [
-        "Shiang-Feng Tsai",
-        "Jin-Cheng Jhang",
-        "Yen-Ling Tai",
-        "Jia-Hong Lai",
-        "Shih-Yun Wong",
-        "KangTung-Hsu",
-        "Yi-Ting Chen"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-26",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-27663.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-27663-p2.jpg",
-        "assets/img/covers/arxiv-2606-27663-p3.jpg",
-        "assets/img/covers/arxiv-2606-27663-p4.jpg"
-      ],
-      "arxiv_id": "2606.27663",
-      "abs_url": "http://arxiv.org/abs/2606.27663v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.27663v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出轻量3D点注入动作头模块，显著提升VLA空间与任务泛化，方法简洁有效",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "National Tsing Hua University",
-        "National Yang Ming Chiao Tung University"
-      ],
-      "method_tags": [
-        "3D point-based representation",
-        "adaptive layer normalization",
-        "spatial and task generalization"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2606-27861",
       "source": "arxiv",
       "title": "PPO-EAL: Exact Augmented Lagrangian Proximal Policy Optimization for Safe Robotic Control",
@@ -141445,6 +141454,65 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-19594",
+      "source": "arxiv_discover",
+      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "title_zh": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "tldr_zh": "Whole-body mobile manipulation suffers from two fundamental",
+      "cover_zh": "Whole-body mobile manipulation suffers from two fundamental",
+      "abstract_zh": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
+      "authors": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu"
+      ],
+      "authors_all": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu",
+        "Zhihua Wang",
+        "Tao Jian",
+        "Yunsheng Ma",
+        "Jiayi Wen",
+        "Xinran Li",
+        "Zhigong Song"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19594.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19594-p2.jpg",
+        "assets/img/covers/arxiv-2610-19594-p3.jpg",
+        "assets/img/covers/arxiv-2610-19594-p4.jpg"
+      ],
+      "arxiv_id": "2610.19594",
+      "abs_url": "http://arxiv.org/abs/2610.19594v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19594v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-19825",
@@ -172975,6 +173043,61 @@
       ]
     },
     {
+      "id": "arxiv-2610-12972",
+      "source": "arxiv_discover",
+      "title": "Adaptive Whole-Body MPC with Optimal Posture Planning for Humanoid Robots under Unknown Payloads",
+      "title_zh": "Adaptive Whole-Body MPC with Optimal Posture Planning for Humanoid Robots under Unknown Payloads",
+      "tldr_zh": "Humanoid robots performing lifting and material-handling tas",
+      "cover_zh": "Humanoid robots performing lifting and material-handling tas",
+      "abstract_zh": "Humanoid robots performing lifting and material-handling tasks must maintain balance despite unknown and varying payloads. However, payload uncertainty significantly affects whole-body dynamics and may destabilize conventional controllers. We propose an adaptive whole-body control architecture that integrates three components: (i) a centroidal model predictive controller (MPC) that generates dynamically feasible reference motions, (ii) an adaptive fuzzy balance controller that compensates for payload-induced model mismatch by generating corrective torques distributed across the supporting-leg joints, and (iii) a waypoint-based optimal posture planner built on a triple-integrator model that produces smooth sit-to-stand and stand-to-sit trajectories satisfying center-of-mass (CoM) stability constraints, joint limits, and whole-body feasibility requirements. Together, these components enable stable lowering, grasping, lifting, carrying, and placing behaviors under significant payload uncertainty. Extensive simulation and hardware experiments demonstrate that the proposed framework improves balance robustness and reduces tracking degradation during posture transitions and lifting tasks compared to non-adaptive baselines.",
+      "authors": [
+        "Manh Cuong Nguyen",
+        "Duc Cuong Vu",
+        "Viet Anh Vu"
+      ],
+      "authors_all": [
+        "Manh Cuong Nguyen",
+        "Duc Cuong Vu",
+        "Viet Anh Vu",
+        "Duc Tuan Pham",
+        "Toan Nguyen",
+        "Minh Hiep Phung",
+        "Ngo Anh Vien",
+        "Minh Nhat Vu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-09",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-12972.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-12972-p2.jpg",
+        "assets/img/covers/arxiv-2610-12972-p3.jpg",
+        "assets/img/covers/arxiv-2610-12972-p4.jpg"
+      ],
+      "arxiv_id": "2610.12972",
+      "abs_url": "http://arxiv.org/abs/2610.12972v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12972v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-13212",
       "source": "arxiv",
       "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
@@ -197864,6 +197987,61 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-14075",
+      "source": "arxiv_discover",
+      "title": "Assessing the Marginal Utility of Exocentric Head Views in UMI-Style Large-FoV Wrist-Camera Manipulation",
+      "title_zh": "Assessing the Marginal Utility of Exocentric Head Views in UMI-Style Large-FoV Wrist-Camera Manipulation",
+      "tldr_zh": "Multi-view perception is often treated as a safe design choi",
+      "cover_zh": "Multi-view perception is often treated as a safe design choi",
+      "abstract_zh": "Multi-view perception is often treated as a safe design choice for robot manipulation: if one camera is useful, more cameras should be better. We revisit that assumption in tabletop bimanual manipulation by comparing policies trained with two large-field-of-view (FoV) wrist cameras against policies that additionally receive a head view, using controlled-variable experiments on a real bimanual platform. Across three tabletop tasks, adding a head view does not consistently improve task completion or execution quality: when the wrist cameras already observe the objects, grippers, and goal regions, wrist-only policies form a strong baseline. Restricting the wrist-camera FoV increases the potential value of a head view, but performance improves most reliably when the added view supplies concentrated, task-relevant information: region-of-interest (ROI) cropping yields more consistent head-view gains than the uncropped image, which is dominated by background and task-irrelevant regions. The data-scaling results further suggest an interaction between FoV and demonstration count: wide observations improve coverage but may require more data to stabilize, and they may reach a higher performance ceiling once enough demonstrations are available. These results suggest that camera design should be framed as a task-relevance and information-density problem rather than as a simple count of input views.",
+      "authors": [
+        "Yuhui Duan",
+        "Shi Jin",
+        "Yuntian Wang"
+      ],
+      "authors_all": [
+        "Yuhui Duan",
+        "Shi Jin",
+        "Yuntian Wang",
+        "Jin Wang",
+        "Siao Liu",
+        "Wenchang Gao",
+        "Zhaxizhuoma",
+        "Yan Ding"
+      ],
+      "primary_category": "",
+      "published": "2026-10-08",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-14075.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-14075-p2.jpg",
+        "assets/img/covers/arxiv-2610-14075-p3.jpg",
+        "assets/img/covers/arxiv-2610-14075-p4.jpg"
+      ],
+      "arxiv_id": "2610.14075",
+      "abs_url": "http://arxiv.org/abs/2610.14075v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14075v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-13706",
       "source": "arxiv",
       "title": "GLIMPSE: Global-Local Indexing with Multi-Precision Spectral Encoding for Explorable Video World Models",
@@ -197915,6 +198093,61 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-14753",
+      "source": "arxiv_discover",
+      "title": "Beyond Fixed Visual History: Learning Motion-Adaptive Temporal Receptive Fields for Complex-Terrain Quadruped Locomotion",
+      "title_zh": "Beyond Fixed Visual History: Learning Motion-Adaptive Temporal Receptive Fields for Complex-Terrain Quadruped Locomotion",
+      "tldr_zh": "Versatile quadruped locomotion depends on a tight coupling b",
+      "cover_zh": "Versatile quadruped locomotion depends on a tight coupling b",
+      "abstract_zh": "Versatile quadruped locomotion depends on a tight coupling between what the robot perceives and what its body can execute. Yet existing visual controllers typically organize depth history using fixed temporal patterns, overlooking that the same temporal span corresponds to different spatial ranges as the robot's speed, posture, and gait phase change. Consequently, the same visual history may be insufficient in one motion state but outdated or misaligned in another. To address this limitation, we propose TempoLoco, a body-aware dynamic visual perception framework that organizes visual memory according to the robot's current locomotion state. TempoLoco learns multiple complementary temporal views from a long depth buffer, encodes them within a shared feature space, and dynamically aggregates them using proprioceptive history and multi-scale terrain evidence. This enables a single policy to align visual anticipation with the robot's current motion capabilities across complex terrains, including stairs, platforms, gaps, discrete obstacles, rough ground, and slopes. From the experiment analysis, TempoLoco achieves a 78.4% success rate, compared with 58.2% for the strongest fixed-history baseline and 62.1% for uniform multi-scale fusion. In separate capability evaluations, it completes 41/45 simulated trials across nine terrain types and 23/25 real-world trials on a Unitree B2 with a fixed arm, demonstrating robust and deployable locomotion through body-aware dynamic visual perception.",
+      "authors": [
+        "Hao Zhang",
+        "Yuping Yan",
+        "Yitian Hong"
+      ],
+      "authors_all": [
+        "Hao Zhang",
+        "Yuping Yan",
+        "Yitian Hong",
+        "Luying Feng",
+        "Tianhong Wang",
+        "Fengqi Dai",
+        "Wei Chen",
+        "Yaochu Jin"
+      ],
+      "primary_category": "",
+      "published": "2026-10-10",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-14753.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-14753-p2.jpg",
+        "assets/img/covers/arxiv-2610-14753-p3.jpg",
+        "assets/img/covers/arxiv-2610-14753-p4.jpg"
+      ],
+      "arxiv_id": "2610.14753",
+      "abs_url": "http://arxiv.org/abs/2610.14753v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14753v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-15735",
@@ -198173,6 +198406,58 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-19795",
+      "source": "arxiv_discover",
+      "title": "StateCraft: Augmenting Video World Models with Abstract-State Reasoning",
+      "title_zh": "StateCraft: Augmenting Video World Models with Abstract-State Reasoning",
+      "tldr_zh": "Video world models aim to simulate complex environments with",
+      "cover_zh": "Video world models aim to simulate complex environments with",
+      "abstract_zh": "Video world models aim to simulate complex environments with realistic appearance and dynamics. Maintaining consistency over long interactions requires tracking past actions and understanding how those actions affect the environment. Video world models can only generate partial observations of the entire world at a time. Remembering past observations alone may not be sufficient in every scenario, as they may no longer reflect the world after a sequence of actions. We introduce a paradigm that decouples a persistent, updatable abstract state from the visual state. The abstract state keeps track of the entities' changes as the world evolves, and is used to condition the visual state, which represents the current view. We propose StateCraft, a novel architecture that pairs a language model with a video diffusion model to evolve the dynamic world. We evaluate our approach on generative interfaces, which pose a substantial challenge because a single action may change parts of the state that are not currently visible. To support training and evaluation, we develop a data collection pipeline that produces informative, densely annotated trajectories at scale without human or agent supervision, together with a benchmark measuring generation quality, memory, and controllability. On this benchmark, our approach improves surpasses the state-of-the-art baselines. We demonstrate that StateCraft maintains high self-consistency and strong generation quality over long trajectories. Because the abstract state is explicit, it can be edited directly, and generation follows edits to states never observed in the data. Finally, a proof-of-concept 3D experiment, in which actions change the illumination of an unobserved room, shows that the paradigm can also be applied to spatial environments. Project page: https://insait-institute.github.io/StateCraft/.",
+      "authors": [
+        "Lorenzo Venturoli",
+        "Nedko Savov",
+        "Xi Wang"
+      ],
+      "authors_all": [
+        "Lorenzo Venturoli",
+        "Nedko Savov",
+        "Xi Wang",
+        "Marc Pollefeys",
+        "Luc Van Gool"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19795.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19795-p2.jpg",
+        "assets/img/covers/arxiv-2610-19795-p3.jpg",
+        "assets/img/covers/arxiv-2610-19795-p4.jpg"
+      ],
+      "arxiv_id": "2610.19795",
+      "abs_url": "http://arxiv.org/abs/2610.19795v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19795v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-20524",
@@ -215385,6 +215670,64 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-18447",
+      "source": "arxiv_discover",
+      "title": "Thinker-WM: A Unified World Model with Shared Multimodal Representations for Embodied Intelligence",
+      "title_zh": "Thinker-WM: A Unified World Model with Shared Multimodal Representations for Embodied Intelligence",
+      "tldr_zh": "World models have emerged as a promising paradigm for embodi",
+      "cover_zh": "World models have emerged as a promising paradigm for embodi",
+      "abstract_zh": "World models have emerged as a promising paradigm for embodied AI, yet existing systems often remain fragmented in the modalities they model and the functions they support. In particular, visual dynamics, geometric structure, and executable action are commonly coupled through separate interfaces or downstream modules rather than being jointly represented and evolved within a shared dynamics model. In this work, we present Thinker-WM, a unified multimodal world model that jointly models and generates RGB, metric depth, and robot action through a shared intermediate Unified Dynamics Transformer with modality-specific encoders and decoders. The model performs multimodal unification at the representation level: appearance, geometry, and action are transformed into a common dynamic representation and jointly evolved by shared parameters, while their distinct output structures are preserved. The same parameterization supports multiple functions, including joint video-action generation, world prediction, policy inference, action-conditioned generation, video-to-action generation, and inverse dynamics. To examine whether the shared representation captures action-related information, we introduce a lightweight motion probe that shows the frozen visual representation contains recoverable motion information. Thinker-WM is trained on a heterogeneous corpus comprising approximately 20K hours of egocentric video, 10K hours of real-robot data, and 1K hours of simulation data, including approximately 4K hours of real-robot data with aligned depth supervision. Extensive experiments demonstrate strong performance across embodied world-model evaluations. Thinker-WM ranks first on EWMBench, WorldOlympiad and WorldArena, while controlled studies further demonstrate the benefits of action conditioning, geometric interaction, and multi-function training within the shared representation.",
+      "authors": [
+        "Thinker Team",
+        "Peng Gao",
+        "Jichao Jiao"
+      ],
+      "authors_all": [
+        "Thinker Team",
+        "Peng Gao",
+        "Jichao Jiao",
+        "Chen Liao",
+        "Daqin Luo",
+        "Yiming Ma",
+        "Baiyu Pan",
+        "Hailin Shi",
+        "Jiyuan Wang",
+        "Xiangming Xu",
+        "Xiongwei Zhao"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-18447.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-18447-p2.jpg",
+        "assets/img/covers/arxiv-2610-18447-p3.jpg",
+        "assets/img/covers/arxiv-2610-18447-p4.jpg"
+      ],
+      "arxiv_id": "2610.18447",
+      "abs_url": "http://arxiv.org/abs/2610.18447v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.18447v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-18637",
       "source": "arxiv",
       "title": "Grid or Nodes? Probing Object Memory in World Models Under Partial Observability",
@@ -215651,62 +215994,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-19594",
-      "source": "arxiv_discover",
-      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
-      "title_zh": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
-      "tldr_zh": "Whole-body mobile manipulation suffers from two fundamental",
-      "cover_zh": "Whole-body mobile manipulation suffers from two fundamental",
-      "abstract_zh": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
-      "authors": [
-        "Keqiang Ren",
-        "Xuecheng Ye",
-        "Hanyu Liu"
-      ],
-      "authors_all": [
-        "Keqiang Ren",
-        "Xuecheng Ye",
-        "Hanyu Liu",
-        "Zhihua Wang",
-        "Tao Jian",
-        "Yunsheng Ma",
-        "Jiayi Wen",
-        "Xinran Li",
-        "Zhigong Song"
-      ],
-      "primary_category": "",
-      "published": "2026-10-14",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-19594.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-19594-p2.jpg",
-        "assets/img/covers/arxiv-2610-19594-p3.jpg",
-        "assets/img/covers/arxiv-2610-19594-p4.jpg"
-      ],
-      "arxiv_id": "2610.19594",
-      "abs_url": "http://arxiv.org/abs/2610.19594v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.19594v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2610-19765",
@@ -235184,6 +235471,59 @@
       "pdf_url": "https://arxiv.org/pdf/2610.19413v1",
       "venue": "",
       "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2610-19479",
+      "source": "arxiv_discover",
+      "title": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "title_zh": "Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training",
+      "tldr_zh": "Sim-and-real co-training is an effective way to scale robot",
+      "cover_zh": "Sim-and-real co-training is an effective way to scale robot",
+      "abstract_zh": "Sim-and-real co-training is an effective way to scale robot learning by augmenting limited real-world demonstrations with simulation data. However, existing approaches typically treat simulators as fixed data sources, relying on uniform generation, offline retrieval, or manual parameter alignment by domain experts. We formulate textit{Active Generative Simulation}: optimizing a simulator's data-generation distribution to maximize downstream real-world performance. To solve this problem, we propose MetaGenSim, a meta-learning framework that trains an auxiliary rater network via meta-gradients to automatically discover high-utility data-generation distributions within a user-specified simulation parameter space, without manual parameter alignment. Across simulation and real-world manipulation tasks, MetaGenSim outperforms uniform generation and retrieval baselines, achieves a 150% relative improvement in real-world full-task success over uniform generation, and matches expert manual alignment. We further show that distributions curated with a lightweight proxy policy transfer to VLA fine-tuning, and that MetaGenSim can exploit partial alignment through atomic skill stitching and object-receptacle composition when exact sim-and-real task alignment is unavailable. Project website: https://meta-gensim.github.io",
+      "authors": [
+        "Liqian Ma",
+        "Vaibhav Saxena",
+        "Utkarsh Aashu Mishra"
+      ],
+      "authors_all": [
+        "Liqian Ma",
+        "Vaibhav Saxena",
+        "Utkarsh Aashu Mishra",
+        "Shuo Cheng",
+        "Yongxin Chen",
+        "Danfei Xu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19479.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19479-p2.jpg",
+        "assets/img/covers/arxiv-2610-19479-p3.jpg",
+        "assets/img/covers/arxiv-2610-19479-p4.jpg"
+      ],
+      "arxiv_id": "2610.19479",
+      "abs_url": "http://arxiv.org/abs/2610.19479v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19479v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-17",
       "score": 6,
       "judge": {},
       "institutions": [],
