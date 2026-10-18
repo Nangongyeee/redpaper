@@ -3,7 +3,7 @@
   "source": "conf",
   "title": "Imagine2Act: Leveraging Object-Action Motion Consistency from Imagined Goals for Robotic Manipulation",
   "title_zh": "",
-  "abstract": "",
+  "abstract": "Relational object rearrangement (ROR) tasks (e.g. insert flower to vase ) require a robot to manipulate objects with precise semantic and geometric reasoning. Existing approaches either rely on pre-collected demonstrations that struggle to capture complex geometric constraints or generate goal-state observations to capture semantic and geometric knowledge, but fail to explicitly couple object transformation with action prediction, resulting in errors due to generative noise. To address these limitations, we propose Imagine2Act, a 3D imitation-learning framework that incorporates semantic and geometric constraints of objects into policy learning to tackle high-precision manipulation tasks. We first generate imagined goal images conditioned on language instructions and reconstruct corresponding 3D point clouds to provide robust semantic and geometric priors. This imagined goal point clouds serve as additional inputs to the policy model, while an object–action consistency strategy with soft pose supervision explicitly aligns predicted end-effector motion with generated object transformation. This design enables Imagine2Act to reason about semantic and geometric relationships between objects and predict accurate actions across diverse tasks. Experiments in both simulation and real world demonstrate that Imagine2Act outperforms previous state-of-the-art policies. Code is fully open-sourced at https://github.com/LiangHeng121/Imagine2Act.",
   "abstract_zh": "",
   "tldr_zh": "",
   "cover_zh": "",
@@ -68,13 +68,19 @@
   "related_links": [],
   "page_count": 0,
   "source_tags": [],
-  "score": 13,
+  "score": 21,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（manipulation）"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
     },
     {
       "id": "conf_venue",
