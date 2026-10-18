@@ -117,6 +117,63 @@
       ]
     },
     {
+      "id": "arxiv-2610-14840",
+      "source": "arxiv_discover",
+      "title": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+      "title_zh": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+      "tldr_zh": "We present a learning-based framework that enables a full-sc",
+      "cover_zh": "We present a learning-based framework that enables a full-sc",
+      "abstract_zh": "We present a learning-based framework that enables a full-scale bipedal humanoid to sprint at over 7 m/s with motion-prior-guided gait and perform aggressive cornering at high speed with a pronounced trunk lean of up to $25^circ$. Achieving this combination is challenging: above approximately 4 m/s, periodic foot impacts induce severe, high-frequency yaw-rate oscillations intrinsic to high-speed gaits. This high-frequency temporal structure corrupts the history of proprioceptive feedback that flat-MLP policies rely on, while rendering conventional yaw-rate tracking rewards counterproductive, as they fight against the robot's natural oscillatory dynamics. Moreover, a single style prior shared across skills cannot tell which skill is commanded and inherently compromises the low-speed skill fidelity. To overcome these limitations, we adopt a causal multi-head attention (MHA) module to explicitly model the high-frequency temporal feedback. In place of the oscillatory yaw rate, we design a heading-direction reward that supervises only the low-frequency velocity direction, allowing agile turning at high speed without suppressing natural gait oscillations. We further introduce skill-conditioned multi-adversarial-motion-prior (MAMP) discriminators that condition the style reward on the commanded skill. Ablation experiments confirm that each mechanism is essential: replacing structured temporal encoding with a flat-history MLP caps the top speed; reverting to yaw-rate tracking prevents high-speed turning; and a single shared discriminator makes in-place turning collapse into a quasi-static stance. Our framework bridges the gap between raw sprinting speed and reference-motion fidelity, demonstrating stable high-speed sprinting and aggressive cornering in both simulation and real-robot deployment.",
+      "authors": [
+        "Huaxing Huang",
+        "Ruidong Li",
+        "Jinchao Han"
+      ],
+      "authors_all": [
+        "Huaxing Huang",
+        "Ruidong Li",
+        "Jinchao Han",
+        "Ziyang Dong",
+        "Wenhao Cui"
+      ],
+      "primary_category": "",
+      "published": "2026-10-10",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-14840.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-14840-p2.jpg",
+        "assets/img/covers/arxiv-2610-14840-p3.jpg",
+        "assets/img/covers/arxiv-2610-14840-p4.jpg"
+      ],
+      "arxiv_id": "2610.14840",
+      "abs_url": "http://arxiv.org/abs/2610.14840v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14840v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-18",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-14936",
       "source": "arxiv_discover",
       "title": "CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance",
@@ -261,58 +318,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 12,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
-      "id": "arxiv-2610-14840",
-      "source": "arxiv_discover",
-      "title": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
-      "title_zh": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
-      "tldr_zh": "We present a learning-based framework that enables a full-sc",
-      "cover_zh": "We present a learning-based framework that enables a full-sc",
-      "abstract_zh": "We present a learning-based framework that enables a full-scale bipedal humanoid to sprint at over 7 m/s with motion-prior-guided gait and perform aggressive cornering at high speed with a pronounced trunk lean of up to $25^circ$. Achieving this combination is challenging: above approximately 4 m/s, periodic foot impacts induce severe, high-frequency yaw-rate oscillations intrinsic to high-speed gaits. This high-frequency temporal structure corrupts the history of proprioceptive feedback that flat-MLP policies rely on, while rendering conventional yaw-rate tracking rewards counterproductive, as they fight against the robot's natural oscillatory dynamics. Moreover, a single style prior shared across skills cannot tell which skill is commanded and inherently compromises the low-speed skill fidelity. To overcome these limitations, we adopt a causal multi-head attention (MHA) module to explicitly model the high-frequency temporal feedback. In place of the oscillatory yaw rate, we design a heading-direction reward that supervises only the low-frequency velocity direction, allowing agile turning at high speed without suppressing natural gait oscillations. We further introduce skill-conditioned multi-adversarial-motion-prior (MAMP) discriminators that condition the style reward on the commanded skill. Ablation experiments confirm that each mechanism is essential: replacing structured temporal encoding with a flat-history MLP caps the top speed; reverting to yaw-rate tracking prevents high-speed turning; and a single shared discriminator makes in-place turning collapse into a quasi-static stance. Our framework bridges the gap between raw sprinting speed and reference-motion fidelity, demonstrating stable high-speed sprinting and aggressive cornering in both simulation and real-robot deployment.",
-      "authors": [
-        "Huaxing Huang",
-        "Ruidong Li",
-        "Jinchao Han"
-      ],
-      "authors_all": [
-        "Huaxing Huang",
-        "Ruidong Li",
-        "Jinchao Han",
-        "Ziyang Dong",
-        "Wenhao Cui"
-      ],
-      "primary_category": "",
-      "published": "2026-10-10",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-14840.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-14840-p2.jpg",
-        "assets/img/covers/arxiv-2610-14840-p3.jpg",
-        "assets/img/covers/arxiv-2610-14840-p4.jpg"
-      ],
-      "arxiv_id": "2610.14840",
-      "abs_url": "http://arxiv.org/abs/2610.14840v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.14840v1",
-      "venue": "CoRL 2026",
-      "venue_announced": "2026-10-18",
-      "score": 9,
       "judge": {},
       "institutions": [],
       "method_tags": [],
