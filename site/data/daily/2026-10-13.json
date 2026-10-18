@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "count": 37,
+  "count": 39,
   "papers": [
     {
       "id": "arxiv-2610-18596",
@@ -1265,6 +1265,58 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-17625",
+      "source": "arxiv_discover",
+      "title": "4LC: 4D Latent Cache for Efficient Conditioning in Dynamic World Modeling",
+      "title_zh": "4LC: 4D Latent Cache for Efficient Conditioning in Dynamic World Modeling",
+      "tldr_zh": "For video generation in dynamic world modeling, observed sta",
+      "cover_zh": "For video generation in dynamic world modeling, observed sta",
+      "abstract_zh": "For video generation in dynamic world modeling, observed static and dynamic content should be efficiently reused to provide conditions for repeated generation at different times and viewpoints. We introduce 4LC, a 4D latent cache with composite visual representations and a flexible spatiotemporal access interface. As a latent cache, 4LC directly reuses visual representations of static and dynamic content to provide generation conditions, avoiding per-request RGB rendering and re-encoding. As a composite cache, 4LC binds visual representations from multiple visual encoders (e.g., VAE, DINO, V-JEPA, VGGT) to shared geometry and motion, allowing the composite representations to describe the dynamic world with rich information. Besides, we design a flexible spatiotemporal interface, which directly reads the cache at independently specified times and viewpoints and combines readouts across observations, providing a common conditioning format for diverse downstream tasks. Building on 4LC, we develop 4LC-Video to address multiple video generation tasks through different configurations of source observations, spatiotemporal requests, and historical reuse, including camera control, temporal control, novel-view synthesis, scene revisits, and long-term generation. Our experiments show more efficient condition acquisition, effective spatiotemporal controllability, and scene consistency across tasks using a single 4LC-Video model without task-specific fine-tuning.",
+      "authors": [
+        "Jianhui Zhang",
+        "Zuyao Lin",
+        "Pengxin Xu"
+      ],
+      "authors_all": [
+        "Jianhui Zhang",
+        "Zuyao Lin",
+        "Pengxin Xu",
+        "Jingdong Wang",
+        "Xingyu Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-17625.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-17625-p2.jpg",
+        "assets/img/covers/arxiv-2610-17625-p3.jpg",
+        "assets/img/covers/arxiv-2610-17625-p4.jpg"
+      ],
+      "arxiv_id": "2610.17625",
+      "abs_url": "http://arxiv.org/abs/2610.17625v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17625v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-18677",
       "source": "arxiv",
       "title": "Model-Based Online Decision Making via Generative Trajectory Planning",
@@ -1312,6 +1364,61 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-17789",
+      "source": "arxiv_discover",
+      "title": "DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting",
+      "title_zh": "DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting",
+      "tldr_zh": "A long-horizon manipulation task consists of primitive skill",
+      "cover_zh": "A long-horizon manipulation task consists of primitive skill",
+      "abstract_zh": "A long-horizon manipulation task consists of primitive skills and the transitions connecting them. Learning skills that can be executed in sequence requires supervision for both, which is costly to collect on a robot. Human videos offer a scalable source of demonstrations, but transferring them to robots requires extracting robot-compatible observations and actions together with their skill structure. We present DexStitch, a framework that cuts long-horizon human videos into skills and transitions, converts them into aligned robot observation-action-skill data, and stitches the learned skills into a requested sequence. A skill classifier first segments the videos into manipulation skills and transitions. DexStitch then converts the human demonstrations into robot observations and actions while retaining their corresponding skill labels. During conversion, per-finger human-object contacts guide dexterous hand retargeting and robotic inpainting, preserving contact geometry and finger-object occlusion ordering. To stitch the learned skills into a sequence, a shared skill-conditioned policy is pretrained on the resulting synthetic data and finetuned on a mixture of synthetic data and a small set of single-skill teleoperation episodes. Conditioning on the current and next skills guides each transition toward the following skill, while predicted skill progression enables closed-loop switching. On a held-out session, the classifier agrees with manual annotations on 92.4% of frames. Across four household skills, DexStitch achieves 80.0% single-skill success and 77.5% sequence success.",
+      "authors": [
+        "Byeonggyeol Choi",
+        "Seongmin Jung",
+        "Unghui Nam"
+      ],
+      "authors_all": [
+        "Byeonggyeol Choi",
+        "Seongmin Jung",
+        "Unghui Nam",
+        "Youngbo Song",
+        "Sunhong Min",
+        "MinHyung Lee",
+        "Byonghyo Shim",
+        "Yongseok Lee"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-17789.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-17789-p2.jpg",
+        "assets/img/covers/arxiv-2610-17789-p3.jpg",
+        "assets/img/covers/arxiv-2610-17789-p4.jpg"
+      ],
+      "arxiv_id": "2610.17789",
+      "abs_url": "http://arxiv.org/abs/2610.17789v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17789v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-18855",

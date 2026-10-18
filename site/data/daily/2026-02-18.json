@@ -3,6 +3,74 @@
   "count": 2,
   "papers": [
     {
+      "id": "arxiv-2602-16705",
+      "source": "arxiv",
+      "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
+      "title_zh": "学习人形机器人末端执行器控制以实现开放词汇的视觉移动操作",
+      "tldr_zh": "提出HERO范式，结合大视觉模型和模拟训练，将末端执行器跟踪误差降低3.2倍。",
+      "cover_zh": "人形机器人也能精准抓杯子？误差直降3.2倍｜开放词汇视觉操作",
+      "abstract_zh": "在真实环境中使用人形机器人对任意物体进行视觉移动操作，需要精确的末端执行器（EE）控制以及通过视觉输入（如RGB-D图像）对场景的泛化理解。现有方法基于真实世界模仿学习，由于难以收集大规模训练数据集，泛化能力有限。本文提出一种新范式HERO，用于人形机器人物体移动操作，它将大型视觉模型的强泛化能力和开放词汇理解与模拟训练的强大控制性能相结合。我们通过设计一个精确的残差感知末端执行器跟踪策略来实现这一点。该跟踪策略结合了经典机器学习和机器学习：a) 使用逆运动学将残差末端执行器目标转换为参考轨迹，b) 使用学习的神经前向模型进行精确的正向运动学，c) 目标调整，d) 重新规划。这些创新共同将末端执行器跟踪误差降低了3.2倍。我们利用这个精确的末端执行器跟踪器构建了一个模块化的移动操作系统，其中使用开放词汇的大型视觉模型实现强大的视觉泛化。我们的系统能够在多样化的真实环境中运行，从办公室到咖啡店，机器人能够可靠地操作各种日常物体（如杯子、苹果、玩具），表面高度从43厘米到92厘米不等。在仿真和真实世界中进行的系统模块化和端到端测试证明了我们设计的有效性。我们相信本文的进展可以开辟训练人形机器人与日常物体交互的新途径。",
+      "authors": [
+        "Runpei Dong",
+        "Ziyan Li",
+        "Xialin He"
+      ],
+      "authors_all": [
+        "Runpei Dong",
+        "Ziyan Li",
+        "Xialin He",
+        "Saurabh Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-18",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2602-16705.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2602-16705-p2.jpg",
+        "assets/img/covers/arxiv-2602-16705-p3.jpg",
+        "assets/img/covers/arxiv-2602-16705-p4.jpg"
+      ],
+      "arxiv_id": "2602.16705",
+      "abs_url": "http://arxiv.org/abs/2602.16705v2",
+      "pdf_url": "https://arxiv.org/pdf/2602.16705v2",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-18",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出结合大视觉模型与仿真训练的全身控制新范式，显著降低末端跟踪误差，实现开放词汇移动操作，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "method_tags": [
+        "residual-aware EE tracking policy",
+        "open-vocabulary visual loco-manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "awesome_import"
+      ]
+    },
+    {
       "id": "arxiv-2602-16511",
       "source": "arxiv",
       "title": "VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety",
@@ -57,69 +125,6 @@
       "platform": [
         "Unitree G1"
       ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "awesome_import"
-      ]
-    },
-    {
-      "id": "arxiv-2602-16705",
-      "source": "arxiv",
-      "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
-      "title_zh": "学习人形机器人末端执行器控制以实现开放词汇的视觉移动操作",
-      "tldr_zh": "提出HERO范式，结合大视觉模型和模拟训练，将末端执行器跟踪误差降低3.2倍。",
-      "cover_zh": "人形机器人也能精准抓杯子？误差直降3.2倍｜开放词汇视觉操作",
-      "abstract_zh": "在真实环境中使用人形机器人对任意物体进行视觉移动操作，需要精确的末端执行器（EE）控制以及通过视觉输入（如RGB-D图像）对场景的泛化理解。现有方法基于真实世界模仿学习，由于难以收集大规模训练数据集，泛化能力有限。本文提出一种新范式HERO，用于人形机器人物体移动操作，它将大型视觉模型的强泛化能力和开放词汇理解与模拟训练的强大控制性能相结合。我们通过设计一个精确的残差感知末端执行器跟踪策略来实现这一点。该跟踪策略结合了经典机器学习和机器学习：a) 使用逆运动学将残差末端执行器目标转换为参考轨迹，b) 使用学习的神经前向模型进行精确的正向运动学，c) 目标调整，d) 重新规划。这些创新共同将末端执行器跟踪误差降低了3.2倍。我们利用这个精确的末端执行器跟踪器构建了一个模块化的移动操作系统，其中使用开放词汇的大型视觉模型实现强大的视觉泛化。我们的系统能够在多样化的真实环境中运行，从办公室到咖啡店，机器人能够可靠地操作各种日常物体（如杯子、苹果、玩具），表面高度从43厘米到92厘米不等。在仿真和真实世界中进行的系统模块化和端到端测试证明了我们设计的有效性。我们相信本文的进展可以开辟训练人形机器人与日常物体交互的新途径。",
-      "authors": [
-        "Runpei Dong",
-        "Ziyan Li",
-        "Xialin He"
-      ],
-      "authors_all": [
-        "Runpei Dong",
-        "Ziyan Li",
-        "Xialin He",
-        "Saurabh Gupta"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-02-18",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2602-16705.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2602-16705-p2.jpg",
-        "assets/img/covers/arxiv-2602-16705-p3.jpg",
-        "assets/img/covers/arxiv-2602-16705-p4.jpg"
-      ],
-      "arxiv_id": "2602.16705",
-      "abs_url": "http://arxiv.org/abs/2602.16705v2",
-      "pdf_url": "https://arxiv.org/pdf/2602.16705v2",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出结合大视觉模型与仿真训练的全身控制新范式，显著降低末端跟踪误差，实现开放词汇移动操作，具有高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of Illinois Urbana-Champaign"
-      ],
-      "method_tags": [
-        "residual-aware EE tracking policy",
-        "open-vocabulary visual loco-manipulation"
-      ],
-      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",

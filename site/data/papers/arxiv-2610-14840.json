@@ -1,0 +1,83 @@
+{
+  "id": "arxiv-2610-14840",
+  "source": "arxiv_discover",
+  "title": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+  "title_zh": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+  "abstract": "We present a learning-based framework that enables a full-scale bipedal humanoid to sprint at over 7 m/s with motion-prior-guided gait and perform aggressive cornering at high speed with a pronounced trunk lean of up to $25^\\circ$. Achieving this combination is challenging: above approximately 4 m/s, periodic foot impacts induce severe, high-frequency yaw-rate oscillations intrinsic to high-speed gaits. This high-frequency temporal structure corrupts the history of proprioceptive feedback that flat-MLP policies rely on, while rendering conventional yaw-rate tracking rewards counterproductive, as they fight against the robot's natural oscillatory dynamics. Moreover, a single style prior shared across skills cannot tell which skill is commanded and inherently compromises the low-speed skill fidelity. To overcome these limitations, we adopt a causal multi-head attention (MHA) module to explicitly model the high-frequency temporal feedback. In place of the oscillatory yaw rate, we design a heading-direction reward that supervises only the low-frequency velocity direction, allowing agile turning at high speed without suppressing natural gait oscillations. We further introduce skill-conditioned multi-adversarial-motion-prior (MAMP) discriminators that condition the style reward on the commanded skill. Ablation experiments confirm that each mechanism is essential: replacing structured temporal encoding with a flat-history MLP caps the top speed; reverting to yaw-rate tracking prevents high-speed turning; and a single shared discriminator makes in-place turning collapse into a quasi-static stance. Our framework bridges the gap between raw sprinting speed and reference-motion fidelity, demonstrating stable high-speed sprinting and aggressive cornering in both simulation and real-robot deployment.",
+  "abstract_zh": "We present a learning-based framework that enables a full-scale bipedal humanoid to sprint at over 7 m/s with motion-prior-guided gait and perform aggressive cornering at high speed with a pronounced trunk lean of up to $25^circ$. Achieving this combination is challenging: above approximately 4 m/s, periodic foot impacts induce severe, high-frequency yaw-rate oscillations intrinsic to high-speed gaits. This high-frequency temporal structure corrupts the history of proprioceptive feedback that flat-MLP policies rely on, while rendering conventional yaw-rate tracking rewards counterproductive, as they fight against the robot's natural oscillatory dynamics. Moreover, a single style prior shared across skills cannot tell which skill is commanded and inherently compromises the low-speed skill fidelity. To overcome these limitations, we adopt a causal multi-head attention (MHA) module to explicitly model the high-frequency temporal feedback. In place of the oscillatory yaw rate, we design a heading-direction reward that supervises only the low-frequency velocity direction, allowing agile turning at high speed without suppressing natural gait oscillations. We further introduce skill-conditioned multi-adversarial-motion-prior (MAMP) discriminators that condition the style reward on the commanded skill. Ablation experiments confirm that each mechanism is essential: replacing structured temporal encoding with a flat-history MLP caps the top speed; reverting to yaw-rate tracking prevents high-speed turning; and a single shared discriminator makes in-place turning collapse into a quasi-static stance. Our framework bridges the gap between raw sprinting speed and reference-motion fidelity, demonstrating stable high-speed sprinting and aggressive cornering in both simulation and real-robot deployment.",
+  "tldr_zh": "We present a learning-based framework that enables a full-sc",
+  "cover_zh": "We present a learning-based framework that enables a full-sc",
+  "authors": [
+    {
+      "name": "Huaxing Huang",
+      "affiliation": ""
+    },
+    {
+      "name": "Ruidong Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Jinchao Han",
+      "affiliation": ""
+    },
+    {
+      "name": "Ziyang Dong",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenhao Cui",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "arxiv_id": "2610.14840",
+  "pdf_url": "https://arxiv.org/pdf/2610.14840v1",
+  "abs_url": "http://arxiv.org/abs/2610.14840v1",
+  "venue": "CoRL 2026",
+  "venue_announced": "2026-10-18",
+  "cover_image": "assets/img/covers/arxiv-2610-14840.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-14840-p2.jpg",
+    "assets/img/covers/arxiv-2610-14840-p3.jpg",
+    "assets/img/covers/arxiv-2610-14840-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 16,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 9,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（bipedal、gait）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 16 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

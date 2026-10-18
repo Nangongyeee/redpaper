@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T12:40:17.807261+00:00",
-  "count": 3883,
+  "generated_at": "2026-10-18T13:21:21.657160+00:00",
+  "count": 3889,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -24502,6 +24502,83 @@
       "github": {},
       "source_tags": [
         "manual_pin"
+      ]
+    },
+    {
+      "id": "arxiv-2602-13850",
+      "source": "arxiv",
+      "title": "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement",
+      "title_zh": "人形汉诺塔：探究基于技能的箱子重排中的共享全身控制",
+      "tldr_zh": "提出共享全身控制器框架，实现人形机器人长时域箱子重排。",
+      "cover_zh": "人形机器人也能玩汉诺塔？共享全身控制让长时域操作更稳！",
+      "abstract_zh": "我们研究了一种基于技能的人形机器人箱子重排框架，通过在任务层面排序可复用技能实现长时域执行。在我们的架构中，所有技能通过一个共享的、任务无关的全身控制器（WBC）执行，为技能组合提供一致的闭环接口，这与每个技能使用单独底层控制器的非共享设计形成对比。我们发现，直接复用相同的预训练WBC会降低长时域的鲁棒性，因为新技能及其组合会导致状态和命令分布偏移。我们通过一种简单的数据聚合程序来解决这个问题，该程序在域随机化下利用闭环技能执行的轨迹来增强共享WBC的训练。为了评估该方法，我们引入了Humanoid Hanoi，一个长时域汉诺塔箱子重排基准，并在仿真和Digit V3人形机器人上报告了结果，展示了完全自主的长时域重排，并量化了共享WBC方法相对于非共享基线的优势。项目页面：https://osudrl.github.io/Humanoid_Hanoi/",
+      "authors": [
+        "Minku Kim",
+        "Kuan-Chia Chen",
+        "Aayam Shrestha"
+      ],
+      "authors_all": [
+        "Minku Kim",
+        "Kuan-Chia Chen",
+        "Aayam Shrestha",
+        "Li Fuxin",
+        "Stefan Lee",
+        "Alan Fern"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-14",
+      "channels": [
+        "loco-manip-wbc",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Alan Fern"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2602-13850.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2602-13850-p2.jpg",
+        "assets/img/covers/arxiv-2602-13850-p3.jpg",
+        "assets/img/covers/arxiv-2602-13850-p4.jpg"
+      ],
+      "arxiv_id": "2602.13850",
+      "abs_url": "http://arxiv.org/abs/2602.13850v3",
+      "pdf_url": "https://arxiv.org/pdf/2602.13850v3",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-18",
+      "score": 50,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出共享全身控制框架用于人形机器人长时域箱体重排，含仿真和真机实验，对WBC和技能组合有贡献。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Oregon State University"
+      ],
+      "method_tags": [
+        "Whole-Body Control",
+        "Skill-Based Framework",
+        "Domain Randomization"
+      ],
+      "platform": [
+        "Digit V3"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "awesome_import"
       ]
     },
     {
@@ -53849,79 +53926,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "awesome_import"
-      ]
-    },
-    {
-      "id": "arxiv-2602-13850",
-      "source": "arxiv",
-      "title": "Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement",
-      "title_zh": "人形汉诺塔：探究基于技能的箱子重排中的共享全身控制",
-      "tldr_zh": "提出共享全身控制器框架，实现人形机器人长时域箱子重排。",
-      "cover_zh": "人形机器人也能玩汉诺塔？共享全身控制让长时域操作更稳！",
-      "abstract_zh": "我们研究了一种基于技能的人形机器人箱子重排框架，通过在任务层面排序可复用技能实现长时域执行。在我们的架构中，所有技能通过一个共享的、任务无关的全身控制器（WBC）执行，为技能组合提供一致的闭环接口，这与每个技能使用单独底层控制器的非共享设计形成对比。我们发现，直接复用相同的预训练WBC会降低长时域的鲁棒性，因为新技能及其组合会导致状态和命令分布偏移。我们通过一种简单的数据聚合程序来解决这个问题，该程序在域随机化下利用闭环技能执行的轨迹来增强共享WBC的训练。为了评估该方法，我们引入了Humanoid Hanoi，一个长时域汉诺塔箱子重排基准，并在仿真和Digit V3人形机器人上报告了结果，展示了完全自主的长时域重排，并量化了共享WBC方法相对于非共享基线的优势。项目页面：https://osudrl.github.io/Humanoid_Hanoi/",
-      "authors": [
-        "Minku Kim",
-        "Kuan-Chia Chen",
-        "Aayam Shrestha"
-      ],
-      "authors_all": [
-        "Minku Kim",
-        "Kuan-Chia Chen",
-        "Aayam Shrestha",
-        "Li Fuxin",
-        "Stefan Lee",
-        "Alan Fern"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-02-14",
-      "channels": [
-        "loco-manip-wbc",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Alan Fern"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2602-13850.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2602-13850-p2.jpg",
-        "assets/img/covers/arxiv-2602-13850-p3.jpg",
-        "assets/img/covers/arxiv-2602-13850-p4.jpg"
-      ],
-      "arxiv_id": "2602.13850",
-      "abs_url": "http://arxiv.org/abs/2602.13850v3",
-      "pdf_url": "https://arxiv.org/pdf/2602.13850v3",
-      "venue": "",
-      "venue_announced": "",
-      "score": 40,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出共享全身控制框架用于人形机器人长时域箱体重排，含仿真和真机实验，对WBC和技能组合有贡献。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Oregon State University"
-      ],
-      "method_tags": [
-        "Whole-Body Control",
-        "Skill-Based Framework",
-        "Domain Randomization"
-      ],
-      "platform": [
-        "Digit V3"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -92199,6 +92203,74 @@
       ]
     },
     {
+      "id": "arxiv-2602-16705",
+      "source": "arxiv",
+      "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
+      "title_zh": "学习人形机器人末端执行器控制以实现开放词汇的视觉移动操作",
+      "tldr_zh": "提出HERO范式，结合大视觉模型和模拟训练，将末端执行器跟踪误差降低3.2倍。",
+      "cover_zh": "人形机器人也能精准抓杯子？误差直降3.2倍｜开放词汇视觉操作",
+      "abstract_zh": "在真实环境中使用人形机器人对任意物体进行视觉移动操作，需要精确的末端执行器（EE）控制以及通过视觉输入（如RGB-D图像）对场景的泛化理解。现有方法基于真实世界模仿学习，由于难以收集大规模训练数据集，泛化能力有限。本文提出一种新范式HERO，用于人形机器人物体移动操作，它将大型视觉模型的强泛化能力和开放词汇理解与模拟训练的强大控制性能相结合。我们通过设计一个精确的残差感知末端执行器跟踪策略来实现这一点。该跟踪策略结合了经典机器学习和机器学习：a) 使用逆运动学将残差末端执行器目标转换为参考轨迹，b) 使用学习的神经前向模型进行精确的正向运动学，c) 目标调整，d) 重新规划。这些创新共同将末端执行器跟踪误差降低了3.2倍。我们利用这个精确的末端执行器跟踪器构建了一个模块化的移动操作系统，其中使用开放词汇的大型视觉模型实现强大的视觉泛化。我们的系统能够在多样化的真实环境中运行，从办公室到咖啡店，机器人能够可靠地操作各种日常物体（如杯子、苹果、玩具），表面高度从43厘米到92厘米不等。在仿真和真实世界中进行的系统模块化和端到端测试证明了我们设计的有效性。我们相信本文的进展可以开辟训练人形机器人与日常物体交互的新途径。",
+      "authors": [
+        "Runpei Dong",
+        "Ziyan Li",
+        "Xialin He"
+      ],
+      "authors_all": [
+        "Runpei Dong",
+        "Ziyan Li",
+        "Xialin He",
+        "Saurabh Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-02-18",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2602-16705.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2602-16705-p2.jpg",
+        "assets/img/covers/arxiv-2602-16705-p3.jpg",
+        "assets/img/covers/arxiv-2602-16705-p4.jpg"
+      ],
+      "arxiv_id": "2602.16705",
+      "abs_url": "http://arxiv.org/abs/2602.16705v2",
+      "pdf_url": "https://arxiv.org/pdf/2602.16705v2",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-18",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出结合大视觉模型与仿真训练的全身控制新范式，显著降低末端跟踪误差，实现开放词汇移动操作，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "method_tags": [
+        "residual-aware EE tracking policy",
+        "open-vocabulary visual loco-manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "awesome_import"
+      ]
+    },
+    {
       "id": "arxiv-2603-03279",
       "source": "arxiv",
       "title": "ULTRA: Unified Multimodal Control for Autonomous Humanoid Whole-Body Loco-Manipulation",
@@ -117646,69 +117718,6 @@
       "platform": [
         "Unitree G1"
       ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "awesome_import"
-      ]
-    },
-    {
-      "id": "arxiv-2602-16705",
-      "source": "arxiv",
-      "title": "Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation",
-      "title_zh": "学习人形机器人末端执行器控制以实现开放词汇的视觉移动操作",
-      "tldr_zh": "提出HERO范式，结合大视觉模型和模拟训练，将末端执行器跟踪误差降低3.2倍。",
-      "cover_zh": "人形机器人也能精准抓杯子？误差直降3.2倍｜开放词汇视觉操作",
-      "abstract_zh": "在真实环境中使用人形机器人对任意物体进行视觉移动操作，需要精确的末端执行器（EE）控制以及通过视觉输入（如RGB-D图像）对场景的泛化理解。现有方法基于真实世界模仿学习，由于难以收集大规模训练数据集，泛化能力有限。本文提出一种新范式HERO，用于人形机器人物体移动操作，它将大型视觉模型的强泛化能力和开放词汇理解与模拟训练的强大控制性能相结合。我们通过设计一个精确的残差感知末端执行器跟踪策略来实现这一点。该跟踪策略结合了经典机器学习和机器学习：a) 使用逆运动学将残差末端执行器目标转换为参考轨迹，b) 使用学习的神经前向模型进行精确的正向运动学，c) 目标调整，d) 重新规划。这些创新共同将末端执行器跟踪误差降低了3.2倍。我们利用这个精确的末端执行器跟踪器构建了一个模块化的移动操作系统，其中使用开放词汇的大型视觉模型实现强大的视觉泛化。我们的系统能够在多样化的真实环境中运行，从办公室到咖啡店，机器人能够可靠地操作各种日常物体（如杯子、苹果、玩具），表面高度从43厘米到92厘米不等。在仿真和真实世界中进行的系统模块化和端到端测试证明了我们设计的有效性。我们相信本文的进展可以开辟训练人形机器人与日常物体交互的新途径。",
-      "authors": [
-        "Runpei Dong",
-        "Ziyan Li",
-        "Xialin He"
-      ],
-      "authors_all": [
-        "Runpei Dong",
-        "Ziyan Li",
-        "Xialin He",
-        "Saurabh Gupta"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-02-18",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2602-16705.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2602-16705-p2.jpg",
-        "assets/img/covers/arxiv-2602-16705-p3.jpg",
-        "assets/img/covers/arxiv-2602-16705-p4.jpg"
-      ],
-      "arxiv_id": "2602.16705",
-      "abs_url": "http://arxiv.org/abs/2602.16705v2",
-      "pdf_url": "https://arxiv.org/pdf/2602.16705v2",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出结合大视觉模型与仿真训练的全身控制新范式，显著降低末端跟踪误差，实现开放词汇移动操作，具有高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of Illinois Urbana-Champaign"
-      ],
-      "method_tags": [
-        "residual-aware EE tracking policy",
-        "open-vocabulary visual loco-manipulation"
-      ],
-      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -175712,6 +175721,59 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-14936",
+      "source": "arxiv_discover",
+      "title": "CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance",
+      "title_zh": "CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance",
+      "tldr_zh": "Diffusion policies are increasingly used in robotic control",
+      "cover_zh": "Diffusion policies are increasingly used in robotic control",
+      "abstract_zh": "Diffusion policies are increasingly used in robotic control and manipulation, vision-language-action models, and world-model-based agents. Their ability to represent multimodal action distributions offers rich opportunities for exploration in reinforcement learning (RL). However, optimizing diffusion policies with RL can reduce the behavioral diversity and further limit their exploration capability. In RL post-training, directly fine-tuning a pretrained policy may also disrupt its acquired capabilities, while action-space residuals may lack the expressive power for multimodal exploration. Together, these issues reveal a common challenge across online and offline-to-online diffusion RL: improving task performance while retaining the behavioral diversity and capabilities needed for continued adaptation. We introduce CFG-Policy, a unified, plug-and-play framework that separates exploration and exploitation into two generative policies and combines their score or velocity fields during sampling through classifier-free guidance. For online RL, a frozen exploration branch sustains behavioral diversity while an exploitation branch learns from task rewards; for offline-to-online RL, a pretrained exploitation branch remains frozen while a trainable branch steers the composed behavior. CFG-Policy preserves the underlying RL objectives and improves performance with QSM and QVPO on 5 MuJoCo tasks and with Flow-SDE+PPO on 4 RoboTwin manipulation tasks. Project page is at https://zhy-liu.github.io/cfg-policy-page.",
+      "authors": [
+        "Shutong Ding",
+        "Zhaoyang Liu",
+        "Yimiao Zhou"
+      ],
+      "authors_all": [
+        "Shutong Ding",
+        "Zhaoyang Liu",
+        "Yimiao Zhou",
+        "Jingya Wang",
+        "Jiayuan Gu",
+        "Ye Shi"
+      ],
+      "primary_category": "",
+      "published": "2026-10-10",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-14936.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-14936-p2.jpg",
+        "assets/img/covers/arxiv-2610-14936-p3.jpg",
+        "assets/img/covers/arxiv-2610-14936-p4.jpg"
+      ],
+      "arxiv_id": "2610.14936",
+      "abs_url": "http://arxiv.org/abs/2610.14936v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14936v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-15794",
       "source": "arxiv",
       "title": "$Δ$ Flow Matching for Robot Foundation Models",
@@ -175767,6 +175829,58 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-17625",
+      "source": "arxiv_discover",
+      "title": "4LC: 4D Latent Cache for Efficient Conditioning in Dynamic World Modeling",
+      "title_zh": "4LC: 4D Latent Cache for Efficient Conditioning in Dynamic World Modeling",
+      "tldr_zh": "For video generation in dynamic world modeling, observed sta",
+      "cover_zh": "For video generation in dynamic world modeling, observed sta",
+      "abstract_zh": "For video generation in dynamic world modeling, observed static and dynamic content should be efficiently reused to provide conditions for repeated generation at different times and viewpoints. We introduce 4LC, a 4D latent cache with composite visual representations and a flexible spatiotemporal access interface. As a latent cache, 4LC directly reuses visual representations of static and dynamic content to provide generation conditions, avoiding per-request RGB rendering and re-encoding. As a composite cache, 4LC binds visual representations from multiple visual encoders (e.g., VAE, DINO, V-JEPA, VGGT) to shared geometry and motion, allowing the composite representations to describe the dynamic world with rich information. Besides, we design a flexible spatiotemporal interface, which directly reads the cache at independently specified times and viewpoints and combines readouts across observations, providing a common conditioning format for diverse downstream tasks. Building on 4LC, we develop 4LC-Video to address multiple video generation tasks through different configurations of source observations, spatiotemporal requests, and historical reuse, including camera control, temporal control, novel-view synthesis, scene revisits, and long-term generation. Our experiments show more efficient condition acquisition, effective spatiotemporal controllability, and scene consistency across tasks using a single 4LC-Video model without task-specific fine-tuning.",
+      "authors": [
+        "Jianhui Zhang",
+        "Zuyao Lin",
+        "Pengxin Xu"
+      ],
+      "authors_all": [
+        "Jianhui Zhang",
+        "Zuyao Lin",
+        "Pengxin Xu",
+        "Jingdong Wang",
+        "Xingyu Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-17625.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-17625-p2.jpg",
+        "assets/img/covers/arxiv-2610-17625-p3.jpg",
+        "assets/img/covers/arxiv-2610-17625-p4.jpg"
+      ],
+      "arxiv_id": "2610.17625",
+      "abs_url": "http://arxiv.org/abs/2610.17625v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17625v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-20223",
@@ -200478,6 +200592,72 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-11444",
+      "source": "arxiv_discover",
+      "title": "Learning to Retrieve: Internalizing Memory Retrieval for Video World Models",
+      "title_zh": "Learning to Retrieve: Internalizing Memory Retrieval for Video World Models",
+      "tldr_zh": "Video world models aim to generate explorable, 3D-consistent",
+      "cover_zh": "Video world models aim to generate explorable, 3D-consistent",
+      "abstract_zh": "Video world models aim to generate explorable, 3D-consistent scene videos conditioned on camera trajectories. Existing approaches often rely on external memory systems that explicitly retrieve previously observed content to mitigate scene drift during long-horizon generation. However, these auxiliary memory pathways operate outside the model's internal generative dynamics, preventing the model from intrinsically learning when and what historical information should be retrieved. We propose to internalize memory retrieval into the generation process, allowing retrieval to emerge as an intrinsic behavior of the video world model rather than relying on an external memory system. Based on this principle, we introduce textbf{Learning-to-Retrieve (L2R)}, which repurposes the model's persistent internal state as a memory for historical context. A camera-conditioned retrieval gate selectively accesses relevant historical information from this state, determining textit{what to retrieve}, while a retrieval trigger determines textit{when to retrieve}. We further supervise the trigger with a 3D re-visibility signal, activating retrieval when previously observed content re-enters the current view while otherwise preserving the existing context. Together, these components enable the model to intrinsically acquire memory retrieval behavior and incorporate relevant historical observations into generation without a separate retrieval pathway. Across multiple base models and camera-revisit benchmarks, L2R improves long-term scene consistency while eliminating the need for an external memory bank or 3D conditions. https://jkhu29.github.io/l2r",
+      "authors": [
+        "JiaKui Hu",
+        "Tailai Chen",
+        "Yuqi Pan"
+      ],
+      "authors_all": [
+        "JiaKui Hu",
+        "Tailai Chen",
+        "Yuqi Pan",
+        "Xuerui Qiu",
+        "Jialun Liu",
+        "Xiao Cao",
+        "Zhenxin Zhu",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Bing Wang",
+        "Yanye Lu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-08",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-11444.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-11444-p2.jpg",
+        "assets/img/covers/arxiv-2610-11444-p3.jpg",
+        "assets/img/covers/arxiv-2610-11444-p4.jpg"
+      ],
+      "arxiv_id": "2610.11444",
+      "abs_url": "http://arxiv.org/abs/2610.11444v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.11444v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=6Ye6wWupWD4",
+          "embed_url": "https://www.youtube.com/embed/6Ye6wWupWD4",
+          "title": "Learning to Retrieve: Internalizing Memory Retrieval for Video World Models",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-11971",
       "source": "arxiv",
       "title": "CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding",
@@ -200942,6 +201122,61 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-17789",
+      "source": "arxiv_discover",
+      "title": "DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting",
+      "title_zh": "DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting",
+      "tldr_zh": "A long-horizon manipulation task consists of primitive skill",
+      "cover_zh": "A long-horizon manipulation task consists of primitive skill",
+      "abstract_zh": "A long-horizon manipulation task consists of primitive skills and the transitions connecting them. Learning skills that can be executed in sequence requires supervision for both, which is costly to collect on a robot. Human videos offer a scalable source of demonstrations, but transferring them to robots requires extracting robot-compatible observations and actions together with their skill structure. We present DexStitch, a framework that cuts long-horizon human videos into skills and transitions, converts them into aligned robot observation-action-skill data, and stitches the learned skills into a requested sequence. A skill classifier first segments the videos into manipulation skills and transitions. DexStitch then converts the human demonstrations into robot observations and actions while retaining their corresponding skill labels. During conversion, per-finger human-object contacts guide dexterous hand retargeting and robotic inpainting, preserving contact geometry and finger-object occlusion ordering. To stitch the learned skills into a sequence, a shared skill-conditioned policy is pretrained on the resulting synthetic data and finetuned on a mixture of synthetic data and a small set of single-skill teleoperation episodes. Conditioning on the current and next skills guides each transition toward the following skill, while predicted skill progression enables closed-loop switching. On a held-out session, the classifier agrees with manual annotations on 92.4% of frames. Across four household skills, DexStitch achieves 80.0% single-skill success and 77.5% sequence success.",
+      "authors": [
+        "Byeonggyeol Choi",
+        "Seongmin Jung",
+        "Unghui Nam"
+      ],
+      "authors_all": [
+        "Byeonggyeol Choi",
+        "Seongmin Jung",
+        "Unghui Nam",
+        "Youngbo Song",
+        "Sunhong Min",
+        "MinHyung Lee",
+        "Byonghyo Shim",
+        "Yongseok Lee"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-17789.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-17789-p2.jpg",
+        "assets/img/covers/arxiv-2610-17789-p3.jpg",
+        "assets/img/covers/arxiv-2610-17789-p4.jpg"
+      ],
+      "arxiv_id": "2610.17789",
+      "abs_url": "http://arxiv.org/abs/2610.17789v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17789v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-18855",
@@ -217389,6 +217624,61 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-09369",
+      "source": "arxiv_discover",
+      "title": "Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment",
+      "title_zh": "Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment",
+      "tldr_zh": "When diffusion policies were first introduced, they were exp",
+      "cover_zh": "When diffusion policies were first introduced, they were exp",
+      "abstract_zh": "When diffusion policies were first introduced, they were expected to recover multi-modal action distributions. However, we find this expectation does not always hold, as diffusion policies often collapse to a single modality even when we guarantee the balance of dataset modalities and exact within-batch symmetry. Our analysis indicates that independent action-noise pairing contributes to this failure by increasing mixing and crossing among diffusion paths, which can produce averaged denoising responses and suppress modality-specific behavior. This issue is especially severe in robot planning, where action spaces are dense and low-dimensional, significantly increasing such mixing and crossing. To alleviate this problem, we propose Immiscible Diffusion Policy, a label-free training-time add-on to diffusion policy that uses action-noise assignment to preserve relatively distinct noise-to-action routes without modifying the policy architecture or inference procedure. Across five simulated and two real-world humanoid manipulation tasks spanning state, RGB, and point-cloud observations, our method significantly improves the policy's preservation of action modalities while maintaining strong task performance. It increases the proportion of the non-dominant modality by 6.0x-14.6x across three two-modality tasks and recovers demonstrated modalities that are entirely absent from vanilla policy rollouts on both four-modality tasks. These results demonstrate that Immiscible Diffusion Policy provides a simple yet robust approach to preserving action multi-modality in general robot learning tasks.",
+      "authors": [
+        "Xiao Zhang",
+        "Yuxin Chen",
+        "Zhixuan Liang"
+      ],
+      "authors_all": [
+        "Xiao Zhang",
+        "Yuxin Chen",
+        "Zhixuan Liang",
+        "Guojian Zhan",
+        "Chenran Li",
+        "Chenfeng Xu",
+        "Masayoshi Tomizuka",
+        "Yiheng Li"
+      ],
+      "primary_category": "",
+      "published": "2026-10-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-09369.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-09369-p2.jpg",
+        "assets/img/covers/arxiv-2610-09369-p3.jpg",
+        "assets/img/covers/arxiv-2610-09369-p4.jpg"
+      ],
+      "arxiv_id": "2610.09369",
+      "abs_url": "http://arxiv.org/abs/2610.09369v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.09369v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-10079",
       "source": "arxiv",
       "title": "RealtimeWAM: How Fast Can I Run My World Action Model?",
@@ -218185,6 +218475,58 @@
       "pdf_url": "https://arxiv.org/pdf/2610.14324v2",
       "venue": "",
       "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2610-14840",
+      "source": "arxiv_discover",
+      "title": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+      "title_zh": "Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid",
+      "tldr_zh": "We present a learning-based framework that enables a full-sc",
+      "cover_zh": "We present a learning-based framework that enables a full-sc",
+      "abstract_zh": "We present a learning-based framework that enables a full-scale bipedal humanoid to sprint at over 7 m/s with motion-prior-guided gait and perform aggressive cornering at high speed with a pronounced trunk lean of up to $25^circ$. Achieving this combination is challenging: above approximately 4 m/s, periodic foot impacts induce severe, high-frequency yaw-rate oscillations intrinsic to high-speed gaits. This high-frequency temporal structure corrupts the history of proprioceptive feedback that flat-MLP policies rely on, while rendering conventional yaw-rate tracking rewards counterproductive, as they fight against the robot's natural oscillatory dynamics. Moreover, a single style prior shared across skills cannot tell which skill is commanded and inherently compromises the low-speed skill fidelity. To overcome these limitations, we adopt a causal multi-head attention (MHA) module to explicitly model the high-frequency temporal feedback. In place of the oscillatory yaw rate, we design a heading-direction reward that supervises only the low-frequency velocity direction, allowing agile turning at high speed without suppressing natural gait oscillations. We further introduce skill-conditioned multi-adversarial-motion-prior (MAMP) discriminators that condition the style reward on the commanded skill. Ablation experiments confirm that each mechanism is essential: replacing structured temporal encoding with a flat-history MLP caps the top speed; reverting to yaw-rate tracking prevents high-speed turning; and a single shared discriminator makes in-place turning collapse into a quasi-static stance. Our framework bridges the gap between raw sprinting speed and reference-motion fidelity, demonstrating stable high-speed sprinting and aggressive cornering in both simulation and real-robot deployment.",
+      "authors": [
+        "Huaxing Huang",
+        "Ruidong Li",
+        "Jinchao Han"
+      ],
+      "authors_all": [
+        "Huaxing Huang",
+        "Ruidong Li",
+        "Jinchao Han",
+        "Ziyang Dong",
+        "Wenhao Cui"
+      ],
+      "primary_category": "",
+      "published": "2026-10-10",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-14840.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-14840-p2.jpg",
+        "assets/img/covers/arxiv-2610-14840-p3.jpg",
+        "assets/img/covers/arxiv-2610-14840-p4.jpg"
+      ],
+      "arxiv_id": "2610.14840",
+      "abs_url": "http://arxiv.org/abs/2610.14840v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.14840v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-18",
       "score": 9,
       "judge": {},
       "institutions": [],
