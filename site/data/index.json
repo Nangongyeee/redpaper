@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T11:08:14.083978+00:00",
-  "count": 3932,
+  "generated_at": "2026-10-19T14:52:23.672805+00:00",
+  "count": 3934,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -176749,6 +176749,57 @@
       ]
     },
     {
+      "id": "arxiv-2610-12818",
+      "source": "arxiv_discover",
+      "title": "LeWAM: End-to-End World and Action Modeling with JEPAs",
+      "title_zh": "LeWAM: End-to-End World and Action Modeling with JEPAs",
+      "tldr_zh": "Joint-embedding predictive architectures (JEPAs) learn compa",
+      "cover_zh": "Joint-embedding predictive architectures (JEPAs) learn compa",
+      "abstract_zh": "Joint-embedding predictive architectures (JEPAs) learn compact latent world models without pixel reconstruction. Existing JEPA pipelines typically train visual representations and action-conditioned dynamics before adding a control policy or solver. We introduce LeWAM, an end-to-end JEPA for control with: (1) a joint training objective over next latent state prediction and action flow matching, and (2) an isotropic Gaussian constraint on the latent state, enabling a single model to support direct policy execution and efficient planning by evaluating sampled actions with its learned latent dynamics. Compared with prior JEPAs in visual planning, LeWAM improves success rate from 28.6% to 89.7% on contact-rich tasks and from 10.9% to 46.2% on long-horizon tasks, and plans 32.3 times faster. On behavior cloning tasks in simulation and physical robots, LeWAM is also competitive with established methods. Interpretability analyses show that LeWAM learns control-relevant representations and action distributions effectively guiding test-time planning and control.",
+      "authors": [
+        "Minghao Fu",
+        "Tavis Siebert",
+        "Eryk Halicki"
+      ],
+      "authors_all": [
+        "Minghao Fu",
+        "Tavis Siebert",
+        "Eryk Halicki",
+        "Randall Balestriero"
+      ],
+      "primary_category": "",
+      "published": "2026-10-08",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-12818.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-12818-p2.jpg",
+        "assets/img/covers/arxiv-2610-12818-p3.jpg",
+        "assets/img/covers/arxiv-2610-12818-p4.jpg"
+      ],
+      "arxiv_id": "2610.12818",
+      "abs_url": "http://arxiv.org/abs/2610.12818v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12818v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-13212",
       "source": "arxiv",
       "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
@@ -177300,6 +177351,60 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-22619",
+      "source": "arxiv_discover",
+      "title": "FCTS: Failure-Guided Curriculum Tree Search Over Generated Terrain for Legged Parkour",
+      "title_zh": "FCTS: Failure-Guided Curriculum Tree Search Over Generated Terrain for Legged Parkour",
+      "tldr_zh": "Quadruped parkour policies handle canonical obstacles well,",
+      "cover_zh": "Quadruped parkour policies handle canonical obstacles well,",
+      "abstract_zh": "Quadruped parkour policies handle canonical obstacles well, but their training curricula often miss the irregular, compound geometry of industrial and disaster-response sites, where agile locomotion matters most. Such environments pose a hard generalization problem: even training directly on reconstructed geometry from the target site does not reliably yield policies that traverse it. Hand-designed curricula span only a few terrain families, and recent LLM-generated curricula offer little control over which policy weaknesses they target. We propose FCTS, a failure-conditioned terrain curriculum framework that uses localized traversal failures to automatically generate the terrains a policy should train on next. Each failure's location, termination mode, robot state, and surrounding terrain geometry condition this generation, and Monte Carlo Tree Search explores alternative curriculum trajectories under a fixed training budget. On terrains built from scanned real-world construction sites, FCTS raises success rate from 28.4% to 85.8% on a medium-difficulty course and from 14.9% to 44.7% on a hard course relative to the strongest parkour or LLM-curriculum baselines, and maintains higher progress on extreme terrains where full traversal is rare. Hardware experiments on a quadruped robot confirm that the learned FCTS policies transfer to the real world.",
+      "authors": [
+        "Narayanan Palghat Parameswaran",
+        "Dong-Ki Kim",
+        "Jay Patrikar"
+      ],
+      "authors_all": [
+        "Narayanan Palghat Parameswaran",
+        "Dong-Ki Kim",
+        "Jay Patrikar",
+        "Santiago Gutierrez",
+        "Harshad Zade",
+        "Shayegan Omidshafiei",
+        "Harmish Khambhaita"
+      ],
+      "primary_category": "",
+      "published": "2026-10-15",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-22619.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-22619-p2.jpg",
+        "assets/img/covers/arxiv-2610-22619-p3.jpg",
+        "assets/img/covers/arxiv-2610-22619-p4.jpg"
+      ],
+      "arxiv_id": "2610.22619",
+      "abs_url": "http://arxiv.org/abs/2610.22619v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22619v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-23123",
