@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:43:17.744590+00:00",
+  "generated_at": "2026-10-21T13:19:27.530207+00:00",
   "count": 4022,
   "papers": [
     {
@@ -76713,6 +76713,70 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2609-04802",
+      "source": "arxiv",
+      "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+      "title_zh": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+      "tldr_zh": "Embodied agents performing long-horizon tasks require a memo",
+      "cover_zh": "Embodied agents performing long-horizon tasks require a memo",
+      "abstract_zh": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons. Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories). None of them gives the agent a per-object timeline whose state transitions are themselves queryable in language. Our key contribution is textbf{Linguistic Trajectory Encoding} (LTE), which compresses dynamic object motion histories via a hybrid representation combining natural language descriptions, sparse spatial anchors, and visual anchors. LTE adapts compression to motion complexity by anchoring periods without reliable observations to the last seen location, while representing motion with geometric waypoints and linguistic descriptions to preserve accuracy. To evaluate these capabilities across extended time horizons, we construct the textbf{Spatial Memory Benchmark} (SMB) from EgoLife multi-day recordings, targeting capabilities absent in existing benchmarks: semantic trajectory retrieval and long-horizon object retrieval. On SMB, the LTE-based system achieves $45.3\\%$ success in semantic trajectory retrieval and $48.7\\%$ in long-horizon object retrieval, outperforming structured-memory and VLM baselines (best prior: $31.9\\%$ and $34.4\\%$). LTE achieves trajectory compression by factors of $8.7×$ to $26.1×$ with sub-second query latency on $24$\\,h video. On Ego4D natural-language queries, the system reaches $28.75\\%$ / $55.10\\%$ R@1/R@5, $+15.80$ / $+31.30$ pts over EgoVLPv2.",
+      "authors": [
+        "Tianyidan Xie",
+        "Shenyi Wang",
+        "Qiang Tang"
+      ],
+      "authors_all": [
+        "Tianyidan Xie",
+        "Shenyi Wang",
+        "Qiang Tang",
+        "Mingjie Wang",
+        "Zhicheng Qiu",
+        "Xuanfu Li",
+        "Zhan Xu",
+        "Jian Yang",
+        "Lanjun Wang",
+        "Zili Yi"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-04",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Li Yi"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2609-04802.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2609-04802-p2.jpg",
+        "assets/img/covers/arxiv-2609-04802-p3.jpg",
+        "assets/img/covers/arxiv-2609-04802-p4.jpg"
+      ],
+      "arxiv_id": "2609.04802",
+      "abs_url": "http://arxiv.org/abs/2609.04802v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04802v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-10-21",
+      "score": 36,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2609-20820",
       "source": "arxiv",
       "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
@@ -106805,66 +106869,6 @@
       "arxiv_id": "2609.04070",
       "abs_url": "http://arxiv.org/abs/2609.04070v1",
       "pdf_url": "https://arxiv.org/pdf/2609.04070v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2609-04802",
-      "source": "arxiv",
-      "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
-      "title_zh": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
-      "tldr_zh": "Embodied agents performing long-horizon tasks require a memo",
-      "cover_zh": "Embodied agents performing long-horizon tasks require a memo",
-      "abstract_zh": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons. Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories). None of them gives the agent a per-object timeline whose state transitions are themselves queryable in language. Our key contribution is textbf{Linguistic Trajectory Encoding} (LTE), which compresses dynamic object motion histories via a hybrid representation combining natural language descriptions, sparse spatial anchors, and visual anchors. LTE adapts compression to motion complexity by anchoring periods without reliable observations to the last seen location, while representing motion with geometric waypoints and linguistic descriptions to preserve accuracy. To evaluate these capabilities across extended time horizons, we construct the textbf{Spatial Memory Benchmark} (SMB) from EgoLife multi-day recordings, targeting capabilities absent in existing benchmarks: semantic trajectory retrieval and long-horizon object retrieval. On SMB, the LTE-based system achieves $45.3\\%$ success in semantic trajectory retrieval and $48.7\\%$ in long-horizon object retrieval, outperforming structured-memory and VLM baselines (best prior: $31.9\\%$ and $34.4\\%$). LTE achieves trajectory compression by factors of $8.7×$ to $26.1×$ with sub-second query latency on $24$\\,h video. On Ego4D natural-language queries, the system reaches $28.75\\%$ / $55.10\\%$ R@1/R@5, $+15.80$ / $+31.30$ pts over EgoVLPv2.",
-      "authors": [
-        "Tianyidan Xie",
-        "Shenyi Wang",
-        "Qiang Tang"
-      ],
-      "authors_all": [
-        "Tianyidan Xie",
-        "Shenyi Wang",
-        "Qiang Tang",
-        "Mingjie Wang",
-        "Zhicheng Qiu",
-        "Xuanfu Li",
-        "Zhan Xu",
-        "Jian Yang",
-        "Lanjun Wang",
-        "Zili Yi"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-09-04",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Li Yi"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2609-04802.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2609-04802-p2.jpg",
-        "assets/img/covers/arxiv-2609-04802-p3.jpg",
-        "assets/img/covers/arxiv-2609-04802-p4.jpg"
-      ],
-      "arxiv_id": "2609.04802",
-      "abs_url": "http://arxiv.org/abs/2609.04802v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.04802v1",
       "venue": "",
       "venue_announced": "",
       "score": 26,
@@ -142036,6 +142040,64 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-23894",
+      "source": "arxiv_discover",
+      "title": "Language-Forcing: Advancing Humanoid Loco-Manipulation via Semantic Alignment of Whole-Body World Action Models",
+      "title_zh": "Language-Forcing: Advancing Humanoid Loco-Manipulation via Semantic Alignment of Whole-Body World Action Models",
+      "tldr_zh": "World Action Models (WAMs) jointly predict robot actions and",
+      "cover_zh": "World Action Models (WAMs) jointly predict robot actions and",
+      "abstract_zh": "World Action Models (WAMs) jointly predict robot actions and future observations. However, their visual prediction objectives do not explicitly distinguish task-relevant transitions from incidental scene changes. For whole-body policies, this distinction matters because task progress depends on coordinated changes in body pose, contact, and object state. We introduce LANGUAGE-FORCING, a training strategy that uses language to emphasize task-relevant changes in the future visual representations of a whole-body WAM. Given paired current and ground- truth short-horizon future frames, a frozen vision-language model assesses task progress and predicts plausible subsequent state changes. We encode these descriptions with a frozen text encoder and align their embeddings with intermediate, action-conditioned future-visual features, complementing the original visual and action prediction objectives. All auxiliary components are used only during training, introducing no additional inference overhead. On HumanoidArena, LANGUAGE-FORCING achieves an average success rate of 79.17%, exceeding the strongest competing policy by 9.46 percentage points and the same WAM without language alignment by 10.77 percentage points. Across five real-world tasks, language alignment raises average success from 53.33% to 71.33% over the same WAM baseline.",
+      "authors": [
+        "Yanjun Li",
+        "Jiarui Ye",
+        "Weiyu Guo"
+      ],
+      "authors_all": [
+        "Yanjun Li",
+        "Jiarui Ye",
+        "Weiyu Guo",
+        "Zixiao He",
+        "Kangjie Ye",
+        "Dihan Wang",
+        "Yishuo Cheng",
+        "Zishang Xiang",
+        "Mingju Gao",
+        "Hao Tang"
+      ],
+      "primary_category": "",
+      "published": "2026-09-28",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-23894.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-23894-p2.jpg",
+        "assets/img/covers/arxiv-2610-23894-p3.jpg",
+        "assets/img/covers/arxiv-2610-23894-p4.jpg"
+      ],
+      "arxiv_id": "2610.23894",
+      "abs_url": "http://arxiv.org/abs/2610.23894v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23894v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2609-36413",
@@ -180017,63 +180079,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-23894",
-      "source": "arxiv_discover",
-      "title": "Language-Forcing: Advancing Humanoid Loco-Manipulation via Semantic Alignment of Whole-Body World Action Models",
-      "title_zh": "Language-Forcing: Advancing Humanoid Loco-Manipulation via Semantic Alignment of Whole-Body World Action Models",
-      "tldr_zh": "World Action Models (WAMs) jointly predict robot actions and",
-      "cover_zh": "World Action Models (WAMs) jointly predict robot actions and",
-      "abstract_zh": "World Action Models (WAMs) jointly predict robot actions and future observations. However, their visual prediction objectives do not explicitly distinguish task-relevant transitions from incidental scene changes. For whole-body policies, this distinction matters because task progress depends on coordinated changes in body pose, contact, and object state. We introduce LANGUAGE-FORCING, a training strategy that uses language to emphasize task-relevant changes in the future visual representations of a whole-body WAM. Given paired current and ground- truth short-horizon future frames, a frozen vision-language model assesses task progress and predicts plausible subsequent state changes. We encode these descriptions with a frozen text encoder and align their embeddings with intermediate, action-conditioned future-visual features, complementing the original visual and action prediction objectives. All auxiliary components are used only during training, introducing no additional inference overhead. On HumanoidArena, LANGUAGE-FORCING achieves an average success rate of 79.17%, exceeding the strongest competing policy by 9.46 percentage points and the same WAM without language alignment by 10.77 percentage points. Across five real-world tasks, language alignment raises average success from 53.33% to 71.33% over the same WAM baseline.",
-      "authors": [
-        "Yanjun Li",
-        "Jiarui Ye",
-        "Weiyu Guo"
-      ],
-      "authors_all": [
-        "Yanjun Li",
-        "Jiarui Ye",
-        "Weiyu Guo",
-        "Zixiao He",
-        "Kangjie Ye",
-        "Dihan Wang",
-        "Yishuo Cheng",
-        "Zishang Xiang",
-        "Mingju Gao",
-        "Hao Tang"
-      ],
-      "primary_category": "",
-      "published": "2026-09-28",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-23894.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-23894-p2.jpg",
-        "assets/img/covers/arxiv-2610-23894-p3.jpg",
-        "assets/img/covers/arxiv-2610-23894-p4.jpg"
-      ],
-      "arxiv_id": "2610.23894",
-      "abs_url": "http://arxiv.org/abs/2610.23894v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.23894v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2609-37070",
