@@ -1,0 +1,118 @@
+{
+  "id": "arxiv-2610-21152",
+  "source": "arxiv_discover",
+  "title": "KODA: Kinematics--Observation Data Alignment for Humanoid Learning from Human Egocentric Demonstration",
+  "title_zh": "KODA: Kinematics--Observation Data Alignment for Humanoid Learning from Human Egocentric Demonstration",
+  "abstract": "Training humanoid whole-body vision-language-action (VLA) policies requires costly robot demonstrations with aligned robot-view observations and controller-compatible whole-body state-action labels. Egocentric human demonstrations offer scalable supervision but have misaligned views and sparse motion cues. Existing approaches either pretrain policies that still require robot data for adaptation or generate controller-specific commands that limit reuse. Conversion also requires robot-view observations aligned with the generated whole-body motion. We present KODA (Kinematics-Observation Data Alignment), which converts egocentric RGB demonstrations into whole-body VLA training data using a reusable canonical trajectory to guide robot-view synthesis and generate controller-specific whole-body state-action supervision. KODA first generates a simulator-checked whole-body trajectory using a sparse tracker with sampling-based command optimization. This generated trajectory directly determines the onboard camera poses used to synthesize corresponding robot-view observations. The motion, observations, and task instruction form a canonical record. For each deployment controller, KODA optimizes commands to track the stored motion and records the corresponding action labels and proprioceptive states. When switching controllers, KODA retains this canonical record and regenerates whole-body state-action supervision for co-training with matching robot demonstrations. We evaluate KODA on four Unitree G1 loco-manipulation tasks using two whole-body controllers, SONIC and HEFT. With robot data held fixed, macro-average success on conditions covered by human demonstrations but absent from robot data improves by 45.0 and 46.25 percentage points, respectively. Under both controllers, this metric shows an upward trend across the evaluated human-data budgets, suggesting potential for further scaling.",
+  "abstract_zh": "Training humanoid whole-body vision-language-action (VLA) policies requires costly robot demonstrations with aligned robot-view observations and controller-compatible whole-body state-action labels. Egocentric human demonstrations offer scalable supervision but have misaligned views and sparse motion cues. Existing approaches either pretrain policies that still require robot data for adaptation or generate controller-specific commands that limit reuse. Conversion also requires robot-view observations aligned with the generated whole-body motion. We present KODA (Kinematics-Observation Data Alignment), which converts egocentric RGB demonstrations into whole-body VLA training data using a reusable canonical trajectory to guide robot-view synthesis and generate controller-specific whole-body state-action supervision. KODA first generates a simulator-checked whole-body trajectory using a sparse tracker with sampling-based command optimization. This generated trajectory directly determines the onboard camera poses used to synthesize corresponding robot-view observations. The motion, observations, and task instruction form a canonical record. For each deployment controller, KODA optimizes commands to track the stored motion and records the corresponding action labels and proprioceptive states. When switching controllers, KODA retains this canonical record and regenerates whole-body state-action supervision for co-training with matching robot demonstrations. We evaluate KODA on four Unitree G1 loco-manipulation tasks using two whole-body controllers, SONIC and HEFT. With robot data held fixed, macro-average success on conditions covered by human demonstrations but absent from robot data improves by 45.0 and 46.25 percentage points, respectively. Under both controllers, this metric shows an upward trend across the evaluated human-data budgets, suggesting potential for further scaling.",
+  "tldr_zh": "Training humanoid whole-body vision-language-action (VLA) po",
+  "cover_zh": "Training humanoid whole-body vision-language-action (VLA) po",
+  "authors": [
+    {
+      "name": "Zibo Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Yueru Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Junsong Wu",
+      "affiliation": ""
+    },
+    {
+      "name": "Weiji Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Qingyao Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Sheng Yin",
+      "affiliation": ""
+    },
+    {
+      "name": "Shiqing Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiyuan Shi",
+      "affiliation": ""
+    },
+    {
+      "name": "Siheng Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Chenjia Bai",
+      "affiliation": ""
+    },
+    {
+      "name": "Xuelong Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "arxiv_id": "2610.21152",
+  "pdf_url": "https://arxiv.org/pdf/2610.21152v1",
+  "abs_url": "http://arxiv.org/abs/2610.21152v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-21152.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-21152-p2.jpg",
+    "assets/img/covers/arxiv-2610-21152-p3.jpg",
+    "assets/img/covers/arxiv-2610-21152-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Xuelong Li"
+    }
+  ],
+  "related_links": [],
+  "page_count": 33,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 35,
+  "score_breakdown": [
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Xuelong Li"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 7 个（whole-body、whole-body control、humanoid whole-body、loco-manipulation）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 33 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
