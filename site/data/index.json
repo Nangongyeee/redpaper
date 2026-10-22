@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T09:01:13.506974+00:00",
-  "count": 4071,
+  "generated_at": "2026-10-22T10:39:26.900309+00:00",
+  "count": 4072,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -96250,6 +96250,65 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-11657",
+      "source": "arxiv_discover",
+      "title": "YOCO: You Only Calibrate Once! Fast Mocap Calibration for Dexterous Teleoperation",
+      "title_zh": "YOCO: You Only Calibrate Once! Fast Mocap Calibration for Dexterous Teleoperation",
+      "tldr_zh": "Dexterous teleoperation requires reliable human-hand state e",
+      "cover_zh": "Dexterous teleoperation requires reliable human-hand state e",
+      "abstract_zh": "Dexterous teleoperation requires reliable human-hand state estimations. However, common low-cost motion-capture gloves and markerless trackers often exhibit biases that vary across users, glove fit, and recording sessions, degrading retargeting and demonstration quality. We present YOCO, a fast few-shot, fine-tuning-free calibration framework that corrects biased hand-pose streams from a small set of paired raw and target poses. Instead of optimizing a separate model for every operator or session, YOCO conditions a calibration HyperNet on the paired examples and predicts LoRA-style updates for a frozen MANO hand-estimation module, turning per-user calibration into a lightweight feed-forward adaptation step while preserving the geometric prior of MANO and the efficiency of a compact estimator. We train YOCO with synthetic drift augmentations on InterHand2.6M and evaluate on augmented InterHand sequences, offline real glove data, and dexterous teleoperation tasks. Across these settings, YOCO improves calibration efficiency, hand-state estimation quality and teleoperation performance compared with uncalibrated input and standard calibration baselines.",
+      "authors": [
+        "Yu Zhang",
+        "Yunqi Li",
+        "Yushi Du"
+      ],
+      "authors_all": [
+        "Yu Zhang",
+        "Yunqi Li",
+        "Yushi Du",
+        "Yi Ma",
+        "Yanchao Yang"
+      ],
+      "primary_category": "",
+      "published": "2026-10-08",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-11657.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-11657-p2.jpg",
+        "assets/img/covers/arxiv-2610-11657-p3.jpg",
+        "assets/img/covers/arxiv-2610-11657-p4.jpg"
+      ],
+      "arxiv_id": "2610.11657",
+      "abs_url": "http://arxiv.org/abs/2610.11657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.11657v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-22",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-12046",
       "source": "arxiv",
       "title": "SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills",
@@ -110341,6 +110400,64 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-28074",
+      "source": "arxiv_discover",
+      "title": "Slot-JEPA: Object-Structured Prediction Interfaces for Latent World Models",
+      "title_zh": "Slot-JEPA: Object-Structured Prediction Interfaces for Latent World Models",
+      "tldr_zh": "As a prototypical latent world model, Joint-Embedding Predic",
+      "cover_zh": "As a prototypical latent world model, Joint-Embedding Predic",
+      "abstract_zh": "As a prototypical latent world model, Joint-Embedding Predictive Architectures (JEPAs) provide strong semantic representations. However, dense patch representations expose a redundant interface to downstream predictors, which must implicitly infer spatial organization and temporal correspondence, presenting three challenges. First, object information is distributed across patches, forcing each downstream predictor to redundantly recover object structure that could otherwise be reused across tasks before modeling interactions. Second, the lack of explicit entity correspondence across time makes historical transitions expensive, restricting the predictor's flexibility in utilizing context. Third, without explicit transport structure, existing JEPA models typically use pointwise l1/l2 distances, which are insensitive to spatial displacement when predicted and goal supports are largely disjoint. We propose the Slot-based Joint-Embedding Predictive Architecture (Slot-JEPA), which decomposes dense representations into stable semantic slots and time-varying spatial masks. Pretrained once and frozen downstream, this decomposition exposes a reusable object-structured interface. Building on it, our Transition Memory Predictor (TMP) stores visual transitions as compact masks and retrieves useful context using statistics of corresponding slots. Its two branches separate slot-specific dynamics from shared cross-slot dynamics. We further use Unbalanced Optimal Transport (UOT) to supervise mask prediction and evaluate candidate plans by transporting mass between aligned predicted and goal masks, providing a signal better aligned with spatial progress. Across seven visual-understanding benchmarks, the slot-reconstructed features remain transferable. Slot-JEPA also improves goal-conditioned planning across six planar environments and four robotic arm planning tasks on the REALM-JEPA benchmark.",
+      "authors": [
+        "Peisong Wen",
+        "Qianqian Xu",
+        "Minye Lei"
+      ],
+      "authors_all": [
+        "Peisong Wen",
+        "Qianqian Xu",
+        "Minye Lei",
+        "Siran Dai",
+        "Yang Liu",
+        "Qingming Huang"
+      ],
+      "primary_category": "",
+      "published": "2026-10-20",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-28074.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-28074-p2.jpg",
+        "assets/img/covers/arxiv-2610-28074-p3.jpg",
+        "assets/img/covers/arxiv-2610-28074-p4.jpg"
+      ],
+      "arxiv_id": "2610.28074",
+      "abs_url": "http://arxiv.org/abs/2610.28074v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28074v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-28109",
@@ -226685,58 +226802,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-11657",
-      "source": "arxiv_discover",
-      "title": "YOCO: You Only Calibrate Once! Fast Mocap Calibration for Dexterous Teleoperation",
-      "title_zh": "YOCO: You Only Calibrate Once! Fast Mocap Calibration for Dexterous Teleoperation",
-      "tldr_zh": "Dexterous teleoperation requires reliable human-hand state e",
-      "cover_zh": "Dexterous teleoperation requires reliable human-hand state e",
-      "abstract_zh": "Dexterous teleoperation requires reliable human-hand state estimations. However, common low-cost motion-capture gloves and markerless trackers often exhibit biases that vary across users, glove fit, and recording sessions, degrading retargeting and demonstration quality. We present YOCO, a fast few-shot, fine-tuning-free calibration framework that corrects biased hand-pose streams from a small set of paired raw and target poses. Instead of optimizing a separate model for every operator or session, YOCO conditions a calibration HyperNet on the paired examples and predicts LoRA-style updates for a frozen MANO hand-estimation module, turning per-user calibration into a lightweight feed-forward adaptation step while preserving the geometric prior of MANO and the efficiency of a compact estimator. We train YOCO with synthetic drift augmentations on InterHand2.6M and evaluate on augmented InterHand sequences, offline real glove data, and dexterous teleoperation tasks. Across these settings, YOCO improves calibration efficiency, hand-state estimation quality and teleoperation performance compared with uncalibrated input and standard calibration baselines.",
-      "authors": [
-        "Yu Zhang",
-        "Yunqi Li",
-        "Yushi Du"
-      ],
-      "authors_all": [
-        "Yu Zhang",
-        "Yunqi Li",
-        "Yushi Du",
-        "Yi Ma",
-        "Yanchao Yang"
-      ],
-      "primary_category": "",
-      "published": "2026-10-08",
-      "channels": [
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-11657.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-11657-p2.jpg",
-        "assets/img/covers/arxiv-2610-11657-p3.jpg",
-        "assets/img/covers/arxiv-2610-11657-p4.jpg"
-      ],
-      "arxiv_id": "2610.11657",
-      "abs_url": "http://arxiv.org/abs/2610.11657v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.11657v1",
-      "venue": "CoRL 2026",
-      "venue_announced": "2026-10-22",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2610-12126",
