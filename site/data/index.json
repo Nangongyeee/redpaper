@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T13:36:02.673028+00:00",
-  "count": 4123,
+  "generated_at": "2026-10-24T15:04:18.347457+00:00",
+  "count": 4127,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -114141,6 +114141,78 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-22496",
+      "source": "arxiv_discover",
+      "title": "Scaling Online Exploration for Robot Agents",
+      "title_zh": "Scaling Online Exploration for Robot Agents",
+      "tldr_zh": "Robot learning has advanced by scaling demonstration dataset",
+      "cover_zh": "Robot learning has advanced by scaling demonstration dataset",
+      "abstract_zh": "Robot learning has advanced by scaling demonstration datasets and model capacity; however, deploying a new robot embodiment or task typically necessitates a dedicated teleoperation corpus. The resulting policies remain bounded by their imitation distributions, limiting generalization and continual self-improvement. We introduce RAX (Robot Agent eXploration), an open-source framework for robot agents centered on scaling exploration: enabling agents to improve by acquiring online experience and synthesizing executable programs. In RAX, a general-purpose coding agent generates robot control code, operating without action demonstration data, hand-engineered action primitives, or value-function guidance. Through online exploration, the agent identifies decision sequences that achieve task goals and compiles them into modular programs encapsulating the full perception-planning-control loop. Using RAX, we present a systematic multi-embodiment study on scaling online exploration across precision and long-horizon manipulation tasks using single-arm, bimanual, dexterous, mobile, and humanoid systems in simulation and on real robots. Generalization performance on unseen environments improves consistently as exploration scales. In simulation, RAX outperforms top baseline models by +37.4% on average. On real robots, RAX autonomously learns memory-dependent, articulated, high-precision, deformable, and long-horizon mobile manipulation tasks without human demonstrations, continually improving performance by composing verified skills from prior exploration sessions. As exploration scales, we observe emergent capabilities including active perception, error recovery, safety guardrails, and human-robot collaboration. We open-source RAX as a generalist robot-agent platform in which new robot embodiments are integrated through their APIs alone, without teleoperated data collection or policy training.",
+      "authors": [
+        "Runhan Huang",
+        "Xiangcheng Zhang",
+        "Haoyu Chen"
+      ],
+      "authors_all": [
+        "Runhan Huang",
+        "Xiangcheng Zhang",
+        "Haoyu Chen",
+        "Yitong Li",
+        "Yen-Jen Wang",
+        "Bohan Lyu",
+        "Haotian Ye",
+        "Chuye Hong",
+        "Yixuan Wang",
+        "Chloe Su",
+        "Haoyu Xiong",
+        "Yangzhen Wu",
+        "Enze Xie",
+        "Travis Manderson",
+        "Stefano Ermon",
+        "Pieter Abbeel",
+        "Antonio Torralba",
+        "Dawn Song",
+        "Weirui Ye",
+        "Yilun Du"
+      ],
+      "primary_category": "",
+      "published": "2026-10-15",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Pieter Abbeel"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-22496.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-22496-p2.jpg",
+        "assets/img/covers/arxiv-2610-22496-p3.jpg",
+        "assets/img/covers/arxiv-2610-22496-p4.jpg"
+      ],
+      "arxiv_id": "2610.22496",
+      "abs_url": "http://arxiv.org/abs/2610.22496v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22496v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 23,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-26507",
       "source": "arxiv",
       "title": "Learn the Task, Not the Schedule: Reducing Spurious Cross-Arm Coupling in Bimanual Imitation Learning",
@@ -183942,6 +184014,61 @@
       ]
     },
     {
+      "id": "arxiv-2610-19518",
+      "source": "arxiv_discover",
+      "title": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+      "title_zh": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+      "tldr_zh": "While multi-fingered dexterous robot hands have the potentia",
+      "cover_zh": "While multi-fingered dexterous robot hands have the potentia",
+      "abstract_zh": "While multi-fingered dexterous robot hands have the potential to provide human-level dexterity, using them for functional manipulation remains difficult because task success depends on precise contact, coordinated arm-hand motion, and reactive recovery from execution errors. Precise contact depends on complex contact dynamics that are difficult to model accurately in simulation, motivating real-world learning. However, real-world demonstrations in the full arm-hand control space are costly and noisy because each trajectory must coordinate arm motion with high-DoF multi-finger contact. Small execution deviations can further cause slipped contact or premature force application, making recovery from off-nominal contact states important for robust execution. To deal with these challenges, we propose HiFun, a hierarchical real-world RL framework for functional dexterous manipulation tasks. Our key insight is to decouple the control complexity into a functional hand skill for precise contact execution and an arm-hand coordination policy for arm control and hand-skill activation. This design enables effective real-time human intervention for reactive recovery learning and efficient data collection with Dynamic Movement Primitive (DMP) augmentation. Across six real-world tasks on two dexterous hands, HiFun achieves 98.3% average success within one hour of online training and remains robust to dynamic disturbances. The project page is available at https://hly-123.github.io/HiFun/.",
+      "authors": [
+        "Linyi Huang",
+        "Guowei Huai",
+        "Weibin Liu"
+      ],
+      "authors_all": [
+        "Linyi Huang",
+        "Guowei Huai",
+        "Weibin Liu",
+        "Shulong Jiang",
+        "Ping Tan",
+        "Weixuan Zhang",
+        "Hui Zhang",
+        "Jie Song"
+      ],
+      "primary_category": "",
+      "published": "2026-10-14",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-19518.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-19518-p2.jpg",
+        "assets/img/covers/arxiv-2610-19518-p3.jpg",
+        "assets/img/covers/arxiv-2610-19518-p4.jpg"
+      ],
+      "arxiv_id": "2610.19518",
+      "abs_url": "http://arxiv.org/abs/2610.19518v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19518v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-20223",
       "source": "arxiv",
       "title": "ObjDream: Guiding Vision-Language-Action Models with Object-Level Understanding and Future State Prediction",
@@ -184492,6 +184619,61 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-27851",
+      "source": "arxiv_discover",
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "title_zh": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "tldr_zh": "This paper shows that JEPA-style latent world models (LWMs)",
+      "cover_zh": "This paper shows that JEPA-style latent world models (LWMs)",
+      "abstract_zh": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with $6×$ less training cost and $13.9×$ faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to $5.5×$ faster inference.",
+      "authors": [
+        "Junha Song",
+        "Geonmo Gu",
+        "Jeongeun Park"
+      ],
+      "authors_all": [
+        "Junha Song",
+        "Geonmo Gu",
+        "Jeongeun Park",
+        "Heejeong Nam",
+        "Lucas Maes",
+        "Byeongho Heo",
+        "Dongyoon Han",
+        "Sangdoo Yun"
+      ],
+      "primary_category": "",
+      "published": "2026-10-20",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-27851.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-27851-p2.jpg",
+        "assets/img/covers/arxiv-2610-27851-p3.jpg",
+        "assets/img/covers/arxiv-2610-27851-p4.jpg"
+      ],
+      "arxiv_id": "2610.27851",
+      "abs_url": "http://arxiv.org/abs/2610.27851v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.27851v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-27995",
@@ -228497,6 +228679,59 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-16855",
+      "source": "arxiv_discover",
+      "title": "Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation",
+      "title_zh": "Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation",
+      "tldr_zh": "Real-time bimanual humanoid teleoperation requires accurate",
+      "cover_zh": "Real-time bimanual humanoid teleoperation requires accurate",
+      "abstract_zh": "Real-time bimanual humanoid teleoperation requires accurate wrist tracking while keeping arm configurations predictable. Because a 7-DoF arm admits multiple elbow configurations for the same wrist pose, wrist-only tracking can cause elbow drift or abrupt configuration changes. Fixed anthropomorphic constraints can stabilize elbow posture, but they can also block the redundant adjustments needed near singular configurations. We propose a human-like redundancy-resolution framework that combines adaptive elbow guidance with singularity-robust wrist tracking. Shoulder-wrist geometric retargeting generates robot-scale wrist targets. An adaptive elbow-offset criterion uses the offset direction to guide posture and scales this guidance by the offset magnitude, so the redundant degree of freedom is progressively released as the human arm straightens. A hierarchical velocity solver prioritizes wrist tracking and projects the adaptive elbow guidance into the wrist-task null space. In a fixed-wrist-target ablation, adaptive guidance reduces mean elbow-direction error by 54.4% compared with removing this guidance. In a workspace-boundary stress test, singularity-robust tracking reduces peak raw joint-velocity demand by 97.9% compared with the undamped pseudoinverse. Real-world bimanual tasks and cross-platform retargeting show applicability across robot morphologies.",
+      "authors": [
+        "Chao Tan",
+        "Ming Shin Cindy Sung",
+        "Shuxian Liang"
+      ],
+      "authors_all": [
+        "Chao Tan",
+        "Ming Shin Cindy Sung",
+        "Shuxian Liang",
+        "Chaoqun Wan",
+        "Zhen Huang",
+        "Xian-Sheng Hua"
+      ],
+      "primary_category": "",
+      "published": "2026-10-12",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-16855.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-16855-p2.jpg",
+        "assets/img/covers/arxiv-2610-16855-p3.jpg",
+        "assets/img/covers/arxiv-2610-16855-p4.jpg"
+      ],
+      "arxiv_id": "2610.16855",
+      "abs_url": "http://arxiv.org/abs/2610.16855v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16855v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-18194",
