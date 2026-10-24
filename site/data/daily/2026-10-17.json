@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "count": 3,
+  "count": 4,
   "papers": [
     {
       "id": "vid-bilibili-BV1rMJY6yErr",
@@ -103,6 +103,65 @@
       ],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-24675",
+      "source": "arxiv_discover",
+      "title": "Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation",
+      "title_zh": "Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation",
+      "tldr_zh": "Learning a single perceptive policy for diverse humanoid loc",
+      "cover_zh": "Learning a single perceptive policy for diverse humanoid loc",
+      "abstract_zh": "Learning a single perceptive policy for diverse humanoid loco-manipulation requires unifying high-level task decisions without losing the state-dependent physical responses that make each interaction succeed. This makes the representation between high-level planning and whole-body control critical: kinematic or contact targets provide compact abstractions but do not directly encode interaction-specific control responses, while directly predicting low-level actions requires the planner to model high-frequency closed-loop feedback. We propose FIBER, a framework that uses the executable latent space of a frozen behavioral foundation model (BFM) as a shared planning representation for heterogeneous interaction skills. Our latent policy projection (LPP) maps independently acquired task-specific policies into this representation by identifying latent commands whose induced actions match their local control responses, enabling lower-rate planning while retaining the BFM's high-frequency state feedback. After projection, we aggregate closed-loop latent rollouts from all skills and train a single perceptive flow planner entirely offline. We further introduce AH-BFM, an adaptive-horizon BFM trained with multi-gamma forward-backward (FB) learning to support both precise control and temporally extended whole-body behavior. We evaluate FIBER on box pickup, door opening, and object grasping in simulation and on a real Unitree G1 humanoid. Across 128 diverse variations per task in simulation, FIBER achieves 42.0% mean success, more than tripling projected latent replay (11.6%) and substantially outperforming kinematic planning (3.5%). Real-world experiments further demonstrate sim-to-real transfer, skill chaining, and conditional steering through the same unified planner.",
+      "authors": [
+        "Yutang Lin",
+        "Guanya Shi",
+        "C. Karen Liu"
+      ],
+      "authors_all": [
+        "Yutang Lin",
+        "Guanya Shi",
+        "C. Karen Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-17",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Guanya Shi"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ C. Karen Liu"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-24675.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-24675-p2.jpg",
+        "assets/img/covers/arxiv-2610-24675-p3.jpg",
+        "assets/img/covers/arxiv-2610-24675-p4.jpg"
+      ],
+      "arxiv_id": "2610.24675",
+      "abs_url": "http://arxiv.org/abs/2610.24675v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.24675v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-24779",
