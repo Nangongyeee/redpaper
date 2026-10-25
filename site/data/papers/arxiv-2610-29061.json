@@ -1,0 +1,74 @@
+{
+  "id": "arxiv-2610-29061",
+  "source": "arxiv_discover",
+  "title": "OccJEPA: Occlusion as Masking for Amodal Video Segmentation",
+  "title_zh": "OccJEPA: Occlusion as Masking for Amodal Video Segmentation",
+  "abstract": "Amodal video segmentation asks for the complete mask of an object in every frame, including the parts hidden behind other objects. The best current methods generate these masks with fine-tuned video diffusion models, which need many denoising steps and an extra depth network, and give a different answer for every sample. Self-supervised video world models of the JEPA family are trained on a closely related task: predicting the representation of masked space-time regions from the visible ones. We therefore treat occlusion as masking. The tokens that the object's visible mask does not cover are dropped, the pre-trained V-JEPA 2.1 predictor fills them in, and a light head decodes the observed and predicted features into amodal masks. The resulting model, OccJEPA (Occlusion-as-masking JEPA), is deterministic and 33.5x faster than the diffusion-based state of the art, and more accurate on SAIL-VOS, on TAO-Amodal, including a held-out test split (+4.00 AP50) and visible masks tracked by SAM2, and on Kubric. Controlled experiments trace the gain to the predictor's pre-trained weights rather than to its capacity, for world models from 87M to 1.85B parameters. Code is available at https://github.com/zgp110/occjepa.",
+  "abstract_zh": "Amodal video segmentation asks for the complete mask of an object in every frame, including the parts hidden behind other objects. The best current methods generate these masks with fine-tuned video diffusion models, which need many denoising steps and an extra depth network, and give a different answer for every sample. Self-supervised video world models of the JEPA family are trained on a closely related task: predicting the representation of masked space-time regions from the visible ones. We therefore treat occlusion as masking. The tokens that the object's visible mask does not cover are dropped, the pre-trained V-JEPA 2.1 predictor fills them in, and a light head decodes the observed and predicted features into amodal masks. The resulting model, OccJEPA (Occlusion-as-masking JEPA), is deterministic and 33.5x faster than the diffusion-based state of the art, and more accurate on SAIL-VOS, on TAO-Amodal, including a held-out test split (+4.00 AP50) and visible masks tracked by SAM2, and on Kubric. Controlled experiments trace the gain to the predictor's pre-trained weights rather than to its capacity, for world models from 87M to 1.85B parameters. Code is available at https://github.com/zgp110/occjepa.",
+  "tldr_zh": "Amodal video segmentation asks for the complete mask of an o",
+  "cover_zh": "Amodal video segmentation asks for the complete mask of an o",
+  "authors": [
+    {
+      "name": "Genpei Zhang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.LG",
+    "cs.CV"
+  ],
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "arxiv_id": "2610.29061",
+  "pdf_url": "https://arxiv.org/pdf/2610.29061v1",
+  "abs_url": "http://arxiv.org/abs/2610.29061v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2610-29061.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2610-29061-p2.jpg",
+    "assets/img/covers/arxiv-2610-29061-p3.jpg",
+    "assets/img/covers/arxiv-2610-29061-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 23,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（world model、world models、video world model、jepa）"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
