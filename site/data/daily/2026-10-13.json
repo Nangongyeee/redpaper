@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "count": 41,
+  "count": 43,
   "papers": [
     {
       "id": "arxiv-2610-18596",
@@ -1427,6 +1427,70 @@
       ]
     },
     {
+      "id": "arxiv-2610-18950",
+      "source": "arxiv_discover",
+      "title": "$λ_0$: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation",
+      "title_zh": "$λ_0$: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation",
+      "tldr_zh": "Humanoid loco-manipulation requires coordinated whole-body i",
+      "cover_zh": "Humanoid loco-manipulation requires coordinated whole-body i",
+      "abstract_zh": "Humanoid loco-manipulation requires coordinated whole-body interaction with the physical world, yet collecting robot demonstrations at scale remains costly. Human demonstrations offer a scalable alternative, but existing egocentric human supervision often omits locomotion and posture, while embodiment differences and controller dynamics hinder accurate end-effector execution. We introduce HumanVerse, a 500-hour dataset of open-world human loco-manipulation pairing egocentric video with synchronized body and hand motion. Our human-to-humanoid pipeline aligns camera viewpoints and arm appearance, and refines motion references and controller inputs offline to reduce end-effector errors while preserving whole-body coordination. We validate the pipeline through zero-shot transfer to Unitree G1 on representative whole-body manipulation and long-range loco-manipulation tasks, without target-task robot demonstrations. Building on this pipeline, we develop $λ_0$, a humanoid foundation model for whole-body loco-manipulation, with robot-aligned human demonstrations providing supervision for mid-training. Increasing whole-body human data consistently improves downstream task progress. $λ_0$ achieves 90.0% success on SIMPLE and 62.5% across real-world loco-manipulation tasks. We expect this study to guide scalable whole-body human data collection toward humanoid foundation models for richer interaction with the physical world. Homepage: https://lambdahumanoid.github.io/",
+      "authors": [
+        "Lambda-humanoid Team",
+        ":",
+        "Chongyang Xu"
+      ],
+      "authors_all": [
+        "Lambda-humanoid Team",
+        ":",
+        "Chongyang Xu",
+        "Jin Chen",
+        "Jinhui Ye",
+        "Yilun Chen",
+        "Yiming Jiang",
+        "Zhao Wu",
+        "Hu Wei",
+        "Lin Qu",
+        "Shifeng Zhang",
+        "Yisheng He",
+        "Yuming Jiang",
+        "Zenan Meng",
+        "Zheng Wu",
+        "Mu Xu",
+        "Steven Hoi"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-18950.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-18950-p2.jpg",
+        "assets/img/covers/arxiv-2610-18950-p3.jpg",
+        "assets/img/covers/arxiv-2610-18950-p4.jpg"
+      ],
+      "arxiv_id": "2610.18950",
+      "abs_url": "http://arxiv.org/abs/2610.18950v2",
+      "pdf_url": "https://arxiv.org/pdf/2610.18950v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-19089",
       "source": "arxiv_discover",
       "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
@@ -1635,6 +1699,58 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-17843",
+      "source": "arxiv_discover",
+      "title": "Physics-Aware Object-Centric SE(3) Forecasting for Real-Time Proactive Dynamic Grasping",
+      "title_zh": "Physics-Aware Object-Centric SE(3) Forecasting for Real-Time Proactive Dynamic Grasping",
+      "tldr_zh": "Proactive dynamic grasping requires robots to predict the fu",
+      "cover_zh": "Proactive dynamic grasping requires robots to predict the fu",
+      "abstract_zh": "Proactive dynamic grasping requires robots to predict the future state at which physical contact will occur, rather than reacting to the currently observed object pose. But what future must the robot predict, and at what level of abstraction? We argue that contact-relevant rigid-body state in SE(3) is a compact task-sufficient abstraction for this problem: it directly determines where and when the robot should establish contact, without requiring visually complete future scenes. This insight leads to a lightweight object-centric forecast-then-select framework that predicts future rigid-body trajectories from short pose histories and uses a reachability-aware interception selector to choose feasible contact states under kinematic and timing constraints. Trained with randomized physics simulation over primitive shapes, the forecaster transfers to real objects once their metric geometry and SE(3) state histories are recovered. Experiments across simulation and real-world dynamic grasping tasks show that our framework improves the average success rate from \\(24.5\\%\\) to \\(62.0\\%\\) in simulation, and from \\(15.3\\%\\) to \\(67.3\\%\\) in real-world catching, conveyor, and turntable interception. The SE(3) forecaster runs in \\(15\\,mathrm{ms}\\), orders of magnitude faster than dense visual future prediction, enabling real-time contact decision making. Our results suggest that effective proactive grasping does not require imagining the entire future scene. Instead, predicting the compact physical future that determines contact provides an effective and practical abstraction for real-time dynamic grasping.",
+      "authors": [
+        "Yirui Zhou",
+        "Hongli Xu",
+        "Ying Zheng"
+      ],
+      "authors_all": [
+        "Yirui Zhou",
+        "Hongli Xu",
+        "Ying Zheng",
+        "Yi Wang",
+        "Lap-Pui Chau"
+      ],
+      "primary_category": "",
+      "published": "2026-10-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-17843.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-17843-p2.jpg",
+        "assets/img/covers/arxiv-2610-17843-p3.jpg",
+        "assets/img/covers/arxiv-2610-17843-p4.jpg"
+      ],
+      "arxiv_id": "2610.17843",
+      "abs_url": "http://arxiv.org/abs/2610.17843v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.17843v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-18194",
