@@ -84,6 +84,87 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-19182",
+      "source": "arxiv",
+      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "title_zh": "ADEPT：通过预训练与后训练加速灵巧操作",
+      "tldr_zh": "ADEPT通过预训练与后训练，实现多指机器人零样本迁移的灵巧操作。",
+      "cover_zh": "灵巧手也能零样本迁移？这个框架让机器人直接学会人类级操作！",
+      "abstract_zh": "我们提出了ADEPT（通过预训练加速灵巧操作），这是一个大规模强化学习（RL）框架，用于在高自由度（DoF）机器人实体上学习可模拟到现实迁移的灵巧操作，能够直接从原始视觉-触觉感知解决长时程任务。ADEPT在一个通用物体重定位任务上预训练灵巧策略，然后以该预训练行为作为先验，对下游策略进行后训练。ADEPT使得在多指机器人上学习新行为成为可能，而这些行为若从零开始发现则很困难，并且避免了为每个新下游任务重复学习相同技能集。预训练策略可以零样本完成下游任务的重定位阶段，但朴素的RL微调在迁移过程中会迅速退化这一能力。我们通过一种稳定的后训练配方来解决这个问题，该配方结合了行为克隆蒸馏、评论家预热和保守的在线策略更新。为了安全地利用完整的运动学灵巧性，我们引入了一个关节空间几何织物，在RL策略和机器人之间进行调解。我们将后训练的教师模型蒸馏为感知学生模型，这些学生模型在两个实体上实现了零样本的模拟到现实迁移：一个具有两个RGB摄像头的23自由度Kuka-Allegro，以及一个具有两个RGB摄像头和五个基于视觉的触觉传感器的29自由度Flexiv-Sharpa，并且能够从具有挑战性的初始状态以人类水平的速度解决长时程任务。",
+      "authors": [
+        "Jayjun Lee",
+        "Jessica Yin",
+        "Asif Rana"
+      ],
+      "authors_all": [
+        "Jayjun Lee",
+        "Jessica Yin",
+        "Asif Rana",
+        "Nicholas Blauch",
+        "Sam Mady",
+        "Mohak Bhardwaj",
+        "Nima Fazeli",
+        "Nathan Ratliff",
+        "Karl Van Wyk",
+        "Ankur Handa"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-19",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-19182.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-19182-p2.jpg",
+        "assets/img/covers/arxiv-2608-19182-p3.jpg",
+        "assets/img/covers/arxiv-2608-19182-p4.jpg"
+      ],
+      "arxiv_id": "2608.19182",
+      "abs_url": "http://arxiv.org/abs/2608.19182v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19182v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-10-25",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "大规模RL预训练+后训练实现灵巧手sim-to-real迁移，涉及多指操作与触觉感知，算法创新显著。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "NVIDIA Corporation",
+        "University of Michigan"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "sim-to-real",
+        "behavior-cloning distillation"
+      ],
+      "platform": [
+        "Kuka-Allegro",
+        "Flexiv-Sharpa"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-18701",
       "source": "arxiv",
       "title": "SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation",
@@ -165,83 +246,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2608-19182",
-      "source": "arxiv",
-      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
-      "title_zh": "ADEPT：通过预训练与后训练加速灵巧操作",
-      "tldr_zh": "ADEPT通过预训练与后训练，实现多指机器人零样本迁移的灵巧操作。",
-      "cover_zh": "灵巧手也能零样本迁移？这个框架让机器人直接学会人类级操作！",
-      "abstract_zh": "我们提出了ADEPT（通过预训练加速灵巧操作），这是一个大规模强化学习（RL）框架，用于在高自由度（DoF）机器人实体上学习可模拟到现实迁移的灵巧操作，能够直接从原始视觉-触觉感知解决长时程任务。ADEPT在一个通用物体重定位任务上预训练灵巧策略，然后以该预训练行为作为先验，对下游策略进行后训练。ADEPT使得在多指机器人上学习新行为成为可能，而这些行为若从零开始发现则很困难，并且避免了为每个新下游任务重复学习相同技能集。预训练策略可以零样本完成下游任务的重定位阶段，但朴素的RL微调在迁移过程中会迅速退化这一能力。我们通过一种稳定的后训练配方来解决这个问题，该配方结合了行为克隆蒸馏、评论家预热和保守的在线策略更新。为了安全地利用完整的运动学灵巧性，我们引入了一个关节空间几何织物，在RL策略和机器人之间进行调解。我们将后训练的教师模型蒸馏为感知学生模型，这些学生模型在两个实体上实现了零样本的模拟到现实迁移：一个具有两个RGB摄像头的23自由度Kuka-Allegro，以及一个具有两个RGB摄像头和五个基于视觉的触觉传感器的29自由度Flexiv-Sharpa，并且能够从具有挑战性的初始状态以人类水平的速度解决长时程任务。",
-      "authors": [
-        "Jayjun Lee",
-        "Jessica Yin",
-        "Asif Rana"
-      ],
-      "authors_all": [
-        "Jayjun Lee",
-        "Jessica Yin",
-        "Asif Rana",
-        "Nicholas Blauch",
-        "Sam Mady",
-        "Mohak Bhardwaj",
-        "Nima Fazeli",
-        "Nathan Ratliff",
-        "Karl Van Wyk",
-        "Ankur Handa"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-19",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ NVIDIA"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-19182.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-19182-p2.jpg",
-        "assets/img/covers/arxiv-2608-19182-p3.jpg",
-        "assets/img/covers/arxiv-2608-19182-p4.jpg"
-      ],
-      "arxiv_id": "2608.19182",
-      "abs_url": "http://arxiv.org/abs/2608.19182v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.19182v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 45,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "大规模RL预训练+后训练实现灵巧手sim-to-real迁移，涉及多指操作与触觉感知，算法创新显著。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "NVIDIA Corporation",
-        "University of Michigan"
-      ],
-      "method_tags": [
-        "Reinforcement Learning",
-        "sim-to-real",
-        "behavior-cloning distillation"
-      ],
-      "platform": [
-        "Kuka-Allegro",
-        "Flexiv-Sharpa"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
