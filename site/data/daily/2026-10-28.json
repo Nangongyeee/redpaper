@@ -584,8 +584,8 @@
       "source": "qbitai",
       "title": "威卡：用数据集链接具身智能和工程机械",
       "title_zh": "威卡：用数据集链接具身智能和工程机械",
-      "tldr_zh": "威卡：为工程机械的智能化与少人化，提供一条被验证的路径",
-      "cover_zh": "威卡：为工程机械的智能化与少人化，提供一条被验证的路径",
+      "tldr_zh": "威卡：用数据集链接具身智能和工程机械",
+      "cover_zh": "威卡：用数据集链接具身智能和工程机械",
       "abstract_zh": "威卡：为工程机械的智能化与少人化，提供一条被验证的路径",
       "authors": [],
       "authors_all": [],
@@ -728,6 +728,60 @@
       "venue": "",
       "venue_announced": "",
       "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-38233",
+      "source": "arxiv",
+      "title": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
+      "title_zh": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
+      "tldr_zh": "Mobile manipulator robots rarely reposition their base durin",
+      "cover_zh": "Mobile manipulator robots rarely reposition their base durin",
+      "abstract_zh": "Mobile manipulator robots rarely reposition their base during manipulation, because doing so requires real-time knowledge of how well the arm can reach its surroundings among obstacles. Reachability maps (RMs) encode this knowledge, but existing methods are slow, coarse (typically 5 cm), or ignore real obstacles. This article asks whether a neural network can predict an obstacle-aware RM at 2 cm resolution from a live depth camera, on embedded hardware, fast enough for online use. We present HERON, a 3D U-Net trained on RMs computed with the GPU-accelerated inverse kinematics of cuRobo, first on synthetic scenes and then on real depth data, and deployed on a Jetson AGX Orin with TensorRT and INT8 quantization. HERON predicts the RM of a 2.56 m cube around the arm in 115 ms on average, for a measured system rate of 8.57 Hz, close to the 10 Hz update rate of the obstacle map, whereas computing the same map with cuRobo takes about 90 min. Against the cuRobo ground truth, 95% of the voxels lie within 1 class out of 51 with the FP32 model and within 3 classes with the INT8 model, with a Pearson correlation of 0.99 and a quadratic weighted kappa above 0.9. Accuracy degrades mainly at the workspace boundaries.",
+      "authors": [
+        "G. Dupoiron",
+        "F. Michaud",
+        "J. P. Roberge"
+      ],
+      "authors_all": [
+        "G. Dupoiron",
+        "F. Michaud",
+        "J. P. Roberge"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-28",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-38233.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-38233-p2.jpg",
+        "assets/img/covers/arxiv-2610-38233-p3.jpg",
+        "assets/img/covers/arxiv-2610-38233-p4.jpg"
+      ],
+      "arxiv_id": "2610.38233",
+      "abs_url": "http://arxiv.org/abs/2610.38233v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38233v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -1000,59 +1054,6 @@
       "arxiv_id": "2610.38104",
       "abs_url": "http://arxiv.org/abs/2610.38104v1",
       "pdf_url": "https://arxiv.org/pdf/2610.38104v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-38233",
-      "source": "arxiv",
-      "title": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
-      "title_zh": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
-      "tldr_zh": "Mobile manipulator robots rarely reposition their base durin",
-      "cover_zh": "Mobile manipulator robots rarely reposition their base durin",
-      "abstract_zh": "Mobile manipulator robots rarely reposition their base during manipulation, because doing so requires real-time knowledge of how well the arm can reach its surroundings among obstacles. Reachability maps (RMs) encode this knowledge, but existing methods are slow, coarse (typically 5 cm), or ignore real obstacles. This article asks whether a neural network can predict an obstacle-aware RM at 2 cm resolution from a live depth camera, on embedded hardware, fast enough for online use. We present HERON, a 3D U-Net trained on RMs computed with the GPU-accelerated inverse kinematics of cuRobo, first on synthetic scenes and then on real depth data, and deployed on a Jetson AGX Orin with TensorRT and INT8 quantization. HERON predicts the RM of a 2.56 m cube around the arm in 115 ms on average, for a measured system rate of 8.57 Hz, close to the 10 Hz update rate of the obstacle map, whereas computing the same map with cuRobo takes about 90 min. Against the cuRobo ground truth, 95% of the voxels lie within 1 class out of 51 with the FP32 model and within 3 classes with the INT8 model, with a Pearson correlation of 0.99 and a quadratic weighted kappa above 0.9. Accuracy degrades mainly at the workspace boundaries.",
-      "authors": [
-        "G. Dupoiron",
-        "F. Michaud",
-        "J. P. Roberge"
-      ],
-      "authors_all": [
-        "G. Dupoiron",
-        "F. Michaud",
-        "J. P. Roberge"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-28",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-38233.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-38233-p2.jpg",
-        "assets/img/covers/arxiv-2610-38233-p3.jpg",
-        "assets/img/covers/arxiv-2610-38233-p4.jpg"
-      ],
-      "arxiv_id": "2610.38233",
-      "abs_url": "http://arxiv.org/abs/2610.38233v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.38233v1",
       "venue": "",
       "venue_announced": "",
       "score": 16,

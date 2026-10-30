@@ -774,6 +774,60 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-25666",
+      "source": "arxiv_discover",
+      "title": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+      "title_zh": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+      "tldr_zh": "Streaming video world models generate the future chunk by ch",
+      "cover_zh": "Streaming video world models generate the future chunk by ch",
+      "abstract_zh": "Streaming video world models generate the future chunk by chunk, conditioned on their own past and a stream of actions. Trained on short clips, they drift once a rollout exceeds the training horizon, as prediction errors re-enter the context and compound. A common remedy is to train the model on its own rollouts via distribution matching distillation (DMD). For action-conditioned world models, the teacher becomes a bottleneck: an external video model is agnostic to the actions, whereas the model's own pretrained network drifts in the same manner as the student. We observe that a long rollout need not match a teacher, provided it remains a realistic continuation of its own scene that follows the commanded actions. Realism and scene fidelity can be measured against real-data statistics, which remain valid at any horizon, while action following is preserved by the model's conditional generation loss. We propose Fréchet Forcing, which fine-tunes a world model together with its deployed multi-step sampler under three constraints. Generative anchoring applies the flow-matching loss after a self-generated history ending on real data. Context fidelity, a Fréchet distance (FD) on latent statistics of the free rollout centred on each clip's own ground truth, keeps every rollout faithful to its scene. Reality matching, an FD to real frames in a frozen perceptual space, keeps the generated frames realistic. Because all three targets are derived from short real clips without comparing a rollout against a long recorded future, training requires no teacher, no online critic and no long videos. Fine-tuning MiniWorld-1B, pretrained on 253-frame clips, for at most 36 GPU-hours on 381-frame clips yields rollouts that remain stable beyond 4,000 frames and continue to follow their actions in both robot manipulation and camera-controlled exploration.",
+      "authors": [
+        "Yian Zhao",
+        "Yu Yan",
+        "Hongcan Guo"
+      ],
+      "authors_all": [
+        "Yian Zhao",
+        "Yu Yan",
+        "Hongcan Guo",
+        "Ruochong Zheng",
+        "Jian Zhang",
+        "Jie Chen"
+      ],
+      "primary_category": "",
+      "published": "2026-10-19",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-25666.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-25666-p2.jpg",
+        "assets/img/covers/arxiv-2610-25666-p3.jpg",
+        "assets/img/covers/arxiv-2610-25666-p4.jpg"
+      ],
+      "arxiv_id": "2610.25666",
+      "abs_url": "http://arxiv.org/abs/2610.25666v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25666v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-25961",
       "source": "arxiv_discover",
       "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
@@ -1773,59 +1827,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-25666",
-      "source": "arxiv_discover",
-      "title": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
-      "title_zh": "Frechet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
-      "tldr_zh": "Streaming video world models generate the future chunk by ch",
-      "cover_zh": "Streaming video world models generate the future chunk by ch",
-      "abstract_zh": "Streaming video world models generate the future chunk by chunk, conditioned on their own past and a stream of actions. Trained on short clips, they drift once a rollout exceeds the training horizon, as prediction errors re-enter the context and compound. A common remedy is to train the model on its own rollouts via distribution matching distillation (DMD). For action-conditioned world models, the teacher becomes a bottleneck: an external video model is agnostic to the actions, whereas the model's own pretrained network drifts in the same manner as the student. We observe that a long rollout need not match a teacher, provided it remains a realistic continuation of its own scene that follows the commanded actions. Realism and scene fidelity can be measured against real-data statistics, which remain valid at any horizon, while action following is preserved by the model's conditional generation loss. We propose Fréchet Forcing, which fine-tunes a world model together with its deployed multi-step sampler under three constraints. Generative anchoring applies the flow-matching loss after a self-generated history ending on real data. Context fidelity, a Fréchet distance (FD) on latent statistics of the free rollout centred on each clip's own ground truth, keeps every rollout faithful to its scene. Reality matching, an FD to real frames in a frozen perceptual space, keeps the generated frames realistic. Because all three targets are derived from short real clips without comparing a rollout against a long recorded future, training requires no teacher, no online critic and no long videos. Fine-tuning MiniWorld-1B, pretrained on 253-frame clips, for at most 36 GPU-hours on 381-frame clips yields rollouts that remain stable beyond 4,000 frames and continue to follow their actions in both robot manipulation and camera-controlled exploration.",
-      "authors": [
-        "Yian Zhao",
-        "Yu Yan",
-        "Hongcan Guo"
-      ],
-      "authors_all": [
-        "Yian Zhao",
-        "Yu Yan",
-        "Hongcan Guo",
-        "Ruochong Zheng",
-        "Jian Zhang",
-        "Jie Chen"
-      ],
-      "primary_category": "",
-      "published": "2026-10-19",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-25666.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-25666-p2.jpg",
-        "assets/img/covers/arxiv-2610-25666-p3.jpg",
-        "assets/img/covers/arxiv-2610-25666-p4.jpg"
-      ],
-      "arxiv_id": "2610.25666",
-      "abs_url": "http://arxiv.org/abs/2610.25666v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.25666v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2610-26174",
