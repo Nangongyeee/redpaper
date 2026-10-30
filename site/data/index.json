@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T11:55:53.997405+00:00",
+  "generated_at": "2026-10-30T14:38:57.031097+00:00",
   "count": 4348,
   "papers": [
     {
@@ -54395,6 +54395,81 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2607-28382",
+      "source": "arxiv",
+      "title": "SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer",
+      "title_zh": "SemAnCorr：用于零样本操作技能迁移的语义锚定对应关系",
+      "tldr_zh": "SemAnCorr通过语义锚定和函数映射，无需训练即可实现零样本操作技能迁移，提升语义准确率和几何连贯性。",
+      "cover_zh": "零样本技能迁移总翻车？这个新方法用语义锚定，让机器人一次学会新物体操作！",
+      "abstract_zh": "在共享功能但几何形状不同的物体实例之间迁移操作技能，仍然是机器人学习中的一个基本挑战。虽然最近的对应方法利用了密集视觉描述符和3D特征场，但最近邻特征匹配通常产生空间上不连贯的对应关系，无法恢复可靠技能迁移所需的局部几何框架。我们提出了SemAnCorr，一个无需训练的框架，通过联合姿态-对应优化选择语义一致的锚定区域，并使用函数映射在物体表面传播这些约束，从而建立密集对应关系。由此产生的对应关系同时保持了语义一致性和几何连贯性，使得以物体为中心的操作技能能够在几何多样的实例之间迁移。我们在基于PartNet-Mobility构建的密集对应基准上评估了SemAnCorr，在基准评估中实现了90.8%的语义准确率，同时相对于近期最先进的基线提高了几何连贯性。最后，我们展示了这些改进直接转化为真实世界的操作性能：使用单个演示，SemAnCorr比现有对应方法能够更可靠地将零样本操作技能迁移到未见过的物体上。视频和额外可视化可在[https://semancorr.github.io](https://semancorr.github.io)获取。",
+      "authors": [
+        "Xiaoxiang Dong",
+        "William Baron",
+        "Hongyi Chen"
+      ],
+      "authors_all": [
+        "Xiaoxiang Dong",
+        "William Baron",
+        "Hongyi Chen",
+        "Uksang Yoo",
+        "Jeffrey Ichnowski",
+        "Weiming Zhi"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · RA-L 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-28382.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-28382-p2.jpg",
+        "assets/img/covers/arxiv-2607-28382-p3.jpg",
+        "assets/img/covers/arxiv-2607-28382-p4.jpg"
+      ],
+      "arxiv_id": "2607.28382",
+      "abs_url": "http://arxiv.org/abs/2607.28382v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28382v1",
+      "venue": "RA-L 2026",
+      "venue_announced": "2026-10-30",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "零样本操作技能迁移，语义锚定对应方法，有benchmark和真机验证，对操作学习有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University",
+        "Vanderbilt University",
+        "University of California, Berkeley",
+        "The University of Sydney"
+      ],
+      "method_tags": [
+        "functional maps",
+        "pose-correspondence optimization",
+        "zero-shot transfer"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2601-05844",
       "source": "arxiv",
       "title": "DexterCap: An Affordable and Automated System for Capturing Dexterous Hand-Object Manipulation",
@@ -92654,77 +92729,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-28382",
-      "source": "arxiv",
-      "title": "SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer",
-      "title_zh": "SemAnCorr：用于零样本操作技能迁移的语义锚定对应关系",
-      "tldr_zh": "SemAnCorr通过语义锚定和函数映射，无需训练即可实现零样本操作技能迁移，提升语义准确率和几何连贯性。",
-      "cover_zh": "零样本技能迁移总翻车？这个新方法用语义锚定，让机器人一次学会新物体操作！",
-      "abstract_zh": "在共享功能但几何形状不同的物体实例之间迁移操作技能，仍然是机器人学习中的一个基本挑战。虽然最近的对应方法利用了密集视觉描述符和3D特征场，但最近邻特征匹配通常产生空间上不连贯的对应关系，无法恢复可靠技能迁移所需的局部几何框架。我们提出了SemAnCorr，一个无需训练的框架，通过联合姿态-对应优化选择语义一致的锚定区域，并使用函数映射在物体表面传播这些约束，从而建立密集对应关系。由此产生的对应关系同时保持了语义一致性和几何连贯性，使得以物体为中心的操作技能能够在几何多样的实例之间迁移。我们在基于PartNet-Mobility构建的密集对应基准上评估了SemAnCorr，在基准评估中实现了90.8%的语义准确率，同时相对于近期最先进的基线提高了几何连贯性。最后，我们展示了这些改进直接转化为真实世界的操作性能：使用单个演示，SemAnCorr比现有对应方法能够更可靠地将零样本操作技能迁移到未见过的物体上。视频和额外可视化可在[https://semancorr.github.io](https://semancorr.github.io)获取。",
-      "authors": [
-        "Xiaoxiang Dong",
-        "William Baron",
-        "Hongyi Chen"
-      ],
-      "authors_all": [
-        "Xiaoxiang Dong",
-        "William Baron",
-        "Hongyi Chen",
-        "Uksang Yoo",
-        "Jeffrey Ichnowski",
-        "Weiming Zhi"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ CMU RI"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-28382.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-28382-p2.jpg",
-        "assets/img/covers/arxiv-2607-28382-p3.jpg",
-        "assets/img/covers/arxiv-2607-28382-p4.jpg"
-      ],
-      "arxiv_id": "2607.28382",
-      "abs_url": "http://arxiv.org/abs/2607.28382v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.28382v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 31,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "零样本操作技能迁移，语义锚定对应方法，有benchmark和真机验证，对操作学习有参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Carnegie Mellon University",
-        "Vanderbilt University",
-        "University of California, Berkeley",
-        "The University of Sydney"
-      ],
-      "method_tags": [
-        "functional maps",
-        "pose-correspondence optimization",
-        "zero-shot transfer"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -153188,6 +153192,63 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-36825",
+      "source": "arxiv_discover",
+      "title": "HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour",
+      "title_zh": "HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour",
+      "tldr_zh": "Humanoid parkour requires robots to reason about future foot",
+      "cover_zh": "Humanoid parkour requires robots to reason about future foot",
+      "abstract_zh": "Humanoid parkour requires robots to reason about future footholds and whole-body motions over highly discontinuous terrain. We revisit the information asymmetry in asymmetric actor-critic learning for perceptive humanoid locomotion: the critic exploits privileged simulator signals during training, whereas the deployable actor operates solely from onboard perception. We argue that the key is not exposing privileged information to the actor, but learning a deployable approximation of it to narrow the information gap between training and deployment. We present HC2Robot, a deployable perceptive humanoid parkour framework consisting of a Predicted Foresight Module (PFM) and a Hyper-Connection (HC) Transformer. PFM predicts from deployable observations the policy-conditioned timing, location, and support quality of each foot's next touchdown event, converting privileged supervision into a deployable latent representation that provides the actor with predicted touchdown information without privileged runtime sensing. The HC Transformer further enhances temporal reasoning through learnable multi-stream routing, while a future motion prediction head provides short-horizon motion priors for regularization. Across stairs, gaps, high platforms, and slopes, HC2Robot achieves a mean simulated traversal success rate of 97.60% and consistently higher safe foothold rates than strong perceptive locomotion baselines, supporting improved traversal performance and geometric foothold support under deployable sensing.",
+      "authors": [
+        "Wenhao Xu",
+        "Yanheng Mai",
+        "Yifei Fu"
+      ],
+      "authors_all": [
+        "Wenhao Xu",
+        "Yanheng Mai",
+        "Yifei Fu",
+        "Nan Zheng",
+        "Yanbo Zhou",
+        "Zirui Huang",
+        "Mingsheng Ling",
+        "Xinjue Wang",
+        "Renjing Xu"
+      ],
+      "primary_category": "",
+      "published": "2026-10-27",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-36825.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-36825-p2.jpg",
+        "assets/img/covers/arxiv-2610-36825-p3.jpg",
+        "assets/img/covers/arxiv-2610-36825-p4.jpg"
+      ],
+      "arxiv_id": "2610.36825",
+      "abs_url": "http://arxiv.org/abs/2610.36825v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36825v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-37170",
       "source": "arxiv",
       "title": "From 12 to 200 Demonstrations: How ACT, Diffusion Policy, SmolVLA and $π_{0.5}$ Scale on a Low-Cost Arm",
@@ -191657,62 +191718,6 @@
       "arxiv_id": "2610.36789",
       "abs_url": "http://arxiv.org/abs/2610.36789v1",
       "pdf_url": "https://arxiv.org/pdf/2610.36789v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
-      "id": "arxiv-2610-36825",
-      "source": "arxiv_discover",
-      "title": "HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour",
-      "title_zh": "HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour",
-      "tldr_zh": "Humanoid parkour requires robots to reason about future foot",
-      "cover_zh": "Humanoid parkour requires robots to reason about future foot",
-      "abstract_zh": "Humanoid parkour requires robots to reason about future footholds and whole-body motions over highly discontinuous terrain. We revisit the information asymmetry in asymmetric actor-critic learning for perceptive humanoid locomotion: the critic exploits privileged simulator signals during training, whereas the deployable actor operates solely from onboard perception. We argue that the key is not exposing privileged information to the actor, but learning a deployable approximation of it to narrow the information gap between training and deployment. We present HC2Robot, a deployable perceptive humanoid parkour framework consisting of a Predicted Foresight Module (PFM) and a Hyper-Connection (HC) Transformer. PFM predicts from deployable observations the policy-conditioned timing, location, and support quality of each foot's next touchdown event, converting privileged supervision into a deployable latent representation that provides the actor with predicted touchdown information without privileged runtime sensing. The HC Transformer further enhances temporal reasoning through learnable multi-stream routing, while a future motion prediction head provides short-horizon motion priors for regularization. Across stairs, gaps, high platforms, and slopes, HC2Robot achieves a mean simulated traversal success rate of 97.60% and consistently higher safe foothold rates than strong perceptive locomotion baselines, supporting improved traversal performance and geometric foothold support under deployable sensing.",
-      "authors": [
-        "Wenhao Xu",
-        "Yanheng Mai",
-        "Yifei Fu"
-      ],
-      "authors_all": [
-        "Wenhao Xu",
-        "Yanheng Mai",
-        "Yifei Fu",
-        "Nan Zheng",
-        "Yanbo Zhou",
-        "Zirui Huang",
-        "Mingsheng Ling",
-        "Xinjue Wang",
-        "Renjing Xu"
-      ],
-      "primary_category": "",
-      "published": "2026-10-27",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-36825.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-36825-p2.jpg",
-        "assets/img/covers/arxiv-2610-36825-p3.jpg",
-        "assets/img/covers/arxiv-2610-36825-p4.jpg"
-      ],
-      "arxiv_id": "2610.36825",
-      "abs_url": "http://arxiv.org/abs/2610.36825v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.36825v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
