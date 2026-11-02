@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "count": 38,
+  "count": 55,
   "papers": [
     {
       "id": "arxiv-2610-39998",
@@ -88,9 +88,9 @@
       "primary_category": "cs.RO",
       "published": "2026-10-29",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
-        "teleop"
+        "teleop",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -110,6 +110,63 @@
       "venue": "",
       "venue_announced": "",
       "score": 40,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40828",
+      "source": "arxiv",
+      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+      "title_zh": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+      "tldr_zh": "Imitation learning policies are intended to make robotic man",
+      "cover_zh": "Imitation learning policies are intended to make robotic man",
+      "abstract_zh": "Imitation learning policies are intended to make robotic manipulation robust to variations in object pose, appearance, and environment that challenge pre-programmed motion. However, real-world performance remains difficult to predict, as conventional optimization signals such as validation loss show no consistent relationship with robot success. To identify the design choices that govern real-world performance, 281 imitation-learning policies spanning seven policy families were evaluated in approximately 1,700 real-robot trials of RJ45 connector grasping and insertion using a five-fingered robotic hand. Controlled ablations showed that observation and action representations dominated conventional optimizer and sampling choices. For point-cloud policies, region-of-interest cropping, representation in the robot-base frame, and normalization within the point encoder each improved success by 70-100 percentage points. For the vision-language-action policy, absolute rather than relative action prediction improved insertion success by up to 70 percentage points. Skill decomposition, multi-view perception, and recovery demonstrations were associated with the strongest-performing systems, although their effects were not independently isolated. Of 67 offline metrics evaluated, only five measures of predicted-motion smoothness and directness reliably correlated with insertion success (r = -0.70 to -0.80), and only within a single policy family. These results identify representation choices as key determinants of real-world imitation-learning performance and show that offline metrics can shortlist policies, but cannot replace real-robot evaluation.",
+      "authors": [
+        "Ammar N. Abbas",
+        "Aayush Jain",
+        "Prashanth Viswanath"
+      ],
+      "authors_all": [
+        "Ammar N. Abbas",
+        "Aayush Jain",
+        "Prashanth Viswanath",
+        "Nivesh Gadipudi",
+        "Giulia Vilone",
+        "Jim Gibbons"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-40828.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40828-p2.jpg",
+        "assets/img/covers/arxiv-2610-40828-p3.jpg",
+        "assets/img/covers/arxiv-2610-40828-p4.jpg"
+      ],
+      "arxiv_id": "2610.40828",
+      "abs_url": "http://arxiv.org/abs/2610.40828v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40828v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 30,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -340,6 +397,60 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-41030",
+      "source": "arxiv",
+      "title": "Dreams Are Cheaper Than Flights: Curated World-Model Data Improves Aerial Detection",
+      "title_zh": "Dreams Are Cheaper Than Flights: Curated World-Model Data Improves Aerial Detection",
+      "tldr_zh": "Robot perception is increasingly data driven, yet field data",
+      "cover_zh": "Robot perception is increasingly data driven, yet field data",
+      "abstract_zh": "Robot perception is increasingly data driven, yet field data is slow, costly, and sometimes disruptive to collect. Video world models offer a cheaper source: seeded with real frames, they extend a recorded scene into new footage with the deployment's sensor, altitude, and environment. We ask whether such synthetic data matches the utility of real field data and whether detectors trained with it perform in the field. Seeding a 7B-parameter world model with wildlife drone video, we more than double the training set with curated frames. On held-out videos from the same drones, mAP@50--95 rises 4.3\\% when these frames are added to real data and 10.3\\% when they replace it, and up to 33.5\\% on an urban benchmark. Although an expert rejects an estimated 87.5\\% of generated clips, the data costs about \\$1,100 of GPU time, against more than \\$3,200 of field labor alone for a less useful real training set. Synthetic data thus shifts data costs from fieldwork to compute.",
+      "authors": [
+        "Rugved Katole",
+        "Vedant Patil",
+        "Jenna Kline"
+      ],
+      "authors_all": [
+        "Rugved Katole",
+        "Vedant Patil",
+        "Jenna Kline",
+        "Christopher Stewart"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-41030.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41030-p2.jpg",
+        "assets/img/covers/arxiv-2610-41030-p3.jpg",
+        "assets/img/covers/arxiv-2610-41030-p4.jpg"
+      ],
+      "arxiv_id": "2610.41030",
+      "abs_url": "http://arxiv.org/abs/2610.41030v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41030v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-40191",
       "source": "arxiv",
       "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
@@ -429,8 +540,8 @@
       "primary_category": "cs.RO",
       "published": "2026-10-29",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
+        "loco-manip-wbc",
         "locomotion"
       ],
       "badges": [],
@@ -624,6 +735,111 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2610-41028",
+      "source": "arxiv",
+      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+      "title_zh": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+      "tldr_zh": "Robot-free human demonstrations offer a promising route to s",
+      "cover_zh": "Robot-free human demonstrations offer a promising route to s",
+      "abstract_zh": "Robot-free human demonstrations offer a promising route to scaling dexterous manipulation data. The key challenge is to preserve the demonstrator's natural dexterity while producing contact-grounded observations and actions that transfer to robot hands. We present Contact Imitation Interface (CIMI), a framework with contact-grounded demonstration and learning interfaces. The demonstration interface combines shared contact geometry and fingertip RGB views with contact-alignment-first retargeting and reprojection of wider scene views. The learning interface introduces a hierarchical policy in which a contact-surface planner predicts relative contact-surface trajectories and a controller coordinates wrist and finger commands to improve contact alignment. CIMI combines contact-grounded observations, retargeting, and action representations, improving mean final-stage success by at least 50 percentage points over baseline policies across six hand-task pairs on LEAP and Wuji. Hardware designs and software are publicly available.",
+      "authors": [
+        "Zhixuan Xu",
+        "Yichen Li",
+        "Bingchen Wu"
+      ],
+      "authors_all": [
+        "Zhixuan Xu",
+        "Yichen Li",
+        "Bingchen Wu",
+        "Rui Wang",
+        "Yiwen Hou",
+        "Zixuan Liu",
+        "Tianyu Qiu",
+        "Lin Shao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-41028.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41028-p2.jpg",
+        "assets/img/covers/arxiv-2610-41028-p3.jpg",
+        "assets/img/covers/arxiv-2610-41028-p4.jpg"
+      ],
+      "arxiv_id": "2610.41028",
+      "abs_url": "http://arxiv.org/abs/2610.41028v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41028v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41041",
+      "source": "arxiv",
+      "title": "Before We Adapt: The Zero-Shot Generalization Bottleneck in Continual World Models",
+      "title_zh": "Before We Adapt: The Zero-Shot Generalization Bottleneck in Continual World Models",
+      "tldr_zh": "Continual reinforcement learning (CRL) requires agents to op",
+      "cover_zh": "Continual reinforcement learning (CRL) requires agents to op",
+      "abstract_zh": "Continual reinforcement learning (CRL) requires agents to operate under environmental changes while reusing prior knowledge whenever possible. We argue that model-based reinforcement learning provides a promising framework for this setting because learned world models (WMs) can, in principle, support change detection, knowledge reuse, adaptation, and acquisition of new knowledge. However, such benefits depend heavily on whether the learned model can generalize beyond the contexts in which it was trained. In this work, we propose to formulate this problem with a contextual Markov decision process in which context is decomposed into behavioral and physical components. This view organizes continual WM learning into reuse, adaptation, and acquisition of new knowledge. As a first step, we study direct reuse when behavioral rules remain unchanged. Using Dyna-Q and TD-MPC in controlled FourRooms tasks, we find that zero-shot reuse can degrade substantially under physical-context changes and that this behavior depends strongly on the observation representation used by the WM. Additional ablation studies and latent-space diagnostics suggest that learned representations do not automatically provide the invariances needed for reuse. These results identify representation generalization as an important bottleneck for reliable world-model reuse in CRL.",
+      "authors": [
+        "Amir Mesbah",
+        "Di Wu"
+      ],
+      "authors_all": [
+        "Amir Mesbah",
+        "Di Wu"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-41041.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41041-p2.jpg",
+        "assets/img/covers/arxiv-2610-41041-p3.jpg",
+        "assets/img/covers/arxiv-2610-41041-p4.jpg"
+      ],
+      "arxiv_id": "2610.41041",
+      "abs_url": "http://arxiv.org/abs/2610.41041v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41041v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-6acfe9a1a5",
       "source": "qbitai",
       "title": "小雨智造与国家钢结构质检中心共建实验室，乔忠良：具身智能新质生产力已成事实",
@@ -752,6 +968,114 @@
       "venue": "",
       "venue_announced": "",
       "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41009",
+      "source": "arxiv",
+      "title": "STAR: Steering Action Representations during Inference",
+      "title_zh": "STAR: Steering Action Representations during Inference",
+      "tldr_zh": "Vision-language-action models (VLAs) map language instructio",
+      "cover_zh": "Vision-language-action models (VLAs) map language instructio",
+      "abstract_zh": "Vision-language-action models (VLAs) map language instructions and visual observations to robot actions, showing strong capabilities across robotic manipulation tasks. However, in our probing experiment, we find that action representations near the action output do not fully preserve task-relevant visual grounding. Motivated by this late-layer grounding gap, we introduce STAR, for STeering Action Representations, a training-free inference method for pre-trained VLAs. STAR applies an exponential moving average over late-layer residual updates, allowing later action representations to inherit object-aware update directions from earlier layers without model updates or architectural changes. It further uses recent proprioceptive states to adapt the mixing strength, using conservative mixing when execution dynamics change rapidly. Experiments on robot manipulation benchmarks show that STAR improves late-layer object awareness and increases average task success rates by 4.0 percentage points. Our code is available at https://github.com/PKU-VaLuE-Lab/STAR.",
+      "authors": [
+        "Guangyu Zhao",
+        "Yongchang Zhang",
+        "Haoxuan Ru"
+      ],
+      "authors_all": [
+        "Guangyu Zhao",
+        "Yongchang Zhang",
+        "Haoxuan Ru",
+        "Kaichen He",
+        "Haoran Wen",
+        "Kun Zhan",
+        "Zeyu Zhang",
+        "Yin Li",
+        "Yiwu Zhong"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-41009.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41009-p2.jpg",
+        "assets/img/covers/arxiv-2610-41009-p3.jpg",
+        "assets/img/covers/arxiv-2610-41009-p4.jpg"
+      ],
+      "arxiv_id": "2610.41009",
+      "abs_url": "http://arxiv.org/abs/2610.41009v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41009v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40857",
+      "source": "arxiv",
+      "title": "Frozen in Time: How a Physics Foundation Model Forgets Under Sim-to-Real Adaptation",
+      "title_zh": "Frozen in Time: How a Physics Foundation Model Forgets Under Sim-to-Real Adaptation",
+      "tldr_zh": "Scientific foundation models (SciFMs) have achieved remarkab",
+      "cover_zh": "Scientific foundation models (SciFMs) have achieved remarkab",
+      "abstract_zh": "Scientific foundation models (SciFMs) have achieved remarkable performance on a wide range of PDEs, including the ability to efficiently adapt to unseen data distributions with additional finetuning. As with all neural architectures, finetuning such models comes with the risk of catastrophic forgetting, whereby adapting to new tasks degrades prior knowledge of the model. We study catastrophic forgetting in Walrus-1.3B, a SciFM for continuum dynamics, over the course of a two-stage sim-to-real adaptation: first finetuning on simulated flow around a cylinder and then adapting to experimental data of the same system. We find that finetuning on the simulations rapidly degrades rollout performance on the original pretraining datasets, with one-step errors increasing up to 35x after just 20 epochs. Subsequent adaptation to real data further erodes performance on the simulated task. We characterize the potential drivers of forgetting, such as dataset dependence and task representation similarity. We then show that replaying as little as 1% simulated data during real-data finetuning recovers most of the lost simulation performance while retaining effective adaptation to the experimental dynamics. Our results identify catastrophic forgetting as a practical obstacle to sim-to-real adaptation of SciFMs and show that lightweight replay strategies significantly improve retention.",
+      "authors": [
+        "Haaris Mian",
+        "Miles Cranmer",
+        "Alessandro Favero"
+      ],
+      "authors_all": [
+        "Haaris Mian",
+        "Miles Cranmer",
+        "Alessandro Favero",
+        "Payel Mukhopadhyay"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-29",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-40857.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40857-p2.jpg",
+        "assets/img/covers/arxiv-2610-40857-p3.jpg",
+        "assets/img/covers/arxiv-2610-40857-p4.jpg"
+      ],
+      "arxiv_id": "2610.40857",
+      "abs_url": "http://arxiv.org/abs/2610.40857v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40857v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 16,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -903,6 +1227,104 @@
       "arxiv_id": "2610.40637",
       "abs_url": "http://arxiv.org/abs/2610.40637v1",
       "pdf_url": "https://arxiv.org/pdf/2610.40637v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40927",
+      "source": "arxiv",
+      "title": "Agentic World Modeling for Agent Test-time Scaling without Environment Replica",
+      "title_zh": "Agentic World Modeling for Agent Test-time Scaling without Environment Replica",
+      "tldr_zh": "Test-time scaling (TTS) improves large language model agents",
+      "cover_zh": "Test-time scaling (TTS) improves large language model agents",
+      "abstract_zh": "Test-time scaling (TTS) improves large language model agents by sampling and selecting among multiple candidate trajectories, but common realizations assume that these trajectories can be executed in parallel. This assumption breaks in realistic deployments, where enterprise workspaces and cloud services are shared and persistent, costly or infeasible to replicate, and actions may introduce irreversible side effects or cross-trajectory interference. Existing generative world models avoid direct execution, but typically compress environment state into a single prompt, limiting their ability to reliably simulate transitions under partial observability. Instead, we introduce Agentic World Modeling (AWM), which reformulates next-observation prediction as a multi-turn evidence-acquisition task. For each hypothetical action, an agentic simulator adaptively queries the real environment through safe read-only interfaces, reasons over the returned evidence, and uses executable computation to construct the resulting observation without mutating shared state. Integrated with trajectory-level TTS, AWM enables parallel exploration over a single shared environment. Across $τ$-bench, AppWorld, and OfficeBench, AWM outperforms a single-shot simulation baseline by 40.07% on average, and surpasses a trained world-model baseline by 12.36% on average. These results establish interactive, read-grounded simulation as a practical foundation for safe and scalable agentic test-time scaling in shared, non-resettable environments.",
+      "authors": [
+        "Wendi Li",
+        "Huseyin A. Inan",
+        "Wei-Ning Chen"
+      ],
+      "authors_all": [
+        "Wendi Li",
+        "Huseyin A. Inan",
+        "Wei-Ning Chen",
+        "Yanzhi Chen",
+        "Chetan Bansal",
+        "Saravan Rajmohan",
+        "Sharon Li"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40927.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40927-p2.jpg",
+        "assets/img/covers/arxiv-2610-40927-p3.jpg",
+        "assets/img/covers/arxiv-2610-40927-p4.jpg"
+      ],
+      "arxiv_id": "2610.40927",
+      "abs_url": "http://arxiv.org/abs/2610.40927v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40927v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41022",
+      "source": "arxiv",
+      "title": "Density-Guided Bootstrap Boundaries for Latent World-Model Reinforcement Learning",
+      "title_zh": "Density-Guided Bootstrap Boundaries for Latent World-Model Reinforcement Learning",
+      "tldr_zh": "Latent world models allow reinforcement learning agents to l",
+      "cover_zh": "Latent world models allow reinforcement learning agents to l",
+      "abstract_zh": "Latent world models allow reinforcement learning agents to learn policies from imagined trajectories, yet determining the optimal depth of model reliance remains a fundamental challenge. Fixed imagination horizons apply uniform prediction depths regardless of trajectory reliability, exposing target values to compounding model error or over-relying on critic approximations. We introduce density-guided bootstrap boundaries, a trajectory-dependent mechanism that adapts the depth of imagined returns using a score-informed relative density proxy. The proxy accumulates the estimated divergence of a score-corrected auxiliary field formed by a feature displacement network and a noise-conditioned score estimator along imagined paths. We propose two gating mechanisms: a hard boundary that halts return expansion at a discrete state, and a soft boundary that continuously shifts the return recursion toward critic bootstrapping. Both variants preserve boundary value estimates and apply corresponding survival weights to actor and critic losses. Formulated independently of specific dynamics models and instantiated within Dreamer V3, we prove that the resulting gated Bellman operator is a strict contraction mapping and that early bootstrapping monotonically reduces conditional target variance. We clarify the theoretical assumptions distinguishing our expansion proxy from exact path likelihoods. Across continuous-control tasks and Atari Pong, empirical evaluations show that dynamic boundary selection enhances sample efficiency and late-training performance over fixed-horizon and auxiliary-enabled baselines.",
+      "authors": [
+        "Shashank Gupta",
+        "Pilhwa Lee"
+      ],
+      "authors_all": [
+        "Shashank Gupta",
+        "Pilhwa Lee"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-41022.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41022-p2.jpg",
+        "assets/img/covers/arxiv-2610-41022-p3.jpg",
+        "assets/img/covers/arxiv-2610-41022-p4.jpg"
+      ],
+      "arxiv_id": "2610.41022",
+      "abs_url": "http://arxiv.org/abs/2610.41022v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41022v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
@@ -1104,6 +1526,162 @@
       "arxiv_id": "2610.40607",
       "abs_url": "http://arxiv.org/abs/2610.40607v1",
       "pdf_url": "https://arxiv.org/pdf/2610.40607v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40748",
+      "source": "arxiv",
+      "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+      "title_zh": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+      "tldr_zh": "Achieving the broad task generalization of embodied models i",
+      "cover_zh": "Achieving the broad task generalization of embodied models i",
+      "abstract_zh": "Achieving the broad task generalization of embodied models in physical environments remains a central challenge in robot learning. We study this challenge in World Action Models (WAMs) through two complementary capabilities: video generalization, which predicts the visual evolution of new tasks, and action generalization, which translates these predictions into executable behavior through a video-to-action bridge. By varying video and action supervision for tasks outside an initial training set, we examine their respective contributions to task transfer. On RoboTwin 2.0, using only in-distribution video-action supervision yields a 25.07% success rate on out-of-distribution tasks. Introducing videos of these tasks without their action labels raises success to 55.90%, while adding just one action-labeled demonstration per task further improves it to 70.70%. These findings suggest that broader video coverage enables task transfer by leveraging existing inverse-dynamics capabilities, while even sparse action supervision further strengthens those capabilities. Guided by this perspective, we introduce WorldBridge, a WAM with separate video and action experts connected through structured attention and trained with joint flow matching. WorldBridge incorporates visual memory at two temporal scales and action forcing, alongside a unified data processing pipeline that standardizes and filters heterogeneous robot trajectories and egocentric hand-derived supervision. Across multiple manipulation benchmarks, WorldBridge achieves state-of-the-art performance among the compared methods, including 96.23% on RoboTwin 2.0 full data setting and 80.9% on clean to random setting, 82.8% on RoboCasa GR1 TableTop, and 57.6% on DOMINO Level-1. Our study highlights the complementary roles of video prediction and action grounding in developing robots that generalize across tasks.",
+      "authors": [
+        "Jun Cen",
+        "Yubo Guo",
+        "Hao Li"
+      ],
+      "authors_all": [
+        "Jun Cen",
+        "Yubo Guo",
+        "Hao Li",
+        "Liangkai Li",
+        "Yaoxu Lyu",
+        "Meng Wei",
+        "Zeqi Xiao",
+        "Sizhe Yang",
+        "Yuqiang Yang",
+        "Yifan Ye",
+        "Shanghang Zhang",
+        "Duo Zheng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40748.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40748-p2.jpg",
+        "assets/img/covers/arxiv-2610-40748-p3.jpg",
+        "assets/img/covers/arxiv-2610-40748-p4.jpg"
+      ],
+      "arxiv_id": "2610.40748",
+      "abs_url": "http://arxiv.org/abs/2610.40748v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40748v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40799",
+      "source": "arxiv",
+      "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+      "title_zh": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+      "tldr_zh": "Across coding, web, and tool-use tasks, language-model agent",
+      "cover_zh": "Across coding, web, and tool-use tasks, language-model agent",
+      "abstract_zh": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.",
+      "authors": [
+        "Yijia Fan",
+        "Xilin He",
+        "Yilei Jiang"
+      ],
+      "authors_all": [
+        "Yijia Fan",
+        "Xilin He",
+        "Yilei Jiang",
+        "Dongming Wu",
+        "Jiaxu Wang",
+        "Xiangyu Yue"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40799.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40799-p2.jpg",
+        "assets/img/covers/arxiv-2610-40799-p3.jpg",
+        "assets/img/covers/arxiv-2610-40799-p4.jpg"
+      ],
+      "arxiv_id": "2610.40799",
+      "abs_url": "http://arxiv.org/abs/2610.40799v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40799v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40935",
+      "source": "arxiv",
+      "title": "Let LiDAR Decide Where to Look: Geometry-Measured Token Selection for Efficient Sparse Latent World Models",
+      "title_zh": "Let LiDAR Decide Where to Look: Geometry-Measured Token Selection for Efficient Sparse Latent World Models",
+      "tldr_zh": "Vision-centric autonomous driving models encode thousands of",
+      "cover_zh": "Vision-centric autonomous driving models encode thousands of",
+      "abstract_zh": "Vision-centric autonomous driving models encode thousands of image tokens per frame, yet most depict sky, buildings, or empty road---content irrelevant to planning. Worse, these tokens dilute the planner's attention: we show that randomly discarding 75% of tokens already outperforms the dense model, because the planner can concentrate on the remaining driving-critical content. Building on this finding, we present Geometry-Aware Token Selection (GATS), which uses LiDAR and radar point projections to select a small fraction of image tokens before the vision backbone runs. Because the selector operates on measured 3D geometry rather than visual features, the backbone encodes only the selected patches, cutting end-to-end FLOPs by up to $18×$. Each kept token receives a 3D anchor from its LiDAR point and is fed to a self-supervised latent world model that predicts future features and 3D displacements without box annotations. At 25% budget, GATS achieves a 3-sec L2 displacement error of 0.520 m on nuScenes and an EPDMS of 88.9 on NAVSIM---surpassing the dense baseline (0.573 m / 85.9) at $6.6×$ fewer total FLOPs. At an extreme 10% budget (24 GFLOPs, $18×$ reduction), it still beats the dense baseline on both nuScenes (0.537 m vs. 0.573 m L2) and NAVSIM (87.9 vs. 85.9 EPDMS). On 739 intent-critical scenarios, GATS covers 95.8% of hazardous vehicles and achieves a 0.09% collision rate---73.5% lower than the dense model (0.34%).",
+      "authors": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "authors_all": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40935.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40935-p2.jpg",
+        "assets/img/covers/arxiv-2610-40935-p3.jpg",
+        "assets/img/covers/arxiv-2610-40935-p4.jpg"
+      ],
+      "arxiv_id": "2610.40935",
+      "abs_url": "http://arxiv.org/abs/2610.40935v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40935v1",
       "venue": "",
       "venue_announced": "",
       "score": 12,
@@ -1410,6 +1988,104 @@
       "arxiv_id": "2610.40614",
       "abs_url": "http://arxiv.org/abs/2610.40614v1",
       "pdf_url": "https://arxiv.org/pdf/2610.40614v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40947",
+      "source": "arxiv",
+      "title": "UFMF: Radar-Guided Kinematic Priors for Real-Time 4D Occupancy Forecasting",
+      "title_zh": "UFMF: Radar-Guided Kinematic Priors for Real-Time 4D Occupancy Forecasting",
+      "tldr_zh": "Real-time 4D occupancy forecasting requires reliably extrapo",
+      "cover_zh": "Real-time 4D occupancy forecasting requires reliably extrapo",
+      "abstract_zh": "Real-time 4D occupancy forecasting requires reliably extrapolating both ego motion and surrounding actor motion under strict latency budgets. Recent occupancy world models improve long-horizon fidelity through generative decoders and 3D volumetric modeling, yet their computational cost makes real-time deployment challenging. Light-weight BEV forecasters meet latency requirements but often blur or suppress fast-moving actors at longer horizons. We present UFMF (Ultra-Fast Multi-modal Forecaster), a real-time forecaster that keeps an attention-free diagonal state-space temporal core while injecting targeted kinematic and geometric structure where lightweight models typically fail. A radar-guided velocity-aware dynamic prior (VADP) decomposes future displacement into a linear extrapolation plus a learned horizon-dependent residual. The resulting per-cell flow fields transport a compact dynamic latent subspace during rollout. Two auxiliary training constraints complement this branch: world-frame dynamic supervision enforces inter-horizon trajectory coherence, and class-conditioned vertical-profile supervision regularizes BEV-to-3D lifting. UFMF operates at 122 FPS on a single RTX 4090 and reaches 0.45 fast-displacement mIoU on nuScenes, outperforming recent occupancy world models at a fraction of their computational cost.",
+      "authors": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "authors_all": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40947.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40947-p2.jpg",
+        "assets/img/covers/arxiv-2610-40947-p3.jpg",
+        "assets/img/covers/arxiv-2610-40947-p4.jpg"
+      ],
+      "arxiv_id": "2610.40947",
+      "abs_url": "http://arxiv.org/abs/2610.40947v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40947v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41021",
+      "source": "arxiv",
+      "title": "CuPIQP: A Batched and Differentiable QP Solver on GPUs for Robot Learning and Control",
+      "title_zh": "CuPIQP: A Batched and Differentiable QP Solver on GPUs for Robot Learning and Control",
+      "tldr_zh": "Quadratic programs (QPs) are fundamental building blocks of",
+      "cover_zh": "Quadratic programs (QPs) are fundamental building blocks of",
+      "abstract_zh": "Quadratic programs (QPs) are fundamental building blocks of many robotic tasks such as inverse kinematics, whole-body control, and model predictive control. Extending these methods to large-scale robot learning and control requires solving many QPs concurrently and, for end-to-end learning, differentiating through their solutions. Efficient batched optimization is therefore essential to bringing established model-based methods into GPU-based robotics pipelines. We present textsc{cuPIQP}, a batched and differentiable QP solver on GPUs based on a proximal interior-point method, with unified support for dense, sparse, and multistage problems. The solver exploits parallelism across independent QPs and their internal structure while preserving per-problem numerical updates and termination decisions. Benchmarks with up to 16384 QPs per batch demonstrate solve-time speedups of up to $18.8×$ over textsc{Moreau} and $4.26×$ over eight-core textsc{PIQP}. In an end-to-end learning task, textsc{cuPIQP} accelerates training by $4.6×$ over textsc{QPAX} and $7.8×$ over textsc{Moreau}. By reducing the computational cost, textsc{cuPIQP} provides efficient, reusable infrastructure for integrating model-based optimization into large-scale robot learning and control.",
+      "authors": [
+        "Fenglong Song",
+        "Roland Schwan",
+        "Yuwen Chen"
+      ],
+      "authors_all": [
+        "Fenglong Song",
+        "Roland Schwan",
+        "Yuwen Chen",
+        "Yuning Jiang",
+        "Colin N. Jones"
+      ],
+      "primary_category": "math.OC",
+      "published": "2026-10-29",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-41021.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41021-p2.jpg",
+        "assets/img/covers/arxiv-2610-41021-p3.jpg",
+        "assets/img/covers/arxiv-2610-41021-p4.jpg"
+      ],
+      "arxiv_id": "2610.41021",
+      "abs_url": "http://arxiv.org/abs/2610.41021v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41021v1",
       "venue": "",
       "venue_announced": "",
       "score": 9,
@@ -1986,6 +2662,206 @@
       "arxiv_id": "2610.40632",
       "abs_url": "http://arxiv.org/abs/2610.40632v1",
       "pdf_url": "https://arxiv.org/pdf/2610.40632v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40832",
+      "source": "arxiv",
+      "title": "EgoHSI3R: Online 4D Hand-Scene Interaction Reconstruction from Egocentric Video",
+      "title_zh": "EgoHSI3R: Online 4D Hand-Scene Interaction Reconstruction from Egocentric Video",
+      "tldr_zh": "Egocentric videos offer an abundant source of hand-scene int",
+      "cover_zh": "Egocentric videos offer an abundant source of hand-scene int",
+      "abstract_zh": "Egocentric videos offer an abundant source of hand-scene interactions for embodied learning, which requires recovering hands, camera, and scene consistently in a shared 3D world. Existing methods focus on either camera-frame hands or world-space hand trajectories, without jointly recovering the scene pointmaps or interaction information. Building a complete reconstruction from such specialized predictions therefore typically requires per-sequence optimization. We propose EgoHSI3R, a unified feed-forward framework for online 4D hand-scene interaction reconstruction from egocentric monocular video. To jointly recover these components, it maintains a recurrent scene representation that accumulates geometric evidence over time and provides a shared world space and scale. We introduce hand-centric prompts that fuse pretrained hand priors and local scene context, while MANO vertex queries attend to scene features to predict dense per-vertex contact. These designs enable a single network to jointly estimate camera motion, dense scene geometry, world-space bilateral MANO hands, and per-vertex hand contact. Despite operating causally, EgoHSI3R achieves the lowest world-space hand joint error on ARCTIC among the evaluated methods, while offering faster inference than existing world-space hand reconstruction pipelines and competitive camera and scene reconstruction accuracy.",
+      "authors": [
+        "Mingzhi Pei",
+        "Zhangchen Ye",
+        "Ruoqu Chen"
+      ],
+      "authors_all": [
+        "Mingzhi Pei",
+        "Zhangchen Ye",
+        "Ruoqu Chen",
+        "Liu Cao",
+        "Mengdi Xu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40832.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40832-p2.jpg",
+        "assets/img/covers/arxiv-2610-40832-p3.jpg",
+        "assets/img/covers/arxiv-2610-40832-p4.jpg"
+      ],
+      "arxiv_id": "2610.40832",
+      "abs_url": "http://arxiv.org/abs/2610.40832v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40832v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40834",
+      "source": "arxiv",
+      "title": "Spatial Atlas-Informed Loss Ensembles for Whole-Body PSMA PET/CT Metastasis Segmentation",
+      "title_zh": "Spatial Atlas-Informed Loss Ensembles for Whole-Body PSMA PET/CT Metastasis Segmentation",
+      "tldr_zh": "Existing whole-body PSMA PET/CT prostate metastasis segmenta",
+      "cover_zh": "Existing whole-body PSMA PET/CT prostate metastasis segmenta",
+      "abstract_zh": "Existing whole-body PSMA PET/CT prostate metastasis segmentation methods generally rely on images alone, without explicitly incorporating where metastases tend to occur. We investigate whether a population metastasis atlas can improve lesion detection when integrated into model training. We constructed voxel-wise mean and standard deviation maps from 375 expert-annotated training scans and used them to weight the cross-entropy loss of an nnU-Net. The additional penalties for missed lesions and false positives depend on spatial atlas statistics and diminish as predictions become confidently correct. Seven configurations were compared on validation data; three were combined by majority voting into SAILS (Spatial Atlas-Informed Loss enSemble). We compared SAILS with a baseline nnU-Net and inference-time atlas fusion on AutoPET~III (110 disease-positive cases) and Deep-PSMA (100 external cases). No atlas or registration is needed at inference. Results: On AutoPET~III, SAILS improved whole-body Dice (0.531 vs. 0.520; p=0.006), reduced missed-lesion volume (9.5 vs. 12.1 cc/case; p<0.01), and increased pooled lesion sensitivity (0.857 vs. 0.843; p=0.004). On Deep-PSMA, SAILS detected 126 additional reference lesions (sensitivity 0.769 vs. 0.751; p<0.001), without a significant whole-body Dice change (-0.009; p=0.36). High-risk bone Dice improved in both cohorts (0.576 vs. 0.552 and 0.667 vs. 0.653; both p<0.01). False-positive volume increased by 2.3 and 18.2 cc/case, respectively (p<0.001). Atlas-weighted training improves lesion detection, especially in high-risk bone, without test-time atlas registration, but increases false positives.",
+      "authors": [
+        "Grant N. Chau",
+        "Bashirul A. Biswas",
+        "Biratal Wagle"
+      ],
+      "authors_all": [
+        "Grant N. Chau",
+        "Bashirul A. Biswas",
+        "Biratal Wagle",
+        "Matthew E. Maeder",
+        "Michael S. Leapman",
+        "James B. Yu",
+        "Indrani Bhattacharya"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40834.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40834-p2.jpg",
+        "assets/img/covers/arxiv-2610-40834-p3.jpg",
+        "assets/img/covers/arxiv-2610-40834-p4.jpg"
+      ],
+      "arxiv_id": "2610.40834",
+      "abs_url": "http://arxiv.org/abs/2610.40834v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40834v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40922",
+      "source": "arxiv",
+      "title": "Confidence-Modulated Safety Filtering for End-to-End Policies",
+      "title_zh": "Confidence-Modulated Safety Filtering for End-to-End Policies",
+      "tldr_zh": "End-to-end policies, from task-specific controllers to robot",
+      "cover_zh": "End-to-end policies, from task-specific controllers to robot",
+      "abstract_zh": "End-to-end policies, from task-specific controllers to robot foundation models, learn complex behavior from raw observations but are not guaranteed to remain safe, so they are often wrapped in a safety filter. The resulting system operates under two domains: the filter's operational design domain (ODD), where its assumptions hold and safety is certified, and the policy's competence domain, where it is reliable. Filters typically fix their conservativeness regardless of the policy's competence, trading performance inside the ODD against margin beyond it. We ask whether the policy's confidence should set that level, and propose a filter-agnostic pipeline that modulates it at runtime: inside the ODD, where every setting is safe, confidence buys performance; beyond it, low confidence adds margin, which helps when it flags where the filter's model fails. Preliminary F1TENTH simulations, where this holds, show the modulated filter combining the strengths of permissive and conservative filters.",
+      "authors": [
+        "Javier Borquez",
+        "Jaime F. Fisac"
+      ],
+      "authors_all": [
+        "Javier Borquez",
+        "Jaime F. Fisac"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40922.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40922-p2.jpg",
+        "assets/img/covers/arxiv-2610-40922-p3.jpg",
+        "assets/img/covers/arxiv-2610-40922-p4.jpg"
+      ],
+      "arxiv_id": "2610.40922",
+      "abs_url": "http://arxiv.org/abs/2610.40922v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40922v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-40973",
+      "source": "arxiv",
+      "title": "RADI3N: GeometRic ImAge EDiting via ParametrIc 3D CoNtrol",
+      "title_zh": "RADI3N: GeometRic ImAge EDiting via ParametrIc 3D CoNtrol",
+      "tldr_zh": "Recent diffusion-based methods have substantially advanced i",
+      "cover_zh": "Recent diffusion-based methods have substantially advanced i",
+      "abstract_zh": "Recent diffusion-based methods have substantially advanced image editing, yet parametric 3D control at the part level remains challenging. Existing approaches either operate on whole objects with manual rigging, or revert to 2D handles at the part level. They also struggle to model appearance and texture under large transformations, leading to unrealistic outputs in geometry-intensive edits. To address these limitations, we introduce RADI3N, a framework for semantically-grounded part-aware object manipulation with parametric 3D control. Our CS-ARAP deformation module suppresses rotation-field discontinuities at part boundaries via neighborhood covariance smoothing, producing structurally consistent deformations under complex part-level edits. We further introduce an inversion-free selective texture transfer mechanism that suppresses high-frequency positional biases and scales up low-frequency semantic cues within cross-image attention. This eliminates strict spatial bias and supports semantic matching, allowing source appearance to follow the edited part onto its new geometry. Experiments demonstrate that RADI3N achieves state-of-the-art performance in geometric fidelity, viewpoint consistency, and controllability.",
+      "authors": [
+        "Abdul Wasi",
+        "Akhil Gorugantu",
+        "Mahesh Bhosale"
+      ],
+      "authors_all": [
+        "Abdul Wasi",
+        "Akhil Gorugantu",
+        "Mahesh Bhosale",
+        "Anjan Dutta",
+        "Junsong Yuan",
+        "Sauradip Nag",
+        "David Doermann"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-40973.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-40973-p2.jpg",
+        "assets/img/covers/arxiv-2610-40973-p3.jpg",
+        "assets/img/covers/arxiv-2610-40973-p4.jpg"
+      ],
+      "arxiv_id": "2610.40973",
+      "abs_url": "http://arxiv.org/abs/2610.40973v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40973v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
