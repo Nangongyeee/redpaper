@@ -1,8 +1,8 @@
 // About page: apply saved theme (so dark-mode users stay consistent) + wire
 // the search box to redirect home. 独立成文件而非 about.html 内联，是为了让
 // stamp_assets() 能给 <script src> 和这里的 import 正常打 ?v= 缓存戳。
-import { Theme } from './storage.js?v=b04d3d1a';
-import { attachSearchRedirect } from './utils.js?v=b04d3d1a';
+import { Theme } from './storage.js?v=3f7461d0';
+import { attachSearchRedirect } from './utils.js?v=3f7461d0';
 
 Theme.init();
 attachSearchRedirect();
