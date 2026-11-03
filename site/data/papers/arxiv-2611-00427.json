@@ -1,0 +1,79 @@
+{
+  "id": "arxiv-2611-00427",
+  "source": "arxiv",
+  "title": "Spoofing the Latent State: Imperceptible Goal-Image Attacks Derail Planning in LeWorldModel",
+  "title_zh": "Spoofing the Latent State: Imperceptible Goal-Image Attacks Derail Planning in LeWorldModel",
+  "abstract": "Joint-embedding predictive architectures (JEPAs) have recently emerged as general-purpose visual world models for control. A prominent example is LeWorldModel (LeWM), which trains end-to-end from pixels using an isotropic Gaussian anti-collapse regularizer (SIGReg) and plans by minimizing the squared Euclidean distance between predicted and goal embeddings. In this work, we investigate the test-time robustness of this latent planning interface. Analyzing the learned metric on Push-T, we first find that task-relevant object state heavily dominates latent distance: shifting the block by a single pixel displaces the embedding $3\\times$ further than an equivalent agent shift, and swapping the block pose alone accounts for $99\\%$ of the distance between scene pairs. However, because this pose information is distributed across a curved, high-dimensional manifold rather than a fixed linear subspace, the encoder cannot be trivially edited post-hoc to isolate or redirect it. We next demonstrate that this geometry is highly vulnerable at test time. A white-box $\\ell_\\infty$ perturbation of just $ε{=}4/255$ applied to a single input frame causes the encoder to register the block at an arbitrary, attacker-chosen pose in $73$--$95\\%$ of scenes without disturbing the encoded agent state. Perturbing either the goal image or the live camera observation drops Push-T planning success from $87\\%$ to $32\\%$, whereas uniform random noise at twice the magnitude has negligible impact. This vulnerability persists across all four standard LeWM benchmarks (Push-T, Two-Room, Reacher, and OGBench-Cube). At $ε{=}8/255$, the attack bridges $82$--$97\\%$ of the squared latent distance to the target embedding in every environment, inducing planning degradation proportional to each task's reliance on the spoofed entity.",
+  "abstract_zh": "Joint-embedding predictive architectures (JEPAs) have recently emerged as general-purpose visual world models for control. A prominent example is LeWorldModel (LeWM), which trains end-to-end from pixels using an isotropic Gaussian anti-collapse regularizer (SIGReg) and plans by minimizing the squared Euclidean distance between predicted and goal embeddings. In this work, we investigate the test-time robustness of this latent planning interface. Analyzing the learned metric on Push-T, we first find that task-relevant object state heavily dominates latent distance: shifting the block by a single pixel displaces the embedding $3×$ further than an equivalent agent shift, and swapping the block pose alone accounts for $99\\%$ of the distance between scene pairs. However, because this pose information is distributed across a curved, high-dimensional manifold rather than a fixed linear subspace, the encoder cannot be trivially edited post-hoc to isolate or redirect it. We next demonstrate that this geometry is highly vulnerable at test time. A white-box $ell_∞$ perturbation of just $ε{=}4/255$ applied to a single input frame causes the encoder to register the block at an arbitrary, attacker-chosen pose in $73$--$95\\%$ of scenes without disturbing the encoded agent state. Perturbing either the goal image or the live camera observation drops Push-T planning success from $87\\%$ to $32\\%$, whereas uniform random noise at twice the magnitude has negligible impact. This vulnerability persists across all four standard LeWM benchmarks (Push-T, Two-Room, Reacher, and OGBench-Cube). At $ε{=}8/255$, the attack bridges $82$--$97\\%$ of the squared latent distance to the target embedding in every environment, inducing planning degradation proportional to each task's reliance on the spoofed entity.",
+  "tldr_zh": "Joint-embedding predictive architectures (JEPAs) have recent",
+  "cover_zh": "Joint-embedding predictive architectures (JEPAs) have recent",
+  "authors": [
+    {
+      "name": "Kunal Bhosikar",
+      "affiliation": ""
+    },
+    {
+      "name": "Nicole Meng",
+      "affiliation": ""
+    },
+    {
+      "name": "Charu Sharma",
+      "affiliation": ""
+    },
+    {
+      "name": "Yingjie Lao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.CR",
+    "cs.LG"
+  ],
+  "published": "2026-10-30",
+  "updated": "2026-10-30",
+  "arxiv_id": "2611.00427",
+  "pdf_url": "https://arxiv.org/pdf/2611.00427v1",
+  "abs_url": "http://arxiv.org/abs/2611.00427v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-00427.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-00427-p2.jpg",
+    "assets/img/covers/arxiv-2611-00427-p3.jpg",
+    "assets/img/covers/arxiv-2611-00427-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 6 个（world model、world models、jepa、leworldmodel）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

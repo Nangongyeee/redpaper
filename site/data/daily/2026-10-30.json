@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "count": 44,
+  "count": 52,
   "papers": [
     {
       "id": "vid-bilibili-BV1Goxa6yExu",
@@ -316,6 +316,88 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-00193",
+      "source": "arxiv",
+      "title": "Anchor 1: Precise and Stable Humanoid Control for Whole-Body Manipulation",
+      "title_zh": "Anchor 1: Precise and Stable Humanoid Control for Whole-Body Manipulation",
+      "tldr_zh": "Humanoid controllers have acquired increasingly diverse moto",
+      "cover_zh": "Humanoid controllers have acquired increasingly diverse moto",
+      "abstract_zh": "Humanoid controllers have acquired increasingly diverse motor skills, yet translating these capabilities into precise and stable whole-body manipulation remains challenging. Manipulation tasks are sensitive to execution deviations -- even small errors or unintended steps can cause failure. Introducing Anchor 1, a whole-body controller for precise and stable whole-body manipulation, together with a benchmark spanning diverse coordination demands. Anchor 1 adopts calibrated sparse motion references to preserve task-relevant human motion structure without online joint-space retargeting, leaving kinematic freedom for precise control. To guide this freedom towards stable, physically plausible whole-body coordination, we shape the training distribution through offline curation of robot motions paired with these calibrated sparse references. We further introduce explicit error feedback decoupled from motion encoding, improving control precision while supporting flexible command interfaces. To achieve a systematic evaluation of these capabilities, a benchmark is proposed to assess precision, sustained execution stability, and reachability across diverse whole-body coordination demands. Evaluations in simulation and on hardware show stronger precision and stability across all evaluation tracks. Under the most strict real-world global scoring setting, Anchor 1 achieves a 30\\% to 80\\% decrease in tracking error with fewer look-ahead inputs, and without retargeting compared to all existing controllers. Downstream experiments demonstrate more efficient teleoperated data collection and higher task success using the same deployment pipeline as well. We believe Anchor 1 supports precise and stable whole-body control as a practical basis for humanoid task execution.",
+      "authors": [
+        "Archon Robotics",
+        ":",
+        "Caojun Wang"
+      ],
+      "authors_all": [
+        "Archon Robotics",
+        ":",
+        "Caojun Wang",
+        "Checheng Yu",
+        "Gangcheng Jiang",
+        "Guangjun Zeng",
+        "Haoran Jiang",
+        "Hongyang Li",
+        "Huibin Yan",
+        "Huijie Wang",
+        "Jialong Zeng",
+        "Jin Yang",
+        "Kai Cheng",
+        "Li Chen",
+        "Liang Chen",
+        "Lirui Zhao",
+        "Modi Shi",
+        "Penglin Fu",
+        "Shijia Peng",
+        "Tianyu Li",
+        "Wencong Zhang",
+        "Xuechong Lv",
+        "Yixuan Pan",
+        "Yong Zhang",
+        "Yu Qiao",
+        "Yu Zhang",
+        "Ziyan Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hongyang Li (SAIL)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00193.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00193-p2.jpg",
+        "assets/img/covers/arxiv-2611-00193-p3.jpg",
+        "assets/img/covers/arxiv-2611-00193-p4.jpg"
+      ],
+      "arxiv_id": "2611.00193",
+      "abs_url": "http://arxiv.org/abs/2611.00193v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00193v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-41540",
       "source": "arxiv",
       "title": "FOCUS: First-Order Control Using Optimal Transport Supervision for Imitation from Observations",
@@ -469,6 +551,55 @@
       "venue": "",
       "venue_announced": "",
       "score": 23,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00394",
+      "source": "arxiv",
+      "title": "CalVLA: Shaping Native Confidence in Vision-Language-Action Policies with Outcome Supervision",
+      "title_zh": "CalVLA: Shaping Native Confidence in Vision-Language-Action Policies with Outcome Supervision",
+      "tldr_zh": "Can a vision-language-action (VLA) policy signal likely task",
+      "cover_zh": "Can a vision-language-action (VLA) policy signal likely task",
+      "abstract_zh": "Can a vision-language-action (VLA) policy signal likely task failure from its own action probabilities? We introduce CalVLA, which shapes native action-token confidence using successful and failed rollouts and an Action-Confidence Alignment (ACal) squared margin-ranking loss. Low-rank adapters update OpenVLA-7B without an auxiliary failure detector. Observations are paired within tasks at similar normalized elapsed times, not necessarily equivalent physical progress. On a held-out test split from 500 LIBERO-10 configurations, adapted confidence achieves a joint failure-discrimination AUROC of $0.7392±0.0480$ over three seeds, averaging scores at 130 and 260 steps. Frozen-policy probes reach 0.6146--0.6436, but superiority over the linear probe is statistically inconclusive. For the same confidence summary, AUROC rises from 0.4485 before adaptation to 0.7327 after adaptation. Mean task success decreases from 58% to 55%. These results show improved failure discrimination, not improved control or established safety benefits.",
+      "authors": [
+        "Boniface Chukwuemeka Godwin"
+      ],
+      "authors_all": [
+        "Boniface Chukwuemeka Godwin"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00394.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00394-p2.jpg",
+        "assets/img/covers/arxiv-2611-00394-p3.jpg",
+        "assets/img/covers/arxiv-2611-00394-p4.jpg"
+      ],
+      "arxiv_id": "2611.00394",
+      "abs_url": "http://arxiv.org/abs/2611.00394v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00394v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 22,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -752,8 +883,8 @@
       "primary_category": "cs.RO",
       "published": "2026-10-30",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
+        "loco-manip-wbc",
         "locomotion"
       ],
       "badges": [],
@@ -807,8 +938,8 @@
       "primary_category": "cs.RO",
       "published": "2026-10-30",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2610-42053.jpg",
@@ -820,6 +951,58 @@
       "arxiv_id": "2610.42053",
       "abs_url": "http://arxiv.org/abs/2610.42053v1",
       "pdf_url": "https://arxiv.org/pdf/2610.42053v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00455",
+      "source": "arxiv",
+      "title": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
+      "title_zh": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
+      "tldr_zh": "Tactile sensing provides robots with direct observations of",
+      "cover_zh": "Tactile sensing provides robots with direct observations of",
+      "abstract_zh": "Tactile sensing provides robots with direct observations of contact physics, local geometry, and interaction dynamics, making it a vital source of feedback for contact-rich manipulation. However, existing tactile manipulation studies are often developed and evaluated within specific task settings, making it difficult to systematically compare how tactile information contributes under different interaction conditions. In this work, we develop a benchmark in simulation comprising 128 tasks organized around three complementary evaluation regimes: Precise, Recognition, and Dynamic. The benchmark further includes controlled static and dynamic task variants and 12 perturbation settings for evaluating robustness under changes in visual and physical conditions. These settings motivate studying tactile information as a temporally evolving interaction representation rather than only as an instantaneous observation. We therefore propose an action-conditioned latent predictive world model that integrates tactile history and learns a tactile state through prediction of future tactile latents. Building on this representation, we design a model that conditions action generation on the learned tactile state and uses predicted future tactile information to refine candidate actions through predictive tactile reflection. Experiments on the proposed benchmark show consistent gains from incorporating tactile information across the evaluated regimes. Project Page: https://tacmind-bench.github.io/",
+      "authors": [
+        "Jiaxin Shi",
+        "Zibin Wu",
+        "Yichi Zhang"
+      ],
+      "authors_all": [
+        "Jiaxin Shi",
+        "Zibin Wu",
+        "Yichi Zhang",
+        "Jianghua Duan",
+        "Siyu Zhu",
+        "Weihao Yuan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00455.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00455-p2.jpg",
+        "assets/img/covers/arxiv-2611-00455-p3.jpg",
+        "assets/img/covers/arxiv-2611-00455-p4.jpg"
+      ],
+      "arxiv_id": "2611.00455",
+      "abs_url": "http://arxiv.org/abs/2611.00455v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00455v1",
       "venue": "",
       "venue_announced": "",
       "score": 20,
@@ -1205,6 +1388,55 @@
       "arxiv_id": "2610.41643",
       "abs_url": "http://arxiv.org/abs/2610.41643v1",
       "pdf_url": "https://arxiv.org/pdf/2610.41643v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00427",
+      "source": "arxiv",
+      "title": "Spoofing the Latent State: Imperceptible Goal-Image Attacks Derail Planning in LeWorldModel",
+      "title_zh": "Spoofing the Latent State: Imperceptible Goal-Image Attacks Derail Planning in LeWorldModel",
+      "tldr_zh": "Joint-embedding predictive architectures (JEPAs) have recent",
+      "cover_zh": "Joint-embedding predictive architectures (JEPAs) have recent",
+      "abstract_zh": "Joint-embedding predictive architectures (JEPAs) have recently emerged as general-purpose visual world models for control. A prominent example is LeWorldModel (LeWM), which trains end-to-end from pixels using an isotropic Gaussian anti-collapse regularizer (SIGReg) and plans by minimizing the squared Euclidean distance between predicted and goal embeddings. In this work, we investigate the test-time robustness of this latent planning interface. Analyzing the learned metric on Push-T, we first find that task-relevant object state heavily dominates latent distance: shifting the block by a single pixel displaces the embedding $3×$ further than an equivalent agent shift, and swapping the block pose alone accounts for $99\\%$ of the distance between scene pairs. However, because this pose information is distributed across a curved, high-dimensional manifold rather than a fixed linear subspace, the encoder cannot be trivially edited post-hoc to isolate or redirect it. We next demonstrate that this geometry is highly vulnerable at test time. A white-box $ell_∞$ perturbation of just $ε{=}4/255$ applied to a single input frame causes the encoder to register the block at an arbitrary, attacker-chosen pose in $73$--$95\\%$ of scenes without disturbing the encoded agent state. Perturbing either the goal image or the live camera observation drops Push-T planning success from $87\\%$ to $32\\%$, whereas uniform random noise at twice the magnitude has negligible impact. This vulnerability persists across all four standard LeWM benchmarks (Push-T, Two-Room, Reacher, and OGBench-Cube). At $ε{=}8/255$, the attack bridges $82$--$97\\%$ of the squared latent distance to the target embedding in every environment, inducing planning degradation proportional to each task's reliance on the spoofed entity.",
+      "authors": [
+        "Kunal Bhosikar",
+        "Nicole Meng",
+        "Charu Sharma"
+      ],
+      "authors_all": [
+        "Kunal Bhosikar",
+        "Nicole Meng",
+        "Charu Sharma",
+        "Yingjie Lao"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-30",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00427.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00427-p2.jpg",
+        "assets/img/covers/arxiv-2611-00427-p3.jpg",
+        "assets/img/covers/arxiv-2611-00427-p4.jpg"
+      ],
+      "arxiv_id": "2611.00427",
+      "abs_url": "http://arxiv.org/abs/2611.00427v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00427v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
@@ -1811,6 +2043,50 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-00283",
+      "source": "arxiv",
+      "title": "Does Validation Loss Predict Real-Robot Success? Evidence from Four Imitation-Learning Policies on a Low-Cost Arm",
+      "title_zh": "Does Validation Loss Predict Real-Robot Success? Evidence from Four Imitation-Learning Policies on a Low-Cost Arm",
+      "tldr_zh": "Held-out validation loss is the standard offline signal for",
+      "cover_zh": "Held-out validation loss is the standard offline signal for",
+      "abstract_zh": "Held-out validation loss is the standard offline signal for choosing checkpoints and comparing models, but its relation to closed-loop success on a real robot is rarely measured. We measure it for ACT, Diffusion Policy, SmolVLA and $π_{0.5}$ (action expert only), trained on nested subsets of 12 to 200 demonstrations of a pick-and-place task on an SO-101 arm. We score 82 checkpoints on 25 held-out demonstrations, with each policy's training loss and with the error of the actions it outputs, and compare the scores with 930 bench rollouts. We also score all 700 intermediate checkpoints of 70 training runs, and recover the ball positions of every training, held-out and bench episode from the front camera. Within each policy, hold-out action error correlates with bench success (Spearman $ρ$ from -0.23 to -0.88), but no more strongly than the number of training episodes alone, and not at all among seeds trained on the same data. Across policies the ranking is inverted ($ρ$ = +0.90 at 200 episodes): the policy with the lowest hold-out error succeeded in 3 of 110 rollouts. The most common failure, the arm never leaving its rest pose, ended 96% of rollouts for Diffusion Policy trained on untrimmed demonstrations and 47% for SmolVLA, and cannot occur in a hold-out set made of demonstrations. Among rollouts in which the arm moved, SmolVLA's hold-out action error predicts success well ($ρ$ = -0.81). For the diffusion and flow-matching policies, hold-out loss rises two- to five-fold during training while hold-out action error falls by up to 29%. Held-out metrics are a sound diagnostic of learning but no substitute for evaluation on the robot, and we recommend reporting initiation failure and success among started rollouts as separate bench outcomes.",
+      "authors": [
+        "Simon Cowling"
+      ],
+      "authors_all": [
+        "Simon Cowling"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00283.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00283-p2.jpg",
+        "assets/img/covers/arxiv-2611-00283-p3.jpg",
+        "assets/img/covers/arxiv-2611-00283-p4.jpg"
+      ],
+      "arxiv_id": "2611.00283",
+      "abs_url": "http://arxiv.org/abs/2611.00283v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00283v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2610-41214",
       "source": "arxiv",
       "title": "Capability-Conditioned Graph Control Barrier Functions for Zero-Shot Safe Navigation of Heterogeneous Mobile Robot Teams",
@@ -2247,6 +2523,164 @@
       "arxiv_id": "2610.42145",
       "abs_url": "http://arxiv.org/abs/2610.42145v1",
       "pdf_url": "https://arxiv.org/pdf/2610.42145v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00177",
+      "source": "arxiv",
+      "title": "AuroraWorld: Structured 4D World Modeling for Exo-to-Ego Video Generation in Robot Manipulation",
+      "title_zh": "AuroraWorld: Structured 4D World Modeling for Exo-to-Ego Video Generation in Robot Manipulation",
+      "tldr_zh": "Egocentric observations provide a robot-centric view of mani",
+      "cover_zh": "Egocentric observations provide a robot-centric view of mani",
+      "abstract_zh": "Egocentric observations provide a robot-centric view of manipulation processes, capturing contact interactions and object-state changes that are important for visuomotor policy learning but difficult to observe from external cameras. However, collecting such data at scale remains expensive due to additional hardware requirements and platform-specific deployment costs. Synthesizing egocentric observations from large-scale exocentric manipulation videos provides a scalable alternative. However, existing methods struggle to synthesize physically consistent and policy-relevant egocentric videos under substantial viewpoint transformations, severe occlusions, complex object interactions, and inherently sparse observations from available exocentric viewpoints.",
+      "authors": [
+        "Hao Xue",
+        "Peng-Fei Zhang",
+        "Ying Cheng"
+      ],
+      "authors_all": [
+        "Hao Xue",
+        "Peng-Fei Zhang",
+        "Ying Cheng",
+        "Lanyun Zhu",
+        "Lei Zhu",
+        "Heng Tao Shen"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00177.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00177-p2.jpg",
+        "assets/img/covers/arxiv-2611-00177-p3.jpg",
+        "assets/img/covers/arxiv-2611-00177-p4.jpg"
+      ],
+      "arxiv_id": "2611.00177",
+      "abs_url": "http://arxiv.org/abs/2611.00177v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00177v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00180",
+      "source": "arxiv",
+      "title": "Learning to Live: A Step Toward Lifelong Embodied Intelligence",
+      "title_zh": "Learning to Live: A Step Toward Lifelong Embodied Intelligence",
+      "tldr_zh": "Embodied agents are usually organized around individual task",
+      "cover_zh": "Embodied agents are usually organized around individual task",
+      "abstract_zh": "Embodied agents are usually organized around individual tasks, yet the physical world keeps changing between tasks and during execution. We introduce LIFE (Lifelong Intelligence from Experience), a framework in which a robot observes continuously, remembers selectively, and turns experience into new capabilities. RoboBeats, a family of lightweight streaming gates, tracks conditions set by the agent and discovers new events, deciding when an observation warrants a response or a memory write. Selected observations enter Plastic Memory, a flat store of images and structured records that keeps the source evidence, so new fields and indexes can be added when later questions need them. When existing tools fall short, Explore-Distill-Mount (EDM) turns solutions found during problem solving into validated, reusable tools and skills. Under matched protocols, RoboBeats substantially improves condition tracking over its base models and, at the same writing budget, retains more useful evidence for memory question answering than uniform sampling. A case study of limited scale, replaying 24 hours of continuous video recorded by a real robot, illustrates how the integrated system builds memory from a day of experience and uses it to answer everyday questions. LIFE takes a step toward robots that become more familiar with their surroundings and more capable through experience: learning not only to complete tasks, but to live in the world.",
+      "authors": [
+        "Lirong Che",
+        "Peidong Wang",
+        "Yimeng Su"
+      ],
+      "authors_all": [
+        "Lirong Che",
+        "Peidong Wang",
+        "Yimeng Su",
+        "Jiong Wang",
+        "Yang Chen",
+        "Wenbo Fu",
+        "Zhenyu Huang",
+        "Tiancheng Xu",
+        "Yuzhe Yang",
+        "Dongli Xie",
+        "Xu Cao",
+        "Chuang Wang",
+        "Daqi Liu",
+        "Jian Su"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00180.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00180-p2.jpg",
+        "assets/img/covers/arxiv-2611-00180-p3.jpg",
+        "assets/img/covers/arxiv-2611-00180-p4.jpg"
+      ],
+      "arxiv_id": "2611.00180",
+      "abs_url": "http://arxiv.org/abs/2611.00180v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00180v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00297",
+      "source": "arxiv",
+      "title": "Teach, Abstract, Apply: A Framework for Dialogue-Driven Task Learning with Collaborative Robots",
+      "title_zh": "Teach, Abstract, Apply: A Framework for Dialogue-Driven Task Learning with Collaborative Robots",
+      "tldr_zh": "Collaborative robots (cobots) are designed to be safer and m",
+      "cover_zh": "Collaborative robots (cobots) are designed to be safer and m",
+      "abstract_zh": "Collaborative robots (cobots) are designed to be safer and more interactive than traditional industrial robots, share the same workspace as humans, and assist them in a range of shop-floor tasks such as palletization, joint assembly, and part inspection. Many of these tasks involve repetitive workflows that may evolve with changes in production environments and task specifications. These requirements motivate the need for intuitive interfaces that allow workers to modify workflows on the shop floor and generalise these routines for future use. This work introduces the Teach-Abstract-Apply (TAA) framework, which enables human operators to (a) teach new workflows to cobots in natural language, (b) abstract the taught workflows into skills for later use, and (c) apply these skills in different settings. As a case study, we apply the TAA framework to a collaborative structure-building task and evaluate it with both open-weight (Qwen3-Coder) and closed (GPT5.2-Codex) models in self-play and cross-model configurations. Our results show that skill abstraction improves task success rates and reduces interaction cost. Beyond automated evaluation, a preliminary human-in-the-loop study suggests that the pipeline also works with human instructions.",
+      "authors": [
+        "Chalamalasetti Kranti",
+        "Sherzod Hakimov",
+        "David Schlangen"
+      ],
+      "authors_all": [
+        "Chalamalasetti Kranti",
+        "Sherzod Hakimov",
+        "David Schlangen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00297.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00297-p2.jpg",
+        "assets/img/covers/arxiv-2611-00297-p3.jpg",
+        "assets/img/covers/arxiv-2611-00297-p4.jpg"
+      ],
+      "arxiv_id": "2611.00297",
+      "abs_url": "http://arxiv.org/abs/2611.00297v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00297v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,

@@ -1,0 +1,85 @@
+{
+  "id": "arxiv-2611-00539",
+  "source": "arxiv",
+  "title": "Faster Imitation by Re-timing Demonstrations Within the Controller Limit",
+  "title_zh": "Faster Imitation by Re-timing Demonstrations Within the Controller Limit",
+  "abstract": "Imitation policies inherit the operator's pace, and re-timing the demonstrations to run faster works only until success collapses at two to three times demonstration speed. Recent methods attribute that collapse to distribution shift and answer it with finer rules for which segments may be sped up; we show it has a mechanical cause that segment selection cannot address. A low-level controller realises only a bounded displacement per control period, so merging consecutive commands produces sums outside that bound: training pairs that promise a transition the plant cannot deliver. The share of such pairs in the re-timed data, which we call the exceed share, tracks where the retrained policy collapses. The rule that follows has a single parameter: merge greedily while the sum stays realisable. Every command is then realisable by construction, the demonstrated geometry is preserved, and the speed-up lands only where the demonstrator left slack. On four simulated robomimic tasks, 200 held-out seeds per cell, a merge cap of two is at or above the frozen policy's success on all four, by 14 points on Square, and shortens the successful episodes. At matched tempo, uniform re-timing loses 9 and 16 points on Can and ToolHang, is within noise on the other two, and reaches zero on the hardest at 2x. Placement also matters: no shuffled, entropy-guided or speed-conditioned alternative beats the rule on three of the four tasks, by margins the exceed share alone does not explain; on the fourth, at a tempo the task absorbs, every placement lands in the same band. The same principle carries to a simulated humanoid whole-body tracker: re-timing 429 reference motions within its velocity envelope succeeds on 71% of clips at 2.3x, against 51% for uniform time scaling at 2x.",
+  "abstract_zh": "Imitation policies inherit the operator's pace, and re-timing the demonstrations to run faster works only until success collapses at two to three times demonstration speed. Recent methods attribute that collapse to distribution shift and answer it with finer rules for which segments may be sped up; we show it has a mechanical cause that segment selection cannot address. A low-level controller realises only a bounded displacement per control period, so merging consecutive commands produces sums outside that bound: training pairs that promise a transition the plant cannot deliver. The share of such pairs in the re-timed data, which we call the exceed share, tracks where the retrained policy collapses. The rule that follows has a single parameter: merge greedily while the sum stays realisable. Every command is then realisable by construction, the demonstrated geometry is preserved, and the speed-up lands only where the demonstrator left slack. On four simulated robomimic tasks, 200 held-out seeds per cell, a merge cap of two is at or above the frozen policy's success on all four, by 14 points on Square, and shortens the successful episodes. At matched tempo, uniform re-timing loses 9 and 16 points on Can and ToolHang, is within noise on the other two, and reaches zero on the hardest at 2x. Placement also matters: no shuffled, entropy-guided or speed-conditioned alternative beats the rule on three of the four tasks, by margins the exceed share alone does not explain; on the fourth, at a tempo the task absorbs, every placement lands in the same band. The same principle carries to a simulated humanoid whole-body tracker: re-timing 429 reference motions within its velocity envelope succeeds on 71% of clips at 2.3x, against 51% for uniform time scaling at 2x.",
+  "tldr_zh": "Imitation policies inherit the operator's pace, and re-timin",
+  "cover_zh": "Imitation policies inherit the operator's pace, and re-timin",
+  "authors": [
+    {
+      "name": "Zongtan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Tianming Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Ye Zhao",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "published": "2026-10-31",
+  "updated": "2026-10-31",
+  "arxiv_id": "2611.00539",
+  "pdf_url": "https://arxiv.org/pdf/2611.00539v1",
+  "abs_url": "http://arxiv.org/abs/2611.00539v1",
+  "venue": "ICRA 2027",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-00539.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-00539-p2.jpg",
+    "assets/img/covers/arxiv-2611-00539-p3.jpg",
+    "assets/img/covers/arxiv-2611-00539-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 ICRA 2027"
+    }
+  ],
+  "related_links": [],
+  "page_count": 7,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（whole-body、humanoid whole-body）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 7 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「ICRA 2027」收录"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

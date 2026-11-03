@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "count": 2,
+  "count": 10,
   "papers": [
     {
       "id": "vid-bilibili-BV1qxxk61EAd",
@@ -21,10 +21,6 @@
         {
           "kind": "lab",
           "label": "⭐ AgiBot"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
         }
       ],
       "cover_image": "",
@@ -34,7 +30,7 @@
       "pdf_url": "",
       "venue": "",
       "venue_announced": "",
-      "score": 56,
+      "score": 46,
       "judge": {},
       "institutions": [
         "智元AGIBOT"
@@ -58,6 +54,265 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-00615",
+      "source": "arxiv",
+      "title": "Learning from an Imitable Teacher: Competition Solution for the MetaFine Challenge",
+      "title_zh": "Learning from an Imitable Teacher: Competition Solution for the MetaFine Challenge",
+      "tldr_zh": "The MetaFine Open Competition (RoboFineMani workshop, CoRL 2",
+      "cover_zh": "The MetaFine Open Competition (RoboFineMani workshop, CoRL 2",
+      "abstract_zh": "The MetaFine Open Competition (RoboFineMani workshop, CoRL 2026) evaluates fine-grained manipulation beyond binary success. Its five simulated tasks, from grasping a bottle by an instructed part to inserting letter-shaped pegs with 4 mm clearance, are scored on perception under lighting and camera changes, instruction understanding, and behavior. This report presents Team Friday's solution, which got second place with an overall score of 0.947, more than twice the $π_0$ baseline. Instead of fine-tuning a large vision-language-action (VLA) model, we train one 19M-parameter policy per task with a separate instruction classifier and focus on the data, all generated in the simulator by a privileged scripted teacher, including its corrections of the student's mistakes. By analyzing failed episodes, we find that a teacher that almost always succeeds can still teach a memoryless student badly: its pauses become stalls, its fixed habits become shortcuts, and it never shows the errors the student makes. Making the teacher emph{imitable} raised the official score on letter insertion, the hardest task, from 0.44 to 0.82 with 32\\% more data and the same architecture, and finally to 0.88. We summarize practical lessons on demonstration data and evaluation, which we hope will help in imitation learning for precise manipulation.",
+      "authors": [
+        "Yanze Zhang",
+        "Hao Liu",
+        "Haochang Hao"
+      ],
+      "authors_all": [
+        "Yanze Zhang",
+        "Hao Liu",
+        "Haochang Hao",
+        "Zhixiang Shen",
+        "Chunyu Miao",
+        "Yuyao Yang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00615.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00615-p2.jpg",
+        "assets/img/covers/arxiv-2611-00615-p3.jpg",
+        "assets/img/covers/arxiv-2611-00615-p4.jpg"
+      ],
+      "arxiv_id": "2611.00615",
+      "abs_url": "http://arxiv.org/abs/2611.00615v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00615v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00513",
+      "source": "arxiv",
+      "title": "WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation",
+      "title_zh": "WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation",
+      "tldr_zh": "Most agentic robotic systems use vision-language models (VLM",
+      "cover_zh": "Most agentic robotic systems use vision-language models (VLM",
+      "abstract_zh": "Most agentic robotic systems use vision-language models (VLMs) either to orchestrate predefined skills or to directly generate actions, constraints, and control programs. The former is limited by the available skill library, while the latter requires VLMs to reason about precise geometry and contact. In this paper, we propose WorldSketch, a new paradigm for agentic robotics in which a VLM constructs a world model rather than generating robot actions. The VLM acts as an agent that actively queries perception tools to build and visually validate a minimal kinematic world model, capturing only task-relevant objects, their interaction geometry, and possible motions. A geometric planner then jointly optimizes contact and whole-body motion on the resulting model. Moreover, the world model is self-improving: execution feedback verifies outcomes, updates uncertain hypotheses, and enables the agent to revise the model when its predictions are contradicted. We demonstrate the generality of this paradigm across RoboCasa, LIBERO-PRO, and R2R-CE navigation, achieving zero-shot success rates of 91%, 97%, and 76%, respectively. On RoboCasa, WorldSketch outperforms the next-best zero-shot agent baseline by 58 percentage points while using 10 times fewer VLM input tokens; on LIBERO-PRO, it exceeds CaP-X by 82 percentage points. In navigation, it matches the success rate of step-by-step VLM agents while using 6 times fewer input tokens.",
+      "authors": [
+        "Jiaming Wang"
+      ],
+      "authors_all": [
+        "Jiaming Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00513.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00513-p2.jpg",
+        "assets/img/covers/arxiv-2611-00513-p3.jpg",
+        "assets/img/covers/arxiv-2611-00513-p4.jpg"
+      ],
+      "arxiv_id": "2611.00513",
+      "abs_url": "http://arxiv.org/abs/2611.00513v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00513v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00522",
+      "source": "arxiv",
+      "title": "Behavioral Steering of Vision-Language-Action Models in the Low-Parameter Regime",
+      "title_zh": "Behavioral Steering of Vision-Language-Action Models in the Low-Parameter Regime",
+      "tldr_zh": "Reinforcement learning (RL) is increasingly used to adapt pr",
+      "cover_zh": "Reinforcement learning (RL) is increasingly used to adapt pr",
+      "abstract_zh": "Reinforcement learning (RL) is increasingly used to adapt pretrained vision-language-action models (VLAs). We investigate the problem of behavioral steering: adapting a VLA's execution style to preferences such as carrying objects higher. To investigate how little trainable capacity such steering requires and how much pretrained capability can be retained, we freeze an OpenVLA-OFT 7B policy and optimize TinyLoRA adapters with 8 to 384 trainable parameters using either policy-gradient RL (GRPO) or evolutionary search (CMA-ES). With just 256 trainable parameters, we raise carry height by 120 mm on trained tasks at 92% success and by 74 mm on a held-out task at 80% success. By rescaling the learned update, we can tune the trade-off between style gains and capability retention without retraining. Increasing adapter capacity generally improves this trade-off, retaining more pretrained capability at comparable style gains. The choice of optimizer also depends on capacity, with CMA-ES being competitive at low parameter counts, while GRPO offers better trade-offs as capacity grows. These findings show that extremely low-dimensional updates can steer pretrained VLA behavior, with adapter capacity, optimizer choice, and update scaling offering practical control over adaptation and retention.",
+      "authors": [
+        "James Tcheng",
+        "Feiyu Gavin Zhu"
+      ],
+      "authors_all": [
+        "James Tcheng",
+        "Feiyu Gavin Zhu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00522.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00522-p2.jpg",
+        "assets/img/covers/arxiv-2611-00522-p3.jpg",
+        "assets/img/covers/arxiv-2611-00522-p4.jpg"
+      ],
+      "arxiv_id": "2611.00522",
+      "abs_url": "http://arxiv.org/abs/2611.00522v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00522v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00539",
+      "source": "arxiv",
+      "title": "Faster Imitation by Re-timing Demonstrations Within the Controller Limit",
+      "title_zh": "Faster Imitation by Re-timing Demonstrations Within the Controller Limit",
+      "tldr_zh": "Imitation policies inherit the operator's pace, and re-timin",
+      "cover_zh": "Imitation policies inherit the operator's pace, and re-timin",
+      "abstract_zh": "Imitation policies inherit the operator's pace, and re-timing the demonstrations to run faster works only until success collapses at two to three times demonstration speed. Recent methods attribute that collapse to distribution shift and answer it with finer rules for which segments may be sped up; we show it has a mechanical cause that segment selection cannot address. A low-level controller realises only a bounded displacement per control period, so merging consecutive commands produces sums outside that bound: training pairs that promise a transition the plant cannot deliver. The share of such pairs in the re-timed data, which we call the exceed share, tracks where the retrained policy collapses. The rule that follows has a single parameter: merge greedily while the sum stays realisable. Every command is then realisable by construction, the demonstrated geometry is preserved, and the speed-up lands only where the demonstrator left slack. On four simulated robomimic tasks, 200 held-out seeds per cell, a merge cap of two is at or above the frozen policy's success on all four, by 14 points on Square, and shortens the successful episodes. At matched tempo, uniform re-timing loses 9 and 16 points on Can and ToolHang, is within noise on the other two, and reaches zero on the hardest at 2x. Placement also matters: no shuffled, entropy-guided or speed-conditioned alternative beats the rule on three of the four tasks, by margins the exceed share alone does not explain; on the fourth, at a tempo the task absorbs, every placement lands in the same band. The same principle carries to a simulated humanoid whole-body tracker: re-timing 429 reference motions within its velocity envelope succeeds on 71% of clips at 2.3x, against 51% for uniform time scaling at 2x.",
+      "authors": [
+        "Zongtan Li",
+        "Tianming Liu",
+        "Ye Zhao"
+      ],
+      "authors_all": [
+        "Zongtan Li",
+        "Tianming Liu",
+        "Ye Zhao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 ICRA 2027"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00539.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00539-p2.jpg",
+        "assets/img/covers/arxiv-2611-00539-p3.jpg",
+        "assets/img/covers/arxiv-2611-00539-p4.jpg"
+      ],
+      "arxiv_id": "2611.00539",
+      "abs_url": "http://arxiv.org/abs/2611.00539v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00539v1",
+      "venue": "ICRA 2027",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00612",
+      "source": "arxiv",
+      "title": "Roz: A Taste Test for World Model Latents",
+      "title_zh": "Roz: A Taste Test for World Model Latents",
+      "tldr_zh": "State of the art latent dynamics world models achieve impres",
+      "cover_zh": "State of the art latent dynamics world models achieve impres",
+      "abstract_zh": "State of the art latent dynamics world models achieve impressive performance for robot planning. But do they actually encode the physics of the world? In this paper, we show that popular world models today achieve strong results on tasks that reduce to image similarity but forget key details about objects in the scene like mass, deformation, friction, and bounciness. We achieve this by defining precisely what ought to be encoded in such a world model and introducing two new evaluation methods that can directly tease physical properties and easily scale to new ones. Our evaluation, which we call Roz, includes 10 contrastive tasks and 3 continuous tasks, totaling 1734 individual scenarios. We validate our eval on control tasks. On our own model, AnonWM, we find that performance roughly improves with training steps, while not necessarily being correlated with reconstruction MSE. We argue current model failures are a symptom of evaluation strategies (probes and planners) that are opaque, model-specific, and high-compute. Roz requires only a model that can ingest still frames or video, a way to extract latents, and a distance function between them, and it can be run in one pass. We hope future evaluations will adopt Roz's evaluation techniques. More broadly, we hope Roz can be a case study for a future where benchmarks allow rapid iteration and comparison across models.",
+      "authors": [
+        "Kenneth Ge",
+        "Dhruv Sheth",
+        "Kunvar Thaman"
+      ],
+      "authors_all": [
+        "Kenneth Ge",
+        "Dhruv Sheth",
+        "Kunvar Thaman"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00612.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00612-p2.jpg",
+        "assets/img/covers/arxiv-2611-00612-p3.jpg",
+        "assets/img/covers/arxiv-2611-00612-p4.jpg"
+      ],
+      "arxiv_id": "2611.00612",
+      "abs_url": "http://arxiv.org/abs/2611.00612v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00612v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-b2a08cbfc9",
       "source": "qbitai",
       "title": "世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用",
@@ -72,12 +327,7 @@
       "channels": [
         "world-model"
       ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
+      "badges": [],
       "cover_image": "",
       "preview_pages": [],
       "arxiv_id": "",
@@ -85,7 +335,7 @@
       "pdf_url": "",
       "venue": "",
       "venue_announced": "",
-      "score": 28,
+      "score": 18,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -99,6 +349,191 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2611-00499",
+      "source": "arxiv",
+      "title": "Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion",
+      "title_zh": "Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion",
+      "tldr_zh": "When searching for an object, humans naturally combine seman",
+      "cover_zh": "When searching for an object, humans naturally combine seman",
+      "abstract_zh": "When searching for an object, humans naturally combine semantic intuition - reasoning about where the object is likely to be stored - with geometric awareness of what parts of the space are visible, occluded, or unexplored. Effective robot object search requires the same joint reasoning, yet existing methods rely on only one: geometric methods maintain principled spatial beliefs but lack deep semantic understanding, while language-model based methods leverage commonsense knowledge but maintain no explicit belief over space. We argue that jointly reasoning over semantic and geometric evidence in an explicit 3D belief enables human-like interactive object search that outperforms either modality alone. To test this claim, we build a system that accumulates per-object VLM plausibility scores and geometric occupancy evidence via Bayesian log-odds filtering into a unified 3D voxel belief field. High-belief regions in the combined belief field drive action selection at each step: taking a closer look from a different viewpoint, navigating toward an unexplored region of the workspace, or physically interacting with a closed cabinet. We deploy this system end-to-end on a bimanual mobile humanoid and find that it outperforms geometry-only search and LLM-based planning methods. Project website - https://skymanaditya1.github.io/objsearch-website/",
+      "authors": [
+        "Aditya Agarwal",
+        "Lucy Cai",
+        "Kelly Lu"
+      ],
+      "authors_all": [
+        "Aditya Agarwal",
+        "Lucy Cai",
+        "Kelly Lu",
+        "Travis Manderson",
+        "Nicholas Roy",
+        "Tomás Lozano-Pérez",
+        "Leslie Pack Kaelbling"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00499.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00499-p2.jpg",
+        "assets/img/covers/arxiv-2611-00499-p3.jpg",
+        "assets/img/covers/arxiv-2611-00499-p4.jpg"
+      ],
+      "arxiv_id": "2611.00499",
+      "abs_url": "http://arxiv.org/abs/2611.00499v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00499v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00596",
+      "source": "arxiv",
+      "title": "X-World 1.6: Building Controllable Virtual Cities with World Models",
+      "title_zh": "X-World 1.6: Building Controllable Virtual Cities with World Models",
+      "tldr_zh": "Deploying generative world models for end-to-end closed-loop",
+      "cover_zh": "Deploying generative world models for end-to-end closed-loop",
+      "abstract_zh": "Deploying generative world models for end-to-end closed-loop evaluation and policy learning requires precise scenario control, consistent observations, and sustained generation quality during extended interactions. This report presents emph{X-World~1.6}, advancing X-World~1.0 toward a more reliable and versatile driving simulator. The upgraded base model offers finer-grained control over traffic semantics, including traffic lights and road markings, together with improved spatial consistency across cameras. Virtual City capabilities broaden scenario construction through a family of models conditioned on diverse 2D and 3D references, including support for generating multi-camera future videos from a single image. An enhanced post-training framework enables efficient causal, few-step generation with stronger temporal coherence, better quality retention over longer rollouts, and improved alignment with human preferences. We also introduce a dedicated evaluation suite to support systematic assessment and guide model iteration. Together, these upgrades expand the scenarios X-World can simulate and improve the efficiency and reliability of its generated observations, supporting broader use in autonomous-driving development.",
+      "authors": [
+        "XPeng",
+        ":",
+        "Boyang Wang"
+      ],
+      "authors_all": [
+        "XPeng",
+        ":",
+        "Boyang Wang",
+        "Boyi Sun",
+        "Chaoda Zheng",
+        "Dongbin Zhang",
+        "Guangfeng Jiang",
+        "Hanlong Chen",
+        "Hongbin Lin",
+        "Jianlei Zheng",
+        "Jinhao Deng",
+        "Kai Yang",
+        "Kangjie Chen",
+        "Linkun Xu",
+        "Minqi Wang",
+        "Puyi Wang",
+        "Rongliang Cheng",
+        "Ruixin Liu",
+        "Shijia Chen",
+        "Shuang Deng",
+        "Sijia Chen",
+        "Sin Wai Choo",
+        "Tianyuan Xie",
+        "Xiangyu Li",
+        "Xianming Liu",
+        "Xingjie Liu",
+        "Xinlong Zheng",
+        "Xuejie Lv",
+        "Xuezhi Yang",
+        "Yi Guo",
+        "Yixiao Zeng",
+        "Yu Zhang",
+        "Yuecheng Ma",
+        "Yuhao Wang",
+        "Yuqi Zhang",
+        "Yuxin Peng"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-31",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00596.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00596-p2.jpg",
+        "assets/img/covers/arxiv-2611-00596-p3.jpg",
+        "assets/img/covers/arxiv-2611-00596-p4.jpg"
+      ],
+      "arxiv_id": "2611.00596",
+      "abs_url": "http://arxiv.org/abs/2611.00596v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00596v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00527",
+      "source": "arxiv",
+      "title": "3D Neural Rendering for Automated Ultrasonic Laser Scans",
+      "title_zh": "3D Neural Rendering for Automated Ultrasonic Laser Scans",
+      "tldr_zh": "Laser doppler vibrometer (LDV) scans can be used to detect d",
+      "cover_zh": "Laser doppler vibrometer (LDV) scans can be used to detect d",
+      "abstract_zh": "Laser doppler vibrometer (LDV) scans can be used to detect defects and cracks in manufactured parts before they are deployed. This work presents a method for reconstructing the steady-state surface wavefield of a three-dimensional part by combining automated robotic manipulation with neural rendering. A six-degree-of-freedom (6-DOF) robotic manipulator (UFactory xArm6) with an embedded piezoelectric transducer presented an acoustically excited test article to a stationary LDV at a sequence of known orientations, yielding a set of complex-valued 2D scans with poses derived analytically from the arm kinematics rather than from image-based pose estimation. These scans were used to train a novel complex-nerfacto model, a modified Neural Radiance Field (NeRF) pipeline that replaces the standard three-channel RGB output head with a two-channel output. Complex-nerfacto represents the real and imaginary velocity components of a wavefield, preserving the complex measurement without quantization. Reconstructions of a welded aluminum cylinder and a welded T-bracket were evaluated against measured scans using Z-normalized cross-correlation (ZNCC). The complex-valued pipeline achieved a mean ZNCC of 0.60 at held-out viewing angles, compared with 0.28 for a baseline RGB nerfacto model trained on rendered images of the same data. The resulting surface wavefield reconstructions supported defect detection and characterization on complex components. We identify geometry reconstruction from sparse LDV scans as the remaining obstacle to practical deployment.",
+      "authors": [
+        "Thomas Pierson",
+        "Matthew Mitchell",
+        "Kira Perna"
+      ],
+      "authors_all": [
+        "Thomas Pierson",
+        "Matthew Mitchell",
+        "Kira Perna",
+        "Anand Iyer",
+        "Eric Flynn",
+        "Adam Wachtor"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-00527.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00527-p2.jpg",
+        "assets/img/covers/arxiv-2611-00527-p3.jpg",
+        "assets/img/covers/arxiv-2611-00527-p4.jpg"
+      ],
+      "arxiv_id": "2611.00527",
+      "abs_url": "http://arxiv.org/abs/2611.00527v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00527v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
