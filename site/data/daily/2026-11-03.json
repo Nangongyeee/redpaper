@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-03",
+  "count": 9,
+  "papers": [
+    {
+      "id": "arxiv-2611-04204",
+      "source": "arxiv",
+      "title": "Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion",
+      "title_zh": "Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion",
+      "tldr_zh": "Humanoid locomotion requires deciding where to step and how",
+      "cover_zh": "Humanoid locomotion requires deciding where to step and how",
+      "abstract_zh": "Humanoid locomotion requires deciding where to step and how to distribute contact forces. However, a disturbance can invalidate the nominal plan, requiring coordinated revision under constraints that switch with every footfall. To solve this online, the proposed approach employs the single-rigid-body model, which retains attitude dynamics and the full contact wrench. An iterative linear-quadratic-regulator MPC (iLQR-MPC) then jointly optimizes contact forces and footstep locations in a single receding-horizon problem, without a separate step planner. Specifically, contact and motion constraints are incorporated into the backward pass through augmented-Lagrangian and relaxed-barrier penalties. A whole-body controller subsequently maps the plan to joint torques at 500 Hz while preserving contact feasibility. The model-based formulation makes disturbance responses interpretable through explicit costs and constraints, and requires no platform-specific policy training. In MuJoCo simulations, the iLQR-MPC replans at 100 Hz (mean solve time 8.9 ms); the Unitree G1 sustains steady-state walking and recovers from impulsive 245 N forward and 175 N lateral pushes.",
+      "authors": [
+        "Xiang Li",
+        "Linlin Ou",
+        "Ruihan Wu"
+      ],
+      "authors_all": [
+        "Xiang Li",
+        "Linlin Ou",
+        "Ruihan Wu",
+        "Xinyi Yu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04204.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04204-p2.jpg",
+        "assets/img/covers/arxiv-2611-04204-p3.jpg",
+        "assets/img/covers/arxiv-2611-04204-p4.jpg"
+      ],
+      "arxiv_id": "2611.04204",
+      "abs_url": "http://arxiv.org/abs/2611.04204v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04204v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04255",
+      "source": "arxiv",
+      "title": "ActOR: Ambient AI-Based Agentic Orchestration for Humanoid Autonomy in Operating Rooms",
+      "title_zh": "ActOR: Ambient AI-Based Agentic Orchestration for Humanoid Autonomy in Operating Rooms",
+      "tldr_zh": "Operating rooms (ORs) increasingly contain ambient sensing i",
+      "cover_zh": "Operating rooms (ORs) increasingly contain ambient sensing i",
+      "abstract_zh": "Operating rooms (ORs) increasingly contain ambient sensing infrastructure to enable AI-based optimization of workflows and utilization. We pursue an alternative path: using ambient AI to guide robot action and optimize utilization. Deploying humanoids in the OR without ambient AI is severely limited by cumbersome de novo orientation and planning due to partial onboard observations. We posit that this can be achieved by coupling an ambient AI-based agentic orchestrator with the humanoid robotic actor, providing shared perception and execution feedback for humanoid autonomy in the OR. ActOR fuses a wall-mounted ambient camera and the robot's head-mounted camera into a shared object-level digital twin (DT). A large language model agent plans over the DT using pre-programmed locomotion and manipulation skills without task-specific training. During execution, DT updates and execution outcomes inform retries, alternative approaches, or replanning. We evaluated ActOR in simulated and physical environments. Across three tasks in two simulated ORs reconstructed from real rooms, ambient perception reduced exploration from 1.05 to 0.12 Explore calls per trial when targets were initially outside the robot's view. Closed-loop feedback increased success from 46.7% to 83.3% under nominal execution and from 8.3% to 51.7% under injected navigation, object-relocation, and grasp perturbations. In a physical mock OR with a humanoid, ActOR completed 14 of 20 single-object disposal trials and demonstrated replanning after scene changes. Ambient AI-based observations provide scene state that improves robot action planning, increasing success and reducing exploration compared with robot-only observations. Feeding skill outcomes and DT updates back to the planner improves multi-step task success. Our results show the feasibility of humanoid task autonomy for multi-step disposal tasks in a mock OR.",
+      "authors": [
+        "Han Zhang",
+        "Sicheng Lu",
+        "Aleks Santari"
+      ],
+      "authors_all": [
+        "Han Zhang",
+        "Sicheng Lu",
+        "Aleks Santari",
+        "Jeffrey K. Jopling",
+        "Masaru Ishii",
+        "Mathias Unberath"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04255.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04255-p2.jpg",
+        "assets/img/covers/arxiv-2611-04255-p3.jpg",
+        "assets/img/covers/arxiv-2611-04255-p4.jpg"
+      ],
+      "arxiv_id": "2611.04255",
+      "abs_url": "http://arxiv.org/abs/2611.04255v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04255v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04166",
+      "source": "arxiv",
+      "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
+      "title_zh": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
+      "tldr_zh": "Reasoning vision-language-action (VLA) models pair physical",
+      "cover_zh": "Reasoning vision-language-action (VLA) models pair physical",
+      "abstract_zh": "Reasoning vision-language-action (VLA) models pair physical control with natural-language rationales that supervisors can read to monitor embodied safety. Prior attacks on VLA reasoning corrupt the rationale itself and leave visible evidence in the text. We show that visual perturbations can instead alter the physical action while keeping the generated rationale word-for-word identical. At the shared text/action interface of Alpamayo for driving and InstructVLA for manipulation, our text-neutral action-subspace (TNAS) diagnostic shows that the locally most action-sensitive direction is nearly orthogonal to the active text-loss gradients, with 1.87% and 5.28% norm overlap. At equal hidden-state perturbation norms across both models, interventions along this text-neutral residual shift actions 4.64x to 47.8x more than text-gradient perturbations, whereas text-gradient perturbations induce 21.2x to 277x more text drift. Steering visual perturbations along this direction reaches the same decoupling from the image. Across 154 obstacle-annotated driving scenes in Alpamayo, TNAS-guided attacks induce a new collision under a word-for-word identical rationale in 52.6% of scenes under full-image perturbations and 35.1% under a localized forward-camera patch, compared with 4.55% for unguided action attacks. Relative to a text-preserving baseline, TNAS guidance raises exact rationale preservation from 83.0% to 89.5% and cuts teacher-forced text drift by 68.4% at a comparable collision rate. In InstructVLA, TNAS guidance cuts text drift by 40.5% and preserves the exact response on 85.0% of examples alongside a 1.73-unit action-chunk shift. An unchanged rationale therefore cannot certify a safe action, so monitors for reasoning VLAs must verify the predicted action channel directly.",
+      "authors": [
+        "Zihao Feng",
+        "Qingzhao Zhang",
+        "Chunyu Xia"
+      ],
+      "authors_all": [
+        "Zihao Feng",
+        "Qingzhao Zhang",
+        "Chunyu Xia",
+        "Bo Yu",
+        "Z. Morley Mao",
+        "Ramesh Govindan"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04166.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04166-p2.jpg",
+        "assets/img/covers/arxiv-2611-04166-p3.jpg",
+        "assets/img/covers/arxiv-2611-04166-p4.jpg"
+      ],
+      "arxiv_id": "2611.04166",
+      "abs_url": "http://arxiv.org/abs/2611.04166v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04166v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 29,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04226",
+      "source": "arxiv",
+      "title": "DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution",
+      "title_zh": "DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution",
+      "tldr_zh": "Disturbances can invalidate the conditions required by a rob",
+      "cover_zh": "Disturbances can invalidate the conditions required by a rob",
+      "abstract_zh": "Disturbances can invalidate the conditions required by a robot's next action even when much of its task program remains useful. A recovery system must therefore choose a response suited to the current state. We present DiMuRe (diagnosis-guided multilevel recovery), a framework for robot-use agents that uses phase-specific evidence and method preconditions to select program reuse or predefined recovery skills, including bounded vision-language-action (VLA) grasping. After the original program exits, a multimodal large language model (MLLM) can generate corrective code from images and execution feedback. Local verification checks the outcome of each recovery attempt. We also introduce LIBERO-Disturb, a benchmark for robustness and recovery under mid-execution disturbances, supporting program-based agents and VLA policies. On 801 scheduled disturbed Encore development cases, Local DiMuRe (program reuse and recovery skills) achieves 77.65% complete-task success, compared with 58.68% for the original program under the same physical-step allowance. Full DiMuRe achieves 81.90% with terminal replanning, an additional step allowance, and early handoff. Local DiMuRe also uses fewer physical steps per scheduled episode than the original program.",
+      "authors": [
+        "Renkai Yi",
+        "Yuwei Wu",
+        "Haoyu Zhang"
+      ],
+      "authors_all": [
+        "Renkai Yi",
+        "Yuwei Wu",
+        "Haoyu Zhang",
+        "Penghao Dai",
+        "Zhi Gao",
+        "Jin Chen",
+        "Che Sun"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04226.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04226-p2.jpg",
+        "assets/img/covers/arxiv-2611-04226-p3.jpg",
+        "assets/img/covers/arxiv-2611-04226-p4.jpg"
+      ],
+      "arxiv_id": "2611.04226",
+      "abs_url": "http://arxiv.org/abs/2611.04226v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04226v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04096",
+      "source": "arxiv",
+      "title": "Online Hamilton-Jacobi Reachability Onboard the Robot Control Loop: A Real-Time GPU Solver for Safety-Critical Autonomy",
+      "title_zh": "Online Hamilton-Jacobi Reachability Onboard the Robot Control Loop: A Real-Time GPU Solver for Safety-Critical Autonomy",
+      "tldr_zh": "Hamilton-Jacobi (HJ) reachability provides certified backwar",
+      "cover_zh": "Hamilton-Jacobi (HJ) reachability provides certified backwar",
+      "abstract_zh": "Hamilton-Jacobi (HJ) reachability provides certified backward reachable tubes (BRTs) for safety-critical robotic systems, but the level-set computation scales exponentially in the state dimension and has historically been performed offline. As autonomy stacks (ADAS/AV, humanoid robotics, and vision-language-action models) increasingly rely on black-box, probabilistic policies, a deterministic safety layer with formal guarantees is an essential complement. We present a CUDA implementation of the canonical WENO5 + TVD-RK3 + Lax-Friedrichs level-set Hamilton-Jacobi-Isaacs solver for 2D, 3D, and 4D dynamics that is fast enough to run inside a robot's control loop. In 32-bit floating point (FP32) on a single workstation GPU (NVIDIA RTX 4000 Ada), it computes the 3D Air3D BRT at 112 Hz, a 4D pursuit-evasion BRT at 61 Hz, and a 2D wind-affected drifter BRT at 74-147 Hz, 5.9-17.5x faster than the JAX reference hj_reachability at matched precision and 1.7-16x faster than a torch.compile reimplementation of the same scheme. In 64-bit floating point (FP64) it agrees with hj_reachability on eight benchmark cases, reproduces Mitchell's Air3D BRT to within 0.04% of the reference cell count, and runs 2.0-4.6x faster. On an embedded NVIDIA Jetson AGX Thor it computes Air3D at 66 Hz (N=41) and the 2D drifter at 54 Hz, 3.8-8.9x faster than hj_reachability on the same device. As a multi-agent application, an in-kernel label-propagation extension recovers the K-agent capture-basin Voronoi tessellation from a single combined HJ solve, independent of fleet size; it runs at 4.0 ms per tick in a closed-loop wildfire-response simulation of six quadcopters under time-varying, non-uniform wind.",
+      "authors": [
+        "Kevin Weekly",
+        "Alexandre M. Bayen"
+      ],
+      "authors_all": [
+        "Kevin Weekly",
+        "Alexandre M. Bayen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04096.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04096-p2.jpg",
+        "assets/img/covers/arxiv-2611-04096-p3.jpg",
+        "assets/img/covers/arxiv-2611-04096-p4.jpg"
+      ],
+      "arxiv_id": "2611.04096",
+      "abs_url": "http://arxiv.org/abs/2611.04096v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04096v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04176",
+      "source": "arxiv",
+      "title": "Grasping and Stabilizing Tumbling Objects with Rotating-Base Multi-Arm Space Manipulators",
+      "title_zh": "Grasping and Stabilizing Tumbling Objects with Rotating-Base Multi-Arm Space Manipulators",
+      "tldr_zh": "This paper presents an innovative guidance and control metho",
+      "cover_zh": "This paper presents an innovative guidance and control metho",
+      "abstract_zh": "This paper presents an innovative guidance and control method for a space manipulator that actively maneuvers its base to hold a tumbling object stationary relative to the base during proximity operations. This simplifies motion planning, reduces collision risk, and enables impact-free capture using single- or multi-arm configurations, with or without predefined grasping interfaces. The proposed approach involves two phases. In the pre-grasping phase, a synchronization control aligns the target's center of mass (CoM) with the system's instantaneous center of rotation (ICR), virtually rigidizing the target-servicer system to keep the object stationary for reliable grasping. In the post grasping phase, a control strategy based on Hamiltonian dynamics and optimal control stabilizes the combined system by minimizing time, fuel, or energy, while respecting base torque limits and multiple grasping constraints. For structured targets, applied forces and torques stay within their bounds; for unstructured ones, friction constraints prevent slipping. A case study demonstrates the method's effectiveness in enabling both the subsequent grasping and detumbling phases.",
+      "authors": [
+        "Farhad Aghili"
+      ],
+      "authors_all": [
+        "Farhad Aghili"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04176.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04176-p2.jpg",
+        "assets/img/covers/arxiv-2611-04176-p3.jpg",
+        "assets/img/covers/arxiv-2611-04176-p4.jpg"
+      ],
+      "arxiv_id": "2611.04176",
+      "abs_url": "http://arxiv.org/abs/2611.04176v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04176v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04093",
+      "source": "arxiv",
+      "title": "VARP: A Visual Adaptive Rearrangement Planner for Non-Monotone Object Rearrangement Planning",
+      "title_zh": "VARP: A Visual Adaptive Rearrangement Planner for Non-Monotone Object Rearrangement Planning",
+      "tldr_zh": "Object rearrangement planning in cluttered environments is o",
+      "cover_zh": "Object rearrangement planning in cluttered environments is o",
+      "abstract_zh": "Object rearrangement planning in cluttered environments is often non-monotone, requiring objects to be temporarily relocated before reaching their final destinations. Although search-based planners can solve such tasks, they incur substantial computational cost and require expensive replanning when the environment changes. We propose the Visual Adaptive Rearrangement Planner (VARP), which learns non-monotone rearrangement directly from visual state representations generated from expert demonstrations. VARP predicts pick-and-place actions from the current and goal visual state representations, and incorporates an Action Refinement Strategy (ARS) to improve action feasibility and a Progress Enforcement Strategy (PES) to mitigate progress stagnation. By continuously updating actions from the latest visual state representations, VARP adapts online to disturbances without replanning from scratch or performing online combinatorial search. In challenging rearrangement benchmarks, VARP achieves a 98.3\\% success rate with only 0.4 s planning time per task, 97.5\\% success under execution-time disturbances, and 94.5\\% under continuous severe disturbances, while generalizing effectively to unseen object counts. These results demonstrate that VARP provides a scalable and robust solution for non-monotone object rearrangement.",
+      "authors": [
+        "Hanwen Ren",
+        "Meng Zheng",
+        "Zhongpai Gao"
+      ],
+      "authors_all": [
+        "Hanwen Ren",
+        "Meng Zheng",
+        "Zhongpai Gao",
+        "Anwesa Choudhuri",
+        "Benjamin Planche",
+        "Terrence Chen",
+        "Ziyan Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04093.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04093-p2.jpg",
+        "assets/img/covers/arxiv-2611-04093-p3.jpg",
+        "assets/img/covers/arxiv-2611-04093-p4.jpg"
+      ],
+      "arxiv_id": "2611.04093",
+      "abs_url": "http://arxiv.org/abs/2611.04093v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04093v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04102",
+      "source": "arxiv",
+      "title": "Is This 3D Asset Usable? Beyond the Beauty Render for Asset Curation",
+      "title_zh": "Is This 3D Asset Usable? Beyond the Beauty Render for Asset Curation",
+      "tldr_zh": "Large 3D repositories make it easy to collect assets, but di",
+      "cover_zh": "Large 3D repositories make it easy to collect assets, but di",
+      "abstract_zh": "Large 3D repositories make it easy to collect assets, but difficult to determine whether they can be reused reliably across scene assembly, editing, rendering, game production, and training-data construction. An asset can look plausible in RGB while hiding disconnected geometry, problematic UV organization, or materials that fail to resolve correctly after import. We introduce Diagnostic Rendered Evidence (DRE): aligned beauty, wireframe, and UV-seam-plus-wireframe views scored by pass-specific frozen ViT classifiers and combined through late fusion. On 1,234 human labeled TexVerse assets, nested grouped evaluation achieves 86.36% balanced accuracy and 88.32% bad-asset recall. On a separate, balanced 764 external reference test, DRE achieved 88.9% balanced reference-label accuracy. Our method requires only an imported asset and renderer-derived evidence, without repository identity, creator, popularity, text, or source metadata at inference. Our results support cross-corpus portability and show that purpose built diagnostic views expose defects that just the beauty views can miss. Webpage: https://rbz-99.github.io/is-this-3d-asset-usable/",
+      "authors": [
+        "Rushikesh Zawar",
+        "Vladimir Kim"
+      ],
+      "authors_all": [
+        "Rushikesh Zawar",
+        "Vladimir Kim"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04102.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04102-p2.jpg",
+        "assets/img/covers/arxiv-2611-04102-p3.jpg",
+        "assets/img/covers/arxiv-2611-04102-p4.jpg"
+      ],
+      "arxiv_id": "2611.04102",
+      "abs_url": "http://arxiv.org/abs/2611.04102v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04102v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04173",
+      "source": "arxiv",
+      "title": "ReconDreamer#: Self-Evolving Closed-Loop Synergy of Reconstruction and Generation for Dynamic Driving Scenes",
+      "title_zh": "ReconDreamer#: Self-Evolving Closed-Loop Synergy of Reconstruction and Generation for Dynamic Driving Scenes",
+      "tldr_zh": "Dynamic driving scene reconstruction has made remarkable str",
+      "cover_zh": "Dynamic driving scene reconstruction has made remarkable str",
+      "abstract_zh": "Dynamic driving scene reconstruction has made remarkable strides in recent years by leveraging generative priors, particularly in the quality of novel trajectory rendering. Nevertheless, a significant gap remains between the generated data and real-world sensor observations, severely hindering further improvements in reconstruction fidelity. In this paper, we present ReconDreamer#, a self-evolving framework that synergizes reconstruction and generation for dynamic driving scenes, which substantially bridges the gap between synthesized novel trajectory data and recorded real-world observations. Within this self-evolving closed-loop framework, the generative and reconstruction models mutually reinforce each other through iterative refinement, ultimately yielding a significant enhancement in the 3D representation capability of the reconstruction model. Additionally, we introduce a geometry-prior-based adaptive ground model to further enhance the rendering quality of the reconstruction model. To validate the effectiveness of the proposed method, we conduct comprehensive evaluations on Waymo, nuScenes, PandaSet, and EUVS benchmarks. Specifically on Waymo, at a 6-m lateral shift, ReconDreamer# improves NTA-IoU and NTL-IoU by 8.8% and 3.0%, respectively, and reduces FID by 15.1% relative to ReconDreamer++.",
+      "authors": [
+        "Songling Liu",
+        "Guosheng Zhao",
+        "Xiaofeng Wang"
+      ],
+      "authors_all": [
+        "Songling Liu",
+        "Guosheng Zhao",
+        "Xiaofeng Wang",
+        "Chaojun Ni",
+        "Guan Huang",
+        "Jiwen Lu",
+        "Xingang Wang",
+        "Zheng Zhu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-03",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04173.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04173-p2.jpg",
+        "assets/img/covers/arxiv-2611-04173-p3.jpg",
+        "assets/img/covers/arxiv-2611-04173-p4.jpg"
+      ],
+      "arxiv_id": "2611.04173",
+      "abs_url": "http://arxiv.org/abs/2611.04173v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04173v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}
