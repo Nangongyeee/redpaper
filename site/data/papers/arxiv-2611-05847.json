@@ -1,0 +1,88 @@
+{
+  "id": "arxiv-2611-05847",
+  "source": "arxiv",
+  "title": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+  "title_zh": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+  "abstract": "Joint-Embedding Predictive Architectures (JEPAs) support planning by comparing predicted latent states with an encoded goal. For this comparison to guide temporal progress, states closer in time to the goal should receive lower costs. However, training representations for prediction and distribution regularization does not directly enforce this ordering. We examine this mismatch in flat LeWorldModel (LeWM) by analyzing how its Euclidean goal cost changes with temporal separation. Our analysis identifies conditions under which states at different long offsets receive similar average costs, weakening their temporal distinction. To learn the missing ordering explicitly, we introduce Time-to-Goal (T2G), a lightweight metric trained on latent triples from offline trajectories. A margin ranking loss encourages smaller distances for temporally nearer states, requiring no rewards or policy labels. The learned metric then replaces the Euclidean planning cost while the JEPA encoder and predictor remain frozen. Diagnostics on AntMaze and FourRoom show that T2G preserves stronger temporal contrast and improves near--far ranking at long offsets. Across four navigation and manipulation benchmarks, T2G improves the average planning success rate from 32.7\\% (flat LeWM) to 63.0\\% and approaches or even surpasses the performance of the hierarchical H-JEPA baselines. These results show that learning temporal ordering for the goal cost can substantially improve latent planning even with a flat world model.",
+  "abstract_zh": "Joint-Embedding Predictive Architectures (JEPAs) support planning by comparing predicted latent states with an encoded goal. For this comparison to guide temporal progress, states closer in time to the goal should receive lower costs. However, training representations for prediction and distribution regularization does not directly enforce this ordering. We examine this mismatch in flat LeWorldModel (LeWM) by analyzing how its Euclidean goal cost changes with temporal separation. Our analysis identifies conditions under which states at different long offsets receive similar average costs, weakening their temporal distinction. To learn the missing ordering explicitly, we introduce Time-to-Goal (T2G), a lightweight metric trained on latent triples from offline trajectories. A margin ranking loss encourages smaller distances for temporally nearer states, requiring no rewards or policy labels. The learned metric then replaces the Euclidean planning cost while the JEPA encoder and predictor remain frozen. Diagnostics on AntMaze and FourRoom show that T2G preserves stronger temporal contrast and improves near--far ranking at long offsets. Across four navigation and manipulation benchmarks, T2G improves the average planning success rate from 32.7\\% (flat LeWM) to 63.0\\% and approaches or even surpasses the performance of the hierarchical H-JEPA baselines. These results show that learning temporal ordering for the goal cost can substantially improve latent planning even with a flat world model.",
+  "tldr_zh": "Joint-Embedding Predictive Architectures (JEPAs) support pla",
+  "cover_zh": "Joint-Embedding Predictive Architectures (JEPAs) support pla",
+  "authors": [
+    {
+      "name": "Ruilong Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Fei Ye",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.CV"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "arxiv_id": "2611.05847",
+  "pdf_url": "https://arxiv.org/pdf/2611.05847v1",
+  "abs_url": "http://arxiv.org/abs/2611.05847v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-05847.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-05847-p2.jpg",
+    "assets/img/covers/arxiv-2611-05847-p3.jpg",
+    "assets/img/covers/arxiv-2611-05847-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 7 个（manipulation、world model、world models、jepa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

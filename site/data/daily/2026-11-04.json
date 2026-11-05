@@ -1,7 +1,59 @@
 {
   "date": "2026-11-04",
-  "count": 2,
+  "count": 5,
   "papers": [
+    {
+      "id": "arxiv-2611-05847",
+      "source": "arxiv",
+      "title": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+      "title_zh": "Time-to-Goal: Learned Temporal Metrics for Long-Horizon Planning with JEPA World Models",
+      "tldr_zh": "Joint-Embedding Predictive Architectures (JEPAs) support pla",
+      "cover_zh": "Joint-Embedding Predictive Architectures (JEPAs) support pla",
+      "abstract_zh": "Joint-Embedding Predictive Architectures (JEPAs) support planning by comparing predicted latent states with an encoded goal. For this comparison to guide temporal progress, states closer in time to the goal should receive lower costs. However, training representations for prediction and distribution regularization does not directly enforce this ordering. We examine this mismatch in flat LeWorldModel (LeWM) by analyzing how its Euclidean goal cost changes with temporal separation. Our analysis identifies conditions under which states at different long offsets receive similar average costs, weakening their temporal distinction. To learn the missing ordering explicitly, we introduce Time-to-Goal (T2G), a lightweight metric trained on latent triples from offline trajectories. A margin ranking loss encourages smaller distances for temporally nearer states, requiring no rewards or policy labels. The learned metric then replaces the Euclidean planning cost while the JEPA encoder and predictor remain frozen. Diagnostics on AntMaze and FourRoom show that T2G preserves stronger temporal contrast and improves near--far ranking at long offsets. Across four navigation and manipulation benchmarks, T2G improves the average planning success rate from 32.7\\% (flat LeWM) to 63.0\\% and approaches or even surpasses the performance of the hierarchical H-JEPA baselines. These results show that learning temporal ordering for the goal cost can substantially improve latent planning even with a flat world model.",
+      "authors": [
+        "Ruilong Yu",
+        "Fei Ye"
+      ],
+      "authors_all": [
+        "Ruilong Yu",
+        "Fei Ye"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-04",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05847.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05847-p2.jpg",
+        "assets/img/covers/arxiv-2611-05847-p3.jpg",
+        "assets/img/covers/arxiv-2611-05847-p4.jpg"
+      ],
+      "arxiv_id": "2611.05847",
+      "abs_url": "http://arxiv.org/abs/2611.05847v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05847v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
     {
       "id": "qbitai-a7cbab617b",
       "source": "qbitai",
@@ -87,6 +139,115 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2611-05936",
+      "source": "arxiv",
+      "title": "LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction",
+      "title_zh": "LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction",
+      "tldr_zh": "Integrating six-axis tactile feedback into robotic interface",
+      "cover_zh": "Integrating six-axis tactile feedback into robotic interface",
+      "abstract_zh": "Integrating six-axis tactile feedback into robotic interfaces requires compact sensors with accurate load measurement and rapid online reconstruction. This paper presents LumiTac, a low-profile, camera-free optoelectronic tactile sensor combining spatially distributed illumination with spectral encoding. Five photoemitters and five RGBW photoreceivers are mounted on opposing circuit boards coupled through translucent silicone. Load-induced interlayer motion modulates the internal light field under compression, shear, bending, and torsion. The sensing head measures 12 mm in diameter and 4.75 mm in thickness, weighs less than 2 g, and has a component cost of approximately USD 7. A compact multilayer perceptron reconstructs three force and three moment components from 20 optical channels. Independent testing yielded coefficients of determination (R-squared) of 0.9657-0.9941, with mean absolute errors of 0.054-0.190 N for forces and 0.304-1.419 mN m for moments. Online prediction achieved an average update rate of 303.57 Hz and a median software processing latency of 0.722 ms. Experiments involving combined loading, light weights, and rapid tapping evaluated load tracking, sensitivity to small forces, and transient response, respectively. Robotic demonstrations further validated its applicability to tactile-guided manipulation and physical human-robot interaction. This study paves the way for compact, high-rate optical tactile sensing in robotic manipulation and human-robot interaction.",
+      "authors": [
+        "Hao Wu",
+        "Haotian Guo",
+        "Yu Feng"
+      ],
+      "authors_all": [
+        "Hao Wu",
+        "Haotian Guo",
+        "Yu Feng",
+        "Yutong Wang",
+        "Jianshu Zhou"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-04",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05936.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05936-p2.jpg",
+        "assets/img/covers/arxiv-2611-05936-p3.jpg",
+        "assets/img/covers/arxiv-2611-05936-p4.jpg"
+      ],
+      "arxiv_id": "2611.05936",
+      "abs_url": "http://arxiv.org/abs/2611.05936v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05936v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05890",
+      "source": "arxiv",
+      "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating",
+      "title_zh": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating",
+      "tldr_zh": "Biological discovery requires using molecular knowledge and",
+      "cover_zh": "Biological discovery requires using molecular knowledge and",
+      "abstract_zh": "Biological discovery requires using molecular knowledge and new measurements to infer responses beyond the conditions already observed. We introduce CellCanon, the first agentic cellular world model to unify single-cell expression prediction, evidence-grounded explanation, and observation-driven updating. Its predictive core reuses condition-level biological evidence across gene-specific numerical readouts to guide single-cell expression generation. A shared world state links predictions, acquired measurements, and source-linked claims, supporting explanation and revision. On 339 held-out SciPlex3 conditions across three cell lines, CellCanon improves differential-expression AUPRC and Macro-F1 over the best baseline for each metric by 63.3% and 17.3%, respectively, and direction Macro-F1 by 7.2%. Relative to gene-wise reasoning on matched drug-cell cohorts, measured language-model token use falls by 99.77% for Predict and 98.41% for Explain. On the source-grounded benchmark, Explain correctly answers all answerable questions with supporting proofs and identifies all insufficient-evidence cases. In simulated experimental feedback, Update uses one measured source context per drug to exceed the best fine-tuned baselines in differential-expression AUPRC and Macro-F1 without changing model weights. Together, these capabilities support a cumulative account of cellular responses, with predictions and biological judgments that can be revised as evidence accumulates.",
+      "authors": [
+        "Zhaokang Liang",
+        "Shuyang Zhuang",
+        "Xiaoran Jiao"
+      ],
+      "authors_all": [
+        "Zhaokang Liang",
+        "Shuyang Zhuang",
+        "Xiaoran Jiao",
+        "Hao Chen"
+      ],
+      "primary_category": "q-bio.QM",
+      "published": "2026-11-04",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05890.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05890-p2.jpg",
+        "assets/img/covers/arxiv-2611-05890-p3.jpg",
+        "assets/img/covers/arxiv-2611-05890-p4.jpg"
+      ],
+      "arxiv_id": "2611.05890",
+      "abs_url": "http://arxiv.org/abs/2611.05890v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05890v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
