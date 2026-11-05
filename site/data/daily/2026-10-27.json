@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "count": 51,
+  "count": 53,
   "papers": [
     {
       "id": "vid-bilibili-BV1SJxu6rEDW",
@@ -226,6 +226,72 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-36539",
+      "source": "arxiv_discover",
+      "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "title_zh": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "tldr_zh": "Humans are dexterous, but traditional data collection paradi",
+      "cover_zh": "Humans are dexterous, but traditional data collection paradi",
+      "abstract_zh": "Humans are dexterous, but traditional data collection paradigms such as teleoperation, kinesthetic teaching, and wearable exoskeletons force humans to act through the robot embodiment, bottlenecking their dexterity. Retargeting can avoid this. However, existing methods purely translate kinematics and ignore the real-world contact dynamics essential for task success. We present CARD: Contact-Anchored Retargeting for Dexterous Manipulation, a simulator and object-free framework that retargets human demonstrations to robot actions by explicitly preserving contact force targets. CARD unifies human data sources including video, motion capture, and tactile gloves via a shared hand--contact representation and generates explicit contact force targets in addition to kinematics. To maintain these contact targets during hardware open-loop replay, CARD also introduces a tactile tracking controller. For video which does not contain an explicit tactile source, we present Vid-HACO, our video-to-contact model that sets a new state of the art. Across our video, glove, motion-capture data and the GRAB dataset, CARD maintains contact on $43$--$78\\%$ of contact frames, while kinematic and object-aware retargeting methods maintain contact on $<10\\%$ and $22.5\\%$ of the frames respectively. Further, integrating our formulation into physics-based retargeting improves strict task success from 12\\% to 32\\% on GRAB dataset. Finally, we show that our tactile tracker is critical to reproduce demonstrated forces during hardware replay. These results establish that contact preservation via CARD is a scalable interface for transferring human dexterity to robots.",
+      "authors": [
+        "Cunxi Dai",
+        "Botao He",
+        "Francois R Hogan"
+      ],
+      "authors_all": [
+        "Cunxi Dai",
+        "Botao He",
+        "Francois R Hogan",
+        "Wei Pan",
+        "Rao Fu",
+        "Wen-Han Hsieh",
+        "Ruoshi Liu",
+        "Jitendra Malik",
+        "Guanya Shi",
+        "Akash Sharma"
+      ],
+      "primary_category": "",
+      "published": "2026-10-27",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Guanya Shi"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jitendra Malik"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-36539.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-36539-p2.jpg",
+        "assets/img/covers/arxiv-2610-36539-p3.jpg",
+        "assets/img/covers/arxiv-2610-36539-p4.jpg"
+      ],
+      "arxiv_id": "2610.36539",
+      "abs_url": "http://arxiv.org/abs/2610.36539v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36539v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2610-37582",
@@ -2743,6 +2809,67 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-36791",
+      "source": "arxiv_discover",
+      "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+      "title_zh": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+      "tldr_zh": "Learning controllable world dynamics from heterogeneous inte",
+      "cover_zh": "Learning controllable world dynamics from heterogeneous inte",
+      "abstract_zh": "Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to target robots through post-training. The framework supports two data-generation routes: digital teleoperation uses target robot commands to generate action-video demonstrations, while latent-action synthesis transfers source motion to an edited initial frame and pairs the resulting rollout with retargeted pseudo robot actions. Experiments show improved video prediction metrics on public benchmarks and two real-robot platforms, alongside qualitative action following when different action sequences share the same initial observation. Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings. These results support universal latent actions as a scalable interface for learning controllable visual dynamics across heterogeneous embodiments.",
+      "authors": [
+        "Haoyu Zhao",
+        "Yinzhou Tang",
+        "Zixuan Wang"
+      ],
+      "authors_all": [
+        "Haoyu Zhao",
+        "Yinzhou Tang",
+        "Zixuan Wang",
+        "Minghao Zhu",
+        "Dongchi Huang",
+        "Xingyue Zhao",
+        "Qin Zhao",
+        "Kehan Li",
+        "Siteng Huang",
+        "Xin Li",
+        "Zhenyu Zeng",
+        "Mingxiu Chen",
+        "Deli Zhao",
+        "Zhongyu Li"
+      ],
+      "primary_category": "",
+      "published": "2026-10-27",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-36791.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-36791-p2.jpg",
+        "assets/img/covers/arxiv-2610-36791-p3.jpg",
+        "assets/img/covers/arxiv-2610-36791-p4.jpg"
+      ],
+      "arxiv_id": "2610.36791",
+      "abs_url": "http://arxiv.org/abs/2610.36791v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.36791v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 3,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     }
   ]
 }
