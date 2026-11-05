@@ -1406,6 +1406,80 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-23689",
+      "source": "arxiv",
+      "title": "AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection",
+      "title_zh": "AutoDex：用于灵巧抓取数据收集的自动化真实世界系统",
+      "tldr_zh": "AutoDex自动化真实世界灵巧抓取数据收集，吞吐量提升4.8倍，成功率远超纯仿真。",
+      "cover_zh": "抓取数据收集慢如蜗牛？AutoDex自动化闭环，4.8倍提速，成功率翻倍！",
+      "abstract_zh": "学习鲁棒的灵巧抓取需要记录抓取尝试物理结果的真实世界数据。这类数据难以大规模获取：遥操作能产生有效的物理结果，但速度慢且存在操作者偏差；基于仿真的生成廉价且可扩展，但无法保证接触的有效性。一个自然的解决方案是生成候选抓取并在真实硬件上验证，但这只有在整个收集循环（感知、执行、标注和重置）无需人工干预的情况下才能规模化。我们提出AutoDex，一个自动化真实世界数据收集系统，它闭环了该循环：对于来自可替换生成器的每个候选，它通过密集的20摄像头感知在严重手-物遮挡下定位物体，执行碰撞监控的机器人运动，标注举起保持的成功或失败，并在试验间主动重置物体以暴露跨稳定姿态的额外候选。结果是一个可复用的物理标注抓取试验数据库，下游系统可通过检索和可行性过滤进行查询。使用AutoDex，我们在Allegro和Inspire手上收集了100个不同物体的3,593次抓取试验，并带有同步多视角观测和机器人状态日志。对于匹配的500次轨迹收集，AutoDex需要10.3小时，而遥操作需要49.4小时，实现了4.8倍的吞吐量提升，从AutoDex验证的数据库中检索的抓取成功率为76%，而仅仿真验证为34%。代码和数据将公开发布。",
+      "authors": [
+        "Mingi Choi",
+        "Gunhee Kim",
+        "Jisoo Kim"
+      ],
+      "authors_all": [
+        "Mingi Choi",
+        "Gunhee Kim",
+        "Jisoo Kim",
+        "Taeksoo Kim",
+        "Taeyun Ha",
+        "Jongbin Lim",
+        "Hanbyul Joo"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-22",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-23689.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-23689-p2.jpg",
+        "assets/img/covers/arxiv-2606-23689-p3.jpg",
+        "assets/img/covers/arxiv-2606-23689-p4.jpg"
+      ],
+      "arxiv_id": "2606.23689",
+      "abs_url": "http://arxiv.org/abs/2606.23689v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23689v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-05",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "自动化灵巧抓取数据采集系统，解决真实世界数据规模化难题，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Seoul National University",
+        "RLWRLD"
+      ],
+      "method_tags": [
+        "dexterous grasping",
+        "sim-to-real",
+        "autonomous data collection"
+      ],
+      "platform": [
+        "Allegro",
+        "Inspire"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-23147",
       "source": "arxiv",
       "title": "Assistron: Bayesian Shared Autonomy with Off-the-shelf Vision-Language-Action Models",
@@ -1800,75 +1874,6 @@
       "platform": [
         "Unitree G1",
         "WUJI hand"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-23689",
-      "source": "arxiv",
-      "title": "AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection",
-      "title_zh": "AutoDex：用于灵巧抓取数据收集的自动化真实世界系统",
-      "tldr_zh": "AutoDex自动化真实世界灵巧抓取数据收集，吞吐量提升4.8倍，成功率远超纯仿真。",
-      "cover_zh": "抓取数据收集慢如蜗牛？AutoDex自动化闭环，4.8倍提速，成功率翻倍！",
-      "abstract_zh": "学习鲁棒的灵巧抓取需要记录抓取尝试物理结果的真实世界数据。这类数据难以大规模获取：遥操作能产生有效的物理结果，但速度慢且存在操作者偏差；基于仿真的生成廉价且可扩展，但无法保证接触的有效性。一个自然的解决方案是生成候选抓取并在真实硬件上验证，但这只有在整个收集循环（感知、执行、标注和重置）无需人工干预的情况下才能规模化。我们提出AutoDex，一个自动化真实世界数据收集系统，它闭环了该循环：对于来自可替换生成器的每个候选，它通过密集的20摄像头感知在严重手-物遮挡下定位物体，执行碰撞监控的机器人运动，标注举起保持的成功或失败，并在试验间主动重置物体以暴露跨稳定姿态的额外候选。结果是一个可复用的物理标注抓取试验数据库，下游系统可通过检索和可行性过滤进行查询。使用AutoDex，我们在Allegro和Inspire手上收集了100个不同物体的3,593次抓取试验，并带有同步多视角观测和机器人状态日志。对于匹配的500次轨迹收集，AutoDex需要10.3小时，而遥操作需要49.4小时，实现了4.8倍的吞吐量提升，从AutoDex验证的数据库中检索的抓取成功率为76%，而仅仿真验证为34%。代码和数据将公开发布。",
-      "authors": [
-        "Mingi Choi",
-        "Gunhee Kim",
-        "Jisoo Kim"
-      ],
-      "authors_all": [
-        "Mingi Choi",
-        "Gunhee Kim",
-        "Jisoo Kim",
-        "Taeksoo Kim",
-        "Taeyun Ha",
-        "Jongbin Lim",
-        "Hanbyul Joo"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-22",
-      "channels": [
-        "manipulation",
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-23689.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-23689-p2.jpg",
-        "assets/img/covers/arxiv-2606-23689-p3.jpg",
-        "assets/img/covers/arxiv-2606-23689-p4.jpg"
-      ],
-      "arxiv_id": "2606.23689",
-      "abs_url": "http://arxiv.org/abs/2606.23689v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.23689v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "自动化灵巧抓取数据采集系统，解决真实世界数据规模化难题，具有高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Seoul National University",
-        "RLWRLD"
-      ],
-      "method_tags": [
-        "dexterous grasping",
-        "sim-to-real",
-        "autonomous data collection"
-      ],
-      "platform": [
-        "Allegro",
-        "Inspire"
       ],
       "sim_stack": [],
       "method_family": "",
