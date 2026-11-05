@@ -651,6 +651,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-26588",
+      "source": "arxiv",
+      "title": "Inference-Time Robot Behavior Steering through Physically-Aware Reconfiguration of Task-Structure",
+      "title_zh": "通过物理感知的任务结构重配置实现机器人行为推理时引导",
+      "tldr_zh": "提出ReStruct，通过重配置任务结构实现机器人策略的推理时行为引导，无需重新训练。",
+      "cover_zh": "机器人策略也能即插即用？ReStruct让推理时偏好引导无需重训，成功率飙升！",
+      "abstract_zh": "部署学习型机器人策略的一个核心挑战是推理时行为引导：在测试时重定向策略以满足训练时未预期的用户偏好，而无需重新训练。现有方法存在两种失败模式：端到端方法需要微调或专家级指导，而神经符号方法依赖预定义符号，其编辑可能导致逻辑合理但物理不可行的计划。为解决这一挑战，我们提出ReStruct，它基于一种神经自动机策略，该策略将视觉运动策略分解为捕获任务结构的高层状态机骨架和表示为残差策略的低层连续控制器。具体而言，ReStruct采用自动机表示偏好，并通过同步乘积将其融入骨架，从而重配置任务结构。在保持控制器冻结的情况下，骨架提供的动作先验相应更新，以在修改后的任务结构下实现物理感知控制。从仿真到真实世界的广泛实验表明，ReStruct能够引导从以物体为中心的规范到时序逻辑约束的各种偏好，并且在引导后超越现有方法，在任务成功和偏好遵循方面比VLA模型高出最多25%。",
+      "authors": [
+        "Yiyuan Pan",
+        "Hanjiang Hu",
+        "Shangtao Li"
+      ],
+      "authors_all": [
+        "Yiyuan Pan",
+        "Hanjiang Hu",
+        "Shangtao Li",
+        "Xusheng Luo",
+        "Changliu Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-25",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-26588.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-26588-p2.jpg",
+        "assets/img/covers/arxiv-2606-26588-p3.jpg",
+        "assets/img/covers/arxiv-2606-26588-p4.jpg"
+      ],
+      "arxiv_id": "2606.26588",
+      "abs_url": "http://arxiv.org/abs/2606.26588v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26588v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-05",
+      "score": 44,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出推理时行为引导方法，结合神经自动机与残差策略，实验超越VLA模型，具有高科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Robotics Institute, Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "neuro-symbolic",
+        "behavior steering",
+        "task structure reconfiguration"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-26663",
       "source": "arxiv",
       "title": "Tactile-WAM: Touch-Aware World Action Model with Tactile Asymmetric Attention",
@@ -1158,73 +1229,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-26588",
-      "source": "arxiv",
-      "title": "Inference-Time Robot Behavior Steering through Physically-Aware Reconfiguration of Task-Structure",
-      "title_zh": "通过物理感知的任务结构重配置实现机器人行为推理时引导",
-      "tldr_zh": "提出ReStruct，通过重配置任务结构实现机器人策略的推理时行为引导，无需重新训练。",
-      "cover_zh": "机器人策略也能即插即用？ReStruct让推理时偏好引导无需重训，成功率飙升！",
-      "abstract_zh": "部署学习型机器人策略的一个核心挑战是推理时行为引导：在测试时重定向策略以满足训练时未预期的用户偏好，而无需重新训练。现有方法存在两种失败模式：端到端方法需要微调或专家级指导，而神经符号方法依赖预定义符号，其编辑可能导致逻辑合理但物理不可行的计划。为解决这一挑战，我们提出ReStruct，它基于一种神经自动机策略，该策略将视觉运动策略分解为捕获任务结构的高层状态机骨架和表示为残差策略的低层连续控制器。具体而言，ReStruct采用自动机表示偏好，并通过同步乘积将其融入骨架，从而重配置任务结构。在保持控制器冻结的情况下，骨架提供的动作先验相应更新，以在修改后的任务结构下实现物理感知控制。从仿真到真实世界的广泛实验表明，ReStruct能够引导从以物体为中心的规范到时序逻辑约束的各种偏好，并且在引导后超越现有方法，在任务成功和偏好遵循方面比VLA模型高出最多25%。",
-      "authors": [
-        "Yiyuan Pan",
-        "Hanjiang Hu",
-        "Shangtao Li"
-      ],
-      "authors_all": [
-        "Yiyuan Pan",
-        "Hanjiang Hu",
-        "Shangtao Li",
-        "Xusheng Luo",
-        "Changliu Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-25",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ CMU RI"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-26588.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-26588-p2.jpg",
-        "assets/img/covers/arxiv-2606-26588-p3.jpg",
-        "assets/img/covers/arxiv-2606-26588-p4.jpg"
-      ],
-      "arxiv_id": "2606.26588",
-      "abs_url": "http://arxiv.org/abs/2606.26588v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.26588v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 34,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出推理时行为引导方法，结合神经自动机与残差策略，实验超越VLA模型，具有高科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Robotics Institute, Carnegie Mellon University"
-      ],
-      "method_tags": [
-        "neuro-symbolic",
-        "behavior steering",
-        "task structure reconfiguration"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
