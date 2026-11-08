@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:56:56.944702+00:00",
+  "generated_at": "2026-11-08T16:52:16.372814+00:00",
   "count": 4650,
   "papers": [
     {
@@ -96590,6 +96590,80 @@
       ]
     },
     {
+      "id": "arxiv-2606-03385",
+      "source": "arxiv_discover",
+      "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
+      "title_zh": "先抓取再规划与失败归因：面向精确且可泛化机器人操作的闭环两阶段框架",
+      "tldr_zh": "提出GTP-FA框架，通过失败归因解耦抓取与规划，提升机器人操作成功率。",
+      "cover_zh": "机器人总失败？别急着怪抓取｜新框架精准定位规划瓶颈，成功率飙升",
+      "abstract_zh": "在机器人操作中，抓取与运动规划之间的紧密耦合常常掩盖了失败的真正原因，导致低效的试错过程。为了实现高效的长时域操作，我们提出了GTP-FA（先抓取再规划与失败归因），这是一个面向任务的两阶段抓取-规划框架，首先生成抓取候选，然后基于所选抓取进行下游运动规划。给定一条失败的操作轨迹，我们学习一个失败归因模型，该模型能泛化到未见过的抓取，并生成关于失败模式的稳定分布，用于诊断引导的优化。基于这些归因结果，我们以诊断驱动的方式优化两个模块：在抓取侧，我们将任务级先验和风险惩罚注入抓取候选评分与优化中，以抑制不稳定或与任务不兼容的抓取；在规划侧，我们通过数据收集和微调针对高风险初始状态，以解决真正的规划瓶颈。我们在仿真和真实机器人实验中评估了所提框架，结果表明GTP-FA在RL、IL、扩散策略和基于VLA的设置中均提升了相应的基础学习器，实现了显著更高的整体任务成功率。",
+      "authors": [
+        "Jiahao Xu",
+        "Peiyuan Wang",
+        "Hanzhuo Zhang"
+      ],
+      "authors_all": [
+        "Jiahao Xu",
+        "Peiyuan Wang",
+        "Hanzhuo Zhang",
+        "Zihao Yu",
+        "Tianyu Fu",
+        "Hao Chen",
+        "Xuanhao Xiang",
+        "Jianbo Yu",
+        "Chenchen Fu",
+        "Wanyuan Wang"
+      ],
+      "primary_category": "",
+      "published": "2026-06-02",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-03385.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-03385-p2.jpg",
+        "assets/img/covers/arxiv-2606-03385-p3.jpg",
+        "assets/img/covers/arxiv-2606-03385-p4.jpg"
+      ],
+      "arxiv_id": "2606.03385",
+      "abs_url": "http://arxiv.org/abs/2606.03385v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.03385v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-11-08",
+      "score": 30,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出抓取-规划两阶段框架与失败归因，提升多种操作策略成功率，有仿真和真机实验。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "School of Computer Science and Engineering, Southeast University, China"
+      ],
+      "method_tags": [
+        "grasp-then-plan",
+        "failure attribution"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2606-05407",
       "source": "arxiv_discover",
       "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
@@ -120601,6 +120675,72 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-02432",
+      "source": "arxiv",
+      "title": "NDPP-Grasp: Non-Differentiable Physical Plausibility Constraint-Guided Task-Oriented Dexterous Grasp Generation",
+      "title_zh": "NDPP-Grasp：非可微物理合理性约束引导的任务导向灵巧抓取生成",
+      "tldr_zh": "将非可微物理约束直接注入扩散去噪过程，同时保证任务对齐。",
+      "cover_zh": "抓取生成总翻车？新框架让物理合理性全程护航去噪过程！",
+      "abstract_zh": "任务导向的灵巧抓取生成旨在产生既物理合理又功能适合指定操作任务的灵巧抓取姿态。现有的基于扩散的方法通常以解耦方式处理这两个要求：它们首先训练一个抓取扩散模型以实现任务对齐，然后依赖生成后细化来改善物理合理性。然而，这种事后修正策略仅在抓取已经生成后才应用物理合理性引导，使得生成轨迹本身不受物理约束引导，可能导致次优抓取。为解决此问题，我们提出了一种新框架，该框架以实用且有效的方式直接将物理合理性引导注入任务对齐的抓取扩散模型的去噪过程中，即使物理合理性约束是非可微的。这使得物理合理性能够在整个去噪过程中塑造抓取生成，同时保持任务对齐。大量实验证明了我们框架的有效性。",
+      "authors": [
+        "Qiuchi Xiang",
+        "Haoxuan Qu",
+        "Hossein Rahmani"
+      ],
+      "authors_all": [
+        "Qiuchi Xiang",
+        "Haoxuan Qu",
+        "Hossein Rahmani",
+        "Jun Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-01",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-02432.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-02432-p2.jpg",
+        "assets/img/covers/arxiv-2606-02432-p3.jpg",
+        "assets/img/covers/arxiv-2606-02432-p4.jpg"
+      ],
+      "arxiv_id": "2606.02432",
+      "abs_url": "http://arxiv.org/abs/2606.02432v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02432v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-11-08",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出非可微物理合理性约束引导的灵巧抓取生成，方法新颖，实验充分，对操作领域有较高参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Lancaster University"
+      ],
+      "method_tags": [
+        "Diffusion Model",
+        "Task-Oriented Grasp Generation",
+        "Physical Plausibility Constraint"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "s2-0710fc6f659b1a586386c5c5ad93ff8300a5465d",
       "source": "conf",
       "title": "OTTO: Dynamics and Control of Wheeled Bipedal Jumping Robot",
@@ -129047,75 +129187,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-03385",
-      "source": "arxiv_discover",
-      "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
-      "title_zh": "先抓取再规划与失败归因：面向精确且可泛化机器人操作的闭环两阶段框架",
-      "tldr_zh": "提出GTP-FA框架，通过失败归因解耦抓取与规划，提升机器人操作成功率。",
-      "cover_zh": "机器人总失败？别急着怪抓取｜新框架精准定位规划瓶颈，成功率飙升",
-      "abstract_zh": "在机器人操作中，抓取与运动规划之间的紧密耦合常常掩盖了失败的真正原因，导致低效的试错过程。为了实现高效的长时域操作，我们提出了GTP-FA（先抓取再规划与失败归因），这是一个面向任务的两阶段抓取-规划框架，首先生成抓取候选，然后基于所选抓取进行下游运动规划。给定一条失败的操作轨迹，我们学习一个失败归因模型，该模型能泛化到未见过的抓取，并生成关于失败模式的稳定分布，用于诊断引导的优化。基于这些归因结果，我们以诊断驱动的方式优化两个模块：在抓取侧，我们将任务级先验和风险惩罚注入抓取候选评分与优化中，以抑制不稳定或与任务不兼容的抓取；在规划侧，我们通过数据收集和微调针对高风险初始状态，以解决真正的规划瓶颈。我们在仿真和真实机器人实验中评估了所提框架，结果表明GTP-FA在RL、IL、扩散策略和基于VLA的设置中均提升了相应的基础学习器，实现了显著更高的整体任务成功率。",
-      "authors": [
-        "Jiahao Xu",
-        "Peiyuan Wang",
-        "Hanzhuo Zhang"
-      ],
-      "authors_all": [
-        "Jiahao Xu",
-        "Peiyuan Wang",
-        "Hanzhuo Zhang",
-        "Zihao Yu",
-        "Tianyu Fu",
-        "Hao Chen",
-        "Xuanhao Xiang",
-        "Jianbo Yu",
-        "Chenchen Fu",
-        "Wanyuan Wang"
-      ],
-      "primary_category": "",
-      "published": "2026-06-02",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-03385.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-03385-p2.jpg",
-        "assets/img/covers/arxiv-2606-03385-p3.jpg",
-        "assets/img/covers/arxiv-2606-03385-p4.jpg"
-      ],
-      "arxiv_id": "2606.03385",
-      "abs_url": "http://arxiv.org/abs/2606.03385v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.03385v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出抓取-规划两阶段框架与失败归因，提升多种操作策略成功率，有仿真和真机实验。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "School of Computer Science and Engineering, Southeast University, China"
-      ],
-      "method_tags": [
-        "grasp-then-plan",
-        "failure attribution"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2606-04825",
@@ -217218,67 +217289,6 @@
         "VLA",
         "semantic grounding",
         "action prediction"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-02432",
-      "source": "arxiv",
-      "title": "NDPP-Grasp: Non-Differentiable Physical Plausibility Constraint-Guided Task-Oriented Dexterous Grasp Generation",
-      "title_zh": "NDPP-Grasp：非可微物理合理性约束引导的任务导向灵巧抓取生成",
-      "tldr_zh": "将非可微物理约束直接注入扩散去噪过程，同时保证任务对齐。",
-      "cover_zh": "抓取生成总翻车？新框架让物理合理性全程护航去噪过程！",
-      "abstract_zh": "任务导向的灵巧抓取生成旨在产生既物理合理又功能适合指定操作任务的灵巧抓取姿态。现有的基于扩散的方法通常以解耦方式处理这两个要求：它们首先训练一个抓取扩散模型以实现任务对齐，然后依赖生成后细化来改善物理合理性。然而，这种事后修正策略仅在抓取已经生成后才应用物理合理性引导，使得生成轨迹本身不受物理约束引导，可能导致次优抓取。为解决此问题，我们提出了一种新框架，该框架以实用且有效的方式直接将物理合理性引导注入任务对齐的抓取扩散模型的去噪过程中，即使物理合理性约束是非可微的。这使得物理合理性能够在整个去噪过程中塑造抓取生成，同时保持任务对齐。大量实验证明了我们框架的有效性。",
-      "authors": [
-        "Qiuchi Xiang",
-        "Haoxuan Qu",
-        "Hossein Rahmani"
-      ],
-      "authors_all": [
-        "Qiuchi Xiang",
-        "Haoxuan Qu",
-        "Hossein Rahmani",
-        "Jun Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-01",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-02432.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-02432-p2.jpg",
-        "assets/img/covers/arxiv-2606-02432-p3.jpg",
-        "assets/img/covers/arxiv-2606-02432-p4.jpg"
-      ],
-      "arxiv_id": "2606.02432",
-      "abs_url": "http://arxiv.org/abs/2606.02432v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.02432v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出非可微物理合理性约束引导的灵巧抓取生成，方法新颖，实验充分，对操作领域有较高参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Lancaster University"
-      ],
-      "method_tags": [
-        "Diffusion Model",
-        "Task-Oriented Grasp Generation",
-        "Physical Plausibility Constraint"
       ],
       "platform": [],
       "sim_stack": [],
