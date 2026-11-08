@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "count": 54,
+  "count": 55,
   "papers": [
     {
       "id": "arxiv-2611-04839",
@@ -1522,6 +1522,58 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-04477",
+      "source": "arxiv_discover",
+      "title": "Spectrally Routed Diffusion Policy for Multi-Task Robotic Manipulation",
+      "title_zh": "Spectrally Routed Diffusion Policy for Multi-Task Robotic Manipulation",
+      "tldr_zh": "Diffusion-based policies have achieved strong performance on",
+      "cover_zh": "Diffusion-based policies have achieved strong performance on",
+      "abstract_zh": "Diffusion-based policies have achieved strong performance on single-task robotic manipulation. However, a single model trained jointly on multiple tasks consistently underperforms the per-task specialists trained on the same demonstrations. We focus on two challenges. First, the convolutional encoders commonly used in diffusion-based policies produce visual conditions that are not discriminative enough. Second, gradients from incompatible action modes update the shared denoiser's dense parameters along the same directions, causing destructive interference during joint training. To address both, we propose SR-DP (Spectrally Routed Diffusion Policy). A frozen VGGT encoder with a spatial-compression adapter produces compact multi-scale semantic-geometric tokens, a task-discriminative visual condition for tasks that share a workspace. We first train the denoiser as a standard diffusion policy, then decompose selected linear layers by SVD into a frozen basis of orthogonal rank-one experts, adapted through spectral routing and Householder input rotations. On six RoboTwin tasks, SR-DP averages a 68.4% success rate, surpassing multi-task VO-DP by 21.8 points and the strongest per-task baseline by 3.8 points. On four real-world bimanual tasks, Stage 2 reaches a 43.0% average success rate and improves over Stage 1 by 19.0 points.",
+      "authors": [
+        "Mingcong Li",
+        "Yihan Zhou",
+        "Jiayu Qu"
+      ],
+      "authors_all": [
+        "Mingcong Li",
+        "Yihan Zhou",
+        "Jiayu Qu",
+        "Xueyang Guo",
+        "Yilin Mo"
+      ],
+      "primary_category": "",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-04477.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04477-p2.jpg",
+        "assets/img/covers/arxiv-2611-04477-p3.jpg",
+        "assets/img/covers/arxiv-2611-04477-p4.jpg"
+      ],
+      "arxiv_id": "2611.04477",
+      "abs_url": "http://arxiv.org/abs/2611.04477v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04477v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2611-05119",
