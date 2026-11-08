@@ -1263,6 +1263,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-09258",
+      "source": "arxiv",
+      "title": "Back to the Familiar Future: Failure Recovery for VLA Policies via Pre-Imagined Milestone Selection",
+      "title_zh": "回到熟悉的未来：通过预想里程碑选择实现VLA策略的故障恢复",
+      "tldr_zh": "提出B2FF框架，通过预想里程碑选择实现VLA策略的故障恢复，成功率提升至74.0%。",
+      "cover_zh": "机器人跑偏了？这个框架用“预想未来”让VLA策略自己找回正轨",
+      "abstract_zh": "视觉-语言-动作（VLA）策略在操作过程中可能会偏离标称轨迹，即使任务在物理上仍然可行。从这些偏离中恢复具有挑战性，因为它们将策略推入不熟悉的状态空间，直接重新规划常常会破坏动作序列的稳定性。我们提出“回到熟悉的未来”（B2FF），一种面向预见性VLA的恢复框架，利用未来视觉条件作为恢复接口。在执行前，VLA基于干净的初始观察生成一个熟悉未来状态的里程碑库。在恢复时，一个可恢复性感知的选择器从该库中选择一个恢复里程碑，并将其作为固定的视觉目标强制执行。这使得VLA能够将偏离轨迹的观察稳健地映射回熟悉的未来。在注入故障的LIBERO上，在受控的恢复时间与注入故障对齐的情况下，B2FF将基线VLA的平均成功率从56.3%提升至74.0%，表明预想里程碑可以在不微调底层动作生成器的情况下指导恢复。",
+      "authors": [
+        "Suyeon Shin",
+        "Juwon Kim",
+        "Hyeonbin Park"
+      ],
+      "authors_all": [
+        "Suyeon Shin",
+        "Juwon Kim",
+        "Hyeonbin Park",
+        "Hyunseo Kim",
+        "Hyundo Lee",
+        "Hyung-Sin Kim",
+        "Byoung-Tak Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-08",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-09258.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-09258-p2.jpg",
+        "assets/img/covers/arxiv-2606-09258-p3.jpg",
+        "assets/img/covers/arxiv-2606-09258-p4.jpg"
+      ],
+      "arxiv_id": "2606.09258",
+      "abs_url": "http://arxiv.org/abs/2606.09258v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.09258v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-08",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出VLA策略的失败恢复框架，实验在LIBERO上，属于操作领域，方法新颖且有效。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Seoul National University",
+        "Yonsei University",
+        "Soongsil University"
+      ],
+      "method_tags": [
+        "VLA",
+        "failure recovery",
+        "milestone selection"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-09615",
       "source": "arxiv",
       "title": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
@@ -1763,72 +1834,6 @@
         "Safety Filter",
         "Control Barrier Function",
         "Attention-Guided"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-09258",
-      "source": "arxiv",
-      "title": "Back to the Familiar Future: Failure Recovery for VLA Policies via Pre-Imagined Milestone Selection",
-      "title_zh": "回到熟悉的未来：通过预想里程碑选择实现VLA策略的故障恢复",
-      "tldr_zh": "提出B2FF框架，通过预想里程碑选择实现VLA策略的故障恢复，成功率提升至74.0%。",
-      "cover_zh": "机器人跑偏了？这个框架用“预想未来”让VLA策略自己找回正轨",
-      "abstract_zh": "视觉-语言-动作（VLA）策略在操作过程中可能会偏离标称轨迹，即使任务在物理上仍然可行。从这些偏离中恢复具有挑战性，因为它们将策略推入不熟悉的状态空间，直接重新规划常常会破坏动作序列的稳定性。我们提出“回到熟悉的未来”（B2FF），一种面向预见性VLA的恢复框架，利用未来视觉条件作为恢复接口。在执行前，VLA基于干净的初始观察生成一个熟悉未来状态的里程碑库。在恢复时，一个可恢复性感知的选择器从该库中选择一个恢复里程碑，并将其作为固定的视觉目标强制执行。这使得VLA能够将偏离轨迹的观察稳健地映射回熟悉的未来。在注入故障的LIBERO上，在受控的恢复时间与注入故障对齐的情况下，B2FF将基线VLA的平均成功率从56.3%提升至74.0%，表明预想里程碑可以在不微调底层动作生成器的情况下指导恢复。",
-      "authors": [
-        "Suyeon Shin",
-        "Juwon Kim",
-        "Hyeonbin Park"
-      ],
-      "authors_all": [
-        "Suyeon Shin",
-        "Juwon Kim",
-        "Hyeonbin Park",
-        "Hyunseo Kim",
-        "Hyundo Lee",
-        "Hyung-Sin Kim",
-        "Byoung-Tak Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-08",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-09258.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-09258-p2.jpg",
-        "assets/img/covers/arxiv-2606-09258-p3.jpg",
-        "assets/img/covers/arxiv-2606-09258-p4.jpg"
-      ],
-      "arxiv_id": "2606.09258",
-      "abs_url": "http://arxiv.org/abs/2606.09258v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.09258v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出VLA策略的失败恢复框架，实验在LIBERO上，属于操作领域，方法新颖且有效。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Seoul National University",
-        "Yonsei University",
-        "Soongsil University"
-      ],
-      "method_tags": [
-        "VLA",
-        "failure recovery",
-        "milestone selection"
       ],
       "platform": [],
       "sim_stack": [],
