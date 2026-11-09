@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T17:55:46.842416+00:00",
-  "count": 4707,
+  "generated_at": "2026-11-09T20:09:31.586819+00:00",
+  "count": 4708,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -2788,6 +2788,100 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2608-12063",
+      "source": "arxiv",
+      "title": "Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL",
+      "title_zh": "从SMPC演示中学习移动操作：稀疏离线到在线强化学习",
+      "tldr_zh": "利用SMPC生成离线数据，用稀疏奖励训练RL，实现超越教师的移动操作技能。",
+      "cover_zh": "告别手工调参！SMPC+稀疏奖励让机器人学会复杂移动操作，还能超越专家？",
+      "abstract_zh": "将移动与操作相结合对于机器人自主性至关重要，但标准强化学习（RL）在复杂任务中的扩展受到密集奖励塑造缓慢且手动过程的严重瓶颈。为绕过这一限制，我们完全在仿真中利用基于样本的模型预测控制（SMPC）作为自动化、快速可调的专家，生成大规模离线数据集。由于该数据解决了基本的探索问题，我们可以仅使用稀疏任务奖励来训练离策略RL智能体，从而大幅减少学习新技能所需的时间，并消除手动调参的需要。将该高层智能体与低层动态稳定性控制器集成，可产生更优的行为，这些行为严格符合真实任务目标，最终使学习到的策略超越原始最优控制教师。我们通过在不同形态（包括配备机械臂的Spot四足机器人和G1人形机器人）上成功部署复杂的移动操作技能，验证了该仿真到现实框架的鲁棒性。",
+      "authors": [
+        "Martin Schuck",
+        "Maks Sorokin",
+        "Simone Manni"
+      ],
+      "authors_all": [
+        "Martin Schuck",
+        "Maks Sorokin",
+        "Simone Manni",
+        "Duy Ta",
+        "Angela P. Schoellig",
+        "Marco Hutter",
+        "Simon Le Cleac'H",
+        "Jan Brüdigam"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-12",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Toyota TRI / RAI"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ TUM"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Marco Hutter"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2608-12063.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2608-12063-p2.jpg",
+        "assets/img/covers/arxiv-2608-12063-p3.jpg",
+        "assets/img/covers/arxiv-2608-12063-p4.jpg"
+      ],
+      "arxiv_id": "2608.12063",
+      "abs_url": "http://arxiv.org/abs/2608.12063v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.12063v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 75,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "结合SMPC演示与稀疏奖励RL，实现跨形态的移动操作与sim2real，具身智能核心方向。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "RAI Institute",
+        "Technical University of Munich",
+        "ETH Zurich"
+      ],
+      "method_tags": [
+        "RL",
+        "SMPC",
+        "sim-to-real"
+      ],
+      "platform": [
+        "Spot",
+        "G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2608-13555",
       "source": "arxiv",
       "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
@@ -3606,6 +3700,102 @@
         "VLA"
       ],
       "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2606-30362",
+      "source": "arxiv",
+      "title": "ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control",
+      "title_zh": "ReactiveBFM：面向通用人形全身控制的反应式闭环运动规划",
+      "tldr_zh": "提出反应式闭环框架，解决人形机器人生成式规划中的暴露偏差与延迟问题。",
+      "cover_zh": "人形机器人也能实时追目标？这个新框架让全身协调直接拉满！",
+      "abstract_zh": "当前的行为基础模型（BFMs）为人形机器人提供了鲁棒的控制先验，但它们仅执行预定义的参考运动，因此对环境变化脆弱且无法实现反应式全身协调。简单地将它们与生成式运动规划器级联无法实现真正的反应性，因为不可避免的跟踪差异会导致致命的累积暴露偏差。为弥补这一差距，我们提出ReactiveBFM，一个实时闭环规划-控制框架。其核心是通过一种调度前缀采样课程有效缓解暴露偏差，迫使生成式规划器主动从非完美物理状态而非真实轨迹中学习纠错行为。系统层面，为协调自回归规划与高频跟踪之间的严重延迟不匹配，我们引入异步重规划机制。结合轨迹分块以时间上集成空间参考，我们的系统保证时空流畅的执行而无物理抖动。部署在Unitree G1人形机器人上，ReactiveBFM在大量文本条件闭环运动中展现出前所未有的物理敏捷性。值得注意的是，ReactiveBFM实现了零样本移动目标追踪，展示了复杂的全身协调和即时重规划。在严重扰动下的模拟到模拟基准测试中，ReactiveBFM达到93.1%的成功率，显著优于级联开环基线28.6%。",
+      "authors": [
+        "Xiao Chen",
+        "Weishuai Zeng",
+        "Xiaojie Niu"
+      ],
+      "authors_all": [
+        "Xiao Chen",
+        "Weishuai Zeng",
+        "Xiaojie Niu",
+        "Zirui Wang",
+        "Jianan Li",
+        "Huayi Wang",
+        "Furui Xu",
+        "Jiahe Chen",
+        "Weixiang Zhong",
+        "Lihe Ding",
+        "Kailin Li",
+        "Jiangmiao Pang",
+        "Tai Wang",
+        "Tianfan Xue",
+        "Jingbo Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 上海 AI Lab"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jingbo Wang"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jiangmiao Pang"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30362.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30362-p2.jpg",
+        "assets/img/covers/arxiv-2606-30362-p3.jpg",
+        "assets/img/covers/arxiv-2606-30362-p4.jpg"
+      ],
+      "arxiv_id": "2606.30362",
+      "abs_url": "http://arxiv.org/abs/2606.30362v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30362v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 70,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出人形机器人全身闭环运动规划框架，解决暴露偏差与延迟问题，在G1上验证零样本目标追踪，价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The Chinese University of Hong Kong",
+        "Shanghai AI Laboratory"
+      ],
+      "method_tags": [
+        "closed-loop planning",
+        "reactive whole-body control",
+        "exposure bias mitigation"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -10115,96 +10305,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2608-12063",
-      "source": "arxiv",
-      "title": "Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL",
-      "title_zh": "从SMPC演示中学习移动操作：稀疏离线到在线强化学习",
-      "tldr_zh": "利用SMPC生成离线数据，用稀疏奖励训练RL，实现超越教师的移动操作技能。",
-      "cover_zh": "告别手工调参！SMPC+稀疏奖励让机器人学会复杂移动操作，还能超越专家？",
-      "abstract_zh": "将移动与操作相结合对于机器人自主性至关重要，但标准强化学习（RL）在复杂任务中的扩展受到密集奖励塑造缓慢且手动过程的严重瓶颈。为绕过这一限制，我们完全在仿真中利用基于样本的模型预测控制（SMPC）作为自动化、快速可调的专家，生成大规模离线数据集。由于该数据解决了基本的探索问题，我们可以仅使用稀疏任务奖励来训练离策略RL智能体，从而大幅减少学习新技能所需的时间，并消除手动调参的需要。将该高层智能体与低层动态稳定性控制器集成，可产生更优的行为，这些行为严格符合真实任务目标，最终使学习到的策略超越原始最优控制教师。我们通过在不同形态（包括配备机械臂的Spot四足机器人和G1人形机器人）上成功部署复杂的移动操作技能，验证了该仿真到现实框架的鲁棒性。",
-      "authors": [
-        "Martin Schuck",
-        "Maks Sorokin",
-        "Simone Manni"
-      ],
-      "authors_all": [
-        "Martin Schuck",
-        "Maks Sorokin",
-        "Simone Manni",
-        "Duy Ta",
-        "Angela P. Schoellig",
-        "Marco Hutter",
-        "Simon Le Cleac'H",
-        "Jan Brüdigam"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-08-12",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation",
-        "locomotion",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Toyota TRI / RAI"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ ETH (RSL)"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ TUM"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Marco Hutter"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2608-12063.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2608-12063-p2.jpg",
-        "assets/img/covers/arxiv-2608-12063-p3.jpg",
-        "assets/img/covers/arxiv-2608-12063-p4.jpg"
-      ],
-      "arxiv_id": "2608.12063",
-      "abs_url": "http://arxiv.org/abs/2608.12063v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.12063v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 65,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "结合SMPC演示与稀疏奖励RL，实现跨形态的移动操作与sim2real，具身智能核心方向。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "RAI Institute",
-        "Technical University of Munich",
-        "ETH Zurich"
-      ],
-      "method_tags": [
-        "RL",
-        "SMPC",
-        "sim-to-real"
-      ],
-      "platform": [
-        "Spot",
-        "G1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2608-12122",
       "source": "arxiv",
       "title": "HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing",
@@ -13690,98 +13790,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2606-30362",
-      "source": "arxiv",
-      "title": "ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control",
-      "title_zh": "ReactiveBFM：面向通用人形全身控制的反应式闭环运动规划",
-      "tldr_zh": "提出反应式闭环框架，解决人形机器人生成式规划中的暴露偏差与延迟问题。",
-      "cover_zh": "人形机器人也能实时追目标？这个新框架让全身协调直接拉满！",
-      "abstract_zh": "当前的行为基础模型（BFMs）为人形机器人提供了鲁棒的控制先验，但它们仅执行预定义的参考运动，因此对环境变化脆弱且无法实现反应式全身协调。简单地将它们与生成式运动规划器级联无法实现真正的反应性，因为不可避免的跟踪差异会导致致命的累积暴露偏差。为弥补这一差距，我们提出ReactiveBFM，一个实时闭环规划-控制框架。其核心是通过一种调度前缀采样课程有效缓解暴露偏差，迫使生成式规划器主动从非完美物理状态而非真实轨迹中学习纠错行为。系统层面，为协调自回归规划与高频跟踪之间的严重延迟不匹配，我们引入异步重规划机制。结合轨迹分块以时间上集成空间参考，我们的系统保证时空流畅的执行而无物理抖动。部署在Unitree G1人形机器人上，ReactiveBFM在大量文本条件闭环运动中展现出前所未有的物理敏捷性。值得注意的是，ReactiveBFM实现了零样本移动目标追踪，展示了复杂的全身协调和即时重规划。在严重扰动下的模拟到模拟基准测试中，ReactiveBFM达到93.1%的成功率，显著优于级联开环基线28.6%。",
-      "authors": [
-        "Xiao Chen",
-        "Weishuai Zeng",
-        "Xiaojie Niu"
-      ],
-      "authors_all": [
-        "Xiao Chen",
-        "Weishuai Zeng",
-        "Xiaojie Niu",
-        "Zirui Wang",
-        "Jianan Li",
-        "Huayi Wang",
-        "Furui Xu",
-        "Jiahe Chen",
-        "Weixiang Zhong",
-        "Lihe Ding",
-        "Kailin Li",
-        "Jiangmiao Pang",
-        "Tai Wang",
-        "Tianfan Xue",
-        "Jingbo Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 上海 AI Lab"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jingbo Wang"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jiangmiao Pang"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-30362.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30362-p2.jpg",
-        "assets/img/covers/arxiv-2606-30362-p3.jpg",
-        "assets/img/covers/arxiv-2606-30362-p4.jpg"
-      ],
-      "arxiv_id": "2606.30362",
-      "abs_url": "http://arxiv.org/abs/2606.30362v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30362v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 60,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出人形机器人全身闭环运动规划框架，解决暴露偏差与延迟问题，在G1上验证零样本目标追踪，价值高。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The Chinese University of Hong Kong",
-        "Shanghai AI Laboratory"
-      ],
-      "method_tags": [
-        "closed-loop planning",
-        "reactive whole-body control",
-        "exposure bias mitigation"
-      ],
-      "platform": [
-        "Unitree G1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2607-11119",
       "source": "arxiv",
       "title": "VIA: Visual Interface Agent for Robot Control",
@@ -14932,6 +14940,61 @@
       "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "vid-youtube-NL65Awuv8gU",
+      "source": "video_youtube",
+      "title": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
+      "title_zh": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
+      "tldr_zh": "Robots in the real world experience challenges and condition",
+      "cover_zh": "Robots in the real world experience challenges and condition",
+      "abstract_zh": "Robots in the real world experience challenges and conditions we can’t always anticipate or recreate in the lab, so we have to get creative to push the limits. Adding wheels to Atlas was a testbed to see how a learned whole-body controller can work with real actuators, running at the edge of their performance envelopes. Learn more about how we test our systems to ensure reliability: https://bostondynamics.com/blog/atlas-on-a-roll/\nJoin our team: https://bostondynamics.com/careers/",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-11-09",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Boston Dynamics"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.youtube.com/watch?v=NL65Awuv8gU",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 59,
+      "judge": {},
+      "institutions": [
+        "Boston Dynamics"
+      ],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=NL65Awuv8gU",
+          "embed_url": "https://www.youtube.com/embed/NL65Awuv8gU",
+          "title": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
+          "source": "channel"
+        }
+      ],
       "github": {},
       "source_tags": []
     },
@@ -25927,59 +25990,6 @@
       "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "vid-youtube-NL65Awuv8gU",
-      "source": "video_youtube",
-      "title": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
-      "title_zh": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
-      "tldr_zh": "Robots in the real world experience challenges and condition",
-      "cover_zh": "Robots in the real world experience challenges and condition",
-      "abstract_zh": "Robots in the real world experience challenges and conditions we can’t always anticipate or recreate in the lab, so we have to get creative to push the limits. Adding wheels to Atlas was a testbed to see how a learned whole-body controller can work with real actuators, running at the edge of their performance envelopes. Learn more about how we test our systems to ensure reliability: https://bostondynamics.com/blog/atlas-on-a-roll/\nJoin our team: https://bostondynamics.com/careers/",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
-      "published": "2026-11-09",
-      "channels": [],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Boston Dynamics"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.youtube.com/watch?v=NL65Awuv8gU",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 50,
-      "judge": {},
-      "institutions": [
-        "Boston Dynamics"
-      ],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=NL65Awuv8gU",
-          "embed_url": "https://www.youtube.com/embed/NL65Awuv8gU",
-          "title": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
-          "source": "channel"
-        }
-      ],
       "github": {},
       "source_tags": []
     },
@@ -55015,6 +55025,80 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2606-30632",
+      "source": "arxiv",
+      "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
+      "title_zh": "GROW$^2$：为机器人工具使用确定“哪个”和“哪里”",
+      "tldr_zh": "GROW$^2$通过分层语义和几何定位，实现机器人零样本工具使用。",
+      "cover_zh": "没有刀？机器人用盘子切蛋糕｜GROW$^2$让工具使用更聪明",
+      "abstract_zh": "如果没有刀，机器人能用盘子切蛋糕吗？工具使用极大地扩展了机器人的能力，但要创造性地使用工具超出其预期功能，机器人面临开放世界可供性定位的挑战：选择一个开放类别的物体作为工具，并定位其具体的动作区域。为此，我们提出了GROW$^2$（确定哪个和哪里），它利用物体部分作为自然抽象，将定位过程分层为语义和几何层面，从而绕过了对数据密集型端到端训练的需求。在语义上，GROW$^2$利用视觉语言模型（VLM）的常识推理来解析自然语言任务指令，选择合适的物体作为工具，并识别工具和目标物体上任务相关的部分。在几何上，视觉基础模型随后从单个RGB-D图像中将所选部分定位到精确的3D区域。在已有基准上的实验表明，GROW$^2$在可供性预测基准上优于最先进的基线。此外，它在开放类别物体上实现了零样本泛化，并在模拟和真实世界的机器人工具使用实验中均优于基线。",
+      "authors": [
+        "Yuhong Deng",
+        "Yuyao Liu",
+        "David Hsu"
+      ],
+      "authors_all": [
+        "Yuhong Deng",
+        "Yuyao Liu",
+        "David Hsu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ MIT CSAIL"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30632.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30632-p2.jpg",
+        "assets/img/covers/arxiv-2606-30632-p3.jpg",
+        "assets/img/covers/arxiv-2606-30632-p4.jpg"
+      ],
+      "arxiv_id": "2606.30632",
+      "abs_url": "http://arxiv.org/abs/2606.30632v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30632v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出开放世界工具使用的语义-几何分层接地方法，结合VLM和视觉基础模型，零样本泛化，有仿真和真机实验。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National University of Singapore",
+        "Massachusetts Institute of Technology"
+      ],
+      "method_tags": [
+        "open-world affordance grounding",
+        "Vision-Language Models",
+        "vision foundation models"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -93009,76 +93093,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2606-30632",
-      "source": "arxiv",
-      "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
-      "title_zh": "GROW$^2$：为机器人工具使用确定“哪个”和“哪里”",
-      "tldr_zh": "GROW$^2$通过分层语义和几何定位，实现机器人零样本工具使用。",
-      "cover_zh": "没有刀？机器人用盘子切蛋糕｜GROW$^2$让工具使用更聪明",
-      "abstract_zh": "如果没有刀，机器人能用盘子切蛋糕吗？工具使用极大地扩展了机器人的能力，但要创造性地使用工具超出其预期功能，机器人面临开放世界可供性定位的挑战：选择一个开放类别的物体作为工具，并定位其具体的动作区域。为此，我们提出了GROW$^2$（确定哪个和哪里），它利用物体部分作为自然抽象，将定位过程分层为语义和几何层面，从而绕过了对数据密集型端到端训练的需求。在语义上，GROW$^2$利用视觉语言模型（VLM）的常识推理来解析自然语言任务指令，选择合适的物体作为工具，并识别工具和目标物体上任务相关的部分。在几何上，视觉基础模型随后从单个RGB-D图像中将所选部分定位到精确的3D区域。在已有基准上的实验表明，GROW$^2$在可供性预测基准上优于最先进的基线。此外，它在开放类别物体上实现了零样本泛化，并在模拟和真实世界的机器人工具使用实验中均优于基线。",
-      "authors": [
-        "Yuhong Deng",
-        "Yuyao Liu",
-        "David Hsu"
-      ],
-      "authors_all": [
-        "Yuhong Deng",
-        "Yuyao Liu",
-        "David Hsu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ MIT CSAIL"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ NUS"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-30632.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30632-p2.jpg",
-        "assets/img/covers/arxiv-2606-30632-p3.jpg",
-        "assets/img/covers/arxiv-2606-30632-p4.jpg"
-      ],
-      "arxiv_id": "2606.30632",
-      "abs_url": "http://arxiv.org/abs/2606.30632v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30632v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 31,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出开放世界工具使用的语义-几何分层接地方法，结合VLM和视觉基础模型，零样本泛化，有仿真和真机实验。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "National University of Singapore",
-        "Massachusetts Institute of Technology"
-      ],
-      "method_tags": [
-        "open-world affordance grounding",
-        "Vision-Language Models",
-        "vision foundation models"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2606-31493",
       "source": "arxiv",
       "title": "ChronoFlow-Policy: Unifying Past-Current-Future Interaction Flow in Visuomotor Policy Learning",
@@ -115377,6 +115391,63 @@
       "source_tags": [
         "llm_discover"
       ]
+    },
+    {
+      "id": "arxiv-2611-09041",
+      "source": "arxiv",
+      "title": "DobotTrack: Target-Grounded Vision-Language-Action Learning for Embodied Person Tracking",
+      "title_zh": "DobotTrack: Target-Grounded Vision-Language-Action Learning for Embodied Person Tracking",
+      "tldr_zh": "Language-guided embodied person tracking requires a mobile a",
+      "cover_zh": "Language-guided embodied person tracking requires a mobile a",
+      "abstract_zh": "Language-guided embodied person tracking requires a mobile agent to identify a target from a referring description and consistently follow the target under egocentric observations. We present DobotTrack, a target-grounded vision-language-action (VLA) framework that integrates auxiliary grounding supervision with efficient temporal modeling. We systematically investigate five auxiliary tasks---person segmentation, bounding-box grounding, visual-spatial classification (VSC), future DINO feature prediction, and future-frame prediction---and adopt complementary mask and bounding-box supervision to enhance target delineation and localization. We introduce Q-identity, a target-conditioned historical visual compression module that leverages target-grounding predictions to selectively preserve identity-discriminative appearance features and spatial cues in compact historical tokens. On EVT-Bench, our 0.8B-parameter model achieves an average success rate of 77.9%, exceeding OmTrackVLA by 16.9 percentage points across the three tasks. We further construct a real-world person-tracking dataset collected using a quadruped robot, comprising 126 episodes and 596,323 mask-annotated frames. The target masks enable automatic derivation of bounding boxes and visual-spatial labels encoding horizontal position and apparent image scale, providing additional grounding supervision without separate manual annotation of these labels. Together, our framework and annotation pipeline support learning target-grounded tracking policies from simulated and real-world data. Code is available at https://github.com/Dobot-Team/dobot_track.",
+      "authors": [
+        "Shengjun Deng",
+        "Yinghan Zhang",
+        "Chengrui Wei"
+      ],
+      "authors_all": [
+        "Shengjun Deng",
+        "Yinghan Zhang",
+        "Chengrui Wei",
+        "Liu Liang",
+        "Songyuan Liu",
+        "Pengkun Zheng",
+        "Yajun Zheng",
+        "Ying Zhang",
+        "Yuan Tian",
+        "Xi Li",
+        "Teng Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-09041.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-09041-p2.jpg",
+        "assets/img/covers/arxiv-2611-09041-p3.jpg",
+        "assets/img/covers/arxiv-2611-09041-p4.jpg"
+      ],
+      "arxiv_id": "2611.09041",
+      "abs_url": "http://arxiv.org/abs/2611.09041v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09041v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     },
     {
       "id": "arxiv-2402-02500",
@@ -159816,6 +159887,119 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-09124",
+      "source": "arxiv",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "title_zh": "Toward the Era of Agentic Embodied Intelligence",
+      "tldr_zh": "Foundation models increasingly guide robot actions, yet sust",
+      "cover_zh": "Foundation models increasingly guide robot actions, yet sust",
+      "abstract_zh": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
+      "authors": [
+        "Chao Liang",
+        "Ke Chen",
+        "Fengxiaoxiao Li"
+      ],
+      "authors_all": [
+        "Chao Liang",
+        "Ke Chen",
+        "Fengxiaoxiao Li",
+        "Shibo Huang",
+        "Yufeng Sun",
+        "Zhaokai Yin",
+        "Jianhuan Lai",
+        "Haozhe Feng",
+        "Chenghuan Jia",
+        "Zhipeng Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-09124.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-09124-p2.jpg",
+        "assets/img/covers/arxiv-2611-09124-p3.jpg",
+        "assets/img/covers/arxiv-2611-09124-p4.jpg"
+      ],
+      "arxiv_id": "2611.09124",
+      "abs_url": "http://arxiv.org/abs/2611.09124v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09124v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-09266",
+      "source": "arxiv",
+      "title": "SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References",
+      "title_zh": "SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References",
+      "tldr_zh": "Scaling up visual humanoid loco-manipulation skill acquisiti",
+      "cover_zh": "Scaling up visual humanoid loco-manipulation skill acquisiti",
+      "abstract_zh": "Scaling up visual humanoid loco-manipulation skill acquisition requires reducing the human effort needed as tasks and spatial configurations expand, particularly in demonstration collection and task-specific training design. We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline. To obtain diverse references at low cost, we adapt reusable task templates to different spatial configurations, synthesizing coordinated robot and object motions. To reduce task-specific reward design and training effort, we use reference-based imitation as a common learning objective across tasks. We first train privileged teachers to execute these references, then train visual policies through teacher distillation and reinforcement learning with the same reference-based mimic rewards, using diverse object instances and visual domain randomization to support visual generalization and sim-to-real transfer. Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation. These results demonstrate the framework's potential for learning diverse visual humanoid loco-manipulation skills.",
+      "authors": [
+        "Tianshu Wu",
+        "Tianxiang Gui",
+        "Yue Chen"
+      ],
+      "authors_all": [
+        "Tianshu Wu",
+        "Tianxiang Gui",
+        "Yue Chen",
+        "Tingxu Liu",
+        "Ziye Peng",
+        "Guangjie Yang",
+        "Xiangqi Kong",
+        "Ye Shi",
+        "Jingya Wang",
+        "Hao Dong"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation",
+        "sim2real",
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-09266.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-09266-p2.jpg",
+        "assets/img/covers/arxiv-2611-09266-p3.jpg",
+        "assets/img/covers/arxiv-2611-09266-p4.jpg"
+      ],
+      "arxiv_id": "2611.09266",
+      "abs_url": "http://arxiv.org/abs/2611.09266v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09266v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-09605",
       "source": "arxiv",
       "title": "DKWBC: Decoupling Motion Tracking and Balancing for Humanoid Whole-Body Control",
@@ -162102,6 +162286,73 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2606-30111",
+      "source": "arxiv",
+      "title": "Automating the Design of Embodied AgentArchitectures",
+      "title_zh": "自动化设计具身智能体架构",
+      "tldr_zh": "将智能体架构搜索从文本领域迁移到具身任务，发现成功率提升但面临噪声和局部最优等新挑战。",
+      "cover_zh": "不用手搭模块｜AI 自己设计具身智能体架构，成功率还涨了？",
+      "abstract_zh": "具身智能体通常由感知、记忆、规划和动作模块手工组合而成。这种模块化暴露了巨大的架构设计空间，但当前系统仍依赖研究者直觉来选择信息存储位置、观测处理方式以及模型调用连接方式。智能体架构搜索（AAS）在文本领域实现了此类设计的自动化，但尚未通过模拟器 rollout 在感知型具身智能体上得到系统评估。我们研究了这一迁移。我们引入了 AgentCanvas，一个类型化图运行时，它将具身执行器托管为可编辑的节点-连线程序，支持模拟器感知执行和回合级日志；以及 KDLoop，一个编码智能体搜索过程，通过提议、批评、实验和蒸馏循环，并在停滞时触发反思。我们在四个具身执行器上评估了三种 AAS 变体，涵盖视觉-语言导航、具身问答和语言条件操作。得到的 3x4 矩阵表明，架构级搜索可以在具身任务上产生可部署且方向性的成功率提升，同时一个看似高分候选被拒绝为存在泄漏。同时，实验暴露了文本领域 AAS 中不明显的约束：优化信号可能被 rollout 噪声掩盖，搜索可能陷入局部编辑盆地，即使有详细日志，回合级信用分配也仅部分出现。这些结果刻画了具身智能体自动化架构搜索的前景和当前局限。",
+      "authors": [
+        "Jian Zhou",
+        "Sihao Lin",
+        "Jin Li"
+      ],
+      "authors_all": [
+        "Jian Zhou",
+        "Sihao Lin",
+        "Jin Li",
+        "Shuai Fu",
+        "Gengze Zhou",
+        "Qi Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30111.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30111-p2.jpg",
+        "assets/img/covers/arxiv-2606-30111-p3.jpg",
+        "assets/img/covers/arxiv-2606-30111-p4.jpg"
+      ],
+      "arxiv_id": "2606.30111",
+      "abs_url": "http://arxiv.org/abs/2606.30111v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30111v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出自动化架构搜索方法，在具身任务上验证，涉及操作等，有科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Australian Institute for Machine Learning, University of Adelaide"
+      ],
+      "method_tags": [
+        "Agent Architecture Search",
+        "coding-agent search"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -177771,62 +178022,6 @@
       "arxiv_id": "2611.06544",
       "abs_url": "http://arxiv.org/abs/2611.06544v1",
       "pdf_url": "https://arxiv.org/pdf/2611.06544v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 17,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-09266",
-      "source": "arxiv",
-      "title": "SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References",
-      "title_zh": "SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References",
-      "tldr_zh": "Scaling up visual humanoid loco-manipulation skill acquisiti",
-      "cover_zh": "Scaling up visual humanoid loco-manipulation skill acquisiti",
-      "abstract_zh": "Scaling up visual humanoid loco-manipulation skill acquisition requires reducing the human effort needed as tasks and spatial configurations expand, particularly in demonstration collection and task-specific training design. We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline. To obtain diverse references at low cost, we adapt reusable task templates to different spatial configurations, synthesizing coordinated robot and object motions. To reduce task-specific reward design and training effort, we use reference-based imitation as a common learning objective across tasks. We first train privileged teachers to execute these references, then train visual policies through teacher distillation and reinforcement learning with the same reference-based mimic rewards, using diverse object instances and visual domain randomization to support visual generalization and sim-to-real transfer. Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation. These results demonstrate the framework's potential for learning diverse visual humanoid loco-manipulation skills.",
-      "authors": [
-        "Tianshu Wu",
-        "Tianxiang Gui",
-        "Yue Chen"
-      ],
-      "authors_all": [
-        "Tianshu Wu",
-        "Tianxiang Gui",
-        "Yue Chen",
-        "Tingxu Liu",
-        "Ziye Peng",
-        "Guangjie Yang",
-        "Xiangqi Kong",
-        "Ye Shi",
-        "Jingya Wang",
-        "Hao Dong"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-09266.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-09266-p2.jpg",
-        "assets/img/covers/arxiv-2611-09266-p3.jpg",
-        "assets/img/covers/arxiv-2611-09266-p4.jpg"
-      ],
-      "arxiv_id": "2611.09266",
-      "abs_url": "http://arxiv.org/abs/2611.09266v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.09266v1",
       "venue": "",
       "venue_announced": "",
       "score": 17,
@@ -209743,62 +209938,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-09041",
-      "source": "arxiv",
-      "title": "DobotTrack: Target-Grounded Vision-Language-Action Learning for Embodied Person Tracking",
-      "title_zh": "DobotTrack: Target-Grounded Vision-Language-Action Learning for Embodied Person Tracking",
-      "tldr_zh": "Language-guided embodied person tracking requires a mobile a",
-      "cover_zh": "Language-guided embodied person tracking requires a mobile a",
-      "abstract_zh": "Language-guided embodied person tracking requires a mobile agent to identify a target from a referring description and consistently follow the target under egocentric observations. We present DobotTrack, a target-grounded vision-language-action (VLA) framework that integrates auxiliary grounding supervision with efficient temporal modeling. We systematically investigate five auxiliary tasks---person segmentation, bounding-box grounding, visual-spatial classification (VSC), future DINO feature prediction, and future-frame prediction---and adopt complementary mask and bounding-box supervision to enhance target delineation and localization. We introduce Q-identity, a target-conditioned historical visual compression module that leverages target-grounding predictions to selectively preserve identity-discriminative appearance features and spatial cues in compact historical tokens. On EVT-Bench, our 0.8B-parameter model achieves an average success rate of 77.9%, exceeding OmTrackVLA by 16.9 percentage points across the three tasks. We further construct a real-world person-tracking dataset collected using a quadruped robot, comprising 126 episodes and 596,323 mask-annotated frames. The target masks enable automatic derivation of bounding boxes and visual-spatial labels encoding horizontal position and apparent image scale, providing additional grounding supervision without separate manual annotation of these labels. Together, our framework and annotation pipeline support learning target-grounded tracking policies from simulated and real-world data. Code is available at https://github.com/Dobot-Team/dobot_track.",
-      "authors": [
-        "Shengjun Deng",
-        "Yinghan Zhang",
-        "Chengrui Wei"
-      ],
-      "authors_all": [
-        "Shengjun Deng",
-        "Yinghan Zhang",
-        "Chengrui Wei",
-        "Liu Liang",
-        "Songyuan Liu",
-        "Pengkun Zheng",
-        "Yajun Zheng",
-        "Ying Zhang",
-        "Yuan Tian",
-        "Xi Li",
-        "Teng Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-09041.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-09041-p2.jpg",
-        "assets/img/covers/arxiv-2611-09041-p3.jpg",
-        "assets/img/covers/arxiv-2611-09041-p4.jpg"
-      ],
-      "arxiv_id": "2611.09041",
-      "abs_url": "http://arxiv.org/abs/2611.09041v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.09041v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 14,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-09130",
       "source": "arxiv",
       "title": "Auditing Grasp Feasibility Predictors with Planner-Verified Counterfactuals",
@@ -236870,68 +237009,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2606-30111",
-      "source": "arxiv",
-      "title": "Automating the Design of Embodied AgentArchitectures",
-      "title_zh": "自动化设计具身智能体架构",
-      "tldr_zh": "将智能体架构搜索从文本领域迁移到具身任务，发现成功率提升但面临噪声和局部最优等新挑战。",
-      "cover_zh": "不用手搭模块｜AI 自己设计具身智能体架构，成功率还涨了？",
-      "abstract_zh": "具身智能体通常由感知、记忆、规划和动作模块手工组合而成。这种模块化暴露了巨大的架构设计空间，但当前系统仍依赖研究者直觉来选择信息存储位置、观测处理方式以及模型调用连接方式。智能体架构搜索（AAS）在文本领域实现了此类设计的自动化，但尚未通过模拟器 rollout 在感知型具身智能体上得到系统评估。我们研究了这一迁移。我们引入了 AgentCanvas，一个类型化图运行时，它将具身执行器托管为可编辑的节点-连线程序，支持模拟器感知执行和回合级日志；以及 KDLoop，一个编码智能体搜索过程，通过提议、批评、实验和蒸馏循环，并在停滞时触发反思。我们在四个具身执行器上评估了三种 AAS 变体，涵盖视觉-语言导航、具身问答和语言条件操作。得到的 3x4 矩阵表明，架构级搜索可以在具身任务上产生可部署且方向性的成功率提升，同时一个看似高分候选被拒绝为存在泄漏。同时，实验暴露了文本领域 AAS 中不明显的约束：优化信号可能被 rollout 噪声掩盖，搜索可能陷入局部编辑盆地，即使有详细日志，回合级信用分配也仅部分出现。这些结果刻画了具身智能体自动化架构搜索的前景和当前局限。",
-      "authors": [
-        "Jian Zhou",
-        "Sihao Lin",
-        "Jin Li"
-      ],
-      "authors_all": [
-        "Jian Zhou",
-        "Sihao Lin",
-        "Jin Li",
-        "Shuai Fu",
-        "Gengze Zhou",
-        "Qi Wu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-30111.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30111-p2.jpg",
-        "assets/img/covers/arxiv-2606-30111-p3.jpg",
-        "assets/img/covers/arxiv-2606-30111-p4.jpg"
-      ],
-      "arxiv_id": "2606.30111",
-      "abs_url": "http://arxiv.org/abs/2606.30111v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30111v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出自动化架构搜索方法，在具身任务上验证，涉及操作等，有科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Australian Institute for Machine Learning, University of Adelaide"
-      ],
-      "method_tags": [
-        "Agent Architecture Search",
-        "coding-agent search"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2607-00514",
       "source": "arxiv_discover",
       "title": "Cross4D-JEPA: Dense Cross-modal Correspondence Distillation for 4D Point Cloud Representation Learning",
@@ -248604,6 +248681,68 @@
       ]
     },
     {
+      "id": "arxiv-2610-15294",
+      "source": "arxiv_discover",
+      "title": "ProWorld: Multi-View World Model with Proprioceptive Feedback for Closed-Loop Policy Evaluation",
+      "title_zh": "ProWorld: Multi-View World Model with Proprioceptive Feedback for Closed-Loop Policy Evaluation",
+      "tldr_zh": "Evaluating robot manipulation policies through repeated phys",
+      "cover_zh": "Evaluating robot manipulation policies through repeated phys",
+      "abstract_zh": "Evaluating robot manipulation policies through repeated physical trials is costly. We study whether an action-conditioned world model can serve as a closed-loop test environment whose policy success rates track those on real robots. Beyond realistic video, the model must return the camera views and proprioceptive state needed for the policy's next action and preserve failed-action outcomes to avoid overestimating policy capability. We introduce ProWorld, a world model that jointly predicts multi-view video and robot state, then feeds both back to a frozen policy for repeated interaction. ProWorld comprises a shared transformer for joint video-state flow prediction and Shared-Time View Encoding to distinguish cameras while preserving temporal synchronization. To reduce interaction hallucinations that turn missed grasps into successful lifts, we augment training with failed interactions collected in high-fidelity simulation, reducing inflated success rates in the generated environment. ProWorld achieves the highest overall TriWorldBench score among the compared methods. Across three policies and four local manipulation tasks, it attains a Pearson correlation of 0.95 and a Spearman correlation of 0.94 between generated and real success rates. These results support joint visual-proprioceptive feedback and failure-aware training as a basis for world-model-based policy evaluation.",
+      "authors": [
+        "Zijun Wang",
+        "Tianyi Yan",
+        "Haokun Lin"
+      ],
+      "authors_all": [
+        "Zijun Wang",
+        "Tianyi Yan",
+        "Haokun Lin",
+        "Panwen Hu",
+        "Bohang He",
+        "Siyu Ren",
+        "Xiaoyu Guo",
+        "Weijia Liufu",
+        "Shuoshuo Xue",
+        "Fengjiao Chen",
+        "Zipeng Ye",
+        "Xuezhi Cao",
+        "Zutao Jiang",
+        "Hanhui Li",
+        "Xiaodan Liang"
+      ],
+      "primary_category": "",
+      "published": "2026-10-11",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2610-15294.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-15294-p2.jpg",
+        "assets/img/covers/arxiv-2610-15294-p3.jpg",
+        "assets/img/covers/arxiv-2610-15294-p4.jpg"
+      ],
+      "arxiv_id": "2610.15294",
+      "abs_url": "http://arxiv.org/abs/2610.15294v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.15294v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2610-15491",
       "source": "arxiv",
       "title": "Phase-Gated Constrained Reinforcement Learning for End-to-End Capture and Detumbling of Non-Cooperative Targets",
@@ -254012,61 +254151,6 @@
       "arxiv_id": "2611.08657",
       "abs_url": "http://arxiv.org/abs/2611.08657v1",
       "pdf_url": "https://arxiv.org/pdf/2611.08657v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-09124",
-      "source": "arxiv",
-      "title": "Toward the Era of Agentic Embodied Intelligence",
-      "title_zh": "Toward the Era of Agentic Embodied Intelligence",
-      "tldr_zh": "Foundation models increasingly guide robot actions, yet sust",
-      "cover_zh": "Foundation models increasingly guide robot actions, yet sust",
-      "abstract_zh": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
-      "authors": [
-        "Chao Liang",
-        "Ke Chen",
-        "Fengxiaoxiao Li"
-      ],
-      "authors_all": [
-        "Chao Liang",
-        "Ke Chen",
-        "Fengxiaoxiao Li",
-        "Shibo Huang",
-        "Yufeng Sun",
-        "Zhaokai Yin",
-        "Jianhuan Lai",
-        "Haozhe Feng",
-        "Chenghuan Jia",
-        "Zhipeng Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-09124.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-09124-p2.jpg",
-        "assets/img/covers/arxiv-2611-09124-p3.jpg",
-        "assets/img/covers/arxiv-2611-09124-p4.jpg"
-      ],
-      "arxiv_id": "2611.09124",
-      "abs_url": "http://arxiv.org/abs/2611.09124v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.09124v1",
       "venue": "",
       "venue_announced": "",
       "score": 9,

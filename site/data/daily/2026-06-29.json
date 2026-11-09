@@ -3,6 +3,102 @@
   "count": 34,
   "papers": [
     {
+      "id": "arxiv-2606-30362",
+      "source": "arxiv",
+      "title": "ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control",
+      "title_zh": "ReactiveBFM：面向通用人形全身控制的反应式闭环运动规划",
+      "tldr_zh": "提出反应式闭环框架，解决人形机器人生成式规划中的暴露偏差与延迟问题。",
+      "cover_zh": "人形机器人也能实时追目标？这个新框架让全身协调直接拉满！",
+      "abstract_zh": "当前的行为基础模型（BFMs）为人形机器人提供了鲁棒的控制先验，但它们仅执行预定义的参考运动，因此对环境变化脆弱且无法实现反应式全身协调。简单地将它们与生成式运动规划器级联无法实现真正的反应性，因为不可避免的跟踪差异会导致致命的累积暴露偏差。为弥补这一差距，我们提出ReactiveBFM，一个实时闭环规划-控制框架。其核心是通过一种调度前缀采样课程有效缓解暴露偏差，迫使生成式规划器主动从非完美物理状态而非真实轨迹中学习纠错行为。系统层面，为协调自回归规划与高频跟踪之间的严重延迟不匹配，我们引入异步重规划机制。结合轨迹分块以时间上集成空间参考，我们的系统保证时空流畅的执行而无物理抖动。部署在Unitree G1人形机器人上，ReactiveBFM在大量文本条件闭环运动中展现出前所未有的物理敏捷性。值得注意的是，ReactiveBFM实现了零样本移动目标追踪，展示了复杂的全身协调和即时重规划。在严重扰动下的模拟到模拟基准测试中，ReactiveBFM达到93.1%的成功率，显著优于级联开环基线28.6%。",
+      "authors": [
+        "Xiao Chen",
+        "Weishuai Zeng",
+        "Xiaojie Niu"
+      ],
+      "authors_all": [
+        "Xiao Chen",
+        "Weishuai Zeng",
+        "Xiaojie Niu",
+        "Zirui Wang",
+        "Jianan Li",
+        "Huayi Wang",
+        "Furui Xu",
+        "Jiahe Chen",
+        "Weixiang Zhong",
+        "Lihe Ding",
+        "Kailin Li",
+        "Jiangmiao Pang",
+        "Tai Wang",
+        "Tianfan Xue",
+        "Jingbo Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 上海 AI Lab"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jingbo Wang"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jiangmiao Pang"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30362.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30362-p2.jpg",
+        "assets/img/covers/arxiv-2606-30362-p3.jpg",
+        "assets/img/covers/arxiv-2606-30362-p4.jpg"
+      ],
+      "arxiv_id": "2606.30362",
+      "abs_url": "http://arxiv.org/abs/2606.30362v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30362v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 70,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "提出人形机器人全身闭环运动规划框架，解决暴露偏差与延迟问题，在G1上验证零样本目标追踪，价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The Chinese University of Hong Kong",
+        "Shanghai AI Laboratory"
+      ],
+      "method_tags": [
+        "closed-loop planning",
+        "reactive whole-body control",
+        "exposure bias mitigation"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-30645",
       "source": "arxiv",
       "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
@@ -99,98 +195,6 @@
         "sim-to-real",
         "loco-manipulation",
         "whole-body control"
-      ],
-      "platform": [
-        "Unitree G1"
-      ],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-30362",
-      "source": "arxiv",
-      "title": "ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control",
-      "title_zh": "ReactiveBFM：面向通用人形全身控制的反应式闭环运动规划",
-      "tldr_zh": "提出反应式闭环框架，解决人形机器人生成式规划中的暴露偏差与延迟问题。",
-      "cover_zh": "人形机器人也能实时追目标？这个新框架让全身协调直接拉满！",
-      "abstract_zh": "当前的行为基础模型（BFMs）为人形机器人提供了鲁棒的控制先验，但它们仅执行预定义的参考运动，因此对环境变化脆弱且无法实现反应式全身协调。简单地将它们与生成式运动规划器级联无法实现真正的反应性，因为不可避免的跟踪差异会导致致命的累积暴露偏差。为弥补这一差距，我们提出ReactiveBFM，一个实时闭环规划-控制框架。其核心是通过一种调度前缀采样课程有效缓解暴露偏差，迫使生成式规划器主动从非完美物理状态而非真实轨迹中学习纠错行为。系统层面，为协调自回归规划与高频跟踪之间的严重延迟不匹配，我们引入异步重规划机制。结合轨迹分块以时间上集成空间参考，我们的系统保证时空流畅的执行而无物理抖动。部署在Unitree G1人形机器人上，ReactiveBFM在大量文本条件闭环运动中展现出前所未有的物理敏捷性。值得注意的是，ReactiveBFM实现了零样本移动目标追踪，展示了复杂的全身协调和即时重规划。在严重扰动下的模拟到模拟基准测试中，ReactiveBFM达到93.1%的成功率，显著优于级联开环基线28.6%。",
-      "authors": [
-        "Xiao Chen",
-        "Weishuai Zeng",
-        "Xiaojie Niu"
-      ],
-      "authors_all": [
-        "Xiao Chen",
-        "Weishuai Zeng",
-        "Xiaojie Niu",
-        "Zirui Wang",
-        "Jianan Li",
-        "Huayi Wang",
-        "Furui Xu",
-        "Jiahe Chen",
-        "Weixiang Zhong",
-        "Lihe Ding",
-        "Kailin Li",
-        "Jiangmiao Pang",
-        "Tai Wang",
-        "Tianfan Xue",
-        "Jingbo Wang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 上海 AI Lab"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jingbo Wang"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ Jiangmiao Pang"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-30362.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30362-p2.jpg",
-        "assets/img/covers/arxiv-2606-30362-p3.jpg",
-        "assets/img/covers/arxiv-2606-30362-p4.jpg"
-      ],
-      "arxiv_id": "2606.30362",
-      "abs_url": "http://arxiv.org/abs/2606.30362v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30362v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 60,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "loco-manip-wbc",
-        "reason": "提出人形机器人全身闭环运动规划框架，解决暴露偏差与延迟问题，在G1上验证零样本目标追踪，价值高。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The Chinese University of Hong Kong",
-        "Shanghai AI Laboratory"
-      ],
-      "method_tags": [
-        "closed-loop planning",
-        "reactive whole-body control",
-        "exposure bias mitigation"
       ],
       "platform": [
         "Unitree G1"
@@ -1090,6 +1094,80 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2606-30632",
+      "source": "arxiv",
+      "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
+      "title_zh": "GROW$^2$：为机器人工具使用确定“哪个”和“哪里”",
+      "tldr_zh": "GROW$^2$通过分层语义和几何定位，实现机器人零样本工具使用。",
+      "cover_zh": "没有刀？机器人用盘子切蛋糕｜GROW$^2$让工具使用更聪明",
+      "abstract_zh": "如果没有刀，机器人能用盘子切蛋糕吗？工具使用极大地扩展了机器人的能力，但要创造性地使用工具超出其预期功能，机器人面临开放世界可供性定位的挑战：选择一个开放类别的物体作为工具，并定位其具体的动作区域。为此，我们提出了GROW$^2$（确定哪个和哪里），它利用物体部分作为自然抽象，将定位过程分层为语义和几何层面，从而绕过了对数据密集型端到端训练的需求。在语义上，GROW$^2$利用视觉语言模型（VLM）的常识推理来解析自然语言任务指令，选择合适的物体作为工具，并识别工具和目标物体上任务相关的部分。在几何上，视觉基础模型随后从单个RGB-D图像中将所选部分定位到精确的3D区域。在已有基准上的实验表明，GROW$^2$在可供性预测基准上优于最先进的基线。此外，它在开放类别物体上实现了零样本泛化，并在模拟和真实世界的机器人工具使用实验中均优于基线。",
+      "authors": [
+        "Yuhong Deng",
+        "Yuyao Liu",
+        "David Hsu"
+      ],
+      "authors_all": [
+        "Yuhong Deng",
+        "Yuyao Liu",
+        "David Hsu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ MIT CSAIL"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30632.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30632-p2.jpg",
+        "assets/img/covers/arxiv-2606-30632-p3.jpg",
+        "assets/img/covers/arxiv-2606-30632-p4.jpg"
+      ],
+      "arxiv_id": "2606.30632",
+      "abs_url": "http://arxiv.org/abs/2606.30632v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30632v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 41,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出开放世界工具使用的语义-几何分层接地方法，结合VLM和视觉基础模型，零样本泛化，有仿真和真机实验。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National University of Singapore",
+        "Massachusetts Institute of Technology"
+      ],
+      "method_tags": [
+        "open-world affordance grounding",
+        "Vision-Language Models",
+        "vision foundation models"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2606-30749",
       "source": "arxiv_discover",
       "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
@@ -1455,76 +1533,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2606-30632",
-      "source": "arxiv",
-      "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
-      "title_zh": "GROW$^2$：为机器人工具使用确定“哪个”和“哪里”",
-      "tldr_zh": "GROW$^2$通过分层语义和几何定位，实现机器人零样本工具使用。",
-      "cover_zh": "没有刀？机器人用盘子切蛋糕｜GROW$^2$让工具使用更聪明",
-      "abstract_zh": "如果没有刀，机器人能用盘子切蛋糕吗？工具使用极大地扩展了机器人的能力，但要创造性地使用工具超出其预期功能，机器人面临开放世界可供性定位的挑战：选择一个开放类别的物体作为工具，并定位其具体的动作区域。为此，我们提出了GROW$^2$（确定哪个和哪里），它利用物体部分作为自然抽象，将定位过程分层为语义和几何层面，从而绕过了对数据密集型端到端训练的需求。在语义上，GROW$^2$利用视觉语言模型（VLM）的常识推理来解析自然语言任务指令，选择合适的物体作为工具，并识别工具和目标物体上任务相关的部分。在几何上，视觉基础模型随后从单个RGB-D图像中将所选部分定位到精确的3D区域。在已有基准上的实验表明，GROW$^2$在可供性预测基准上优于最先进的基线。此外，它在开放类别物体上实现了零样本泛化，并在模拟和真实世界的机器人工具使用实验中均优于基线。",
-      "authors": [
-        "Yuhong Deng",
-        "Yuyao Liu",
-        "David Hsu"
-      ],
-      "authors_all": [
-        "Yuhong Deng",
-        "Yuyao Liu",
-        "David Hsu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ MIT CSAIL"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ NUS"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2606-30632.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30632-p2.jpg",
-        "assets/img/covers/arxiv-2606-30632-p3.jpg",
-        "assets/img/covers/arxiv-2606-30632-p4.jpg"
-      ],
-      "arxiv_id": "2606.30632",
-      "abs_url": "http://arxiv.org/abs/2606.30632v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30632v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 31,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出开放世界工具使用的语义-几何分层接地方法，结合VLM和视觉基础模型，零样本泛化，有仿真和真机实验。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "National University of Singapore",
-        "Massachusetts Institute of Technology"
-      ],
-      "method_tags": [
-        "open-world affordance grounding",
-        "Vision-Language Models",
-        "vision foundation models"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2606-30534",
       "source": "arxiv",
       "title": "Orca: The World is in Your Mind",
@@ -1780,6 +1788,73 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2606-30111",
+      "source": "arxiv",
+      "title": "Automating the Design of Embodied AgentArchitectures",
+      "title_zh": "自动化设计具身智能体架构",
+      "tldr_zh": "将智能体架构搜索从文本领域迁移到具身任务，发现成功率提升但面临噪声和局部最优等新挑战。",
+      "cover_zh": "不用手搭模块｜AI 自己设计具身智能体架构，成功率还涨了？",
+      "abstract_zh": "具身智能体通常由感知、记忆、规划和动作模块手工组合而成。这种模块化暴露了巨大的架构设计空间，但当前系统仍依赖研究者直觉来选择信息存储位置、观测处理方式以及模型调用连接方式。智能体架构搜索（AAS）在文本领域实现了此类设计的自动化，但尚未通过模拟器 rollout 在感知型具身智能体上得到系统评估。我们研究了这一迁移。我们引入了 AgentCanvas，一个类型化图运行时，它将具身执行器托管为可编辑的节点-连线程序，支持模拟器感知执行和回合级日志；以及 KDLoop，一个编码智能体搜索过程，通过提议、批评、实验和蒸馏循环，并在停滞时触发反思。我们在四个具身执行器上评估了三种 AAS 变体，涵盖视觉-语言导航、具身问答和语言条件操作。得到的 3x4 矩阵表明，架构级搜索可以在具身任务上产生可部署且方向性的成功率提升，同时一个看似高分候选被拒绝为存在泄漏。同时，实验暴露了文本领域 AAS 中不明显的约束：优化信号可能被 rollout 噪声掩盖，搜索可能陷入局部编辑盆地，即使有详细日志，回合级信用分配也仅部分出现。这些结果刻画了具身智能体自动化架构搜索的前景和当前局限。",
+      "authors": [
+        "Jian Zhou",
+        "Sihao Lin",
+        "Jin Li"
+      ],
+      "authors_all": [
+        "Jian Zhou",
+        "Sihao Lin",
+        "Jin Li",
+        "Shuai Fu",
+        "Gengze Zhou",
+        "Qi Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-06-29",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2606-30111.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2606-30111-p2.jpg",
+        "assets/img/covers/arxiv-2606-30111-p3.jpg",
+        "assets/img/covers/arxiv-2606-30111-p4.jpg"
+      ],
+      "arxiv_id": "2606.30111",
+      "abs_url": "http://arxiv.org/abs/2606.30111v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30111v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-09",
+      "score": 19,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出自动化架构搜索方法，在具身任务上验证，涉及操作等，有科研价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Australian Institute for Machine Learning, University of Adelaide"
+      ],
+      "method_tags": [
+        "Agent Architecture Search",
+        "coding-agent search"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2318,68 +2393,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2606-30111",
-      "source": "arxiv",
-      "title": "Automating the Design of Embodied AgentArchitectures",
-      "title_zh": "自动化设计具身智能体架构",
-      "tldr_zh": "将智能体架构搜索从文本领域迁移到具身任务，发现成功率提升但面临噪声和局部最优等新挑战。",
-      "cover_zh": "不用手搭模块｜AI 自己设计具身智能体架构，成功率还涨了？",
-      "abstract_zh": "具身智能体通常由感知、记忆、规划和动作模块手工组合而成。这种模块化暴露了巨大的架构设计空间，但当前系统仍依赖研究者直觉来选择信息存储位置、观测处理方式以及模型调用连接方式。智能体架构搜索（AAS）在文本领域实现了此类设计的自动化，但尚未通过模拟器 rollout 在感知型具身智能体上得到系统评估。我们研究了这一迁移。我们引入了 AgentCanvas，一个类型化图运行时，它将具身执行器托管为可编辑的节点-连线程序，支持模拟器感知执行和回合级日志；以及 KDLoop，一个编码智能体搜索过程，通过提议、批评、实验和蒸馏循环，并在停滞时触发反思。我们在四个具身执行器上评估了三种 AAS 变体，涵盖视觉-语言导航、具身问答和语言条件操作。得到的 3x4 矩阵表明，架构级搜索可以在具身任务上产生可部署且方向性的成功率提升，同时一个看似高分候选被拒绝为存在泄漏。同时，实验暴露了文本领域 AAS 中不明显的约束：优化信号可能被 rollout 噪声掩盖，搜索可能陷入局部编辑盆地，即使有详细日志，回合级信用分配也仅部分出现。这些结果刻画了具身智能体自动化架构搜索的前景和当前局限。",
-      "authors": [
-        "Jian Zhou",
-        "Sihao Lin",
-        "Jin Li"
-      ],
-      "authors_all": [
-        "Jian Zhou",
-        "Sihao Lin",
-        "Jin Li",
-        "Shuai Fu",
-        "Gengze Zhou",
-        "Qi Wu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-06-29",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2606-30111.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2606-30111-p2.jpg",
-        "assets/img/covers/arxiv-2606-30111-p3.jpg",
-        "assets/img/covers/arxiv-2606-30111-p4.jpg"
-      ],
-      "arxiv_id": "2606.30111",
-      "abs_url": "http://arxiv.org/abs/2606.30111v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30111v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出自动化架构搜索方法，在具身任务上验证，涉及操作等，有科研价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Australian Institute for Machine Learning, University of Adelaide"
-      ],
-      "method_tags": [
-        "Agent Architecture Search",
-        "coding-agent search"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
