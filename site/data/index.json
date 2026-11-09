@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08T17:50:23.785922+00:00",
-  "count": 4650,
+  "generated_at": "2026-11-09T03:19:49.017646+00:00",
+  "count": 4673,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -18420,7 +18420,7 @@
         },
         {
           "kind": "venue",
-          "label": "🎉 最新收录 · CoRL 2026"
+          "label": "🎓 CoRL 2026"
         }
       ],
       "cover_image": "assets/img/covers/arxiv-2608-19182.jpg",
@@ -30778,7 +30778,7 @@
         },
         {
           "kind": "venue",
-          "label": "🎉 最新收录 · CoRL 2026"
+          "label": "🎓 CoRL 2026"
         }
       ],
       "cover_image": "assets/img/covers/arxiv-2610-18147.jpg",
@@ -67002,8 +67002,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-05",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
+        "loco-manip-wbc",
         "locomotion"
       ],
       "badges": [
@@ -88447,8 +88447,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-05",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -115163,55 +115163,6 @@
       ]
     },
     {
-      "id": "vid-bilibili-BV1Sq4q6dEf8",
-      "source": "video_bilibili",
-      "title": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
-      "title_zh": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
-      "tldr_zh": "PDF：一个文档是如何把自己玩成计算机的？",
-      "cover_zh": "PDF：一个文档是如何把自己玩成计算机的？",
-      "abstract_zh": "PDF：一个文档是如何把自己玩成计算机的？",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
-      "published": "2026-11-06",
-      "channels": [],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV1Sq4q6dEf8",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 25,
-      "judge": {},
-      "institutions": [
-        "量子位"
-      ],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1Sq4q6dEf8",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1Sq4q6dEf8&high_quality=1&autoplay=0",
-          "title": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
-          "source": "channel"
-        }
-      ],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2402-02500",
       "source": "conf",
       "title": "Point Cloud Matters: Rethinking the Impact of Different Observation Spaces on Robot Learning",
@@ -123308,6 +123259,61 @@
       "arxiv_id": "2611.03294",
       "abs_url": "http://arxiv.org/abs/2611.03294v1",
       "pdf_url": "https://arxiv.org/pdf/2611.03294v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08917",
+      "source": "arxiv",
+      "title": "PRISM: Primitive Routing via In-context Skill Mixing for Retentive VLA Adaptation",
+      "title_zh": "PRISM: Primitive Routing via In-context Skill Mixing for Retentive VLA Adaptation",
+      "tldr_zh": "Vision-Language-Action (VLA) models promise a single languag",
+      "cover_zh": "Vision-Language-Action (VLA) models promise a single languag",
+      "abstract_zh": "Vision-Language-Action (VLA) models promise a single language-conditioned policy adaptable to many manipulation behaviors, yet deployment additionally requires skill retention and long-horizon composition: a policy must retain previously acquired skills and reuse them inside composite tasks whose behavior changes across phases. The standard recipe absorbs every new task into one shared update, which provides neither a parameter-level locus for reusable skills nor a mechanism for invoking each skill along the trajectory. We observe that this missing structure is latent rather than absent: per-skill low-rank updates of a pretrained VLA occupy a robustly distinguishable, low-dimensional subspace, and a single composite-task LoRA concentrates roughly half of its Frobenius energy in this subspace, against a near-zero matched random-rotation control. Building on this geometry, we introduce PRISM, which represents reusable skills as parameter-level primitives: each skill family is stored as a dedicated low-rank action-expert adapter in a primitive bank, primitives are augmented with skill-specific low-rank residuals and composed at inference by a per-chunk VLM-conditioned router that reads the prefix representation to track task progress, and the router is supervised by per-chunk labels from a deterministic, task-conditioned, action-derived oracle. During composite training, the vision encoder, the language LoRA, the skill residuals, the router, and the shared action projections and time MLP are updated; every primitive is held frozen, so the base per-skill action-expert adapters are preserved by construction. On RoboCasa365, PRISM achieves 56.43% atomic-skill success and reaches 20.00% on long-horizon composite tasks, while a standard $π_{0.5}$-LoRA two-stage fine-tune reaches 17.86% atomic and 17.50% composite success. We additionally validate PRISM on an AgileX PIPER real-robot setup.",
+      "authors": [
+        "Jiachen Tao",
+        "Gengyu Zhang",
+        "Haoxuan Wang"
+      ],
+      "authors_all": [
+        "Jiachen Tao",
+        "Gengyu Zhang",
+        "Haoxuan Wang",
+        "Bing Liu",
+        "Yan Yan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08917.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08917-p2.jpg",
+        "assets/img/covers/arxiv-2611-08917-p3.jpg",
+        "assets/img/covers/arxiv-2611-08917-p4.jpg"
+      ],
+      "arxiv_id": "2611.08917",
+      "abs_url": "http://arxiv.org/abs/2611.08917v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08917v1",
       "venue": "NeurIPS 2026",
       "venue_announced": "",
       "score": 22,
@@ -159355,8 +159361,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-05",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2611-08372.jpg",
@@ -159420,6 +159426,164 @@
       "arxiv_id": "2611.08458",
       "abs_url": "http://arxiv.org/abs/2611.08458v1",
       "pdf_url": "https://arxiv.org/pdf/2611.08458v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08664",
+      "source": "arxiv",
+      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "title_zh": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "tldr_zh": "Humanoid robots are expected to take over strenuous material",
+      "cover_zh": "Humanoid robots are expected to take over strenuous material",
+      "abstract_zh": "Humanoid robots are expected to take over strenuous material handling in manufacturing, logistics, and healthcare, where operating existing wheeled carts would let them move heavy loads without modifying the workplace. However, humanoid cart pushing remains challenging because the bimanual grasp closes a force-coupled loop in which the contact wrenches that drive the cart also disturb the robot's balance, and payload changes alter the coupled dynamics. We propose ForPC, a force-aware whole-body control framework that regulates cart velocity through two-stage reinforcement learning. A locomotion prior is first trained under varied hand loads and upper-body postures to provide balance support. A force latent and a state latent are then inferred from onboard observations, without external force sensors, and fed to a residual policy that coordinates bounded arm, waist, and leg adjustments with base-velocity commands. Multi-objective rewards penalize bimanual internal opposition, grasp slip, and actuator saturation, encouraging the policy to apply contact force on demand without human demonstrations. Sim-to-sim experiments show that ForPC reduces cart-velocity RMSE by up to 68.2% relative to a locomotion-only baseline (Loco-only) and cross-track RMSE by up to 74.2% on the multi-bend route. Trained solely in simulation, the policy also transfers to a physical Unitree G1 without real-world training or fine-tuning and, with no payload-specific adjustment, pushes a cart carrying up to 30 kg at 0.5 m/s. These results suggest that humanoid robots could eventually replace humans for efficient material handling in daily life.",
+      "authors": [
+        "ZhenYu Zou",
+        "Xing Liu",
+        "ShiChuang Wang"
+      ],
+      "authors_all": [
+        "ZhenYu Zou",
+        "Xing Liu",
+        "ShiChuang Wang",
+        "YunLong Dong",
+        "LiNan Deng",
+        "Feng Hua",
+        "Jun Wan",
+        "Cheng Cheng"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08664.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08664-p2.jpg",
+        "assets/img/covers/arxiv-2611-08664-p3.jpg",
+        "assets/img/covers/arxiv-2611-08664-p4.jpg"
+      ],
+      "arxiv_id": "2611.08664",
+      "abs_url": "http://arxiv.org/abs/2611.08664v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08664v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08857",
+      "source": "arxiv",
+      "title": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
+      "title_zh": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
+      "tldr_zh": "Learning locomotion directly on a humanoid robot is a promis",
+      "cover_zh": "Learning locomotion directly on a humanoid robot is a promis",
+      "abstract_zh": "Learning locomotion directly on a humanoid robot is a promising direction to avoid the sim-to-real gap. However, locomotion rewards in Reinforcement Learning (RL) typically track the base velocity, which cannot be measured onboard without an external motion capture system or well-calibrated state estimator. This is why we introduce method{}, which learns humanoid locomotion from minutes of samples with a reward that only requires the onboard Inertial Measurement Unit (IMU). Instead of tracking the base velocity, STRIDE rewards the robot for following a commanded acceleration profile. To learn efficiently from this reward, we use the off-policy RL algorithm XQC and combine a high gain setting for the joint position controllers with left-right symmetry augmentation. In simulation, STRIDE learns to walk on the Unitree G1 and Booster T1 humanoids within 14 minutes of samples. Compared to learning without these two components, it reduces the falls during training by 81%, while without them the robot learns only in over an hour.",
+      "authors": [
+        "Nico Bohlinger",
+        "Jan Peters"
+      ],
+      "authors_all": [
+        "Nico Bohlinger",
+        "Jan Peters"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08857.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08857-p2.jpg",
+        "assets/img/covers/arxiv-2611-08857-p3.jpg",
+        "assets/img/covers/arxiv-2611-08857-p4.jpg"
+      ],
+      "arxiv_id": "2611.08857",
+      "abs_url": "http://arxiv.org/abs/2611.08857v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08857v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08939",
+      "source": "arxiv",
+      "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+      "title_zh": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+      "tldr_zh": "We present RevoSim, a scalable and high-fidelity multimodal",
+      "cover_zh": "We present RevoSim, a scalable and high-fidelity multimodal",
+      "abstract_zh": "We present RevoSim, a scalable and high-fidelity multimodal tactile simulator for the BrainCo Revo3 hand that jointly models 285 piezoresistive taxels and five visuotactile fingertips. RevoSim efficiently generates synchronized pressure, depth, RGB, and marker-displacement observations; on a single RTX 5090, its depth-conditioned marker-displacement configuration supports up to 4,096 parallel environments. We train in-hand manipulation and grasping policies entirely in simulation, establishing a foundation for future sim-to-real transfer. Project page: https://braincotech.github.io/RevoSim-web/.",
+      "authors": [
+        "Ke Zhang",
+        "Lixin Xu",
+        "Ziyi Wang"
+      ],
+      "authors_all": [
+        "Ke Zhang",
+        "Lixin Xu",
+        "Ziyi Wang",
+        "Xiyue Dong",
+        "Jie Tan",
+        "Lianghu Shao",
+        "Xianpeng Wang",
+        "Chuanyu Li",
+        "Renjing Xu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08939.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08939-p2.jpg",
+        "assets/img/covers/arxiv-2611-08939-p3.jpg",
+        "assets/img/covers/arxiv-2611-08939-p4.jpg"
+      ],
+      "arxiv_id": "2611.08939",
+      "abs_url": "http://arxiv.org/abs/2611.08939v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08939v1",
       "venue": "",
       "venue_announced": "",
       "score": 20,
@@ -163051,6 +163215,60 @@
       "abs_url": "http://arxiv.org/abs/2611.06863v1",
       "pdf_url": "https://arxiv.org/pdf/2611.06863v1",
       "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08911",
+      "source": "arxiv",
+      "title": "Polarization calibration of fisheye cameras using skylight in the wild",
+      "title_zh": "Polarization calibration of fisheye cameras using skylight in the wild",
+      "tldr_zh": "Skylight polarization provides directional cues for robotic",
+      "cover_zh": "Skylight polarization provides directional cues for robotic",
+      "abstract_zh": "Skylight polarization provides directional cues for robotic navigation, but fisheye lens effects and analyzer imperfections can degrade polarization measurements across the field of view. We present a joint lens-analyzer calibration method that explicitly models incidence-dependent lens transmission together with analyzer gains and angular offsets in a unified eight-parameter formulation. Given known geometric calibration, rotations between camera frames can be estimated using visual features and cross-frame directional polarized light consistency can be used for polarization calibration. Therefore, our calibration approach requires only a short handheld outdoor sequence under natural skylight, without dedicated polarization calibration equipment or a predefined sky polarization model. On real-world outdoor sequences, the proposed method achieves a weighted cross-frame angle-of-linear-polarization (AoLP) mean absolute error below 0.5° across all incidence angles, with a 73.4% reduction in the 80°-90° incidence angle region, and generalizes to an independent sequence with an overall mean absolute error of 0.466° without refitting. Preliminary solar-azimuth experiments using a camera mounted on a quadruped robot further show improved alignment with the visible solar center, supporting the potential of calibrated AoLP measurements for relative-heading estimation and future polarization--inertial navigation. The calibration software tool will be released upon acceptance of this paper.",
+      "authors": [
+        "Shuo Wang",
+        "Shiqi Che",
+        "Dianze Dong"
+      ],
+      "authors_all": [
+        "Shuo Wang",
+        "Shiqi Che",
+        "Dianze Dong",
+        "Wenxin Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 ICRA 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08911.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08911-p2.jpg",
+        "assets/img/covers/arxiv-2611-08911-p3.jpg",
+        "assets/img/covers/arxiv-2611-08911-p4.jpg"
+      ],
+      "arxiv_id": "2611.08911",
+      "abs_url": "http://arxiv.org/abs/2611.08911v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08911v1",
+      "venue": "ICRA 2026",
       "venue_announced": "",
       "score": 19,
       "judge": {},
@@ -166762,8 +166980,8 @@
       "source": "qbitai",
       "title": "百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年",
       "title_zh": "百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年",
-      "tldr_zh": "连路人都有自己的想法",
-      "cover_zh": "连路人都有自己的想法",
+      "tldr_zh": "百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年",
+      "cover_zh": "百度无人车搞出“黑客帝国”！世界模型实时推演全局，跑一天抵三年",
       "abstract_zh": "连路人都有自己的想法",
       "authors": [],
       "authors_all": [],
@@ -166815,6 +167033,44 @@
       "preview_pages": [],
       "arxiv_id": "",
       "abs_url": "https://www.qbitai.com/2026/11/507675.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 18,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
+    },
+    {
+      "id": "qbitai-c23c41df8f",
+      "source": "qbitai",
+      "title": "人形机器人开始拼真活，光跑跳翻跟头的路子走不远了",
+      "title_zh": "人形机器人开始拼真活，光跑跳翻跟头的路子走不远了",
+      "tldr_zh": "人形机器人开始拼真活，光跑跳翻跟头的路子走不远了",
+      "cover_zh": "人形机器人开始拼真活，光跑跳翻跟头的路子走不远了",
+      "abstract_zh": "人形机器人开始拼真活，光跑跳翻跟头的路子走不远了",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "2026-11-05",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/11/508511.html",
       "pdf_url": "",
       "venue": "",
       "venue_announced": "",
@@ -185246,6 +185502,114 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-08578",
+      "source": "arxiv",
+      "title": "HaNDF: Object-Conditioned Geometric Neural Hand Distance Fields",
+      "title_zh": "HaNDF: Object-Conditioned Geometric Neural Hand Distance Fields",
+      "tldr_zh": "We propose, HaNDF, object-conditional neural distance fields",
+      "cover_zh": "We propose, HaNDF, object-conditional neural distance fields",
+      "abstract_zh": "We propose, HaNDF, object-conditional neural distance fields as data-driven priors for modeling the plausible hand-object configurations, in the product manifold of hand articulations. While recent unconditional generative priors showed success in modeling human pose, hands are versatile articulated bodies often found in interaction with other objects. This makes it crucial to develop a generative prior which can model the plausible hand poses conditioned on the object under interaction. To this end, our HaNDF proposes a geometry-aware, object-conditioned neural distance field, representing the plausible articulations in the zero-level set of a conditional field. We leverage tools from Riemannian geometry to (i) represent plausible hands in the zero level-set of an object-induced neural field, and (ii) project a given pose onto this field. Using HaNDF, we can also optimize for a plausible condition, determining the object under interaction. Our extensive evaluations demonstrate that our HaNDF provides a flexible and powerful prior for hand-object interaction, suitable for applications such as pose refinement, reconstruction under occlusion, and physically plausible manipulation synthesis.",
+      "authors": [
+        "Zuhao Liu",
+        "Melih Darcan",
+        "Zhengdi Yu"
+      ],
+      "authors_all": [
+        "Zuhao Liu",
+        "Melih Darcan",
+        "Zhengdi Yu",
+        "Riza Alp Guler",
+        "Tolga Birdal"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08578.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08578-p2.jpg",
+        "assets/img/covers/arxiv-2611-08578-p3.jpg",
+        "assets/img/covers/arxiv-2611-08578-p4.jpg"
+      ],
+      "arxiv_id": "2611.08578",
+      "abs_url": "http://arxiv.org/abs/2611.08578v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08578v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08654",
+      "source": "arxiv",
+      "title": "CS-Pi: Constraint-Satisfying Flow Policy Sampling",
+      "title_zh": "CS-Pi: Constraint-Satisfying Flow Policy Sampling",
+      "tldr_zh": "A flow-matching policy deployed in the field must often sati",
+      "cover_zh": "A flow-matching policy deployed in the field must often sati",
+      "abstract_zh": "A flow-matching policy deployed in the field must often satisfy a constraint that was absent from its demonstrations, such as avoiding an obstacle it has never seen. Retraining for every new constraint is impractical, so the constraint must be enforced at inference time. Enforcing it must not discard what the policy learned: an action the policy would rarely sample may avoid the obstacle yet fail the task. We therefore want actions that are both safe, satisfying the constraint, and plausible, remaining likely under the policy. Gradient guidance, the most common approach, steers noisy states, so it must evaluate its cost on the policy's running estimate of the clean action; when the policy is uncertain between passing left or right of an obstacle, this estimate is their average and can pass straight through it. We instead build on rejection and projection. Rejection redraws actions until one is safe: every output is plausible, but the wait is intractable when safe actions are rare. Projection moves an action to the nearest safe one: it is efficient, but the result need not be plausible. Our key insight is that flow-matching sampling lets us combine the two, keeping projection's efficiency and rejection's plausibility. CS-Pi, our draw-project-renoise sampler, projects each draw to the nearest safe action, adds noise back scaled to how far the projection moved it, and re-runs the unmodified policy until a draw is safe. Replacing only the projection step extends CS-Pi to continuous costs. Across a 2D diagnostic, a 7-DoF shelf pick-and-place, an orientation preference, and a zero-shot Franka deployment, CS-Pi reaches 81% safe success on the shelf and 55% on hardware, against 55% and 40% for projection, while staying plausible.",
+      "authors": [
+        "Soumojit Bhattacharya",
+        "Oliver Kroemer",
+        "Shubham Tulsiani"
+      ],
+      "authors_all": [
+        "Soumojit Bhattacharya",
+        "Oliver Kroemer",
+        "Shubham Tulsiani"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08654.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08654-p2.jpg",
+        "assets/img/covers/arxiv-2611-08654-p3.jpg",
+        "assets/img/covers/arxiv-2611-08654-p4.jpg"
+      ],
+      "arxiv_id": "2611.08654",
+      "abs_url": "http://arxiv.org/abs/2611.08654v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08654v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2605-10925",
       "source": "arxiv",
       "title": "PriorVLA: Prior-Preserving Adaptation for Vision-Language-Action Models",
@@ -199850,6 +200214,50 @@
       "source_tags": []
     },
     {
+      "id": "vid-bilibili-BV1Sq4q6dEf8",
+      "source": "video_bilibili",
+      "title": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
+      "title_zh": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
+      "tldr_zh": "PDF：一个文档是如何把自己玩成计算机的？",
+      "cover_zh": "PDF：一个文档是如何把自己玩成计算机的？",
+      "abstract_zh": "PDF：一个文档是如何把自己玩成计算机的？",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-11-06",
+      "channels": [],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1Sq4q6dEf8",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [
+        "量子位"
+      ],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Sq4q6dEf8",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1Sq4q6dEf8&high_quality=1&autoplay=0",
+          "title": "一个普通的PDF文档，竟然能用来玩DOOM、跑Linux、运行AI ？？？",
+          "source": "channel"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2602-05855",
       "source": "arxiv",
       "title": "A Hybrid Autoencoder for Robust Heightmap Generation from Fused Lidar and Depth Data for Humanoid Robot Locomotion",
@@ -208494,8 +208902,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-05",
       "channels": [
-        "world-model",
-        "sim2real"
+        "sim2real",
+        "world-model"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2611-08364.jpg",
@@ -208507,6 +208915,54 @@
       "arxiv_id": "2611.08364",
       "abs_url": "http://arxiv.org/abs/2611.08364v1",
       "pdf_url": "https://arxiv.org/pdf/2611.08364v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08872",
+      "source": "arxiv",
+      "title": "Lodos: A Lightweight Simulator Designed for Contact-Rich Interactions with Detailed Meshes",
+      "title_zh": "Lodos: A Lightweight Simulator Designed for Contact-Rich Interactions with Detailed Meshes",
+      "tldr_zh": "In recent years, massively parallelized rigid-body simulatio",
+      "cover_zh": "In recent years, massively parallelized rigid-body simulatio",
+      "abstract_zh": "In recent years, massively parallelized rigid-body simulation has played a central role in robotics research, enabling rapid progress in areas such as reinforcement learning, stochastic optimal control, and randomized smoothing-based trajectory optimization. Particularly in contact-rich settings, the scalability of such simulations in large part depends on well-optimized representations of collision geometry, often requiring a coarse approximation of the underlying surfaces using primitives such as spheres, capsules, cylinders, and boxes. Whenever the complexity of the surfaces or the precision demands of the application render such approximations insufficient, it is instead necessary to employ mesh-mesh collisions, which impose a significant reduction in throughput. This paper proposes a simulation framework designed from scratch to address this bottleneck, with novel routines for broadphase and narrowphase collision detection as well as the subsequent contact dynamics computation. As experimentally validated, the framework matches existing well-established simulators in terms of physical faithfulness, and can achieve approximately an order of magnitude higher throughput in the detailed mesh-mesh collision setting that it specializes in. The source code is available at https://github.com/martius-lab/lodos.",
+      "authors": [
+        "Onur Beker",
+        "Andreas René Geist",
+        "Georg Martius"
+      ],
+      "authors_all": [
+        "Onur Beker",
+        "Andreas René Geist",
+        "Georg Martius"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08872.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08872-p2.jpg",
+        "assets/img/covers/arxiv-2611-08872-p3.jpg",
+        "assets/img/covers/arxiv-2611-08872-p4.jpg"
+      ],
+      "arxiv_id": "2611.08872",
+      "abs_url": "http://arxiv.org/abs/2611.08872v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08872v1",
       "venue": "",
       "venue_announced": "",
       "score": 14,
@@ -229911,6 +230367,291 @@
       "arxiv_id": "2611.06649",
       "abs_url": "http://arxiv.org/abs/2611.06649v1",
       "pdf_url": "https://arxiv.org/pdf/2611.06649v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08576",
+      "source": "arxiv",
+      "title": "Q-OIL: Optimistic Exploration in Learning from Human Interventions",
+      "title_zh": "Q-OIL: Optimistic Exploration in Learning from Human Interventions",
+      "tldr_zh": "As robots are deployed in the real world, they will inevitab",
+      "cover_zh": "As robots are deployed in the real world, they will inevitab",
+      "abstract_zh": "As robots are deployed in the real world, they will inevitably make mistakes. Human interventions provide valuable feedback for improving their behavior, enabling them to adapt online to new scenarios. However, studying human-in-the-loop robot learning is difficult: real-world experiments are slow and expensive, so most algorithm development relies on simulated human models. We show that common human modeling assumptions do not match how real people intervene in practice. Through analyzing intervention data from human participants, we find that humans tend to intervene when agent progress stalls, and that their corrective actions are often suboptimal. Motivated by these findings, we introduce a progress-based model of human intervention that achieves higher rank correlation with real-user algorithm rankings, enabling realistic algorithm benchmarking and development in simulation. Building on these insights, we propose Q-OIL, a method that adds optimistic bonuses to intervention transitions in reinforcement learning and softly guides exploration toward human corrections. We find that decoupled critics are critical for stability because they prevent the bonuses from backing up to pre-intervention states. As a result, Q-OIL learns more efficiently than competitive baselines, achieving 10-50% higher success in simulation and on real robots, and improving pretrained VLAs on two bimanual manipulation tasks. As we ground both evaluation and algorithms in realistic human behavior, this work provides a practical path toward scalable robot learning from interventions.",
+      "authors": [
+        "Pranav Teegavarapu",
+        "Sriyash Poddar",
+        "Rico Qi"
+      ],
+      "authors_all": [
+        "Pranav Teegavarapu",
+        "Sriyash Poddar",
+        "Rico Qi",
+        "Cleah Winston",
+        "Krisha Khandelwal",
+        "Aykut Onyol",
+        "Natasha Jaques",
+        "Abhishek Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08576.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08576-p2.jpg",
+        "assets/img/covers/arxiv-2611-08576-p3.jpg",
+        "assets/img/covers/arxiv-2611-08576-p4.jpg"
+      ],
+      "arxiv_id": "2611.08576",
+      "abs_url": "http://arxiv.org/abs/2611.08576v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08576v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08577",
+      "source": "arxiv",
+      "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "title_zh": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "tldr_zh": "We present Meituan-Robotics-0 (MR0), a vision-language-actio",
+      "cover_zh": "We present Meituan-Robotics-0 (MR0), a vision-language-actio",
+      "abstract_zh": "We present Meituan-Robotics-0 (MR0), a vision-language-action foundation model and embodied-agent system for stationary-base desktop manipulation. MR0 combines 147 million vision-language samples with 15,060 hours of curated robot trajectories spanning 12 embodiments. A three-stage training recipe aligns multimodal representations with robot behavior through discrete action-token pre-training, transfers these priors to continuous cross-embodiment control through flow-matching mid-training, and adapts the policy through real-world post-training. We introduce Rollback, which pairs replaced policy segments with human corrections to provide positive and negative supervision for CFG-DAgger without value learning or advantage labeling. A unified end-effector interface supports heterogeneous embodiments, while asynchronous action-chunk merging maintains smooth execution under variable inference latency. An event-driven agent maintains persistent task events and reassesses plans when progress or feasibility changes, enabling cross-task retrieval and conditional task resumption. MR0 achieves 93.6% success on RoboTwin 2.0 and ranks fifth in the RoboDojo VLA track. Under matched HG-DAgger post-training, MR0 achieves higher average success rate and progress score than $π_{0.5}$ across three real-robot tasks. On Ethernet insertion, CFG-DAgger trained with Rollback data reaches 70% success and a progress score of 0.90. Qualitative agent deployments demonstrate cross-task event retrieval and recovery from temporarily unsatisfied task conditions.",
+      "authors": [
+        "Meituan Robotics Team",
+        "Caicheng Wang",
+        "Chen Zhao"
+      ],
+      "authors_all": [
+        "Meituan Robotics Team",
+        "Caicheng Wang",
+        "Chen Zhao",
+        "Chengpeng Jin",
+        "Duo Xu",
+        "Fengjiao Chen",
+        "Guanglu Wan",
+        "Heqing Yang",
+        "Jia Wang",
+        "Jiacong Zhou",
+        "Jie Hu",
+        "Jiyuan Ru",
+        "Lingfeng Zhang",
+        "Linjiang Huang",
+        "Manyuan Zhang",
+        "Ningchu Liu",
+        "Shijie Zhou",
+        "Si Liu",
+        "Shuo Li",
+        "Tianyi Zhang",
+        "Xi Zhang",
+        "Xin Chen",
+        "Xuezhi Cao",
+        "Xunliang Cai",
+        "Yanbin Zeng",
+        "Yang Yang",
+        "Yang Yi",
+        "Yanli Tan",
+        "Yifu Xu",
+        "Yimeng Jia",
+        "Yuchen Tang",
+        "Yuchen Xie",
+        "Yuxiang Zheng",
+        "Zerwei Chng",
+        "Zilong Huang",
+        "Zipeng Ye",
+        "Ziyuan Qin",
+        "Ziqin Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08577.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08577-p2.jpg",
+        "assets/img/covers/arxiv-2611-08577-p3.jpg",
+        "assets/img/covers/arxiv-2611-08577-p4.jpg"
+      ],
+      "arxiv_id": "2611.08577",
+      "abs_url": "http://arxiv.org/abs/2611.08577v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08577v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08698",
+      "source": "arxiv",
+      "title": "VICTR: Value-Informed In-Context Learning for Vision-Language-Action Models",
+      "title_zh": "VICTR: Value-Informed In-Context Learning for Vision-Language-Action Models",
+      "tldr_zh": "Recent advances in robot foundation models have highlighted",
+      "cover_zh": "Recent advances in robot foundation models have highlighted",
+      "abstract_zh": "Recent advances in robot foundation models have highlighted the potential of in-context learning (ICL) for adapting robot behavior from demonstrations without further fine-tuning. Previous work has used retrieval-based post-training to equip pretrained vision-language-action (VLA) models with the capability for ICL by teaching them to condition action predictions on retrieved visually-relevant demonstration chunks. However, the effectiveness of retrieval hinges on selecting context relevant to the current execution stage, which visual similarity alone may not capture. We introduce VICTR, a framework enabling in-context learning in VLAs via progress-informed context retrieval built around an In-Context Value Function Estimator (IC-VFE). IC-VFE conditions on a reference demonstration video, a language instruction and the current observation to estimate task-relative progress. By conditioning progress estimation on a reference demonstration, IC-VFE can align the current state with a demonstrated execution even for tasks unseen during training. VICTR uses the estimated progress to select demonstration chunks at corresponding stages of execution and supplies them to a $π_{0.5}$ policy post-trained for in-context action generation. On unseen out-of-domain real-world manipulation tasks, VICTR raises the success rate from 6.2% for a fine-tuned $π_{0.5}$ baseline to 23.8% and more than doubles the task progress rate, from 28.9% to 55.5%. Project page with code, data and videos: https://ai4ce.github.io/VICTR/",
+      "authors": [
+        "Luca Macesanu",
+        "Tianluo Zhang",
+        "Aditya Patil"
+      ],
+      "authors_all": [
+        "Luca Macesanu",
+        "Tianluo Zhang",
+        "Aditya Patil",
+        "Archit Sharma",
+        "Kevin Angers",
+        "Christopher M. Clark",
+        "Chen Feng",
+        "Juexiao Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08698.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08698-p2.jpg",
+        "assets/img/covers/arxiv-2611-08698-p3.jpg",
+        "assets/img/covers/arxiv-2611-08698-p4.jpg"
+      ],
+      "arxiv_id": "2611.08698",
+      "abs_url": "http://arxiv.org/abs/2611.08698v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08698v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08827",
+      "source": "arxiv",
+      "title": "ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models",
+      "title_zh": "ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models",
+      "tldr_zh": "Vision-language-action (VLA) models perform versatile manipu",
+      "cover_zh": "Vision-language-action (VLA) models perform versatile manipu",
+      "abstract_zh": "Vision-language-action (VLA) models perform versatile manipulation tasks from language instructions, but their inference cost limits how fast a robot can respond in closed-loop control. Visual token pruning reduces this cost; however, prior methods estimate token redundancy from encoded visual embeddings or attention, only after the visual encoder has processed the entire observation. We propose ours, a training-free token pruning method that moves the pruning decision ahead of the vision encoder by grounding it in a geometric prior derived from the robot's own action. The action chunk predicted at the previous control step is already available before the current observation is encoded, and it specifies the end-effector and camera motion between consecutive observations. The same action affects the two standard camera views asymmetrically: in the fixed third-person view, ours retains patches along the projected end-effector trajectory together with semantic anchors, while in the wrist view, it prunes patches that remain unchanged after compensating for the action-induced camera motion. Extensive experiments on two simulation environments (LIBERO and VLABench) and four real-robot tasks demonstrate that ours achieves up to 1.61 $×$ speedup and 59.5\\% FLOPs reduction with negligible degradation in success rates.",
+      "authors": [
+        "Sungwon Moon",
+        "Minji Kim",
+        "Hyemin Boo"
+      ],
+      "authors_all": [
+        "Sungwon Moon",
+        "Minji Kim",
+        "Hyemin Boo",
+        "Daeun Song",
+        "Jiyoung Lee"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08827.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08827-p2.jpg",
+        "assets/img/covers/arxiv-2611-08827-p3.jpg",
+        "assets/img/covers/arxiv-2611-08827-p4.jpg"
+      ],
+      "arxiv_id": "2611.08827",
+      "abs_url": "http://arxiv.org/abs/2611.08827v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08827v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08895",
+      "source": "arxiv",
+      "title": "Localizing and Editing the Goal Representation of a Vision-Language-Action Model",
+      "title_zh": "Localizing and Editing the Goal Representation of a Vision-Language-Action Model",
+      "tldr_zh": "Operators can state safety constraints for robots as prohibi",
+      "cover_zh": "Operators can state safety constraints for robots as prohibi",
+      "abstract_zh": "Operators can state safety constraints for robots as prohibitions such as \"do not put the bowl on the stove\". We study whether OpenVLA follows such prohibitions and where it represents the goal it executes. The 10 tasks of LIBEROGoal share one scene, so we can label the goal that each rollout executes. We combine closed-loop rollouts with activation patching, linear probes, activation steering and runtime monitors. On LIBERO-Goal, negation had no detectable effect on which task OpenVLA executed. The model executed the forbidden task in 79% of negated rollouts and completed 78% of plain tasks. A goal probe gives similar read-outs under \"not X\" and \"X\". Activation patching shows that the first action depends mostly on the instruction tokens before layer 12 and on the last prompt token from layer 16 onward. A fixed steering vector at the instruction tokens at layer 8 redirected 12 of 18 rollouts. Fixed vectors and prefill patches at layers 12 to 20 redirected none of 158. From layer 16, only patches at every decoded action token redirected the robot (15 of 18 rollouts at layer 24). When the instruction changes during a rollout, the layer-32 goal read-out detects non-compliance better than failure detectors, and an external probe on image and instruction features performs comparably. These results support enforcing prohibitions outside the instruction and monitoring goal read-outs against the specification. Goal edits in OpenVLA should act before layer 12 or patch every action token.",
+      "authors": [
+        "Sudhanshu Srivastava",
+        "Faisal Aqlan"
+      ],
+      "authors_all": [
+        "Sudhanshu Srivastava",
+        "Faisal Aqlan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08895.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08895-p2.jpg",
+        "assets/img/covers/arxiv-2611-08895-p3.jpg",
+        "assets/img/covers/arxiv-2611-08895-p4.jpg"
+      ],
+      "arxiv_id": "2611.08895",
+      "abs_url": "http://arxiv.org/abs/2611.08895v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08895v1",
       "venue": "",
       "venue_announced": "",
       "score": 12,
@@ -252154,6 +252895,58 @@
       "arxiv_id": "2611.08462",
       "abs_url": "http://arxiv.org/abs/2611.08462v1",
       "pdf_url": "https://arxiv.org/pdf/2611.08462v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08657",
+      "source": "arxiv",
+      "title": "JEPAhead: From Inpainting to Causal Forecasting for Urban Driving",
+      "title_zh": "JEPAhead: From Inpainting to Causal Forecasting for Urban Driving",
+      "tldr_zh": "We fine-tune a pre-trained V-JEPA1 predictor from bidirectio",
+      "cover_zh": "We fine-tune a pre-trained V-JEPA1 predictor from bidirectio",
+      "abstract_zh": "We fine-tune a pre-trained V-JEPA1 predictor from bidirectional latent inpainting to action-free causal forecasting while keeping the encoder frozen. Using contiguous past observations, horizon-aligned targets, and group-level causal attention, the model forecasts eight future token groups, corresponding to sixteen frames, in one forward pass. On CARLA Town12, it retrieves the correct future among 591 candidates in 69.0% of cases, compared with 55.3% for persistence, with greater gains at longer horizons and on tokens exhibiting greater change. It also outperforms a compact predictor trained from scratch with six times fewer parameters. Semantic analysis indicates driving-relevant information in predicted features: a fixed linear probe trained on real encoder tokens achieves 0.16 mIoU on patches undergoing semantic-class changes, versus 0.13 for persistence. Vehicle-conditioned retrieval improves over persistence by 15 percentage points at the longest horizon. Pixel-space evaluation shows modest L1 gains but little improvement under LPIPS, motivating direct evaluation through latent and semantic measures alongside an oracle reconstruction reference. These findings support further investigation of latent forecasting for driving perception, while downstream utility remains unverified.",
+      "authors": [
+        "Daniel G. P. Petrini",
+        "Davi Pincinato",
+        "Fabio Grassiotto"
+      ],
+      "authors_all": [
+        "Daniel G. P. Petrini",
+        "Davi Pincinato",
+        "Fabio Grassiotto",
+        "Pedro L. F. Prado",
+        "Alexandre F. S. Osorio",
+        "Raphael V. Ramos",
+        "Felipe Pamboukian"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-05",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08657.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08657-p2.jpg",
+        "assets/img/covers/arxiv-2611-08657-p3.jpg",
+        "assets/img/covers/arxiv-2611-08657-p4.jpg"
+      ],
+      "arxiv_id": "2611.08657",
+      "abs_url": "http://arxiv.org/abs/2611.08657v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08657v1",
       "venue": "",
       "venue_announced": "",
       "score": 9,
@@ -279754,6 +280547,405 @@
       "arxiv_id": "2611.08412",
       "abs_url": "http://arxiv.org/abs/2611.08412v1",
       "pdf_url": "https://arxiv.org/pdf/2611.08412v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08665",
+      "source": "arxiv",
+      "title": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
+      "title_zh": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
+      "tldr_zh": "We introduce two fundamental advances to the NanoVDB data st",
+      "cover_zh": "We introduce two fundamental advances to the NanoVDB data st",
+      "abstract_zh": "We introduce two fundamental advances to the NanoVDB data structure: dynamic GPU-native topological updates, and a voxel-sequential access paradigm that dramatically accelerates point-wise and stencil-based operators on sparse grids. NanoVDB's linearized memory layout has delivered strong GPU performance, and the Index-Grid concept introduced in the fVDB framework [Williams et al 2024] provided topology/data separation and optimal compactness of storage in sparse machine learning workloads. However, all these prior iterations of NanoVDB assume a static topology that has precluded use of this data structure in simulation and dynamic geometric processes. We eliminate this limitation by introducing a suite of dynamic topology operators -- morphological dilation, grid merging, pruning, and cross-resolution coarsening and refinement. These operators use bit-parallel algorithms to reconstruct grids containing hundreds of millions of voxels in just a few milliseconds. We also introduce a voxel-sequential access paradigm and data structure for GPU kernels operating on sparse data. We stream active voxels as a flat linear sequence, minimizing or eliminating the need for tree traversal in the process. This achieves compute density and regularity that allow even complex stencil-based operators to approach peak memory bandwidth, with minimal storage overhead. Together, these contributions remove the read-only constraint from NanoVDB, establishing it as a high-performance primary representation for dynamic GPU simulation and geometry manipulation. We evaluate the efficacy of our newly introduced operators in benchmarks sourced from applications such as 3D reconstruction, fluid simulation, and large-scale mesh voxelization.",
+      "authors": [
+        "Eftychios Sifakis",
+        "Francis Williams",
+        "Christopher Horvath"
+      ],
+      "authors_all": [
+        "Eftychios Sifakis",
+        "Francis Williams",
+        "Christopher Horvath",
+        "Rohan Sawhney",
+        "Mark Harris",
+        "Jonathan Swartz",
+        "Ken Museth"
+      ],
+      "primary_category": "cs.GR",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08665.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08665-p2.jpg",
+        "assets/img/covers/arxiv-2611-08665-p3.jpg",
+        "assets/img/covers/arxiv-2611-08665-p4.jpg"
+      ],
+      "arxiv_id": "2611.08665",
+      "abs_url": "http://arxiv.org/abs/2611.08665v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08665v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08701",
+      "source": "arxiv",
+      "title": "Does a Trading Policy Need to Know What It Trades? Microstructure Invariance and Zero-Shot Transfer of Execution Policies",
+      "title_zh": "Does a Trading Policy Need to Know What It Trades? Microstructure Invariance and Zero-Shot Transfer of Execution Policies",
+      "tldr_zh": "Execution algorithms are calibrated asset by asset, because",
+      "cover_zh": "Execution algorithms are calibrated asset by asset, because",
+      "abstract_zh": "Execution algorithms are calibrated asset by asset, because the queues, trade rates and bid-ask spreads they face differ by orders of magnitude across assets. For reinforcement learning this is zero-shot generalisation across contexts of very different scales, and microstructure invariance proposes a normalisation fixed by theory: measured in each asset's own units of time, size and price, markets look alike. In an exact order-by-order replay of public Nasdaq data, we train policies once, on 954 stocks in 2019, to choose between waiting in the queue and crossing the spread, and evaluate them unchanged on 1,964 unseen stocks in 2020-21, 2,629 stocks in 2025-26, crypto pairs and a second exchange. First, a policy that sees a stock only through its recent trade rate, trade size, spread and price increment (tick) costs within 0.015 spreads per share (a fifth of what learning saves) of a policy whose training data included the stock, and the stock's own history does not help it; it comes within a similar margin of policies trained on the second exchange when every episode counts equally, and within a wider one on crypto. Second, in mean cost before fees, invariant units beat raw units, z-scores and asset descriptors, but by under a basis point: most of their advantage is information and a common cost scale that a learner can also take as plain inputs, and none of the representations tested extrapolates to unseen spread regimes. Third, a near-zero transfer gap to a pooled comparator is weak evidence that a representation is right: we show that such a comparator detects only a small share of what a poor representation loses, and confirm it in synthetic markets and on pendulums.",
+      "authors": [
+        "Hieu Tran",
+        "Hong Yu"
+      ],
+      "authors_all": [
+        "Hieu Tran",
+        "Hong Yu"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-05",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08701.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08701-p2.jpg",
+        "assets/img/covers/arxiv-2611-08701-p3.jpg",
+        "assets/img/covers/arxiv-2611-08701-p4.jpg"
+      ],
+      "arxiv_id": "2611.08701",
+      "abs_url": "http://arxiv.org/abs/2611.08701v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08701v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08797",
+      "source": "arxiv",
+      "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
+      "title_zh": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
+      "tldr_zh": "Predicting outcomes from spatiotemporal data, such as assess",
+      "cover_zh": "Predicting outcomes from spatiotemporal data, such as assess",
+      "abstract_zh": "Predicting outcomes from spatiotemporal data, such as assessing Parkinson's severity from human motion, often requires explainability in addition to accuracy. Practitioners need to know what drove the prediction, whether it be spatial (a body joint), temporal (a specific window), or both. Shapley values are attributions computed by treating input features as players in a cooperative game and measuring how the model output changes as coalitions of players are removed. Computing them involves choosing what counts as players, how absent players are imputed, and how the game is evaluated. How these choices affect explanation quality is poorly understood for spatiotemporal data, and real data carries no ground-truth attributions to check against. We present MotionBench-XAI, a benchmark built on i) five synthetic spatiotemporal datasets with exact ground-truth Shapley values, ii) three real datasets across clinical gait, electrocardiogram, and audio, iii) ten attribution methods across three player sets, and iv) three trained architectures. We show that grouping features into players, across time, space, or both, matters more than the choice of imputer. Generative imputers improve explanations only when their conditional models are accurate. On real data, the standard proxy metrics select contradictory best methods. We distill these findings into practical insights and provide an open-source pipeline.",
+      "authors": [
+        "Mathilde Papillon",
+        "Louisa Cornelis",
+        "Nina Miolane"
+      ],
+      "authors_all": [
+        "Mathilde Papillon",
+        "Louisa Cornelis",
+        "Nina Miolane"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-05",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08797.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08797-p2.jpg",
+        "assets/img/covers/arxiv-2611-08797-p3.jpg",
+        "assets/img/covers/arxiv-2611-08797-p4.jpg"
+      ],
+      "arxiv_id": "2611.08797",
+      "abs_url": "http://arxiv.org/abs/2611.08797v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08797v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08814",
+      "source": "arxiv",
+      "title": "It Takes Two to Tangram: Multi-Agent Object Centric Reinforcement Learning for Assembly",
+      "title_zh": "It Takes Two to Tangram: Multi-Agent Object Centric Reinforcement Learning for Assembly",
+      "tldr_zh": "Geometric assembly requires fine spatiotemporal coordination",
+      "cover_zh": "Geometric assembly requires fine spatiotemporal coordination",
+      "abstract_zh": "Geometric assembly requires fine spatiotemporal coordination to place parts without causing collisions or deadlocks under tight clearances. To address this, we present an object-centric reinforcement learning framework that treats each part as an agent and learns a shared policy for continuous assembly control. A graph neural network represents the pieces, their target poses, and their spatial relationships, and predicts translational and angular velocities for each component. Per-agent proximal policy optimization with a centralized graph critic directly learns motion and temporal coordination within a single feedback policy. We study this formulation through planar Tangram assembly, where pieces must slide and rotate into a given configuration while remaining on the assembly surface. Procedural generation of target configurations and randomized initial arrangements support training and evaluation across diverse assembly problems. Our experiments isolate the roles of relational structure and multi-agent optimization, and compare learned control with sampling-based planning. We demonstrate concurrent assembly in simulation and transfer the policy to sequential execution on a real robot, as our object-centric formulation decouples learned assembly coordination from low-level physical control. Project page: https://tangrambench.org/",
+      "authors": [
+        "Paul Knaußt",
+        "Kay Pompetzki",
+        "Nico Bohlinger"
+      ],
+      "authors_all": [
+        "Paul Knaußt",
+        "Kay Pompetzki",
+        "Nico Bohlinger",
+        "Niklas Funk",
+        "Cristiana de Farias",
+        "Rolf Findeisen",
+        "Jan Peters"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08814.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08814-p2.jpg",
+        "assets/img/covers/arxiv-2611-08814-p3.jpg",
+        "assets/img/covers/arxiv-2611-08814-p4.jpg"
+      ],
+      "arxiv_id": "2611.08814",
+      "abs_url": "http://arxiv.org/abs/2611.08814v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08814v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08904",
+      "source": "arxiv",
+      "title": "MotionCore: A Latent Neural Simulator for Video Generation with Rigid-Body Dynamics",
+      "title_zh": "MotionCore: A Latent Neural Simulator for Video Generation with Rigid-Body Dynamics",
+      "tldr_zh": "Video generation models can produce highly realistic videos",
+      "cover_zh": "Video generation models can produce highly realistic videos",
+      "abstract_zh": "Video generation models can produce highly realistic videos while generating physically inconsistent object motion. This limitation suggests that visual modeling alone may not provide a transferable representation of physical dynamics. We introduce MotionCore, a framework for learning physical dynamics via a learnable partial differential equation solver and focuses on rigid-body motion. We introduce a latent neural simulator learning to predict the evolution of object-level physical states from observed motion. Its predictions are then converted into spatially aligned latent controls for a controllable video diffusion model. The generator serves as a visual interface: it provides appearance and scene detail, while the learned dynamics model specifies the physical trajectory. To preserve this trajectory through the interface, MotionCore combines a diffusion-matching objective with a low-capacity decodability constraint on object identity and position. We evaluate MotionCore on public physical-consistency benchmarks and on paired data with known trajectories. Results indicate that MotionCore improves physical consistency and trajectory obedience in the evaluated rigid-body settings, while maintaining comparable visual quality. A controlled ablation protocol compares learned dynamics with an analytic prior and studies the choice of latent evolution processor.",
+      "authors": [
+        "Zheng Wang",
+        "Zhengwei Gong",
+        "Yuanzhi Liang"
+      ],
+      "authors_all": [
+        "Zheng Wang",
+        "Zhengwei Gong",
+        "Yuanzhi Liang",
+        "Chi Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-06",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08904.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08904-p2.jpg",
+        "assets/img/covers/arxiv-2611-08904-p3.jpg",
+        "assets/img/covers/arxiv-2611-08904-p4.jpg"
+      ],
+      "arxiv_id": "2611.08904",
+      "abs_url": "http://arxiv.org/abs/2611.08904v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08904v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08914",
+      "source": "arxiv",
+      "title": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
+      "title_zh": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
+      "tldr_zh": "Recent progress in embodied robotics is bringing robots clos",
+      "cover_zh": "Recent progress in embodied robotics is bringing robots clos",
+      "abstract_zh": "Recent progress in embodied robotics is bringing robots closer to deployment in homes, as vision-language models (VLMs) are demonstrating significant advances in reasoning, making VLM-driven robots promising home assistant agents. These agents will often be introduced into homes that already have cameras, Internet of Things (IoT) devices, and residents with wearables. To fulfill their potential, they need to integrate with existing smart infrastructure and reason through ambiguous scenarios: a smoke alarm may come from a pan about to ignite, a pan already on fire, a resident cooking or a faulty sensor, and each calls for a different response. To that end, we introduce HomeLoop, a simulation framework and benchmark built on Isaac Sim that combines robot bodies, networked devices and wearables, simulated residents and visitors, faulty sensors, and hazards that evolve over time. Our benchmark is composed of 20 tasks across five families grounded in real-world household hazards and needs, and designed so that the same alert can have different causes. A runtime monitor scores each episode with temporal-logic checks on the final outcome and the actions along the way, and every action carries a predefined cost. We evaluate six open-weight and proprietary VLMs. The best achieves a family-balanced score of 61.9%, and across models we see a pattern of over-reaction: failed episodes involving prohibited interventions outnumber those involving missed required interventions by more than two to one, with models often shutting off the stove before investigating the alarm's cause. HomeLoop is an extensible foundation intended for use in research on robot-IoT coordination, long-term memory, proactive assistance, and privacy-safety trade-offs. HomeLoop will be released with 2,100 home layouts that can be automatically furnished in diverse configurations, five robot bodies and 20 networked device types.",
+      "authors": [
+        "Ramy ElMallah",
+        "Marc Bishara",
+        "Hyegang Kim"
+      ],
+      "authors_all": [
+        "Ramy ElMallah",
+        "Marc Bishara",
+        "Hyegang Kim",
+        "Yuxi Zhang",
+        "Chongyu Zhu",
+        "Chi-Guhn Lee"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08914.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08914-p2.jpg",
+        "assets/img/covers/arxiv-2611-08914-p3.jpg",
+        "assets/img/covers/arxiv-2611-08914-p4.jpg"
+      ],
+      "arxiv_id": "2611.08914",
+      "abs_url": "http://arxiv.org/abs/2611.08914v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08914v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08920",
+      "source": "arxiv",
+      "title": "HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer",
+      "title_zh": "HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer",
+      "tldr_zh": "Human videos contain abundant object-manipulation demonstrat",
+      "cover_zh": "Human videos contain abundant object-manipulation demonstrat",
+      "abstract_zh": "Human videos contain abundant object-manipulation demonstrations, but they do not directly provide motion cues that a robot can follow. We present HOC2R, a Hand-Object Contact trajectory extractor for Robot motion that combines frozen DINOv3 and SAM 2.1 features with learned heads for hand-object association and contact localization. HOC2R supports two modes: count-aware automation that detects, counts, and localizes visible contacts in untrimmed videos, and fixed-two localization for two-finger grippers when contact frames are known. On a 30-task point-annotated benchmark, count-aware automation improves contact-count accuracy from 58.1% to 71.4% and reduces mean localization distance from 19.81 to 10.46 pixels relative to an adapted VRB2 baseline. On seven unseen RGB-D rollouts, a five-task fixed-two checkpoint reduces mean localization distance from 67.67 to 27.02 pixels. Across six robot evaluation sequences, the 30-task fixed-two checkpoint produces four feasible trajectories and succeeds on three tasks, compared with two feasible trajectories and one successful task for each adapted baseline. HOC2R is competitive in the evaluated single-hand scenes, robust to the hand-color shift, and strongest in the evaluated multi-hand scenes. These results support HOC2R as a practical pseudo-labeling method for extracting robot-usable contact trajectories from human demonstrations.",
+      "authors": [
+        "Hongkun Yu",
+        "Francisco M. López",
+        "Francisco Cruz"
+      ],
+      "authors_all": [
+        "Hongkun Yu",
+        "Francisco M. López",
+        "Francisco Cruz"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08920.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08920-p2.jpg",
+        "assets/img/covers/arxiv-2611-08920-p3.jpg",
+        "assets/img/covers/arxiv-2611-08920-p4.jpg"
+      ],
+      "arxiv_id": "2611.08920",
+      "abs_url": "http://arxiv.org/abs/2611.08920v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08920v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08954",
+      "source": "arxiv",
+      "title": "MetricPose: Flexible 3D Human Pose Estimation with Depth and Geometric Cues",
+      "title_zh": "MetricPose: Flexible 3D Human Pose Estimation with Depth and Geometric Cues",
+      "tldr_zh": "In this paper, we present a 3D human pose estimator that pre",
+      "cover_zh": "In this paper, we present a 3D human pose estimator that pre",
+      "abstract_zh": "In this paper, we present a 3D human pose estimator that predicts metrically accurate human joint positions in the camera coordinate frame. This task requires recovering the configuration of the body joints, scale, and metric camera-local placement. In monocular images, body size and camera distance are coupled through perspective projection and therefore cannot be determined uniquely from image alone. This ambiguity can be reduced by combining three complementary sources of information: learned RGB priors, direct depth measurements, and geometric constraints (e.g., ground contact) from the environment. We extend a pretrained full-body estimator with optional metric depth and geometry-processing modules that improve camera-distance estimation and depth-guided body refinement while preserving RGB-only operation. The resulting unified model supports RGB, RGB-Ground, and RGB-D using shared learned parameters. Unlike pelvis-relative error, camera-local error also measures placement relative to the camera. Compared with the existing foundation model SAM 3D Body, our methods with RGB, RGB-Ground, and RGB-D modes reduce camera-local joint-position error by 12.16%, 31.00% and 54.61% respectively.",
+      "authors": [
+        "Shifan Zhu",
+        "Sabad Modi",
+        "Hang Yang"
+      ],
+      "authors_all": [
+        "Shifan Zhu",
+        "Sabad Modi",
+        "Hang Yang",
+        "Arushi Agrawal",
+        "Steven Gao",
+        "Meghan Huber",
+        "Nathan Wycoff",
+        "Donghyun Kim"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-06",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-08954.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08954-p2.jpg",
+        "assets/img/covers/arxiv-2611-08954-p3.jpg",
+        "assets/img/covers/arxiv-2611-08954-p4.jpg"
+      ],
+      "arxiv_id": "2611.08954",
+      "abs_url": "http://arxiv.org/abs/2611.08954v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08954v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
