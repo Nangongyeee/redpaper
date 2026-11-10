@@ -2,11 +2,11 @@
   "id": "arxiv-2610-40075",
   "source": "arxiv",
   "title": "Learning Safe Flow Matching Robot Policies from Binary Feasibility Oracles",
-  "title_zh": "Learning Safe Flow Matching Robot Policies from Binary Feasibility Oracles",
+  "title_zh": "从二值可行性预言中学习安全的流匹配机器人策略",
   "abstract": "Robot foundation models increasingly rely on flow-based action generation for general-purpose manipulation, yet the generated actions are not guaranteed to satisfy physical constraints such as joint limits and collision avoidance. This problem is especially challenging when the feasible set cannot be described analytically and is accessible only through black-box feasibility oracles. We study this practical oracle-only setting and propose an oracle-guided differentiable safeguard for safe flow-matching robot policies. The safeguard uses binary feasibility queries to correct unsafe updates in the forward pass, while extracting local boundary information to provide constraint-aware learning signals in the backward pass. Combined with discrete-time flow matching, the same safeguard is used during training and inference, enabling forward--backward aligned policy learning without explicit or differentiable constraint models. Experiments on obstacle-aware robotic manipulation demonstrate 100% constraint satisfaction while preserving task performance.",
-  "abstract_zh": "Robot foundation models increasingly rely on flow-based action generation for general-purpose manipulation, yet the generated actions are not guaranteed to satisfy physical constraints such as joint limits and collision avoidance. This problem is especially challenging when the feasible set cannot be described analytically and is accessible only through black-box feasibility oracles. We study this practical oracle-only setting and propose an oracle-guided differentiable safeguard for safe flow-matching robot policies. The safeguard uses binary feasibility queries to correct unsafe updates in the forward pass, while extracting local boundary information to provide constraint-aware learning signals in the backward pass. Combined with discrete-time flow matching, the same safeguard is used during training and inference, enabling forward--backward aligned policy learning without explicit or differentiable constraint models. Experiments on obstacle-aware robotic manipulation demonstrate 100% constraint satisfaction while preserving task performance.",
-  "tldr_zh": "Robot foundation models increasingly rely on flow-based acti",
-  "cover_zh": "Robot foundation models increasingly rely on flow-based acti",
+  "abstract_zh": "机器人基础模型日益依赖基于流的动作生成来实现通用操作，但生成的动作无法保证满足关节限制和避碰等物理约束。当可行集无法解析描述且只能通过黑盒可行性预言访问时，这一问题尤为棘手。我们研究了这种仅依赖预言的实际场景，并提出了一种预言引导的可微分安全防护机制，用于安全的流匹配机器人策略。该防护机制利用二值可行性查询在前向传播中纠正不安全的更新，同时在反向传播中提取局部边界信息以提供约束感知的学习信号。结合离散时间流匹配，同一防护机制在训练和推理阶段均被使用，从而在无需显式或可微分约束模型的情况下实现前向-反向对齐的策略学习。在障碍物感知的机器人操作实验中，该方法在保持任务性能的同时实现了100%的约束满足率。",
+  "tldr_zh": "提出预言引导的可微分安全防护，确保流匹配策略满足约束。",
+  "cover_zh": "黑盒约束也不怕！这个安全防护让机器人策略100%避障",
   "authors": [
     {
       "name": "Jianming Ma",
