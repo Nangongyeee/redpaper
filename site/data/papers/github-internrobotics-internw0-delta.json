@@ -1,0 +1,73 @@
+{
+  "id": "github-internrobotics-internw0-delta",
+  "source": "github",
+  "title": "InternRobotics/InternW0-Delta",
+  "title_zh": "InternRobotics/InternW0-Delta",
+  "abstract": "InternW0-Δ : A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data\n\nA World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data English · 中文 🚀 Quick start · 🔥 Training · 🦾 Evaluation & deployment · 📦 Models 🌐 Project page · 📄 Paper / arXiv · 🤗 Hugging Face (coming soon) ## ✨ Overview **InternW0-delta (InternW0-Δ)** is a unified world–action model that learns from robot and human demonstrations. It combines pretrained video dynamics, a frozen vision-language model, and training-only 4D supervision to generate robot actions. - 🧩 **World–Action MoT.** A pretrained video expert and an action expert exchange information through masked self-attention, with visual memory and task-conditioned scene semantics. - 🔮 **Causal Imprint.** Compact queries learn action-relevant scene changes from future supervision, making predictive features available to the action expert. - 🌌 **4D distillation.** A frozen Track4World teacher transfers geometry and motion knowledge during training. The teacher and distillation branch are absent from action inference. The repository covers data preparation, pretraining, 4D distillation, post-training, evaluation, and real robot deployment. ## 🚀 Quick start ### 1. Install Use Linux, Python 3.11, a CUDA GPU, and FFmpeg. DeepSpeed extensions require a C++ compiler and a matching CUDA toolkit. ### 2. Prepare models and data Download the backbones and policy weights following the [model guide](docs/models.md). For post-training, place the initialization weights at `checkpoints/pretrain.pt`. Prepare the selected dataset using the [data guide](docs/data.md). Run the commands below from the repository root. ### 3. Post-train a policy For LIBERO: Continue to [LIBERO Plus evaluation](eval/libero_plus/README.md), or choose another task below. ## 🔥 Training ### Pretraining Choose datasets through `source_files` in [dataset.yaml](configs/pretrain/dataset.yaml). Training loads each selected source's normalization statistics automatically. Prepare the [action expert initialization](docs/models.md#pr",
+  "abstract_zh": "InternW0-Δ（InternW0-delta）是一个统一的世界-动作模型，从机器人和人类演示中学习。它结合了预训练视频动力学、冻结的视觉语言模型和仅训练时使用的4D监督来生成机器人动作。其核心包括：世界-动作MoT，预训练视频专家和动作专家通过掩码自注意力交换信息，并具有视觉记忆和任务条件场景语义；因果印记，紧凑查询从未来监督中学习与动作相关的场景变化，使预测特征可供动作专家使用；4D蒸馏，冻结的Track4World教师在训练期间传递几何和运动知识，教师和蒸馏分支在动作推理时不存在。该仓库涵盖数据准备、预训练、4D蒸馏、后训练、评估和真实机器人部署。",
+  "tldr_zh": "InternW0-Δ统一世界模型与动作模型，利用视频动力学和4D蒸馏生成机器人动作。",
+  "cover_zh": "机器人动作生成新突破｜世界模型+4D蒸馏，推理时无需教师",
+  "authors": [
+    {
+      "name": "InternRobotics",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-09",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/InternRobotics/InternW0-Delta",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 43,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 43,
+      "hint": "⭐ 140"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "官方世界-动作模型，含20K小时开放数据与完整训练部署流程，属世界模型/操作VLA方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "世界模型"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "InternRobotics",
+    "repo": "InternW0-Delta",
+    "stars": 140,
+    "language": "Python",
+    "pushed_at": "2026-10-09",
+    "created_at": "2026-09-24",
+    "topics": [],
+    "archived": false
+  }
+}

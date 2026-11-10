@@ -1,0 +1,73 @@
+{
+  "id": "github-yimingc9-physiformer",
+  "source": "github",
+  "title": "yimingc9/PhysiFormer",
+  "title_zh": "yimingc9/PhysiFormer",
+  "abstract": "Learning to Simulate Mechanics in World Space\n\n🫧PhysiFormer: Learning to Simulate Mechanics in World Space NeurIPS 2026 Yiming Chen, Yushi Lan, Andrea Vedaldi Visual Geometry Group, University of Oxford We present PhysiFormer(pronouced 🫧fizzy🫧former), a diffusion transformer for physically-plausible 3D object motion. Unlike video world models that operate in view-dependent pixel space, PhysiFormer represents objects as 3D meshes expressed in world coordinates. Given the initial vertex positions and velocities, as well as object material type, rigid or elastic, the model samples future vertex trajectories. While related neural physics approaches build on ad-hoc latent spaces or explicitly enforce rigidity and causality, PhysiFormer shows that excellent results can be obtained without any such inductive biases, by casting vertex trajectory prediction as a single denoising diffusion process directly in world coordinates. The probabilistic formulation captures uncertainty in the learned dynamics, enabling diverse plausible futures from initial conditions, making this framework potentially useful for applications with unobserved uncertainty. The model features attention factorized over time, space, and objects for efficiency, enabling permutation-invariant multi-object reasoning without needing explicit object encoding. Trained on over 100k simulated trajectories, PhysiFormer generates rigid and elastic mechanics, and generalises to mixed-material settings, unseen real-world geometries, and larger object counts. It substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency. Our results position coordinate-space diffusion as a promising step toward view-invariant, geometry-aware world modelling for robotics, graphics, and physical design. ## 📦 Coming Soon The dataset will be released soon. Please stay tuned! ## ⚙️ Setup Model defauts to PyTorch CUDA SDPA kernels. If unavailable, model uses math/chunked attention fallback. ## 🤗 Model Checkpo",
+  "abstract_zh": "我们提出 PhysiFormer（发音为“fizzy former”），一种用于生成物理上合理的 3D 物体运动的扩散 Transformer。与在依赖视角的像素空间中运行的视频世界模型不同，PhysiFormer 将物体表示为在世界坐标系中表达的 3D 网格。给定初始顶点位置和速度，以及物体材质类型（刚性或弹性），模型采样未来的顶点轨迹。虽然相关的神经物理方法基于临时潜在空间或显式强制刚性和因果性，但 PhysiFormer 表明，通过将顶点轨迹预测直接在世界坐标中转化为单个去噪扩散过程，无需任何此类归纳偏差即可获得优异结果。概率公式捕捉了学习动力学中的不确定性，能够从初始条件生成多样化的合理未来，使得该框架可能适用于具有未观测不确定性的应用。该模型具有在时间、空间和物体上分解的注意力机制以提高效率，无需显式物体编码即可实现置换不变的多物体推理。在超过 10 万条模拟轨迹上训练后，PhysiFormer 能够生成刚性和弹性力学，并泛化到混合材质设置、未见过的真实世界几何形状以及更大的物体数量。在轨迹精度、刚性保持和基于动量的物理一致性方面，它大幅优于自回归基线。我们的结果将坐标空间扩散定位为迈向机器人学、图形学和物理设计中视角不变、几何感知的世界建模的有希望的一步。",
+  "tldr_zh": "PhysiFormer 用扩散 Transformer 在世界坐标中直接生成物理合理的 3D 运动。",
+  "cover_zh": "抛弃像素空间！这个扩散模型直接在3D世界坐标里模拟物理",
+  "authors": [
+    {
+      "name": "yimingc9",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-19",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/yimingc9/PhysiFormer",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 36,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 36,
+      "hint": "⭐ 63"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "牛津VGG出品的NeurIPS论文，世界坐标扩散Transformer做物理仿真，属世界模型方向，有算法新意。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "世界模型"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "yimingc9",
+    "repo": "PhysiFormer",
+    "stars": 63,
+    "language": "Python",
+    "pushed_at": "2026-10-19",
+    "created_at": "2026-06-08",
+    "topics": [],
+    "archived": false
+  }
+}

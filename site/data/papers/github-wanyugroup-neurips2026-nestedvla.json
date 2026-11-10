@@ -1,0 +1,73 @@
+{
+  "id": "github-wanyugroup-neurips2026-nestedvla",
+  "source": "github",
+  "title": "WanyuGroup/NeurIPS2026-NestedVLA",
+  "title_zh": "WanyuGroup/NeurIPS2026-NestedVLA",
+  "abstract": "[NeurIPS 2026] Core algorithm for NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models\n\n# NestedVLA Minimal algorithm release for **NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models**. This repository contains the method components needed to: 1. turn action-expert parameter deltas into fixed-size patch tokens; 2. compute a frozen top-(K) support mask and per-patch scales; 3. train a task-conditioned hypernetwork on the tokenized deltas; and 4. generate and reconstruct a task-specific action-expert update. The release intentionally excludes benchmark datasets, robot simulators, training checkpoints, and experiment-specific launch files. ## Install Only PyTorch is required. ## Minimal example The example uses synthetic tensors. In a VLA pipeline, `deltas` are the action-expert differences between independently fine-tuned policies and the frozen base policy. ## Scope This initial release focuses on the core algorithm and a stable tensor-level API. Integration with individual VLA frameworks and released checkpoints will be added separately. ## Citation ## License MIT",
+  "abstract_zh": "NestedVLA 的核心算法：为视觉-语言-动作模型学习巩固与生成技能。本仓库包含 NestedVLA 方法所需的关键组件：1. 将动作专家参数增量转换为固定大小的 patch token；2. 计算冻结的 top-(K) 支持掩码和每个 patch 的缩放因子；3. 在 token 化后的增量上训练任务条件超网络；4. 生成并重建任务特定的动作专家更新。本次发布有意不包含基准数据集、机器人模拟器、训练检查点和实验特定的启动文件。仅需 PyTorch。示例使用合成张量。在 VLA 流程中，deltas 是独立微调策略与冻结基础策略之间的动作专家差异。本初始版本聚焦核心算法和稳定的张量级 API，与各个 VLA 框架及已发布检查点的集成将另行添加。",
+  "tldr_zh": "NestedVLA 核心算法：将动作专家参数增量转为 token，用超网络生成任务特定更新。",
+  "cover_zh": "把动作专家参数变成 token？NestedVLA 用超网络生成技能更新",
+  "authors": [
+    {
+      "name": "WanyuGroup",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-14",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/WanyuGroup/NeurIPS2026-NestedVLA",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 0,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 0,
+      "hint": "⭐ 0"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "NeurIPS 2026 官方 VLA 技能整合与生成核心算法，属操作 VLA 方向；但仅发布最小算法、无数据集与仿真器，工程落地性有限。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "操作"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "WanyuGroup",
+    "repo": "NeurIPS2026-NestedVLA",
+    "stars": 0,
+    "language": "Python",
+    "pushed_at": "2026-10-14",
+    "created_at": "2026-10-14",
+    "topics": [],
+    "archived": false
+  }
+}

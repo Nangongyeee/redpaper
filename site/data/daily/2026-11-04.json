@@ -3,6 +3,97 @@
   "count": 37,
   "papers": [
     {
+      "id": "arxiv-2611-06905",
+      "source": "arxiv",
+      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+      "title_zh": "强化学习实现通用机器人策略的规模化改进",
+      "tldr_zh": "强化学习实现通用机器人策略的多任务在线改进与泛化。",
+      "cover_zh": "机器人策略也能在线进化？多任务泛化竟靠这个方案",
+      "abstract_zh": "通用机器人策略的引入使得单个大型模型能够从海量预训练语料中学习执行多种任务。尽管这些模型通常展现出强大的零样本泛化能力，但在部署中往往需要适应阶段才能达到足够性能。通过强化学习（RL）进行的迭代自我改进已被证明有望实现这种适应，然而此类方法主要在单任务设置中探索——目标仅是改进狭窄的部署任务——这与基础策略的多任务能力形成鲜明对比。在本工作中，我们探究通用机器人策略是否能够在部署中实现多任务、通用化的改进——同时针对许多不同任务——以及何种算法方案能够实现这一点。为了回答这个问题，我们首先开发了一套结构化评估来测试通用改进能力，并系统评估了关于价值估计、策略提取和资源分配的算法与实践设计选择。我们表明，通用策略不仅可以在线跨多样任务改进，而且正确的方案能够实现泛化并提高在线训练中未考虑任务的性能。我们刻画了这种泛化发生的条件，并表明训练任务分布和基于价值的RL的使用都至关重要。据我们所知，这是机器人基础模型在线通用改进的首批证据之一。",
+      "authors": [
+        "Michal Korniak",
+        "Marco Bagatella",
+        "Ralf Römer"
+      ],
+      "authors_all": [
+        "Michal Korniak",
+        "Marco Bagatella",
+        "Ralf Römer",
+        "Michal Nauman",
+        "Yarden As",
+        "Pranav Vignesh",
+        "Manan Agarwal",
+        "Leander Diaz-Bone",
+        "Piotr Zalewski",
+        "Mikołaj Czarnecki",
+        "Lenart Treven",
+        "Shashwat Saxena",
+        "Sreyas Venkataraman",
+        "Sarvesh Patil",
+        "Zhiyuan Zhou",
+        "Daniel Marta",
+        "Oier Mees",
+        "Nur Muhammad Mahi Shafiullah",
+        "Carmelo Sferrazza",
+        "Bhavya Sukhija",
+        "Angela P. Schoellig",
+        "Andreas Krause",
+        "Max Simchowitz",
+        "Andrew Wagenmaker"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-04",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ TUM"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Max Simchowitz"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-06905.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-06905-p2.jpg",
+        "assets/img/covers/arxiv-2611-06905-p3.jpg",
+        "assets/img/covers/arxiv-2611-06905-p4.jpg"
+      ],
+      "arxiv_id": "2611.06905",
+      "abs_url": "http://arxiv.org/abs/2611.06905v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06905v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 54,
+      "judge": {},
+      "institutions": [
+        "ETH Zurich",
+        "MPI for Intelligent Systems, Tübingen",
+        "Technical University of Munich",
+        "University of Warsaw"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "VLA",
+        "generalist policy improvement"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-06564",
       "source": "arxiv",
       "title": "Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors",
@@ -194,6 +285,81 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-06918",
+      "source": "arxiv",
+      "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
+      "title_zh": "从像素到动作——迈向原生视觉-语言-动作策略",
+      "tldr_zh": "提出无编码器VLA框架，直接利用多层视觉表示提升控制。",
+      "cover_zh": "抛弃视觉编码器！NEO-VLA让动作策略直接调用多层视觉计算",
+      "abstract_zh": "视觉-语言-动作模型通常基于一个简单前提：感知首先由视觉编码器压缩，动作推理随后才开始。然而，操作往往依赖于最易受这种抽象影响的精确视觉信号，例如局部几何、边界、深度和细微状态变化。这引发了一个根本问题：动作策略应该继承固定的视觉端点，还是直接访问不断演化的视觉计算？我们提出NEO-VLA，一个结构上无编码器的视觉-语言-动作框架。图像通过轻量级块卷积层进行标记化，并在整个骨干网络中与语言共同演化，使流匹配动作专家能够从不同深度的指令条件视觉表示中提取信息。这一简单改变揭示了一致模式。在受控比较下，原生架构优于基于编码器的对应架构；全微调缩小但未消除差距，仅增加规模也无法弥补。更引人注目的是，逐层探测表明，动作关键信号往往在最终视觉表示之前很早就达到峰值。因此，在多样化的操作设置和分布偏移下，NEO-VLA实现了更强、更稳健的控制。这些结果表明，具身控制受益于访问计算层次中的视觉表示，而非固定的编码器输出。",
+      "authors": [
+        "Weichen Fan",
+        "Haiwen Diao",
+        "Penghao Wu"
+      ],
+      "authors_all": [
+        "Weichen Fan",
+        "Haiwen Diao",
+        "Penghao Wu",
+        "Siyuan Hu",
+        "Ziqi Huang",
+        "Tianqi Liu",
+        "Mingze Sun",
+        "Ziyi Wang",
+        "Zhongang Cai",
+        "Hanming Deng",
+        "Quan Wang",
+        "Lei Yang",
+        "Lewei Lu",
+        "Fangzhou Hong",
+        "Zhaoxi Chen",
+        "Dahua Lin",
+        "Ziwei Liu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-04",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-06918.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-06918-p2.jpg",
+        "assets/img/covers/arxiv-2611-06918-p3.jpg",
+        "assets/img/covers/arxiv-2611-06918-p4.jpg"
+      ],
+      "arxiv_id": "2611.06918",
+      "abs_url": "http://arxiv.org/abs/2611.06918v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06918v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "S-Lab, Nanyang Technological University",
+        "SenseTime Research",
+        "Ropedia"
+      ],
+      "method_tags": [
+        "VLA",
+        "flow-matching action expert",
+        "encoder-free"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-06817",
       "source": "arxiv",
       "title": "Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models",
@@ -259,80 +425,6 @@
       "arxiv_id": "2611.06817",
       "abs_url": "http://arxiv.org/abs/2611.06817v1",
       "pdf_url": "https://arxiv.org/pdf/2611.06817v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 29,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-06905",
-      "source": "arxiv",
-      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
-      "title_zh": "强化学习实现通用机器人策略的规模化改进",
-      "tldr_zh": "强化学习实现通用机器人策略的多任务在线改进与泛化。",
-      "cover_zh": "机器人策略也能在线进化？多任务泛化竟靠这个方案",
-      "abstract_zh": "通用机器人策略的引入使得单个大型模型能够从海量预训练语料中学习执行多种任务。尽管这些模型通常展现出强大的零样本泛化能力，但在部署中往往需要适应阶段才能达到足够性能。通过强化学习（RL）进行的迭代自我改进已被证明有望实现这种适应，然而此类方法主要在单任务设置中探索——目标仅是改进狭窄的部署任务——这与基础策略的多任务能力形成鲜明对比。在本工作中，我们探究通用机器人策略是否能够在部署中实现多任务、通用化的改进——同时针对许多不同任务——以及何种算法方案能够实现这一点。为了回答这个问题，我们首先开发了一套结构化评估来测试通用改进能力，并系统评估了关于价值估计、策略提取和资源分配的算法与实践设计选择。我们表明，通用策略不仅可以在线跨多样任务改进，而且正确的方案能够实现泛化并提高在线训练中未考虑任务的性能。我们刻画了这种泛化发生的条件，并表明训练任务分布和基于价值的RL的使用都至关重要。据我们所知，这是机器人基础模型在线通用改进的首批证据之一。",
-      "authors": [
-        "Michal Korniak",
-        "Marco Bagatella",
-        "Ralf Römer"
-      ],
-      "authors_all": [
-        "Michal Korniak",
-        "Marco Bagatella",
-        "Ralf Römer",
-        "Michal Nauman",
-        "Yarden As",
-        "Pranav Vignesh",
-        "Manan Agarwal",
-        "Leander Diaz-Bone",
-        "Piotr Zalewski",
-        "Mikołaj Czarnecki",
-        "Lenart Treven",
-        "Shashwat Saxena",
-        "Sreyas Venkataraman",
-        "Sarvesh Patil",
-        "Zhiyuan Zhou",
-        "Daniel Marta",
-        "Oier Mees",
-        "Nur Muhammad Mahi Shafiullah",
-        "Carmelo Sferrazza",
-        "Bhavya Sukhija",
-        "Angela P. Schoellig",
-        "Andreas Krause",
-        "Max Simchowitz",
-        "Andrew Wagenmaker"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-11-04",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Max Simchowitz"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-06905.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-06905-p2.jpg",
-        "assets/img/covers/arxiv-2611-06905-p3.jpg",
-        "assets/img/covers/arxiv-2611-06905-p4.jpg"
-      ],
-      "arxiv_id": "2611.06905",
-      "abs_url": "http://arxiv.org/abs/2611.06905v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.06905v1",
       "venue": "",
       "venue_announced": "",
       "score": 29,
@@ -778,8 +870,15 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Northeastern University",
+        "Qualcomm AI Research"
+      ],
+      "method_tags": [
+        "World Model",
+        "Contrastive Regularization",
+        "Optical Flow"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -832,12 +931,17 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Apple"
+      ],
+      "method_tags": [
+        "sim-to-real",
+        "long-horizon"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1771,68 +1875,6 @@
       "arxiv_id": "2611.06781",
       "abs_url": "http://arxiv.org/abs/2611.06781v1",
       "pdf_url": "https://arxiv.org/pdf/2611.06781v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-06918",
-      "source": "arxiv",
-      "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
-      "title_zh": "从像素到动作——迈向原生视觉-语言-动作策略",
-      "tldr_zh": "提出无编码器VLA框架，直接利用多层视觉表示提升控制。",
-      "cover_zh": "抛弃视觉编码器！NEO-VLA让动作策略直接调用多层视觉计算",
-      "abstract_zh": "视觉-语言-动作模型通常基于一个简单前提：感知首先由视觉编码器压缩，动作推理随后才开始。然而，操作往往依赖于最易受这种抽象影响的精确视觉信号，例如局部几何、边界、深度和细微状态变化。这引发了一个根本问题：动作策略应该继承固定的视觉端点，还是直接访问不断演化的视觉计算？我们提出NEO-VLA，一个结构上无编码器的视觉-语言-动作框架。图像通过轻量级块卷积层进行标记化，并在整个骨干网络中与语言共同演化，使流匹配动作专家能够从不同深度的指令条件视觉表示中提取信息。这一简单改变揭示了一致模式。在受控比较下，原生架构优于基于编码器的对应架构；全微调缩小但未消除差距，仅增加规模也无法弥补。更引人注目的是，逐层探测表明，动作关键信号往往在最终视觉表示之前很早就达到峰值。因此，在多样化的操作设置和分布偏移下，NEO-VLA实现了更强、更稳健的控制。这些结果表明，具身控制受益于访问计算层次中的视觉表示，而非固定的编码器输出。",
-      "authors": [
-        "Weichen Fan",
-        "Haiwen Diao",
-        "Penghao Wu"
-      ],
-      "authors_all": [
-        "Weichen Fan",
-        "Haiwen Diao",
-        "Penghao Wu",
-        "Siyuan Hu",
-        "Ziqi Huang",
-        "Tianqi Liu",
-        "Mingze Sun",
-        "Ziyi Wang",
-        "Zhongang Cai",
-        "Hanming Deng",
-        "Quan Wang",
-        "Lei Yang",
-        "Lewei Lu",
-        "Fangzhou Hong",
-        "Zhaoxi Chen",
-        "Dahua Lin",
-        "Ziwei Liu"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-04",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-06918.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-06918-p2.jpg",
-        "assets/img/covers/arxiv-2611-06918-p3.jpg",
-        "assets/img/covers/arxiv-2611-06918-p4.jpg"
-      ],
-      "arxiv_id": "2611.06918",
-      "abs_url": "http://arxiv.org/abs/2611.06918v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.06918v1",
       "venue": "",
       "venue_announced": "",
       "score": 9,

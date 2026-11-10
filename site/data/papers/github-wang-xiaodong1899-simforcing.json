@@ -1,0 +1,76 @@
+{
+  "id": "github-wang-xiaodong1899-simforcing",
+  "source": "github",
+  "title": "Wang-Xiaodong1899/SimForcing",
+  "title_zh": "Wang-Xiaodong1899/SimForcing",
+  "abstract": "Code of \"SimForcing: Distilling Simulation Motion Priors into Real-Domain Robot World Models\"[10/05/2026]\n\n# SimForcing: Distilling Simulation Motion Priors into Real-Domain Robot World Models **TL;DR:** SimForcing learns motion priors from a simulation world model and transfers them to real-domain robot video prediction through latent-motion distillation and optional simulation conditioning. ## Teaser Figure 1. Comparison of training paradigms for action-conditioned robot world models. ## From motion priors to visual prediction ## Method Overview Figure 2. SimForcing's two-stage training: simulation world model learning followed by sim-to-real distillation. ## Installation Use Python 3.10 or newer. Install a matching CUDA-enabled PyTorch/torchvision pair for your machine, then install from this repository root: The `train` extra supplies DeepSpeed and optional W&B logging. TFDS metadata preparation additionally requires `pip install -e '.[prepare]'`. Training the full 5B model requires suitable GPU memory; the CPU tests below use tiny models and do not measure full-model memory requirements. ## Weights and paths Place the pretrained Wan files in this layout, or set the environment variables below: | Variable | Default | Purpose | | --- | --- | --- | | `WAN_MODEL_DIR` | `./checkpoints/Wan2.2-TI2V-5B` | Wan DiT, text encoder and VAE | | `WAN_TOKENIZER_DIR` | `./checkpoints/Wan2.1-T2V-1.3B` | Repository containing `google/umt5-xxl/` | | `ACTION_DIT_CHECKPOINT` | `./checkpoints/action_dit.pt` | ActionDiT backbone initialization | | `SIM_TEACHER_CHECKPOINT` | `./checkpoints/sim_teacher.pt` | Stage-1 checkpoint for both the frozen teacher and student initialization | | `BRIDGE_TRAIN_DIR` | `./data/bridge_train` | Training metadata and action caches | | `BRIDGE_VAL_DIR` | `./data/bridge_val` | Baseline held-out validation data | | `BRIDGE_TEXT_CACHE` | `./data/text_embeds/bridge_train` | Training text embeddings | | `BRIDGE_VAL_TEXT_CACHE` | `./data/text_embeds/bridge_val` | Baseline validation text embeddings | The default loader reads the original Wan `.pth` files. To use co",
+  "abstract_zh": "本文提出 SimForcing，一种从仿真世界模型中学习运动先验，并通过潜在运动蒸馏和可选的仿真条件化，将其迁移到真实域机器人视频预测的方法。SimForcing 采用两阶段训练：先学习仿真世界模型，再进行仿真到真实的蒸馏。",
+  "tldr_zh": "SimForcing 通过蒸馏仿真运动先验提升真实域机器人视频预测。",
+  "cover_zh": "仿真先验直接蒸馏进真实机器人世界模型｜视频预测更准了",
+  "authors": [
+    {
+      "name": "Wang-Xiaodong1899",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-09",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/Wang-Xiaodong1899/SimForcing",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 27,
+      "hint": "⭐ 23"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "world-model",
+    "reason": "官方论文代码，仿真运动先验蒸馏到真实机器人世界模型，属世界模型方向，有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "世界模型"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "Wang-Xiaodong1899",
+    "repo": "SimForcing",
+    "stars": 23,
+    "language": "Python",
+    "pushed_at": "2026-10-09",
+    "created_at": "2026-07-04",
+    "topics": [
+      "robotic-arm",
+      "worldmodel"
+    ],
+    "archived": false
+  }
+}

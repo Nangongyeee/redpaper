@@ -2,11 +2,11 @@
   "id": "arxiv-2610-12407",
   "source": "arxiv",
   "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
-  "title_zh": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+  "title_zh": "LeWAM：一种基于扩散引导MPC的JEPA世界动作模型",
   "abstract": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predictions. We introduce LeWAM, a bidirectional transformer for forward, backward, inverse dynamics and policy prediction, on a decoder-free JEPA latent trained end-to-end through all four modes. We see the following benefits: 1) Alignment: linear probes read robot and object state from LeWAM's latent better than from a regular Le World Model (a forward-only JEPA world model), while the latent ignores visual distractors as well as LeWM does and far better than a reconstruction-based WAM. 2) Acting: Closed-loop evaluations of LeWAM match a regular flow-matching policy trained on the same encoder at matched size, while also providing a world model. 3) Planning: Sampling raw actions when planning with WAMs lets MPC exploit dynamics-model inaccuracies; planning in the noise space of the policy head instead improves the closed-loop performance of these WAMs.",
-  "abstract_zh": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predictions. We introduce LeWAM, a bidirectional transformer for forward, backward, inverse dynamics and policy prediction, on a decoder-free JEPA latent trained end-to-end through all four modes. We see the following benefits: 1) Alignment: linear probes read robot and object state from LeWAM's latent better than from a regular Le World Model (a forward-only JEPA world model), while the latent ignores visual distractors as well as LeWM does and far better than a reconstruction-based WAM. 2) Acting: Closed-loop evaluations of LeWAM match a regular flow-matching policy trained on the same encoder at matched size, while also providing a world model. 3) Planning: Sampling raw actions when planning with WAMs lets MPC exploit dynamics-model inaccuracies; planning in the noise space of the policy head instead improves the closed-loop performance of these WAMs.",
-  "tldr_zh": "World action models (WAMs) predict actions and future observ",
-  "cover_zh": "World action models (WAMs) predict actions and future observ",
+  "abstract_zh": "世界动作模型（WAMs）预测动作和未来观测，通常基于重建式表示，这种表示携带噪声和冗余信息，可能使下游预测复杂化。我们提出LeWAM，一种双向Transformer，用于前向、后向、逆动力学和策略预测，在无解码器的JEPA潜在空间上通过所有四种模式端到端训练。我们观察到以下优势：1）对齐：线性探针从LeWAM的潜在空间中读取机器人和物体状态，效果优于常规Le世界模型（一种仅前向的JEPA世界模型），同时该潜在空间忽略视觉干扰物的能力与LeWM相当，且远优于基于重建的WAM。2）动作：LeWAM的闭环评估在相同规模下与在相同编码器上训练的标准流匹配策略相匹配，同时还提供了一个世界模型。3）规划：在使用WAM进行规划时采样原始动作会让MPC利用动力学模型的不准确性；相反，在策略头的噪声空间中进行规划可提高这些WAM的闭环性能。",
+  "tldr_zh": "LeWAM在JEPA潜在空间上训练双向Transformer，提升状态对齐与规划性能。",
+  "cover_zh": "规划总翻车？LeWAM在噪声空间里规划，闭环性能直接起飞",
   "authors": [
     {
       "name": "Shashank Hegde",

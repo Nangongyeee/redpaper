@@ -1,0 +1,77 @@
+{
+  "id": "github-roboparty-ufo",
+  "source": "github",
+  "title": "Roboparty/UFO",
+  "title_zh": "Roboparty/UFO",
+  "abstract": "An open-source unsupervised RL framework for humanoid control with FB/TeCH training, robot-aware motion import, and real-world teleoperation.\n\nUFO: A General U nsupervised Reinforcement Learning F ramework for Humanoid C O ntrol English | 中文 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UFO is an unsupervised reinforcement learning framework for humanoid control, built on **mjlab**. It supports **Unitree G1 / RoboParty RP1.3**, **FB-CPR-Aux / TeCH**, multi-GPU training, and tracking, reward and goal inference. **The RP1 TeCH policy has not been tested on the physical robot.** **[G1 / RP1 training data](https://huggingface.co/datasets/xuewang/UFO-MotionData) and the [G1 FB policy tested on hardware](https://huggingface.co/xuewang/ufo-g1-policy) are available.** ## News **2026-10-15 — Training performance and multi-robot update** **192M-step FB / mjlab training:** all runs below use **8 × NVIDIA H20**, **BF16 mixed precision**, and **1024-wide networks with shared critics**. | Experiment | Global training FPS | Last EMD ↓ | Time to 192M steps | | --- | ---: | ---: | ---: | | G1: original DR + original reward | **12,440** | **0.6655** | **4 h 45 min** | | G1: extended DR + original reward | **12,467** | **0.7406** | **≈4 h 51 min** | | G1: extended DR + updated reward | **12,217** | **0.7554** | **4 h 55 min** | | RP1: baseline | **12,485** | **0.7139** | **4 h 48 min** | Measurement settings and scope All runs use 1,024 environments and batch size 1,024 per GPU, six residual layers, and 16 agent updates per rollout step. FPS counts environment transitions across all eight GPUs and is the median of the last 20 logged intervals, not whole-job throughput. All three G1 runs use LaFAN-40 and 30% lying-down initialization. The original-DR run predates the reset-boundary fix; the extended-DR/original-reward run includes it. These historical runs span code changes and are not a controlled DR/reward ablation. The updated reward replaces the undesired-contact penalty with a body-impact penalty, sets the slip penalty weight to -4, and adds a foot-stumble penalty with weight -2. RP1 uses common LaFAN-40 and no lying-down initial",
+  "abstract_zh": "UFO 是一个基于 mjlab 构建的无监督强化学习框架，用于人形机器人控制。它支持 Unitree G1 / RoboParty RP1.3、FB-CPR-Aux / TeCH、多 GPU 训练，以及跟踪、奖励和目标推理。RP1 TeCH 策略尚未在实体机器人上测试。G1 / RP1 训练数据和已在硬件上测试的 G1 FB 策略均已公开。新闻：2026-10-15 — 训练性能与多机器人更新。192M 步 FB / mjlab 训练：以下所有运行均使用 8 × NVIDIA H20、BF16 混合精度和 1024 宽网络及共享评论家。实验表格显示 G1 原始 DR + 原始奖励的全局训练 FPS 为 12,440，最后 EMD 为 0.6655，达到 192M 步用时 4 小时 45 分钟；G1 扩展 DR + 原始奖励 FPS 为 12,467，EMD 为 0.7406，用时约 4 小时 51 分钟；G1 扩展 DR + 更新奖励 FPS 为 12,217，EMD 为 0.7554，用时 4 小时 55 分钟；RP1 基线 FPS 为 12,485，EMD 为 0.7139，用时 4 小时 48 分钟。测量设置与范围：所有运行使用 1,024 个环境和每 GPU 批次大小 1,024，六个残差层，每个 rollout 步骤 16 次智能体更新。FPS 统计所有八个 GPU 上的环境转换，是最后 20 个记录区间的中位数，而非整个作业吞吐量。所有三个 G1 运行使用 LaFAN-40 和 30% 躺下初始化。原始 DR 运行早于重置边界修复；扩展 DR/原始奖励运行包含该修复。这些历史运行跨越代码变更，并非受控的 DR/奖励消融实验。更新奖励将不期望接触惩罚替换为身体冲击惩罚，将滑倒惩罚权重设为 -4，并添加绊脚惩罚权重 -2。RP1 使用通用 LaFAN-40 且无躺下初始化。",
+  "tldr_zh": "开源无监督强化学习框架UFO，支持人形机器人控制与多GPU训练。",
+  "cover_zh": "人形机器人控制新框架｜无监督RL还能这么玩？",
+  "authors": [
+    {
+      "name": "Roboparty",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-21",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/Roboparty/UFO",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github"
+  ],
+  "score": 51,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 51,
+      "hint": "⭐ 348"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "官方无监督RL人形控制框架，基于mjlab，支持G1/RP1与真机遥操作，有开源数据与策略，具参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "全身控制"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "Roboparty",
+    "repo": "UFO",
+    "stars": 348,
+    "language": "Python",
+    "pushed_at": "2026-10-21",
+    "created_at": "2026-07-13",
+    "topics": [
+      "humanoid-control",
+      "mjlab",
+      "teleoperation",
+      "unsupervised-learning"
+    ],
+    "archived": false
+  }
+}

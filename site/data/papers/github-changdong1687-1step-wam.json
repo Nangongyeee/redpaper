@@ -1,0 +1,73 @@
+{
+  "id": "github-changdong1687-1step-wam",
+  "source": "github",
+  "title": "changdong1687/1Step-WAM",
+  "title_zh": "changdong1687/1Step-WAM",
+  "abstract": "# 1Step-WAM: Your World Action Model but Faster Using 1-Step Action Generation [ ](https://github.com/ModelTC/LightX2V/blob/main/LICENSE)&nbsp; [ ](https://arxiv.org/abs/2610.15625)&nbsp; ## 💡 Overview The deployment of World Action Model (WAM) is often limited by iterative action denoising and serial video-action execution. **1Step-WAM** turns a pretrained multi-step WAM into a one-step action generator while retaining the original backbone. 1Step-WAM combines three complementary components: 1. **Lightweight velocity calibration.** A small calibration head corrects the initial ActionDiT velocity prediction toward the multi-step teacher endpoint while the WAM backbone stays frozen. 2. **Bandwidth-constrained action decoding.** A temporal DCT projection retains low-frequency action modes and suppresses residual prediction error. 3. **Joint video--action execution.** Each action block starts as soon as its required visual K/V cache is available, overlapping action decoding with video prefill. ## ✨ Highlights - ⚡ **One action-generation pass:** replaces iterative action denoising with a calibrated single forward pass. - 🪶 **Parameter efficient:** trains only a 13.4M-parameter calibration head. - 🔧 **Backbone general:** evaluated on FastWAM, ImageWAM, and Kairos. - 🚀 **End-to-end acceleration:** achieves **5.98x-24.84x** speedup on a single NVIDIA L40 GPU while preserving most of the original task success rate. ## 📊 Evaluation Results ### RoboTwin On RoboTwin, 1Step-WAM achieves the best average success rate among the evaluated one-step methods for all three backbones, with end-to-end speedups of **7.44x**, **5.98x**, and **24.84x** for FastWAM, ImageWAM, and Kairos, respectively. ### LIBERO Across the four LIBERO suites, 1Step-WAM closely matches the multi-step policies on FastWAM and ImageWAM, and reaches highest mean success (**97.2%**) with the Kairos backbone. ### 🤖 Real-World Tasks We evaluate FastWAM-based policies on an AIRBOT Play robot across Pick Place, Stack",
+  "abstract_zh": "世界动作模型（WAM）的部署常受限于迭代式动作去噪和串行视频-动作执行。1Step-WAM 将预训练的多步 WAM 转变为一步动作生成器，同时保留原始骨干网络。1Step-WAM 结合了三个互补组件：1. 轻量级速度校准。一个小型校准头将初始 ActionDiT 速度预测校正到多步教师端点，而 WAM 骨干保持冻结。2. 带宽约束的动作解码。时间 DCT 投影保留低频动作模式并抑制残差预测误差。3. 联合视频-动作执行。每个动作块在其所需的视觉 K/V 缓存可用时立即开始，将动作解码与视频预填充重叠。亮点包括：单次动作生成前向传播替代迭代去噪；仅训练 13.4M 参数的校准头；在 FastWAM、ImageWAM 和 Kairos 上评估；在单块 NVIDIA L40 GPU 上实现 5.98x-24.84x 加速，同时保留大部分原始任务成功率。在 RoboTwin 上，1Step-WAM 在三个骨干上均取得评估的一步方法中最佳平均成功率，端到端加速分别为 7.44x、5.98x 和 24.84x。在 LIBERO 四个套件上，1Step-WAM 在 FastWAM 和 ImageWAM 上接近多步策略，并在 Kairos 骨干上达到最高平均成功率（97.2%）。在真实世界任务中，基于 FastWAM 的策略在 AIRBOT Play 机器人上评估了拾取放置和堆叠任务。",
+  "tldr_zh": "将多步世界动作模型转为一步生成，大幅加速且保持成功率。",
+  "cover_zh": "世界动作模型还能一步生成？速度飙升但成功率几乎不掉！",
+  "authors": [
+    {
+      "name": "changdong1687",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-18",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/changdong1687/1Step-WAM",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 0,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 0,
+      "hint": "⭐ 1"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "世界动作模型一步动作生成加速，属操作VLA推理优化，有实验与真机验证，可参考。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "操作"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "changdong1687",
+    "repo": "1Step-WAM",
+    "stars": 1,
+    "language": "",
+    "pushed_at": "2026-10-18",
+    "created_at": "2026-10-09",
+    "topics": [],
+    "archived": false
+  }
+}

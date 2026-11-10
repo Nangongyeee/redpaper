@@ -1,0 +1,73 @@
+{
+  "id": "github-youpengwen-orchestra",
+  "source": "github",
+  "title": "youpengwen/Orchestra",
+  "title_zh": "youpengwen/Orchestra",
+  "abstract": "# 🎼 Orchestra ### Let the Mind Conceive, Let the Hand Achieve ### Following Multimodal Instructions for Long-Horizon Robotic Manipulation **Task planning · Visual grounding · Working memory · Progress-driven execution** [Overview](#overview) · [Demos](#demos) · [Results](#results) Orchestra connects task-level reasoning and robot action through a shared execution context. ## 🧠 Overview Following a long instruction requires a robot to remember what it has done, identify what to manipulate next, and decide when each step is complete. **Orchestra** brings these decisions together in an agent framework that coordinates planning, perception, and execution around an action policy. The task agent converts a complete instruction into ordered subtasks and grounds the relevant objects in the scene. An adapted **π₀.₅** policy generates actions from the active subtask, spatial prompts, recent images, and robot state. A separately trained progress evaluator controls subtask transitions. The framework retains task records across the episode and refreshes local memory and grounding at each transition. We evaluate Orchestra on **RMBench**, **RMBench-Compose**, and **four real-world manipulation tasks**. RMBench-Compose tests long-horizon composition after training on atomic skills and short trajectories. | RMBench | RMBench-Compose | Real-world manipulation | | :---: | :---: | :---: | | **68.22%** mean success rate | **7.35** average success length | **2.75** average success length | | **+26.22 percentage points** over Mem-0 | **2.46×** HarnessVLA | **+25.0%** over Orchestra with base π₀.₅ | ## 🎬 Real-World Demos Click a preview to watch the full demonstration. All videos play at **2× speed**. | **Breakfast Preparation** · 4 subtasks | **Fruit Bowl Placement** · 3 subtasks | | :---: | :---: | | [ ](media/breakfast_preparation_demo_2x.mp4) | [ ](media/fruit_bowl_demo_2x.mp4) | | [▶ Watch demonstration](media/breakfast_preparation_demo_2x.mp4) | [▶ Watch demonstration](media/fruit_bo",
+  "abstract_zh": "遵循长指令要求机器人记住已完成的操作、识别下一步要操作的对象，并判断每个步骤何时完成。Orchestra 在一个智能体框架中将这些决策整合在一起，围绕动作策略协调规划、感知与执行。任务智能体将完整指令转换为有序子任务，并在场景中定位相关物体。经过适配的 π₀.₅ 策略根据当前子任务、空间提示、近期图像和机器人状态生成动作。单独训练的过程评估器控制子任务切换。该框架在整个回合中保留任务记录，并在每次切换时刷新局部记忆和定位。我们在 RMBench、RMBench-Compose 和四个真实世界操作任务上评估 Orchestra。RMBench-Compose 测试在原子技能和短轨迹训练后的长时程组合能力。在 RMBench 上平均成功率为 68.22%，比 Mem-0 高 26.22 个百分点；在 RMBench-Compose 上平均成功长度为 7.35，是 HarnessVLA 的 2.46 倍；在真实世界操作任务上平均成功长度为 2.75，比使用基础 π₀.₅ 的 Orchestra 高 25.0%。",
+  "tldr_zh": "Orchestra 框架协调规划、感知与执行，实现长时程机器人操作。",
+  "cover_zh": "机器人也能记住步骤？Orchestra 让长指令执行不再断片",
+  "authors": [
+    {
+      "name": "youpengwen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-10-13",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/youpengwen/Orchestra",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 0,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 0,
+      "hint": "⭐ 0"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "长程操作智能体框架，结合π0.5策略与进度评估，含真机实验，属操作VLA方向可落地工作",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "操作"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "youpengwen",
+    "repo": "Orchestra",
+    "stars": 0,
+    "language": "Python",
+    "pushed_at": "2026-10-13",
+    "created_at": "2026-10-13",
+    "topics": [],
+    "archived": false
+  }
+}

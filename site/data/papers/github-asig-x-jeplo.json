@@ -1,0 +1,84 @@
+{
+  "id": "github-asig-x-jeplo",
+  "source": "github",
+  "title": "ASIG-X/JEPLO",
+  "title_zh": "ASIG-X/JEPLO",
+  "abstract": "First JEPA-based learning framework for mapping-free LiDAR-based perceptive locomotion\n\n# JEPLO: Joint-Embedding Predictive Learning for LiDAR-Based Legged Locomotion \\[**[Youtube](https://youtu.be/HekLtX37ijs?si=71ovMihlEU9Mnlk_)**\\] \\[**[Website](https://asig-x.github.io/jeplo_web/)**\\] \\[**[arXiv](https://arxiv.org/abs/2609.15770)**\\] \\[**[Dataset](https://huggingface.co/datasets/ASIG-Lab/JEPLO-Dataset)**\\] This is a JEPA-based mapless perceptive locomotion for quadrupedal robot (on Unitree Go2). It uses a single Mid-360 LiDAR for perception. ### BibTex Citation Feel free to open an issue or contact us if you encoutner any problem using the code! ## Environment Setup First create a conda envirnoment, install IsaacLab and IsaacSim: Then install JEPLO: Install dependencies: ## Training and Playing To train a new policy: We strongly recommend using the MuJoCo validation tool to choose a good checkpoint. The training can be unstable sometimes and produce bad models (we usually test checkpoints after 15k iterations and find the one performing the best in MuJoCo). To play a policy: We found that TensorRT on Nvidia Jetson Orin sometimes produces trash models. Therefore a model should be validated by recorded input/output before controlling a real robot. ## Sim-to-Sim Validation in MuJoCo With the exported onnx models and validation samples, we can test the policy in MuJoCo. We have tested on Ubuntu 22.04. If you have other system, [distrobox](https://github.com/89luca89/distrobox) is recommended to setup an isolated environment. Note that you will need a decent computer (with a Nvidia GPU to use TensorRT) to allow the simulation and control to run fast enough (we have tested it on a RTX 4090 laptop). Otherwise, the performance might degrade, since this is an asynchronous evaluation environment, mimicing the scenario on a real robot. ### Optional: Distrobox If you are not on Ubuntu 22.04 and want use distrobox, you can create a container and exposing Nvidia GPU to it: Then enter it with: Check availability of GPU: ### Build Unitree Mujoco with LiDAR simulat",
+  "abstract_zh": "首个基于JEPA的无地图激光雷达感知运动学习框架。JEPLO面向四足机器人（Unitree Go2），仅使用单个Mid-360激光雷达进行感知，实现无地图的感知运动控制。项目提供训练与部署流程，建议使用MuJoCo验证工具挑选检查点，并提醒TensorRT在Nvidia Jetson Orin上可能产生异常模型，需在实机控制前用录制输入输出验证。",
+  "tldr_zh": "首个JEPA无地图激光雷达四足运动框架",
+  "cover_zh": "不用建图也能跑！JEPLO让四足机器人靠单激光雷达感知运动",
+  "authors": [
+    {
+      "name": "ASIG-X",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [],
+  "published": "",
+  "updated": "2026-09-17",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "abs_url": "https://github.com/ASIG-X/JEPLO",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "",
+  "preview_pages": [],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 0,
+  "source_tags": [
+    "github",
+    "paper_companion"
+  ],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "github_stars",
+      "label": "GitHub 热度",
+      "points": 40,
+      "hint": "⭐ 104"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "locomotion",
+    "reason": "官方JEPA无地图LiDAR感知四足运动框架，含IsaacLab训练与MuJoCo sim2sim验证，属locomotion/sim2real优质工作",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "运动控制"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {
+    "owner": "ASIG-X",
+    "repo": "JEPLO",
+    "stars": 104,
+    "language": "C++",
+    "pushed_at": "2026-09-17",
+    "created_at": "2026-09-12",
+    "topics": [
+      "isaac-lab",
+      "legged-robots",
+      "lidar",
+      "mujoco",
+      "quadruped",
+      "reinforcement-learning",
+      "rl",
+      "ros",
+      "ros2",
+      "sim2real"
+    ],
+    "archived": false
+  }
+}

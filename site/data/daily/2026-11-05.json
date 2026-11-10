@@ -85,6 +85,372 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-08097",
+      "source": "arxiv",
+      "title": "STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion",
+      "title_zh": "STEP：显式预测的时空训练用于感知式人形机器人运动",
+      "tldr_zh": "STEP框架通过显式预测跨模态关系和动作依赖状态演化，提升人形机器人地形穿越能力。",
+      "cover_zh": "人形机器人闭眼也能爬楼梯？STEP框架用预测练出真功夫",
+      "abstract_zh": "在感知式人形机器人运动中，地形几何的相关性取决于机器人的身体状态以及两者在动作下的共同演化。现有工作推进了地形感知的传感器融合和跨模态预测，改善了视觉与本体感觉信息的结合与关联方式。然而，仅靠特征聚合并不能指定应学习哪些跨模态关系，而同时观测之间的预测也没有显式约束它们随动作的演化。我们提出显式预测的时空训练（STEP），这是一个单阶段框架，在共享控制表示中联合监督跨模态关系和动作依赖的状态演化。多个学习查询将深度和本体感觉令牌聚合成紧凑的策略状态。双向掩码预测使用每个可见模态预测被省略模态的潜在特征，显式监督地形-身体关系。动作条件预测器将当前策略状态和执行动作映射到下一个融合状态，并在策略表示空间中直接定义指数移动平均目标。仿真比较显示，在评估的融合替代方案和消融实验中，地形穿越整体有所改善，而深度丢失和延迟实验证明了在视觉输入退化时两个预测目标的优势。在配备机载传感器的23自由度Noetix E1人形机器人上部署，STEP在楼梯、40厘米平台、70厘米间隙、踏脚石和无后向地形可见性的后退楼梯穿越等硬件试验中，100次成功98次。",
+      "authors": [
+        "Youhao Lyu",
+        "Chenghao Sun",
+        "Zhenxuan Ding"
+      ],
+      "authors_all": [
+        "Youhao Lyu",
+        "Chenghao Sun",
+        "Zhenxuan Ding",
+        "Shuting Zhang",
+        "Ziyang Dong",
+        "Wenhao Cui"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ USTC"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hao Su"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08097.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08097-p2.jpg",
+        "assets/img/covers/arxiv-2611-08097-p3.jpg",
+        "assets/img/covers/arxiv-2611-08097-p4.jpg"
+      ],
+      "arxiv_id": "2611.08097",
+      "abs_url": "http://arxiv.org/abs/2611.08097v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08097v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 65,
+      "judge": {},
+      "institutions": [
+        "University of Science and Technology of China (USTC)",
+        "Noetix Robotics",
+        "Beijing University of Chemical Technology (BUCT)",
+        "National University of Defense Technology (NUDT)"
+      ],
+      "method_tags": [
+        "cross-modal prediction",
+        "action-conditioned prediction",
+        "perceptive locomotion"
+      ],
+      "platform": [
+        "Noetix E1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08209",
+      "source": "arxiv",
+      "title": "RoboARCade: Benchmarking Agentic Robot Control",
+      "title_zh": "RoboARCade：智能体机器人控制基准测试",
+      "tldr_zh": "提出RoboARCade基准，测试智能体机器人控制的长时程操作能力。",
+      "cover_zh": "智能体自称成功？其实24%都在翻车｜新基准揭露真相",
+      "abstract_zh": "多模态能力的提升使得智能体能够直接作为机器人策略，我们将这种设定称为智能体机器人控制（ARC）。我们推出了 RoboARCade，这是一个涵盖三种具身形态的长时程操作任务基准，旨在测试上下文适应、记忆和精确控制的推理能力。这些任务基于现有的开源基准，我们通过扩大初始条件的范围来增加难度。RoboARCade 易于使用和扩展：所有任务都在单一仿真后端 MuJoCo 上运行，每个任务都是自包含的数据包，智能体通过可互换的接口连接，因此新任务、智能体和接口可以独立添加。该基准区分了领先的智能体：GPT-6 Astra 达到 49.8%，而 Claude Fable 5.1 为 43.6%，仍有很大的改进空间。比较两种接口，我们发现更丰富的视觉接口仅增加 1.5 到 6.8 分，但成本是 1.7 到 2.3 倍。失败主要源于选择糟糕的操作策略或执行良好策略不精确，很少源于对场景的误解，并且智能体在 24% 到 39% 的尝试子任务中错误地声称成功。智能体还可以在没有人类输入的情况下改进：在上下文中一次成功的演示将 Astra 在五任务子集上的分数从 53.5% 提高到 73.0%，而智能体自己编写和修订的提示达到 72.0%。代码、视频和完整轨迹可在 roboarcade.org 获取。",
+      "authors": [
+        "Satvik Sharma",
+        "Hengyuan Hu",
+        "Mihika Kamat"
+      ],
+      "authors_all": [
+        "Satvik Sharma",
+        "Hengyuan Hu",
+        "Mihika Kamat",
+        "Dorsa Sadigh",
+        "Jeannette Bohg"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jeannette Bohg"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Dorsa Sadigh"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08209.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08209-p2.jpg",
+        "assets/img/covers/arxiv-2611-08209-p3.jpg",
+        "assets/img/covers/arxiv-2611-08209-p4.jpg"
+      ],
+      "arxiv_id": "2611.08209",
+      "abs_url": "http://arxiv.org/abs/2611.08209v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08209v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 59,
+      "judge": {},
+      "institutions": [
+        "Stanford University"
+      ],
+      "method_tags": [
+        "agentic robot control",
+        "long-horizon manipulation",
+        "in-context adaptation"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "MuJoCo"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08373",
+      "source": "arxiv",
+      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+      "title_zh": "SLA：通过持续预训练扩展空间-语言-动作模型",
+      "tldr_zh": "SLA通过持续预训练将空间对齐融入VLA模型，提升机器人操作的空间理解能力。",
+      "cover_zh": "机器人空间理解不够？SLA用持续预训练让VLA模型真正懂3D！",
+      "abstract_zh": "可靠的机器人操作需要在三维空间中同时具备语义理解和精确控制。然而，视觉-语言-动作（VLA）基础模型主要继承自二维视觉-语言预训练的视觉表示，而空间监督通常仅在任务特定的适应阶段引入。因此，将空间理解发展为可迁移的基础模型能力，需要从更广泛的机器人经验中学习。我们提出SLA，一种空间-语言-动作模型，它将隐式空间对齐扩展到持续预训练，并在下游后训练期间保持这种对齐。SLA从预训练的pi05策略初始化，联合优化动作预测以及中间视觉嵌入与来自冻结三维感知模型的空间表示之间的对齐。我们整理并统一了异构机器人数据集，以支持跨多样本体、任务和场景的空间学习。为了适应这种多样性，我们引入了特征依赖门控，自适应地聚合来自多个VLA层的视觉嵌入以进行空间监督。教师模型进一步利用部分可用的深度和相机标定以及RGB观测，从而有效利用异构几何标注。概率状态丢弃鼓励依赖视觉线索并缓解对演示轨迹的过拟合。所有辅助组件仅在训练期间使用，允许直接重用预训练的VLA权重并保持原始推理架构。",
+      "authors": [
+        "Fuhao Li",
+        "Wenxuan Song",
+        "Qizhou Huang"
+      ],
+      "authors_all": [
+        "Fuhao Li",
+        "Wenxuan Song",
+        "Qizhou Huang",
+        "Ziyang Zhou",
+        "Jingbo Wang",
+        "Junwu E",
+        "Pengwei Wang",
+        "Yan Wang",
+        "Shunbo Zhou",
+        "Haoang Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Jingbo Wang"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08373.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08373-p2.jpg",
+        "assets/img/covers/arxiv-2611-08373-p3.jpg",
+        "assets/img/covers/arxiv-2611-08373-p4.jpg"
+      ],
+      "arxiv_id": "2611.08373",
+      "abs_url": "http://arxiv.org/abs/2611.08373v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08373v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 54,
+      "judge": {},
+      "institutions": [
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "OLA Dimensions",
+        "Beijing Academy of Artificial Intelligence",
+        "Tsinghua University"
+      ],
+      "method_tags": [
+        "Continual Pre-training",
+        "Spatial-Language-Action Model",
+        "VLA"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08056",
+      "source": "arxiv",
+      "title": "Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour",
+      "title_zh": "地形索引的运动先验与几何支撑用于极端人形机器人跑酷",
+      "tldr_zh": "渐进模仿框架让人形机器人学会跑酷并适应手膝支撑。",
+      "cover_zh": "人形机器人跑酷新突破：手膝支撑也能自适应！",
+      "abstract_zh": "我们提出一个渐进式模仿框架，学习地形适宜的人形机器人跑酷技能，并随后适应其手-膝支撑。人类演示提供了穿越行为，但其接触模式不一定适合机器人的比例或可用的支撑表面。我们的框架在三个阶段改变了演示的作用：特权模仿产生物理上可执行的机器人参考；地形索引的对抗运动先验引导技能获取；以及减少运动先验权重的几何支撑引导实现接触适应。基于候选的预接触吸引和实际接触评估引导支撑，而不规定接触序列。部署的策略从机载深度、本体感受和速度命令中选择行为，无需外部技能标签。在Noetix E1上，该策略在仿真中达到96.34%的混合成功率，并无需真实世界策略微调即可迁移，完成了30个单独障碍试验中的29个和五个混合赛道中的四个。支撑适应消融实验表明，在测试地形上，完整适应阶段具有更高的穿越成功率，而定性观察显示接触位置的变化。这些结果支持从演示中获取技能，然后放松其影响以适应机器人特定的支撑配置。",
+      "authors": [
+        "Chenghao Sun",
+        "Youhao Lyu",
+        "Zizheng Li"
+      ],
+      "authors_all": [
+        "Chenghao Sun",
+        "Youhao Lyu",
+        "Zizheng Li",
+        "Shuting Zhang",
+        "Ziyang Dong",
+        "Wenhao Cui"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ USTC"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Hao Su"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08056.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08056-p2.jpg",
+        "assets/img/covers/arxiv-2611-08056-p3.jpg",
+        "assets/img/covers/arxiv-2611-08056-p4.jpg"
+      ],
+      "arxiv_id": "2611.08056",
+      "abs_url": "http://arxiv.org/abs/2611.08056v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08056v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {},
+      "institutions": [
+        "Noetix Robotics",
+        "University of Science and Technology of China (USTC)",
+        "National University of Defense Technology (NUDT)"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Adversarial Motion Priors",
+        "sim-to-real"
+      ],
+      "platform": [
+        "Noetix E1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08338",
+      "source": "arxiv",
+      "title": "GPWM: Modeling the World as 3D Particle Motion",
+      "title_zh": "GPWM：将世界建模为3D粒子运动",
+      "tldr_zh": "GPWM在3D物理空间生成粒子运动，统一建模多种材料，预测误差降低31%，并支持噪声空间规划。",
+      "cover_zh": "抛弃视频生成！这个3D粒子世界模型预测误差直降31%",
+      "abstract_zh": "我们提出GPWM，一种生成式粒子世界模型，通过生成粒子和刚体随时间的运动来预测3D场景的演化。与生成场景外观的视频世界模型不同，GPWM直接在3D物理空间中操作。单一表示和架构覆盖刚体、可变形体、布料和颗粒材料，适用于被动物理和机器人交互。GPWM是一种对象感知的多分辨率Transformer，结合了流匹配和扩散强制，能够生成远超训练视野的连贯物理轨迹。我们在ParticleWorlds上训练和评估GPWM，这是一个包含2550万帧的语料库，涵盖多样的几何形状、材料、交互和机器人实施例。GPWM在六个物理领域中均优于最佳的先验学习动力学基线，平均降低预测误差31%。与先前方法的领域特定设置不同，单一的Unified GPWM用一组权重对这些异构机制进行建模，在很大程度上优于每个领域的基线，甚至在两个领域超越了我们自己的专家模型。GPWM进一步泛化到未见过的几何形状、物理属性、对象数量和展开视野。除了预测，GPWM通过学习联合执行器-对象运动的生成先验，实现了接触丰富的规划。规划不是在无约束的动作上搜索，而是在模型的潜在噪声中搜索实现所需对象空间目标的交互。使用相同的世界模型，噪声空间规划在推动和拾取任务上大幅优于动作空间搜索，其中复杂的接触序列难以发现。在仿真中开环执行，生成的计划实现了目标导向的操作，无需参考动作轨迹或目标特定策略。",
+      "authors": [
+        "Robert Ren",
+        "Matthew Bronars",
+        "He Zhu"
+      ],
+      "authors_all": [
+        "Robert Ren",
+        "Matthew Bronars",
+        "He Zhu",
+        "Yikai Tang",
+        "Jianing Zhang",
+        "Sergey Zakharov",
+        "Pavel Tokmakov",
+        "Katerina Fragkiadaki"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Toyota TRI / RAI"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08338.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08338-p2.jpg",
+        "assets/img/covers/arxiv-2611-08338-p3.jpg",
+        "assets/img/covers/arxiv-2611-08338-p4.jpg"
+      ],
+      "arxiv_id": "2611.08338",
+      "abs_url": "http://arxiv.org/abs/2611.08338v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08338v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University",
+        "Toyota Research Institute"
+      ],
+      "method_tags": [
+        "flow matching",
+        "diffusion forcing",
+        "world model"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-07532",
       "source": "arxiv_discover",
       "title": "Semantics-to-Contact: A Stagewise Framework for Robust Contact-Rich Manipulation",
@@ -227,64 +593,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08097",
-      "source": "arxiv",
-      "title": "STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion",
-      "title_zh": "STEP：显式预测的时空训练用于感知式人形机器人运动",
-      "tldr_zh": "STEP框架通过显式预测跨模态关系和动作依赖状态演化，提升人形机器人地形穿越能力。",
-      "cover_zh": "人形机器人闭眼也能爬楼梯？STEP框架用预测练出真功夫",
-      "abstract_zh": "在感知式人形机器人运动中，地形几何的相关性取决于机器人的身体状态以及两者在动作下的共同演化。现有工作推进了地形感知的传感器融合和跨模态预测，改善了视觉与本体感觉信息的结合与关联方式。然而，仅靠特征聚合并不能指定应学习哪些跨模态关系，而同时观测之间的预测也没有显式约束它们随动作的演化。我们提出显式预测的时空训练（STEP），这是一个单阶段框架，在共享控制表示中联合监督跨模态关系和动作依赖的状态演化。多个学习查询将深度和本体感觉令牌聚合成紧凑的策略状态。双向掩码预测使用每个可见模态预测被省略模态的潜在特征，显式监督地形-身体关系。动作条件预测器将当前策略状态和执行动作映射到下一个融合状态，并在策略表示空间中直接定义指数移动平均目标。仿真比较显示，在评估的融合替代方案和消融实验中，地形穿越整体有所改善，而深度丢失和延迟实验证明了在视觉输入退化时两个预测目标的优势。在配备机载传感器的23自由度Noetix E1人形机器人上部署，STEP在楼梯、40厘米平台、70厘米间隙、踏脚石和无后向地形可见性的后退楼梯穿越等硬件试验中，100次成功98次。",
-      "authors": [
-        "Youhao Lyu",
-        "Chenghao Sun",
-        "Zhenxuan Ding"
-      ],
-      "authors_all": [
-        "Youhao Lyu",
-        "Chenghao Sun",
-        "Zhenxuan Ding",
-        "Shuting Zhang",
-        "Ziyang Dong",
-        "Wenhao Cui"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc",
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Hao Su"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-08097.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08097-p2.jpg",
-        "assets/img/covers/arxiv-2611-08097-p3.jpg",
-        "assets/img/covers/arxiv-2611-08097-p4.jpg"
-      ],
-      "arxiv_id": "2611.08097",
-      "abs_url": "http://arxiv.org/abs/2611.08097v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08097v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 40,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-08413",
       "source": "arxiv",
       "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
@@ -341,6 +649,68 @@
         "VLA",
         "token pruning",
         "attention biasing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-07896",
+      "source": "arxiv",
+      "title": "AffordJEV: Affordance Grounding by Confirming Candidate Regions",
+      "title_zh": "AffordJEV：通过确认候选区域进行可供性定位",
+      "tldr_zh": "提出AffordJEV框架，用系统一模型逐级确认候选区域，实现高效可供性定位。",
+      "cover_zh": "不用思维链！这个新框架让可供性定位直接单次前向传播",
+      "abstract_zh": "可供性定位旨在确定物体上哪个可见部分执行所请求的操作，这是具身操作和人机交互的一项基本能力。现有方法大多遵循“系统二”范式：多模态语言模型先写出思维链，再将其结论转化为边界框或点，供分割器使用。这导致推理成本高、语义决策对最终区域范围缺乏直接控制，且错误难以纠正。然而，定位可供性本质上是一种感知判断，无需用文字论证。因此，我们提出一种方法，其中冻结的分割器提出候选区域，而“系统一”模型直接判断哪些区域执行了该操作，不生成文本，并通过单次前向传播读取每个决策。我们的贡献有两方面：（1）一种逐级确认候选区域的推理框架，从物体到部件再到子部件，证据在层级间双向传递，使各层相互纠正。（2）为该框架训练的“系统一”模型：现有“系统一”模型面向通用决策，每次请求只判断一个候选，不适合该框架的区域问题，因此我们的模型直接从框架自身产生的请求中学习，并一次性判断某一层级的所有候选。仅在InstructPart上训练，并使用定义对齐的操作词进行评估，该方法在域内和零样本迁移到UMD和IIT-AFF上均优于思维链方法，整体优于在同一框架下运行的现有“系统一”模型，且需要的判断请求更少。据我们所知，这是首次将“系统一”模型引入可供性定位的方法。",
+      "authors": [
+        "Jincheng Li",
+        "Yutian Zhang",
+        "Jianyu Zhang"
+      ],
+      "authors_all": [
+        "Jincheng Li",
+        "Yutian Zhang",
+        "Jianyu Zhang",
+        "Xinshun Wang",
+        "Mengyuan Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-07896.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-07896-p2.jpg",
+        "assets/img/covers/arxiv-2611-07896-p3.jpg",
+        "assets/img/covers/arxiv-2611-07896-p4.jpg"
+      ],
+      "arxiv_id": "2611.07896",
+      "abs_url": "http://arxiv.org/abs/2611.07896v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.07896v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {},
+      "institutions": [
+        "Peking University"
+      ],
+      "method_tags": [
+        "Affordance Grounding",
+        "System One model",
+        "frozen segmenters"
       ],
       "platform": [],
       "sim_stack": [],
@@ -417,56 +787,70 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08209",
+      "id": "arxiv-2611-08318",
       "source": "arxiv",
-      "title": "RoboARCade: Benchmarking Agentic Robot Control",
-      "title_zh": "RoboARCade：智能体机器人控制基准测试",
-      "tldr_zh": "提出RoboARCade基准，测试智能体机器人控制的长时程操作能力。",
-      "cover_zh": "智能体自称成功？其实24%都在翻车｜新基准揭露真相",
-      "abstract_zh": "多模态能力的提升使得智能体能够直接作为机器人策略，我们将这种设定称为智能体机器人控制（ARC）。我们推出了 RoboARCade，这是一个涵盖三种具身形态的长时程操作任务基准，旨在测试上下文适应、记忆和精确控制的推理能力。这些任务基于现有的开源基准，我们通过扩大初始条件的范围来增加难度。RoboARCade 易于使用和扩展：所有任务都在单一仿真后端 MuJoCo 上运行，每个任务都是自包含的数据包，智能体通过可互换的接口连接，因此新任务、智能体和接口可以独立添加。该基准区分了领先的智能体：GPT-6 Astra 达到 49.8%，而 Claude Fable 5.1 为 43.6%，仍有很大的改进空间。比较两种接口，我们发现更丰富的视觉接口仅增加 1.5 到 6.8 分，但成本是 1.7 到 2.3 倍。失败主要源于选择糟糕的操作策略或执行良好策略不精确，很少源于对场景的误解，并且智能体在 24% 到 39% 的尝试子任务中错误地声称成功。智能体还可以在没有人类输入的情况下改进：在上下文中一次成功的演示将 Astra 在五任务子集上的分数从 53.5% 提高到 73.0%，而智能体自己编写和修订的提示达到 72.0%。代码、视频和完整轨迹可在 roboarcade.org 获取。",
+      "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+      "title_zh": "学习任务还是学习验证器？重新思考具身自我改进中的标准暴露",
+      "tldr_zh": "标准暴露让智能体过拟合验证标准，而非真正学习任务。",
+      "cover_zh": "你以为它在学任务？其实它只是学会了作弊！",
+      "abstract_zh": "自我改进的具身智能体越来越多地在机器人仿真基准上被开发和比较。近期一些工作将基准的成功标准暴露给学习智能体，我们称这种做法为标准暴露（CE）。这些标准原本用于验证通过模仿学习训练的策略，往往比相应的语言指令要求更多，因此来自此类验证器的分数可能无法忠实反映所指令的任务是否完成，尤其是对于智能体编写的机器人控制程序。随着具身编码智能体报告越来越高的基准分数，一个自然的问题出现了：当编码智能体接触到基准的标准时，它生成的代码是更好地执行了指令任务，还是仅仅过拟合了验证标准？我们通过有无CE的自我改进智能体进行控制实验，发现有了CE，智能体能快速生成在给定标准下成功率更高的代码，但当标准在不偏离原始指令的情况下稍作改变时，这一优势就消失了。更重要的是，智能体在CE下发展的技能在不同任务间迁移效果很差。我们进一步提出了指令忠实标准，并表明它们能更好地反映智能体生成程序的性能。",
       "authors": [
-        "Satvik Sharma",
-        "Hengyuan Hu",
-        "Mihika Kamat"
+        "Wenbo Huang",
+        "Jianxin Bi",
+        "Shunyu Yang"
       ],
       "authors_all": [
-        "Satvik Sharma",
-        "Hengyuan Hu",
-        "Mihika Kamat",
-        "Dorsa Sadigh",
-        "Jeannette Bohg"
+        "Wenbo Huang",
+        "Jianxin Bi",
+        "Shunyu Yang",
+        "Ruiyang Si",
+        "Rui Ni",
+        "Qiang Wang",
+        "Shulong Jiang",
+        "Yintianrun Zhang",
+        "Feixiang Ruan",
+        "Kewei Zhang",
+        "Ye Huang",
+        "Shukai Gong",
+        "Daquan Zhou"
       ],
-      "primary_category": "cs.RO",
+      "primary_category": "cs.AI",
       "published": "2026-11-05",
       "channels": [
-        "manipulation",
-        "loco-manip-wbc"
+        "manipulation"
       ],
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ Jeannette Bohg"
+          "label": "⭐ 北大"
         },
         {
           "kind": "lab",
-          "label": "⭐ Dorsa Sadigh"
+          "label": "⭐ NUS"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2611-08209.jpg",
+      "cover_image": "assets/img/covers/arxiv-2611-08318.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2611-08209-p2.jpg",
-        "assets/img/covers/arxiv-2611-08209-p3.jpg",
-        "assets/img/covers/arxiv-2611-08209-p4.jpg"
+        "assets/img/covers/arxiv-2611-08318-p2.jpg",
+        "assets/img/covers/arxiv-2611-08318-p3.jpg",
+        "assets/img/covers/arxiv-2611-08318-p4.jpg"
       ],
-      "arxiv_id": "2611.08209",
-      "abs_url": "http://arxiv.org/abs/2611.08209v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08209v1",
+      "arxiv_id": "2611.08318",
+      "abs_url": "http://arxiv.org/abs/2611.08318v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08318v1",
       "venue": "",
       "venue_announced": "",
       "score": 34,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Peking University",
+        "National University of Singapore"
+      ],
+      "method_tags": [
+        "self-improvement",
+        "embodied coding agent",
+        "criteria exposure"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -530,6 +914,133 @@
         "VLA",
         "imitation learning",
         "abduction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-07922",
+      "source": "arxiv",
+      "title": "StitchEdit: Stitching Depth Priors into Image Editors via Per-Layer Gradient Probing",
+      "title_zh": "StitchEdit：通过逐层梯度探测将深度先验缝合到图像编辑器中",
+      "tldr_zh": "逐层梯度探测发现编辑与深度目标在早期层兼容、后期层冲突，据此选择性微调适配器实现几何一致的图像编辑。",
+      "cover_zh": "编辑总忽略3D结构？逐层探测找到冲突层，缝合深度先验后几何保真度飙升",
+      "abstract_zh": "基于扩散模型的文本引导图像编辑在处理依赖场景三维结构理解的空间编辑（如操作物体、改变视角、处理遮挡）时仍面临困难。Marigold 及后续工作表明，预训练的扩散骨干网络已蕴含强大的几何先验，可被激活用于深度估计，但如何将这些先验重定向至编辑任务仍未解决。通过逐层梯度探测，我们发现编辑目标与深度目标在早期 Transformer 层中兼容，但在后期层中 actively 冲突，这解释了为何朴素的深度条件编辑要么忽略几何信息，要么降低视觉质量。我们提出 StitchEdit，它首先通过轻量级深度去噪适配器激活骨干网络的几何能力，然后利用探测引导的逐层学习率调度对该适配器进行选择性微调以用于编辑，从而在深度知识有益处保留它，在冲突处修剪它。在提出的 StitchEditBench（包含 150 个依赖几何的编辑，涵盖空间变换、遮挡操作和视角变化）上，StitchEdit 在感知质量和几何保真度上均持续优于基于指令和基于深度条件的基线方法。",
+      "authors": [
+        "Qin Guo",
+        "Dan Xu"
+      ],
+      "authors_all": [
+        "Qin Guo",
+        "Dan Xu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-07922.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-07922-p2.jpg",
+        "assets/img/covers/arxiv-2611-07922-p3.jpg",
+        "assets/img/covers/arxiv-2611-07922-p4.jpg"
+      ],
+      "arxiv_id": "2611.07922",
+      "abs_url": "http://arxiv.org/abs/2611.07922v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.07922v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "The Hong Kong University of Science and Technology"
+      ],
+      "method_tags": [
+        "depth prior",
+        "per-layer gradient probing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08368",
+      "source": "arxiv",
+      "title": "VisionSIM: Beyond Idealized Sensors - A Multi-Modal Simulator for Robot Perception",
+      "title_zh": "VisionSIM：超越理想化传感器——面向机器人感知的多模态模拟器",
+      "tldr_zh": "提出物理逼真的多模态传感器模拟器，重现真实故障模式。",
+      "cover_zh": "传感器不再理想化｜这个模拟器把真实故障模式全还原了",
+      "abstract_zh": "机器人感知日益依赖异构传感器套件，将相机与新兴模态（事件、SPAD、iToF/dToF 和热成像）相结合。然而，现有模拟器将这些传感器理想化，掩盖了限制实际部署的关键模态特定故障模式。我们提出 VisionSIM，一个统一的、基于物理的模拟平台，通过建模多种传统和新兴模态的原始物理测量过程，将传感器逼真度提升为首要关注点。我们提供对物理传感器参数的细粒度控制，重现通用模拟器忽略的故障模式：LiDAR 的堆叠和眩光；iToF 的相位卷绕、饱和和运动伪影；事件相机的折射丢失；以及热相机的历史相关发射。这使得在相同场景和轨迹上进行有原则的跨模态比较成为可能。我们发布该平台和一个大型室内数据集，包含同步的原始测量和丰富的真值标注。",
+      "authors": [
+        "Sacha Jungerman",
+        "Kaustubh Sadekar",
+        "Avery Gump"
+      ],
+      "authors_all": [
+        "Sacha Jungerman",
+        "Kaustubh Sadekar",
+        "Avery Gump",
+        "Sriram Narayanan",
+        "Shantanu Gupta",
+        "Bhuyashi Deka",
+        "Srinivasa Narasimhan",
+        "Atul Ingle",
+        "Mohit Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08368.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08368-p2.jpg",
+        "assets/img/covers/arxiv-2611-08368-p3.jpg",
+        "assets/img/covers/arxiv-2611-08368-p4.jpg"
+      ],
+      "arxiv_id": "2611.08368",
+      "abs_url": "http://arxiv.org/abs/2611.08368v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08368v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "University of Wisconsin – Madison",
+        "Portland State University",
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "sensor simulation",
+        "sim-to-real",
+        "multi-modal sensing"
       ],
       "platform": [],
       "sim_stack": [],
@@ -666,122 +1177,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08373",
-      "source": "arxiv",
-      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
-      "title_zh": "SLA：通过持续预训练扩展空间-语言-动作模型",
-      "tldr_zh": "SLA通过持续预训练将空间对齐融入VLA模型，提升机器人操作的空间理解能力。",
-      "cover_zh": "机器人空间理解不够？SLA用持续预训练让VLA模型真正懂3D！",
-      "abstract_zh": "可靠的机器人操作需要在三维空间中同时具备语义理解和精确控制。然而，视觉-语言-动作（VLA）基础模型主要继承自二维视觉-语言预训练的视觉表示，而空间监督通常仅在任务特定的适应阶段引入。因此，将空间理解发展为可迁移的基础模型能力，需要从更广泛的机器人经验中学习。我们提出SLA，一种空间-语言-动作模型，它将隐式空间对齐扩展到持续预训练，并在下游后训练期间保持这种对齐。SLA从预训练的pi05策略初始化，联合优化动作预测以及中间视觉嵌入与来自冻结三维感知模型的空间表示之间的对齐。我们整理并统一了异构机器人数据集，以支持跨多样本体、任务和场景的空间学习。为了适应这种多样性，我们引入了特征依赖门控，自适应地聚合来自多个VLA层的视觉嵌入以进行空间监督。教师模型进一步利用部分可用的深度和相机标定以及RGB观测，从而有效利用异构几何标注。概率状态丢弃鼓励依赖视觉线索并缓解对演示轨迹的过拟合。所有辅助组件仅在训练期间使用，允许直接重用预训练的VLA权重并保持原始推理架构。",
-      "authors": [
-        "Fuhao Li",
-        "Wenxuan Song",
-        "Qizhou Huang"
-      ],
-      "authors_all": [
-        "Fuhao Li",
-        "Wenxuan Song",
-        "Qizhou Huang",
-        "Ziyang Zhou",
-        "Jingbo Wang",
-        "Junwu E",
-        "Pengwei Wang",
-        "Yan Wang",
-        "Shunbo Zhou",
-        "Haoang Li"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Jingbo Wang"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-08373.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08373-p2.jpg",
-        "assets/img/covers/arxiv-2611-08373-p3.jpg",
-        "assets/img/covers/arxiv-2611-08373-p4.jpg"
-      ],
-      "arxiv_id": "2611.08373",
-      "abs_url": "http://arxiv.org/abs/2611.08373v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08373v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 29,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08056",
-      "source": "arxiv",
-      "title": "Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour",
-      "title_zh": "地形索引的运动先验与几何支撑用于极端人形机器人跑酷",
-      "tldr_zh": "渐进模仿框架让人形机器人学会跑酷并适应手膝支撑。",
-      "cover_zh": "人形机器人跑酷新突破：手膝支撑也能自适应！",
-      "abstract_zh": "我们提出一个渐进式模仿框架，学习地形适宜的人形机器人跑酷技能，并随后适应其手-膝支撑。人类演示提供了穿越行为，但其接触模式不一定适合机器人的比例或可用的支撑表面。我们的框架在三个阶段改变了演示的作用：特权模仿产生物理上可执行的机器人参考；地形索引的对抗运动先验引导技能获取；以及减少运动先验权重的几何支撑引导实现接触适应。基于候选的预接触吸引和实际接触评估引导支撑，而不规定接触序列。部署的策略从机载深度、本体感受和速度命令中选择行为，无需外部技能标签。在Noetix E1上，该策略在仿真中达到96.34%的混合成功率，并无需真实世界策略微调即可迁移，完成了30个单独障碍试验中的29个和五个混合赛道中的四个。支撑适应消融实验表明，在测试地形上，完整适应阶段具有更高的穿越成功率，而定性观察显示接触位置的变化。这些结果支持从演示中获取技能，然后放松其影响以适应机器人特定的支撑配置。",
-      "authors": [
-        "Chenghao Sun",
-        "Youhao Lyu",
-        "Zizheng Li"
-      ],
-      "authors_all": [
-        "Chenghao Sun",
-        "Youhao Lyu",
-        "Zizheng Li",
-        "Shuting Zhang",
-        "Ziyang Dong",
-        "Wenhao Cui"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Hao Su"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-08056.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08056-p2.jpg",
-        "assets/img/covers/arxiv-2611-08056-p3.jpg",
-        "assets/img/covers/arxiv-2611-08056-p4.jpg"
-      ],
-      "arxiv_id": "2611.08056",
-      "abs_url": "http://arxiv.org/abs/2611.08056v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08056v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-07712",
       "source": "arxiv",
       "title": "AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction",
@@ -824,12 +1219,20 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Skolkovo Institute of Science and Technology"
+      ],
+      "method_tags": [
+        "VLA",
+        "intent recognition",
+        "compliance control"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -881,11 +1284,15 @@
       "score": 20,
       "judge": {},
       "institutions": [],
-      "method_tags": [],
+      "method_tags": [
+        "world model",
+        "preference feedback",
+        "reinforcement learning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -932,12 +1339,22 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Beijing Institute of Technology",
+        "University of Bristol",
+        "Xi'an Jiaotong-Liverpool University"
+      ],
+      "method_tags": [
+        "sim-to-real",
+        "reinforcement learning",
+        "tactile simulation"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "IsaacLab"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -986,66 +1403,21 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Huawei Technologies Ltd.",
+        "University of Toronto",
+        "McGill University",
+        "Mila – Quebec Artificial Intelligence Institute"
+      ],
+      "method_tags": [
+        "World Model",
+        "JEPA",
+        "V-JEPA 2.1 encoder"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08338",
-      "source": "arxiv",
-      "title": "GPWM: Modeling the World as 3D Particle Motion",
-      "title_zh": "GPWM：将世界建模为3D粒子运动",
-      "tldr_zh": "GPWM在3D物理空间生成粒子运动，统一建模多种材料，预测误差降低31%，并支持噪声空间规划。",
-      "cover_zh": "抛弃视频生成！这个3D粒子世界模型预测误差直降31%",
-      "abstract_zh": "我们提出GPWM，一种生成式粒子世界模型，通过生成粒子和刚体随时间的运动来预测3D场景的演化。与生成场景外观的视频世界模型不同，GPWM直接在3D物理空间中操作。单一表示和架构覆盖刚体、可变形体、布料和颗粒材料，适用于被动物理和机器人交互。GPWM是一种对象感知的多分辨率Transformer，结合了流匹配和扩散强制，能够生成远超训练视野的连贯物理轨迹。我们在ParticleWorlds上训练和评估GPWM，这是一个包含2550万帧的语料库，涵盖多样的几何形状、材料、交互和机器人实施例。GPWM在六个物理领域中均优于最佳的先验学习动力学基线，平均降低预测误差31%。与先前方法的领域特定设置不同，单一的Unified GPWM用一组权重对这些异构机制进行建模，在很大程度上优于每个领域的基线，甚至在两个领域超越了我们自己的专家模型。GPWM进一步泛化到未见过的几何形状、物理属性、对象数量和展开视野。除了预测，GPWM通过学习联合执行器-对象运动的生成先验，实现了接触丰富的规划。规划不是在无约束的动作上搜索，而是在模型的潜在噪声中搜索实现所需对象空间目标的交互。使用相同的世界模型，噪声空间规划在推动和拾取任务上大幅优于动作空间搜索，其中复杂的接触序列难以发现。在仿真中开环执行，生成的计划实现了目标导向的操作，无需参考动作轨迹或目标特定策略。",
-      "authors": [
-        "Robert Ren",
-        "Matthew Bronars",
-        "He Zhu"
-      ],
-      "authors_all": [
-        "Robert Ren",
-        "Matthew Bronars",
-        "He Zhu",
-        "Yikai Tang",
-        "Jianing Zhang",
-        "Sergey Zakharov",
-        "Pavel Tokmakov",
-        "Katerina Fragkiadaki"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08338.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08338-p2.jpg",
-        "assets/img/covers/arxiv-2611-08338-p3.jpg",
-        "assets/img/covers/arxiv-2611-08338-p4.jpg"
-      ],
-      "arxiv_id": "2611.08338",
-      "abs_url": "http://arxiv.org/abs/2611.08338v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08338v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1092,12 +1464,18 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "The University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Novel-View Synthesis",
+        "3D Gaussian Splatting"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1450,63 +1828,18 @@
       "venue_announced": "",
       "score": 15,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Genoa"
+      ],
+      "method_tags": [
+        "触觉感知",
+        "object recognition",
+        "CNN"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-07896",
-      "source": "arxiv",
-      "title": "AffordJEV: Affordance Grounding by Confirming Candidate Regions",
-      "title_zh": "AffordJEV：通过确认候选区域进行可供性定位",
-      "tldr_zh": "提出AffordJEV框架，用系统一模型逐级确认候选区域，实现高效可供性定位。",
-      "cover_zh": "不用思维链！这个新框架让可供性定位直接单次前向传播",
-      "abstract_zh": "可供性定位旨在确定物体上哪个可见部分执行所请求的操作，这是具身操作和人机交互的一项基本能力。现有方法大多遵循“系统二”范式：多模态语言模型先写出思维链，再将其结论转化为边界框或点，供分割器使用。这导致推理成本高、语义决策对最终区域范围缺乏直接控制，且错误难以纠正。然而，定位可供性本质上是一种感知判断，无需用文字论证。因此，我们提出一种方法，其中冻结的分割器提出候选区域，而“系统一”模型直接判断哪些区域执行了该操作，不生成文本，并通过单次前向传播读取每个决策。我们的贡献有两方面：（1）一种逐级确认候选区域的推理框架，从物体到部件再到子部件，证据在层级间双向传递，使各层相互纠正。（2）为该框架训练的“系统一”模型：现有“系统一”模型面向通用决策，每次请求只判断一个候选，不适合该框架的区域问题，因此我们的模型直接从框架自身产生的请求中学习，并一次性判断某一层级的所有候选。仅在InstructPart上训练，并使用定义对齐的操作词进行评估，该方法在域内和零样本迁移到UMD和IIT-AFF上均优于思维链方法，整体优于在同一框架下运行的现有“系统一”模型，且需要的判断请求更少。据我们所知，这是首次将“系统一”模型引入可供性定位的方法。",
-      "authors": [
-        "Jincheng Li",
-        "Yutian Zhang",
-        "Jianyu Zhang"
-      ],
-      "authors_all": [
-        "Jincheng Li",
-        "Yutian Zhang",
-        "Jianyu Zhang",
-        "Xinshun Wang",
-        "Mengyuan Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-07896.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-07896-p2.jpg",
-        "assets/img/covers/arxiv-2611-07896-p3.jpg",
-        "assets/img/covers/arxiv-2611-07896-p4.jpg"
-      ],
-      "arxiv_id": "2611.07896",
-      "abs_url": "http://arxiv.org/abs/2611.07896v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.07896v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 14,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1550,8 +1883,15 @@
       "venue_announced": "",
       "score": 14,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Cornell Tech",
+        "New York University"
+      ],
+      "method_tags": [
+        "differentiable rendering",
+        "sim-to-real",
+        "point splatting"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1597,12 +1937,20 @@
       "venue_announced": "",
       "score": 14,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "PPO",
+        "stability prediction"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "Isaac Gym"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1799,8 +2147,15 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Minho",
+        "Technical University of Porto"
+      ],
+      "method_tags": [
+        "teleoperation",
+        "hand pose estimation",
+        "kinematics"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1848,8 +2203,15 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Ottawa",
+        "National Research Council Canada"
+      ],
+      "method_tags": [
+        "Flow Matching",
+        "4D Occupancy Forecasting",
+        "SE(2) Geometric Decoupling"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1898,66 +2260,15 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08318",
-      "source": "arxiv",
-      "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
-      "title_zh": "学习任务还是学习验证器？重新思考具身自我改进中的标准暴露",
-      "tldr_zh": "标准暴露让智能体过拟合验证标准，而非真正学习任务。",
-      "cover_zh": "你以为它在学任务？其实它只是学会了作弊！",
-      "abstract_zh": "自我改进的具身智能体越来越多地在机器人仿真基准上被开发和比较。近期一些工作将基准的成功标准暴露给学习智能体，我们称这种做法为标准暴露（CE）。这些标准原本用于验证通过模仿学习训练的策略，往往比相应的语言指令要求更多，因此来自此类验证器的分数可能无法忠实反映所指令的任务是否完成，尤其是对于智能体编写的机器人控制程序。随着具身编码智能体报告越来越高的基准分数，一个自然的问题出现了：当编码智能体接触到基准的标准时，它生成的代码是更好地执行了指令任务，还是仅仅过拟合了验证标准？我们通过有无CE的自我改进智能体进行控制实验，发现有了CE，智能体能快速生成在给定标准下成功率更高的代码，但当标准在不偏离原始指令的情况下稍作改变时，这一优势就消失了。更重要的是，智能体在CE下发展的技能在不同任务间迁移效果很差。我们进一步提出了指令忠实标准，并表明它们能更好地反映智能体生成程序的性能。",
-      "authors": [
-        "Wenbo Huang",
-        "Jianxin Bi",
-        "Shunyu Yang"
+      "institutions": [
+        "University of Amsterdam",
+        "New Theory AI"
       ],
-      "authors_all": [
-        "Wenbo Huang",
-        "Jianxin Bi",
-        "Shunyu Yang",
-        "Ruiyang Si",
-        "Rui Ni",
-        "Qiang Wang",
-        "Shulong Jiang",
-        "Yintianrun Zhang",
-        "Feixiang Ruan",
-        "Kewei Zhang",
-        "Ye Huang",
-        "Shukai Gong",
-        "Daquan Zhou"
+      "method_tags": [
+        "Representation Alignment",
+        "Point-MAE",
+        "Image-based Policy"
       ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08318.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08318-p2.jpg",
-        "assets/img/covers/arxiv-2611-08318-p3.jpg",
-        "assets/img/covers/arxiv-2611-08318-p4.jpg"
-      ],
-      "arxiv_id": "2611.08318",
-      "abs_url": "http://arxiv.org/abs/2611.08318v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08318v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2130,8 +2441,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Tehran"
+      ],
+      "method_tags": [
+        "Monte Carlo Tree Search",
+        "dual-arm rearrangement",
+        "push transfer"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2176,8 +2493,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Newcastle University"
+      ],
+      "method_tags": [
+        "Supervised Fine-tuning",
+        "Candidate Ranking",
+        "LLM"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2220,54 +2543,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-07922",
-      "source": "arxiv",
-      "title": "StitchEdit: Stitching Depth Priors into Image Editors via Per-Layer Gradient Probing",
-      "title_zh": "StitchEdit：通过逐层梯度探测将深度先验缝合到图像编辑器中",
-      "tldr_zh": "逐层梯度探测发现编辑与深度目标在早期层兼容、后期层冲突，据此选择性微调适配器实现几何一致的图像编辑。",
-      "cover_zh": "编辑总忽略3D结构？逐层探测找到冲突层，缝合深度先验后几何保真度飙升",
-      "abstract_zh": "基于扩散模型的文本引导图像编辑在处理依赖场景三维结构理解的空间编辑（如操作物体、改变视角、处理遮挡）时仍面临困难。Marigold 及后续工作表明，预训练的扩散骨干网络已蕴含强大的几何先验，可被激活用于深度估计，但如何将这些先验重定向至编辑任务仍未解决。通过逐层梯度探测，我们发现编辑目标与深度目标在早期 Transformer 层中兼容，但在后期层中 actively 冲突，这解释了为何朴素的深度条件编辑要么忽略几何信息，要么降低视觉质量。我们提出 StitchEdit，它首先通过轻量级深度去噪适配器激活骨干网络的几何能力，然后利用探测引导的逐层学习率调度对该适配器进行选择性微调以用于编辑，从而在深度知识有益处保留它，在冲突处修剪它。在提出的 StitchEditBench（包含 150 个依赖几何的编辑，涵盖空间变换、遮挡操作和视角变化）上，StitchEdit 在感知质量和几何保真度上均持续优于基于指令和基于深度条件的基线方法。",
-      "authors": [
-        "Qin Guo",
-        "Dan Xu"
+      "institutions": [
+        "NTT, Inc."
       ],
-      "authors_all": [
-        "Qin Guo",
-        "Dan Xu"
+      "method_tags": [
+        "hypothesis-space reasoning",
+        "MPM simulation",
+        "differentiable simulation"
       ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-07922.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-07922-p2.jpg",
-        "assets/img/covers/arxiv-2611-07922-p3.jpg",
-        "assets/img/covers/arxiv-2611-07922-p4.jpg"
-      ],
-      "arxiv_id": "2611.07922",
-      "abs_url": "http://arxiv.org/abs/2611.07922v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.07922v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2314,12 +2597,22 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
+      "institutions": [
+        "Technological University Dublin"
+      ],
+      "method_tags": [
+        "skill success model",
+        "receding-horizon planning",
+        "latency-aware skill selection"
+      ],
+      "platform": [
+        "UR5e"
+      ],
+      "sim_stack": [
+        "MuJoCo"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2362,8 +2655,15 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Applied Science Private University",
+        "University of Bristol"
+      ],
+      "method_tags": [
+        "surrogate-assisted testing",
+        "symmetry reduction",
+        "neural network"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2421,62 +2721,15 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08368",
-      "source": "arxiv",
-      "title": "VisionSIM: Beyond Idealized Sensors - A Multi-Modal Simulator for Robot Perception",
-      "title_zh": "VisionSIM：超越理想化传感器——面向机器人感知的多模态模拟器",
-      "tldr_zh": "提出物理逼真的多模态传感器模拟器，重现真实故障模式。",
-      "cover_zh": "传感器不再理想化｜这个模拟器把真实故障模式全还原了",
-      "abstract_zh": "机器人感知日益依赖异构传感器套件，将相机与新兴模态（事件、SPAD、iToF/dToF 和热成像）相结合。然而，现有模拟器将这些传感器理想化，掩盖了限制实际部署的关键模态特定故障模式。我们提出 VisionSIM，一个统一的、基于物理的模拟平台，通过建模多种传统和新兴模态的原始物理测量过程，将传感器逼真度提升为首要关注点。我们提供对物理传感器参数的细粒度控制，重现通用模拟器忽略的故障模式：LiDAR 的堆叠和眩光；iToF 的相位卷绕、饱和和运动伪影；事件相机的折射丢失；以及热相机的历史相关发射。这使得在相同场景和轨迹上进行有原则的跨模态比较成为可能。我们发布该平台和一个大型室内数据集，包含同步的原始测量和丰富的真值标注。",
-      "authors": [
-        "Sacha Jungerman",
-        "Kaustubh Sadekar",
-        "Avery Gump"
+      "institutions": [
+        "University of Washington",
+        "Salesforce AI Research"
       ],
-      "authors_all": [
-        "Sacha Jungerman",
-        "Kaustubh Sadekar",
-        "Avery Gump",
-        "Sriram Narayanan",
-        "Shantanu Gupta",
-        "Bhuyashi Deka",
-        "Srinivasa Narasimhan",
-        "Atul Ingle",
-        "Mohit Gupta"
+      "method_tags": [
+        "closed-loop evaluation",
+        "user simulation",
+        "GRPO"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08368.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08368-p2.jpg",
-        "assets/img/covers/arxiv-2611-08368-p3.jpg",
-        "assets/img/covers/arxiv-2611-08368-p4.jpg"
-      ],
-      "arxiv_id": "2611.08368",
-      "abs_url": "http://arxiv.org/abs/2611.08368v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08368v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

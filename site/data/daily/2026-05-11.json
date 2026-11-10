@@ -3,6 +3,93 @@
   "count": 10,
   "papers": [
     {
+      "id": "arxiv-2605-10819",
+      "source": "arxiv",
+      "title": "ALAM: Algebraically Consistent Latent Transitions for Vision-Language-Action Models",
+      "title_zh": "ALAM：面向视觉-语言-动作模型的代数一致隐式转移",
+      "tldr_zh": "提出ALAM，通过代数一致性约束从无动作视频学习结构化隐式转移，显著提升VLA策略成功率。",
+      "cover_zh": "无动作视频也能训练机器人？ALAM用代数一致性让成功率翻倍",
+      "abstract_zh": "视觉-语言-动作（VLA）模型仍受限于带动作标签的机器人数据稀缺，而无动作视频提供了物理世界如何变化的丰富证据。隐式动作模型有望从视频中提取此类先验，但基于重建训练的隐式编码不一定适用于策略生成：它们可能预测未来观测，却缺乏可重用或与机器人动作一致生成所需的结构。我们提出ALAM（代数隐式动作模型），一种代数一致的隐式动作模型，将无动作视频中的时序关系转化为结构监督。给定帧三元组，ALAM学习由重建驱动且受组合与反转一致性正则化的隐式转移，鼓励局部可加的转移空间。在下游VLA学习中，我们冻结预训练编码器，将其隐式转移序列作为辅助生成目标，在联合流匹配目标下与机器人动作共同生成。这耦合了结构化的隐式转移与基于流的策略生成，使策略能够利用ALAM的局部一致转移几何，而无需隐式到动作的解码。表征探测显示，ALAM将可加性和反转性误差相比无结构隐式动作基线降低25-85倍，并改善了长时域累积重建。当迁移到VLA策略时，ALAM在MetaWorld MT50上将平均成功率从47.9%提升至85.0%，在LIBERO上从94.1%提升至98.1%，并在真实世界操作任务中取得一致增益。消融实验进一步证实，最大的改进来自代数结构化的隐式转移与联合流匹配之间的协同作用。",
+      "authors": [
+        "Zuojin Tang",
+        "Haoyun Liu",
+        "Xinyuan Chang"
+      ],
+      "authors_all": [
+        "Zuojin Tang",
+        "Haoyun Liu",
+        "Xinyuan Chang",
+        "Changjie Wu",
+        "Dongjie Huo",
+        "Yandan Yang",
+        "Bin Liu",
+        "Zhejia Cai",
+        "Feng Xiong",
+        "Mu Xu",
+        "jiachen Luo",
+        "De Ma",
+        "Zhiheng Ma",
+        "Gang Pan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-05-11",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ZJU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 阿里"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2605-10819.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2605-10819-p2.jpg",
+        "assets/img/covers/arxiv-2605-10819-p3.jpg",
+        "assets/img/covers/arxiv-2605-10819-p4.jpg"
+      ],
+      "arxiv_id": "2605.10819",
+      "abs_url": "http://arxiv.org/abs/2605.10819v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.10819v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-11-10",
+      "score": 47,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "提出代数一致潜动作模型，从无动作视频学习结构化潜转移，显著提升VLA策略成功率，方法新颖且实验充分。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Zhejiang University",
+        "Amap, Alibaba Group",
+        "Nanjing University",
+        "Shenzhen University of Advanced Technology"
+      ],
+      "method_tags": [
+        "Latent Action Model",
+        "Flow Matching",
+        "Algebraic Consistency"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2605-10942",
       "source": "arxiv",
       "title": "HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models",
@@ -220,89 +307,6 @@
         "Visual Encoder Grounding Alignment",
         "spatial grounding",
         "VLA"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2605-10819",
-      "source": "arxiv",
-      "title": "ALAM: Algebraically Consistent Latent Transitions for Vision-Language-Action Models",
-      "title_zh": "ALAM：面向视觉-语言-动作模型的代数一致隐式转移",
-      "tldr_zh": "提出ALAM，通过代数一致性约束从无动作视频学习结构化隐式转移，显著提升VLA策略成功率。",
-      "cover_zh": "无动作视频也能训练机器人？ALAM用代数一致性让成功率翻倍",
-      "abstract_zh": "视觉-语言-动作（VLA）模型仍受限于带动作标签的机器人数据稀缺，而无动作视频提供了物理世界如何变化的丰富证据。隐式动作模型有望从视频中提取此类先验，但基于重建训练的隐式编码不一定适用于策略生成：它们可能预测未来观测，却缺乏可重用或与机器人动作一致生成所需的结构。我们提出ALAM（代数隐式动作模型），一种代数一致的隐式动作模型，将无动作视频中的时序关系转化为结构监督。给定帧三元组，ALAM学习由重建驱动且受组合与反转一致性正则化的隐式转移，鼓励局部可加的转移空间。在下游VLA学习中，我们冻结预训练编码器，将其隐式转移序列作为辅助生成目标，在联合流匹配目标下与机器人动作共同生成。这耦合了结构化的隐式转移与基于流的策略生成，使策略能够利用ALAM的局部一致转移几何，而无需隐式到动作的解码。表征探测显示，ALAM将可加性和反转性误差相比无结构隐式动作基线降低25-85倍，并改善了长时域累积重建。当迁移到VLA策略时，ALAM在MetaWorld MT50上将平均成功率从47.9%提升至85.0%，在LIBERO上从94.1%提升至98.1%，并在真实世界操作任务中取得一致增益。消融实验进一步证实，最大的改进来自代数结构化的隐式转移与联合流匹配之间的协同作用。",
-      "authors": [
-        "Zuojin Tang",
-        "Haoyun Liu",
-        "Xinyuan Chang"
-      ],
-      "authors_all": [
-        "Zuojin Tang",
-        "Haoyun Liu",
-        "Xinyuan Chang",
-        "Changjie Wu",
-        "Dongjie Huo",
-        "Yandan Yang",
-        "Bin Liu",
-        "Zhejia Cai",
-        "Feng Xiong",
-        "Mu Xu",
-        "jiachen Luo",
-        "De Ma",
-        "Zhiheng Ma",
-        "Gang Pan"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-05-11",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ ZJU"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ 阿里"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2605-10819.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2605-10819-p2.jpg",
-        "assets/img/covers/arxiv-2605-10819-p3.jpg",
-        "assets/img/covers/arxiv-2605-10819-p4.jpg"
-      ],
-      "arxiv_id": "2605.10819",
-      "abs_url": "http://arxiv.org/abs/2605.10819v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.10819v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 37,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "提出代数一致潜动作模型，从无动作视频学习结构化潜转移，显著提升VLA策略成功率，方法新颖且实验充分。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Zhejiang University",
-        "Amap, Alibaba Group",
-        "Nanjing University",
-        "Shenzhen University of Advanced Technology"
-      ],
-      "method_tags": [
-        "Latent Action Model",
-        "Flow Matching",
-        "Algebraic Consistency"
       ],
       "platform": [],
       "sim_stack": [],
