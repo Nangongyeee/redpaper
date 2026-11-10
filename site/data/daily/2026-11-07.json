@@ -1,7 +1,334 @@
 {
   "date": "2026-11-07",
-  "count": 1,
+  "count": 12,
   "papers": [
+    {
+      "id": "arxiv-2611-10410",
+      "source": "arxiv",
+      "title": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+      "title_zh": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+      "tldr_zh": "Bimanual dexterous manipulation requires coordinated arm and",
+      "cover_zh": "Bimanual dexterous manipulation requires coordinated arm and",
+      "abstract_zh": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, we explore whether complex bimanual dexterity can emerge from a simple object-centric learning objective. We train reinforcement learning policies under a shared object-centric reward, varying their training environments rather than tuning separate rewards for each behavior. We find that the policies discover pre-grasp manipulation, grasping and regrasping, in-hand adjustment and handover to reach object-pose goals without hand-designed motion sequences. We then refine the experts on transition states and use DAgger and reinforcement learning to distill them into a single policy that composes these behaviors for diverse bimanual tasks. On real hardware, the same policy succeeds in 61 of 80 trials (76.3\\%) across four tasks with unseen objects and no task-specific fine-tuning. In simulated barcode scanning, our policy achieves 85.0\\% success, compared with 60.4\\% for two single-arm policies without handover. These results suggest that this objective provides a simple and scalable interface for learning general bimanual dexterity, shifting the burden from manually designing robot coordination to specifying what should happen to the object.",
+      "authors": [
+        "Qiyang Yan",
+        "Yulin Liu",
+        "Akash Sharma"
+      ],
+      "authors_all": [
+        "Qiyang Yan",
+        "Yulin Liu",
+        "Akash Sharma",
+        "Haozhi Qi",
+        "Guanya Shi",
+        "C. Karen Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Guanya Shi"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ C. Karen Liu"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-10410.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10410-p2.jpg",
+        "assets/img/covers/arxiv-2611-10410-p3.jpg",
+        "assets/img/covers/arxiv-2611-10410-p4.jpg"
+      ],
+      "arxiv_id": "2611.10410",
+      "abs_url": "http://arxiv.org/abs/2611.10410v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10410v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 35,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10443",
+      "source": "arxiv",
+      "title": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
+      "title_zh": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
+      "tldr_zh": "Understanding three-dimensional physical structure has becom",
+      "cover_zh": "Understanding three-dimensional physical structure has becom",
+      "abstract_zh": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference time or adopt a single visual pathway, potentially compromising the visual-semantic knowledge inherited from pre-trained models. We present SPARK-VLA, Spatial Representation distillation and Knowledge routing for VLAs, a preserve-specialize-route framework for spatially adapting VLAs without requiring external 3D inputs or experts at inference. SPARK-VLA consists of two key components: (1) spatial representation distillation, which transfers 3D understanding from a frozen 3D expert to a LoRA-adapted visual branch by aligning attention responses while preserving the original visual pathway, and (2) a lightweight knowledge router, which selectively forwards action-relevant visual tokens to the language model using routing supervision derived from action-loss gradients. Across LIBERO, LIBERO-Plus, CALVIN, and real-world manipulation, SPARK-VLA achieves strong performance with only a 0.5B language backbone and approximately 53M trainable parameters, providing an effective and parameter-efficient approach to 3D-aware VLA learning. Code is available at https://github.com/park-jungin/spark-vla.",
+      "authors": [
+        "Jungin Park",
+        "Chaoran Zhu",
+        "Changjae Oh"
+      ],
+      "authors_all": [
+        "Jungin Park",
+        "Chaoran Zhu",
+        "Changjae Oh",
+        "Kwanghoon Sohn"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-10443.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10443-p2.jpg",
+        "assets/img/covers/arxiv-2611-10443-p3.jpg",
+        "assets/img/covers/arxiv-2611-10443-p4.jpg"
+      ],
+      "arxiv_id": "2611.10443",
+      "abs_url": "http://arxiv.org/abs/2611.10443v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10443v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10490",
+      "source": "arxiv",
+      "title": "Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation",
+      "title_zh": "Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation",
+      "tldr_zh": "Learned manipulation policies often rely on wrist-mounted ca",
+      "cover_zh": "Learned manipulation policies often rely on wrist-mounted ca",
+      "abstract_zh": "Learned manipulation policies often rely on wrist-mounted cameras for close-range visual feedback that complements external views of the workspace. However, contact-rich manipulation requires establishing and maintaining contacts that can remain hidden even from wrist cameras. Tactile sensors mounted on fingers can reliably and directly measure contact, without needing visual access. In this work, we show that this feedback enables policies to recover the performance advantage of wrist cameras using scene and egocentric vision together with touch. Our approach incorporates two low-cost tactile arrays into a visuotactile ACT policy, without wrist images during training or deployment. We evaluate six real-world task families spanning placement, insertion, occluded retrieval, and sustained-contact tool use. On three contact-rich tasks, we independently vary wrist-camera and tactile availability while keeping the demonstrations, policy architecture, and optimization settings fixed. Adding wrist cameras improves success by 18.3-28.3 percentage points over vision without wrist images. Adding tactile sensing instead improves success by 31.7-60.0 percentage points and yields higher observed success than vision-only policies with wrist cameras on all three tasks, with significant advantages on two under Holm-corrected tests. These results support finger-mounted tactile sensing as an effective alternative to wrist cameras in the evaluated contact-rich settings.",
+      "authors": [
+        "Aijia Yang",
+        "Arsh Tangri",
+        "Sergey Zakharov"
+      ],
+      "authors_all": [
+        "Aijia Yang",
+        "Arsh Tangri",
+        "Sergey Zakharov",
+        "Krishna Murthy Jatavallabhula"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-10490.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10490-p2.jpg",
+        "assets/img/covers/arxiv-2611-10490-p3.jpg",
+        "assets/img/covers/arxiv-2611-10490-p4.jpg"
+      ],
+      "arxiv_id": "2611.10490",
+      "abs_url": "http://arxiv.org/abs/2611.10490v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10490v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 25,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10451",
+      "source": "arxiv",
+      "title": "Grip, Trace, Write: Force-Aware Imitation and Reinforcement Learning for High-DoF Robotic Handwriting",
+      "title_zh": "Grip, Trace, Write: Force-Aware Imitation and Reinforcement Learning for High-DoF Robotic Handwriting",
+      "tldr_zh": "Most robotic handwriting rigidly mounts the pen and reduces",
+      "cover_zh": "Most robotic handwriting rigidly mounts the pen and reduces",
+      "abstract_zh": "Most robotic handwriting rigidly mounts the pen and reduces writing to trajectory tracking. A freely held pen instead couples grasp stability, tip motion, and contact force. We present Grip, Trace, Write, a force-aware simulation environment and learning framework for high-DoF handwriting. A two-branch actor separates pen retention from arm-wrist writing while preserving their closed-loop coupling. Training learns a grasp controller, initializes writing from inverse-kinematics demonstrations by behavior cloning, and improves writing through reinforcement learning with rewards on ink, force, time, and retention. Across diverse tasks, the policy improves completion, precision, force regulation, and efficiency over behavior cloning and inverse kinematics, and generalizes without fine-tuning to unseen English and Chinese content. These results establish force-aware handwriting as a testbed for dexterous tool use.",
+      "authors": [
+        "Rongqian Chen",
+        "Yiding Chen",
+        "Jijie Zhou"
+      ],
+      "authors_all": [
+        "Rongqian Chen",
+        "Yiding Chen",
+        "Jijie Zhou",
+        "Tom Z. Jiahao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-10451.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10451-p2.jpg",
+        "assets/img/covers/arxiv-2611-10451-p3.jpg",
+        "assets/img/covers/arxiv-2611-10451-p4.jpg"
+      ],
+      "arxiv_id": "2611.10451",
+      "abs_url": "http://arxiv.org/abs/2611.10451v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10451v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10343",
+      "source": "arxiv",
+      "title": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+      "title_zh": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+      "tldr_zh": "Generative robot policies based on diffusion and flow matchi",
+      "cover_zh": "Generative robot policies based on diffusion and flow matchi",
+      "abstract_zh": "Generative robot policies based on diffusion and flow matching can model complex, multimodal behaviors, but remain susceptible to covariate shift during closed-loop execution. Existing approaches mitigate such failures through additional demonstrations, policy fine-tuning, or test-time guidance, but often require human intervention, engineered rewards, or other task-specific signals. We introduce GUARD, an anomaly-informed Q-steering framework that leverages the policy's training distribution to construct a dense, failure-anticipatory steering signal. GUARD pairs sparse task rewards with dense anomaly scores learned from policy training data and propagates both through a learned Q-function. Its gradients then steer the denoising process toward actions that improve task return while preventing trajectories from entering poorly supported regions, without directly modifying the pretrained policy. Across four Adroit dexterous manipulation tasks, GUARD achieves average success rates of $96.0\\%$ and $80.0\\%$ under nominal and perturbed dynamics, outperforming the strongest baseline by $21.0$ and $20.0$ percentage points while maintaining the lowest anomaly score. GUARD further demonstrates direct sim-to-real transfer on in-hand screwdriver rotation and reorientation tasks, achieving $40$ and $25$ percentage-point gains in success rate. These results demonstrate that anomaly signals can serve not only for failure monitoring but also to complement sparse task rewards as effective supervision for robust policy steering.",
+      "authors": [
+        "Aryaman Gupta",
+        "Xiaoyue Wu",
+        "Rana Soltani Zarrin"
+      ],
+      "authors_all": [
+        "Aryaman Gupta",
+        "Xiaoyue Wu",
+        "Rana Soltani Zarrin",
+        "Mark Van der Merwe"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10343.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10343-p2.jpg",
+        "assets/img/covers/arxiv-2611-10343-p3.jpg",
+        "assets/img/covers/arxiv-2611-10343-p4.jpg"
+      ],
+      "arxiv_id": "2611.10343",
+      "abs_url": "http://arxiv.org/abs/2611.10343v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10343v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10392",
+      "source": "arxiv",
+      "title": "Tiresias: Towards Language-Conditioned World Models",
+      "title_zh": "Tiresias: Towards Language-Conditioned World Models",
+      "tldr_zh": "World models enable planning through internal simulation, wh",
+      "cover_zh": "World models enable planning through internal simulation, wh",
+      "abstract_zh": "World models enable planning through internal simulation, while natural language provides intuitive task specification. Yet, language-conditioned world modeling remains fragmented across domains with disparate action spaces, datasets, and evaluation protocols. We introduce LCWM, a shared task that maps an initial agent-view observation and a language instruction to an action sequence that fulfills the instruction. Its accompanying benchmark, LCWM-Bench, integrates 15 datasets across navigation, robotics, 3D gaming, and driving under a shared action interface and evaluation protocol, pairing 142,987 episodes with 428,961 instructions in three styles. We further propose Tiresias, an agent that plans via selective imagination: a language-conditioned diffusion policy generates candidate trajectories, a trajectory ranker shortlists them, and a video-pretrained world model imagines their visual consequences. A visual ranker evaluates these rollouts, complementing trajectory scores to select the final plan. Tiresias achieves competitive planning and imagination performance on LCWM-Bench. Ablations demonstrate the complementary benefits of trajectory ranking and visual verification, while experiments with alternative proposal methods show that the trained rankers remain effective beyond our diffusion policy. Together, LCWM-Bench and Tiresias provide a unified evaluation setting and an effective starting point for studying language-guided planning through world models.",
+      "authors": [
+        "Fengyi Wu",
+        "Yifei Dong",
+        "Yetong Sha"
+      ],
+      "authors_all": [
+        "Fengyi Wu",
+        "Yifei Dong",
+        "Yetong Sha",
+        "Lingdong Kong",
+        "Qiyu Hu",
+        "Bohan Xiong",
+        "Qi Dai",
+        "Alexander G. Hauptmann",
+        "Zhi-Qi Cheng"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10392.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10392-p2.jpg",
+        "assets/img/covers/arxiv-2611-10392-p3.jpg",
+        "assets/img/covers/arxiv-2611-10392-p4.jpg"
+      ],
+      "arxiv_id": "2611.10392",
+      "abs_url": "http://arxiv.org/abs/2611.10392v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10392v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
     {
       "id": "qbitai-fdeed09ac9",
       "source": "qbitai",
@@ -17,12 +344,7 @@
       "channels": [
         "world-model"
       ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
+      "badges": [],
       "cover_image": "",
       "preview_pages": [],
       "arxiv_id": "",
@@ -30,7 +352,7 @@
       "pdf_url": "",
       "venue": "",
       "venue_announced": "",
-      "score": 28,
+      "score": 18,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -44,6 +366,249 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2611-10429",
+      "source": "arxiv",
+      "title": "Applied bifidelity material response model construction and uncertainty quantification with a sampling hypernetwork",
+      "title_zh": "Applied bifidelity material response model construction and uncertainty quantification with a sampling hypernetwork",
+      "tldr_zh": "Multifidelity modeling offers a practical route to accurate",
+      "cover_zh": "Multifidelity modeling offers a practical route to accurate",
+      "abstract_zh": "Multifidelity modeling offers a practical route to accurate prediction and uncertainty quantification when high-fidelity data are scarce but lower-fidelity data are comparatively abundant. This work develops a bifidelity Langevin sampling hypernetwork framework that constructs probabilistic neu- ral response models by learning a posterior distribution over model parameters rather than a single deterministic fit. The method combines a flexible shared-latent data representation for low- and high-fidelity responses, enabling parameter sharing and transfer learning between the fidelities. We introduce several methodological enhancements to improve the robustness and efficiency of this ap- proach, including stability-promoting drift models, staged and conditional training strategies, adap- tive initialization of Langevin trajectories, and training procedures designed to better exploit corre- lations between fidelity levels. These additions improve convergence behavior, reduce the sampling effort required to obtain representative posterior ensembles, and provide more reliable predictive uncertainty in data-limited regimes. The resulting framework makes more effective use of available multifidelity data while preserving interpretability through the learned posterior structure, yielding improved predictive performance, better uncertainty characterization, and a more stable workflow for constructing uncertainty-aware surrogate models. The method is demonstrated on experimental, high-fidelity simulation and illustrative synthetic data.",
+      "authors": [
+        "Reese E. Jones",
+        "Cosmin Safta",
+        "Dan Bolintineau"
+      ],
+      "authors_all": [
+        "Reese E. Jones",
+        "Cosmin Safta",
+        "Dan Bolintineau",
+        "Craig M. Hamel",
+        "Gianluca Geraci",
+        "Sharlotte LB Kramer"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-07",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10429.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10429-p2.jpg",
+        "assets/img/covers/arxiv-2611-10429-p3.jpg",
+        "assets/img/covers/arxiv-2611-10429-p4.jpg"
+      ],
+      "arxiv_id": "2611.10429",
+      "abs_url": "http://arxiv.org/abs/2611.10429v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10429v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10366",
+      "source": "arxiv",
+      "title": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+      "title_zh": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+      "tldr_zh": "Directing a robot to locate a target object in unseen enviro",
+      "cover_zh": "Directing a robot to locate a target object in unseen enviro",
+      "abstract_zh": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
+      "authors": [
+        "Qizhao Chen",
+        "Yuanhong Zeng",
+        "Shoh Nishino"
+      ],
+      "authors_all": [
+        "Qizhao Chen",
+        "Yuanhong Zeng",
+        "Shoh Nishino",
+        "Anushri Dixit"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10366.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10366-p2.jpg",
+        "assets/img/covers/arxiv-2611-10366-p3.jpg",
+        "assets/img/covers/arxiv-2611-10366-p4.jpg"
+      ],
+      "arxiv_id": "2611.10366",
+      "abs_url": "http://arxiv.org/abs/2611.10366v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10366v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 14,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10435",
+      "source": "arxiv",
+      "title": "Multi-Objective Adaptation After Deployment: A Position on World Models for Remote Robot Teams",
+      "title_zh": "Multi-Objective Adaptation After Deployment: A Position on World Models for Remote Robot Teams",
+      "tldr_zh": "Autonomous robot teams deployed in remote, unstructured envi",
+      "cover_zh": "Autonomous robot teams deployed in remote, unstructured envi",
+      "abstract_zh": "Autonomous robot teams deployed in remote, unstructured environments may face changes in the environment, hardware, and team composition that degrade previously effective policies. Shifting mission objectives can be handled by selecting a different solution from an existing Pareto set, but shifting deployment conditions can reorder the set itself, making previously dominated policies competitive or new policies necessary. However, evaluating these policies in new contexts while minimizing risk to the hardware remains an open problem. We argue that, although largely untested in this domain, world models merit investigation for post-deployment multi-objective adaptation. By predicting policy outcomes under updated estimates of current conditions, world models could enable teams to re-evaluate existing policies without physically executing each candidate, provided predicted performance changes reflect those realized on deployed systems. We identify research priorities for model-based policy re-evaluation, validation of predicted against realized performance, and incorporating shared information into world models to support coordinated team adaptation.",
+      "authors": [
+        "Jamie Santos",
+        "Kagan Tumer"
+      ],
+      "authors_all": [
+        "Jamie Santos",
+        "Kagan Tumer"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10435.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10435-p2.jpg",
+        "assets/img/covers/arxiv-2611-10435-p3.jpg",
+        "assets/img/covers/arxiv-2611-10435-p4.jpg"
+      ],
+      "arxiv_id": "2611.10435",
+      "abs_url": "http://arxiv.org/abs/2611.10435v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10435v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10400",
+      "source": "arxiv",
+      "title": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
+      "title_zh": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
+      "tldr_zh": "Visuomotor policies can handle many robot manipulation tasks",
+      "cover_zh": "Visuomotor policies can handle many robot manipulation tasks",
+      "abstract_zh": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to break down the policy's internal activations into features that can be studied individually. We give meaning to these features by linking their activity to the robot's position, movement, and surroundings, and by steering their activations to examine how they affect the robot's actions. From successful and failed executions, we learn how the features behave on the way to a failure. During execution, MIND flags deviations from these patterns and uses the meaningful features contributing most to the change to describe the problem. Experiments in simulation and on a physical robot show that changes in these internal features help detect and explain failures. By using the same features for detection and diagnosis, MIND connects failure signals to understandable changes inside the policy.",
+      "authors": [
+        "Riad Ahmed",
+        "Sujosh Nag",
+        "Moniruzzaman Akash"
+      ],
+      "authors_all": [
+        "Riad Ahmed",
+        "Sujosh Nag",
+        "Moniruzzaman Akash",
+        "Momotaz Begum"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-07",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10400.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10400-p2.jpg",
+        "assets/img/covers/arxiv-2611-10400-p3.jpg",
+        "assets/img/covers/arxiv-2611-10400-p4.jpg"
+      ],
+      "arxiv_id": "2611.10400",
+      "abs_url": "http://arxiv.org/abs/2611.10400v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10400v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10416",
+      "source": "arxiv",
+      "title": "S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models",
+      "title_zh": "S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models",
+      "tldr_zh": "Unified whole-body pose estimators jointly predict body, fac",
+      "cover_zh": "Unified whole-body pose estimators jointly predict body, fac",
+      "abstract_zh": "Unified whole-body pose estimators jointly predict body, face, and hand landmarks, but often degrade on small, blurred, or occluded hands. Attaching a standalone hand specialist introduces extra detection overhead, coordinate alignment, and wrist-stitching artifacts. We introduce S2HAND, a hand-specialized Sapiens2-5B framework that preserves the native 308-keypoint output interface. Specifically, S2HAND-MT adapts a lightweight 0.87M-parameter pose branch to route 40 finger heatmaps while strictly preserving the shared Transformer, auxiliary task heads, and the other 268 body, foot, and face heatmaps. S2HAND-Pose further fine-tunes three Fisher-selected Transformer blocks (267.13M parameters), trading exact preservation for stronger hand recovery: it lifts macro AUC from 57.83% to 65.73% across HInt TEST, COCO WholeBody VAL, and FreiHAND EVAL, and surpasses HInt-adapted Hand5/HRNet and stitched Hand5 systems on all five Native Pipeline benchmarks. On COCO, S2HAND-Pose improves hand AP by 12.89 points and body-plus-foot AP by 0.19 points. Across a 512-image multi-task audit, it maintains 99.60% foreground segmentation agreement with the public checkpoint, with quantified normal and pointmap drift. Its 2D coordinates also lower 3D mesh error in frozen Pose2Mesh transfer, while our optional TailGuard re-cropping module cuts S2HAND-MT's severe failure rate on NewDays from 13.45% to 10.43%. S2HAND thus resolves the whole-body hand bottleneck with either exact non-hand preservation (MT) or empirically audited trade-offs (Pose).",
+      "authors": [
+        "Singyu Muk",
+        "Xuanren Song",
+        "Kalin Stefanov"
+      ],
+      "authors_all": [
+        "Singyu Muk",
+        "Xuanren Song",
+        "Kalin Stefanov"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-07",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10416.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10416-p2.jpg",
+        "assets/img/covers/arxiv-2611-10416-p3.jpg",
+        "assets/img/covers/arxiv-2611-10416-p4.jpg"
+      ],
+      "arxiv_id": "2611.10416",
+      "abs_url": "http://arxiv.org/abs/2611.10416v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10416v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
