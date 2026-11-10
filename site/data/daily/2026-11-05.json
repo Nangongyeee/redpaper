@@ -35,6 +35,10 @@
       "badges": [
         {
           "kind": "lab",
+          "label": "⭐ Berkeley (BAIR)"
+        },
+        {
+          "kind": "lab",
           "label": "⭐ Angjoo Kanazawa"
         },
         {
@@ -57,14 +61,166 @@
       "pdf_url": "https://arxiv.org/pdf/2611.08407v1",
       "venue": "CoRL 2026",
       "venue_announced": "",
-      "score": 45,
+      "score": 70,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "UC Berkeley",
+        "Sony Group Corporation",
+        "Meta"
+      ],
+      "method_tags": [
+        "motion retargeting",
+        "whole-body tracking",
+        "human-humanoid interaction"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-07532",
+      "source": "arxiv_discover",
+      "title": "Semantics-to-Contact: A Stagewise Framework for Robust Contact-Rich Manipulation",
+      "title_zh": "从语义到接触：一种用于鲁棒接触密集型操作的阶段式框架",
+      "tldr_zh": "阶段式框架结合语义聚焦与接触细化，提升视觉鲁棒性。",
+      "cover_zh": "视觉变化不再怕｜这个框架让机器人操作稳如老狗",
+      "abstract_zh": "接触密集型操作需要在复杂接触动力学下进行精确控制，同时对多样化的视觉条件保持鲁棒。然而，现实世界中的强化学习往往过拟合于训练场景的视觉外观。我们提出语义到接触（S2C），一种用于视觉鲁棒接触密集型操作的阶段式框架。其核心思想是将问题分解为两个阶段：语义聚焦和接触细化。在第一阶段，视觉语言模型在视觉多样的场景中定位任务相关区域，提供粗粒度空间引导并减轻探索负担。在第二阶段，现实世界中人在回路的残差强化学习策略利用力反馈在定位区域内学习细粒度接触行为。为进一步提高视觉鲁棒性，我们引入一种以对象为中心的视觉增强策略，在保留机器人和任务相关对象的同时随机化背景外观。在六个接触密集型现实世界操作任务上的实验表明，S2C 在强基线上持续提高成功率，并在显著的视觉和位置变化下保持可靠性能。这些结果表明，阶段式语义聚焦和接触细化为实现视觉鲁棒的现实世界接触密集型操作提供了一条实用路径。我们的演示可在 https://edem-ai.github.io/S2C/ 查看。",
+      "authors": [
+        "Guanren Qiao",
+        "Ruixiang Ouyang",
+        "Sheng Xu"
+      ],
+      "authors_all": [
+        "Guanren Qiao",
+        "Ruixiang Ouyang",
+        "Sheng Xu",
+        "Yueci Deng",
+        "Yunxin Tai",
+        "Kui Jia",
+        "Guiliang Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-07532.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-07532-p2.jpg",
+        "assets/img/covers/arxiv-2611-07532-p3.jpg",
+        "assets/img/covers/arxiv-2611-07532-p4.jpg"
+      ],
+      "arxiv_id": "2611.07532",
+      "abs_url": "http://arxiv.org/abs/2611.07532v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.07532v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-11-10",
+      "score": 44,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "VLM语义定位+人在回路残差RL的接触丰富操作框架，真机六任务验证，视觉鲁棒性有新意",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The Chinese University of Hong Kong, Shenzhen",
+        "DexForce Co., Ltd",
+        "Shenzhen Loop Area Institute"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Vision-Language Model",
+        "human-in-the-loop"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2611-08654",
+      "source": "arxiv",
+      "title": "CS-Pi: Constraint-Satisfying Flow Policy Sampling",
+      "title_zh": "CS-Pi：满足约束的流策略采样",
+      "tldr_zh": "CS-Pi结合投影与拒绝采样，在推理时高效满足约束且保持动作合理性。",
+      "cover_zh": "拒绝采样太慢？投影不够合理？CS-Pi 一招兼得",
+      "abstract_zh": "部署在真实场景中的流匹配策略常常需要满足其演示数据中未出现的约束，例如避开从未见过的障碍物。为每个新约束重新训练是不切实际的，因此必须在推理时施加约束。施加约束时不能丢弃策略已学到的内容：策略很少采样的动作可能避开障碍物却导致任务失败。因此，我们希望动作既安全（满足约束）又合理（在策略下保持高概率）。梯度引导是最常见的方法，它引导带噪状态，因此必须在策略对干净动作的运行时估计上评估其成本；当策略在从障碍物左侧还是右侧通过之间不确定时，该估计是两者的平均，可能直接穿过障碍物。我们转而基于拒绝和投影。拒绝会重新采样动作直到安全：每个输出都合理，但当安全动作稀少时等待时间难以承受。投影将动作移动到最近的安全动作：高效，但结果不一定合理。我们的关键见解是，流匹配采样让我们能结合两者，保持投影的效率和拒绝的合理性。CS-Pi，我们的抽取-投影-重噪采样器，将每次抽取投影到最近的安全动作，根据投影移动的距离按比例添加噪声，并重新运行未修改的策略直到抽取安全。仅替换投影步骤即可将CS-Pi扩展到连续成本。在2D诊断、7自由度货架拾放、方向偏好和零样本Franka部署中，CS-Pi在货架上达到81%的安全成功率，在硬件上达到55%，而投影分别为55%和40%，同时保持合理性。",
+      "authors": [
+        "Soumojit Bhattacharya",
+        "Oliver Kroemer",
+        "Shubham Tulsiani"
+      ],
+      "authors_all": [
+        "Soumojit Bhattacharya",
+        "Oliver Kroemer",
+        "Shubham Tulsiani"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08654.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08654-p2.jpg",
+        "assets/img/covers/arxiv-2611-08654-p3.jpg",
+        "assets/img/covers/arxiv-2611-08654-p4.jpg"
+      ],
+      "arxiv_id": "2611.08654",
+      "abs_url": "http://arxiv.org/abs/2611.08654v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08654v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 41,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "flow-matching policy",
+        "constraint satisfaction",
+        "projection and rejection sampling"
+      ],
+      "platform": [
+        "Franka"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -129,28 +285,29 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-07532",
-      "source": "arxiv_discover",
-      "title": "Semantics-to-Contact: A Stagewise Framework for Robust Contact-Rich Manipulation",
-      "title_zh": "从语义到接触：一种用于鲁棒接触密集型操作的阶段式框架",
-      "tldr_zh": "阶段式框架结合语义聚焦与接触细化，提升视觉鲁棒性。",
-      "cover_zh": "视觉变化不再怕｜这个框架让机器人操作稳如老狗",
-      "abstract_zh": "接触密集型操作需要在复杂接触动力学下进行精确控制，同时对多样化的视觉条件保持鲁棒。然而，现实世界中的强化学习往往过拟合于训练场景的视觉外观。我们提出语义到接触（S2C），一种用于视觉鲁棒接触密集型操作的阶段式框架。其核心思想是将问题分解为两个阶段：语义聚焦和接触细化。在第一阶段，视觉语言模型在视觉多样的场景中定位任务相关区域，提供粗粒度空间引导并减轻探索负担。在第二阶段，现实世界中人在回路的残差强化学习策略利用力反馈在定位区域内学习细粒度接触行为。为进一步提高视觉鲁棒性，我们引入一种以对象为中心的视觉增强策略，在保留机器人和任务相关对象的同时随机化背景外观。在六个接触密集型现实世界操作任务上的实验表明，S2C 在强基线上持续提高成功率，并在显著的视觉和位置变化下保持可靠性能。这些结果表明，阶段式语义聚焦和接触细化为实现视觉鲁棒的现实世界接触密集型操作提供了一条实用路径。我们的演示可在 https://edem-ai.github.io/S2C/ 查看。",
+      "id": "arxiv-2611-08413",
+      "source": "arxiv",
+      "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
+      "title_zh": "T3R：面向高效鲁棒VLA模型的免训练两阶段Token精炼",
+      "tldr_zh": "免训练两阶段Token精炼，剪枝加注意力偏置，提升VLA推理效率与鲁棒性。",
+      "cover_zh": "免训练剪掉85%视觉token｜VLA推理反而更准更鲁棒",
+      "abstract_zh": "视觉-语言-动作（VLA）模型实现了端到端机器人控制，但推理成本日益高昂。每次决策需处理数百个视觉token（常来自多摄像头），导致大量计算，且无关背景内容在分布偏移下会干扰动作预测。我们认为这些问题源于两种互补的冗余：许多视觉token在空间上无关，而剩余token上的注意力常被错误分配。基于此，我们提出T3R，一种免训练的两阶段Token精炼框架。第一阶段，分割引导的token剪枝移除无关视觉块，以减少计算并消除干扰上下文。第二阶段，显著性引导的注意力偏置将注意力重新分配给保留token中对动作关键的视觉区域和语言指令。剪枝产生更干净的候选集，注意力偏置进一步强调最决策相关的证据，从而获得比任一阶段单独更好的精度-效率前沿。在LIBERO-Spatial上，T3R移除85%的场景摄像头视觉token，同时基本匹配未剪枝的成功率，并在分布外物体放置扰动下将成功率提升高达7个百分点。时间对比显示每次推理调用中剪枝和注意力偏置应用耗时7.8毫秒。随着输入分辨率增加，LLM前向分析显示相比未剪枝基线最高3.3倍加速。在LIBERO、SIMPLER和RoboTwin上使用三种VLA骨干的评估表明，多摄像头设置下精度-效率收益最强。这些结果证明免训练token精炼是实现高效鲁棒VLA推理的实用方法。",
       "authors": [
-        "Guanren Qiao",
-        "Ruixiang Ouyang",
-        "Sheng Xu"
+        "Mohammed Hassan",
+        "Zhenyang Chen",
+        "Zheng Wang"
       ],
       "authors_all": [
-        "Guanren Qiao",
-        "Ruixiang Ouyang",
-        "Sheng Xu",
-        "Yueci Deng",
-        "Yunxin Tai",
-        "Kui Jia",
-        "Guiliang Liu"
+        "Mohammed Hassan",
+        "Zhenyang Chen",
+        "Zheng Wang",
+        "Zhixin Zhu",
+        "Tianlong Chen",
+        "Yingyan",
+        "Lin",
+        "Chaojian Li"
       ],
-      "primary_category": "",
+      "primary_category": "cs.RO",
       "published": "2026-11-05",
       "channels": [
         "manipulation"
@@ -158,37 +315,97 @@
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ HKU"
+          "label": "⭐ HKUST"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2611-07532.jpg",
+      "cover_image": "assets/img/covers/arxiv-2611-08413.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2611-07532-p2.jpg",
-        "assets/img/covers/arxiv-2611-07532-p3.jpg",
-        "assets/img/covers/arxiv-2611-07532-p4.jpg"
+        "assets/img/covers/arxiv-2611-08413-p2.jpg",
+        "assets/img/covers/arxiv-2611-08413-p3.jpg",
+        "assets/img/covers/arxiv-2611-08413-p4.jpg"
       ],
-      "arxiv_id": "2611.07532",
-      "abs_url": "http://arxiv.org/abs/2611.07532v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.07532v1",
-      "venue": "NeurIPS 2026",
-      "venue_announced": "2026-11-10",
-      "score": 34,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "VLM语义定位+人在回路残差RL的接触丰富操作框架，真机六任务验证，视觉鲁棒性有新意",
-        "model": "deepseek-v4-flash"
-      },
+      "arxiv_id": "2611.08413",
+      "abs_url": "http://arxiv.org/abs/2611.08413v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08413v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 40,
+      "judge": {},
       "institutions": [
-        "The Chinese University of Hong Kong, Shenzhen",
-        "DexForce Co., Ltd",
-        "Shenzhen Loop Area Institute"
+        "The University of Texas at Austin",
+        "Georgia Institute of Technology",
+        "University of Illinois Urbana-Champaign",
+        "Hong Kong University of Science and Technology"
+      ],
+      "method_tags": [
+        "VLA",
+        "token pruning",
+        "attention biasing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08576",
+      "source": "arxiv",
+      "title": "Q-OIL: Optimistic Exploration in Learning from Human Interventions",
+      "title_zh": "Q-OIL：从人类干预中学习的乐观探索",
+      "tldr_zh": "提出Q-OIL方法，利用人类干预数据提升机器人学习效率。",
+      "cover_zh": "人类干预数据竟让机器人学习效率飙升？｜Q-OIL新方法",
+      "abstract_zh": "当机器人部署在真实世界中时，它们不可避免地会犯错。人类干预为改进机器人行为提供了宝贵的反馈，使其能够在线适应新场景。然而，研究人在回路的机器人学习很困难：真实世界实验缓慢且昂贵，因此大多数算法开发依赖于模拟人类模型。我们发现，常见的人类建模假设与实际人类干预方式不符。通过分析人类参与者的干预数据，我们发现人类倾向于在智能体进展停滞时进行干预，并且他们的纠正动作往往不是最优的。基于这些发现，我们引入了一种基于进展的人类干预模型，该模型与真实用户算法排名的秩相关性更高，从而能够在模拟中进行现实的算法基准测试和开发。基于这些见解，我们提出了Q-OIL，一种在强化学习中对干预转移添加乐观奖励并软引导探索朝向人类纠正的方法。我们发现解耦评论家对稳定性至关重要，因为它们防止奖励回传到干预前的状态。因此，Q-OIL比竞争基线学习更高效，在模拟和真实机器人上成功率提高10-50%，并改进了两个双臂操作任务上的预训练VLA。由于我们将评估和算法都建立在现实人类行为之上，这项工作为从干预中可扩展的机器人学习提供了一条实用路径。",
+      "authors": [
+        "Pranav Teegavarapu",
+        "Sriyash Poddar",
+        "Rico Qi"
+      ],
+      "authors_all": [
+        "Pranav Teegavarapu",
+        "Sriyash Poddar",
+        "Rico Qi",
+        "Cleah Winston",
+        "Krisha Khandelwal",
+        "Aykut Onyol",
+        "Natasha Jaques",
+        "Abhishek Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Toyota TRI / RAI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08576.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08576-p2.jpg",
+        "assets/img/covers/arxiv-2611-08576-p3.jpg",
+        "assets/img/covers/arxiv-2611-08576-p4.jpg"
+      ],
+      "arxiv_id": "2611.08576",
+      "abs_url": "http://arxiv.org/abs/2611.08576v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08576v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {},
+      "institutions": [
+        "University of Washington",
+        "Toyota Research Institute"
       ],
       "method_tags": [
         "Reinforcement Learning",
-        "Vision-Language Model",
-        "human-in-the-loop"
+        "Human-in-the-loop",
+        "Exploration"
       ],
       "platform": [],
       "sim_stack": [],
@@ -197,9 +414,7 @@
       "training_summary": "",
       "demo_videos": [],
       "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
+      "source_tags": []
     },
     {
       "id": "arxiv-2611-08209",
@@ -252,6 +467,195 @@
       "judge": {},
       "institutions": [],
       "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08462",
+      "source": "arxiv",
+      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+      "title_zh": "OopsieRecover：从语义干预中学习可迁移的VLA纠正",
+      "tldr_zh": "OopsieRecover用溯因推理从少量纠正演示中学习可泛化的VLA纠正。",
+      "cover_zh": "少量纠正演示就能让VLA泛化到新场景？这个框架做到了",
+      "abstract_zh": "视觉-语言-动作（VLA）模型能够执行广泛的机器人操作任务，但在部署时常常失败。教会它们从这些失败中恢复需要大量的纠正数据：现有方法通过直接将纠正动作与演示中的观察相关联来学习恢复。例如，类似DAgger的微调可能需要数十到数百次交互，但得到的策略仍可能无法将学到的纠正泛化到演示场景之外。我们假设语义可以捕捉失败及其纠正背后的原因，使策略仅从少量纠正演示中学习，并将这些纠正泛化到新物体和场景变化。我们提出OopsieRecover，一个利用溯因推理从少量纠正演示中推断意图，并将推断的知识编码为密集空间表示和条件成本的框架。这些成本捕捉行为何时不理想，并引导策略朝向更可取的动作区域。我们在6个任务以及物体姿态、场景和相关任务的变化上进行实验，发现仅需少量纠正演示就能使VLA在广泛的新情况下克服失败，而无需为每种变化提供新的纠正数据。视频请见 https://robin-lab.cs.utexas.edu/oopsierecover。",
+      "authors": [
+        "Arpit Bahety",
+        "Skand Peri",
+        "Sriniket Ambatipudi"
+      ],
+      "authors_all": [
+        "Arpit Bahety",
+        "Skand Peri",
+        "Sriniket Ambatipudi",
+        "Chen Xu",
+        "Haruki Nishimura",
+        "Masha Itkina",
+        "Roberto Martín-Martín"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Toyota TRI / RAI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08462.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08462-p2.jpg",
+        "assets/img/covers/arxiv-2611-08462-p3.jpg",
+        "assets/img/covers/arxiv-2611-08462-p4.jpg"
+      ],
+      "arxiv_id": "2611.08462",
+      "abs_url": "http://arxiv.org/abs/2611.08462v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08462v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "UT Austin",
+        "Toyota Research Institute"
+      ],
+      "method_tags": [
+        "VLA",
+        "imitation learning",
+        "abduction"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08392",
+      "source": "arxiv",
+      "title": "Learning a patient world model for health system simulation in intensive care",
+      "title_zh": "学习用于重症监护中卫生系统模拟的患者世界模型",
+      "tldr_zh": "学习患者世界模型以模拟ICU运营，可替代问题特定状态模型。",
+      "cover_zh": "一个模型搞定所有ICU模拟？新方法告别重复建模！",
+      "abstract_zh": "设计医疗策略需要在实施前预测其临床和运营后果，这一任务通常依赖于卫生系统模拟。此类模拟需要对患者状态如何演变并产生护理需求进行建模。然而，传统方法通常将紧凑的状态转移定制为单一政策问题，并忽略依赖历史的动态，因此当出现需要不同临床信息的新问题时，需要重新定义状态和转移。我们提出使用神经网络从纵向电子健康记录中学习患者世界模型，以提供患者轨迹的共享临床表示，从而服务于跨场景的模拟问题。以ICU运营为例，我们在MIMIC-IV上训练模型，冻结它，并通过场景特定的映射将其可时间查询的预测与共享的ICU日历、资源和队列耦合，使得一个模型能够在评估ICU床位容量、护理调度和ICU后转移容量的模拟中呈现入院需求、护理任务和出院建议。实验表明，我们的模型在总占用率和对容量与调度政策的定向响应方面与马尔可夫和半马尔可夫比较器相匹配。它还重现了从重放观察轨迹中获得的政策收益。对于从不同先前轨迹进入相同支持状态的患者，学习到的表示捕捉到24小时恢复差异（预测-6.4 vs 观察-6.7个百分点），这是紧凑状态模型遗漏的对比，并传播到不同的模拟护理需求、队列负担和床位使用中。这些结果表明，学习到的患者动态世界模型有潜力取代问题特定的状态模型，允许通过重新配置场景而无需重建模型来评估新的护理政策。",
+      "authors": [
+        "Yingtai Li",
+        "Ruoyan Wang",
+        "Yu Li"
+      ],
+      "authors_all": [
+        "Yingtai Li",
+        "Ruoyan Wang",
+        "Yu Li",
+        "Shaohua Kevin Zhou"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-05",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ USTC"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08392.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08392-p2.jpg",
+        "assets/img/covers/arxiv-2611-08392-p3.jpg",
+        "assets/img/covers/arxiv-2611-08392-p4.jpg"
+      ],
+      "arxiv_id": "2611.08392",
+      "abs_url": "http://arxiv.org/abs/2611.08392v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08392v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "University of Science and Technology of China (USTC)",
+        "Chinese Academy of Medical Sciences & Peking Union Medical College"
+      ],
+      "method_tags": [
+        "World Model",
+        "patient state representation",
+        "health system simulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08665",
+      "source": "arxiv",
+      "title": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
+      "title_zh": "NanoVDB 中的动态 GPU 体素网格与体素顺序处理",
+      "tldr_zh": "NanoVDB 新增动态拓扑更新与体素顺序访问，突破只读限制。",
+      "cover_zh": "NanoVDB 不再只读！动态更新+顺序访问，稀疏网格计算直接起飞",
+      "abstract_zh": "我们为 NanoVDB 数据结构引入了两项根本性进展：动态 GPU 原生拓扑更新，以及一种体素顺序访问范式，该范式显著加速了稀疏网格上的逐点算子和模板算子。NanoVDB 的线性化内存布局已带来强劲的 GPU 性能，而 fVDB 框架 [Williams et al 2024] 中引入的 Index-Grid 概念为稀疏机器学习工作负载提供了拓扑/数据分离和最优存储紧凑性。然而，此前所有 NanoVDB 迭代都假设静态拓扑，这阻碍了该数据结构在模拟和动态几何过程中的使用。我们通过引入一套动态拓扑算子——形态学膨胀、网格合并、剪枝以及跨分辨率粗化和细化——消除了这一限制。这些算子使用位并行算法，可在几毫秒内重建包含数亿体素的网格。我们还引入了一种体素顺序访问范式和数据结构，用于在稀疏数据上运行的 GPU 内核。我们将活动体素作为平坦线性序列进行流式处理，在此过程中最小化或消除了树遍历的需要。这实现了计算密度和规律性，使得即使复杂的基于模板的算子也能接近峰值内存带宽，且存储开销极小。总之，这些贡献消除了 NanoVDB 的只读约束，将其确立为动态 GPU 模拟和几何操作的高性能主要表示。我们在来自 3D 重建、流体模拟和大规模网格体素化等应用的基准测试中评估了新引入算子的有效性。",
+      "authors": [
+        "Eftychios Sifakis",
+        "Francis Williams",
+        "Christopher Horvath"
+      ],
+      "authors_all": [
+        "Eftychios Sifakis",
+        "Francis Williams",
+        "Christopher Horvath",
+        "Rohan Sawhney",
+        "Mark Harris",
+        "Jonathan Swartz",
+        "Ken Museth"
+      ],
+      "primary_category": "cs.GR",
+      "published": "2026-11-05",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08665.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08665-p2.jpg",
+        "assets/img/covers/arxiv-2611-08665-p3.jpg",
+        "assets/img/covers/arxiv-2611-08665-p4.jpg"
+      ],
+      "arxiv_id": "2611.08665",
+      "abs_url": "http://arxiv.org/abs/2611.08665v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08665v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "NVIDIA",
+        "University of Wisconsin-Madison"
+      ],
+      "method_tags": [
+        "动态拓扑更新",
+        "体素顺序访问",
+        "稀疏网格"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -740,8 +1144,15 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of California, Berkeley",
+        "Amazon"
+      ],
+      "method_tags": [
+        "RL",
+        "Distillation",
+        "Flow-matching action decoder"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -796,11 +1207,17 @@
       "score": 20,
       "judge": {},
       "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Whole-body Control",
+        "Sim-to-real"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -976,61 +1393,14 @@
       "venue_announced": "",
       "score": 16,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08654",
-      "source": "arxiv",
-      "title": "CS-Pi: Constraint-Satisfying Flow Policy Sampling",
-      "title_zh": "CS-Pi：满足约束的流策略采样",
-      "tldr_zh": "CS-Pi结合投影与拒绝采样，在推理时高效满足约束且保持动作合理性。",
-      "cover_zh": "拒绝采样太慢？投影不够合理？CS-Pi 一招兼得",
-      "abstract_zh": "部署在真实场景中的流匹配策略常常需要满足其演示数据中未出现的约束，例如避开从未见过的障碍物。为每个新约束重新训练是不切实际的，因此必须在推理时施加约束。施加约束时不能丢弃策略已学到的内容：策略很少采样的动作可能避开障碍物却导致任务失败。因此，我们希望动作既安全（满足约束）又合理（在策略下保持高概率）。梯度引导是最常见的方法，它引导带噪状态，因此必须在策略对干净动作的运行时估计上评估其成本；当策略在从障碍物左侧还是右侧通过之间不确定时，该估计是两者的平均，可能直接穿过障碍物。我们转而基于拒绝和投影。拒绝会重新采样动作直到安全：每个输出都合理，但当安全动作稀少时等待时间难以承受。投影将动作移动到最近的安全动作：高效，但结果不一定合理。我们的关键见解是，流匹配采样让我们能结合两者，保持投影的效率和拒绝的合理性。CS-Pi，我们的抽取-投影-重噪采样器，将每次抽取投影到最近的安全动作，根据投影移动的距离按比例添加噪声，并重新运行未修改的策略直到抽取安全。仅替换投影步骤即可将CS-Pi扩展到连续成本。在2D诊断、7自由度货架拾放、方向偏好和零样本Franka部署中，CS-Pi在货架上达到81%的安全成功率，在硬件上达到55%，而投影分别为55%和40%，同时保持合理性。",
-      "authors": [
-        "Soumojit Bhattacharya",
-        "Oliver Kroemer",
-        "Shubham Tulsiani"
+      "institutions": [
+        "Imperial College London"
       ],
-      "authors_all": [
-        "Soumojit Bhattacharya",
-        "Oliver Kroemer",
-        "Shubham Tulsiani"
+      "method_tags": [
+        "neural distance field",
+        "hand-object interaction",
+        "pose refinement"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 CoRL 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-08654.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08654-p2.jpg",
-        "assets/img/covers/arxiv-2611-08654-p3.jpg",
-        "assets/img/covers/arxiv-2611-08654-p4.jpg"
-      ],
-      "arxiv_id": "2611.08654",
-      "abs_url": "http://arxiv.org/abs/2611.08654v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08654v1",
-      "venue": "CoRL 2026",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1076,59 +1446,6 @@
       "arxiv_id": "2611.07779",
       "abs_url": "http://arxiv.org/abs/2611.07779v1",
       "pdf_url": "https://arxiv.org/pdf/2611.07779v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 15,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08413",
-      "source": "arxiv",
-      "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
-      "title_zh": "T3R：面向高效鲁棒VLA模型的免训练两阶段Token精炼",
-      "tldr_zh": "免训练两阶段Token精炼，剪枝加注意力偏置，提升VLA推理效率与鲁棒性。",
-      "cover_zh": "免训练剪掉85%视觉token｜VLA推理反而更准更鲁棒",
-      "abstract_zh": "视觉-语言-动作（VLA）模型实现了端到端机器人控制，但推理成本日益高昂。每次决策需处理数百个视觉token（常来自多摄像头），导致大量计算，且无关背景内容在分布偏移下会干扰动作预测。我们认为这些问题源于两种互补的冗余：许多视觉token在空间上无关，而剩余token上的注意力常被错误分配。基于此，我们提出T3R，一种免训练的两阶段Token精炼框架。第一阶段，分割引导的token剪枝移除无关视觉块，以减少计算并消除干扰上下文。第二阶段，显著性引导的注意力偏置将注意力重新分配给保留token中对动作关键的视觉区域和语言指令。剪枝产生更干净的候选集，注意力偏置进一步强调最决策相关的证据，从而获得比任一阶段单独更好的精度-效率前沿。在LIBERO-Spatial上，T3R移除85%的场景摄像头视觉token，同时基本匹配未剪枝的成功率，并在分布外物体放置扰动下将成功率提升高达7个百分点。时间对比显示每次推理调用中剪枝和注意力偏置应用耗时7.8毫秒。随着输入分辨率增加，LLM前向分析显示相比未剪枝基线最高3.3倍加速。在LIBERO、SIMPLER和RoboTwin上使用三种VLA骨干的评估表明，多摄像头设置下精度-效率收益最强。这些结果证明免训练token精炼是实现高效鲁棒VLA推理的实用方法。",
-      "authors": [
-        "Mohammed Hassan",
-        "Zhenyang Chen",
-        "Zheng Wang"
-      ],
-      "authors_all": [
-        "Mohammed Hassan",
-        "Zhenyang Chen",
-        "Zheng Wang",
-        "Zhixin Zhu",
-        "Tianlong Chen",
-        "Yingyan",
-        "Lin",
-        "Chaojian Li"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08413.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08413-p2.jpg",
-        "assets/img/covers/arxiv-2611-08413-p3.jpg",
-        "assets/img/covers/arxiv-2611-08413-p4.jpg"
-      ],
-      "arxiv_id": "2611.08413",
-      "abs_url": "http://arxiv.org/abs/2611.08413v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08413v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
@@ -1292,59 +1609,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08576",
-      "source": "arxiv",
-      "title": "Q-OIL: Optimistic Exploration in Learning from Human Interventions",
-      "title_zh": "Q-OIL：从人类干预中学习的乐观探索",
-      "tldr_zh": "提出Q-OIL方法，利用人类干预数据提升机器人学习效率。",
-      "cover_zh": "人类干预数据竟让机器人学习效率飙升？｜Q-OIL新方法",
-      "abstract_zh": "当机器人部署在真实世界中时，它们不可避免地会犯错。人类干预为改进机器人行为提供了宝贵的反馈，使其能够在线适应新场景。然而，研究人在回路的机器人学习很困难：真实世界实验缓慢且昂贵，因此大多数算法开发依赖于模拟人类模型。我们发现，常见的人类建模假设与实际人类干预方式不符。通过分析人类参与者的干预数据，我们发现人类倾向于在智能体进展停滞时进行干预，并且他们的纠正动作往往不是最优的。基于这些发现，我们引入了一种基于进展的人类干预模型，该模型与真实用户算法排名的秩相关性更高，从而能够在模拟中进行现实的算法基准测试和开发。基于这些见解，我们提出了Q-OIL，一种在强化学习中对干预转移添加乐观奖励并软引导探索朝向人类纠正的方法。我们发现解耦评论家对稳定性至关重要，因为它们防止奖励回传到干预前的状态。因此，Q-OIL比竞争基线学习更高效，在模拟和真实机器人上成功率提高10-50%，并改进了两个双臂操作任务上的预训练VLA。由于我们将评估和算法都建立在现实人类行为之上，这项工作为从干预中可扩展的机器人学习提供了一条实用路径。",
-      "authors": [
-        "Pranav Teegavarapu",
-        "Sriyash Poddar",
-        "Rico Qi"
-      ],
-      "authors_all": [
-        "Pranav Teegavarapu",
-        "Sriyash Poddar",
-        "Rico Qi",
-        "Cleah Winston",
-        "Krisha Khandelwal",
-        "Aykut Onyol",
-        "Natasha Jaques",
-        "Abhishek Gupta"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08576.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08576-p2.jpg",
-        "assets/img/covers/arxiv-2611-08576-p3.jpg",
-        "assets/img/covers/arxiv-2611-08576-p4.jpg"
-      ],
-      "arxiv_id": "2611.08576",
-      "abs_url": "http://arxiv.org/abs/2611.08576v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08576v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-08577",
       "source": "arxiv",
       "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
@@ -1416,12 +1680,20 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Meituan Robotics Team"
+      ],
+      "method_tags": [
+        "VLA",
+        "flow-matching",
+        "CFG-DAgger"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "RoboTwin 2.0"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1469,12 +1741,18 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "New York University"
+      ],
+      "method_tags": [
+        "In-Context Learning",
+        "Vision-Language-Action",
+        "Value Function Estimation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1732,60 +2010,16 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08462",
-      "source": "arxiv",
-      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
-      "title_zh": "OopsieRecover：从语义干预中学习可迁移的VLA纠正",
-      "tldr_zh": "OopsieRecover用溯因推理从少量纠正演示中学习可泛化的VLA纠正。",
-      "cover_zh": "少量纠正演示就能让VLA泛化到新场景？这个框架做到了",
-      "abstract_zh": "视觉-语言-动作（VLA）模型能够执行广泛的机器人操作任务，但在部署时常常失败。教会它们从这些失败中恢复需要大量的纠正数据：现有方法通过直接将纠正动作与演示中的观察相关联来学习恢复。例如，类似DAgger的微调可能需要数十到数百次交互，但得到的策略仍可能无法将学到的纠正泛化到演示场景之外。我们假设语义可以捕捉失败及其纠正背后的原因，使策略仅从少量纠正演示中学习，并将这些纠正泛化到新物体和场景变化。我们提出OopsieRecover，一个利用溯因推理从少量纠正演示中推断意图，并将推断的知识编码为密集空间表示和条件成本的框架。这些成本捕捉行为何时不理想，并引导策略朝向更可取的动作区域。我们在6个任务以及物体姿态、场景和相关任务的变化上进行实验，发现仅需少量纠正演示就能使VLA在广泛的新情况下克服失败，而无需为每种变化提供新的纠正数据。视频请见 https://robin-lab.cs.utexas.edu/oopsierecover。",
-      "authors": [
-        "Arpit Bahety",
-        "Skand Peri",
-        "Sriniket Ambatipudi"
+      "institutions": [
+        "University of Texas at Austin",
+        "Tufts University",
+        "University of Texas at Dallas"
       ],
-      "authors_all": [
-        "Arpit Bahety",
-        "Skand Peri",
-        "Sriniket Ambatipudi",
-        "Chen Xu",
-        "Haruki Nishimura",
-        "Masha Itkina",
-        "Roberto Martín-Martín"
+      "method_tags": [
+        "VLA",
+        "failure prediction",
+        "latent probing"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08462.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08462-p2.jpg",
-        "assets/img/covers/arxiv-2611-08462-p3.jpg",
-        "assets/img/covers/arxiv-2611-08462-p4.jpg"
-      ],
-      "arxiv_id": "2611.08462",
-      "abs_url": "http://arxiv.org/abs/2611.08462v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08462v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1836,10 +2070,19 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Eldorado Research Institute",
+        "University of Campinas (Unicamp)"
+      ],
+      "method_tags": [
+        "V-JEPA",
+        "latent forecasting",
+        "causal attention"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "CARLA"
+      ],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
@@ -2244,55 +2487,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08392",
-      "source": "arxiv",
-      "title": "Learning a patient world model for health system simulation in intensive care",
-      "title_zh": "学习用于重症监护中卫生系统模拟的患者世界模型",
-      "tldr_zh": "学习患者世界模型以模拟ICU运营，可替代问题特定状态模型。",
-      "cover_zh": "一个模型搞定所有ICU模拟？新方法告别重复建模！",
-      "abstract_zh": "设计医疗策略需要在实施前预测其临床和运营后果，这一任务通常依赖于卫生系统模拟。此类模拟需要对患者状态如何演变并产生护理需求进行建模。然而，传统方法通常将紧凑的状态转移定制为单一政策问题，并忽略依赖历史的动态，因此当出现需要不同临床信息的新问题时，需要重新定义状态和转移。我们提出使用神经网络从纵向电子健康记录中学习患者世界模型，以提供患者轨迹的共享临床表示，从而服务于跨场景的模拟问题。以ICU运营为例，我们在MIMIC-IV上训练模型，冻结它，并通过场景特定的映射将其可时间查询的预测与共享的ICU日历、资源和队列耦合，使得一个模型能够在评估ICU床位容量、护理调度和ICU后转移容量的模拟中呈现入院需求、护理任务和出院建议。实验表明，我们的模型在总占用率和对容量与调度政策的定向响应方面与马尔可夫和半马尔可夫比较器相匹配。它还重现了从重放观察轨迹中获得的政策收益。对于从不同先前轨迹进入相同支持状态的患者，学习到的表示捕捉到24小时恢复差异（预测-6.4 vs 观察-6.7个百分点），这是紧凑状态模型遗漏的对比，并传播到不同的模拟护理需求、队列负担和床位使用中。这些结果表明，学习到的患者动态世界模型有潜力取代问题特定的状态模型，允许通过重新配置场景而无需重建模型来评估新的护理政策。",
-      "authors": [
-        "Yingtai Li",
-        "Ruoyan Wang",
-        "Yu Li"
-      ],
-      "authors_all": [
-        "Yingtai Li",
-        "Ruoyan Wang",
-        "Yu Li",
-        "Shaohua Kevin Zhou"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-05",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08392.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08392-p2.jpg",
-        "assets/img/covers/arxiv-2611-08392-p3.jpg",
-        "assets/img/covers/arxiv-2611-08392-p4.jpg"
-      ],
-      "arxiv_id": "2611.08392",
-      "abs_url": "http://arxiv.org/abs/2611.08392v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08392v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-08412",
       "source": "arxiv",
       "title": "The Gold Rush in AI4Math, II: What are signatures of AI-assisted Proofs?",
@@ -2330,60 +2524,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08665",
-      "source": "arxiv",
-      "title": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
-      "title_zh": "NanoVDB 中的动态 GPU 体素网格与体素顺序处理",
-      "tldr_zh": "NanoVDB 新增动态拓扑更新与体素顺序访问，突破只读限制。",
-      "cover_zh": "NanoVDB 不再只读！动态更新+顺序访问，稀疏网格计算直接起飞",
-      "abstract_zh": "我们为 NanoVDB 数据结构引入了两项根本性进展：动态 GPU 原生拓扑更新，以及一种体素顺序访问范式，该范式显著加速了稀疏网格上的逐点算子和模板算子。NanoVDB 的线性化内存布局已带来强劲的 GPU 性能，而 fVDB 框架 [Williams et al 2024] 中引入的 Index-Grid 概念为稀疏机器学习工作负载提供了拓扑/数据分离和最优存储紧凑性。然而，此前所有 NanoVDB 迭代都假设静态拓扑，这阻碍了该数据结构在模拟和动态几何过程中的使用。我们通过引入一套动态拓扑算子——形态学膨胀、网格合并、剪枝以及跨分辨率粗化和细化——消除了这一限制。这些算子使用位并行算法，可在几毫秒内重建包含数亿体素的网格。我们还引入了一种体素顺序访问范式和数据结构，用于在稀疏数据上运行的 GPU 内核。我们将活动体素作为平坦线性序列进行流式处理，在此过程中最小化或消除了树遍历的需要。这实现了计算密度和规律性，使得即使复杂的基于模板的算子也能接近峰值内存带宽，且存储开销极小。总之，这些贡献消除了 NanoVDB 的只读约束，将其确立为动态 GPU 模拟和几何操作的高性能主要表示。我们在来自 3D 重建、流体模拟和大规模网格体素化等应用的基准测试中评估了新引入算子的有效性。",
-      "authors": [
-        "Eftychios Sifakis",
-        "Francis Williams",
-        "Christopher Horvath"
+      "institutions": [
+        "Harvard"
       ],
-      "authors_all": [
-        "Eftychios Sifakis",
-        "Francis Williams",
-        "Christopher Horvath",
-        "Rohan Sawhney",
-        "Mark Harris",
-        "Jonathan Swartz",
-        "Ken Museth"
+      "method_tags": [
+        "graph of immediate proof support",
+        "feature extraction",
+        "AI-generated text detection"
       ],
-      "primary_category": "cs.GR",
-      "published": "2026-11-05",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08665.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08665-p2.jpg",
-        "assets/img/covers/arxiv-2611-08665-p3.jpg",
-        "assets/img/covers/arxiv-2611-08665-p4.jpg"
-      ],
-      "arxiv_id": "2611.08665",
-      "abs_url": "http://arxiv.org/abs/2611.08665v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08665v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2428,8 +2576,15 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Massachusetts Amherst",
+        "University of Massachusetts Lowell"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "zero-shot transfer",
+        "microstructure invariance"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2476,8 +2631,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of California, Santa Barbara"
+      ],
+      "method_tags": [
+        "Shapley values",
+        "explainability",
+        "benchmark"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

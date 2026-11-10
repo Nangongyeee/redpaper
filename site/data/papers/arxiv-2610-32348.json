@@ -2,11 +2,11 @@
   "id": "arxiv-2610-32348",
   "source": "arxiv",
   "title": "LogLook: Execution-Grounded Memory for Frontier-Model Robot Planners",
-  "title_zh": "LogLook: Execution-Grounded Memory for Frontier-Model Robot Planners",
+  "title_zh": "LogLook：基于执行的前沿模型机器人规划器记忆",
   "abstract": "Many manipulation tasks require a robot to remember what it has done and what it has seen. Frontier vision-language models can plan such tasks without task-specific training, but how such a planner should remember an episode is an open question. We argue that its memory must keep track of what the planner has done and learned, and must let the planner choose what to look at, since every frame costs tokens; a note rewritten at every step meets both poorly. We propose LogLook, whose execution-grounded memory lets the system keep the record, an execution log and the model's earlier notes, while the model decides where to look: frames are returned only where it expects a change, and demonstrations are skimmed before it inspects the parts it chooses. Measured with the benchmark's motion planner, LogLook matches the success of a note-only memory with 43% fewer tokens and less than half the images, and fails far fewer episodes through what it remembered or saw. With direct control, LogLook solves 93.5% of the RoboMME test set.",
-  "abstract_zh": "Many manipulation tasks require a robot to remember what it has done and what it has seen. Frontier vision-language models can plan such tasks without task-specific training, but how such a planner should remember an episode is an open question. We argue that its memory must keep track of what the planner has done and learned, and must let the planner choose what to look at, since every frame costs tokens; a note rewritten at every step meets both poorly. We propose LogLook, whose execution-grounded memory lets the system keep the record, an execution log and the model's earlier notes, while the model decides where to look: frames are returned only where it expects a change, and demonstrations are skimmed before it inspects the parts it chooses. Measured with the benchmark's motion planner, LogLook matches the success of a note-only memory with 43% fewer tokens and less than half the images, and fails far fewer episodes through what it remembered or saw. With direct control, LogLook solves 93.5% of the RoboMME test set.",
-  "tldr_zh": "Many manipulation tasks require a robot to remember what it",
-  "cover_zh": "Many manipulation tasks require a robot to remember what it",
+  "abstract_zh": "许多操作任务要求机器人记住它做过什么、看到过什么。前沿视觉语言模型无需任务特定训练即可规划此类任务，但这样的规划器应如何记忆一个片段仍是一个开放问题。我们认为，其记忆必须跟踪规划器已做和已学的内容，并且必须让规划器选择看什么，因为每一帧都消耗 token；每一步重写的笔记难以同时满足这两点。我们提出 LogLook，其基于执行的记忆让系统保留记录、执行日志和模型先前的笔记，同时由模型决定看哪里：仅在预期变化处返回帧，并在检查所选部分之前略读演示。使用基准的运动规划器测量，LogLook 在 token 减少 43%、图像减少一半以上的情况下，匹配仅笔记记忆的成功率，并且因记忆或所见内容而失败的片段少得多。在直接控制下，LogLook 解决了 RoboMME 测试集的 93.5%。",
+  "tldr_zh": "LogLook 用执行日志和选择性视觉记忆提升机器人规划效率。",
+  "cover_zh": "机器人规划器记忆新思路｜少看一半图像，成功率不降反升",
   "authors": [
     {
       "name": "Tianyi Jiang",

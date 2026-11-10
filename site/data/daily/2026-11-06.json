@@ -218,6 +218,141 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-08857",
+      "source": "arxiv",
+      "title": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
+      "title_zh": "STRIDE：基于加速度奖励的快速人形机器人运动学习",
+      "tldr_zh": "STRIDE仅用机载IMU和加速度奖励，14分钟学会人形机器人行走。",
+      "cover_zh": "不用外部动捕！这个新方法让机器人14分钟学会走路",
+      "abstract_zh": "直接在人形机器人上学习运动是避免仿真到现实差距的一种有前景的方向。然而，强化学习（RL）中的运动奖励通常跟踪基座速度，这需要外部运动捕捉系统或良好校准的状态估计器才能在机器人上测量。为此，我们引入了STRIDE方法，它仅需机载惯性测量单元（IMU）的奖励，就能从几分钟的样本中学习人形机器人运动。STRIDE不是跟踪基座速度，而是奖励机器人遵循指令的加速度曲线。为了高效地从该奖励中学习，我们使用离策略RL算法XQC，并结合关节位置控制器的高增益设置与左右对称增强。在仿真中，STRIDE在Unitree G1和Booster T1人形机器人上学习行走仅需14分钟的样本。与不使用这两个组件的学习相比，它将训练期间的跌倒减少了81%，而不使用它们时机器人需要超过一小时才能学会。",
+      "authors": [
+        "Nico Bohlinger",
+        "Jan Peters"
+      ],
+      "authors_all": [
+        "Nico Bohlinger",
+        "Jan Peters"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08857.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08857-p2.jpg",
+        "assets/img/covers/arxiv-2611-08857-p3.jpg",
+        "assets/img/covers/arxiv-2611-08857-p4.jpg"
+      ],
+      "arxiv_id": "2611.08857",
+      "abs_url": "http://arxiv.org/abs/2611.08857v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08857v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "Technical University of Darmstadt",
+        "Robotics Institute Germany (RIG)",
+        "German Research Center for AI (DFKI)",
+        "hessian.AI"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "off-policy RL",
+        "symmetry augmentation"
+      ],
+      "platform": [
+        "Unitree G1",
+        "Booster T1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08939",
+      "source": "arxiv",
+      "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+      "title_zh": "RevoSim：面向灵巧操作的可扩展多模态触觉仿真",
+      "tldr_zh": "RevoSim 是可扩展多模态触觉仿真器，支持灵巧手策略训练。",
+      "cover_zh": "单卡跑 4096 个并行环境｜这个触觉仿真器让灵巧手训练不再难",
+      "abstract_zh": "我们提出 RevoSim，一个面向 BrainCo Revo3 手的高保真可扩展多模态触觉仿真器，它联合建模了 285 个压阻触觉单元和五个视觉触觉指尖。RevoSim 能高效生成同步的压力、深度、RGB 和标记位移观测；在单张 RTX 5090 上，其深度条件标记位移配置支持多达 4,096 个并行环境。我们完全在仿真中训练手内操作和抓取策略，为未来的仿真到现实迁移奠定基础。项目页面：https://braincotech.github.io/RevoSim-web/。",
+      "authors": [
+        "Ke Zhang",
+        "Lixin Xu",
+        "Ziyi Wang"
+      ],
+      "authors_all": [
+        "Ke Zhang",
+        "Lixin Xu",
+        "Ziyi Wang",
+        "Xiyue Dong",
+        "Jie Tan",
+        "Lianghu Shao",
+        "Xianpeng Wang",
+        "Chuanyu Li",
+        "Renjing Xu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08939.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08939-p2.jpg",
+        "assets/img/covers/arxiv-2611-08939-p3.jpg",
+        "assets/img/covers/arxiv-2611-08939-p4.jpg"
+      ],
+      "arxiv_id": "2611.08939",
+      "abs_url": "http://arxiv.org/abs/2611.08939v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08939v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "HKUST(GZ)",
+        "BrainCo",
+        "Georgia Tech"
+      ],
+      "method_tags": [
+        "Tactile Simulation",
+        "Reinforcement Learning",
+        "sim-to-real"
+      ],
+      "platform": [
+        "BrainCo Revo3"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-09124",
       "source": "arxiv",
       "title": "Toward the Era of Agentic Embodied Intelligence",
@@ -437,6 +572,70 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-08911",
+      "source": "arxiv",
+      "title": "Polarization calibration of fisheye cameras using skylight in the wild",
+      "title_zh": "野外环境下利用天空光的鱼眼相机偏振标定",
+      "tldr_zh": "提出联合标定鱼眼相机与偏振片的方法，仅需手持户外序列，显著降低偏振测量误差。",
+      "cover_zh": "鱼眼镜头+偏振片联合标定｜户外随手拍一段就能搞定",
+      "abstract_zh": "天空光的偏振特性为机器人导航提供方向线索，但鱼眼镜头效应和偏振片缺陷会降低整个视场内的偏振测量精度。我们提出一种联合镜头-偏振片标定方法，在统一的八参数公式中显式建模入射角相关的镜头透射率以及偏振片增益和角度偏移。在已知几何标定的情况下，可以利用视觉特征估计相机帧间的旋转，并利用跨帧方向偏振光一致性进行偏振标定。因此，我们的标定方法仅需在自然天空光下拍摄一段简短的手持户外序列，无需专用偏振标定设备或预定义的天空偏振模型。在真实户外序列上，所提方法在所有入射角下实现了加权跨帧线偏振角（AoLP）平均绝对误差低于0.5°，在80°-90°入射角区域降低了73.4%，并且无需重新拟合即可泛化到独立序列，总体平均绝对误差为0.466°。使用安装在四足机器人上的相机进行的初步太阳方位角实验进一步表明，与可见太阳中心的 alignment 得到改善，支持了标定后AoLP测量在相对航向估计和未来偏振-惯性导航中的潜力。标定软件工具将在论文被接收后发布。",
+      "authors": [
+        "Shuo Wang",
+        "Shiqi Che",
+        "Dianze Dong"
+      ],
+      "authors_all": [
+        "Shuo Wang",
+        "Shiqi Che",
+        "Dianze Dong",
+        "Wenxin Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Beihang (BUAA)"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 ICRA 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08911.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08911-p2.jpg",
+        "assets/img/covers/arxiv-2611-08911-p3.jpg",
+        "assets/img/covers/arxiv-2611-08911-p4.jpg"
+      ],
+      "arxiv_id": "2611.08911",
+      "abs_url": "http://arxiv.org/abs/2611.08911v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08911v1",
+      "venue": "ICRA 2026",
+      "venue_announced": "",
+      "score": 44,
+      "judge": {},
+      "institutions": [
+        "Beihang University"
+      ],
+      "method_tags": [
+        "polarization calibration",
+        "fisheye camera",
+        "relative-heading estimation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-09672",
       "source": "arxiv",
       "title": "ODEAction: From Predicting Chunks to Evolving Actions",
@@ -640,6 +839,138 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08814",
+      "source": "arxiv",
+      "title": "It Takes Two to Tangram: Multi-Agent Object Centric Reinforcement Learning for Assembly",
+      "title_zh": "七巧板需要两个：面向装配的多智能体以对象为中心的强化学习",
+      "tldr_zh": "提出多智能体强化学习框架，实现七巧板装配的协调控制。",
+      "cover_zh": "七巧板装配难？多智能体RL让零件自己学会协调！",
+      "abstract_zh": "几何装配需要在紧凑间隙下进行精细的时空协调，以放置零件而不引起碰撞或死锁。为此，我们提出了一种以对象为中心的强化学习框架，将每个零件视为一个智能体，并学习用于连续装配控制的共享策略。图神经网络表示零件、它们的目标位姿及其空间关系，并预测每个组件的平移和角速度。具有集中式图评论家的每智能体近端策略优化直接在单个反馈策略中学习运动和时间协调。我们通过平面七巧板装配研究这一公式，其中零件必须滑动和旋转到给定配置，同时保持在装配表面上。目标配置的过程生成和随机初始排列支持跨多样装配问题的训练和评估。我们的实验分离了关系结构和多智能体优化的作用，并将学习控制与基于采样的规划进行比较。我们在仿真中演示了并发装配，并将策略转移到真实机器人上的顺序执行，因为我们的以对象为中心的公式将学习的装配协调与低级物理控制解耦。项目页面：https://tangrambench.org/",
+      "authors": [
+        "Paul Knaußt",
+        "Kay Pompetzki",
+        "Nico Bohlinger"
+      ],
+      "authors_all": [
+        "Paul Knaußt",
+        "Kay Pompetzki",
+        "Nico Bohlinger",
+        "Niklas Funk",
+        "Cristiana de Farias",
+        "Rolf Findeisen",
+        "Jan Peters"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-06",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08814.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08814-p2.jpg",
+        "assets/img/covers/arxiv-2611-08814-p3.jpg",
+        "assets/img/covers/arxiv-2611-08814-p4.jpg"
+      ],
+      "arxiv_id": "2611.08814",
+      "abs_url": "http://arxiv.org/abs/2611.08814v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08814v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "Technical University of Darmstadt",
+        "Hessian.AI",
+        "German Research Center for AI (DFKI)",
+        "Robotics Institute Germany (RIG)"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Graph Neural Network",
+        "Multi-Agent"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-08904",
+      "source": "arxiv",
+      "title": "MotionCore: A Latent Neural Simulator for Video Generation with Rigid-Body Dynamics",
+      "title_zh": "MotionCore：用于刚体动力学视频生成的潜在神经模拟器",
+      "tldr_zh": "MotionCore 用潜在神经模拟器学习刚体动力学，提升视频物理一致性。",
+      "cover_zh": "视频生成物理翻车？MotionCore 让刚体运动终于合理了",
+      "abstract_zh": "视频生成模型能生成高度逼真的视频，但物体运动在物理上不一致。这一局限表明，仅靠视觉建模可能无法提供可迁移的物理动力学表示。我们提出 MotionCore，一个通过可学习偏微分方程求解器学习物理动力学的框架，专注于刚体运动。我们引入一个潜在神经模拟器，学习从观测运动预测物体级物理状态的演化。其预测结果随后被转换为空间对齐的潜在控制信号，用于可控视频扩散模型。生成器充当视觉接口：提供外观和场景细节，而学习到的动力学模型指定物理轨迹。为了通过接口保持该轨迹，MotionCore 将扩散匹配目标与对物体身份和位置的低容量可解码性约束相结合。我们在公开的物理一致性基准和具有已知轨迹的配对数据上评估 MotionCore。结果表明，在评估的刚体设置中，MotionCore 提高了物理一致性和轨迹遵循度，同时保持可比的视觉质量。受控消融协议比较了学习动力学与解析先验，并研究了潜在演化处理器的选择。",
+      "authors": [
+        "Zheng Wang",
+        "Zhengwei Gong",
+        "Yuanzhi Liang"
+      ],
+      "authors_all": [
+        "Zheng Wang",
+        "Zhengwei Gong",
+        "Yuanzhi Liang",
+        "Chi Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-06",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ TeleAI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-08904.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-08904-p2.jpg",
+        "assets/img/covers/arxiv-2611-08904-p3.jpg",
+        "assets/img/covers/arxiv-2611-08904-p4.jpg"
+      ],
+      "arxiv_id": "2611.08904",
+      "abs_url": "http://arxiv.org/abs/2611.08904v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08904v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "The University of Tokyo",
+        "Shanghai Jiao Tong University",
+        "Institute of Artificial Intelligence, China Telecom (TeleAI)"
+      ],
+      "method_tags": [
+        "latent neural simulator",
+        "diffusion model",
+        "rigid-body dynamics"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1090,115 +1421,20 @@
       "venue_announced": "",
       "score": 22,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "University of Illinois Chicago"
+      ],
+      "method_tags": [
+        "VLA",
+        "LoRA",
+        "long-horizon"
+      ],
+      "platform": [
+        "AgileX PIPER"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08857",
-      "source": "arxiv",
-      "title": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
-      "title_zh": "STRIDE：基于加速度奖励的快速人形机器人运动学习",
-      "tldr_zh": "STRIDE仅用机载IMU和加速度奖励，14分钟学会人形机器人行走。",
-      "cover_zh": "不用外部动捕！这个新方法让机器人14分钟学会走路",
-      "abstract_zh": "直接在人形机器人上学习运动是避免仿真到现实差距的一种有前景的方向。然而，强化学习（RL）中的运动奖励通常跟踪基座速度，这需要外部运动捕捉系统或良好校准的状态估计器才能在机器人上测量。为此，我们引入了STRIDE方法，它仅需机载惯性测量单元（IMU）的奖励，就能从几分钟的样本中学习人形机器人运动。STRIDE不是跟踪基座速度，而是奖励机器人遵循指令的加速度曲线。为了高效地从该奖励中学习，我们使用离策略RL算法XQC，并结合关节位置控制器的高增益设置与左右对称增强。在仿真中，STRIDE在Unitree G1和Booster T1人形机器人上学习行走仅需14分钟的样本。与不使用这两个组件的学习相比，它将训练期间的跌倒减少了81%，而不使用它们时机器人需要超过一小时才能学会。",
-      "authors": [
-        "Nico Bohlinger",
-        "Jan Peters"
-      ],
-      "authors_all": [
-        "Nico Bohlinger",
-        "Jan Peters"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "loco-manip-wbc",
-        "locomotion",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08857.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08857-p2.jpg",
-        "assets/img/covers/arxiv-2611-08857-p3.jpg",
-        "assets/img/covers/arxiv-2611-08857-p4.jpg"
-      ],
-      "arxiv_id": "2611.08857",
-      "abs_url": "http://arxiv.org/abs/2611.08857v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08857v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08939",
-      "source": "arxiv",
-      "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
-      "title_zh": "RevoSim：面向灵巧操作的可扩展多模态触觉仿真",
-      "tldr_zh": "RevoSim 是可扩展多模态触觉仿真器，支持灵巧手策略训练。",
-      "cover_zh": "单卡跑 4096 个并行环境｜这个触觉仿真器让灵巧手训练不再难",
-      "abstract_zh": "我们提出 RevoSim，一个面向 BrainCo Revo3 手的高保真可扩展多模态触觉仿真器，它联合建模了 285 个压阻触觉单元和五个视觉触觉指尖。RevoSim 能高效生成同步的压力、深度、RGB 和标记位移观测；在单张 RTX 5090 上，其深度条件标记位移配置支持多达 4,096 个并行环境。我们完全在仿真中训练手内操作和抓取策略，为未来的仿真到现实迁移奠定基础。项目页面：https://braincotech.github.io/RevoSim-web/。",
-      "authors": [
-        "Ke Zhang",
-        "Lixin Xu",
-        "Ziyi Wang"
-      ],
-      "authors_all": [
-        "Ke Zhang",
-        "Lixin Xu",
-        "Ziyi Wang",
-        "Xiyue Dong",
-        "Jie Tan",
-        "Lianghu Shao",
-        "Xianpeng Wang",
-        "Chuanyu Li",
-        "Renjing Xu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08939.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08939-p2.jpg",
-        "assets/img/covers/arxiv-2611-08939-p3.jpg",
-        "assets/img/covers/arxiv-2611-08939-p4.jpg"
-      ],
-      "arxiv_id": "2611.08939",
-      "abs_url": "http://arxiv.org/abs/2611.08939v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08939v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1320,60 +1556,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08911",
-      "source": "arxiv",
-      "title": "Polarization calibration of fisheye cameras using skylight in the wild",
-      "title_zh": "野外环境下利用天空光的鱼眼相机偏振标定",
-      "tldr_zh": "提出联合标定鱼眼相机与偏振片的方法，仅需手持户外序列，显著降低偏振测量误差。",
-      "cover_zh": "鱼眼镜头+偏振片联合标定｜户外随手拍一段就能搞定",
-      "abstract_zh": "天空光的偏振特性为机器人导航提供方向线索，但鱼眼镜头效应和偏振片缺陷会降低整个视场内的偏振测量精度。我们提出一种联合镜头-偏振片标定方法，在统一的八参数公式中显式建模入射角相关的镜头透射率以及偏振片增益和角度偏移。在已知几何标定的情况下，可以利用视觉特征估计相机帧间的旋转，并利用跨帧方向偏振光一致性进行偏振标定。因此，我们的标定方法仅需在自然天空光下拍摄一段简短的手持户外序列，无需专用偏振标定设备或预定义的天空偏振模型。在真实户外序列上，所提方法在所有入射角下实现了加权跨帧线偏振角（AoLP）平均绝对误差低于0.5°，在80°-90°入射角区域降低了73.4%，并且无需重新拟合即可泛化到独立序列，总体平均绝对误差为0.466°。使用安装在四足机器人上的相机进行的初步太阳方位角实验进一步表明，与可见太阳中心的 alignment 得到改善，支持了标定后AoLP测量在相对航向估计和未来偏振-惯性导航中的潜力。标定软件工具将在论文被接收后发布。",
-      "authors": [
-        "Shuo Wang",
-        "Shiqi Che",
-        "Dianze Dong"
-      ],
-      "authors_all": [
-        "Shuo Wang",
-        "Shiqi Che",
-        "Dianze Dong",
-        "Wenxin Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 ICRA 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-08911.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08911-p2.jpg",
-        "assets/img/covers/arxiv-2611-08911-p3.jpg",
-        "assets/img/covers/arxiv-2611-08911-p4.jpg"
-      ],
-      "arxiv_id": "2611.08911",
-      "abs_url": "http://arxiv.org/abs/2611.08911v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08911v1",
-      "venue": "ICRA 2026",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1695,10 +1877,20 @@
       "venue_announced": "",
       "score": 14,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Tübingen",
+        "Max Planck Institute for Intelligent Systems"
+      ],
+      "method_tags": [
+        "simulation",
+        "contact-rich",
+        "mesh-mesh collision"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "MJWarp",
+        "Lodos"
+      ],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
@@ -1912,12 +2104,21 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Ewha Womans University"
+      ],
+      "method_tags": [
+        "Visual Token Pruning",
+        "VLA",
+        "Training-free"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "LIBERO",
+        "VLABench"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1958,8 +2159,14 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Louisville"
+      ],
+      "method_tags": [
+        "activation patching",
+        "linear probes",
+        "activation steering"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2189,107 +2396,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-08814",
-      "source": "arxiv",
-      "title": "It Takes Two to Tangram: Multi-Agent Object Centric Reinforcement Learning for Assembly",
-      "title_zh": "七巧板需要两个：面向装配的多智能体以对象为中心的强化学习",
-      "tldr_zh": "提出多智能体强化学习框架，实现七巧板装配的协调控制。",
-      "cover_zh": "七巧板装配难？多智能体RL让零件自己学会协调！",
-      "abstract_zh": "几何装配需要在紧凑间隙下进行精细的时空协调，以放置零件而不引起碰撞或死锁。为此，我们提出了一种以对象为中心的强化学习框架，将每个零件视为一个智能体，并学习用于连续装配控制的共享策略。图神经网络表示零件、它们的目标位姿及其空间关系，并预测每个组件的平移和角速度。具有集中式图评论家的每智能体近端策略优化直接在单个反馈策略中学习运动和时间协调。我们通过平面七巧板装配研究这一公式，其中零件必须滑动和旋转到给定配置，同时保持在装配表面上。目标配置的过程生成和随机初始排列支持跨多样装配问题的训练和评估。我们的实验分离了关系结构和多智能体优化的作用，并将学习控制与基于采样的规划进行比较。我们在仿真中演示了并发装配，并将策略转移到真实机器人上的顺序执行，因为我们的以对象为中心的公式将学习的装配协调与低级物理控制解耦。项目页面：https://tangrambench.org/",
-      "authors": [
-        "Paul Knaußt",
-        "Kay Pompetzki",
-        "Nico Bohlinger"
-      ],
-      "authors_all": [
-        "Paul Knaußt",
-        "Kay Pompetzki",
-        "Nico Bohlinger",
-        "Niklas Funk",
-        "Cristiana de Farias",
-        "Rolf Findeisen",
-        "Jan Peters"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-06",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08814.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08814-p2.jpg",
-        "assets/img/covers/arxiv-2611-08814-p3.jpg",
-        "assets/img/covers/arxiv-2611-08814-p4.jpg"
-      ],
-      "arxiv_id": "2611.08814",
-      "abs_url": "http://arxiv.org/abs/2611.08814v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08814v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-08904",
-      "source": "arxiv",
-      "title": "MotionCore: A Latent Neural Simulator for Video Generation with Rigid-Body Dynamics",
-      "title_zh": "MotionCore：用于刚体动力学视频生成的潜在神经模拟器",
-      "tldr_zh": "MotionCore 用潜在神经模拟器学习刚体动力学，提升视频物理一致性。",
-      "cover_zh": "视频生成物理翻车？MotionCore 让刚体运动终于合理了",
-      "abstract_zh": "视频生成模型能生成高度逼真的视频，但物体运动在物理上不一致。这一局限表明，仅靠视觉建模可能无法提供可迁移的物理动力学表示。我们提出 MotionCore，一个通过可学习偏微分方程求解器学习物理动力学的框架，专注于刚体运动。我们引入一个潜在神经模拟器，学习从观测运动预测物体级物理状态的演化。其预测结果随后被转换为空间对齐的潜在控制信号，用于可控视频扩散模型。生成器充当视觉接口：提供外观和场景细节，而学习到的动力学模型指定物理轨迹。为了通过接口保持该轨迹，MotionCore 将扩散匹配目标与对物体身份和位置的低容量可解码性约束相结合。我们在公开的物理一致性基准和具有已知轨迹的配对数据上评估 MotionCore。结果表明，在评估的刚体设置中，MotionCore 提高了物理一致性和轨迹遵循度，同时保持可比的视觉质量。受控消融协议比较了学习动力学与解析先验，并研究了潜在演化处理器的选择。",
-      "authors": [
-        "Zheng Wang",
-        "Zhengwei Gong",
-        "Yuanzhi Liang"
-      ],
-      "authors_all": [
-        "Zheng Wang",
-        "Zhengwei Gong",
-        "Yuanzhi Liang",
-        "Chi Zhang"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-06",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-08904.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-08904-p2.jpg",
-        "assets/img/covers/arxiv-2611-08904-p3.jpg",
-        "assets/img/covers/arxiv-2611-08904-p4.jpg"
-      ],
-      "arxiv_id": "2611.08904",
-      "abs_url": "http://arxiv.org/abs/2611.08904v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08904v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-08914",
       "source": "arxiv",
       "title": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
@@ -2329,12 +2435,20 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Toronto"
+      ],
+      "method_tags": [
+        "VLM",
+        "robot-IoT coordination",
+        "benchmark"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "Isaac Sim"
+      ],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2377,12 +2491,19 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "UNSW Sydney",
+        "Universidad Central de Chile"
+      ],
+      "method_tags": [
+        "Human-to-Robot Transfer",
+        "Hand-Object Contact Trajectories",
+        "Pseudo-labeling"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2430,8 +2551,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Massachusetts Amherst"
+      ],
+      "method_tags": [
+        "3D human pose estimation",
+        "RGB-D perception",
+        "depth-guided refinement"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
