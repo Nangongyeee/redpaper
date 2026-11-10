@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12818",
   "source": "arxiv",
   "title": "Simulating Vein Compressibility for Ultrasound-Guided Femoral Access: Speed, Accuracy, and Phantom Validation",
-  "title_zh": "Simulating Vein Compressibility for Ultrasound-Guided Femoral Access: Speed, Accuracy, and Phantom Validation",
+  "title_zh": "模拟超声引导股动脉穿刺中的静脉可压缩性：速度、精度与体模验证",
   "abstract": "In ultrasound-guided femoral access, probe pressure deforms the tissue and changes the vascular anatomy a robot observes. A simulator must reproduce these mechanics fast enough for robotic interaction, yet the computational effort needed for a clinically meaningful signal like vein collapse before artery is unclear. We test the feasibility of a physics-based simulation in NVIDIA's Isaac Sim for Healthcare, with Stable Neo-Hookean tissue solved by Vertex Block Descent on one GPU. A simulation of a low-fidelity cylindrical benchtop phantom with known geometry and mechanical properties, pressed by a robot, predicted its artery within 5 percentage points at every depth. It matched the vein within 3 points through 11 mm of a 25.4 mm press and followed the collapse behavior of the low-fidelity physical phantom. Across element size, time step, and solver iterations, wall clock time per frame scaled linearly with solver work, but accuracy did not improve with more work. The chosen setting reduced solver time per frame by a factor of 976, from 29,700 ms to 30.4 ms, while remaining within 1.03 points of the finest reference setting. The physics solver alone took 30.4 ms per frame, while the full stack, including ultrasound and graphics rendering, took 56.4 ms per frame. Finally, when seeded with realistic literature-based mechanical properties, the digital leg model compressed the vein far more than the artery at every setting, reproducing the expected clinical signal of vein collapse before artery, which is used to distinguish them. In total, these results suggest that the NVIDIA Isaac Sim platform may be suitable for augmenting reinforcement learning training or online simulation for autonomous femoral access with ultrasound.",
-  "abstract_zh": "In ultrasound-guided femoral access, probe pressure deforms the tissue and changes the vascular anatomy a robot observes. A simulator must reproduce these mechanics fast enough for robotic interaction, yet the computational effort needed for a clinically meaningful signal like vein collapse before artery is unclear. We test the feasibility of a physics-based simulation in NVIDIA's Isaac Sim for Healthcare, with Stable Neo-Hookean tissue solved by Vertex Block Descent on one GPU. A simulation of a low-fidelity cylindrical benchtop phantom with known geometry and mechanical properties, pressed by a robot, predicted its artery within 5 percentage points at every depth. It matched the vein within 3 points through 11 mm of a 25.4 mm press and followed the collapse behavior of the low-fidelity physical phantom. Across element size, time step, and solver iterations, wall clock time per frame scaled linearly with solver work, but accuracy did not improve with more work. The chosen setting reduced solver time per frame by a factor of 976, from 29,700 ms to 30.4 ms, while remaining within 1.03 points of the finest reference setting. The physics solver alone took 30.4 ms per frame, while the full stack, including ultrasound and graphics rendering, took 56.4 ms per frame. Finally, when seeded with realistic literature-based mechanical properties, the digital leg model compressed the vein far more than the artery at every setting, reproducing the expected clinical signal of vein collapse before artery, which is used to distinguish them. In total, these results suggest that the NVIDIA Isaac Sim platform may be suitable for augmenting reinforcement learning training or online simulation for autonomous femoral access with ultrasound.",
-  "tldr_zh": "In ultrasound-guided femoral access, probe pressure deforms",
-  "cover_zh": "In ultrasound-guided femoral access, probe pressure deforms",
+  "abstract_zh": "在超声引导股动脉穿刺中，探头压力会使组织变形并改变机器人观察到的血管解剖结构。模拟器必须足够快地复现这些力学过程以支持机器人交互，但实现静脉先于动脉塌陷这一临床有意义信号所需的计算量尚不明确。我们在NVIDIA Isaac Sim for Healthcare中测试基于物理的模拟可行性，使用单GPU上的顶点块下降法求解稳定新胡克组织。对已知几何和力学性质的低保真圆柱台式体模进行机器人按压模拟，在每个深度下预测动脉误差在5个百分点以内。在25.4 mm按压的11 mm范围内，静脉匹配误差在3个百分点以内，并跟随低保真物理体模的塌陷行为。在单元尺寸、时间步长和求解器迭代次数变化时，每帧墙钟时间随求解器工作量线性缩放，但精度并未随工作量增加而提高。所选设置将每帧求解器时间减少976倍，从29,700 ms降至30.4 ms，同时与最精细参考设置的误差保持在1.03个百分点以内。仅物理求解器每帧耗时30.4 ms，而包括超声和图形渲染的完整堆栈每帧耗时56.4 ms。最后，当输入基于文献的真实力学性质时，数字腿模型在所有设置下静脉压缩程度远大于动脉，复现了用于区分两者的静脉先于动脉塌陷的预期临床信号。总体而言，这些结果表明NVIDIA Isaac Sim平台可能适用于增强自主超声引导股动脉穿刺的强化学习训练或在线模拟。",
+  "tldr_zh": "物理模拟在Isaac Sim中快速复现静脉先塌陷信号，精度高且计算高效。",
+  "cover_zh": "超声穿刺模拟新突破｜静脉先塌陷信号竟能精准复现",
   "authors": [
     {
       "name": "Amit Manicka",
@@ -80,12 +80,23 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of Minnesota",
+    "Lightside Surgical",
+    "Healtcare Corporation of America",
+    "Visible Heart Laboratory"
+  ],
+  "method_tags": [
+    "physics-based simulation",
+    "Stable Neo-Hookean",
+    "Vertex Block Descent"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "Isaac Sim"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

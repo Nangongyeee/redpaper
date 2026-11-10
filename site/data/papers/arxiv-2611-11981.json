@@ -2,11 +2,11 @@
   "id": "arxiv-2611-11981",
   "source": "arxiv",
   "title": "Thermo-VLA: A Thermal-Aware Vision-Language-Action Model with Gated Residual Modulation for Robotic Manipulation",
-  "title_zh": "Thermo-VLA: A Thermal-Aware Vision-Language-Action Model with Gated Residual Modulation for Robotic Manipulation",
+  "title_zh": "Thermo-VLA：一种用于机器人操作的热感知视觉-语言-动作模型，采用门控残差调制",
   "abstract": "Recent Vision-Language-Action (VLA) models have begun incorporating thermal sensing, but existing approaches typically treat thermal images as ordinary visual inputs, providing limited support for temperature-aware relational reasoning in manipulation. To address this limitation, we propose Thermo-VLA with a ThermoRes Encoder, which decomposes thermal images into cold and hot attribute representations and injects them into the RGB token through language-conditioned residual modulation, enabling temperature-driven target selection and continuous manipulation. We further construct six real-world robotic tasks on a dual-arm Unitree G1 platform, spanning basic grounding to relational reasoning. Experiments show that Thermo-VLA achieves an average success rate of 0.86 across four thermal-dependent tasks, outperforming a pi_0.5 baseline that directly incorporates RGB-thermal observations by 18 percentage points. Under unseen-object and scene variations, Thermo-VLA maintains an average success rate of 0.78, achieving the best generalisation performance among the compared methods. Beyond thermal sensing, we transfer the same residual modulation mechanism to colour attributes and observe consistent improvements in both simulation and real-robot experiments, indicating its potential to generalise beyond thermal attributes. Project website: https://j-x-chen.github.io/Thermo-VLA-web/",
-  "abstract_zh": "Recent Vision-Language-Action (VLA) models have begun incorporating thermal sensing, but existing approaches typically treat thermal images as ordinary visual inputs, providing limited support for temperature-aware relational reasoning in manipulation. To address this limitation, we propose Thermo-VLA with a ThermoRes Encoder, which decomposes thermal images into cold and hot attribute representations and injects them into the RGB token through language-conditioned residual modulation, enabling temperature-driven target selection and continuous manipulation. We further construct six real-world robotic tasks on a dual-arm Unitree G1 platform, spanning basic grounding to relational reasoning. Experiments show that Thermo-VLA achieves an average success rate of 0.86 across four thermal-dependent tasks, outperforming a pi_0.5 baseline that directly incorporates RGB-thermal observations by 18 percentage points. Under unseen-object and scene variations, Thermo-VLA maintains an average success rate of 0.78, achieving the best generalisation performance among the compared methods. Beyond thermal sensing, we transfer the same residual modulation mechanism to colour attributes and observe consistent improvements in both simulation and real-robot experiments, indicating its potential to generalise beyond thermal attributes. Project website: https://j-x-chen.github.io/Thermo-VLA-web/",
-  "tldr_zh": "Recent Vision-Language-Action (VLA) models have begun incorp",
-  "cover_zh": "Recent Vision-Language-Action (VLA) models have begun incorp",
+  "abstract_zh": "近期的视觉-语言-动作（VLA）模型已开始融入热传感，但现有方法通常将热图像视为普通视觉输入，对操作中的温度感知关系推理支持有限。为解决这一局限，我们提出Thermo-VLA，其配备ThermoRes编码器，将热图像分解为冷和热属性表示，并通过语言条件残差调制将其注入RGB token，从而实现温度驱动的目标选择和连续操作。我们进一步在双臂Unitree G1平台上构建了六个真实世界机器人任务，涵盖从基础定位到关系推理。实验表明，Thermo-VLA在四个热依赖任务上平均成功率达到0.86，比直接融合RGB-热观测的pi_0.5基线高出18个百分点。在未见物体和场景变化下，Thermo-VLA保持平均成功率0.78，在对比方法中取得最佳泛化性能。除热传感外，我们将相同的残差调制机制迁移到颜色属性，并在仿真和真实机器人实验中均观察到一致改进，表明其有潜力泛化到热属性之外。项目网站：https://j-x-chen.github.io/Thermo-VLA-web/",
+  "tldr_zh": "Thermo-VLA通过门控残差调制注入热属性，提升机器人操作成功率与泛化性。",
+  "cover_zh": "热成像不只是视觉输入！Thermo-VLA让机器人真正理解温度",
   "authors": [
     {
       "name": "Jingxuan Chen",
@@ -52,7 +52,8 @@
     "assets/img/covers/arxiv-2611-11981-p4.jpg"
   ],
   "channels": [
-    "manipulation"
+    "manipulation",
+    "loco-manip-wbc"
   ],
   "badges": [
     {
@@ -63,13 +64,13 @@
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 22,
+  "score": 30,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
-      "points": 9,
-      "hint": "频道关键词命中 3 个（vision-language-action、manipulation、dual-arm）"
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、manipulation、dual-arm、unitree g1）"
     },
     {
       "id": "freshness",
@@ -82,15 +83,33 @@
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 8 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "热感知VLA，在Unitree G1双臂上做操作任务，方法有门控残差调制创新，实验扎实",
+    "model": "deepseek-v4-flash"
+  },
   "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "method_tags": [
+    "VLA",
+    "Thermal-Aware",
+    "Gated Residual Modulation"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

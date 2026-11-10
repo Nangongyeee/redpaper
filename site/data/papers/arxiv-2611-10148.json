@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10148",
   "source": "arxiv",
   "title": "BATCH: Behavior Alignment for Cross-Embodiment Learning from Humans",
-  "title_zh": "BATCH: Behavior Alignment for Cross-Embodiment Learning from Humans",
+  "title_zh": "BATCH：面向跨具身人类学习的行为对齐",
   "abstract": "Human demonstrations provide a scalable source of diverse manipulation data, but leveraging them for robot learning remains challenging due to differences in embodiment, viewpoint, action spaces, and temporal structure. We introduce BATCH, a cross-embodiment learning framework that explicitly aligns human and robot behaviors. BATCH learns self-supervised temporal representations with a cycle-consistency objective to establish cross-embodiment correspondences without manual annotation. We further introduce two complementary training objectives that leverage these correspondences within an autoregressive videoaction diffusion model: behavior-aligned co-training and human-to-robot style transfer. On real-world manipulation tasks, BATCH improves generalization to unseen task configurations compared with training on unaligned data and prior cross-embodiment baselines, with additional gains from the style-transfer objective. Our results demonstrate that explicit behavior alignment enables more effective transfer from human demonstrations to robot policies.",
-  "abstract_zh": "Human demonstrations provide a scalable source of diverse manipulation data, but leveraging them for robot learning remains challenging due to differences in embodiment, viewpoint, action spaces, and temporal structure. We introduce BATCH, a cross-embodiment learning framework that explicitly aligns human and robot behaviors. BATCH learns self-supervised temporal representations with a cycle-consistency objective to establish cross-embodiment correspondences without manual annotation. We further introduce two complementary training objectives that leverage these correspondences within an autoregressive videoaction diffusion model: behavior-aligned co-training and human-to-robot style transfer. On real-world manipulation tasks, BATCH improves generalization to unseen task configurations compared with training on unaligned data and prior cross-embodiment baselines, with additional gains from the style-transfer objective. Our results demonstrate that explicit behavior alignment enables more effective transfer from human demonstrations to robot policies.",
-  "tldr_zh": "Human demonstrations provide a scalable source of diverse ma",
-  "cover_zh": "Human demonstrations provide a scalable source of diverse ma",
+  "abstract_zh": "人类演示提供了可扩展的多样化操作数据来源，但由于具身、视角、动作空间和时间结构上的差异，将其用于机器人学习仍然具有挑战性。我们提出了 BATCH，一个显式对齐人类和机器人行为的跨具身学习框架。BATCH 通过循环一致性目标学习自监督时间表示，无需人工标注即可建立跨具身对应关系。我们进一步引入了两个互补的训练目标，在自回归视频动作扩散模型中利用这些对应关系：行为对齐协同训练和人类到机器人的风格迁移。在真实世界操作任务上，与未对齐数据训练和先前跨具身基线相比，BATCH 提高了对未见任务配置的泛化能力，并且风格迁移目标带来了额外收益。我们的结果表明，显式行为对齐能够更有效地将人类演示迁移到机器人策略中。",
+  "tldr_zh": "BATCH框架通过行为对齐实现从人类演示到机器人策略的有效迁移。",
+  "cover_zh": "人类演示直接喂给机器人？BATCH用行为对齐让迁移更有效",
   "authors": [
     {
       "name": "Zeyi Liu",
@@ -42,14 +42,24 @@
   "badges": [
     {
       "kind": "lab",
+      "label": "⭐ Stanford"
+    },
+    {
+      "kind": "lab",
       "label": "⭐ Shuran Song"
     }
   ],
   "related_links": [],
   "page_count": 20,
   "source_tags": [],
-  "score": 26,
+  "score": 51,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -70,12 +80,18 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Stanford University"
+  ],
+  "method_tags": [
+    "cross-embodiment learning",
+    "video-action diffusion model",
+    "human-to-robot style transfer"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

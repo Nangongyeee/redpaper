@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12409",
   "source": "arxiv",
   "title": "Bridging Task Planning and Execution for Language-Conditioned Bimanual Manipulation",
-  "title_zh": "Bridging Task Planning and Execution for Language-Conditioned Bimanual Manipulation",
+  "title_zh": "连接任务规划与执行：面向语言条件双臂操作",
   "abstract": "Robots are increasingly expected to execute natural-language manipulation tasks in real-world environments. This is particularly relevant in household assistance and logistics, where clutter requires reasoning about both task objectives and execution feasibility. This challenge becomes even more pronounced for bimanual humanoid platforms, where coordinating two manipulators introduces additional interaction and kinematic constraints. We present a zero-shot vision-language framework for execution-aware bimanual manipulation that jointly reasons about task objectives and physical feasibility. Planning is grounded in a structured scene representation that combines semantic object relations with execution constraints, enabling the selection of obstacle relocations and execution choices while preserving task semantics. Compatible actions are organised into parallel bimanual stages with explicit pre- and post-conditions. A hierarchical validator evaluates these conditions under perceptual uncertainty and uses stage-level execution history to support local recovery or targeted replanning. Experiments on the CENTAURO hybrid wheeled-legged humanoid robot across nine language-conditioned manipulation scenarios show higher task success than a non-execution-aware baseline. In dedicated failure scenarios, hierarchical validation recovers from execution failures with fewer model queries than always replanning. These results demonstrate the benefits of combining execution reasoning directly into task planning. Videos and additional material are available on the Project Webpage: https://advrhumanoids.github.io/bridging-planning-execution/.",
-  "abstract_zh": "Robots are increasingly expected to execute natural-language manipulation tasks in real-world environments. This is particularly relevant in household assistance and logistics, where clutter requires reasoning about both task objectives and execution feasibility. This challenge becomes even more pronounced for bimanual humanoid platforms, where coordinating two manipulators introduces additional interaction and kinematic constraints. We present a zero-shot vision-language framework for execution-aware bimanual manipulation that jointly reasons about task objectives and physical feasibility. Planning is grounded in a structured scene representation that combines semantic object relations with execution constraints, enabling the selection of obstacle relocations and execution choices while preserving task semantics. Compatible actions are organised into parallel bimanual stages with explicit pre- and post-conditions. A hierarchical validator evaluates these conditions under perceptual uncertainty and uses stage-level execution history to support local recovery or targeted replanning. Experiments on the CENTAURO hybrid wheeled-legged humanoid robot across nine language-conditioned manipulation scenarios show higher task success than a non-execution-aware baseline. In dedicated failure scenarios, hierarchical validation recovers from execution failures with fewer model queries than always replanning. These results demonstrate the benefits of combining execution reasoning directly into task planning. Videos and additional material are available on the Project Webpage: https://advrhumanoids.github.io/bridging-planning-execution/.",
-  "tldr_zh": "Robots are increasingly expected to execute natural-language",
-  "cover_zh": "Robots are increasingly expected to execute natural-language",
+  "abstract_zh": "机器人越来越多地被期望在真实环境中执行自然语言操作任务。这在家庭辅助和物流领域尤为重要，因为杂乱环境需要同时推理任务目标和执行可行性。对于双臂人形平台，这一挑战更加突出，因为协调两个机械臂会引入额外的交互和运动学约束。我们提出了一种零样本视觉-语言框架，用于执行感知的双臂操作，该框架联合推理任务目标和物理可行性。规划基于结构化场景表示，该表示结合了语义对象关系与执行约束，从而能够在保持任务语义的同时选择障碍物移动和执行选项。兼容的动作被组织成具有显式前置和后置条件的并行双臂阶段。分层验证器在感知不确定性下评估这些条件，并利用阶段级执行历史来支持局部恢复或针对性重规划。在CENTAURO混合轮腿人形机器人上，跨九个语言条件操作场景的实验表明，任务成功率高于非执行感知基线。在专门的失败场景中，分层验证以比始终重规划更少的模型查询从执行失败中恢复。这些结果证明了将执行推理直接结合到任务规划中的优势。视频和额外材料可在项目网页获取：https://advrhumanoids.github.io/bridging-planning-execution/。",
+  "tldr_zh": "提出零样本视觉语言框架，将执行推理融入双臂操作任务规划，提升成功率。",
+  "cover_zh": "机器人也懂‘三思而后行’？新框架让双臂操作成功率飙升！",
   "authors": [
     {
       "name": "Emanuele Cuzzocrea",
@@ -53,6 +53,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ IIT (Italy)"
+    },
+    {
       "kind": "venue",
       "label": "🎓 Humanoids 2026"
     },
@@ -64,8 +68,14 @@
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 40,
+  "score": 65,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “IIT (Italy)” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -97,13 +107,28 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "双臂人形操作的任务规划与执行结合，零样本VLA框架，在CENTAURO上验证，属manipulation方向，有算法新意。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Istituto Italiano di Tecnologia",
+    "University of Genoa"
+  ],
+  "method_tags": [
+    "zero-shot vision-language framework",
+    "task planning",
+    "bimanual manipulation"
+  ],
+  "platform": [
+    "CENTAURO"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

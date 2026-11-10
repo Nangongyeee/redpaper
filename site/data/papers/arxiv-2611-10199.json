@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10199",
   "source": "arxiv",
   "title": "RigidGS: Geometry-Aware Object Decoupling for Rigid-Body Interaction in 3D Gaussian Splatting",
-  "title_zh": "RigidGS: Geometry-Aware Object Decoupling for Rigid-Body Interaction in 3D Gaussian Splatting",
+  "title_zh": "RigidGS：面向3D高斯泼溅中刚体交互的几何感知对象解耦",
   "abstract": "Interactive VR/MR applications demand photorealistic 3D representations that support real-time rendering and object-level manipulation. While 3D Gaussian Splatting (3DGS) achieves high rendering quality, it represents scenes as unstructured, monolithic primitives. Existing object-aware 3DGS methods jointly optimize geometry and semantic states but suffer from two key failure modes: noisy foundation-model masks on complex geometry, and label-geometry coupling, in which co-optimized identity gradients mislabel boundary Gaussians. We introduce RigidGS, an end-to-end pipeline that decouples geometric learning from object identity. We propose a depth- and temporally-aware mask refinement module that addresses two complementary SAM2 failures: over-inclusion on thin structures and under-inclusion on multimodal-depth objects. We then determine object identities entirely upstream via COLMAP projection voting and freeze them during training, directing mask supervision solely toward geometric optimization. Refined masks alone substantially improve competing methods, yet a residual gap in label-geometry coupling persists that our fixed-identity design eliminates. RigidGS outperforms prior object-aware 3DGS methods on LLFF/NVOS, Mip-NeRF~360, and iNeRF360, improving segmentation and boundary IoU by 7.7 and 14.5 points on LLFF/NVOS. Finally, RigidGS enables real-time rigid-body manipulation on Meta Quest~2 without mesh extraction. Our code and project page are available at https://gyreyirisansah.github.io/rigidgs.",
-  "abstract_zh": "Interactive VR/MR applications demand photorealistic 3D representations that support real-time rendering and object-level manipulation. While 3D Gaussian Splatting (3DGS) achieves high rendering quality, it represents scenes as unstructured, monolithic primitives. Existing object-aware 3DGS methods jointly optimize geometry and semantic states but suffer from two key failure modes: noisy foundation-model masks on complex geometry, and label-geometry coupling, in which co-optimized identity gradients mislabel boundary Gaussians. We introduce RigidGS, an end-to-end pipeline that decouples geometric learning from object identity. We propose a depth- and temporally-aware mask refinement module that addresses two complementary SAM2 failures: over-inclusion on thin structures and under-inclusion on multimodal-depth objects. We then determine object identities entirely upstream via COLMAP projection voting and freeze them during training, directing mask supervision solely toward geometric optimization. Refined masks alone substantially improve competing methods, yet a residual gap in label-geometry coupling persists that our fixed-identity design eliminates. RigidGS outperforms prior object-aware 3DGS methods on LLFF/NVOS, Mip-NeRF~360, and iNeRF360, improving segmentation and boundary IoU by 7.7 and 14.5 points on LLFF/NVOS. Finally, RigidGS enables real-time rigid-body manipulation on Meta Quest~2 without mesh extraction. Our code and project page are available at https://gyreyirisansah.github.io/rigidgs.",
-  "tldr_zh": "Interactive VR/MR applications demand photorealistic 3D repr",
-  "cover_zh": "Interactive VR/MR applications demand photorealistic 3D repr",
+  "abstract_zh": "交互式VR/MR应用需要支持实时渲染和对象级操作的照片级真实感3D表示。虽然3D高斯泼溅（3DGS）实现了高渲染质量，但它将场景表示为非结构化的单体基元。现有的对象感知3DGS方法联合优化几何和语义状态，但存在两个关键失败模式：复杂几何上的基础模型掩码噪声，以及标签-几何耦合，即联合优化的身份梯度错误标记边界高斯。我们提出RigidGS，一个端到端流水线，将几何学习与对象身份解耦。我们提出一个深度和时间感知的掩码细化模块，解决SAM2的两个互补失败：薄结构上的过度包含和多模态深度对象的包含不足。然后我们通过COLMAP投影投票完全在上游确定对象身份，并在训练期间冻结它们，将掩码监督仅导向几何优化。仅细化掩码就能大幅改进竞争方法，但标签-几何耦合的残余差距仍然存在，我们的固定身份设计消除了它。RigidGS在LLFF/NVOS、Mip-NeRF 360和iNeRF360上优于先前的对象感知3DGS方法，在LLFF/NVOS上将分割和边界IoU分别提高7.7和14.5个百分点。最后，RigidGS无需网格提取即可在Meta Quest 2上实现实时刚体操作。我们的代码和项目页面可在https://gyreyirisansah.github.io/rigidgs获取。",
+  "tldr_zh": "RigidGS解耦几何与对象身份，提升分割和边界IoU，支持实时刚体操作。",
+  "cover_zh": "3DGS对象操作新突破｜几何身份解耦，边界IoU大幅提升！",
   "authors": [
     {
       "name": "Paul Sansah Gyreyiri",
@@ -57,9 +57,17 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "institutions": [
+    "University of Wyoming"
+  ],
+  "method_tags": [
+    "3D Gaussian Splatting",
+    "object-aware segmentation",
+    "mask refinement"
+  ],
+  "platform": [
+    "Meta Quest 2"
+  ],
   "sim_stack": [],
   "method_family": "",
   "real_robot": "",

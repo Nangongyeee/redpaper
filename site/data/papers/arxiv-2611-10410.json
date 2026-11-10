@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10410",
   "source": "arxiv",
   "title": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
-  "title_zh": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+  "title_zh": "SimDuoReal：面向涌现灵巧性的以物体为中心的双臂策略",
   "abstract": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, we explore whether complex bimanual dexterity can emerge from a simple object-centric learning objective. We train reinforcement learning policies under a shared object-centric reward, varying their training environments rather than tuning separate rewards for each behavior. We find that the policies discover pre-grasp manipulation, grasping and regrasping, in-hand adjustment and handover to reach object-pose goals without hand-designed motion sequences. We then refine the experts on transition states and use DAgger and reinforcement learning to distill them into a single policy that composes these behaviors for diverse bimanual tasks. On real hardware, the same policy succeeds in 61 of 80 trials (76.3\\%) across four tasks with unseen objects and no task-specific fine-tuning. In simulated barcode scanning, our policy achieves 85.0\\% success, compared with 60.4\\% for two single-arm policies without handover. These results suggest that this objective provides a simple and scalable interface for learning general bimanual dexterity, shifting the burden from manually designing robot coordination to specifying what should happen to the object.",
-  "abstract_zh": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, we explore whether complex bimanual dexterity can emerge from a simple object-centric learning objective. We train reinforcement learning policies under a shared object-centric reward, varying their training environments rather than tuning separate rewards for each behavior. We find that the policies discover pre-grasp manipulation, grasping and regrasping, in-hand adjustment and handover to reach object-pose goals without hand-designed motion sequences. We then refine the experts on transition states and use DAgger and reinforcement learning to distill them into a single policy that composes these behaviors for diverse bimanual tasks. On real hardware, the same policy succeeds in 61 of 80 trials (76.3\\%) across four tasks with unseen objects and no task-specific fine-tuning. In simulated barcode scanning, our policy achieves 85.0\\% success, compared with 60.4\\% for two single-arm policies without handover. These results suggest that this objective provides a simple and scalable interface for learning general bimanual dexterity, shifting the burden from manually designing robot coordination to specifying what should happen to the object.",
-  "tldr_zh": "Bimanual dexterous manipulation requires coordinated arm and",
-  "cover_zh": "Bimanual dexterous manipulation requires coordinated arm and",
+  "abstract_zh": "双臂灵巧操作需要协调手臂和手部控制，但手动指定这种协调具有挑战性且通常针对特定任务。在这项工作中，我们探索了复杂的双臂灵巧性是否可以从一个简单的以物体为中心的学习目标中涌现。我们在共享的以物体为中心的奖励下训练强化学习策略，改变其训练环境，而不是为每种行为调整单独的奖励。我们发现，策略能够发现预抓取操作、抓取和重新抓取、手内调整和交接，以达成物体姿态目标，而无需手工设计的运动序列。然后，我们在过渡状态上细化专家策略，并使用DAgger和强化学习将它们蒸馏成一个单一策略，该策略将这些行为组合起来以完成多样化的双臂任务。在真实硬件上，同一策略在四个任务中成功完成了80次试验中的61次（76.3%），涉及未见过的物体且没有任务特定的微调。在模拟条形码扫描中，我们的策略达到了85.0%的成功率，而两个没有交接的单臂策略为60.4%。这些结果表明，该目标为学习通用双臂灵巧性提供了一个简单且可扩展的接口，将负担从手动设计机器人协调转移到指定物体应该发生什么。",
+  "tldr_zh": "以物体为中心奖励训练双臂策略，实现灵巧操作并成功迁移到真实硬件。",
+  "cover_zh": "不用手工设计动作｜这个策略让双臂灵巧性自己涌现",
   "authors": [
     {
       "name": "Qiyang Yan",
@@ -56,6 +56,10 @@
   "badges": [
     {
       "kind": "lab",
+      "label": "⭐ UCSD"
+    },
+    {
+      "kind": "lab",
       "label": "⭐ Guanya Shi"
     },
     {
@@ -66,8 +70,14 @@
   "related_links": [],
   "page_count": 9,
   "source_tags": [],
-  "score": 35,
+  "score": 60,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “UCSD” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -88,12 +98,21 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Amazon FAR",
+    "UCSD",
+    "University of Chicago",
+    "CMU"
+  ],
+  "method_tags": [
+    "Reinforcement Learning",
+    "DAgger",
+    "Distillation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-09892",
   "source": "arxiv",
   "title": "On Agentic Manipulation Policies",
-  "title_zh": "On Agentic Manipulation Policies",
+  "title_zh": "论智能体式操作策略",
   "abstract": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
-  "abstract_zh": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
-  "tldr_zh": "Recent work on robot manipulation has focused on specialist",
-  "cover_zh": "Recent work on robot manipulation has focused on specialist",
+  "abstract_zh": "近期机器人操作研究主要集中于基于演示训练的专家策略。我们表明，通用人工智能模型能够比视觉-语言-动作模型（VLA）和世界-动作模型（WAM）等专家策略更可靠地控制机械臂。我们系统分析了智能体式操作策略（AMP），其中通用AI模型直接命令机械臂，并随任务展开调整其动作。我们提出了AMP1，一个参考框架，可在单臂、双臂和移动操作中不加修改地运行。AMP1在RoboLab-120和CaP-Gym基准上取得了最先进的结果，且无需演示或任务特定训练。在RoboLab-120上，AMP1零样本达到85.6%的成功率，而领先的VLA和WAM策略分别为49.2%和42.9%。在涵盖十二个任务和三个机器人实例的108次真实世界试验中，智能体零样本成功104次，相对于强VLA和WAM基线，失败率分别降低了20倍和15倍。基础框架不提供抓取、推动或放置技能；智能体自行发展策略，例如搜索隐藏物体、使用物体作为工具以及校准相机。通过添加持久记忆存储，智能体还可以从经验中学习：在RoboDojo双臂操作任务上，带有跨回合携带的记忆表示的增强框架相对于零样本部署将失败率降低了4.6倍。我们的分析表明，AMP比专家操作策略更具通用性和鲁棒性，为机器人操作提供了有前景的基础。",
+  "tldr_zh": "通用AI模型直接控制机械臂，零样本超越专家策略，失败率大幅降低。",
+  "cover_zh": "通用AI模型直接操控机械臂？零样本成功率碾压专家策略！",
   "authors": [
     {
       "name": "Chen Chen",
@@ -111,12 +111,18 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Apple"
+  ],
+  "method_tags": [
+    "agentic manipulation policy",
+    "generalist AI model",
+    "zero-shot"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

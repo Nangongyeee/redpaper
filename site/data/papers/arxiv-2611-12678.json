@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12678",
   "source": "arxiv",
   "title": "Library of Hands: Fix the Hands, Not the World Model",
-  "title_zh": "Library of Hands: Fix the Hands, Not the World Model",
+  "title_zh": "手之库：修正手，而非世界模型",
   "abstract": "A world model predicts how a scene changes after an action, and a planner uses it to search for actions that reach a goal. If the camera moves or the controller changes, the same command moves the robot differently: when its commands are turned by 90 degrees, a frozen planner with the LeWM world model that succeeds in 77.5% of episodes succeeds in only 7.8%. Current fixes retrain the model, need training data, or forget a set-up when it returns. We propose Library of Hands (LoH), a training-free method that keeps the world model frozen and corrects only the map from commands to applied actions, which we call the hand. LoH reads the hand through the frozen model, with no extra sensor: it finds the action that best explains the change between two camera images (a reading). It stores every hand it identifies, so a returning set-up is recognised rather than re-learnt. In closed-loop tests, LoH more than doubles success on three simulated tasks, from 28.6% to 62.3%, and loses only 0.6 percentage points when nothing changes. It also works, unchanged, with two other world models and on two of three models pretrained on real robot data, and its gain grows with the quality of its readings.",
-  "abstract_zh": "A world model predicts how a scene changes after an action, and a planner uses it to search for actions that reach a goal. If the camera moves or the controller changes, the same command moves the robot differently: when its commands are turned by 90 degrees, a frozen planner with the LeWM world model that succeeds in 77.5% of episodes succeeds in only 7.8%. Current fixes retrain the model, need training data, or forget a set-up when it returns. We propose Library of Hands (LoH), a training-free method that keeps the world model frozen and corrects only the map from commands to applied actions, which we call the hand. LoH reads the hand through the frozen model, with no extra sensor: it finds the action that best explains the change between two camera images (a reading). It stores every hand it identifies, so a returning set-up is recognised rather than re-learnt. In closed-loop tests, LoH more than doubles success on three simulated tasks, from 28.6% to 62.3%, and loses only 0.6 percentage points when nothing changes. It also works, unchanged, with two other world models and on two of three models pretrained on real robot data, and its gain grows with the quality of its readings.",
-  "tldr_zh": "A world model predicts how a scene changes after an action,",
-  "cover_zh": "A world model predicts how a scene changes after an action,",
+  "abstract_zh": "世界模型预测动作后场景如何变化，规划器利用它搜索达成目标的动作。如果相机移动或控制器改变，相同的命令会使机器人产生不同的运动：当命令旋转90度时，使用LeWM世界模型的冻结规划器在77.5%的回合中成功，但仅剩7.8%的成功率。当前的修复方法需要重新训练模型、需要训练数据，或者当设置恢复时会遗忘。我们提出Library of Hands (LoH)，一种无需训练的方法，它保持世界模型冻结，仅修正从命令到应用动作的映射，我们称之为“手”。LoH通过冻结模型读取“手”，无需额外传感器：它找到最能解释两个相机图像之间变化（读数）的动作。它存储识别出的每个“手”，因此返回的设置会被识别而非重新学习。在闭环测试中，LoH在三个模拟任务上将成功率提高一倍以上，从28.6%到62.3%，并且在无变化时仅损失0.6个百分点。它还能不变地用于另外两个世界模型，以及在三个预训练于真实机器人数据的模型中的两个上工作，并且其增益随着读数质量的提高而增长。",
+  "tldr_zh": "冻结世界模型，仅修正命令到动作的映射，无需训练即可适应变化。",
+  "cover_zh": "世界模型不动，只修“手”｜成功率翻倍还不遗忘",
   "authors": [
     {
       "name": "Hasaan Ahmad",
@@ -82,8 +82,17 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of the West of England",
+    "University of Oxford",
+    "Imperial College London",
+    "University of Exeter"
+  ],
+  "method_tags": [
+    "World Model",
+    "training-free",
+    "action mapping correction"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

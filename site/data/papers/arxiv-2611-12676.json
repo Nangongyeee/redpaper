@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12676",
   "source": "arxiv",
   "title": "VLA Adaptation with Real and Simulated Data: A Case Study on Robotic Chess",
-  "title_zh": "VLA Adaptation with Real and Simulated Data: A Case Study on Robotic Chess",
+  "title_zh": "真实与模拟数据下的VLA适配：机器人国际象棋案例研究",
   "abstract": "Vision-language-action (VLA) models are trained as general-purpose foundation models for robot learning, and require fine-tuning for each downstream task and robot. This raises practical questions such as how much data and training updates are needed, how checkpoints should be selected, and whether simulation can be leveraged to alleviate the cost of real data collection. We study these questions on a task that requires both precise manipulation and spatial understanding of the scene. In this task, an SO-101 arm moves a chess king between two squares that are given only by their names, such as e4 and a5. We fine-tune $π_{0.5}$ with various dataset sizes and update budgets, using teleoperated demonstrations as well as simulated demonstrations from a randomized scripted expert that imitates the variability of human demonstrations. In simulation, the success rate scales with both data and updates. Importantly, we find that a short learning-rate cool-down adds up to 31 points and is necessary for comparing checkpoints, and that validation loss and action error are unreliable for model selection. On the real arm, we fine-tune on up to 256 teleoperated demonstrations and evaluate ten policies in 25 trials each. Partial results indicate that pretraining on the simulated demonstrations helps substantially, most clearly when real data is scarce. We also present a negative result, in which training on the policy's own rollouts with filtered behavior cloning, RECAP-style advantage conditioning, corrections from an automatic coach, or residual reinforcement learning did not yield a measurable improvement over plain behavior cloning in our setting. We release the simulator, the expert and the real demonstrations.",
-  "abstract_zh": "Vision-language-action (VLA) models are trained as general-purpose foundation models for robot learning, and require fine-tuning for each downstream task and robot. This raises practical questions such as how much data and training updates are needed, how checkpoints should be selected, and whether simulation can be leveraged to alleviate the cost of real data collection. We study these questions on a task that requires both precise manipulation and spatial understanding of the scene. In this task, an SO-101 arm moves a chess king between two squares that are given only by their names, such as e4 and a5. We fine-tune $π_{0.5}$ with various dataset sizes and update budgets, using teleoperated demonstrations as well as simulated demonstrations from a randomized scripted expert that imitates the variability of human demonstrations. In simulation, the success rate scales with both data and updates. Importantly, we find that a short learning-rate cool-down adds up to 31 points and is necessary for comparing checkpoints, and that validation loss and action error are unreliable for model selection. On the real arm, we fine-tune on up to 256 teleoperated demonstrations and evaluate ten policies in 25 trials each. Partial results indicate that pretraining on the simulated demonstrations helps substantially, most clearly when real data is scarce. We also present a negative result, in which training on the policy's own rollouts with filtered behavior cloning, RECAP-style advantage conditioning, corrections from an automatic coach, or residual reinforcement learning did not yield a measurable improvement over plain behavior cloning in our setting. We release the simulator, the expert and the real demonstrations.",
-  "tldr_zh": "Vision-language-action (VLA) models are trained as general-p",
-  "cover_zh": "Vision-language-action (VLA) models are trained as general-p",
+  "abstract_zh": "视觉-语言-动作（VLA）模型被训练为机器人学习的通用基础模型，并且需要针对每个下游任务和机器人进行微调。这引发了实际问题，例如需要多少数据和训练更新、应如何选择检查点，以及是否可以利用模拟来减轻真实数据收集的成本。我们在一个需要精确操作和场景空间理解的任务上研究这些问题。在该任务中，SO-101机械臂在仅由名称给定的两个方格（如e4和a5）之间移动一个国际象棋国王。我们使用各种数据集大小和更新预算对$π_{0.5}$进行微调，使用遥操作演示以及来自随机脚本化专家的模拟演示，该专家模仿人类演示的变异性。在模拟中，成功率随数据和更新而扩展。重要的是，我们发现短暂的学习率冷却增加了多达31个点，并且对于比较检查点是必要的，而验证损失和动作误差对于模型选择不可靠。在真实机械臂上，我们最多使用256个遥操作演示进行微调，并评估了十个策略，每个策略进行25次试验。部分结果表明，在模拟演示上进行预训练有显著帮助，在真实数据稀缺时最为明显。我们还提出了一个负面结果，即在我们设置中，使用过滤行为克隆、RECAP风格的优势条件、来自自动教练的纠正或残差强化学习对策略自身的rollouts进行训练，并未比普通行为克隆产生可测量的改进。我们发布了模拟器、专家和真实演示。",
+  "tldr_zh": "VLA模型在机器人国际象棋任务中微调，模拟数据预训练有助于真实数据稀缺场景。",
+  "cover_zh": "真实数据不够？模拟预训练让机械臂下棋更稳｜学习率冷却竟成关键",
   "authors": [
     {
       "name": "Matěj Kripner",
@@ -85,13 +85,27 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "VLA微调实证研究，涉及数据量、检查点选择、仿真数据利用，对操作任务有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Charles University, Faculty of Mathematics and Physics"
+  ],
+  "method_tags": [
+    "VLA",
+    "Behavior Cloning",
+    "sim-to-real"
+  ],
+  "platform": [
+    "SO-101"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

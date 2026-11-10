@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12508",
   "source": "arxiv",
   "title": "MARS: Multiscale Appearance-Residual Streams for Video Forgery Detection",
-  "title_zh": "MARS: Multiscale Appearance-Residual Streams for Video Forgery Detection",
+  "title_zh": "MARS：多尺度外观残差流用于视频伪造检测",
   "abstract": "Generalizing deepfake detection across facial manipulation and fully generated video remains challenging due to forgery traces varying with the manipulation method and scene content. Explicit spatial and temporal feature differences offer a way to capture this variation, but also respond to natural texture and motion, motivating their joint interpretation with appearance features. We investigate whether combining multiscale feature differences with adapted appearance representations improves detection across both forgery categories. We introduce Multiscale Appearance-Residual Streams (MARS), a two-path video detector. The residual path applies fixed spatial and temporal difference-of-Gaussians operators to frozen intermediate features and models the resulting differences alongside appearance context across frames. The semantic path adapts the encoder's normalization parameters for frame classification, and a clip-dependent gate combines their predictions. Under a shared protocol across seven datasets, MARS achieves the highest average AUROC of 91.43\\%, outperforming seven compared detectors. When trained on facial manipulations alone, MARS achieves 93.99\\% AUROC on GenVideo and 75.50\\% on DF26, demonstrating transfer to generated videos without generated-video training data. MARS also provides signed patch and frame contributions, whose faithfulness we evaluate through controlled spatial and temporal removal against random controls. MARS is publicly available for research: Project page: https://vectorinstitute.github.io/mars/ Github: https://github.com/VectorInstitute/mars",
-  "abstract_zh": "Generalizing deepfake detection across facial manipulation and fully generated video remains challenging due to forgery traces varying with the manipulation method and scene content. Explicit spatial and temporal feature differences offer a way to capture this variation, but also respond to natural texture and motion, motivating their joint interpretation with appearance features. We investigate whether combining multiscale feature differences with adapted appearance representations improves detection across both forgery categories. We introduce Multiscale Appearance-Residual Streams (MARS), a two-path video detector. The residual path applies fixed spatial and temporal difference-of-Gaussians operators to frozen intermediate features and models the resulting differences alongside appearance context across frames. The semantic path adapts the encoder's normalization parameters for frame classification, and a clip-dependent gate combines their predictions. Under a shared protocol across seven datasets, MARS achieves the highest average AUROC of 91.43\\%, outperforming seven compared detectors. When trained on facial manipulations alone, MARS achieves 93.99\\% AUROC on GenVideo and 75.50\\% on DF26, demonstrating transfer to generated videos without generated-video training data. MARS also provides signed patch and frame contributions, whose faithfulness we evaluate through controlled spatial and temporal removal against random controls. MARS is publicly available for research: Project page: https://vectorinstitute.github.io/mars/ Github: https://github.com/VectorInstitute/mars",
-  "tldr_zh": "Generalizing deepfake detection across facial manipulation a",
-  "cover_zh": "Generalizing deepfake detection across facial manipulation a",
+  "abstract_zh": "由于伪造痕迹随操纵方法和场景内容而变化，跨面部操纵和完全生成视频的深度伪造检测泛化仍然具有挑战性。显式的空间和时间特征差异提供了一种捕捉这种变化的方法，但也会对自然纹理和运动产生响应，这促使我们将它们与外观特征联合解释。我们研究将多尺度特征差异与自适应外观表示相结合是否能提高对两类伪造的检测。我们引入了多尺度外观残差流（MARS），一种双路径视频检测器。残差路径对冻结的中间特征应用固定的空间和时间高斯差分算子，并跨帧与外观上下文一起建模得到的差异。语义路径为帧分类调整编码器的归一化参数，并且一个依赖于片段的门控结合它们的预测。在七个数据集的共享协议下，MARS 达到了 91.43% 的最高平均 AUROC，优于七个比较的检测器。当仅在人脸操纵上训练时，MARS 在 GenVideo 上达到 93.99% AUROC，在 DF26 上达到 75.50%，展示了在没有生成视频训练数据的情况下向生成视频的迁移。MARS 还提供了带符号的补丁和帧贡献，我们通过受控的空间和时间移除与随机对照来评估其忠实性。MARS 已公开用于研究：项目页面：https://vectorinstitute.github.io/mars/ Github：https://github.com/VectorInstitute/mars",
+  "tldr_zh": "MARS双路径检测器结合残差与外观特征，提升视频伪造检测泛化性。",
+  "cover_zh": "仅用人脸数据训练，竟能检测生成视频？MARS做到了",
   "authors": [
     {
       "name": "Ahmed Y. Radwan",
@@ -75,8 +75,14 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Vector Institute for Artificial Intelligence"
+  ],
+  "method_tags": [
+    "deepfake detection",
+    "multiscale feature differences",
+    "appearance features"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

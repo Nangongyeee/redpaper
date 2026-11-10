@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10316",
   "source": "arxiv",
   "title": "The World Model Planning Accelerator (WMPA): Hardware-Algorithm Co-Design for Embedded AI in Robotics",
-  "title_zh": "The World Model Planning Accelerator (WMPA): Hardware-Algorithm Co-Design for Embedded AI in Robotics",
+  "title_zh": "世界模型规划加速器（WMPA）：面向机器人嵌入式AI的软硬件协同设计",
   "abstract": "Embedded AI is moving from perception to prediction. Robots now use world models$\\unicode{x2014}$learned simulators that predict the outcome of candidate actions in a compressed latent space before any is executed. Every predicted step must be computed on board within a tight power and thermal budget, yet the energy these steps fundamentally require, and how far real hardware sits from it, have not been characterized. We derive lower bounds on the arithmetic operations and the CMOS dynamic energy of a latent state transition from information theory and Boolean circuit complexity. Profiling a DreamerV3-style Recurrent State Space Model (RSSM) shows that every rollout operation is memory-bandwidth bound and that a GPU consumes at least $5.9\\times10^{10}$ times the CMOS energy floor. Transient 3D thermal simulations show that this inefficiency is also a thermal one, since sustained back-to-back planning heats a millimeter-scale silicon tile to 556 K even behind an ideal copper heat spreader. Guided by this chain from bound to bottleneck, we propose the World Model Planning Accelerator (WMPA), a chip architecture for embedded world model planning that combines near-memory computation, real-time entropy estimation, variable-precision rollout units, and copy-on-write latent scratchpads. With a design target of 40x lower power, the same tile stays near ambient at 306 K in simulation, pointing toward practical planning on thermally constrained robots.",
-  "abstract_zh": "Embedded AI is moving from perception to prediction. Robots now use world models$unicode{x2014}$learned simulators that predict the outcome of candidate actions in a compressed latent space before any is executed. Every predicted step must be computed on board within a tight power and thermal budget, yet the energy these steps fundamentally require, and how far real hardware sits from it, have not been characterized. We derive lower bounds on the arithmetic operations and the CMOS dynamic energy of a latent state transition from information theory and Boolean circuit complexity. Profiling a DreamerV3-style Recurrent State Space Model (RSSM) shows that every rollout operation is memory-bandwidth bound and that a GPU consumes at least $5.9×10^{10}$ times the CMOS energy floor. Transient 3D thermal simulations show that this inefficiency is also a thermal one, since sustained back-to-back planning heats a millimeter-scale silicon tile to 556 K even behind an ideal copper heat spreader. Guided by this chain from bound to bottleneck, we propose the World Model Planning Accelerator (WMPA), a chip architecture for embedded world model planning that combines near-memory computation, real-time entropy estimation, variable-precision rollout units, and copy-on-write latent scratchpads. With a design target of 40x lower power, the same tile stays near ambient at 306 K in simulation, pointing toward practical planning on thermally constrained robots.",
-  "tldr_zh": "Embedded AI is moving from perception to prediction. Robots",
-  "cover_zh": "Embedded AI is moving from perception to prediction. Robots",
+  "abstract_zh": "嵌入式AI正从感知转向预测。机器人现在使用世界模型——学习到的模拟器，在压缩的潜在空间中预测候选动作的结果，然后再执行。每个预测步骤都必须在严格的功耗和热预算内板上计算，然而这些步骤从根本上需要的能量，以及真实硬件距离该能量下限有多远，尚未被表征。我们从信息论和布尔电路复杂度推导了潜在状态转移的算术运算和CMOS动态能量的下界。对DreamerV3风格的循环状态空间模型（RSSM）进行性能分析表明，每次展开操作都受内存带宽限制，并且GPU消耗的能量至少是CMOS能量下限的5.9×10^10倍。瞬态3D热仿真表明，这种低效也是热问题，因为持续背靠背规划会将毫米级硅片加热到556 K，即使背后有理想的铜散热器。基于从下界到瓶颈的这一链条，我们提出了世界模型规划加速器（WMPA），一种用于嵌入式世界模型规划的芯片架构，它结合了近内存计算、实时熵估计、可变精度展开单元和写时复制潜在暂存器。以降低40倍功耗为设计目标，在仿真中同一硅片保持在接近环境温度的306 K，指向在热受限机器人上实现实用规划。",
+  "tldr_zh": "提出WMPA芯片架构，通过软硬件协同设计降低世界模型规划功耗。",
+  "cover_zh": "机器人规划热到烫手？这个芯片架构让温度直降！",
   "authors": [
     {
       "name": "Prerana Ramkumar",
@@ -63,8 +63,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "American University of Sharjah",
+    "BITS Pilani – Dubai Campus"
+  ],
+  "method_tags": [
+    "World Model",
+    "Hardware Accelerator",
+    "Memory-Bound"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

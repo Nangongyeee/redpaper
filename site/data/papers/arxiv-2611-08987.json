@@ -2,11 +2,11 @@
   "id": "arxiv-2611-08987",
   "source": "arxiv",
   "title": "VLA Handover: Failure-Prediction-Based Switching from On-Robot to Server VLA Models",
-  "title_zh": "VLA Handover: Failure-Prediction-Based Switching from On-Robot to Server VLA Models",
+  "title_zh": "VLA 切换：基于失败预测的从机器人端到服务器端 VLA 模型切换",
   "abstract": "Large vision-language-action (VLA) models generalize well but are difficult to run in real time on a robot, and small VLAs that run there fail more often. Remote inference over beyond-5G and 6G networks lets a robot use a large VLA on a server, but querying the server for every action chunk limits the number of robots per server. We propose VLA handover: the robot runs a small VLA (S-VLA) and switches to a large VLA (L-VLA) on a server only when the S-VLA is likely to fail. We formulate the switching as minimizing the request cost under a required success probability and, since this problem cannot be solved directly, propose a heuristic framework that retrains neither VLA. In simulation with SmolVLA and $π_{0.5}$ on three of the four LIBERO suites, VLA handover raised the success rate by 11-22 percentage points over the S-VLA alone and sent 49-77% fewer requests than server-only control at a 2-4 percentage-point lower success rate, and its completion time grew less with the network latency.",
-  "abstract_zh": "Large vision-language-action (VLA) models generalize well but are difficult to run in real time on a robot, and small VLAs that run there fail more often. Remote inference over beyond-5G and 6G networks lets a robot use a large VLA on a server, but querying the server for every action chunk limits the number of robots per server. We propose VLA handover: the robot runs a small VLA (S-VLA) and switches to a large VLA (L-VLA) on a server only when the S-VLA is likely to fail. We formulate the switching as minimizing the request cost under a required success probability and, since this problem cannot be solved directly, propose a heuristic framework that retrains neither VLA. In simulation with SmolVLA and $π_{0.5}$ on three of the four LIBERO suites, VLA handover raised the success rate by 11-22 percentage points over the S-VLA alone and sent 49-77% fewer requests than server-only control at a 2-4 percentage-point lower success rate, and its completion time grew less with the network latency.",
-  "tldr_zh": "Large vision-language-action (VLA) models generalize well bu",
-  "cover_zh": "Large vision-language-action (VLA) models generalize well bu",
+  "abstract_zh": "大型视觉-语言-动作（VLA）模型泛化能力强，但难以在机器人上实时运行，而能在机器人上运行的小型 VLA 则更频繁地失败。通过超 5G 和 6G 网络进行远程推理，机器人可以使用服务器上的大型 VLA，但为每个动作块查询服务器限制了每台服务器的机器人数量。我们提出 VLA 切换：机器人运行小型 VLA（S-VLA），仅当 S-VLA 可能失败时，才切换到服务器上的大型 VLA（L-VLA）。我们将切换问题建模为在所需成功概率下最小化请求成本，由于该问题无法直接求解，我们提出了一种无需重新训练任何 VLA 的启发式框架。在仿真中，使用 SmolVLA 和 $π_{0.5}$ 在 LIBERO 四个套件中的三个上，VLA 切换相比仅使用 S-VLA 将成功率提高了 11-22 个百分点，并且与仅服务器控制相比，在成功率低 2-4 个百分点的情况下，请求减少了 49-77%，且其完成时间随网络延迟的增长更慢。",
+  "tldr_zh": "机器人端小模型预测失败时才请求服务器大模型，节省请求且提升成功率。",
+  "cover_zh": "小模型总翻车？失败预测触发大模型救援，请求少一半！",
   "authors": [
     {
       "name": "Takayuki Nishio",

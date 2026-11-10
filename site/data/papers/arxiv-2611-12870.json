@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12870",
   "source": "arxiv",
   "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
-  "title_zh": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
+  "title_zh": "SWAM：通过跨模态对齐扩展世界动作模型",
   "abstract": "World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating language-video alignment acquired through video pretraining as an established foundation. However, introducing action learning may impair this alignment. Principled guidance on data and supervision design for maintaining language-video alignment during action learning remains limited. To investigate this, we curate a pool of approximately 47,000 hours of general videos, egocentric videos, UMI demonstrations, and robot demonstrations. Building on this, we systematically study how language-video supervision, language-video-action supervision, and the joint use of these two forms affect WAM performance. In particular, we examine how language annotation quality affects pretrained language-video capabilities, and how action supervision from UMI and robot demonstrations extends these capabilities to language-video-action modeling. To better scale the model, we further conduct detailed studies on joint training recipe and model architecture. Under a fixed training budget, mixing egocentric videos and UMI demonstrations improves control generalization. Model architecture affects how effectively these experiences are used, while scaling pretraining under the selected configuration brings further gains. The resulting recipe, post-trained on RoboTwin Clean demonstrations only, achieves success rates of 88.10% and 61.56% under Easy (Clean-to-Clean) and Hard (Clean-to-Random) conditions, respectively. Our model achieves 40.00% SR across three real-world tasks, compared with 23.33% for the strongest baseline, indicating better generalization under unseen conditions. We release the curated data, training code, and model weights.",
-  "abstract_zh": "World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating language-video alignment acquired through video pretraining as an established foundation. However, introducing action learning may impair this alignment. Principled guidance on data and supervision design for maintaining language-video alignment during action learning remains limited. To investigate this, we curate a pool of approximately 47,000 hours of general videos, egocentric videos, UMI demonstrations, and robot demonstrations. Building on this, we systematically study how language-video supervision, language-video-action supervision, and the joint use of these two forms affect WAM performance. In particular, we examine how language annotation quality affects pretrained language-video capabilities, and how action supervision from UMI and robot demonstrations extends these capabilities to language-video-action modeling. To better scale the model, we further conduct detailed studies on joint training recipe and model architecture. Under a fixed training budget, mixing egocentric videos and UMI demonstrations improves control generalization. Model architecture affects how effectively these experiences are used, while scaling pretraining under the selected configuration brings further gains. The resulting recipe, post-trained on RoboTwin Clean demonstrations only, achieves success rates of 88.10% and 61.56% under Easy (Clean-to-Clean) and Hard (Clean-to-Random) conditions, respectively. Our model achieves 40.00% SR across three real-world tasks, compared with 23.33% for the strongest baseline, indicating better generalization under unseen conditions. We release the curated data, training code, and model weights.",
-  "tldr_zh": "World action models jointly predict video and actions condit",
-  "cover_zh": "World action models jointly predict video and actions condit",
+  "abstract_zh": "世界动作模型以语言为条件，联合预测视频和动作。现有研究主要关注架构和训练机制，通常将通过视频预训练获得的语言-视频对齐视为既定基础。然而，引入动作学习可能会损害这种对齐。关于在动作学习过程中维持语言-视频对齐的数据和监督设计，有原则性的指导仍然有限。为了研究这一点，我们整理了一个约47,000小时的数据池，包含通用视频、第一人称视频、UMI演示和机器人演示。在此基础上，我们系统地研究了语言-视频监督、语言-视频-动作监督以及这两种形式的联合使用如何影响WAM性能。特别地，我们考察了语言标注质量如何影响预训练的语言-视频能力，以及来自UMI和机器人演示的动作监督如何将这些能力扩展到语言-视频-动作建模。为了更好地扩展模型，我们进一步对联合训练配方和模型架构进行了详细研究。在固定的训练预算下，混合第一人称视频和UMI演示可以提高控制泛化能力。模型架构影响这些经验被有效利用的程度，而在所选配置下扩展预训练会带来进一步收益。最终配方仅在RoboTwin Clean演示上进行后训练，在Easy（Clean-to-Clean）和Hard（Clean-to-Random）条件下分别达到88.10%和61.56%的成功率。我们的模型在三个真实世界任务上达到40.00%的成功率，而最强基线为23.33%，表明在未见条件下具有更好的泛化能力。我们发布了整理的数据、训练代码和模型权重。",
+  "tldr_zh": "SWAM通过跨模态对齐和混合数据训练，提升世界动作模型的泛化能力。",
+  "cover_zh": "动作学习会破坏语言-视频对齐？SWAM用4.7万小时数据找到解法",
   "authors": [
     {
       "name": "Yu Zhou",
@@ -76,6 +76,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ SJTU"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -83,8 +87,14 @@
   "related_links": [],
   "page_count": 30,
   "source_tags": [],
-  "score": 16,
+  "score": 41,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “SJTU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -104,13 +114,30 @@
       "hint": "PDF 30 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "世界动作模型跨模态对齐研究，含大规模数据配方与真机实验，对VLA/操作策略有高参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Shanghai Jiao Tong University",
+    "Shanghai Innovation Institute",
+    "Noematrix Ltd.",
+    "Westlake University"
+  ],
+  "method_tags": [
+    "World Action Model",
+    "Cross-Modal Alignment",
+    "Video Pretraining"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "RoboTwin"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

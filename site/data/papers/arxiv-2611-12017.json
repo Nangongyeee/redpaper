@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12017",
   "source": "arxiv",
   "title": "Grasp-Taxonomy Conditioning as a Mode Switch for Dexterous Grasping of Climbing Holds",
-  "title_zh": "Grasp-Taxonomy Conditioning as a Mode Switch for Dexterous Grasping of Climbing Holds",
+  "title_zh": "抓握分类条件作为模式开关：用于攀岩支点灵巧抓握",
   "abstract": "Dexterous grasping in robotics relies on distinct hand configurations depending on object geometry. We introduce BetaGrasp, a 3D diffusion policy that conditions a DP3-style point-cloud policy on a four-class grasp label (crimp, sloper, pinch, and jug), running on a Franka arm with a 16-DoF LEAP hand. We also introduce a climbing-hold benchmark: a spring testbed whose ratchet gives a slip-force reading in newtons. In our analysis the policy's point-cloud encoder did not separate the four holds, so the scan alone gave it little to choose a grasp from. Without the label (a DP3-style baseline), simulated rollouts from the robot's reset pose all end in a jug grasp, whatever the hold (25% correct grasp type, versus 94% for BetaGrasp). The label works as a switch for which grasp the policy performs. On 80 paired hardware trials, BetaGrasp raises average slip force from 9.6 N to 14.3 N, and grasps slipping fully off the hold drop from 44% of trials to 10%.",
-  "abstract_zh": "Dexterous grasping in robotics relies on distinct hand configurations depending on object geometry. We introduce BetaGrasp, a 3D diffusion policy that conditions a DP3-style point-cloud policy on a four-class grasp label (crimp, sloper, pinch, and jug), running on a Franka arm with a 16-DoF LEAP hand. We also introduce a climbing-hold benchmark: a spring testbed whose ratchet gives a slip-force reading in newtons. In our analysis the policy's point-cloud encoder did not separate the four holds, so the scan alone gave it little to choose a grasp from. Without the label (a DP3-style baseline), simulated rollouts from the robot's reset pose all end in a jug grasp, whatever the hold (25% correct grasp type, versus 94% for BetaGrasp). The label works as a switch for which grasp the policy performs. On 80 paired hardware trials, BetaGrasp raises average slip force from 9.6 N to 14.3 N, and grasps slipping fully off the hold drop from 44% of trials to 10%.",
-  "tldr_zh": "Dexterous grasping in robotics relies on distinct hand confi",
-  "cover_zh": "Dexterous grasping in robotics relies on distinct hand confi",
+  "abstract_zh": "机器人灵巧抓握依赖于根据物体几何形状采用不同的手部配置。我们提出 BetaGrasp，一种 3D 扩散策略，将 DP3 风格的点云策略条件于四类抓握标签（crimp、sloper、pinch 和 jug），运行在配备 16 自由度 LEAP 手的 Franka 机械臂上。我们还引入了一个攀岩支点基准：一个弹簧测试台，其棘轮提供以牛顿为单位的滑动力读数。在我们的分析中，策略的点云编码器未能区分四种支点，因此仅凭扫描信息几乎无法选择抓握方式。在没有标签的情况下（DP3 风格基线），从机器人重置位姿开始的模拟推演无论面对何种支点，最终都采用 jug 抓握（正确抓握类型率为 25%，而 BetaGrasp 为 94%）。标签起到了切换策略执行何种抓握的作用。在 80 次配对硬件试验中，BetaGrasp 将平均滑动力从 9.6 N 提高到 14.3 N，并将完全滑脱支点的抓握从 44% 的试验降低到 10%。",
+  "tldr_zh": "BetaGrasp 利用抓握标签作为模式开关，显著提升攀岩支点抓握成功率。",
+  "cover_zh": "点云编码器分不清支点？加个标签直接让抓握成功率翻倍！",
   "authors": [
     {
       "name": "Rumi Loghmani",
@@ -44,6 +44,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ CMU RI"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -51,8 +55,14 @@
   "related_links": [],
   "page_count": 6,
   "source_tags": [],
-  "score": 25,
+  "score": 50,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “CMU RI” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -72,13 +82,28 @@
       "hint": "PDF 6 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "Franka+LEAP灵巧手抓取扩散策略，引入抓握分类条件与滑移力基准，属操作方向有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Carnegie Mellon University"
+  ],
+  "method_tags": [
+    "Diffusion Policy",
+    "Behavior Cloning",
+    "灵巧抓取"
+  ],
+  "platform": [
+    "Franka",
+    "LEAP hand"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

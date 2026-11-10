@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10392",
   "source": "arxiv",
   "title": "Tiresias: Towards Language-Conditioned World Models",
-  "title_zh": "Tiresias: Towards Language-Conditioned World Models",
+  "title_zh": "Tiresias：迈向语言条件世界模型",
   "abstract": "World models enable planning through internal simulation, while natural language provides intuitive task specification. Yet, language-conditioned world modeling remains fragmented across domains with disparate action spaces, datasets, and evaluation protocols. We introduce LCWM, a shared task that maps an initial agent-view observation and a language instruction to an action sequence that fulfills the instruction. Its accompanying benchmark, LCWM-Bench, integrates 15 datasets across navigation, robotics, 3D gaming, and driving under a shared action interface and evaluation protocol, pairing 142,987 episodes with 428,961 instructions in three styles. We further propose Tiresias, an agent that plans via selective imagination: a language-conditioned diffusion policy generates candidate trajectories, a trajectory ranker shortlists them, and a video-pretrained world model imagines their visual consequences. A visual ranker evaluates these rollouts, complementing trajectory scores to select the final plan. Tiresias achieves competitive planning and imagination performance on LCWM-Bench. Ablations demonstrate the complementary benefits of trajectory ranking and visual verification, while experiments with alternative proposal methods show that the trained rankers remain effective beyond our diffusion policy. Together, LCWM-Bench and Tiresias provide a unified evaluation setting and an effective starting point for studying language-guided planning through world models.",
-  "abstract_zh": "World models enable planning through internal simulation, while natural language provides intuitive task specification. Yet, language-conditioned world modeling remains fragmented across domains with disparate action spaces, datasets, and evaluation protocols. We introduce LCWM, a shared task that maps an initial agent-view observation and a language instruction to an action sequence that fulfills the instruction. Its accompanying benchmark, LCWM-Bench, integrates 15 datasets across navigation, robotics, 3D gaming, and driving under a shared action interface and evaluation protocol, pairing 142,987 episodes with 428,961 instructions in three styles. We further propose Tiresias, an agent that plans via selective imagination: a language-conditioned diffusion policy generates candidate trajectories, a trajectory ranker shortlists them, and a video-pretrained world model imagines their visual consequences. A visual ranker evaluates these rollouts, complementing trajectory scores to select the final plan. Tiresias achieves competitive planning and imagination performance on LCWM-Bench. Ablations demonstrate the complementary benefits of trajectory ranking and visual verification, while experiments with alternative proposal methods show that the trained rankers remain effective beyond our diffusion policy. Together, LCWM-Bench and Tiresias provide a unified evaluation setting and an effective starting point for studying language-guided planning through world models.",
-  "tldr_zh": "World models enable planning through internal simulation, wh",
-  "cover_zh": "World models enable planning through internal simulation, wh",
+  "abstract_zh": "世界模型通过内部模拟实现规划，而自然语言提供直观的任务指定。然而，语言条件世界建模仍因动作空间、数据集和评估协议的不同而分散在各领域。我们引入LCWM，一个共享任务，将初始智能体视角观测和语言指令映射为满足指令的动作序列。其配套基准LCWM-Bench在共享动作接口和评估协议下整合了导航、机器人、3D游戏和驾驶领域的15个数据集，将142,987个片段与428,961条指令配对，涵盖三种风格。我们进一步提出Tiresias，一个通过选择性想象进行规划的智能体：语言条件扩散策略生成候选轨迹，轨迹排序器进行初筛，视频预训练世界模型想象其视觉后果。视觉排序器评估这些推演，补充轨迹分数以选择最终计划。Tiresias在LCWM-Bench上实现了有竞争力的规划和想象性能。消融实验证明了轨迹排序和视觉验证的互补优势，而替代提议方法的实验表明训练后的排序器在我们的扩散策略之外仍然有效。总之，LCWM-Bench和Tiresias为通过世界模型研究语言引导规划提供了统一的评估设置和有效的起点。",
+  "tldr_zh": "提出LCWM任务与基准，以及Tiresias智能体，实现语言条件世界模型规划。",
+  "cover_zh": "语言指挥世界模型？Tiresias用想象规划，效果超预期！",
   "authors": [
     {
       "name": "Fengyi Wu",
@@ -66,12 +66,31 @@
     "manipulation",
     "world-model"
   ],
-  "badges": [],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Microsoft"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ CMU RI"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
+    }
+  ],
   "related_links": [],
   "page_count": 33,
   "source_tags": [],
-  "score": 20,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Microsoft” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -92,8 +111,17 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of Washington",
+    "National University of Singapore",
+    "Microsoft Research",
+    "Carnegie Mellon University"
+  ],
+  "method_tags": [
+    "Diffusion Policy",
+    "World Model",
+    "Language-Conditioned Planning"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

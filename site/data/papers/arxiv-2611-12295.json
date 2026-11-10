@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12295",
   "source": "arxiv",
   "title": "Be My Eye: Learning to See Beyond a Robot's Own Perspective",
-  "title_zh": "Be My Eye: Learning to See Beyond a Robot's Own Perspective",
+  "title_zh": "做我的眼睛：学习超越机器人自身视角的感知",
   "abstract": "Robots operating in the real world are inherently subject to partial observability, particularly in multi-robot collaboration, where individual observations may be insufficient for effective task execution. A key challenge is leveraging complementary observations from partner robots to support collaborative decision-making. We argue that information sharing should go beyond passively transmitting raw observations or generic visual features. Instead, robots should selectively encode task-relevant information according to task objectives and execution progress. To this end, we propose a task-oriented active context sharing framework that transforms robot observations into compact representations, preserving critical information under constrained communication budgets. The framework adopts a two-stage training paradigm. In the first stage, onboard observations and task instructions are jointly encoded into compact context representations. Task-oriented future prediction and soft task-progress correspondence learning guide this collaboration-agnostic compression, preserving information about task objectives and execution progress. In the second stage, the learned representations are integrated into a pretrained Vision-Language-Action (VLA) policy, enabling bidirectional context exchange. Each robot combines complementary partner information with local observations to guide action generation. Action supervision jointly refines the context representations and policy, aligning information sharing with collaborative decision-making. Controlled experiments demonstrate substantial performance gains under constrained communication budgets, while three real-world experiments validate the framework in complex dual-robot tasks. These results highlight a shift from passive visual transmission toward active, task-oriented context sharing that directly supports collaborative decision-making.",
-  "abstract_zh": "Robots operating in the real world are inherently subject to partial observability, particularly in multi-robot collaboration, where individual observations may be insufficient for effective task execution. A key challenge is leveraging complementary observations from partner robots to support collaborative decision-making. We argue that information sharing should go beyond passively transmitting raw observations or generic visual features. Instead, robots should selectively encode task-relevant information according to task objectives and execution progress. To this end, we propose a task-oriented active context sharing framework that transforms robot observations into compact representations, preserving critical information under constrained communication budgets. The framework adopts a two-stage training paradigm. In the first stage, onboard observations and task instructions are jointly encoded into compact context representations. Task-oriented future prediction and soft task-progress correspondence learning guide this collaboration-agnostic compression, preserving information about task objectives and execution progress. In the second stage, the learned representations are integrated into a pretrained Vision-Language-Action (VLA) policy, enabling bidirectional context exchange. Each robot combines complementary partner information with local observations to guide action generation. Action supervision jointly refines the context representations and policy, aligning information sharing with collaborative decision-making. Controlled experiments demonstrate substantial performance gains under constrained communication budgets, while three real-world experiments validate the framework in complex dual-robot tasks. These results highlight a shift from passive visual transmission toward active, task-oriented context sharing that directly supports collaborative decision-making.",
-  "tldr_zh": "Robots operating in the real world are inherently subject to",
-  "cover_zh": "Robots operating in the real world are inherently subject to",
+  "abstract_zh": "在真实世界中运行的机器人本质上受限于部分可观测性，尤其是在多机器人协作中，个体观测可能不足以有效执行任务。一个关键挑战是如何利用伙伴机器人的互补观测来支持协同决策。我们认为，信息共享不应局限于被动传输原始观测或通用视觉特征，而应让机器人根据任务目标和执行进度选择性地编码任务相关信息。为此，我们提出了一种面向任务的主动上下文共享框架，将机器人观测转化为紧凑表示，在受限通信预算下保留关键信息。该框架采用两阶段训练范式。第一阶段，机载观测和任务指令被联合编码为紧凑的上下文表示，面向任务的未来预测和软任务进度对应学习引导这种与协作无关的压缩，保留任务目标和执行进度的信息。第二阶段，学习到的表示被集成到预训练的视觉-语言-动作（VLA）策略中，实现双向上下文交换。每个机器人将互补的伙伴信息与本地观测结合，以指导动作生成。动作监督联合优化上下文表示和策略，使信息共享与协同决策对齐。控制实验表明，在受限通信预算下性能显著提升，而三个真实世界实验在复杂的双机器人任务中验证了该框架。这些结果凸显了从被动视觉传输向主动、面向任务的上下文共享的转变，直接支持协同决策。",
+  "tldr_zh": "机器人主动共享任务相关上下文，提升协作决策性能。",
+  "cover_zh": "机器人学会借伙伴的眼睛｜主动共享上下文让协作更聪明",
   "authors": [
     {
       "name": "Baifu Huang",
@@ -44,6 +44,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ Astribot"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -51,8 +55,14 @@
   "related_links": [],
   "page_count": 23,
   "source_tags": [],
-  "score": 16,
+  "score": 41,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Astribot” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -72,13 +82,25 @@
       "hint": "PDF 23 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "多机器人VLA任务导向上下文共享，真机双臂协作验证，方法新颖有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Astribot"
+  ],
+  "method_tags": [
+    "VLA",
+    "多机器人协作",
+    "任务导向上下文共享"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

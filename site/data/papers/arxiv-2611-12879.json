@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12879",
   "source": "arxiv",
   "title": "Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos",
-  "title_zh": "Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos",
+  "title_zh": "抓住未来：从互联网视频中联合预测3D手-物体运动",
   "abstract": "To interact with an object, we need to anticipate both how it will move and how our hands should move with it. Human videos capture these relationships across everyday activities, offering a natural source for learning to predict future interactions. Learning from them requires recovering motion from completed interactions and using it to anticipate what could happen next. We present $\\textit{Grasping-the-Future}$, a unified generative model of joint 3D hand-object motion, including wrist motion, finger articulation, and object position and orientation. Through masked spatiotemporal completion and flow matching, we train a single model for several prediction tasks: forecasting future interactions, predicting hand motion given object motion or vice versa, generating both trajectories toward a desired final object pose, and completing partially observed interactions. We explicitly model hand-object relations and incorporate contact constraints to help preserve grasp relationships during motion. To obtain 3D supervision from internet videos, we develop a scalable pipeline that combines pretrained perception models with joint geometric optimization to reconstruct completed interactions. We combine these recovered trajectories with annotated interaction datasets as training data for all tasks. We demonstrate strong performance across all tasks, outperforming released forecasters on datasets with 3D annotations. Moreover, we show geometric and physical plausibility of the predicted trajectories by retargeting them to a robotic embodiment. Videos are available at https://grasping-the-future.github.io.",
-  "abstract_zh": "To interact with an object, we need to anticipate both how it will move and how our hands should move with it. Human videos capture these relationships across everyday activities, offering a natural source for learning to predict future interactions. Learning from them requires recovering motion from completed interactions and using it to anticipate what could happen next. We present $textit{Grasping-the-Future}$, a unified generative model of joint 3D hand-object motion, including wrist motion, finger articulation, and object position and orientation. Through masked spatiotemporal completion and flow matching, we train a single model for several prediction tasks: forecasting future interactions, predicting hand motion given object motion or vice versa, generating both trajectories toward a desired final object pose, and completing partially observed interactions. We explicitly model hand-object relations and incorporate contact constraints to help preserve grasp relationships during motion. To obtain 3D supervision from internet videos, we develop a scalable pipeline that combines pretrained perception models with joint geometric optimization to reconstruct completed interactions. We combine these recovered trajectories with annotated interaction datasets as training data for all tasks. We demonstrate strong performance across all tasks, outperforming released forecasters on datasets with 3D annotations. Moreover, we show geometric and physical plausibility of the predicted trajectories by retargeting them to a robotic embodiment. Videos are available at https://grasping-the-future.github.io.",
-  "tldr_zh": "To interact with an object, we need to anticipate both how i",
-  "cover_zh": "To interact with an object, we need to anticipate both how i",
+  "abstract_zh": "为了与物体交互，我们需要预测物体将如何移动以及我们的手应如何随之移动。人类视频捕捉了日常活动中的这些关系，为学习预测未来交互提供了自然来源。从这些视频中学习需要从已完成的交互中恢复运动，并利用它来预测接下来可能发生的情况。我们提出了Grasping-the-Future，一个统一的联合3D手-物体运动生成模型，包括手腕运动、手指关节运动以及物体的位置和方向。通过掩码时空补全和流匹配，我们训练了一个单一模型来完成多个预测任务：预测未来交互、根据物体运动预测手部运动或反之、生成朝向期望最终物体姿态的轨迹，以及补全部分观察到的交互。我们显式地建模手-物体关系并引入接触约束，以帮助在运动过程中保持抓取关系。为了从互联网视频中获得3D监督，我们开发了一个可扩展的流程，将预训练的感知模型与联合几何优化相结合，以重建完整的交互。我们将这些恢复的轨迹与带注释的交互数据集相结合，作为所有任务的训练数据。我们在所有任务上展示了强大的性能，在具有3D注释的数据集上优于已发布的预测器。此外，我们通过将预测轨迹重定向到机器人实体上，展示了其几何和物理合理性。视频可在 https://grasping-the-future.github.io 获取。",
+  "tldr_zh": "从互联网视频学习联合3D手-物体运动预测，并验证机器人重定向可行性。",
+  "cover_zh": "只用互联网视频，就能预测手和物体未来怎么动？",
   "authors": [
     {
       "name": "Rustin Soraki",
@@ -64,6 +64,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ Skild AI"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -71,8 +75,14 @@
   "related_links": [],
   "page_count": 30,
   "source_tags": [],
-  "score": 27,
+  "score": 52,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Skild AI” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -98,13 +108,28 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "从互联网视频学习3D手-物联合运动预测，含接触约束与重定向到机器人，属操作/模仿学习前沿",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Washington",
+    "University of North Carolina at Chapel Hill",
+    "Johns Hopkins University",
+    "Skild AI"
+  ],
+  "method_tags": [
+    "flow matching",
+    "masked spatiotemporal completion",
+    "hand-object forecasting"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

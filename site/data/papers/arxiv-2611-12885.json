@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12885",
   "source": "arxiv",
   "title": "World In-Context Learning for Agentic Robot Manipulation",
-  "title_zh": "World In-Context Learning for Agentic Robot Manipulation",
+  "title_zh": "面向智能体机器人操作的世界上下文学习",
   "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
-  "abstract_zh": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
-  "tldr_zh": "Trained action policies write manipulation skill into networ",
-  "cover_zh": "Trained action policies write manipulation skill into networ",
+  "abstract_zh": "训练得到的动作策略将操作技能写入网络权重，从而将所学内容与学习时所处的分布绑定。上下文学习（ICL）避免了这种耦合，但尚未达到训练策略的水平，因为在另一个场景中记录的演示不携带机器人当前所面对世界的反馈。我们观察到，智能体在上下文中学习到的是语义信息，记录的是任务步骤和物体角色而非视觉外观，因此在一个世界中收集的经验可以迁移到另一个世界。基于这一见解，我们提出世界上下文学习（WICL），一种范式，其中冻结的模型从演示开始，在模拟器等世界中演练任务，并将反馈写入其上下文而非权重。我们构建了 RoboScript，一个模块化基础设施，为智能体操作实现 WICL。通过单次演示，RoboScript 在模拟中通过演练学习每个任务，将学到的知识冻结为任务记忆，并将冻结的记忆部署到新场景，数据隔离确保每个部署输入在真实机器人上可用。在 RoboTwin 2.0 的所有 50 个任务上，RoboScript 在干净和随机化设置下平均成功率达到 83.4%，每个任务仅需一次演示且无需梯度更新，比最强的训练动作策略高出 20 多个百分点。该方法在视觉分布上具有泛化性，通过反思得到改进，随基础模型扩展，并通过跨具身记忆适配迁移到物理双臂机器人。有了世界在环，机器人可以在其上下文中学习操作任务，效果与在权重中学习一样好。所有代码可在 https://github.com/ArcheOne-AI/RoboScript 获取。",
+  "tldr_zh": "冻结模型通过模拟演练将反馈写入上下文，实现机器人操作学习。",
+  "cover_zh": "不更新权重也能学操作？新范式让机器人边练边记",
   "authors": [
     {
       "name": "Heng Fang",
@@ -90,13 +90,28 @@
       "hint": "PDF 33 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "提出世界内上下文学习范式，冻结模型通过仿真排练实现操作任务，在RoboTwin 2.0上大幅超越训练策略，对操作学习有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Huazhong University of Science and Technology",
+    "ArcheOne AI"
+  ],
+  "method_tags": [
+    "In-Context Learning",
+    "sim-to-real",
+    "cross-embodiment memory adaptation"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "RoboTwin 2.0"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

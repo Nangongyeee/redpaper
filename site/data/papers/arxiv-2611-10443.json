@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10443",
   "source": "arxiv",
   "title": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
-  "title_zh": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
+  "title_zh": "面向视觉-语言-动作模型的空间表示蒸馏与知识路由",
   "abstract": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference time or adopt a single visual pathway, potentially compromising the visual-semantic knowledge inherited from pre-trained models. We present SPARK-VLA, Spatial Representation distillation and Knowledge routing for VLAs, a preserve-specialize-route framework for spatially adapting VLAs without requiring external 3D inputs or experts at inference. SPARK-VLA consists of two key components: (1) spatial representation distillation, which transfers 3D understanding from a frozen 3D expert to a LoRA-adapted visual branch by aligning attention responses while preserving the original visual pathway, and (2) a lightweight knowledge router, which selectively forwards action-relevant visual tokens to the language model using routing supervision derived from action-loss gradients. Across LIBERO, LIBERO-Plus, CALVIN, and real-world manipulation, SPARK-VLA achieves strong performance with only a 0.5B language backbone and approximately 53M trainable parameters, providing an effective and parameter-efficient approach to 3D-aware VLA learning. Code is available at https://github.com/park-jungin/spark-vla.",
-  "abstract_zh": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference time or adopt a single visual pathway, potentially compromising the visual-semantic knowledge inherited from pre-trained models. We present SPARK-VLA, Spatial Representation distillation and Knowledge routing for VLAs, a preserve-specialize-route framework for spatially adapting VLAs without requiring external 3D inputs or experts at inference. SPARK-VLA consists of two key components: (1) spatial representation distillation, which transfers 3D understanding from a frozen 3D expert to a LoRA-adapted visual branch by aligning attention responses while preserving the original visual pathway, and (2) a lightweight knowledge router, which selectively forwards action-relevant visual tokens to the language model using routing supervision derived from action-loss gradients. Across LIBERO, LIBERO-Plus, CALVIN, and real-world manipulation, SPARK-VLA achieves strong performance with only a 0.5B language backbone and approximately 53M trainable parameters, providing an effective and parameter-efficient approach to 3D-aware VLA learning. Code is available at https://github.com/park-jungin/spark-vla.",
-  "tldr_zh": "Understanding three-dimensional physical structure has becom",
-  "cover_zh": "Understanding three-dimensional physical structure has becom",
+  "abstract_zh": "理解三维物理结构对于视觉-语言-动作模型（VLA）已变得至关重要。然而，现有方法要么在推理时依赖显式几何输入，要么采用单一视觉通路，可能损害从预训练模型继承的视觉-语义知识。我们提出 SPARK-VLA，即面向 VLA 的空间表示蒸馏与知识路由，一个“保留-特化-路由”框架，无需在推理时使用外部 3D 输入或专家即可对 VLA 进行空间适配。SPARK-VLA 包含两个关键组件：（1）空间表示蒸馏，通过对齐注意力响应，将 3D 理解从冻结的 3D 专家迁移到 LoRA 适配的视觉分支，同时保留原始视觉通路；（2）一个轻量级知识路由器，利用从动作损失梯度导出的路由监督，选择性地将动作相关的视觉 token 转发给语言模型。在 LIBERO、LIBERO-Plus、CALVIN 和真实世界操作任务上，SPARK-VLA 仅用 0.5B 语言主干和约 53M 可训练参数就取得了强劲性能，为 3D 感知 VLA 学习提供了一种有效且参数高效的方法。代码见 https://github.com/park-jungin/spark-vla。",
+  "tldr_zh": "SPARK-VLA 通过蒸馏与路由实现高效 3D 感知 VLA。",
+  "cover_zh": "不用3D输入也能3D感知？这个VLA框架有点东西",
   "authors": [
     {
       "name": "Jungin Park",
@@ -82,12 +82,20 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "DGIST",
+    "Yonsei University",
+    "Queen Mary University of London"
+  ],
+  "method_tags": [
+    "Distillation",
+    "VLA",
+    "3D-aware spatial representation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

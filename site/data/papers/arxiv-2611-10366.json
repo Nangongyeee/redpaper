@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10366",
   "source": "arxiv",
   "title": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
-  "title_zh": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+  "title_zh": "CPNav：面向未知环境中目标物体搜索的校准视觉语言导航",
   "abstract": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
-  "abstract_zh": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
-  "tldr_zh": "Directing a robot to locate a target object in unseen enviro",
-  "cover_zh": "Directing a robot to locate a target object in unseen enviro",
+  "abstract_zh": "在未知环境中引导机器人定位目标物体仍然是具身AI的核心挑战。基于视觉语言模型（VLM）的方法提供了丰富的语义推理，但往往产生未校准且过度自信的动作决策。我们提出CPNav，一种结合碰撞感知规划与统计校准VLM动作评分的导航框架，用于无地图目标物体导航。CPNav从RGB-D输入构建可导航地图，生成无碰撞运动基元，并查询两个VLM进行目标检测和动作评分。所得分数通过保形预测（CP）离线校准，使用通过带回溯的树结构探索过程获得的oracle动作，在用户指定的风险水平下提供有限样本保证。CP层与模型无关，可包裹任何VLM策略。在线时，校准后的VLM分数指导动作选择，而树结构探索历史记录替代动作并允许回溯。我们在仿真和真实硬件环境中评估CPNav。在AI Habitat仿真中，与未校准基线方法相比，CPNav在HM3D v0.2上分别实现了6.2%和11.4%的相对SR和SPL提升，在MP3D上分别实现了12.4%和8.8%的提升。在修改后的Hiwonder MentorPi机器人上的真实部署中，SR和SPL的相应提升分别为24.9%和15.2%。代码可在https://github.com/practice-lab-ucla/CPnav获取。",
+  "tldr_zh": "CPNav通过保形预测校准VLM动作评分，提升未知环境中目标搜索性能。",
+  "cover_zh": "VLM过度自信？CPNav用保形预测校准，导航成功率飙升！",
   "authors": [
     {
       "name": "Qizhao Chen",
@@ -72,12 +72,22 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
-  "sim_stack": [],
+  "institutions": [
+    "University of California, Los Angeles"
+  ],
+  "method_tags": [
+    "VLM",
+    "conformal prediction",
+    "collision-aware planning"
+  ],
+  "platform": [
+    "Hiwonder MentorPi"
+  ],
+  "sim_stack": [
+    "AI Habitat"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

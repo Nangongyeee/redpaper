@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12113",
   "source": "arxiv",
   "title": "Motion Belief Action: From a Visual Scene Map to Physical Decisions",
-  "title_zh": "Motion Belief Action: From a Visual Scene Map to Physical Decisions",
+  "title_zh": "运动信念动作：从视觉场景地图到物理决策",
   "abstract": "A robot that works among people must judge what it cannot see: whether an object is still where it was last seen, and whether a pull on a door or drawer is worth its risk. Maps that track object change hold nothing about force, maps of physical properties answer a risk question at a fixed risk level, and vision-language-action models keep no explicit estimate of hidden physics. We propose Motion Belief Action (MBA), a decision layer on the scene map. From how often people move an object and how much force it needs, how much load it holds and whether it is blocked, MBA chooses under a force limit to look again, nudge, open, brace or decline, with its risk set by the task's costs. On real activity in 9 kitchens, it predicts whether an object is still in place better than FreMEn and Perpetua, and decides when to look again at lower cost than these and the persistence filter, because about a quarter of placements end in a pick-up within 30 s. On real pulls of doors and drawers in 17 locations, made by a person with a force-sensing gripper, the map's force estimates decide better than a part-type average. Setting the risk from the costs also beats a published risk rule at its fixed level. In simulation, with the force limit at the training parts' median force, MBA raises SmolVLA's and Octo's scores by declining pulls; most declined door pulls would fail, but on drawers more would have opened, and a part-type average gets about half of this gain. In both, a published risk rule set to the risk these costs imply is MBA's rule for a single pull and decides as well in the main settings. A link between opening and holding force, a probing nudge and an action prior for camera tracking do not help in the main settings, and over the real-pull sweep the nudge costs a little.",
-  "abstract_zh": "A robot that works among people must judge what it cannot see: whether an object is still where it was last seen, and whether a pull on a door or drawer is worth its risk. Maps that track object change hold nothing about force, maps of physical properties answer a risk question at a fixed risk level, and vision-language-action models keep no explicit estimate of hidden physics. We propose Motion Belief Action (MBA), a decision layer on the scene map. From how often people move an object and how much force it needs, how much load it holds and whether it is blocked, MBA chooses under a force limit to look again, nudge, open, brace or decline, with its risk set by the task's costs. On real activity in 9 kitchens, it predicts whether an object is still in place better than FreMEn and Perpetua, and decides when to look again at lower cost than these and the persistence filter, because about a quarter of placements end in a pick-up within 30 s. On real pulls of doors and drawers in 17 locations, made by a person with a force-sensing gripper, the map's force estimates decide better than a part-type average. Setting the risk from the costs also beats a published risk rule at its fixed level. In simulation, with the force limit at the training parts' median force, MBA raises SmolVLA's and Octo's scores by declining pulls; most declined door pulls would fail, but on drawers more would have opened, and a part-type average gets about half of this gain. In both, a published risk rule set to the risk these costs imply is MBA's rule for a single pull and decides as well in the main settings. A link between opening and holding force, a probing nudge and an action prior for camera tracking do not help in the main settings, and over the real-pull sweep the nudge costs a little.",
-  "tldr_zh": "A robot that works among people must judge what it cannot se",
-  "cover_zh": "A robot that works among people must judge what it cannot se",
+  "abstract_zh": "在人群中工作的机器人必须判断它看不到的情况：物体是否还在上次看到的位置，以及拉门或抽屉是否值得冒险。跟踪物体变化的地图不包含力信息，物理属性地图在固定风险水平下回答风险问题，而视觉-语言-动作模型没有对隐藏物理的显式估计。我们提出运动信念动作（MBA），一种场景地图上的决策层。根据人们移动物体的频率、所需力的大小、承载的负载以及是否被阻挡，MBA 在力限制下选择再看一次、轻推、打开、支撑或拒绝，其风险由任务成本设定。在 9 个厨房的真实活动中，它比 FreMEn 和 Perpetua 更好地预测物体是否仍在原位，并以更低成本决定何时再看一次，因为约四分之一的放置会在 30 秒内被取走。在 17 个地点由人使用力传感夹爪对门和抽屉的真实拉动中，地图的力估计比部件类型平均值决策更好。根据成本设定风险也优于已发表的风险规则在其固定水平下的表现。在模拟中，当力限制设为训练部件的中位力时，MBA 通过拒绝拉动提高了 SmolVLA 和 Octo 的分数；大多数被拒绝的门拉动会失败，但在抽屉上更多会成功打开，而部件类型平均值仅获得约一半的增益。在两种情况下，已发表的风险规则设定为这些成本隐含的风险时，就是 MBA 对单次拉动的规则，并且在主要设置中决策同样好。打开与保持力之间的联系、试探性轻推以及用于相机跟踪的动作先验在主要设置中没有帮助，而在真实拉动扫描中轻推略有成本。",
+  "tldr_zh": "MBA决策层结合场景地图与物理估计，在力限制下选择动作，提升机器人决策效果。",
+  "cover_zh": "机器人该不该拉门？这个决策层让风险由成本定",
   "authors": [
     {
       "name": "Dibyendu Ghosh",
@@ -63,13 +63,23 @@
       "hint": "PDF 16 页"
     }
   ],
-  "judge": {},
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "面向真实厨房/门抽屉操作的物理信念决策层，结合VLA与风险估计，有算法新意",
+    "model": "deepseek-v4-flash"
+  },
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "VLA",
+    "scene map",
+    "force-aware decision making"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

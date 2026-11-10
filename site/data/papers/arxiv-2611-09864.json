@@ -2,11 +2,11 @@
   "id": "arxiv-2611-09864",
   "source": "arxiv",
   "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
-  "title_zh": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
+  "title_zh": "Grasp-TAGS：通过评论家蒸馏实现任务感知抓取选择，用于抓取式移动操作",
   "abstract": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains challenging because performance depends on complex robot-object and object-environment interaction dynamics. Existing approaches address this challenge either through model-based methods, which often require accurate dynamics models, or through learning-based methods, which reduce this requirement but typically assume a fixed or predefined initial grasp. However, different geometrically stable grasps can lead to substantially different downstream manipulation performance. Therefore, we propose Grasp-TAGS, a task-aware grasp selection framework for goal-conditioned large-object rearrangement. We train a unified PPO-based reinforcement learning policy across multiple initial grasp configurations and distill the learned critic into a lightweight grasp utility network that ranks candidate grasps using only the candidate grasp configuration and goal information. At inference time, we select the grasp with the highest predicted downstream utility for the downstream policy to complete the task, before even making a contact. Experiments demonstrate that Grasp-TAGS improves rearrangement success over both fixed single-grasp policies and random grasp selection, achieving an average success rate of 89.84% compared with 79.87% for the best-performing single-grasp policies, an improvement of 9.97 percentage points. Grasp-TAGS also reduces final orientation errors across all evaluated objects. For more qualitative results, refer to the supplementary webpage: https://rpm-lab-umn.github.io/Grasp-TAGS-web-page/",
-  "abstract_zh": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains challenging because performance depends on complex robot-object and object-environment interaction dynamics. Existing approaches address this challenge either through model-based methods, which often require accurate dynamics models, or through learning-based methods, which reduce this requirement but typically assume a fixed or predefined initial grasp. However, different geometrically stable grasps can lead to substantially different downstream manipulation performance. Therefore, we propose Grasp-TAGS, a task-aware grasp selection framework for goal-conditioned large-object rearrangement. We train a unified PPO-based reinforcement learning policy across multiple initial grasp configurations and distill the learned critic into a lightweight grasp utility network that ranks candidate grasps using only the candidate grasp configuration and goal information. At inference time, we select the grasp with the highest predicted downstream utility for the downstream policy to complete the task, before even making a contact. Experiments demonstrate that Grasp-TAGS improves rearrangement success over both fixed single-grasp policies and random grasp selection, achieving an average success rate of 89.84% compared with 79.87% for the best-performing single-grasp policies, an improvement of 9.97 percentage points. Grasp-TAGS also reduces final orientation errors across all evaluated objects. For more qualitative results, refer to the supplementary webpage: https://rpm-lab-umn.github.io/Grasp-TAGS-web-page/",
-  "tldr_zh": "Loco-manipulation, which requires mobile manipulators to coo",
-  "cover_zh": "Loco-manipulation, which requires mobile manipulators to coo",
+  "abstract_zh": "移动操作要求移动机械臂在长时程中协调移动与操作，是服务机器人和仓库自动化等应用中大件物体重排的关键能力。尽管近期取得了进展，可靠地执行这些任务仍然具有挑战性，因为性能取决于复杂的机器人-物体和物体-环境交互动力学。现有方法要么通过基于模型的方法解决这一挑战，这类方法通常需要精确的动力学模型；要么通过基于学习的方法，这类方法降低了模型要求，但通常假设固定或预定义的初始抓取。然而，不同的几何稳定抓取可能导致显著不同的下游操作性能。因此，我们提出了 Grasp-TAGS，一个用于目标条件大件物体重排的任务感知抓取选择框架。我们在多个初始抓取配置上训练了一个统一的基于 PPO 的强化学习策略，并将学习到的评论家蒸馏到一个轻量级抓取效用网络中，该网络仅使用候选抓取配置和目标信息对候选抓取进行排序。在推理时，我们在甚至尚未接触物体之前，就选择预测下游效用最高的抓取，供下游策略完成任务。实验表明，Grasp-TAGS 相比固定单抓取策略和随机抓取选择提高了重排成功率，平均成功率达到 89.84%，而表现最好的单抓取策略为 79.87%，提升了 9.97 个百分点。Grasp-TAGS 还在所有评估物体上降低了最终方向误差。更多定性结果请参考补充网页：https://rpm-lab-umn.github.io/Grasp-TAGS-web-page/",
+  "tldr_zh": "通过评论家蒸馏选择高效用抓取，提升大件物体重排成功率。",
+  "cover_zh": "抓取选得好，重排成功率直接涨！｜这个框架让机器人先想再抓",
   "authors": [
     {
       "name": "Xun Tu",
@@ -71,8 +71,14 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of Minnesota, Twin Cities"
+  ],
+  "method_tags": [
+    "PPO",
+    "Critic Distillation",
+    "Grasp Selection"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

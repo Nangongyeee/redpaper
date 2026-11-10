@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12177",
   "source": "arxiv",
   "title": "Embodied First Exam",
-  "title_zh": "Embodied First Exam",
+  "title_zh": "具身智能首考",
   "abstract": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes. Success rates in this setting serve as an approximate upper bound. On the 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, achieves a success rate of 34% in the Standard Setting, leaving much room for improvement. To see where agents fail, we label the stage at which failed attempts go wrong and compare failures across agents, settings, and stage categories.",
-  "abstract_zh": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes. Success rates in this setting serve as an approximate upper bound. On the 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, achieves a success rate of 34% in the Standard Setting, leaving much room for improvement. To see where agents fail, we label the stage at which failed attempts go wrong and compare failures across agents, settings, and stage categories.",
-  "tldr_zh": "Early successes on agentic robotics point to a potential par",
-  "cover_zh": "Early successes on agentic robotics point to a potential par",
+  "abstract_zh": "早期在智能体机器人领域的成功指向了一种潜在范式转变：使用编码智能体控制机器人。现有的机器人基准围绕视觉运动策略学习构建，使得编码智能体能否在物理世界约束下可靠控制多样机器人仍是一个开放问题。因此，我们推出了具身智能首考（Embodied First Exam），一个统一、全面且智能体原生的评估框架，编码智能体可以自行选择控制方式：直接控制、代码控制或训练策略控制。我们希望它成为编码智能体进入物理世界前的首场考试，包含47个机器人上的35个套件中的1156个任务，其中9个新套件超越了抓取放置，涵盖空间谜题、灵巧操作、多机器人交互、动态全身控制和模拟到模拟工程。每个任务最多可在三种评估设置下运行。标准设置模拟真实世界：智能体仅接收传感器观测，且默认无法重置环境。其实时变体在智能体推理时保持环境运行。特权设置让智能体访问完整模拟器状态和无限重置，允许其搜索用于训练的预言解决方案。此设置下的成功率作为近似上限。在456个核心任务上，八个智能体中最强的GPT-6 Astra在Codex中于标准设置下达到34%的成功率，仍有很大改进空间。为了解智能体失败之处，我们标记失败尝试出错的阶段，并比较不同智能体、设置和阶段类别的失败情况。",
+  "tldr_zh": "提出具身智能首考框架，评估编码智能体控制机器人的能力。",
+  "cover_zh": "机器人控制新基准｜编码智能体首考竟只有34%成功率？",
   "authors": [
     {
       "name": "Kangrui Wang",
@@ -148,9 +148,18 @@
     "assets/img/covers/arxiv-2611-12177-p4.jpg"
   ],
   "channels": [
-    "manipulation"
+    "manipulation",
+    "loco-manip-wbc"
   ],
   "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Berkeley (BAIR)"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ CMU RI"
+    },
     {
       "kind": "lab",
       "label": "⭐ Guanya Shi"
@@ -179,8 +188,14 @@
   "related_links": [],
   "page_count": 86,
   "source_tags": [],
-  "score": 45,
+  "score": 75,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Berkeley (BAIR)” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -191,7 +206,7 @@
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
-      "hint": "频道关键词命中 4 个（manipulation、dexterous、dexterous manipulation、pick-and-place）"
+      "hint": "频道关键词命中 6 个（manipulation、dexterous、dexterous manipulation、pick-and-place）"
     },
     {
       "id": "freshness",
@@ -204,11 +219,32 @@
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 86 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "面向编码智能体控制机器人的统一评测基准，覆盖灵巧操作、全身控制、sim2sim，属具身 benchmark，参考价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Northwestern University",
+    "Carnegie Mellon University",
+    "UC Berkeley",
+    "University of Washington"
+  ],
+  "method_tags": [
+    "coding agents",
+    "sim-to-sim",
+    "dexterous manipulation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

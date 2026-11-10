@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12175",
   "source": "arxiv",
   "title": "GeoMind: A Benchmark for Spatial Understanding in Robotic Manipulation",
-  "title_zh": "GeoMind: A Benchmark for Spatial Understanding in Robotic Manipulation",
+  "title_zh": "GeoMind：机器人操作中空间理解的基准测试",
   "abstract": "Robotic manipulation has advanced rapidly in mapping visual observations and language instructions to actions. However, reliable manipulation in open-world environments requires robust spatial understanding: the ability to identify targets in complex layouts (spatial reasoning) and adapt to scenes that continuously evolve through interaction (spatial memory). Yet existing embodied benchmarks fall short in evaluating spatial understanding: they often introduce strong visual cues that bypass spatial reasoning, and focus on static scenes that offer little insight into an agent's capacity for spatial memory. To address this gap, we introduce GeoMind, a systematic benchmark for structured spatial understanding through tabletop manipulation. GeoMind comprises 54 evaluated task variants organized around spatial reasoning and spatial memory. It also incorporates a scalable pipeline that automates the generation and annotation of task instances with verified targets and executable interactions. Extensive evaluations across diverse embodied agents reveal their consistent weaknesses in spatial understanding. Our findings highlight that these agents struggle to track identities after spatial changes and convert relational or geometric constraints into executable actions. We release the GeoMind benchmark at https://github.com/Notfound-JH/GEOMIND-benchmark.git.",
-  "abstract_zh": "Robotic manipulation has advanced rapidly in mapping visual observations and language instructions to actions. However, reliable manipulation in open-world environments requires robust spatial understanding: the ability to identify targets in complex layouts (spatial reasoning) and adapt to scenes that continuously evolve through interaction (spatial memory). Yet existing embodied benchmarks fall short in evaluating spatial understanding: they often introduce strong visual cues that bypass spatial reasoning, and focus on static scenes that offer little insight into an agent's capacity for spatial memory. To address this gap, we introduce GeoMind, a systematic benchmark for structured spatial understanding through tabletop manipulation. GeoMind comprises 54 evaluated task variants organized around spatial reasoning and spatial memory. It also incorporates a scalable pipeline that automates the generation and annotation of task instances with verified targets and executable interactions. Extensive evaluations across diverse embodied agents reveal their consistent weaknesses in spatial understanding. Our findings highlight that these agents struggle to track identities after spatial changes and convert relational or geometric constraints into executable actions. We release the GeoMind benchmark at https://github.com/Notfound-JH/GEOMIND-benchmark.git.",
-  "tldr_zh": "Robotic manipulation has advanced rapidly in mapping visual",
-  "cover_zh": "Robotic manipulation has advanced rapidly in mapping visual",
+  "abstract_zh": "机器人操作在将视觉观察和语言指令映射到动作方面已取得快速进展。然而，在开放世界环境中可靠的操作需要稳健的空间理解：即在复杂布局中识别目标（空间推理）以及适应通过交互不断演变的场景（空间记忆）的能力。然而，现有的具身基准在评估空间理解方面存在不足：它们通常引入强烈的视觉线索，绕过空间推理，并且专注于静态场景，无法深入了解智能体的空间记忆能力。为了弥补这一空白，我们推出了GeoMind，一个通过桌面操作进行结构化空间理解的系统基准。GeoMind包含54个评估任务变体，围绕空间推理和空间记忆组织。它还包含一个可扩展的流程，可自动生成和标注任务实例，并验证目标和可执行交互。对多种具身智能体的广泛评估揭示了它们在空间理解方面的一致弱点。我们的发现强调，这些智能体在空间变化后难以跟踪身份，并且难以将关系或几何约束转化为可执行动作。我们在https://github.com/Notfound-JH/GEOMIND-benchmark.git发布了GeoMind基准。",
+  "tldr_zh": "提出GeoMind基准，揭示具身智能体空间理解弱点。",
+  "cover_zh": "机器人空间理解翻车现场？这个基准测出真相！",
   "authors": [
     {
       "name": "Jinghe Wang",
@@ -64,6 +64,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -71,8 +75,14 @@
   "related_links": [],
   "page_count": 28,
   "source_tags": [],
-  "score": 27,
+  "score": 52,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -98,9 +108,22 @@
       "hint": "PDF 28 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "面向桌面操作的空间理解与空间记忆 benchmark，含自动生成管线，对具身评测有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua Shenzhen International Graduate School, Tsinghua University",
+    "Southern University of Science and Technology"
+  ],
+  "method_tags": [
+    "spatial reasoning",
+    "spatial memory",
+    "benchmark"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

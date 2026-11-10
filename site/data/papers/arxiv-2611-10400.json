@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10400",
   "source": "arxiv",
   "title": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
-  "title_zh": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
+  "title_zh": "从稀疏内部特征中检测并解释机器人策略失败",
   "abstract": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to break down the policy's internal activations into features that can be studied individually. We give meaning to these features by linking their activity to the robot's position, movement, and surroundings, and by steering their activations to examine how they affect the robot's actions. From successful and failed executions, we learn how the features behave on the way to a failure. During execution, MIND flags deviations from these patterns and uses the meaningful features contributing most to the change to describe the problem. Experiments in simulation and on a physical robot show that changes in these internal features help detect and explain failures. By using the same features for detection and diagnosis, MIND connects failure signals to understandable changes inside the policy.",
-  "abstract_zh": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to break down the policy's internal activations into features that can be studied individually. We give meaning to these features by linking their activity to the robot's position, movement, and surroundings, and by steering their activations to examine how they affect the robot's actions. From successful and failed executions, we learn how the features behave on the way to a failure. During execution, MIND flags deviations from these patterns and uses the meaningful features contributing most to the change to describe the problem. Experiments in simulation and on a physical robot show that changes in these internal features help detect and explain failures. By using the same features for detection and diagnosis, MIND connects failure signals to understandable changes inside the policy.",
-  "tldr_zh": "Visuomotor policies can handle many robot manipulation tasks",
-  "cover_zh": "Visuomotor policies can handle many robot manipulation tasks",
+  "abstract_zh": "视觉运动策略能够处理许多机器人操作任务，但理解其失败原因仍然困难。不熟悉的条件和微小的动作误差可能导致失败，然而仅观察机器人本身几乎无法告诉我们策略内部出了什么问题。我们提出MIND（用于神经诊断的机制可解释性），一种深入训练好的策略内部，在执行过程中检测失败并识别相关内部概念的方法。MIND使用稀疏自编码器将策略的内部激活分解为可单独研究的特征。我们通过将特征的活动与机器人的位置、运动和周围环境联系起来，并通过引导其激活来检查它们如何影响机器人的动作，从而赋予这些特征意义。从成功和失败的执行中，我们学习特征在走向失败过程中的行为方式。在执行过程中，MIND标记出与这些模式的偏差，并使用对变化贡献最大的有意义特征来描述问题。在仿真和物理机器人上的实验表明，这些内部特征的变化有助于检测和解释失败。通过使用相同的特征进行检测和诊断，MIND将失败信号与策略内部可理解的变化联系起来。",
+  "tldr_zh": "MIND用稀疏自编码器分解策略内部特征，检测并解释机器人失败。",
+  "cover_zh": "机器人失败原因难寻？MIND直接看透策略内部！",
   "authors": [
     {
       "name": "Riad Ahmed",
@@ -65,12 +65,19 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "CARL Lab",
+    "University of New Hampshire"
+  ],
+  "method_tags": [
+    "Mechanistic Interpretability",
+    "Sparse Autoencoder",
+    "Failure Detection"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

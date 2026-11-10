@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12102",
   "source": "arxiv",
   "title": "SPARK: Simple Post-training for Adapting pRetrained Knowledge to Robot Control",
-  "title_zh": "SPARK: Simple Post-training for Adapting pRetrained Knowledge to Robot Control",
+  "title_zh": "SPARK：简单后训练让预训练知识适配机器人控制",
   "abstract": "Large-scale representation learning has produced public foundation models that provide strong general-purpose visual features. However, their pretraining objectives are not designed for robot representation learning, so the resulting embeddings tend to emphasize global semantics rather than the temporally sensitive representations required for robot control. Training robot models from scratch is also undesirable due to the limited scale and high collection cost of robotics data, as well as the substantial computational burden of pre-training. In this paper, we propose SPARK (Simple Post-training for Adapting pRetrained Knowledge), a post-training method that adapts foundation models to robot control. SPARK is built on two principles: temporal abstraction, which encourages the encoder to derive compact features that preserve information essential for understanding temporal changes and action-relevant scene structure, and knowledge preservation, which aligns patch-level representations with those of the original foundation model to retain useful pretrained semantics. These objectives yield compact visual state representations that remain semantically meaningful while preserving useful prior knowledge. Experiments across multiple robotics benchmarks show that SPARK consistently improves success rates and generalization over vanilla foundation models, and further demonstrate that these gains transfer to real-world robot manipulation.",
-  "abstract_zh": "Large-scale representation learning has produced public foundation models that provide strong general-purpose visual features. However, their pretraining objectives are not designed for robot representation learning, so the resulting embeddings tend to emphasize global semantics rather than the temporally sensitive representations required for robot control. Training robot models from scratch is also undesirable due to the limited scale and high collection cost of robotics data, as well as the substantial computational burden of pre-training. In this paper, we propose SPARK (Simple Post-training for Adapting pRetrained Knowledge), a post-training method that adapts foundation models to robot control. SPARK is built on two principles: temporal abstraction, which encourages the encoder to derive compact features that preserve information essential for understanding temporal changes and action-relevant scene structure, and knowledge preservation, which aligns patch-level representations with those of the original foundation model to retain useful pretrained semantics. These objectives yield compact visual state representations that remain semantically meaningful while preserving useful prior knowledge. Experiments across multiple robotics benchmarks show that SPARK consistently improves success rates and generalization over vanilla foundation models, and further demonstrate that these gains transfer to real-world robot manipulation.",
-  "tldr_zh": "Large-scale representation learning has produced public foun",
-  "cover_zh": "Large-scale representation learning has produced public foun",
+  "abstract_zh": "大规模表示学习已产生公开的基础模型，提供强大的通用视觉特征。然而，它们的预训练目标并非为机器人表示学习设计，因此得到的嵌入往往强调全局语义，而非机器人控制所需的对时间敏感的表示。由于机器人数据规模有限、采集成本高，以及预训练的计算负担大，从头训练机器人模型也不可取。本文提出 SPARK（简单后训练适配预训练知识），一种将基础模型适配到机器人控制的后训练方法。SPARK 基于两个原则：时间抽象，鼓励编码器提取紧凑特征，保留理解时间变化和动作相关场景结构所需的信息；知识保留，将块级表示与原始基础模型的表示对齐，以保留有用的预训练语义。这些目标产生紧凑的视觉状态表示，既保持语义意义又保留有用的先验知识。在多个机器人基准上的实验表明，SPARK 相比原始基础模型持续提高成功率和泛化能力，并进一步证明这些增益可迁移到真实机器人操作中。",
+  "tldr_zh": "SPARK后训练方法让基础模型适配机器人控制，提升成功率和泛化。",
+  "cover_zh": "基础模型直接控制机器人？SPARK后训练让成功率飙升！",
   "authors": [
     {
       "name": "Taekyung Kim",
@@ -94,13 +94,27 @@
       "hint": "被「CoRL 2026」收录"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "将视觉基础模型后训练适配机器人操作控制，提升成功率与泛化，属操作表征学习，有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "NAVER AI Lab",
+    "Georgia Institute of Technology",
+    "Korea University"
+  ],
+  "method_tags": [
+    "post-training",
+    "representation learning",
+    "knowledge preservation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

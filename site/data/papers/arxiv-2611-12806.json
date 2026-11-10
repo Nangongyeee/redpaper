@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12806",
   "source": "arxiv",
   "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
-  "title_zh": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+  "title_zh": "学习异构触觉表征以实现通用灵巧操作",
   "abstract": "Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types. (ii) The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as $π_{0.5}$ and LingBot-VLA, consistently enhancing manipulation dexterity. (iii) Extensive experiments, spanning simulation and real-robot deployments across multiple hardware platforms, demonstrate that our tactile representation substantially benefits complex manipulation tasks while maintaining strong computational efficiency. We believe the findings in this work demonstrate the potential of leveraging cross-sensor data to scale tactile learning, and offer encouraging insights for the design of future hardware and embodied models.",
-  "abstract_zh": "Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types. (ii) The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as $π_{0.5}$ and LingBot-VLA, consistently enhancing manipulation dexterity. (iii) Extensive experiments, spanning simulation and real-robot deployments across multiple hardware platforms, demonstrate that our tactile representation substantially benefits complex manipulation tasks while maintaining strong computational efficiency. We believe the findings in this work demonstrate the potential of leveraging cross-sensor data to scale tactile learning, and offer encouraging insights for the design of future hardware and embodied models.",
-  "tldr_zh": "Tactile sensing is an indispensable modality for contact-ric",
-  "cover_zh": "Tactile sensing is an indispensable modality for contact-ric",
+  "abstract_zh": "触觉感知是接触密集型灵巧操作不可或缺的模态，这一能力指向具身智能的终极前沿。然而，商用触觉传感器仍处于相对早期的发展阶段，每种传感器在提供不可替代优势的同时也各有缺陷。因此，一个关键挑战是如何将触觉理解从传感器特定物理特性中解放出来，使具身模型能够有效利用异构触觉数据。为此，我们开发了LingBot-Touch，一个具备以下特性的触觉基础模型：(i) 我们的模型在不同触觉传感器（即压阻式、磁性和视觉触觉传感器）之间产生统一表征，并且易于扩展到新的传感器类型。(ii) 生成的触觉令牌即插即用：它们可以无缝集成到跨范式的策略模型中，从扩散策略到视觉-语言-动作（VLA）模型（如$π_{0.5}$和LingBot-VLA），持续增强操作灵巧性。(iii) 大量实验涵盖仿真和真实机器人部署，跨多个硬件平台，表明我们的触觉表征在保持强大计算效率的同时，显著有益于复杂操作任务。我们相信，这项工作展示了利用跨传感器数据来扩展触觉学习的潜力，并为未来硬件和具身模型的设计提供了鼓舞人心的见解。",
+  "tldr_zh": "LingBot-Touch统一异构触觉表征，即插即用提升灵巧操作。",
+  "cover_zh": "触觉传感器五花八门？LingBot-Touch让它们说同一种语言",
   "authors": [
     {
       "name": "Bing Han",
@@ -135,13 +135,23 @@
       "hint": "PDF 27 页"
     }
   ],
-  "judge": {},
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "触觉基础模型统一异构传感器表征，可插拔接入扩散策略与VLA，真机验证，对灵巧操作有高参考价值。",
+    "model": "deepseek-v4-flash"
+  },
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "tactile representation",
+    "diffusion policy",
+    "VLA"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

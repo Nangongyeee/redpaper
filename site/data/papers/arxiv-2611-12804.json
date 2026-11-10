@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12804",
   "source": "arxiv",
   "title": "Benchmarking Real-World Robotic Manipulation through Stochastic Challenges",
-  "title_zh": "Benchmarking Real-World Robotic Manipulation through Stochastic Challenges",
+  "title_zh": "通过随机挑战对真实世界机器人操作进行基准测试",
   "abstract": "A challenging bottleneck in manipulation research is reproducibility and comparability of methods in real-world environments. Since manipulation is an interactive task, it cannot be evaluated on a static dataset of observations. Benchmarking in simulation is a common remedy, but cannot cover the whole complexity of real-world tests. This paper proposes a new paradigm of stochastic challenges. Like the well-known YCB objects, it is based on reproducible real-world scenes and therefore allows system-level innovation and comparability between different platforms. Due to their stochastic nature, our challenges however, mimic the rigor and surprise of hidden test sets. To this end, we show how different robots in different labs can be compared based on their success rate over different random task samples, if these samples come from the same distribution. We propose stochastic challenges as a general paradigm for robot benchmarking and implement this paradigm in a novel benchmark for mobile manipulation, on which we compare two robots tested in two different labs.",
-  "abstract_zh": "A challenging bottleneck in manipulation research is reproducibility and comparability of methods in real-world environments. Since manipulation is an interactive task, it cannot be evaluated on a static dataset of observations. Benchmarking in simulation is a common remedy, but cannot cover the whole complexity of real-world tests. This paper proposes a new paradigm of stochastic challenges. Like the well-known YCB objects, it is based on reproducible real-world scenes and therefore allows system-level innovation and comparability between different platforms. Due to their stochastic nature, our challenges however, mimic the rigor and surprise of hidden test sets. To this end, we show how different robots in different labs can be compared based on their success rate over different random task samples, if these samples come from the same distribution. We propose stochastic challenges as a general paradigm for robot benchmarking and implement this paradigm in a novel benchmark for mobile manipulation, on which we compare two robots tested in two different labs.",
-  "tldr_zh": "A challenging bottleneck in manipulation research is reprodu",
-  "cover_zh": "A challenging bottleneck in manipulation research is reprodu",
+  "abstract_zh": "操作研究中的一个挑战性瓶颈是真实环境中方法的可复现性和可比性。由于操作是一个交互式任务，无法在静态观测数据集上评估。仿真基准测试是一种常见的补救方法，但无法涵盖真实世界测试的全部复杂性。本文提出了一种新的随机挑战范式。与著名的YCB物体类似，它基于可复现的真实世界场景，因此允许系统级创新和不同平台之间的可比性。然而，由于其随机性，我们的挑战模仿了隐藏测试集的严谨性和惊喜性。为此，我们展示了如果这些样本来自同一分布，不同实验室的不同机器人如何基于它们在不同随机任务样本上的成功率进行比较。我们提出随机挑战作为机器人基准测试的通用范式，并在一个新颖的移动操作基准中实现了该范式，在该基准上我们比较了在两个不同实验室测试的两个机器人。",
+  "tldr_zh": "提出随机挑战范式，实现真实世界机器人操作的可复现基准测试。",
+  "cover_zh": "真实机器人测试还能随机？这个新范式让不同实验室结果可比！",
   "authors": [
     {
       "name": "Elias Gläßer",
@@ -56,6 +56,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ ETH (RSL)"
+    },
+    {
       "kind": "venue",
       "label": "🎓 CoRL 2026"
     },
@@ -67,8 +71,14 @@
   "related_links": [],
   "page_count": 15,
   "source_tags": [],
-  "score": 34,
+  "score": 59,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ETH (RSL)” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -100,13 +110,28 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "真实世界操作基准，提出随机挑战范式解决可复现性，跨实验室对比移动操作，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Bonn",
+    "Lamarr Institute",
+    "ETH Zürich",
+    "Microsoft"
+  ],
+  "method_tags": [
+    "benchmarking",
+    "mobile manipulation",
+    "real-world evaluation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

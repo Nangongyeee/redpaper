@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12286",
   "source": "arxiv",
   "title": "VLA-MOPD: On-Policy Distillation for Multi-Task VLA Policy Consolidation",
-  "title_zh": "VLA-MOPD: On-Policy Distillation for Multi-Task VLA Policy Consolidation",
+  "title_zh": "VLA-MOPD：用于多任务VLA策略整合的在线蒸馏",
   "abstract": "Physical intelligence requires embodied agents to ground language in observations and execute actions while retaining useful skills. Vision-language-action (VLA) policies offer a shared interface, but task-specific post-training often produces separate specialists. Consolidation is difficult: mixed-task reinforcement learning provides sparse trajectory-level credit, while offline distillation may miss student-visited observations and endpoint distillation does not supervise intermediate action-generation states. We introduce VLA Multi-teacher On-Policy Distillation (VLA-MOPD), a protocol for consolidating flow-matching VLA specialists. After acquiring task or suite experts, a shared student collects robot rollouts and queries the instruction-routed frozen teacher at each visited observation and intermediate ordinary differential equation (ODE) state. Detached per-flow-step transition targets supervise valid action chunks through a masked local matching loss; an optional reference-policy term supports retention on other tasks. Starting from one trajectory per LIBERO task, VLA-MOPD raises mean success-once from 75.4% to 98.9%, compared with 98.15% for endpoint action distillation. It improves mean RoboTwin 2.0 success from 73.0% to 89.3%; on a Piper robot, two consolidation rounds improve average success from 70.0% to 90.0%. In a near-matched Spatial-adaptation study, reference matching limits the Object suite decrease to 3.0 points, versus 13.2 without the reference term.",
-  "abstract_zh": "Physical intelligence requires embodied agents to ground language in observations and execute actions while retaining useful skills. Vision-language-action (VLA) policies offer a shared interface, but task-specific post-training often produces separate specialists. Consolidation is difficult: mixed-task reinforcement learning provides sparse trajectory-level credit, while offline distillation may miss student-visited observations and endpoint distillation does not supervise intermediate action-generation states. We introduce VLA Multi-teacher On-Policy Distillation (VLA-MOPD), a protocol for consolidating flow-matching VLA specialists. After acquiring task or suite experts, a shared student collects robot rollouts and queries the instruction-routed frozen teacher at each visited observation and intermediate ordinary differential equation (ODE) state. Detached per-flow-step transition targets supervise valid action chunks through a masked local matching loss; an optional reference-policy term supports retention on other tasks. Starting from one trajectory per LIBERO task, VLA-MOPD raises mean success-once from 75.4% to 98.9%, compared with 98.15% for endpoint action distillation. It improves mean RoboTwin 2.0 success from 73.0% to 89.3%; on a Piper robot, two consolidation rounds improve average success from 70.0% to 90.0%. In a near-matched Spatial-adaptation study, reference matching limits the Object suite decrease to 3.0 points, versus 13.2 without the reference term.",
-  "tldr_zh": "Physical intelligence requires embodied agents to ground lan",
-  "cover_zh": "Physical intelligence requires embodied agents to ground lan",
+  "abstract_zh": "物理智能要求具身智能体将语言与观察相结合并执行动作，同时保留有用的技能。视觉-语言-动作（VLA）策略提供了共享接口，但针对特定任务的后训练通常会产生独立的专家。整合是困难的：混合任务强化学习提供稀疏的轨迹级信用，而离线蒸馏可能错过学生访问的观察，且端点蒸馏不监督中间动作生成状态。我们引入了VLA多教师在线蒸馏（VLA-MOPD），一种用于整合流匹配VLA专家的协议。在获得任务或套件专家后，一个共享学生收集机器人轨迹，并在每个访问的观察和中间常微分方程（ODE）状态查询指令路由的冻结教师。分离的每流步骤转移目标通过掩码局部匹配损失监督有效的动作块；可选的参考策略项支持在其他任务上的保留。从LIBERO每个任务的一条轨迹开始，VLA-MOPD将平均一次成功率从75.4%提高到98.9%，而端点动作蒸馏为98.15%。它将RoboTwin 2.0的平均成功率从73.0%提高到89.3%；在Piper机器人上，两轮整合将平均成功率从70.0%提高到90.0%。在近乎匹配的空间适应研究中，参考匹配将Object套件的下降限制在3.0个百分点，而没有参考项时为13.2。",
+  "tldr_zh": "VLA-MOPD通过在线蒸馏整合多任务VLA专家，显著提升成功率。",
+  "cover_zh": "多任务VLA专家整合难？在线蒸馏让成功率飙升！",
   "authors": [
     {
       "name": "Yongxuan Lv",
@@ -84,6 +84,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ USTC"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -91,8 +95,14 @@
   "related_links": [],
   "page_count": 19,
   "source_tags": [],
-  "score": 25,
+  "score": 50,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “USTC” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -112,13 +122,29 @@
       "hint": "PDF 19 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "多任务VLA策略整合的on-policy蒸馏方法，在LIBERO/RoboTwin/真机验证，属操作VLA范畴",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Science and Technology of China",
+    "ACE Robotics",
+    "Central South University"
+  ],
+  "method_tags": [
+    "On-Policy Distillation",
+    "VLA",
+    "flow-matching"
+  ],
+  "platform": [
+    "Piper"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

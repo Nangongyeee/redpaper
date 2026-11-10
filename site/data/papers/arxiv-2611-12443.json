@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12443",
   "source": "arxiv",
   "title": "MoSTE: Mixture of Spatio-Temporal Experts for Deepfake Detection in Videos",
-  "title_zh": "MoSTE: Mixture of Spatio-Temporal Experts for Deepfake Detection in Videos",
+  "title_zh": "MoSTE：用于视频深度伪造检测的时空专家混合框架",
   "abstract": "Generalizable deepfake video detection remains challenging because forgery artifacts vary substantially across manipulation types and often combine diverse spatial and temporal inconsistencies. Existing parameter-efficient adaptation methods typically rely on a single shared representation, rendering them prone to manipulation-specific bias and limiting transfer to unseen forgeries. To address this challenge, we propose Mixture Of Spatio-Temporal Experts (MoSTE), an adaptation framework that enables conditional specialization of forensic representations. Instead of forcing one adapter to model all forgery patterns, MoSTE decomposes adaptation into parallel spatial and temporal expert pools and dynamically routes tokens to the most relevant experts through an unsupervised token-level routing mechanism. This allows experts to naturally specialize in complementary forgery cues without requiring explicit manipulation labels or multi-stage training, while effectively transferring representations from CLIP to the video domain. Extensive experiments across cross-dataset and cross-manipulation benchmarks demonstrate that MoSTE sets a new state of the art in average generalization while preserving strong performance across diverse manipulation families. Additional analysis of expert routing and attention behavior reveals the emergence of expert diversity, suggesting that MoSTE learns complementary spatio-temporal forensic features. Code is available at https://github.com/charbelyah/MoSTE",
-  "abstract_zh": "Generalizable deepfake video detection remains challenging because forgery artifacts vary substantially across manipulation types and often combine diverse spatial and temporal inconsistencies. Existing parameter-efficient adaptation methods typically rely on a single shared representation, rendering them prone to manipulation-specific bias and limiting transfer to unseen forgeries. To address this challenge, we propose Mixture Of Spatio-Temporal Experts (MoSTE), an adaptation framework that enables conditional specialization of forensic representations. Instead of forcing one adapter to model all forgery patterns, MoSTE decomposes adaptation into parallel spatial and temporal expert pools and dynamically routes tokens to the most relevant experts through an unsupervised token-level routing mechanism. This allows experts to naturally specialize in complementary forgery cues without requiring explicit manipulation labels or multi-stage training, while effectively transferring representations from CLIP to the video domain. Extensive experiments across cross-dataset and cross-manipulation benchmarks demonstrate that MoSTE sets a new state of the art in average generalization while preserving strong performance across diverse manipulation families. Additional analysis of expert routing and attention behavior reveals the emergence of expert diversity, suggesting that MoSTE learns complementary spatio-temporal forensic features. Code is available at https://github.com/charbelyah/MoSTE",
-  "tldr_zh": "Generalizable deepfake video detection remains challenging b",
-  "cover_zh": "Generalizable deepfake video detection remains challenging b",
+  "abstract_zh": "可泛化的深度伪造视频检测仍然具有挑战性，因为伪造痕迹在不同操纵类型之间差异很大，并且常常结合了多种空间和时间上的不一致性。现有的参数高效自适应方法通常依赖于单一的共享表示，导致它们容易产生针对特定操纵的偏差，并限制了对未见伪造的迁移能力。为了解决这一挑战，我们提出了时空专家混合框架（MoSTE），一种能够实现取证表示条件特化的自适应框架。MoSTE不是强制一个适配器对所有伪造模式建模，而是将自适应分解为并行的空间和时间专家池，并通过无监督的令牌级路由机制动态地将令牌路由到最相关的专家。这使得专家能够自然地专注于互补的伪造线索，而无需显式的操纵标签或多阶段训练，同时有效地将CLIP的表示迁移到视频领域。在跨数据集和跨操纵基准上的大量实验表明，MoSTE在平均泛化性上达到了新的最先进水平，同时在各种操纵家族中保持了强劲的性能。对专家路由和注意力行为的额外分析揭示了专家多样性的出现，表明MoSTE学习了互补的时空取证特征。代码可在https://github.com/charbelyah/MoSTE获取。",
+  "tldr_zh": "MoSTE通过时空专家混合和无监督路由实现可泛化的深度伪造视频检测。",
+  "cover_zh": "深度伪造检测新突破｜时空专家混合让泛化性直接拉满",
   "authors": [
     {
       "name": "Charbel Yahchouchi",
@@ -86,8 +86,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Inria Centre at Université Côte d'Azur",
+    "Probayes"
+  ],
+  "method_tags": [
+    "Mixture of Experts",
+    "parameter-efficient adaptation",
+    "deepfake detection"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

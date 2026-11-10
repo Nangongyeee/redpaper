@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10343",
   "source": "arxiv",
   "title": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
-  "title_zh": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+  "title_zh": "GUARD：面向灵巧操作生成式机器人策略的异常感知Q引导",
   "abstract": "Generative robot policies based on diffusion and flow matching can model complex, multimodal behaviors, but remain susceptible to covariate shift during closed-loop execution. Existing approaches mitigate such failures through additional demonstrations, policy fine-tuning, or test-time guidance, but often require human intervention, engineered rewards, or other task-specific signals. We introduce GUARD, an anomaly-informed Q-steering framework that leverages the policy's training distribution to construct a dense, failure-anticipatory steering signal. GUARD pairs sparse task rewards with dense anomaly scores learned from policy training data and propagates both through a learned Q-function. Its gradients then steer the denoising process toward actions that improve task return while preventing trajectories from entering poorly supported regions, without directly modifying the pretrained policy. Across four Adroit dexterous manipulation tasks, GUARD achieves average success rates of $96.0\\%$ and $80.0\\%$ under nominal and perturbed dynamics, outperforming the strongest baseline by $21.0$ and $20.0$ percentage points while maintaining the lowest anomaly score. GUARD further demonstrates direct sim-to-real transfer on in-hand screwdriver rotation and reorientation tasks, achieving $40$ and $25$ percentage-point gains in success rate. These results demonstrate that anomaly signals can serve not only for failure monitoring but also to complement sparse task rewards as effective supervision for robust policy steering.",
-  "abstract_zh": "Generative robot policies based on diffusion and flow matching can model complex, multimodal behaviors, but remain susceptible to covariate shift during closed-loop execution. Existing approaches mitigate such failures through additional demonstrations, policy fine-tuning, or test-time guidance, but often require human intervention, engineered rewards, or other task-specific signals. We introduce GUARD, an anomaly-informed Q-steering framework that leverages the policy's training distribution to construct a dense, failure-anticipatory steering signal. GUARD pairs sparse task rewards with dense anomaly scores learned from policy training data and propagates both through a learned Q-function. Its gradients then steer the denoising process toward actions that improve task return while preventing trajectories from entering poorly supported regions, without directly modifying the pretrained policy. Across four Adroit dexterous manipulation tasks, GUARD achieves average success rates of $96.0\\%$ and $80.0\\%$ under nominal and perturbed dynamics, outperforming the strongest baseline by $21.0$ and $20.0$ percentage points while maintaining the lowest anomaly score. GUARD further demonstrates direct sim-to-real transfer on in-hand screwdriver rotation and reorientation tasks, achieving $40$ and $25$ percentage-point gains in success rate. These results demonstrate that anomaly signals can serve not only for failure monitoring but also to complement sparse task rewards as effective supervision for robust policy steering.",
-  "tldr_zh": "Generative robot policies based on diffusion and flow matchi",
-  "cover_zh": "Generative robot policies based on diffusion and flow matchi",
+  "abstract_zh": "基于扩散和流匹配的生成式机器人策略能够建模复杂的多模态行为，但在闭环执行中仍易受协变量偏移的影响。现有方法通过额外演示、策略微调或测试时引导来缓解此类失败，但通常需要人工干预、工程化奖励或其他任务特定信号。我们提出GUARD，一种异常感知的Q引导框架，利用策略的训练分布构建稠密、可预见失败的引导信号。GUARD将稀疏任务奖励与从策略训练数据中学习到的稠密异常分数相结合，并通过学习到的Q函数传播两者。其梯度随后引导去噪过程朝向提高任务回报的动作，同时防止轨迹进入支持不足的区域，而无需直接修改预训练策略。在四个Adroit灵巧操作任务中，GUARD在名义和扰动动力学下分别达到96.0%和80.0%的平均成功率，以21.0和20.0个百分点的优势超越最强基线，同时保持最低的异常分数。GUARD进一步在手内螺丝刀旋转和重定向任务上展示了直接的仿真到现实迁移，成功率分别提升40和25个百分点。这些结果表明，异常信号不仅可用于失败监测，还可作为稀疏任务奖励的补充，为鲁棒的策略引导提供有效监督。",
+  "tldr_zh": "GUARD利用异常信号引导生成式机器人策略，提升灵巧操作鲁棒性。",
+  "cover_zh": "扩散策略总翻车？异常信号来救场，灵巧操作成功率飙升！",
   "authors": [
     {
       "name": "Aryaman Gupta",
@@ -46,12 +46,23 @@
     "manipulation",
     "sim2real"
   ],
-  "badges": [],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ Stanford"
+    }
+  ],
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 20,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Stanford” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -72,12 +83,19 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Stanford University",
+    "Honda Research Institute USA"
+  ],
+  "method_tags": [
+    "Q-steering",
+    "anomaly detection",
+    "diffusion policy"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

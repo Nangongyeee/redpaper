@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10490",
   "source": "arxiv",
   "title": "Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation",
-  "title_zh": "Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation",
+  "title_zh": "触觉传感器是接触丰富或遮挡操作中腕部相机的有效替代品",
   "abstract": "Learned manipulation policies often rely on wrist-mounted cameras for close-range visual feedback that complements external views of the workspace. However, contact-rich manipulation requires establishing and maintaining contacts that can remain hidden even from wrist cameras. Tactile sensors mounted on fingers can reliably and directly measure contact, without needing visual access. In this work, we show that this feedback enables policies to recover the performance advantage of wrist cameras using scene and egocentric vision together with touch. Our approach incorporates two low-cost tactile arrays into a visuotactile ACT policy, without wrist images during training or deployment. We evaluate six real-world task families spanning placement, insertion, occluded retrieval, and sustained-contact tool use. On three contact-rich tasks, we independently vary wrist-camera and tactile availability while keeping the demonstrations, policy architecture, and optimization settings fixed. Adding wrist cameras improves success by 18.3-28.3 percentage points over vision without wrist images. Adding tactile sensing instead improves success by 31.7-60.0 percentage points and yields higher observed success than vision-only policies with wrist cameras on all three tasks, with significant advantages on two under Holm-corrected tests. These results support finger-mounted tactile sensing as an effective alternative to wrist cameras in the evaluated contact-rich settings.",
-  "abstract_zh": "Learned manipulation policies often rely on wrist-mounted cameras for close-range visual feedback that complements external views of the workspace. However, contact-rich manipulation requires establishing and maintaining contacts that can remain hidden even from wrist cameras. Tactile sensors mounted on fingers can reliably and directly measure contact, without needing visual access. In this work, we show that this feedback enables policies to recover the performance advantage of wrist cameras using scene and egocentric vision together with touch. Our approach incorporates two low-cost tactile arrays into a visuotactile ACT policy, without wrist images during training or deployment. We evaluate six real-world task families spanning placement, insertion, occluded retrieval, and sustained-contact tool use. On three contact-rich tasks, we independently vary wrist-camera and tactile availability while keeping the demonstrations, policy architecture, and optimization settings fixed. Adding wrist cameras improves success by 18.3-28.3 percentage points over vision without wrist images. Adding tactile sensing instead improves success by 31.7-60.0 percentage points and yields higher observed success than vision-only policies with wrist cameras on all three tasks, with significant advantages on two under Holm-corrected tests. These results support finger-mounted tactile sensing as an effective alternative to wrist cameras in the evaluated contact-rich settings.",
-  "tldr_zh": "Learned manipulation policies often rely on wrist-mounted ca",
-  "cover_zh": "Learned manipulation policies often rely on wrist-mounted ca",
+  "abstract_zh": "学习到的操作策略通常依赖腕部相机提供近距离视觉反馈，以补充工作空间的外部视图。然而，接触丰富的操作需要建立和维持接触，而这些接触即使对腕部相机也可能不可见。安装在手指上的触觉传感器可以可靠且直接地测量接触，无需视觉访问。在这项工作中，我们表明这种反馈使策略能够利用场景和自我中心视觉以及触觉来恢复腕部相机的性能优势。我们的方法将两个低成本触觉阵列集成到视觉触觉ACT策略中，在训练或部署期间不使用腕部图像。我们评估了六个真实世界任务系列，涵盖放置、插入、遮挡检索和持续接触工具使用。在三个接触丰富任务上，我们独立改变腕部相机和触觉的可用性，同时保持演示、策略架构和优化设置固定。添加腕部相机比没有腕部图像的视觉提高了18.3-28.3个百分点的成功率。而添加触觉传感则提高了31.7-60.0个百分点的成功率，并且在所有三个任务上观察到的成功率高于仅使用视觉且带有腕部相机的策略，其中两个任务在Holm校正测试中具有显著优势。这些结果支持手指安装的触觉传感在评估的接触丰富设置中作为腕部相机的有效替代方案。",
+  "tldr_zh": "触觉传感器可替代腕部相机，在接触丰富任务中提升成功率。",
+  "cover_zh": "腕部相机可以扔了？触觉传感器让接触任务成功率飙升",
   "authors": [
     {
       "name": "Aijia Yang",
@@ -47,6 +47,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ Toyota TRI / RAI"
+    },
+    {
       "kind": "venue",
       "label": "🎓 CoRL 2026"
     }
@@ -54,8 +58,14 @@
   "related_links": [],
   "page_count": 12,
   "source_tags": [],
-  "score": 25,
+  "score": 50,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Toyota TRI / RAI” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -76,12 +86,20 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "institutions": [
+    "Toyota Research Institute"
+  ],
+  "method_tags": [
+    "Imitation Learning",
+    "ACT",
+    "visuotactile"
+  ],
+  "platform": [
+    "YAM"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

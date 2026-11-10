@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12886",
   "source": "arxiv",
   "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
-  "title_zh": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+  "title_zh": "Reframe：面向智能体视觉推理的观测对齐多教师在线策略蒸馏",
   "abstract": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
-  "abstract_zh": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
-  "tldr_zh": "Agentic reinforcement learning (RL) and multi-teacher on-pol",
-  "cover_zh": "Agentic reinforcement learning (RL) and multi-teacher on-pol",
+  "abstract_zh": "智能体强化学习（RL）和多教师在线策略蒸馏（MOPD）为后训练提供了互补的途径。然而，对于视觉智能体，工具使用带来了两个相关的挑战。模型可能忽略有用的工具返回观测，而基础不牢的动作可能限制后续蒸馏可用的证据。我们提出 Reframe，一个后训练框架，将观测状态而不仅仅是输出分布作为对齐对象。首先，Ground-Drop-GRPO（GD-GRPO）通过证据感知奖励和随机移除原始视觉输入来训练空间和时间专家，鼓励它们获取有根据的证据并使用返回的观测。其次，Observation-Gated-MOPD（OG-MOPD）在 rollout 过程中用规范动作替换有缺陷的工具动作，并从修复后的观测恢复蒸馏。这两个阶段相辅相成，因为学习依赖工具返回的观测可以帮助策略从观测修复中受益。两个阶段都不需要任务特定的 SFT 冷启动。在 14 个图像和视频基准上的大量实验表明，Reframe 优于 Mix-RL 和原始 MOPD。消融结果表明，与基于结果的 GRPO 相比，GD-GRPO 增加了观测依赖性和工具增益。",
+  "tldr_zh": "Reframe框架通过观测对齐和修复提升视觉智能体推理。",
+  "cover_zh": "视觉智能体总忽略工具反馈？Reframe让观测对齐直接逆袭",
   "authors": [
     {
       "name": "Haozhi Yuan",
@@ -76,8 +76,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Nanjing University",
+    "Institute of Automation, Chinese Academy of Sciences"
+  ],
+  "method_tags": [
+    "RL",
+    "On-Policy Distillation",
+    "GRPO"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

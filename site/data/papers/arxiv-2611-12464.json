@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12464",
   "source": "arxiv",
   "title": "Phrase-Level Speculative Decoding on a Frozen Target",
-  "title_zh": "Phrase-Level Speculative Decoding on a Frozen Target",
+  "title_zh": "在冻结目标模型上的短语级推测解码",
   "abstract": "Speculative decoders raise throughput by banking more target tokens per forward pass, and Medusa, EAGLE-3, DFlash and DSpark all do it the same way: more candidates that survive verification. All of them draft in the target's own vocabulary, so one node of the candidate tree is one target token, and the tokenizer makes that unit look like a constant. It is not. BPE's pretokenizer splits on whitespace before merges are learned, so no multi-word string can ever become a single token: in Qwen3-4B, \"United States of America\" is four tokens and no adjacent pair of them exists as one entry, so a phrase is out of reach of any method drafting in the target's vocabulary.   We change the unit. A small MLP head reads the frozen target's hidden state and predicts a one- to three-word phrase as one entry in a separate draft vocabulary; greedy longest-match expansion maps it back into the target's own tokens, and N candidates are verified in one forward pass behind a prefix-tree mask, so the change is orthogonal to tree depth and width. The target and its tokenizer stay frozen and a candidate is accepted only while it matches the target's own argmax, so the served output is identical to greedy decoding up to floating-point tie-breaking.   On one A5000 at batch 1, against HuggingFace generate(), a 21.94M head (0.545% of Qwen3-4B) reaches 2.391x on GSM8K, 2.444x on MATH-500 and 1.544x on MT-Bench. Because the head's output layer is one row of 257 parameters per entry, the draft vocabulary size is the parameter budget: an 8,000-entry head is 3.434M parameters, 0.0854% of the target and 64x smaller than EAGLE-3's drafter, and keeps 92.3% of the larger head's GSM8K tokens per pass. With EAGLE-3 run on same prompts and baseline, our 21.94M head is ahead of tree-16 on both maths sets and behind tree-60 on every set.",
-  "abstract_zh": "Speculative decoders raise throughput by banking more target tokens per forward pass, and Medusa, EAGLE-3, DFlash and DSpark all do it the same way: more candidates that survive verification. All of them draft in the target's own vocabulary, so one node of the candidate tree is one target token, and the tokenizer makes that unit look like a constant. It is not. BPE's pretokenizer splits on whitespace before merges are learned, so no multi-word string can ever become a single token: in Qwen3-4B, \"United States of America\" is four tokens and no adjacent pair of them exists as one entry, so a phrase is out of reach of any method drafting in the target's vocabulary. We change the unit. A small MLP head reads the frozen target's hidden state and predicts a one- to three-word phrase as one entry in a separate draft vocabulary; greedy longest-match expansion maps it back into the target's own tokens, and N candidates are verified in one forward pass behind a prefix-tree mask, so the change is orthogonal to tree depth and width. The target and its tokenizer stay frozen and a candidate is accepted only while it matches the target's own argmax, so the served output is identical to greedy decoding up to floating-point tie-breaking. On one A5000 at batch 1, against HuggingFace generate(), a 21.94M head (0.545% of Qwen3-4B) reaches 2.391x on GSM8K, 2.444x on MATH-500 and 1.544x on MT-Bench. Because the head's output layer is one row of 257 parameters per entry, the draft vocabulary size is the parameter budget: an 8,000-entry head is 3.434M parameters, 0.0854% of the target and 64x smaller than EAGLE-3's drafter, and keeps 92.3% of the larger head's GSM8K tokens per pass. With EAGLE-3 run on same prompts and baseline, our 21.94M head is ahead of tree-16 on both maths sets and behind tree-60 on every set.",
-  "tldr_zh": "Speculative decoders raise throughput by banking more target",
-  "cover_zh": "Speculative decoders raise throughput by banking more target",
+  "abstract_zh": "推测解码器通过每次前向传播中承载更多目标 token 来提高吞吐量，Medusa、EAGLE-3、DFlash 和 DSpark 都采用相同方式：让更多候选通过验证。它们都在目标模型的词汇表中进行草稿，因此候选树的一个节点就是一个目标 token，而分词器使这个单位看起来像常数。但事实并非如此。BPE 的预分词器在学习合并之前按空白分割，因此任何多词字符串都无法成为单个 token：在 Qwen3-4B 中，“United States of America” 是四个 token，且它们中没有任何相邻对作为单个条目存在，所以短语对于任何在目标词汇表中草稿的方法都是不可及的。我们改变了单位。一个小型 MLP 头读取冻结目标的隐藏状态，并在单独的草稿词汇表中将一个 1 到 3 个词的短语预测为一个条目；贪心最长匹配扩展将其映射回目标自身的 token，并且 N 个候选在前缀树掩码后的一次前向传播中验证，因此这一改变与树深度和宽度正交。目标模型及其分词器保持冻结，候选仅在匹配目标自身 argmax 时被接受，因此服务输出与贪心解码相同（浮点平局除外）。在单块 A5000 上，批大小为 1，与 HuggingFace generate() 相比，一个 21.94M 的头（占 Qwen3-4B 的 0.545%）在 GSM8K 上达到 2.391 倍，在 MATH-500 上达到 2.444 倍，在 MT-Bench 上达到 1.544 倍。由于头的输出层每个条目只有一行 257 个参数，草稿词汇表大小就是参数预算：一个 8,000 条目的头是 3.434M 参数，占目标的 0.0854%，比 EAGLE-3 的草稿器小 64 倍，并保留了较大头在 GSM8K 上每次传播 92.3% 的 token。在相同提示和基线上运行 EAGLE-3 时，我们的 21.94M 头在两个数学集上都领先于 tree-16，但在所有集上都落后于 tree-60。",
+  "tldr_zh": "短语级推测解码，在冻结目标上实现无损加速。",
+  "cover_zh": "多词短语也能当token？这个新方法让推理直接起飞",
   "authors": [
     {
       "name": "Madhusudhana Naidu",
@@ -67,7 +67,11 @@
   ],
   "judge": {},
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "speculative decoding",
+    "phrase-level drafting",
+    "MLP draft head"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

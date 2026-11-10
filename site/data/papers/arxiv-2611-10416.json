@@ -2,11 +2,11 @@
   "id": "arxiv-2611-10416",
   "source": "arxiv",
   "title": "S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models",
-  "title_zh": "S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models",
+  "title_zh": "S2HAND：全身姿态模型中手部专门化的精度保持权衡",
   "abstract": "Unified whole-body pose estimators jointly predict body, face, and hand landmarks, but often degrade on small, blurred, or occluded hands. Attaching a standalone hand specialist introduces extra detection overhead, coordinate alignment, and wrist-stitching artifacts. We introduce S2HAND, a hand-specialized Sapiens2-5B framework that preserves the native 308-keypoint output interface. Specifically, S2HAND-MT adapts a lightweight 0.87M-parameter pose branch to route 40 finger heatmaps while strictly preserving the shared Transformer, auxiliary task heads, and the other 268 body, foot, and face heatmaps. S2HAND-Pose further fine-tunes three Fisher-selected Transformer blocks (267.13M parameters), trading exact preservation for stronger hand recovery: it lifts macro AUC from 57.83% to 65.73% across HInt TEST, COCO WholeBody VAL, and FreiHAND EVAL, and surpasses HInt-adapted Hand5/HRNet and stitched Hand5 systems on all five Native Pipeline benchmarks. On COCO, S2HAND-Pose improves hand AP by 12.89 points and body-plus-foot AP by 0.19 points. Across a 512-image multi-task audit, it maintains 99.60% foreground segmentation agreement with the public checkpoint, with quantified normal and pointmap drift. Its 2D coordinates also lower 3D mesh error in frozen Pose2Mesh transfer, while our optional TailGuard re-cropping module cuts S2HAND-MT's severe failure rate on NewDays from 13.45% to 10.43%. S2HAND thus resolves the whole-body hand bottleneck with either exact non-hand preservation (MT) or empirically audited trade-offs (Pose).",
-  "abstract_zh": "Unified whole-body pose estimators jointly predict body, face, and hand landmarks, but often degrade on small, blurred, or occluded hands. Attaching a standalone hand specialist introduces extra detection overhead, coordinate alignment, and wrist-stitching artifacts. We introduce S2HAND, a hand-specialized Sapiens2-5B framework that preserves the native 308-keypoint output interface. Specifically, S2HAND-MT adapts a lightweight 0.87M-parameter pose branch to route 40 finger heatmaps while strictly preserving the shared Transformer, auxiliary task heads, and the other 268 body, foot, and face heatmaps. S2HAND-Pose further fine-tunes three Fisher-selected Transformer blocks (267.13M parameters), trading exact preservation for stronger hand recovery: it lifts macro AUC from 57.83% to 65.73% across HInt TEST, COCO WholeBody VAL, and FreiHAND EVAL, and surpasses HInt-adapted Hand5/HRNet and stitched Hand5 systems on all five Native Pipeline benchmarks. On COCO, S2HAND-Pose improves hand AP by 12.89 points and body-plus-foot AP by 0.19 points. Across a 512-image multi-task audit, it maintains 99.60% foreground segmentation agreement with the public checkpoint, with quantified normal and pointmap drift. Its 2D coordinates also lower 3D mesh error in frozen Pose2Mesh transfer, while our optional TailGuard re-cropping module cuts S2HAND-MT's severe failure rate on NewDays from 13.45% to 10.43%. S2HAND thus resolves the whole-body hand bottleneck with either exact non-hand preservation (MT) or empirically audited trade-offs (Pose).",
-  "tldr_zh": "Unified whole-body pose estimators jointly predict body, fac",
-  "cover_zh": "Unified whole-body pose estimators jointly predict body, fac",
+  "abstract_zh": "统一全身姿态估计器联合预测身体、面部和手部关键点，但在小而模糊或被遮挡的手部上往往性能下降。附加独立的手部专家会引入额外的检测开销、坐标对齐和手腕拼接伪影。我们提出 S2HAND，一个手部专门化的 Sapiens2-5B 框架，保留原生 308 关键点输出接口。具体而言，S2HAND-MT 采用轻量级 0.87M 参数的姿态分支来路由 40 个手指热图，同时严格保留共享 Transformer、辅助任务头和其他 268 个身体、脚部和面部热图。S2HAND-Pose 进一步微调三个 Fisher 选择的 Transformer 块（267.13M 参数），以精确保持为代价换取更强的手部恢复：在 HInt TEST、COCO WholeBody VAL 和 FreiHAND EVAL 上，宏 AUC 从 57.83% 提升至 65.73%，并在所有五个 Native Pipeline 基准上超越 HInt 适配的 Hand5/HRNet 和拼接 Hand5 系统。在 COCO 上，S2HAND-Pose 将手部 AP 提高 12.89 点，身体加脚部 AP 提高 0.19 点。在 512 张图像的多任务审计中，它与公共检查点保持 99.60% 的前景分割一致性，并量化了法线和点图漂移。其 2D 坐标还降低了冻结 Pose2Mesh 迁移中的 3D 网格误差，而我们可选的 TailGuard 重裁剪模块将 S2HAND-MT 在 NewDays 上的严重失败率从 13.45% 降至 10.43%。因此，S2HAND 通过精确的非手部保持（MT）或经验审计的权衡（Pose）解决了全身手部瓶颈。",
+  "tldr_zh": "S2HAND 通过两种策略解决全身姿态模型的手部瓶颈。",
+  "cover_zh": "全身姿态模型手部总翻车？S2HAND 两种策略精准拯救",
   "authors": [
     {
       "name": "Singyu Muk",
@@ -41,12 +41,23 @@
   "channels": [
     "loco-manip-wbc"
   ],
-  "badges": [],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    }
+  ],
   "related_links": [],
   "page_count": 39,
   "source_tags": [],
-  "score": 6,
+  "score": 31,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -61,8 +72,16 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Independent Researcher",
+    "Tsinghua University",
+    "Japan Advanced Institute of Science and Technology"
+  ],
+  "method_tags": [
+    "pose estimation",
+    "fine-tuning",
+    "hand specialization"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

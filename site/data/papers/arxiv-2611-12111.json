@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12111",
   "source": "arxiv",
   "title": "GAP: Generalized Adaptation Prior for Dexterous Piano Playing",
-  "title_zh": "GAP: Generalized Adaptation Prior for Dexterous Piano Playing",
+  "title_zh": "GAP：用于灵巧钢琴演奏的广义自适应先验",
   "abstract": "Dexterous hands enable versatile manipulation, but policies trained in simulation often degrade on hardware owing to non-idealities, and the high-dimensional action space makes real-world adaptation costly. Piano playing, which requires precise and coordinated multifinger motion, offers a representative testbed. We propose GAP (Generalized Adaptation Prior for Dexterous Piano Playing), a sample-efficient adaptation framework that learns how to adapt, rather than how to act, during simulation pretraining and transfers this adaptation prior to hardware. Between repeated executions, GAP uses feedback to adjust the actions of the next one: a gradient guidance network learns from paired executions how adjusting actions affects playing performance, and its gradients guide these adjustments. In simulation, GAP yields approximately 2.4 times the F1 scores improvement of the existing fast-adaptation baseline for dexterous piano playing under the same interaction budget. The learned prior also generalizes to musical pieces held out from pretraining. On a physical dexterous hand, the same simulation-pretrained prior improves F1 scores by 3.6%-23% across three pieces of varying difficulty after approximately 7 min of adaptation each. These results suggest a practical route to reduce the real-world interaction needed to deploy dexterous hands.",
-  "abstract_zh": "Dexterous hands enable versatile manipulation, but policies trained in simulation often degrade on hardware owing to non-idealities, and the high-dimensional action space makes real-world adaptation costly. Piano playing, which requires precise and coordinated multifinger motion, offers a representative testbed. We propose GAP (Generalized Adaptation Prior for Dexterous Piano Playing), a sample-efficient adaptation framework that learns how to adapt, rather than how to act, during simulation pretraining and transfers this adaptation prior to hardware. Between repeated executions, GAP uses feedback to adjust the actions of the next one: a gradient guidance network learns from paired executions how adjusting actions affects playing performance, and its gradients guide these adjustments. In simulation, GAP yields approximately 2.4 times the F1 scores improvement of the existing fast-adaptation baseline for dexterous piano playing under the same interaction budget. The learned prior also generalizes to musical pieces held out from pretraining. On a physical dexterous hand, the same simulation-pretrained prior improves F1 scores by 3.6%-23% across three pieces of varying difficulty after approximately 7 min of adaptation each. These results suggest a practical route to reduce the real-world interaction needed to deploy dexterous hands.",
-  "tldr_zh": "Dexterous hands enable versatile manipulation, but policies",
-  "cover_zh": "Dexterous hands enable versatile manipulation, but policies",
+  "abstract_zh": "灵巧手能够实现多样化的操作，但在仿真中训练的策略往往因非理想因素而在硬件上性能下降，且高维动作空间使得现实世界中的自适应成本高昂。钢琴演奏需要精确协调的多指运动，提供了一个代表性的测试平台。我们提出了GAP（用于灵巧钢琴演奏的广义自适应先验），一种样本高效的自适应框架，在仿真预训练期间学习如何自适应，而非如何行动，并将此自适应先验迁移到硬件。在重复执行之间，GAP利用反馈来调整下一次执行的动作：一个梯度引导网络从成对的执行中学习调整动作如何影响演奏性能，其梯度指导这些调整。在仿真中，在相同的交互预算下，GAP在灵巧钢琴演奏任务上带来的F1分数提升约为现有快速自适应基线的2.4倍。学习到的先验还能泛化到预训练中未见的乐曲。在物理灵巧手上，相同的仿真预训练先验在每首曲子约7分钟的自适应后，使三首不同难度曲目的F1分数提高了3.6%-23%。这些结果表明了一条减少部署灵巧手所需现实世界交互的实用途径。",
+  "tldr_zh": "GAP框架学习自适应先验，显著提升灵巧手钢琴演奏性能并减少现实交互需求。",
+  "cover_zh": "仿真预训练+自适应先验，灵巧手弹钢琴不再翻车！",
   "authors": [
     {
       "name": "Jinyi Chen",
@@ -67,6 +67,10 @@
   ],
   "badges": [
     {
+      "kind": "lab",
+      "label": "⭐ ZJU"
+    },
+    {
       "kind": "fresh",
       "label": "⚡ 新鲜出炉"
     }
@@ -74,8 +78,14 @@
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 22,
+  "score": 47,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ZJU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -95,13 +105,27 @@
       "hint": "PDF 8 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "灵巧手钢琴演奏的仿真预训练+真机自适应框架，属操作与sim2real交叉，方法有新意",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Zhejiang University",
+    "ZJU-Hangzhou Global Scientific and Technology Innovation Center",
+    "Mirrorme Technology Co., Ltd."
+  ],
+  "method_tags": [
+    "sim-to-real",
+    "gradient guidance network",
+    "adaptation prior"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

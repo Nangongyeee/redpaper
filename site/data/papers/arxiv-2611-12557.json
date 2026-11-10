@@ -2,11 +2,11 @@
   "id": "arxiv-2611-12557",
   "source": "arxiv",
   "title": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
-  "title_zh": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
+  "title_zh": "WanderBench：世界模型能否从视频中探索动态世界？",
   "abstract": "Video world models conditioned on an input video make it possible to explore real, recorded dynamic scenes, enabling re-shooting of footage, free-viewpoint replay, and real-to-sim environments for embodied agents. Such uses require the generated rollout to stay faithful to the recorded world, yet existing benchmarks start from a single image or a text prompt, and video-conditioned generation is evaluated mainly on perceptual quality and camera following. These evaluations do not directly assess whether exploration preserves subject identity, event progression, and scene consistency upon revisiting a location. We introduce WanderBench, a benchmark for exploring dynamic worlds from video. It comprises 745 single-shot source videos of real and AI-generated content in three difficulty tiers (3-25 s), paired with camera routes given as keyboard actions, and evaluates six dimensions with 24 human-validated sub-metrics. Benchmarking eight models, we find that as clips grow longer, models keep the static scene and visual quality but lose camera control and the source dynamics, and that none keeps revisited places consistent. We further propose WanderLand, a training-free framework that conditions each frame of a frozen model on the same-instant source and, on revisits, on its own earlier static content. WanderLand improves five models on every dimension, by up to 8.3 points in source-dynamics fidelity.",
-  "abstract_zh": "Video world models conditioned on an input video make it possible to explore real, recorded dynamic scenes, enabling re-shooting of footage, free-viewpoint replay, and real-to-sim environments for embodied agents. Such uses require the generated rollout to stay faithful to the recorded world, yet existing benchmarks start from a single image or a text prompt, and video-conditioned generation is evaluated mainly on perceptual quality and camera following. These evaluations do not directly assess whether exploration preserves subject identity, event progression, and scene consistency upon revisiting a location. We introduce WanderBench, a benchmark for exploring dynamic worlds from video. It comprises 745 single-shot source videos of real and AI-generated content in three difficulty tiers (3-25 s), paired with camera routes given as keyboard actions, and evaluates six dimensions with 24 human-validated sub-metrics. Benchmarking eight models, we find that as clips grow longer, models keep the static scene and visual quality but lose camera control and the source dynamics, and that none keeps revisited places consistent. We further propose WanderLand, a training-free framework that conditions each frame of a frozen model on the same-instant source and, on revisits, on its own earlier static content. WanderLand improves five models on every dimension, by up to 8.3 points in source-dynamics fidelity.",
-  "tldr_zh": "Video world models conditioned on an input video make it pos",
-  "cover_zh": "Video world models conditioned on an input video make it pos",
+  "abstract_zh": "以输入视频为条件的视频世界模型使得探索真实录制的动态场景成为可能，从而支持重新拍摄素材、自由视角回放以及为具身智能体构建真实到模拟的环境。这些应用要求生成的推演能够忠实于所录制的世界，然而现有的基准测试从单张图像或文本提示开始，而基于视频条件的生成主要评估感知质量和相机跟随。这些评估并未直接衡量探索是否在重访某地时保持了主体身份、事件进展和场景一致性。我们提出了WanderBench，一个用于从视频中探索动态世界的基准测试。它包含745个真实和AI生成内容的单镜头源视频，分为三个难度等级（3-25秒），并配以键盘动作给出的相机路径，通过24个人工验证的子指标评估六个维度。对八个模型的基准测试发现，随着片段变长，模型保持了静态场景和视觉质量，但失去了相机控制和源动态，并且没有一个模型能保持重访地点的一致性。我们进一步提出了WanderLand，一个无需训练的框架，它将冻结模型的每一帧条件于同一时刻的源视频，并在重访时条件于其自身早期的静态内容。WanderLand在每一个维度上提升了五个模型，在源动态保真度上最高提升了8.3分。",
+  "tldr_zh": "提出WanderBench基准和WanderLand框架，评估并提升视频世界模型探索动态世界的能力。",
+  "cover_zh": "世界模型探索动态世界？新基准揭示长视频失控，新框架让保真度飙升！",
   "authors": [
     {
       "name": "Yuhang Chen",
@@ -49,7 +49,8 @@
   ],
   "channels": [
     "manipulation",
-    "world-model"
+    "world-model",
+    "sim2real"
   ],
   "badges": [
     {
@@ -66,7 +67,7 @@
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
-      "hint": "频道关键词命中 4 个（embodied agent、world model、world models、video world model）"
+      "hint": "频道关键词命中 5 个（embodied agent、world model、world models、video world model）"
     },
     {
       "id": "freshness",
@@ -84,12 +85,24 @@
       "id": "cross_channel",
       "label": "跨多个方向",
       "points": 5,
-      "hint": "同时命中 2 个频道"
+      "hint": "同时命中 3 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "视频世界模型探索动态场景的基准与免训练框架，直接服务具身仿真与规划。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Huazhong University of Science and Technology"
+  ],
+  "method_tags": [
+    "world model",
+    "video-conditioned generation",
+    "benchmark"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
