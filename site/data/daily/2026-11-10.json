@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-10",
+  "count": 1,
+  "papers": [
+    {
+      "id": "arxiv-2611-13499",
+      "source": "arxiv",
+      "title": "DeRep: Learning Depth Representations for End-to-End Navigation in Cluttered Environments",
+      "title_zh": "DeRep：学习深度表示用于杂乱环境中的端到端导航",
+      "tldr_zh": "DeRep结合可达性监督与深度重建，提升导航表示性能与迁移能力。",
+      "cover_zh": "冻结编码器直接部署！这个表示让导航零样本迁移到真机",
+      "abstract_zh": "杂乱环境中的端到端导航依赖于紧凑的视觉表示来支持避障和目标导向运动。现有方法通常将这些表示与策略联合学习或通过观测重建来学习，这并未明确指定表示应保留哪些信息。此外，它们通常使用单一的下游策略学习器进行评估，尽管表示的优势可能取决于策略的学习方式。因此，不同的表示学习目标如何影响下游导航性能和鲁棒性仍不清楚。本文提出DeRep，一种面向导航的表示学习方法，它将局部鸟瞰图可达性监督与深度重建相结合。为了在受控条件下比较表示目标，我们使用通用架构预训练编码器，并在下游学习期间冻结它们。我们使用线性策略探针、流匹配模仿学习和PPO强化学习来评估这些表示。DeRep实现了最低的线性策略探针预测误差，并在所有六种测试的PPO条件下优于仅重建。在模仿学习中，基于可达性的目标均比仅重建获得更高的平均成功率，而仅可达性和联合目标的平均成功率相似。这些结果表明，在不同的下游学习方法和评估条件下，将可达性监督纳入深度表示预训练具有一致的益处。我们进一步在Gazebo和物理四旋翼上部署了带有冻结DeRep编码器的PPO策略，无需微调，展示了其零样本模拟到模拟和模拟到现实迁移的能力。",
+      "authors": [
+        "Hanyu Jin",
+        "Kenji Shimada"
+      ],
+      "authors_all": [
+        "Hanyu Jin",
+        "Kenji Shimada"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-10",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13499.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13499-p2.jpg",
+        "assets/img/covers/arxiv-2611-13499-p3.jpg",
+        "assets/img/covers/arxiv-2611-13499-p4.jpg"
+      ],
+      "arxiv_id": "2611.13499",
+      "abs_url": "http://arxiv.org/abs/2611.13499v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13499v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 49,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "sim2real",
+        "reason": "面向杂乱环境的端到端导航表征学习，含深度重建与可达性监督，并完成零样本sim-to-real真机部署，属具身导航与迁移方向。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "深度表征学习",
+        "可达性监督",
+        "强化学习"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "Gazebo"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}

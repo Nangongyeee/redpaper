@@ -1,0 +1,129 @@
+{
+  "id": "arxiv-2611-02171",
+  "source": "arxiv_discover",
+  "title": "GoalDex: Learning Image-Goal-Conditioned Policies for Dexterous In-Hand Manipulation",
+  "title_zh": "GoalDex：学习图像目标条件的灵巧手内操作策略",
+  "abstract": "Dexterous in-hand manipulation is commonly formulated around explicit object pose estimation, yet reliable pose tracking is challenging under severe hand-object occlusions and often requires object-specific supervision. This dependence creates a bottleneck between perception and control that can limit robustness and scalability. We present an end-to-end visuomotor framework for dexterous in-hand reorientation that operates on RGB observations and proprioception without intermediate pose estimation. Our approach jointly learns visual representations and control policies through behavior distillation from privileged state teachers and auxiliary reconstruction objectives. Furthermore, we introduce image-goal-conditioned reorientation, allowing desired object configurations to be specified directly through images rather than canonical pose representations. We evaluate our approach across a diverse set of object geometries and instances in simulation, where it consistently outperforms pose-based methods and policies built on pretrained visual encoders. Finally, we demonstrate direct sim-to-real transfer of a single image-goal-conditioned policy across five real-world objects, showing that accurate dexterous reorientation can be achieved without explicit pose estimation. For videos and code release, please refer to the project website: https://rffr.leggedrobotics.com/works/goaldex/",
+  "abstract_zh": "灵巧手内操作通常围绕显式物体姿态估计来构建，但在严重的手-物遮挡下，可靠的姿态跟踪颇具挑战，且往往需要针对特定物体的监督。这种依赖造成了感知与控制之间的瓶颈，可能限制鲁棒性和可扩展性。我们提出了一种端到端的视觉运动框架，用于灵巧手内重定向，该框架直接基于RGB观测和本体感觉运行，无需中间姿态估计。我们的方法通过从特权状态教师进行行为蒸馏以及辅助重建目标，联合学习视觉表示和控制策略。此外，我们引入了图像目标条件的重定向，允许通过图像直接指定期望的物体构型，而非规范姿态表示。我们在仿真中跨多种物体几何形状和实例评估了我们的方法，它始终优于基于姿态的方法和基于预训练视觉编码器的策略。最后，我们展示了单个图像目标条件策略在五个真实世界物体上的直接仿真到现实迁移，表明无需显式姿态估计即可实现准确的灵巧重定向。视频和代码发布请参考项目网站：https://rffr.leggedrobotics.com/works/goaldex/",
+  "tldr_zh": "无需姿态估计，用图像目标实现灵巧手内重定向。",
+  "cover_zh": "不用姿态估计！这个框架让灵巧手看图就能转物体",
+  "authors": [
+    {
+      "name": "Arjun Bhardwaj",
+      "affiliation": ""
+    },
+    {
+      "name": "Mayank Mittal",
+      "affiliation": ""
+    },
+    {
+      "name": "Maximum Wilder-Smith",
+      "affiliation": ""
+    },
+    {
+      "name": "Vaishakh Patil",
+      "affiliation": ""
+    },
+    {
+      "name": "Marco Hutter",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-01",
+  "updated": "2026-11-01",
+  "arxiv_id": "2611.02171",
+  "pdf_url": "https://arxiv.org/pdf/2611.02171v1",
+  "abs_url": "http://arxiv.org/abs/2611.02171v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-02171.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-02171-p2.jpg",
+    "assets/img/covers/arxiv-2611-02171-p3.jpg",
+    "assets/img/covers/arxiv-2611-02171-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ NVIDIA"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ ETH (RSL)"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ Marco Hutter"
+    }
+  ],
+  "related_links": [],
+  "page_count": 19,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 60,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NVIDIA” 关键词"
+    },
+    {
+      "id": "key_author",
+      "label": "关键作者上榜",
+      "points": 20,
+      "hint": "作者列表里有 Marco Hutter"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、dexterous、in-hand、in-hand manipulation）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 19 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "灵巧手在手机器人操作，图像目标条件策略，行为蒸馏+sim2real，属manipulation方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "ETH Zurich",
+    "NVIDIA"
+  ],
+  "method_tags": [
+    "behavior distillation",
+    "sim-to-real",
+    "visuomotor policy"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=1iczKe9gZ6o",
+      "embed_url": "https://www.youtube.com/embed/1iczKe9gZ6o",
+      "title": "GoalDex",
+      "source": "project_page"
+    }
+  ],
+  "github": {}
+}

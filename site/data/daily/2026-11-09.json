@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "count": 32,
+  "count": 38,
   "papers": [
     {
       "id": "arxiv-2611-12177",
@@ -149,8 +149,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-09",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -229,8 +229,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-09",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -452,8 +452,8 @@
       "primary_category": "cs.CV",
       "published": "2026-11-09",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -730,6 +730,78 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13113",
+      "source": "arxiv",
+      "title": "Building World Models from Intrinsic Motivation",
+      "title_zh": "从内在动机构建世界模型",
+      "tldr_zh": "集成24种内在动机训练世界模型，好奇心加观测重建表现最佳。",
+      "cover_zh": "24种内在动机大乱斗｜好奇心+观测重建居然最强？",
+      "abstract_zh": "在缺乏外部奖励或任务监督的情况下，人类行为由内在动机引导——这些神经信号驱动好奇心、创造力、玩耍以及其他智能的基本方面。内在动机在构建能够泛化和适应的鲁棒世界模型中起着重要的发展作用。然而，现有研究尚未揭示广泛的内在动机如何与世界模型表示学习相互作用以支持下游控制。这限制了我们对哪些内在收集的经验能构建可重用模型的理解。为了填补这些空白，我们将24种内在目标（包括已有方法和涵盖好奇心、熵和能力的显式变体）集成到一个共同的基于模型的强化学习框架中。我们通过零样本、少样本和多任务控制在移动、操作和开放式游戏环境中评估它们构建的世界模型，并使用三种表示学习策略：观测重建、潜在预测和冗余减少。结合观测重建的好奇心驱动探索产生了最强的总体家族特征，尽管最佳个体配对取决于实验。在组合视觉任务中，源自情景和新奇性（为世界模型的通用循环状态提供补充记忆）的内在动机实现了最佳的零样本迁移和少样本适应。这些发现促使我们联合设计内在动机和表示学习。我们的结果表明，世界模型是衡量内在动机经验质量的有力工具，并将内在动机定位为自主构建世界模型的关键要素。",
+      "authors": [
+        "Reece Keller",
+        "Declan Kutscher",
+        "Xaq Pitkow"
+      ],
+      "authors_all": [
+        "Reece Keller",
+        "Declan Kutscher",
+        "Xaq Pitkow",
+        "Aran Nayebi"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-09",
+      "channels": [
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13113.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13113-p2.jpg",
+        "assets/img/covers/arxiv-2611-13113-p3.jpg",
+        "assets/img/covers/arxiv-2611-13113-p4.jpg"
+      ],
+      "arxiv_id": "2611.13113",
+      "abs_url": "http://arxiv.org/abs/2611.13113v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13113v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 49,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "系统研究内在动机与世界模型表征学习的交互，覆盖locomotion/manipulation控制，对具身世界模型构建有直接参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University",
+        "University of Maryland, College Park"
+      ],
+      "method_tags": [
+        "intrinsic motivation",
+        "world model",
+        "model-based RL"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1102,6 +1174,80 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13160",
+      "source": "arxiv",
+      "title": "How Much of Your VLA Is kNN",
+      "title_zh": "你的VLA有多少是kNN？",
+      "tldr_zh": "无需训练，检索演示即可在LIBERO上达到91.7%成功率。",
+      "cover_zh": "VLA模型强在哪？检索演示就能打平手！",
+      "abstract_zh": "视觉-语言-动作（VLA）模型在LIBERO模拟基准上的成功率已超过95%，但这一性能在多大程度上需要泛化到训练演示之外仍不清楚。在这项工作中，我们表明，检索附近的演示并复用其动作块，无需策略训练即可在LIBERO上达到91.7%的成功率。在LIBERO-Plus扰动下，检索方法在所有评估策略中下降最小。在九个公开可用的VLA上，微调主要使视觉-语言骨干成为更好的检索键，且VLA的动作仍接近演示。此外，我们引入了局部动作一致性（LAC），一种离线度量，用于衡量表示空间中附近的观测是否也与相似的未来动作相关联。我们表明，LAC跟踪检索的成功率，并能指导检索键的训练。我们的评估和源代码可在https://github.com/sereact/lerobot_knn获取。",
+      "authors": [
+        "Denis Grachev",
+        "Damien LaRocque",
+        "Omar Moured"
+      ],
+      "authors_all": [
+        "Denis Grachev",
+        "Damien LaRocque",
+        "Omar Moured"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-09",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13160.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13160-p2.jpg",
+        "assets/img/covers/arxiv-2611-13160-p3.jpg",
+        "assets/img/covers/arxiv-2611-13160-p4.jpg"
+      ],
+      "arxiv_id": "2611.13160",
+      "abs_url": "http://arxiv.org/abs/2611.13160v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13160v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "揭示VLA在LIBERO高分多来自近邻检索而非泛化，提出LAC指标，对VLA评测与训练有重要警示价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Sereact GmbH",
+        "Karlsruher Institut für Technologie"
+      ],
+      "method_tags": [
+        "retrieval",
+        "k-NN",
+        "VLA"
+      ],
+      "platform": [
+        "Franka"
+      ],
+      "sim_stack": [
+        "LIBERO"
+      ],
+      "method_family": "",
+      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1517,6 +1663,75 @@
       "sim_stack": [
         "RoboTwin 2.0"
       ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13229",
+      "source": "arxiv",
+      "title": "Incorporating World Models in Decision Making for Next Best View Selection in Active Sensing",
+      "title_zh": "将世界模型融入决策以用于主动感知中的下一最佳视角选择",
+      "tldr_zh": "提出传感器返回适配器，使预训练世界模型适应部署条件，提升视角选择效率。",
+      "cover_zh": "预训练世界模型直接复用？这个适配器让机器人少采60%数据还覆盖更全",
+      "abstract_zh": "高效机器人三维重建需要在少量物理采集下选择能贡献新表面测量的视角。预训练世界模型可以指导这一选择，但预测的表面在部署传感器的工作条件下可能无法产生有效的深度测量。我们提出一种用于下一最佳视角选择的部署自适应方法，该方法从有限的局部校准数据中学习传感器返回适配器，同时保持预训练预测器固定。适配器估计每个预测表面上的测量丢失，使选择方法倾向于可能填补测量重建中缺失的视角。在结构化光传感器的真实机器人实验中，自适应方法以比标称选择少60%的采集次数实现了更高的测量表面覆盖率。自适应方法恢复了一个标称方法反复瞄准但未能测量的表面区域。这些结果表明，机器人可以在数据稀缺的环境中重用预训练预测模型，同时使其决策适应当地工作条件。",
+      "authors": [
+        "Nikita Sarawgi",
+        "Omey M. Manyar",
+        "Satyandra K. Gupta"
+      ],
+      "authors_all": [
+        "Nikita Sarawgi",
+        "Omey M. Manyar",
+        "Satyandra K. Gupta"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-09",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13229.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13229-p2.jpg",
+        "assets/img/covers/arxiv-2611-13229-p3.jpg",
+        "assets/img/covers/arxiv-2611-13229-p4.jpg"
+      ],
+      "arxiv_id": "2611.13229",
+      "abs_url": "http://arxiv.org/abs/2611.13229v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13229v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 29,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "world-model",
+        "reason": "利用预训练世界模型指导主动感知选视角，真机验证，属世界模型在机器人决策中的应用。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "GrayMatter Robotics Inc."
+      ],
+      "method_tags": [
+        "World Model",
+        "Next-Best-View Selection",
+        "Active Sensing"
+      ],
+      "platform": [],
+      "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
       "training_summary": "",
@@ -1970,6 +2185,82 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-13370",
+      "source": "arxiv",
+      "title": "AHEADance: Anticipatory Humanoid Dance from Streaming Audio",
+      "title_zh": "AHEADance：基于流式音频的预判式人形机器人舞蹈",
+      "tldr_zh": "预判未来音乐的人形机器人流式舞蹈生成器，同步性高且动作自然。",
+      "cover_zh": "人形机器人跳舞新突破｜没听到音乐也能提前卡点！",
+      "abstract_zh": "人形机器人伴随流式音乐跳舞时，必须在听到与动作块对应的音乐之前就确定每个动作块，并且必须从已经确定的动作继续。我们提出 AHEADance，一种机器人原生的流式舞蹈生成器，由全身跟踪器在人形机器人上执行。ListenAhead 根据已听到的音乐和冻结音乐模型对即将到来的音乐的预测来条件化每个动作块，这些预测与目标时间对齐并按可靠性加权。这些预测几乎和实际未来一样好地携带即将到来的节拍时序；有了它们，生成器与音乐更同步，并将更多运动能量集中在歌曲的节拍频率上。Commit Forcing 训练模型从自己已确定的动作块继续，同时更新潜在历史和下一个动作块的解码边界；它将低活动从 83.5% 降低到 10.3%，达到真实舞蹈的水平。三个音乐评估器分别在真实 G1 舞蹈上验证，测试同步性、歌曲和风格。在物理 Unitree G1 上，它随着音乐播放跳舞，并在音乐停止时静止，没有摔倒。项目页面：https://ihcr.github.io/AHEADance",
+      "authors": [
+        "Tianhu Peng",
+        "Yukun Wang",
+        "Lingfan Bao"
+      ],
+      "authors_all": [
+        "Tianhu Peng",
+        "Yukun Wang",
+        "Lingfan Bao",
+        "Yiyang Jia",
+        "Chengxu Zhou"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-09",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13370.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13370-p2.jpg",
+        "assets/img/covers/arxiv-2611-13370-p3.jpg",
+        "assets/img/covers/arxiv-2611-13370-p4.jpg"
+      ],
+      "arxiv_id": "2611.13370",
+      "abs_url": "http://arxiv.org/abs/2611.13370v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13370v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "loco-manip-wbc",
+        "reason": "人形G1全身舞蹈生成与跟踪，属全身动作模仿/生成，有流式生成与Commit Forcing方法新意。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University College London"
+      ],
+      "method_tags": [
+        "Streaming Generation",
+        "Whole-body Tracking"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=WqwX6balBUI",
+          "embed_url": "https://www.youtube.com/embed/WqwX6balBUI",
+          "title": "AHEADance",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-12113",
       "source": "arxiv",
       "title": "Motion Belief Action: From a Visual Scene Map to Physical Decisions",
@@ -2258,6 +2549,130 @@
         "RL",
         "On-Policy Distillation",
         "GRPO"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13268",
+      "source": "arxiv",
+      "title": "Force-Closure Condition for Cooperative Multi-robot Pushing of Rectangular Objects",
+      "title_zh": "矩形物体多机器人协同推动的力闭合条件",
+      "tldr_zh": "推导矩形物体四接触力闭合充要条件，并用于轨迹跟踪。",
+      "cover_zh": "四个接触点就能判断力闭合？这个公式让多机器人推箱子更稳！",
+      "abstract_zh": "在协同物体操作中，推动接触点的位置决定了能否实现力闭合，以及智能体能否相应地在物体上生成任意力和力矩。本研究针对日常环境中常见的矩形物体，在四个无摩擦推动接触下，推导出了平面力闭合的一个充要闭式条件。对于长度为 $b$、宽度为 $a$ 的矩形，力闭合成立当且仅当 $(l_1+l_3-b)(l_2+l_4-a)<0$，其中 $l_1,l_2,l_3,l_4$ 是四个边缘接触位置。该条件与物体的质心无关，并用于在接触力分配之前验证接触配置。当条件不满足时，两个因子的符号指示应调整哪一对相对接触。然后，该条件和调整规则被集成到一个全位姿轨迹跟踪框架中，作为几何可行性层，以展示其在控制中的应用。静态力旋量可行性测试验证了所提出的条件，而窄通道浮体仿真表明，保持力闭合配置可将 $x$、$y$ 和解缠偏航角的 RMS 跟踪误差分别从 $12.05$ 米、$18.11$ 米和 $535.96^\\circ$ 降低到 $2.24$ 米、$2.66$ 米和 $2.69^\\circ$。",
+      "authors": [
+        "Duy Anh Nguyen",
+        "Trung Dung Ngo"
+      ],
+      "authors_all": [
+        "Duy Anh Nguyen",
+        "Trung Dung Ngo"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-09",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13268.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13268-p2.jpg",
+        "assets/img/covers/arxiv-2611-13268-p3.jpg",
+        "assets/img/covers/arxiv-2611-13268-p4.jpg"
+      ],
+      "arxiv_id": "2611.13268",
+      "abs_url": "http://arxiv.org/abs/2611.13268v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13268v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "manipulation",
+        "reason": "多机器人协同推动矩形物体的力闭合条件推导，属操作领域理论工作，有控制框架验证。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Prince Edward Island"
+      ],
+      "method_tags": [
+        "force closure",
+        "cooperative manipulation",
+        "trajectory tracking"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13311",
+      "source": "arxiv",
+      "title": "One Trajectory, Two Requirements: Accuracy and Local Stability in Euler Sampling for Flow Matching Policies",
+      "title_zh": "一条轨迹，两个要求：流匹配策略中欧拉采样的准确性与局部稳定性",
+      "tldr_zh": "流匹配策略中，欧拉采样步数需同时满足轨迹准确性和局部稳定性，但两者要求可能不同。",
+      "cover_zh": "步数选对就够？流匹配策略的稳定性暗藏玄机",
+      "abstract_zh": "流匹配机器人策略通常使用从离线准确性扫描中选出的固定欧拉步数。然而，在推理时，每个策略输入（视觉观察、机器人状态和语言指令）连同源噪声抽样一起定义了不同的ODE轨迹和局部雅可比序列。我们探究一个能准确跟随名义噪声到动作轨迹的步数是否对于其周围强收缩方向仍然过于粗糙。一个精确的双坐标系和六个训练流模型的受控增强表明，即使原始学习传输不变，轨迹准确性和局部欧拉稳定性也可能施加不同的步数要求。然后，我们研究了一个冻结的π_{0.5}-LIBERO检查点，而不修改其权重或动作动力学。在来自10个LIBERO-10任务的30个策略输入中，雅可比在动作端点附近表现出强收缩方向，但没有采样模式违反欧拉非扩张条件。在其中五个输入上，准确性扫描在5%终端误差下需要4-9个欧拉步，在1%下需要87-112步。因此，这五个配对案例与在此局部准则下受准确性限制而非稳定性限制的采样一致，而受控实验说明了为什么仅端点准确性不能排除单独的稳定性要求。",
+      "authors": [
+        "Mahindra Rautela"
+      ],
+      "authors_all": [
+        "Mahindra Rautela"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-09",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13311.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13311-p2.jpg",
+        "assets/img/covers/arxiv-2611-13311-p3.jpg",
+        "assets/img/covers/arxiv-2611-13311-p4.jpg"
+      ],
+      "arxiv_id": "2611.13311",
+      "abs_url": "http://arxiv.org/abs/2611.13311v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13311v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "manipulation",
+        "reason": "研究flow matching策略的Euler采样步数与局部稳定性，属操作策略推理优化，对VLA部署有参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Los Alamos National Laboratory"
+      ],
+      "method_tags": [
+        "Flow Matching",
+        "Euler Sampling",
+        "VLA"
       ],
       "platform": [],
       "sim_stack": [],

@@ -2,11 +2,11 @@
   "id": "arxiv-2610-05994",
   "source": "arxiv",
   "title": "How (and How Not) to Use Data Augmentation in VLA Post-Training",
-  "title_zh": "How (and How Not) to Use Data Augmentation in VLA Post-Training",
+  "title_zh": "如何（以及如何不）在 VLA 后训练中使用数据增强",
   "abstract": "Vision-language-action (VLA) models currently demonstrate strong performance in a wide range of real-world robotics tasks. However, they often still lack the generalization ability to handle large visual out-of-distribution shifts. Post-training of VLAs with reinforcement learning (RL) has been shown to benefit robustness, but significant room for improvement remains. In this work, we systematically study the effect of image augmentation on VLA post-training. We find that it is crucial to augment only the critic module during RL updates, while leaving the actor's input clean during both rollouts and updates. For $π_{0.5}$ and GR00T N1.5 this raises out-of-distribution success on LIBERO-Plus by $7.8$ and $10.0$ points respectively, while augmenting the actor collapses training entirely. We investigate a range of augmentation types and strengths, and provide practical recommendations for improving generalization in VLA post-training.",
-  "abstract_zh": "Vision-language-action (VLA) models currently demonstrate strong performance in a wide range of real-world robotics tasks. However, they often still lack the generalization ability to handle large visual out-of-distribution shifts. Post-training of VLAs with reinforcement learning (RL) has been shown to benefit robustness, but significant room for improvement remains. In this work, we systematically study the effect of image augmentation on VLA post-training. We find that it is crucial to augment only the critic module during RL updates, while leaving the actor's input clean during both rollouts and updates. For $π_{0.5}$ and GR00T N1.5 this raises out-of-distribution success on LIBERO-Plus by $7.8$ and $10.0$ points respectively, while augmenting the actor collapses training entirely. We investigate a range of augmentation types and strengths, and provide practical recommendations for improving generalization in VLA post-training.",
-  "tldr_zh": "Vision-language-action (VLA) models currently demonstrate st",
-  "cover_zh": "Vision-language-action (VLA) models currently demonstrate st",
+  "abstract_zh": "视觉-语言-动作（VLA）模型目前在广泛的真实世界机器人任务中表现出强大性能。然而，它们往往仍缺乏处理大幅视觉分布外偏移的泛化能力。用强化学习（RL）对 VLA 进行后训练已被证明有助于提升鲁棒性，但仍有显著改进空间。在本工作中，我们系统研究了图像增强对 VLA 后训练的影响。我们发现，在 RL 更新期间仅对 critic 模块进行增强至关重要，而在 rollout 和更新期间保持 actor 的输入干净。对于 $π_{0.5}$ 和 GR00T N1.5，这分别将 LIBERO-Plus 上的分布外成功率提高了 $7.8$ 和 $10.0$ 个百分点，而增强 actor 则会导致训练完全崩溃。我们研究了一系列增强类型和强度，并为提升 VLA 后训练中的泛化能力提供了实用建议。",
+  "tldr_zh": "仅增强 critic 模块可提升 VLA 后训练泛化，增强 actor 则导致训练崩溃。",
+  "cover_zh": "只增强 critic 不碰 actor｜VLA 后训练泛化直接起飞",
   "authors": [
     {
       "name": "Bram Grooten",

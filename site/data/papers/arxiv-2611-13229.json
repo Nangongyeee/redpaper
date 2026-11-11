@@ -1,0 +1,106 @@
+{
+  "id": "arxiv-2611-13229",
+  "source": "arxiv",
+  "title": "Incorporating World Models in Decision Making for Next Best View Selection in Active Sensing",
+  "title_zh": "将世界模型融入决策以用于主动感知中的下一最佳视角选择",
+  "abstract": "Efficient robotic 3D reconstruction requires selecting views that contribute new surface measurements with few physical captures. Pretrained world models can guide this choice, but a predicted surface may not produce valid depth measurements under the operating conditions of the deployed sensor. We present a deployment adaptation methodology for next-best-view selection that learns a sensor-return adapter from limited local calibration data while keeping the pretrained predictor fixed. The adapter estimates measurement dropout over each predicted surface, allowing the selection method to favor views likely to fill gaps in the measured reconstruction. In a real-robot experiment with a structured-light sensor, the adapted method achieves higher measured surface coverage with 60% fewer captures than nominal selection. The adapted method recovers a surface region that the nominal method repeatedly targets but fails to measure. These results suggest that robots can reuse pretrained predictive models while adapting their decisions to local operating conditions in data-scarce environments.",
+  "abstract_zh": "高效机器人三维重建需要在少量物理采集下选择能贡献新表面测量的视角。预训练世界模型可以指导这一选择，但预测的表面在部署传感器的工作条件下可能无法产生有效的深度测量。我们提出一种用于下一最佳视角选择的部署自适应方法，该方法从有限的局部校准数据中学习传感器返回适配器，同时保持预训练预测器固定。适配器估计每个预测表面上的测量丢失，使选择方法倾向于可能填补测量重建中缺失的视角。在结构化光传感器的真实机器人实验中，自适应方法以比标称选择少60%的采集次数实现了更高的测量表面覆盖率。自适应方法恢复了一个标称方法反复瞄准但未能测量的表面区域。这些结果表明，机器人可以在数据稀缺的环境中重用预训练预测模型，同时使其决策适应当地工作条件。",
+  "tldr_zh": "提出传感器返回适配器，使预训练世界模型适应部署条件，提升视角选择效率。",
+  "cover_zh": "预训练世界模型直接复用？这个适配器让机器人少采60%数据还覆盖更全",
+  "authors": [
+    {
+      "name": "Nikita Sarawgi",
+      "affiliation": ""
+    },
+    {
+      "name": "Omey M. Manyar",
+      "affiliation": ""
+    },
+    {
+      "name": "Satyandra K. Gupta",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "arxiv_id": "2611.13229",
+  "pdf_url": "https://arxiv.org/pdf/2611.13229v1",
+  "abs_url": "http://arxiv.org/abs/2611.13229v1",
+  "venue": "CoRL 2026",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13229.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13229-p2.jpg",
+    "assets/img/covers/arxiv-2611-13229-p3.jpg",
+    "assets/img/covers/arxiv-2611-13229-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 CoRL 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 6,
+  "source_tags": [],
+  "score": 29,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（world model、world models）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 6 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「CoRL 2026」收录"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "world-model",
+    "reason": "利用预训练世界模型指导主动感知选视角，真机验证，属世界模型在机器人决策中的应用。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "GrayMatter Robotics Inc."
+  ],
+  "method_tags": [
+    "World Model",
+    "Next-Best-View Selection",
+    "Active Sensing"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

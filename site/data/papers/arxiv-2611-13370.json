@@ -1,0 +1,114 @@
+{
+  "id": "arxiv-2611-13370",
+  "source": "arxiv",
+  "title": "AHEADance: Anticipatory Humanoid Dance from Streaming Audio",
+  "title_zh": "AHEADance：基于流式音频的预判式人形机器人舞蹈",
+  "abstract": "A humanoid that dances to streamed music must commit each motion chunk before it has heard the music that chunk accompanies, and must continue from motion it has already committed. We present AHEADance, a robot-native streaming dance generator executed on a humanoid robot by a whole-body tracker. ListenAhead conditions each chunk on heard music and a frozen music model's forecasts of the coming music, aligned to their target times and weighted by reliability. The forecasts carry the timing of upcoming beats almost as well as the actual future; with them, the generator is better synchronized with the music and concentrates more motion energy at its song's beat frequency. Commit Forcing trains continuation from the model's own committed chunks, updating both the latent history and the decoded boundary of the next chunk; it reduces low activity from 83.5% to 10.3%, the level of real dance. Three music evaluators, each validated on real G1 dance, test synchronization, song and style. On a physical Unitree G1, it dances while the music plays and comes to rest when it stops, without a fall. Project page: https://ihcr.github.io/AHEADance",
+  "abstract_zh": "人形机器人伴随流式音乐跳舞时，必须在听到与动作块对应的音乐之前就确定每个动作块，并且必须从已经确定的动作继续。我们提出 AHEADance，一种机器人原生的流式舞蹈生成器，由全身跟踪器在人形机器人上执行。ListenAhead 根据已听到的音乐和冻结音乐模型对即将到来的音乐的预测来条件化每个动作块，这些预测与目标时间对齐并按可靠性加权。这些预测几乎和实际未来一样好地携带即将到来的节拍时序；有了它们，生成器与音乐更同步，并将更多运动能量集中在歌曲的节拍频率上。Commit Forcing 训练模型从自己已确定的动作块继续，同时更新潜在历史和下一个动作块的解码边界；它将低活动从 83.5% 降低到 10.3%，达到真实舞蹈的水平。三个音乐评估器分别在真实 G1 舞蹈上验证，测试同步性、歌曲和风格。在物理 Unitree G1 上，它随着音乐播放跳舞，并在音乐停止时静止，没有摔倒。项目页面：https://ihcr.github.io/AHEADance",
+  "tldr_zh": "预判未来音乐的人形机器人流式舞蹈生成器，同步性高且动作自然。",
+  "cover_zh": "人形机器人跳舞新突破｜没听到音乐也能提前卡点！",
+  "authors": [
+    {
+      "name": "Tianhu Peng",
+      "affiliation": ""
+    },
+    {
+      "name": "Yukun Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Lingfan Bao",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiyang Jia",
+      "affiliation": ""
+    },
+    {
+      "name": "Chengxu Zhou",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "arxiv_id": "2611.13370",
+  "pdf_url": "https://arxiv.org/pdf/2611.13370v1",
+  "abs_url": "http://arxiv.org/abs/2611.13370v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13370.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13370-p2.jpg",
+    "assets/img/covers/arxiv-2611-13370-p3.jpg",
+    "assets/img/covers/arxiv-2611-13370-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 12,
+  "source_tags": [],
+  "score": 22,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（whole-body、humanoid robot、unitree g1）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 12 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "人形G1全身舞蹈生成与跟踪，属全身动作模仿/生成，有流式生成与Commit Forcing方法新意。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University College London"
+  ],
+  "method_tags": [
+    "Streaming Generation",
+    "Whole-body Tracking"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [
+    {
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=WqwX6balBUI",
+      "embed_url": "https://www.youtube.com/embed/WqwX6balBUI",
+      "title": "AHEADance",
+      "source": "project_page"
+    }
+  ],
+  "github": {}
+}

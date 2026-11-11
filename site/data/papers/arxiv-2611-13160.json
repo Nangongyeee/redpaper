@@ -1,0 +1,119 @@
+{
+  "id": "arxiv-2611-13160",
+  "source": "arxiv",
+  "title": "How Much of Your VLA Is kNN",
+  "title_zh": "你的VLA有多少是kNN？",
+  "abstract": "Vision-language-action (VLA) models now exceed 95% success on the LIBERO simulation benchmark, yet it remains unclear how much of this performance requires generalization beyond the training demonstrations. In this work, we show that retrieving nearby demonstrations and reusing their action chunks achieves a success rate of 91.7 % on LIBERO without policy training. Under LIBERO-Plus perturbations, retrieval shows the smallest drop of all evaluated policies. Across nine publicly available VLAs, fine-tuning mostly makes the vision-language backbone a better retrieval key, and the actions of the VLAs remain close to the demonstrations. In addition, we introduce Local Action Consistency (LAC), an offline metric that measures whether nearby observations in representation space are also associated with similar future actions. We show that LAC tracks the success rate of retrieval and can guide the training of a retrieval key. Our evaluation and source code are available at https://github.com/sereact/lerobot_knn.",
+  "abstract_zh": "视觉-语言-动作（VLA）模型在LIBERO模拟基准上的成功率已超过95%，但这一性能在多大程度上需要泛化到训练演示之外仍不清楚。在这项工作中，我们表明，检索附近的演示并复用其动作块，无需策略训练即可在LIBERO上达到91.7%的成功率。在LIBERO-Plus扰动下，检索方法在所有评估策略中下降最小。在九个公开可用的VLA上，微调主要使视觉-语言骨干成为更好的检索键，且VLA的动作仍接近演示。此外，我们引入了局部动作一致性（LAC），一种离线度量，用于衡量表示空间中附近的观测是否也与相似的未来动作相关联。我们表明，LAC跟踪检索的成功率，并能指导检索键的训练。我们的评估和源代码可在https://github.com/sereact/lerobot_knn获取。",
+  "tldr_zh": "无需训练，检索演示即可在LIBERO上达到91.7%成功率。",
+  "cover_zh": "VLA模型强在哪？检索演示就能打平手！",
+  "authors": [
+    {
+      "name": "Denis Grachev",
+      "affiliation": ""
+    },
+    {
+      "name": "Damien LaRocque",
+      "affiliation": ""
+    },
+    {
+      "name": "Omar Moured",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "arxiv_id": "2611.13160",
+  "pdf_url": "https://arxiv.org/pdf/2611.13160v1",
+  "abs_url": "http://arxiv.org/abs/2611.13160v1",
+  "venue": "CoRL 2026",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13160.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13160-p2.jpg",
+    "assets/img/covers/arxiv-2611-13160-p3.jpg",
+    "assets/img/covers/arxiv-2611-13160-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 CoRL 2026"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 21,
+  "source_tags": [],
+  "score": 37,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（vision-language-action、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 21 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「CoRL 2026」收录"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "揭示VLA在LIBERO高分多来自近邻检索而非泛化，提出LAC指标，对VLA评测与训练有重要警示价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Sereact GmbH",
+    "Karlsruher Institut für Technologie"
+  ],
+  "method_tags": [
+    "retrieval",
+    "k-NN",
+    "VLA"
+  ],
+  "platform": [
+    "Franka"
+  ],
+  "sim_stack": [
+    "LIBERO"
+  ],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
