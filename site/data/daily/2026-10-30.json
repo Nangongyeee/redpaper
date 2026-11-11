@@ -3,6 +3,77 @@
   "count": 52,
   "papers": [
     {
+      "id": "arxiv-2610-42097",
+      "source": "arxiv",
+      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints",
+      "title_zh": "ROOF：学习在头顶约束下的人形机器人跌倒恢复",
+      "tldr_zh": "强化学习让人形机器人在头顶障碍下自主恢复跌倒。",
+      "cover_zh": "头顶有障碍也能爬起来？人形机器人新策略成功率惊人",
+      "abstract_zh": "跌倒的人形机器人若位于头顶障碍物下方，会面临一个耦合的恢复问题：它必须在为稳定起身组织支撑的同时创造间隙，因为在腾出空间之前尝试站立可能会进一步增加障碍。我们提出了一种带有接触支撑几何逃逸引导的强化学习方法，该方法奖励机器人逐步减少与障碍物的重叠，而不规定逃逸路径。为此，我们提出了一种学习到的运动先验，结合依赖于姿态的支撑和关节失速成本，来塑造一个单一策略，该策略仅使用本体感觉就能学习何时清除障碍、如何建立支撑以及何时完成起身。在仿真中，对于只能被抬起的板子，该方法在88.5%的试验中成功恢复，而没有几何引导时仅为18.9%；对于尺寸、质量和位置随机化的自由板子，成功率为98.6%。在Unitree G1上，部署的策略在七个真实世界障碍场景（包括训练中未出现的家具和多物体布置）的150次尝试中成功恢复了95次。项目页面：https://lu-yidan.github.io/ROOF/",
+      "authors": [
+        "Yidan Lu",
+        "Jiayuan Yu",
+        "Zongrui Cai"
+      ],
+      "authors_all": [
+        "Yidan Lu",
+        "Jiayuan Yu",
+        "Zongrui Cai",
+        "Jingwen Sun",
+        "Jinrui Han",
+        "Jing Wang",
+        "Ping Luo",
+        "Peng Lu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Ping Luo"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-42097.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-42097-p2.jpg",
+        "assets/img/covers/arxiv-2610-42097-p3.jpg",
+        "assets/img/covers/arxiv-2610-42097-p4.jpg"
+      ],
+      "arxiv_id": "2610.42097",
+      "abs_url": "http://arxiv.org/abs/2610.42097v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42097v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {},
+      "institutions": [
+        "The University of Hong Kong",
+        "Chinese Academy of Sciences"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "motion prior",
+        "fall recovery"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-616adec252",
       "source": "qbitai",
       "title": "从学习人类到学习机器人同伴，清华大学联合无问芯穹、智元提出具身智能规模化落地新路径",
@@ -61,155 +132,273 @@
       ]
     },
     {
-      "id": "vid-bilibili-BV1Goxa6yExu",
-      "source": "video_bilibili",
-      "title": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-      "title_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-      "tldr_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-      "cover_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-      "abstract_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
+      "id": "arxiv-2611-00394",
+      "source": "arxiv",
+      "title": "CalVLA: Shaping Native Confidence in Vision-Language-Action Policies with Outcome Supervision",
+      "title_zh": "CalVLA：通过结果监督塑造视觉-语言-动作策略的原生置信度",
+      "tldr_zh": "CalVLA 通过结果监督提升 VLA 策略的失败判别能力，但任务成功率略有下降。",
+      "cover_zh": "VLA 策略自己预测失败？CalVLA 让置信度更准，但成功率却降了",
+      "abstract_zh": "视觉-语言-动作（VLA）策略能否从其自身的动作概率中发出任务可能失败的信号？我们提出 CalVLA，它利用成功和失败的轨迹以及动作-置信度对齐（ACal）平方边际排序损失来塑造原生动作 token 置信度。低秩适配器更新 OpenVLA-7B，无需辅助的失败检测器。在任务内，观测按相似归一化经过时间配对，而不必是等效的物理进度。在来自 500 个 LIBERO-10 配置的留出测试集上，适配后的置信度在三个随机种子上实现了 0.7392±0.0480 的联合失败判别 AUROC，平均了 130 和 260 步的分数。冻结策略探针达到 0.6146–0.6436，但相对于线性探针的优越性在统计上不显著。对于相同的置信度摘要，AUROC 从适配前的 0.4485 上升到适配后的 0.7327。平均任务成功率从 58% 下降到 55%。这些结果表明失败判别能力有所提高，而非控制能力改善或已确立的安全益处。",
+      "authors": [
+        "Boniface Chukwuemeka Godwin"
+      ],
+      "authors_all": [
+        "Boniface Chukwuemeka Godwin"
+      ],
+      "primary_category": "cs.AI",
       "published": "2026-10-30",
       "channels": [
-        "loco-manip-wbc"
+        "manipulation"
       ],
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ AgiBot"
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
         }
       ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV1Goxa6yExu",
-      "pdf_url": "",
-      "venue": "",
+      "cover_image": "assets/img/covers/arxiv-2611-00394.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00394-p2.jpg",
+        "assets/img/covers/arxiv-2611-00394-p3.jpg",
+        "assets/img/covers/arxiv-2611-00394-p4.jpg"
+      ],
+      "arxiv_id": "2611.00394",
+      "abs_url": "http://arxiv.org/abs/2611.00394v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00394v1",
+      "venue": "CoRL 2026",
       "venue_announced": "",
-      "score": 46,
+      "score": 47,
       "judge": {},
       "institutions": [
-        "智元AGIBOT"
+        "Carnegie Mellon University Africa"
       ],
-      "method_tags": [],
+      "method_tags": [
+        "VLA",
+        "LoRA",
+        "failure discrimination"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1Goxa6yExu",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1Goxa6yExu&high_quality=1&autoplay=0",
-          "title": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
-          "source": "channel"
-        }
-      ],
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
     {
-      "id": "vid-bilibili-BV136xY6LE6s",
-      "source": "video_bilibili",
-      "title": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-      "title_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-      "tldr_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-      "cover_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-      "abstract_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
+      "id": "arxiv-2610-41892",
+      "source": "arxiv",
+      "title": "Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation",
+      "title_zh": "强化学习策略下异构运动动力学的在线学习，用于精确移动操作",
+      "tldr_zh": "在线学习异构运动动力学，提升移动操作精度。",
+      "cover_zh": "冻结策略还能这么用？｜在线学习让移动操作误差仅0.01米",
+      "abstract_zh": "如何复用预训练的运动策略来实现精确的移动操作仍是一个开放问题。我们提出一种在线方法，在冻结的运动策略下学习闭环动力学。学习到的模型预测浮动基座运动并提高移动操作精度。然而，策略中未观测的潜在条件引入了异构响应，意味着相同的观测状态会导致不同的运动。不考虑这种异构性的直接学习会给动力学估计引入偏差和波动，降低浮动基座预测和末端执行器跟踪性能。为了解决这个问题，提出了一种污染高斯模型来近似潜在条件的影响。该模型使用两个高斯分量来近似相同观测状态下可预测和不可预测的响应。然后，将污染高斯模型与高斯过程结合，使用随机傅里叶特征（RFFs）构建在线学习器。学习器估计每个响应属于可预测分量的概率，并用它来加权在线更新，捕捉可预测响应，同时减少异构观测引起的偏差和波动。通过一致且无偏的动力学估计，模型预测控制（MPC）准确预测浮动基座运动并实现精确的移动操作。建立了有限样本误差界以确保在线学习的一致收敛性。仿真和硬件实验表明，在不同机械臂配置和任务下末端执行器跟踪一致，误差为0.01米。",
+      "authors": [
+        "Tianlin Zhang",
+        "Weipeng Xia",
+        "Lingwei Zhang"
+      ],
+      "authors_all": [
+        "Tianlin Zhang",
+        "Weipeng Xia",
+        "Lingwei Zhang",
+        "Yiyang Shao",
+        "Zhongyu Li",
+        "Yun-Hui Liu"
+      ],
+      "primary_category": "cs.RO",
       "published": "2026-10-30",
       "channels": [
-        "loco-manip-wbc"
+        "manipulation",
+        "loco-manip-wbc",
+        "locomotion"
       ],
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ AgiBot"
+          "label": "⭐ HKU"
         }
       ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV136xY6LE6s",
-      "pdf_url": "",
+      "cover_image": "assets/img/covers/arxiv-2610-41892.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41892-p2.jpg",
+        "assets/img/covers/arxiv-2610-41892-p3.jpg",
+        "assets/img/covers/arxiv-2610-41892-p4.jpg"
+      ],
+      "arxiv_id": "2610.41892",
+      "abs_url": "http://arxiv.org/abs/2610.41892v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41892v1",
       "venue": "",
       "venue_announced": "",
-      "score": 43,
+      "score": 45,
       "judge": {},
       "institutions": [
-        "智元AGIBOT"
+        "The Chinese University of Hong Kong",
+        "Hong Kong Centre for Logistics Robotics"
       ],
-      "method_tags": [],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Model Predictive Control",
+        "loco-manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV136xY6LE6s",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV136xY6LE6s&high_quality=1&autoplay=0",
-          "title": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
-          "source": "channel"
-        }
-      ],
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
     {
-      "id": "vid-bilibili-BV1cpxv6vEUv",
-      "source": "video_bilibili",
-      "title": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-      "title_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-      "tldr_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-      "cover_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-      "abstract_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
+      "id": "arxiv-2610-42053",
+      "source": "arxiv",
+      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+      "title_zh": "REA：一种用于异步脑-小脑控制的路由具身智能体运行时",
+      "tldr_zh": "REA运行时实现异步脑-小脑控制，提升成功率并降低控制开销。",
+      "cover_zh": "大脑不等待｜REA让快慢策略异步协作，成功率反超基线",
+      "abstract_zh": "基础模型在高层次推理上变得非常可靠，但它们作为细粒度控制器时仍然太慢且成本高昂。相反，像VLA和全身控制器这样的快速策略提供了更高效的反身反应，但难以泛化。虽然将深思熟虑的大脑（基础模型）与反应迅速的小脑（快速策略）配对对于具身系统来说似乎很自然，但仍存在两个障碍：方法是在不兼容的堆栈上构建和评估的，并且它们的异步协调很困难。例如，在智能体循环中调用VLA的智能体会阻碍快速执行，而在出错时调用智能体的VLA往往会反复触发回退或完全错过静默故障。为了解决这个问题，我们提出了REA（路由具身智能体），一个统一的运行时，其中深思熟虑的系统2、具身路由器系统1和反应式系统0策略在一条黄金法则下协作——没有运行中的策略会等待大脑。REA不是每次失败时都查询大脑，而是采用路由记忆来预先存储每个策略的测量成功率，一个边界触发的判断门在策略执行时咨询大脑，以及一个共享预算的升级阶梯用于有界恢复。在60个LIBERO-Pro任务的3000个测试回合上评估，REA达到了95.9%的成功率，并在其自己的策略池中击败了最佳单智能体基线（94.7%），同时将控制步骤减少了25%，控制时间减少了17%。在另一项100回合的RoboTwin 2.0研究中，REA使用VLA策略达到了84%的成功率，使用VLA+代码达到了86%，而最强的单VLA基线MEDex为80%。这些结果展示了学习和程序化策略在同一运行时中运行。REA还迁移到了BEHAVIOR-1K和真实的Unitree G1人形机器人上，在比较的方法中取得了观察到的最高成功率。",
+      "authors": [
+        "Pengfei Zhou",
+        "Yixing Ma",
+        "Zhengfeiyang Zhang"
+      ],
+      "authors_all": [
+        "Pengfei Zhou",
+        "Yixing Ma",
+        "Zhengfeiyang Zhang",
+        "Haoyuan Chen",
+        "Zhenglin Wan",
+        "Hexin Wang",
+        "Wangbo Zhao",
+        "Yang You"
+      ],
+      "primary_category": "cs.RO",
       "published": "2026-10-30",
       "channels": [
+        "manipulation",
         "loco-manip-wbc"
       ],
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ AgiBot"
+          "label": "⭐ NUS"
         }
       ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV1cpxv6vEUv",
-      "pdf_url": "",
+      "cover_image": "assets/img/covers/arxiv-2610-42053.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-42053-p2.jpg",
+        "assets/img/covers/arxiv-2610-42053-p3.jpg",
+        "assets/img/covers/arxiv-2610-42053-p4.jpg"
+      ],
+      "arxiv_id": "2610.42053",
+      "abs_url": "http://arxiv.org/abs/2610.42053v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42053v1",
       "venue": "",
       "venue_announced": "",
-      "score": 43,
+      "score": 45,
       "judge": {},
       "institutions": [
-        "智元AGIBOT"
+        "National University of Singapore",
+        "InfRec, Cardinal AI Lab",
+        "University of California, Berkeley",
+        "The University of Tokyo"
       ],
-      "method_tags": [],
+      "method_tags": [
+        "VLA",
+        "Code-as-Policy",
+        "异步协调"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
+      "sim_stack": [
+        "LIBERO-Pro",
+        "RoboTwin 2.0"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00455",
+      "source": "arxiv",
+      "title": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
+      "title_zh": "TacMind：面向机器人操作触觉交互状态的基准测试与建模",
+      "tldr_zh": "提出触觉交互状态基准与预测世界模型，提升机器人操作性能。",
+      "cover_zh": "触觉不只是瞬时感知！这个基准让机器人学会预测未来触觉",
+      "abstract_zh": "触觉感知为机器人提供接触物理、局部几何和交互动力学的直接观测，是接触丰富操作的关键反馈来源。然而，现有触觉操作研究通常在特定任务设置下开发和评估，难以系统比较触觉信息在不同交互条件下的贡献。为此，我们开发了一个仿真基准，包含128个任务，围绕精确、识别和动态三种互补评估机制组织。该基准进一步包括受控的静态和动态任务变体以及12种扰动设置，用于评估视觉和物理条件变化下的鲁棒性。这些设置促使我们将触觉信息视为随时间演化的交互表示，而不仅是瞬时观测。因此，我们提出了一种动作条件潜在预测世界模型，该模型整合触觉历史，并通过预测未来触觉潜在表示来学习触觉状态。基于此表示，我们设计了一个模型，以学习到的触觉状态为条件生成动作，并利用预测的未来触觉信息通过预测触觉反射来优化候选动作。在所提出的基准上的实验表明，融合触觉信息在评估机制中均带来一致增益。项目页面：https://tacmind-bench.github.io/",
+      "authors": [
+        "Jiaxin Shi",
+        "Zibin Wu",
+        "Yichi Zhang"
+      ],
+      "authors_all": [
+        "Jiaxin Shi",
+        "Zibin Wu",
+        "Yichi Zhang",
+        "Jianghua Duan",
+        "Siyu Zhu",
+        "Weihao Yuan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00455.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00455-p2.jpg",
+        "assets/img/covers/arxiv-2611-00455-p3.jpg",
+        "assets/img/covers/arxiv-2611-00455-p4.jpg"
+      ],
+      "arxiv_id": "2611.00455",
+      "abs_url": "http://arxiv.org/abs/2611.00455v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00455v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "Harbin Institute of Technology",
+        "Daimon Robotics"
+      ],
+      "method_tags": [
+        "world model",
+        "tactile state",
+        "action-conditioned latent predictive"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1cpxv6vEUv",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1cpxv6vEUv&high_quality=1&autoplay=0",
-          "title": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
-          "source": "channel"
-        }
-      ],
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -260,8 +449,16 @@
       "venue_announced": "",
       "score": 40,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Courant Institute, New York University",
+        "Meta-FAIR",
+        "AMI Labs"
+      ],
+      "method_tags": [
+        "World Model",
+        "Hierarchical Planning",
+        "MPC"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -343,12 +540,444 @@
       "venue_announced": "",
       "score": 40,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Archon Robotics"
+      ],
+      "method_tags": [
+        "whole-body control",
+        "teleoperation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41877",
+      "source": "arxiv",
+      "title": "Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
+      "title_zh": "Movens-Zero：利用大规模人类视频扩展人形运动基础模型",
+      "tldr_zh": "从网络视频构建大规模人形运动数据集，提出可扩展架构实现多模态实时闭环控制。",
+      "cover_zh": "人形机器人运动模型新突破！从网络视频学动作，实时闭环控制",
+      "abstract_zh": "人形运动基础模型的扩展受限于多样且机器人可执行数据的稀缺，以及难以从异构多模态输入中联合学习并支持实时闭环控制。我们提出 Movens-5M，通过片段生成、质量过滤、语义标注、运动恢复以及人形重定向与执行验证的物理细化，从原始互联网视频构建而成。它包含 1500 万个人类运动序列和 500 万个物理可执行的人形运动序列，时长超过 10,000 小时，并与文本、RGB 视频、语音和音乐对齐。基于此数据，我们引入 Movens-Zero，一种可扩展的理解-生成-执行架构，支持跨模态联合学习和实时闭环执行。任务混合流匹配训练联合优化单个动作专家在七个生成任务上的表现，实现从文本、语音、音乐和视频直接生成运动。多模态实时分块在持续更新的指令和机器人状态下连接重叠块，实现连续闭环执行。我们进一步引入 Movens-Intent，一个四轨基准，包含 8,192 个专家验证的条件-运动对，涵盖文本、语音、音乐和视频。实验表明，当执行验证数据从 1% 扩展到 100%、动作专家容量从 64M 扩展到 911M 参数时，所有四种模态均获得一致增益，同时证明数据质量和跨模态监督能改善生成与执行。",
+      "authors": [
+        "Wendong Bu",
+        "Tinghong Ye",
+        "Qizhou Wang"
+      ],
+      "authors_all": [
+        "Wendong Bu",
+        "Tinghong Ye",
+        "Qizhou Wang",
+        "Jiacheng Li",
+        "Zhiqi Ge",
+        "Yuze Lin",
+        "Zhongqi Yue",
+        "Yi Su",
+        "Jingyu Wang",
+        "Kai Shen",
+        "Jingdong Liu",
+        "Chengyuan Deng",
+        "Xiaoxuan Chen",
+        "Xin Tan",
+        "Jiaming Ji",
+        "Wenqiao Zhang",
+        "Chenghong Jiang",
+        "Tuoyu Li",
+        "Siliang Tang",
+        "Jun Xiao",
+        "Tat-Seng Chua",
+        "Yueting Zhuang",
+        "Xingxing Wang",
+        "Juncheng Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Unitree"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ZJU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-41877.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41877-p2.jpg",
+        "assets/img/covers/arxiv-2610-41877-p3.jpg",
+        "assets/img/covers/arxiv-2610-41877-p4.jpg"
+      ],
+      "arxiv_id": "2610.41877",
+      "abs_url": "http://arxiv.org/abs/2610.41877v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41877v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {},
+      "institutions": [
+        "Zhejiang University",
+        "Unitree Robotics",
+        "Joint Laboratory of Embodied Intelligence, ZJU & Unitree Robotics",
+        "Bit Oasis"
+      ],
+      "method_tags": [
+        "flow-matching",
+        "multimodal",
+        "real-time closed-loop control"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41970",
+      "source": "arxiv",
+      "title": "When Does Test-Time Search Help World Action Models? An Empirical Audit of Candidate Selection and Simulator Integrity",
+      "title_zh": "测试时搜索何时能帮助世界动作模型？对候选选择与模拟器完整性的实证审计",
+      "tldr_zh": "审计测试时搜索的前提，发现选择信号弱、加速不足且评估有隐患。",
+      "cover_zh": "测试时搜索翻车？审计发现选择信号弱、加速不达标！",
+      "abstract_zh": "世界动作模型越来越多地应用测试时扩展，将额外的推理计算用于候选选择与自适应分配以改进控制。此类收益只有在候选携带可利用信号、名义计算节省转化为实际加速、且评估保持可靠时才可信。我们在 Cosmos Policy 和 RoboCasa 上以前提优先、预注册的方法论审计了这三点。在干净数据上，学习到的价值选择器比随机差 1.66 个百分点；事后预言机仅提升 1.40 个百分点，且回合级区间跨越零；82% 的状态显示相同的候选结果，留下很少的选择空间。令牌剪枝将每次前向 FLOPs 减少最多 47%，但在部署路径上至多产生实测 1.15 倍端到端加速（在排除解码的路径上为 1.25 倍），低于 1.5 倍目标，且我们的自适应分配实验在功效门控下无定论。我们进一步识别并修复了一种静默渲染损坏，其发生率在计算密集的规划路径上急剧上升，但不影响官方直接策略结果，并发布了检测器、修复和脚本。这些发现表明为何测试时扩展应作为一系列前提（决策信号、实现效率、评估完整性）进行审计，而非仅凭成功率。结论仅限于测试配置。",
+      "authors": [
+        "Jun Liu",
+        "Dajie Sun",
+        "Zhenglun Kong"
+      ],
+      "authors_all": [
+        "Jun Liu",
+        "Dajie Sun",
+        "Zhenglun Kong",
+        "Zhenjiang Fan",
+        "Peiyan Dong",
+        "Fan Yang",
+        "Wenbin Zhangg",
+        "Geng Yuan",
+        "Xue Lin",
+        "Yanzhi Wang",
+        "Dong Huang"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30",
+      "channels": [
+        "world-model",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Berkeley (BAIR)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-41970.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41970-p2.jpg",
+        "assets/img/covers/arxiv-2610-41970-p3.jpg",
+        "assets/img/covers/arxiv-2610-41970-p4.jpg"
+      ],
+      "arxiv_id": "2610.41970",
+      "abs_url": "http://arxiv.org/abs/2610.41970v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41970v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 39,
+      "judge": {},
+      "institutions": [
+        "CMU",
+        "UC Berkeley",
+        "Harvard University",
+        "Stanford University"
+      ],
+      "method_tags": [
+        "test-time scaling",
+        "candidate selection",
+        "world-action models"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "RoboCasa"
+      ],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-41857",
+      "source": "arxiv",
+      "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks",
+      "title_zh": "当模拟器失败，而非策略：审计模拟机器人基准中的接触伪影",
+      "tldr_zh": "模拟器碰撞检测缺陷导致机器人策略被误判失败，修复后成功率提升。",
+      "cover_zh": "机器人策略总失败？可能是模拟器在捣鬼！",
+      "abstract_zh": "模拟基准通过成功率来评估机器人策略，每个失败的回合都会对策略不利。许多失败是模拟器的过错，而非策略的过错；我们找到了原因并修复了它。在模拟中测试视觉语言动作模型和世界动作模型时，我们发现策略经常放置物体，然后模拟器将其弹出，而且基准自带的脚本演示也以同样的方式失败。我们提出了 SimuGuard，一个用于 LIBERO、RoboTwin、RoboCasa 和 RoboDojo 的审计插件。它保持评估不变。在每个物理步骤，它记录状态并标记在接触时开始移动的物体，如果其速度超过机器人接触或重力所能解释的范围。它逐位重放记录的回合，并在更改一个模拟参数的情况下重新运行回合。通过它，我们在 RoboTwin 上将这些回合追溯到物理引擎的碰撞检测：对于相距一到两厘米的几何体，引擎报告约两厘米的穿透，求解器以数米每秒的速度将物体抛出。原因是一个常数：距离算法丢弃低于固定面积阈值的三角形，而在厘米尺度下有效三角形会低于该阈值。仅更改该常数，出现伪影的回合从每 100 个中的 12 个降至零，五个容器任务的成功率从 89% 上升到 98%。因此，模拟中的成功率计入了模拟器导致的失败。在 PhysX 5.3.1 或更早版本上的基准应在修复后的引擎中重新运行。在引擎无法更改的情况下，他们应报告成功率以及每个标记回合失败或通过时的范围：对于 LingBot-VA，报告为 83.1% 左右，范围为 75.8% 到 98.5%。",
+      "authors": [
+        "Alex Zhou",
+        "Junhao Wu",
+        "Xueyang Zhou"
+      ],
+      "authors_all": [
+        "Alex Zhou",
+        "Junhao Wu",
+        "Xueyang Zhou",
+        "Yixiao Huo",
+        "Hongcheng Gao",
+        "Di Zhu",
+        "Zhenghao Zhang",
+        "Yongchao Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-41857.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-41857-p2.jpg",
+        "assets/img/covers/arxiv-2610-41857-p3.jpg",
+        "assets/img/covers/arxiv-2610-41857-p4.jpg"
+      ],
+      "arxiv_id": "2610.41857",
+      "abs_url": "http://arxiv.org/abs/2610.41857v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.41857v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {},
+      "institutions": [
+        "Tsinghua University",
+        "University of Chinese Academy of Sciences"
+      ],
+      "method_tags": [
+        "VLA",
+        "World Action Model",
+        "Simulation Benchmark Auditing"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "LIBERO",
+        "RoboTwin"
+      ],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-42096",
+      "source": "arxiv",
+      "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
+      "title_zh": "CausalWAM：学习世界动作模型中动作的因果",
+      "tldr_zh": "提出CWAM方法，通过稀疏约束分离动作相关潜在变量，提升世界动作模型效率。",
+      "cover_zh": "世界模型总学错因果？稀疏路由让动作生成更精准！",
+      "abstract_zh": "世界动作模型（WAMs）从观测中学习潜在变量，并利用这些变量预测场景的演变和生成动作。预测必须针对整个场景，而只有场景的一部分会导致动作。拟合于演示的WAMs通常不能保证它们仅从演示动作的潜在原因（动作相关的潜在变量）生成动作，因为模型也可能以这种方式学习模仿，同时将动作相关的潜在变量与干扰变量纠缠在一起。因此，我们将导致动作的因素与预测所依赖的因素分离开来。我们证明，在稀疏性约束下，用于生成动作的潜在变量仅是动作相关潜在变量的可逆函数，并且真实结构在潜在变量的排列下是可识别的。这既不需要足够的时间依赖性，也不需要对未观察到的状态如何演变做出任何假设，并且即使动作相关的潜在变量与其余部分统计相关时也成立。因此，我们提出了CWAM（因果WAM），通过在其动作头上添加稀疏路由路径，将约束纳入预训练的WAM中，而世界建模目标保持不变。在合成数据和真实世界机器人上的实验验证了理论，并展示了闭环成功率的提高效率。",
+      "authors": [
+        "Juntao Cheng",
+        "Jinzhou Tang",
+        "Fan Feng"
+      ],
+      "authors_all": [
+        "Juntao Cheng",
+        "Jinzhou Tang",
+        "Fan Feng",
+        "Henrik I. Christensen",
+        "Yujia Zheng"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ UCSD"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-42096.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-42096-p2.jpg",
+        "assets/img/covers/arxiv-2610-42096-p3.jpg",
+        "assets/img/covers/arxiv-2610-42096-p4.jpg"
+      ],
+      "arxiv_id": "2610.42096",
+      "abs_url": "http://arxiv.org/abs/2610.42096v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42096v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "UIUC",
+        "UCSD"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "Causal Representation Learning",
+        "Sparse Routing"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2610-42141",
+      "source": "arxiv",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "title_zh": "RoboArchitect：自动化设计具有持久记忆的机器人智能体",
+      "tldr_zh": "RoboArchitect自动设计机器人智能体框架，无需微调即大幅提升成功率。",
+      "cover_zh": "不微调模型，成功率直接翻倍？这个框架让机器人自己进化",
+      "abstract_zh": "近期研究表明，在智能体框架中，冻结的机器人策略表现更佳，其中控制代码决定何时查询策略、调用视觉工具或直接控制机械臂。然而，目前这些框架都是手工构建，并为每个新机器人或基准重新设计。我们证明框架设计可以自动化，为在新设置上微调提供了强有力的替代方案。在RoboArchitect中，一个编码模型观察机器人的执行轨迹，诊断失败，并围绕冻结策略迭代修改框架。框架在一组用于优化的片段上进化，并在留出的场景和任务上评估。在不更新任何模型权重的情况下，RoboArchitect在多个基准和策略上，将未见场景的平均成功率从9.7%提升至43.3%（4.5倍），未见任务从12.7%提升至40.2%（3.2倍）。当基准远离策略训练数据时增益最大：包装通用策略时，进化后的框架产生的专家甚至常优于微调版本。直观的控制策略被自动设计，例如抬起卡住的机械臂或当上方障碍物阻挡时水平伸入。框架还进化出自己的持久记忆，将学到的经验（如有效抓取深度）带入后续决策。这些结果表明，机器人操作中的巨大提升空间在于智能体框架，其设计可以在不更新权重的情况下有效自动化和优化。",
+      "authors": [
+        "Shengguang Wu",
+        "Suning Huang",
+        "Cherie Ho"
+      ],
+      "authors_all": [
+        "Shengguang Wu",
+        "Suning Huang",
+        "Cherie Ho",
+        "Ria Doshi",
+        "Hao Zhu",
+        "Serena Yeung-Levy"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2610-42141.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2610-42141-p2.jpg",
+        "assets/img/covers/arxiv-2610-42141-p3.jpg",
+        "assets/img/covers/arxiv-2610-42141-p4.jpg"
+      ],
+      "arxiv_id": "2610.42141",
+      "abs_url": "http://arxiv.org/abs/2610.42141v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42141v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "Stanford University"
+      ],
+      "method_tags": [
+        "agent harness",
+        "coding model",
+        "frozen policy"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00180",
+      "source": "arxiv",
+      "title": "Learning to Live: A Step Toward Lifelong Embodied Intelligence",
+      "title_zh": "学会生活：迈向终身具身智能的一步",
+      "tldr_zh": "LIFE框架让机器人持续观察、选择性记忆，从经验中学习新技能。",
+      "cover_zh": "机器人也能「记住」生活？这个框架让它从经验中学习",
+      "abstract_zh": "具身智能体通常围绕单个任务组织，但物理世界在任务之间和执行过程中不断变化。我们提出 LIFE（Lifelong Intelligence from Experience，从经验中获取终身智能）框架，机器人持续观察、选择性记忆，并将经验转化为新能力。RoboBeats 是一系列轻量级流式门控，跟踪智能体设定的条件并发现新事件，决定何时观察需要响应或写入记忆。选中的观察进入 Plastic Memory，这是一个存储图像和结构化记录的扁平存储，保留源证据，以便后续问题需要时添加新字段和索引。当现有工具不足时，Explore-Distill-Mount (EDM) 将问题解决过程中找到的解决方案转化为经过验证、可复用的工具和技能。在匹配协议下，RoboBeats 在其基础模型上显著改进了条件跟踪，并且在相同写入预算下，比均匀采样为记忆问答保留了更多有用证据。一个有限规模的案例研究，回放了真实机器人录制的 24 小时连续视频，展示了集成系统如何从一天的经验中构建记忆，并利用它回答日常问题。LIFE 向更熟悉周围环境、通过经验变得更有能力的机器人迈出了一步：不仅学习完成任务，而且学习在世界中生活。",
+      "authors": [
+        "Lirong Che",
+        "Peidong Wang",
+        "Yimeng Su"
+      ],
+      "authors_all": [
+        "Lirong Che",
+        "Peidong Wang",
+        "Yimeng Su",
+        "Jiong Wang",
+        "Yang Chen",
+        "Wenbo Fu",
+        "Zhenyu Huang",
+        "Tiancheng Xu",
+        "Yuzhe Yang",
+        "Dongli Xie",
+        "Xu Cao",
+        "Chuang Wang",
+        "Daqi Liu",
+        "Jian Su"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-30",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ AgiBot"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00180.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00180-p2.jpg",
+        "assets/img/covers/arxiv-2611-00180-p3.jpg",
+        "assets/img/covers/arxiv-2611-00180-p4.jpg"
+      ],
+      "arxiv_id": "2611.00180",
+      "abs_url": "http://arxiv.org/abs/2611.00180v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00180v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "Agibot Human Intelligence Project"
+      ],
+      "method_tags": [
+        "streaming event detection",
+        "memory",
+        "skill acquisition"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -399,64 +1028,6 @@
       "venue": "NeurIPS 2026",
       "venue_announced": "",
       "score": 30,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-42097",
-      "source": "arxiv",
-      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints",
-      "title_zh": "ROOF：学习在头顶约束下的人形机器人跌倒恢复",
-      "tldr_zh": "强化学习让人形机器人在头顶障碍下自主恢复跌倒。",
-      "cover_zh": "头顶有障碍也能爬起来？人形机器人新策略成功率惊人",
-      "abstract_zh": "跌倒的人形机器人若位于头顶障碍物下方，会面临一个耦合的恢复问题：它必须在为稳定起身组织支撑的同时创造间隙，因为在腾出空间之前尝试站立可能会进一步增加障碍。我们提出了一种带有接触支撑几何逃逸引导的强化学习方法，该方法奖励机器人逐步减少与障碍物的重叠，而不规定逃逸路径。为此，我们提出了一种学习到的运动先验，结合依赖于姿态的支撑和关节失速成本，来塑造一个单一策略，该策略仅使用本体感觉就能学习何时清除障碍、如何建立支撑以及何时完成起身。在仿真中，对于只能被抬起的板子，该方法在88.5%的试验中成功恢复，而没有几何引导时仅为18.9%；对于尺寸、质量和位置随机化的自由板子，成功率为98.6%。在Unitree G1上，部署的策略在七个真实世界障碍场景（包括训练中未出现的家具和多物体布置）的150次尝试中成功恢复了95次。项目页面：https://lu-yidan.github.io/ROOF/",
-      "authors": [
-        "Yidan Lu",
-        "Jiayuan Yu",
-        "Zongrui Cai"
-      ],
-      "authors_all": [
-        "Yidan Lu",
-        "Jiayuan Yu",
-        "Zongrui Cai",
-        "Jingwen Sun",
-        "Jinrui Han",
-        "Jing Wang",
-        "Ping Luo",
-        "Peng Lu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "loco-manip-wbc"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Ping Luo"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2610-42097.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-42097-p2.jpg",
-        "assets/img/covers/arxiv-2610-42097-p3.jpg",
-        "assets/img/covers/arxiv-2610-42097-p4.jpg"
-      ],
-      "arxiv_id": "2610.42097",
-      "abs_url": "http://arxiv.org/abs/2610.42097v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.42097v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -521,42 +1092,29 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-00394",
-      "source": "arxiv",
-      "title": "CalVLA: Shaping Native Confidence in Vision-Language-Action Policies with Outcome Supervision",
-      "title_zh": "CalVLA：通过结果监督塑造视觉-语言-动作策略的原生置信度",
-      "tldr_zh": "CalVLA 通过结果监督提升 VLA 策略的失败判别能力，但任务成功率略有下降。",
-      "cover_zh": "VLA 策略自己预测失败？CalVLA 让置信度更准，但成功率却降了",
-      "abstract_zh": "视觉-语言-动作（VLA）策略能否从其自身的动作概率中发出任务可能失败的信号？我们提出 CalVLA，它利用成功和失败的轨迹以及动作-置信度对齐（ACal）平方边际排序损失来塑造原生动作 token 置信度。低秩适配器更新 OpenVLA-7B，无需辅助的失败检测器。在任务内，观测按相似归一化经过时间配对，而不必是等效的物理进度。在来自 500 个 LIBERO-10 配置的留出测试集上，适配后的置信度在三个随机种子上实现了 0.7392±0.0480 的联合失败判别 AUROC，平均了 130 和 260 步的分数。冻结策略探针达到 0.6146–0.6436，但相对于线性探针的优越性在统计上不显著。对于相同的置信度摘要，AUROC 从适配前的 0.4485 上升到适配后的 0.7327。平均任务成功率从 58% 下降到 55%。这些结果表明失败判别能力有所提高，而非控制能力改善或已确立的安全益处。",
-      "authors": [
-        "Boniface Chukwuemeka Godwin"
-      ],
-      "authors_all": [
-        "Boniface Chukwuemeka Godwin"
-      ],
-      "primary_category": "cs.AI",
+      "id": "vid-bilibili-BV1Goxa6yExu",
+      "source": "video_bilibili",
+      "title": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+      "title_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+      "tldr_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+      "cover_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+      "abstract_zh": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
       "published": "2026-10-30",
       "channels": [
-        "manipulation"
+        "loco-manip-wbc"
       ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 CoRL 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-00394.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00394-p2.jpg",
-        "assets/img/covers/arxiv-2611-00394-p3.jpg",
-        "assets/img/covers/arxiv-2611-00394-p4.jpg"
-      ],
-      "arxiv_id": "2611.00394",
-      "abs_url": "http://arxiv.org/abs/2611.00394v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00394v1",
-      "venue": "CoRL 2026",
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1Goxa6yExu",
+      "pdf_url": "",
+      "venue": "",
       "venue_announced": "",
-      "score": 22,
+      "score": 21,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -565,7 +1123,15 @@
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
-      "demo_videos": [],
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Goxa6yExu",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1Goxa6yExu&high_quality=1&autoplay=0",
+          "title": "智元合伙人、高级副总裁、通用业务部总裁王闯：人机比降下来，效率提上去，具身智能Worken才能Work",
+          "source": "channel"
+        }
+      ],
       "github": {},
       "source_tags": []
     },
@@ -779,113 +1345,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2610-41892",
-      "source": "arxiv",
-      "title": "Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation",
-      "title_zh": "强化学习策略下异构运动动力学的在线学习，用于精确移动操作",
-      "tldr_zh": "在线学习异构运动动力学，提升移动操作精度。",
-      "cover_zh": "冻结策略还能这么用？｜在线学习让移动操作误差仅0.01米",
-      "abstract_zh": "如何复用预训练的运动策略来实现精确的移动操作仍是一个开放问题。我们提出一种在线方法，在冻结的运动策略下学习闭环动力学。学习到的模型预测浮动基座运动并提高移动操作精度。然而，策略中未观测的潜在条件引入了异构响应，意味着相同的观测状态会导致不同的运动。不考虑这种异构性的直接学习会给动力学估计引入偏差和波动，降低浮动基座预测和末端执行器跟踪性能。为了解决这个问题，提出了一种污染高斯模型来近似潜在条件的影响。该模型使用两个高斯分量来近似相同观测状态下可预测和不可预测的响应。然后，将污染高斯模型与高斯过程结合，使用随机傅里叶特征（RFFs）构建在线学习器。学习器估计每个响应属于可预测分量的概率，并用它来加权在线更新，捕捉可预测响应，同时减少异构观测引起的偏差和波动。通过一致且无偏的动力学估计，模型预测控制（MPC）准确预测浮动基座运动并实现精确的移动操作。建立了有限样本误差界以确保在线学习的一致收敛性。仿真和硬件实验表明，在不同机械臂配置和任务下末端执行器跟踪一致，误差为0.01米。",
-      "authors": [
-        "Tianlin Zhang",
-        "Weipeng Xia",
-        "Lingwei Zhang"
-      ],
-      "authors_all": [
-        "Tianlin Zhang",
-        "Weipeng Xia",
-        "Lingwei Zhang",
-        "Yiyang Shao",
-        "Zhongyu Li",
-        "Yun-Hui Liu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc",
-        "locomotion"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-41892.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-41892-p2.jpg",
-        "assets/img/covers/arxiv-2610-41892-p3.jpg",
-        "assets/img/covers/arxiv-2610-41892-p4.jpg"
-      ],
-      "arxiv_id": "2610.41892",
-      "abs_url": "http://arxiv.org/abs/2610.41892v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.41892v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-42053",
-      "source": "arxiv",
-      "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
-      "title_zh": "REA：一种用于异步脑-小脑控制的路由具身智能体运行时",
-      "tldr_zh": "REA运行时实现异步脑-小脑控制，提升成功率并降低控制开销。",
-      "cover_zh": "大脑不等待｜REA让快慢策略异步协作，成功率反超基线",
-      "abstract_zh": "基础模型在高层次推理上变得非常可靠，但它们作为细粒度控制器时仍然太慢且成本高昂。相反，像VLA和全身控制器这样的快速策略提供了更高效的反身反应，但难以泛化。虽然将深思熟虑的大脑（基础模型）与反应迅速的小脑（快速策略）配对对于具身系统来说似乎很自然，但仍存在两个障碍：方法是在不兼容的堆栈上构建和评估的，并且它们的异步协调很困难。例如，在智能体循环中调用VLA的智能体会阻碍快速执行，而在出错时调用智能体的VLA往往会反复触发回退或完全错过静默故障。为了解决这个问题，我们提出了REA（路由具身智能体），一个统一的运行时，其中深思熟虑的系统2、具身路由器系统1和反应式系统0策略在一条黄金法则下协作——没有运行中的策略会等待大脑。REA不是每次失败时都查询大脑，而是采用路由记忆来预先存储每个策略的测量成功率，一个边界触发的判断门在策略执行时咨询大脑，以及一个共享预算的升级阶梯用于有界恢复。在60个LIBERO-Pro任务的3000个测试回合上评估，REA达到了95.9%的成功率，并在其自己的策略池中击败了最佳单智能体基线（94.7%），同时将控制步骤减少了25%，控制时间减少了17%。在另一项100回合的RoboTwin 2.0研究中，REA使用VLA策略达到了84%的成功率，使用VLA+代码达到了86%，而最强的单VLA基线MEDex为80%。这些结果展示了学习和程序化策略在同一运行时中运行。REA还迁移到了BEHAVIOR-1K和真实的Unitree G1人形机器人上，在比较的方法中取得了观察到的最高成功率。",
-      "authors": [
-        "Pengfei Zhou",
-        "Yixing Ma",
-        "Zhengfeiyang Zhang"
-      ],
-      "authors_all": [
-        "Pengfei Zhou",
-        "Yixing Ma",
-        "Zhengfeiyang Zhang",
-        "Haoyuan Chen",
-        "Zhenglin Wan",
-        "Hexin Wang",
-        "Wangbo Zhao",
-        "Yang You"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-42053.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-42053-p2.jpg",
-        "assets/img/covers/arxiv-2610-42053-p3.jpg",
-        "assets/img/covers/arxiv-2610-42053-p4.jpg"
-      ],
-      "arxiv_id": "2610.42053",
-      "abs_url": "http://arxiv.org/abs/2610.42053v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.42053v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-00177",
       "source": "arxiv",
       "title": "AuroraWorld: Structured 4D World Modeling for Exo-to-Ego Video Generation in Robot Manipulation",
@@ -926,64 +1385,19 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Tongji University",
+        "Singapore University of Technology and Design"
+      ],
+      "method_tags": [
+        "4D world model",
+        "diffusion generation",
+        "exo-to-ego video generation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-00455",
-      "source": "arxiv",
-      "title": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
-      "title_zh": "TacMind：面向机器人操作触觉交互状态的基准测试与建模",
-      "tldr_zh": "提出触觉交互状态基准与预测世界模型，提升机器人操作性能。",
-      "cover_zh": "触觉不只是瞬时感知！这个基准让机器人学会预测未来触觉",
-      "abstract_zh": "触觉感知为机器人提供接触物理、局部几何和交互动力学的直接观测，是接触丰富操作的关键反馈来源。然而，现有触觉操作研究通常在特定任务设置下开发和评估，难以系统比较触觉信息在不同交互条件下的贡献。为此，我们开发了一个仿真基准，包含128个任务，围绕精确、识别和动态三种互补评估机制组织。该基准进一步包括受控的静态和动态任务变体以及12种扰动设置，用于评估视觉和物理条件变化下的鲁棒性。这些设置促使我们将触觉信息视为随时间演化的交互表示，而不仅是瞬时观测。因此，我们提出了一种动作条件潜在预测世界模型，该模型整合触觉历史，并通过预测未来触觉潜在表示来学习触觉状态。基于此表示，我们设计了一个模型，以学习到的触觉状态为条件生成动作，并利用预测的未来触觉信息通过预测触觉反射来优化候选动作。在所提出的基准上的实验表明，融合触觉信息在评估机制中均带来一致增益。项目页面：https://tacmind-bench.github.io/",
-      "authors": [
-        "Jiaxin Shi",
-        "Zibin Wu",
-        "Yichi Zhang"
-      ],
-      "authors_all": [
-        "Jiaxin Shi",
-        "Zibin Wu",
-        "Yichi Zhang",
-        "Jianghua Duan",
-        "Siyu Zhu",
-        "Weihao Yuan"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-00455.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00455-p2.jpg",
-        "assets/img/covers/arxiv-2611-00455-p3.jpg",
-        "assets/img/covers/arxiv-2611-00455-p4.jpg"
-      ],
-      "arxiv_id": "2611.00455",
-      "abs_url": "http://arxiv.org/abs/2611.00455v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00455v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1123,6 +1537,94 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "vid-bilibili-BV136xY6LE6s",
+      "source": "video_bilibili",
+      "title": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+      "title_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+      "tldr_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+      "cover_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+      "abstract_zh": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-10-30",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV136xY6LE6s",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 18,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV136xY6LE6s",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV136xY6LE6s&high_quality=1&autoplay=0",
+          "title": "智元联合创始人、总裁、CTO彭志辉：Token 衡量机器思考了多少，Worken 衡量机器行动了多少",
+          "source": "channel"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "vid-bilibili-BV1cpxv6vEUv",
+      "source": "video_bilibili",
+      "title": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+      "title_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+      "tldr_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+      "cover_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+      "abstract_zh": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-10-30",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1cpxv6vEUv",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 18,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1cpxv6vEUv",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1cpxv6vEUv&high_quality=1&autoplay=0",
+          "title": "智元合伙人、联席总裁、中央研发部总裁、交互业务体系总裁熊彦，发布行业首个具身全模态端到端交互大模型",
+          "source": "channel"
+        }
+      ],
+      "github": {},
+      "source_tags": []
     },
     {
       "id": "vid-bilibili-BV1hAxv6EEie",
@@ -1516,8 +2018,16 @@
       "venue_announced": "",
       "score": 15,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "IIIT Hyderabad",
+        "Tufts University",
+        "Miko"
+      ],
+      "method_tags": [
+        "对抗攻击",
+        "JEPA世界模型",
+        "latent planning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1566,135 +2076,15 @@
       "venue_announced": "",
       "score": 14,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-41877",
-      "source": "arxiv",
-      "title": "Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
-      "title_zh": "Movens-Zero：利用大规模人类视频扩展人形运动基础模型",
-      "tldr_zh": "从网络视频构建大规模人形运动数据集，提出可扩展架构实现多模态实时闭环控制。",
-      "cover_zh": "人形机器人运动模型新突破！从网络视频学动作，实时闭环控制",
-      "abstract_zh": "人形运动基础模型的扩展受限于多样且机器人可执行数据的稀缺，以及难以从异构多模态输入中联合学习并支持实时闭环控制。我们提出 Movens-5M，通过片段生成、质量过滤、语义标注、运动恢复以及人形重定向与执行验证的物理细化，从原始互联网视频构建而成。它包含 1500 万个人类运动序列和 500 万个物理可执行的人形运动序列，时长超过 10,000 小时，并与文本、RGB 视频、语音和音乐对齐。基于此数据，我们引入 Movens-Zero，一种可扩展的理解-生成-执行架构，支持跨模态联合学习和实时闭环执行。任务混合流匹配训练联合优化单个动作专家在七个生成任务上的表现，实现从文本、语音、音乐和视频直接生成运动。多模态实时分块在持续更新的指令和机器人状态下连接重叠块，实现连续闭环执行。我们进一步引入 Movens-Intent，一个四轨基准，包含 8,192 个专家验证的条件-运动对，涵盖文本、语音、音乐和视频。实验表明，当执行验证数据从 1% 扩展到 100%、动作专家容量从 64M 扩展到 911M 参数时，所有四种模态均获得一致增益，同时证明数据质量和跨模态监督能改善生成与执行。",
-      "authors": [
-        "Wendong Bu",
-        "Tinghong Ye",
-        "Qizhou Wang"
+      "institutions": [
+        "Fraunhofer Institute for Computer Graphics Research IGD",
+        "TU Darmstadt"
       ],
-      "authors_all": [
-        "Wendong Bu",
-        "Tinghong Ye",
-        "Qizhou Wang",
-        "Jiacheng Li",
-        "Zhiqi Ge",
-        "Yuze Lin",
-        "Zhongqi Yue",
-        "Yi Su",
-        "Jingyu Wang",
-        "Kai Shen",
-        "Jingdong Liu",
-        "Chengyuan Deng",
-        "Xiaoxuan Chen",
-        "Xin Tan",
-        "Jiaming Ji",
-        "Wenqiao Zhang",
-        "Chenghong Jiang",
-        "Tuoyu Li",
-        "Siliang Tang",
-        "Jun Xiao",
-        "Tat-Seng Chua",
-        "Yueting Zhuang",
-        "Xingxing Wang",
-        "Juncheng Li"
+      "method_tags": [
+        "注意力头解耦",
+        "难样本条件化",
+        "ViT"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "loco-manip-wbc",
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-41877.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-41877-p2.jpg",
-        "assets/img/covers/arxiv-2610-41877-p3.jpg",
-        "assets/img/covers/arxiv-2610-41877-p4.jpg"
-      ],
-      "arxiv_id": "2610.41877",
-      "abs_url": "http://arxiv.org/abs/2610.41877v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.41877v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 14,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-41970",
-      "source": "arxiv",
-      "title": "When Does Test-Time Search Help World Action Models? An Empirical Audit of Candidate Selection and Simulator Integrity",
-      "title_zh": "测试时搜索何时能帮助世界动作模型？对候选选择与模拟器完整性的实证审计",
-      "tldr_zh": "审计测试时搜索的前提，发现选择信号弱、加速不足且评估有隐患。",
-      "cover_zh": "测试时搜索翻车？审计发现选择信号弱、加速不达标！",
-      "abstract_zh": "世界动作模型越来越多地应用测试时扩展，将额外的推理计算用于候选选择与自适应分配以改进控制。此类收益只有在候选携带可利用信号、名义计算节省转化为实际加速、且评估保持可靠时才可信。我们在 Cosmos Policy 和 RoboCasa 上以前提优先、预注册的方法论审计了这三点。在干净数据上，学习到的价值选择器比随机差 1.66 个百分点；事后预言机仅提升 1.40 个百分点，且回合级区间跨越零；82% 的状态显示相同的候选结果，留下很少的选择空间。令牌剪枝将每次前向 FLOPs 减少最多 47%，但在部署路径上至多产生实测 1.15 倍端到端加速（在排除解码的路径上为 1.25 倍），低于 1.5 倍目标，且我们的自适应分配实验在功效门控下无定论。我们进一步识别并修复了一种静默渲染损坏，其发生率在计算密集的规划路径上急剧上升，但不影响官方直接策略结果，并发布了检测器、修复和脚本。这些发现表明为何测试时扩展应作为一系列前提（决策信号、实现效率、评估完整性）进行审计，而非仅凭成功率。结论仅限于测试配置。",
-      "authors": [
-        "Jun Liu",
-        "Dajie Sun",
-        "Zhenglun Kong"
-      ],
-      "authors_all": [
-        "Jun Liu",
-        "Dajie Sun",
-        "Zhenglun Kong",
-        "Zhenjiang Fan",
-        "Peiyan Dong",
-        "Fan Yang",
-        "Wenbin Zhangg",
-        "Geng Yuan",
-        "Xue Lin",
-        "Yanzhi Wang",
-        "Dong Huang"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-10-30",
-      "channels": [
-        "world-model",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-41970.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-41970-p2.jpg",
-        "assets/img/covers/arxiv-2610-41970-p3.jpg",
-        "assets/img/covers/arxiv-2610-41970-p4.jpg"
-      ],
-      "arxiv_id": "2610.41970",
-      "abs_url": "http://arxiv.org/abs/2610.41970v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.41970v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 14,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1794,60 +2184,11 @@
       "score": 12,
       "judge": {},
       "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-41857",
-      "source": "arxiv",
-      "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks",
-      "title_zh": "当模拟器失败，而非策略：审计模拟机器人基准中的接触伪影",
-      "tldr_zh": "模拟器碰撞检测缺陷导致机器人策略被误判失败，修复后成功率提升。",
-      "cover_zh": "机器人策略总失败？可能是模拟器在捣鬼！",
-      "abstract_zh": "模拟基准通过成功率来评估机器人策略，每个失败的回合都会对策略不利。许多失败是模拟器的过错，而非策略的过错；我们找到了原因并修复了它。在模拟中测试视觉语言动作模型和世界动作模型时，我们发现策略经常放置物体，然后模拟器将其弹出，而且基准自带的脚本演示也以同样的方式失败。我们提出了 SimuGuard，一个用于 LIBERO、RoboTwin、RoboCasa 和 RoboDojo 的审计插件。它保持评估不变。在每个物理步骤，它记录状态并标记在接触时开始移动的物体，如果其速度超过机器人接触或重力所能解释的范围。它逐位重放记录的回合，并在更改一个模拟参数的情况下重新运行回合。通过它，我们在 RoboTwin 上将这些回合追溯到物理引擎的碰撞检测：对于相距一到两厘米的几何体，引擎报告约两厘米的穿透，求解器以数米每秒的速度将物体抛出。原因是一个常数：距离算法丢弃低于固定面积阈值的三角形，而在厘米尺度下有效三角形会低于该阈值。仅更改该常数，出现伪影的回合从每 100 个中的 12 个降至零，五个容器任务的成功率从 89% 上升到 98%。因此，模拟中的成功率计入了模拟器导致的失败。在 PhysX 5.3.1 或更早版本上的基准应在修复后的引擎中重新运行。在引擎无法更改的情况下，他们应报告成功率以及每个标记回合失败或通过时的范围：对于 LingBot-VA，报告为 83.1% 左右，范围为 75.8% 到 98.5%。",
-      "authors": [
-        "Alex Zhou",
-        "Junhao Wu",
-        "Xueyang Zhou"
+      "method_tags": [
+        "VLM agent",
+        "geometric reasoning",
+        "zero-shot insertion"
       ],
-      "authors_all": [
-        "Alex Zhou",
-        "Junhao Wu",
-        "Xueyang Zhou",
-        "Yixiao Huo",
-        "Hongcheng Gao",
-        "Di Zhu",
-        "Zhenghao Zhang",
-        "Yongchao Chen"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-41857.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-41857-p2.jpg",
-        "assets/img/covers/arxiv-2610-41857-p3.jpg",
-        "assets/img/covers/arxiv-2610-41857-p4.jpg"
-      ],
-      "arxiv_id": "2610.41857",
-      "abs_url": "http://arxiv.org/abs/2610.41857v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.41857v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2005,113 +2346,23 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "XJTU",
+        "CASIA",
+        "UCAS",
+        "BUPT"
+      ],
+      "method_tags": [
+        "VLA",
+        "cross-embodiment transfer",
+        "hierarchical semantic alignment"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "RoboCasa"
+      ],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-42096",
-      "source": "arxiv",
-      "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
-      "title_zh": "CausalWAM：学习世界动作模型中动作的因果",
-      "tldr_zh": "提出CWAM方法，通过稀疏约束分离动作相关潜在变量，提升世界动作模型效率。",
-      "cover_zh": "世界模型总学错因果？稀疏路由让动作生成更精准！",
-      "abstract_zh": "世界动作模型（WAMs）从观测中学习潜在变量，并利用这些变量预测场景的演变和生成动作。预测必须针对整个场景，而只有场景的一部分会导致动作。拟合于演示的WAMs通常不能保证它们仅从演示动作的潜在原因（动作相关的潜在变量）生成动作，因为模型也可能以这种方式学习模仿，同时将动作相关的潜在变量与干扰变量纠缠在一起。因此，我们将导致动作的因素与预测所依赖的因素分离开来。我们证明，在稀疏性约束下，用于生成动作的潜在变量仅是动作相关潜在变量的可逆函数，并且真实结构在潜在变量的排列下是可识别的。这既不需要足够的时间依赖性，也不需要对未观察到的状态如何演变做出任何假设，并且即使动作相关的潜在变量与其余部分统计相关时也成立。因此，我们提出了CWAM（因果WAM），通过在其动作头上添加稀疏路由路径，将约束纳入预训练的WAM中，而世界建模目标保持不变。在合成数据和真实世界机器人上的实验验证了理论，并展示了闭环成功率的提高效率。",
-      "authors": [
-        "Juntao Cheng",
-        "Jinzhou Tang",
-        "Fan Feng"
-      ],
-      "authors_all": [
-        "Juntao Cheng",
-        "Jinzhou Tang",
-        "Fan Feng",
-        "Henrik I. Christensen",
-        "Yujia Zheng"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-10-30",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-42096.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-42096-p2.jpg",
-        "assets/img/covers/arxiv-2610-42096-p3.jpg",
-        "assets/img/covers/arxiv-2610-42096-p4.jpg"
-      ],
-      "arxiv_id": "2610.42096",
-      "abs_url": "http://arxiv.org/abs/2610.42096v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.42096v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2610-42141",
-      "source": "arxiv",
-      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-      "title_zh": "RoboArchitect：自动化设计具有持久记忆的机器人智能体",
-      "tldr_zh": "RoboArchitect自动设计机器人智能体框架，无需微调即大幅提升成功率。",
-      "cover_zh": "不微调模型，成功率直接翻倍？这个框架让机器人自己进化",
-      "abstract_zh": "近期研究表明，在智能体框架中，冻结的机器人策略表现更佳，其中控制代码决定何时查询策略、调用视觉工具或直接控制机械臂。然而，目前这些框架都是手工构建，并为每个新机器人或基准重新设计。我们证明框架设计可以自动化，为在新设置上微调提供了强有力的替代方案。在RoboArchitect中，一个编码模型观察机器人的执行轨迹，诊断失败，并围绕冻结策略迭代修改框架。框架在一组用于优化的片段上进化，并在留出的场景和任务上评估。在不更新任何模型权重的情况下，RoboArchitect在多个基准和策略上，将未见场景的平均成功率从9.7%提升至43.3%（4.5倍），未见任务从12.7%提升至40.2%（3.2倍）。当基准远离策略训练数据时增益最大：包装通用策略时，进化后的框架产生的专家甚至常优于微调版本。直观的控制策略被自动设计，例如抬起卡住的机械臂或当上方障碍物阻挡时水平伸入。框架还进化出自己的持久记忆，将学到的经验（如有效抓取深度）带入后续决策。这些结果表明，机器人操作中的巨大提升空间在于智能体框架，其设计可以在不更新权重的情况下有效自动化和优化。",
-      "authors": [
-        "Shengguang Wu",
-        "Suning Huang",
-        "Cherie Ho"
-      ],
-      "authors_all": [
-        "Shengguang Wu",
-        "Suning Huang",
-        "Cherie Ho",
-        "Ria Doshi",
-        "Hao Zhu",
-        "Serena Yeung-Levy"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2610-42141.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2610-42141-p2.jpg",
-        "assets/img/covers/arxiv-2610-42141-p3.jpg",
-        "assets/img/covers/arxiv-2610-42141-p4.jpg"
-      ],
-      "arxiv_id": "2610.42141",
-      "abs_url": "http://arxiv.org/abs/2610.42141v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.42141v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2150,12 +2401,20 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "fysical.ai"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "ACT",
+        "Diffusion Policy"
+      ],
+      "platform": [
+        "SO-101"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2505,8 +2764,15 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "CentraleSupélec",
+        "CNRS"
+      ],
+      "method_tags": [
+        "multi-agent coverage",
+        "autonomous exploration",
+        "fault tolerance"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2554,12 +2820,18 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "IT University of Copenhagen"
+      ],
+      "method_tags": [
+        "catenary model",
+        "PID controller",
+        "multimodular platform"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2602,67 +2874,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-00180",
-      "source": "arxiv",
-      "title": "Learning to Live: A Step Toward Lifelong Embodied Intelligence",
-      "title_zh": "学会生活：迈向终身具身智能的一步",
-      "tldr_zh": "LIFE框架让机器人持续观察、选择性记忆，从经验中学习新技能。",
-      "cover_zh": "机器人也能「记住」生活？这个框架让它从经验中学习",
-      "abstract_zh": "具身智能体通常围绕单个任务组织，但物理世界在任务之间和执行过程中不断变化。我们提出 LIFE（Lifelong Intelligence from Experience，从经验中获取终身智能）框架，机器人持续观察、选择性记忆，并将经验转化为新能力。RoboBeats 是一系列轻量级流式门控，跟踪智能体设定的条件并发现新事件，决定何时观察需要响应或写入记忆。选中的观察进入 Plastic Memory，这是一个存储图像和结构化记录的扁平存储，保留源证据，以便后续问题需要时添加新字段和索引。当现有工具不足时，Explore-Distill-Mount (EDM) 将问题解决过程中找到的解决方案转化为经过验证、可复用的工具和技能。在匹配协议下，RoboBeats 在其基础模型上显著改进了条件跟踪，并且在相同写入预算下，比均匀采样为记忆问答保留了更多有用证据。一个有限规模的案例研究，回放了真实机器人录制的 24 小时连续视频，展示了集成系统如何从一天的经验中构建记忆，并利用它回答日常问题。LIFE 向更熟悉周围环境、通过经验变得更有能力的机器人迈出了一步：不仅学习完成任务，而且学习在世界中生活。",
-      "authors": [
-        "Lirong Che",
-        "Peidong Wang",
-        "Yimeng Su"
+      "institutions": [
+        "University of Edinburgh"
       ],
-      "authors_all": [
-        "Lirong Che",
-        "Peidong Wang",
-        "Yimeng Su",
-        "Jiong Wang",
-        "Yang Chen",
-        "Wenbo Fu",
-        "Zhenyu Huang",
-        "Tiancheng Xu",
-        "Yuzhe Yang",
-        "Dongli Xie",
-        "Xu Cao",
-        "Chuang Wang",
-        "Daqi Liu",
-        "Jian Su"
+      "method_tags": [
+        "semantic-aware shape abstraction",
+        "ellipsoid primitives",
+        "alternating optimization"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-30",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-00180.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00180-p2.jpg",
-        "assets/img/covers/arxiv-2611-00180-p3.jpg",
-        "assets/img/covers/arxiv-2611-00180-p4.jpg"
-      ],
-      "arxiv_id": "2611.00180",
-      "abs_url": "http://arxiv.org/abs/2611.00180v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00180v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2709,8 +2928,15 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Potsdam",
+        "German Research Center for Artificial Intelligence (DFKI)"
+      ],
+      "method_tags": [
+        "natural language dialogue",
+        "skill abstraction",
+        "program synthesis"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

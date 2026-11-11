@@ -64,6 +64,70 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-00499",
+      "source": "arxiv",
+      "title": "Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion",
+      "title_zh": "知道该看哪里：通过空间-语义融合的交互式物体搜索",
+      "tldr_zh": "融合语义与几何的3D信念场，实现更优机器人物体搜索。",
+      "cover_zh": "机器人找东西不再瞎摸｜语义+几何双管齐下，搜索效率直接起飞",
+      "abstract_zh": "当寻找物体时，人类自然地将语义直觉（推理物体可能存放的位置）与几何意识（了解空间哪些部分可见、被遮挡或未探索）相结合。有效的机器人物体搜索需要同样的联合推理，然而现有方法仅依赖其中一种：几何方法维护有原则的空间信念但缺乏深度语义理解，而基于语言模型的方法利用常识知识但不维护对空间的显式信念。我们认为，在显式3D信念中联合推理语义和几何证据能够实现类人的交互式物体搜索，并优于任一单独模态。为验证这一主张，我们构建了一个系统，通过贝叶斯对数几率滤波将每个物体的VLM合理性分数和几何占用证据累积到统一的3D体素信念场中。组合信念场中的高信念区域驱动每一步的动作选择：从不同视角仔细观察、导航到工作空间的未探索区域，或物理交互打开关闭的柜子。我们将该系统端到端部署在双臂移动人形机器人上，发现其优于仅几何搜索和基于LLM的规划方法。项目网站 - https://skymanaditya1.github.io/objsearch-website/",
+      "authors": [
+        "Aditya Agarwal",
+        "Lucy Cai",
+        "Kelly Lu"
+      ],
+      "authors_all": [
+        "Aditya Agarwal",
+        "Lucy Cai",
+        "Kelly Lu",
+        "Travis Manderson",
+        "Nicholas Roy",
+        "Tomás Lozano-Pérez",
+        "Leslie Pack Kaelbling"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-31",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ MIT CSAIL"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00499.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00499-p2.jpg",
+        "assets/img/covers/arxiv-2611-00499-p3.jpg",
+        "assets/img/covers/arxiv-2611-00499-p4.jpg"
+      ],
+      "arxiv_id": "2611.00499",
+      "abs_url": "http://arxiv.org/abs/2611.00499v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00499v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {},
+      "institutions": [
+        "Massachusetts Institute of Technology"
+      ],
+      "method_tags": [
+        "VLM",
+        "Bayesian log-odds filtering",
+        "3D voxel belief field"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-00898",
       "source": "arxiv_discover",
       "title": "Trading Transparency for Stability: Friction-Cone-Constrained Bilateral Teleoperation for Opening Doors of Unsecured Furniture",
@@ -334,7 +398,11 @@
       "score": 20,
       "judge": {},
       "institutions": [],
-      "method_tags": [],
+      "method_tags": [
+        "VLM world model",
+        "geometric planning",
+        "zero-shot mobile manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -498,59 +566,6 @@
       "source_tags": [
         "qbitai"
       ]
-    },
-    {
-      "id": "arxiv-2611-00499",
-      "source": "arxiv",
-      "title": "Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion",
-      "title_zh": "知道该看哪里：通过空间-语义融合的交互式物体搜索",
-      "tldr_zh": "融合语义与几何的3D信念场，实现更优机器人物体搜索。",
-      "cover_zh": "机器人找东西不再瞎摸｜语义+几何双管齐下，搜索效率直接起飞",
-      "abstract_zh": "当寻找物体时，人类自然地将语义直觉（推理物体可能存放的位置）与几何意识（了解空间哪些部分可见、被遮挡或未探索）相结合。有效的机器人物体搜索需要同样的联合推理，然而现有方法仅依赖其中一种：几何方法维护有原则的空间信念但缺乏深度语义理解，而基于语言模型的方法利用常识知识但不维护对空间的显式信念。我们认为，在显式3D信念中联合推理语义和几何证据能够实现类人的交互式物体搜索，并优于任一单独模态。为验证这一主张，我们构建了一个系统，通过贝叶斯对数几率滤波将每个物体的VLM合理性分数和几何占用证据累积到统一的3D体素信念场中。组合信念场中的高信念区域驱动每一步的动作选择：从不同视角仔细观察、导航到工作空间的未探索区域，或物理交互打开关闭的柜子。我们将该系统端到端部署在双臂移动人形机器人上，发现其优于仅几何搜索和基于LLM的规划方法。项目网站 - https://skymanaditya1.github.io/objsearch-website/",
-      "authors": [
-        "Aditya Agarwal",
-        "Lucy Cai",
-        "Kelly Lu"
-      ],
-      "authors_all": [
-        "Aditya Agarwal",
-        "Lucy Cai",
-        "Kelly Lu",
-        "Travis Manderson",
-        "Nicholas Roy",
-        "Tomás Lozano-Pérez",
-        "Leslie Pack Kaelbling"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-31",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-00499.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00499-p2.jpg",
-        "assets/img/covers/arxiv-2611-00499-p3.jpg",
-        "assets/img/covers/arxiv-2611-00499-p4.jpg"
-      ],
-      "arxiv_id": "2611.00499",
-      "abs_url": "http://arxiv.org/abs/2611.00499v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00499v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 17,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
     },
     {
       "id": "arxiv-2611-00596",
