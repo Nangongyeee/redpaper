@@ -1,0 +1,153 @@
+{
+  "id": "arxiv-2611-14092",
+  "source": "arxiv",
+  "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+  "title_zh": "DexSeed：将人手-物体交互扩展为机器人演示，用于灵巧策略学习",
+  "abstract": "We study how to generate diverse, physically executable robot demonstrations for dexterous vision-language-action (VLA) learning. Existing demonstration-generation methods typically rely on costly teleoperated examples. Meanwhile, human hand--object datasets provide a reusable source, but existing transfer methods mainly reproduce given interactions. Turning these interactions into VLA training data further requires coverage of different objects and manipulation locations, together with executable arm and finger actions, and visual observations. To achieve this, we present DexSeed, a framework for low-cost generation of dexterous robot data from human hand--object interactions. Our key idea is to expand human sequences while preserving their grasps and realizing the resulting motions under arm-tracking dynamics in physics simulation. Specifically, we organize source sequences by grasp mode with shared language descriptions. InteractionMesh-based retargeting and arm trajectory augmentation adapt these sequences to the robot hand, different object geometries, and pick-and-place locations while preserving local hand--object relationships. An RL finger-control policy produces executable rollouts, while the arm tracks precomputed trajectories. Rendered observations and recorded actions from successful rollouts are paired with grasp descriptions to fine-tune a VLA. Experiments show improved contact fidelity in retargeting and more reliable whole-arm execution than the evaluated baselines. Simulation evaluation and real-world deployment further demonstrate that a VLA fine-tuned solely on the generated demonstrations can execute language-specified grasps. Project page: https://robbyant-research.github.io/DexSeed/.",
+  "abstract_zh": "我们研究如何为灵巧视觉-语言-动作（VLA）学习生成多样且物理可执行的机器人演示。现有的演示生成方法通常依赖昂贵的遥操作示例。同时，人手-物体数据集提供了可重用的来源，但现有的迁移方法主要复现给定的交互。将这些交互转化为VLA训练数据还需要覆盖不同的物体和操作位置，以及可执行的手臂和手指动作与视觉观察。为此，我们提出DexSeed，一个从人手-物体交互中低成本生成灵巧机器人数据的框架。我们的核心思想是在保持抓取的同时扩展人类序列，并在物理模拟中于手臂跟踪动力学下实现所得运动。具体而言，我们按抓取模式组织源序列并共享语言描述。基于InteractionMesh的重定向和手臂轨迹增强使这些序列适应机器人手、不同物体几何形状和拾放位置，同时保持局部手-物体关系。RL手指控制策略产生可执行的展开，而手臂跟踪预计算轨迹。成功展开的渲染观察和记录动作与抓取描述配对，以微调VLA。实验表明，重定向中的接触保真度得到改善，全臂执行比评估的基线更可靠。模拟评估和真实世界部署进一步表明，仅基于生成的演示微调的VLA能够执行语言指定的抓取。项目页面：https://robbyant-research.github.io/DexSeed/。",
+  "tldr_zh": "DexSeed框架从人手交互低成本生成机器人演示，用于灵巧VLA学习。",
+  "cover_zh": "人手数据直接变机器人训练集？DexSeed让灵巧操作学习不再昂贵",
+  "authors": [
+    {
+      "name": "Huaijin Pi",
+      "affiliation": ""
+    },
+    {
+      "name": "Zehong Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Yong Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Kechun Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Changpeng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Dingkun Wei",
+      "affiliation": ""
+    },
+    {
+      "name": "Xueyang Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenjia Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xing Zhu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yujun Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Taku Komura",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14092",
+  "pdf_url": "https://arxiv.org/pdf/2611.14092v1",
+  "abs_url": "http://arxiv.org/abs/2611.14092v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14092.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14092-p2.jpg",
+    "assets/img/covers/arxiv-2611-14092-p3.jpg",
+    "assets/img/covers/arxiv-2611-14092-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc",
+    "manipulation",
+    "teleop",
+    "sim2real"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ ZJU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 55,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ZJU” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 9 个（retargeting、vision-language-action、manipulation、dexterous）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 4 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "从人手物交互数据生成灵巧操作演示，用于VLA微调，含重定向与RL手指控制，属操作方向高价值工作",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The University of Hong Kong",
+    "Robbyant",
+    "Zhejiang University"
+  ],
+  "method_tags": [
+    "VLA",
+    "RL",
+    "动作重定向"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

@@ -1,0 +1,138 @@
+{
+  "id": "arxiv-2611-13929",
+  "source": "arxiv",
+  "title": "ReACT: Reflection-Consistent Modulation and Cross-Load Consistency for Humanoid Velocity Tracking Under Asymmetric Loads",
+  "title_zh": "ReACT：反射一致调制与跨负载一致性用于不对称负载下的人形机器人速度跟踪",
+  "abstract": "In recent years, humanoid loco-manipulation has progressed to whole-body grasping, lifting, and transport. A basic requirement underlying these tasks is carrying the object to its destination, which depends on the locomotion controller accurately executing velocity commands from the navigation policy. However, carrying an object in one hand introduces a persistent asymmetric upper-body load that can degrade velocity tracking. Persistent tracking biases can accumulate into position and heading deviations, increasing the risk of collisions and navigation failure. To address this problem, we present ReACT, a framework for accurate velocity tracking under asymmetric upper-body loads. Reflection-consistent disturbance modulation uses the estimated wrench to modulate actor features for load compensation while preserving action correspondence under reflected observations. Cross-load tracking consistency training compares loaded and unloaded conditions under the same velocity commands to promote consistent velocity tracking across loading conditions. Simulation experiments on a Unitree G1 humanoid robot show improved velocity tracking and reduced directional bias under varying asymmetric loads. Real-world experiments demonstrate collision-free goal reaching in all 40 tested navigation trials under unilateral hand loads with a fixed mapless navigation policy.",
+  "abstract_zh": "近年来，人形机器人移动操作已进展到全身抓取、举升和运输。这些任务的一个基本要求是将物体携带到目的地，这依赖于运动控制器准确执行来自导航策略的速度指令。然而，单手携带物体会引入持续的不对称上半身负载，可能降低速度跟踪性能。持续的跟踪偏差会累积成位置和航向偏差，增加碰撞和导航失败的风险。为解决这个问题，我们提出了ReACT，一个用于不对称上半身负载下准确速度跟踪的框架。反射一致扰动调制使用估计的力/力矩来调制演员特征以进行负载补偿，同时在反射观测下保持动作对应关系。跨负载跟踪一致性训练在相同速度指令下比较负载和空载条件，以促进不同负载条件下一致的速度跟踪。在Unitree G1人形机器人上的仿真实验表明，在不同不对称负载下速度跟踪得到改善，方向偏差减少。真实世界实验证明，在单手负载下，使用固定的无地图导航策略，在所有40次测试的导航试验中均实现了无碰撞目标到达。",
+  "tldr_zh": "ReACT框架提升不对称负载下人形机器人速度跟踪精度。",
+  "cover_zh": "单手拎重物也能稳如泰山？人形机器人速度跟踪新突破",
+  "authors": [
+    {
+      "name": "Xianghui Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Aoran Fu",
+      "affiliation": ""
+    },
+    {
+      "name": "Liyou Luo",
+      "affiliation": ""
+    },
+    {
+      "name": "Shanze Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaoyu Shen",
+      "affiliation": ""
+    },
+    {
+      "name": "Dan Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei Zhang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.13929",
+  "pdf_url": "https://arxiv.org/pdf/2611.13929v1",
+  "abs_url": "http://arxiv.org/abs/2611.13929v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13929.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13929-p2.jpg",
+    "assets/img/covers/arxiv-2611-13929-p3.jpg",
+    "assets/img/covers/arxiv-2611-13929-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 55,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKU” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（manipulation、grasp、grasping、locomotion）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "Unitree G1人形全身负载下速度跟踪控制，属loco-manipulation与WBC，方法有新意且真机验证。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The Hong Kong Polytechnic University",
+    "Eastern Institute of Technology",
+    "National University of Singapore",
+    "Xi'an Jiaotong-Liverpool University"
+  ],
+  "method_tags": [
+    "Reflection-consistent disturbance modulation",
+    "Cross-load tracking consistency training",
+    "velocity tracking"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

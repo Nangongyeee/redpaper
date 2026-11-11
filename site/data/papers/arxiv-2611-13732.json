@@ -1,0 +1,152 @@
+{
+  "id": "arxiv-2611-13732",
+  "source": "arxiv",
+  "title": "CIALLO: Learning Shared Intent Representations for Cross-Embodiment Manipulation",
+  "title_zh": "CIALLO：学习跨具身操作的共享意图表示",
+  "abstract": "Robot demonstrations contain reusable manipulation knowledge, but transferring this knowledge across embodiments requires representations that bridge differences in control interfaces. Action reconstruction alone does not ensure that similar behaviors across robots share a representation. To address this gap, we introduce CIALLO, an action codec that aligns actions, visual changes, and observation-grounded language in a shared space of short-horizon behavioral intent. An embodiment-conditioned decoder maps this intent back to robot-specific actions, allowing a shared representation to support different control interfaces. After pretraining on eight embodiments, CIALLO adapts to a new robot from one recording of at most 10 seconds by updating only its embodiment embeddings. The calibrated codec then remains frozen while a policy learns to predict intent from observations and instructions. We instantiate this policy with Qwen3.5-4B to form Qwen-CIALLO, whose backbone requires no large-scale robot-action pretraining before policy finetuning. With 20 demonstrations per task, Qwen-CIALLO achieves 76.7\\% average success across real SO-101 and single-arm Piper robots, compared with 70.0\\% for fully finetuned $π_0$. In simulation, we additionally finetune the action decoder, achieving 97.3\\% success on LIBERO and 52.7\\% on RoboTwin 2.0. The LIBERO policy also achieves 80.8\\% on LIBERO-Plus without further finetuning. Together, these results support a shared action codec as a transferable control interface that separates embodiment calibration from task learning.",
+  "abstract_zh": "机器人演示包含可复用的操作知识，但跨具身迁移这些知识需要能够弥合控制接口差异的表示。仅靠动作重建无法确保不同机器人上的相似行为共享同一表示。为此，我们提出 CIALLO，一种动作编解码器，将动作、视觉变化和基于观测的语言对齐到短时程行为意图的共享空间中。一个以具身为条件的解码器将该意图映射回机器人特定的动作，使共享表示能够支持不同的控制接口。在八个具身上预训练后，CIALLO 仅通过更新其具身嵌入，就能从一段最长 10 秒的录制中适应新机器人。校准后的编解码器随后保持冻结，而策略学习从观测和指令中预测意图。我们用 Qwen3.5-4B 实例化该策略，形成 Qwen-CIALLO，其骨干网络在策略微调前无需大规模机器人动作预训练。每个任务仅用 20 个演示，Qwen-CIALLO 在真实 SO-101 和单臂 Piper 机器人上达到 76.7% 的平均成功率，而完全微调的 π0 为 70.0%。在仿真中，我们额外微调动作解码器，在 LIBERO 上达到 97.3% 的成功率，在 RoboTwin 2.0 上达到 52.7%。LIBERO 策略在无需进一步微调的情况下，在 LIBERO-Plus 上达到 80.8%。这些结果共同支持共享动作编解码器作为一种可迁移的控制接口，将具身校准与任务学习分离。",
+  "tldr_zh": "CIALLO 用共享意图表示实现跨具身操作，仅需短时录制即可适应新机器人。",
+  "cover_zh": "仅10秒录制！这个编解码器让新机器人直接上手操作",
+  "authors": [
+    {
+      "name": "Choo Sin Wai",
+      "affiliation": ""
+    },
+    {
+      "name": "Dake Zhong",
+      "affiliation": ""
+    },
+    {
+      "name": "Jingye Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhifang Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Siyao Xiao",
+      "affiliation": ""
+    },
+    {
+      "name": "Zirong Ding",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuhong Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Kangjie Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Dongbin Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Guorui Song",
+      "affiliation": ""
+    },
+    {
+      "name": "Guocun Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Peng Jiao",
+      "affiliation": ""
+    },
+    {
+      "name": "Haoqian Wang",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.13732",
+  "pdf_url": "https://arxiv.org/pdf/2611.13732v1",
+  "abs_url": "http://arxiv.org/abs/2611.13732v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13732.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13732-p2.jpg",
+    "assets/img/covers/arxiv-2611-13732-p3.jpg",
+    "assets/img/covers/arxiv-2611-13732-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [],
+  "score": 50,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（π_0、manipulation、robotwin、libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "跨本体操作共享意图表征，动作编解码器+策略，真机与仿真验证，属操作VLA方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University"
+  ],
+  "method_tags": [
+    "action codec",
+    "cross-embodiment",
+    "intent representation"
+  ],
+  "platform": [
+    "SO-101",
+    "Piper"
+  ],
+  "sim_stack": [
+    "LIBERO",
+    "RoboTwin 2.0"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

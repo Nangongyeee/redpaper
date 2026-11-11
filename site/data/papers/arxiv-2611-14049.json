@@ -1,0 +1,94 @@
+{
+  "id": "arxiv-2611-14049",
+  "source": "arxiv",
+  "title": "RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control",
+  "title_zh": "RedirectMimic：用于人形全身控制的局部运动内容编辑",
+  "abstract": "Humanoid motion interfaces should accommodate application-specific movement constraints while retaining useful reference behavior. Local content redaction requires a controller to replace selected movements even when it continues to receive the original reference. Removing the tracking incentive for those movements leaves their replacement unspecified. We introduce RedirectMimic, which separates the reference observed by the actor from the target used to train its execution. A rule-generated edited reference guides tracking rewards during proximal policy optimization, while the deployed observation and action interfaces remain unchanged. We evaluate pose- and speed-defined arm editing in Unitree G1 simulation using a tracker pretrained on 7,509 motion clips. On the overhead-arm task, RedirectMimic reduces core-window content occurrence to 2.7%, compared with 58.9% for reward zeroing and 32.8% for anti-tracking. It achieves 94.2% core-window joint success, combining content suppression, fall-free execution, and local retention. On the speed-defined task, fast outward arm movements occurred at similarly low rates under all three local editing methods. Across both tasks, RedirectMimic achieved the lowest replacement error among these methods and tracked unedited motions with accuracy comparable to that of the pretrained controller. Project page: https://xiaopeng-whu.github.io/RedirectMimic/.",
+  "abstract_zh": "人形运动接口应能适应特定应用的运动约束，同时保留有用的参考行为。局部内容编辑要求控制器在持续接收原始参考的同时替换选定的运动。移除对这些运动的跟踪激励会导致其替换行为未指定。我们提出 RedirectMimic，它将 actor 观察到的参考与用于训练其执行的目标分离。规则生成的编辑参考在近端策略优化过程中指导跟踪奖励，而部署的观察和动作接口保持不变。我们在 Unitree G1 仿真中评估了基于姿态和速度定义的手臂编辑，使用在 7,509 个运动片段上预训练的跟踪器。在过顶手臂任务上，RedirectMimic 将核心窗口内容出现率降至 2.7%，而奖励归零和反跟踪方法分别为 58.9% 和 32.8%。它实现了 94.2% 的核心窗口关节成功率，结合了内容抑制、无摔倒执行和局部保留。在速度定义的任务上，三种局部编辑方法下快速向外手臂运动的出现率均较低。在两个任务中，RedirectMimic 在这些方法中实现了最低的替换误差，并以与预训练控制器相当的精度跟踪未编辑运动。项目页面：https://xiaopeng-whu.github.io/RedirectMimic/。",
+  "tldr_zh": "分离参考与目标，实现人形机器人局部运动编辑。",
+  "cover_zh": "人形机器人动作编辑新思路｜局部替换还能保持自然",
+  "authors": [
+    {
+      "name": "Zepeng Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xiaochuan Shi",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14049",
+  "pdf_url": "https://arxiv.org/pdf/2611.14049v1",
+  "abs_url": "http://arxiv.org/abs/2611.14049v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14049.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14049-p2.jpg",
+    "assets/img/covers/arxiv-2611-14049-p3.jpg",
+    "assets/img/covers/arxiv-2611-14049-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 9,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（whole-body、whole-body control、humanoid whole-body、unitree g1）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 9 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "人形全身控制动作重定向，G1仿真实验，方法新颖，对WBC研究有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Wuhan University"
+  ],
+  "method_tags": [
+    "PPO",
+    "motion tracking",
+    "whole-body control"
+  ],
+  "platform": [
+    "Unitree G1"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

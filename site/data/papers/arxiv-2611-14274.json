@@ -1,0 +1,112 @@
+{
+  "id": "arxiv-2611-14274",
+  "source": "arxiv",
+  "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
+  "title_zh": "从预测到行动：学习可变形线性物体操作中的物理上下文",
+  "abstract": "A representation that accurately predicts a deformable object's response is not necessarily the one most useful for choosing manipulation actions. We study this distinction between predictive utility and decision utility in planar single-grasp shape control of Deformable Linear Objects (DLOs). As a common decision backbone, we introduce Geometry-Pointer-Flow (GPF), a geometry-grounded policy that separates grasp-location selection from grasp-conditioned motion generation. Its geometry-only variant reduces one-step executed shape error by 32.8% relative to a DLO-specific diffusion policy, while using 18.7 times fewer parameters and achieving approximately 193 times faster inference. On this backbone, we compare physical context represented by ground-truth parameters, estimated parameters, and learned interaction-history representations, for both forward prediction and executed control. For prediction, ground-truth physical parameters reduce next-shape error by 15.8% over geometry alone, and estimated parameters are slightly more predictive than interaction history. This ordering does not carry over to control: estimated parameters provide no detectable one-step control gain, whereas history-conditioned GPF reduces executed error by 9.9% relative to geometry-only GPF across 470 paired simulation trials. In closed loop, interaction history improves strict-threshold attainment in simulation and yields the strongest zero-shot performance on hardware. All policies are trained exclusively in simulation and transferred to the physical robot without real-world training or fine-tuning. These results show that physical context should be evaluated by the decisions it supports rather than by predictive accuracy alone. Code will be released upon acceptance.",
+  "abstract_zh": "一个能准确预测可变形物体响应的表示，未必是选择操作动作时最有用的表示。我们在可变形线性物体（DLO）的平面单次抓取形状控制中，研究了预测效用与决策效用之间的这种区别。作为常见的决策主干，我们引入了 Geometry-Pointer-Flow（GPF），这是一种基于几何的策略，将抓取位置选择与以抓取为条件的运动生成分开。其仅几何变体相对于 DLO 专用的扩散策略，将单步执行形状误差降低了 32.8%，同时使用的参数减少了 18.7 倍，推理速度提高了约 193 倍。在此主干上，我们比较了由真实参数、估计参数和学习到的交互历史表示所代表的物理上下文，用于前向预测和执行控制。对于预测，真实物理参数比仅几何将下一形状误差降低了 15.8%，并且估计参数比交互历史略更具预测性。这种排序并未延续到控制中：估计参数没有提供可检测的单步控制增益，而历史条件 GPF 在 470 次配对模拟试验中相对于仅几何 GPF 将执行误差降低了 9.9%。在闭环中，交互历史提高了模拟中的严格阈值达成率，并在硬件上产生了最强的零样本性能。所有策略仅在模拟中训练，并转移到物理机器人上，无需真实世界训练或微调。这些结果表明，物理上下文应通过其支持的决策来评估，而不仅仅是预测准确性。代码将在接收后发布。",
+  "tldr_zh": "物理上下文应通过决策效用而非预测准确性来评估。",
+  "cover_zh": "预测准不等于决策好｜这个策略让形状控制误差大降",
+  "authors": [
+    {
+      "name": "Chengxiao Dong",
+      "affiliation": ""
+    },
+    {
+      "name": "Alessio Caporali",
+      "affiliation": ""
+    },
+    {
+      "name": "Hongyu Lan",
+      "affiliation": ""
+    },
+    {
+      "name": "Gianluca Palli",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14274",
+  "pdf_url": "https://arxiv.org/pdf/2611.14274v1",
+  "abs_url": "http://arxiv.org/abs/2611.14274v1",
+  "venue": "ICRA 2027",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14274.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14274-p2.jpg",
+    "assets/img/covers/arxiv-2611-14274-p3.jpg",
+    "assets/img/covers/arxiv-2611-14274-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "venue",
+      "label": "🎓 ICRA 2027"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 8,
+  "source_tags": [],
+  "score": 32,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（manipulation、grasp、diffusion policy）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 8 页"
+    },
+    {
+      "id": "conf_venue",
+      "label": "机器人顶会 / 顶刊出品",
+      "points": 10,
+      "hint": "被「ICRA 2027」收录"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "DLO形变物体操作策略研究，提出GPF几何策略并对比物理上下文表征，仿真训练零样本迁移真机，属操作方向有价值工作。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Bologna"
+  ],
+  "method_tags": [
+    "flow matching",
+    "sim-to-real",
+    "deformable linear object manipulation"
+  ],
+  "platform": [],
+  "sim_stack": [
+    "AGX Dynamics"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

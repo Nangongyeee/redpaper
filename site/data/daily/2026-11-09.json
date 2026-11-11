@@ -289,10 +289,10 @@
       "id": "vid-youtube-NL65Awuv8gU",
       "source": "video_youtube",
       "title": "Atlas on a Roll | Classical Motor Controls and Whole-Body RL | Boston Dynamics",
-      "title_zh": "Atlas 滚动前进 | 经典电机控制与全身强化学习 | Boston Dynamics",
-      "tldr_zh": "Boston Dynamics 为 Atlas 加轮子，测试全身强化学习控制器。",
-      "cover_zh": "Atlas 装上轮子！全身强化学习控制器挑战性能极限",
-      "abstract_zh": "现实世界中的机器人会面临我们无法总是预见或在实验室中重现的挑战和条件，因此我们必须发挥创造力来突破极限。为 Atlas 添加轮子是一个测试平台，用于观察学习到的全身控制器如何与真实执行器协同工作，并在其性能包络的边缘运行。了解更多关于我们如何测试系统以确保可靠性的信息：https://bostondynamics.com/blog/atlas-on-a-roll/ 加入我们的团队：https://bostondynamics.com/careers/",
+      "title_zh": "Atlas 滚动前行 | 经典电机控制与全身强化学习 | Boston Dynamics",
+      "tldr_zh": "Boston Dynamics 为 Atlas 加轮子，测试全身强化学习控制器与真实执行器的协同。",
+      "cover_zh": "Atlas 装上轮子！全身强化学习控制器挑战真实执行器极限",
+      "abstract_zh": "现实世界中的机器人会面临我们无法总是预料或在实验室中重现的挑战和条件，因此我们必须发挥创造力来突破极限。为 Atlas 添加轮子是一个测试平台，用于观察学习到的全身控制器如何与真实执行器协同工作，并在其性能包络的边缘运行。了解更多关于我们如何测试系统以确保可靠性的信息：https://bostondynamics.com/blog/atlas-on-a-roll/ 加入我们的团队：https://bostondynamics.com/careers/",
       "authors": [],
       "authors_all": [],
       "primary_category": "video",
@@ -348,6 +348,80 @@
           "source": "channel"
         }
       ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-13113",
+      "source": "arxiv",
+      "title": "Building World Models from Intrinsic Motivation",
+      "title_zh": "从内在动机构建世界模型",
+      "tldr_zh": "集成24种内在动机训练世界模型，好奇心加观测重建表现最佳。",
+      "cover_zh": "24种内在动机大乱斗｜好奇心+观测重建居然最强？",
+      "abstract_zh": "在缺乏外部奖励或任务监督的情况下，人类行为由内在动机引导——这些神经信号驱动好奇心、创造力、玩耍以及其他智能的基本方面。内在动机在构建能够泛化和适应的鲁棒世界模型中起着重要的发展作用。然而，现有研究尚未揭示广泛的内在动机如何与世界模型表示学习相互作用以支持下游控制。这限制了我们对哪些内在收集的经验能构建可重用模型的理解。为了填补这些空白，我们将24种内在目标（包括已有方法和涵盖好奇心、熵和能力的显式变体）集成到一个共同的基于模型的强化学习框架中。我们通过零样本、少样本和多任务控制在移动、操作和开放式游戏环境中评估它们构建的世界模型，并使用三种表示学习策略：观测重建、潜在预测和冗余减少。结合观测重建的好奇心驱动探索产生了最强的总体家族特征，尽管最佳个体配对取决于实验。在组合视觉任务中，源自情景和新奇性（为世界模型的通用循环状态提供补充记忆）的内在动机实现了最佳的零样本迁移和少样本适应。这些发现促使我们联合设计内在动机和表示学习。我们的结果表明，世界模型是衡量内在动机经验质量的有力工具，并将内在动机定位为自主构建世界模型的关键要素。",
+      "authors": [
+        "Reece Keller",
+        "Declan Kutscher",
+        "Xaq Pitkow"
+      ],
+      "authors_all": [
+        "Reece Keller",
+        "Declan Kutscher",
+        "Xaq Pitkow",
+        "Aran Nayebi"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-09",
+      "channels": [
+        "manipulation",
+        "locomotion",
+        "world-model",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13113.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13113-p2.jpg",
+        "assets/img/covers/arxiv-2611-13113-p3.jpg",
+        "assets/img/covers/arxiv-2611-13113-p4.jpg"
+      ],
+      "arxiv_id": "2611.13113",
+      "abs_url": "http://arxiv.org/abs/2611.13113v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13113v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "系统研究内在动机与世界模型表征学习的交互，覆盖locomotion/manipulation控制，对具身世界模型构建有直接参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Carnegie Mellon University",
+        "University of Maryland, College Park"
+      ],
+      "method_tags": [
+        "intrinsic motivation",
+        "world model",
+        "model-based RL"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -730,78 +804,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-13113",
-      "source": "arxiv",
-      "title": "Building World Models from Intrinsic Motivation",
-      "title_zh": "从内在动机构建世界模型",
-      "tldr_zh": "集成24种内在动机训练世界模型，好奇心加观测重建表现最佳。",
-      "cover_zh": "24种内在动机大乱斗｜好奇心+观测重建居然最强？",
-      "abstract_zh": "在缺乏外部奖励或任务监督的情况下，人类行为由内在动机引导——这些神经信号驱动好奇心、创造力、玩耍以及其他智能的基本方面。内在动机在构建能够泛化和适应的鲁棒世界模型中起着重要的发展作用。然而，现有研究尚未揭示广泛的内在动机如何与世界模型表示学习相互作用以支持下游控制。这限制了我们对哪些内在收集的经验能构建可重用模型的理解。为了填补这些空白，我们将24种内在目标（包括已有方法和涵盖好奇心、熵和能力的显式变体）集成到一个共同的基于模型的强化学习框架中。我们通过零样本、少样本和多任务控制在移动、操作和开放式游戏环境中评估它们构建的世界模型，并使用三种表示学习策略：观测重建、潜在预测和冗余减少。结合观测重建的好奇心驱动探索产生了最强的总体家族特征，尽管最佳个体配对取决于实验。在组合视觉任务中，源自情景和新奇性（为世界模型的通用循环状态提供补充记忆）的内在动机实现了最佳的零样本迁移和少样本适应。这些发现促使我们联合设计内在动机和表示学习。我们的结果表明，世界模型是衡量内在动机经验质量的有力工具，并将内在动机定位为自主构建世界模型的关键要素。",
-      "authors": [
-        "Reece Keller",
-        "Declan Kutscher",
-        "Xaq Pitkow"
-      ],
-      "authors_all": [
-        "Reece Keller",
-        "Declan Kutscher",
-        "Xaq Pitkow",
-        "Aran Nayebi"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-09",
-      "channels": [
-        "locomotion",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ CMU RI"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-13113.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-13113-p2.jpg",
-        "assets/img/covers/arxiv-2611-13113-p3.jpg",
-        "assets/img/covers/arxiv-2611-13113-p4.jpg"
-      ],
-      "arxiv_id": "2611.13113",
-      "abs_url": "http://arxiv.org/abs/2611.13113v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.13113v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 49,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "系统研究内在动机与世界模型表征学习的交互，覆盖locomotion/manipulation控制，对具身世界模型构建有直接参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Carnegie Mellon University",
-        "University of Maryland, College Park"
-      ],
-      "method_tags": [
-        "intrinsic motivation",
-        "world model",
-        "model-based RL"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},

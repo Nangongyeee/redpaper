@@ -1,0 +1,90 @@
+{
+  "id": "arxiv-2611-13810",
+  "source": "arxiv",
+  "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+  "title_zh": "环境照度下降11.5倍下的相机均衡：SO-101机械臂上四种模仿学习策略的实证研究",
+  "abstract": "Real-robot benchmarks of learned visuomotor policies often record room illuminance as the lighting condition. We show that, on a typical low-cost rig, room light and image light can be almost unrelated. Four imitation-learning policies (ACT, SmolVLA, Diffusion Policy and pi0.5) were trained on the same 50 demonstrations of a pick-and-place task on an SO-101 arm. Each was run for ten rollouts at about 520 lux and again at about 45 lux, an 11.5x reduction. Success was 20/40 in normal light and 19/40 in low light: a change of -2.5 percentage points (95% CI -23 to +19), with no evidence that the policies differed in sensitivity (interaction p = 0.86). The recorded video shows why: mean image brightness was only 3% lower in low light on the front camera and 19% lower on the wrist camera. Both cameras were set to automatic exposure and white balance, which most likely absorbed the difference; exposure was not locked in this experiment. An accidental repeat of one 10-rollout block reproduced its success count (7/10) but matched the first block at only 6 of 10 placements, consistent with chance. We conclude that lux alone does not describe what a policy sees. Camera settings, and image statistics compared with the training recordings, are the quantities to report and control. Data and code are public.",
+  "abstract_zh": "真实机器人基准测试中，学习到的视觉运动策略常以房间照度作为光照条件。我们在典型的低成本设备上展示，房间光线与图像光线可能几乎无关。四种模仿学习策略（ACT、SmolVLA、Diffusion Policy和pi0.5）在SO-101机械臂上使用相同的50次拾放任务演示进行训练。每种策略在约520勒克斯和约45勒克斯（11.5倍降低）下各进行十次滚动测试。正常光照下成功率为20/40，低光照下为19/40：变化为-2.5个百分点（95%置信区间-23至+19），没有证据表明策略在敏感性上存在差异（交互作用p=0.86）。录制的视频揭示了原因：低光照下，前摄像头的平均图像亮度仅低3%，腕部摄像头低19%。两个摄像头均设置为自动曝光和白平衡，这很可能吸收了差异；本实验中曝光未锁定。一次意外的重复测试中，一个10次滚动块的成功计数（7/10）被重现，但仅与第一个块在10次放置中的6次匹配，符合随机水平。我们得出结论：仅凭勒克斯无法描述策略所看到的内容。相机设置以及与训练记录相比的图像统计量，才是需要报告和控制的量。数据和代码已公开。",
+  "tldr_zh": "照度降11.5倍，策略成功率几乎不变，因相机自动曝光。",
+  "cover_zh": "照度暴跌11.5倍，成功率竟几乎不变？相机自动曝光在偷偷帮忙",
+  "authors": [
+    {
+      "name": "Simon Cowling",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.13810",
+  "pdf_url": "https://arxiv.org/pdf/2611.13810v1",
+  "abs_url": "http://arxiv.org/abs/2611.13810v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13810.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13810-p2.jpg",
+    "assets/img/covers/arxiv-2611-13810-p3.jpg",
+    "assets/img/covers/arxiv-2611-13810-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 10,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（diffusion policy、pick-and-place）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 10 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "SO-101机械臂上四种模仿学习策略的光照鲁棒性实测，揭示lux指标缺陷，对操作策略评测有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "fysical.ai"
+  ],
+  "method_tags": [
+    "Imitation Learning",
+    "ACT",
+    "Diffusion Policy"
+  ],
+  "platform": [
+    "SO-101"
+  ],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

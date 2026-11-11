@@ -1,0 +1,102 @@
+{
+  "id": "arxiv-2611-14488",
+  "source": "arxiv",
+  "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+  "title_zh": "你的机器人记忆只是一个时钟？记忆增强VLA策略中的时间捷径",
+  "abstract": "Memory-augmented vision-language-action (VLA) policies are meant to remember what happened. Many of them, however, fill memory by time: they sample frames uniformly across the episode and stamp each frame with its time step. Because time passes even when nothing happens, such a memory may not tell waiting from working. We show that it does not. On the counting tasks of RoboMME, we make the robot briefly pause or fidget its wrist. Such a null event changes nothing the task depends on, yet a released memory VLA counts the interval as work done and stops early. We call this failure phantom progress. It cuts success from 47 to 16 of 50 on one task and from 44 to 10 on the other. When the same frames are withheld from memory, success returns, so the cause lies in memory rather than in the interruption itself. We trace the failure to a temporal shortcut: because demonstrations proceed at a steady pace, elapsed time predicts progress. Indeed, rescaling the time stamps alone makes the policy stop early when the clock runs fast and repeat when it runs slow. Surprisingly, removing the time encoding does not cure the failure, because the frames of a null event still occupy slots of the time-sampled memory. Across RoboMME's released designs, vulnerability follows how memory is indexed. Of the fixes the diagnosis suggests, training with injected pauses does not remove the failure and impairs counting, whereas indexing memory by events recovers half or more of the loss without retraining. A memory meant to remember what happened should count events rather than clock ticks.",
+  "abstract_zh": "记忆增强的视觉-语言-动作（VLA）策略本应记住发生了什么。然而，许多策略按时间填充记忆：它们在回合中均匀采样帧，并为每帧打上时间步标签。因为即使没有发生任何事情时间也在流逝，这样的记忆可能无法区分等待和工作。我们表明它确实不能。在RoboMME的计数任务上，我们让机器人短暂暂停或扭动手腕。这种空事件不改变任务所依赖的任何东西，但一个已发布的记忆VLA将间隔计为已完成的工作并提前停止。我们称这种失败为幻影进展。在一个任务上，它将成功率从50次中的47次降低到16次，在另一个任务上从44次降低到10次。当同样的帧被从记忆中扣留时，成功率恢复，因此原因在于记忆而非中断本身。我们将失败追溯到一个时间捷径：因为演示以稳定速度进行，经过的时间预测进展。事实上，仅重新缩放时间戳就会使策略在时钟快时提前停止，在时钟慢时重复。令人惊讶的是，移除时间编码并不能治愈失败，因为空事件的帧仍然占据时间采样记忆的槽位。在RoboMME已发布的设计中，脆弱性遵循记忆的索引方式。在诊断建议的修复方法中，注入暂停的训练不能消除失败并损害计数，而按事件索引记忆无需重新训练即可恢复一半或更多的损失。旨在记住发生了什么的记忆应该计数事件而不是时钟滴答。",
+  "tldr_zh": "记忆VLA因时间捷径将空事件误判为进展，按事件索引可修复。",
+  "cover_zh": "机器人记忆翻车现场：暂停一下就被当成干活？",
+  "authors": [
+    {
+      "name": "Chubin Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Bo An",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14488",
+  "pdf_url": "https://arxiv.org/pdf/2611.14488v1",
+  "abs_url": "http://arxiv.org/abs/2611.14488v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14488.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14488-p2.jpg",
+    "assets/img/covers/arxiv-2611-14488-p3.jpg",
+    "assets/img/covers/arxiv-2611-14488-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ NTU"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 38,
+  "source_tags": [],
+  "score": 41,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NTU” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（vision-language-action）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 38 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "揭示记忆增强VLA的时间捷径失败模式，属操作VLA记忆机制分析，对一线有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Nanyang Technological University"
+  ],
+  "method_tags": [
+    "VLA",
+    "memory-augmented policy",
+    "temporal shortcut"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

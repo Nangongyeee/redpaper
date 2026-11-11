@@ -1,0 +1,126 @@
+{
+  "id": "arxiv-2611-14365",
+  "source": "arxiv",
+  "title": "From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models",
+  "title_zh": "从视频帧到机器人元帧：世界动作模型的统一潜在接口",
+  "abstract": "Pretrained video diffusion models (VDMs) offer a powerful foundation for World Action Models (WAMs), which jointly predict robot actions and future observations. Building such models requires injecting low-dimensional robot signals (e.g. proprioception, actions, and values) into a latent space shaped by natural videos, and a key design choice is the interface through which these signals enter: existing schemes treat it as a formatting detail, spending a separate latent frame on each signal or bolting on dedicated encoders and decoders. We argue that signal injection is instead a distribution-alignment problem: how well a representation matches the prior of the pretrained VDMs during denoising. Using the relative reconstruction error of a frozen VDM denoiser as a probe, we find that conventional spatial encodings sit far off this prior, whereas frequency-domain packing yields latents that the denoiser corrects far less. Motivated by this diagnostic result, we propose MetaWAM, which folds all robot signals into a single unified meta-frame: each signal is assigned to a disjoint frequency-domain channel band and lifted to the spatial latent by an inverse DCT, yielding a decodable interface aligned with the pretrained VDM prior without any added module or architectural change. A fixed band layout together with slot-aware routing lets the same meta-frame support policy, world-model, and value prediction over a shared set of robot variables. On RoboCasa, MetaWAM reaches 68.9% success while collapsing the per-signal frames into one and cutting inference latency by 39%, and attains 85.0% success on three real-world Franka tasks. Code and models are available at https://github.com/showlab/MetaWAM",
+  "abstract_zh": "预训练视频扩散模型（VDM）为世界动作模型（WAM）提供了强大的基础，后者联合预测机器人动作和未来观测。构建此类模型需要将低维机器人信号（如本体感觉、动作和价值）注入由自然视频塑造的潜在空间，而一个关键设计选择是这些信号进入的接口：现有方案将其视为格式细节，为每个信号花费一个单独的潜在帧，或附加专用的编码器和解码器。我们认为信号注入是一个分布对齐问题：表示在去噪过程中与预训练VDM先验的匹配程度。使用冻结VDM去噪器的相对重建误差作为探针，我们发现传统空间编码远离该先验，而频域打包产生的潜在表示被去噪器纠正的程度要小得多。受此诊断结果启发，我们提出MetaWAM，它将所有机器人信号折叠成一个统一的元帧：每个信号被分配到不相交的频域信道频带，并通过逆DCT提升到空间潜在表示，从而产生一个可解码的接口，与预训练VDM先验对齐，而无需添加任何模块或架构更改。固定的频带布局与槽感知路由一起，使相同的元帧能够在共享的机器人变量集上支持策略、世界模型和价值预测。在RoboCasa上，MetaWAM达到68.9%的成功率，同时将每个信号的帧折叠为一个，并将推理延迟降低39%，在三个真实世界的Franka任务上达到85.0%的成功率。代码和模型可在https://github.com/showlab/MetaWAM获取。",
+  "tldr_zh": "MetaWAM用频域打包统一机器人信号，提升世界动作模型性能。",
+  "cover_zh": "机器人信号还能这样打包？频域对齐让推理延迟直降39%！",
+  "authors": [
+    {
+      "name": "Guoqiang Liang",
+      "affiliation": ""
+    },
+    {
+      "name": "Yiqi Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yanzhe Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Kevin Yuchen Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Mike Zheng Shou",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14365",
+  "pdf_url": "https://arxiv.org/pdf/2611.14365v1",
+  "abs_url": "http://arxiv.org/abs/2611.14365v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14365.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14365-p2.jpg",
+    "assets/img/covers/arxiv-2611-14365-p3.jpg",
+    "assets/img/covers/arxiv-2611-14365-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
+    },
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 18,
+  "source_tags": [],
+  "score": 49,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NUS” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（robocasa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 18 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "基于视频扩散世界模型统一注入机器人信号，属World Action Model，方法新颖且真机验证",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "National University of Singapore",
+    "National University of Singapore Guangzhou Research Translation and Innovation Institute"
+  ],
+  "method_tags": [
+    "World Action Model",
+    "Diffusion Policy",
+    "Latent Representation"
+  ],
+  "platform": [
+    "Franka"
+  ],
+  "sim_stack": [
+    "RoboCasa"
+  ],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

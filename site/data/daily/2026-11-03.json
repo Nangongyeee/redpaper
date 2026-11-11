@@ -3,6 +3,283 @@
   "count": 55,
   "papers": [
     {
+      "id": "arxiv-2611-05585",
+      "source": "arxiv",
+      "title": "Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain",
+      "title_zh": "面向参数化不平地形的动态人形机器人运动：接触隐式全身轨迹优化",
+      "tldr_zh": "接触隐式优化实现人形机器人不平地形动态规划。",
+      "cover_zh": "不用预设接触序列！人形机器人竟能在台阶斜坡上动态行走",
+      "abstract_zh": "本文提出一种人形机器人轨迹规划器，采用接触隐式全身优化框架，在复杂且可参数化的地形上执行动态运动。该规划器无需预定义接触序列即可生成可行运动，并考虑机器人的完整动力学与运动学。为规划台阶、斜坡及其他地形上的双足运动，我们提出一种数学模型，用光滑曲面近似地面几何形状。机器人-地面间的刚性交互通过新颖的接触约束建模，将适用范围从平坦水平面扩展到任意光滑曲面。利用非线性规划在各种地形拓扑上规划运动，验证了有效性。我们还通过将高层需求嵌入代价函数和初始猜测，探索动态轨迹生成。在仿真和真实机器人ErgoCub上，对非共面地形进行了初步可行性测试。",
+      "authors": [
+        "Roberto Mauceri",
+        "Stefano Dafarra",
+        "Giulio Romualdi"
+      ],
+      "authors_all": [
+        "Roberto Mauceri",
+        "Stefano Dafarra",
+        "Giulio Romualdi",
+        "Marco Gabiccini",
+        "Daniele Pucci"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ IIT (Italy)"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 RA-L 2025"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05585.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05585-p2.jpg",
+        "assets/img/covers/arxiv-2611-05585-p3.jpg",
+        "assets/img/covers/arxiv-2611-05585-p4.jpg"
+      ],
+      "arxiv_id": "2611.05585",
+      "abs_url": "http://arxiv.org/abs/2611.05585v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05585v1",
+      "venue": "RA-L 2025",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {},
+      "institutions": [
+        "Istituto Italiano di Tecnologia",
+        "University of Manchester",
+        "University of Pisa"
+      ],
+      "method_tags": [
+        "Trajectory Optimization",
+        "Contact-Implicit",
+        "Whole-Body Control"
+      ],
+      "platform": [
+        "ErgoCub"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05129",
+      "source": "arxiv",
+      "title": "WayTrace: A Map-to-Language-to-Trace Hierarchy for Embodied Urban Navigation",
+      "title_zh": "WayTrace：面向具身城市导航的从地图到语言到轨迹的层次结构",
+      "tldr_zh": "WayTrace通过语言连接地图与机器人运动，实现城市长距离导航。",
+      "cover_zh": "机器人不看地图也能走1.37公里？WayTrace用语言指令搞定城市导航",
+      "abstract_zh": "网络服务几乎为每个城市提供步行导航，但自主机器人要在长路线上可靠地遵循这些导航仍然具有挑战性。点目标导航策略严重依赖精确的GNSS，而大多数视觉语言导航模型在户外甚至难以执行短指令。我们提出WayTrace，一个通过语言将网络地图导航方向与机器人运动连接起来的层次化系统。一个现成的协调器视觉语言模型读取逐向导航指令、卫星地图和最近的相机图像，并一次发出一个原子语言命令，例如“向左过马路”。一个机载轨迹预测器在超过一百万条来自街景图像的自动标注样本上训练，在图像中为该命令绘制路径，然后由强化学习策略进行跟踪。在长距离模拟任务中，WayTrace对GNSS噪声保持鲁棒，很少离开人行横道或人行道，而点目标基线方法则急剧退化，违规次数大约多十倍。部署在轮腿机器人上，WayTrace在繁忙市中心、乡村小径和大学校园完成了长达1.37公里的真实世界任务，速度约为1.1米/秒，处理了人行横道、楼梯和建筑工地。项目页面：https://way-trace.github.io",
+      "authors": [
+        "Manthan Patel",
+        "Jonas Frey",
+        "Pascal Roth"
+      ],
+      "authors_all": [
+        "Manthan Patel",
+        "Jonas Frey",
+        "Pascal Roth",
+        "Marco Hutter",
+        "Cesar Cadena"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Berkeley (BAIR)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Marco Hutter"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05129.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05129-p2.jpg",
+        "assets/img/covers/arxiv-2611-05129-p3.jpg",
+        "assets/img/covers/arxiv-2611-05129-p4.jpg"
+      ],
+      "arxiv_id": "2611.05129",
+      "abs_url": "http://arxiv.org/abs/2611.05129v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05129v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {},
+      "institutions": [
+        "ETH Zurich",
+        "UC Berkeley",
+        "NVIDIA"
+      ],
+      "method_tags": [
+        "VLM",
+        "RL",
+        "hierarchical navigation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05295",
+      "source": "arxiv",
+      "title": "GSBR: Geometric Support Behavior Regularization for Online RL",
+      "title_zh": "GSBR：在线强化学习的几何支撑行为正则化",
+      "tldr_zh": "GSBR通过惩罚动作与基础策略支撑的距离，平衡正则化与改进，在机器人任务上大幅提升成功率。",
+      "cover_zh": "终于不卡在基础策略了｜这个正则化让RL成功率从33%飙到95%",
+      "abstract_zh": "在线强化学习（RL）中，向预训练基础策略进行正则化可以提升样本效率和学习稳定性，但过于严格的正则化会限制策略的改进空间。基础策略——通常是在大规模多样化数据集上通过模仿学习训练的扩散模型或流匹配模型——捕获了许多合理但次优的行为。现有使用此类基础策略的正则化器在以下两方面之一过于严格：行为克隆正则化器将演员拉向完整的基础策略分布，惩罚其丢弃次优模式；而硬支撑约束则禁止超出基础策略支撑范围的改进。我们提出几何支撑行为正则化（GSBR），它根据动作与基础策略支撑的距离进行惩罚。支撑范围内的动作不受惩罚，因此演员可以专注于高价值模式；在支撑范围外，价值估计不太可靠，惩罚随距离平滑增长，同时当获得的价值超过惩罚时仍允许改进。GSBR 从有限的基础策略样本中估计该距离，因此仅需对基础策略的样本访问。在四个机器人基准的 19 个任务上，GSBR 将平均成功率从基础策略的 33% 提升至 95%，在所有比较方法中实现了最高的平均成功率和吞吐量，归一化吞吐量比次优的 RL 方法高出约 23%。项目网站和开源代码见 https://charlesxu0124.github.io/gsbr/ 。",
+      "authors": [
+        "Charles Xu",
+        "Jacob Berg",
+        "Liyiming Ke"
+      ],
+      "authors_all": [
+        "Charles Xu",
+        "Jacob Berg",
+        "Liyiming Ke",
+        "Sergey Levine"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Physical Intelligence (π)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Berkeley (BAIR)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Sergey Levine"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05295.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05295-p2.jpg",
+        "assets/img/covers/arxiv-2611-05295-p3.jpg",
+        "assets/img/covers/arxiv-2611-05295-p4.jpg"
+      ],
+      "arxiv_id": "2611.05295",
+      "abs_url": "http://arxiv.org/abs/2611.05295v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05295v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {},
+      "institutions": [
+        "UC Berkeley",
+        "Physical Intelligence"
+      ],
+      "method_tags": [
+        "RL",
+        "Imitation Learning",
+        "Diffusion Policy"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05163",
+      "source": "arxiv",
+      "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
+      "title_zh": "RoboTryOn：通过虚拟试穿从人类视频合成灵巧机器人演示",
+      "tldr_zh": "RoboTryOn将人类视频虚拟试穿为机器人演示，合成数据训练策略成功率大幅提升。",
+      "cover_zh": "人类视频秒变机器人演示｜虚拟试穿让策略成功率飙升",
+      "abstract_zh": "机器人基础模型在机器人控制中已展现出显著性能，但将其适配到新任务仍严重依赖遥操作演示。第一人称人类视频提供了一种可扩展的替代方案，然而在人类视频上叠加渲染的机器人或将人类姿态重定向为机器人动作，对于高自由度机器人 embodiment 仍存在显著的视觉或动作差距。为解决这一局限，我们提出 RoboTryOn，将人-to-机器人转换视为虚拟试穿：试穿保留人并替换服装，RoboTryOn 保留演示动作并将人替换为机器人。具体而言，RoboTryOn 将人类视频转换为由参考图像指定的目标机器人的视频，同时保留原始任务、物体和背景。为保持视觉一致性，我们自回归地转换选定的关键帧，并利用它们以人类手部骨架为运动条件引导视频合成。此外，我们使用结合深度特征的逆动力学模型（IDM）从合成视频中推断动作标签以进行策略学习。在多种人形 embodiment 上的实验表明，使用我们的合成数据训练的策略在新任务（包括具有挑战性的双手操作）上的平均成功率从 2% 提升至 60%，且无需这些任务的任何真实机器人演示。此外，使用我们的合成数据训练在约三分之一的收集成本下达到仅用遥操作演示训练的策略的性能，证明了我们方法的成本效率。",
+      "authors": [
+        "Seungyong Lee",
+        "Suhyeok Jang",
+        "Minyoung Kim"
+      ],
+      "authors_all": [
+        "Seungyong Lee",
+        "Suhyeok Jang",
+        "Minyoung Kim",
+        "Jinwoo Shin"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation",
+        "teleop",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ KAIST"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05163.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05163-p2.jpg",
+        "assets/img/covers/arxiv-2611-05163-p3.jpg",
+        "assets/img/covers/arxiv-2611-05163-p4.jpg"
+      ],
+      "arxiv_id": "2611.05163",
+      "abs_url": "http://arxiv.org/abs/2611.05163v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05163v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "KAIST",
+        "RLWRLD"
+      ],
+      "method_tags": [
+        "human-to-robot video translation",
+        "inverse dynamics model",
+        "bimanual manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-04839",
       "source": "arxiv",
       "title": "Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight",
@@ -115,12 +392,18 @@
       "venue_announced": "",
       "score": 40,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of California, Berkeley"
+      ],
+      "method_tags": [
+        "motion tracking",
+        "force control",
+        "loco-manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -178,8 +461,15 @@
       "venue_announced": "",
       "score": 39,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Georgia Institute of Technology",
+        "Georgia Tech Research Institute"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Diffusion Policy",
+        "VLA"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -230,12 +520,311 @@
       "venue_announced": "",
       "score": 37,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "The University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Latent Action Modeling",
+        "Imitation Learning",
+        "Learning from Videos"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05667",
+      "source": "arxiv",
+      "title": "Correct Robots Before They Make Mistakes: Proactive Human-in-the-Loop Intervention via Preference Learning",
+      "title_zh": "在机器人犯错前纠正：通过偏好学习的主动人在回路干预",
+      "tldr_zh": "提出PHIL框架，通过XR预览和偏好学习实现机器人主动干预，提升任务成功率。",
+      "cover_zh": "机器人犯错前就能纠正？这个框架让干预更主动！",
+      "abstract_zh": "本文提出主动人在回路（PHIL）框架，用于主动策略纠正和基于偏好的后训练。PHIL 使操作员能够预览策略预测的未来运动，并在预期的不良动作发生前进行干预。在接管期间，PHIL 继续查询策略，并通过扩展现实（XR）界面在物理工作空间中显示其预测轨迹。PHIL 将拒绝的策略预测与随后在相同物理状态下、相同时间范围内执行的纠正动作块配对，基于偏好的后训练鼓励策略偏好这些纠正。本文在四个真实世界操作任务上评估 PHIL，使用扩散策略和预训练的视觉-语言-动作策略。每个条件进行五次纠正回合，与 HG-DAgger 相比，PHIL 在评估任务和演示预算上提高了平均成功率：扩散策略从 44.0% 提高到 70.3%，X-VLA 从 57.8% 提高到 76.9%。此外，使用主动纠正训练的策略在成功回合中表现出更少的不必要恢复行为。项目页面：https://intuitive-robots.github.io/PHIL-page/。",
+      "authors": [
+        "Xinkai Jiang",
+        "Jing Jiang",
+        "Hongyi Zhou"
+      ],
+      "authors_all": [
+        "Xinkai Jiang",
+        "Jing Jiang",
+        "Hongyi Zhou",
+        "Pankhuri Vanjani",
+        "Ahmad Baki",
+        "Jakub Suliga",
+        "Ge Li",
+        "Zhuoyue Li",
+        "Gerhard Neumann",
+        "Rudolf Lioutikov"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05667.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05667-p2.jpg",
+        "assets/img/covers/arxiv-2611-05667-p3.jpg",
+        "assets/img/covers/arxiv-2611-05667-p4.jpg"
+      ],
+      "arxiv_id": "2611.05667",
+      "abs_url": "http://arxiv.org/abs/2611.05667v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05667v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {},
+      "institutions": [
+        "Karlsruhe Institute of Technology (KIT)",
+        "Robotics Institute Germany (RIG)"
+      ],
+      "method_tags": [
+        "Preference Learning",
+        "Human-in-the-Loop",
+        "Diffusion Policy"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05249",
+      "source": "arxiv",
+      "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+      "title_zh": "动作专家应该训练VLM吗？混合Transformer VLA中的动作Token监督与梯度路由",
+      "tldr_zh": "梯度隔离的价值取决于动作token监督和评估设置。",
+      "cover_zh": "VLA训练默认隔离梯度？新研究说要看情况！",
+      "abstract_zh": "视觉-语言-动作（VLA）模型越来越多地将预训练的视觉-语言模型（VLM）与一个流匹配专家配对，该专家以VLM的键值表示为条件进行动作预测。这些表示必须携带对控制有用的信息，但VLM从未针对动作专家的流匹配目标进行训练。有两种信号可以解决这个问题：从专家损失反向传播的梯度（耦合），或对VLM进行监督以预测编码相同目标动作的离散token。主流的训练方案放弃了第一种，即阻断专家到VLM的梯度（隔离）以保护VLM的现有能力，同时还在视觉-语言数据和动作token上对其进行监督。由于视觉-语言联合训练也旨在保留这些能力，隔离所提供的额外保护尚不明确。同时，隔离移除了关于连续动作预测需要哪些特征的一种直接信号。另一方面，动作token监督提供了一种学习动作相关表示的替代方式，这可能解释了为什么隔离在实践中成功。我们在自动驾驶和操作任务中通过独立改变动作token监督以及专家的损失是否更新VLM来解开这些因素。在开环驾驶中，当动作token被监督时，隔离与耦合具有竞争力；没有它们时，耦合将轨迹预测误差降低约25%。当两个组件从一开始就联合训练时，耦合在有动作token监督的情况下将闭环驾驶路线进度提高约17%，在没有的情况下提高40%，并且在两种设置下同样改善了机器人操作性能。这些发现表明，梯度隔离的价值取决于VLM的动作监督和评估设置，挑战了将隔离作为默认VLA训练方案的做法。",
+      "authors": [
+        "Asher James Hancock",
+        "Boyi Li",
+        "Yuxiao Chen"
+      ],
+      "authors_all": [
+        "Asher James Hancock",
+        "Boyi Li",
+        "Yuxiao Chen",
+        "Shuhan Tan",
+        "Wenhao Ding",
+        "Thomas Tian",
+        "Yan Wang",
+        "Boris Ivanovic",
+        "Marco Pavone"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Princeton"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05249.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05249-p2.jpg",
+        "assets/img/covers/arxiv-2611-05249-p3.jpg",
+        "assets/img/covers/arxiv-2611-05249-p4.jpg"
+      ],
+      "arxiv_id": "2611.05249",
+      "abs_url": "http://arxiv.org/abs/2611.05249v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05249v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "NVIDIA",
+        "Princeton University",
+        "Stanford University"
+      ],
+      "method_tags": [
+        "VLA",
+        "flow-matching",
+        "action-token supervision"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05280",
+      "source": "arxiv",
+      "title": "YANAMI: A Large-Scale Multimodal Dataset and Benchmark for Multiturn Stateful Interaction",
+      "title_zh": "YANAMI：面向多轮状态交互的大规模多模态数据集与基准",
+      "tldr_zh": "YANAMI数据集与基准推动多模态状态交互，微调BAGEL显著提升性能。",
+      "cover_zh": "多轮对话总失忆？YANAMI数据集让模型真正记住状态！",
+      "abstract_zh": "统一多模态模型（UMMs）将视觉理解、生成和编辑集成在一个统一框架内。然而，现有的统一多模态数据集和基准仍以单轮任务为主。即使在最近的多轮数据集中，许多轮次也可以独立解决，无需跨轮次跟踪信息。因此，它们对多模态状态交互提供的监督和评估有限，而多模态状态交互要求模型理解、维护、更新并忠实实现跨轮次演变的对话状态。为了填补这一空白，我们推出了YANAMI，这是首个面向状态交互的大规模多模态对话数据集和基准，包含YANAMI-400K和YANAMI-Bench。YANAMI-400K包含40万多轮多模态对话，拥有超过200万张图像和260万对话轮次。对话涵盖四个代表性场景：多图像融合、图像编辑、世界建模和视觉推理，并要求模型持续跟踪、保留和修订跨轮次演变的多模态对话状态。YANAMI-Bench包含400个多轮对话，用于系统评估多模态状态交互。它联合评估对话状态理解和视觉实现，刻画模型理解演变对话状态的能力与其在视觉输出中忠实实现这些状态的能力之间的差距。实验表明，在YANAMI-400K上微调BAGEL分别将图像编辑、生成和多模态状态交互提升了10.3%、2.0%和13.23%，同时保留了其通用视觉理解能力。在YANAMI-Bench上的评估进一步揭示，现有UMMs在维护、更新和视觉实现演变的多模态对话状态方面仍存在困难。",
+      "authors": [
+        "Shengyu Wang",
+        "Tengyue Nong",
+        "Junming Liu"
+      ],
+      "authors_all": [
+        "Shengyu Wang",
+        "Tengyue Nong",
+        "Junming Liu",
+        "Haosong Peng",
+        "Siyu Li",
+        "Ruiqi Lei",
+        "Fushuo Huo",
+        "Yuhao Pan",
+        "Yunfeng Fan",
+        "Ding Wang",
+        "Nan Cheng",
+        "Haozhao Wang",
+        "Wenchao Xu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-03",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKUST"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05280.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05280-p2.jpg",
+        "assets/img/covers/arxiv-2611-05280-p3.jpg",
+        "assets/img/covers/arxiv-2611-05280-p4.jpg"
+      ],
+      "arxiv_id": "2611.05280",
+      "abs_url": "http://arxiv.org/abs/2611.05280v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05280v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "The Hong Kong University of Science and Technology",
+        "Independent Researcher",
+        "The University of Melbourne",
+        "The Chinese University of Hong Kong, Shenzhen"
+      ],
+      "method_tags": [
+        "多模态对话数据集",
+        "多轮有状态交互",
+        "基准评测"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05320",
+      "source": "arxiv",
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "title_zh": "PyRUA-DataFarm：LLM 智能体作为经济高效的远程操作员，用于真实可用的机器人数据",
+      "tldr_zh": "LLM智能体在仿真中生成机器人数据，成本低于远程操作且策略更鲁棒。",
+      "cover_zh": "LLM智能体接管遥操作｜机器人数据成本直降，策略还更抗干扰",
+      "abstract_zh": "远程操作仍然是收集机器人演示的默认方式，但每个回合都耗费机器人和操作员的时间，而且每个新任务都从零开始。我们探讨编码智能体能否接管远程操作员的工作。在我们的 DataFarm 中，智能体接收一个数据请求和目标场景中机器人的一次校准回合，并在仿真中重建任务：它编写场景、专家控制器和成功判断器。仿真器提供精确的动作，而一个以真实图像为条件的视频模型将每个 rollout 渲染为照片级视频，一致地生成所有相机视图。输出是真实可用的数据：带有机器人动作标签的同步相机视图，可以直接在其上训练策略并部署到真实机器人上。独立判断器在准入前认证专家和每个渲染回合。在五个真实机器人任务上，仅使用农场数据训练的策略与使用同样多远程操作回合训练的策略表现相当（100 次试验中成功次数为 93 对 84），并且在未见过的桌布和彩色光照下，它们保持 87 次成功，而远程操作训练的策略降至 46 次。任务适配完全自动，平均花费 21 美元的 API 使用费，每个任务支付一次，外加 5 美元的渲染合同费；每个后续回合平均花费 0.80 美元用于仿真、渲染和审查，无需机器人和操作员。一个任务的一小时三视图数据平均花费 107 美元，包含这些成本，略低于中国远程操作 117 美元的报价，也低于北美仅劳动力成本 290 美元。",
+      "authors": [
+        "Kewei Zhang",
+        "Juncheng Ma",
+        "Guodong Lv"
+      ],
+      "authors_all": [
+        "Kewei Zhang",
+        "Juncheng Ma",
+        "Guodong Lv",
+        "Duomin Wang",
+        "Feixiang Ruan",
+        "Ruiyang Si",
+        "Chuanrui Zhang",
+        "Yuxuan Chen",
+        "Hao Chen",
+        "Yichen Liu",
+        "Yintianrun Zhang",
+        "Yufan Deng",
+        "Enze Xie",
+        "Daquan Zhou"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-03",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05320.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05320-p2.jpg",
+        "assets/img/covers/arxiv-2611-05320-p3.jpg",
+        "assets/img/covers/arxiv-2611-05320-p4.jpg"
+      ],
+      "arxiv_id": "2611.05320",
+      "abs_url": "http://arxiv.org/abs/2611.05320v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05320v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "Peking University",
+        "NVIDIA"
+      ],
+      "method_tags": [
+        "LLM Agent",
+        "Simulation Data Generation",
+        "Video Model Rendering"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -297,6 +886,197 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-05275",
+      "source": "arxiv",
+      "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+      "title_zh": "路由一切：面向通用人工智能系统的模型与策略路由研究",
+      "tldr_zh": "提出Route Anything框架，研究模型与策略路由，实验显示路由可大幅提升效率。",
+      "cover_zh": "路由一切｜动态选择模型，效率提升8.82倍！",
+      "abstract_zh": "通用人工智能（AGI）需要一种能够跨多样领域和模态进行理解、生成、推理和行动的方法。如今，一条通往AGI的有前景的路径不是依赖单一模型掌握所有能力，而是将专用模型、工具和策略（候选者）组成的异构生态系统编排成一个统一的AI系统。这一愿景的核心是一个基本问题：AI系统如何动态选择并协调每个任务中最有能力的候选者，同时平衡性能与计算成本？在这项工作中，我们提出了Route Anything，一个用于研究通用AI系统中模型与策略路由的统一框架。我们建立了一个统一的理论基础，刻画了质量-成本权衡下的最优路由，并确立了路由器可用的信息如何决定其可达到的性能。为了系统地研究跨多样能力的路由，我们首先构建了一个全模态轨迹矩阵，涵盖语言理解、图像、视频和语音生成、编码与工作场所智能体以及机器人操作等25个基准，包含来自452个候选配置的374,401次评分运行。基于该框架，我们训练并测试了不同的路由器，以探究全模态模型路由的潜力、学习到的路由器的能力以及路由提高效率的条件。我们的结果揭示了能力编排的巨大机会：逐输入的预言机路由在16个基准上比最佳固定候选者高出5.4分，而学习到的路由器在视频生成上高出2.1分，在机器人操作上高出1.1分，同时策略时间减少了24%。更重要的是，与参考模型相比，路由平均将效率提高了8.82倍。",
+      "authors": [
+        "Pengfei Zhou",
+        "Yixing Ma",
+        "Hexin Wang"
+      ],
+      "authors_all": [
+        "Pengfei Zhou",
+        "Yixing Ma",
+        "Hexin Wang",
+        "Weidong Tang",
+        "Zhenglin Wan",
+        "Wangbo Zhao",
+        "Yang You"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-03",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05275.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05275-p2.jpg",
+        "assets/img/covers/arxiv-2611-05275-p3.jpg",
+        "assets/img/covers/arxiv-2611-05275-p4.jpg"
+      ],
+      "arxiv_id": "2611.05275",
+      "abs_url": "http://arxiv.org/abs/2611.05275v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05275v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "National University of Singapore",
+        "HPC-AI Lab",
+        "InfRec",
+        "Cardinal AI Lab"
+      ],
+      "method_tags": [
+        "model routing",
+        "policy routing",
+        "quality-cost trade-off"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05735",
+      "source": "arxiv",
+      "title": "Self-Supervised Learning of Universal Latent Spaces for Operator Learning",
+      "title_zh": "面向算子学习的通用潜在空间的自监督学习",
+      "tldr_zh": "自监督预训练通用潜在空间，冻结后跨任务重用，提升算子学习效率。",
+      "cover_zh": "冻结潜在空间，算子学习竟能如此高效！",
+      "abstract_zh": "神经算子将其函数表示拟合到所训练的任务上，因此每个新任务都需要从标注数据中重建一个约简空间。遵循在自然语言处理和计算机视觉中使表示可共享的自监督预训练，我们将表示学习与算子学习解耦。一个函数自编码器在动态合成的解析函数上进行预训练，无需求解器且无需标签，以表示任意点云上的函数，并且其诱导的潜在空间被冻结并跨任务重用。该表示对平移、膨胀和幅度具有精确等变性，并能重建偏微分方程（PDE）的解以及从未见过的几何形状上的自然图像。由于与任务无关，潜在空间本身可以被解释。整个空间被使用并解码为有效的场，它保持了物理场之间距离的顺序，其测地线插值物理演化，并且编辑方向可以跨场迁移。使用冻结的表示映射，数据集被编码一次，神经算子完全在缓存的嵌入上进行训练，这节省了内存和训练时间。在流体动力学、固体力学、声学以及亥姆霍兹和泊松方程的28个任务上，这种范式可以超越最先进的端到端架构的精度，吞吐量高达一个数量级，内存节省使得在消费级GPU上可以容纳近两个数量级大的模型。在推理时，潜在推演比常规推演快达一个数量级，分块推理在单个消费级GPU上处理超过五亿个点的函数。",
+      "authors": [
+        "Sepehr Mousavi",
+        "Levi Lingsch",
+        "Siddhartha Mishra"
+      ],
+      "authors_all": [
+        "Sepehr Mousavi",
+        "Levi Lingsch",
+        "Siddhartha Mishra",
+        "Laura De Lorenzis"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-03",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05735.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05735-p2.jpg",
+        "assets/img/covers/arxiv-2611-05735-p3.jpg",
+        "assets/img/covers/arxiv-2611-05735-p4.jpg"
+      ],
+      "arxiv_id": "2611.05735",
+      "abs_url": "http://arxiv.org/abs/2611.05735v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05735v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "ETH Zurich",
+        "ETH AI Center"
+      ],
+      "method_tags": [
+        "self-supervised learning",
+        "neural operator",
+        "functional autoencoder"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-05744",
+      "source": "arxiv",
+      "title": "Text-Only Domain Adaptation for Low-Resource Medical ASR: Shallow Fusion and Density Ratio Rescoring for Hausa",
+      "title_zh": "面向低资源医疗ASR的纯文本域适应：豪萨语的浅层融合与密度比重打分",
+      "tldr_zh": "纯文本语言模型融合可提升豪萨语医疗ASR，无需额外语音数据。",
+      "cover_zh": "不采一句语音！纯文本融合让豪萨语医疗ASR错误率大降",
+      "abstract_zh": "自动语音识别（ASR）系统在处理专业医疗词汇时常常表现不佳，尤其是在领域特定语音数据稀缺的低资源语言中。我们研究了豪萨语医疗ASR的纯文本域适应，使用固定的MMS-1B-FL102声学模型和两种解码时语言模型融合方法：浅层融合（SF）和密度比方法（DRA）。一个在19,421句豪萨语健康句子训练的4-gram KenLM作为医疗目标模型，而一个75,372句的通用领域模型为DRA提供源先验。评估使用来自尼日利亚北部六个州的10位说话人的25条经医生审核的提示的250条录音。在提示不相交的五折交叉验证下，SF和DRA分别将WER从29.56%降至23.55%和23.33%。两者均显著优于贪婪解码（p < 0.001），而它们之间的差异不显著（p = 0.423）。然而，仅使用通用LM的SF达到23.96%的WER，表明医疗LM相对于通用LM的额外改进是有限的。医疗术语错误率在融合下也有所改善，但并未确立明显的医疗领域优势。这些发现表明，轻量级的纯文本语言模型融合可以在无需额外收集领域特定语音的情况下改善豪萨语医疗ASR。",
+      "authors": [
+        "Oche David Ankeli",
+        "Hassan Adelani Luqman",
+        "Theodora Ngozi Egbunike"
+      ],
+      "authors_all": [
+        "Oche David Ankeli",
+        "Hassan Adelani Luqman",
+        "Theodora Ngozi Egbunike",
+        "Joshua Gottschalk",
+        "Bonaventure F. P. Dossou"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-03",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-05744.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-05744-p2.jpg",
+        "assets/img/covers/arxiv-2611-05744-p3.jpg",
+        "assets/img/covers/arxiv-2611-05744-p4.jpg"
+      ],
+      "arxiv_id": "2611.05744",
+      "abs_url": "http://arxiv.org/abs/2611.05744v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05744v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "RUZIVO Research Lab, African Leadership University",
+        "Stanford University",
+        "Mila – Quebec AI Institute",
+        "McGill University"
+      ],
+      "method_tags": [
+        "Shallow Fusion",
+        "Density Ratio",
+        "Language Model Fusion"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-05113",
       "source": "arxiv",
       "title": "HLO-AMP: Hierarchical Loco-Manipulation from Object-Aware Motion Priors",
@@ -343,12 +1123,20 @@
       "venue_announced": "",
       "score": 30,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Robotics and AI Institute"
+      ],
+      "method_tags": [
+        "Hierarchical RL",
+        "Motion Imitation",
+        "Loco-Manipulation"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [
         {
@@ -359,62 +1147,6 @@
           "url": "https://www.youtube.com/watch?v=viR_ULnRDQQ"
         }
       ],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05585",
-      "source": "arxiv",
-      "title": "Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain",
-      "title_zh": "面向参数化不平地形的动态人形机器人运动：接触隐式全身轨迹优化",
-      "tldr_zh": "接触隐式优化实现人形机器人不平地形动态规划。",
-      "cover_zh": "不用预设接触序列！人形机器人竟能在台阶斜坡上动态行走",
-      "abstract_zh": "本文提出一种人形机器人轨迹规划器，采用接触隐式全身优化框架，在复杂且可参数化的地形上执行动态运动。该规划器无需预定义接触序列即可生成可行运动，并考虑机器人的完整动力学与运动学。为规划台阶、斜坡及其他地形上的双足运动，我们提出一种数学模型，用光滑曲面近似地面几何形状。机器人-地面间的刚性交互通过新颖的接触约束建模，将适用范围从平坦水平面扩展到任意光滑曲面。利用非线性规划在各种地形拓扑上规划运动，验证了有效性。我们还通过将高层需求嵌入代价函数和初始猜测，探索动态轨迹生成。在仿真和真实机器人ErgoCub上，对非共面地形进行了初步可行性测试。",
-      "authors": [
-        "Roberto Mauceri",
-        "Stefano Dafarra",
-        "Giulio Romualdi"
-      ],
-      "authors_all": [
-        "Roberto Mauceri",
-        "Stefano Dafarra",
-        "Giulio Romualdi",
-        "Marco Gabiccini",
-        "Daniele Pucci"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "loco-manip-wbc",
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 RA-L 2025"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-05585.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05585-p2.jpg",
-        "assets/img/covers/arxiv-2611-05585-p3.jpg",
-        "assets/img/covers/arxiv-2611-05585-p4.jpg"
-      ],
-      "arxiv_id": "2611.05585",
-      "abs_url": "http://arxiv.org/abs/2611.05585v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05585v1",
-      "venue": "RA-L 2025",
-      "venue_announced": "",
-      "score": 30,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -461,115 +1193,6 @@
       "arxiv_id": "2611.04711",
       "abs_url": "http://arxiv.org/abs/2611.04711v1",
       "pdf_url": "https://arxiv.org/pdf/2611.04711v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05129",
-      "source": "arxiv",
-      "title": "WayTrace: A Map-to-Language-to-Trace Hierarchy for Embodied Urban Navigation",
-      "title_zh": "WayTrace：面向具身城市导航的从地图到语言到轨迹的层次结构",
-      "tldr_zh": "WayTrace通过语言连接地图与机器人运动，实现城市长距离导航。",
-      "cover_zh": "机器人不看地图也能走1.37公里？WayTrace用语言指令搞定城市导航",
-      "abstract_zh": "网络服务几乎为每个城市提供步行导航，但自主机器人要在长路线上可靠地遵循这些导航仍然具有挑战性。点目标导航策略严重依赖精确的GNSS，而大多数视觉语言导航模型在户外甚至难以执行短指令。我们提出WayTrace，一个通过语言将网络地图导航方向与机器人运动连接起来的层次化系统。一个现成的协调器视觉语言模型读取逐向导航指令、卫星地图和最近的相机图像，并一次发出一个原子语言命令，例如“向左过马路”。一个机载轨迹预测器在超过一百万条来自街景图像的自动标注样本上训练，在图像中为该命令绘制路径，然后由强化学习策略进行跟踪。在长距离模拟任务中，WayTrace对GNSS噪声保持鲁棒，很少离开人行横道或人行道，而点目标基线方法则急剧退化，违规次数大约多十倍。部署在轮腿机器人上，WayTrace在繁忙市中心、乡村小径和大学校园完成了长达1.37公里的真实世界任务，速度约为1.1米/秒，处理了人行横道、楼梯和建筑工地。项目页面：https://way-trace.github.io",
-      "authors": [
-        "Manthan Patel",
-        "Jonas Frey",
-        "Pascal Roth"
-      ],
-      "authors_all": [
-        "Manthan Patel",
-        "Jonas Frey",
-        "Pascal Roth",
-        "Marco Hutter",
-        "Cesar Cadena"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Marco Hutter"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-05129.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05129-p2.jpg",
-        "assets/img/covers/arxiv-2611-05129-p3.jpg",
-        "assets/img/covers/arxiv-2611-05129-p4.jpg"
-      ],
-      "arxiv_id": "2611.05129",
-      "abs_url": "http://arxiv.org/abs/2611.05129v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05129v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05295",
-      "source": "arxiv",
-      "title": "GSBR: Geometric Support Behavior Regularization for Online RL",
-      "title_zh": "GSBR：在线强化学习的几何支撑行为正则化",
-      "tldr_zh": "GSBR通过惩罚动作与基础策略支撑的距离，平衡正则化与改进，在机器人任务上大幅提升成功率。",
-      "cover_zh": "终于不卡在基础策略了｜这个正则化让RL成功率从33%飙到95%",
-      "abstract_zh": "在线强化学习（RL）中，向预训练基础策略进行正则化可以提升样本效率和学习稳定性，但过于严格的正则化会限制策略的改进空间。基础策略——通常是在大规模多样化数据集上通过模仿学习训练的扩散模型或流匹配模型——捕获了许多合理但次优的行为。现有使用此类基础策略的正则化器在以下两方面之一过于严格：行为克隆正则化器将演员拉向完整的基础策略分布，惩罚其丢弃次优模式；而硬支撑约束则禁止超出基础策略支撑范围的改进。我们提出几何支撑行为正则化（GSBR），它根据动作与基础策略支撑的距离进行惩罚。支撑范围内的动作不受惩罚，因此演员可以专注于高价值模式；在支撑范围外，价值估计不太可靠，惩罚随距离平滑增长，同时当获得的价值超过惩罚时仍允许改进。GSBR 从有限的基础策略样本中估计该距离，因此仅需对基础策略的样本访问。在四个机器人基准的 19 个任务上，GSBR 将平均成功率从基础策略的 33% 提升至 95%，在所有比较方法中实现了最高的平均成功率和吞吐量，归一化吞吐量比次优的 RL 方法高出约 23%。项目网站和开源代码见 https://charlesxu0124.github.io/gsbr/ 。",
-      "authors": [
-        "Charles Xu",
-        "Jacob Berg",
-        "Liyiming Ke"
-      ],
-      "authors_all": [
-        "Charles Xu",
-        "Jacob Berg",
-        "Liyiming Ke",
-        "Sergey Levine"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Sergey Levine"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-05295.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05295-p2.jpg",
-        "assets/img/covers/arxiv-2611-05295-p3.jpg",
-        "assets/img/covers/arxiv-2611-05295-p4.jpg"
-      ],
-      "arxiv_id": "2611.05295",
-      "abs_url": "http://arxiv.org/abs/2611.05295v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05295v1",
       "venue": "",
       "venue_announced": "",
       "score": 26,
@@ -843,59 +1466,14 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05163",
-      "source": "arxiv",
-      "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
-      "title_zh": "RoboTryOn：通过虚拟试穿从人类视频合成灵巧机器人演示",
-      "tldr_zh": "RoboTryOn将人类视频虚拟试穿为机器人演示，合成数据训练策略成功率大幅提升。",
-      "cover_zh": "人类视频秒变机器人演示｜虚拟试穿让策略成功率飙升",
-      "abstract_zh": "机器人基础模型在机器人控制中已展现出显著性能，但将其适配到新任务仍严重依赖遥操作演示。第一人称人类视频提供了一种可扩展的替代方案，然而在人类视频上叠加渲染的机器人或将人类姿态重定向为机器人动作，对于高自由度机器人 embodiment 仍存在显著的视觉或动作差距。为解决这一局限，我们提出 RoboTryOn，将人-to-机器人转换视为虚拟试穿：试穿保留人并替换服装，RoboTryOn 保留演示动作并将人替换为机器人。具体而言，RoboTryOn 将人类视频转换为由参考图像指定的目标机器人的视频，同时保留原始任务、物体和背景。为保持视觉一致性，我们自回归地转换选定的关键帧，并利用它们以人类手部骨架为运动条件引导视频合成。此外，我们使用结合深度特征的逆动力学模型（IDM）从合成视频中推断动作标签以进行策略学习。在多种人形 embodiment 上的实验表明，使用我们的合成数据训练的策略在新任务（包括具有挑战性的双手操作）上的平均成功率从 2% 提升至 60%，且无需这些任务的任何真实机器人演示。此外，使用我们的合成数据训练在约三分之一的收集成本下达到仅用遥操作演示训练的策略的性能，证明了我们方法的成本效率。",
-      "authors": [
-        "Seungyong Lee",
-        "Suhyeok Jang",
-        "Minyoung Kim"
+      "institutions": [
+        "National Taiwan University"
       ],
-      "authors_all": [
-        "Seungyong Lee",
-        "Suhyeok Jang",
-        "Minyoung Kim",
-        "Jinwoo Shin"
+      "method_tags": [
+        "RL fine-tuning",
+        "VLA",
+        "non-episodic training"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "manipulation",
-        "teleop",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05163.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05163-p2.jpg",
-        "assets/img/covers/arxiv-2611-05163-p3.jpg",
-        "assets/img/covers/arxiv-2611-05163-p4.jpg"
-      ],
-      "arxiv_id": "2611.05163",
-      "abs_url": "http://arxiv.org/abs/2611.05163v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05163v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -944,12 +1522,19 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "New York University",
+        "New York University Abu Dhabi"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "PPO",
+        "Inverse Kinematics"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -994,12 +1579,19 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Harvard Computational Robotics Group",
+        "School of Engineering and Applied Sciences, Harvard University"
+      ],
+      "method_tags": [
+        "Physics-based motion retargeting",
+        "Sequential Monte Carlo",
+        "MPC"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1251,12 +1843,20 @@
       "venue_announced": "",
       "score": 17,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "INIT Robots Laboratory, École de technologie supérieure",
+        "MIST Lab, Polytechnique Montréal",
+        "Université du Québec à Montréal"
+      ],
+      "method_tags": [
+        "decentralised coordination",
+        "sim-to-real",
+        "human-swarm interaction"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1302,12 +1902,18 @@
       "venue_announced": "",
       "score": 17,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Meta Reality Labs Research"
+      ],
+      "method_tags": [
+        "mechanism co-design",
+        "pose-robust optimization",
+        "tendon-driven transmission"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1353,12 +1959,18 @@
       "venue_announced": "",
       "score": 17,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Texas at Austin"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Data Attribution",
+        "Vision-Language Models"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1616,12 +2228,21 @@
       "venue_announced": "",
       "score": 15,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "CFCS, School of CS, PKU",
+        "National Key Laboratory for Multimedia Information Processing, School of CS, PKU",
+        "PrimeBot",
+        "State Key Laboratory of General Artificial Intelligence, BIGAI"
+      ],
+      "method_tags": [
+        "hand-object configuration transfer",
+        "relation-conditioned transfer primitive",
+        "closed-loop tracking"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1811,8 +2432,15 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Chalmers University of Technology",
+        "University of Gothenburg"
+      ],
+      "method_tags": [
+        "Post-training Quantization",
+        "VLA",
+        "Benchmark"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1859,65 +2487,21 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05667",
-      "source": "arxiv",
-      "title": "Correct Robots Before They Make Mistakes: Proactive Human-in-the-Loop Intervention via Preference Learning",
-      "title_zh": "在机器人犯错前纠正：通过偏好学习的主动人在回路干预",
-      "tldr_zh": "提出PHIL框架，通过XR预览和偏好学习实现机器人主动干预，提升任务成功率。",
-      "cover_zh": "机器人犯错前就能纠正？这个框架让干预更主动！",
-      "abstract_zh": "本文提出主动人在回路（PHIL）框架，用于主动策略纠正和基于偏好的后训练。PHIL 使操作员能够预览策略预测的未来运动，并在预期的不良动作发生前进行干预。在接管期间，PHIL 继续查询策略，并通过扩展现实（XR）界面在物理工作空间中显示其预测轨迹。PHIL 将拒绝的策略预测与随后在相同物理状态下、相同时间范围内执行的纠正动作块配对，基于偏好的后训练鼓励策略偏好这些纠正。本文在四个真实世界操作任务上评估 PHIL，使用扩散策略和预训练的视觉-语言-动作策略。每个条件进行五次纠正回合，与 HG-DAgger 相比，PHIL 在评估任务和演示预算上提高了平均成功率：扩散策略从 44.0% 提高到 70.3%，X-VLA 从 57.8% 提高到 76.9%。此外，使用主动纠正训练的策略在成功回合中表现出更少的不必要恢复行为。项目页面：https://intuitive-robots.github.io/PHIL-page/。",
-      "authors": [
-        "Xinkai Jiang",
-        "Jing Jiang",
-        "Hongyi Zhou"
+      "institutions": [
+        "INSAIT",
+        "Sofia University St. Kliment Ohridski"
       ],
-      "authors_all": [
-        "Xinkai Jiang",
-        "Jing Jiang",
-        "Hongyi Zhou",
-        "Pankhuri Vanjani",
-        "Ahmad Baki",
-        "Jakub Suliga",
-        "Ge Li",
-        "Zhuoyue Li",
-        "Gerhard Neumann",
-        "Rudolf Lioutikov"
+      "method_tags": [
+        "VLA",
+        "异步推理",
+        "视觉运动控制"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "manipulation"
+      "platform": [
+        "Franka"
       ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05667.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05667-p2.jpg",
-        "assets/img/covers/arxiv-2611-05667-p3.jpg",
-        "assets/img/covers/arxiv-2611-05667-p4.jpg"
+      "sim_stack": [
+        "LIBERO"
       ],
-      "arxiv_id": "2611.05667",
-      "abs_url": "http://arxiv.org/abs/2611.05667v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05667v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 12,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
@@ -2105,183 +2689,20 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Federal University of Minas Gerais"
+      ],
+      "method_tags": [
+        "Control Barrier Functions",
+        "shared autonomy",
+        "teleoperation"
+      ],
+      "platform": [
+        "Crazyflie"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05249",
-      "source": "arxiv",
-      "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
-      "title_zh": "动作专家应该训练VLM吗？混合Transformer VLA中的动作Token监督与梯度路由",
-      "tldr_zh": "梯度隔离的价值取决于动作token监督和评估设置。",
-      "cover_zh": "VLA训练默认隔离梯度？新研究说要看情况！",
-      "abstract_zh": "视觉-语言-动作（VLA）模型越来越多地将预训练的视觉-语言模型（VLM）与一个流匹配专家配对，该专家以VLM的键值表示为条件进行动作预测。这些表示必须携带对控制有用的信息，但VLM从未针对动作专家的流匹配目标进行训练。有两种信号可以解决这个问题：从专家损失反向传播的梯度（耦合），或对VLM进行监督以预测编码相同目标动作的离散token。主流的训练方案放弃了第一种，即阻断专家到VLM的梯度（隔离）以保护VLM的现有能力，同时还在视觉-语言数据和动作token上对其进行监督。由于视觉-语言联合训练也旨在保留这些能力，隔离所提供的额外保护尚不明确。同时，隔离移除了关于连续动作预测需要哪些特征的一种直接信号。另一方面，动作token监督提供了一种学习动作相关表示的替代方式，这可能解释了为什么隔离在实践中成功。我们在自动驾驶和操作任务中通过独立改变动作token监督以及专家的损失是否更新VLM来解开这些因素。在开环驾驶中，当动作token被监督时，隔离与耦合具有竞争力；没有它们时，耦合将轨迹预测误差降低约25%。当两个组件从一开始就联合训练时，耦合在有动作token监督的情况下将闭环驾驶路线进度提高约17%，在没有的情况下提高40%，并且在两种设置下同样改善了机器人操作性能。这些发现表明，梯度隔离的价值取决于VLM的动作监督和评估设置，挑战了将隔离作为默认VLA训练方案的做法。",
-      "authors": [
-        "Asher James Hancock",
-        "Boyi Li",
-        "Yuxiao Chen"
-      ],
-      "authors_all": [
-        "Asher James Hancock",
-        "Boyi Li",
-        "Yuxiao Chen",
-        "Shuhan Tan",
-        "Wenhao Ding",
-        "Thomas Tian",
-        "Yan Wang",
-        "Boris Ivanovic",
-        "Marco Pavone"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05249.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05249-p2.jpg",
-        "assets/img/covers/arxiv-2611-05249-p3.jpg",
-        "assets/img/covers/arxiv-2611-05249-p4.jpg"
-      ],
-      "arxiv_id": "2611.05249",
-      "abs_url": "http://arxiv.org/abs/2611.05249v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05249v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05280",
-      "source": "arxiv",
-      "title": "YANAMI: A Large-Scale Multimodal Dataset and Benchmark for Multiturn Stateful Interaction",
-      "title_zh": "YANAMI：面向多轮状态交互的大规模多模态数据集与基准",
-      "tldr_zh": "YANAMI数据集与基准推动多模态状态交互，微调BAGEL显著提升性能。",
-      "cover_zh": "多轮对话总失忆？YANAMI数据集让模型真正记住状态！",
-      "abstract_zh": "统一多模态模型（UMMs）将视觉理解、生成和编辑集成在一个统一框架内。然而，现有的统一多模态数据集和基准仍以单轮任务为主。即使在最近的多轮数据集中，许多轮次也可以独立解决，无需跨轮次跟踪信息。因此，它们对多模态状态交互提供的监督和评估有限，而多模态状态交互要求模型理解、维护、更新并忠实实现跨轮次演变的对话状态。为了填补这一空白，我们推出了YANAMI，这是首个面向状态交互的大规模多模态对话数据集和基准，包含YANAMI-400K和YANAMI-Bench。YANAMI-400K包含40万多轮多模态对话，拥有超过200万张图像和260万对话轮次。对话涵盖四个代表性场景：多图像融合、图像编辑、世界建模和视觉推理，并要求模型持续跟踪、保留和修订跨轮次演变的多模态对话状态。YANAMI-Bench包含400个多轮对话，用于系统评估多模态状态交互。它联合评估对话状态理解和视觉实现，刻画模型理解演变对话状态的能力与其在视觉输出中忠实实现这些状态的能力之间的差距。实验表明，在YANAMI-400K上微调BAGEL分别将图像编辑、生成和多模态状态交互提升了10.3%、2.0%和13.23%，同时保留了其通用视觉理解能力。在YANAMI-Bench上的评估进一步揭示，现有UMMs在维护、更新和视觉实现演变的多模态对话状态方面仍存在困难。",
-      "authors": [
-        "Shengyu Wang",
-        "Tengyue Nong",
-        "Junming Liu"
-      ],
-      "authors_all": [
-        "Shengyu Wang",
-        "Tengyue Nong",
-        "Junming Liu",
-        "Haosong Peng",
-        "Siyu Li",
-        "Ruiqi Lei",
-        "Fushuo Huo",
-        "Yuhao Pan",
-        "Yunfeng Fan",
-        "Ding Wang",
-        "Nan Cheng",
-        "Haozhao Wang",
-        "Wenchao Xu"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-03",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05280.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05280-p2.jpg",
-        "assets/img/covers/arxiv-2611-05280-p3.jpg",
-        "assets/img/covers/arxiv-2611-05280-p4.jpg"
-      ],
-      "arxiv_id": "2611.05280",
-      "abs_url": "http://arxiv.org/abs/2611.05280v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05280v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05320",
-      "source": "arxiv",
-      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
-      "title_zh": "PyRUA-DataFarm：LLM 智能体作为经济高效的远程操作员，用于真实可用的机器人数据",
-      "tldr_zh": "LLM智能体在仿真中生成机器人数据，成本低于远程操作且策略更鲁棒。",
-      "cover_zh": "LLM智能体接管遥操作｜机器人数据成本直降，策略还更抗干扰",
-      "abstract_zh": "远程操作仍然是收集机器人演示的默认方式，但每个回合都耗费机器人和操作员的时间，而且每个新任务都从零开始。我们探讨编码智能体能否接管远程操作员的工作。在我们的 DataFarm 中，智能体接收一个数据请求和目标场景中机器人的一次校准回合，并在仿真中重建任务：它编写场景、专家控制器和成功判断器。仿真器提供精确的动作，而一个以真实图像为条件的视频模型将每个 rollout 渲染为照片级视频，一致地生成所有相机视图。输出是真实可用的数据：带有机器人动作标签的同步相机视图，可以直接在其上训练策略并部署到真实机器人上。独立判断器在准入前认证专家和每个渲染回合。在五个真实机器人任务上，仅使用农场数据训练的策略与使用同样多远程操作回合训练的策略表现相当（100 次试验中成功次数为 93 对 84），并且在未见过的桌布和彩色光照下，它们保持 87 次成功，而远程操作训练的策略降至 46 次。任务适配完全自动，平均花费 21 美元的 API 使用费，每个任务支付一次，外加 5 美元的渲染合同费；每个后续回合平均花费 0.80 美元用于仿真、渲染和审查，无需机器人和操作员。一个任务的一小时三视图数据平均花费 107 美元，包含这些成本，略低于中国远程操作 117 美元的报价，也低于北美仅劳动力成本 290 美元。",
-      "authors": [
-        "Kewei Zhang",
-        "Juncheng Ma",
-        "Guodong Lv"
-      ],
-      "authors_all": [
-        "Kewei Zhang",
-        "Juncheng Ma",
-        "Guodong Lv",
-        "Duomin Wang",
-        "Feixiang Ruan",
-        "Ruiyang Si",
-        "Chuanrui Zhang",
-        "Yuxuan Chen",
-        "Hao Chen",
-        "Yichen Liu",
-        "Yintianrun Zhang",
-        "Yufan Deng",
-        "Enze Xie",
-        "Daquan Zhou"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-03",
-      "channels": [
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05320.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05320-p2.jpg",
-        "assets/img/covers/arxiv-2611-05320-p3.jpg",
-        "assets/img/covers/arxiv-2611-05320-p4.jpg"
-      ],
-      "arxiv_id": "2611.05320",
-      "abs_url": "http://arxiv.org/abs/2611.05320v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05320v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2592,58 +3013,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-05275",
-      "source": "arxiv",
-      "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
-      "title_zh": "路由一切：面向通用人工智能系统的模型与策略路由研究",
-      "tldr_zh": "提出Route Anything框架，研究模型与策略路由，实验显示路由可大幅提升效率。",
-      "cover_zh": "路由一切｜动态选择模型，效率提升8.82倍！",
-      "abstract_zh": "通用人工智能（AGI）需要一种能够跨多样领域和模态进行理解、生成、推理和行动的方法。如今，一条通往AGI的有前景的路径不是依赖单一模型掌握所有能力，而是将专用模型、工具和策略（候选者）组成的异构生态系统编排成一个统一的AI系统。这一愿景的核心是一个基本问题：AI系统如何动态选择并协调每个任务中最有能力的候选者，同时平衡性能与计算成本？在这项工作中，我们提出了Route Anything，一个用于研究通用AI系统中模型与策略路由的统一框架。我们建立了一个统一的理论基础，刻画了质量-成本权衡下的最优路由，并确立了路由器可用的信息如何决定其可达到的性能。为了系统地研究跨多样能力的路由，我们首先构建了一个全模态轨迹矩阵，涵盖语言理解、图像、视频和语音生成、编码与工作场所智能体以及机器人操作等25个基准，包含来自452个候选配置的374,401次评分运行。基于该框架，我们训练并测试了不同的路由器，以探究全模态模型路由的潜力、学习到的路由器的能力以及路由提高效率的条件。我们的结果揭示了能力编排的巨大机会：逐输入的预言机路由在16个基准上比最佳固定候选者高出5.4分，而学习到的路由器在视频生成上高出2.1分，在机器人操作上高出1.1分，同时策略时间减少了24%。更重要的是，与参考模型相比，路由平均将效率提高了8.82倍。",
-      "authors": [
-        "Pengfei Zhou",
-        "Yixing Ma",
-        "Hexin Wang"
-      ],
-      "authors_all": [
-        "Pengfei Zhou",
-        "Yixing Ma",
-        "Hexin Wang",
-        "Weidong Tang",
-        "Zhenglin Wan",
-        "Wangbo Zhao",
-        "Yang You"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-03",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05275.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05275-p2.jpg",
-        "assets/img/covers/arxiv-2611-05275-p3.jpg",
-        "assets/img/covers/arxiv-2611-05275-p4.jpg"
-      ],
-      "arxiv_id": "2611.05275",
-      "abs_url": "http://arxiv.org/abs/2611.05275v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05275v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-05689",
       "source": "arxiv",
       "title": "TRUST-Stereo: Teacher-Assisted Robust Uncertainty-Guided Search and Transfer for Fast Stereo Matching",
@@ -2683,8 +3052,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Arkansas"
+      ],
+      "method_tags": [
+        "knowledge distillation",
+        "uncertainty-guided residual search",
+        "stereo matching"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2732,107 +3107,17 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05735",
-      "source": "arxiv",
-      "title": "Self-Supervised Learning of Universal Latent Spaces for Operator Learning",
-      "title_zh": "面向算子学习的通用潜在空间的自监督学习",
-      "tldr_zh": "自监督预训练通用潜在空间，冻结后跨任务重用，提升算子学习效率。",
-      "cover_zh": "冻结潜在空间，算子学习竟能如此高效！",
-      "abstract_zh": "神经算子将其函数表示拟合到所训练的任务上，因此每个新任务都需要从标注数据中重建一个约简空间。遵循在自然语言处理和计算机视觉中使表示可共享的自监督预训练，我们将表示学习与算子学习解耦。一个函数自编码器在动态合成的解析函数上进行预训练，无需求解器且无需标签，以表示任意点云上的函数，并且其诱导的潜在空间被冻结并跨任务重用。该表示对平移、膨胀和幅度具有精确等变性，并能重建偏微分方程（PDE）的解以及从未见过的几何形状上的自然图像。由于与任务无关，潜在空间本身可以被解释。整个空间被使用并解码为有效的场，它保持了物理场之间距离的顺序，其测地线插值物理演化，并且编辑方向可以跨场迁移。使用冻结的表示映射，数据集被编码一次，神经算子完全在缓存的嵌入上进行训练，这节省了内存和训练时间。在流体动力学、固体力学、声学以及亥姆霍兹和泊松方程的28个任务上，这种范式可以超越最先进的端到端架构的精度，吞吐量高达一个数量级，内存节省使得在消费级GPU上可以容纳近两个数量级大的模型。在推理时，潜在推演比常规推演快达一个数量级，分块推理在单个消费级GPU上处理超过五亿个点的函数。",
-      "authors": [
-        "Sepehr Mousavi",
-        "Levi Lingsch",
-        "Siddhartha Mishra"
+      "institutions": [
+        "University of Edinburgh",
+        "Universidade de Aveiro",
+        "National Technical University of Athens",
+        "Athena/Archimedes Research Centre"
       ],
-      "authors_all": [
-        "Sepehr Mousavi",
-        "Levi Lingsch",
-        "Siddhartha Mishra",
-        "Laura De Lorenzis"
+      "method_tags": [
+        "autoregressive transformer",
+        "generative modeling",
+        "simulation-based pretraining"
       ],
-      "primary_category": "cs.LG",
-      "published": "2026-11-03",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05735.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05735-p2.jpg",
-        "assets/img/covers/arxiv-2611-05735-p3.jpg",
-        "assets/img/covers/arxiv-2611-05735-p4.jpg"
-      ],
-      "arxiv_id": "2611.05735",
-      "abs_url": "http://arxiv.org/abs/2611.05735v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05735v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-05744",
-      "source": "arxiv",
-      "title": "Text-Only Domain Adaptation for Low-Resource Medical ASR: Shallow Fusion and Density Ratio Rescoring for Hausa",
-      "title_zh": "面向低资源医疗ASR的纯文本域适应：豪萨语的浅层融合与密度比重打分",
-      "tldr_zh": "纯文本语言模型融合可提升豪萨语医疗ASR，无需额外语音数据。",
-      "cover_zh": "不采一句语音！纯文本融合让豪萨语医疗ASR错误率大降",
-      "abstract_zh": "自动语音识别（ASR）系统在处理专业医疗词汇时常常表现不佳，尤其是在领域特定语音数据稀缺的低资源语言中。我们研究了豪萨语医疗ASR的纯文本域适应，使用固定的MMS-1B-FL102声学模型和两种解码时语言模型融合方法：浅层融合（SF）和密度比方法（DRA）。一个在19,421句豪萨语健康句子训练的4-gram KenLM作为医疗目标模型，而一个75,372句的通用领域模型为DRA提供源先验。评估使用来自尼日利亚北部六个州的10位说话人的25条经医生审核的提示的250条录音。在提示不相交的五折交叉验证下，SF和DRA分别将WER从29.56%降至23.55%和23.33%。两者均显著优于贪婪解码（p < 0.001），而它们之间的差异不显著（p = 0.423）。然而，仅使用通用LM的SF达到23.96%的WER，表明医疗LM相对于通用LM的额外改进是有限的。医疗术语错误率在融合下也有所改善，但并未确立明显的医疗领域优势。这些发现表明，轻量级的纯文本语言模型融合可以在无需额外收集领域特定语音的情况下改善豪萨语医疗ASR。",
-      "authors": [
-        "Oche David Ankeli",
-        "Hassan Adelani Luqman",
-        "Theodora Ngozi Egbunike"
-      ],
-      "authors_all": [
-        "Oche David Ankeli",
-        "Hassan Adelani Luqman",
-        "Theodora Ngozi Egbunike",
-        "Joshua Gottschalk",
-        "Bonaventure F. P. Dossou"
-      ],
-      "primary_category": "cs.LG",
-      "published": "2026-11-03",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-05744.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-05744-p2.jpg",
-        "assets/img/covers/arxiv-2611-05744-p3.jpg",
-        "assets/img/covers/arxiv-2611-05744-p4.jpg"
-      ],
-      "arxiv_id": "2611.05744",
-      "abs_url": "http://arxiv.org/abs/2611.05744v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05744v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

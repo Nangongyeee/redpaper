@@ -1,0 +1,95 @@
+{
+  "id": "arxiv-2611-14186",
+  "source": "arxiv",
+  "title": "Koopman Model-Based Reinforcement Learning",
+  "title_zh": "基于Koopman模型的强化学习",
+  "abstract": "We propose a Koopman model-based reinforcement learning (K-MBRL) algorithm for controlling nonlinear robotic systems with unknown dynamics. The K-MBRL learns a control policy by minimizing an approximate policy objective that combines the analytical immediate cost with an estimate of the future cost evaluated at the one-step predicted state. To this end, we develop a stochastic Koopman operator-based learning method to approximate the unknown nonlinear dynamics in a linear representation, while a critic function estimates the remaining future cost. This formulation offers two key advantages. First, the linear Koopman dynamics simplify the model-dependent policy gradient computation to a constant matrix product, enabling computationally efficient policy improvement. Second, one-step model propagation mitigates the accumulation of prediction errors associated with long-horizon rollouts while retaining long-term cost information through the critic. The learned policy enables real-time control through feedforward evaluation without online optimization. We establish policy learning convergence guarantees under standard stochastic approximation assumptions. Simulations on HalfCheetah and quadruped four-legged locomotion tasks demonstrate strong sample efficiency and improved performance compared with classical model-free and model-based reinforcement learning baselines. A pendulum swing-up task is used to assess policy gradient approximation accuracy and conduct ablation studies on the learning mechanism and key hyperparameters. The proposed K-MBRL is further validated on a physical quadruped robot performing a challenging sequence of maneuvers: rising to an upright posture supported by two rounded rear feet, maintaining balance during bipedal walking, and safely returning to the ground, as shown in Fig.1.",
+  "abstract_zh": "我们提出了一种基于Koopman模型的强化学习（K-MBRL）算法，用于控制动力学未知的非线性机器人系统。K-MBRL通过最小化一个近似策略目标来学习控制策略，该目标结合了解析的即时成本与在一步预测状态处评估的未来成本估计。为此，我们开发了一种基于随机Koopman算子的学习方法，以线性表示逼近未知非线性动力学，同时由评论家函数估计剩余的未来成本。该公式提供了两个关键优势。首先，线性Koopman动力学将依赖模型的策略梯度计算简化为常数矩阵乘积，从而实现计算高效的策略改进。其次，一步模型传播减轻了与长时程展开相关的预测误差累积，同时通过评论家保留长期成本信息。学习到的策略通过前馈评估实现实时控制，无需在线优化。我们在标准随机逼近假设下建立了策略学习收敛保证。在HalfCheetah和四足四足运动任务上的仿真表明，与经典的无模型和基于模型的强化学习基线相比，具有强大的样本效率和改进的性能。摆锤摆起任务用于评估策略梯度近似精度，并对学习机制和关键超参数进行消融研究。所提出的K-MBRL进一步在物理四足机器人上进行了验证，执行一系列具有挑战性的动作：由两个圆形后足支撑升至直立姿势，在双足行走期间保持平衡，并安全返回地面，如图1所示。",
+  "tldr_zh": "提出K-MBRL算法，用Koopman线性表示未知动力学，实现高效策略学习与实时控制。",
+  "cover_zh": "机器人未知动力学？Koopman线性化让控制实时又高效",
+  "authors": [
+    {
+      "name": "Wenjian Hao",
+      "affiliation": ""
+    },
+    {
+      "name": "Paulo C. Heredia",
+      "affiliation": ""
+    },
+    {
+      "name": "Shaoshuai Mou",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "eess.SY"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14186",
+  "pdf_url": "https://arxiv.org/pdf/2611.14186v1",
+  "abs_url": "http://arxiv.org/abs/2611.14186v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14186.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14186-p2.jpg",
+    "assets/img/covers/arxiv-2611-14186-p3.jpg",
+    "assets/img/covers/arxiv-2611-14186-p4.jpg"
+  ],
+  "channels": [
+    "locomotion"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 21,
+  "source_tags": [],
+  "score": 25,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 5 个（locomotion、bipedal、quadruped、legged locomotion）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 21 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "locomotion",
+    "reason": "Koopman 模型强化学习控制四足机器人，含双足平衡行走真机验证，方法有收敛保证，对腿足控制有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "Koopman operator",
+    "model-based RL",
+    "quadruped locomotion"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

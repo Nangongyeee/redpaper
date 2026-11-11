@@ -1,0 +1,108 @@
+{
+  "id": "arxiv-2611-13819",
+  "source": "arxiv",
+  "title": "Game-Enhanced Embodied Learning with Event and Foresight Pretraining",
+  "title_zh": "游戏增强的具身学习：基于事件与预见预训练",
+  "abstract": "Human gameplay supplies paired observations, actions, and visual consequences that can supplement robot-policy training. We study event-and-foresight pretraining for InternVLA-A1.5, combining recorded keyboard/mouse event prediction with history-conditioned visual supervision through a frozen video model. Coverage-preserving anchor selection constructs one-second targets, and an attention mask prevents teacher-forced future actions from entering foresight queries. The selected corpus contains 394 recordings across 20 games, with 223.36 hours of recorded timestamp span and 2,072,084 training anchors. After 12,400 game-pretraining updates, we compare the resulting initialization with the public base under the same suite-specific robot fine-tuning protocol. Across four LIBERO suites, aggregate success increases from 1,718/2,000 (85.90%) to 1,811/2,000 (90.55%), a gain of 4.65 percentage points. Suite gains are 9.2, 6.8, 0.2, and 2.4 points on Spatial, Object, Goal, and Long. The 40-task breakdown shows 24 improvements, 10 declines, and six ties. These results support the practical value of the complete game-pretraining stage in this evaluated setting, while revealing heterogeneous task outcomes. The comparison includes additional optimization and does not isolate the effects of game data, the two objectives, or training variability.",
+  "abstract_zh": "人类游戏玩法提供了成对的观察、动作和视觉后果，可以补充机器人策略训练。我们研究了InternVLA-A1.5的事件与预见预训练，将记录的键盘/鼠标事件预测与通过冻结视频模型进行的历史条件视觉监督相结合。保持覆盖的锚点选择构建一秒目标，注意力掩码防止教师强制的未来动作进入预见查询。所选语料库包含20个游戏中的394个记录，记录时间戳跨度223.36小时，训练锚点2,072,084个。经过12,400次游戏预训练更新后，我们在相同的套件特定机器人微调协议下，将得到的初始化与公共基础模型进行比较。在四个LIBERO套件上，总成功率从1,718/2,000（85.90%）提高到1,811/2,000（90.55%），提升了4.65个百分点。各套件增益分别为Spatial 9.2、Object 6.8、Goal 0.2和Long 2.4个百分点。40项任务细分显示24项改进、10项下降和6项持平。这些结果支持了完整游戏预训练阶段在评估设置中的实用价值，同时揭示了异质的任务结果。比较包括额外的优化，并未隔离游戏数据、两个目标或训练变异性的影响。",
+  "tldr_zh": "游戏预训练提升机器人策略成功率4.65个百分点。",
+  "cover_zh": "打游戏也能教机器人？预训练后成功率直接涨了",
+  "authors": [
+    {
+      "name": "Lianlei Shan",
+      "affiliation": ""
+    },
+    {
+      "name": "Han Jin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yaunchao Ma",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinpeng Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Linhao Zhou",
+      "affiliation": ""
+    },
+    {
+      "name": "Xin Bin",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.13819",
+  "pdf_url": "https://arxiv.org/pdf/2611.13819v1",
+  "abs_url": "http://arxiv.org/abs/2611.13819v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-13819.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-13819-p2.jpg",
+    "assets/img/covers/arxiv-2611-13819-p3.jpg",
+    "assets/img/covers/arxiv-2611-13819-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 25,
+  "source_tags": [],
+  "score": 16,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 3,
+      "hint": "频道关键词命中 1 个（libero）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 25 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "游戏数据预训练VLA策略，LIBERO操作基准提升4.65%，属操作VLA预训练方法，有参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Beijing Xinying Suixing Technology Co., Ltd."
+  ],
+  "method_tags": [
+    "event prediction",
+    "foresight pretraining",
+    "VLA"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

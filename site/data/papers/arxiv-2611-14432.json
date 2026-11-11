@@ -1,0 +1,125 @@
+{
+  "id": "arxiv-2611-14432",
+  "source": "arxiv",
+  "title": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
+  "title_zh": "一个策略应对100个家务任务：我们参加2026 BEHAVIOR挑战赛的解决方案",
+  "abstract": "We describe our solution for the 2026 BEHAVIOR Challenge: 100 long-horizon household tasks in the OmniGibson simulator. We placed 9th on the final leaderboard, the only independent team in the top 10. The core of the solution is a single vision-language-action (VLA) model, one checkpoint for all 100 tasks, built on our 1st-place 2025 solution, which is based on $π_{0.5}$. On the 50 tasks shared with 2025, its Q rises from 0.260 to 0.371; across all 100 tasks it scores 0.392. Our main conclusion from 2025 was that the model was undertrained, so most of the 2026 work went into training the model for longer, optimizing some training parameters, making each training step slightly faster and reducing the gradient noise: a migration from 50 to 100 tasks (semantic stages built from the demonstrations' skill annotations, task and stage embeddings of new tasks warm-started from similar old ones, and a 21-dimensional action space matching the teleoperation controls); variance-reduced multi-sample flow matching with a simple noise-vs-compute model that picks the number of action-expert samples per observation without ablations; and a 200k-step training run, about one pass over the 211M frames of the demonstrations. A cloud evaluation infrastructure keeps a shared record with provenance, episode diagnostics and restorable simulator states, and runs six simulators on one GPU together faster than real time. On top of the learned policy, 14 tasks are routed to a GPT-6 Astra coding agent that controls the robot through observation and motion tools, starting every episode from a frozen copy of its own practice session on training instances. Across these 14 tasks, Astra's mean Q is 0.639, against 0.108 for the learned policy. The public submission included only part of the Astra results and scored 0.446 Q with 27.3% full-task success.",
+  "abstract_zh": "我们描述了参加2026年BEHAVIOR挑战赛的解决方案：在OmniGibson模拟器中的100个长时程家务任务。我们在最终排行榜上排名第9，是前10名中唯一的独立团队。解决方案的核心是一个单一的视觉-语言-动作（VLA）模型，一个检查点用于所有100个任务，基于我们2025年获得第一名的解决方案，该方案基于$π_{0.5}$。在与2025年共享的50个任务上，其Q值从0.260上升到0.371；在所有100个任务上得分为0.392。我们从2025年得出的主要结论是模型训练不足，因此2026年的工作大部分投入到更长时间的训练模型、优化一些训练参数、使每个训练步骤稍快并减少梯度噪声：从50个任务迁移到100个任务（语义阶段由演示的技能注释构建，新任务和阶段的嵌入从相似的旧任务热启动，以及一个匹配遥操作控制的21维动作空间）；方差减少的多样本流匹配，使用一个简单的噪声-计算模型，在没有消融的情况下为每个观察选择动作专家样本的数量；以及一个20万步的训练运行，大约对演示的2.11亿帧进行一次遍历。云评估基础设施维护一个共享记录，包含出处、回合诊断和可恢复的模拟器状态，并在一个GPU上同时运行六个模拟器，比实时更快。在学习策略之上，14个任务被路由到一个GPT-6 Astra编码代理，该代理通过观察和运动工具控制机器人，每个回合都从其在训练实例上的练习会话的冻结副本开始。在这14个任务中，Astra的平均Q为0.639，而学习策略为0.108。公开提交仅包含部分Astra结果，得分为0.446 Q，全任务成功率为27.3%。",
+  "tldr_zh": "单一VLA模型在100个家务任务上排名第9，部分任务由GPT-6代理处理。",
+  "cover_zh": "一个模型搞定100个家务｜排名第9，还混入了GPT-6代理？",
+  "authors": [
+    {
+      "name": "Ilia Larchenko",
+      "affiliation": ""
+    },
+    {
+      "name": "Gleb Zarin",
+      "affiliation": ""
+    },
+    {
+      "name": "Atindra Nair",
+      "affiliation": ""
+    },
+    {
+      "name": "Keerti Manney",
+      "affiliation": ""
+    },
+    {
+      "name": "Vitaly Kleban",
+      "affiliation": ""
+    },
+    {
+      "name": "Mirko Kiefer",
+      "affiliation": ""
+    },
+    {
+      "name": "Anjana Yodaiken",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14432",
+  "pdf_url": "https://arxiv.org/pdf/2611.14432v1",
+  "abs_url": "http://arxiv.org/abs/2611.14432v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14432.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14432-p2.jpg",
+    "assets/img/covers/arxiv-2611-14432-p3.jpg",
+    "assets/img/covers/arxiv-2611-14432-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "teleop"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 15,
+  "source_tags": [],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（vision-language-action、teleoperation、teleop）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 15 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "基于π0.5的VLA在100个家庭长时任务上的工程优化与评测，含训练技巧和云仿真基础设施，对操作策略研究有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "VLA",
+    "flow matching",
+    "long-horizon"
+  ],
+  "platform": [
+    "Galaxea R1Pro"
+  ],
+  "sim_stack": [
+    "OmniGibson",
+    "Isaac Sim"
+  ],
+  "method_family": "",
+  "real_robot": "no",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

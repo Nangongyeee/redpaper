@@ -1,0 +1,115 @@
+{
+  "id": "arxiv-2611-14420",
+  "source": "arxiv",
+  "title": "OnlyAct: Extracting Action Representations from Foundation Models for World Models",
+  "title_zh": "OnlyAct：从基础模型中提取动作表示用于世界模型",
+  "abstract": "Video world models promise general-purpose interactive simulators, but their training is limited by action supervision: action labels are scarce, fragmented across incompatible specifications, and do not scale with the unlabeled video pretraining corpus. A common workaround jointly trains an action encoder to compress consecutive frames into a latent action and a decoder to reconstruct the next frame from the previous frame and that latent, forcing the latent to capture only new information. This has two limitations: learning the action space from scratch can limit generalization to unseen domains, and the bottleneck trades expressiveness for separation, with tighter settings losing nuance and looser ones risking scene leakage under domain shifts. We argue for a different starting point: rather than learning actions from scratch, we start from a pretrained foundation model (V-JEPA 2), whose embeddings of a frame pair already carry substantial action information after large-scale, diverse video pretraining. The remaining challenge is to extract the action while discarding the scene. We propose a label-free contrastive adaptation framework that pulls together frame pairs sharing the same motion under a different scene and pushes apart pairs from the same scene with different motion, reshaping the geometry of the pretrained space without imposing a reconstruction bottleneck. We introduce a unified evaluation protocol along three axes (action expressiveness, scene invariance, and action-conditioned video generation quality) across robot manipulation, camera navigation, game, and driving benchmarks, most of which are unseen during adaptation. Compared with annotation-free latent-action methods, our representations are substantially more expressive while matching their scene invariance, and they yield world models that transfer demonstrated actions to new scenes more faithfully.",
+  "abstract_zh": "视频世界模型有望成为通用交互式模拟器，但其训练受限于动作监督：动作标签稀缺、分散在不兼容的规范中，且无法随未标注视频预训练语料扩展。一种常见的变通方法是联合训练动作编码器将连续帧压缩为潜在动作，以及解码器从上一帧和该潜在动作重建下一帧，迫使潜在动作仅捕获新信息。这有两个局限：从头学习动作空间可能限制对未见域的泛化，且瓶颈在表达性与分离性之间权衡，更紧的设置丢失细节，更松的设置则在域偏移下存在场景泄漏风险。我们主张不同的起点：不是从头学习动作，而是从预训练基础模型（V-JEPA 2）出发，其帧对嵌入在大规模多样化视频预训练后已携带大量动作信息。剩余挑战是提取动作同时丢弃场景。我们提出一种无标签对比适应框架，将不同场景下相同运动的帧对拉近，将相同场景下不同运动的帧对推远，重塑预训练空间的几何结构，而不施加重建瓶颈。我们引入一个统一的评估协议，沿三个轴（动作表达性、场景不变性和动作条件视频生成质量）在机器人操作、相机导航、游戏和驾驶基准上评估，其中大多数在适应期间未见。与无标注潜在动作方法相比，我们的表示显著更具表达性，同时匹配其场景不变性，并且它们产生的世界模型能更忠实地将演示动作迁移到新场景。",
+  "tldr_zh": "从预训练基础模型提取动作表示，无需动作标签，提升世界模型泛化性。",
+  "cover_zh": "不用动作标签！这个新方法让世界模型直接学会迁移动作",
+  "authors": [
+    {
+      "name": "Runjia Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Minghao Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Junyu Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Philip Torr",
+      "affiliation": ""
+    },
+    {
+      "name": "Andrea Vedaldi",
+      "affiliation": ""
+    },
+    {
+      "name": "Tomas Jakab",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "arxiv_id": "2611.14420",
+  "pdf_url": "https://arxiv.org/pdf/2611.14420v1",
+  "abs_url": "http://arxiv.org/abs/2611.14420v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-14420.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-14420-p2.jpg",
+    "assets/img/covers/arxiv-2611-14420-p3.jpg",
+    "assets/img/covers/arxiv-2611-14420-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 29,
+  "source_tags": [],
+  "score": 30,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 7 个（manipulation、world model、world models、video world model）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 29 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "从V-JEPA 2提取动作表征用于世界模型，无监督对比适应，跨域泛化强，属世界模型核心工作。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Oxford"
+  ],
+  "method_tags": [
+    "contrastive adaptation",
+    "action representation",
+    "world model"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
