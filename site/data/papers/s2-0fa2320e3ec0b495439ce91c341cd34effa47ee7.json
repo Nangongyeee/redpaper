@@ -2,11 +2,11 @@
   "id": "s2-0fa2320e3ec0b495439ce91c341cd34effa47ee7",
   "source": "conf",
   "title": "MGS-Track: Monocular 6DoF Pose Tracking via Masked 3D Prior and Online Gaussian Splatting",
-  "title_zh": "",
+  "title_zh": "MGS-Track：通过掩码3D先验和在线高斯泼溅进行单目6DoF姿态跟踪",
   "abstract": "Tracking the 6DoF pose of previously unseen objects from monocular RGB videos is crucial for robotic manipulation, yet remains challenging due to depth ambiguity and limited object-centric visual context. Existing trackers often rely on accurate depth sensors, which constrains deployment in low-cost settings, while substituting monocular pseudo-depth frequently introduces geometric errors that reduce tracking robustness. To this end, We propose MGS-Track, an object-centric online tracking and reconstruction framework that combines learning-based geometric priors with differentiable 3D Gaussian Splatting (3DGS). Specifically, we first introduce a mask-augmented DUSt3R network (DUSt3R-M) to establish pairwise correspondences and predict point maps, which serve as geometric priors for initializing and guiding an online 3DGS representation. We then jointly optimize Gaussian parameters and 6DoF object poses in a coarse-to-fine manner, enabling robust tracking and high-fidelity reconstruction. To control model growth and maintain efficiency over time, we further introduce adaptive Gaussian management with capacity-aware selection and mask-consistent pruning. Experiments on YCBInEOAT and HO3D show that MGS-Track consistently outperforms competitive monocular baselines on both pose tracking and object reconstruction in challenging object-centric scenarios.",
-  "abstract_zh": "",
-  "tldr_zh": "",
-  "cover_zh": "",
+  "abstract_zh": "从单目RGB视频中跟踪先前未见物体的6DoF姿态对于机器人操作至关重要，但由于深度模糊和有限的以物体为中心的视觉上下文，仍然具有挑战性。现有的跟踪器通常依赖精确的深度传感器，这限制了在低成本设置中的部署，而用单目伪深度替代往往会引入几何误差，降低跟踪鲁棒性。为此，我们提出了MGS-Track，一个以物体为中心的在线跟踪与重建框架，它结合了基于学习的几何先验和可微3D高斯泼溅（3DGS）。具体来说，我们首先引入了一个掩码增强的DUSt3R网络（DUSt3R-M）来建立成对对应关系并预测点图，这些点图作为几何先验用于初始化和指导在线3DGS表示。然后，我们以从粗到细的方式联合优化高斯参数和6DoF物体姿态，实现鲁棒跟踪和高保真重建。为了控制模型增长并随时间保持效率，我们进一步引入了自适应高斯管理，包括容量感知选择和掩码一致剪枝。在YCBInEOAT和HO3D上的实验表明，MGS-Track在具有挑战性的以物体为中心的场景中，在姿态跟踪和物体重建方面均持续优于竞争性的单目基线。",
+  "tldr_zh": "MGS-Track结合掩码3D先验与在线高斯泼溅，实现单目6DoF姿态跟踪。",
+  "cover_zh": "单目视频就能追踪6DoF姿态？MGS-Track用掩码先验+高斯泼溅，效果超预期！",
   "authors": [
     {
       "name": "Zhi-Yuan Chen",

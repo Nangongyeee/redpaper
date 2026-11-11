@@ -2,11 +2,11 @@
   "id": "arxiv-2506-12095",
   "source": "conf",
   "title": "DoublyAware: Dual Planning and Policy Awareness for Temporal Difference Learning in Humanoid Locomotion",
-  "title_zh": "",
+  "title_zh": "DoublyAware：双规划与策略感知的时序差分学习用于人形机器人运动",
   "abstract": "Achieving robust robot learning for humanoid locomotion is a fundamental challenge in model-based reinforcement learning (MBRL), where environmental stochasticity and randomness can hinder efficient exploration and learning stability. The environmental, so-called aleatoric, uncertainty can be amplified in high-dimensional action spaces with complex contact dynamics and entangled with epistemic uncertainty in the models during learning phases. In this work, we propose DoublyAware, an uncertainty-aware extension of Temporal Difference Model Predictive Control (TD-MPC) that explicitly decomposes uncertainty into two disjoint, interpretable components, i.e., planning and policy uncertainties. To handle the planning uncertainty, DoublyAware employs conformal prediction to filter candidate trajectories using quantile-calibrated risk bounds, ensuring statistical consistency and robustness against stochastic dynamics. Meanwhile, policy rollouts are leveraged as structured informative priors to support the learning phase with Group-Relative Policy Constraint (GRPC) optimizers, which impose a group-based adaptive trust region in the latent action space. This combination enables the robot agent to prioritize high-confidence, high-reward behavior while maintaining effective, targeted exploration under uncertainty. Evaluated on the HumanoidBench locomotion suite with the Unitree 26-DoF H1-2 humanoid, DoublyAware demonstrates improved sample efficiency, accelerated convergence, and enhanced motion feasibility compared to RL baselines. Our results emphasize the significance of structured uncertainty modeling for data-efficient and reliable decision-making in TD-MPC-based humanoid locomotion learning.",
-  "abstract_zh": "",
-  "tldr_zh": "",
-  "cover_zh": "",
+  "abstract_zh": "实现稳健的人形机器人运动学习是基于模型的强化学习（MBRL）中的一个基本挑战，环境随机性和随机性可能阻碍高效探索和学习稳定性。环境中的所谓偶然不确定性在高维动作空间中可能被放大，并伴随复杂接触动力学，在学习阶段与模型中的认知不确定性纠缠。在本工作中，我们提出DoublyAware，一种不确定性感知的时序差分模型预测控制（TD-MPC）扩展，它明确将不确定性分解为两个不相交、可解释的组件，即规划不确定性和策略不确定性。为了处理规划不确定性，DoublyAware采用保形预测，使用分位数校准的风险边界过滤候选轨迹，确保统计一致性和对随机动力学的鲁棒性。同时，策略 rollout 被用作结构化的信息先验，通过组相对策略约束（GRPC）优化器支持学习阶段，该优化器在潜在动作空间中施加基于组的自适应信任区域。这种组合使机器人智能体能够优先考虑高置信度、高回报的行为，同时在不确定性下保持有效、有针对性的探索。在Unitree 26自由度H1-2人形机器人的HumanoidBench运动套件上评估，DoublyAware与RL基线相比，展示了改进的样本效率、加速的收敛和增强的运动可行性。我们的结果强调了结构化不确定性建模对于基于TD-MPC的人形机器人运动学习中数据高效和可靠决策的重要性。",
+  "tldr_zh": "DoublyAware分解不确定性为规划和策略两部分，提升人形机器人运动学习效率。",
+  "cover_zh": "人形机器人运动学习新突破｜不确定性分解让探索更高效",
   "authors": [
     {
       "name": "Khang Nguyen",

@@ -78,6 +78,71 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-03138",
+      "source": "arxiv",
+      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL",
+      "title_zh": "KlaskTron：面向物理对抗多智能体强化学习的开源平台",
+      "tldr_zh": "开源低成本桌面机器人平台，实现物理对抗多智能体强化学习零样本迁移。",
+      "cover_zh": "不到2500美元｜这个开源平台让物理对抗RL零样本迁移成真",
+      "abstract_zh": "机器人学习，特别是物理多智能体强化学习（MARL）的进展，目前受限于可访问的标准化基准的缺乏。虽然基于仿真的MARL已经产生了显著的新兴行为，从协调团队合作到复杂工具使用，但将这些进展迁移到物理系统仍然困难。一个关键障碍是基础设施：物理平台通常昂贵得令人望而却步，需要专门设施，或者缺乏可复现的开放机制和设计。我们推出KlaskTron，一个基于动态桌面游戏KLASK的开源、低成本（低于2500美元）、桌面规模的对抗性MARL机器人测试平台。该平台具有双CoreXY龙门架和高扭矩无刷电机，能够实现竞争性游戏所需的高速、精确操作。关键的是，我们提供了一个完整的生态系统：硬件设计（CAD、BOM）、NVIDIA Isaac Lab中的GPU原生数字孪生用于高保真建模和仿真，以及使用学习神经执行器模型的经过验证的sim-to-real基线。我们证明该基线能够实现零样本策略迁移，训练后的智能体表现出新兴的对抗行为。为确保我们结果的完全可复现性，所有项目资产均已公开：硬件CAD/BOM和组装文档见[https://idscethzurich.github.io/klask_hardware]，推理软件栈见[https://github.com/IDSCZurich/klask_software]，仿真和MARL设置见[https://github.com/IDSCZurich/klask_rl]。",
+      "authors": [
+        "Aswin Ramachandran",
+        "Jona Schulz",
+        "Maurus Derungs"
+      ],
+      "authors_all": [
+        "Aswin Ramachandran",
+        "Jona Schulz",
+        "Maurus Derungs",
+        "Carlo Angelini",
+        "Tobias Meier",
+        "Raffaello D'Andrea"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03138.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03138-p2.jpg",
+        "assets/img/covers/arxiv-2611-03138-p3.jpg",
+        "assets/img/covers/arxiv-2611-03138-p4.jpg"
+      ],
+      "arxiv_id": "2611.03138",
+      "abs_url": "http://arxiv.org/abs/2611.03138v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03138v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 53,
+      "judge": {},
+      "institutions": [
+        "ETH Zürich"
+      ],
+      "method_tags": [
+        "Multi-Agent RL",
+        "sim-to-real",
+        "neural actuator model"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "Isaac Lab"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-03937",
       "source": "arxiv",
       "title": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
@@ -213,6 +278,152 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-03059",
+      "source": "arxiv",
+      "title": "BeyondContact: A Reinforcement Learning Framework for Airflow-Based Non-Contact Manipulation",
+      "title_zh": "BeyondContact：基于气流非接触操作的强化学习框架",
+      "tldr_zh": "提出气流仿真扩展与强化学习框架，实现非接触操作。",
+      "cover_zh": "不碰也能操控物体？这个强化学习框架用气流实现非接触操作！",
+      "abstract_zh": "基于接触的机器人操作受末端执行器可达性和物体机械属性的限制。气流可以在不直接接触机器人与物体的情况下施加力，从而能够操作超出可达范围或不宜直接接触的物体。然而，缺乏合适的仿真环境阻碍了强化学习在基于气流的操作中的应用，限制了该机制与基于接触的方法相比的更广泛采用。为了弥补这一空白，我们开发了一个与机器人和任务无关的Isaac Lab气流扩展，支持大规模并行训练。该扩展使用实验识别的气流模型来计算施加在物体上的力和力矩。基于此扩展，我们训练了一个混合推-吹（HPB）策略，结合基于接触的推动与气流操作，以及一个矩形重定向（RR）策略，仅使用气流控制长方体的朝向。为了实现物理执行，我们设计了一个轻量、高速的鼓风机，可与夹爪共存。在零样本真实世界部署中，HPB在20次试验中达到80%的成功率，而RR在四个目标朝向上实现了2.6度的平均绝对朝向误差。项目材料可在https://github.com/iit-DLSLab/BeyondContact获取。",
+      "authors": [
+        "Peiyu Yang",
+        "Mohamad S. Moudallal",
+        "Antonio Langella"
+      ],
+      "authors_all": [
+        "Peiyu Yang",
+        "Mohamad S. Moudallal",
+        "Antonio Langella",
+        "Giulio Turrisi",
+        "Victor Barasuol",
+        "Claudio Semini"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ IIT (Italy)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03059.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03059-p2.jpg",
+        "assets/img/covers/arxiv-2611-03059-p3.jpg",
+        "assets/img/covers/arxiv-2611-03059-p4.jpg"
+      ],
+      "arxiv_id": "2611.03059",
+      "abs_url": "http://arxiv.org/abs/2611.03059v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03059v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 50,
+      "judge": {},
+      "institutions": [
+        "Istituto Italiano di Tecnologia (IIT)"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "airflow-based manipulation",
+        "sim-to-real"
+      ],
+      "platform": [
+        "AgileX Piper-L"
+      ],
+      "sim_stack": [
+        "Isaac Lab",
+        "Isaac Sim"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-02691",
+      "source": "arxiv_discover",
+      "title": "Closing the Dynamics Gap through Self-Directed Robotic Interaction",
+      "title_zh": "通过自主机器人交互弥合动力学差距",
+      "tldr_zh": "CUE 系统通过自主交互识别物理参数，弥合仿真与现实的动力学差距。",
+      "cover_zh": "机器人自己找茬练台球？动力学差距被它玩明白了",
+      "abstract_zh": "Agentic Real2Sim2Real 系统能够根据相机观测在仿真中重建场景，但摩擦和恢复系数等接触丰富的动力学无法在没有交互的情况下观测到。我们将此称为动力学差距，并提出 CUE，一个通过与环境自身交互来弥合该差距的智能体系统。仅给定高层指令且无需重置，智能体构建自己的感知、识别物理参数，并针对其仿真最不准确的交互进行优化。在台球任务上，CUE 在仿真中 25 种隐藏物理条件下，将留出球位置误差相对于最强基线降低了 72%，我们进一步将其部署在真实台球桌上。更多细节可在项目网站找到：https://cue-dynamics.github.io/",
+      "authors": [
+        "Xilun Zhang",
+        "Liam Achenbach",
+        "Luis Pabon"
+      ],
+      "authors_all": [
+        "Xilun Zhang",
+        "Liam Achenbach",
+        "Luis Pabon",
+        "Matthew Foutter",
+        "Marco Pavone"
+      ],
+      "primary_category": "",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · CoRL 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-02691.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-02691-p2.jpg",
+        "assets/img/covers/arxiv-2611-02691-p3.jpg"
+      ],
+      "arxiv_id": "2611.02691",
+      "abs_url": "http://arxiv.org/abs/2611.02691v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02691v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "2026-11-05",
+      "score": 49,
+      "judge": {},
+      "institutions": [
+        "Stanford University",
+        "ETH Zurich",
+        "NVIDIA Research",
+        "microagi"
+      ],
+      "method_tags": [
+        "Real2Sim2Real",
+        "Agentic Robotics",
+        "Dynamics Learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2611-03294",
       "source": "arxiv",
       "title": "ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation",
@@ -275,6 +486,68 @@
       ],
       "platform": [],
       "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03091",
+      "source": "arxiv",
+      "title": "KlaskTron-IL: A Contact-Rich Adversarial Imitation Learning Benchmark with a Validated Sim-to-Real Bridge",
+      "title_zh": "KlaskTron-IL：一个接触丰富的对抗模仿学习基准与经验证的仿真到现实桥梁",
+      "tldr_zh": "提出接触丰富对抗模仿学习基准，揭示标准方法失败模式，并实现零样本仿真到现实迁移。",
+      "cover_zh": "仿真到现实零样本迁移！这个基准竟让BC策略直接上真机",
+      "abstract_zh": "KlaskTron 是一个用于双人对抗强化学习的开源硬件物理平台，其学习到的执行器模型支持训练策略的零样本仿真到现实迁移。在此平台基础上，我们贡献了 KlaskTron-IL：一个多层级模仿学习数据集（直接在物理机器人上收集的 8 万个人类演示时间步、32 万个对称增强时间步，以及由零样本验证的 PPO 策略生成的合成专家轨迹，最多达 500 万步），以及诊断基线，揭示了标准模仿学习方法在接触丰富的对抗动力学下的三种典型失败模式：BC 的数据缩放平台期、GAIL 的可解释但弱梯度的判别器（Spearman $ρ= -1.0$ 的球-桩接近恢复，但 logit 跨度低于 0.1），以及非对称的 BC 先验与奖励密度交互。由于本文中使用的策略接口与执行器模型桥接到硬件的接口相同，在此基准上训练的策略可以原封不动地在物理机器人上运行，我们针对最强的 BC 基线展示了零样本运行，只要其命令遵守执行器模型的 $± 0.2$ m/s 识别范围。",
+      "authors": [
+        "Nicklas Sohm",
+        "Aswin Ramachandran",
+        "Raffaello D'Andrea"
+      ],
+      "authors_all": [
+        "Nicklas Sohm",
+        "Aswin Ramachandran",
+        "Raffaello D'Andrea"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03091.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03091-p2.jpg",
+        "assets/img/covers/arxiv-2611-03091-p3.jpg",
+        "assets/img/covers/arxiv-2611-03091-p4.jpg"
+      ],
+      "arxiv_id": "2611.03091",
+      "abs_url": "http://arxiv.org/abs/2611.03091v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03091v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "ETH Zürich, IDSC"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Behavior Cloning",
+        "GAIL"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "Isaac Lab"
+      ],
       "method_family": "",
       "real_robot": "yes",
       "training_summary": "",
@@ -474,6 +747,80 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-02777",
+      "source": "arxiv",
+      "title": "Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies",
+      "title_zh": "超越策略补丁：将强化学习专家蒸馏为视觉-语言-动作策略",
+      "tldr_zh": "REPAIR框架将RL专家蒸馏进单个VLA，在六个真实机器人任务上实现100%成功率。",
+      "cover_zh": "RL专家直接蒸馏进VLA！六个真实任务全成功，抖动还更低",
+      "abstract_zh": "视觉-语言-动作（VLA）策略能够处理长时程操作中的非关键阶段，但在短时精度关键阶段会失败。轻量级强化学习（RL）专家可以在不直接将RL应用于完整VLA的情况下解决这些失败，但在部署时仍需保留辅助控制器和切换机制。我们研究如何将专家的能力迁移到单个流匹配VLA中。直接模仿专家的轨迹可能会重现动作抖动，并使VLA对其自身执行过程中遇到的状态准备不足。我们提出REPAIR，一个价值引导的蒸馏框架，它将离线初始化与在线策略精炼相结合。在每个关键阶段的观测中，REPAIR查询相应的专家以获取多个动作候选，并使用其评论家网络对它们进行加权，以构建监督分布。一个共享的加权流匹配目标首先在专家辅助的轨迹观测上训练VLA，然后在其自身执行收集的观测上训练。在在线策略收集过程中，专家提供监督但不接管控制，并在部署时被移除。在六个真实机器人任务中（每个任务30次评估试验），REPAIR在所有六个任务上达到100%的成功率，并且在每个任务上末端执行器的平均抖动均低于专家辅助执行。",
+      "authors": [
+        "Zhennan Jiang",
+        "Tingying Xie",
+        "Shilong Ji"
+      ],
+      "authors_all": [
+        "Zhennan Jiang",
+        "Tingying Xie",
+        "Shilong Ji",
+        "Shu'ang Yu",
+        "Tianxing Zhou",
+        "Yuhui Chen",
+        "Jiahuan Gao",
+        "Kaizhi Xie",
+        "Yuanfan Xu",
+        "Feng Gao",
+        "Yu Wang",
+        "Haoran Li",
+        "Dongbin Zhao",
+        "Chao Yu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-02777.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-02777-p2.jpg",
+        "assets/img/covers/arxiv-2611-02777-p3.jpg",
+        "assets/img/covers/arxiv-2611-02777-p4.jpg"
+      ],
+      "arxiv_id": "2611.02777",
+      "abs_url": "http://arxiv.org/abs/2611.02777v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02777v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {},
+      "institutions": [
+        "University of Chinese Academy of Sciences",
+        "Striding AI",
+        "Tsinghua University",
+        "Institute of Automation, Chinese Academy of Sciences"
+      ],
+      "method_tags": [
+        "Distillation",
+        "RL",
+        "VLA"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-03584",
       "source": "arxiv",
       "title": "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation",
@@ -585,10 +932,18 @@
       "venue_announced": "",
       "score": 35,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Harbin Institute of Technology"
+      ],
+      "method_tags": [
+        "Diffusion Policy",
+        "Imitation Learning",
+        "Visuo-tactile Fusion"
+      ],
       "platform": [],
-      "sim_stack": [],
+      "sim_stack": [
+        "MuJoCo"
+      ],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
@@ -675,6 +1030,91 @@
           "url": "https://www.youtube.com/watch?v=VKDYR6OSkK4"
         }
       ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03103",
+      "source": "arxiv",
+      "title": "VLALagBench: Understanding When and Why VLA Inference Latency Matters",
+      "title_zh": "VLALagBench：理解VLA推理延迟何时及为何重要",
+      "tldr_zh": "VLALagBench基准揭示VLA推理延迟对任务成功率的影响及异步执行缓解策略。",
+      "cover_zh": "100ms延迟竟让成功率减半？VLA推理延迟的真相",
+      "abstract_zh": "视觉-语言-动作（VLA）模型为通用机器人操作提供了一条有前景的路径。虽然推理延迟会影响在不断变化的物理世界中的任务成功，但延迟与任务成功率之间的关系仍鲜为人知。在本文中，我们介绍了VLALagBench，一个全面的基准测试，用于研究VLA推理延迟在不同任务类型、物体速度、执行模式（同步和异步）以及VLA策略下的敏感性。使用VLALagBench，我们发现即使100毫秒的适度推理延迟也能使移动目标上的任务成功率几乎减半，且敏感性因任务和策略而异。这些差异反映了任务对精度和连续运动的具体要求。通过将推理与动作执行重叠，异步执行可以恢复部分丢失的成功率，但代价是更频繁的推理请求。基于这些发现，我们开发了一个经验模型，可以从有限的校准数据预测任务成功，在各种VLA策略下实现了仅5.7-7.8%的均方根预测误差。给定推理系统的延迟和每机器人吞吐量，这些预测可指导选择特定系统的VLA算法配置以最大化任务成功。我们相信VLALagBench和这些发现为未来的机器人算法-系统协同设计提供了坚实的基础。",
+      "authors": [
+        "Qi Wen",
+        "Borui Xu",
+        "Hussein Amro"
+      ],
+      "authors_all": [
+        "Qi Wen",
+        "Borui Xu",
+        "Hussein Amro",
+        "Hongshi Tan",
+        "Hanmin Lin",
+        "Chaoyi Ruan",
+        "Shanghao Liu",
+        "Gang Yang",
+        "Yuejiang Liu",
+        "Jiafei Duan",
+        "Bingsheng He",
+        "Jason Clemons",
+        "Christos Kozyrakis",
+        "Wenqi Jiang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03103.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03103-p2.jpg",
+        "assets/img/covers/arxiv-2611-03103-p3.jpg",
+        "assets/img/covers/arxiv-2611-03103-p4.jpg"
+      ],
+      "arxiv_id": "2611.03103",
+      "abs_url": "http://arxiv.org/abs/2611.03103v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03103v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "National University of Singapore",
+        "Nanyang Technological University",
+        "Stanford University",
+        "NVIDIA"
+      ],
+      "method_tags": [
+        "VLA",
+        "推理延迟",
+        "异步执行"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -824,6 +1264,187 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-02930",
+      "source": "arxiv",
+      "title": "PointPilot: Unified Robotic Manipulation via Object-Centric 3D Point Flow Prediction",
+      "title_zh": "PointPilot：通过以物体为中心的3D点流预测实现统一机器人操作",
+      "tldr_zh": "PointPilot通过3D点流预测实现零样本具身泛化的统一机器人操作。",
+      "cover_zh": "机器人操作新突破！零样本泛化到未见形态，无需微调",
+      "abstract_zh": "泛化仍然是机器人领域的核心挑战，需要策略能够应对来自多个维度的域变化，例如不同的具身形态、相机位姿和/或场景布局。为了解决这个问题，我们提出了PointPilot，一个基于3D空间点流预测的、任务聚焦且3D对齐的操作框架。PointPilot不是对全局场景建模，而是仅表示任务聚焦的物体（机器人夹爪被视为物体），避免预测与操作任务无关的潜在冗余场景部分。此外，PointPilot在一个统一坐标中对齐3D空间表示，并支持从物体点流执行闭环和全自动动作，跨越不同的操作模式，而无需单独训练的动作专家，而现有工作通常需要额外的动作头或是（半）自动且特定于单臂模式。给定传感器观测和语言指令，我们的模型以端到端的方式联合学习子任务规划、任务相关物体定位和3D点流预测。通过在共享的3D点流空间中处理异构数据，PointPilot能够吸收来自不同具身形态的演示。大量的仿真和真实世界实验验证了我们的方法。值得注意的是，我们展示了PointPilot的零样本具身泛化能力。一个训练好的策略可以部署在先前未见的具身形态上，并在无需任何额外微调的情况下成功完成操作任务。",
+      "authors": [
+        "Yihan Fang",
+        "Yuxin Tian",
+        "Ruixiang Wang"
+      ],
+      "authors_all": [
+        "Yihan Fang",
+        "Yuxin Tian",
+        "Ruixiang Wang",
+        "Zhanqi Zhang",
+        "Xing Hu",
+        "Zhen Yang",
+        "Huayi Zhou",
+        "Yongyi Su",
+        "Wei Gao",
+        "Kui Jia"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-02930.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-02930-p2.jpg",
+        "assets/img/covers/arxiv-2611-02930-p3.jpg",
+        "assets/img/covers/arxiv-2611-02930-p4.jpg"
+      ],
+      "arxiv_id": "2611.02930",
+      "abs_url": "http://arxiv.org/abs/2611.02930v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02930v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "The Chinese University of Hong Kong, Shenzhen",
+        "DexForce Technology Co., Ltd.",
+        "Shenzhen University",
+        "Foshan University"
+      ],
+      "method_tags": [
+        "3D point flow prediction",
+        "zero-shot embodiment generalization",
+        "end-to-end learning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-02947",
+      "source": "arxiv",
+      "title": "Positive Safety Margins from Artificial Potential Field Reward Augmentation for Size-Robust Obstacle Avoidance under Partial Observability",
+      "title_zh": "部分可观测下尺寸鲁棒避障的人工势场奖励增强产生正安全裕度",
+      "tldr_zh": "人工势场奖励增强使策略在隐藏障碍物尺寸时保持安全裕度。",
+      "cover_zh": "不告诉它障碍物多大，它也能安全绕开｜这个奖励项有点东西",
+      "abstract_zh": "无碰撞到达是操作任务的核心，但真实场景中障碍物的大小和精确位置往往不可观测，这排除了以障碍物几何为输入的强化学习控制器。仅依赖碰撞惩罚的奖励不依赖于障碍物外部的间隙，因此在步长成本下，学习到的策略会贴着障碍物表面移动，一旦障碍物半径超过训练值就会失败。我们研究是否可以通过一个解析奖励项在不向策略暴露障碍物的情况下诱导出安全裕度。我们在模拟的 Franka Emika Panda 到达任务中，用一个水平人工势场增强奖励，该势场惩罚两个柱子（固定标称布局，随机漂移）周围安全裕度内的接近。在隐藏观测下，使用该奖励项训练的策略在半径从 0.03 米到 0.055 米的扫描中（30 个种子）保持超过 88% 的安全成功率，而不使用该奖励项的策略在最大测试半径下成功率低于 10%；该奖励项诱导的最小间隙为 47.9 毫米，而不使用时为 9.6 毫米，并且至少提前八倍（中位数步数）消除训练碰撞。该优势在所有分布外半径上统计显著，并且在三种强化学习求解器和全观测下均成立。其安全成功率与给定柱子位置的经典势场规划器相当。该裕度是一个固定缓冲区，而非对半径的自适应，并且使路径长度增加约 19%。",
+      "authors": [
+        "Ziyi Hao"
+      ],
+      "authors_all": [
+        "Ziyi Hao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-02947.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-02947-p2.jpg",
+        "assets/img/covers/arxiv-2611-02947-p3.jpg",
+        "assets/img/covers/arxiv-2611-02947-p4.jpg"
+      ],
+      "arxiv_id": "2611.02947",
+      "abs_url": "http://arxiv.org/abs/2611.02947v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02947v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "The Chinese University of Hong Kong"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Artificial Potential Field Reward Augmentation",
+        "Obstacle Avoidance under Partial Observability"
+      ],
+      "platform": [
+        "Franka Emika Panda"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-02999",
+      "source": "arxiv",
+      "title": "SyncHeC: Markerless Spatio-Temporal Hand-Eye Calibration via Differentiable Rendering and Continuous-Time Joint Optimization",
+      "title_zh": "SyncHeC：基于可微渲染与连续时间联合优化的无标记时空手眼标定",
+      "tldr_zh": "SyncHeC 实现无标记时空手眼标定，提升策略成功率。",
+      "cover_zh": "机械臂手眼标定新突破｜无需标记，精度惊人！",
+      "abstract_zh": "连续运动下的无标记手眼标定需要同时解决相机几何以及图像与关节状态之间的时间偏移问题。我们提出 SyncHeC（同步手眼标定），这是一个密集可微渲染框架，能够从单条机器人轨迹中估计两者。连续时间前向运动学使延迟可微，度量深度补充掩码轮廓，离线规划器结合空间敏感性与时间激励。交替更新支持 Eye-to-Hand、Eye-in-Hand 和多相机标定。在 7 自由度机械臂上，一次 6.5 秒的运动相对于标记板参考产生 0.21 厘米的平移误差、0.34 厘米的触摸测试误差，以及相对于 87 毫秒参考的 2.7 毫秒延迟误差，95% 不确定性为 ±1.5 毫秒。在匹配的录制数据上，与 CM-Calib 相比，平移和名义延迟误差分别改善 3.7 倍和 2.3 倍。实验涵盖七种机械臂和四种深度传感器。在策略训练和部署期间补偿恢复的偏移，在六个家族和六个任务上（1,800 个匹配对；配对 95% 置信区间 [6.3, 9.9] 个百分点）将成功率提高了 8.1 个百分点。",
+      "authors": [
+        "Zhengdong Hong"
+      ],
+      "authors_all": [
+        "Zhengdong Hong"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ ZJU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-02999.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-02999-p2.jpg",
+        "assets/img/covers/arxiv-2611-02999-p3.jpg",
+        "assets/img/covers/arxiv-2611-02999-p4.jpg"
+      ],
+      "arxiv_id": "2611.02999",
+      "abs_url": "http://arxiv.org/abs/2611.02999v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02999v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "Zhejiang University"
+      ],
+      "method_tags": [
+        "Differentiable Rendering",
+        "Continuous-Time Joint Optimization",
+        "Hand-Eye Calibration"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-03646",
       "source": "arxiv",
       "title": "EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos",
@@ -960,58 +1581,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-03138",
-      "source": "arxiv",
-      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL",
-      "title_zh": "KlaskTron：面向物理对抗多智能体强化学习的开源平台",
-      "tldr_zh": "开源低成本桌面机器人平台，实现物理对抗多智能体强化学习零样本迁移。",
-      "cover_zh": "不到2500美元｜这个开源平台让物理对抗RL零样本迁移成真",
-      "abstract_zh": "机器人学习，特别是物理多智能体强化学习（MARL）的进展，目前受限于可访问的标准化基准的缺乏。虽然基于仿真的MARL已经产生了显著的新兴行为，从协调团队合作到复杂工具使用，但将这些进展迁移到物理系统仍然困难。一个关键障碍是基础设施：物理平台通常昂贵得令人望而却步，需要专门设施，或者缺乏可复现的开放机制和设计。我们推出KlaskTron，一个基于动态桌面游戏KLASK的开源、低成本（低于2500美元）、桌面规模的对抗性MARL机器人测试平台。该平台具有双CoreXY龙门架和高扭矩无刷电机，能够实现竞争性游戏所需的高速、精确操作。关键的是，我们提供了一个完整的生态系统：硬件设计（CAD、BOM）、NVIDIA Isaac Lab中的GPU原生数字孪生用于高保真建模和仿真，以及使用学习神经执行器模型的经过验证的sim-to-real基线。我们证明该基线能够实现零样本策略迁移，训练后的智能体表现出新兴的对抗行为。为确保我们结果的完全可复现性，所有项目资产均已公开：硬件CAD/BOM和组装文档见[https://idscethzurich.github.io/klask_hardware]，推理软件栈见[https://github.com/IDSCZurich/klask_software]，仿真和MARL设置见[https://github.com/IDSCZurich/klask_rl]。",
-      "authors": [
-        "Aswin Ramachandran",
-        "Jona Schulz",
-        "Maurus Derungs"
-      ],
-      "authors_all": [
-        "Aswin Ramachandran",
-        "Jona Schulz",
-        "Maurus Derungs",
-        "Carlo Angelini",
-        "Tobias Meier",
-        "Raffaello D'Andrea"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03138.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03138-p2.jpg",
-        "assets/img/covers/arxiv-2611-03138-p3.jpg",
-        "assets/img/covers/arxiv-2611-03138-p4.jpg"
-      ],
-      "arxiv_id": "2611.03138",
-      "abs_url": "http://arxiv.org/abs/2611.03138v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03138v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 28,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-03501",
       "source": "arxiv",
       "title": "When Robots Outweigh Objects: How Inertia Mismatch Shapes Robot Policy Learning",
@@ -1099,115 +1668,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-03059",
-      "source": "arxiv",
-      "title": "BeyondContact: A Reinforcement Learning Framework for Airflow-Based Non-Contact Manipulation",
-      "title_zh": "BeyondContact：基于气流非接触操作的强化学习框架",
-      "tldr_zh": "提出气流仿真扩展与强化学习框架，实现非接触操作。",
-      "cover_zh": "不碰也能操控物体？这个强化学习框架用气流实现非接触操作！",
-      "abstract_zh": "基于接触的机器人操作受末端执行器可达性和物体机械属性的限制。气流可以在不直接接触机器人与物体的情况下施加力，从而能够操作超出可达范围或不宜直接接触的物体。然而，缺乏合适的仿真环境阻碍了强化学习在基于气流的操作中的应用，限制了该机制与基于接触的方法相比的更广泛采用。为了弥补这一空白，我们开发了一个与机器人和任务无关的Isaac Lab气流扩展，支持大规模并行训练。该扩展使用实验识别的气流模型来计算施加在物体上的力和力矩。基于此扩展，我们训练了一个混合推-吹（HPB）策略，结合基于接触的推动与气流操作，以及一个矩形重定向（RR）策略，仅使用气流控制长方体的朝向。为了实现物理执行，我们设计了一个轻量、高速的鼓风机，可与夹爪共存。在零样本真实世界部署中，HPB在20次试验中达到80%的成功率，而RR在四个目标朝向上实现了2.6度的平均绝对朝向误差。项目材料可在https://github.com/iit-DLSLab/BeyondContact获取。",
-      "authors": [
-        "Peiyu Yang",
-        "Mohamad S. Moudallal",
-        "Antonio Langella"
-      ],
-      "authors_all": [
-        "Peiyu Yang",
-        "Mohamad S. Moudallal",
-        "Antonio Langella",
-        "Giulio Turrisi",
-        "Victor Barasuol",
-        "Claudio Semini"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03059.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03059-p2.jpg",
-        "assets/img/covers/arxiv-2611-03059-p3.jpg",
-        "assets/img/covers/arxiv-2611-03059-p4.jpg"
-      ],
-      "arxiv_id": "2611.03059",
-      "abs_url": "http://arxiv.org/abs/2611.03059v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03059v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 25,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-02691",
-      "source": "arxiv_discover",
-      "title": "Closing the Dynamics Gap through Self-Directed Robotic Interaction",
-      "title_zh": "通过自主机器人交互弥合动力学差距",
-      "tldr_zh": "CUE 系统通过自主交互识别物理参数，弥合仿真与现实的动力学差距。",
-      "cover_zh": "机器人自己找茬练台球？动力学差距被它玩明白了",
-      "abstract_zh": "Agentic Real2Sim2Real 系统能够根据相机观测在仿真中重建场景，但摩擦和恢复系数等接触丰富的动力学无法在没有交互的情况下观测到。我们将此称为动力学差距，并提出 CUE，一个通过与环境自身交互来弥合该差距的智能体系统。仅给定高层指令且无需重置，智能体构建自己的感知、识别物理参数，并针对其仿真最不准确的交互进行优化。在台球任务上，CUE 在仿真中 25 种隐藏物理条件下，将留出球位置误差相对于最强基线降低了 72%，我们进一步将其部署在真实台球桌上。更多细节可在项目网站找到：https://cue-dynamics.github.io/",
-      "authors": [
-        "Xilun Zhang",
-        "Liam Achenbach",
-        "Luis Pabon"
-      ],
-      "authors_all": [
-        "Xilun Zhang",
-        "Liam Achenbach",
-        "Luis Pabon",
-        "Matthew Foutter",
-        "Marco Pavone"
-      ],
-      "primary_category": "",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎉 最新收录 · CoRL 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-02691.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-02691-p2.jpg",
-        "assets/img/covers/arxiv-2611-02691-p3.jpg"
-      ],
-      "arxiv_id": "2611.02691",
-      "abs_url": "http://arxiv.org/abs/2611.02691v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02691v1",
-      "venue": "CoRL 2026",
-      "venue_announced": "2026-11-05",
-      "score": 24,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2611-03168",
       "source": "arxiv",
       "title": "Rollout then Recycle: 3,718 Labelled Real-Robot Episodes from Benchmarking 7 Policies on 12 Tasks",
@@ -1250,12 +1710,21 @@
       "venue_announced": "",
       "score": 24,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Armnet",
+        "Imperial College London"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "VLA",
+        "Policy Evaluation"
+      ],
+      "platform": [
+        "SO-101"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1418,12 +1887,20 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Zürich University of Applied Sciences"
+      ],
+      "method_tags": [
+        "teacher-student",
+        "recurrent adapter",
+        "visuomotor control"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1468,61 +1945,20 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Tohoku University"
+      ],
+      "method_tags": [
+        "residual reinforcement learning",
+        "learning from demonstration",
+        "contact-rich manipulation"
+      ],
+      "platform": [
+        "Unitree G1"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03091",
-      "source": "arxiv",
-      "title": "KlaskTron-IL: A Contact-Rich Adversarial Imitation Learning Benchmark with a Validated Sim-to-Real Bridge",
-      "title_zh": "KlaskTron-IL：一个接触丰富的对抗模仿学习基准与经验证的仿真到现实桥梁",
-      "tldr_zh": "提出接触丰富对抗模仿学习基准，揭示标准方法失败模式，并实现零样本仿真到现实迁移。",
-      "cover_zh": "仿真到现实零样本迁移！这个基准竟让BC策略直接上真机",
-      "abstract_zh": "KlaskTron 是一个用于双人对抗强化学习的开源硬件物理平台，其学习到的执行器模型支持训练策略的零样本仿真到现实迁移。在此平台基础上，我们贡献了 KlaskTron-IL：一个多层级模仿学习数据集（直接在物理机器人上收集的 8 万个人类演示时间步、32 万个对称增强时间步，以及由零样本验证的 PPO 策略生成的合成专家轨迹，最多达 500 万步），以及诊断基线，揭示了标准模仿学习方法在接触丰富的对抗动力学下的三种典型失败模式：BC 的数据缩放平台期、GAIL 的可解释但弱梯度的判别器（Spearman $ρ= -1.0$ 的球-桩接近恢复，但 logit 跨度低于 0.1），以及非对称的 BC 先验与奖励密度交互。由于本文中使用的策略接口与执行器模型桥接到硬件的接口相同，在此基准上训练的策略可以原封不动地在物理机器人上运行，我们针对最强的 BC 基线展示了零样本运行，只要其命令遵守执行器模型的 $± 0.2$ m/s 识别范围。",
-      "authors": [
-        "Nicklas Sohm",
-        "Aswin Ramachandran",
-        "Raffaello D'Andrea"
-      ],
-      "authors_all": [
-        "Nicklas Sohm",
-        "Aswin Ramachandran",
-        "Raffaello D'Andrea"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03091.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03091-p2.jpg",
-        "assets/img/covers/arxiv-2611-03091-p3.jpg",
-        "assets/img/covers/arxiv-2611-03091-p4.jpg"
-      ],
-      "arxiv_id": "2611.03091",
-      "abs_url": "http://arxiv.org/abs/2611.03091v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03091v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1568,8 +2004,16 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Harbin Institute of Technology, Shenzhen",
+        "Xi'an Jiaotong University",
+        "Shenzhen Loop Area Institute"
+      ],
+      "method_tags": [
+        "VLA",
+        "Mixture of Policies",
+        "Fine-Grained Manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1771,66 +2215,6 @@
         "teleoperation",
         "human-swarm interaction"
       ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-02777",
-      "source": "arxiv",
-      "title": "Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies",
-      "title_zh": "超越策略补丁：将强化学习专家蒸馏为视觉-语言-动作策略",
-      "tldr_zh": "REPAIR框架将RL专家蒸馏进单个VLA，在六个真实机器人任务上实现100%成功率。",
-      "cover_zh": "RL专家直接蒸馏进VLA！六个真实任务全成功，抖动还更低",
-      "abstract_zh": "视觉-语言-动作（VLA）策略能够处理长时程操作中的非关键阶段，但在短时精度关键阶段会失败。轻量级强化学习（RL）专家可以在不直接将RL应用于完整VLA的情况下解决这些失败，但在部署时仍需保留辅助控制器和切换机制。我们研究如何将专家的能力迁移到单个流匹配VLA中。直接模仿专家的轨迹可能会重现动作抖动，并使VLA对其自身执行过程中遇到的状态准备不足。我们提出REPAIR，一个价值引导的蒸馏框架，它将离线初始化与在线策略精炼相结合。在每个关键阶段的观测中，REPAIR查询相应的专家以获取多个动作候选，并使用其评论家网络对它们进行加权，以构建监督分布。一个共享的加权流匹配目标首先在专家辅助的轨迹观测上训练VLA，然后在其自身执行收集的观测上训练。在在线策略收集过程中，专家提供监督但不接管控制，并在部署时被移除。在六个真实机器人任务中（每个任务30次评估试验），REPAIR在所有六个任务上达到100%的成功率，并且在每个任务上末端执行器的平均抖动均低于专家辅助执行。",
-      "authors": [
-        "Zhennan Jiang",
-        "Tingying Xie",
-        "Shilong Ji"
-      ],
-      "authors_all": [
-        "Zhennan Jiang",
-        "Tingying Xie",
-        "Shilong Ji",
-        "Shu'ang Yu",
-        "Tianxing Zhou",
-        "Yuhui Chen",
-        "Jiahuan Gao",
-        "Kaizhi Xie",
-        "Yuanfan Xu",
-        "Feng Gao",
-        "Yu Wang",
-        "Haoran Li",
-        "Dongbin Zhao",
-        "Chao Yu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-02777.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-02777-p2.jpg",
-        "assets/img/covers/arxiv-2611-02777-p3.jpg",
-        "assets/img/covers/arxiv-2611-02777-p4.jpg"
-      ],
-      "arxiv_id": "2611.02777",
-      "abs_url": "http://arxiv.org/abs/2611.02777v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02777v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 17,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2283,67 +2667,14 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03103",
-      "source": "arxiv",
-      "title": "VLALagBench: Understanding When and Why VLA Inference Latency Matters",
-      "title_zh": "VLALagBench：理解VLA推理延迟何时及为何重要",
-      "tldr_zh": "VLALagBench基准揭示VLA推理延迟对任务成功率的影响及异步执行缓解策略。",
-      "cover_zh": "100ms延迟竟让成功率减半？VLA推理延迟的真相",
-      "abstract_zh": "视觉-语言-动作（VLA）模型为通用机器人操作提供了一条有前景的路径。虽然推理延迟会影响在不断变化的物理世界中的任务成功，但延迟与任务成功率之间的关系仍鲜为人知。在本文中，我们介绍了VLALagBench，一个全面的基准测试，用于研究VLA推理延迟在不同任务类型、物体速度、执行模式（同步和异步）以及VLA策略下的敏感性。使用VLALagBench，我们发现即使100毫秒的适度推理延迟也能使移动目标上的任务成功率几乎减半，且敏感性因任务和策略而异。这些差异反映了任务对精度和连续运动的具体要求。通过将推理与动作执行重叠，异步执行可以恢复部分丢失的成功率，但代价是更频繁的推理请求。基于这些发现，我们开发了一个经验模型，可以从有限的校准数据预测任务成功，在各种VLA策略下实现了仅5.7-7.8%的均方根预测误差。给定推理系统的延迟和每机器人吞吐量，这些预测可指导选择特定系统的VLA算法配置以最大化任务成功。我们相信VLALagBench和这些发现为未来的机器人算法-系统协同设计提供了坚实的基础。",
-      "authors": [
-        "Qi Wen",
-        "Borui Xu",
-        "Hussein Amro"
+      "institutions": [
+        "Huazhong University of Science and Technology (HUST)"
       ],
-      "authors_all": [
-        "Qi Wen",
-        "Borui Xu",
-        "Hussein Amro",
-        "Hongshi Tan",
-        "Hanmin Lin",
-        "Chaoyi Ruan",
-        "Shanghao Liu",
-        "Gang Yang",
-        "Yuejiang Liu",
-        "Jiafei Duan",
-        "Bingsheng He",
-        "Jason Clemons",
-        "Christos Kozyrakis",
-        "Wenqi Jiang"
+      "method_tags": [
+        "multimodal representation learning",
+        "contrastive alignment",
+        "masked reconstruction"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03103.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03103-p2.jpg",
-        "assets/img/covers/arxiv-2611-03103-p3.jpg",
-        "assets/img/covers/arxiv-2611-03103-p4.jpg"
-      ],
-      "arxiv_id": "2611.03103",
-      "abs_url": "http://arxiv.org/abs/2611.03103v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03103v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2501,155 +2832,18 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Middle East Technical University (METU)"
+      ],
+      "method_tags": [
+        "topology optimization",
+        "multi-body dynamics",
+        "motion capture"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-02930",
-      "source": "arxiv",
-      "title": "PointPilot: Unified Robotic Manipulation via Object-Centric 3D Point Flow Prediction",
-      "title_zh": "PointPilot：通过以物体为中心的3D点流预测实现统一机器人操作",
-      "tldr_zh": "PointPilot通过3D点流预测实现零样本具身泛化的统一机器人操作。",
-      "cover_zh": "机器人操作新突破！零样本泛化到未见形态，无需微调",
-      "abstract_zh": "泛化仍然是机器人领域的核心挑战，需要策略能够应对来自多个维度的域变化，例如不同的具身形态、相机位姿和/或场景布局。为了解决这个问题，我们提出了PointPilot，一个基于3D空间点流预测的、任务聚焦且3D对齐的操作框架。PointPilot不是对全局场景建模，而是仅表示任务聚焦的物体（机器人夹爪被视为物体），避免预测与操作任务无关的潜在冗余场景部分。此外，PointPilot在一个统一坐标中对齐3D空间表示，并支持从物体点流执行闭环和全自动动作，跨越不同的操作模式，而无需单独训练的动作专家，而现有工作通常需要额外的动作头或是（半）自动且特定于单臂模式。给定传感器观测和语言指令，我们的模型以端到端的方式联合学习子任务规划、任务相关物体定位和3D点流预测。通过在共享的3D点流空间中处理异构数据，PointPilot能够吸收来自不同具身形态的演示。大量的仿真和真实世界实验验证了我们的方法。值得注意的是，我们展示了PointPilot的零样本具身泛化能力。一个训练好的策略可以部署在先前未见的具身形态上，并在无需任何额外微调的情况下成功完成操作任务。",
-      "authors": [
-        "Yihan Fang",
-        "Yuxin Tian",
-        "Ruixiang Wang"
-      ],
-      "authors_all": [
-        "Yihan Fang",
-        "Yuxin Tian",
-        "Ruixiang Wang",
-        "Zhanqi Zhang",
-        "Xing Hu",
-        "Zhen Yang",
-        "Huayi Zhou",
-        "Yongyi Su",
-        "Wei Gao",
-        "Kui Jia"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-02930.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-02930-p2.jpg",
-        "assets/img/covers/arxiv-2611-02930-p3.jpg",
-        "assets/img/covers/arxiv-2611-02930-p4.jpg"
-      ],
-      "arxiv_id": "2611.02930",
-      "abs_url": "http://arxiv.org/abs/2611.02930v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02930v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-02947",
-      "source": "arxiv",
-      "title": "Positive Safety Margins from Artificial Potential Field Reward Augmentation for Size-Robust Obstacle Avoidance under Partial Observability",
-      "title_zh": "部分可观测下尺寸鲁棒避障的人工势场奖励增强产生正安全裕度",
-      "tldr_zh": "人工势场奖励增强使策略在隐藏障碍物尺寸时保持安全裕度。",
-      "cover_zh": "不告诉它障碍物多大，它也能安全绕开｜这个奖励项有点东西",
-      "abstract_zh": "无碰撞到达是操作任务的核心，但真实场景中障碍物的大小和精确位置往往不可观测，这排除了以障碍物几何为输入的强化学习控制器。仅依赖碰撞惩罚的奖励不依赖于障碍物外部的间隙，因此在步长成本下，学习到的策略会贴着障碍物表面移动，一旦障碍物半径超过训练值就会失败。我们研究是否可以通过一个解析奖励项在不向策略暴露障碍物的情况下诱导出安全裕度。我们在模拟的 Franka Emika Panda 到达任务中，用一个水平人工势场增强奖励，该势场惩罚两个柱子（固定标称布局，随机漂移）周围安全裕度内的接近。在隐藏观测下，使用该奖励项训练的策略在半径从 0.03 米到 0.055 米的扫描中（30 个种子）保持超过 88% 的安全成功率，而不使用该奖励项的策略在最大测试半径下成功率低于 10%；该奖励项诱导的最小间隙为 47.9 毫米，而不使用时为 9.6 毫米，并且至少提前八倍（中位数步数）消除训练碰撞。该优势在所有分布外半径上统计显著，并且在三种强化学习求解器和全观测下均成立。其安全成功率与给定柱子位置的经典势场规划器相当。该裕度是一个固定缓冲区，而非对半径的自适应，并且使路径长度增加约 19%。",
-      "authors": [
-        "Ziyi Hao"
-      ],
-      "authors_all": [
-        "Ziyi Hao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-02947.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-02947-p2.jpg",
-        "assets/img/covers/arxiv-2611-02947-p3.jpg",
-        "assets/img/covers/arxiv-2611-02947-p4.jpg"
-      ],
-      "arxiv_id": "2611.02947",
-      "abs_url": "http://arxiv.org/abs/2611.02947v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02947v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-02999",
-      "source": "arxiv",
-      "title": "SyncHeC: Markerless Spatio-Temporal Hand-Eye Calibration via Differentiable Rendering and Continuous-Time Joint Optimization",
-      "title_zh": "SyncHeC：基于可微渲染与连续时间联合优化的无标记时空手眼标定",
-      "tldr_zh": "SyncHeC 实现无标记时空手眼标定，提升策略成功率。",
-      "cover_zh": "机械臂手眼标定新突破｜无需标记，精度惊人！",
-      "abstract_zh": "连续运动下的无标记手眼标定需要同时解决相机几何以及图像与关节状态之间的时间偏移问题。我们提出 SyncHeC（同步手眼标定），这是一个密集可微渲染框架，能够从单条机器人轨迹中估计两者。连续时间前向运动学使延迟可微，度量深度补充掩码轮廓，离线规划器结合空间敏感性与时间激励。交替更新支持 Eye-to-Hand、Eye-in-Hand 和多相机标定。在 7 自由度机械臂上，一次 6.5 秒的运动相对于标记板参考产生 0.21 厘米的平移误差、0.34 厘米的触摸测试误差，以及相对于 87 毫秒参考的 2.7 毫秒延迟误差，95% 不确定性为 ±1.5 毫秒。在匹配的录制数据上，与 CM-Calib 相比，平移和名义延迟误差分别改善 3.7 倍和 2.3 倍。实验涵盖七种机械臂和四种深度传感器。在策略训练和部署期间补偿恢复的偏移，在六个家族和六个任务上（1,800 个匹配对；配对 95% 置信区间 [6.3, 9.9] 个百分点）将成功率提高了 8.1 个百分点。",
-      "authors": [
-        "Zhengdong Hong"
-      ],
-      "authors_all": [
-        "Zhengdong Hong"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-02999.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-02999-p2.jpg",
-        "assets/img/covers/arxiv-2611-02999-p3.jpg",
-        "assets/img/covers/arxiv-2611-02999-p4.jpg"
-      ],
-      "arxiv_id": "2611.02999",
-      "abs_url": "http://arxiv.org/abs/2611.02999v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02999v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2694,12 +2888,19 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Queensland University of Technology",
+        "CSIRO Robotics"
+      ],
+      "method_tags": [
+        "co-design",
+        "gradient-based optimization",
+        "Material Point Method"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},

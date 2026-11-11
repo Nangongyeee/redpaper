@@ -811,10 +811,10 @@
       "id": "arxiv-2608-21592",
       "source": "arxiv_discover",
       "title": "Force/Torque-Based Kinematic Adaptation for Robotic Manipulation Tasks",
-      "title_zh": "Force/Torque-Based Kinematic Adaptation for Robotic Manipulation Tasks",
-      "tldr_zh": "Contact-rich robotic manipulation requires an accurate model",
-      "cover_zh": "Contact-rich robotic manipulation requires an accurate model",
-      "abstract_zh": "Contact-rich robotic manipulation requires an accurate model of the kinematic relationship between a robot's joints and the task features it senses. This relationship is rarely known exactly: it changes with each tool the robot picks up and shifts, sometimes almost instantaneously, as contact modes change --- especially for multi-fingered hands that make and break contact at points that are not exactly prescribed, as in full-hand grasping. This paper develops an adaptive scheme that estimates that relationship online, using only joint-angle sensing and a wrist-mounted force/torque sensor, with no exteroceptive measurement of the tool tip. We derive a provably stable kinematic update law that identifies the kinematics of an unknown tool from force/torque feedback alone, and prove stability of both the rigid case and the case with a compliance controller as an inner loop. We show that identification is confined to the directions the motion excites --- so that, for example, a tool's length is unobservable under a rigid insertion push, while a compliant loop's passive yielding partially excites it; and that with a second-order admittance the compliant certificate holds unconditionally in continuous time. We also pose the combined control and estimation problem as a Quadratic Program (QP): the formulation yields the prediction term of the update law exactly but, instructively, cannot reproduce the tracking adaptation term. We validate the scheme in simulation on a peg-in-hole insertion. This work is the first step in a research program aimed at factoring manipulation learning into a task policy which can be learned in isolation of the robot, for instance by reinforcement learning, and an adaptive kinematic component that adapts online to the particular robot, hand, or tool in use.",
+      "title_zh": "基于力/力矩的机器人操作任务运动学自适应",
+      "tldr_zh": "仅用力/力矩反馈在线估计工具运动学，并证明稳定性。",
+      "cover_zh": "不用摄像头！力/力矩反馈让机器人自己摸清工具运动学",
+      "abstract_zh": "接触丰富的机器人操作需要精确建模机器人关节与其感知到的任务特征之间的运动学关系。这种关系很少完全已知：它随着机器人拾取和移动的每个工具而变化，有时几乎瞬间改变，因为接触模式发生变化——尤其是对于多指手，在如全手抓取中，接触点并非精确预设，会建立和断开接触。本文开发了一种自适应方案，仅使用关节角度传感和腕部安装的力/力矩传感器在线估计该关系，无需对工具尖端进行外部感知测量。我们推导了一个可证明稳定的运动学更新律，仅从力/力矩反馈中识别未知工具的运动学，并证明了刚性情况以及带有柔顺控制器作为内环的情况的稳定性。我们表明，识别仅限于运动激励的方向——因此，例如，在刚性插入推动下工具的长度是不可观测的，而柔顺环的被动屈服会部分激励它；并且对于二阶导纳，柔顺证书在连续时间中无条件成立。我们还将联合控制与估计问题表述为二次规划（QP）：该公式精确产生更新律的预测项，但具有启发性的是，无法重现跟踪自适应项。我们在轴孔插入的仿真中验证了该方案。这项工作是一个研究计划的第一步，旨在将操作学习分解为可以独立于机器人学习的任务策略（例如通过强化学习）和一个自适应运动学组件，该组件在线适应所使用的特定机器人、手或工具。",
       "authors": [
         "Carl Glen Henshaw"
       ],

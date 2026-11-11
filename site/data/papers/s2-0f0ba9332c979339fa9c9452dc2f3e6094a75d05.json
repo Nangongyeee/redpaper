@@ -2,11 +2,11 @@
   "id": "s2-0f0ba9332c979339fa9c9452dc2f3e6094a75d05",
   "source": "conf",
   "title": "Prior-Constrained Explorative Guidance for Generalization in Diffusion Motion Planning",
-  "title_zh": "",
+  "title_zh": "先验约束的探索性引导用于扩散运动规划中的泛化",
   "abstract": "Diffusion-based planners have achieved generalization comparable to classical planners by leveraging inference-time optimization through guidance. However, their limited ability to capture environmental variations often constrains their responsiveness in unseen settings. In addition, the diversity-consistency trade-off inherent in guidance has remained unresolved. In this work, we propose Prior-Constrained Explorative Guidance (PCEG), a novel approach that gathers environmental information through local exploration and prevents guided samples from converging prematurely to similar solutions by leveraging a trajectory prior. The collected information is included in the guidance via stochastic gradient estimation, while a succinct parameter scheduling strategy enables latent optimization driven by environmental signals without significant computational overhead. Furthermore, during the modal-seeking stages of the reverse diffusion process, we employ a Gaussian Process (GP) to enforce dynamics-informed priors, effectively constraining the exploration region of each sample and thereby enhancing solution diversity. Across diverse benchmarks including 7-degree-of-freedom (7-DoF) robot-arm manipulation, PCEG substantially improves success rate by up to 30 percentage points compared to competitive diffusion planners without compromising trajectory quality, even in scenarios involving unseen obstacles. Real-world experiments further validate these findings, showcasing the generation of smooth, collision-free trajectories in novel environments. The project page is available at https://rml-unist.github.io/PCEG/.",
-  "abstract_zh": "",
-  "tldr_zh": "",
-  "cover_zh": "",
+  "abstract_zh": "基于扩散的规划器通过引导在推理时优化，已实现与经典规划器相当的泛化能力。然而，它们捕捉环境变化的能力有限，往往限制了在未见场景中的响应能力。此外，引导中固有的多样性-一致性权衡仍未解决。在本工作中，我们提出先验约束的探索性引导（PCEG），一种通过局部探索收集环境信息并利用轨迹先验防止引导样本过早收敛到相似解的新方法。收集的信息通过随机梯度估计纳入引导，而简洁的参数调度策略使得由环境信号驱动的潜在优化无需显著计算开销。此外，在反向扩散过程的模态寻求阶段，我们采用高斯过程（GP）施加动力学信息先验，有效约束每个样本的探索区域，从而增强解的多样性。在包括7自由度（7-DoF）机械臂操作在内的多种基准测试中，PCEG在不影响轨迹质量的情况下，相比有竞争力的扩散规划器将成功率显著提升高达30个百分点，即使在涉及未见障碍物的场景中也是如此。真实世界实验进一步验证了这些发现，展示了在新环境中生成平滑、无碰撞的轨迹。项目页面见 https://rml-unist.github.io/PCEG/。",
+  "tldr_zh": "PCEG通过局部探索和轨迹先验提升扩散规划器的泛化能力。",
+  "cover_zh": "扩散规划器泛化不行？PCEG用局部探索+轨迹先验，成功率直接涨30个点！",
   "authors": [
     {
       "name": "Sunhwi Kim",

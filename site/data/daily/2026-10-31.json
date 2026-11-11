@@ -3,53 +3,190 @@
   "count": 12,
   "papers": [
     {
-      "id": "vid-bilibili-BV1qxxk61EAd",
-      "source": "video_bilibili",
-      "title": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
-      "title_zh": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
-      "tldr_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产",
-      "cover_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产",
-      "abstract_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产力底座，以运动、作业、交互三智演进，实现全域泛化能力，以开放生态凝聚全行业力量，实现机器人工作价值可衡量、能力可积累、部署可规模化，携手产业伙伴加速新智能时代的全面到来。",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
+      "id": "arxiv-2611-00522",
+      "source": "arxiv",
+      "title": "Behavioral Steering of Vision-Language-Action Models in the Low-Parameter Regime",
+      "title_zh": "低参数区域中视觉-语言-动作模型的行为引导",
+      "tldr_zh": "仅用256个参数即可引导VLA行为，并调节风格与能力保留的权衡。",
+      "cover_zh": "256个参数就能让机器人行为大变样？｜预训练能力几乎不丢",
+      "abstract_zh": "强化学习（RL）越来越多地用于适配预训练的视觉-语言-动作模型（VLA）。我们研究了行为引导问题：将VLA的执行风格适配到诸如更高搬运物体等偏好。为了探究这种引导需要多少可训练容量以及能保留多少预训练能力，我们冻结了一个OpenVLA-OFT 7B策略，并使用策略梯度RL（GRPO）或进化搜索（CMA-ES）优化具有8到384个可训练参数的TinyLoRA适配器。仅用256个可训练参数，我们在训练任务上将搬运高度提高了120毫米，成功率为92%，在留出任务上提高了74毫米，成功率为80%。通过重新缩放学习到的更新，我们可以在不重新训练的情况下调整风格增益与能力保留之间的权衡。增加适配器容量通常能改善这种权衡，在相当风格增益下保留更多预训练能力。优化器的选择也取决于容量，CMA-ES在低参数数量下具有竞争力，而GRPO随着容量增长提供更好的权衡。这些发现表明，极低维度的更新可以引导预训练VLA的行为，适配器容量、优化器选择和更新缩放为适应和保留提供了实际控制。",
+      "authors": [
+        "James Tcheng",
+        "Feiyu Gavin Zhu"
+      ],
+      "authors_all": [
+        "James Tcheng",
+        "Feiyu Gavin Zhu"
+      ],
+      "primary_category": "cs.RO",
       "published": "2026-10-31",
       "channels": [
-        "loco-manip-wbc"
+        "manipulation"
       ],
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ AgiBot"
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
         }
       ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV1qxxk61EAd",
-      "pdf_url": "",
-      "venue": "",
+      "cover_image": "assets/img/covers/arxiv-2611-00522.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00522-p2.jpg",
+        "assets/img/covers/arxiv-2611-00522-p3.jpg",
+        "assets/img/covers/arxiv-2611-00522-p4.jpg"
+      ],
+      "arxiv_id": "2611.00522",
+      "abs_url": "http://arxiv.org/abs/2611.00522v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00522v1",
+      "venue": "NeurIPS 2026",
       "venue_announced": "",
-      "score": 46,
+      "score": 44,
       "judge": {},
       "institutions": [
-        "智元AGIBOT"
+        "Carnegie Mellon University"
       ],
-      "method_tags": [],
+      "method_tags": [
+        "RL",
+        "GRPO",
+        "CMA-ES"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
-      "demo_videos": [
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-00898",
+      "source": "arxiv_discover",
+      "title": "Trading Transparency for Stability: Friction-Cone-Constrained Bilateral Teleoperation for Opening Doors of Unsecured Furniture",
+      "title_zh": "以透明度换稳定性：摩擦锥约束的双边遥操作开启未固定家具的门",
+      "tldr_zh": "提出RFCP方法，在保证家具稳定的同时量化遥操作透明度损失。",
+      "cover_zh": "开门不翻车！这个约束让遥操作稳如泰山",
+      "abstract_zh": "打开未固定家具的门会在其支撑处产生摩擦接触；拉力过大会导致物体滑动或倾覆。对指令力/力矩施加摩擦锥约束可以消除这种失效模式，但会牺牲触觉透明度。我们量化了这一权衡：基于接触摩擦锥和支撑多边形倾覆裕度构建的允许力/力矩集合，针对有界质量和摩擦误差进行鲁棒性收缩，收缩集合中的任何指令均可证明使家具保持静止（命题1）。我们将此映射称为鲁棒摩擦锥投影（RFCP）。RFCP及其触觉保护器允许有界力传输误差（命题2）：透明度仅在约束边界附近的带内退化，其宽度由一个标量——稳定因子——决定。一个工作条件控制器处理门：操作员指令标量摆动幅度，从端方向遵循铰链运动学，抓取力/力矩按阶段调节。预任务证书决定是否可以在不移动家具的情况下开门。在三个柜子和两个支撑上由五名操作员进行的实验（100次试验）测量了稳定性-透明度权衡，并消融了保护器、RFCP和位置基线。该机制并非门专用：它适用于任何由摩擦接触反作用的主体。",
+      "authors": [
+        "Cheng Zhou",
+        "Jing Li"
+      ],
+      "authors_all": [
+        "Cheng Zhou",
+        "Jing Li"
+      ],
+      "primary_category": "",
+      "published": "2026-10-31",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
         {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1qxxk61EAd",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1qxxk61EAd&high_quality=1&autoplay=0",
-          "title": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
-          "source": "channel"
+          "kind": "lab",
+          "label": "⭐ 腾讯"
         }
       ],
+      "cover_image": "assets/img/covers/arxiv-2611-00898.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00898-p2.jpg",
+        "assets/img/covers/arxiv-2611-00898-p3.jpg",
+        "assets/img/covers/arxiv-2611-00898-p4.jpg"
+      ],
+      "arxiv_id": "2611.00898",
+      "abs_url": "http://arxiv.org/abs/2611.00898v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00898v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {},
+      "institutions": [
+        "Tencent Robotics X"
+      ],
+      "method_tags": [
+        "bilateral teleoperation",
+        "friction cone constraint",
+        "shared control"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
+      "id": "arxiv-2611-00527",
+      "source": "arxiv",
+      "title": "3D Neural Rendering for Automated Ultrasonic Laser Scans",
+      "title_zh": "用于自动超声激光扫描的三维神经渲染",
+      "tldr_zh": "机器人操控结合神经渲染重建三维表面波场，用于缺陷检测。",
+      "cover_zh": "机械臂+神经渲染｜激光扫描竟能这样重建波场？",
+      "abstract_zh": "激光多普勒振动计（LDV）扫描可用于在制造零件投入使用前检测其缺陷和裂纹。本文提出一种方法，通过结合自动机器人操作与神经渲染，重建三维零件的稳态表面波场。一个六自由度（6-DOF）机械臂（UFactory xArm6）搭载嵌入式压电换能器，以一系列已知姿态将声激励测试件呈现给固定的LDV，从而获得一组复值二维扫描，其姿态由机械臂运动学解析推导而非基于图像的姿态估计。这些扫描用于训练一种新颖的complex-nerfacto模型，该模型是修改后的神经辐射场（NeRF）流程，将标准的三通道RGB输出头替换为双通道输出。complex-nerfacto表示波场的实部和虚部速度分量，在无量化的情况下保留复数测量值。对焊接铝圆柱和焊接T型支架的重建结果使用Z归一化互相关（ZNCC）与实测扫描进行评估。复值流程在留出视角下平均ZNCC达到0.60，而在相同数据的渲染图像上训练的基线RGB nerfacto模型为0.28。所得表面波场重建支持复杂部件上的缺陷检测与表征。我们指出，从稀疏LDV扫描重建几何形状是实际部署的剩余障碍。",
+      "authors": [
+        "Thomas Pierson",
+        "Matthew Mitchell",
+        "Kira Perna"
+      ],
+      "authors_all": [
+        "Thomas Pierson",
+        "Matthew Mitchell",
+        "Kira Perna",
+        "Anand Iyer",
+        "Eric Flynn",
+        "Adam Wachtor"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-31",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-00527.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-00527-p2.jpg",
+        "assets/img/covers/arxiv-2611-00527-p3.jpg",
+        "assets/img/covers/arxiv-2611-00527-p4.jpg"
+      ],
+      "arxiv_id": "2611.00527",
+      "abs_url": "http://arxiv.org/abs/2611.00527v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00527v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University",
+        "North Carolina State University",
+        "Penn State University",
+        "Los Alamos National Laboratory"
+      ],
+      "method_tags": [
+        "NeRF",
+        "神经渲染",
+        "机器人操作"
+      ],
+      "platform": [
+        "UFactory xArm6"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
       "github": {},
       "source_tags": []
     },
@@ -99,13 +236,65 @@
       "score": 25,
       "judge": {},
       "institutions": [],
+      "method_tags": [
+        "Imitation Learning",
+        "Fine-grained manipulation",
+        "VLA"
+      ],
+      "platform": [
+        "Franka"
+      ],
+      "sim_stack": [
+        "ManiSkill3"
+      ],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "vid-bilibili-BV1qxxk61EAd",
+      "source": "video_bilibili",
+      "title": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
+      "title_zh": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
+      "tldr_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产",
+      "cover_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产",
+      "abstract_zh": "面向Worken的全新产业时代，智元从本体硬件、三大智能、开源生态多个维度同步推进具身智能部署态落地，以自研硬件夯实生产力底座，以运动、作业、交互三智演进，实现全域泛化能力，以开放生态凝聚全行业力量，实现机器人工作价值可衡量、能力可积累、部署可规模化，携手产业伙伴加速新智能时代的全面到来。",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-10-31",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1qxxk61EAd",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 21,
+      "judge": {},
+      "institutions": [],
       "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
       "training_summary": "",
-      "demo_videos": [],
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1qxxk61EAd",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1qxxk61EAd&high_quality=1&autoplay=0",
+          "title": "2026智元创新日（AGIBOT INNOVATION DAY）圆满落幕，但智元务实创新的脚步永远不停！",
+          "source": "channel"
+        }
+      ],
       "github": {},
       "source_tags": []
     },
@@ -143,57 +332,6 @@
       "venue": "",
       "venue_announced": "",
       "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-00522",
-      "source": "arxiv",
-      "title": "Behavioral Steering of Vision-Language-Action Models in the Low-Parameter Regime",
-      "title_zh": "低参数区域中视觉-语言-动作模型的行为引导",
-      "tldr_zh": "仅用256个参数即可引导VLA行为，并调节风格与能力保留的权衡。",
-      "cover_zh": "256个参数就能让机器人行为大变样？｜预训练能力几乎不丢",
-      "abstract_zh": "强化学习（RL）越来越多地用于适配预训练的视觉-语言-动作模型（VLA）。我们研究了行为引导问题：将VLA的执行风格适配到诸如更高搬运物体等偏好。为了探究这种引导需要多少可训练容量以及能保留多少预训练能力，我们冻结了一个OpenVLA-OFT 7B策略，并使用策略梯度RL（GRPO）或进化搜索（CMA-ES）优化具有8到384个可训练参数的TinyLoRA适配器。仅用256个可训练参数，我们在训练任务上将搬运高度提高了120毫米，成功率为92%，在留出任务上提高了74毫米，成功率为80%。通过重新缩放学习到的更新，我们可以在不重新训练的情况下调整风格增益与能力保留之间的权衡。增加适配器容量通常能改善这种权衡，在相当风格增益下保留更多预训练能力。优化器的选择也取决于容量，CMA-ES在低参数数量下具有竞争力，而GRPO随着容量增长提供更好的权衡。这些发现表明，极低维度的更新可以引导预训练VLA的行为，适配器容量、优化器选择和更新缩放为适应和保留提供了实际控制。",
-      "authors": [
-        "James Tcheng",
-        "Feiyu Gavin Zhu"
-      ],
-      "authors_all": [
-        "James Tcheng",
-        "Feiyu Gavin Zhu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-10-31",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 NeurIPS 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-00522.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00522-p2.jpg",
-        "assets/img/covers/arxiv-2611-00522-p3.jpg",
-        "assets/img/covers/arxiv-2611-00522-p4.jpg"
-      ],
-      "arxiv_id": "2611.00522",
-      "abs_url": "http://arxiv.org/abs/2611.00522v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00522v1",
-      "venue": "NeurIPS 2026",
-      "venue_announced": "",
-      "score": 19,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -248,12 +386,17 @@
       "venue_announced": "",
       "score": 19,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Georgia",
+        "Georgia Institute of Technology"
+      ],
+      "method_tags": [
+        "Imitation Learning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -301,8 +444,14 @@
       "venue_announced": "",
       "score": 19,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Pantheon"
+      ],
+      "method_tags": [
+        "world model",
+        "latent dynamics",
+        "evaluation benchmark"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -404,55 +553,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-00898",
-      "source": "arxiv_discover",
-      "title": "Trading Transparency for Stability: Friction-Cone-Constrained Bilateral Teleoperation for Opening Doors of Unsecured Furniture",
-      "title_zh": "以透明度换稳定性：摩擦锥约束的双边遥操作开启未固定家具的门",
-      "tldr_zh": "提出RFCP方法，在保证家具稳定的同时量化遥操作透明度损失。",
-      "cover_zh": "开门不翻车！这个约束让遥操作稳如泰山",
-      "abstract_zh": "打开未固定家具的门会在其支撑处产生摩擦接触；拉力过大会导致物体滑动或倾覆。对指令力/力矩施加摩擦锥约束可以消除这种失效模式，但会牺牲触觉透明度。我们量化了这一权衡：基于接触摩擦锥和支撑多边形倾覆裕度构建的允许力/力矩集合，针对有界质量和摩擦误差进行鲁棒性收缩，收缩集合中的任何指令均可证明使家具保持静止（命题1）。我们将此映射称为鲁棒摩擦锥投影（RFCP）。RFCP及其触觉保护器允许有界力传输误差（命题2）：透明度仅在约束边界附近的带内退化，其宽度由一个标量——稳定因子——决定。一个工作条件控制器处理门：操作员指令标量摆动幅度，从端方向遵循铰链运动学，抓取力/力矩按阶段调节。预任务证书决定是否可以在不移动家具的情况下开门。在三个柜子和两个支撑上由五名操作员进行的实验（100次试验）测量了稳定性-透明度权衡，并消融了保护器、RFCP和位置基线。该机制并非门专用：它适用于任何由摩擦接触反作用的主体。",
-      "authors": [
-        "Cheng Zhou",
-        "Jing Li"
-      ],
-      "authors_all": [
-        "Cheng Zhou",
-        "Jing Li"
-      ],
-      "primary_category": "",
-      "published": "2026-10-31",
-      "channels": [
-        "manipulation",
-        "teleop"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-00898.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00898-p2.jpg",
-        "assets/img/covers/arxiv-2611-00898-p3.jpg",
-        "assets/img/covers/arxiv-2611-00898-p4.jpg"
-      ],
-      "arxiv_id": "2611.00898",
-      "abs_url": "http://arxiv.org/abs/2611.00898v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00898v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 17,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
       "id": "arxiv-2611-00596",
       "source": "arxiv",
       "title": "X-World 1.6: Building Controllable Virtual Cities with World Models",
@@ -522,59 +622,14 @@
       "venue_announced": "",
       "score": 12,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-00527",
-      "source": "arxiv",
-      "title": "3D Neural Rendering for Automated Ultrasonic Laser Scans",
-      "title_zh": "用于自动超声激光扫描的三维神经渲染",
-      "tldr_zh": "机器人操控结合神经渲染重建三维表面波场，用于缺陷检测。",
-      "cover_zh": "机械臂+神经渲染｜激光扫描竟能这样重建波场？",
-      "abstract_zh": "激光多普勒振动计（LDV）扫描可用于在制造零件投入使用前检测其缺陷和裂纹。本文提出一种方法，通过结合自动机器人操作与神经渲染，重建三维零件的稳态表面波场。一个六自由度（6-DOF）机械臂（UFactory xArm6）搭载嵌入式压电换能器，以一系列已知姿态将声激励测试件呈现给固定的LDV，从而获得一组复值二维扫描，其姿态由机械臂运动学解析推导而非基于图像的姿态估计。这些扫描用于训练一种新颖的complex-nerfacto模型，该模型是修改后的神经辐射场（NeRF）流程，将标准的三通道RGB输出头替换为双通道输出。complex-nerfacto表示波场的实部和虚部速度分量，在无量化的情况下保留复数测量值。对焊接铝圆柱和焊接T型支架的重建结果使用Z归一化互相关（ZNCC）与实测扫描进行评估。复值流程在留出视角下平均ZNCC达到0.60，而在相同数据的渲染图像上训练的基线RGB nerfacto模型为0.28。所得表面波场重建支持复杂部件上的缺陷检测与表征。我们指出，从稀疏LDV扫描重建几何形状是实际部署的剩余障碍。",
-      "authors": [
-        "Thomas Pierson",
-        "Matthew Mitchell",
-        "Kira Perna"
+      "institutions": [
+        "XPeng Inc."
       ],
-      "authors_all": [
-        "Thomas Pierson",
-        "Matthew Mitchell",
-        "Kira Perna",
-        "Anand Iyer",
-        "Eric Flynn",
-        "Adam Wachtor"
+      "method_tags": [
+        "World Model",
+        "可控生成",
+        "自动驾驶仿真"
       ],
-      "primary_category": "cs.CV",
-      "published": "2026-10-31",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-00527.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-00527-p2.jpg",
-        "assets/img/covers/arxiv-2611-00527-p3.jpg",
-        "assets/img/covers/arxiv-2611-00527-p4.jpg"
-      ],
-      "arxiv_id": "2611.00527",
-      "abs_url": "http://arxiv.org/abs/2611.00527v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00527v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -621,8 +676,15 @@
       "venue_announced": "",
       "score": 3,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Islamic Azad University, Karaj, Iran",
+        "The Research Center for Interactive Technologies and Extended Reality, Islamic Azad University Karaj Branch"
+      ],
+      "method_tags": [
+        "XR",
+        "pseudo-haptics",
+        "gamification"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

@@ -3,6 +3,77 @@
   "count": 5,
   "papers": [
     {
+      "id": "arxiv-2611-01748",
+      "source": "arxiv_discover",
+      "title": "CompliantBot: Learning Whole-Body Compliance across Task Interfaces for Humanoid Control",
+      "title_zh": "CompliantBot：学习跨任务接口的全身柔顺性用于人形机器人控制",
+      "tldr_zh": "CompliantBot框架让机器人柔顺应对外力并恢复任务。",
+      "cover_zh": "人形机器人学会“让步”｜外力推拉后还能自己恢复任务",
+      "abstract_zh": "人形机器人控制器需要具备在外力作用下让步的能力，同时保持恢复原始任务的能力。然而，跟踪目标会惩罚让步所需的偏差，而持续放宽跟踪目标又会使任务恢复更加困难。现有方法通常依赖于任务特定的交互命令接口或构建的柔顺运动数据和参考轨迹，限制了其柔顺训练机制在不同任务接口之间的直接重用。我们提出了 CompliantBot，一个用于运动跟踪和速度命令行走的柔顺训练框架。它保留了原始任务输入，且无需预构建的柔顺数据或目标轨迹。一个状态相关的交互力场将施加的负载与机器人的运动耦合，使得局部关节运动和全身运动能够改变所经历的力。一个互补的力大小奖励鼓励降低交互负载，同时在加载期间降低任务奖励的权重，并在释放后恢复，以协调让步和任务恢复。训练后的策略使用任务输入和本体感觉历史，无需显式的外部力测量。在两个任务接口上，CompliantBot 在恒定拉力下比匹配的基线让步更远，并经历更低的弹簧交互负载，同时在力移除后恢复任务跟踪。在更强的拉力下，CompliantBot 在比较方法中实现了最高的任务完成率。功率评估进一步表明，CompliantBot 在比较方法中具有最低的平均关节机械功率。真实机器人演示进一步展示了通过手臂运动、踏步和身体重新定向实现的柔顺响应。",
+      "authors": [
+        "Haoyang Li",
+        "Keqi Zhu",
+        "Zhanxiang Cao"
+      ],
+      "authors_all": [
+        "Haoyang Li",
+        "Keqi Zhu",
+        "Zhanxiang Cao",
+        "Yang Zhang",
+        "Yizhi Chen",
+        "Xuekang Yang",
+        "Yue Gao"
+      ],
+      "primary_category": "",
+      "published": "2026-11-01",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Yue Gao"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-01748.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-01748-p2.jpg",
+        "assets/img/covers/arxiv-2611-01748-p3.jpg",
+        "assets/img/covers/arxiv-2611-01748-p4.jpg"
+      ],
+      "arxiv_id": "2611.01748",
+      "abs_url": "http://arxiv.org/abs/2611.01748v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01748v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 65,
+      "judge": {},
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "Shanghai Innovation Institute"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Motion Tracking",
+        "Whole-Body Compliance"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2611-02171",
       "source": "arxiv_discover",
       "title": "GoalDex: Learning Image-Goal-Conditioned Policies for Dexterous In-Hand Manipulation",
@@ -143,115 +214,6 @@
       ]
     },
     {
-      "id": "arxiv-2611-01748",
-      "source": "arxiv_discover",
-      "title": "CompliantBot: Learning Whole-Body Compliance across Task Interfaces for Humanoid Control",
-      "title_zh": "CompliantBot：学习跨任务接口的全身柔顺性用于人形机器人控制",
-      "tldr_zh": "CompliantBot框架让机器人柔顺应对外力并恢复任务。",
-      "cover_zh": "人形机器人学会“让步”｜外力推拉后还能自己恢复任务",
-      "abstract_zh": "人形机器人控制器需要具备在外力作用下让步的能力，同时保持恢复原始任务的能力。然而，跟踪目标会惩罚让步所需的偏差，而持续放宽跟踪目标又会使任务恢复更加困难。现有方法通常依赖于任务特定的交互命令接口或构建的柔顺运动数据和参考轨迹，限制了其柔顺训练机制在不同任务接口之间的直接重用。我们提出了 CompliantBot，一个用于运动跟踪和速度命令行走的柔顺训练框架。它保留了原始任务输入，且无需预构建的柔顺数据或目标轨迹。一个状态相关的交互力场将施加的负载与机器人的运动耦合，使得局部关节运动和全身运动能够改变所经历的力。一个互补的力大小奖励鼓励降低交互负载，同时在加载期间降低任务奖励的权重，并在释放后恢复，以协调让步和任务恢复。训练后的策略使用任务输入和本体感觉历史，无需显式的外部力测量。在两个任务接口上，CompliantBot 在恒定拉力下比匹配的基线让步更远，并经历更低的弹簧交互负载，同时在力移除后恢复任务跟踪。在更强的拉力下，CompliantBot 在比较方法中实现了最高的任务完成率。功率评估进一步表明，CompliantBot 在比较方法中具有最低的平均关节机械功率。真实机器人演示进一步展示了通过手臂运动、踏步和身体重新定向实现的柔顺响应。",
-      "authors": [
-        "Haoyang Li",
-        "Keqi Zhu",
-        "Zhanxiang Cao"
-      ],
-      "authors_all": [
-        "Haoyang Li",
-        "Keqi Zhu",
-        "Zhanxiang Cao",
-        "Yang Zhang",
-        "Yizhi Chen",
-        "Xuekang Yang",
-        "Yue Gao"
-      ],
-      "primary_category": "",
-      "published": "2026-11-01",
-      "channels": [
-        "loco-manip-wbc",
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Yue Gao"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-01748.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-01748-p2.jpg",
-        "assets/img/covers/arxiv-2611-01748-p3.jpg",
-        "assets/img/covers/arxiv-2611-01748-p4.jpg"
-      ],
-      "arxiv_id": "2611.01748",
-      "abs_url": "http://arxiv.org/abs/2611.01748v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.01748v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 40,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
-    },
-    {
-      "id": "vid-bilibili-BV1sJxx61EbC",
-      "source": "video_bilibili",
-      "title": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
-      "title_zh": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
-      "tldr_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥 午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵 面对络",
-      "cover_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥 午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵 面对络",
-      "abstract_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥\n午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵\n面对络绎不绝的客流和突发需求，它们能否顺利转正？\n⏰11 月 2 日 10:00 — 11 月 3 日 10:00\n锁定直播间，一起见证考核结果！",
-      "authors": [],
-      "authors_all": [],
-      "primary_category": "video",
-      "published": "2026-11-01",
-      "channels": [],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ AgiBot"
-        }
-      ],
-      "cover_image": "",
-      "preview_pages": [],
-      "arxiv_id": "",
-      "abs_url": "https://www.bilibili.com/video/BV1sJxx61EbC",
-      "pdf_url": "",
-      "venue": "",
-      "venue_announced": "",
-      "score": 40,
-      "judge": {},
-      "institutions": [
-        "智元AGIBOT"
-      ],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [
-        {
-          "kind": "bilibili",
-          "url": "https://www.bilibili.com/video/BV1sJxx61EbC",
-          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1sJxx61EbC&high_quality=1&autoplay=0",
-          "title": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
-          "source": "channel"
-        }
-      ],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "qbitai-77cf6f6f7d",
       "source": "qbitai",
       "title": "三年前布局，今年爆火丨西湖大学成立新中心",
@@ -276,8 +238,12 @@
       "venue_announced": "",
       "score": 18,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "西湖大学"
+      ],
+      "method_tags": [
+        "世界模型"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -288,6 +254,48 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "vid-bilibili-BV1sJxx61EbC",
+      "source": "video_bilibili",
+      "title": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
+      "title_zh": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
+      "tldr_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥 午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵 面对络",
+      "cover_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥 午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵 面对络",
+      "abstract_zh": "6 位精灵 G2 便利店试用期员工，开启 24 小时直播转正考核🔥\n午晚高峰、深夜独自值守、清晨早餐高峰轮番上阵\n面对络绎不绝的客流和突发需求，它们能否顺利转正？\n⏰11 月 2 日 10:00 — 11 月 3 日 10:00\n锁定直播间，一起见证考核结果！",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "video",
+      "published": "2026-11-01",
+      "channels": [],
+      "badges": [],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.bilibili.com/video/BV1sJxx61EbC",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1sJxx61EbC",
+          "embed_url": "https://player.bilibili.com/player.html?bvid=BV1sJxx61EbC&high_quality=1&autoplay=0",
+          "title": "【直播预告】精灵 G2 便利店 24 小时不打烊挑战",
+          "source": "channel"
+        }
+      ],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
