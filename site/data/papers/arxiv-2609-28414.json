@@ -2,11 +2,11 @@
   "id": "arxiv-2609-28414",
   "source": "arxiv",
   "title": "Frozen Flows Forget: Diagnosing and Restoring Lost Motion in a Latent-flow World Model",
-  "title_zh": "Frozen Flows Forget: Diagnosing and Restoring Lost Motion in a Latent-flow World Model",
+  "title_zh": "冻结流遗忘：诊断并恢复潜在流世界模型中丢失的运动",
   "abstract": "Latent world models that integrate a flow in a frozen self supervised latent space train stably and cheaply, yet silently lose the property manipulation depends on most: motion. The pretrained flow never moves the manipulated object; retraining it with latent-only losses only trades stillness for teleport-like motion. We trace the failure to the training signal, not the representation: anchor-sparse, latent-only supervision never says where along the horizon change belongs. Decode-augmented rollout training (DART) repairs this while keeping the representation frozen, retraining only the flow with decode-path supervision. DART outperforms its latent only parent on the full protocol, restores the temporal structure of motion, and re-couples predicted motion to the scene; at larger scale it further improves prediction quality, closing nearly half the remaining gap to an oracle-informed interpolation reference. Finally, we report an unexpected finding about evaluation: pixel error alone rewards frozen predictions.",
-  "abstract_zh": "Latent world models that integrate a flow in a frozen self supervised latent space train stably and cheaply, yet silently lose the property manipulation depends on most: motion. The pretrained flow never moves the manipulated object; retraining it with latent-only losses only trades stillness for teleport-like motion. We trace the failure to the training signal, not the representation: anchor-sparse, latent-only supervision never says where along the horizon change belongs. Decode-augmented rollout training (DART) repairs this while keeping the representation frozen, retraining only the flow with decode-path supervision. DART outperforms its latent only parent on the full protocol, restores the temporal structure of motion, and re-couples predicted motion to the scene; at larger scale it further improves prediction quality, closing nearly half the remaining gap to an oracle-informed interpolation reference. Finally, we report an unexpected finding about evaluation: pixel error alone rewards frozen predictions.",
-  "tldr_zh": "Latent world models that integrate a flow in a frozen self s",
-  "cover_zh": "Latent world models that integrate a flow in a frozen self s",
+  "abstract_zh": "在冻结的自监督潜在空间中集成流模型的潜在世界模型训练稳定且成本低，却悄然丢失了操作所最依赖的属性：运动。预训练的流模型从不移动被操作物体；仅用潜在损失重新训练它，只是将静止换成了类似瞬移的运动。我们将失败归因于训练信号而非表示：锚点稀疏、仅潜在监督从未指明变化应属于时间轴上的哪个位置。解码增强的展开训练（DART）在保持表示冻结的同时修复了这一问题，仅用解码路径监督重新训练流模型。DART 在完整协议上优于其仅潜在父模型，恢复了运动的时间结构，并将预测运动与场景重新耦合；在更大规模下，它进一步提升了预测质量，将剩余与 oracle 信息插值参考的差距缩小了近一半。最后，我们报告一个关于评估的意外发现：仅像素误差会奖励冻结预测。",
+  "tldr_zh": "冻结潜在流模型丢失运动，DART 用解码监督修复。",
+  "cover_zh": "冻结流模型竟会遗忘运动？新方法让预测不再静止",
   "authors": [
     {
       "name": "Xiwen Chen",

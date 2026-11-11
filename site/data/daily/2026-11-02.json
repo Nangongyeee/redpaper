@@ -3,6 +3,74 @@
   "count": 50,
   "papers": [
     {
+      "id": "arxiv-2611-04080",
+      "source": "arxiv",
+      "title": "FEIJOA: Task-Driven Grounding and Execution for Mobile Manipulation",
+      "title_zh": "FEIJOA：面向移动操作的任务驱动接地与执行",
+      "tldr_zh": "FEIJOA 语言模型智能体在测试时接地指令，显著提升移动操作任务成功率。",
+      "cover_zh": "语言模型现场接地｜移动机器人竟能听懂“把玩具收好”",
+      "abstract_zh": "当移动操作机器人被要求“把玩具放进玩具箱”时，它必须判断哪些物体是玩具、用户指的是哪个容器，然后找到可执行的基座姿态、抓取和放置方式。由于场景表示是在指令已知之前构建的，它可能缺少解析任务所需的属性、可供性或概念。我们提出 FEIJOA，一种在测试时对指令进行接地的语言模型智能体。它通过查询工具在带位姿的 RGB-D 扫描上进行接地，检查返回的候选对象，并细化查询直到解析指令。一个具身感知的测试框架检查每个技能的前置条件，采样目标可达的基座姿态，并在执行前后从观察中验证技能效果。在 103 个开放式接地查询上，FEIJOA 精确解析了 94.2%，而最佳预构建表示仅为 68.0%。在 Spot 上进行的 50 次真实世界试验中，它完成了 35 项任务；其中 17 次成功是在工具调用或验证检查失败后恢复的。在 15 次失败试验中，13 次由机器人的物理技能导致，仅 2 次由接地或智能体推理导致。项目网站：https://williamshen-nz.github.io/feijoa/。",
+      "authors": [
+        "Aditya Agarwal",
+        "William Shen",
+        "Sahit Chintalapudi"
+      ],
+      "authors_all": [
+        "Aditya Agarwal",
+        "William Shen",
+        "Sahit Chintalapudi",
+        "Lucy Cai",
+        "Nishanth Kumar",
+        "Aidan Curtis",
+        "Travis Manderson",
+        "Tomás Lozano-Pérez",
+        "Leslie Pack Kaelbling"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ MIT CSAIL"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04080.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04080-p2.jpg",
+        "assets/img/covers/arxiv-2611-04080-p3.jpg",
+        "assets/img/covers/arxiv-2611-04080-p4.jpg"
+      ],
+      "arxiv_id": "2611.04080",
+      "abs_url": "http://arxiv.org/abs/2611.04080v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04080v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "MIT CSAIL"
+      ],
+      "method_tags": [
+        "Language-Model Agent",
+        "Task-Conditioned Grounding",
+        "Mobile Manipulation"
+      ],
+      "platform": [
+        "Spot"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-02677",
       "source": "arxiv_discover",
       "title": "Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction",
@@ -1122,61 +1190,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-04080",
-      "source": "arxiv",
-      "title": "FEIJOA: Task-Driven Grounding and Execution for Mobile Manipulation",
-      "title_zh": "FEIJOA：面向移动操作的任务驱动接地与执行",
-      "tldr_zh": "FEIJOA 语言模型智能体在测试时接地指令，显著提升移动操作任务成功率。",
-      "cover_zh": "语言模型现场接地｜移动机器人竟能听懂“把玩具收好”",
-      "abstract_zh": "当移动操作机器人被要求“把玩具放进玩具箱”时，它必须判断哪些物体是玩具、用户指的是哪个容器，然后找到可执行的基座姿态、抓取和放置方式。由于场景表示是在指令已知之前构建的，它可能缺少解析任务所需的属性、可供性或概念。我们提出 FEIJOA，一种在测试时对指令进行接地的语言模型智能体。它通过查询工具在带位姿的 RGB-D 扫描上进行接地，检查返回的候选对象，并细化查询直到解析指令。一个具身感知的测试框架检查每个技能的前置条件，采样目标可达的基座姿态，并在执行前后从观察中验证技能效果。在 103 个开放式接地查询上，FEIJOA 精确解析了 94.2%，而最佳预构建表示仅为 68.0%。在 Spot 上进行的 50 次真实世界试验中，它完成了 35 项任务；其中 17 次成功是在工具调用或验证检查失败后恢复的。在 15 次失败试验中，13 次由机器人的物理技能导致，仅 2 次由接地或智能体推理导致。项目网站：https://williamshen-nz.github.io/feijoa/。",
-      "authors": [
-        "Aditya Agarwal",
-        "William Shen",
-        "Sahit Chintalapudi"
-      ],
-      "authors_all": [
-        "Aditya Agarwal",
-        "William Shen",
-        "Sahit Chintalapudi",
-        "Lucy Cai",
-        "Nishanth Kumar",
-        "Aidan Curtis",
-        "Travis Manderson",
-        "Tomás Lozano-Pérez",
-        "Leslie Pack Kaelbling"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "loco-manip-wbc",
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-04080.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-04080-p2.jpg",
-        "assets/img/covers/arxiv-2611-04080-p3.jpg",
-        "assets/img/covers/arxiv-2611-04080-p4.jpg"
-      ],
-      "arxiv_id": "2611.04080",
-      "abs_url": "http://arxiv.org/abs/2611.04080v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.04080v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-04083",
       "source": "arxiv",
       "title": "MABEL: An Open Anthropomorphic Mobile Bimanual Platform for Teleoperation and Learning",
@@ -1220,12 +1233,22 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "University of Toronto",
+        "Center for Robotics and Embodied Intelligence (CREO), New York University",
+        "LAAS-CNRS, Université de Toulouse, CNRS"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Whole-Body Control",
+        "Teleoperation"
+      ],
+      "platform": [
+        "MABEL"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1481,8 +1504,14 @@
       "venue_announced": "",
       "score": 17,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Oregon State University"
+      ],
+      "method_tags": [
+        "RAG",
+        "policy-judge",
+        "world model"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",

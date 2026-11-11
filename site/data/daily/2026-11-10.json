@@ -28,7 +28,8 @@
       "published": "2026-11-10",
       "channels": [
         "manipulation",
-        "locomotion"
+        "locomotion",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -77,6 +78,96 @@
       "platform": [
         "Unitree G1"
       ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-14048",
+      "source": "arxiv",
+      "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
+      "title_zh": "LaST0.5：一种以交互为中心潜在推理的通用世界动作模型",
+      "tldr_zh": "提出LaST0.5，以交互为中心潜在推理提升机器人操作性能。",
+      "cover_zh": "机器人操作新突破！交互中心推理让长时程任务更稳",
+      "abstract_zh": "世界动作模型（WAMs）最近成为机器人操作的一种有前景的范式，赋予策略强大的时序和物理动态建模能力。现有的WAMs，包括视频优先动作预测和联合视频-动作建模，直接将世界模型中的全局物理表示迁移到动作生成中。然而，全局场景表示可能低估了局部机器人-物体交互，导致为世界演化优化的表示与操作所需的表示之间不匹配。为了弥合这一差距，我们提出了LaST0.5，一种新颖的WAM，在世界建模和动作生成之间引入了以交互为中心的物理表示。具体来说，LaST0.5在机器人-环境视觉交互线索的监督下学习一个紧凑的以交互为中心的潜在空间。这个推理空间被实例化为一个潜在专家，在混合Transformer架构中桥接世界专家和动作专家。此外，LaST0.5通过联合预测未来表示和进度值来执行自适应世界到动作迁移，利用进度一致性调整动作执行并触发未来重采样。最后，我们在包含超过14k小时数据的大规模机器人数据语料库上预训练LaST0.5，确立了以交互为中心的物理推理作为一种可扩展且有效的范式。LaST0.5在LIBERO上达到99.5%，在十个评估的RLBench任务上超越了之前的最先进水平，并在真实世界实验中展示了稳健的长时程执行和精确的灵巧操作。",
+      "authors": [
+        "Xuheng Zhang",
+        "Yiming Zhang",
+        "Jialin Gao"
+      ],
+      "authors_all": [
+        "Xuheng Zhang",
+        "Yiming Zhang",
+        "Jialin Gao",
+        "Hao Chen",
+        "Jiaming Liu",
+        "Ji Li",
+        "Runzhong Huang",
+        "Yinxi Wang",
+        "Chenyang Gu",
+        "Zihan Yang",
+        "Yaowei Liu",
+        "Zhonghao Yan",
+        "Ziyu Guo",
+        "Renrui Zhang",
+        "Peng Jia",
+        "Pheng-Ann Heng",
+        "Shanghang Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-10",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ 北大"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-14048.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-14048-p2.jpg",
+        "assets/img/covers/arxiv-2611-14048-p3.jpg",
+        "assets/img/covers/arxiv-2611-14048-p4.jpg"
+      ],
+      "arxiv_id": "2611.14048",
+      "abs_url": "http://arxiv.org/abs/2611.14048v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14048v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 55,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "通用操作世界动作模型，交互中心潜空间推理，14k小时预训练，LIBERO 99.5%，属操作VLA前沿",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Peking University",
+        "The Chinese University of Hong Kong",
+        "Simplexity Robotics"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "latent reasoning",
+        "Mixture-of-Transformers"
+      ],
+      "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
@@ -245,6 +336,83 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-14365",
+      "source": "arxiv",
+      "title": "From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models",
+      "title_zh": "从视频帧到机器人元帧：世界动作模型的统一潜在接口",
+      "tldr_zh": "MetaWAM用频域打包统一机器人信号，提升世界动作模型性能。",
+      "cover_zh": "机器人信号还能这样打包？频域对齐让推理延迟直降39%！",
+      "abstract_zh": "预训练视频扩散模型（VDM）为世界动作模型（WAM）提供了强大的基础，后者联合预测机器人动作和未来观测。构建此类模型需要将低维机器人信号（如本体感觉、动作和价值）注入由自然视频塑造的潜在空间，而一个关键设计选择是这些信号进入的接口：现有方案将其视为格式细节，为每个信号花费一个单独的潜在帧，或附加专用的编码器和解码器。我们认为信号注入是一个分布对齐问题：表示在去噪过程中与预训练VDM先验的匹配程度。使用冻结VDM去噪器的相对重建误差作为探针，我们发现传统空间编码远离该先验，而频域打包产生的潜在表示被去噪器纠正的程度要小得多。受此诊断结果启发，我们提出MetaWAM，它将所有机器人信号折叠成一个统一的元帧：每个信号被分配到不相交的频域信道频带，并通过逆DCT提升到空间潜在表示，从而产生一个可解码的接口，与预训练VDM先验对齐，而无需添加任何模块或架构更改。固定的频带布局与槽感知路由一起，使相同的元帧能够在共享的机器人变量集上支持策略、世界模型和价值预测。在RoboCasa上，MetaWAM达到68.9%的成功率，同时将每个信号的帧折叠为一个，并将推理延迟降低39%，在三个真实世界的Franka任务上达到85.0%的成功率。代码和模型可在https://github.com/showlab/MetaWAM获取。",
+      "authors": [
+        "Guoqiang Liang",
+        "Yiqi Lin",
+        "Yanzhe Chen"
+      ],
+      "authors_all": [
+        "Guoqiang Liang",
+        "Yiqi Lin",
+        "Yanzhe Chen",
+        "Kevin Yuchen Ma",
+        "Mike Zheng Shou"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-10",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NUS"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-14365.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-14365-p2.jpg",
+        "assets/img/covers/arxiv-2611-14365-p3.jpg",
+        "assets/img/covers/arxiv-2611-14365-p4.jpg"
+      ],
+      "arxiv_id": "2611.14365",
+      "abs_url": "http://arxiv.org/abs/2611.14365v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14365v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 54,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "world-model",
+        "reason": "基于视频扩散世界模型统一注入机器人信号，属World Action Model，方法新颖且真机验证",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "National University of Singapore",
+        "National University of Singapore Guangzhou Research Translation and Innovation Institute"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "Diffusion Policy",
+        "Latent Representation"
+      ],
+      "platform": [
+        "Franka"
+      ],
+      "sim_stack": [
+        "RoboCasa"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-13732",
       "source": "arxiv",
       "title": "CIALLO: Learning Shared Intent Representations for Cross-Embodiment Manipulation",
@@ -322,95 +490,6 @@
         "LIBERO",
         "RoboTwin 2.0"
       ],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-14048",
-      "source": "arxiv",
-      "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
-      "title_zh": "LaST0.5：一种以交互为中心潜在推理的通用世界动作模型",
-      "tldr_zh": "提出LaST0.5，以交互为中心潜在推理提升机器人操作性能。",
-      "cover_zh": "机器人操作新突破！交互中心推理让长时程任务更稳",
-      "abstract_zh": "世界动作模型（WAMs）最近成为机器人操作的一种有前景的范式，赋予策略强大的时序和物理动态建模能力。现有的WAMs，包括视频优先动作预测和联合视频-动作建模，直接将世界模型中的全局物理表示迁移到动作生成中。然而，全局场景表示可能低估了局部机器人-物体交互，导致为世界演化优化的表示与操作所需的表示之间不匹配。为了弥合这一差距，我们提出了LaST0.5，一种新颖的WAM，在世界建模和动作生成之间引入了以交互为中心的物理表示。具体来说，LaST0.5在机器人-环境视觉交互线索的监督下学习一个紧凑的以交互为中心的潜在空间。这个推理空间被实例化为一个潜在专家，在混合Transformer架构中桥接世界专家和动作专家。此外，LaST0.5通过联合预测未来表示和进度值来执行自适应世界到动作迁移，利用进度一致性调整动作执行并触发未来重采样。最后，我们在包含超过14k小时数据的大规模机器人数据语料库上预训练LaST0.5，确立了以交互为中心的物理推理作为一种可扩展且有效的范式。LaST0.5在LIBERO上达到99.5%，在十个评估的RLBench任务上超越了之前的最先进水平，并在真实世界实验中展示了稳健的长时程执行和精确的灵巧操作。",
-      "authors": [
-        "Xuheng Zhang",
-        "Yiming Zhang",
-        "Jialin Gao"
-      ],
-      "authors_all": [
-        "Xuheng Zhang",
-        "Yiming Zhang",
-        "Jialin Gao",
-        "Hao Chen",
-        "Jiaming Liu",
-        "Ji Li",
-        "Runzhong Huang",
-        "Yinxi Wang",
-        "Chenyang Gu",
-        "Zihan Yang",
-        "Yaowei Liu",
-        "Zhonghao Yan",
-        "Ziyu Guo",
-        "Renrui Zhang",
-        "Peng Jia",
-        "Pheng-Ann Heng",
-        "Shanghang Zhang"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-10",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ 北大"
-        },
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-14048.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-14048-p2.jpg",
-        "assets/img/covers/arxiv-2611-14048-p3.jpg",
-        "assets/img/covers/arxiv-2611-14048-p4.jpg"
-      ],
-      "arxiv_id": "2611.14048",
-      "abs_url": "http://arxiv.org/abs/2611.14048v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.14048v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 50,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "通用操作世界动作模型，交互中心潜空间推理，14k小时预训练，LIBERO 99.5%，属操作VLA前沿",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Peking University",
-        "The Chinese University of Hong Kong",
-        "Simplexity Robotics"
-      ],
-      "method_tags": [
-        "World Action Model",
-        "latent reasoning",
-        "Mixture-of-Transformers"
-      ],
-      "platform": [],
-      "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
       "training_summary": "",
@@ -518,7 +597,8 @@
       "published": "2026-11-10",
       "channels": [
         "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "world-model"
       ],
       "badges": [
         {
@@ -574,82 +654,6 @@
       ],
       "platform": [],
       "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-14365",
-      "source": "arxiv",
-      "title": "From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models",
-      "title_zh": "从视频帧到机器人元帧：世界动作模型的统一潜在接口",
-      "tldr_zh": "MetaWAM用频域打包统一机器人信号，提升世界动作模型性能。",
-      "cover_zh": "机器人信号还能这样打包？频域对齐让推理延迟直降39%！",
-      "abstract_zh": "预训练视频扩散模型（VDM）为世界动作模型（WAM）提供了强大的基础，后者联合预测机器人动作和未来观测。构建此类模型需要将低维机器人信号（如本体感觉、动作和价值）注入由自然视频塑造的潜在空间，而一个关键设计选择是这些信号进入的接口：现有方案将其视为格式细节，为每个信号花费一个单独的潜在帧，或附加专用的编码器和解码器。我们认为信号注入是一个分布对齐问题：表示在去噪过程中与预训练VDM先验的匹配程度。使用冻结VDM去噪器的相对重建误差作为探针，我们发现传统空间编码远离该先验，而频域打包产生的潜在表示被去噪器纠正的程度要小得多。受此诊断结果启发，我们提出MetaWAM，它将所有机器人信号折叠成一个统一的元帧：每个信号被分配到不相交的频域信道频带，并通过逆DCT提升到空间潜在表示，从而产生一个可解码的接口，与预训练VDM先验对齐，而无需添加任何模块或架构更改。固定的频带布局与槽感知路由一起，使相同的元帧能够在共享的机器人变量集上支持策略、世界模型和价值预测。在RoboCasa上，MetaWAM达到68.9%的成功率，同时将每个信号的帧折叠为一个，并将推理延迟降低39%，在三个真实世界的Franka任务上达到85.0%的成功率。代码和模型可在https://github.com/showlab/MetaWAM获取。",
-      "authors": [
-        "Guoqiang Liang",
-        "Yiqi Lin",
-        "Yanzhe Chen"
-      ],
-      "authors_all": [
-        "Guoqiang Liang",
-        "Yiqi Lin",
-        "Yanzhe Chen",
-        "Kevin Yuchen Ma",
-        "Mike Zheng Shou"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-10",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ NUS"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-14365.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-14365-p2.jpg",
-        "assets/img/covers/arxiv-2611-14365-p3.jpg",
-        "assets/img/covers/arxiv-2611-14365-p4.jpg"
-      ],
-      "arxiv_id": "2611.14365",
-      "abs_url": "http://arxiv.org/abs/2611.14365v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.14365v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 49,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "world-model",
-        "reason": "基于视频扩散世界模型统一注入机器人信号，属World Action Model，方法新颖且真机验证",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "National University of Singapore",
-        "National University of Singapore Guangzhou Research Translation and Innovation Institute"
-      ],
-      "method_tags": [
-        "World Action Model",
-        "Diffusion Policy",
-        "Latent Representation"
-      ],
-      "platform": [
-        "Franka"
-      ],
-      "sim_stack": [
-        "RoboCasa"
-      ],
       "method_family": "",
       "real_robot": "yes",
       "training_summary": "",
@@ -880,6 +884,83 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-13818",
+      "source": "arxiv",
+      "title": "WAM is capable in BEHAVIOR-1K: the 2nd-place solution to the 2026 BEHAVIOR Challenge",
+      "title_zh": "WAM在BEHAVIOR-1K中表现出色：2026年BEHAVIOR挑战赛的亚军方案",
+      "tldr_zh": "WAM模型在BEHAVIOR挑战赛获亚军，推理超2FPS。",
+      "cover_zh": "不用闭源模型｜这个方案在100个家庭任务中拿下亚军！",
+      "abstract_zh": "本文介绍了2026年BEHAVIOR挑战赛的亚军方案（Team IF1001），该挑战赛评估了100项家庭任务中的移动操作能力。我们的方法基于强大的世界动作模型（WAM）Cosmos 3。我们通过使用更丰富的视觉历史、任务进度条件以及任务组和技能特定的LoRA适配器来改进Cosmos 3。在推理过程中，我们应用单独的进度估计器来提供任务进度上下文，并使用任务和进度条件路由来选择任务组或技能特定的策略，辅以动作候选聚合、滚动修复以及任务特定的时间和夹爪控制。为了满足最低1 FPS的推理要求，我们不使用递归自我改进（RSI）或代理框架方法，也不依赖任何闭源模型；在官方私有测试评估期间，我们的系统在有限的硬件资源下处理了100个评估端口的并发请求，每个端口的平均端到端推理速率保持在2 FPS以上。我们的方法在全部100项任务上平均3轮自评估，实现了平均Q分数0.613和全任务成功率40.9%。在官方私有测试集上，每项任务20个实例，我们的系统实现了平均Q分数0.615和全任务成功率41.2%。",
+      "authors": [
+        "Yelin He",
+        "Jiaquan Ye",
+        "Xinming Wei"
+      ],
+      "authors_all": [
+        "Yelin He",
+        "Jiaquan Ye",
+        "Xinming Wei",
+        "Wenjie Xiao",
+        "Gengming Zhang",
+        "Guoting Wei",
+        "Xianbiao Qi",
+        "Rong Xiao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-10",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 CoRL 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13818.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13818-p2.jpg",
+        "assets/img/covers/arxiv-2611-13818-p3.jpg",
+        "assets/img/covers/arxiv-2611-13818-p4.jpg"
+      ],
+      "arxiv_id": "2611.13818",
+      "abs_url": "http://arxiv.org/abs/2611.13818v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13818v1",
+      "venue": "CoRL 2026",
+      "venue_announced": "",
+      "score": 37,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "manipulation",
+        "reason": "BEHAVIOR-1K移动操作挑战赛亚军方案，基于Cosmos世界动作模型，含任务进度条件与LoRA路由，具身操作参考价值高。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "Shenzhen Intellifusion Technologies Co., Ltd.",
+        "Johns Hopkins University"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "LoRA",
+        "long-horizon"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-14274",
       "source": "arxiv",
       "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
@@ -1021,6 +1102,77 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-13779",
+      "source": "arxiv",
+      "title": "Softness is something you also need! Why compliance helps control: information metrics of a passive walker with compliant ankle",
+      "title_zh": "柔软也是你需要的！为什么顺应性有助于控制：具有顺应性踝关节的被动行走器的信息度量",
+      "tldr_zh": "综述信息度量与顺应性被动行走器控制的关系。",
+      "cover_zh": "机器人太硬反而不灵活？顺应性踝关节让被动行走更智能",
+      "abstract_zh": "智能机器人，无论是刚性还是（部分）顺应性组件构成的，与自然进化的动物和植物对应物之间，在适应性、灵活性和灵巧性方面仍存在巨大差距。一个原因可能是‘范式’性质的。一方面，大多数机器人（刚性和软体）仍然遵循‘笛卡尔’方法设计，采用自上而下的控制和清晰的身心分离。基于我们在生物学中观察到的原理设计人工代理并非易事。动物和植物的组织原理依赖于形态计算和由松散耦合的具身代理网络涌现出的适应行为。建模和控制需要全新的方法。在本文中，我们简要回顾并解释了一些多年前已发表的、将信息度量与代理动力学联系起来的开创性数学结果；我们将它们与我们和社区最近开发的一些方法相结合，强调了一些关于其相关性的简要评论，并暗示了我们当前和近期的工作，旨在寻找具体有效的方法来建模和控制完全或部分顺应性的人工代理，并更好地理解自然界中的物理智能。我们提出了一份技术说明，根据我们提出的框架，总结了倒立摆和被动动态行走模型的相空间体积计算。从McGeer罗盘步态出发，我们引入了膝-踝顺应性、足部摇杆效应以及具有分布腿部惯性的Ruina风格罗盘步态。推导了标准的足跟撞击映射，并基于状态依赖的蒙特卡洛和再生核希尔伯特空间方法，用于估计可行相空间体积$W(γ)$。我们展示了基于RKHS的方法如何允许更深入和更精细的分析。",
+      "authors": [
+        "Fabio Bonsignorio",
+        "Elisabetta Barletta",
+        "Sorin Dragomir"
+      ],
+      "authors_all": [
+        "Fabio Bonsignorio",
+        "Elisabetta Barletta",
+        "Sorin Dragomir",
+        "Francesco Esposito",
+        "Enrica Zereik"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-10",
+      "channels": [
+        "manipulation",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-13779.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-13779-p2.jpg",
+        "assets/img/covers/arxiv-2611-13779-p3.jpg",
+        "assets/img/covers/arxiv-2611-13779-p4.jpg"
+      ],
+      "arxiv_id": "2611.13779",
+      "abs_url": "http://arxiv.org/abs/2611.13779v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.13779v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 27,
+      "judge": {
+        "relevant": true,
+        "research_value": "medium",
+        "primary_channel": "locomotion",
+        "reason": "被动行走与踝关节柔顺性的信息度量分析，属双足运动建模，理论性强但偏技术笔记。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "University of Zagreb",
+        "Heron Robots",
+        "University of Basilicata",
+        "National Research Council"
+      ],
+      "method_tags": [
+        "Morphological Computation",
+        "Information Metrics",
+        "Passive Dynamic Walking"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-14432",
       "source": "arxiv",
       "title": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
@@ -1088,81 +1240,6 @@
       ],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-13818",
-      "source": "arxiv",
-      "title": "WAM is capable in BEHAVIOR-1K: the 2nd-place solution to the 2026 BEHAVIOR Challenge",
-      "title_zh": "WAM在BEHAVIOR-1K中表现出色：2026年BEHAVIOR挑战赛的亚军方案",
-      "tldr_zh": "WAM模型在BEHAVIOR挑战赛获亚军，推理超2FPS。",
-      "cover_zh": "不用闭源模型｜这个方案在100个家庭任务中拿下亚军！",
-      "abstract_zh": "本文介绍了2026年BEHAVIOR挑战赛的亚军方案（Team IF1001），该挑战赛评估了100项家庭任务中的移动操作能力。我们的方法基于强大的世界动作模型（WAM）Cosmos 3。我们通过使用更丰富的视觉历史、任务进度条件以及任务组和技能特定的LoRA适配器来改进Cosmos 3。在推理过程中，我们应用单独的进度估计器来提供任务进度上下文，并使用任务和进度条件路由来选择任务组或技能特定的策略，辅以动作候选聚合、滚动修复以及任务特定的时间和夹爪控制。为了满足最低1 FPS的推理要求，我们不使用递归自我改进（RSI）或代理框架方法，也不依赖任何闭源模型；在官方私有测试评估期间，我们的系统在有限的硬件资源下处理了100个评估端口的并发请求，每个端口的平均端到端推理速率保持在2 FPS以上。我们的方法在全部100项任务上平均3轮自评估，实现了平均Q分数0.613和全任务成功率40.9%。在官方私有测试集上，每项任务20个实例，我们的系统实现了平均Q分数0.615和全任务成功率41.2%。",
-      "authors": [
-        "Yelin He",
-        "Jiaquan Ye",
-        "Xinming Wei"
-      ],
-      "authors_all": [
-        "Yelin He",
-        "Jiaquan Ye",
-        "Xinming Wei",
-        "Wenjie Xiao",
-        "Gengming Zhang",
-        "Guoting Wei",
-        "Xianbiao Qi",
-        "Rong Xiao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-10",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 CoRL 2026"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-13818.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-13818-p2.jpg",
-        "assets/img/covers/arxiv-2611-13818-p3.jpg",
-        "assets/img/covers/arxiv-2611-13818-p4.jpg"
-      ],
-      "arxiv_id": "2611.13818",
-      "abs_url": "http://arxiv.org/abs/2611.13818v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.13818v1",
-      "venue": "CoRL 2026",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "manipulation",
-        "reason": "BEHAVIOR-1K移动操作挑战赛亚军方案，基于Cosmos世界动作模型，含任务进度条件与LoRA路由，具身操作参考价值高。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "Shenzhen Intellifusion Technologies Co., Ltd.",
-        "Johns Hopkins University"
-      ],
-      "method_tags": [
-        "World Action Model",
-        "LoRA",
-        "long-horizon"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1291,76 +1368,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "yes",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-13779",
-      "source": "arxiv",
-      "title": "Softness is something you also need! Why compliance helps control: information metrics of a passive walker with compliant ankle",
-      "title_zh": "柔软也是你需要的！为什么顺应性有助于控制：具有顺应性踝关节的被动行走器的信息度量",
-      "tldr_zh": "综述信息度量与顺应性被动行走器控制的关系。",
-      "cover_zh": "机器人太硬反而不灵活？顺应性踝关节让被动行走更智能",
-      "abstract_zh": "智能机器人，无论是刚性还是（部分）顺应性组件构成的，与自然进化的动物和植物对应物之间，在适应性、灵活性和灵巧性方面仍存在巨大差距。一个原因可能是‘范式’性质的。一方面，大多数机器人（刚性和软体）仍然遵循‘笛卡尔’方法设计，采用自上而下的控制和清晰的身心分离。基于我们在生物学中观察到的原理设计人工代理并非易事。动物和植物的组织原理依赖于形态计算和由松散耦合的具身代理网络涌现出的适应行为。建模和控制需要全新的方法。在本文中，我们简要回顾并解释了一些多年前已发表的、将信息度量与代理动力学联系起来的开创性数学结果；我们将它们与我们和社区最近开发的一些方法相结合，强调了一些关于其相关性的简要评论，并暗示了我们当前和近期的工作，旨在寻找具体有效的方法来建模和控制完全或部分顺应性的人工代理，并更好地理解自然界中的物理智能。我们提出了一份技术说明，根据我们提出的框架，总结了倒立摆和被动动态行走模型的相空间体积计算。从McGeer罗盘步态出发，我们引入了膝-踝顺应性、足部摇杆效应以及具有分布腿部惯性的Ruina风格罗盘步态。推导了标准的足跟撞击映射，并基于状态依赖的蒙特卡洛和再生核希尔伯特空间方法，用于估计可行相空间体积$W(γ)$。我们展示了基于RKHS的方法如何允许更深入和更精细的分析。",
-      "authors": [
-        "Fabio Bonsignorio",
-        "Elisabetta Barletta",
-        "Sorin Dragomir"
-      ],
-      "authors_all": [
-        "Fabio Bonsignorio",
-        "Elisabetta Barletta",
-        "Sorin Dragomir",
-        "Francesco Esposito",
-        "Enrica Zereik"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-10",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-13779.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-13779-p2.jpg",
-        "assets/img/covers/arxiv-2611-13779-p3.jpg",
-        "assets/img/covers/arxiv-2611-13779-p4.jpg"
-      ],
-      "arxiv_id": "2611.13779",
-      "abs_url": "http://arxiv.org/abs/2611.13779v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.13779v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 19,
-      "judge": {
-        "relevant": true,
-        "research_value": "medium",
-        "primary_channel": "locomotion",
-        "reason": "被动行走与踝关节柔顺性的信息度量分析，属双足运动建模，理论性强但偏技术笔记。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "University of Zagreb",
-        "Heron Robots",
-        "University of Basilicata",
-        "National Research Council"
-      ],
-      "method_tags": [
-        "Morphological Computation",
-        "Information Metrics",
-        "Passive Dynamic Walking"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
