@@ -3,6 +3,409 @@
   "count": 50,
   "papers": [
     {
+      "id": "arxiv-2611-04028",
+      "source": "arxiv",
+      "title": "Compression Forcing: Hierarchical History Tokenization Enables Flexible World Models",
+      "title_zh": "压缩强制：分层历史标记化实现灵活世界模型",
+      "tldr_zh": "压缩强制框架通过动态感知标记化对齐历史压缩与预测目标，提升世界模型性能。",
+      "cover_zh": "世界模型总被背景干扰？压缩强制让预测直击重点！",
+      "abstract_zh": "有效的世界建模需要压缩有助于未来预测的显著历史信息。然而，大多数现有方法继承了视频生成的标记化和条件机制，其目标围绕感知真实感而非预测效用。这种差异限制了世界模型的有效性，尤其是在视觉干扰或任务无关背景细节主导的环境中。为此，我们引入了压缩强制（CF），一个将历史压缩与世界建模的预测目标对齐的通用框架。压缩强制具有动态感知标记化（DAT），这是一种新颖的标记化方法，将历史观察压缩成按动态显著性递减顺序排列的序列。基于扩散主干，这种结构实现了分层历史引导（HG-H），允许在推理过程中选择性放大动态显著信息。在各种环境中的大量实验表明，预测保真度、物理真实感和下游决策性能均有所提高，确立了压缩强制作为一种高度灵活且有效的世界建模方法。",
+      "authors": [
+        "Siqiao Huang",
+        "Partha Kaushik",
+        "Michael Chen"
+      ],
+      "authors_all": [
+        "Siqiao Huang",
+        "Partha Kaushik",
+        "Michael Chen",
+        "Hengkai Pan",
+        "Kaiwen Geng",
+        "Omar Chehab",
+        "Fernando Moreno-Pino",
+        "Max Simchowitz"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-02",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ 清华"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Max Simchowitz"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-04028.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-04028-p2.jpg",
+        "assets/img/covers/arxiv-2611-04028-p3.jpg",
+        "assets/img/covers/arxiv-2611-04028-p4.jpg"
+      ],
+      "arxiv_id": "2611.04028",
+      "abs_url": "http://arxiv.org/abs/2611.04028v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.04028v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 57,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University",
+        "Tsinghua University",
+        "University of Bristol",
+        "University of Oxford"
+      ],
+      "method_tags": [
+        "world model",
+        "Diffusion",
+        "tokenization"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03937",
+      "source": "arxiv",
+      "title": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
+      "title_zh": "FlowBench：面向空间智能的反事实想象训练",
+      "tldr_zh": "提出FlowBench数据集，训练模型反事实空间想象能力。",
+      "cover_zh": "AI脑补未来场景？FlowBench让想象有据可依",
+      "abstract_zh": "人类能够在假设运动下想象场景变化，这是空间推理和机器人规划的核心能力。然而，这种能力在视觉语言模型和世界模型中仍未得到充分探索。我们将此能力形式化为反事实空间想象（CSI），并推出 FlowBench，一个用于训练和评估的资源，包含 42.8 万个训练示例，涵盖模拟和真实场景、家庭环境和桌面操作，以及多样的问题类型。一个可扩展的全自动流程将每个假设运动与空间问题配对，并在模拟中提供精确的结果帧和光流。对于视觉语言模型，专有模型表现出想象差距，在必须推断运动结果时表现比观察时更差，而开源模型表现接近随机；在 FlowBench-Sim-Train 上微调 Qwen3-VL-8B 后，其在模拟中的准确率提高了 29.5 个百分点，在真实图像上提高了 16.9 个百分点，实现了强大的模拟到现实迁移。对于世界模型，在 FlowBench-Sim 上训练改善了所有四个测试模型家族的文本到光流预测，将 Psi-0.6 的准确率从 52.1% 提高到 61.7%。因此，FlowBench 为两者提供了训练和评估资源。代码和数据集发布于 https://github.com/liuyifan22/FlowBench。",
+      "authors": [
+        "Yifan Liu",
+        "Baihan Zhang",
+        "Khai Loong Aw"
+      ],
+      "authors_all": [
+        "Yifan Liu",
+        "Baihan Zhang",
+        "Khai Loong Aw",
+        "Klemen Kotar",
+        "Daniel L. K. Yamins"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "world-model",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Stanford"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03937.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03937-p2.jpg",
+        "assets/img/covers/arxiv-2611-03937-p3.jpg",
+        "assets/img/covers/arxiv-2611-03937-p4.jpg"
+      ],
+      "arxiv_id": "2611.03937",
+      "abs_url": "http://arxiv.org/abs/2611.03937v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03937v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 53,
+      "judge": {},
+      "institutions": [
+        "Stanford University"
+      ],
+      "method_tags": [
+        "Counterfactual Spatial Imagination",
+        "sim-to-real",
+        "fine-tuning"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03498",
+      "source": "arxiv",
+      "title": "SNAP: Semantic Navigation Among Pedestrians",
+      "title_zh": "SNAP：行人间的语义导航",
+      "tldr_zh": "强化学习策略从语义鸟瞰图联合推理地形与行人，实现社会合规导航。",
+      "cover_zh": "不用估计行人状态！这个策略让机器人零样本迁移到腿式机器人",
+      "abstract_zh": "在拥挤的城市环境中导航，要求机器人避开行人，同时遵守诸如保持在人行道上等社会规范。现有方法通常孤立地处理人群避让或语义路径规划。我们提出了一种强化学习（RL）导航策略，它从单一语义标注的鸟瞰图（BEV）中联合推理语义地形和动态障碍物，而不依赖显式的人类状态估计。我们的策略优于已有的群体导航和语义感知基线，并零样本迁移到腿式机器人，展示了在高度动态的真实世界场景中符合社会规范的导航。",
+      "authors": [
+        "Jakob Wolfram",
+        "Pascal Roth",
+        "Fan Yang"
+      ],
+      "authors_all": [
+        "Jakob Wolfram",
+        "Pascal Roth",
+        "Fan Yang",
+        "Cesar Cadena",
+        "Marco Hutter"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ETH (RSL)"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Marco Hutter"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03498.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03498-p2.jpg",
+        "assets/img/covers/arxiv-2611-03498-p3.jpg",
+        "assets/img/covers/arxiv-2611-03498-p4.jpg"
+      ],
+      "arxiv_id": "2611.03498",
+      "abs_url": "http://arxiv.org/abs/2611.03498v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03498v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 51,
+      "judge": {},
+      "institutions": [
+        "ETH Zurich",
+        "NVIDIA"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Sim-to-Real",
+        "Crowd Navigation"
+      ],
+      "platform": [
+        "ANYmal-D"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03294",
+      "source": "arxiv",
+      "title": "ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation",
+      "title_zh": "ForceLDM：面向富接触操作的力感知潜在动力学模型",
+      "tldr_zh": "力感知潜在动力学模型，通过知识蒸馏学习未来接触动力学，提升富接触操作性能。",
+      "cover_zh": "机器人操作新突破！不靠未来传感器也能预判接触力",
+      "abstract_zh": "富接触操作需要精细控制以及与环境的复杂物理交互，这对机器人策略学习提出了重大挑战。仅依赖视觉的策略难以处理此类任务，因为仅从视觉观察中很难推断接触状态和交互力。现有方法通过引入力或触觉传感来缓解这一问题，但它们通常将这些信号视为辅助观察，未能充分利用其在建模未来交互动力学中的作用。为此，我们提出了ForceLDM，一种力感知的潜在动力学模型，通过学习未来的接触和运动动力学来指导动作生成。ForceLDM不直接预测未来观察（这可能会将任务相关动力学与无关的感官细节纠缠在一起），而是通过知识蒸馏学习未来动力学的紧凑表示。具体而言，一个拥有未来力/力矩和光流信号特权信息的教师网络提取未来动态特征，然后将其蒸馏到一个仅使用当前观察训练的学生网络中。这使得学生模型能够在部署时无需依赖未来感官输入的情况下推理即将发生的接触和物理动力学。为了提高鲁棒性和泛化能力，我们进一步引入了一种基于课程的渐进噪声注入策略，以减轻对未来特征的过度依赖。在五个真实世界的富接触操作任务上的实验表明，ForceLDM优于最先进的基线，能够有效泛化到新物体，并且对环境扰动保持鲁棒。项目页面和代码可在 https://tpy001.github.io/ForceLDM/ 获取。",
+      "authors": [
+        "Peiyuan Tang",
+        "Yao Li",
+        "Xiaodong Zhang"
+      ],
+      "authors_all": [
+        "Peiyuan Tang",
+        "Yao Li",
+        "Xiaodong Zhang",
+        "Wuyang Zhang",
+        "Qin Xia",
+        "Yanyong Zhang",
+        "Zijiang Yang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ USTC"
+        },
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03294.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03294-p2.jpg",
+        "assets/img/covers/arxiv-2611-03294-p3.jpg",
+        "assets/img/covers/arxiv-2611-03294-p4.jpg"
+      ],
+      "arxiv_id": "2611.03294",
+      "abs_url": "http://arxiv.org/abs/2611.03294v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03294v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 47,
+      "judge": {},
+      "institutions": [
+        "Xi'an Jiaotong University",
+        "University of Science and Technology of China",
+        "Suzhou Artificial Intelligence Laboratory",
+        "Synkrotron, Inc."
+      ],
+      "method_tags": [
+        "knowledge distillation",
+        "force-aware latent dynamics",
+        "contact-rich manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03647",
+      "source": "arxiv",
+      "title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
+      "title_zh": "Pixel-UMI：从传感器化人类演示中学习环境感知的全身操作",
+      "tldr_zh": "Pixel-UMI 利用人类演示学习环境感知全身操作策略。",
+      "cover_zh": "人类演示数据还能这么用？Pixel-UMI 让机器人学会全身避障操作",
+      "abstract_zh": "传感器化的人类演示为移动操作提供了可扩展的数据，但具身差异使策略学习变得复杂。我们提出 Pixel-UMI，一种从人类数据中学习环境感知全身策略的流程。我们首先引入环境感知重定向（EAR），它将重建的场景几何与演示的头部和夹爪轨迹相结合，以确定机器人姿态并生成碰撞感知的关节和基座目标。延迟校准的动作分配将这些轨迹转换为动作。然而，运动学差异可能留下残余姿态误差，导致人类演示与机器人观察之间的视角不匹配。因此，我们引入重定向误差感知掩码（REAM），它在训练期间利用这些误差来减少部署时对不匹配视图的依赖。最后，由于估计的动作无法完全捕捉接触丰富的交互，我们通过 DAgger 收集同策略人类纠正以提高性能。我们在五个具有挑战性的任务上评估 Pixel-UMI，涵盖铰接物体操作、可变形物体处理、受限空间到达、全身避碰和接触丰富的双臂协调，实现了 87.0% 的平均任务进度。视频结果可在 https://pixel-robot.com/pixel-umi 获取。",
+      "authors": [
+        "Jason Jingzhou Liu",
+        "Tony Tao",
+        "Deepak Pathak"
+      ],
+      "authors_all": [
+        "Jason Jingzhou Liu",
+        "Tony Tao",
+        "Deepak Pathak",
+        "Ruslan Salakhutdinov"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03647.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03647-p2.jpg",
+        "assets/img/covers/arxiv-2611-03647-p3.jpg",
+        "assets/img/covers/arxiv-2611-03647-p4.jpg"
+      ],
+      "arxiv_id": "2611.03647",
+      "abs_url": "http://arxiv.org/abs/2611.03647v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03647v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "DAgger",
+        "whole-body manipulation"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03648",
+      "source": "arxiv",
+      "title": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+      "title_zh": "Pixel：一个协同设计的全栈机器人系统，用于学习通用移动操作",
+      "tldr_zh": "提出Pixel全栈机器人系统，协同设计硬件、数据、控制与学习，实现通用移动操作。",
+      "cover_zh": "机器人硬件、数据、控制、学习终于打通｜Pixel全栈系统让通用移动操作成为可能",
+      "abstract_zh": "通用移动操作需要具备能力的机器人硬件、可扩展的演示数据收集、富有表现力的全身控制以及有效的策略学习相结合。然而，这些组件通常独立开发，导致不匹配，限制了完整系统的能力。我们提出了Pixel，一个协同设计的全栈系统，用于学习通用移动操作。Pixel结合了低成本轮式人形机器人（具有与人类对齐的运动学和柔顺夹爪）、多种遥操作和无机器人的人类数据收集接口、统一的全身控制器，以及跨人类和机器人演示的通用策略学习流程。分层学习堆栈进一步实现了语言条件的视觉运动控制和长时程任务执行。我们在硬件、数据收集和策略学习方面评估了该系统，并展示了需要灵巧性、主动感知、导航和全身协调的移动操作行为。我们希望Pixel能为研究机器人硬件、数据、控制和学习如何共同设计以用于机器人学习提供一个集成且可扩展的基础。更多结果见 https://pixel-robot.com/pixel",
+      "authors": [
+        "Tony Tao",
+        "Jason Jingzhou Liu",
+        "Ruslan Salakhutdinov"
+      ],
+      "authors_all": [
+        "Tony Tao",
+        "Jason Jingzhou Liu",
+        "Ruslan Salakhutdinov",
+        "Deepak Pathak"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "teleop",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ CMU RI"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03648.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03648-p2.jpg",
+        "assets/img/covers/arxiv-2611-03648-p3.jpg",
+        "assets/img/covers/arxiv-2611-03648-p4.jpg"
+      ],
+      "arxiv_id": "2611.03648",
+      "abs_url": "http://arxiv.org/abs/2611.03648v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03648v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [
+        "Carnegie Mellon University"
+      ],
+      "method_tags": [
+        "whole-body control",
+        "visuomotor control",
+        "long-horizon"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-04080",
       "source": "arxiv",
       "title": "FEIJOA: Task-Driven Grounding and Execution for Mobile Manipulation",
@@ -61,6 +464,74 @@
       ],
       "platform": [
         "Spot"
+      ],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03584",
+      "source": "arxiv",
+      "title": "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation",
+      "title_zh": "TAMPAgent：面向移动操作的智能体信念空间规划",
+      "tldr_zh": "TAMPAgent融合LVLM推理与TAMP约束满足，实现部分可观察环境下的移动操作规划。",
+      "cover_zh": "LVLM+TAMP强强联合｜部分可观察也能规划移动操作",
+      "abstract_zh": "开放世界机器人移动操作需要在仅部分信息的情况下在物理环境中行动。虽然近期的大型视觉-语言模型（LVLM）智能体展现出强大的开放世界推理能力，但依赖直接工具调用的现有架构难以处理几何不确定性，因此仅限于完全可观察的桌面环境。相比之下，任务与运动规划（TAMP）系统可以在部分可观察性下解决长时程任务，但计算成本高且需要封闭世界。我们提出TAMPAgent，一种智能体规划框架，将LVLM的推理与TAMP系统的结构化约束满足统一起来。我们赋予LVLM智能体一个信念空间规划模型，该模型在可扩展的感知、规划和控制工具API上运行。智能体制定由参数化观察和执行动作组成的部分任务计划，随后使用经典搜索算法完成。在提取计划的几何约束后，智能体利用其工具API绑定有效参数值，满足可行性要求并生成可执行的运动计划。执行时，智能体持续更新其信念历史，并通过交错观察和操作动作重复此闭环过程。在Rainbow Y1和Unitree G1平台上对复杂家庭移动操作任务进行评估，TAMPAgent显著优于直接工具调用的智能体基线，表明将TAMP约束满足集成到智能体规划循环中对于非结构化、部分可观察环境至关重要。",
+      "authors": [
+        "Utkarsh A. Mishra",
+        "Alperen Degirmenci",
+        "Yongxin Chen"
+      ],
+      "authors_all": [
+        "Utkarsh A. Mishra",
+        "Alperen Degirmenci",
+        "Yongxin Chen",
+        "Danfei Xu",
+        "Tucker Hermans",
+        "Caelan Garrett"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation",
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ NVIDIA"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03584.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03584-p2.jpg",
+        "assets/img/covers/arxiv-2611-03584-p3.jpg",
+        "assets/img/covers/arxiv-2611-03584-p4.jpg"
+      ],
+      "arxiv_id": "2611.03584",
+      "abs_url": "http://arxiv.org/abs/2611.03584v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03584v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 42,
+      "judge": {},
+      "institutions": [
+        "NVIDIA Research",
+        "Georgia Institute of Technology",
+        "University of Utah"
+      ],
+      "method_tags": [
+        "Task and Motion Planning",
+        "LVLM agent",
+        "belief-space planning"
+      ],
+      "platform": [
+        "Rainbow Y1",
+        "Unitree G1"
       ],
       "sim_stack": [],
       "method_family": "",
@@ -180,12 +651,20 @@
       "venue_announced": "",
       "score": 35,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "New York University",
+        "City University of New York",
+        "Columbia University"
+      ],
+      "method_tags": [
+        "visuo-tactile pipeline",
+        "tactile sensing",
+        "contact-rich manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [
         {
@@ -200,27 +679,32 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-04028",
+      "id": "arxiv-2611-03626",
       "source": "arxiv",
-      "title": "Compression Forcing: Hierarchical History Tokenization Enables Flexible World Models",
-      "title_zh": "压缩强制：分层历史标记化实现灵活世界模型",
-      "tldr_zh": "压缩强制框架通过动态感知标记化对齐历史压缩与预测目标，提升世界模型性能。",
-      "cover_zh": "世界模型总被背景干扰？压缩强制让预测直击重点！",
-      "abstract_zh": "有效的世界建模需要压缩有助于未来预测的显著历史信息。然而，大多数现有方法继承了视频生成的标记化和条件机制，其目标围绕感知真实感而非预测效用。这种差异限制了世界模型的有效性，尤其是在视觉干扰或任务无关背景细节主导的环境中。为此，我们引入了压缩强制（CF），一个将历史压缩与世界建模的预测目标对齐的通用框架。压缩强制具有动态感知标记化（DAT），这是一种新颖的标记化方法，将历史观察压缩成按动态显著性递减顺序排列的序列。基于扩散主干，这种结构实现了分层历史引导（HG-H），允许在推理过程中选择性放大动态显著信息。在各种环境中的大量实验表明，预测保真度、物理真实感和下游决策性能均有所提高，确立了压缩强制作为一种高度灵活且有效的世界建模方法。",
+      "title": "Isekai3D SDG: A Platform for Diverse Synthetic Gameplay Visual Data",
+      "title_zh": "Isekai3D SDG：一个用于生成多样化合成游戏视觉数据的平台",
+      "tldr_zh": "Isekai3D SDG 平台通过两阶段工作流高效生成多样化合成游戏视觉数据。",
+      "cover_zh": "一次模拟，多套输出｜这个平台让游戏数据生成效率翻倍",
+      "abstract_zh": "我们提出 Isekai3D 合成数据生成（SDG）平台，用于模拟和捕获合成 3D 游戏画面，以支持视觉与世界模型、神经图形学、游戏智能体等研究。该平台将可复用的环境与角色资产与虚幻引擎插件结合，采用两阶段工作流。首先，世界模拟生成游戏过程，并记录重放所需的世界状态、角色运动、动作和相机轨迹。其次，重放录制的模拟，以在选定的渲染和相机配置下，按指定分辨率和帧率捕获选定输出，如渲染视频、图像和深度图。将模拟与捕获分离，使得同一录制游戏过程无需重复原始模拟即可生成多个输出变体。视觉输出附带帧对齐的相机、角色和动作元数据。平台直接以训练友好的格式上传生成的数据，减少中间存储、准备时间和手动处理。本报告描述了我们整体系统的设计，包括平台的资产、插件及其功能，解释了它们如何协同工作以生成多样化的合成游戏数据。",
       "authors": [
-        "Siqiao Huang",
-        "Partha Kaushik",
-        "Michael Chen"
+        "Rafal Karp",
+        "Gene Liu",
+        "Shih-Hsin Li"
       ],
       "authors_all": [
-        "Siqiao Huang",
-        "Partha Kaushik",
-        "Michael Chen",
-        "Hengkai Pan",
-        "Kaiwen Geng",
-        "Omar Chehab",
-        "Fernando Moreno-Pino",
-        "Max Simchowitz"
+        "Rafal Karp",
+        "Gene Liu",
+        "Shih-Hsin Li",
+        "Eric Courtemanche",
+        "Shengze Wang",
+        "Josef Spjut",
+        "David Pankratz",
+        "Mischa Kolbe",
+        "Michael Stengel",
+        "Sven Elflein",
+        "Adam Grygielski",
+        "Liwen Wu",
+        "Anjul Patney"
       ],
       "primary_category": "cs.CV",
       "published": "2026-11-02",
@@ -230,28 +714,246 @@
       "badges": [
         {
           "kind": "lab",
-          "label": "⭐ Max Simchowitz"
+          "label": "⭐ NVIDIA"
         }
       ],
-      "cover_image": "assets/img/covers/arxiv-2611-04028.jpg",
+      "cover_image": "assets/img/covers/arxiv-2611-03626.jpg",
       "preview_pages": [
-        "assets/img/covers/arxiv-2611-04028-p2.jpg",
-        "assets/img/covers/arxiv-2611-04028-p3.jpg",
-        "assets/img/covers/arxiv-2611-04028-p4.jpg"
+        "assets/img/covers/arxiv-2611-03626-p2.jpg",
+        "assets/img/covers/arxiv-2611-03626-p3.jpg",
+        "assets/img/covers/arxiv-2611-03626-p4.jpg"
       ],
-      "arxiv_id": "2611.04028",
-      "abs_url": "http://arxiv.org/abs/2611.04028v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.04028v1",
+      "arxiv_id": "2611.03626",
+      "abs_url": "http://arxiv.org/abs/2611.03626v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03626v1",
       "venue": "",
       "venue_announced": "",
-      "score": 32,
+      "score": 34,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "NVIDIA"
+      ],
+      "method_tags": [
+        "synthetic data generation",
+        "world model",
+        "gameplay agents"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "Unreal Engine"
+      ],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03850",
+      "source": "arxiv",
+      "title": "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+      "title_zh": "RoboScope Kit：面向快速可扩展具身AI评估的统一接口",
+      "tldr_zh": "RoboScope Kit统一接口，大幅加速具身AI评估。",
+      "cover_zh": "机器人评估慢到哭？这个工具让速度飞起｜GPU利用率仅14%的救星",
+      "abstract_zh": "仿真基准是比较机器人策略的标准方法，但每个基准都自带评估器、观测布局和动作约定，且评估速度慢：在单GPU上使用一个模拟器和一个模型运行500个RoboTwin Easy回合需要359.7分钟。对官方StarVLA评估器进行性能分析显示，仿真占用CPU核心，而GPU平均利用率仅为14.3%。RoboScope Kit将每个模型封装在一个称为Policy的Python类中，并将每个基准封装在围绕基准自身评估器的适配器中，从而保持基准的规则和评分不变。调度将模拟器工作进程和Policy副本作为独立池运行，根据测量探针确定两者规模，并在GPU实例间确定性地分片工作；运行时优化仅渲染动作块Policy读取的观测。适配器覆盖六个基准系列。在单个48 GiB RTX 4090上使用StarVLA检查点对LIBERO-Long进行测试，并发搜索选择十二个模拟器工作进程共享三个Policy副本，评估500个回合比官方StarVLA评估快4.45倍且成功率相当，比RLinf快2.78倍，比调优配置下的vla-eval快1.52倍。使用CUDA MPS（允许副本并发运行内核）时，搜索选择十六个工作进程共享四个副本，比StarVLA快6.16倍，比RLinf快3.85倍，比vla-eval快2.10倍。在RoboTwin Easy上，四块GPU配合块边界观测在14.4分钟内完成500个回合，比单GPU基线快25.04倍，且成功结果和终止步骤完全相同。",
+      "authors": [
+        "Deng-Ke Wu",
+        "Yifan Jin",
+        "Yida Yang"
+      ],
+      "authors_all": [
+        "Deng-Ke Wu",
+        "Yifan Jin",
+        "Yida Yang",
+        "Lei Qian",
+        "Zhaoye Zhou",
+        "Hongru Zhang",
+        "Kai Ye",
+        "Shuyuan Hu",
+        "Yiran Mao",
+        "Zewei Ye",
+        "Bo Zhao"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ ShanghaiTech"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03850.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03850-p2.jpg",
+        "assets/img/covers/arxiv-2611-03850-p3.jpg",
+        "assets/img/covers/arxiv-2611-03850-p4.jpg"
+      ],
+      "arxiv_id": "2611.03850",
+      "abs_url": "http://arxiv.org/abs/2611.03850v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03850v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 34,
+      "judge": {},
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "Central South University",
+        "Tongji University",
+        "ShanghaiTech University"
+      ],
+      "method_tags": [
+        "VLA",
+        "evaluation framework",
+        "action-chunk policy"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "no",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03646",
+      "source": "arxiv",
+      "title": "EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos",
+      "title_zh": "EgoActionBench：面向第一人称人类视频的密集动作描述基准",
+      "tldr_zh": "提出第一人称视频密集动作描述基准，揭示模型在动作原子性等方面的局限。",
+      "cover_zh": "第一人称视频理解新基准｜模型在动作原子性上集体翻车？",
+      "abstract_zh": "从人类数据中学习是实现具身智能的一条可扩展路径，但这要求模型能够从第一人称观测中准确理解细粒度的人类动作。然而，现有基准在动作原子性、时间精度和手-动作关联方面仍存在局限。我们提出了 EgoActionBench，这是一个将连续人类操作表示为与左手、右手或双手相关联的时间局部化原子动作的基准。EgoActionBench 包含 1,407 个片段和 41,132 个人工精炼的动作标注。为了评估这种密集预测，我们提出了一种评估协议，该协议检索时间上合格的候选，根据内容一致性选择预测，并评分语义保真度和时间重叠以及动作精确率和召回率，共同捕捉发生了什么、何时发生以及哪只手执行。我们在 EgoActionBench 上对 20 个基线模型和系统进行了基准测试，并通过在自动标注的训练片段上进行监督微调后接强化学习，进一步适配了两个骨干模型 Qwen3-VL-4B 和 LLaVA-OneVision-2-8B。EgoAction 在两个骨干模型上将 EgoActionScore 分别提高了 15.9 和 23.2 分，且两个适配模型均优于所有开源基线。我们的实验揭示了当前模型在动作原子性、时间精度和手-动作关联方面的显著局限性，突显了通用视频理解与具身智能所需的动作理解之间的差距。",
+      "authors": [
+        "Yujiao Shen",
+        "Jiahe Song",
+        "Haitian Li"
+      ],
+      "authors_all": [
+        "Yujiao Shen",
+        "Jiahe Song",
+        "Haitian Li",
+        "Jingkang Yang",
+        "Ziwei Liu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ SJTU"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ NTU"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03646.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03646-p2.jpg",
+        "assets/img/covers/arxiv-2611-03646-p3.jpg",
+        "assets/img/covers/arxiv-2611-03646-p4.jpg"
+      ],
+      "arxiv_id": "2611.03646",
+      "abs_url": "http://arxiv.org/abs/2611.03646v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03646v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "S-Lab, Nanyang Technological University",
+        "Shanghai Jiao Tong University"
+      ],
+      "method_tags": [
+        "supervised fine-tuning",
+        "reinforcement learning",
+        "egocentric action captioning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
       "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-03765",
+      "source": "arxiv",
+      "title": "VagueBench: Benchmarking the Robustness of Embodied Agents on Ambient Context Illusions",
+      "title_zh": "VagueBench：基准测试具身智能体在环境上下文幻觉下的鲁棒性",
+      "tldr_zh": "提出VagueBench基准，揭示具身智能体依赖上下文线索的幻觉现象。",
+      "cover_zh": "指令少说一句就翻车？具身智能体集体暴露上下文依赖",
+      "abstract_zh": "具身智能体越来越多地部署在开放世界中，但当前的鲁棒性评估仍偏向于危险指令和越狱漏洞。一个更根本的问题被 largely 忽视：智能体很少在语义充分但上下文极简的指令（即现实人类交流中常见的情况）下接受测试，此时辅助上下文线索缺失。首先，我们识别出一种新现象，称为环境上下文幻觉，即当非必要的上下文细节被省略时，智能体无法正确执行任务，尽管任务语义未变。为了系统地研究这一点，我们建立了 VagueBench，一个基于 AI2-THOR 交互式模拟环境的基准，用于评估具身智能体的上下文依赖性。我们系统地考虑指令的关键语义组件（实体、过程、约束和先验知识），并推导出一个统一的分类法，包含四个类别和九个子类型，以减少辅助信息。VagueBench 包含跨越多样室内环境的 1,303 个指令对，通过人类-智能体协同生成框架构建，该框架集成了语义冗余估计、分类法引导的转换和严格的语义不变性验证。通过对 6 个最先进的具身智能体进行广泛评估，我们观察到在 VagueBench 上任务性能和可执行性均显著下降（任务成功率相对下降 19.65%，空计划率相对上升 54.10%），揭示出对辅助语言信号的强烈依赖而非核心任务语义。此外，我们证明这种现象在现实世界机器人系统中持续存在，可能导致错误决策和潜在安全风险。",
+      "authors": [
+        "Yang Qu",
+        "Qiang Fu",
+        "Zonghao Ying"
+      ],
+      "authors_all": [
+        "Yang Qu",
+        "Qiang Fu",
+        "Zonghao Ying",
+        "Jiayi Zhao",
+        "Yaoyuan Zhang",
+        "Jinyang Guo",
+        "Jian Yang",
+        "Aishan Liu",
+        "Yingxun Wang",
+        "Xianglong Liu"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Beihang (BUAA)"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-03765.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-03765-p2.jpg",
+        "assets/img/covers/arxiv-2611-03765-p3.jpg",
+        "assets/img/covers/arxiv-2611-03765-p4.jpg"
+      ],
+      "arxiv_id": "2611.03765",
+      "abs_url": "http://arxiv.org/abs/2611.03765v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03765v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [
+        "Beihang University",
+        "Zhongguancun Laboratory",
+        "Institute of Dataspace"
+      ],
+      "method_tags": [
+        "VLM-driven Embodied Agent",
+        "Robustness Evaluation Benchmark",
+        "Context Suppression Constrain"
+      ],
+      "platform": [],
+      "sim_stack": [
+        "AI2-THOR"
+      ],
+      "method_family": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -310,113 +1012,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-03937",
-      "source": "arxiv",
-      "title": "FlowBench: Counterfactual Imagination Training for Spatial Intelligence",
-      "title_zh": "FlowBench：面向空间智能的反事实想象训练",
-      "tldr_zh": "提出FlowBench数据集，训练模型反事实空间想象能力。",
-      "cover_zh": "AI脑补未来场景？FlowBench让想象有据可依",
-      "abstract_zh": "人类能够在假设运动下想象场景变化，这是空间推理和机器人规划的核心能力。然而，这种能力在视觉语言模型和世界模型中仍未得到充分探索。我们将此能力形式化为反事实空间想象（CSI），并推出 FlowBench，一个用于训练和评估的资源，包含 42.8 万个训练示例，涵盖模拟和真实场景、家庭环境和桌面操作，以及多样的问题类型。一个可扩展的全自动流程将每个假设运动与空间问题配对，并在模拟中提供精确的结果帧和光流。对于视觉语言模型，专有模型表现出想象差距，在必须推断运动结果时表现比观察时更差，而开源模型表现接近随机；在 FlowBench-Sim-Train 上微调 Qwen3-VL-8B 后，其在模拟中的准确率提高了 29.5 个百分点，在真实图像上提高了 16.9 个百分点，实现了强大的模拟到现实迁移。对于世界模型，在 FlowBench-Sim 上训练改善了所有四个测试模型家族的文本到光流预测，将 Psi-0.6 的准确率从 52.1% 提高到 61.7%。因此，FlowBench 为两者提供了训练和评估资源。代码和数据集发布于 https://github.com/liuyifan22/FlowBench。",
-      "authors": [
-        "Yifan Liu",
-        "Baihan Zhang",
-        "Khai Loong Aw"
-      ],
-      "authors_all": [
-        "Yifan Liu",
-        "Baihan Zhang",
-        "Khai Loong Aw",
-        "Klemen Kotar",
-        "Daniel L. K. Yamins"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "world-model",
-        "sim2real"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03937.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03937-p2.jpg",
-        "assets/img/covers/arxiv-2611-03937-p3.jpg",
-        "assets/img/covers/arxiv-2611-03937-p4.jpg"
-      ],
-      "arxiv_id": "2611.03937",
-      "abs_url": "http://arxiv.org/abs/2611.03937v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03937v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 28,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03498",
-      "source": "arxiv",
-      "title": "SNAP: Semantic Navigation Among Pedestrians",
-      "title_zh": "SNAP：行人间的语义导航",
-      "tldr_zh": "强化学习策略从语义鸟瞰图联合推理地形与行人，实现社会合规导航。",
-      "cover_zh": "不用估计行人状态！这个策略让机器人零样本迁移到腿式机器人",
-      "abstract_zh": "在拥挤的城市环境中导航，要求机器人避开行人，同时遵守诸如保持在人行道上等社会规范。现有方法通常孤立地处理人群避让或语义路径规划。我们提出了一种强化学习（RL）导航策略，它从单一语义标注的鸟瞰图（BEV）中联合推理语义地形和动态障碍物，而不依赖显式的人类状态估计。我们的策略优于已有的群体导航和语义感知基线，并零样本迁移到腿式机器人，展示了在高度动态的真实世界场景中符合社会规范的导航。",
-      "authors": [
-        "Jakob Wolfram",
-        "Pascal Roth",
-        "Fan Yang"
-      ],
-      "authors_all": [
-        "Jakob Wolfram",
-        "Pascal Roth",
-        "Fan Yang",
-        "Cesar Cadena",
-        "Marco Hutter"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "locomotion"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Marco Hutter"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-03498.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03498-p2.jpg",
-        "assets/img/covers/arxiv-2611-03498-p3.jpg",
-        "assets/img/covers/arxiv-2611-03498-p4.jpg"
-      ],
-      "arxiv_id": "2611.03498",
-      "abs_url": "http://arxiv.org/abs/2611.03498v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03498v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 26,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-03501",
       "source": "arxiv",
       "title": "When Robots Outweigh Objects: How Inertia Mismatch Shapes Robot Policy Learning",
@@ -458,12 +1053,17 @@
       "venue_announced": "",
       "score": 26,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "MIT"
+      ],
+      "method_tags": [
+        "Reinforcement Learning",
+        "Behavior Cloning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [
         {
@@ -705,8 +1305,15 @@
       "venue_announced": "",
       "score": 24,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Huawei Technologies Canada",
+        "University of British Columbia"
+      ],
+      "method_tags": [
+        "World Action Model",
+        "Test-Time Scaling",
+        "Inverse Dynamics Consistency"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -756,65 +1363,15 @@
       "venue_announced": "",
       "score": 22,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03294",
-      "source": "arxiv",
-      "title": "ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation",
-      "title_zh": "ForceLDM：面向富接触操作的力感知潜在动力学模型",
-      "tldr_zh": "力感知潜在动力学模型，通过知识蒸馏学习未来接触动力学，提升富接触操作性能。",
-      "cover_zh": "机器人操作新突破！不靠未来传感器也能预判接触力",
-      "abstract_zh": "富接触操作需要精细控制以及与环境的复杂物理交互，这对机器人策略学习提出了重大挑战。仅依赖视觉的策略难以处理此类任务，因为仅从视觉观察中很难推断接触状态和交互力。现有方法通过引入力或触觉传感来缓解这一问题，但它们通常将这些信号视为辅助观察，未能充分利用其在建模未来交互动力学中的作用。为此，我们提出了ForceLDM，一种力感知的潜在动力学模型，通过学习未来的接触和运动动力学来指导动作生成。ForceLDM不直接预测未来观察（这可能会将任务相关动力学与无关的感官细节纠缠在一起），而是通过知识蒸馏学习未来动力学的紧凑表示。具体而言，一个拥有未来力/力矩和光流信号特权信息的教师网络提取未来动态特征，然后将其蒸馏到一个仅使用当前观察训练的学生网络中。这使得学生模型能够在部署时无需依赖未来感官输入的情况下推理即将发生的接触和物理动力学。为了提高鲁棒性和泛化能力，我们进一步引入了一种基于课程的渐进噪声注入策略，以减轻对未来特征的过度依赖。在五个真实世界的富接触操作任务上的实验表明，ForceLDM优于最先进的基线，能够有效泛化到新物体，并且对环境扰动保持鲁棒。项目页面和代码可在 https://tpy001.github.io/ForceLDM/ 获取。",
-      "authors": [
-        "Peiyuan Tang",
-        "Yao Li",
-        "Xiaodong Zhang"
+      "institutions": [
+        "University of Oulu",
+        "Maastricht University"
       ],
-      "authors_all": [
-        "Peiyuan Tang",
-        "Yao Li",
-        "Xiaodong Zhang",
-        "Wuyang Zhang",
-        "Qin Xia",
-        "Yanyong Zhang",
-        "Zijiang Yang"
+      "method_tags": [
+        "procedural generation",
+        "trajectory generation",
+        "Bézier curves"
       ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "venue",
-          "label": "🎓 NeurIPS 2026"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-03294.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03294-p2.jpg",
-        "assets/img/covers/arxiv-2611-03294-p3.jpg",
-        "assets/img/covers/arxiv-2611-03294-p4.jpg"
-      ],
-      "arxiv_id": "2611.03294",
-      "abs_url": "http://arxiv.org/abs/2611.03294v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03294v1",
-      "venue": "NeurIPS 2026",
-      "venue_announced": "",
-      "score": 22,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1023,107 +1580,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-03647",
-      "source": "arxiv",
-      "title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
-      "title_zh": "Pixel-UMI：从传感器化人类演示中学习环境感知的全身操作",
-      "tldr_zh": "Pixel-UMI 利用人类演示学习环境感知全身操作策略。",
-      "cover_zh": "人类演示数据还能这么用？Pixel-UMI 让机器人学会全身避障操作",
-      "abstract_zh": "传感器化的人类演示为移动操作提供了可扩展的数据，但具身差异使策略学习变得复杂。我们提出 Pixel-UMI，一种从人类数据中学习环境感知全身策略的流程。我们首先引入环境感知重定向（EAR），它将重建的场景几何与演示的头部和夹爪轨迹相结合，以确定机器人姿态并生成碰撞感知的关节和基座目标。延迟校准的动作分配将这些轨迹转换为动作。然而，运动学差异可能留下残余姿态误差，导致人类演示与机器人观察之间的视角不匹配。因此，我们引入重定向误差感知掩码（REAM），它在训练期间利用这些误差来减少部署时对不匹配视图的依赖。最后，由于估计的动作无法完全捕捉接触丰富的交互，我们通过 DAgger 收集同策略人类纠正以提高性能。我们在五个具有挑战性的任务上评估 Pixel-UMI，涵盖铰接物体操作、可变形物体处理、受限空间到达、全身避碰和接触丰富的双臂协调，实现了 87.0% 的平均任务进度。视频结果可在 https://pixel-robot.com/pixel-umi 获取。",
-      "authors": [
-        "Jason Jingzhou Liu",
-        "Tony Tao",
-        "Deepak Pathak"
-      ],
-      "authors_all": [
-        "Jason Jingzhou Liu",
-        "Tony Tao",
-        "Deepak Pathak",
-        "Ruslan Salakhutdinov"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03647.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03647-p2.jpg",
-        "assets/img/covers/arxiv-2611-03647-p3.jpg",
-        "assets/img/covers/arxiv-2611-03647-p4.jpg"
-      ],
-      "arxiv_id": "2611.03647",
-      "abs_url": "http://arxiv.org/abs/2611.03647v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03647v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03648",
-      "source": "arxiv",
-      "title": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
-      "title_zh": "Pixel：一个协同设计的全栈机器人系统，用于学习通用移动操作",
-      "tldr_zh": "提出Pixel全栈机器人系统，协同设计硬件、数据、控制与学习，实现通用移动操作。",
-      "cover_zh": "机器人硬件、数据、控制、学习终于打通｜Pixel全栈系统让通用移动操作成为可能",
-      "abstract_zh": "通用移动操作需要具备能力的机器人硬件、可扩展的演示数据收集、富有表现力的全身控制以及有效的策略学习相结合。然而，这些组件通常独立开发，导致不匹配，限制了完整系统的能力。我们提出了Pixel，一个协同设计的全栈系统，用于学习通用移动操作。Pixel结合了低成本轮式人形机器人（具有与人类对齐的运动学和柔顺夹爪）、多种遥操作和无机器人的人类数据收集接口、统一的全身控制器，以及跨人类和机器人演示的通用策略学习流程。分层学习堆栈进一步实现了语言条件的视觉运动控制和长时程任务执行。我们在硬件、数据收集和策略学习方面评估了该系统，并展示了需要灵巧性、主动感知、导航和全身协调的移动操作行为。我们希望Pixel能为研究机器人硬件、数据、控制和学习如何共同设计以用于机器人学习提供一个集成且可扩展的基础。更多结果见 https://pixel-robot.com/pixel",
-      "authors": [
-        "Tony Tao",
-        "Jason Jingzhou Liu",
-        "Ruslan Salakhutdinov"
-      ],
-      "authors_all": [
-        "Tony Tao",
-        "Jason Jingzhou Liu",
-        "Ruslan Salakhutdinov",
-        "Deepak Pathak"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "teleop",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03648.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03648-p2.jpg",
-        "assets/img/covers/arxiv-2611-03648-p3.jpg",
-        "assets/img/covers/arxiv-2611-03648-p4.jpg"
-      ],
-      "arxiv_id": "2611.03648",
-      "abs_url": "http://arxiv.org/abs/2611.03648v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03648v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 20,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-03815",
       "source": "arxiv",
       "title": "AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
@@ -1178,12 +1634,22 @@
       "venue_announced": "",
       "score": 20,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "AIRoA"
+      ],
+      "method_tags": [
+        "VLA",
+        "Imitation Learning",
+        "Cross-Embodiment"
+      ],
+      "platform": [
+        "Franka",
+        "TX-G2",
+        "OpenArm"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1296,8 +1762,15 @@
       "venue_announced": "",
       "score": 19,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Florida",
+        "University of Bamberg"
+      ],
+      "method_tags": [
+        "motion primitives",
+        "teleoperation",
+        "human-swarm interaction"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1368,58 +1841,6 @@
       "source_tags": []
     },
     {
-      "id": "arxiv-2611-03584",
-      "source": "arxiv",
-      "title": "TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation",
-      "title_zh": "TAMPAgent：面向移动操作的智能体信念空间规划",
-      "tldr_zh": "TAMPAgent融合LVLM推理与TAMP约束满足，实现部分可观察环境下的移动操作规划。",
-      "cover_zh": "LVLM+TAMP强强联合｜部分可观察也能规划移动操作",
-      "abstract_zh": "开放世界机器人移动操作需要在仅部分信息的情况下在物理环境中行动。虽然近期的大型视觉-语言模型（LVLM）智能体展现出强大的开放世界推理能力，但依赖直接工具调用的现有架构难以处理几何不确定性，因此仅限于完全可观察的桌面环境。相比之下，任务与运动规划（TAMP）系统可以在部分可观察性下解决长时程任务，但计算成本高且需要封闭世界。我们提出TAMPAgent，一种智能体规划框架，将LVLM的推理与TAMP系统的结构化约束满足统一起来。我们赋予LVLM智能体一个信念空间规划模型，该模型在可扩展的感知、规划和控制工具API上运行。智能体制定由参数化观察和执行动作组成的部分任务计划，随后使用经典搜索算法完成。在提取计划的几何约束后，智能体利用其工具API绑定有效参数值，满足可行性要求并生成可执行的运动计划。执行时，智能体持续更新其信念历史，并通过交错观察和操作动作重复此闭环过程。在Rainbow Y1和Unitree G1平台上对复杂家庭移动操作任务进行评估，TAMPAgent显著优于直接工具调用的智能体基线，表明将TAMP约束满足集成到智能体规划循环中对于非结构化、部分可观察环境至关重要。",
-      "authors": [
-        "Utkarsh A. Mishra",
-        "Alperen Degirmenci",
-        "Yongxin Chen"
-      ],
-      "authors_all": [
-        "Utkarsh A. Mishra",
-        "Alperen Degirmenci",
-        "Yongxin Chen",
-        "Danfei Xu",
-        "Tucker Hermans",
-        "Caelan Garrett"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation",
-        "loco-manip-wbc"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03584.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03584-p2.jpg",
-        "assets/img/covers/arxiv-2611-03584-p3.jpg",
-        "assets/img/covers/arxiv-2611-03584-p4.jpg"
-      ],
-      "arxiv_id": "2611.03584",
-      "abs_url": "http://arxiv.org/abs/2611.03584v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03584v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 17,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
       "id": "arxiv-2611-04016",
       "source": "arxiv",
       "title": "Physical Experience Builds Continual Spatial World Models",
@@ -1453,12 +1874,18 @@
       "venue_announced": "",
       "score": 17,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Washington"
+      ],
+      "method_tags": [
+        "world model",
+        "continual learning",
+        "spatial navigation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1563,8 +1990,14 @@
       "venue_announced": "",
       "score": 16,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Georgia Institute of Technology"
+      ],
+      "method_tags": [
+        "VLM",
+        "physics simulation validation",
+        "6-DoF pose generation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1617,12 +2050,21 @@
       "venue_announced": "",
       "score": 16,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
+      "institutions": [
+        "Lute"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Cross-Embodiment Transfer",
+        "UMI"
+      ],
+      "platform": [
+        "Galaxea R1 Lite",
+        "Galaxea R1 Pro"
+      ],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1666,12 +2108,18 @@
       "venue_announced": "",
       "score": 16,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Columbia University"
+      ],
+      "method_tags": [
+        "PointPillars",
+        "sim-to-real",
+        "geometric refinement"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "no",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1715,12 +2163,18 @@
       "venue_announced": "",
       "score": 16,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Columbia University"
+      ],
+      "method_tags": [
+        "PointPillars",
+        "sim-to-real",
+        "3D object detection"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1770,12 +2224,19 @@
       "venue_announced": "",
       "score": 15,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Amazon Robotics",
+        "Columbia University"
+      ],
+      "method_tags": [
+        "tactile sensing",
+        "proximity sensing",
+        "pre-grasp adjustment"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -1927,8 +2388,15 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Independent Researcher",
+        "Michigan State University"
+      ],
+      "method_tags": [
+        "uncertainty estimation",
+        "physics-grounded dynamics",
+        "human world model"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -1973,122 +2441,15 @@
       "venue_announced": "",
       "score": 9,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03626",
-      "source": "arxiv",
-      "title": "Isekai3D SDG: A Platform for Diverse Synthetic Gameplay Visual Data",
-      "title_zh": "Isekai3D SDG：一个用于生成多样化合成游戏视觉数据的平台",
-      "tldr_zh": "Isekai3D SDG 平台通过两阶段工作流高效生成多样化合成游戏视觉数据。",
-      "cover_zh": "一次模拟，多套输出｜这个平台让游戏数据生成效率翻倍",
-      "abstract_zh": "我们提出 Isekai3D 合成数据生成（SDG）平台，用于模拟和捕获合成 3D 游戏画面，以支持视觉与世界模型、神经图形学、游戏智能体等研究。该平台将可复用的环境与角色资产与虚幻引擎插件结合，采用两阶段工作流。首先，世界模拟生成游戏过程，并记录重放所需的世界状态、角色运动、动作和相机轨迹。其次，重放录制的模拟，以在选定的渲染和相机配置下，按指定分辨率和帧率捕获选定输出，如渲染视频、图像和深度图。将模拟与捕获分离，使得同一录制游戏过程无需重复原始模拟即可生成多个输出变体。视觉输出附带帧对齐的相机、角色和动作元数据。平台直接以训练友好的格式上传生成的数据，减少中间存储、准备时间和手动处理。本报告描述了我们整体系统的设计，包括平台的资产、插件及其功能，解释了它们如何协同工作以生成多样化的合成游戏数据。",
-      "authors": [
-        "Rafal Karp",
-        "Gene Liu",
-        "Shih-Hsin Li"
+      "institutions": [
+        "European Space Agency (ESA Spaceship Poland)",
+        "Institute of Robotics and Machine Intelligence, Poznań University of Technology"
       ],
-      "authors_all": [
-        "Rafal Karp",
-        "Gene Liu",
-        "Shih-Hsin Li",
-        "Eric Courtemanche",
-        "Shengze Wang",
-        "Josef Spjut",
-        "David Pankratz",
-        "Mischa Kolbe",
-        "Michael Stengel",
-        "Sven Elflein",
-        "Adam Grygielski",
-        "Liwen Wu",
-        "Anjul Patney"
+      "method_tags": [
+        "weakly supervised",
+        "depth-augmented visual features",
+        "cross-domain transfer"
       ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-02",
-      "channels": [
-        "world-model"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03626.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03626-p2.jpg",
-        "assets/img/covers/arxiv-2611-03626-p3.jpg",
-        "assets/img/covers/arxiv-2611-03626-p4.jpg"
-      ],
-      "arxiv_id": "2611.03626",
-      "abs_url": "http://arxiv.org/abs/2611.03626v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03626v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03850",
-      "source": "arxiv",
-      "title": "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
-      "title_zh": "RoboScope Kit：面向快速可扩展具身AI评估的统一接口",
-      "tldr_zh": "RoboScope Kit统一接口，大幅加速具身AI评估。",
-      "cover_zh": "机器人评估慢到哭？这个工具让速度飞起｜GPU利用率仅14%的救星",
-      "abstract_zh": "仿真基准是比较机器人策略的标准方法，但每个基准都自带评估器、观测布局和动作约定，且评估速度慢：在单GPU上使用一个模拟器和一个模型运行500个RoboTwin Easy回合需要359.7分钟。对官方StarVLA评估器进行性能分析显示，仿真占用CPU核心，而GPU平均利用率仅为14.3%。RoboScope Kit将每个模型封装在一个称为Policy的Python类中，并将每个基准封装在围绕基准自身评估器的适配器中，从而保持基准的规则和评分不变。调度将模拟器工作进程和Policy副本作为独立池运行，根据测量探针确定两者规模，并在GPU实例间确定性地分片工作；运行时优化仅渲染动作块Policy读取的观测。适配器覆盖六个基准系列。在单个48 GiB RTX 4090上使用StarVLA检查点对LIBERO-Long进行测试，并发搜索选择十二个模拟器工作进程共享三个Policy副本，评估500个回合比官方StarVLA评估快4.45倍且成功率相当，比RLinf快2.78倍，比调优配置下的vla-eval快1.52倍。使用CUDA MPS（允许副本并发运行内核）时，搜索选择十六个工作进程共享四个副本，比StarVLA快6.16倍，比RLinf快3.85倍，比vla-eval快2.10倍。在RoboTwin Easy上，四块GPU配合块边界观测在14.4分钟内完成500个回合，比单GPU基线快25.04倍，且成功结果和终止步骤完全相同。",
-      "authors": [
-        "Deng-Ke Wu",
-        "Yifan Jin",
-        "Yida Yang"
-      ],
-      "authors_all": [
-        "Deng-Ke Wu",
-        "Yifan Jin",
-        "Yida Yang",
-        "Lei Qian",
-        "Zhaoye Zhou",
-        "Hongru Zhang",
-        "Kai Ye",
-        "Shuyuan Hu",
-        "Yiran Mao",
-        "Zewei Ye",
-        "Bo Zhao"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03850.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03850-p2.jpg",
-        "assets/img/covers/arxiv-2611-03850-p3.jpg",
-        "assets/img/covers/arxiv-2611-03850-p4.jpg"
-      ],
-      "arxiv_id": "2611.03850",
-      "abs_url": "http://arxiv.org/abs/2611.03850v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03850v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 9,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2385,8 +2746,17 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "Université de Lille",
+        "Florida State University",
+        "University of Houston",
+        "IMT Nord Europe"
+      ],
+      "method_tags": [
+        "DiffusionNet",
+        "Elastic Shape Analysis",
+        "Latent-space correction"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2449,12 +2819,21 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "King's College London",
+        "Queen Mary University of London",
+        "King's College Hospital NHS Foundation Trust",
+        "The Walton Centre NHS Foundation Trust"
+      ],
+      "method_tags": [
+        "clinician-AI collaboration",
+        "shared autonomy",
+        "sim-to-real"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
@@ -2498,113 +2877,14 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03646",
-      "source": "arxiv",
-      "title": "EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos",
-      "title_zh": "EgoActionBench：面向第一人称人类视频的密集动作描述基准",
-      "tldr_zh": "提出第一人称视频密集动作描述基准，揭示模型在动作原子性等方面的局限。",
-      "cover_zh": "第一人称视频理解新基准｜模型在动作原子性上集体翻车？",
-      "abstract_zh": "从人类数据中学习是实现具身智能的一条可扩展路径，但这要求模型能够从第一人称观测中准确理解细粒度的人类动作。然而，现有基准在动作原子性、时间精度和手-动作关联方面仍存在局限。我们提出了 EgoActionBench，这是一个将连续人类操作表示为与左手、右手或双手相关联的时间局部化原子动作的基准。EgoActionBench 包含 1,407 个片段和 41,132 个人工精炼的动作标注。为了评估这种密集预测，我们提出了一种评估协议，该协议检索时间上合格的候选，根据内容一致性选择预测，并评分语义保真度和时间重叠以及动作精确率和召回率，共同捕捉发生了什么、何时发生以及哪只手执行。我们在 EgoActionBench 上对 20 个基线模型和系统进行了基准测试，并通过在自动标注的训练片段上进行监督微调后接强化学习，进一步适配了两个骨干模型 Qwen3-VL-4B 和 LLaVA-OneVision-2-8B。EgoAction 在两个骨干模型上将 EgoActionScore 分别提高了 15.9 和 23.2 分，且两个适配模型均优于所有开源基线。我们的实验揭示了当前模型在动作原子性、时间精度和手-动作关联方面的显著局限性，突显了通用视频理解与具身智能所需的动作理解之间的差距。",
-      "authors": [
-        "Yujiao Shen",
-        "Jiahe Song",
-        "Haitian Li"
+      "institutions": [
+        "Indian Institute of Science Education and Research Bhopal"
       ],
-      "authors_all": [
-        "Yujiao Shen",
-        "Jiahe Song",
-        "Haitian Li",
-        "Jingkang Yang",
-        "Ziwei Liu"
+      "method_tags": [
+        "Black-Box Domain Adaptation",
+        "Pseudo-label Guided Prototype Alignment",
+        "3D Point Cloud Recognition"
       ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03646.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03646-p2.jpg",
-        "assets/img/covers/arxiv-2611-03646-p3.jpg",
-        "assets/img/covers/arxiv-2611-03646-p4.jpg"
-      ],
-      "arxiv_id": "2611.03646",
-      "abs_url": "http://arxiv.org/abs/2611.03646v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03646v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-03765",
-      "source": "arxiv",
-      "title": "VagueBench: Benchmarking the Robustness of Embodied Agents on Ambient Context Illusions",
-      "title_zh": "VagueBench：基准测试具身智能体在环境上下文幻觉下的鲁棒性",
-      "tldr_zh": "提出VagueBench基准，揭示具身智能体依赖上下文线索的幻觉现象。",
-      "cover_zh": "指令少说一句就翻车？具身智能体集体暴露上下文依赖",
-      "abstract_zh": "具身智能体越来越多地部署在开放世界中，但当前的鲁棒性评估仍偏向于危险指令和越狱漏洞。一个更根本的问题被 largely 忽视：智能体很少在语义充分但上下文极简的指令（即现实人类交流中常见的情况）下接受测试，此时辅助上下文线索缺失。首先，我们识别出一种新现象，称为环境上下文幻觉，即当非必要的上下文细节被省略时，智能体无法正确执行任务，尽管任务语义未变。为了系统地研究这一点，我们建立了 VagueBench，一个基于 AI2-THOR 交互式模拟环境的基准，用于评估具身智能体的上下文依赖性。我们系统地考虑指令的关键语义组件（实体、过程、约束和先验知识），并推导出一个统一的分类法，包含四个类别和九个子类型，以减少辅助信息。VagueBench 包含跨越多样室内环境的 1,303 个指令对，通过人类-智能体协同生成框架构建，该框架集成了语义冗余估计、分类法引导的转换和严格的语义不变性验证。通过对 6 个最先进的具身智能体进行广泛评估，我们观察到在 VagueBench 上任务性能和可执行性均显著下降（任务成功率相对下降 19.65%，空计划率相对上升 54.10%），揭示出对辅助语言信号的强烈依赖而非核心任务语义。此外，我们证明这种现象在现实世界机器人系统中持续存在，可能导致错误决策和潜在安全风险。",
-      "authors": [
-        "Yang Qu",
-        "Qiang Fu",
-        "Zonghao Ying"
-      ],
-      "authors_all": [
-        "Yang Qu",
-        "Qiang Fu",
-        "Zonghao Ying",
-        "Jiayi Zhao",
-        "Yaoyuan Zhang",
-        "Jinyang Guo",
-        "Jian Yang",
-        "Aishan Liu",
-        "Yingxun Wang",
-        "Xianglong Liu"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-02",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [],
-      "cover_image": "assets/img/covers/arxiv-2611-03765.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-03765-p2.jpg",
-        "assets/img/covers/arxiv-2611-03765-p3.jpg",
-        "assets/img/covers/arxiv-2611-03765-p4.jpg"
-      ],
-      "arxiv_id": "2611.03765",
-      "abs_url": "http://arxiv.org/abs/2611.03765v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03765v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 6,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2654,8 +2934,16 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Zaragoza",
+        "University of Bologna",
+        "Clermont Auvergne INP"
+      ],
+      "method_tags": [
+        "shape servoing",
+        "Jacobian-based control",
+        "deformable object manipulation"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
@@ -2702,12 +2990,19 @@
       "venue_announced": "",
       "score": 6,
       "judge": {},
-      "institutions": [],
-      "method_tags": [],
+      "institutions": [
+        "University of Padua",
+        "National Research Council of Italy"
+      ],
+      "method_tags": [
+        "Causal Inference",
+        "sim-to-real",
+        "Human-Aware Motion Planning"
+      ],
       "platform": [],
       "sim_stack": [],
       "method_family": "",
-      "real_robot": "",
+      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
