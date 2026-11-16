@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "count": 12,
+  "count": 13,
   "papers": [
     {
       "id": "arxiv-2611-10410",
@@ -402,6 +402,60 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-10806",
+      "source": "arxiv_discover",
+      "title": "WARP-JEPA: World-Model-in-the-Loop Amortized Rollout Planning for Frozen Hierarchical Joint-Embedding Predictive Architectures",
+      "title_zh": "WARP-JEPA: World-Model-in-the-Loop Amortized Rollout Planning for Frozen Hierarchical Joint-Embedding Predictive Architectures",
+      "tldr_zh": "Hierarchical Joint-Embedding Predictive Architectures (H-JEP",
+      "cover_zh": "Hierarchical Joint-Embedding Predictive Architectures (H-JEP",
+      "abstract_zh": "Hierarchical Joint-Embedding Predictive Architectures (H-JEPA) enable long-horizon visual control but rely on costly test-time gradient descent for planning. Our analysis reveals that iterative optimization consumes up to 97.7% of episode runtime and that low predicted rollout costs do not necessarily translate into successful control. We further identify a planning-horizon asymmetry between long-horizon top-level composition and short two-step subordinate planning. To address these challenges, we propose WARP-JEPA, a hierarchical amortized planning framework that replaces online gradient optimization with learned multi-candidate trajectory proposers while keeping the world models frozen. WARP-JEPA combines a lightweight world-model-in-the-loop causal Transformer at the top level with parallel residual MLPs at subordinate levels. The proposers are trained using model-based rollout costs and best-of-K behavior cloning, enabling efficient candidate selection without test-time gradient optimization. Across 30 frozen H-JEPA models on four benchmarks, WARP-JEPA achieves 9.6-18.8x faster episode inference on long-horizon tasks (2.9-3.0x on Cube) and improves task success by up to 33.3 percentage points. These results demonstrate that amortized planning can substantially improve both inference efficiency and control performance without retraining the world models. Code is available at https://github.com/hideinsewer/WARP-JEPA.",
+      "authors": [
+        "Junjie Li",
+        "Zhaojiacheng Zhou",
+        "Kaixiang Wang"
+      ],
+      "authors_all": [
+        "Junjie Li",
+        "Zhaojiacheng Zhou",
+        "Kaixiang Wang",
+        "Zihan Wang",
+        "QingSong Zhao",
+        "Jiong Lou",
+        "Jie Li"
+      ],
+      "primary_category": "",
+      "published": "2026-11-07",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-10806.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-10806-p2.jpg",
+        "assets/img/covers/arxiv-2611-10806-p3.jpg",
+        "assets/img/covers/arxiv-2611-10806-p4.jpg"
+      ],
+      "arxiv_id": "2611.10806",
+      "abs_url": "http://arxiv.org/abs/2611.10806v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10806v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 23,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2611-10451",
