@@ -1,0 +1,402 @@
+{
+  "date": "2026-11-13",
+  "count": 8,
+  "papers": [
+    {
+      "id": "arxiv-2611-17626",
+      "source": "arxiv",
+      "title": "Joint World Action Models through Differentiable Trajectory Optimization",
+      "title_zh": "Joint World Action Models through Differentiable Trajectory Optimization",
+      "tldr_zh": "Joint world action models (WAMs) generate future actions and",
+      "cover_zh": "Joint world action models (WAMs) generate future actions and",
+      "abstract_zh": "Joint world action models (WAMs) generate future actions and states together, modeling world-action trajectories rather than actions alone. However, trajectory imitation does not ensure that these trajectories are task-effective or consistent with dynamics. We present textbf{world action trajectory optimization (WATO)}, which optimizes generated actions and future states jointly for control. WATO uses both as references in a dynamics-constrained trajectory optimization problem and differentiates the task loss through the optimized trajectory to train the generator. This makes generated trajectories task-aware and dynamics-consistent while using trajectory optimization only during training. At deployment, WATO directly generates candidate trajectories and ranks them with a world model, without iterative trajectory optimization. Across $7$ visual control environments, WATO improves average success from $79.9\\%$ for the imitation joint WAM to $91.7\\%$, outperforming strong model-based, goal-conditioned RL, and generative control baselines. Compared with cross-entropy method (CEM), WATO is on average $11.5×$ faster and uses $600.5×$ fewer world model evaluations at deployment.",
+      "authors": [
+        "Mintae Kim",
+        "Koushil Sreenath"
+      ],
+      "authors_all": [
+        "Mintae Kim",
+        "Koushil Sreenath"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Koushil Sreenath"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-17626.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17626-p2.jpg",
+        "assets/img/covers/arxiv-2611-17626-p3.jpg",
+        "assets/img/covers/arxiv-2611-17626-p4.jpg"
+      ],
+      "arxiv_id": "2611.17626",
+      "abs_url": "http://arxiv.org/abs/2611.17626v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17626v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 26,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17619",
+      "source": "arxiv",
+      "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "title_zh": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "tldr_zh": "Human demonstrations are becoming the main source of data fo",
+      "cover_zh": "Human demonstrations are becoming the main source of data fo",
+      "abstract_zh": "Human demonstrations are becoming the main source of data for dexterous manipulation, and real-to-sim-to-real pipelines multiply each demonstration in simulation. These pipelines rebuild the interaction from vision, which recovers how the hand moves. Which fingers touch, when, and how hard remain unobserved, because a hand pose shows where each finger stops on the surface rather than how far it is driven to close. This gap is a force gap: on held-out recordings, a hand policy that imitates the observed pose grips with 0.31x the recorded force, and a policy trained on physics replays of vision-tracked poses grips with 1.55x. TouchTwin closes the gap with measured human touch. Each selected TouchScale recording, captured with head and wrist RGB-D cameras and an 880-taxel glove, is rebuilt in MuJoCo. Coding agents write the objects as physics-tested programs, and a per-subject tactile hand replays the interaction with the recorded touch setting the contact and the closing force of each finger. In simulation, a policy trained on touch-grounded replays grips at 0.99x the recorded force and succeeds in 20/20 trials on held-out recordings and 35/36 unseen perturbations; a contact predictor trained on them misses 13% of real contact frames, against 32% for vision-based replays. Each replay also seeds perturbed demonstrations with simulated contact and force labels, rendered as realistic video in new views and scenes.",
+      "authors": [
+        "Huiwen Han",
+        "Nuo Chen",
+        "Ziyao Zeng"
+      ],
+      "authors_all": [
+        "Huiwen Han",
+        "Nuo Chen",
+        "Ziyao Zeng",
+        "Dayou Li",
+        "Hao Wang",
+        "Amir Hossein Rahmati",
+        "Xiaoning Qian",
+        "Bangya Liu",
+        "Zhiwen Fan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17619.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17619-p2.jpg",
+        "assets/img/covers/arxiv-2611-17619-p3.jpg",
+        "assets/img/covers/arxiv-2611-17619-p4.jpg"
+      ],
+      "arxiv_id": "2611.17619",
+      "abs_url": "http://arxiv.org/abs/2611.17619v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17619v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17775",
+      "source": "arxiv",
+      "title": "Beyond Prediction Gain: LASR as a Metric for Action-Grounded Latents in World Models",
+      "title_zh": "Beyond Prediction Gain: LASR as a Metric for Action-Grounded Latents in World Models",
+      "tldr_zh": "World models that support planning, control, and interpretab",
+      "cover_zh": "World models that support planning, control, and interpretab",
+      "abstract_zh": "World models that support planning, control, and interpretable reasoning require latent representations that genuinely encode action. Yet the large-scale video data from which such models are learned overwhelmingly lack action annotations. Latent-action models infer action-like variables from observation sequences, enabling action-aware learning from unlabeled videos or trajectories. A fundamental concern, however, remains: a latent that improves future prediction may simply encode the current state, episode progress, task identity, or other predictive shortcuts. Existing evaluation practices---reconstruction loss, rollout fidelity, action recovery, or downstream performance---cannot isolate this distinction. We introduce the Latent Action Support Ratio (LASR), a dimensionless metric that measures, under offline evaluation on held-out data, whether a learned latent provides predictive support for action-related targets beyond the current state and non-action alternatives. LASR provides two complementary summaries: GeoLASR captures typical support, while WorstLASR identifies the weakest case. We instantiate the LASR benchmark with recorded actions and corresponding physical state changes as targets, episode-held-out splits, one predictor type for all comparisons, and positive and negative controls. Experiments on recorded robot manipulation data and a matched multi-task panel demonstrate that LASR detects known action information, rejects representative non-action shortcuts, and enables graded comparisons among imperfect latent representations. We further use LASR to train and audit a lightweight residual adapter, obtaining descriptively better point estimates whose uncertainty is assessed with paired comparisons. LASR thus provides a principled offline protocol for measuring action-related predictive support in world-model latents.",
+      "authors": [
+        "Yu Zhou",
+        "Changsong Lei",
+        "Yixiang Wei"
+      ],
+      "authors_all": [
+        "Yu Zhou",
+        "Changsong Lei",
+        "Yixiang Wei",
+        "Kairui Wen",
+        "Huankun Sheng",
+        "Ming Li",
+        "Yeying Fan",
+        "Yu-Hui Wen",
+        "Yong-Jin Liu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17775.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17775-p2.jpg",
+        "assets/img/covers/arxiv-2611-17775-p3.jpg",
+        "assets/img/covers/arxiv-2611-17775-p4.jpg"
+      ],
+      "arxiv_id": "2611.17775",
+      "abs_url": "http://arxiv.org/abs/2611.17775v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17775v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17831",
+      "source": "arxiv",
+      "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+      "title_zh": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+      "tldr_zh": "World-model video encoders such as V-JEPA learn how scenes c",
+      "cover_zh": "World-model video encoders such as V-JEPA learn how scenes c",
+      "abstract_zh": "World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs. But each caption or question names only a few attributes of a clip, so the model learns to retrieve those attributes rather than to read the clip, and the dynamics the encoder carries go unused: on the same items, a linear probe reads speed from frozen V-JEPA features at 87% while the VLM answers at chance. We show where dynamics lives in a frozen encoder: in a subspace shared across videos for predictive encoders such as V-JEPA, but not as a shared component of frame-wise, text-aligned encoders such as SigLIP. We then build counterfactual supervision that makes the language model read it: pixel transformations turn public videos into answer-balanced variants whose answers are set by the transformation and differ only in the change. Trained in a single stage on 4.53M public samples with 32 visual tokens per frame, where open video LLMs use several stages, 9M to 172M samples and 64 to 256 tokens per frame on average, the resulting V-JEPA-LM models (1B to 8B, Qwen3 and Llama) lead every size class in average score across eleven video benchmarks; our 4B model scores 72.1, against 61.1 for the best open 4B and 64.8 for the best open 8B model. A controlled encoder x supervision study shows that the encoder decides what can be read and the supervision what is read: at a matched budget, counterfactual supervision adds 4.5 points on average and 38 on the speed questions of natural benchmarks. Code and models: https://github.com/kkt94/Llama-V-JEPA-LM.",
+      "authors": [
+        "Keuntae Kim",
+        "Dongjun Kim",
+        "Yong Suk Choi"
+      ],
+      "authors_all": [
+        "Keuntae Kim",
+        "Dongjun Kim",
+        "Yong Suk Choi"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17831.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17831-p2.jpg",
+        "assets/img/covers/arxiv-2611-17831-p3.jpg",
+        "assets/img/covers/arxiv-2611-17831-p4.jpg"
+      ],
+      "arxiv_id": "2611.17831",
+      "abs_url": "http://arxiv.org/abs/2611.17831v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17831v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 17,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17755",
+      "source": "arxiv",
+      "title": "VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image",
+      "title_zh": "VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image",
+      "tldr_zh": "Dense hand contact estimation from a single RGB image is a f",
+      "cover_zh": "Dense hand contact estimation from a single RGB image is a f",
+      "abstract_zh": "Dense hand contact estimation from a single RGB image is a foundational primitive for dexterous manipulation and 3D interaction analysis. Direct predictors typically decode the entire per-vertex contact map from one shared query, leaving individual vertices ungrounded in the image and smearing contact across adjacent, non-touching surfaces. We present VACO, a vertex-aligned decoder in which each MANO vertex samples local image features at its projected location. A hand-reconstruction backbone, jointly trained for reconstruction and contact, predicts these locations at inference without an auxiliary reconstructor. Training uses noise-perturbed ground-truth projections and end-to-end feature adaptation to improve robustness and contact-sensitive features. A single VACO checkpoint sets a new state of the art on five benchmarks spanning hand-object, hand-human, hand-scene, and bimanual interactions. It improves F1 by +20.7 pp over the strongest prior direct predictor on Hi4D and generalizes to the held-out HOT3D and HOCap, with gains of +5.5 and +2.7 pp. The resulting contact predictions also improve downstream HOI reconstruction.",
+      "authors": [
+        "Binhong Ye",
+        "Jin-Chuan Shi",
+        "Tao Liu"
+      ],
+      "authors_all": [
+        "Binhong Ye",
+        "Jin-Chuan Shi",
+        "Tao Liu",
+        "Xin Wang",
+        "Hao Chen",
+        "Chunhua Shen"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17755.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17755-p2.jpg",
+        "assets/img/covers/arxiv-2611-17755-p3.jpg",
+        "assets/img/covers/arxiv-2611-17755-p4.jpg"
+      ],
+      "arxiv_id": "2611.17755",
+      "abs_url": "http://arxiv.org/abs/2611.17755v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17755v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17631",
+      "source": "arxiv",
+      "title": "On the Utility of Pre-Trained Visual Representations for Policy Learning of Contact-Rich Insertion Tasks",
+      "title_zh": "On the Utility of Pre-Trained Visual Representations for Policy Learning of Contact-Rich Insertion Tasks",
+      "tldr_zh": "Visuomotor imitation learning has become a predominant parad",
+      "cover_zh": "Visuomotor imitation learning has become a predominant parad",
+      "abstract_zh": "Visuomotor imitation learning has become a predominant paradigm for real-world robotic manipulation, yet it remains data-inefficient and brittle to task-irrelevant visual shifts. Pre-trained visual representations promise to ease this burden by distilling priors from internet-scale data, but the ``right'' representation for robotics remains unresolved: existing studies span broad but sparse task distributions and reach conclusions that vary and even conflict, pointing to strong task and setting dependence. We examine this question by bringing a magnifying glass to a common contact-rich manipulation task: insertion. We compare representations from widely used vision foundation models against an explicit contact-centric representation on two closely related insertion tasks, perturb each along controlled axes of occlusion and physical tolerance, and test whether conclusions transfer to the real world. Task dependence proves to be more subtle than previous, broadly scoped evaluations revealed: the best representation differs even between our near-identical tasks, and small changes shift trends in unpredictable ways. Despite this variability, results across simulation and real-world experiments demonstrate the distinct value of spatially-grounded, and in particular, contact-centric information for contact-rich policy learning, while underscoring how difficult it is to estimate such cues reliably under realistic visual complexity and sensor noise. We hope these findings motivate further study of representations in contact-rich manipulation, along with advances in contact perception and its integration into visuomotor policy learning.",
+      "authors": [
+        "Leon Kim",
+        "Dinesh Jayaraman",
+        "Michael Posa"
+      ],
+      "authors_all": [
+        "Leon Kim",
+        "Dinesh Jayaraman",
+        "Michael Posa"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17631.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17631-p2.jpg",
+        "assets/img/covers/arxiv-2611-17631-p3.jpg",
+        "assets/img/covers/arxiv-2611-17631-p4.jpg"
+      ],
+      "arxiv_id": "2611.17631",
+      "abs_url": "http://arxiv.org/abs/2611.17631v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17631v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17751",
+      "source": "arxiv",
+      "title": "When Does Cross-View Consistency Matter in Multi-View Appearance Augmentation? A Controlled Study for Visuomotor Policies",
+      "title_zh": "When Does Cross-View Consistency Matter in Multi-View Appearance Augmentation? A Controlled Study for Visuomotor Policies",
+      "tldr_zh": "Multi-view visual augmentation often seeks consistency acros",
+      "cover_zh": "Multi-view visual augmentation often seeks consistency acros",
+      "abstract_zh": "Multi-view visual augmentation often seeks consistency across cameras, but it is unclear which forms of consistency matter for downstream control. We use simulation-state replay to manipulate cross-view coupling while preserving the per-camera perturbation distributions, physical trajectories, and action labels. Across seven LIBERO manipulation tasks, marginal-matched changes in global appearance, ghost injection, and target color have small average costs for a late-fusion Diffusion Policy: point estimates are near zero or negative, and the largest upper endpoint of the 90% posterior credible intervals is 2.55 percentage points. In contrast, geometrically anti-coupled observations reduce success by 3.30 percentage points relative to coupled observations (90% CrI [0.64, 6.28]), with displacement magnitude, direction marginals, and the number of affected views matched. Camera interventions reveal substantial dependence on wrist-view geometry, while feature analysis shows appearance sensitivity patterns associated with the factors randomized during training. ACT shows a higher target-color cost estimate than DP, with uncertainty that includes zero and sensitivity to task composition. Within the tested tasks and policy configurations, these findings motivate selective consistency constraints: appearance coupling can sometimes be relaxed, whereas task-relevant geometry and cross-view spatial correspondence warrant protection.",
+      "authors": [
+        "Zixuan Jiang"
+      ],
+      "authors_all": [
+        "Zixuan Jiang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17751.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17751-p2.jpg",
+        "assets/img/covers/arxiv-2611-17751-p3.jpg",
+        "assets/img/covers/arxiv-2611-17751-p4.jpg"
+      ],
+      "arxiv_id": "2611.17751",
+      "abs_url": "http://arxiv.org/abs/2611.17751v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17751v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 12,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-17658",
+      "source": "arxiv",
+      "title": "Imitation Policies Learn a Proprioceptive Anchor: A Predictive Law for Perception Noise and Its Closed Loop Cost",
+      "title_zh": "Imitation Policies Learn a Proprioceptive Anchor: A Predictive Law for Perception Noise and Its Closed Loop Cost",
+      "tldr_zh": "Imitation policies for robot manipulation are often trained",
+      "cover_zh": "Imitation policies for robot manipulation are often trained",
+      "abstract_zh": "Imitation policies for robot manipulation are often trained on noisy object positions, and they learn to discount the noisy reading. We show how much they discount it, and why. Because demonstrators steer toward the object, the robot's own state carries information about where the object is. A trained policy combines this proprioceptive anchor with the reading and weights the reading by $α= V/(V + s^2)$, where $s^2$ is the reading noise and $V$ the anchor's error variance. $V$ belongs to the learner and is far smaller than a linear model of the demonstrations implies, which is why classical errors-in-variables (EIV) regression overestimates $α$. Measured once, $V$ predicted ten held-out sensitivities across two robomimic tasks, two learners and four new noise levels, with mean absolute error 0.025 against 0.37 for classical EIV, and a parameter-free bias test rules out the simpler explanation that the policies just overestimate the noise. The discount does not carry over to deployment, where the policy produces its own state: closed-loop sensitivity to a persistent reading offset exceeded $α$ in all 15 policies that passed the registered gates, although the stricter registered prediction, that all would follow the offset fully, held for 8 of them. Post hoc, lower $α$ went with lower success, steeply for diffusion, and a registered prospective test confirmed this for diffusion on Can at two new noise levels: the measured $α$ predicted success before any rollout, within 0.03 (95% intervals $± 0.08$), although training noise predicts it equally well. Every test was registered before its data, including the classical benchmark that failed, and all other analyses are labelled post hoc; all results are in simulation with synthetic Gaussian noise.",
+      "authors": [
+        "Christopher Malili"
+      ],
+      "authors_all": [
+        "Christopher Malili"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-17658.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-17658-p2.jpg",
+        "assets/img/covers/arxiv-2611-17658-p3.jpg",
+        "assets/img/covers/arxiv-2611-17658-p4.jpg"
+      ],
+      "arxiv_id": "2611.17658",
+      "abs_url": "http://arxiv.org/abs/2611.17658v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17658v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    }
+  ]
+}

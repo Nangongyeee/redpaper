@@ -1,0 +1,113 @@
+{
+  "id": "arxiv-2611-17394",
+  "source": "arxiv",
+  "title": "Agentic-Teacher: An Agentic Data Engine for Failure-Driven VLA Post-Training",
+  "title_zh": "Agentic-Teacher: An Agentic Data Engine for Failure-Driven VLA Post-Training",
+  "abstract": "Improving a pretrained vision-language-action (VLA) model requires demonstrations that address its weaknesses and provide effective supervision for learning. Coding agents can autonomously generate demonstrations through environment interaction, yet successful execution alone does not ensure effective supervision for VLA learning. We introduce Agentic-Teacher, an autonomous data engine for failure-driven VLA post-training. Given a VLA checkpoint, a task specification, and configured environment tools, the engine analyzes failed rollouts, selects intervention states, and iteratively develops closed-loop code policies through execution feedback. Validated policies become reusable demonstration generators that collect successful continuations from states where the VLA struggles. To make these demonstrations suitable for learning, Agentic-Teacher introduces temporally correlated action noise to broaden state-action coverage, removes idle frames while preserving gripper transitions, and filters trajectories using the frozen base model's flow-matching loss. The resulting demonstrations are combined with successful VLA rollouts for post-training, yielding an updated policy that operates without coding-agent assistance. Agentic-Teacher thus connects the weaknesses of a target VLA to both the generation and curation of its training data. In simulation, it improves $π_0$ success rates from 79.4% to 87.8% on LIBERO-10, from 80.4% to 90.6% on MetaWorld-10, and from 0% to 30.0% across three RoboCasa tasks.",
+  "abstract_zh": "Improving a pretrained vision-language-action (VLA) model requires demonstrations that address its weaknesses and provide effective supervision for learning. Coding agents can autonomously generate demonstrations through environment interaction, yet successful execution alone does not ensure effective supervision for VLA learning. We introduce Agentic-Teacher, an autonomous data engine for failure-driven VLA post-training. Given a VLA checkpoint, a task specification, and configured environment tools, the engine analyzes failed rollouts, selects intervention states, and iteratively develops closed-loop code policies through execution feedback. Validated policies become reusable demonstration generators that collect successful continuations from states where the VLA struggles. To make these demonstrations suitable for learning, Agentic-Teacher introduces temporally correlated action noise to broaden state-action coverage, removes idle frames while preserving gripper transitions, and filters trajectories using the frozen base model's flow-matching loss. The resulting demonstrations are combined with successful VLA rollouts for post-training, yielding an updated policy that operates without coding-agent assistance. Agentic-Teacher thus connects the weaknesses of a target VLA to both the generation and curation of its training data. In simulation, it improves $π_0$ success rates from 79.4% to 87.8% on LIBERO-10, from 80.4% to 90.6% on MetaWorld-10, and from 0% to 30.0% across three RoboCasa tasks.",
+  "tldr_zh": "Improving a pretrained vision-language-action (VLA) model re",
+  "cover_zh": "Improving a pretrained vision-language-action (VLA) model re",
+  "authors": [
+    {
+      "name": "Gongyue Teng",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuqing Xie",
+      "affiliation": ""
+    },
+    {
+      "name": "Yixian Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Feng Gao",
+      "affiliation": ""
+    },
+    {
+      "name": "Shu'ang Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Jiaji Rao",
+      "affiliation": ""
+    },
+    {
+      "name": "Sukai Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Guanghui Ren",
+      "affiliation": ""
+    },
+    {
+      "name": "Ya Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Maoqing Yao",
+      "affiliation": ""
+    },
+    {
+      "name": "Yu Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chao Yu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xinlei Chen",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-12",
+  "updated": "2026-11-12",
+  "arxiv_id": "2611.17394",
+  "pdf_url": "https://arxiv.org/pdf/2611.17394v1",
+  "abs_url": "http://arxiv.org/abs/2611.17394v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-17394.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-17394-p2.jpg",
+    "assets/img/covers/arxiv-2611-17394-p3.jpg",
+    "assets/img/covers/arxiv-2611-17394-p4.jpg"
+  ],
+  "channels": [
+    "manipulation"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 15,
+  "source_tags": [],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（vision-language-action、π_0、robocasa、libero）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 15 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
