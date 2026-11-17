@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "count": 25,
+  "count": 32,
   "papers": [
     {
       "id": "arxiv-2611-18365",
@@ -374,9 +374,9 @@
       "primary_category": "cs.RO",
       "published": "2026-11-13",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
-        "teleop"
+        "teleop",
+        "loco-manip-wbc"
       ],
       "badges": [],
       "cover_image": "assets/img/covers/arxiv-2611-18372.jpg",
@@ -388,6 +388,110 @@
       "arxiv_id": "2611.18372",
       "abs_url": "http://arxiv.org/abs/2611.18372v1",
       "pdf_url": "https://arxiv.org/pdf/2611.18372v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-18894",
+      "source": "arxiv",
+      "title": "CISyn: Human Mesh Recovery in Close Interactions with Physics-Simulated Synthetic Data",
+      "title_zh": "CISyn: Human Mesh Recovery in Close Interactions with Physics-Simulated Synthetic Data",
+      "tldr_zh": "3D human mesh recovery (HMR) in close-interaction scenarios",
+      "cover_zh": "3D human mesh recovery (HMR) in close-interaction scenarios",
+      "abstract_zh": "3D human mesh recovery (HMR) in close-interaction scenarios is hindered by the lack of large-scale, accurately annotated training data: real capture is expensive, and existing synthetic datasets rarely include physical contact. We introduce CISyn, a large-scale synthetic dataset purpose-built for close human-human interactions, generated via physics simulation and Blender-based rendering. By simulating collision dynamics between SMPL-X-rigged humanoids, CISyn naturally produces the contact, mutual occlusion, and pose entanglement that characterize close-interaction scenes, with no manual annotation effort. The released set provides 25,000 sequences with accurate 3D annotations. We further propose an uncertainty-aware loss that allows models to learn more effectively from the heavily occluded examples in our data. Augmenting state-of-the-art HMR training with CISyn and replacing the regression loss with our uncertainty-aware variant yields consistent improvements on close-interaction benchmarks, validating CISyn as a scalable complement to real-world data. The dataset, generation pipeline, and code are available at https://github.com/yfde/CISyn.",
+      "authors": [
+        "Yufan Deng",
+        "Lorenza Prospero",
+        "Christian Rupprecht"
+      ],
+      "authors_all": [
+        "Yufan Deng",
+        "Lorenza Prospero",
+        "Christian Rupprecht"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-13",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18894.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18894-p2.jpg",
+        "assets/img/covers/arxiv-2611-18894-p3.jpg",
+        "assets/img/covers/arxiv-2611-18894-p4.jpg"
+      ],
+      "arxiv_id": "2611.18894",
+      "abs_url": "http://arxiv.org/abs/2611.18894v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18894v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 20,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-18976",
+      "source": "arxiv",
+      "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+      "title_zh": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+      "tldr_zh": "Recent humanoid loco-manipulation in articulated environment",
+      "cover_zh": "Recent humanoid loco-manipulation in articulated environment",
+      "abstract_zh": "Recent humanoid loco-manipulation in articulated environments has largely focused on geometry-dominant interactions, where success is primarily determined by geometric alignment and motion execution. In contrast, forceful multi-finger manipulation requires the robot to adapt to real-world uncertainties in contact and interaction dynamics. We present Tactile-Driven Motor Adaptation (TMA) and an integrated whole-body system for zero-shot sim-to-real forceful humanoid manipulation, and study round-doorknob opening as a challenging benchmark requiring stable multi-finger frictional grasping, sufficient torque generation without slip, force-regulated pushing, and whole-body stability. TMA structures policy learning around interactions observable through tactile feedback, uses cone geometry as an inductive bias for multi-finger contact representation, and adapts motor behavior online from tactile history. An upper-body manipulation policy is trained alongside a pretrained general locomotion controller to coordinate dexterous interaction and whole-body stabilization. Trained entirely in simulation, TMA transfers zero-shot to a Unitree G1 humanoid with BrainCo Revo2 multi-fingered hands and substantially outperforms standard Rapid Motor Adaptation (RMA) and reactive tactile policy baselines across four commercial round doorknobs in the real world.",
+      "authors": [
+        "Yiting Chen",
+        "Kelin Yu",
+        "Sarthak Kaingade"
+      ],
+      "authors_all": [
+        "Yiting Chen",
+        "Kelin Yu",
+        "Sarthak Kaingade",
+        "Bryan Trinh",
+        "Kaiyu Hang",
+        "Roberto Martin-martin",
+        "Nima Fazeli",
+        "X. Alice Wu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "locomotion",
+        "sim2real"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18976.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18976-p2.jpg",
+        "assets/img/covers/arxiv-2611-18976-p3.jpg",
+        "assets/img/covers/arxiv-2611-18976-p4.jpg"
+      ],
+      "arxiv_id": "2611.18976",
+      "abs_url": "http://arxiv.org/abs/2611.18976v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18976v1",
       "venue": "",
       "venue_announced": "",
       "score": 20,
@@ -647,6 +751,52 @@
       "arxiv_id": "2611.17755",
       "abs_url": "http://arxiv.org/abs/2611.17755v1",
       "pdf_url": "https://arxiv.org/pdf/2611.17755v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-18979",
+      "source": "arxiv",
+      "title": "Probing Where Surprise Happens: Localized Violation-of-Expectation Evaluation of Video World Models",
+      "title_zh": "Probing Where Surprise Happens: Localized Violation-of-Expectation Evaluation of Video World Models",
+      "tldr_zh": "Violation-of-expectation (VOE) benchmarks evaluate intuitive",
+      "cover_zh": "Violation-of-expectation (VOE) benchmarks evaluate intuitive",
+      "abstract_zh": "Violation-of-expectation (VOE) benchmarks evaluate intuitive physics in video world models by testing whether physically impossible events produce greater prediction errors than matched possible events. However, conventional VOE evaluations aggregate prediction errors across space and time, making it unclear whether successful discrimination reflects model's understanding of physical violations at the locations and time where they occur. To address this limitation, we introduce localized VOE evaluation, a framework that measures prediction error differences between possible and impossible events within spatial regions and temporal intervals associated with physical violations. We compare global, temporally localized, and spatiotemporally localized evaluations of V-JEPA models pretrained on developmental egocentric videos or large-scale natural video datasets. Our results reveal that global and localized judgments can diverge in both directions: global aggregation can either obscure correct localized discrimination or produce apparent discrimination without corresponding localized evidence. During continued pretraining on developmental egocentric videos, agreement between global and localized judgments changes non-monotonically, while confidence in localized judgments increases despite modest improvements in accuracy. Together, these findings establish localized VOE evaluation as a complementary diagnostic for assessing intuitive physics in video world models and demonstrate that global prediction errors do not necessarily reflect the spatiotemporal evidence of physical violations.",
+      "authors": [
+        "Yanbin Xu",
+        "Ming bo Cai"
+      ],
+      "authors_all": [
+        "Yanbin Xu",
+        "Ming bo Cai"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18979.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18979-p2.jpg",
+        "assets/img/covers/arxiv-2611-18979-p3.jpg",
+        "assets/img/covers/arxiv-2611-18979-p4.jpg"
+      ],
+      "arxiv_id": "2611.18979",
+      "abs_url": "http://arxiv.org/abs/2611.18979v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18979v1",
       "venue": "",
       "venue_announced": "",
       "score": 15,
@@ -1066,6 +1216,148 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-18891",
+      "source": "arxiv",
+      "title": "Bring Back Language to Actions: Restoring VLM capabilities in VLA Models via Parameter Merging",
+      "title_zh": "Bring Back Language to Actions: Restoring VLM capabilities in VLA Models via Parameter Merging",
+      "tldr_zh": "Vision-Language-Action models (VLAs) are obtained by fine-tu",
+      "cover_zh": "Vision-Language-Action models (VLAs) are obtained by fine-tu",
+      "abstract_zh": "Vision-Language-Action models (VLAs) are obtained by fine-tuning pre-trained Vision-Language Models (VLMs) on robot demonstration data, enabling action prediction from visual observations and language instructions. However, this fine-tuning induces catastrophic forgetting, substantially degrading the semantic and visual grounding capabilities of the original VLM. We address this by merging the parameters of a VLM and its VLA derivative without retraining either model. Concretely, we extract the task vector (the difference between VLA and VLM weights) and decompose it via Singular Value Decomposition. For each component, we learn a scalar mixing coefficient controlling how much of the VLA adaptation is retained, optimised to jointly preserve action prediction and vision-language capabilities. Experiments show that our merged model performs well on both axes simultaneously, consistently outperforming established merging baselines.",
+      "authors": [
+        "Mohamed Salim Aissi",
+        "Olivier Sigaud",
+        "Laure Soulier"
+      ],
+      "authors_all": [
+        "Mohamed Salim Aissi",
+        "Olivier Sigaud",
+        "Laure Soulier",
+        "Nicolas Thome"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18891.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18891-p2.jpg",
+        "assets/img/covers/arxiv-2611-18891-p3.jpg",
+        "assets/img/covers/arxiv-2611-18891-p4.jpg"
+      ],
+      "arxiv_id": "2611.18891",
+      "abs_url": "http://arxiv.org/abs/2611.18891v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18891v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-18919",
+      "source": "arxiv",
+      "title": "Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality",
+      "title_zh": "Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality",
+      "tldr_zh": "Robots in homes, warehouses and farms must pick up objects t",
+      "cover_zh": "Robots in homes, warehouses and farms must pick up objects t",
+      "abstract_zh": "Robots in homes, warehouses and farms must pick up objects they have never seen, usually without a 3D model or a category label. A grasping policy that works directly on the point cloud from a depth sensor needs only the geometry the robot observes, so it applies to any new object. Offline grasp generators such as Contact-GraspNet work this way, but they rank grasps by learned plausibility rather than by whether the grasp actually lifts the object. Reinforcement learning (RL) can optimize for that directly and make a point-cloud grasping policy much better on average, yet it leaves specific grasps persistently unsolved. We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points. The person contributes only where to grasp; the robot chooses its own approach. In simulation, RL raises success on unseen objects from 55% with Contact-GraspNet to 83%. Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects.",
+      "authors": [
+        "Achyuthan Unni Krishnan",
+        "Karthik Rengarajan",
+        "Bharath Narasimhan"
+      ],
+      "authors_all": [
+        "Achyuthan Unni Krishnan",
+        "Karthik Rengarajan",
+        "Bharath Narasimhan",
+        "Chris von Csefalvay"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18919.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18919-p2.jpg",
+        "assets/img/covers/arxiv-2611-18919-p3.jpg",
+        "assets/img/covers/arxiv-2611-18919-p4.jpg"
+      ],
+      "arxiv_id": "2611.18919",
+      "abs_url": "http://arxiv.org/abs/2611.18919v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18919v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-18982",
+      "source": "arxiv",
+      "title": "Robot Demonstration Videos Should Include Transparency Disclosures",
+      "title_zh": "Robot Demonstration Videos Should Include Transparency Disclosures",
+      "tldr_zh": "This paper argues that the robotics and AI community should",
+      "cover_zh": "This paper argues that the robotics and AI community should",
+      "abstract_zh": "This paper argues that the robotics and AI community should adopt disclosure standards for demonstration videos. As physical and financial constraints limit direct public access to embodied AI, public dissemination of progress in robotics is mainly through curated demonstration videos rather than direct experience with the technology. In a large-scale (N=9,341), pre-registered experiment across six countries, we find that the general public struggles to discern both the visual authenticity (e.g., distinguishing real footage from CGI) and behavioral authenticity (e.g., distinguishing autonomy from teleoperation) of robot demonstration videos. The omission of these details distorts public perception, leading people to overestimate the ability of robots to perform tasks and navigate real world environments. Using evidence from behavioral science, we design a disclosure intervention and demonstrate that the inclusion of clear disclosures in robot demonstration videos significantly improves discernment of visual and behavioral authenticity, as well as understanding robots' capabilities. We propose the adoption of disclosure standards for robot demonstration videos to accurately calibrate public expectations and promote transparency in robotics research.",
+      "authors": [
+        "Nozomi Nakajima"
+      ],
+      "authors_all": [
+        "Nozomi Nakajima"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-13",
+      "channels": [
+        "teleop"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-18982.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-18982-p2.jpg",
+        "assets/img/covers/arxiv-2611-18982-p3.jpg",
+        "assets/img/covers/arxiv-2611-18982-p4.jpg"
+      ],
+      "arxiv_id": "2611.18982",
+      "abs_url": "http://arxiv.org/abs/2611.18982v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18982v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 9,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-17658",
       "source": "arxiv",
       "title": "Imitation Policies Learn a Proprioceptive Anchor: A Predictive Law for Perception Noise and Its Closed Loop Cost",
@@ -1298,6 +1590,52 @@
       "arxiv_id": "2611.18256",
       "abs_url": "http://arxiv.org/abs/2611.18256v1",
       "pdf_url": "https://arxiv.org/pdf/2611.18256v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-19009",
+      "source": "arxiv",
+      "title": "Role-Separated Diffusion Transformers: Global Rule Isolation and Deterministic Sampling Manifold Compression",
+      "title_zh": "Role-Separated Diffusion Transformers: Global Rule Isolation and Deterministic Sampling Manifold Compression",
+      "tldr_zh": "We present Role-Separated Diffusion Transformers (RoSeDiT),",
+      "cover_zh": "We present Role-Separated Diffusion Transformers (RoSeDiT),",
+      "abstract_zh": "We present Role-Separated Diffusion Transformers (RoSeDiT), a new diffusion transformer architecture that isolates the global rule from the image tokens. RoSeViT showed in visual reasoning that a vanilla ViT spreads a shared rule over all $L$ tokens at an entropy of order $Ld$, whereas an enforced controller route reduces it to order $d$. In class-conditional DiT and SiT, the class and the noise level are explicitly conditioned by adaLN, so a RoSeViT-style controller channel on the ViT side is insufficient to establish the full role separation. By introducing the adaLN listening mechanism, which makes adaLN compute under the controller's command, RoSeDiT brings the entropy theorem and role separation into the latent diffusion domain. Under the same SiT training and evaluation protocol at the same level of parameter count, RoSeDiT surpasses SiT at all four model scales at 400K steps, and RoSeDiT-L/2 even surpasses SiT-XL/2's 17.2 FID with 15.34 and 32% fewer parameters. RoSeDiT-XL/2 surpasses SiT-XL/2's 7M-step FID of 8.3 at 1.4M steps with 7.98, using one-fifth as many training steps. We further observe that models with the same denoising loss can have a large FID gap, which indicates a misalignment between the denoising objective and the image manifold. We formalize this phenomenon into Deterministic Sampling Manifold Compression (DSMC), a two-stage training schedule with which RoSeDiT-XL/2 surpasses SiT + REPA's 4M-step FID of 5.9 at 2.4M steps with 5.84.",
+      "authors": [
+        "Zhiguang Liu",
+        "Yi Shang"
+      ],
+      "authors_all": [
+        "Zhiguang Liu",
+        "Yi Shang"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-13",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-19009.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-19009-p2.jpg",
+        "assets/img/covers/arxiv-2611-19009-p3.jpg",
+        "assets/img/covers/arxiv-2611-19009-p4.jpg"
+      ],
+      "arxiv_id": "2611.19009",
+      "abs_url": "http://arxiv.org/abs/2611.19009v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.19009v1",
       "venue": "",
       "venue_announced": "",
       "score": 6,
