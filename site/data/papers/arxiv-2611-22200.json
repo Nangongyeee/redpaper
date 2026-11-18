@@ -1,0 +1,92 @@
+{
+  "id": "arxiv-2611-22200",
+  "source": "arxiv",
+  "title": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+  "title_zh": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+  "abstract": "Skeleton motion identifies people through body proportions and movement style, and skeleton streams are increasingly passed to third-party analytics that run action classifiers trained on raw data. A prior adversarial anonymizer adds a per-frame residual in the raw coordinate space but sees one frame at a time; motion retargeting needs a target skeleton and complete sequences, which rules out online use. We present MIRAGE, a target-free, causal anonymizer that adds an identity-reducing residual to each incoming frame in the raw coordinate space, computed by attention over past frames. One causal, optionally windowed mask governs every attention in a rotary-position encoder-decoder, and key/value caches let the trained function run frame by frame; on all 56,578 NTU 60 sequences, batched and streaming outputs differ by at most 7.2e-6 m. Reported results use an unbounded window, so per-stream state grows with stream length. We evaluate against a passive adversary that applies raw-trained identity models and an adaptive adversary that trains on the anonymizer's output, treating the adaptive adversary as the headline, on NTU RGB+D 60 over five generator seeds, alongside the per-frame residual anonymizer of Moon et al. trained identically. When consumers retrain on the released data, MIRAGE keeps 83.9% action recognition (raw 89.1%; Moon et al. 88.7%) while a retrained identity classifier reaches 43.4% re-identification (RI) over 40 subjects, against 69.4% for Moon et al. and 75.4% on raw data. The strongest adaptive attacker still reaches 49.3% (chance 2.5%), so MIRAGE reduces identity leakage; it does not anonymize. Against raw-trained (frozen) classifiers, MIRAGE lowers RI below the strongest retargeting baseline (10.36% vs. 22.09%), but frozen action recognition falls to 37.04% (vs. 75.82%), so at full residual scale it is not a drop-in replacement for raw input to existing frozen models.",
+  "abstract_zh": "Skeleton motion identifies people through body proportions and movement style, and skeleton streams are increasingly passed to third-party analytics that run action classifiers trained on raw data. A prior adversarial anonymizer adds a per-frame residual in the raw coordinate space but sees one frame at a time; motion retargeting needs a target skeleton and complete sequences, which rules out online use. We present MIRAGE, a target-free, causal anonymizer that adds an identity-reducing residual to each incoming frame in the raw coordinate space, computed by attention over past frames. One causal, optionally windowed mask governs every attention in a rotary-position encoder-decoder, and key/value caches let the trained function run frame by frame; on all 56,578 NTU 60 sequences, batched and streaming outputs differ by at most 7.2e-6 m. Reported results use an unbounded window, so per-stream state grows with stream length. We evaluate against a passive adversary that applies raw-trained identity models and an adaptive adversary that trains on the anonymizer's output, treating the adaptive adversary as the headline, on NTU RGB+D 60 over five generator seeds, alongside the per-frame residual anonymizer of Moon et al. trained identically. When consumers retrain on the released data, MIRAGE keeps 83.9% action recognition (raw 89.1%; Moon et al. 88.7%) while a retrained identity classifier reaches 43.4% re-identification (RI) over 40 subjects, against 69.4% for Moon et al. and 75.4% on raw data. The strongest adaptive attacker still reaches 49.3% (chance 2.5%), so MIRAGE reduces identity leakage; it does not anonymize. Against raw-trained (frozen) classifiers, MIRAGE lowers RI below the strongest retargeting baseline (10.36% vs. 22.09%), but frozen action recognition falls to 37.04% (vs. 75.82%), so at full residual scale it is not a drop-in replacement for raw input to existing frozen models.",
+  "tldr_zh": "Skeleton motion identifies people through body proportions a",
+  "cover_zh": "Skeleton motion identifies people through body proportions a",
+  "authors": [
+    {
+      "name": "Thomas Carr",
+      "affiliation": ""
+    },
+    {
+      "name": "Xujun Che",
+      "affiliation": ""
+    },
+    {
+      "name": "Depeng Xu",
+      "affiliation": ""
+    },
+    {
+      "name": "Shuhan Yuan",
+      "affiliation": ""
+    },
+    {
+      "name": "Aidong Lu",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV"
+  ],
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "arxiv_id": "2611.22200",
+  "pdf_url": "https://arxiv.org/pdf/2611.22200v1",
+  "abs_url": "http://arxiv.org/abs/2611.22200v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-22200.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-22200-p2.jpg",
+    "assets/img/covers/arxiv-2611-22200-p3.jpg",
+    "assets/img/covers/arxiv-2611-22200-p4.jpg"
+  ],
+  "channels": [
+    "loco-manip-wbc"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 14,
+  "source_tags": [],
+  "score": 19,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（motion retargeting、retargeting）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 14 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

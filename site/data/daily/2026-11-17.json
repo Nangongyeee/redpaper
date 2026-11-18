@@ -1,7 +1,135 @@
 {
   "date": "2026-11-17",
-  "count": 1,
+  "count": 8,
   "papers": [
+    {
+      "id": "arxiv-2611-22047",
+      "source": "arxiv",
+      "title": "SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping",
+      "title_zh": "SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping",
+      "tldr_zh": "This paper presents SE(3)-LIVOM, the overall winner of the C",
+      "cover_zh": "This paper presents SE(3)-LIVOM, the overall winner of the C",
+      "abstract_zh": "This paper presents SE(3)-LIVOM, the overall winner of the COMFORT Challenge at IROS 2026. The challenge asks for the trajectory of a legged robot in the GrandTour dataset, whose scenes include collapsed buildings, construction sites and snowfields. SE(3)-LIVOM runs in real time on two LiDARs, one camera and an IMU. Its frontend extends SE(3)-LIO to multiple LiDARs and a camera. Adaptive downsampling keeps the time per scan near 35 ms within and across scenes. An online backend corrects drift with a plane bundle adjustment over submaps and an incremental pose graph. With a single configuration for all scenes, the system reaches an average ATE of 1.40 cm on the six test scenes. The code is available at https://github.com/url-kaist/se3-livom-comfort.",
+      "authors": [
+        "Gunhee Shin",
+        "Seungjae Lee",
+        "Daebeom Kim"
+      ],
+      "authors_all": [
+        "Gunhee Shin",
+        "Seungjae Lee",
+        "Daebeom Kim",
+        "Seoyeon Jang",
+        "Hyun Myung"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 IROS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22047.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22047-p2.jpg",
+        "assets/img/covers/arxiv-2611-22047-p3.jpg"
+      ],
+      "arxiv_id": "2611.22047",
+      "abs_url": "http://arxiv.org/abs/2611.22047v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22047v1",
+      "venue": "IROS 2026",
+      "venue_announced": "",
+      "score": 31,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=6d9qwjqTFwc",
+          "embed_url": "https://www.youtube.com/embed/6d9qwjqTFwc",
+          "title": "GitHub - url-kaist/se3-livom-comfort: SE(3)-LIVOM for the COMFORT Localization Benchmark · GitHub",
+          "source": "project_page"
+        },
+        {
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=2fzHPVpcxvc",
+          "embed_url": "https://www.youtube.com/embed/2fzHPVpcxvc",
+          "title": "GitHub - url-kaist/se3-livom-comfort: SE(3)-LIVOM for the COMFORT Localization Benchmark · GitHub",
+          "source": "project_page"
+        }
+      ],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-22077",
+      "source": "arxiv",
+      "title": "ReLAP: Latent Action Pretraining through Recurrent Video Prediction in JEPA Space",
+      "title_zh": "ReLAP: Latent Action Pretraining through Recurrent Video Prediction in JEPA Space",
+      "tldr_zh": "Videos provide a rich source of physical interaction for lea",
+      "cover_zh": "Videos provide a rich source of physical interaction for lea",
+      "abstract_zh": "Videos provide a rich source of physical interaction for learning robot behavior without action annotations, yet effective latent actions must capture not only local transitions but also how those transitions evolve over time. We introduce ReLAP, a latent-action pretraining framework that couples local transition learning with recurrent multi-step prediction in a frozen JEPA representation space. A shared inverse dynamics model infers compact continuous latent actions from adjacent observations, while a latent world model recurrently predicts the future JEPA features. Because each predicted feature becomes the context for the next transition, errors at later steps backpropagate through the rollout to earlier latent actions, encouraging temporally coherent dynamics beyond pairwise reconstruction. We transfer this representation to a vision-language model using two complementary objectives: latent distillation from the frozen inverse teacher and recurrent future-feature prediction through the frozen latent world model. The resulting policy is then adapted to robot demonstrations with action flow matching. At deployment, the explicit latent-action and world-model branches are removed, and the fine-tuned VLM predicts physical actions directly, reducing inference complexity. With only 11M pretraining samples and 1.06B trainable parameters, ReLAP achieves 97.9% on standard LIBERO and 70.0% over zero-shot LIBERO-Plus perturbations. On the LARY latent-action benchmark, ReLAP ranks second in both mean regression error and mean classification accuracy among the compared methods. These results demonstrate that recurrent action-free latent action pretraining can learn compact, temporally structured, and transferable representations for downstream robot control.",
+      "authors": [
+        "R. Gnana Praveen",
+        "Ali Rouzbayani",
+        "Zhiying Jiang"
+      ],
+      "authors_all": [
+        "R. Gnana Praveen",
+        "Ali Rouzbayani",
+        "Zhiying Jiang",
+        "Bidhan Roy"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22077.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22077-p2.jpg",
+        "assets/img/covers/arxiv-2611-22077-p3.jpg",
+        "assets/img/covers/arxiv-2611-22077-p4.jpg"
+      ],
+      "arxiv_id": "2611.22077",
+      "abs_url": "http://arxiv.org/abs/2611.22077v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22077v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
     {
       "id": "qbitai-2991c89a77",
       "source": "qbitai",
@@ -44,6 +172,280 @@
       "source_tags": [
         "qbitai"
       ]
+    },
+    {
+      "id": "arxiv-2611-22122",
+      "source": "arxiv",
+      "title": "Low-speed Limit Cycle Walking of Planar X-shaped Bipedal Robot with Special Properties",
+      "title_zh": "Low-speed Limit Cycle Walking of Planar X-shaped Bipedal Robot with Special Properties",
+      "tldr_zh": "This paper proposes a novel planar semicircular-footed X-sha",
+      "cover_zh": "This paper proposes a novel planar semicircular-footed X-sha",
+      "abstract_zh": "This paper proposes a novel planar semicircular-footed X-shaped bipedal robot in which the center of mass of each leg link is at the same position as the hip joint, and discusses a method for generating a stable limit cycle gait on level ground. First, we outline the assumptions of the robot model with four degrees of freedom, and develop the mathematical equations of motion and collision. Second, we set the relative hip-joint angle as a control output and design a control system to follow it to the desired trajectory specified as a fifth-order function of time. Third, we mathematically show that there are special properties: the angular velocity of the swing leg does not change before and after the collision, and the time-integral of the control input becomes zero in a steady gait. We also mathematically show that the model has the feature that approximate linearization is effective and the antigravity effect of semicircular feet can be utilized. Through numerical simulations, we verify the validity of the theoretical results, and analyze some fundamental gait properties such as convergence speed and mechanical energy restoration.",
+      "authors": [
+        "Fumihiko Asano",
+        "Cong Yan"
+      ],
+      "authors_all": [
+        "Fumihiko Asano",
+        "Cong Yan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22122.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22122-p2.jpg",
+        "assets/img/covers/arxiv-2611-22122-p3.jpg",
+        "assets/img/covers/arxiv-2611-22122-p4.jpg"
+      ],
+      "arxiv_id": "2611.22122",
+      "abs_url": "http://arxiv.org/abs/2611.22122v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22122v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-22132",
+      "source": "arxiv",
+      "title": "DailyBrick: Language-Guided Synthesis of Brick Assembly Instructions",
+      "title_zh": "DailyBrick: Language-Guided Synthesis of Brick Assembly Instructions",
+      "tldr_zh": "Generating a LEGO model from a user request is more than a p",
+      "cover_zh": "Generating a LEGO model from a user request is more than a p",
+      "abstract_zh": "Generating a LEGO model from a user request is more than a plausible 3D shape generation. LEGO models require physical support per brick, and each brick should be placed unblocked. Current methods address this issue by training an expert large language model. We reduce the problem of generating extremely long context on all brick connections to that of writing a program that builds LEGO models like a human, considering each intermediate step could be executed. We introduce DailyBrick , a multi-stage agentic system that produces a LEGO model together with a brick-by-brick assembly instruction for human building and robot assembly. We design a multi-stage harness with roles to help LLMs generate more effectively. A versioned construction SDK compiles multi-level decisions, from semantic subparts to individual bricks, into canonical operations. An external Meta-Reviewer agent replays and inspects the generated package, verifies the model and its construction process, identifies failures, traces them to the responsible stage, and routes them to bounded repairs or to editable candidates for later skill or tool updates. Extensive experiments demonstrate that DailyBrick generates LEGO models based on simple user requests better than recent agentic systems, and show its utility in downstream applications such as robot manipulations on model assembly from instructions and brick sets (https://SpatialAgent.github.io/DailyBrick/).",
+      "authors": [
+        "Hang Zhang",
+        "Qijian Tian",
+        "Yuan Xie"
+      ],
+      "authors_all": [
+        "Hang Zhang",
+        "Qijian Tian",
+        "Yuan Xie",
+        "Xuhong Wang",
+        "Xin Tan"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22132.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22132-p2.jpg",
+        "assets/img/covers/arxiv-2611-22132-p3.jpg",
+        "assets/img/covers/arxiv-2611-22132-p4.jpg"
+      ],
+      "arxiv_id": "2611.22132",
+      "abs_url": "http://arxiv.org/abs/2611.22132v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22132v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-22200",
+      "source": "arxiv",
+      "title": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+      "title_zh": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+      "tldr_zh": "Skeleton motion identifies people through body proportions a",
+      "cover_zh": "Skeleton motion identifies people through body proportions a",
+      "abstract_zh": "Skeleton motion identifies people through body proportions and movement style, and skeleton streams are increasingly passed to third-party analytics that run action classifiers trained on raw data. A prior adversarial anonymizer adds a per-frame residual in the raw coordinate space but sees one frame at a time; motion retargeting needs a target skeleton and complete sequences, which rules out online use. We present MIRAGE, a target-free, causal anonymizer that adds an identity-reducing residual to each incoming frame in the raw coordinate space, computed by attention over past frames. One causal, optionally windowed mask governs every attention in a rotary-position encoder-decoder, and key/value caches let the trained function run frame by frame; on all 56,578 NTU 60 sequences, batched and streaming outputs differ by at most 7.2e-6 m. Reported results use an unbounded window, so per-stream state grows with stream length. We evaluate against a passive adversary that applies raw-trained identity models and an adaptive adversary that trains on the anonymizer's output, treating the adaptive adversary as the headline, on NTU RGB+D 60 over five generator seeds, alongside the per-frame residual anonymizer of Moon et al. trained identically. When consumers retrain on the released data, MIRAGE keeps 83.9% action recognition (raw 89.1%; Moon et al. 88.7%) while a retrained identity classifier reaches 43.4% re-identification (RI) over 40 subjects, against 69.4% for Moon et al. and 75.4% on raw data. The strongest adaptive attacker still reaches 49.3% (chance 2.5%), so MIRAGE reduces identity leakage; it does not anonymize. Against raw-trained (frozen) classifiers, MIRAGE lowers RI below the strongest retargeting baseline (10.36% vs. 22.09%), but frozen action recognition falls to 37.04% (vs. 75.82%), so at full residual scale it is not a drop-in replacement for raw input to existing frozen models.",
+      "authors": [
+        "Thomas Carr",
+        "Xujun Che",
+        "Depeng Xu"
+      ],
+      "authors_all": [
+        "Thomas Carr",
+        "Xujun Che",
+        "Depeng Xu",
+        "Shuhan Yuan",
+        "Aidong Lu"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-17",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22200.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22200-p2.jpg",
+        "assets/img/covers/arxiv-2611-22200-p3.jpg",
+        "assets/img/covers/arxiv-2611-22200-p4.jpg"
+      ],
+      "arxiv_id": "2611.22200",
+      "abs_url": "http://arxiv.org/abs/2611.22200v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22200v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-22146",
+      "source": "arxiv",
+      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
+      "title_zh": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
+      "tldr_zh": "HandUMI captures robot-free bimanual demonstrations with a h",
+      "cover_zh": "HandUMI captures robot-free bimanual demonstrations with a h",
+      "abstract_zh": "HandUMI captures robot-free bimanual demonstrations with a hand-worn parallel-jaw interface. Swappable fingertips match the robot's installed gripper; Quest/PICO controllers track hands and encoders measure aperture. Robot-agnostic recordings are retargeted by inverse kinematics to seven simulated bimanual arms (median position error $≤ 1.2$ mm; $≤ 4.7$% of episodes rejected). On bimanual towel folding, 562 robot-free demonstrations train policies on real PiPER arms: ACT succeeds in 12/20 attempts and fine-tuned $π_{0.5}$ in 7/20; ACT on the first 101 and base $π_{0.5}$ each succeed in 0/20. Hardware and software are open source (Apache-2.0), and a pair costs USD 557 with Quest 3S, excluding the optional ZED Mini and host computer. Project website: https://murobotics.ai/research/handumi.",
+      "authors": [
+        "Brik Meza",
+        "Leonardo Perez",
+        "Alvaro Mendoza-Li"
+      ],
+      "authors_all": [
+        "Brik Meza",
+        "Leonardo Perez",
+        "Alvaro Mendoza-Li",
+        "Aniela Ubillus",
+        "Mitshell Ramos",
+        "Raul Bastidas",
+        "Mauricio Olivera",
+        "Bryan Bastidas"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22146.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22146-p2.jpg",
+        "assets/img/covers/arxiv-2611-22146-p3.jpg",
+        "assets/img/covers/arxiv-2611-22146-p4.jpg"
+      ],
+      "arxiv_id": "2611.22146",
+      "abs_url": "http://arxiv.org/abs/2611.22146v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22146v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-22151",
+      "source": "arxiv",
+      "title": "EgoHandWAM: Probing the Role of Hand Motion in Egocentric World Action Modeling",
+      "title_zh": "EgoHandWAM: Probing the Role of Hand Motion in Egocentric World Action Modeling",
+      "tldr_zh": "How much does hand motion tell us about what a first-person",
+      "cover_zh": "How much does hand motion tell us about what a first-person",
+      "abstract_zh": "How much does hand motion tell us about what a first-person camera will see next? EgoHandWAM forecasts three-dimensional wrist and fingertip trajectories and a future visual feature from the current image and recent hand states. We train on 751,065 EgoDex windows using a frozen DINOv2 encoder. On held-out development sessions, the action-only model reduces two-second wrist endpoint error from 60.26 to 56.48~mm relative to a stationary forecast. It still underestimates long reaches. Adding future-feature supervision gives nearly identical trajectory accuracy. With the recorded hand history, the visual head reduces smooth L1 error by 1.32\\% relative to copying the current feature. Shuffling histories across sessions erases this gain. In a separate four-task probe, adding recorded future displacements to observed context and future tracking-validity masks reduces visual-feature error by 3.93\\%. Masks alone give little improvement. A trajectory predicted from the same observations adds little. On two simulated RoboTwin tasks, substituting aligned human examples for an auxiliary batch of robot examples gives no consistent increase in task success across three training seeds.",
+      "authors": [
+        "Kailin Wang",
+        "Haoxiang Jie",
+        "Yaoyuan Yan"
+      ],
+      "authors_all": [
+        "Kailin Wang",
+        "Haoxiang Jie",
+        "Yaoyuan Yan",
+        "Zhiyou Heng",
+        "Zhaosong Li"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-17",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-22151.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-22151-p2.jpg",
+        "assets/img/covers/arxiv-2611-22151-p3.jpg",
+        "assets/img/covers/arxiv-2611-22151-p4.jpg"
+      ],
+      "arxiv_id": "2611.22151",
+      "abs_url": "http://arxiv.org/abs/2611.22151v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22151v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
     }
   ]
 }
