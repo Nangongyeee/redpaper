@@ -360,6 +360,61 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-21782",
+      "source": "arxiv",
+      "title": "Every Camera Grows Up: Camera-Height Regression in Interactive Video World Models",
+      "title_zh": "Every Camera Grows Up: Camera-Height Regression in Interactive Video World Models",
+      "tldr_zh": "Interactive video world models serve as simulators for embod",
+      "cover_zh": "Interactive video world models serve as simulators for embod",
+      "abstract_zh": "Interactive video world models serve as simulators for embodied agents: from a starting image and an action trajectory, they generate the views the agent would see. The starting image fixes how high the camera is, for example 0.15 m for a floor robot or 2.2 m for an overhead camera, and a faithful simulator must keep this height as the camera moves. We show that six recent open-weight models fail to do so: as motion replaces the starting view with generated content, they move the camera toward human eye level, a failure we call camera-height regression. Our benchmark, EyeHeight, pairs six rendered elevations (0.15 m to 2.2 m) and four calibrated real-world rig heights with scale-free multi-view height estimation. All six models lose their initial height during a $180^circ$ turn-and-walk rollout: initialized at 0.15 m, only 0-20% of clips end within $1.3×$ of the starting height as inferred viewpoints converge to human heights of 1.1 m to 1.5 m, whereas ground-truth renders remain within a few percent. In Matrix-Game models, homography-tracked floor motion stays consistent with constant elevation during rotation even as newly outpainted room geometry yields a higher reconstructed viewpoint. Regression grows with rotation angle, begins while the start frame remains in context, and largely reverses in SANA-WM when a $360^circ$ turn restores the initial view. We trace this pull to human-centric video priors in which floor-level views are nearly absent: in SANA-WM, textual height cues and dense floor-disparity maps do not prevent it, whereas classifier-free text guidance during the first half of denoising strengthens it. Combining unguided sampling with height-balanced fine-tuning recovers more retention but costs 5 MUSIQ points, a loss fixed during those same early steps. Viewpoint drift alone shifts the paths predicted by visual navigation policies.",
+      "authors": [
+        "Sheng Lu",
+        "Guangpin Tao",
+        "Tong Lu"
+      ],
+      "authors_all": [
+        "Sheng Lu",
+        "Guangpin Tao",
+        "Tong Lu",
+        "Ying Tai"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-16",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-21782.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-21782-p2.jpg",
+        "assets/img/covers/arxiv-2611-21782-p3.jpg",
+        "assets/img/covers/arxiv-2611-21782-p4.jpg"
+      ],
+      "arxiv_id": "2611.21782",
+      "abs_url": "http://arxiv.org/abs/2611.21782v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.21782v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "qbitai-6452274540",
       "source": "qbitai",
       "title": "睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准",
@@ -1730,60 +1785,6 @@
       "arxiv_id": "2611.21604",
       "abs_url": "http://arxiv.org/abs/2611.21604v1",
       "pdf_url": "https://arxiv.org/pdf/2611.21604v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 16,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-21782",
-      "source": "arxiv",
-      "title": "Every Camera Grows Up: Camera-Height Regression in Interactive Video World Models",
-      "title_zh": "Every Camera Grows Up: Camera-Height Regression in Interactive Video World Models",
-      "tldr_zh": "Interactive video world models serve as simulators for embod",
-      "cover_zh": "Interactive video world models serve as simulators for embod",
-      "abstract_zh": "Interactive video world models serve as simulators for embodied agents: from a starting image and an action trajectory, they generate the views the agent would see. The starting image fixes how high the camera is, for example 0.15 m for a floor robot or 2.2 m for an overhead camera, and a faithful simulator must keep this height as the camera moves. We show that six recent open-weight models fail to do so: as motion replaces the starting view with generated content, they move the camera toward human eye level, a failure we call camera-height regression. Our benchmark, EyeHeight, pairs six rendered elevations (0.15 m to 2.2 m) and four calibrated real-world rig heights with scale-free multi-view height estimation. All six models lose their initial height during a $180^circ$ turn-and-walk rollout: initialized at 0.15 m, only 0-20% of clips end within $1.3×$ of the starting height as inferred viewpoints converge to human heights of 1.1 m to 1.5 m, whereas ground-truth renders remain within a few percent. In Matrix-Game models, homography-tracked floor motion stays consistent with constant elevation during rotation even as newly outpainted room geometry yields a higher reconstructed viewpoint. Regression grows with rotation angle, begins while the start frame remains in context, and largely reverses in SANA-WM when a $360^circ$ turn restores the initial view. We trace this pull to human-centric video priors in which floor-level views are nearly absent: in SANA-WM, textual height cues and dense floor-disparity maps do not prevent it, whereas classifier-free text guidance during the first half of denoising strengthens it. Combining unguided sampling with height-balanced fine-tuning recovers more retention but costs 5 MUSIQ points, a loss fixed during those same early steps. Viewpoint drift alone shifts the paths predicted by visual navigation policies.",
-      "authors": [
-        "Sheng Lu",
-        "Guangpin Tao",
-        "Tong Lu"
-      ],
-      "authors_all": [
-        "Sheng Lu",
-        "Guangpin Tao",
-        "Tong Lu",
-        "Ying Tai"
-      ],
-      "primary_category": "cs.CV",
-      "published": "2026-11-16",
-      "channels": [
-        "manipulation"
-      ],
-      "badges": [
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-21782.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-21782-p2.jpg",
-        "assets/img/covers/arxiv-2611-21782-p3.jpg",
-        "assets/img/covers/arxiv-2611-21782-p4.jpg"
-      ],
-      "arxiv_id": "2611.21782",
-      "abs_url": "http://arxiv.org/abs/2611.21782v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.21782v1",
       "venue": "",
       "venue_announced": "",
       "score": 16,
