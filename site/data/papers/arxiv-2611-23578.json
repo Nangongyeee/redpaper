@@ -1,0 +1,88 @@
+{
+  "id": "arxiv-2611-23578",
+  "source": "arxiv",
+  "title": "DOCK: Dual-Stream-Inspired Self-Supervised Object-Centric Representations Grounded in Robot Kinematics",
+  "title_zh": "DOCK: Dual-Stream-Inspired Self-Supervised Object-Centric Representations Grounded in Robot Kinematics",
+  "abstract": "Latent-space planners select actions by comparing the embedding of a predicted future image with that of a goal image. This assumes that distance in the embedding reflects how far the scene is from the goal. We profile this assumption with simulator-executed futures, which removes prediction error. For six frozen DINO and V-JEPA encoders, feature distance barely tracks the object's distance to its goal: the rank correlation is at most 0.11, against 0.87 for object-mask centroids. It is dominated by background and robot patches, and frozen-feature readouts capture the arm far better than the object. Inspired by the ventral (what) and dorsal (where/how) visual streams, we propose DOCK, which learns an object representation whose changes agree with measured physical motion. A grasped object moves with the gripper, so forward kinematics on the joint angles gives a proxy for the object's displacement without annotation. From 9,951 held-object transport trajectories in 21 simulated kitchen scenes, we mine 404K displacement pairs and train three components: an object token pooled from patch features (what), a spatial ruler that makes differences of readout coordinates equal to measured displacements (where), and a dynamics predictor over object tokens (how). Used as a planning cost, the learned representation places the object in 15 of 21 tasks, as many as an oracle that reads the true object position, while mask geometry reaches 10 and frozen feature distance 9. It still solves the most tasks when the unseen robot arm is visible, and its ranking transfers to held-out layouts with unseen object instances and categories without any adaptation.",
+  "abstract_zh": "Latent-space planners select actions by comparing the embedding of a predicted future image with that of a goal image. This assumes that distance in the embedding reflects how far the scene is from the goal. We profile this assumption with simulator-executed futures, which removes prediction error. For six frozen DINO and V-JEPA encoders, feature distance barely tracks the object's distance to its goal: the rank correlation is at most 0.11, against 0.87 for object-mask centroids. It is dominated by background and robot patches, and frozen-feature readouts capture the arm far better than the object. Inspired by the ventral (what) and dorsal (where/how) visual streams, we propose DOCK, which learns an object representation whose changes agree with measured physical motion. A grasped object moves with the gripper, so forward kinematics on the joint angles gives a proxy for the object's displacement without annotation. From 9,951 held-object transport trajectories in 21 simulated kitchen scenes, we mine 404K displacement pairs and train three components: an object token pooled from patch features (what), a spatial ruler that makes differences of readout coordinates equal to measured displacements (where), and a dynamics predictor over object tokens (how). Used as a planning cost, the learned representation places the object in 15 of 21 tasks, as many as an oracle that reads the true object position, while mask geometry reaches 10 and frozen feature distance 9. It still solves the most tasks when the unseen robot arm is visible, and its ranking transfers to held-out layouts with unseen object instances and categories without any adaptation.",
+  "tldr_zh": "Latent-space planners select actions by comparing the embedd",
+  "cover_zh": "Latent-space planners select actions by comparing the embedd",
+  "authors": [
+    {
+      "name": "Pengju Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Caiwen Ding",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.CV",
+  "categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "arxiv_id": "2611.23578",
+  "pdf_url": "https://arxiv.org/pdf/2611.23578v1",
+  "abs_url": "http://arxiv.org/abs/2611.23578v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-23578.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-23578-p2.jpg",
+    "assets/img/covers/arxiv-2611-23578-p3.jpg",
+    "assets/img/covers/arxiv-2611-23578-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 11,
+  "source_tags": [],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 9,
+      "hint": "频道关键词命中 3 个（grasp、jepa、v-jepa）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 11 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

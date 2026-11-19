@@ -1,0 +1,87 @@
+{
+  "id": "arxiv-2611-23608",
+  "source": "arxiv",
+  "title": "JEPA as a Transferable Optimizer: Learning and Understanding Black-Box Optimization from Reward-Agnostic Pretraining",
+  "title_zh": "JEPA as a Transferable Optimizer: Learning and Understanding Black-Box Optimization from Reward-Agnostic Pretraining",
+  "abstract": "Black-box optimization evaluates candidates through simulations, rollouts, or experiments, often without gradients. Learned optimizers are usually judged by whether they outperform existing methods. We ask a complementary question: what information does a learned optimizer use from its search history? We introduce JEPA-PS (JEPA Policy Search), based on a Joint-Embedding Predictive Architecture. It is pretrained on random rollouts using parameter vectors and scalar returns. Its latent-prediction objective predicts the next point in an optimization trajectory rather than its reward or gradient, allowing us to examine what was tried and how well it performed. At test time, JEPA-PS reads a short evaluation history and proposes a candidate in one forward pass, without task descriptions, reward shaping, or test-time gradients. We evaluate it on 15 control environments against 12 optimizers, including evolutionary methods, Bayesian optimization, CMA-ES, and an LLM optimizer. JEPA-PS is competitive with tuned classical baselines and outperforms the LLM optimizer by more than 2x on Swimmer at 71x lower per-step cost. It also transfers zero-shot to environments excluded from pretraining. Null-model comparisons and decoder-training ablations indicate that its latent representation carries information beyond simple history statistics; every trained decoder variant performs worse than the default frozen representation. Our main finding is that the history JEPA-PS uses depends on the task. On smooth landscapes it uses the full trajectory, whereas on rugged landscapes the best-seen point carries nearly all the signal. This memory requirement has a weak positive correlation with fitness-distance correlation (FDC; r=0.112, n=7), while an independent reward-ordering sensitivity probe does not corroborate the relationship (r=-0.024, n=7). Code: https://github.com/mdebnath22/jepa-props.",
+  "abstract_zh": "Black-box optimization evaluates candidates through simulations, rollouts, or experiments, often without gradients. Learned optimizers are usually judged by whether they outperform existing methods. We ask a complementary question: what information does a learned optimizer use from its search history? We introduce JEPA-PS (JEPA Policy Search), based on a Joint-Embedding Predictive Architecture. It is pretrained on random rollouts using parameter vectors and scalar returns. Its latent-prediction objective predicts the next point in an optimization trajectory rather than its reward or gradient, allowing us to examine what was tried and how well it performed. At test time, JEPA-PS reads a short evaluation history and proposes a candidate in one forward pass, without task descriptions, reward shaping, or test-time gradients. We evaluate it on 15 control environments against 12 optimizers, including evolutionary methods, Bayesian optimization, CMA-ES, and an LLM optimizer. JEPA-PS is competitive with tuned classical baselines and outperforms the LLM optimizer by more than 2x on Swimmer at 71x lower per-step cost. It also transfers zero-shot to environments excluded from pretraining. Null-model comparisons and decoder-training ablations indicate that its latent representation carries information beyond simple history statistics; every trained decoder variant performs worse than the default frozen representation. Our main finding is that the history JEPA-PS uses depends on the task. On smooth landscapes it uses the full trajectory, whereas on rugged landscapes the best-seen point carries nearly all the signal. This memory requirement has a weak positive correlation with fitness-distance correlation (FDC; r=0.112, n=7), while an independent reward-ordering sensitivity probe does not corroborate the relationship (r=-0.024, n=7). Code: https://github.com/mdebnath22/jepa-props.",
+  "tldr_zh": "Black-box optimization evaluates candidates through simulati",
+  "cover_zh": "Black-box optimization evaluates candidates through simulati",
+  "authors": [
+    {
+      "name": "Mayukh Debnath",
+      "affiliation": ""
+    },
+    {
+      "name": "Manan Roy Choudhury",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.LG",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "arxiv_id": "2611.23608",
+  "pdf_url": "https://arxiv.org/pdf/2611.23608v1",
+  "abs_url": "http://arxiv.org/abs/2611.23608v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-23608.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-23608-p2.jpg",
+    "assets/img/covers/arxiv-2611-23608-p3.jpg",
+    "assets/img/covers/arxiv-2611-23608-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 34,
+  "source_tags": [],
+  "score": 27,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 6,
+      "hint": "频道关键词命中 2 个（jepa、joint-embedding predictive）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 2 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 34 页"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
