@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "count": 46,
+  "count": 57,
   "papers": [
     {
       "id": "vid-youtube-g2WhkpE1tew",
@@ -58,6 +58,73 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-25215",
+      "source": "arxiv",
+      "title": "Bridging vision-language reasoning and learned control for legged navigation in the wild",
+      "title_zh": "Bridging vision-language reasoning and learned control for legged navigation in the wild",
+      "tldr_zh": "Autonomous navigation in diverse real-world environments rem",
+      "cover_zh": "Autonomous navigation in diverse real-world environments rem",
+      "abstract_zh": "Autonomous navigation in diverse real-world environments remains one of the greatest challenges in robotics. It demands both robust low-level motion control to handle diverse terrain and high-level reasoning to interpret environmental cues. We present ROAM (Robust Open-world Autonomous Mobility), a system that enables legged robots to perform kilometer-scale navigation in complex alpine and urban settings. ROAM combines the world knowledge of a Vision-Language Model (VLM), pre-trained on internet-scale data, with robust locomotion and local planning policies learned in simulation via reinforcement learning (RL). The VLM provides common-sense reasoning and semantic interpretation of the scene, assessing risks, interpreting signs, and producing semantic labels with associated navigation costs. An open-vocabulary segmentation module converts these labels into a dense, real-time risk map, which conditions two pre-trained RL policies responsible for agile locomotion and local navigation, effectively coupling high-level VLM reasoning with low-level physical control. Real-world experiments showed the system's ability to autonomously navigate a wide range of complex real-world environments. The robot completes kilometer-long hikes with minimal intervention, interprets signs to avoid danger, and evaluates its environment to identify safe areas on which to step. This work represents a step toward the reliable deployment of systems in unstructured environments. However, it also underscores the challenges that remain in VLM reliability and spatial reasoning, indicating that foundational models are a crucial component but not yet a complete solution for navigation in the wild.",
+      "authors": [
+        "Takahiro Miki",
+        "Robin Schmid",
+        "Manthan Patel"
+      ],
+      "authors_all": [
+        "Takahiro Miki",
+        "Robin Schmid",
+        "Manthan Patel",
+        "Turcan Tuna",
+        "Julia Richter",
+        "Julian Nubert",
+        "Joonho Lee",
+        "Matthias Müller",
+        "Marco Hutter"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Marco Hutter"
+        },
+        {
+          "kind": "lab",
+          "label": "⭐ Joonho Lee"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25215.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25215-p2.jpg",
+        "assets/img/covers/arxiv-2611-25215-p3.jpg",
+        "assets/img/covers/arxiv-2611-25215-p4.jpg"
+      ],
+      "arxiv_id": "2611.25215",
+      "abs_url": "http://arxiv.org/abs/2611.25215v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25215v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 45,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-24926",
       "source": "arxiv",
       "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation",
@@ -92,8 +159,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-18",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -785,8 +852,8 @@
       "primary_category": "cs.RO",
       "published": "2026-11-18",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
+        "loco-manip-wbc",
         "world-model"
       ],
       "badges": [
@@ -804,6 +871,173 @@
       "arxiv_id": "2611.24940",
       "abs_url": "http://arxiv.org/abs/2611.24940v1",
       "pdf_url": "https://arxiv.org/pdf/2611.24940v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25204",
+      "source": "arxiv",
+      "title": "Identity World Model: Recognizing People in an Imagined Latent World",
+      "title_zh": "Identity World Model: Recognizing People in an Imagined Latent World",
+      "tldr_zh": "Whole-body human recognition has advanced rapidly with large",
+      "cover_zh": "Whole-body human recognition has advanced rapidly with large",
+      "abstract_zh": "Whole-body human recognition has advanced rapidly with large vision models. However, existing methods remain fragile under real-world variations, as they tie identity to transient cues such as clothing, texture, pose, or viewpoint. We argue that a robust recognizer should not merely learn to ignore these cues, but imagine how a person would be represented if they changed. To this end, we propose IDWorld, an identity world model: just as a latent world model predicts the features of a scene after an action, IDWorld predicts how a person would be represented under a changed condition. In a single forward pass, IDWorld imagines these counterfactual features under shared canonical conditions, such as the same outfit, a fixed view, or a bare silhouette, without rendering any pixels. Compared with explicit imagination in pixels, this latent imagination keeps nearly the same accuracy while being over 11x faster, at 5.9 ms per frame. Since each imagined condition has its own strengths, IDWorld then fuses them adaptively, weighting each condition for every probe-gallery pair. Extensive experiments show that IDWorld achieves state-of-the-art results on CCPG and CCGR-MINI, outperforms the compared methods on MEVID, and generalizes best to CASIA-B* and SUSTech1K, with the best mAP on CCVID. These results suggest identity world models offer a simple yet effective path to robust recognition. Code will be released.",
+      "authors": [
+        "Dingqiang Ye",
+        "Kartik Narayan",
+        "Vishal M. Patel"
+      ],
+      "authors_all": [
+        "Dingqiang Ye",
+        "Kartik Narayan",
+        "Vishal M. Patel"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-18",
+      "channels": [
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25204.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25204-p2.jpg",
+        "assets/img/covers/arxiv-2611-25204-p3.jpg",
+        "assets/img/covers/arxiv-2611-25204-p4.jpg"
+      ],
+      "arxiv_id": "2611.25204",
+      "abs_url": "http://arxiv.org/abs/2611.25204v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25204v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25243",
+      "source": "arxiv",
+      "title": "Verify2Act: Critic-Guided Latent World Models for Verifying Language-Conditioned Manipulation Plans",
+      "title_zh": "Verify2Act: Critic-Guided Latent World Models for Verifying Language-Conditioned Manipulation Plans",
+      "tldr_zh": "Vision-Language Models (VLMs) can propose multi-step manipul",
+      "cover_zh": "Vision-Language Models (VLMs) can propose multi-step manipul",
+      "abstract_zh": "Vision-Language Models (VLMs) can propose multi-step manipulation plans, but they have no grounded model of how a scene will change, and the pixel-level world models that could check those plans are slow and drift over long horizons. We present Verify2Act, a modular verification framework that separates semantic action proposal from latent physical verification. A VLM proposes candidate plans, a latent world model (V2A-WM) imagines each of them in the DINOv2 feature space, and a dual-head critic checks the imagined rollouts for temporal consistency and goal satisfaction before anything is executed. V2A-WM extends recent flow-matching world models with cross-attention action grounding and a causal temporal history window. We deploy the full system on a low-cost robot arm, training the world model and critic only on data generated in a digital twin. Across six language-conditioned tasks, Verify2Act reaches 83.3\\% task success, compared with 61.7\\% for a latent world model without our architectural changes, 53.3\\% for the VLM alone, and 46.7\\% for a pixel-diffusion world model. It verified every plan it executed and incurred no planning-induced failures: all of its failed episodes were caused by low-level grasp or placement slips. In simulation, Verify2Act obtains the highest five-task chain success on CALVIN among the compared baselines with 30$×$ fewer reflective VLM calls than pixel-diffusion verification, and the highest success on cluttered nut assembly.",
+      "authors": [
+        "Chrisantus Eze",
+        "Christopher Crick"
+      ],
+      "authors_all": [
+        "Chrisantus Eze",
+        "Christopher Crick"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25243.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25243-p2.jpg",
+        "assets/img/covers/arxiv-2611-25243-p3.jpg",
+        "assets/img/covers/arxiv-2611-25243-p4.jpg"
+      ],
+      "arxiv_id": "2611.25243",
+      "abs_url": "http://arxiv.org/abs/2611.25243v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25243v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25251",
+      "source": "arxiv",
+      "title": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+      "title_zh": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+      "tldr_zh": "Reinforcement learning (RL) can improve vision-language-acti",
+      "cover_zh": "Reinforcement learning (RL) can improve vision-language-acti",
+      "abstract_zh": "Reinforcement learning (RL) can improve vision-language-action (VLA) policies beyond imitation, but humanoid exploration is unsafe and simulator RL can exploit residual sim-to-real gaps. We present WEVO, a teleoperation-free framework for post-training a whole-body humanoid VLA in an action-conditioned video world model (WM). Simulated manipulation and locomotion play data improve contact-dynamics and viewpoint-change prediction. A VLA trained on synthetic demonstrations collects 20 autonomous real robot rollouts per task to align the WM with deployment observations. The VLA, whole-body controller (WBC), and video WM then form a closed-loop RL environment with dense progress rewards. Across three real robot tasks, play data improves every evaluated WM metric and downstream policy success; video WM RL raises mean success from 23.3% to 75.0%, compared with 48.3% for real robot RL. We therefore leverage the complementary strengths of both environments: simulation provides policy initialization and broad coverage, while the video WM offers a deployment-aligned environment for policy improvement. Project website: https://qianzhong-chen.github.io/wevo.github.io/.",
+      "authors": [
+        "Qianzhong Chen",
+        "Muyuan Lin",
+        "Yuyin Sun"
+      ],
+      "authors_all": [
+        "Qianzhong Chen",
+        "Muyuan Lin",
+        "Yuyin Sun",
+        "Mac Schwager",
+        "Cheng-Hao Kuo",
+        "Roberto Martín-Martín"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "loco-manip-wbc",
+        "manipulation",
+        "teleop",
+        "locomotion",
+        "world-model",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25251.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25251-p2.jpg",
+        "assets/img/covers/arxiv-2611-25251-p3.jpg",
+        "assets/img/covers/arxiv-2611-25251-p4.jpg"
+      ],
+      "arxiv_id": "2611.25251",
+      "abs_url": "http://arxiv.org/abs/2611.25251v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25251v1",
       "venue": "",
       "venue_announced": "",
       "score": 30,
@@ -1675,6 +1909,62 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-25179",
+      "source": "arxiv",
+      "title": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
+      "title_zh": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
+      "tldr_zh": "Simulated manipulation benchmarks measure policy performance",
+      "cover_zh": "Simulated manipulation benchmarks measure policy performance",
+      "abstract_zh": "Simulated manipulation benchmarks measure policy performance using hand-written success checkers that label each episode as a success or failure. Passing an expert demonstration shows that a checker accepts one way of completing the task. Learned policies, however, may stop after partial progress or complete the task in a different way. A checker may then accept an incomplete execution (phantom success) or reject an execution that satisfies the instruction (silent failure). In this paper, we introduce SimAudit, an LLM-based pipeline that audits success checkers against task instructions. SimAudit analyzes the instruction and checker code to identify scenarios where the two may disagree, recreates those scenarios in simulation, and runs the original checker. Multi-view renderings are then used to verify whether the observed behavior satisfies the instruction. Across RoboTwin 2.0, RoboCasa365, and RoboDojo, 183 simulated test cases produced the predicted checker verdict. Visual verification and deduplication yielded 61 distinct defects across 49 tasks, including 40 phantom successes and 21 silent failures. Most defects in RoboCasa365 accepted incomplete executions, most in RoboDojo rejected valid executions, and both error types were common in RoboTwin 2.0. These findings suggest that validating success checkers requires testing both incomplete executions and valid alternatives to expert demonstrations, and motivate more rigorous evaluation protocols for future benchmarks.",
+      "authors": [
+        "Zirui Song",
+        "Jiadong Zhang",
+        "Zheng Lu"
+      ],
+      "authors_all": [
+        "Zirui Song",
+        "Jiadong Zhang",
+        "Zheng Lu",
+        "Xiaosong Ma",
+        "Xiaojun Chang",
+        "Xiuying Chen"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25179.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25179-p2.jpg",
+        "assets/img/covers/arxiv-2611-25179-p3.jpg",
+        "assets/img/covers/arxiv-2611-25179-p4.jpg"
+      ],
+      "arxiv_id": "2611.25179",
+      "abs_url": "http://arxiv.org/abs/2611.25179v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25179v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 22,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-23685",
       "source": "arxiv",
       "title": "Measuring the Conservatism of Latent Safety Filters for World Models",
@@ -1941,6 +2231,60 @@
       "arxiv_id": "2611.24207",
       "abs_url": "http://arxiv.org/abs/2611.24207v1",
       "pdf_url": "https://arxiv.org/pdf/2611.24207v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25199",
+      "source": "arxiv",
+      "title": "VG-Steer: Visual-Geometric Policy Steering from In-Context Aligned Abstractions",
+      "title_zh": "VG-Steer: Visual-Geometric Policy Steering from In-Context Aligned Abstractions",
+      "tldr_zh": "Adapting robot policies to out-of-distribution (OOD) setting",
+      "cover_zh": "Adapting robot policies to out-of-distribution (OOD) setting",
+      "abstract_zh": "Adapting robot policies to out-of-distribution (OOD) settings with limited real-world data remains a key bottleneck to generalist robots. The multimodality and scarcity of robotics data lead end-to-end approaches to overfit and break under small distribution shifts. Test-time adaptation can alleviate this by correcting frozen policies at inference, but most methods ground their correction in a signal learned implicitly from robotic datasets, making it susceptible to the same shifts as the policy it corrects. Recent methods that instead exploit explicit spatial information are typically limited to coarse corrections, missing the nuanced, task-relevant motion most manipulation tasks require. We propose VG-Steer, which corrects existing policies by transferring the nuanced motion of successful in-distribution rollouts, captured along meaningful geometric axes, known here as object-relational distance pairs. VG-Steer leverages the semantic understanding of Large Vision Models (LVMs) and Vision-Language Models (VLMs) reasoning, which combines the task-relevant entity pairs and their object-relational distance projections into a single tailored visual-geometric guidance signal. In a simulation benchmark, it efficiently corrects flow-matching policies under pose and task-goal shifts; on a real robot experiment, it widens the region of the workspace the frozen policy covers, more than doubling its success rate on cable placements one grid step outside the training positions, and steers a single-task policy toward objects it was never trained on while nearly eliminating object confusion. Project website: https://arthurfenderbucker.github.io/VG-Steer/",
+      "authors": [
+        "Arthur Bucker",
+        "Pramod Anantharam",
+        "Jonathan Francis"
+      ],
+      "authors_all": [
+        "Arthur Bucker",
+        "Pramod Anantharam",
+        "Jonathan Francis",
+        "Jean Oh"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25199.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25199-p2.jpg",
+        "assets/img/covers/arxiv-2611-25199-p3.jpg",
+        "assets/img/covers/arxiv-2611-25199-p4.jpg"
+      ],
+      "arxiv_id": "2611.25199",
+      "abs_url": "http://arxiv.org/abs/2611.25199v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25199v1",
       "venue": "",
       "venue_announced": "",
       "score": 19,
@@ -2688,6 +3032,283 @@
       "venue": "",
       "venue_announced": "",
       "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25067",
+      "source": "arxiv",
+      "title": "Mapping the Wind to Find the Source: Online Physics-Informed Gas Source Localization with Mobile Robots",
+      "title_zh": "Mapping the Wind to Find the Source: Online Physics-Informed Gas Source Localization with Mobile Robots",
+      "tldr_zh": "Gas Source Localization (GSL) with mobile robots is challeng",
+      "cover_zh": "Gas Source Localization (GSL) with mobile robots is challeng",
+      "abstract_zh": "Gas Source Localization (GSL) with mobile robots is challenging because wind and gas measurements are spatially sparse, noisy, and potentially affected by robot motion. Indoor airflow can vary substantially across space, while detailed environmental layouts, boundary conditions, or precomputed airflow fields are often unavailable. Moreover, hazardous sources must be localized as quickly as possible, making exhaustive exploration impractical. This paper presents a lightweight physics-informed probabilistic framework for efficient GSL under spatially varying indoor airflow. As the robot navigates, it continuously collects wind and gas measurements and reconstructs the spatially varying airflow field online. The estimated wind field drives a forward dispersion model that predicts the gas pattern for each candidate source location. These predictions are compared with the measured gas pattern to update a probabilistic belief over the source location. As the wind field is reconstructed incrementally, the framework also accounts for the spatially non-uniform reliability of wind field estimation and its influence on the source estimation. The resulting belief map is then used for informative path planning to guide the robot toward informative regions. High-fidelity simulations provide a comprehensive evaluation of the individual components and their integrations within the complete system, while physical indoor experiments assess the system performance under realistic sensing, motion, and airflow conditions. The results demonstrate that incorporating lightweight physical knowledge significantly improves localization robustness under spatially complex airflow and enables more efficient exploration.",
+      "authors": [
+        "Wanting Jin",
+        "Thomas Wiedemann",
+        "Han Fan"
+      ],
+      "authors_all": [
+        "Wanting Jin",
+        "Thomas Wiedemann",
+        "Han Fan",
+        "Achim Lilienthal",
+        "Alcherio Martinoli"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25067.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25067-p2.jpg",
+        "assets/img/covers/arxiv-2611-25067-p3.jpg",
+        "assets/img/covers/arxiv-2611-25067-p4.jpg"
+      ],
+      "arxiv_id": "2611.25067",
+      "abs_url": "http://arxiv.org/abs/2611.25067v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25067v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25105",
+      "source": "arxiv",
+      "title": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+      "title_zh": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+      "tldr_zh": "Every move in a robot team changes the world in which its te",
+      "cover_zh": "Every move in a robot team changes the world in which its te",
+      "abstract_zh": "Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team's actions together with the physical future they jointly create. We introduce MAWAM, a multi-agent world-action model that jointly generates each robot's future views and executable action chunks in a single sample. Built from a pretrained single-robot world-action backbone, MAWAM jointly denoises all robots' action and future-view tokens through cross-agent attention, while preserving a separate control interface for each robot. MAWAM achieves the highest success on all three real-robot tasks (laundry-bag collection, bath-towel folding, and umbrella handover), with 67.8% mean success, 18.9 percentage points above MA-VLA trained on the same demonstrations and cameras. In simulation, MAWAM reaches 90.3% mean success on eight tasks with teams of up to four arms. Ablations show that cross-agent attention and team-stage future-video supervision both improve coordinated control: without attention, a four-arm relay falls from 95.0% to 39.0%, and without this supervision, Place Food falls from 78.0% to 47.0%.",
+      "authors": [
+        "Xianzhe Fan",
+        "Chi-Pin Huang",
+        "Fu-En Yang"
+      ],
+      "authors_all": [
+        "Xianzhe Fan",
+        "Chi-Pin Huang",
+        "Fu-En Yang",
+        "Jing Wang",
+        "Yecheng Wu",
+        "Yu-Cheng Chou",
+        "Johan Bjorck",
+        "Linxi \"Jim\" Fan",
+        "Jan Kautz",
+        "Yu-Chiang Frank Wang",
+        "Zhiding Yu",
+        "Hengshuang Zhao",
+        "Zhiqi Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25105.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25105-p2.jpg",
+        "assets/img/covers/arxiv-2611-25105-p3.jpg",
+        "assets/img/covers/arxiv-2611-25105-p4.jpg"
+      ],
+      "arxiv_id": "2611.25105",
+      "abs_url": "http://arxiv.org/abs/2611.25105v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25105v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25134",
+      "source": "arxiv",
+      "title": "GEMS: Generation and Experience Memory for Subgoal-Guided Long-Horizon World Model Planning",
+      "title_zh": "GEMS: Generation and Experience Memory for Subgoal-Guided Long-Horizon World Model Planning",
+      "tldr_zh": "Visual world models enable effective short-horizon goal-cond",
+      "cover_zh": "Visual world models enable effective short-horizon goal-cond",
+      "abstract_zh": "Visual world models enable effective short-horizon goal-conditioned planning, such as reaching nearby targets and pushing objects over short distances, by predicting candidate action outcomes and comparing their representations with a goal representation. However, extending this approach to long-horizon tasks is challenging: prediction errors accumulate over extended rollouts, while latent-space similarity to distant goals provides limited guidance for ranking candidate outcomes. Existing methods address these limitations by introducing intermediate subgoals, either generated by learned models or selected from experience memory. Generated subgoals can contain hallucinations or be inaccurate in aspects such as object positions and timing. Memory-based approaches are constrained by experience coverage and may lack precise guidance for selecting appropriate intermediate states from stored observations. We introduce GEMS, which generates temporally structured subgoals to guide action search and state selection from Latent Experience Memory (LEM). A distance gate determines whether predicted outcomes are evaluated against the generated subgoal or the selected memory state. Experiments across six tasks and task suites spanning manipulation, navigation, and reaching demonstrate the effectiveness of GEMS for long-horizon planning. GEMS outperforms state-of-the-art world-model planning baselines across different manipulation settings, achieving success rates of 92.8% on Cube, 68.4% on Push-T, and 54.1% on Meta-World. It improves over the strongest evaluated baseline on these tasks by 24.0, 7.3, and 22.2 percentage points, respectively. These results demonstrate that generated subgoals and experience memory can jointly strengthen long-horizon planning with a frozen world model.",
+      "authors": [
+        "Yangchen Zhao",
+        "Ali Payani",
+        "Caiwen Ding"
+      ],
+      "authors_all": [
+        "Yangchen Zhao",
+        "Ali Payani",
+        "Caiwen Ding"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25134.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25134-p2.jpg",
+        "assets/img/covers/arxiv-2611-25134-p3.jpg",
+        "assets/img/covers/arxiv-2611-25134-p4.jpg"
+      ],
+      "arxiv_id": "2611.25134",
+      "abs_url": "http://arxiv.org/abs/2611.25134v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25134v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25166",
+      "source": "arxiv",
+      "title": "CoRelate: Coordinated Human-Object Motion Synthesis through Interaction Relations",
+      "title_zh": "CoRelate: Coordinated Human-Object Motion Synthesis through Interaction Relations",
+      "tldr_zh": "Human-object motion synthesis requires coordinated human par",
+      "cover_zh": "Human-object motion synthesis requires coordinated human par",
+      "abstract_zh": "Human-object motion synthesis requires coordinated human participation as objects move toward specified goals. However, reaching object targets does not ensure that contact is established and maintained, while adjustments that improve contact may interfere with task completion. We introduce CoRelate, a diffusion framework that coordinates full-body human-object motion through explicit interaction relations and task feedback for rigid and articulated objects. We represent intended participation through hand-part relations that specify the participating hand, its part-relative reference position, and participation interval. These relations serve both as generation conditions and as references for measuring interaction realization. At each denoising step, a temporal refiner trained jointly with the generator combines relation deviations, task residuals, and motion features from the current prediction to jointly update human and object motion across the sequence. After generation, temporal motion correction addresses remaining contact failures by optimizing local motion segments while preserving object trajectories and protected human motion. Experiments demonstrate improved object-goal satisfaction, contact F1, and complete interaction success over the evaluated baselines. Ablation studies support the benefits of relation conditioning and the complementary roles of task and relation feedback.",
+      "authors": [
+        "Zhiwen Qiu",
+        "Daisy Lin",
+        "Diyu Zhou"
+      ],
+      "authors_all": [
+        "Zhiwen Qiu",
+        "Daisy Lin",
+        "Diyu Zhou",
+        "Jialin Wu",
+        "Rosita Ji",
+        "Saleh Kalantari"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-18",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25166.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25166-p2.jpg",
+        "assets/img/covers/arxiv-2611-25166-p3.jpg",
+        "assets/img/covers/arxiv-2611-25166-p4.jpg"
+      ],
+      "arxiv_id": "2611.25166",
+      "abs_url": "http://arxiv.org/abs/2611.25166v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25166v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 16,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-25249",
+      "source": "arxiv",
+      "title": "A Synthetic Multi-Modal Testbed for Security Stress Testing of Agentic Counter-UAS Systems",
+      "title_zh": "A Synthetic Multi-Modal Testbed for Security Stress Testing of Agentic Counter-UAS Systems",
+      "tldr_zh": "Agentic cyber-physical systems rely on perception and state",
+      "cover_zh": "Agentic cyber-physical systems rely on perception and state",
+      "abstract_zh": "Agentic cyber-physical systems rely on perception and state estimation to support autonomous decisions. Degraded, inconsistent, or manipulated sensor observations can therefore propagate through an autonomous pipeline and create security-relevant failures. This work presents a synthetic Counter-Unmanned Aircraft System (C-UAS) testbed developed in NVIDIA Isaac Sim for repeatable stress testing of perception and tracking algorithms supporting agentic decision-making. A simplified quadrotor follows scripted trajectories while co-located virtual sensors generate synchronized RGB, RTX LiDAR, and illustrative IR-like observations. The testbed varies target range, motion, clutter, occlusion, and sensor availability, with future stress cases including sensor dropout, temporal misalignment, cross-modal disagreement, and false observations. As an initial exemplar, a nonlinear coordinated-turn Extended Kalman Filter (EKF) is evaluated over a 20-s maneuvering trajectory using LiDAR target-centroid measurements. Position error and uncertainty are compared as LiDAR observations degrade and are lost. The framework provides a reproducible environment for studying how sensing degradation affects downstream autonomous estimation and resilience in agentic C-UAS systems.",
+      "authors": [
+        "Ivan A. Fernandez",
+        "Jingdao Chen"
+      ],
+      "authors_all": [
+        "Ivan A. Fernandez",
+        "Jingdao Chen"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-18",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-25249.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-25249-p2.jpg",
+        "assets/img/covers/arxiv-2611-25249-p3.jpg"
+      ],
+      "arxiv_id": "2611.25249",
+      "abs_url": "http://arxiv.org/abs/2611.25249v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.25249v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 13,
       "judge": {},
       "institutions": [],
       "method_tags": [],

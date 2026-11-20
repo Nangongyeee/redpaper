@@ -1,0 +1,97 @@
+{
+  "id": "arxiv-2611-25413",
+  "source": "arxiv",
+  "title": "WAMotor: Accelerating World Action Models via Speculative Inference under Dual Nonuniform Denoising Dynamics",
+  "title_zh": "WAMotor: Accelerating World Action Models via Speculative Inference under Dual Nonuniform Denoising Dynamics",
+  "abstract": "World Action Models (WAMs) unify world modeling and action generation for robotic control by integrating flow-matching velocities, yet suffer from high multi-step denoising latency. Recent studies have explored speculative inference to accelerate WAMs by drafting and verifying denoising steps in parallel. However, existing methods either require training task-specific draft models or overlook critical WAM denoising dynamics when reusing past velocities as drafts. We revisit the denoising dynamics of WAMs and identify a dual nonuniformity that breaks standard velocity-reuse assumptions: velocity smoothness is nonuniform as adjacent velocity residuals differ sharply at early and final steps, so reuse there yields large residuals, which nonuniform integration time steps further translate into local state errors that accumulate into the final action distribution. Accordingly, we formalize this by theoretically deriving a trajectory error tolerance bound that characterizes how velocity residuals and integration time steps affect the final action distribution. Based on this, we propose WAMotor, the first speculative inference method tailored to the dual nonuniformity in WAMs. It selects reliable anchor velocities by deferring speculation and employs time-step-aware verification that scales acceptance thresholds by integration time step size. WAMotor offers plug-and-play benefits, enabling seamless integration with prior WAMs. Extensive evaluations on LIBERO, RoboTwin 2.0, and LIBERO-Plus show that WAMotor achieves 2.86$\\times$--4.28$\\times$ end-to-end speedups while maintaining task success rates. Our code is available at: https://github.com/Overdue-Lin/WAMotor",
+  "abstract_zh": "World Action Models (WAMs) unify world modeling and action generation for robotic control by integrating flow-matching velocities, yet suffer from high multi-step denoising latency. Recent studies have explored speculative inference to accelerate WAMs by drafting and verifying denoising steps in parallel. However, existing methods either require training task-specific draft models or overlook critical WAM denoising dynamics when reusing past velocities as drafts. We revisit the denoising dynamics of WAMs and identify a dual nonuniformity that breaks standard velocity-reuse assumptions: velocity smoothness is nonuniform as adjacent velocity residuals differ sharply at early and final steps, so reuse there yields large residuals, which nonuniform integration time steps further translate into local state errors that accumulate into the final action distribution. Accordingly, we formalize this by theoretically deriving a trajectory error tolerance bound that characterizes how velocity residuals and integration time steps affect the final action distribution. Based on this, we propose WAMotor, the first speculative inference method tailored to the dual nonuniformity in WAMs. It selects reliable anchor velocities by deferring speculation and employs time-step-aware verification that scales acceptance thresholds by integration time step size. WAMotor offers plug-and-play benefits, enabling seamless integration with prior WAMs. Extensive evaluations on LIBERO, RoboTwin 2.0, and LIBERO-Plus show that WAMotor achieves 2.86$×$--4.28$×$ end-to-end speedups while maintaining task success rates. Our code is available at: https://github.com/Overdue-Lin/WAMotor",
+  "tldr_zh": "World Action Models (WAMs) unify world modeling and action g",
+  "cover_zh": "World Action Models (WAMs) unify world modeling and action g",
+  "authors": [
+    {
+      "name": "Zexun Lin",
+      "affiliation": ""
+    },
+    {
+      "name": "Yuan Feng",
+      "affiliation": ""
+    },
+    {
+      "name": "Xike Xie",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "cs.RO",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "arxiv_id": "2611.25413",
+  "pdf_url": "https://arxiv.org/pdf/2611.25413v1",
+  "abs_url": "http://arxiv.org/abs/2611.25413v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-25413.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-25413-p2.jpg",
+    "assets/img/covers/arxiv-2611-25413-p3.jpg",
+    "assets/img/covers/arxiv-2611-25413-p4.jpg"
+  ],
+  "channels": [
+    "manipulation",
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "fresh",
+      "label": "⚡ 新鲜出炉"
+    }
+  ],
+  "related_links": [],
+  "page_count": 20,
+  "source_tags": [],
+  "score": 38,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（robotwin、libero、world model、world modeling）"
+    },
+    {
+      "id": "freshness",
+      "label": "刚出锅 (≤2 天)",
+      "points": 10,
+      "hint": "投递于 1 天前"
+    },
+    {
+      "id": "github_repo",
+      "label": "附带开源仓库",
+      "points": 8,
+      "hint": "摘要里出现 github.com / huggingface.co 链接"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 20 页"
+    },
+    {
+      "id": "cross_channel",
+      "label": "跨多个方向",
+      "points": 5,
+      "hint": "同时命中 2 个频道"
+    }
+  ],
+  "judge": {},
+  "institutions": [],
+  "method_tags": [],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}
