@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T21:51:19.378592+00:00",
-  "count": 5204,
+  "generated_at": "2026-11-23T23:08:15.643748+00:00",
+  "count": 5206,
   "papers": [
     {
       "id": "arxiv-2508-17600",
@@ -220113,6 +220113,57 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-16188",
+      "source": "arxiv_discover",
+      "title": "PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control",
+      "title_zh": "PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control",
+      "tldr_zh": "Motion imitation enables humanoid robots to acquire whole-bo",
+      "cover_zh": "Motion imitation enables humanoid robots to acquire whole-bo",
+      "abstract_zh": "Motion imitation enables humanoid robots to acquire whole-body skills such as walking and dancing. However, fine-tuning an entire policy for a new skill can affect existing behaviors, while training a separate policy for each skill increases training and maintenance costs. We present PERA, a method for learning new skills by reusing existing motion capabilities. PERA freezes a pretrained mixture-of-experts policy and trains an additional task expert and its routing score using task rewards or teacher-action supervision. In Unitree G1 simulation, each added task module contains approximately 1.03% of the parameters of the base actor. Built on our pretrained policy, PERA successfully completes all ten new tasks. Disabling the expert restores the original computation path of the base policy, which still fully executes all 126 original motions. Enabling the expert also improves the execution of some dance motions not used to train that expert, indicating that its benefits extend beyond its training motions. Experiments with HoloMotion further demonstrate the applicability of PERA to different base policies.",
+      "authors": [
+        "Shangchao Hu",
+        "Yadan Sun",
+        "Xibo Yu"
+      ],
+      "authors_all": [
+        "Shangchao Hu",
+        "Yadan Sun",
+        "Xibo Yu",
+        "Wei Huang"
+      ],
+      "primary_category": "",
+      "published": "2026-11-12",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-16188.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-16188-p2.jpg",
+        "assets/img/covers/arxiv-2611-16188-p3.jpg",
+        "assets/img/covers/arxiv-2611-16188-p4.jpg"
+      ],
+      "arxiv_id": "2611.16188",
+      "abs_url": "http://arxiv.org/abs/2611.16188v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.16188v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2611-16374",
       "source": "arxiv",
       "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
@@ -311043,6 +311094,62 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-23916",
+      "source": "arxiv_discover",
+      "title": "ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors",
+      "title_zh": "ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors",
+      "tldr_zh": "Humanoid robots must recover from falls and resume commanded",
+      "cover_zh": "Humanoid robots must recover from falls and resume commanded",
+      "abstract_zh": "Humanoid robots must recover from falls and resume commanded motion to sustain locomotion. Learning these behaviors in one policy requires supervision that accommodates both upright movement and ground-contact recovery. We present ReLoco, a framework that uses behavior-conditioned adversarial motion priors to learn locomotion, get-up from arbitrary fallen postures, and command resumption within one proprioceptive policy. During training, robot posture selects the expert pool and conditions a shared discriminator with two behavior-specific outputs. Task rewards and shared regularization support command tracking and recovery, while temporary assistance facilitates exploration. A simulation-based refinement stage supplies robot-executed motion references for this supervision. Ablations examine conditional supervision, output separation, and reference quality under matched settings. At a common training iteration, the full policy achieves $96.80\\%$ independent get-up success and $96.96\\%$ push-recovery success, including command resumption. Its torso planar velocity root-mean-square error is $0.1266$~m/s, $14.7\\%$ lower than the conditional single-output variant, with similar joint-angle discrepancy measured by dynamic time warping. Deployment on the 64.5-kg Tiangong~3.0 humanoid demonstrates walking, running, get-up, and locomotion resumption after falls using one proprioceptive actor, without controller switching or on-robot policy fine-tuning.",
+      "authors": [
+        "Lequn Fu",
+        "Yufeng Hu",
+        "Yijun Zhong"
+      ],
+      "authors_all": [
+        "Lequn Fu",
+        "Yufeng Hu",
+        "Yijun Zhong",
+        "Jie Zhang",
+        "Xiao Li",
+        "Lingxiang Ji",
+        "Zhiyuan Xu",
+        "Jian Tang",
+        "Shiqi Li"
+      ],
+      "primary_category": "",
+      "published": "2026-11-18",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-23916.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-23916-p2.jpg",
+        "assets/img/covers/arxiv-2611-23916-p3.jpg",
+        "assets/img/covers/arxiv-2611-23916-p4.jpg"
+      ],
+      "arxiv_id": "2611.23916",
+      "abs_url": "http://arxiv.org/abs/2611.23916v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23916v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 6,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2611-24247",
