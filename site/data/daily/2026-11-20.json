@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "count": 31,
+  "count": 33,
   "papers": [
     {
       "id": "arxiv-2611-27639",
@@ -594,6 +594,65 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-27047",
+      "source": "arxiv_discover",
+      "title": "BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight",
+      "title_zh": "BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight",
+      "tldr_zh": "Humanoid loco-manipulation requires coordinating whole-body",
+      "cover_zh": "Humanoid loco-manipulation requires coordinating whole-body",
+      "abstract_zh": "Humanoid loco-manipulation requires coordinating whole-body motion to perform manipulation tasks in complex environments. Yet egocentric vision-language-action (VLA) policies can miss critical body--scene relationships, and action imitation alone provides no explicit supervision for future scene evolution. We propose BeyondEgo to extend VLA perception in space and time. Spatially, we encode a synchronized exocentric view with frozen DINOv3 and concatenate the resulting tokens with egocentric VLM tokens to condition the action expert. Temporally, we use future observations from both views as privileged supervision for a residual adapter on task-conditioned VLM features. A foresight expert regresses DINOv3 representations of both views 0.6s ahead. At deployment, the foresight expert is discarded and the 4.2M-parameter adapter is retained. We also introduce HELM, to our knowledge, the first closed-loop humanoid loco-manipulation benchmark with synchronized egocentric and exocentric views across five whole-body tasks. On HELM, BeyondEgo improves success from 48.0% to 92.0% in distribution and from 23.5% to 65.0% on 200 held-out scenes with layout, asset, material, and lighting shifts. Ablations show that dual-view DINOv3 foresight yields the best transfer results.",
+      "authors": [
+        "Zhaoshan Yang",
+        "Chenglei Li",
+        "Haoyu Lei"
+      ],
+      "authors_all": [
+        "Zhaoshan Yang",
+        "Chenglei Li",
+        "Haoyu Lei",
+        "Yutao Zhang",
+        "Yuyu Yang",
+        "Zhuo Chen",
+        "Ling Ding",
+        "Zhongxing Ren",
+        "Yi Gu",
+        "Heyang Zhang",
+        "Peng Su",
+        "Jin Pan"
+      ],
+      "primary_category": "",
+      "published": "2026-11-20",
+      "channels": [
+        "loco-manip-wbc"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-27047.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-27047-p2.jpg",
+        "assets/img/covers/arxiv-2611-27047-p3.jpg",
+        "assets/img/covers/arxiv-2611-27047-p4.jpg"
+      ],
+      "arxiv_id": "2611.27047",
+      "abs_url": "http://arxiv.org/abs/2611.27047v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.27047v2",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2611-27782",
       "source": "arxiv",
       "title": "An Autonomous Adaptive Learning System for Robotic Grasping in the Circular Factory",
@@ -689,6 +748,61 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-28350",
+      "source": "arxiv_discover",
+      "title": "Two Actions from One State: Fork Futures Teach JEPA World Models to Compare",
+      "title_zh": "Two Actions from One State: Fork Futures Teach JEPA World Models to Compare",
+      "tldr_zh": "JEPA world models are trained to predict logged transitions",
+      "cover_zh": "JEPA world models are trained to predict logged transitions",
+      "abstract_zh": "JEPA world models are trained to predict logged transitions but used to compare counterfactual actions from one state. The logged behavior data show one action per state, and under a local linear approximation we prove the action response is unidentified along any direction the policy never varies within a state. We therefore supplement behavior data with measured outcomes of alternative actions from the same state. Our fork futures execute two actions from one restored state, and their outcome difference cancels the state term, identifying the action response on the sampled span. The resulting model, Fork-JEPA, matches predicted to measured differences, anchors the logged successor with behavior prediction, and adds a lookback head that keeps the predecessor recoverable, all at training time, leaving planning unchanged. On three visual control tasks, behavior-only training leaves the predicted action effect no better than a constant guess. Fork-JEPA makes it readable and raises planning success by up to 14\\% over LeWM, its base model. Where the action response changes across hidden zones, it nearly doubles cross-zone success, and 1,024 fork pairs beat 1.2M extra behavior steps. Our project is available at https://fork-jepa.github.io/.",
+      "authors": [
+        "Yihao Wu",
+        "Runjia Zeng",
+        "Tongyan Wang"
+      ],
+      "authors_all": [
+        "Yihao Wu",
+        "Runjia Zeng",
+        "Tongyan Wang",
+        "Renzhong Huang",
+        "Chongzhou Fang",
+        "Qifan Wang",
+        "Fan Heng",
+        "Dongfang Liu"
+      ],
+      "primary_category": "",
+      "published": "2026-11-20",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [],
+      "cover_image": "assets/img/covers/arxiv-2611-28350.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-28350-p2.jpg",
+        "assets/img/covers/arxiv-2611-28350-p3.jpg",
+        "assets/img/covers/arxiv-2611-28350-p4.jpg"
+      ],
+      "arxiv_id": "2611.28350",
+      "abs_url": "http://arxiv.org/abs/2611.28350v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.28350v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 15,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
     },
     {
       "id": "arxiv-2611-27293",
