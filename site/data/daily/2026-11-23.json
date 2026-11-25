@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "count": 37,
+  "count": 38,
   "papers": [
     {
       "id": "arxiv-2611-31002",
@@ -82,6 +82,69 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-31588",
+      "source": "arxiv_discover",
+      "title": "One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning",
+      "title_zh": "One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning",
+      "tldr_zh": "Sim-to-real reinforcement learning (RL) has enabled impressi",
+      "cover_zh": "Sim-to-real reinforcement learning (RL) has enabled impressi",
+      "abstract_zh": "Sim-to-real reinforcement learning (RL) has enabled impressive robotic behaviors, yet deploying policies directly from vision remains challenging. A common approach first trains a teacher policy with RL using privileged state observations, then distills its behavior into a vision-based student via imitation. However, the resulting student can substantially underperform its teacher. Directly training visual policies with RL offers a promising alternative, but learning task-relevant visual representations from scratch can be sample-inefficient, making one-phase visual RL intractable. We propose DRIFT, a simple recipe for efficient one-phase visual RL using image observations available at test time. Our key insight is to use frozen, pretrained foundation vision encoders, allowing RL to focus on learning control from existing visual representations. Freezing the encoder avoids costly backpropagation through the vision backbone, while its pretrained representations enable real-world transfer from fast, rasterized simulation rendering. Under matched architectures, observations, and compute budgets, DRIFT outperforms two-phase distillation and achieves a 58.8% relative improvement in average real-world success rate across three manipulation tasks. Controlled simulation evaluations demonstrate that DRIFT's relative advantage grows from roughly 9% in-distribution to over 61% under out-of-distribution shifts, suggesting that stronger generalization contributes to superior real-world transfer. Project website: https://jmarangola.github.io/one-phase-visual-rl/",
+      "authors": [
+        "John Marangola",
+        "Antonia Bronars",
+        "Younghyo Park"
+      ],
+      "authors_all": [
+        "John Marangola",
+        "Antonia Bronars",
+        "Younghyo Park",
+        "Stephen Andrews",
+        "Kushal Kedia",
+        "Pulkit Agrawal"
+      ],
+      "primary_category": "",
+      "published": "2026-11-23",
+      "channels": [
+        "manipulation",
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Pulkit Agrawal"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-31588.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-31588-p2.jpg",
+        "assets/img/covers/arxiv-2611-31588-p3.jpg",
+        "assets/img/covers/arxiv-2611-31588-p4.jpg"
+      ],
+      "arxiv_id": "2611.31588",
+      "abs_url": "http://arxiv.org/abs/2611.31588v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31588v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 47,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "llm_discover"
+      ]
+    },
+    {
       "id": "arxiv-2611-30597",
       "source": "arxiv",
       "title": "ViDiHand2: Unifying Video Diffusion Priors and Hand Geometry for 3D Hand Motion Reconstruction in the Wild",
@@ -145,68 +208,6 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
-    },
-    {
-      "id": "arxiv-2611-31588",
-      "source": "arxiv_discover",
-      "title": "One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning",
-      "title_zh": "One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning",
-      "tldr_zh": "Sim-to-real reinforcement learning (RL) has enabled impressi",
-      "cover_zh": "Sim-to-real reinforcement learning (RL) has enabled impressi",
-      "abstract_zh": "Sim-to-real reinforcement learning (RL) has enabled impressive robotic behaviors, yet deploying policies directly from vision remains challenging. A common approach first trains a teacher policy with RL using privileged state observations, then distills its behavior into a vision-based student via imitation. However, the resulting student can substantially underperform its teacher. Directly training visual policies with RL offers a promising alternative, but learning task-relevant visual representations from scratch can be sample-inefficient, making one-phase visual RL intractable. We propose DRIFT, a simple recipe for efficient one-phase visual RL using image observations available at test time. Our key insight is to use frozen, pretrained foundation vision encoders, allowing RL to focus on learning control from existing visual representations. Freezing the encoder avoids costly backpropagation through the vision backbone, while its pretrained representations enable real-world transfer from fast, rasterized simulation rendering. Under matched architectures, observations, and compute budgets, DRIFT outperforms two-phase distillation and achieves a 58.8% relative improvement in average real-world success rate across three manipulation tasks. Controlled simulation evaluations demonstrate that DRIFT's relative advantage grows from roughly 9% in-distribution to over 61% under out-of-distribution shifts, suggesting that stronger generalization contributes to superior real-world transfer. Project website: https://jmarangola.github.io/one-phase-visual-rl/",
-      "authors": [
-        "John Marangola",
-        "Antonia Bronars",
-        "Younghyo Park"
-      ],
-      "authors_all": [
-        "John Marangola",
-        "Antonia Bronars",
-        "Younghyo Park",
-        "Stephen Andrews",
-        "Kushal Kedia",
-        "Pulkit Agrawal"
-      ],
-      "primary_category": "",
-      "published": "2026-11-23",
-      "channels": [
-        "sim2real"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ Pulkit Agrawal"
-        },
-        {
-          "kind": "fresh",
-          "label": "⚡ 新鲜出炉"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2611-31588.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2611-31588-p2.jpg",
-        "assets/img/covers/arxiv-2611-31588-p3.jpg",
-        "assets/img/covers/arxiv-2611-31588-p4.jpg"
-      ],
-      "arxiv_id": "2611.31588",
-      "abs_url": "http://arxiv.org/abs/2611.31588v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.31588v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 39,
-      "judge": {},
-      "institutions": [],
-      "method_tags": [],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": [
-        "llm_discover"
-      ]
     },
     {
       "id": "arxiv-2611-30817",
@@ -684,6 +685,49 @@
       "demo_videos": [],
       "github": {},
       "source_tags": []
+    },
+    {
+      "id": "qbitai-7b0c1eaef8",
+      "source": "qbitai",
+      "title": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界",
+      "title_zh": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界",
+      "tldr_zh": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界",
+      "cover_zh": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界",
+      "abstract_zh": "近日，阿里巴巴集团旗下高德正式发布新一代通用交互式世界模型 ABot-World 0.5。",
+      "authors": [],
+      "authors_all": [],
+      "primary_category": "",
+      "published": "2026-11-23",
+      "channels": [
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "",
+      "preview_pages": [],
+      "arxiv_id": "",
+      "abs_url": "https://www.qbitai.com/2026/11/512454.html",
+      "pdf_url": "",
+      "venue": "",
+      "venue_announced": "",
+      "score": 28,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": [
+        "qbitai"
+      ]
     },
     {
       "id": "arxiv-2611-30572",
