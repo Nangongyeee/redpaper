@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "count": 39,
+  "count": 47,
   "papers": [
     {
       "id": "arxiv-2611-32654",
@@ -132,6 +132,67 @@
       "source_tags": []
     },
     {
+      "id": "arxiv-2611-33380",
+      "source": "arxiv",
+      "title": "FOCI: Trajectory Optimization on Gaussian Splats for Gaussian Robots",
+      "title_zh": "FOCI: Trajectory Optimization on Gaussian Splats for Gaussian Robots",
+      "tldr_zh": "3D Gaussian Splatting (3DGS) has recently gained popularity",
+      "cover_zh": "3D Gaussian Splatting (3DGS) has recently gained popularity",
+      "abstract_zh": "3D Gaussian Splatting (3DGS) has recently gained popularity as a faster alternative to Neural Radiance Fields (NeRFs) in 3D reconstruction and view synthesis methods. Leveraging the spatial information encoded in 3DGS, this work proposes FOCI (Field Overlap Collision Integral), an algorithm that is able to optimize trajectories directly on the Gaussians themselves. FOCI leverages a novel and interpretable collision formulation for 3DGS using the notion of the overlap integral between Gaussians. The formulation presented applies to different robot morphologies (e.g., fixed and mobile base manipulators, legged robots, UAVs) and handles both static and dynamic Gaussian-Splat environments. Contrary to other approaches, which represent the robot with conservative bounding boxes that underestimate the traversability of the environment, we propose to represent the environment and the robot as Gaussian Splats. This not only has desirable computational properties, but also allows for orientation-aware planning, allowing the robot to pass through very tight and narrow spaces. We extensively test our algorithm in both synthetic and real Gaussian Splats, showcasing that collision-free trajectories for legged, aerial and manipulator robots can be computed in seconds, even with hundreds of thousands of Gaussians making up the environment. The code is available at https://github.com/leggedrobotics/foci",
+      "authors": [
+        "Mario Gomez Andreu",
+        "Carlos Martinez Cuenca",
+        "Maximum Wilder-Smith"
+      ],
+      "authors_all": [
+        "Mario Gomez Andreu",
+        "Carlos Martinez Cuenca",
+        "Maximum Wilder-Smith",
+        "Victor Klemm",
+        "Vaishakh Patil",
+        "Marco Hutter",
+        "Jesus Tordesillas"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-24",
+      "channels": [
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Marco Hutter"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33380.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33380-p2.jpg",
+        "assets/img/covers/arxiv-2611-33380-p3.jpg",
+        "assets/img/covers/arxiv-2611-33380-p4.jpg"
+      ],
+      "arxiv_id": "2611.33380",
+      "abs_url": "http://arxiv.org/abs/2611.33380v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33380v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 44,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
       "id": "arxiv-2611-33141",
       "source": "arxiv",
       "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
@@ -178,6 +239,131 @@
       "venue": "",
       "venue_announced": "",
       "score": 39,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33390",
+      "source": "arxiv",
+      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints",
+      "title_zh": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints",
+      "tldr_zh": "Many hard manipulation tasks come down to a spatial constrai",
+      "cover_zh": "Many hard manipulation tasks come down to a spatial constrai",
+      "abstract_zh": "Many hard manipulation tasks come down to a spatial constraint that only a few motions satisfy, such as passing a part through a gap barely wider than itself or separating two interlocked parts. These motions depend on the exact geometry of each scene, so demonstrations and skills recorded elsewhere rarely transfer. We therefore ask: when manipulation hinges on spatial constraints, can robots reason out the right motions? We introduce RoboARC, a benchmark of 90 tasks in six constraint types over rigid and soft materials, on three robots in MuJoCo. Every task is a frozen scene with a physics-based grader and a verified reference solution that replays bit-identically. Each task comes in a Privileged regime, with the full simulator state and resets, and a Standard regime with real-sensor inputs (camera images and proprioception) and a single attempt without resets. We evaluate seven coding agents and four VLA policies, none trained on these tasks. The strongest agent, GPT-6 Astra in Codex, solves 86% of the tasks in the Privileged regime and 43% in the Standard regime, and the four VLA policies, run zero-shot, solve none of their 18 one-arm puzzles. On 15 puzzles that GPT-6 Astra solved in the Privileged regime and failed in the Standard regime, object poses add 4 points and part geometry 13, but both together add 36, from 24% to 60%. Only 7% of the coding agents' failed runs pass more than half of a task, and 53% of the failed runs in the Standard regime are stuck on a single step. Frontier coding agents already reason out the right motions for many of these tasks once they know where the parts are and what shape they have. From their own sensors, in a single attempt, the strongest solves fewer than half of the tasks. The website can be found at https://roboarc.embodied-first-exam.ai",
+      "authors": [
+        "Qineng Wang",
+        "Jianwen Lyu",
+        "Pingyue Zhang"
+      ],
+      "authors_all": [
+        "Qineng Wang",
+        "Jianwen Lyu",
+        "Pingyue Zhang",
+        "Reuben Tan",
+        "Xiaoyu Huang",
+        "Tonghe Zhang",
+        "Kangrui Wang",
+        "Yelong Shen",
+        "Jianfeng Gao",
+        "Guanya Shi",
+        "Ruohan Zhang",
+        "Manling Li"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-24",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ Guanya Shi"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33390.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33390-p2.jpg",
+        "assets/img/covers/arxiv-2611-33390-p3.jpg",
+        "assets/img/covers/arxiv-2611-33390-p4.jpg"
+      ],
+      "arxiv_id": "2611.33390",
+      "abs_url": "http://arxiv.org/abs/2611.33390v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33390v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 36,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33398",
+      "source": "arxiv",
+      "title": "Best-of-$N$ Test-Time Steering Can Lead to Reward Hacking in Vision-Language-Action Models",
+      "title_zh": "Best-of-$N$ Test-Time Steering Can Lead to Reward Hacking in Vision-Language-Action Models",
+      "tldr_zh": "Vision-language-action (VLA) models have shown promise for g",
+      "cover_zh": "Vision-language-action (VLA) models have shown promise for g",
+      "abstract_zh": "Vision-language-action (VLA) models have shown promise for general-purpose robotic manipulation, but adapting to changing environmental conditions still remains challenging. Recent test-time steering methods have shown promise in enabling adaptive VLA policies by utilizing additional computation during deployment. In this paper, we consider best-of-$N$ test-time steering for VLA models, where multiple action candidates are sampled from a fixed policy and a verifier is used to select the best one during deployment. We show that increasing $N$ does not always improve performance when the verifier is inaccurate, and can favor candidates whose scores exploit prediction errors, a form of reward hacking. We study this effect on 60 LIBERO-Safety task-level cases using a $π_{0.5}$ policy, with ten repetitions per case. We introduce controlled errors in a MuJoCo trajectory verifier and show that as $N$ increases, selected candidate rewards diverge from the accurate verifier rewards, leading to reward hacking. We also show that verifier calibration and softmax-based candidate selection can mitigate reward hacking in some settings.",
+      "authors": [
+        "Vanshaj Khattar",
+        "Jing Liu",
+        "Toshiaki Koike-Akino"
+      ],
+      "authors_all": [
+        "Vanshaj Khattar",
+        "Jing Liu",
+        "Toshiaki Koike-Akino",
+        "Ming Jin",
+        "Ye Wang"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-24",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "venue",
+          "label": "🎓 NeurIPS 2026"
+        },
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33398.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33398-p2.jpg",
+        "assets/img/covers/arxiv-2611-33398-p3.jpg",
+        "assets/img/covers/arxiv-2611-33398-p4.jpg"
+      ],
+      "arxiv_id": "2611.33398",
+      "abs_url": "http://arxiv.org/abs/2611.33398v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33398v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "",
+      "score": 35,
       "judge": {},
       "institutions": [],
       "method_tags": [],
@@ -742,8 +928,8 @@
       "primary_category": "cs.CV",
       "published": "2026-11-24",
       "channels": [
-        "loco-manip-wbc",
-        "manipulation"
+        "manipulation",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -813,9 +999,9 @@
       "primary_category": "cs.RO",
       "published": "2026-11-24",
       "channels": [
-        "loco-manip-wbc",
         "manipulation",
-        "teleop"
+        "teleop",
+        "loco-manip-wbc"
       ],
       "badges": [
         {
@@ -832,6 +1018,119 @@
       "arxiv_id": "2611.33144",
       "abs_url": "http://arxiv.org/abs/2611.33144v1",
       "pdf_url": "https://arxiv.org/pdf/2611.33144v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33460",
+      "source": "arxiv",
+      "title": "Fast Muscle-Driven Whole-Body Motion Tracking with a Differentiable World Model",
+      "title_zh": "Fast Muscle-Driven Whole-Body Motion Tracking with a Differentiable World Model",
+      "tldr_zh": "Tracking motion capture with a whole-body musculoskeletal mo",
+      "cover_zh": "Tracking motion capture with a whole-body musculoskeletal mo",
+      "abstract_zh": "Tracking motion capture with a whole-body musculoskeletal model means coordinating hundreds of muscles through contact, and current controllers take hours to days of GPU time to train, so every tuning decision is expensive. SuperMimic trains a tracking policy by backpropagating through the rollouts of a learned world model. We extend it to MS-Human-700 (700 muscles) and MyoFullBody (354 muscles), with MuJoCo's activation dynamics inside the world model. To make its training fast, our recipe takes the speedups developed for the Unitree G1, replaces three of their settings that fail on muscles, and adds four changes of our own: observations without muscle geometry, data collection concurrent with the updates, Beta exploration noise that keeps every excitation in $[0,1]$, and 50 Hz control. On one RTX 5090 it trains MS-Human-700 in 6.3 minutes to the held-out return that SuperMimic's published hyperparameters reach in 3.9 hours, 37$×$ sooner, and in 20 minutes to lower tracking errors than theirs after 10 hours. It trains MyoFullBody 34$×$ sooner without retuning. Ablations show what is specific to muscles: a higher policy learning rate stalls half of the runs, and clipped Gaussian noise adds a tonic co-contraction that Beta noise avoids. Finally, refining the policy's actions through the world model at test time lowers the position error by a further 26% with no held-out clip failing, and reaches the same return after 5.1 instead of 6.3 minutes of training. Code, the training recipe and videos are on the project page https://muscle-supermimic.beanpow.top.",
+      "authors": [
+        "Kaibo He",
+        "Maciej Bakowicz",
+        "Shihe Zhou"
+      ],
+      "authors_all": [
+        "Kaibo He",
+        "Maciej Bakowicz",
+        "Shihe Zhou",
+        "Yusen Feng",
+        "Yanan Sui",
+        "Dhanush Radhakrishnan"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-24",
+      "channels": [
+        "loco-manip-wbc",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33460.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33460-p2.jpg",
+        "assets/img/covers/arxiv-2611-33460-p3.jpg",
+        "assets/img/covers/arxiv-2611-33460-p4.jpg"
+      ],
+      "arxiv_id": "2611.33460",
+      "abs_url": "http://arxiv.org/abs/2611.33460v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33460v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 30,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33467",
+      "source": "arxiv",
+      "title": "SplatWAM: Splatting World Action Models for Real-Time 3D Imagination",
+      "title_zh": "SplatWAM: Splatting World Action Models for Real-Time 3D Imagination",
+      "tldr_zh": "World models typically predict future observations in pixel",
+      "cover_zh": "World models typically predict future observations in pixel",
+      "abstract_zh": "World models typically predict future observations in pixel or latent space, limiting their ability to directly represent true 3D scene evolution. We present SplatWAM (Splatting World Action Model), a generative world model that learns action-conditioned dynamics directly over compact 3D Gaussian primitives. A tokenizer SplatWAM-T first encodes a variable number of unposed views into a fixed budget of Gaussian tokens. A dynamics model SplatWAM-D then predicts future Gaussian states in a single forward pass per action, using log-Euclidean covariance coordinates and differentiable rendering supervision to facilitate learning in an explicit 3D space. Each predicted state can be rasterized from arbitrary viewpoints, enforcing a shared 3D representation across views by construction. On OGBench Scene, SplatWAM renders novel views 12x faster than video world models (~80 FPS on an RTX 5090) with up to 2.0 dB higher PSNR. We further introduce SplatWAM-P, a lightweight flow-matching policy head jointly trained with the dynamics model. Across 8 task suites, model-free Gaussian-token policies outperform pixel-based counterparts by up to 24.8 percentage points. SplatWAM-P improves over Latent Particle World Model (LPWM) by 12 percentage points and matches HIQL without a learned value function. On LIBERO, our ~1B model outperforms WorldVLA (~7B) and the robot-pretrained OpenVLA (~7B), while matching OpenVLA-OFT when both are trained without large-scale robot pretraining. Code and checkpoints will be released.",
+      "authors": [
+        "Frank Tsu-Fang Lu",
+        "Karthik Sundar Senthilkumar",
+        "Christopher Thirgood"
+      ],
+      "authors_all": [
+        "Frank Tsu-Fang Lu",
+        "Karthik Sundar Senthilkumar",
+        "Christopher Thirgood",
+        "Oscar Mendez",
+        "Simon Hadfield"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-24",
+      "channels": [
+        "manipulation",
+        "world-model"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33467.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33467-p2.jpg",
+        "assets/img/covers/arxiv-2611-33467-p3.jpg",
+        "assets/img/covers/arxiv-2611-33467-p4.jpg"
+      ],
+      "arxiv_id": "2611.33467",
+      "abs_url": "http://arxiv.org/abs/2611.33467v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33467v1",
       "venue": "",
       "venue_announced": "",
       "score": 30,
@@ -1238,6 +1537,61 @@
       "arxiv_id": "2611.32932",
       "abs_url": "http://arxiv.org/abs/2611.32932v1",
       "pdf_url": "https://arxiv.org/pdf/2611.32932v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 24,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33407",
+      "source": "arxiv",
+      "title": "An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining",
+      "title_zh": "An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining",
+      "tldr_zh": "Agile humanoid locomotion requires controllers that can adap",
+      "cover_zh": "Agile humanoid locomotion requires controllers that can adap",
+      "abstract_zh": "Agile humanoid locomotion requires controllers that can adapt to rapidly changing motion demands while remaining stable and robust. Recent locomotion controllers are typically designed with either a dense reward that is carefully shaped to encourage steps and penalize falling, or by using a reference tracking reward which teaches the controller to follow predetermined motions. Once a behavior that maximizes the reward is discovered, the controller ceases to learn. While generally stable, reference tracking methods focus on motor control separately from motion generation. Self-play has been proven as an effective technique for superhuman performance on several multiagent games like Go, Starcraft, hide-and-seek, and capture-the-flag. We train neural networks to play the game of multiagent tag in a physics simulator to study if new motion generation and control strategies can emerge through sparse feedback and competitive self-play. We present MJTag, a task suite for role-conditioned locomotion during competitive pursuit-evasion. Our model is a role-conditioned policy for a low-level locomotion controller and optional planar velocity commands. MJTag's league-based play with sparse feedback enables a locomotion controller to adopt new strategies, including dodging, sprinting, and tackling.",
+      "authors": [
+        "Nathan A. C. Hogg",
+        "Matt Hyatt",
+        "Neil Klingensmith"
+      ],
+      "authors_all": [
+        "Nathan A. C. Hogg",
+        "Matt Hyatt",
+        "Neil Klingensmith",
+        "George K. Thiruvathukal"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-24",
+      "channels": [
+        "loco-manip-wbc",
+        "locomotion"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33407.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33407-p2.jpg",
+        "assets/img/covers/arxiv-2611-33407-p3.jpg",
+        "assets/img/covers/arxiv-2611-33407-p4.jpg"
+      ],
+      "arxiv_id": "2611.33407",
+      "abs_url": "http://arxiv.org/abs/2611.33407v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33407v1",
       "venue": "",
       "venue_announced": "",
       "score": 24,
@@ -1759,6 +2113,114 @@
       "arxiv_id": "2611.33158",
       "abs_url": "http://arxiv.org/abs/2611.33158v1",
       "pdf_url": "https://arxiv.org/pdf/2611.33158v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33352",
+      "source": "arxiv",
+      "title": "Why Does Sensor Depth Fail Learned Manipulation Policies? Finding the Failure Mode with ACT",
+      "title_zh": "Why Does Sensor Depth Fail Learned Manipulation Policies? Finding the Failure Mode with ACT",
+      "tldr_zh": "Learned manipulation policies, from task-specific imitation",
+      "cover_zh": "Learned manipulation policies, from task-specific imitation",
+      "abstract_zh": "Learned manipulation policies, from task-specific imitation policies to vision-language-action (VLA) models, rely primarily on RGB images. While some studies report gains from sensor depth, others avoid depth cameras because of measurement noise. Depth cameras introduce both noise and missing depth values (holes), whose relative effects remain unclear. In this study, we calibrate a sensor model using a real wrist-mounted stereo camera and separately evaluate noise and holes on RGB-D imitation policies with three visual encoders in simulation. We found that complete depth improves success by approximately ten percentage points, and most of this gain persists even at twenty times the camera's noise level. In contrast, holes covering about one-sixth of the wrist image eliminate the detectable benefit of depth. The validity mask strongly influences depth reliance: marking a small fraction of pixels as invalid reduces reliance, while filling holes and marking them valid restores most of the benefit. Policies trained on clean depth also lose performance when holes appear only at deployment, sometimes falling below RGB-only performance. These findings suggest that depth cameras for learned policies should therefore be judged by depth coverage more than measurement precision.",
+      "authors": [
+        "Inayat Rasool",
+        "Chulwoo Pack",
+        "Shabbir Ahmed"
+      ],
+      "authors_all": [
+        "Inayat Rasool",
+        "Chulwoo Pack",
+        "Shabbir Ahmed"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-24",
+      "channels": [
+        "manipulation"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33352.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33352-p2.jpg",
+        "assets/img/covers/arxiv-2611-33352-p3.jpg",
+        "assets/img/covers/arxiv-2611-33352-p4.jpg"
+      ],
+      "arxiv_id": "2611.33352",
+      "abs_url": "http://arxiv.org/abs/2611.33352v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33352v1",
+      "venue": "",
+      "venue_announced": "",
+      "score": 19,
+      "judge": {},
+      "institutions": [],
+      "method_tags": [],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2611-33498",
+      "source": "arxiv",
+      "title": "A 3D Simulator for Passive SPAD Imaging",
+      "title_zh": "A 3D Simulator for Passive SPAD Imaging",
+      "tldr_zh": "Passive single-photon avalanche diode (SPAD) cameras provide",
+      "cover_zh": "Passive single-photon avalanche diode (SPAD) cameras provide",
+      "abstract_zh": "Passive single-photon avalanche diode (SPAD) cameras provide short-exposure observations for low-light perception, but collecting task annotations for these sensors remains difficult, and annotated datasets are scarce. We present a 3D simulation pipeline that generates realistic photon detections together with camera-motion and semantic labels, enabling perception models to be trained on synthetic SPAD observations and applied directly to real-world data. The pipeline couples controllable scene geometry and motion with a sensor-informed observation model that accounts for photon shot noise, dark counts, and spatial crosstalk. We evaluate the pipeline through calibrated photon-count comparisons and zero-shot sim-to-real transfer across three downstream perception tasks. We show that classifiers trained only on synthetic SPAD data achieve high accuracy on real low-light recordings at illumination levels less than 2 lux, without real-data fine-tuning. Similarly, we apply models trained entirely on simulated camera sweeps to real-world camera-rotation estimation and achieve mean absolute rotation errors of less than 1 degree on real 20-degree and 30-degree sweeps at 0.5 and 5.0 lux, when deployed zero-shot. We additionally train semantic segmentation models on synthetic data with automatically generated dense labels and perform direct inference on real-world low-light recordings; the results further demonstrate the usefulness of synthetic dense supervision for real low-light perception. Our simulator thus provides a practical source of annotated training data for real SPAD perception.",
+      "authors": [
+        "Elia Mergaert",
+        "Rong Zou",
+        "Roberto Pellerito"
+      ],
+      "authors_all": [
+        "Elia Mergaert",
+        "Rong Zou",
+        "Roberto Pellerito",
+        "Simone Nascivera",
+        "Davide Scaramuzza"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-24",
+      "channels": [
+        "sim2real"
+      ],
+      "badges": [
+        {
+          "kind": "fresh",
+          "label": "⚡ 新鲜出炉"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2611-33498.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2611-33498-p2.jpg",
+        "assets/img/covers/arxiv-2611-33498-p3.jpg",
+        "assets/img/covers/arxiv-2611-33498-p4.jpg"
+      ],
+      "arxiv_id": "2611.33498",
+      "abs_url": "http://arxiv.org/abs/2611.33498v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33498v1",
       "venue": "",
       "venue_announced": "",
       "score": 19,
