@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:12:45.443934+00:00",
+  "generated_at": "2026-11-27T19:20:36.636429+00:00",
   "count": 5353,
   "papers": [
     {
@@ -23974,6 +23974,77 @@
         "retargeting",
         "collision-aware planning",
         "simulation-in-the-loop"
+      ],
+      "platform": [],
+      "sim_stack": [],
+      "method_family": "",
+      "real_robot": "yes",
+      "training_summary": "",
+      "demo_videos": [],
+      "github": {},
+      "source_tags": []
+    },
+    {
+      "id": "arxiv-2607-13455",
+      "source": "arxiv",
+      "title": "Reverse to Advance: Teleoperation-Cost Effective Hard Policy Learning from Reversed Easy Tasks",
+      "title_zh": "反向推进：从反转的简单任务中实现遥操作成本高效的困难策略学习",
+      "tldr_zh": "利用反转简单任务数据高效学习困难任务策略，降低遥操作成本。",
+      "cover_zh": "反转任务就能学会困难操作？这个框架让机器人训练成本大降",
+      "abstract_zh": "高质量遥操作数据集收集成本高昂，尤其是对于困难任务。我们观察到许多任务存在方向不对称性：完成正向困难任务很难，而通过放松或破坏环境来反转任务则相对容易。这表明反转的简单任务轨迹可以作为困难任务的可扩展监督信号，从而降低人工演示收集成本。然而，反转数据可能带有噪声，直接训练可能导致次优策略。为了实现反转数据的大规模自动获取和有效利用，我们提出了一种遥操作成本高效的框架，通过时间反转简单任务来学习困难策略。该框架包含三个关键组件：一个闭环数据收集流程，交替使用困难任务和简单任务策略以自动重置环境并生成多样化轨迹；一个分层数据精炼流程，对简单任务轨迹进行时间反转，并利用运动学先验和评论家引导的优势过滤器筛选低质量运动；以及一个迭代策略学习方法，在持续在线学习循环中，同时使用初始反转简单任务演示和过滤后的反转数据训练困难任务策略。通过自动化收集、分层精炼和迭代学习的结合，我们的方法能够可扩展、可靠地训练复杂、高精度的操作任务。在两个模拟基准和真实机器人实验中，我们证明了与基于反转和强化学习的基线相比，我们的方法在提高困难任务成功率的同时，具有更高的数据效率和更稳定的训练，且无需大量困难任务遥操作。",
+      "authors": [
+        "Qiyuan Qiao",
+        "Ge Yuan",
+        "Can Wang"
+      ],
+      "authors_all": [
+        "Qiyuan Qiao",
+        "Ge Yuan",
+        "Can Wang",
+        "Dong Xu"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-07-15",
+      "channels": [
+        "manipulation",
+        "teleop"
+      ],
+      "badges": [
+        {
+          "kind": "lab",
+          "label": "⭐ HKU"
+        },
+        {
+          "kind": "venue",
+          "label": "🎉 最新收录 · NeurIPS 2026"
+        }
+      ],
+      "cover_image": "assets/img/covers/arxiv-2607-13455.jpg",
+      "preview_pages": [
+        "assets/img/covers/arxiv-2607-13455-p2.jpg",
+        "assets/img/covers/arxiv-2607-13455-p3.jpg",
+        "assets/img/covers/arxiv-2607-13455-p4.jpg"
+      ],
+      "arxiv_id": "2607.13455",
+      "abs_url": "http://arxiv.org/abs/2607.13455v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13455v1",
+      "venue": "NeurIPS 2026",
+      "venue_announced": "2026-11-27",
+      "score": 52,
+      "judge": {
+        "relevant": true,
+        "research_value": "high",
+        "primary_channel": "teleop",
+        "reason": "提出利用反向易任务数据降低遥操作成本，方法新颖且实验充分，对遥操作和数据效率有重要参考价值。",
+        "model": "deepseek-v4-flash"
+      },
+      "institutions": [
+        "The University of Hong Kong"
+      ],
+      "method_tags": [
+        "Imitation Learning",
+        "Diffusion Policy",
+        "temporal reversal"
       ],
       "platform": [],
       "sim_stack": [],
@@ -58262,73 +58333,6 @@
       "sim_stack": [],
       "method_family": "",
       "real_robot": "no",
-      "training_summary": "",
-      "demo_videos": [],
-      "github": {},
-      "source_tags": []
-    },
-    {
-      "id": "arxiv-2607-13455",
-      "source": "arxiv",
-      "title": "Reverse to Advance: Teleoperation-Cost Effective Hard Policy Learning from Reversed Easy Tasks",
-      "title_zh": "反向推进：从反转的简单任务中实现遥操作成本高效的困难策略学习",
-      "tldr_zh": "利用反转简单任务数据高效学习困难任务策略，降低遥操作成本。",
-      "cover_zh": "反转任务就能学会困难操作？这个框架让机器人训练成本大降",
-      "abstract_zh": "高质量遥操作数据集收集成本高昂，尤其是对于困难任务。我们观察到许多任务存在方向不对称性：完成正向困难任务很难，而通过放松或破坏环境来反转任务则相对容易。这表明反转的简单任务轨迹可以作为困难任务的可扩展监督信号，从而降低人工演示收集成本。然而，反转数据可能带有噪声，直接训练可能导致次优策略。为了实现反转数据的大规模自动获取和有效利用，我们提出了一种遥操作成本高效的框架，通过时间反转简单任务来学习困难策略。该框架包含三个关键组件：一个闭环数据收集流程，交替使用困难任务和简单任务策略以自动重置环境并生成多样化轨迹；一个分层数据精炼流程，对简单任务轨迹进行时间反转，并利用运动学先验和评论家引导的优势过滤器筛选低质量运动；以及一个迭代策略学习方法，在持续在线学习循环中，同时使用初始反转简单任务演示和过滤后的反转数据训练困难任务策略。通过自动化收集、分层精炼和迭代学习的结合，我们的方法能够可扩展、可靠地训练复杂、高精度的操作任务。在两个模拟基准和真实机器人实验中，我们证明了与基于反转和强化学习的基线相比，我们的方法在提高困难任务成功率的同时，具有更高的数据效率和更稳定的训练，且无需大量困难任务遥操作。",
-      "authors": [
-        "Qiyuan Qiao",
-        "Ge Yuan",
-        "Can Wang"
-      ],
-      "authors_all": [
-        "Qiyuan Qiao",
-        "Ge Yuan",
-        "Can Wang",
-        "Dong Xu"
-      ],
-      "primary_category": "cs.RO",
-      "published": "2026-07-15",
-      "channels": [
-        "manipulation",
-        "teleop"
-      ],
-      "badges": [
-        {
-          "kind": "lab",
-          "label": "⭐ HKU"
-        }
-      ],
-      "cover_image": "assets/img/covers/arxiv-2607-13455.jpg",
-      "preview_pages": [
-        "assets/img/covers/arxiv-2607-13455-p2.jpg",
-        "assets/img/covers/arxiv-2607-13455-p3.jpg",
-        "assets/img/covers/arxiv-2607-13455-p4.jpg"
-      ],
-      "arxiv_id": "2607.13455",
-      "abs_url": "http://arxiv.org/abs/2607.13455v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.13455v1",
-      "venue": "",
-      "venue_announced": "",
-      "score": 42,
-      "judge": {
-        "relevant": true,
-        "research_value": "high",
-        "primary_channel": "teleop",
-        "reason": "提出利用反向易任务数据降低遥操作成本，方法新颖且实验充分，对遥操作和数据效率有重要参考价值。",
-        "model": "deepseek-v4-flash"
-      },
-      "institutions": [
-        "The University of Hong Kong"
-      ],
-      "method_tags": [
-        "Imitation Learning",
-        "Diffusion Policy",
-        "temporal reversal"
-      ],
-      "platform": [],
-      "sim_stack": [],
-      "method_family": "",
-      "real_robot": "yes",
       "training_summary": "",
       "demo_videos": [],
       "github": {},
