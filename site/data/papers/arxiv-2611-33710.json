@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33710",
   "source": "arxiv",
   "title": "$\\mathrm{M}^{2}$-WAM: Efficient Hierarchical Memory Across Modalities and Timescales for World-Action Models",
-  "title_zh": "$mathrm{M}^{2}$-WAM: Efficient Hierarchical Memory Across Modalities and Timescales for World-Action Models",
+  "title_zh": "M²-WAM：面向世界-动作模型的高效跨模态与跨时间尺度分层记忆",
   "abstract": "Long-horizon robotic manipulation requires historical context, yet retaining extensive visual histories incurs growing storage and retrieval costs, while aggressive compression risks losing fine-grained information needed for subsequent decisions. Moreover, executed action histories capture intermediate behaviors that sparse visual observations may miss. Preserving this complementary context efficiently calls for modality-specific memory mechanisms that balance recent detail with long-term retention. To this end, we introduce $\\mathrm{M}^{2}$-WAM, a world-action model equipped with hierarchical visual and interaction memories. $\\mathrm{M}^{2}$-WAM preserves recent visual observations in dense short-term memory while consolidating entries evicted from this window into fixed-size associative long-term memory through gated delta updates. Within the same short- and long-term hierarchy, interaction memory encodes executed action prefixes into compact temporal representations, complementing visual observations with behavioral context. These complementary memories are integrated into world-action modeling through layer-wise retrieval, enabling memory-augmented action generation with a bounded online memory footprint independent of episode length. On the memory-dependent simulation benchmarks MIKASA-Robo and RMBench, $\\mathrm{M}^{2}$-WAM achieves +53.2% and +61.2% absolute improvements in average success rates over Fast-WAM, respectively. These gains extend to real-world manipulation, where $\\mathrm{M}^{2}$-WAM achieves a +29.3% absolute improvement over LingBot-VA in average success across three tasks. These results suggest that $\\mathrm{M}^{2}$-WAM offers a promising approach to efficient memory-augmented world-action modeling.",
-  "abstract_zh": "Long-horizon robotic manipulation requires historical context, yet retaining extensive visual histories incurs growing storage and retrieval costs, while aggressive compression risks losing fine-grained information needed for subsequent decisions. Moreover, executed action histories capture intermediate behaviors that sparse visual observations may miss. Preserving this complementary context efficiently calls for modality-specific memory mechanisms that balance recent detail with long-term retention. To this end, we introduce $mathrm{M}^{2}$-WAM, a world-action model equipped with hierarchical visual and interaction memories. $mathrm{M}^{2}$-WAM preserves recent visual observations in dense short-term memory while consolidating entries evicted from this window into fixed-size associative long-term memory through gated delta updates. Within the same short- and long-term hierarchy, interaction memory encodes executed action prefixes into compact temporal representations, complementing visual observations with behavioral context. These complementary memories are integrated into world-action modeling through layer-wise retrieval, enabling memory-augmented action generation with a bounded online memory footprint independent of episode length. On the memory-dependent simulation benchmarks MIKASA-Robo and RMBench, $mathrm{M}^{2}$-WAM achieves +53.2% and +61.2% absolute improvements in average success rates over Fast-WAM, respectively. These gains extend to real-world manipulation, where $mathrm{M}^{2}$-WAM achieves a +29.3% absolute improvement over LingBot-VA in average success across three tasks. These results suggest that $mathrm{M}^{2}$-WAM offers a promising approach to efficient memory-augmented world-action modeling.",
-  "tldr_zh": "Long-horizon robotic manipulation requires historical contex",
-  "cover_zh": "Long-horizon robotic manipulation requires historical contex",
+  "abstract_zh": "长时程机器人操作需要历史上下文，但保留大量视觉历史会带来不断增长的存储与检索成本，而激进压缩又可能丢失后续决策所需的细粒度信息。此外，已执行动作历史捕捉了稀疏视觉观测可能遗漏的中间行为。高效保留这种互补上下文需要模态特定的记忆机制，以平衡近期细节与长期保留。为此，我们提出 M²-WAM，一种配备分层视觉与交互记忆的世界-动作模型。M²-WAM 在密集短期记忆中保留近期视觉观测，同时通过门控 delta 更新将逐出该窗口的条目整合到固定大小的关联长期记忆中。在同一短期与长期层级内，交互记忆将已执行动作前缀编码为紧凑的时间表示，用行为上下文补充视觉观测。这些互补记忆通过逐层检索集成到世界-动作建模中，实现具有有界在线记忆足迹（与回合长度无关）的记忆增强动作生成。在依赖记忆的仿真基准 MIKASA-Robo 和 RMBench 上，M²-WAM 相比 Fast-WAM 的平均成功率分别取得 +53.2% 和 +61.2% 的绝对提升。这些增益扩展到真实世界操作，M²-WAM 在三个任务上相比 LingBot-VA 的平均成功率取得 +29.3% 的绝对提升。这些结果表明，M²-WAM 为高效记忆增强的世界-动作建模提供了一种有前景的方法。",
+  "tldr_zh": "M²-WAM 用分层视觉与交互记忆实现高效世界-动作建模，成功率显著提升。",
+  "cover_zh": "机器人长任务总忘事？这个分层记忆让成功率飙升！",
   "authors": [
     {
       "name": "Xiaopeng Zhang",
@@ -61,28 +61,17 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 26,
   "source_tags": [],
-  "score": 16,
+  "score": 6,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（manipulation）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -92,12 +81,19 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Harbin Institute of Technology, Shenzhen",
+    "Robotics Foundation Model Team, XPENG"
+  ],
+  "method_tags": [
+    "World-Action Model",
+    "hierarchical memory",
+    "long-horizon"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

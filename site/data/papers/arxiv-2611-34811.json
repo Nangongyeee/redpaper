@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34811",
   "source": "arxiv",
   "title": "HOG-WAM: Improving Visual Robustness through Future Gradient Prediction",
-  "title_zh": "HOG-WAM: Improving Visual Robustness through Future Gradient Prediction",
+  "title_zh": "HOG-WAM：通过未来梯度预测提升视觉鲁棒性",
   "abstract": "World-action models jointly predict future observations and actions, yet visual corruption can disrupt the resulting policies. We introduce HOG-WAM, which adds future Histograms of Oriented Gradients (HOG) as structural supervision derived directly from demonstration images. An auxiliary HOG diffusion transformer (DiT) module reads RGB features through asymmetric attention, allowing its objective to shape the visual representation used for control. The module is used only during training and removed at inference, preserving FastWAM's RGB-to-action architecture. We evaluate four controlled observation corruptions through a visual-corruption extension of RoboTwin, termed RoboTwin-Plus; HOG-WAM achieves the highest success among the compared policies under all four. Mixed-noise success increases from 78.86% to 82.86% relative to FastWAM, with comparable performance on clean scenes. On LIBERO Plus, overall success increases from 74.49% to 75.26%, with the largest gain under sensor noise, from 74.14% to 78.89%. Across four Franka tasks, average success increases from 40% to 59% under clean observations and from 17% to 24% under noisy observations. A representation ablation favors combining RGB observations with auxiliary HOG prediction over replacing RGB with HOG. These findings support future-gradient prediction as complementary supervision for visually robust control, with larger absolute gains on physical tasks than in simulation. Code is available at https://github.com/iPPLab/HOG-WAM.",
-  "abstract_zh": "World-action models jointly predict future observations and actions, yet visual corruption can disrupt the resulting policies. We introduce HOG-WAM, which adds future Histograms of Oriented Gradients (HOG) as structural supervision derived directly from demonstration images. An auxiliary HOG diffusion transformer (DiT) module reads RGB features through asymmetric attention, allowing its objective to shape the visual representation used for control. The module is used only during training and removed at inference, preserving FastWAM's RGB-to-action architecture. We evaluate four controlled observation corruptions through a visual-corruption extension of RoboTwin, termed RoboTwin-Plus; HOG-WAM achieves the highest success among the compared policies under all four. Mixed-noise success increases from 78.86% to 82.86% relative to FastWAM, with comparable performance on clean scenes. On LIBERO Plus, overall success increases from 74.49% to 75.26%, with the largest gain under sensor noise, from 74.14% to 78.89%. Across four Franka tasks, average success increases from 40% to 59% under clean observations and from 17% to 24% under noisy observations. A representation ablation favors combining RGB observations with auxiliary HOG prediction over replacing RGB with HOG. These findings support future-gradient prediction as complementary supervision for visually robust control, with larger absolute gains on physical tasks than in simulation. Code is available at https://github.com/iPPLab/HOG-WAM.",
-  "tldr_zh": "World-action models jointly predict future observations and",
-  "cover_zh": "World-action models jointly predict future observations and",
+  "abstract_zh": "世界动作模型联合预测未来观测和动作，但视觉损坏会干扰由此产生的策略。我们提出 HOG-WAM，它添加了未来方向梯度直方图（HOG）作为直接从演示图像中导出的结构监督。一个辅助的 HOG 扩散 Transformer（DiT）模块通过非对称注意力读取 RGB 特征，使其目标能够塑造用于控制的视觉表示。该模块仅在训练时使用，推理时移除，保留了 FastWAM 的 RGB 到动作架构。我们通过 RoboTwin 的视觉损坏扩展版本 RoboTwin-Plus 评估了四种受控观测损坏；HOG-WAM 在所有四种情况下均取得了比对比策略更高的成功率。相对于 FastWAM，混合噪声成功率从 78.86% 提高到 82.86%，在干净场景下性能相当。在 LIBERO Plus 上，总体成功率从 74.49% 提高到 75.26%，传感器噪声下增益最大，从 74.14% 提高到 78.89%。在四个 Franka 任务中，干净观测下的平均成功率从 40% 提高到 59%，噪声观测下从 17% 提高到 24%。一项表示消融实验表明，将 RGB 观测与辅助 HOG 预测相结合优于用 HOG 替换 RGB。这些发现支持未来梯度预测作为视觉鲁棒控制的补充监督，在物理任务上的绝对增益大于模拟环境。代码可在 https://github.com/iPPLab/HOG-WAM 获取。",
+  "tldr_zh": "HOG-WAM通过预测未来HOG特征增强视觉鲁棒性，推理时移除模块。",
+  "cover_zh": "训练时加个HOG预测模块，推理时扔掉，视觉鲁棒性直接起飞",
   "authors": [
     {
       "name": "Boxuan Dong",
@@ -65,26 +65,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ 北大"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
     }
   ],
   "related_links": [],
   "page_count": 21,
   "source_tags": [],
-  "score": 27,
+  "score": 42,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “北大” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（robotwin、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "github_repo",
@@ -99,13 +103,31 @@
       "hint": "PDF 21 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
-  "sim_stack": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "世界动作模型+视觉鲁棒性，在Franka/LIBERO上验证，属操作VLA范畴，方法有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Peking University",
+    "National University of Singapore"
+  ],
+  "method_tags": [
+    "World-Action Model",
+    "HOG prediction",
+    "Diffusion Transformer"
+  ],
+  "platform": [
+    "Franka"
+  ],
+  "sim_stack": [
+    "RoboTwin",
+    "LIBERO Plus"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

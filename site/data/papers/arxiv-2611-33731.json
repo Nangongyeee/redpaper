@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33731",
   "source": "arxiv",
   "title": "RoboJackVR: Turning Robot Tasks into VR Games for Scalable Demonstration Collection",
-  "title_zh": "RoboJackVR: Turning Robot Tasks into VR Games for Scalable Demonstration Collection",
+  "title_zh": "RoboJackVR：将机器人任务转化为VR游戏，实现可扩展的演示收集",
   "abstract": "Scaling robot demonstration datasets requires collection systems that accommodate more participants and diverse tasks, yet teleoperation barriers and task-adaptation effort limit this expansion. We present RoboJackVR, a standalone virtual reality (VR) game in which players manipulate simulated robots to execute combat skills and contribute demonstrations. MuJoCo simulation and demonstration recording run locally on the headset, removing the need for an external PC or simulation server during collection. Tutorials, skill selection, combat consequences, and character progression organize repeated task attempts within a continuing game. Task contracts declare assets, controls, resets, success criteria, and recording semantics; separate game configurations specify guidance, attempt groups, skill effects, and course placement. Shared bindings connect these declarations to task execution, outcome handling, and recording, allowing tasks to reuse the game flow while retaining their control and success semantics. Batch tools package supported resources and generate configurations, with manual adaptation and review for new interfaces and unsupported predicates. We instantiate the approach with SO101-Nexus-derived and LIBERO tasks. On the 66 LIBERO-90 tasks covered by the collected data, ACT policies trained solely on VR demonstrations retain approximately 91% of the full-standard simulation-demonstration baseline's success rate on held-out initial states, averaged over four training seeds. These results support the utility of play-collected VR demonstrations for policy learning in this setting.",
-  "abstract_zh": "Scaling robot demonstration datasets requires collection systems that accommodate more participants and diverse tasks, yet teleoperation barriers and task-adaptation effort limit this expansion. We present RoboJackVR, a standalone virtual reality (VR) game in which players manipulate simulated robots to execute combat skills and contribute demonstrations. MuJoCo simulation and demonstration recording run locally on the headset, removing the need for an external PC or simulation server during collection. Tutorials, skill selection, combat consequences, and character progression organize repeated task attempts within a continuing game. Task contracts declare assets, controls, resets, success criteria, and recording semantics; separate game configurations specify guidance, attempt groups, skill effects, and course placement. Shared bindings connect these declarations to task execution, outcome handling, and recording, allowing tasks to reuse the game flow while retaining their control and success semantics. Batch tools package supported resources and generate configurations, with manual adaptation and review for new interfaces and unsupported predicates. We instantiate the approach with SO101-Nexus-derived and LIBERO tasks. On the 66 LIBERO-90 tasks covered by the collected data, ACT policies trained solely on VR demonstrations retain approximately 91% of the full-standard simulation-demonstration baseline's success rate on held-out initial states, averaged over four training seeds. These results support the utility of play-collected VR demonstrations for policy learning in this setting.",
-  "tldr_zh": "Scaling robot demonstration datasets requires collection sys",
-  "cover_zh": "Scaling robot demonstration datasets requires collection sys",
+  "abstract_zh": "扩展机器人演示数据集需要能够容纳更多参与者和多样化任务的收集系统，然而遥操作障碍和任务适应工作限制了这种扩展。我们提出了RoboJackVR，一个独立的虚拟现实（VR）游戏，玩家在其中操纵模拟机器人执行战斗技能并贡献演示。MuJoCo仿真和演示记录在头显本地运行，无需在收集期间使用外部PC或仿真服务器。教程、技能选择、战斗后果和角色 progression 在持续进行的游戏中组织重复的任务尝试。任务契约声明资产、控制、重置、成功标准和记录语义；单独的游戏配置指定指导、尝试组、技能效果和课程放置。共享绑定将这些声明连接到任务执行、结果处理和记录，允许任务在保持其控制和成功语义的同时重用游戏流程。批处理工具打包支持的资源并生成配置，对于新接口和不支持的谓词进行手动适配和审查。我们用源自SO101-Nexus和LIBERO的任务实例化了该方法。在收集数据覆盖的66个LIBERO-90任务上，仅使用VR演示训练的ACT策略在留出的初始状态上保持了完整标准仿真演示基线成功率的约91%，平均超过四个训练种子。这些结果支持了在该设置中游戏收集的VR演示用于策略学习的效用。",
+  "tldr_zh": "VR游戏收集机器人演示，训练策略成功率接近仿真基线。",
+  "cover_zh": "打游戏就能训机器人？VR演示让策略成功率直逼仿真基线",
   "authors": [
     {
       "name": "Ben Ma",
@@ -39,28 +39,17 @@
     "manipulation",
     "teleop"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 27,
+  "score": 17,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（libero、teleoperation、teleop）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -76,12 +65,20 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "CosmicFlow Technology"
+  ],
+  "method_tags": [
+    "Imitation Learning",
+    "VR demonstration collection",
+    "ACT"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "MuJoCo"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "no",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33460",
   "source": "arxiv",
   "title": "Fast Muscle-Driven Whole-Body Motion Tracking with a Differentiable World Model",
-  "title_zh": "Fast Muscle-Driven Whole-Body Motion Tracking with a Differentiable World Model",
+  "title_zh": "基于可微分世界模型的快速肌肉驱动全身运动跟踪",
   "abstract": "Tracking motion capture with a whole-body musculoskeletal model means coordinating hundreds of muscles through contact, and current controllers take hours to days of GPU time to train, so every tuning decision is expensive. SuperMimic trains a tracking policy by backpropagating through the rollouts of a learned world model. We extend it to MS-Human-700 (700 muscles) and MyoFullBody (354 muscles), with MuJoCo's activation dynamics inside the world model. To make its training fast, our recipe takes the speedups developed for the Unitree G1, replaces three of their settings that fail on muscles, and adds four changes of our own: observations without muscle geometry, data collection concurrent with the updates, Beta exploration noise that keeps every excitation in $[0,1]$, and 50 Hz control. On one RTX 5090 it trains MS-Human-700 in 6.3 minutes to the held-out return that SuperMimic's published hyperparameters reach in 3.9 hours, 37$\\times$ sooner, and in 20 minutes to lower tracking errors than theirs after 10 hours. It trains MyoFullBody 34$\\times$ sooner without retuning. Ablations show what is specific to muscles: a higher policy learning rate stalls half of the runs, and clipped Gaussian noise adds a tonic co-contraction that Beta noise avoids. Finally, refining the policy's actions through the world model at test time lowers the position error by a further 26% with no held-out clip failing, and reaches the same return after 5.1 instead of 6.3 minutes of training. Code, the training recipe and videos are on the project page https://muscle-supermimic.beanpow.top.",
-  "abstract_zh": "Tracking motion capture with a whole-body musculoskeletal model means coordinating hundreds of muscles through contact, and current controllers take hours to days of GPU time to train, so every tuning decision is expensive. SuperMimic trains a tracking policy by backpropagating through the rollouts of a learned world model. We extend it to MS-Human-700 (700 muscles) and MyoFullBody (354 muscles), with MuJoCo's activation dynamics inside the world model. To make its training fast, our recipe takes the speedups developed for the Unitree G1, replaces three of their settings that fail on muscles, and adds four changes of our own: observations without muscle geometry, data collection concurrent with the updates, Beta exploration noise that keeps every excitation in $[0,1]$, and 50 Hz control. On one RTX 5090 it trains MS-Human-700 in 6.3 minutes to the held-out return that SuperMimic's published hyperparameters reach in 3.9 hours, 37$×$ sooner, and in 20 minutes to lower tracking errors than theirs after 10 hours. It trains MyoFullBody 34$×$ sooner without retuning. Ablations show what is specific to muscles: a higher policy learning rate stalls half of the runs, and clipped Gaussian noise adds a tonic co-contraction that Beta noise avoids. Finally, refining the policy's actions through the world model at test time lowers the position error by a further 26% with no held-out clip failing, and reaches the same return after 5.1 instead of 6.3 minutes of training. Code, the training recipe and videos are on the project page https://muscle-supermimic.beanpow.top.",
-  "tldr_zh": "Tracking motion capture with a whole-body musculoskeletal mo",
-  "cover_zh": "Tracking motion capture with a whole-body musculoskeletal mo",
+  "abstract_zh": "使用全身肌肉骨骼模型跟踪运动捕捉意味着通过接触协调数百块肌肉，而当前控制器需要数小时到数天的GPU时间训练，因此每个调优决策都很昂贵。SuperMimic通过学习世界模型的 rollout 反向传播来训练跟踪策略。我们将其扩展到 MS-Human-700（700块肌肉）和 MyoFullBody（354块肌肉），并在世界模型中内置了 MuJoCo 的激活动力学。为了加速训练，我们的方案采用了为 Unitree G1 开发的加速措施，替换了其中三个在肌肉上失效的设置，并添加了我们自己的四项更改：不含肌肉几何的观测、数据收集与更新并发、保持每个激励在 $[0,1]$ 内的 Beta 探索噪声，以及 50 Hz 控制。在一张 RTX 5090 上，它训练 MS-Human-700 仅需 6.3 分钟即可达到 SuperMimic 已发布超参数在 3.9 小时内达到的留出回报，快了 37 倍；并在 20 分钟内达到比其 10 小时后更低的跟踪误差。它无需重新调参即可将 MyoFullBody 的训练速度提升 34 倍。消融实验揭示了肌肉特有的问题：更高的策略学习率会使一半的运行停滞，而裁剪高斯噪声会引入 Beta 噪声避免的强直性共收缩。最后，在测试时通过世界模型细化策略动作，可将位置误差进一步降低 26%，且没有留出片段失败，并在训练 5.1 分钟而非 6.3 分钟后达到相同回报。代码、训练方案和视频见项目页面 https://muscle-supermimic.beanpow.top。",
+  "tldr_zh": "可微分世界模型加速肌肉驱动全身运动跟踪训练。",
+  "cover_zh": "肌肉驱动全身跟踪｜训练时间从小时级降到分钟级",
   "authors": [
     {
       "name": "Kaibo He",
@@ -55,12 +55,27 @@
     "loco-manip-wbc",
     "world-model"
   ],
-  "badges": [],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
+    }
+  ],
   "related_links": [],
   "page_count": 22,
   "source_tags": [],
-  "score": 20,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -81,10 +96,20 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Clone Robotics",
+    "Tsinghua University",
+    "Peking University"
+  ],
+  "method_tags": [
+    "World Model",
+    "Motion Tracking",
+    "Muscle-driven Control"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "MuJoCo"
+  ],
   "method_family": "",
   "real_robot": "",
   "training_summary": "",

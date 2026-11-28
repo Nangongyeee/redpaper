@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34675",
   "source": "arxiv",
   "title": "RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
-  "title_zh": "RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
+  "title_zh": "RoboEvo$^2$：通过执行器-策略协同进化的递归机器人自我改进",
   "abstract": "Robots should adapt to unfamiliar environments and acquire new skills through interaction, then execute those skills efficiently with practice. Vision-language-action policies provide efficient control, but often need additional human demonstrations to handle unfamiliar settings; reasoning agents can discover solutions using broad prior knowledge and robot-control APIs, but repeated deliberation and repair are costly. Inspired by human learning through reasoning and practice, we propose RoboEvo$^2$, a framework for recursive harness-policy co-evolution. In Policy-to-Harness (P2H) evolution, policy failures guide a coding agent to search complementary Code, Code+ICL, and Code+Policy routes, consolidating verified solutions into reusable skills, routing strategies, and experience memory. In Harness-to-Policy (H2P) evolution, verified trajectories provide supervised training, while Counterfactual Preference Distillation (CPD) teaches the policy to favor successful corrections over failures from the same starting state. The improved policy provides stronger motor skills for subsequent search, while its remaining failures redirect harness evolution, closing the reciprocal loop. Through recursive co-evolution without additional human demonstrations, RoboEvo$^2$ improves standalone success from 11.0% to 84.1% and hybrid success from 30.4% to 90.5% on LIBERO-PRO, with similar gains and reduced agentic costs on RoboTwin C2R. Further experiments demonstrate autonomous task acquisition, cross-embodiment harness transfer, and 95.0% hybrid success on the Unitree G1-D. Our models and code will be publicly released.",
-  "abstract_zh": "Robots should adapt to unfamiliar environments and acquire new skills through interaction, then execute those skills efficiently with practice. Vision-language-action policies provide efficient control, but often need additional human demonstrations to handle unfamiliar settings; reasoning agents can discover solutions using broad prior knowledge and robot-control APIs, but repeated deliberation and repair are costly. Inspired by human learning through reasoning and practice, we propose RoboEvo$^2$, a framework for recursive harness-policy co-evolution. In Policy-to-Harness (P2H) evolution, policy failures guide a coding agent to search complementary Code, Code+ICL, and Code+Policy routes, consolidating verified solutions into reusable skills, routing strategies, and experience memory. In Harness-to-Policy (H2P) evolution, verified trajectories provide supervised training, while Counterfactual Preference Distillation (CPD) teaches the policy to favor successful corrections over failures from the same starting state. The improved policy provides stronger motor skills for subsequent search, while its remaining failures redirect harness evolution, closing the reciprocal loop. Through recursive co-evolution without additional human demonstrations, RoboEvo$^2$ improves standalone success from 11.0% to 84.1% and hybrid success from 30.4% to 90.5% on LIBERO-PRO, with similar gains and reduced agentic costs on RoboTwin C2R. Further experiments demonstrate autonomous task acquisition, cross-embodiment harness transfer, and 95.0% hybrid success on the Unitree G1-D. Our models and code will be publicly released.",
-  "tldr_zh": "Robots should adapt to unfamiliar environments and acquire n",
-  "cover_zh": "Robots should adapt to unfamiliar environments and acquire n",
+  "abstract_zh": "机器人应能适应陌生环境，通过交互获得新技能，并通过练习高效执行这些技能。视觉-语言-动作策略提供了高效控制，但通常需要额外的人类演示来处理陌生环境；推理智能体可以利用广泛的先验知识和机器人控制API发现解决方案，但反复的推理和修复成本高昂。受人类通过推理和实践学习的启发，我们提出了RoboEvo$^2$，一个用于递归执行器-策略协同进化的框架。在策略到执行器（P2H）进化中，策略失败引导编码智能体搜索互补的代码、代码+ICL和代码+策略路径，将验证过的解决方案整合为可重用技能、路由策略和经验记忆。在执行器到策略（H2P）进化中，验证过的轨迹提供监督训练，而反事实偏好蒸馏（CPD）教导策略从相同起始状态中偏好成功的修正而非失败。改进的策略为后续搜索提供更强的运动技能，而其剩余的失败则重定向执行器进化，闭合互惠循环。通过无需额外人类演示的递归协同进化，RoboEvo$^2$在LIBERO-PRO上将独立成功率从11.0%提高到84.1%，混合成功率从30.4%提高到90.5%，在RoboTwin C2R上取得类似增益并降低智能体成本。进一步实验展示了自主任务获取、跨具身执行器迁移，以及在Unitree G1-D上达到95.0%的混合成功率。我们的模型和代码将公开发布。",
+  "tldr_zh": "机器人通过执行器与策略协同进化实现递归自我改进，无需额外人类演示。",
+  "cover_zh": "机器人自己练出技能？｜执行器策略协同进化，成功率飙升",
   "authors": [
     {
       "name": "Chenzhi Liu",
@@ -82,26 +82,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ ZJU"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
     }
   ],
   "related_links": [],
   "page_count": 19,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ZJU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（unitree g1、vision-language-action、robotwin、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -116,13 +120,33 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
-  "sim_stack": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "VLA策略与编码智能体协同进化，无需额外人类演示，在LIBERO和Unitree G1上验证，属操作VLA与自改进方向，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "The University of Hong Kong",
+    "Zhejiang University",
+    "Southern University of Science and Technology",
+    "The Chinese University of Hong Kong, Shenzhen"
+  ],
+  "method_tags": [
+    "VLA",
+    "Counterfactual Preference Distillation",
+    "harness-policy co-evolution"
+  ],
+  "platform": [
+    "Unitree G1-D"
+  ],
+  "sim_stack": [
+    "LIBERO-PRO",
+    "RoboTwin"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34569",
   "source": "arxiv",
   "title": "Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain",
-  "title_zh": "Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain",
+  "title_zh": "驾驭波浪：弹性地形上的仿真到真实人形机器人控制",
   "abstract": "Humanoid robots on deformable elastic terrains face a surface whose position and motion are coupled in space and time: deflection and rebound persist between contacts, and load at one foothold alters the support at others, so training must capture how each contact changes the support that follows. We present RIPPLE (Robust Interaction via Proprioceptive Policies on Large-deformation Elastic terrain), a simulation-to-real learning framework for humanoid control on such terrains. RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning. Staged training then transfers rigid-ground skills to balance and jumping on these terrains using only proprioception, without vision or force sensing. Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform. In simulation, ElasticMembrane training holds standing success of at least 98.7% (mean over three seeds) on ElasticMembrane, IndependentSprings, and BouncyPlate under 0.3 m/s perturbations, whereas rigid-ground or contact-compliance training transfers poorly to the first two. A fixed policy tolerates stiffness from 0.35 to 2.8 times the training value, beds up to 7 m wide, and seven further simulated support scenarios, so transfer needs no calibration to the trampoline's stiffness. We plan to release the code soon. The interactive browser demo, videos, and scene configurations are available on the project page: https://fly-pigTH.github.io/wave_rider/",
-  "abstract_zh": "Humanoid robots on deformable elastic terrains face a surface whose position and motion are coupled in space and time: deflection and rebound persist between contacts, and load at one foothold alters the support at others, so training must capture how each contact changes the support that follows. We present RIPPLE (Robust Interaction via Proprioceptive Policies on Large-deformation Elastic terrain), a simulation-to-real learning framework for humanoid control on such terrains. RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning. Staged training then transfers rigid-ground skills to balance and jumping on these terrains using only proprioception, without vision or force sensing. Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform. In simulation, ElasticMembrane training holds standing success of at least 98.7% (mean over three seeds) on ElasticMembrane, IndependentSprings, and BouncyPlate under 0.3 m/s perturbations, whereas rigid-ground or contact-compliance training transfers poorly to the first two. A fixed policy tolerates stiffness from 0.35 to 2.8 times the training value, beds up to 7 m wide, and seven further simulated support scenarios, so transfer needs no calibration to the trampoline's stiffness. We plan to release the code soon. The interactive browser demo, videos, and scene configurations are available on the project page: https://fly-pigTH.github.io/wave_rider/",
-  "tldr_zh": "Humanoid robots on deformable elastic terrains face a surfac",
-  "cover_zh": "Humanoid robots on deformable elastic terrains face a surfac",
+  "abstract_zh": "可变形弹性地形上的人形机器人面临一个在空间和时间上耦合的表面：偏转和回弹在接触之间持续存在，一个立足点的负载会改变其他立足点的支撑，因此训练必须捕捉每次接触如何改变后续的支撑。我们提出 RIPPLE（基于本体感知策略的大变形弹性地形鲁棒交互），一个用于此类地形上人形机器人控制的仿真到真实学习框架。RIPPLE 将 ElasticMembrane（一个预张紧的质量-弹簧网格，用于建模空间耦合的偏转、能量存储和回弹）与可变形接触集成到 MJLab 中，用于 GPU 并行策略学习。然后，分阶段训练将刚性地面技能迁移到这些地形上的平衡和跳跃，仅使用本体感知，无需视觉或力传感。零样本部署时，策略使 MagicBot Z1 人形机器人能够平衡、连续跳跃，并从刚性平台进入蹦床。在仿真中，ElasticMembrane 训练在 0.3 m/s 扰动下，在 ElasticMembrane、IndependentSprings 和 BouncyPlate 上保持至少 98.7% 的站立成功率（三个种子的平均值），而刚性地面或接触柔顺性训练对前两者的迁移效果较差。固定策略容忍刚度为训练值的 0.35 到 2.8 倍、床宽达 7 米以及另外七个模拟支撑场景，因此迁移无需针对蹦床刚度进行校准。我们计划很快发布代码。交互式浏览器演示、视频和场景配置可在项目页面获取：https://fly-pigTH.github.io/wave_rider/",
+  "tldr_zh": "RIPPLE框架实现人形机器人在弹性地形上零样本平衡与跳跃。",
+  "cover_zh": "人形机器人竟能在蹦床上连续跳跃？零样本迁移无需校准！",
   "authors": [
     {
       "name": "Yinglei Zhu",
@@ -85,26 +85,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ 清华"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ NUS"
     }
   ],
   "related_links": [],
   "page_count": 9,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “清华” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（foothold、sim-to-real、humanoid control、humanoid robot）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -119,13 +123,32 @@
       "hint": "同时命中 3 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
-  "sim_stack": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "人形机器人在弹性地形上的仿真到真机迁移控制，含可变形地形建模与分阶段训练，属 sim2real 与 loco 交叉。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University",
+    "National University of Singapore",
+    "East China University of Science and Technology",
+    "Nanjing University"
+  ],
+  "method_tags": [
+    "sim-to-real",
+    "proprioceptive policies",
+    "staged training"
+  ],
+  "platform": [
+    "MagicBot Z1"
+  ],
+  "sim_stack": [
+    "MJLab"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

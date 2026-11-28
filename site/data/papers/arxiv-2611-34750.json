@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34750",
   "source": "arxiv",
   "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
-  "title_zh": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
+  "title_zh": "SOLVE：稀疏、有序关键位姿让LLM智能体成为多功能高效的机器人操作器",
   "abstract": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
-  "abstract_zh": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
-  "tldr_zh": "LLM agents have made remarkable progress in robot manipulati",
-  "cover_zh": "LLM agents have made remarkable progress in robot manipulati",
+  "abstract_zh": "LLM智能体在机器人操作领域取得了显著进展，但仍面临推理成本高、逐步密集控制和工具瓶颈等问题。我们提出SOLVE，一种无需训练、多功能且高效的智能体策略：多模态LLM智能体每次调用时生成稀疏、有序的6自由度末端执行器关键位姿序列，观察执行结果后再生成下一序列，同时由运动规划器在关键位姿之间进行插值。智能体自行决定关键位姿的数量和间距，从而兼顾快速长距离运动和精细操作。这种粒度与遥操作操作的稀疏性相匹配：DROID中的大多数演示可以被压缩为少量关键位姿，而非密集动作。SOLVE通过稀疏深度查询来定位关键位姿，这些查询由多视角三角测量、立体视觉或单目深度等噪声源回答，并能自行应对噪声。它还能从执行反馈中改进，反思自身的 rollout 并为每个任务提炼少量规则。SOLVE在RoboDojo上达到74.5%的最先进性能，在RoboLab上达到84.5%，平均每回合仅需1.7美元，比之前的密集控制智能体策略少12倍。在真实机器人上，同一智能体在16个具有挑战性的零样本任务中实现了88%的成功率（85次中成功75次）。项目页面见 https://serenos.github.io/solve-website。",
+  "tldr_zh": "SOLVE用稀疏关键位姿实现高效机器人操作，成本大降且性能领先。",
+  "cover_zh": "LLM智能体新玩法｜稀疏关键位姿让机器人操作又快又省",
   "authors": [
     {
       "name": "Xiang Li",
@@ -65,26 +65,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ NVIDIA"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
     }
   ],
   "related_links": [],
   "page_count": 23,
   "source_tags": [],
-  "score": 27,
+  "score": 42,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NVIDIA” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（manipulation、fine-grained manipulation、teleop）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -99,13 +103,26 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "LLM智能体生成稀疏关键位姿控制机械臂，真机零样本成功率高，属操作方向新方法。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Tsinghua University",
+    "NVIDIA"
+  ],
+  "method_tags": [
+    "LLM agent",
+    "keypose",
+    "training-free"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

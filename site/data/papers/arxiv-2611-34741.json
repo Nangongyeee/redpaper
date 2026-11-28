@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34741",
   "source": "arxiv",
   "title": "ELMO: Emergent Representations In Imitation Learning Via Dynamic Hierarchical Action Chunking",
-  "title_zh": "ELMO: Emergent Representations In Imitation Learning Via Dynamic Hierarchical Action Chunking",
+  "title_zh": "ELMO：通过动态分层动作分块在模仿学习中涌现的表征",
   "abstract": "Robot trajectories naturally decompose into variable-length phases with distinct semantic intents, such as reaching, grasping, and lifting. However, training policies to minimize MSE treats all actions as equal, obscuring their semantic structure. While latent action models attempt to create a structured prediction target by compressing action chunks into latent representations, existing approaches rely on two-stage training and context-blind decoders. Consequently, their representations are context-agnostic motion codes (e.g., \"move down\") which fail to capture behavioural intent (e.g., \"pick up the block\"). To overcome these bottlenecks, we introduce the Emergent Latent-action MOdel (ELMO), an end-to-end framework that encodes robot trajectories as grounded semantic codes -- representations that ground task-level behavioural intent in the current environment. ELMO jointly trains a VLA planner and an observation-conditioned decoder over dynamically chunked trajectories, learning a semantically grounded action space without separate pretraining. Across standard benchmarks, ELMO outperforms comparable prior methods by 9.6 percentage points on LIBERO-Plus and by 0.75 in average task length on CALVIN. Furthermore, on Blocks -- our shortcut-free simulation and real-world generalization benchmark -- ELMO reaches a 38.6% success rate while all baselines remain below 5%, demonstrating its ability to capture the semantic structure of demonstrations. Website: https://uoft-isl.github.io/elmo.github.io/",
-  "abstract_zh": "Robot trajectories naturally decompose into variable-length phases with distinct semantic intents, such as reaching, grasping, and lifting. However, training policies to minimize MSE treats all actions as equal, obscuring their semantic structure. While latent action models attempt to create a structured prediction target by compressing action chunks into latent representations, existing approaches rely on two-stage training and context-blind decoders. Consequently, their representations are context-agnostic motion codes (e.g., \"move down\") which fail to capture behavioural intent (e.g., \"pick up the block\"). To overcome these bottlenecks, we introduce the Emergent Latent-action MOdel (ELMO), an end-to-end framework that encodes robot trajectories as grounded semantic codes -- representations that ground task-level behavioural intent in the current environment. ELMO jointly trains a VLA planner and an observation-conditioned decoder over dynamically chunked trajectories, learning a semantically grounded action space without separate pretraining. Across standard benchmarks, ELMO outperforms comparable prior methods by 9.6 percentage points on LIBERO-Plus and by 0.75 in average task length on CALVIN. Furthermore, on Blocks -- our shortcut-free simulation and real-world generalization benchmark -- ELMO reaches a 38.6% success rate while all baselines remain below 5%, demonstrating its ability to capture the semantic structure of demonstrations. Website: https://uoft-isl.github.io/elmo.github.io/",
-  "tldr_zh": "Robot trajectories naturally decompose into variable-length",
-  "cover_zh": "Robot trajectories naturally decompose into variable-length",
+  "abstract_zh": "机器人轨迹自然地分解为具有不同语义意图的变长阶段，例如接近、抓取和提升。然而，训练策略以最小化MSE为目标会将所有动作视为同等重要，从而掩盖了它们的语义结构。虽然潜在动作模型试图通过将动作块压缩为潜在表示来创建结构化的预测目标，但现有方法依赖于两阶段训练和上下文盲解码器。因此，它们的表示是与上下文无关的运动代码（例如“向下移动”），无法捕捉行为意图（例如“拿起积木”）。为了克服这些瓶颈，我们引入了涌现潜在动作模型（ELMO），这是一个端到端框架，将机器人轨迹编码为接地语义代码——即在当前环境中将任务级行为意图接地的表示。ELMO在动态分块的轨迹上联合训练VLA规划器和以观测为条件的解码器，无需单独预训练即可学习语义接地的动作空间。在标准基准测试中，ELMO在LIBERO-Plus上比同类先前方法高出9.6个百分点，在CALVIN上的平均任务长度高出0.75。此外，在Blocks——我们的无捷径模拟和真实世界泛化基准上——ELMO达到了38.6%的成功率，而所有基线均低于5%，展示了其捕捉演示语义结构的能力。网站：https://uoft-isl.github.io/elmo.github.io/",
+  "tldr_zh": "ELMO端到端学习语义接地的动作表示，在多个基准上超越先前方法。",
+  "cover_zh": "机器人模仿学习新突破｜ELMO让动作表示真正理解意图",
   "authors": [
     {
       "name": "Jasper Gerigk",
@@ -45,16 +45,11 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 23,
   "source_tags": [],
-  "score": 25,
+  "score": 15,
   "score_breakdown": [
     {
       "id": "keyword_density",
@@ -63,25 +58,32 @@
       "hint": "频道关键词命中 5 个（grasp、grasping、imitation learning、action chunking）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 23 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "VLA模仿学习新方法，动态分层动作分块，LIBERO/CALVIN真机验证，操作方向参考价值高",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Toronto",
+    "Vector Institute"
+  ],
+  "method_tags": [
+    "Imitation Learning",
+    "VLA",
+    "latent action"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

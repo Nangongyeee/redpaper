@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33733",
   "source": "arxiv",
   "title": "PROVE: Predict-to-Specify and Observe-to-Verify for Human-Aligned Evaluation of Mobile Manipulation",
-  "title_zh": "PROVE: Predict-to-Specify and Observe-to-Verify for Human-Aligned Evaluation of Mobile Manipulation",
+  "title_zh": "PROVE：预测-指定与观察-验证，用于移动操作的人类对齐评估",
   "abstract": "Judging open-world robot manipulation is hard because layouts, articulated fixtures, and valid goal configurations vary widely. On RoboCasa365, simulator predicates agree with human judgments on only 69.09\\% of rollouts, and a frontier VLM judge on 86.12\\%. We present \\textbf{PROVE} (Predict-to-Specify, Observe-to-Verify), which first specifies what success should look like and then checks the outcome. PROVE refines success conditions from the instruction, the initial scene, a target-object reference image, and a generated goal image. The goal image only sharpens the conditions and never serves as evidence. On 6,500 human-annotated rollouts over 65 atomic actions, PROVE reaches \\textbf{96.83\\%} agreement. Applied to open-source policies, it reports far lower success than native checks and changes their ranking. To reduce evaluation overhead in policy learning, we distill PROVE into \\textbf{PROVE-Lite}, a 4B evaluator that needs no reference images. In one forward pass, PROVE-Lite predicts the outcome and the terminal state of each task condition. It reaches \\textbf{91.20\\%} agreement while running about 38$\\times$ faster than PROVE. Mapped to a severity-aware reward, its diagnoses improve PPO post-training over both simulator and binary rewards.",
-  "abstract_zh": "Judging open-world robot manipulation is hard because layouts, articulated fixtures, and valid goal configurations vary widely. On RoboCasa365, simulator predicates agree with human judgments on only 69.09\\% of rollouts, and a frontier VLM judge on 86.12\\%. We present textbf{PROVE} (Predict-to-Specify, Observe-to-Verify), which first specifies what success should look like and then checks the outcome. PROVE refines success conditions from the instruction, the initial scene, a target-object reference image, and a generated goal image. The goal image only sharpens the conditions and never serves as evidence. On 6,500 human-annotated rollouts over 65 atomic actions, PROVE reaches textbf{96.83\\%} agreement. Applied to open-source policies, it reports far lower success than native checks and changes their ranking. To reduce evaluation overhead in policy learning, we distill PROVE into textbf{PROVE-Lite}, a 4B evaluator that needs no reference images. In one forward pass, PROVE-Lite predicts the outcome and the terminal state of each task condition. It reaches textbf{91.20\\%} agreement while running about 38$×$ faster than PROVE. Mapped to a severity-aware reward, its diagnoses improve PPO post-training over both simulator and binary rewards.",
-  "tldr_zh": "Judging open-world robot manipulation is hard because layout",
-  "cover_zh": "Judging open-world robot manipulation is hard because layout",
+  "abstract_zh": "判断开放世界中的机器人操作很困难，因为布局、铰接装置和有效目标配置变化很大。在RoboCasa365上，模拟器谓词与人类判断仅在69.09%的rollouts上一致，而前沿VLM评委为86.12%。我们提出PROVE（预测-指定，观察-验证），它首先指定成功应该是什么样子，然后检查结果。PROVE从指令、初始场景、目标物体参考图像和生成的目标图像中细化成功条件。目标图像仅用于锐化条件，从不作为证据。在65个原子动作的6,500个人工标注rollouts上，PROVE达到96.83%的一致性。应用于开源策略时，它报告的成功率远低于原生检查，并改变了它们的排名。为了减少策略学习中的评估开销，我们将PROVE蒸馏为PROVE-Lite，一个无需参考图像的4B评估器。在一次前向传递中，PROVE-Lite预测每个任务条件的结果和终止状态。它达到91.20%的一致性，同时运行速度比PROVE快约38倍。映射到严重性感知奖励，其诊断改善了PPO后训练，优于模拟器和二元奖励。",
+  "tldr_zh": "PROVE通过先指定成功条件再验证，实现与人类高度一致的机器人操作评估。",
+  "cover_zh": "机器人评估总翻车？PROVE先定标准再检查，一致性飙升",
   "authors": [
     {
       "name": "Bowen Lyu",
@@ -58,28 +58,17 @@
     "loco-manip-wbc",
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 24,
   "source_tags": [],
-  "score": 27,
+  "score": 17,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（mobile manipulation、manipulation、robocasa）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -96,9 +85,15 @@
   ],
   "judge": {},
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "VLM judge",
+    "distillation",
+    "PPO"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "RoboCasa365"
+  ],
   "method_family": "",
   "real_robot": "",
   "training_summary": "",

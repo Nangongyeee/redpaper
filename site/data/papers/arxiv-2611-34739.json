@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34739",
   "source": "arxiv",
   "title": "Was the Model Given the Right Action? Auditing and Repairing Action Interfaces in Navigation World Models",
-  "title_zh": "Was the Model Given the Right Action? Auditing and Repairing Action Interfaces in Navigation World Models",
+  "title_zh": "模型被给予了正确的动作吗？导航世界模型中动作接口的审计与修复",
   "abstract": "World models are evaluated by predicting future observations from actions. These evaluations assume that actions are prepared the same way as during training, but an unchecked mismatch can make a model appear less accurate than it is. We audit this assumption in Navigation World Models (NWM) and find three interacting differences between its training and rollout code. Correcting the inputs, without retraining, reduces mean visual prediction error by 42%, measured with DreamSim on the RECON navigation dataset. The correction also changes the ranking of NWM checkpoints in an exploratory analysis and removes or reduces two alternative models' measured advantages. Correcting only the normalization offset instead increases error, showing why interacting mismatches must be checked together. To test whether sensitivity to input preparation extends beyond NWM, we deliberately introduce encoding errors into two alternative models; both become less accurate. We introduce ActRosetta, a tool that checks whether action encoding matches training, identifies supported causes of disagreement, and repairs inputs when sufficient information is available. Repair helps little where predictions barely respond to actions, the tool's diagnosis has limited coverage, and improved control remains unproven. For any action-conditioned world model, the lesson is the same: before reporting rollout error, verify that evaluation encodes actions exactly as training did.",
-  "abstract_zh": "World models are evaluated by predicting future observations from actions. These evaluations assume that actions are prepared the same way as during training, but an unchecked mismatch can make a model appear less accurate than it is. We audit this assumption in Navigation World Models (NWM) and find three interacting differences between its training and rollout code. Correcting the inputs, without retraining, reduces mean visual prediction error by 42%, measured with DreamSim on the RECON navigation dataset. The correction also changes the ranking of NWM checkpoints in an exploratory analysis and removes or reduces two alternative models' measured advantages. Correcting only the normalization offset instead increases error, showing why interacting mismatches must be checked together. To test whether sensitivity to input preparation extends beyond NWM, we deliberately introduce encoding errors into two alternative models; both become less accurate. We introduce ActRosetta, a tool that checks whether action encoding matches training, identifies supported causes of disagreement, and repairs inputs when sufficient information is available. Repair helps little where predictions barely respond to actions, the tool's diagnosis has limited coverage, and improved control remains unproven. For any action-conditioned world model, the lesson is the same: before reporting rollout error, verify that evaluation encodes actions exactly as training did.",
-  "tldr_zh": "World models are evaluated by predicting future observations",
-  "cover_zh": "World models are evaluated by predicting future observations",
+  "abstract_zh": "世界模型通过从动作预测未来观测来评估。这些评估假设动作的准备方式与训练时相同，但未经检查的不匹配可能使模型看起来比实际更不准确。我们在导航世界模型（NWM）中审计了这一假设，并发现其训练和部署代码之间存在三个相互影响的差异。在不重新训练的情况下，校正输入可将平均视觉预测误差降低42%（在RECON导航数据集上用DreamSim测量）。该校正还改变了探索性分析中NWM检查点的排名，并消除或减少了两个替代模型测得的优势。仅校正归一化偏移反而会增加误差，这表明相互影响的不匹配必须一起检查。为了测试对输入准备的敏感性是否超出NWM，我们故意向两个替代模型引入编码错误；两者都变得更不准确。我们引入了ActRosetta，一个检查动作编码是否与训练匹配、识别支持的不一致原因并在信息充足时修复输入的工具。在预测对动作几乎无响应的地方，修复帮助不大，该工具的诊断覆盖范围有限，且改进的控制仍未得到验证。对于任何以动作为条件的世界模型，教训是一样的：在报告部署误差之前，请验证评估时动作的编码与训练时完全一致。",
+  "tldr_zh": "审计发现导航世界模型动作编码不匹配，修复后误差降低42%。",
+  "cover_zh": "动作编码没对齐？修复后预测误差直降42%！",
   "authors": [
     {
       "name": "Ajmain Istiak Apon",
@@ -43,16 +43,11 @@
   "channels": [
     "world-model"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 26,
   "source_tags": [],
-  "score": 22,
+  "score": 12,
   "score_breakdown": [
     {
       "id": "keyword_density",
@@ -61,21 +56,28 @@
       "hint": "频道关键词命中 3 个（world model、world models、action-conditioned world）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 26 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "审计导航世界模型动作接口的训练/推理不一致，提出修复工具，对世界模型评测有方法论价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Dhaka",
+    "New Uzbekistan University"
+  ],
+  "method_tags": [
+    "world model",
+    "action encoding",
+    "evaluation audit"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

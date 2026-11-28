@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33579",
   "source": "arxiv",
   "title": "DexEngine: Scaling Human Demonstrations into Physically Executable Whole-Robot Data",
-  "title_zh": "DexEngine: Scaling Human Demonstrations into Physically Executable Whole-Robot Data",
+  "title_zh": "DexEngine：将人类演示扩展为物理可执行的全机器人数据",
   "abstract": "A growing body of recent work addresses the retargeting of human hand-object demonstrations to robotic hands. To train whole-robot policies, however, the retargeted motions must be kinematically feasible and physically executable, and be produced efficiently at scale. We present DexEngine, a simulation pipeline that turns human manipulation data into train-ready, physically executable arm-hand trajectories. DexEngine first places each clip's hand-object motion where the arms can reach it, finds an arm motion that follows the human hands, and then corrects the motion in physics simulation with residual reinforcement learning. From nine human hand-object datasets, we generate about 5,200 clips for each of four dexterous hands, augmented into 65,000 trajectories (116 h) and 325,000 episodes (578 h) in total. Even with arms attached, DexEngine tracks objects more accurately than prior floating-hand methods and runs over 10x faster than RL-based ones. Policies trained on our data far outperform those trained on the same clips without physics correction or with the arms attached after a floating-hand correction, showing that fine-tuning data need physics correction. Mid-training on our data further improves them at equal fine-tuning budget, in simulation and on a real robot.",
-  "abstract_zh": "A growing body of recent work addresses the retargeting of human hand-object demonstrations to robotic hands. To train whole-robot policies, however, the retargeted motions must be kinematically feasible and physically executable, and be produced efficiently at scale. We present DexEngine, a simulation pipeline that turns human manipulation data into train-ready, physically executable arm-hand trajectories. DexEngine first places each clip's hand-object motion where the arms can reach it, finds an arm motion that follows the human hands, and then corrects the motion in physics simulation with residual reinforcement learning. From nine human hand-object datasets, we generate about 5,200 clips for each of four dexterous hands, augmented into 65,000 trajectories (116 h) and 325,000 episodes (578 h) in total. Even with arms attached, DexEngine tracks objects more accurately than prior floating-hand methods and runs over 10x faster than RL-based ones. Policies trained on our data far outperform those trained on the same clips without physics correction or with the arms attached after a floating-hand correction, showing that fine-tuning data need physics correction. Mid-training on our data further improves them at equal fine-tuning budget, in simulation and on a real robot.",
-  "tldr_zh": "A growing body of recent work addresses the retargeting of h",
-  "cover_zh": "A growing body of recent work addresses the retargeting of h",
+  "abstract_zh": "近期越来越多的工作致力于将人类手-物体演示重定向到机器人手。然而，为了训练全机器人策略，重定向后的运动必须在运动学上可行且物理上可执行，并且能够高效地大规模生成。我们提出了 DexEngine，一个仿真流程，可将人类操作数据转换为可直接用于训练的、物理可执行的手臂-手部轨迹。DexEngine 首先将每个片段的手-物体运动放置在手臂可到达的位置，找到跟随人类手部的手臂运动，然后通过残差强化学习在物理仿真中校正运动。从九个人类手-物体数据集中，我们为四种灵巧手各生成了约 5,200 个片段，并扩充为总计 65,000 条轨迹（116 小时）和 325,000 个回合（578 小时）。即使连接了手臂，DexEngine 也比之前的浮动手方法更准确地跟踪物体，并且比基于 RL 的方法快 10 倍以上。在我们的数据上训练的策略远远优于在相同片段上训练的策略（这些片段没有物理校正，或者在浮动手校正后连接了手臂），这表明微调数据需要物理校正。在相同的微调预算下，在我们的数据上进行中期训练进一步提升了它们在仿真和真实机器人上的性能。",
+  "tldr_zh": "DexEngine 将人类演示数据扩展为物理可执行的全机器人轨迹，训练出的策略性能更优。",
+  "cover_zh": "人类演示数据直接训练机器人？DexEngine 让物理校正后性能飙升！",
   "authors": [
     {
       "name": "Wongyun Yu",
@@ -55,28 +55,17 @@
     "loco-manip-wbc",
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 30,
   "source_tags": [],
-  "score": 30,
+  "score": 20,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（retargeting、manipulation、dexterous、dexterous hand）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -92,12 +81,19 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "POSTECH",
+    "RLWRLD"
+  ],
+  "method_tags": [
+    "residual reinforcement learning",
+    "retargeting",
+    "physics simulation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

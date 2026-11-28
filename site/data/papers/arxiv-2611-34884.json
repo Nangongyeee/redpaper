@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34884",
   "source": "arxiv",
   "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
-  "title_zh": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+  "title_zh": "FineDex：将细粒度人-物交互生成桥接到灵巧人形机器人操作",
   "abstract": "Dexterity is, at its core, finger-level control, yet existing dexterous manipulation and human-object interaction (HOI) generation methods rarely let one specify how an interaction is performed: five-fingered hands are often reduced to grippers, or finger usage is copied from individual human demonstrations. We present FineDex, a framework that makes finger-level intent both expressible and executable. FineDex learns coordinated human body, hand, and object motions that follow fine-grained instructions on hand selection, individual fingers, and contacts with articulated objects. To bridge generation and execution, FineDex leverages generated interactions as actionable priors for an agent that discovers physically feasible contact strategies through practice in a physics-based digital twin. By adapting at test time without per-instance retraining, FineDex generalizes across fine-grained instructions and object configurations. Experiments demonstrate state-of-the-art HOI generation quality and fine-grained controllability, substantial improvements in dexterous manipulation success, and successful deployment on a real dexterous humanoid robot.",
-  "abstract_zh": "Dexterity is, at its core, finger-level control, yet existing dexterous manipulation and human-object interaction (HOI) generation methods rarely let one specify how an interaction is performed: five-fingered hands are often reduced to grippers, or finger usage is copied from individual human demonstrations. We present FineDex, a framework that makes finger-level intent both expressible and executable. FineDex learns coordinated human body, hand, and object motions that follow fine-grained instructions on hand selection, individual fingers, and contacts with articulated objects. To bridge generation and execution, FineDex leverages generated interactions as actionable priors for an agent that discovers physically feasible contact strategies through practice in a physics-based digital twin. By adapting at test time without per-instance retraining, FineDex generalizes across fine-grained instructions and object configurations. Experiments demonstrate state-of-the-art HOI generation quality and fine-grained controllability, substantial improvements in dexterous manipulation success, and successful deployment on a real dexterous humanoid robot.",
-  "tldr_zh": "Dexterity is, at its core, finger-level control, yet existin",
-  "cover_zh": "Dexterity is, at its core, finger-level control, yet existin",
+  "abstract_zh": "灵巧性的核心在于手指级别的控制，然而现有的灵巧操作与人-物交互（HOI）生成方法很少允许指定交互如何进行：五指手常被简化为夹爪，或手指使用方式直接复制自个体人类演示。我们提出FineDex，一个使手指级意图既可表达又可执行的框架。FineDex学习协调的人体、手和物体运动，这些运动遵循关于手部选择、单个手指以及与关节物体接触的细粒度指令。为了桥接生成与执行，FineDex利用生成的交互作为可操作的先验，供智能体在基于物理的数字孪生中通过实践发现物理上可行的接触策略。通过在测试时自适应而无需逐实例重新训练，FineDex泛化到细粒度指令和物体配置。实验展示了最先进的HOI生成质量和细粒度可控性，灵巧操作成功率的显著提升，以及在真实灵巧人形机器人上的成功部署。",
+  "tldr_zh": "FineDex框架实现细粒度手指级人-物交互生成并成功部署于真实灵巧人形机器人。",
+  "cover_zh": "手指级控制不再难！FineDex让灵巧手听懂你的指令",
   "authors": [
     {
       "name": "Yujia Zeng",
@@ -71,16 +71,12 @@
     {
       "kind": "lab",
       "label": "⭐ Koushil Sreenath"
-    },
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
     }
   ],
   "related_links": [],
   "page_count": 10,
   "source_tags": [],
-  "score": 50,
+  "score": 40,
   "score_breakdown": [
     {
       "id": "key_author",
@@ -95,12 +91,6 @@
       "hint": "频道关键词命中 6 个（humanoid manipulation、humanoid robot、manipulation、dexterous）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
@@ -113,13 +103,29 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "loco-manip-wbc",
+    "reason": "细粒度人-物交互生成驱动人形灵巧手操作，真机部署，属全身灵巧操作前沿",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of California, Berkeley",
+    "Harvard University"
+  ],
+  "method_tags": [
+    "Human-Object Interaction Generation",
+    "Dexterous Manipulation",
+    "Test-time Adaptation"
+  ],
+  "platform": [
+    "G1",
+    "Wuji Hands"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34730",
   "source": "arxiv",
   "title": "WorldInteract: Controllable Streaming Video Generation for Multi-Material Interactions",
-  "title_zh": "WorldInteract: Controllable Streaming Video Generation for Multi-Material Interactions",
+  "title_zh": "WorldInteract：面向多材质交互的可控流式视频生成",
   "abstract": "Video world models aim to create interactive physical worlds that capture how diverse materials move and interact. Yet material-dependent dynamics remain underexplored in controllable video generation, limiting reliable control in scenes with different materials. We present WorldInteract, a streaming video generation framework that decomposes cross-material interaction into material-dependent behavior generation and contact response computation. External pushes and contact impulses are expressed through a shared velocity-increment interface, allowing material behaviors learned from interaction-free videos to be reused in interacting scenes. A physics controller predicts contacts and computes velocity increments from estimated masses and restitution coefficients, while a causal generator executes these increments using learned material behaviors. This separation enables cross-material interaction without supervised contact videos spanning diverse material pairings and contact configurations. We train the generator on 30k simulated interaction-free videos spanning 22 material classes and introduce Material-Aware RL, using verifiable physical rewards to refine material behavior and control execution. WorldInteract substantially outperforms state-of-the-art methods on Physics-IQ and delivers more reliable push control on real-world images.",
-  "abstract_zh": "Video world models aim to create interactive physical worlds that capture how diverse materials move and interact. Yet material-dependent dynamics remain underexplored in controllable video generation, limiting reliable control in scenes with different materials. We present WorldInteract, a streaming video generation framework that decomposes cross-material interaction into material-dependent behavior generation and contact response computation. External pushes and contact impulses are expressed through a shared velocity-increment interface, allowing material behaviors learned from interaction-free videos to be reused in interacting scenes. A physics controller predicts contacts and computes velocity increments from estimated masses and restitution coefficients, while a causal generator executes these increments using learned material behaviors. This separation enables cross-material interaction without supervised contact videos spanning diverse material pairings and contact configurations. We train the generator on 30k simulated interaction-free videos spanning 22 material classes and introduce Material-Aware RL, using verifiable physical rewards to refine material behavior and control execution. WorldInteract substantially outperforms state-of-the-art methods on Physics-IQ and delivers more reliable push control on real-world images.",
-  "tldr_zh": "Video world models aim to create interactive physical worlds",
-  "cover_zh": "Video world models aim to create interactive physical worlds",
+  "abstract_zh": "视频世界模型旨在创建交互式物理世界，捕捉不同材质如何运动与交互。然而，材质相关的动力学在可控视频生成中仍未得到充分探索，限制了在不同材质场景中的可靠控制。我们提出 WorldInteract，一个流式视频生成框架，将跨材质交互分解为材质相关行为生成和接触响应计算。外部推力和接触冲量通过共享的速度增量接口表达，使得从无交互视频中学到的材质行为能够复用于交互场景。物理控制器预测接触并根据估计的质量和恢复系数计算速度增量，而因果生成器利用学到的材质行为执行这些增量。这种分离使得跨材质交互无需涵盖多种材质配对和接触配置的监督接触视频。我们在涵盖 22 个材质类别的 30k 模拟无交互视频上训练生成器，并引入 Material-Aware RL，使用可验证的物理奖励来优化材质行为和控制执行。WorldInteract 在 Physics-IQ 上大幅优于最先进方法，并在真实世界图像上提供更可靠的推力控制。",
+  "tldr_zh": "提出WorldInteract框架，分解跨材质交互，实现可控流式视频生成。",
+  "cover_zh": "不用接触视频也能玩转多材质交互？这个框架让物理控制更可靠",
   "authors": [
     {
       "name": "Ahmed Hatem",
@@ -79,26 +79,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ ETH (RSL)"
     }
   ],
   "related_links": [],
   "page_count": 19,
   "source_tags": [],
-  "score": 22,
+  "score": 37,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ETH (RSL)” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（world model、world models、video world model）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -107,9 +107,23 @@
       "hint": "PDF 19 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "可控流式视频世界模型，多材质交互与物理控制，属世界模型前沿。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of British Columbia",
+    "Georgia Institute of Technology",
+    "ETH Zurich"
+  ],
+  "method_tags": [
+    "video generation",
+    "RL",
+    "physics controller"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

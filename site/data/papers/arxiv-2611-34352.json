@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34352",
   "source": "arxiv",
   "title": "Beyond Natural-Language Instructions: Temporal Logic as a Task Language for VLA Models with Visual-Logical Fusion",
-  "title_zh": "Beyond Natural-Language Instructions: Temporal Logic as a Task Language for VLA Models with Visual-Logical Fusion",
+  "title_zh": "超越自然语言指令：面向VLA模型的时间逻辑任务语言与视觉-逻辑融合",
   "abstract": "Robotic tasks combine object relations, logical dependencies, and temporal requirements, which robot planning and industrial control commonly specify in temporal logic (TL). We introduce TL-VLA, a vision--language--action framework that replaces natural-language task instructions with temporal logic, making this spatiotemporal structure explicit. A typed graph encoder and visual--logical fusion condition continuous actions on the task specification and the current observations. To prepare a general vision--language backbone for this interface, we develop TL-aware robot pretraining with separate semantic and structural readouts: a frozen language teacher aligns task semantics, the structural readout encodes TL syntax to support complex, long-horizon tasks, and autoregressive action prediction connects the graph representation to robot behavior. Downstream policies inherit the pretrained backbone and TL encoder and learn new fusion and action modules. On CALVIN ABC$\\rightarrow$D, our TL-aware initializer reaches \\textbf{3.800} average chain length and \\textbf{62.3\\%} five-task success, compared with 3.578 and 54.5\\% for a FAST initializer pretrained on the same data and 3.485 average chain length for a Qwen+NL baseline. On LIBERO-10, TL-aware initialization improves success from \\textbf{91.2\\% to 95.8\\%}. On LIBERO-Mem, our policy reaches \\textbf{65.0\\%} success without observation history, compared with 45.0\\% for a Qwen+NL reference. On held-out Panda planning specifications, it reaches \\textbf{59.6\\%} at Success@256 over three generation seeds, versus 48.4\\% for Qwen+TL and 37.0\\% for Qwen+NL. These results support explicit logical task conditioning and transferable TL-aware representations for robot action learning.",
-  "abstract_zh": "Robotic tasks combine object relations, logical dependencies, and temporal requirements, which robot planning and industrial control commonly specify in temporal logic (TL). We introduce TL-VLA, a vision--language--action framework that replaces natural-language task instructions with temporal logic, making this spatiotemporal structure explicit. A typed graph encoder and visual--logical fusion condition continuous actions on the task specification and the current observations. To prepare a general vision--language backbone for this interface, we develop TL-aware robot pretraining with separate semantic and structural readouts: a frozen language teacher aligns task semantics, the structural readout encodes TL syntax to support complex, long-horizon tasks, and autoregressive action prediction connects the graph representation to robot behavior. Downstream policies inherit the pretrained backbone and TL encoder and learn new fusion and action modules. On CALVIN ABC$→$D, our TL-aware initializer reaches textbf{3.800} average chain length and textbf{62.3\\%} five-task success, compared with 3.578 and 54.5\\% for a FAST initializer pretrained on the same data and 3.485 average chain length for a Qwen+NL baseline. On LIBERO-10, TL-aware initialization improves success from textbf{91.2\\% to 95.8\\%}. On LIBERO-Mem, our policy reaches textbf{65.0\\%} success without observation history, compared with 45.0\\% for a Qwen+NL reference. On held-out Panda planning specifications, it reaches textbf{59.6\\%} at Success@256 over three generation seeds, versus 48.4\\% for Qwen+TL and 37.0\\% for Qwen+NL. These results support explicit logical task conditioning and transferable TL-aware representations for robot action learning.",
-  "tldr_zh": "Robotic tasks combine object relations, logical dependencies",
-  "cover_zh": "Robotic tasks combine object relations, logical dependencies",
+  "abstract_zh": "机器人任务结合了对象关系、逻辑依赖和时间要求，机器人规划和工业控制通常用时序逻辑（TL）来指定。我们提出TL-VLA，一个视觉-语言-动作框架，用时序逻辑替代自然语言任务指令，使这种时空结构显式化。类型化图编码器和视觉-逻辑融合将连续动作条件于任务规范和当前观测。为了给这个接口准备通用的视觉-语言骨干，我们开发了具有独立语义和结构读出的TL感知机器人预训练：冻结的语言教师对齐任务语义，结构读出编码TL语法以支持复杂的长时程任务，自回归动作预测将图表示连接到机器人行为。下游策略继承预训练骨干和TL编码器，并学习新的融合和动作模块。在CALVIN ABC→D上，我们的TL感知初始化器达到3.800平均链长和62.3%五任务成功率，而相同数据预训练的FAST初始化器为3.578和54.5%，Qwen+NL基线平均链长为3.485。在LIBERO-10上，TL感知初始化将成功率从91.2%提高到95.8%。在LIBERO-Mem上，我们的策略在没有观测历史的情况下达到65.0%成功率，而Qwen+NL参考为45.0%。在留出的Panda规划规范上，三个生成种子的Success@256达到59.6%，而Qwen+TL为48.4%，Qwen+NL为37.0%。这些结果支持显式逻辑任务条件和可迁移的TL感知表示用于机器人动作学习。",
+  "tldr_zh": "用时序逻辑替代自然语言指令，TL-VLA框架提升机器人任务成功率。",
+  "cover_zh": "不用自然语言？时序逻辑让机器人任务成功率飙升！",
   "authors": [
     {
       "name": "Zezhi Liu",
@@ -59,26 +59,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ USTC"
     }
   ],
   "related_links": [],
   "page_count": 10,
   "source_tags": [],
-  "score": 19,
+  "score": 34,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “USTC” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（vla model、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -87,9 +87,24 @@
       "hint": "PDF 10 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "用时序逻辑替代自然语言作为VLA任务接口，在CALVIN/LIBERO上验证，属操作VLA新范式，参考价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Nankai University",
+    "Beijing Zhongguancun Academy",
+    "University of Science and Technology of China",
+    "Harbin Institute of Technology"
+  ],
+  "method_tags": [
+    "VLA",
+    "temporal logic",
+    "visual-logical fusion"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

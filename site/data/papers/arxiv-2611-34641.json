@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34641",
   "source": "arxiv",
   "title": "Distractor-Robust Reinforcement Learning via Variational Bisimulation",
-  "title_zh": "Distractor-Robust Reinforcement Learning via Variational Bisimulation",
+  "title_zh": "基于变分双模拟的干扰鲁棒强化学习",
   "abstract": "Model-based reinforcement learning (MBRL) promises data efficiency and generalization, but typical reconstruction-based objectives encourage models to waste representational capacity on task-irrelevant distractors. We introduce VIBES (Variational Inference for Bisimulation-based Encoded States), a new objective that replaces pixel reconstruction with an adversarial term, which enforces that latent states suffice to predict both rewards and the next latent state. We show that this objective measures how far the encoder is from reward and dynamics sufficiency, and that whenever exact sufficiency is attainable, its global optima induce bisimulation relations on histories. Combined with a fixed-capacity latent bottleneck, this encourages latent states to retain task-relevant information while discarding irrelevant variation. Our method serves as a drop-in replacement for Dreamer's model-learning component, achieves state-of-the-art performance on the Distracting Control Suite, and extends to visually complex manipulation in Realistic ManiSkill. Unlike prior approaches, it does not rely on image-specific augmentations and applies equally well to high-dimensional vector-state tasks, demonstrated on a 100-link swimmer robot. Finally, latent-space analyses (UMAP embeddings and nearest-neighbor probes) confirm that the learned representations are sensitive to task-relevant structure while invariant to distractors.",
-  "abstract_zh": "Model-based reinforcement learning (MBRL) promises data efficiency and generalization, but typical reconstruction-based objectives encourage models to waste representational capacity on task-irrelevant distractors. We introduce VIBES (Variational Inference for Bisimulation-based Encoded States), a new objective that replaces pixel reconstruction with an adversarial term, which enforces that latent states suffice to predict both rewards and the next latent state. We show that this objective measures how far the encoder is from reward and dynamics sufficiency, and that whenever exact sufficiency is attainable, its global optima induce bisimulation relations on histories. Combined with a fixed-capacity latent bottleneck, this encourages latent states to retain task-relevant information while discarding irrelevant variation. Our method serves as a drop-in replacement for Dreamer's model-learning component, achieves state-of-the-art performance on the Distracting Control Suite, and extends to visually complex manipulation in Realistic ManiSkill. Unlike prior approaches, it does not rely on image-specific augmentations and applies equally well to high-dimensional vector-state tasks, demonstrated on a 100-link swimmer robot. Finally, latent-space analyses (UMAP embeddings and nearest-neighbor probes) confirm that the learned representations are sensitive to task-relevant structure while invariant to distractors.",
-  "tldr_zh": "Model-based reinforcement learning (MBRL) promises data effi",
-  "cover_zh": "Model-based reinforcement learning (MBRL) promises data effi",
+  "abstract_zh": "基于模型的强化学习（MBRL）有望实现数据效率和泛化，但典型的基于重构的目标鼓励模型将表征能力浪费在与任务无关的干扰因素上。我们提出了 VIBES（基于双模拟编码状态的变分推断），这是一种新的目标函数，用对抗项替代像素重构，强制潜在状态足以预测奖励和下一个潜在状态。我们证明该目标函数衡量了编码器距离奖励和动态充分性有多远，并且只要精确充分性可达，其全局最优解就会在历史序列上诱导出双模拟关系。结合固定容量的潜在瓶颈，这鼓励潜在状态保留任务相关信息，同时丢弃无关变化。我们的方法可作为 Dreamer 模型学习组件的即插即用替代，在 Distracting Control Suite 上达到最先进性能，并扩展到 Realistic ManiSkill 中的视觉复杂操作任务。与先前方法不同，它不依赖图像特定的增强，并且同样适用于高维向量状态任务，在 100 连杆游泳机器人上得到了验证。最后，潜在空间分析（UMAP 嵌入和最近邻探测）证实，学习到的表征对任务相关结构敏感，而对干扰因素不变。",
+  "tldr_zh": "提出VIBES目标，用对抗项替代重构，使表征对干扰鲁棒。",
+  "cover_zh": "抛弃像素重构！这个新目标让强化学习无视干扰直击任务本质",
   "authors": [
     {
       "name": "Benjamin Freed",
@@ -57,18 +57,24 @@
   "badges": [
     {
       "kind": "lab",
-      "label": "⭐ Roberto Calandra"
+      "label": "⭐ CMU RI"
     },
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ Roberto Calandra"
     }
   ],
   "related_links": [],
   "page_count": 29,
   "source_tags": [],
-  "score": 44,
+  "score": 59,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “CMU RI” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -80,12 +86,6 @@
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（dreamer、manipulation）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -100,11 +100,27 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "基于Dreamer的MBRL表示学习，用双模拟变分目标抗干扰，属世界模型方法，对具身RL有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Carnegie Mellon University",
+    "Technische Universität Dresden"
+  ],
+  "method_tags": [
+    "Model-based RL",
+    "Bisimulation",
+    "Variational Inference"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "Distracting Control Suite",
+    "Realistic ManiSkill"
+  ],
   "method_family": "",
   "real_robot": "",
   "training_summary": "",

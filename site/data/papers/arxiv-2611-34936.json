@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34936",
   "source": "arxiv",
   "title": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses",
-  "title_zh": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses",
+  "title_zh": "DexLink：从链式手-物姿态合成灵巧行为",
   "abstract": "Synthesizing diverse dexterous manipulation policies is challenging: existing simulation-based approaches rely on human demonstrations which are difficult to scale, or use generic reward functions, which provide limited control over the hand-object interactions. We propose DexLink, which addresses these limitations by synthesizing diverse dexterous behaviors from sparse, reusable hand-object interaction templates. Given key task waypoints, DexLink retargets static interaction templates to target objects using an optimization that preserves spatial hand-object relationships. It then links the retargeted poses into an approximate reference trajectory and uses residual reinforcement learning to refine this reference into a closed-loop policy in simulation. Experiments spanning single-hand, bimanual, articulated, and dynamic tasks demonstrate that DexLink provides fine-grained control over task timing, grasp types, and high-level execution. The modular interaction templates transfer reliably across object scales, instances, and categories; without object-specific human demonstrations, the framework also matches the performance of dense reference-tracking methods. Finally, zero-shot deployment of policies trained purely in simulation shows promise for the simulation-based framework.",
-  "abstract_zh": "Synthesizing diverse dexterous manipulation policies is challenging: existing simulation-based approaches rely on human demonstrations which are difficult to scale, or use generic reward functions, which provide limited control over the hand-object interactions. We propose DexLink, which addresses these limitations by synthesizing diverse dexterous behaviors from sparse, reusable hand-object interaction templates. Given key task waypoints, DexLink retargets static interaction templates to target objects using an optimization that preserves spatial hand-object relationships. It then links the retargeted poses into an approximate reference trajectory and uses residual reinforcement learning to refine this reference into a closed-loop policy in simulation. Experiments spanning single-hand, bimanual, articulated, and dynamic tasks demonstrate that DexLink provides fine-grained control over task timing, grasp types, and high-level execution. The modular interaction templates transfer reliably across object scales, instances, and categories; without object-specific human demonstrations, the framework also matches the performance of dense reference-tracking methods. Finally, zero-shot deployment of policies trained purely in simulation shows promise for the simulation-based framework.",
-  "tldr_zh": "Synthesizing diverse dexterous manipulation policies is chal",
-  "cover_zh": "Synthesizing diverse dexterous manipulation policies is chal",
+  "abstract_zh": "合成多样化的灵巧操作策略具有挑战性：现有的基于仿真的方法依赖于难以扩展的人类演示，或者使用通用奖励函数，对双手-物体交互的控制有限。我们提出 DexLink，通过从稀疏、可重用的手-物交互模板中合成多样化的灵巧行为来解决这些限制。给定关键任务路点，DexLink 使用保持空间手-物关系的优化将静态交互模板重定向到目标物体。然后，它将重定向后的姿态链接成近似参考轨迹，并使用残差强化学习在仿真中将此参考细化为闭环策略。涵盖单手、双手、关节式和动态任务的实验表明，DexLink 提供了对任务时序、抓取类型和高级执行的细粒度控制。模块化交互模板可在物体尺度、实例和类别之间可靠迁移；在没有物体特定人类演示的情况下，该框架也能达到密集参考跟踪方法的性能。最后，纯仿真训练的策略的零样本部署展示了基于仿真框架的潜力。",
+  "tldr_zh": "DexLink 利用稀疏手-物交互模板合成灵巧操作策略，无需人类演示。",
+  "cover_zh": "没有人类演示也能学会灵巧操作？DexLink 用模板合成策略",
   "authors": [
     {
       "name": "Meenal Parakh",
@@ -47,26 +47,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ Princeton"
     }
   ],
   "related_links": [],
   "page_count": 24,
   "source_tags": [],
-  "score": 25,
+  "score": 40,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Princeton” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 5 个（manipulation、dexterous、dexterous manipulation、grasp）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -75,9 +75,22 @@
       "hint": "PDF 24 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "灵巧手操作策略合成，基于手物姿态模板+残差RL，仿真到真机零样本部署，属操作与sim2real方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Princeton University",
+    "NEC Laboratories America"
+  ],
+  "method_tags": [
+    "Residual Reinforcement Learning",
+    "Retargeting",
+    "Dexterous Manipulation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

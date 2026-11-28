@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34864",
   "source": "arxiv",
   "title": "RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies",
-  "title_zh": "RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies",
+  "title_zh": "RePace：面向更快视觉-语言-动作策略的演示加速推理",
   "abstract": "Since vision-language-action (VLA) policies can inherit the slow pace of human demonstrations, accelerating these demonstrations before fine-tuning can lead to faster VLA policies without an additional speed-selection module at deployment. Several offline speedup methods have focused on identifying segments that require less precision and assigning predefined speedup factors to the segments. However, even within a single segment, a speedup factor suitable for steady motion may be too high when precise alignment is required. To this end, this paper presents RePace, an offline reasoning framework that determines how much to accelerate each part of a demonstration. For the same recorded movement, RePace measures how much each candidate speedup factor shortens the sequence and compares the resulting observation-action pairs used for training. Given the task instruction, a pretrained language model uses the visual context and original motion of successive windows to interpret these candidate retiming effects and select a speedup profile for the complete episode. Experimental results demonstrate that RePace outperforms the baselines in overall task execution efficiency on both LIBERO and RoboCasa-Kitchen. On all three tasks with a gripper-equipped Franka Research 3 arm, RePace matches or exceeds the acceleration baselines in success rate and completes successful trials faster.",
-  "abstract_zh": "Since vision-language-action (VLA) policies can inherit the slow pace of human demonstrations, accelerating these demonstrations before fine-tuning can lead to faster VLA policies without an additional speed-selection module at deployment. Several offline speedup methods have focused on identifying segments that require less precision and assigning predefined speedup factors to the segments. However, even within a single segment, a speedup factor suitable for steady motion may be too high when precise alignment is required. To this end, this paper presents RePace, an offline reasoning framework that determines how much to accelerate each part of a demonstration. For the same recorded movement, RePace measures how much each candidate speedup factor shortens the sequence and compares the resulting observation-action pairs used for training. Given the task instruction, a pretrained language model uses the visual context and original motion of successive windows to interpret these candidate retiming effects and select a speedup profile for the complete episode. Experimental results demonstrate that RePace outperforms the baselines in overall task execution efficiency on both LIBERO and RoboCasa-Kitchen. On all three tasks with a gripper-equipped Franka Research 3 arm, RePace matches or exceeds the acceleration baselines in success rate and completes successful trials faster.",
-  "tldr_zh": "Since vision-language-action (VLA) policies can inherit the",
-  "cover_zh": "Since vision-language-action (VLA) policies can inherit the",
+  "abstract_zh": "由于视觉-语言-动作（VLA）策略可能继承人类演示的缓慢节奏，在微调前加速这些演示可以产生更快的VLA策略，而无需在部署时添加额外的速度选择模块。几种离线加速方法专注于识别需要较低精度的片段，并为这些片段分配预定义的速度因子。然而，即使在单个片段内，适合稳定运动的加速因子在需要精确对齐时也可能过高。为此，本文提出RePace，一个离线推理框架，用于确定对演示的每个部分加速多少。对于相同的记录运动，RePace衡量每个候选加速因子缩短序列的程度，并比较用于训练的结果观察-动作对。给定任务指令，预训练语言模型利用连续窗口的视觉上下文和原始运动来解释这些候选重定时效果，并为整个回合选择加速配置文件。实验结果表明，RePace在LIBERO和RoboCasa-Kitchen上的整体任务执行效率均优于基线。在配备夹爪的Franka Research 3机械臂上的所有三个任务中，RePace在成功率上匹配或超过加速基线，并更快地完成成功试验。",
+  "tldr_zh": "RePace离线推理框架为演示的每个部分选择加速因子，生成更快的VLA策略。",
+  "cover_zh": "演示加速还能这么玩？｜RePace让VLA策略跑得更快",
   "authors": [
     {
       "name": "Insup Lee",
@@ -60,26 +60,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ KAIST"
     }
   ],
   "related_links": [],
   "page_count": 19,
   "source_tags": [],
-  "score": 22,
+  "score": 37,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “KAIST” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（vision-language-action、robocasa、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -88,13 +88,29 @@
       "hint": "PDF 19 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "VLA策略加速的离线推理框架，在LIBERO/RoboCasa及真机Franka验证，属操作VLA范畴，有方法新意。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "KAIST",
+    "Korea University",
+    "RLWRLD"
+  ],
+  "method_tags": [
+    "VLA",
+    "offline demonstration acceleration",
+    "reasoning"
+  ],
+  "platform": [
+    "Franka Research 3"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

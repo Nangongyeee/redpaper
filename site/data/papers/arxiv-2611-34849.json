@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34849",
   "source": "arxiv",
   "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
-  "title_zh": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+  "title_zh": "Real2SimLab：一个统一的真实到仿真迁移平台",
   "abstract": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to $N \\times M$ integrations when evaluating $N$ methods on $M$ benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our research map of nearly 300 real-to-simulation papers, are open source, and we invite the Real2SimHub community to build them together.",
-  "abstract_zh": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to $N × M$ integrations when evaluating $N$ methods on $M$ benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our research map of nearly 300 real-to-simulation papers, are open source, and we invite the Real2SimHub community to build them together.",
-  "tldr_zh": "Real-to-simulation transfer, which builds simulations from r",
-  "cover_zh": "Real-to-simulation transfer, which builds simulations from r",
+  "abstract_zh": "真实到仿真迁移，即从真实世界观测构建仿真，长期以来在研究和工业界都受到关注。最近，编码智能体已经能够从视频记录生成仿真程序，并且已经提出了几个基准来评估它们。然而，每个单独的基准都定义了自己的输入、交付物和评分流程。这导致在 M 个基准上评估 N 种方法时需要进行 N × M 次集成。为此，我们提出了 Real2SimLab，一个用于真实到仿真迁移的统一平台。它通过运行方法编写的程序，并使用每个基准的原始评分器对输出的仿真进行评分来评估方法。此外，Real2SimLab 提供了一个流程来为真实到仿真方法创建训练数据和奖励注释。我们的流程通过过滤掉基准中存在的视频记录来仔细避免数据污染。对于每个视频记录，首先生成一个程序，然后我们的流程使用与 Real2SimLab 评估相同的代码计算其奖励。到目前为止，它支持 6 个基准上的 47 个编码智能体和 5 种非智能体方法。该平台和我们近 300 篇真实到仿真论文的研究地图 Awesome-Real2Sim 都是开源的，我们邀请 Real2SimHub 社区共同构建它们。",
+  "tldr_zh": "提出统一平台 Real2SimLab，集成多基准评估真实到仿真迁移方法。",
+  "cover_zh": "告别 N×M 次集成！这个平台让真实到仿真评估一步到位",
   "authors": [
     {
       "name": "Yongchang Zhang",
@@ -84,26 +84,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ HKU"
     }
   ],
   "related_links": [],
   "page_count": 13,
   "source_tags": [],
-  "score": 19,
+  "score": 34,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（real2sim、real-to-sim）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -112,9 +112,24 @@
       "hint": "PDF 13 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "sim2real",
+    "reason": "Real2Sim 统一评测平台与数据管线，属 sim2real 方向 benchmark 类工作，对一线科研有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "State Key Laboratory of General AI, School of Intelligence Science and Technology, PKU",
+    "Ngoro Robotics",
+    "School of Physics, PKU",
+    "The University of Hong Kong"
+  ],
+  "method_tags": [
+    "real-to-simulation transfer",
+    "coding agents",
+    "benchmark evaluation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34778",
   "source": "arxiv",
   "title": "Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents",
-  "title_zh": "Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents",
+  "title_zh": "迈向智能体机器人：面向机器人使用智能体的大规模策略框架设计研究",
   "abstract": "Recent vision-language models (VLMs) can act as robot-use agents that understand diverse scenes and control robots through policy code and tools. However, they predict 3D gripper poses poorly even with extended reasoning, struggling with precise manipulation. Vision-language-action (VLA) and world-action (WAM) models are the opposite: they execute fast, smooth control on trained tasks, yet fail under domain shifts or when tasks require long-horizon memory and reasoning. Agentic robots therefore combine VLM reasoning and perception with precise VLA/WAM control through a policy harness. Yet harness design spans thousands of configurations, shifting success by tens of points with the same models. Moreover, testing even one design takes thousands of rollouts at high API and GPU cost, so prior works often commit to a single design chosen from few alternatives. To guide harness design, we evaluate over 470,000 rollouts across eight simulation benchmarks, six VLMs, and 15 VLA/WAM checkpoints. Seven controlled studies show effective harnesses must adapt to both VLM and VLA/WAM capabilities. Our findings specify what structure the VLM's policy code needs, where VLA manipulation needs help from tools and policy code, and when to involve the VLM at test time. The reference recipe X-Harness shows that these findings compose without weight updates, lifting base policies up to $+42.8$ points across memory, reasoning, and domain shifts.",
-  "abstract_zh": "Recent vision-language models (VLMs) can act as robot-use agents that understand diverse scenes and control robots through policy code and tools. However, they predict 3D gripper poses poorly even with extended reasoning, struggling with precise manipulation. Vision-language-action (VLA) and world-action (WAM) models are the opposite: they execute fast, smooth control on trained tasks, yet fail under domain shifts or when tasks require long-horizon memory and reasoning. Agentic robots therefore combine VLM reasoning and perception with precise VLA/WAM control through a policy harness. Yet harness design spans thousands of configurations, shifting success by tens of points with the same models. Moreover, testing even one design takes thousands of rollouts at high API and GPU cost, so prior works often commit to a single design chosen from few alternatives. To guide harness design, we evaluate over 470,000 rollouts across eight simulation benchmarks, six VLMs, and 15 VLA/WAM checkpoints. Seven controlled studies show effective harnesses must adapt to both VLM and VLA/WAM capabilities. Our findings specify what structure the VLM's policy code needs, where VLA manipulation needs help from tools and policy code, and when to involve the VLM at test time. The reference recipe X-Harness shows that these findings compose without weight updates, lifting base policies up to $+42.8$ points across memory, reasoning, and domain shifts.",
-  "tldr_zh": "Recent vision-language models (VLMs) can act as robot-use ag",
-  "cover_zh": "Recent vision-language models (VLMs) can act as robot-use ag",
+  "abstract_zh": "近期，视觉语言模型（VLM）可作为机器人使用智能体，通过策略代码和工具理解多样场景并控制机器人。然而，即使经过扩展推理，它们对3D夹爪位姿的预测仍不理想，难以实现精确操作。视觉语言动作（VLA）和世界动作（WAM）模型则相反：它们在训练任务上执行快速、平滑的控制，但在域偏移或任务需要长时记忆和推理时失败。因此，智能体机器人通过策略框架将VLM的推理和感知与精确的VLA/WAM控制相结合。然而，策略框架设计涵盖数千种配置，相同模型下成功率可相差数十个百分点。此外，测试一种设计就需要数千次 rollout，API 和 GPU 成本高昂，因此先前工作往往从少数备选中选定单一设计。为指导策略框架设计，我们在八个模拟基准、六个VLM和15个VLA/WAM检查点上评估了超过470,000次 rollout。七项受控研究表明，有效的策略框架必须适应VLM和VLA/WAM的能力。我们的发现明确了VLM策略代码所需的结构、VLA操作需要工具和策略代码辅助的环节，以及何时在测试时引入VLM。参考方案X-Harness表明，这些发现无需权重更新即可组合，在记忆、推理和域偏移方面将基础策略提升高达+42.8个百分点。",
+  "tldr_zh": "大规模实验揭示机器人智能体策略框架设计需适配VLM与VLA能力，X-Harness提升性能。",
+  "cover_zh": "策略框架设计差，成功率差几十点？X-Harness 让机器人智能体性能飙升！",
   "authors": [
     {
       "name": "Yuxiang Lai",
@@ -77,16 +77,11 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 37,
   "source_tags": [],
-  "score": 19,
+  "score": 9,
   "score_breakdown": [
     {
       "id": "keyword_density",
@@ -95,21 +90,30 @@
       "hint": "频道关键词命中 2 个（vision-language-action、manipulation）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 37 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "大规模研究VLM+VLA/WAM的agentic机器人harness设计，47万次rollout，对操作策略有高参考价值",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Google",
+    "Emory University",
+    "University of Southern California",
+    "University of Florida"
+  ],
+  "method_tags": [
+    "VLA",
+    "VLM",
+    "policy harness"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

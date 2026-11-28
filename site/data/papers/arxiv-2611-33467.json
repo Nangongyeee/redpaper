@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33467",
   "source": "arxiv",
   "title": "SplatWAM: Splatting World Action Models for Real-Time 3D Imagination",
-  "title_zh": "SplatWAM: Splatting World Action Models for Real-Time 3D Imagination",
+  "title_zh": "SplatWAM：用于实时3D想象的世界动作模型溅射",
   "abstract": "World models typically predict future observations in pixel or latent space, limiting their ability to directly represent true 3D scene evolution. We present SplatWAM (Splatting World Action Model), a generative world model that learns action-conditioned dynamics directly over compact 3D Gaussian primitives. A tokenizer SplatWAM-T first encodes a variable number of unposed views into a fixed budget of Gaussian tokens. A dynamics model SplatWAM-D then predicts future Gaussian states in a single forward pass per action, using log-Euclidean covariance coordinates and differentiable rendering supervision to facilitate learning in an explicit 3D space. Each predicted state can be rasterized from arbitrary viewpoints, enforcing a shared 3D representation across views by construction. On OGBench Scene, SplatWAM renders novel views 12x faster than video world models (~80 FPS on an RTX 5090) with up to 2.0 dB higher PSNR. We further introduce SplatWAM-P, a lightweight flow-matching policy head jointly trained with the dynamics model. Across 8 task suites, model-free Gaussian-token policies outperform pixel-based counterparts by up to 24.8 percentage points. SplatWAM-P improves over Latent Particle World Model (LPWM) by 12 percentage points and matches HIQL without a learned value function. On LIBERO, our ~1B model outperforms WorldVLA (~7B) and the robot-pretrained OpenVLA (~7B), while matching OpenVLA-OFT when both are trained without large-scale robot pretraining. Code and checkpoints will be released.",
-  "abstract_zh": "World models typically predict future observations in pixel or latent space, limiting their ability to directly represent true 3D scene evolution. We present SplatWAM (Splatting World Action Model), a generative world model that learns action-conditioned dynamics directly over compact 3D Gaussian primitives. A tokenizer SplatWAM-T first encodes a variable number of unposed views into a fixed budget of Gaussian tokens. A dynamics model SplatWAM-D then predicts future Gaussian states in a single forward pass per action, using log-Euclidean covariance coordinates and differentiable rendering supervision to facilitate learning in an explicit 3D space. Each predicted state can be rasterized from arbitrary viewpoints, enforcing a shared 3D representation across views by construction. On OGBench Scene, SplatWAM renders novel views 12x faster than video world models (~80 FPS on an RTX 5090) with up to 2.0 dB higher PSNR. We further introduce SplatWAM-P, a lightweight flow-matching policy head jointly trained with the dynamics model. Across 8 task suites, model-free Gaussian-token policies outperform pixel-based counterparts by up to 24.8 percentage points. SplatWAM-P improves over Latent Particle World Model (LPWM) by 12 percentage points and matches HIQL without a learned value function. On LIBERO, our ~1B model outperforms WorldVLA (~7B) and the robot-pretrained OpenVLA (~7B), while matching OpenVLA-OFT when both are trained without large-scale robot pretraining. Code and checkpoints will be released.",
-  "tldr_zh": "World models typically predict future observations in pixel",
-  "cover_zh": "World models typically predict future observations in pixel",
+  "abstract_zh": "世界模型通常预测像素或潜在空间中的未来观测，限制了其直接表示真实3D场景演变的能力。我们提出SplatWAM（溅射世界动作模型），一种直接在紧凑的3D高斯原语上学习动作条件动力学的生成式世界模型。分词器SplatWAM-T首先将可变数量的无位姿视图编码为固定预算的高斯令牌。动力学模型SplatWAM-D然后使用对数欧几里得协方差坐标和可微渲染监督，在显式3D空间中促进学习，每个动作通过单次前向传递预测未来高斯状态。每个预测状态可以从任意视角光栅化，通过构造强制跨视图共享3D表示。在OGBench Scene上，SplatWAM渲染新视图的速度比视频世界模型快12倍（在RTX 5090上约80 FPS），PSNR高达2.0 dB。我们进一步引入SplatWAM-P，一个与动力学模型联合训练的轻量级流匹配策略头。在8个任务套件中，无模型的高斯令牌策略比基于像素的对应策略高出多达24.8个百分点。SplatWAM-P比潜在粒子世界模型（LPWM）提高了12个百分点，并在没有学习价值函数的情况下匹配HIQL。在LIBERO上，我们约1B的模型优于WorldVLA（约7B）和机器人预训练的OpenVLA（约7B），同时在两者都没有大规模机器人预训练的情况下匹配OpenVLA-OFT。代码和检查点将发布。",
+  "tldr_zh": "SplatWAM直接在3D高斯上学习动作条件动力学，实现实时3D想象。",
+  "cover_zh": "实时3D想象！这个世界模型渲染快12倍，PSNR还更高",
   "authors": [
     {
       "name": "Frank Tsu-Fang Lu",
@@ -78,8 +78,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "CVSSP, University of Surrey",
+    "Locus Robotics"
+  ],
+  "method_tags": [
+    "3D Gaussian Splatting",
+    "World Model",
+    "Flow Matching"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

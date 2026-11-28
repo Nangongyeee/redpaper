@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33745",
   "source": "arxiv",
   "title": "WhatIf: Counterfactual World Models over Action-Grounded Causal Graphs for Robotic Manipulation",
-  "title_zh": "WhatIf: Counterfactual World Models over Action-Grounded Causal Graphs for Robotic Manipulation",
+  "title_zh": "WhatIf：面向机器人操作的反事实世界模型——基于动作锚定的因果图",
   "abstract": "World models predict what happens under an action, but choosing between actions requires comparing their outcomes in the same physical situation. Factual transitions alone determine action-wise marginal futures and average effects, but not individual effects or the probability that switching actions causes harm. We introduce WhatIf, a counterfactual world model for manipulation that couples candidate futures through shared latent physics and transition noise inferred from factual history. Each candidate action induces a sparse object-factor causal graph describing the physical pathways it activates. Rolling out these graphs under the shared situation anchors predictions to observed outcomes and confines action contrasts to the objects each action reaches. Shared type-conditioned functions support varying numbers of objects, while a round-trip loss enforces action-invariant abduction without counterfactual labels. We show that replacing an individual effect with its conditional mean incurs mean-squared error equal to its conditional variance, motivating comparisons between coupled futures. Building on these comparisons, Counterfactual Advantage Planning (CAP) ranks plans by their advantage over an incumbent within shared situations and constrains the probability of harm. Paired advantages reduce estimator variance by a factor of $1-ρ$, where $ρ$ is the correlation between branch outcomes, and cancel model errors shared by both branches. Each executed transition provides hindsight advantages to update the physics posterior, the next plan, and an amortized policy without a learned critic. We further establish when observational transitions identify interventional dynamics. Paired simulator interventions evaluate counterfactual accuracy, graph recovery, compositional generalization, and decision quality.",
-  "abstract_zh": "World models predict what happens under an action, but choosing between actions requires comparing their outcomes in the same physical situation. Factual transitions alone determine action-wise marginal futures and average effects, but not individual effects or the probability that switching actions causes harm. We introduce WhatIf, a counterfactual world model for manipulation that couples candidate futures through shared latent physics and transition noise inferred from factual history. Each candidate action induces a sparse object-factor causal graph describing the physical pathways it activates. Rolling out these graphs under the shared situation anchors predictions to observed outcomes and confines action contrasts to the objects each action reaches. Shared type-conditioned functions support varying numbers of objects, while a round-trip loss enforces action-invariant abduction without counterfactual labels. We show that replacing an individual effect with its conditional mean incurs mean-squared error equal to its conditional variance, motivating comparisons between coupled futures. Building on these comparisons, Counterfactual Advantage Planning (CAP) ranks plans by their advantage over an incumbent within shared situations and constrains the probability of harm. Paired advantages reduce estimator variance by a factor of $1-ρ$, where $ρ$ is the correlation between branch outcomes, and cancel model errors shared by both branches. Each executed transition provides hindsight advantages to update the physics posterior, the next plan, and an amortized policy without a learned critic. We further establish when observational transitions identify interventional dynamics. Paired simulator interventions evaluate counterfactual accuracy, graph recovery, compositional generalization, and decision quality.",
-  "tldr_zh": "World models predict what happens under an action, but choos",
-  "cover_zh": "World models predict what happens under an action, but choos",
+  "abstract_zh": "世界模型预测动作下的结果，但在同一物理情境中比较不同动作需要对比其结果。仅事实转移决定动作的边际未来和平均效应，但无法确定个体效应或切换动作造成伤害的概率。我们提出WhatIf，一种用于操作的反事实世界模型，通过共享的潜在物理和从事实历史推断的转移噪声耦合候选未来。每个候选动作诱导一个稀疏的对象因子因果图，描述其激活的物理路径。在共享情境下展开这些图，将预测锚定到观察结果，并将动作对比限制在每个动作可达的对象上。共享的类型条件函数支持可变数量的对象，而往返损失强制动作不变的溯因，无需反事实标签。我们证明，用条件均值替代个体效应会产生等于其条件方差的均方误差，从而激励耦合未来之间的比较。基于这些比较，反事实优势规划（CAP）根据在共享情境中相对于现有方案的优势对计划排序，并约束伤害概率。配对优势将估计方差降低$1-ρ$倍，其中$ρ$是分支结果之间的相关性，并抵消两个分支共享的模型误差。每个执行的转移提供后见优势，以更新物理后验、下一个计划和摊销策略，无需学习评论家。我们进一步建立了观察转移识别干预动力学的条件。配对模拟器干预评估反事实准确性、图恢复、组合泛化和决策质量。",
+  "tldr_zh": "提出反事实世界模型WhatIf，通过共享潜在物理和因果图比较动作，实现机器人操作规划。",
+  "cover_zh": "机器人选动作总翻车？WhatIf用反事实比较，伤害概率直降！",
   "authors": [
     {
       "name": "Xu Yang",
@@ -44,26 +44,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ MIT CSAIL"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 清华"
     }
   ],
   "related_links": [],
   "page_count": 12,
   "source_tags": [],
-  "score": 27,
+  "score": 42,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “MIT CSAIL” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（manipulation、world model、world models）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -79,8 +83,16 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Tsinghua University",
+    "Singapore-MIT Alliance for Research and Technology Centre (SMART)",
+    "Massachusetts Institute of Technology"
+  ],
+  "method_tags": [
+    "World Model",
+    "Causal Graph",
+    "Counterfactual Planning"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

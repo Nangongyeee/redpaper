@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33722",
   "source": "arxiv",
   "title": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
-  "title_zh": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
+  "title_zh": "熟能生巧：循环模型中学习使用早期预测",
   "abstract": "People become faster at a task through practice, but models that improve with experience do not necessarily learn to use less computation. We train looped models, whose intermediate predictions allow earlier exits, to perform tasks with fewer iterations through practice. This is difficult because shared-weight updates can degrade the final-loop prediction while improving early ones, and the exit gate must track early predictions as their quality changes. We propose FLUENT, which requires no additional task labels or rewards: it distills the initial model's final-loop prediction into early predictions, anchors the current final-loop prediction to the same frozen teacher, and trains the exit gate to balance disagreement with the current final-loop prediction against computation cost. FLUENT improves performance at shallower depth in new Crafter worlds, raises LIBERO success with fewer action-head iterations, and maintains language-model accuracy at lower selected depth. On a real robot, success rises from 62.3\\% to 74.6\\% while mean time over successful episodes falls from 69\\,s to 31\\,s. The project page is available at https://msseok96-cpu.github.io/FLUENT/.",
-  "abstract_zh": "People become faster at a task through practice, but models that improve with experience do not necessarily learn to use less computation. We train looped models, whose intermediate predictions allow earlier exits, to perform tasks with fewer iterations through practice. This is difficult because shared-weight updates can degrade the final-loop prediction while improving early ones, and the exit gate must track early predictions as their quality changes. We propose FLUENT, which requires no additional task labels or rewards: it distills the initial model's final-loop prediction into early predictions, anchors the current final-loop prediction to the same frozen teacher, and trains the exit gate to balance disagreement with the current final-loop prediction against computation cost. FLUENT improves performance at shallower depth in new Crafter worlds, raises LIBERO success with fewer action-head iterations, and maintains language-model accuracy at lower selected depth. On a real robot, success rises from 62.3\\% to 74.6\\% while mean time over successful episodes falls from 69\\,s to 31\\,s. The project page is available at https://msseok96-cpu.github.io/FLUENT/.",
-  "tldr_zh": "People become faster at a task through practice, but models",
-  "cover_zh": "People become faster at a task through practice, but models",
+  "abstract_zh": "人们通过练习能更快完成任务，但那些随经验改进的模型不一定学会使用更少计算。我们训练循环模型，其中间预测允许提前退出，通过练习以更少迭代执行任务。这很困难，因为共享权重更新可能在改善早期预测的同时降低最终循环预测，而退出门必须跟踪早期预测质量的变化。我们提出FLUENT，它不需要额外的任务标签或奖励：它将初始模型的最终循环预测蒸馏到早期预测中，将当前最终循环预测锚定到同一个冻结教师，并训练退出门以平衡与当前最终循环预测的分歧和计算成本。FLUENT在新Crafter世界中以更浅深度提升性能，在更少动作头迭代下提高LIBERO成功率，并在较低选定深度下保持语言模型准确率。在真实机器人上，成功率从62.3%升至74.6%，而成功回合的平均时间从69秒降至31秒。项目页面见https://msseok96-cpu.github.io/FLUENT/。",
+  "tldr_zh": "FLUENT让循环模型通过练习学会用更少迭代完成任务。",
+  "cover_zh": "循环模型也能熟能生巧？新方法让推理迭代更少却更准",
   "authors": [
     {
       "name": "Minseok seo",
@@ -44,26 +44,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ KAIST"
     }
   ],
   "related_links": [],
   "page_count": 11,
   "source_tags": [],
-  "score": 16,
+  "score": 31,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “KAIST” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -73,12 +73,18 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Korea Advanced Institute of Science and Technology (KAIST)"
+  ],
+  "method_tags": [
+    "Distillation",
+    "Early Exit",
+    "Looped Models"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33390",
   "source": "arxiv",
   "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints",
-  "title_zh": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints",
+  "title_zh": "RoboARC：空间约束下机器人操作的物理谜题",
   "abstract": "Many hard manipulation tasks come down to a spatial constraint that only a few motions satisfy, such as passing a part through a gap barely wider than itself or separating two interlocked parts. These motions depend on the exact geometry of each scene, so demonstrations and skills recorded elsewhere rarely transfer. We therefore ask: when manipulation hinges on spatial constraints, can robots reason out the right motions? We introduce RoboARC, a benchmark of 90 tasks in six constraint types over rigid and soft materials, on three robots in MuJoCo. Every task is a frozen scene with a physics-based grader and a verified reference solution that replays bit-identically. Each task comes in a Privileged regime, with the full simulator state and resets, and a Standard regime with real-sensor inputs (camera images and proprioception) and a single attempt without resets. We evaluate seven coding agents and four VLA policies, none trained on these tasks. The strongest agent, GPT-6 Astra in Codex, solves 86% of the tasks in the Privileged regime and 43% in the Standard regime, and the four VLA policies, run zero-shot, solve none of their 18 one-arm puzzles. On 15 puzzles that GPT-6 Astra solved in the Privileged regime and failed in the Standard regime, object poses add 4 points and part geometry 13, but both together add 36, from 24% to 60%. Only 7% of the coding agents' failed runs pass more than half of a task, and 53% of the failed runs in the Standard regime are stuck on a single step. Frontier coding agents already reason out the right motions for many of these tasks once they know where the parts are and what shape they have. From their own sensors, in a single attempt, the strongest solves fewer than half of the tasks. The website can be found at https://roboarc.embodied-first-exam.ai",
-  "abstract_zh": "Many hard manipulation tasks come down to a spatial constraint that only a few motions satisfy, such as passing a part through a gap barely wider than itself or separating two interlocked parts. These motions depend on the exact geometry of each scene, so demonstrations and skills recorded elsewhere rarely transfer. We therefore ask: when manipulation hinges on spatial constraints, can robots reason out the right motions? We introduce RoboARC, a benchmark of 90 tasks in six constraint types over rigid and soft materials, on three robots in MuJoCo. Every task is a frozen scene with a physics-based grader and a verified reference solution that replays bit-identically. Each task comes in a Privileged regime, with the full simulator state and resets, and a Standard regime with real-sensor inputs (camera images and proprioception) and a single attempt without resets. We evaluate seven coding agents and four VLA policies, none trained on these tasks. The strongest agent, GPT-6 Astra in Codex, solves 86% of the tasks in the Privileged regime and 43% in the Standard regime, and the four VLA policies, run zero-shot, solve none of their 18 one-arm puzzles. On 15 puzzles that GPT-6 Astra solved in the Privileged regime and failed in the Standard regime, object poses add 4 points and part geometry 13, but both together add 36, from 24% to 60%. Only 7% of the coding agents' failed runs pass more than half of a task, and 53% of the failed runs in the Standard regime are stuck on a single step. Frontier coding agents already reason out the right motions for many of these tasks once they know where the parts are and what shape they have. From their own sensors, in a single attempt, the strongest solves fewer than half of the tasks. The website can be found at https://roboarc.embodied-first-exam.ai",
-  "tldr_zh": "Many hard manipulation tasks come down to a spatial constrai",
-  "cover_zh": "Many hard manipulation tasks come down to a spatial constrai",
+  "abstract_zh": "许多困难的操作任务归结为一个空间约束，只有少数运动能满足，例如让零件穿过仅比自身宽一点的间隙，或分离两个互锁的零件。这些运动依赖于每个场景的精确几何形状，因此在其他地方记录的演示和技能很少能迁移。因此我们问：当操作取决于空间约束时，机器人能否推理出正确的运动？我们引入了 RoboARC，一个包含 90 个任务的基准测试，涵盖六种约束类型，涉及刚性和软材料，在 MuJoCo 中的三种机器人上运行。每个任务都是一个冻结场景，配有基于物理的评分器和经过验证的参考解决方案，可逐位完全相同地重放。每个任务都有特权模式（提供完整模拟器状态和重置）和标准模式（使用真实传感器输入，如相机图像和本体感觉，且仅有一次尝试机会，无重置）。我们评估了七个编码智能体和四个 VLA 策略，均未在这些任务上训练过。最强的智能体 GPT-6 Astra 在 Codex 中，在特权模式下解决了 86% 的任务，在标准模式下解决了 43%，而四个 VLA 策略零样本运行，未能解决其 18 个单臂谜题中的任何一个。在 GPT-6 Astra 于特权模式下解决但在标准模式下失败的 15 个谜题上，物体姿态增加了 4 个百分点，零件几何形状增加了 13 个百分点，但两者结合增加了 36 个百分点，从 24% 提升到 60%。编码智能体失败的运行中只有 7% 通过任务的一半以上，而标准模式下 53% 的失败运行卡在单个步骤上。前沿编码智能体一旦知道零件的位置和形状，已经能为许多这类任务推理出正确的运动。而仅凭自身传感器，在一次尝试中，最强的智能体解决的任务不到一半。网站见 https://roboarc.embodied-first-exam.ai",
+  "tldr_zh": "RoboARC基准测试显示，编码智能体在空间约束操作中表现优异，但依赖传感器时成功率减半。",
+  "cover_zh": "机器人空间推理大挑战！最强AI也卡关？",
   "authors": [
     {
       "name": "Qineng Wang",
@@ -81,14 +81,28 @@
   "badges": [
     {
       "kind": "lab",
+      "label": "⭐ Berkeley (BAIR)"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ CMU RI"
+    },
+    {
+      "kind": "lab",
       "label": "⭐ Guanya Shi"
     }
   ],
   "related_links": [],
   "page_count": 72,
   "source_tags": [],
-  "score": 26,
+  "score": 51,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Berkeley (BAIR)” 关键词"
+    },
     {
       "id": "key_author",
       "label": "关键作者上榜",
@@ -109,12 +123,23 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Northwestern University",
+    "Microsoft",
+    "UC Berkeley",
+    "Carnegie Mellon University"
+  ],
+  "method_tags": [
+    "VLA",
+    "coding agents",
+    "spatial constraints"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "MuJoCo"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "no",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

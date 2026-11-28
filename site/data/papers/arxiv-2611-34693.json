@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34693",
   "source": "arxiv",
   "title": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
-  "title_zh": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
+  "title_zh": "ShowNow：面向响应式世界模型的细粒度推测流式生成",
   "abstract": "Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grained speculative streaming framework that uses computation available during playback to prepare action-conditioned futures before input arrives. Single-latent commitment enables frequent decisions, while configurable preparation covers one to eight actions. We construct a matched multi-future dataset to train alternative continuations from a common state; shared-history tree execution and fused commitment make their preparation efficient. On a single H100, our 5B model sustains 480p generation at 16 fps with eight prepared futures. In ViZDoom, the complete ShowNow deployment reduces median input-to-display latency from 620 to 208 ms relative to the native-block SolarWM-FT deployment. Matched-policy experiments reduce restart empty ticks from 1.56% to 0.09% (94%) and improve on-time responses to action changes. These results establish complementary roles for fine-grained commitment and advance preparation, with measured trade-offs in visual fidelity and long-horizon consistency. ShowNow turns playback-time computation into responsive visual interaction. Project: https://github.com/showlab/ShowNow.",
-  "abstract_zh": "Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grained speculative streaming framework that uses computation available during playback to prepare action-conditioned futures before input arrives. Single-latent commitment enables frequent decisions, while configurable preparation covers one to eight actions. We construct a matched multi-future dataset to train alternative continuations from a common state; shared-history tree execution and fused commitment make their preparation efficient. On a single H100, our 5B model sustains 480p generation at 16 fps with eight prepared futures. In ViZDoom, the complete ShowNow deployment reduces median input-to-display latency from 620 to 208 ms relative to the native-block SolarWM-FT deployment. Matched-policy experiments reduce restart empty ticks from 1.56% to 0.09% (94%) and improve on-time responses to action changes. These results establish complementary roles for fine-grained commitment and advance preparation, with measured trade-offs in visual fidelity and long-horizon consistency. ShowNow turns playback-time computation into responsive visual interaction. Project: https://github.com/showlab/ShowNow.",
-  "tldr_zh": "Interactive world models must generate video continuously wh",
-  "cover_zh": "Interactive world models must generate video continuously wh",
+  "abstract_zh": "交互式世界模型必须连续生成视频，同时及时响应用户动作。仅靠实时吞吐量无法解决输入延迟问题：粗粒度的生成块会延迟动作更新，而输入后的生成又增加了响应路径上的工作量。我们提出 ShowNow，一种细粒度推测流式框架，利用播放期间可用的计算，在输入到达之前准备动作条件化的未来帧。单潜在承诺支持频繁决策，而可配置的准备覆盖一到八个动作。我们构建了一个匹配的多未来数据集，用于训练从共同状态出发的替代延续；共享历史树执行和融合承诺使它们的准备变得高效。在单个 H100 上，我们的 5B 模型以 16 fps 持续生成 480p 视频，并准备了八个未来帧。在 ViZDoom 中，完整的 ShowNow 部署将中位输入到显示延迟从原生块 SolarWM-FT 部署的 620 毫秒降低到 208 毫秒。匹配策略实验将重启空刻度从 1.56% 降低到 0.09%（94%），并提高了对动作变化的按时响应。这些结果确立了细粒度承诺和提前准备之间的互补作用，并测量了在视觉保真度和长时程一致性方面的权衡。ShowNow 将播放时的计算转化为响应式视觉交互。项目：https://github.com/showlab/ShowNow。",
+  "tldr_zh": "ShowNow 利用播放时计算预生成未来帧，大幅降低交互延迟。",
+  "cover_zh": "输入延迟砍半！这个流式框架让世界模型实时响应你的每个动作",
   "authors": [
     {
       "name": "Yiren Song",
@@ -43,26 +43,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ NUS"
     }
   ],
   "related_links": [],
   "page_count": 23,
   "source_tags": [],
-  "score": 27,
+  "score": 42,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NUS” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（world model、world models）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "github_repo",
@@ -77,11 +77,25 @@
       "hint": "PDF 23 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "交互式世界模型流式生成，降低输入延迟，属world model方向且有算法创新",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Show Lab, National University of Singapore"
+  ],
+  "method_tags": [
+    "speculative streaming",
+    "world model",
+    "action-conditioned generation"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "ViZDoom"
+  ],
   "method_family": "",
   "real_robot": "",
   "training_summary": "",

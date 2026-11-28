@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34538",
   "source": "arxiv",
   "title": "Dynamic Task Update Benchmark (DTU-Bench): Evaluating Runtime Task Adaptation in Robotic Manipulation",
-  "title_zh": "Dynamic Task Update Benchmark (DTU-Bench): Evaluating Runtime Task Adaptation in Robotic Manipulation",
+  "title_zh": "动态任务更新基准（DTU-Bench）：评估机器人操作中的运行时任务适应",
   "abstract": "Vision-language-action (VLA) policies perform well on fixed-instruction robotic manipulation benchmarks, but their ability to adapt to instruction changes during execution remains understudied. We introduce the Dynamic Task Update Benchmark (DTU-Bench), evaluating 40 task revisions across seven update types and three execution stages using LIBERO, a simulated robotic manipulation benchmark. We compare performance when a new instruction is given before execution starts versus during execution, and examine whether the new task instructions are followed. Across 13 representative VLA configurations, average task success is 95.8% on the original object-manipulation tasks, compared with only 1.6% when the instruction changes which object to manipulate during execution. Controlled diagnostics show that policies often complete the original task before the updated one, and that their responses depend on the robot's physical state. We further test whether a simple scripted controller that releases the grasped object and moves the arm back helps robots respond to instruction changes. This improves success from 2% to 38% for π0.5 and from 8% to 48% for DM0.5, but can cause unwanted object motion. These findings reveal limitations that fixed-instruction benchmarks and task-success metrics alone can overlook in evaluating robotic manipulation. Project page: https://dtu-bench.github.io/",
-  "abstract_zh": "Vision-language-action (VLA) policies perform well on fixed-instruction robotic manipulation benchmarks, but their ability to adapt to instruction changes during execution remains understudied. We introduce the Dynamic Task Update Benchmark (DTU-Bench), evaluating 40 task revisions across seven update types and three execution stages using LIBERO, a simulated robotic manipulation benchmark. We compare performance when a new instruction is given before execution starts versus during execution, and examine whether the new task instructions are followed. Across 13 representative VLA configurations, average task success is 95.8% on the original object-manipulation tasks, compared with only 1.6% when the instruction changes which object to manipulate during execution. Controlled diagnostics show that policies often complete the original task before the updated one, and that their responses depend on the robot's physical state. We further test whether a simple scripted controller that releases the grasped object and moves the arm back helps robots respond to instruction changes. This improves success from 2% to 38% for π0.5 and from 8% to 48% for DM0.5, but can cause unwanted object motion. These findings reveal limitations that fixed-instruction benchmarks and task-success metrics alone can overlook in evaluating robotic manipulation. Project page: https://dtu-bench.github.io/",
-  "tldr_zh": "Vision-language-action (VLA) policies perform well on fixed-",
-  "cover_zh": "Vision-language-action (VLA) policies perform well on fixed-",
+  "abstract_zh": "视觉-语言-动作（VLA）策略在固定指令的机器人操作基准上表现良好，但其在执行过程中适应指令变化的能力仍未得到充分研究。我们引入了动态任务更新基准（DTU-Bench），使用LIBERO（一个模拟机器人操作基准）评估了七种更新类型和三个执行阶段的40个任务修订。我们比较了在执行开始前与执行过程中给出新指令时的性能，并检查是否遵循了新任务指令。在13种代表性的VLA配置中，原始物体操作任务的平均成功率为95.8%，而当指令在执行过程中改变要操作的物体时，成功率仅为1.6%。控制诊断表明，策略通常先完成原始任务再完成更新后的任务，且其响应取决于机器人的物理状态。我们进一步测试了一个简单的脚本控制器（释放抓取物体并将手臂移回）是否有助于机器人响应指令变化。该控制器将π0.5的成功率从2%提高到38%，将DM0.5的成功率从8%提高到48%，但可能导致不必要的物体运动。这些发现揭示了固定指令基准和任务成功指标在评估机器人操作时可能忽略的局限性。项目页面：https://dtu-bench.github.io/",
+  "tldr_zh": "新基准DTU-Bench揭示VLA策略在执行中适应指令变化的能力严重不足。",
+  "cover_zh": "执行中改指令，成功率暴跌至1.6%？新基准DTU-Bench揭示VLA致命短板",
   "authors": [
     {
       "name": "Yanran Jiang",
@@ -45,16 +45,11 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 10,
   "source_tags": [],
-  "score": 25,
+  "score": 15,
   "score_breakdown": [
     {
       "id": "keyword_density",
@@ -63,25 +58,34 @@
       "hint": "频道关键词命中 5 个（vision-language-action、π0、manipulation、grasp）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 10 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "VLA 运行时任务切换 benchmark，揭示固定指令评测盲区，对 manipulation 一线有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "CSIRO Technology",
+    "Monash University"
+  ],
+  "method_tags": [
+    "VLA",
+    "benchmark",
+    "runtime task adaptation"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "LIBERO"
+  ],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "no",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

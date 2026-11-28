@@ -1,0 +1,126 @@
+{
+  "id": "arxiv-2611-34435",
+  "source": "arxiv_discover",
+  "title": "Most of the Way There: Turning a Strong Video Prior into an Action-Conditioned World Model",
+  "title_zh": "几乎水到渠成：将强大的视频先验转化为动作条件世界模型",
+  "abstract": "Modern video generators excel at producing visually plausible futures guided by text and image prompts. Yet their emphasis on semantic plausibility does not guarantee fidelity to the physical consequences of specific actions. Action-conditioned world models (ACWMs), in contrast, aim to simulate how the world responds to robot actions, enabling scalable policy evaluation and improvement without costly real-world rollouts. The challenge is not merely to generate a plausible future, but to predict what follows from a specific physical action. As video priors grow stronger, we ask how little adaptation is truly needed to bridge this gap. We introduce Dianjing, a minimal recipe that preserves and unlocks the capabilities of strong video priors through unified physical action conditioning, training concentrated at the high noise levels where motion and layout, and thus the consequences of actions, are decided, and native history conditioning. Built upon MiniMax H3, a 33B video foundation model, Dianjing freezes the pretrained backbone and trains only 0.34% of its parameters using approximately 65 hours of robot video across two embodiments, without additional robot-specific pretraining or camera calibration. Controlled ablations show that where training is allocated across noise levels matters more than how actions enter the network. On WorldOracle, which evaluates predictions against paired real-world executions, Dianjing achieves the best scores on four of the five evaluation tracks and ranks second on AgiBot-Long. Our findings suggest that strong video priors already bring us most of the way to world modeling; lightweight physical action grounding can unlock their potential for real-world prediction.",
+  "abstract_zh": "现代视频生成器擅长在文本和图像提示下生成视觉上合理的未来。然而，它们对语义合理性的强调并不能保证对特定动作物理后果的保真度。相比之下，动作条件世界模型（ACWM）旨在模拟世界如何响应机器人动作，从而无需昂贵的真实世界部署即可实现可扩展的策略评估和改进。挑战不仅在于生成合理的未来，更在于预测特定物理动作会导致什么。随着视频先验越来越强，我们探究真正弥合这一差距所需的最小适应量。我们提出Dianjing，一个最小化配方，通过统一的物理动作条件、集中在高噪声水平（运动与布局、从而动作后果在此决定）的训练以及原生历史条件，来保留并释放强大视频先验的能力。基于330亿参数的视频基础模型MiniMax H3，Dianjing冻结预训练主干，仅使用约65小时、涵盖两种本体的机器人视频训练其0.34%的参数，无需额外的机器人特定预训练或相机校准。受控消融实验表明，训练在噪声水平上的分配比动作如何进入网络更重要。在WorldOracle（根据配对真实执行评估预测）上，Dianjing在五个评估赛道中的四个取得最佳分数，并在AgiBot-Long上排名第二。我们的发现表明，强大的视频先验已让我们几乎达到世界建模；轻量级的物理动作接地可以释放其用于真实世界预测的潜力。",
+  "tldr_zh": "冻结视频先验主干，仅训0.34%参数，实现动作条件世界模型。",
+  "cover_zh": "冻结99.66%参数｜这个最小配方让视频先验秒变世界模型",
+  "authors": [
+    {
+      "name": "Zanyi Wang",
+      "affiliation": ""
+    },
+    {
+      "name": "Xia Chen",
+      "affiliation": ""
+    },
+    {
+      "name": "Liu Liu",
+      "affiliation": ""
+    },
+    {
+      "name": "Xianglong Guo",
+      "affiliation": ""
+    },
+    {
+      "name": "Dengyang Jiang",
+      "affiliation": ""
+    },
+    {
+      "name": "Haodong Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Tingyang Xiao",
+      "affiliation": ""
+    },
+    {
+      "name": "Wenhao Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Zhizhong Su",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.AI",
+    "cs.CV"
+  ],
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "arxiv_id": "2611.34435",
+  "pdf_url": "https://arxiv.org/pdf/2611.34435v1",
+  "abs_url": "http://arxiv.org/abs/2611.34435v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-34435.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-34435-p2.jpg",
+    "assets/img/covers/arxiv-2611-34435-p3.jpg",
+    "assets/img/covers/arxiv-2611-34435-p4.jpg"
+  ],
+  "channels": [
+    "world-model"
+  ],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ HKUST"
+    }
+  ],
+  "related_links": [],
+  "page_count": 11,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 40,
+  "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “HKUST” 关键词"
+    },
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（world model、world models、world modeling、action-conditioned world）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 11 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "基于33B视频基础模型构建动作条件世界模型，仅训练0.34%参数，用于策略评估，属世界模型方向。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "UC San Diego",
+    "Horizon Robotics",
+    "Nanjing University",
+    "HKUST"
+  ],
+  "method_tags": [
+    "Action-conditioned World Model",
+    "Video Prior",
+    "Physical Action Grounding"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "yes",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

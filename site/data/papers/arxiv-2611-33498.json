@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33498",
   "source": "arxiv",
   "title": "A 3D Simulator for Passive SPAD Imaging",
-  "title_zh": "A 3D Simulator for Passive SPAD Imaging",
+  "title_zh": "用于被动SPAD成像的3D模拟器",
   "abstract": "Passive single-photon avalanche diode (SPAD) cameras provide short-exposure observations for low-light perception, but collecting task annotations for these sensors remains difficult, and annotated datasets are scarce. We present a 3D simulation pipeline that generates realistic photon detections together with camera-motion and semantic labels, enabling perception models to be trained on synthetic SPAD observations and applied directly to real-world data. The pipeline couples controllable scene geometry and motion with a sensor-informed observation model that accounts for photon shot noise, dark counts, and spatial crosstalk. We evaluate the pipeline through calibrated photon-count comparisons and zero-shot sim-to-real transfer across three downstream perception tasks. We show that classifiers trained only on synthetic SPAD data achieve high accuracy on real low-light recordings at illumination levels less than 2 lux, without real-data fine-tuning. Similarly, we apply models trained entirely on simulated camera sweeps to real-world camera-rotation estimation and achieve mean absolute rotation errors of less than 1 degree on real 20-degree and 30-degree sweeps at 0.5 and 5.0 lux, when deployed zero-shot. We additionally train semantic segmentation models on synthetic data with automatically generated dense labels and perform direct inference on real-world low-light recordings; the results further demonstrate the usefulness of synthetic dense supervision for real low-light perception. Our simulator thus provides a practical source of annotated training data for real SPAD perception.",
-  "abstract_zh": "Passive single-photon avalanche diode (SPAD) cameras provide short-exposure observations for low-light perception, but collecting task annotations for these sensors remains difficult, and annotated datasets are scarce. We present a 3D simulation pipeline that generates realistic photon detections together with camera-motion and semantic labels, enabling perception models to be trained on synthetic SPAD observations and applied directly to real-world data. The pipeline couples controllable scene geometry and motion with a sensor-informed observation model that accounts for photon shot noise, dark counts, and spatial crosstalk. We evaluate the pipeline through calibrated photon-count comparisons and zero-shot sim-to-real transfer across three downstream perception tasks. We show that classifiers trained only on synthetic SPAD data achieve high accuracy on real low-light recordings at illumination levels less than 2 lux, without real-data fine-tuning. Similarly, we apply models trained entirely on simulated camera sweeps to real-world camera-rotation estimation and achieve mean absolute rotation errors of less than 1 degree on real 20-degree and 30-degree sweeps at 0.5 and 5.0 lux, when deployed zero-shot. We additionally train semantic segmentation models on synthetic data with automatically generated dense labels and perform direct inference on real-world low-light recordings; the results further demonstrate the usefulness of synthetic dense supervision for real low-light perception. Our simulator thus provides a practical source of annotated training data for real SPAD perception.",
-  "tldr_zh": "Passive single-photon avalanche diode (SPAD) cameras provide",
-  "cover_zh": "Passive single-photon avalanche diode (SPAD) cameras provide",
+  "abstract_zh": "被动单光子雪崩二极管（SPAD）相机为低光感知提供短曝光观测，但为这些传感器收集任务标注仍然困难，且标注数据集稀缺。我们提出一个3D模拟流程，生成逼真的光子检测以及相机运动和语义标签，使感知模型能够在合成SPAD观测上训练并直接应用于真实世界数据。该流程将可控的场景几何和运动与传感器信息观测模型相结合，该模型考虑了光子散粒噪声、暗计数和空间串扰。我们通过校准的光子计数比较和跨三个下游感知任务的零样本模拟到真实迁移来评估该流程。我们表明，仅在合成SPAD数据上训练的分类器在低于2勒克斯的光照水平下对真实低光记录达到高准确率，无需真实数据微调。类似地，我们将完全在模拟相机扫描上训练的模型应用于真实世界相机旋转估计，并在0.5和5.0勒克斯下对真实的20度和30度扫描进行零样本部署时，实现了小于1度的平均绝对旋转误差。此外，我们在具有自动生成密集标签的合成数据上训练语义分割模型，并对真实世界低光记录进行直接推理；结果进一步证明了合成密集监督对真实低光感知的有用性。因此，我们的模拟器为真实SPAD感知提供了实用的标注训练数据来源。",
+  "tldr_zh": "提出3D模拟器生成SPAD标注数据，实现零样本真实感知。",
+  "cover_zh": "合成数据直接上岗！SPAD低光感知零样本迁移真机",
   "authors": [
     {
       "name": "Elia Mergaert",
@@ -50,12 +50,23 @@
   "channels": [
     "sim2real"
   ],
-  "badges": [],
+  "badges": [
+    {
+      "kind": "lab",
+      "label": "⭐ ETH (RSL)"
+    }
+  ],
   "related_links": [],
   "page_count": 8,
   "source_tags": [],
-  "score": 9,
+  "score": 34,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ETH (RSL)” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
@@ -70,8 +81,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of Zurich",
+    "ETH Zurich"
+  ],
+  "method_tags": [
+    "sim-to-real",
+    "zero-shot transfer",
+    "synthetic data"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

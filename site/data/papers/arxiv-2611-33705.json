@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33705",
   "source": "arxiv",
   "title": "Lab2Sim: Agentic Generation of Interactive Laboratory Equipment from Operation Videos",
-  "title_zh": "Lab2Sim: Agentic Generation of Interactive Laboratory Equipment from Operation Videos",
+  "title_zh": "Lab2Sim：从操作视频智能生成交互式实验室设备",
   "abstract": "Generating laboratory assets that faithfully reproduce the appearance, structure, and joint motions of real equipment remains challenging. Existing asset generation methods struggle to directly generate simulation assets for all equipment observed in operation videos and to faithfully reproduce the appearance, joint motions, and internal cavities of the real equipment. To address the challenge, we present Lab2Sim, an agentic framework that generates editable, simulation-ready laboratory equipment assets from egocentric or multi-view operation videos. Lab2Sim comprises four specialized agents. The Evidence Agent combines video observations with laboratory knowledge to specify equipment parts, materials, and functional requirements, which guide the Asset Agent in constructing editable Blender assets. The independent Verifier checks the generated geometry and appearance against the evidence and requirements, providing targeted feedback for revision. The Simulation Integration Agent converts verified Blender assets into simulation instances with physical properties and articulated mechanisms, using execution feedback to refine their behavior. Experiments on human and robot laboratory scenes show that Lab2Sim achieves higher visual fidelity and stronger interaction capability than coding-agent and real-to-sim baselines, including a Codex baseline using the same underlying model. We further demonstrate valve-controlled drainage and use the generated asset library to reproduce laboratory scenes and operations in RoboTwin, supporting reusable simulation environments for robotic laboratory tasks.",
-  "abstract_zh": "Generating laboratory assets that faithfully reproduce the appearance, structure, and joint motions of real equipment remains challenging. Existing asset generation methods struggle to directly generate simulation assets for all equipment observed in operation videos and to faithfully reproduce the appearance, joint motions, and internal cavities of the real equipment. To address the challenge, we present Lab2Sim, an agentic framework that generates editable, simulation-ready laboratory equipment assets from egocentric or multi-view operation videos. Lab2Sim comprises four specialized agents. The Evidence Agent combines video observations with laboratory knowledge to specify equipment parts, materials, and functional requirements, which guide the Asset Agent in constructing editable Blender assets. The independent Verifier checks the generated geometry and appearance against the evidence and requirements, providing targeted feedback for revision. The Simulation Integration Agent converts verified Blender assets into simulation instances with physical properties and articulated mechanisms, using execution feedback to refine their behavior. Experiments on human and robot laboratory scenes show that Lab2Sim achieves higher visual fidelity and stronger interaction capability than coding-agent and real-to-sim baselines, including a Codex baseline using the same underlying model. We further demonstrate valve-controlled drainage and use the generated asset library to reproduce laboratory scenes and operations in RoboTwin, supporting reusable simulation environments for robotic laboratory tasks.",
-  "tldr_zh": "Generating laboratory assets that faithfully reproduce the a",
-  "cover_zh": "Generating laboratory assets that faithfully reproduce the a",
+  "abstract_zh": "生成能忠实复现真实设备外观、结构和关节运动的实验室资产仍具挑战性。现有资产生成方法难以直接从操作视频中为所有设备生成仿真资产，也难以忠实复现真实设备的外观、关节运动和内部空腔。为此，我们提出 Lab2Sim，一个智能体框架，可从第一人称或多视角操作视频生成可编辑、可直接用于仿真的实验室设备资产。Lab2Sim 包含四个专用智能体。证据智能体结合视频观察与实验室知识，指定设备部件、材料和功能需求，指导资产智能体构建可编辑的 Blender 资产。独立验证器根据证据和需求检查生成的几何与外观，并提供针对性反馈以进行修正。仿真集成智能体将验证后的 Blender 资产转换为具有物理属性和关节机构的仿真实例，并利用执行反馈优化其行为。在人类和机器人实验室场景上的实验表明，Lab2Sim 在视觉保真度和交互能力上优于编码智能体和真实到仿真基线，包括使用相同底层模型的 Codex 基线。我们进一步演示了阀门控制排水，并利用生成的资产库在 RoboTwin 中复现实验室场景和操作，为机器人实验室任务提供可复用的仿真环境。",
+  "tldr_zh": "Lab2Sim 用四个智能体从操作视频生成可仿真实验室设备资产。",
+  "cover_zh": "看视频就能造实验室？这个框架让设备直接进仿真",
   "authors": [
     {
       "name": "Yuxin Lin",
@@ -76,26 +76,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ Beihang (BUAA)"
     }
   ],
   "related_links": [],
   "page_count": 22,
   "source_tags": [],
-  "score": 24,
+  "score": 39,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Beihang (BUAA)” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（robotwin、real-to-sim）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -111,10 +111,20 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Beihang University",
+    "Beijing Humanoid Robot Innovation Center"
+  ],
+  "method_tags": [
+    "agentic framework",
+    "real-to-sim",
+    "asset generation"
+  ],
   "platform": [],
-  "sim_stack": [],
+  "sim_stack": [
+    "SAPIEN",
+    "RoboTwin"
+  ],
   "method_family": "",
   "real_robot": "",
   "training_summary": "",

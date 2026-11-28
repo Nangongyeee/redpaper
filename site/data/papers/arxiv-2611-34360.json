@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34360",
   "source": "arxiv",
   "title": "One Patch, Many Policies: Object-Associated Physical Patch Attacks on Robotic Manipulation",
-  "title_zh": "One Patch, Many Policies: Object-Associated Physical Patch Attacks on Robotic Manipulation",
+  "title_zh": "一个补丁，多种策略：面向机器人操作的对象关联物理补丁攻击",
   "abstract": "Vision-Language-Action (VLA) and World Action Models (WAMs) are vulnerable to adversarial visual interference, motivating the study of universal and transferable physical patch attacks. We propose Object-Associated Patch Attack (OAPA), a universal and transferable physical patch framework that enables an attacker to select which task object's manipulation to disrupt through patch placement, without re-optimizing the patch. Our framework combines object-associated placement, differentiable physical compositing, and final action-expert representation divergence. Physical compositing accounts for perspective and occlusion across camera views, while representation divergence guides patch optimization using either relative RMS or cosine distance. Experimental results demonstrate strong attack transferability across task suites and policies, together with the ability to selectively disrupt manipulation of an attacker-chosen task object through patch placement.",
-  "abstract_zh": "Vision-Language-Action (VLA) and World Action Models (WAMs) are vulnerable to adversarial visual interference, motivating the study of universal and transferable physical patch attacks. We propose Object-Associated Patch Attack (OAPA), a universal and transferable physical patch framework that enables an attacker to select which task object's manipulation to disrupt through patch placement, without re-optimizing the patch. Our framework combines object-associated placement, differentiable physical compositing, and final action-expert representation divergence. Physical compositing accounts for perspective and occlusion across camera views, while representation divergence guides patch optimization using either relative RMS or cosine distance. Experimental results demonstrate strong attack transferability across task suites and policies, together with the ability to selectively disrupt manipulation of an attacker-chosen task object through patch placement.",
-  "tldr_zh": "Vision-Language-Action (VLA) and World Action Models (WAMs)",
-  "cover_zh": "Vision-Language-Action (VLA) and World Action Models (WAMs)",
+  "abstract_zh": "视觉-语言-动作（VLA）模型和世界动作模型（WAMs）容易受到对抗性视觉干扰，这促使了对通用且可迁移的物理补丁攻击的研究。我们提出了对象关联补丁攻击（OAPA），一种通用且可迁移的物理补丁框架，使攻击者能够通过补丁放置来选择干扰哪个任务对象的操作，而无需重新优化补丁。我们的框架结合了对象关联放置、可微分物理合成和最终动作专家表示发散。物理合成考虑了跨相机视角的透视和遮挡，而表示发散使用相对RMS或余弦距离来指导补丁优化。实验结果表明，在任务套件和策略之间具有强大的攻击可迁移性，并且能够通过补丁放置选择性地干扰攻击者选择的任务对象的操作。",
+  "tldr_zh": "提出OAPA框架，用单个物理补丁通过放置选择干扰指定任务对象的机器人操作。",
+  "cover_zh": "一个补丁就能操控机器人？放哪就干扰哪个物体！",
   "authors": [
     {
       "name": "Yiqian Liu",
@@ -69,16 +69,11 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 11,
   "source_tags": [],
-  "score": 19,
+  "score": 9,
   "score_breakdown": [
     {
       "id": "keyword_density",
@@ -87,21 +82,25 @@
       "hint": "频道关键词命中 2 个（vision-language-action、manipulation）"
     },
     {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
-    },
-    {
       "id": "longer_paper",
       "label": "成型 paper (≥4 页)",
       "points": 3,
       "hint": "PDF 11 页"
     }
   ],
-  "judge": {},
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "manipulation",
+    "reason": "针对VLA/世界动作模型的物理对抗补丁攻击，属操作策略鲁棒性研究，有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "adversarial patch attack",
+    "VLA",
+    "World Action Model"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

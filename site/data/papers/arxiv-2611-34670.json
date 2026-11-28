@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34670",
   "source": "arxiv",
   "title": "Autonomous Ergodic Robotic Palpation for Elastic Mapping of Curved Soft Tissues",
-  "title_zh": "Autonomous Ergodic Robotic Palpation for Elastic Mapping of Curved Soft Tissues",
+  "title_zh": "面向曲形软组织的自主遍历式机器人触诊弹性建图",
   "abstract": "Autonomous robotic palpation offers repeatable, quantitative   estimates of tissue properties for stiff inclusion   localization. However, existing methods often rely on prior mesh   models or planar surface assumptions that do not generalize to   complex human anatomy. We propose an ergodic palpation framework that   operates directly on curved soft surfaces using point cloud   data. Central to our approach is the Laplace--Beltrami operator,   which grounds both online estimation and exploration in the surface   intrinsic geometry. We estimate local viscoelastic parameters using   an Unscented Kalman Filter (UKF) and fuse them into a surface-aware   Gaussian Process (GP). This probabilistic model drives a   diffusion-based ergodic motion planner, generating a continuous   exploration trajectory that feeds the new informative samples back   to the GP in a closed loop. Throughout this process, a hybrid   force-impedance controller regulates interaction forces to maintain   contact. We evaluate the approach against existing methods in   simulation and validate it in physical experiments on   tissue-mimicking silicone phantoms with varying geometries and   viscoelastic properties, demonstrating geometry-consistent mapping   and stiff inclusion localization under contact-rich conditions.",
-  "abstract_zh": "Autonomous robotic palpation offers repeatable, quantitative estimates of tissue properties for stiff inclusion localization. However, existing methods often rely on prior mesh models or planar surface assumptions that do not generalize to complex human anatomy. We propose an ergodic palpation framework that operates directly on curved soft surfaces using point cloud data. Central to our approach is the Laplace--Beltrami operator, which grounds both online estimation and exploration in the surface intrinsic geometry. We estimate local viscoelastic parameters using an Unscented Kalman Filter (UKF) and fuse them into a surface-aware Gaussian Process (GP). This probabilistic model drives a diffusion-based ergodic motion planner, generating a continuous exploration trajectory that feeds the new informative samples back to the GP in a closed loop. Throughout this process, a hybrid force-impedance controller regulates interaction forces to maintain contact. We evaluate the approach against existing methods in simulation and validate it in physical experiments on tissue-mimicking silicone phantoms with varying geometries and viscoelastic properties, demonstrating geometry-consistent mapping and stiff inclusion localization under contact-rich conditions.",
-  "tldr_zh": "Autonomous robotic palpation offers repeatable, quantitative",
-  "cover_zh": "Autonomous robotic palpation offers repeatable, quantitative",
+  "abstract_zh": "自主机器人触诊能够为僵硬包涵体定位提供可重复、定量的组织特性估计。然而，现有方法通常依赖于先验网格模型或平面表面假设，难以泛化到复杂的人体解剖结构。我们提出了一种遍历式触诊框架，直接利用点云数据在曲形软表面上操作。我们方法的核心是拉普拉斯-贝尔特拉米算子，它将在线估计和探索都建立在表面内在几何之上。我们使用无迹卡尔曼滤波器（UKF）估计局部粘弹性参数，并将其融合到表面感知的高斯过程（GP）中。该概率模型驱动基于扩散的遍历运动规划器，生成连续的探索轨迹，并将新的信息样本在闭环中反馈给GP。在整个过程中，混合力-阻抗控制器调节交互力以保持接触。我们在仿真中与现有方法进行了比较，并在具有不同几何形状和粘弹性特性的组织模拟硅胶体模上进行了物理实验验证，展示了在接触丰富条件下几何一致的建图和僵硬包涵体定位。",
+  "tldr_zh": "提出遍历式触诊框架，直接在曲面上建图并定位僵硬包涵体。",
+  "cover_zh": "告别平面假设！曲面触诊也能精准定位僵硬包涵体",
   "authors": [
     {
       "name": "Luca Beber",
@@ -57,28 +57,17 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 22,
   "source_tags": [],
-  "score": 16,
+  "score": 6,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（contact-rich）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -89,11 +78,15 @@
   ],
   "judge": {},
   "institutions": [],
-  "method_tags": [],
+  "method_tags": [
+    "ergodic exploration",
+    "Gaussian Process",
+    "force-impedance control"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

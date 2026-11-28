@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33693",
   "source": "arxiv",
   "title": "GeoTex: Geometry-as-Texture Encoding and History-Grounded 4D Occupancy Forecasting",
-  "title_zh": "GeoTex: Geometry-as-Texture Encoding and History-Grounded 4D Occupancy Forecasting",
+  "title_zh": "GeoTex：几何即纹理编码与基于历史的4D占用预测",
   "abstract": "4D occupancy forecasting models 3D scene evolution to support future prediction and scenario generation in autonomous-driving world models. Semantic occupancy abstracts image color and texture into discrete labels, leaving 3D voxel arrangements as the primary cues for distinguishing local shapes within each class. Existing methods borrow image-encoding frameworks to obtain compact latent representations through height channelization or plane factorization, but do not sufficiently model within-column height patterns and cross-column relations jointly before compression, weakening these geometric cues. Forecasting also underutilizes complementary history and struggles to retain reliable observation evidence. We therefore propose GeoTex, an occupancy world model combining geometry-as-texture encoding with history-grounded forecasting. GeoTex Representation jointly encodes within-column height patterns and cross-column relations into compact continuous latent representations and restores 3D structure through content-dependent height unfolding and geometric interaction. GeoTex Prediction retains initial evidence throughout rollout in fixed cross-observation relational memory and incorporates complementary recent history through target-referenced residual updates. After prediction training, decoder-only adaptation improves semantic decoding of predicted states. GeoTex improves average forecasting mIoU and IoU by 9.79% and 11.91% relative to GenieDrive while reducing parameters from 3.47M to 2.33M, with gains increasing at longer horizons. Code is included in the supplementary material.",
-  "abstract_zh": "4D occupancy forecasting models 3D scene evolution to support future prediction and scenario generation in autonomous-driving world models. Semantic occupancy abstracts image color and texture into discrete labels, leaving 3D voxel arrangements as the primary cues for distinguishing local shapes within each class. Existing methods borrow image-encoding frameworks to obtain compact latent representations through height channelization or plane factorization, but do not sufficiently model within-column height patterns and cross-column relations jointly before compression, weakening these geometric cues. Forecasting also underutilizes complementary history and struggles to retain reliable observation evidence. We therefore propose GeoTex, an occupancy world model combining geometry-as-texture encoding with history-grounded forecasting. GeoTex Representation jointly encodes within-column height patterns and cross-column relations into compact continuous latent representations and restores 3D structure through content-dependent height unfolding and geometric interaction. GeoTex Prediction retains initial evidence throughout rollout in fixed cross-observation relational memory and incorporates complementary recent history through target-referenced residual updates. After prediction training, decoder-only adaptation improves semantic decoding of predicted states. GeoTex improves average forecasting mIoU and IoU by 9.79% and 11.91% relative to GenieDrive while reducing parameters from 3.47M to 2.33M, with gains increasing at longer horizons. Code is included in the supplementary material.",
-  "tldr_zh": "4D occupancy forecasting models 3D scene evolution to suppor",
-  "cover_zh": "4D occupancy forecasting models 3D scene evolution to suppor",
+  "abstract_zh": "4D占用预测对3D场景演化进行建模，以支持自动驾驶世界模型中的未来预测和场景生成。语义占用将图像颜色和纹理抽象为离散标签，留下3D体素排列作为区分每个类别内局部形状的主要线索。现有方法借用图像编码框架，通过高度通道化或平面分解获得紧凑的潜在表示，但在压缩前未能充分联合建模列内高度模式和列间关系，削弱了这些几何线索。预测也未能充分利用互补的历史信息，且难以保留可靠的观测证据。因此，我们提出GeoTex，一种结合几何即纹理编码与基于历史预测的占用世界模型。GeoTex表示将列内高度模式和列间关系联合编码为紧凑的连续潜在表示，并通过内容依赖的高度展开和几何交互恢复3D结构。GeoTex预测在固定跨观测关系记忆中保留初始证据贯穿整个展开过程，并通过目标参考的残差更新融入互补的近期历史。在预测训练后，仅解码器适配改进了预测状态的语义解码。与GenieDrive相比，GeoTex将平均预测mIoU和IoU分别提高了9.79%和11.91%，同时将参数从3.47M减少到2.33M，且增益在更长预测范围下增加。代码包含在补充材料中。",
+  "tldr_zh": "GeoTex通过几何即纹理编码和基于历史的预测，提升4D占用预测性能并减少参数。",
+  "cover_zh": "几何即纹理？这个占用世界模型预测更准还更轻量！",
   "authors": [
     {
       "name": "Shijun Guo",
@@ -59,26 +59,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ 北大"
     }
   ],
   "related_links": [],
   "page_count": 16,
   "source_tags": [],
-  "score": 19,
+  "score": 34,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “北大” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（world model、world models）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -88,8 +88,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Xidian University",
+    "Peking University"
+  ],
+  "method_tags": [
+    "4D occupancy forecasting",
+    "world model",
+    "geometry-as-texture encoding"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

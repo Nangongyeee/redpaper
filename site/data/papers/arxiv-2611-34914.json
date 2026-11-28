@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34914",
   "source": "arxiv",
   "title": "Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs",
-  "title_zh": "Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs",
+  "title_zh": "Cairn：以物体为中心的3D轨迹先验引导冻结的VLA",
   "abstract": "Vision-language-action models (VLAs) are capable low-level controllers, but they tie where objects go to the layouts they were trained on: when objects are moved or obstacles block the way, they carry them to the wrong place or into collisions. Fine-tuning on new layouts needs robot data for each one and erodes skills the model already has. We introduce Cairn, which keeps the VLA frozen and steers it at test time along learned 3D trajectories of the object in its gripper. A small prior reads point clouds of the scene and the held object, along with its pose when grasped and the instruction, and samples SE(3) trajectories up to its release that lead it around obstacles and turn it to fit through gaps. The prior and the VLA form the two levels of a hierarchical planner in which feedback runs both ways: the VLA's intended motion chooses and reshapes the trajectories, and the chosen one guides the VLA's denoising. Its predicted actions, mapped to the held object's poses through the grasp, are pulled toward the next waypoint, while the VLA's weights stay untouched. Across 1,941 held-out LIBERO scenes with displaced objects and obstacles, Cairn raises the success rate of a frozen π0.5 from 24.5% to 95.1%, above that of a π0.5 fine-tuned on our training layouts, without hurting standard LIBERO. On the third-party LIBERO-PRO benchmark, it raises success from 27.3% to 38.0%, and from 54.4% to 81.1% on the episodes it steers. On a real Franka, with a prior trained purely in simulation, it guides the frozen DROID π0.5 around an obstacle and to a placement at the limit of the arm's reach, where it otherwise fails. All code, models and data will be made public.",
-  "abstract_zh": "Vision-language-action models (VLAs) are capable low-level controllers, but they tie where objects go to the layouts they were trained on: when objects are moved or obstacles block the way, they carry them to the wrong place or into collisions. Fine-tuning on new layouts needs robot data for each one and erodes skills the model already has. We introduce Cairn, which keeps the VLA frozen and steers it at test time along learned 3D trajectories of the object in its gripper. A small prior reads point clouds of the scene and the held object, along with its pose when grasped and the instruction, and samples SE(3) trajectories up to its release that lead it around obstacles and turn it to fit through gaps. The prior and the VLA form the two levels of a hierarchical planner in which feedback runs both ways: the VLA's intended motion chooses and reshapes the trajectories, and the chosen one guides the VLA's denoising. Its predicted actions, mapped to the held object's poses through the grasp, are pulled toward the next waypoint, while the VLA's weights stay untouched. Across 1,941 held-out LIBERO scenes with displaced objects and obstacles, Cairn raises the success rate of a frozen π0.5 from 24.5% to 95.1%, above that of a π0.5 fine-tuned on our training layouts, without hurting standard LIBERO. On the third-party LIBERO-PRO benchmark, it raises success from 27.3% to 38.0%, and from 54.4% to 81.1% on the episodes it steers. On a real Franka, with a prior trained purely in simulation, it guides the frozen DROID π0.5 around an obstacle and to a placement at the limit of the arm's reach, where it otherwise fails. All code, models and data will be made public.",
-  "tldr_zh": "Vision-language-action models (VLAs) are capable low-level c",
-  "cover_zh": "Vision-language-action models (VLAs) are capable low-level c",
+  "abstract_zh": "视觉-语言-动作模型（VLA）是能力强大的底层控制器，但它们将物体去向与训练时见过的布局绑定：当物体被移动或障碍物挡路时，它们会把物体带到错误位置或撞上障碍。在新布局上微调需要为每个布局采集机器人数据，并且会侵蚀模型已有的技能。我们提出 Cairn，它保持 VLA 冻结，并在测试时沿着学习到的夹爪中物体的 3D 轨迹引导它。一个小型先验读取场景和所持物体的点云、抓取时的位姿以及指令，并采样直到释放的 SE(3) 轨迹，这些轨迹能绕过障碍并调整物体朝向以穿过缝隙。该先验与 VLA 构成两级分层规划器，反馈双向流动：VLA 的预期运动选择并重塑轨迹，而选定的轨迹引导 VLA 的去噪。其预测动作通过抓取映射到所持物体的位姿，并被拉向下一个路点，同时 VLA 的权重保持不变。在 1,941 个包含物体位移和障碍物的留出 LIBERO 场景中，Cairn 将冻结的 π0.5 的成功率从 24.5% 提升到 95.1%，高于在我们的训练布局上微调的 π0.5，且不损害标准 LIBERO 性能。在第三方 LIBERO-PRO 基准上，它将成功率从 27.3% 提升到 38.0%，在其引导的片段上从 54.4% 提升到 81.1%。在真实的 Franka 机器人上，先验完全在仿真中训练，它引导冻结的 DROID π0.5 绕过障碍并放置到机械臂可达范围的极限位置，而原本会失败。所有代码、模型和数据将公开。",
+  "tldr_zh": "Cairn 用3D轨迹先验在测试时引导冻结VLA，大幅提升新布局成功率。",
+  "cover_zh": "冻结VLA也能逆袭？｜这个先验让成功率从24.5%飙到95.1%",
   "authors": [
     {
       "name": "Agelos Kratimenos",
@@ -44,26 +44,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ CMU RI"
     }
   ],
   "related_links": [],
   "page_count": 13,
   "source_tags": [],
-  "score": 25,
+  "score": 40,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “CMU RI” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（vision-language-action、π0、grasp、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -72,13 +72,28 @@
       "hint": "PDF 13 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "冻结VLA+3D轨迹先验的分层规划，提升操作泛化，真机验证，科研价值高。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Pennsylvania",
+    "Robotics Institute, Athena RC"
+  ],
+  "method_tags": [
+    "VLA steering",
+    "3D trajectory prior",
+    "hierarchical planner"
+  ],
+  "platform": [
+    "Franka"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

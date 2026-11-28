@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33721",
   "source": "arxiv",
   "title": "A general-purpose safe manipulator planning framework for diverse environments without retraining",
-  "title_zh": "A general-purpose safe manipulator planning framework for diverse environments without retraining",
+  "title_zh": "一种通用机械臂安全规划框架：无需重新训练即可适应多样环境",
   "abstract": "Nowadays, robots need to be retrained whenever their operating environment changes, and this prohibitive training cost keeps them far from daily use. The community is calling for innovations that bestow on a robot the ability to safely grasp different objects under different conditions without excessive training data and computing power. In response to this call, we present a general-purpose manipulator mission-planning framework, allowing a robot to safely perform manipulation tasks, such as grasping objects that fit in its gripper, across different operating environments without retraining its controllers. The framework rests on two innovations: a finite-state abstracted model, bisimilar to the original system dynamics, that describes accessibility of the space in front of the robot under its given arm and gripper, and a block-conservative specification generation method that turns each manipulation task under any specific operational environment into specifications about state accessibility of the abstracted model. A task proven feasible and safe on the abstracted model is guaranteed to be safe and achievable by the robot. Real-world case studies conducted on a Unitree G1 U1 humanoid show that manipulation tasks commonly encountered in daily life, such as grasping an object, pressing an elevator button or picking up a berry, can be handled within this framework, where an abstracted model of the G1 U1 robot is built only once to avoid costly model reconstructions, and different tasks are simply captured by specific block-conservative specifications, achievable by a generic mission planner with vision-based feedback control.",
-  "abstract_zh": "Nowadays, robots need to be retrained whenever their operating environment changes, and this prohibitive training cost keeps them far from daily use. The community is calling for innovations that bestow on a robot the ability to safely grasp different objects under different conditions without excessive training data and computing power. In response to this call, we present a general-purpose manipulator mission-planning framework, allowing a robot to safely perform manipulation tasks, such as grasping objects that fit in its gripper, across different operating environments without retraining its controllers. The framework rests on two innovations: a finite-state abstracted model, bisimilar to the original system dynamics, that describes accessibility of the space in front of the robot under its given arm and gripper, and a block-conservative specification generation method that turns each manipulation task under any specific operational environment into specifications about state accessibility of the abstracted model. A task proven feasible and safe on the abstracted model is guaranteed to be safe and achievable by the robot. Real-world case studies conducted on a Unitree G1 U1 humanoid show that manipulation tasks commonly encountered in daily life, such as grasping an object, pressing an elevator button or picking up a berry, can be handled within this framework, where an abstracted model of the G1 U1 robot is built only once to avoid costly model reconstructions, and different tasks are simply captured by specific block-conservative specifications, achievable by a generic mission planner with vision-based feedback control.",
-  "tldr_zh": "Nowadays, robots need to be retrained whenever their operati",
-  "cover_zh": "Nowadays, robots need to be retrained whenever their operati",
+  "abstract_zh": "如今，机器人一旦运行环境发生变化就需要重新训练，这种高昂的训练成本使其难以进入日常使用。学界呼吁创新方法，使机器人无需过多训练数据和计算资源，就能在不同条件下安全抓取不同物体。为此，我们提出一种通用机械臂任务规划框架，使机器人无需重新训练控制器即可在不同操作环境中安全执行抓取等操作任务。该框架基于两项创新：一是与原始系统动力学双相似的有限状态抽象模型，描述机器人在给定手臂和夹爪下前方空间的可达性；二是块保守规范生成方法，将任意特定操作环境下的每个操作任务转化为关于抽象模型状态可达性的规范。在抽象模型上被证明可行且安全的任务，可保证机器人安全且可实现。在Unitree G1 U1人形机器人上的真实案例研究表明，日常生活中常见的操作任务（如抓取物体、按电梯按钮或拾取浆果）均可在该框架内处理，其中G1 U1机器人的抽象模型仅需构建一次以避免昂贵的模型重建，不同任务只需通过特定的块保守规范来捕获，并可由基于视觉反馈控制的通用任务规划器实现。",
+  "tldr_zh": "提出通用规划框架，机器人无需重新训练即可安全执行多种操作任务。",
+  "cover_zh": "机器人换环境就要重训？这个框架说不用！",
   "authors": [
     {
       "name": "Mingkang Long",
@@ -53,26 +53,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ NTU"
     }
   ],
   "related_links": [],
   "page_count": 46,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NTU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（unitree g1、manipulation、grasp、grasping）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -88,12 +88,21 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "institutions": [
+    "Nanyang Technological University",
+    "Huazhong University of Science and Technology"
+  ],
+  "method_tags": [
+    "mission planning",
+    "finite-state abstraction",
+    "vision-based feedback control"
+  ],
+  "platform": [
+    "Unitree G1 U1"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

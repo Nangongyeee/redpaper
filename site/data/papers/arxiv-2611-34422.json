@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34422",
   "source": "arxiv",
   "title": "Can Visual World Models See Force?",
-  "title_zh": "Can Visual World Models See Force?",
+  "title_zh": "视觉世界模型能感知力吗？",
   "abstract": "World models and vision-language-action policy models are increasingly proposed as foundations for robot manipulation. They predict how scenes evolve and which actions to take, yet successful manipulation depends not solely on following observable trajectories but also on the hidden variable of interaction force. Neurophysiology has shown that humans possess a visual prior for this hidden variable, motivating us to ask the question: Do the representations of visual foundation models also capture the forces involved in an interaction? We define force awareness as the ability of representations to (1) indicate when contact force is applied, (2) track how it changes during an interaction, and (3) reflect how large it is. We probe frozen image, video, world- and policy model representations with a lightweight readout trained on synchronized video and force measurements from two manipulation datasets. Our experiments show that most models capture when contact occurs but not how much force is being applied. Surprisingly, robot post-training does not improve this either, highlighting an important gap in current models capabilities.",
-  "abstract_zh": "World models and vision-language-action policy models are increasingly proposed as foundations for robot manipulation. They predict how scenes evolve and which actions to take, yet successful manipulation depends not solely on following observable trajectories but also on the hidden variable of interaction force. Neurophysiology has shown that humans possess a visual prior for this hidden variable, motivating us to ask the question: Do the representations of visual foundation models also capture the forces involved in an interaction? We define force awareness as the ability of representations to (1) indicate when contact force is applied, (2) track how it changes during an interaction, and (3) reflect how large it is. We probe frozen image, video, world- and policy model representations with a lightweight readout trained on synchronized video and force measurements from two manipulation datasets. Our experiments show that most models capture when contact occurs but not how much force is being applied. Surprisingly, robot post-training does not improve this either, highlighting an important gap in current models capabilities.",
-  "tldr_zh": "World models and vision-language-action policy models are in",
-  "cover_zh": "World models and vision-language-action policy models are in",
+  "abstract_zh": "世界模型和视觉-语言-动作策略模型越来越多地被提议作为机器人操作的基础。它们预测场景如何演变以及应采取哪些动作，然而成功的操作不仅依赖于遵循可观察的轨迹，还依赖于交互力这一隐藏变量。神经生理学表明，人类对这一隐藏变量具有视觉先验，这促使我们提出一个问题：视觉基础模型的表征是否也捕捉到了交互中涉及的力？我们将力感知定义为表征具备以下能力：(1) 指示何时施加接触力，(2) 追踪交互过程中力如何变化，(3) 反映力的大小。我们使用在两个操作数据集上同步的视频和力测量数据训练的轻量级读出器，探测了冻结的图像、视频、世界模型和策略模型的表征。实验表明，大多数模型能捕捉到接触发生的时间，但无法捕捉施加力的大小。令人惊讶的是，机器人后训练也没有改善这一点，凸显了当前模型能力中的一个重要差距。",
+  "tldr_zh": "视觉基础模型能感知接触力发生，但无法判断力的大小。",
+  "cover_zh": "机器人世界模型能看见力吗？答案出乎意料",
   "authors": [
     {
       "name": "Felix Tristram",
@@ -45,26 +45,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ TUM"
     }
   ],
   "related_links": [],
   "page_count": 36,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “TUM” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（vision-language-action、manipulation、world model、world models）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -79,9 +79,22 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "探究视觉世界模型是否感知交互力，揭示力感知缺口，对世界模型与操作策略研究有重要参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Technical University of Munich",
+    "Munich Center for Machine Learning"
+  ],
+  "method_tags": [
+    "world model",
+    "VLA",
+    "representation probing"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

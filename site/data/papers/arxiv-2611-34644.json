@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34644",
   "source": "arxiv",
   "title": "Motion Beyond Pixels: Learning Future Visual Representations for Object-Centric Dynamics",
-  "title_zh": "Motion Beyond Pixels: Learning Future Visual Representations for Object-Centric Dynamics",
+  "title_zh": "超越像素的运动：学习面向对象中心动力学的未来视觉表示",
   "abstract": "Many embodied world models predict future states in latent spaces optimized for RGB reconstruction, which do not explicitly prioritize object-level semantics and geometry relevant to motion generation. We present MotionRep, a visual representation world model that jointly generates future DINO representations and 3D object flow, coupling semantic and geometric information with object-centric dynamics. To make high-dimensional DINO features amenable to generative modeling, we introduce DINO-VAE, which combines temporal and channel compression with latent regularization to produce compact latents while preserving semantic and geometric information. Conditioned on an initial observation, object query points, and a language instruction, a unified diffusion transformer predicts future visual representations and 3D object flow through joint attention. MotionRep employs asymmetric modality-specific noise schedules to keep the visual stream ahead of 3D object flow during joint denoising, allowing progressively refined future visual representations to guide flow generation. Experiments on simulated and real-world manipulation benchmarks demonstrate that MotionRep outperforms pixel-based baselines in 3D object flow accuracy and generalization to unseen scenes, while requiring only three denoising steps for inference. These results support predictive visual representations as an effective future-state space for object-centric dynamics modeling.",
-  "abstract_zh": "Many embodied world models predict future states in latent spaces optimized for RGB reconstruction, which do not explicitly prioritize object-level semantics and geometry relevant to motion generation. We present MotionRep, a visual representation world model that jointly generates future DINO representations and 3D object flow, coupling semantic and geometric information with object-centric dynamics. To make high-dimensional DINO features amenable to generative modeling, we introduce DINO-VAE, which combines temporal and channel compression with latent regularization to produce compact latents while preserving semantic and geometric information. Conditioned on an initial observation, object query points, and a language instruction, a unified diffusion transformer predicts future visual representations and 3D object flow through joint attention. MotionRep employs asymmetric modality-specific noise schedules to keep the visual stream ahead of 3D object flow during joint denoising, allowing progressively refined future visual representations to guide flow generation. Experiments on simulated and real-world manipulation benchmarks demonstrate that MotionRep outperforms pixel-based baselines in 3D object flow accuracy and generalization to unseen scenes, while requiring only three denoising steps for inference. These results support predictive visual representations as an effective future-state space for object-centric dynamics modeling.",
-  "tldr_zh": "Many embodied world models predict future states in latent s",
-  "cover_zh": "Many embodied world models predict future states in latent s",
+  "abstract_zh": "许多具身世界模型在针对RGB重建优化的潜在空间中预测未来状态，这些空间并未明确优先考虑与运动生成相关的对象级语义和几何。我们提出MotionRep，一种视觉表示世界模型，它联合生成未来的DINO表示和3D对象流，将语义和几何信息与对象中心动力学耦合。为了使高维DINO特征适合生成建模，我们引入DINO-VAE，它结合时间和通道压缩与潜在正则化，生成紧凑的潜在表示，同时保留语义和几何信息。以初始观察、对象查询点和语言指令为条件，统一的扩散变换器通过联合注意力预测未来视觉表示和3D对象流。MotionRep采用非对称的模态特定噪声调度，在联合去噪过程中保持视觉流领先于3D对象流，使逐步细化的未来视觉表示能够指导流生成。在模拟和真实世界操作基准上的实验表明，MotionRep在3D对象流准确性和对未见场景的泛化方面优于基于像素的基线，同时推理仅需三个去噪步骤。这些结果支持预测性视觉表示作为对象中心动力学建模的有效未来状态空间。",
+  "tldr_zh": "MotionRep联合生成DINO表示和3D对象流，提升对象中心动力学建模。",
+  "cover_zh": "不靠像素靠表示！这个新模型让3D对象流预测更准更泛化",
   "authors": [
     {
       "name": "Chengzhi Zhao",
@@ -74,26 +74,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ NUS"
     }
   ],
   "related_links": [],
   "page_count": 30,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “NUS” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 4 个（manipulation、world model、world models、embodied world model）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -108,13 +108,28 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "面向具身操作的世界模型，预测DINO表征与3D物体流，方法新颖且真机验证。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "RoboScience",
+    "Harbin Institute of Technology, Shenzhen",
+    "Sun Yat-sen University",
+    "National University of Singapore"
+  ],
+  "method_tags": [
+    "World Model",
+    "Diffusion Transformer",
+    "3D object flow"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

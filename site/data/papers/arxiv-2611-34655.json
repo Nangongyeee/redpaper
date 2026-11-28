@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34655",
   "source": "arxiv",
   "title": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
-  "title_zh": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
+  "title_zh": "Nav4Manip：通过协同进化从导航到灵巧移动操作",
   "abstract": "Dexterous mobile manipulation is essential for robots to perform useful tasks in complex, unstructured environments. However, existing systems face two challenges. First, navigation remains too coarse for downstream manipulation, which often requires a precise base position and approach orientation rather than merely reaching a meter-scale goal region. Second, navigation and manipulation are commonly trained in isolation, lacking a feedback loop that enables the two capabilities to co-evolve. These limitations prevent current systems from reliably executing long-horizon dexterous mobile-manipulation tasks in real-world environments. To address them, we introduce Nav4Manip, a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation. It comprises two complementary architectures: Nav4Manip-N learns long-horizon navigation and refines its policy through manipulation feedback, while Nav4Manip-M trains a world-action model (WAM) for downstream dexterous manipulation. We train Nav4Manip-N in three stages: multi-task co-tuning learns navigation behavior and manipulation-aware affordance prediction; rejection sampling fine-tuning (RFT) rejects low-quality policy-generated paths and fine-tunes the model on retained trajectories; and reinforcement learning from AI feedback (RLAIF) uses counterfactual preferences to further improve navigation decisions. To support this framework, we establish the Nav-N-Manip benchmark and construct Nav4Manip-Pairs from benchmark rollouts, providing large-scale paired navigation--manipulation trajectories and affordance supervision. Extensive experiments on public vision-language navigation (VLN) benchmarks and Nav-N-Manip demonstrate state-of-the-art performance, while real-world evaluations show that Nav4Manip completes diverse dexterous mobile-manipulation tasks. Project website: https://nav4manip.github.io/.",
-  "abstract_zh": "Dexterous mobile manipulation is essential for robots to perform useful tasks in complex, unstructured environments. However, existing systems face two challenges. First, navigation remains too coarse for downstream manipulation, which often requires a precise base position and approach orientation rather than merely reaching a meter-scale goal region. Second, navigation and manipulation are commonly trained in isolation, lacking a feedback loop that enables the two capabilities to co-evolve. These limitations prevent current systems from reliably executing long-horizon dexterous mobile-manipulation tasks in real-world environments. To address them, we introduce Nav4Manip, a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation. It comprises two complementary architectures: Nav4Manip-N learns long-horizon navigation and refines its policy through manipulation feedback, while Nav4Manip-M trains a world-action model (WAM) for downstream dexterous manipulation. We train Nav4Manip-N in three stages: multi-task co-tuning learns navigation behavior and manipulation-aware affordance prediction; rejection sampling fine-tuning (RFT) rejects low-quality policy-generated paths and fine-tunes the model on retained trajectories; and reinforcement learning from AI feedback (RLAIF) uses counterfactual preferences to further improve navigation decisions. To support this framework, we establish the Nav-N-Manip benchmark and construct Nav4Manip-Pairs from benchmark rollouts, providing large-scale paired navigation--manipulation trajectories and affordance supervision. Extensive experiments on public vision-language navigation (VLN) benchmarks and Nav-N-Manip demonstrate state-of-the-art performance, while real-world evaluations show that Nav4Manip completes diverse dexterous mobile-manipulation tasks. Project website: https://nav4manip.github.io/.",
-  "tldr_zh": "Dexterous mobile manipulation is essential for robots to per",
-  "cover_zh": "Dexterous mobile manipulation is essential for robots to per",
+  "abstract_zh": "灵巧移动操作对于机器人在复杂非结构化环境中执行有用任务至关重要。然而，现有系统面临两个挑战。首先，导航对于下游操作来说仍然过于粗糙，下游操作通常需要精确的基座位置和接近方向，而不仅仅是到达米级目标区域。其次，导航和操作通常被孤立地训练，缺乏使两种能力协同进化的反馈回路。这些限制阻碍了当前系统在真实环境中可靠地执行长时程灵巧移动操作任务。为了解决这些问题，我们提出了 Nav4Manip，一个用于长时程灵巧移动操作的双向耦合协同进化系统。它包含两种互补的架构：Nav4Manip-N 学习长时程导航，并通过操作反馈来优化其策略；而 Nav4Manip-M 训练一个世界-动作模型（WAM）用于下游灵巧操作。我们分三个阶段训练 Nav4Manip-N：多任务协同调优学习导航行为和操作感知的 affordance 预测；拒绝采样微调（RFT）拒绝低质量的策略生成路径，并在保留的轨迹上微调模型；以及来自 AI 反馈的强化学习（RLAIF）使用反事实偏好来进一步改进导航决策。为了支持该框架，我们建立了 Nav-N-Manip 基准，并从基准 rollout 中构建了 Nav4Manip-Pairs，提供大规模配对的导航-操作轨迹和 affordance 监督。在公开的视觉语言导航（VLN）基准和 Nav-N-Manip 上的大量实验证明了最先进的性能，而真实世界评估表明 Nav4Manip 完成了多样化的灵巧移动操作任务。项目网站：https://nav4manip.github.io/。",
+  "tldr_zh": "Nav4Manip 通过双向耦合协同进化，让导航与灵巧操作相互促进，实现长时程移动操作。",
+  "cover_zh": "导航与操作竟能协同进化？长时程灵巧移动操作新突破",
   "authors": [
     {
       "name": "Yusen Feng",
@@ -73,26 +73,30 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ Galbot"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ 北大"
     }
   ],
   "related_links": [],
   "page_count": 48,
   "source_tags": [],
-  "score": 30,
+  "score": 45,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “Galbot” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 5 个（mobile manipulation、manipulation、dexterous、dexterous manipulation）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -107,13 +111,27 @@
       "hint": "同时命中 3 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "移动操作长程任务，导航与操作协同进化，含世界-动作模型与真机验证，参考价值高",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "Peking University",
+    "Galbot",
+    "Qwen"
+  ],
+  "method_tags": [
+    "World-Action Model",
+    "Reinforcement Learning",
+    "long-horizon"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

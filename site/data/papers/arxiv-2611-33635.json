@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33635",
   "source": "arxiv",
   "title": "FreshVLA: Frequency-Regularized Time Scale Hierarchical Latent Actions for Vision-Language-Action Models",
-  "title_zh": "FreshVLA: Frequency-Regularized Time Scale Hierarchical Latent Actions for Vision-Language-Action Models",
+  "title_zh": "FreshVLA：面向视觉-语言-动作模型的频率正则化时间尺度分层潜在动作",
   "abstract": "Learning reusable latent actions from action-free videos offers an effective route to improving Vision-Language-Action (VLA) policies. However, reconstruction-oriented latent actions do not necessarily benefit policy learning: as they may encode task-irrelevant static appearance with scene identity, or entangle slowly varying task progress with fine-grained execution dynamics in limited discrete code. We propose FreshVLA, a VLA framework built on a frequency-guided, dynamics-sensitive learning paradigm for acquiring temporally hierarchical continuous latent actions. FreshVLA uses a high-pass prior to guide visual transition encoding toward dynamical regions, thereby reducing reliance on static appearance cues. It further organizes latent actions into coarse-grained task progress and fine-grained execution dynamics through cross-timescale sampling and frequency-domain regularization, enhancing their capacity to represent long-horizon behaviors. During policy training, we freeze the pretrained latent action encoder and transfer its representations to robot control through joint flow-matching of latent and robot actions. FreshVLA achieves 98.2% average success on LIBERO and 98.0% on LIBERO-Long, exceeding GR00T-N1.6 on the latter by 3.6%. It also reaches an average sequence length of 4.52 on CALVIN and strong overall success rate of 80.4% in the zero-shot LIBERO-PLUS evaluation. Furthermore, FreshVLA exhibits greater robustness to visual perturbations and a more distinct division of roles between two branches in modeling low- and high-frequency motion, respectively. In 35-step action regression, it achieves a 51.3-percentage-point higher relative error reduction than its hierarchical discrete counterpart. Real-world experiments demonstrate that FreshVLA improves the average success rate over $π_{0.5}$ by 7.5%. The FreshVLA project page is available at https://freshvla.github.io/.",
-  "abstract_zh": "Learning reusable latent actions from action-free videos offers an effective route to improving Vision-Language-Action (VLA) policies. However, reconstruction-oriented latent actions do not necessarily benefit policy learning: as they may encode task-irrelevant static appearance with scene identity, or entangle slowly varying task progress with fine-grained execution dynamics in limited discrete code. We propose FreshVLA, a VLA framework built on a frequency-guided, dynamics-sensitive learning paradigm for acquiring temporally hierarchical continuous latent actions. FreshVLA uses a high-pass prior to guide visual transition encoding toward dynamical regions, thereby reducing reliance on static appearance cues. It further organizes latent actions into coarse-grained task progress and fine-grained execution dynamics through cross-timescale sampling and frequency-domain regularization, enhancing their capacity to represent long-horizon behaviors. During policy training, we freeze the pretrained latent action encoder and transfer its representations to robot control through joint flow-matching of latent and robot actions. FreshVLA achieves 98.2% average success on LIBERO and 98.0% on LIBERO-Long, exceeding GR00T-N1.6 on the latter by 3.6%. It also reaches an average sequence length of 4.52 on CALVIN and strong overall success rate of 80.4% in the zero-shot LIBERO-PLUS evaluation. Furthermore, FreshVLA exhibits greater robustness to visual perturbations and a more distinct division of roles between two branches in modeling low- and high-frequency motion, respectively. In 35-step action regression, it achieves a 51.3-percentage-point higher relative error reduction than its hierarchical discrete counterpart. Real-world experiments demonstrate that FreshVLA improves the average success rate over $π_{0.5}$ by 7.5%. The FreshVLA project page is available at https://freshvla.github.io/.",
-  "tldr_zh": "Learning reusable latent actions from action-free videos off",
-  "cover_zh": "Learning reusable latent actions from action-free videos off",
+  "abstract_zh": "从无动作视频中学习可重用的潜在动作是改进视觉-语言-动作（VLA）策略的有效途径。然而，面向重建的潜在动作未必有利于策略学习：它们可能编码与任务无关的静态外观及场景身份，或在有限的离散代码中纠缠缓慢变化的任务进度与细粒度的执行动态。我们提出 FreshVLA，一个基于频率引导、动态敏感学习范式的 VLA 框架，用于获取时间分层连续潜在动作。FreshVLA 使用高通先验引导视觉过渡编码偏向动态区域，从而减少对静态外观线索的依赖。它进一步通过跨时间尺度采样和频域正则化，将潜在动作组织为粗粒度任务进度和细粒度执行动态，增强其表示长时程行为的能力。在策略训练期间，我们冻结预训练的潜在动作编码器，并通过潜在动作和机器人动作的联合流匹配将其表示迁移到机器人控制。FreshVLA 在 LIBERO 上达到 98.2% 的平均成功率，在 LIBERO-Long 上达到 98.0%，后者超过 GR00T-N1.6 3.6%。在 CALVIN 上平均序列长度达到 4.52，在零样本 LIBERO-PLUS 评估中总体成功率达到 80.4%。此外，FreshVLA 对视觉扰动表现出更强的鲁棒性，两个分支在分别建模低频和高频运动时的角色划分更清晰。在 35 步动作回归中，其相对误差减少比分层离散对应方法高 51.3 个百分点。真实世界实验表明，FreshVLA 将平均成功率比 $π_{0.5}$ 提高 7.5%。FreshVLA 项目页面见 https://freshvla.github.io/。",
+  "tldr_zh": "FreshVLA用频率正则化学习分层潜在动作，提升VLA策略性能。",
+  "cover_zh": "冻结编码器+联合流匹配｜这个VLA框架让机器人控制更精准",
   "authors": [
     {
       "name": "Jiaming Liang",
@@ -80,26 +80,34 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ XPENG Robotics"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKUST"
+    },
+    {
+      "kind": "lab",
+      "label": "⭐ HKU"
     }
   ],
   "related_links": [],
   "page_count": 20,
   "source_tags": [],
-  "score": 27,
+  "score": 42,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “XPENG Robotics” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 9,
       "hint": "频道关键词命中 3 个（gr00t、vision-language-action、libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -115,12 +123,21 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "The Hong Kong University of Science and Technology (Guangzhou)",
+    "XPENG Robotics",
+    "Shanghai Institute of Intelligent Science and Technology, Tongji University",
+    "City University of Hong Kong"
+  ],
+  "method_tags": [
+    "VLA",
+    "latent actions",
+    "flow-matching"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

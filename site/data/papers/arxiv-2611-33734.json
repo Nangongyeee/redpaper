@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33734",
   "source": "arxiv",
   "title": "DualCast: Dual-Image Conditioned Diffusion Transformers for Digital Human E-Commerce Video Generation",
-  "title_zh": "DualCast: Dual-Image Conditioned Diffusion Transformers for Digital Human E-Commerce Video Generation",
+  "title_zh": "DualCast：双图像条件扩散Transformer用于数字人电商视频生成",
   "abstract": "Recent advances in world models for game interaction and control have increased the demand for large-scale gameplay videos paired with camera trajectories. However, capturing synchronized camera trajectories often requires game-specific pipelines, limiting scalability. We therefore propose GameWeaver, a unified diffusion framework that automatically produces paired video--camera data through three complementary tasks: camera pose estimation from observed video, video generation along a prescribed camera trajectory, and joint video--camera generation from a reference image and text. First, each tipxel stores the normalized 3D coordinates of a pixel ray's endpoint in a reference coordinate frame. The resulting three-channel tipxel fields and RGB frames share the pretrained video model's VAE. Next, a fully trainable dual-stream Transformer exchanges appearance and geometry features through bidirectional gated attention and conditions both streams on shared text features. Finally, deterministic fitting recovers camera intrinsics and normalized trajectories from generated tipxel fields. In our evaluation tasks, GameWeaver achieves a normalized translation MSE of 0.0029 for camera control; for joint generation, it scores 85.48 out of 100 on instruction adherence versus 64.71 for the best cascade on that metric, validating the feasibility of the proposed approach.",
-  "abstract_zh": "Recent advances in world models for game interaction and control have increased the demand for large-scale gameplay videos paired with camera trajectories. However, capturing synchronized camera trajectories often requires game-specific pipelines, limiting scalability. We therefore propose GameWeaver, a unified diffusion framework that automatically produces paired video--camera data through three complementary tasks: camera pose estimation from observed video, video generation along a prescribed camera trajectory, and joint video--camera generation from a reference image and text. First, each tipxel stores the normalized 3D coordinates of a pixel ray's endpoint in a reference coordinate frame. The resulting three-channel tipxel fields and RGB frames share the pretrained video model's VAE. Next, a fully trainable dual-stream Transformer exchanges appearance and geometry features through bidirectional gated attention and conditions both streams on shared text features. Finally, deterministic fitting recovers camera intrinsics and normalized trajectories from generated tipxel fields. In our evaluation tasks, GameWeaver achieves a normalized translation MSE of 0.0029 for camera control; for joint generation, it scores 85.48 out of 100 on instruction adherence versus 64.71 for the best cascade on that metric, validating the feasibility of the proposed approach.",
-  "tldr_zh": "Recent advances in world models for game interaction and con",
-  "cover_zh": "Recent advances in world models for game interaction and con",
+  "abstract_zh": "近期，游戏交互与控制领域的世界模型进展增加了对大规模 gameplay 视频及相机轨迹的需求。然而，捕获同步的相机轨迹通常需要游戏特定的流程，限制了可扩展性。因此，我们提出了 GameWeaver，一个统一的扩散框架，通过三个互补任务自动生成配对的视频-相机数据：从观察视频中估计相机姿态、沿指定相机轨迹生成视频，以及从参考图像和文本联合生成视频-相机。首先，每个 tipxel 存储参考坐标系中像素射线端点的归一化 3D 坐标。得到的三通道 tipxel 场和 RGB 帧共享预训练视频模型的 VAE。接着，一个完全可训练的双流 Transformer 通过双向门控注意力交换外观和几何特征，并将两个流都条件于共享文本特征。最后，确定性拟合从生成的 tipxel 场中恢复相机内参和归一化轨迹。在我们的评估任务中，GameWeaver 在相机控制上达到归一化平移 MSE 为 0.0029；对于联合生成，其在指令遵循度上得分为 85.48（满分 100），而最佳级联方法在该指标上为 64.71，验证了所提方法的可行性。",
+  "tldr_zh": "提出GameWeaver统一扩散框架，自动生成视频-相机配对数据，相机控制MSE低至0.0029。",
+  "cover_zh": "双图条件扩散Transformer｜数字人电商视频生成新突破",
   "authors": [
     {
       "name": "Lifan Jiang",
@@ -63,26 +63,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ ZJU"
     }
   ],
   "related_links": [],
   "page_count": 17,
   "source_tags": [],
-  "score": 19,
+  "score": 34,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “ZJU” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 6,
       "hint": "频道关键词命中 2 个（world model、world models）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -92,8 +92,14 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "Zhejiang University"
+  ],
+  "method_tags": [
+    "Diffusion Transformer",
+    "dual-stream Transformer",
+    "camera trajectory generation"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

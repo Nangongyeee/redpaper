@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34915",
   "source": "arxiv",
   "title": "Memory Is Not Ground Truth: Revising Navigation Authority under Unreliable VLM Evidence for Persistent Semantic Navigation",
-  "title_zh": "Memory Is Not Ground Truth: Revising Navigation Authority under Unreliable VLM Evidence for Persistent Semantic Navigation",
+  "title_zh": "记忆并非绝对真实：在不可靠的VLM证据下修正导航权威以实现持久语义导航",
   "abstract": "Vision-language models (VLMs) enable robots to reason about semantic and spatio-temporal context, verify task-relevant objects, and guide sensing and navigation. Persistent memory can reduce redundant search for field robots, but when should a memory continue to guide behavior? Repeated misses may suggest that a memory is stale. Our experiments show why this evidence can remain ambiguous under VLM-based perception. Using a Boston Dynamics Spot with four fixed cameras and a persistent spatio-temporal visual memory, we measure negative-verification behavior across targets, viewpoints, language queries, and repeated revisits. False-negative rates vary substantially across objects, nearby revisits often reproduce the same detector outcome, and some matched target-present and target-removed experiments yield identical miss histories. This ambiguity persists under changed observation geometry, identity-preserving query reformulation, and conditioning on a previously verified target image. These findings raise two questions: is the object still there, and is this memory still useful for navigation? We introduce a dependence-aware, reversible memory-update mechanism that avoids double-counting correlated misses and stops using unsupported memories as direct navigation goals without claiming that the object is absent. Later positive evidence can restore a memory's use for navigation. One resident onboard VLM is shared across memory verification, semantic frontier reasoning, and in-motion perception. In three matched real-robot decision contexts, an episode-local baseline selected a stale memory as its navigation objective in every case, whereas our method selected semantic frontiers in all three. A complementary trial re-verified the target during motion and promoted fresh memory. These results support revising memory actionability rather than interpreting failed detection as object absence.",
-  "abstract_zh": "Vision-language models (VLMs) enable robots to reason about semantic and spatio-temporal context, verify task-relevant objects, and guide sensing and navigation. Persistent memory can reduce redundant search for field robots, but when should a memory continue to guide behavior? Repeated misses may suggest that a memory is stale. Our experiments show why this evidence can remain ambiguous under VLM-based perception. Using a Boston Dynamics Spot with four fixed cameras and a persistent spatio-temporal visual memory, we measure negative-verification behavior across targets, viewpoints, language queries, and repeated revisits. False-negative rates vary substantially across objects, nearby revisits often reproduce the same detector outcome, and some matched target-present and target-removed experiments yield identical miss histories. This ambiguity persists under changed observation geometry, identity-preserving query reformulation, and conditioning on a previously verified target image. These findings raise two questions: is the object still there, and is this memory still useful for navigation? We introduce a dependence-aware, reversible memory-update mechanism that avoids double-counting correlated misses and stops using unsupported memories as direct navigation goals without claiming that the object is absent. Later positive evidence can restore a memory's use for navigation. One resident onboard VLM is shared across memory verification, semantic frontier reasoning, and in-motion perception. In three matched real-robot decision contexts, an episode-local baseline selected a stale memory as its navigation objective in every case, whereas our method selected semantic frontiers in all three. A complementary trial re-verified the target during motion and promoted fresh memory. These results support revising memory actionability rather than interpreting failed detection as object absence.",
-  "tldr_zh": "Vision-language models (VLMs) enable robots to reason about",
-  "cover_zh": "Vision-language models (VLMs) enable robots to reason about",
+  "abstract_zh": "视觉语言模型（VLM）使机器人能够推理语义和时空上下文，验证任务相关物体，并指导感知与导航。持久记忆可以减少现场机器人的冗余搜索，但记忆何时应继续指导行为？重复的未命中可能表明记忆已过时。我们的实验表明，在基于VLM的感知下，这种证据为何可能仍然模糊。使用配备四个固定摄像头和持久时空视觉记忆的Boston Dynamics Spot，我们测量了跨目标、视角、语言查询和重复访问的负验证行为。假阴性率因物体而异，邻近的重复访问通常重现相同的检测器结果，并且一些匹配的目标存在和目标移除实验产生相同的未命中历史。这种模糊性在观察几何变化、保持身份的查询重述以及以先前验证的目标图像为条件的情况下仍然存在。这些发现提出了两个问题：物体是否仍然在那里，以及这个记忆是否仍然对导航有用？我们引入了一种依赖感知、可逆的记忆更新机制，避免重复计算相关的未命中，并停止将无支持的记忆作为直接导航目标，而不声称物体不存在。后来的正面证据可以恢复记忆的导航用途。一个板载VLM共享用于记忆验证、语义前沿推理和运动感知。在三个匹配的真实机器人决策场景中，一个回合局部基线在每个案例中都选择了过时记忆作为其导航目标，而我们的方法在所有三个案例中都选择了语义前沿。一个补充试验在运动过程中重新验证了目标并提升了新鲜记忆。这些结果支持修正记忆的可操作性，而不是将检测失败解释为物体不存在。",
+  "tldr_zh": "机器人导航中，VLM检测失败不一定是物体消失，应修正记忆可操作性而非判定物体不存在。",
+  "cover_zh": "机器人找不到东西？别急着说它没了｜记忆可能只是过时了",
   "authors": [
     {
       "name": "Sumukh Shrote",
@@ -47,26 +47,26 @@
   ],
   "badges": [
     {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
+      "kind": "lab",
+      "label": "⭐ UPenn GRASP"
     }
   ],
   "related_links": [],
   "page_count": 9,
   "source_tags": [],
-  "score": 16,
+  "score": 31,
   "score_breakdown": [
+    {
+      "id": "famous_lab",
+      "label": "顶尖实验室出品",
+      "points": 25,
+      "hint": "命中 “UPenn GRASP” 关键词"
+    },
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（boston dynamics）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -75,13 +75,27 @@
       "hint": "PDF 9 页"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
-  "platform": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "manipulation",
+    "reason": "Spot 上 VLM 语义导航与持久记忆可信度研究，含真机实验与记忆更新机制，对具身导航有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "GRASP Laboratory, University of Pennsylvania"
+  ],
+  "method_tags": [
+    "VLM",
+    "persistent memory",
+    "semantic navigation"
+  ],
+  "platform": [
+    "Boston Dynamics Spot"
+  ],
   "sim_stack": [],
   "method_family": "",
-  "real_robot": "",
+  "real_robot": "yes",
   "training_summary": "",
   "demo_videos": [],
   "github": {}

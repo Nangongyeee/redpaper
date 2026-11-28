@@ -2,11 +2,11 @@
   "id": "arxiv-2611-34509",
   "source": "arxiv",
   "title": "Long-Horizon Planning with Latent World Models via Graph Anchors",
-  "title_zh": "Long-Horizon Planning with Latent World Models via Graph Anchors",
+  "title_zh": "基于图锚点的隐世界模型长时程规划",
   "abstract": "Latent world models plan in a compact latent space by predicting the outcomes of actions. Their planners judge a plan by the latent distance between its   predicted end state and the goal image. We show that this distance fails in two distinct ways. First, it loses directional signal a few steps from the   goal, causing distant goals to fail. Second, it weighs the robot arm over the manipulated object, causing manipulation to fail at contact. We measure   both failures directly on recorded data by asking whether a lower latent distance corresponds to true progress toward the goal. Across five   environments, six visual representations (including raw pixels and V-JEPA 2), and nine Meta-World tasks, this ranking test cleanly separates the two   failures, and the graph distance to a goal predicts where closed-loop planning breaks down. Both failures share a single remedy: replacing the distant   goal with a nearby target that lies on a recorded trajectory. We realize this principle with Graph Anchors, a training-free planner for frozen latent   world models. It builds a sparse graph once over the model's own training frames and aims each planning step at a node a few moves ahead along the   shortest path to the goal, keeping paths on recorded transitions wherever contact matters. On goals up to 400 steps away, Graph Anchors raise LeWM's   success from 13% to 85% on PointMaze-Medium, from 8% to 87% on PointMaze-Large, and from 5% to 71% on Push-T, where stronger search toward the goal   fails and where prior training-free planners break down under missing step horizons, subsampling shortcuts, or fragmented contact.",
-  "abstract_zh": "Latent world models plan in a compact latent space by predicting the outcomes of actions. Their planners judge a plan by the latent distance between its predicted end state and the goal image. We show that this distance fails in two distinct ways. First, it loses directional signal a few steps from the goal, causing distant goals to fail. Second, it weighs the robot arm over the manipulated object, causing manipulation to fail at contact. We measure both failures directly on recorded data by asking whether a lower latent distance corresponds to true progress toward the goal. Across five environments, six visual representations (including raw pixels and V-JEPA 2), and nine Meta-World tasks, this ranking test cleanly separates the two failures, and the graph distance to a goal predicts where closed-loop planning breaks down. Both failures share a single remedy: replacing the distant goal with a nearby target that lies on a recorded trajectory. We realize this principle with Graph Anchors, a training-free planner for frozen latent world models. It builds a sparse graph once over the model's own training frames and aims each planning step at a node a few moves ahead along the shortest path to the goal, keeping paths on recorded transitions wherever contact matters. On goals up to 400 steps away, Graph Anchors raise LeWM's success from 13% to 85% on PointMaze-Medium, from 8% to 87% on PointMaze-Large, and from 5% to 71% on Push-T, where stronger search toward the goal fails and where prior training-free planners break down under missing step horizons, subsampling shortcuts, or fragmented contact.",
-  "tldr_zh": "Latent world models plan in a compact latent space by predic",
-  "cover_zh": "Latent world models plan in a compact latent space by predic",
+  "abstract_zh": "隐世界模型通过在紧凑的隐空间预测动作结果来进行规划。其规划器通过预测的最终状态与目标图像之间的隐距离来评判规划。我们表明这种距离在两种不同情况下会失效。首先，它在距离目标几步远时丢失方向信号，导致远距离目标失败。其次，它更重视机器人手臂而非被操作物体，导致接触时操作失败。我们通过询问更低的隐距离是否对应真正朝向目标的进展，直接在记录数据上测量了这两种失败。在五个环境、六种视觉表示（包括原始像素和V-JEPA 2）以及九个Meta-World任务中，这种排序测试清晰地区分了两种失败，并且到目标的图距离预测了闭环规划在何处崩溃。两种失败共享一个补救措施：用位于记录轨迹上的附近目标替换远距离目标。我们通过Graph Anchors实现了这一原则，这是一种用于冻结隐世界模型的无训练规划器。它在模型自身的训练帧上一次性构建稀疏图，并将每个规划步骤瞄准沿最短路径到目标前方几步的节点，在接触重要的地方保持路径在记录的转移上。对于远达400步的目标，Graph Anchors将LeWM在PointMaze-Medium上的成功率从13%提高到85%，在PointMaze-Large上从8%提高到87%，在Push-T上从5%提高到71%，而在这些地方，更强的朝向目标的搜索会失败，并且先前的无训练规划器在缺失步骤视野、子采样捷径或碎片化接触下会崩溃。",
+  "tldr_zh": "提出Graph Anchors无训练规划器，用图锚点解决隐世界模型长时程规划中的距离失效问题。",
+  "cover_zh": "隐世界模型规划总翻车？Graph Anchors用图锚点轻松救场",
   "authors": [
     {
       "name": "Syed Nazmus Sakib",
@@ -64,28 +64,17 @@
     "manipulation",
     "world-model"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 48,
   "source_tags": [],
-  "score": 30,
+  "score": 20,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 12,
       "hint": "频道关键词命中 7 个（manipulation、world model、world models、latent world model）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -100,9 +89,23 @@
       "hint": "同时命中 2 个频道"
     }
   ],
-  "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "judge": {
+    "relevant": true,
+    "research_value": "high",
+    "primary_channel": "world-model",
+    "reason": "针对冻结潜世界模型的长程规划缺陷提出图锚点方法，涉及V-JEPA 2与LeWM，属世界模型规划前沿。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [
+    "University of Dhaka",
+    "University of Oxford",
+    "Adelaide University"
+  ],
+  "method_tags": [
+    "Latent World Models",
+    "Long-Horizon Planning",
+    "Model-Predictive Control"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",

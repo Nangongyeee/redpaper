@@ -1,0 +1,101 @@
+{
+  "id": "arxiv-2611-29980",
+  "source": "arxiv_discover",
+  "title": "TeleMultiStream: An Integrated Robot Teleoperation System with Low-Latency Multi-Stream Video Feedback",
+  "title_zh": "TeleMultiStream：一种具有低延迟多流视频反馈的集成机器人遥操作系统",
+  "abstract": "Training embodied-intelligence models requires large-scale, high-quality demonstration data. Robot teleoperation provides an important means of collecting these data. Low-latency teleoperation also helps human operators take control promptly and provide corrective demonstrations in DAgger-based interactive learning. This paper presents TeleMultiStream, a robot teleoperation system that combines multi-stream WebRTC video feedback with UDP pose downlink. The system supports heterogeneous video sources and uses buffer reuse, bounded queues, and native XR rendering to reduce processing and waiting. In wired-LAN ZED Mini tests, TeleMultiStream's software and high-performance hardware encoding modes achieved dominant-interval Glass-to-Glass latency medians of 60 and 66~ms, respectively. These medians were 26.8\\% and 19.5\\% lower than the 82-ms RobotVision-PC reference, respectively. At the lower tested resolutions, the two TeleMultiStream encoding modes provided comparable visual latency. Their respective medians in three-stream Configuration~1 were 72 and 66~ms. In the higher-resolution Configuration~2, high-performance hardware encoding outperformed software encoding in latency and CPU utilization. It reduced mean encoding time from 11.85 to 8.80~ms and the dominant-interval Glass-to-Glass median from 94 to 88~ms. Its CPU utilization was approximately 67\\%, compared with 265\\% for software encoding. During three-stream reception with high-performance hardware encoding, the mean corrected one-way UDP latencies at 100~Hz were 1.576 and 1.800~ms in Configurations~1 and~2, respectively. Mean estimated packet loss was 0.0033\\% in both configurations. These results support responsive teleoperation for robot demonstration collection.",
+  "abstract_zh": "训练具身智能模型需要大规模、高质量的演示数据。机器人遥操作是收集这些数据的重要手段。低延迟遥操作也有助于人类操作员及时接管控制，并在基于DAgger的交互学习中提供纠正性演示。本文提出TeleMultiStream，一种结合多流WebRTC视频反馈和UDP位姿下行链路的机器人遥操作系统。该系统支持异构视频源，并使用缓冲区重用、有界队列和原生XR渲染来减少处理和等待时间。在有线局域网ZED Mini测试中，TeleMultiStream的软件和高性能硬件编码模式分别实现了主导区间玻璃到玻璃延迟中位数60和66毫秒。这些中位数分别比82毫秒的RobotVision-PC参考低26.8%和19.5%。在较低测试分辨率下，两种TeleMultiStream编码模式提供了可比的视觉延迟。它们在三个流配置1中的中位数分别为72和66毫秒。在更高分辨率的配置2中，高性能硬件编码在延迟和CPU利用率方面优于软件编码。它将平均编码时间从11.85毫秒减少到8.80毫秒，并将主导区间玻璃到玻璃中位数从94毫秒减少到88毫秒。其CPU利用率约为67%，而软件编码为265%。在高性能硬件编码的三流接收过程中，100Hz下配置1和配置2的平均校正单向UDP延迟分别为1.576和1.800毫秒。两种配置下的平均估计丢包率均为0.0033%。这些结果支持用于机器人演示收集的响应式遥操作。",
+  "tldr_zh": "TeleMultiStream通过多流WebRTC和UDP实现低延迟遥操作，延迟中位数低至60毫秒。",
+  "cover_zh": "机器人遥操作延迟砍到60毫秒｜数据收集效率起飞",
+  "authors": [
+    {
+      "name": "Chenchen Lv",
+      "affiliation": ""
+    },
+    {
+      "name": "Lingchen Hu",
+      "affiliation": ""
+    },
+    {
+      "name": "Yaosai Zhang",
+      "affiliation": ""
+    },
+    {
+      "name": "Chunlan Li",
+      "affiliation": ""
+    },
+    {
+      "name": "Gengkui Wei",
+      "affiliation": ""
+    },
+    {
+      "name": "Wei Xin",
+      "affiliation": ""
+    },
+    {
+      "name": "Li Li",
+      "affiliation": ""
+    }
+  ],
+  "primary_category": "",
+  "categories": [
+    "cs.RO"
+  ],
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "arxiv_id": "2611.29980",
+  "pdf_url": "https://arxiv.org/pdf/2611.29980v1",
+  "abs_url": "http://arxiv.org/abs/2611.29980v1",
+  "venue": "",
+  "venue_announced": "",
+  "cover_image": "assets/img/covers/arxiv-2611-29980.jpg",
+  "preview_pages": [
+    "assets/img/covers/arxiv-2611-29980-p2.jpg",
+    "assets/img/covers/arxiv-2611-29980-p3.jpg",
+    "assets/img/covers/arxiv-2611-29980-p4.jpg"
+  ],
+  "channels": [
+    "teleop"
+  ],
+  "badges": [],
+  "related_links": [],
+  "page_count": 13,
+  "source_tags": [
+    "llm_discover"
+  ],
+  "score": 15,
+  "score_breakdown": [
+    {
+      "id": "keyword_density",
+      "label": "关键词命中密集",
+      "points": 12,
+      "hint": "频道关键词命中 4 个（teleoperation、teleop、robot teleoperation、latency teleop）"
+    },
+    {
+      "id": "longer_paper",
+      "label": "成型 paper (≥4 页)",
+      "points": 3,
+      "hint": "PDF 13 页"
+    }
+  ],
+  "judge": {
+    "relevant": true,
+    "research_value": "medium",
+    "primary_channel": "teleop",
+    "reason": "面向具身数据采集的低延迟多路视频遥操作系统，工程实现扎实，对遥操作与DAgger数据采集有参考价值。",
+    "model": "deepseek-v4-flash"
+  },
+  "institutions": [],
+  "method_tags": [
+    "teleoperation",
+    "low-latency communication",
+    "WebRTC"
+  ],
+  "platform": [],
+  "sim_stack": [],
+  "method_family": "",
+  "real_robot": "",
+  "training_summary": "",
+  "demo_videos": [],
+  "github": {}
+}

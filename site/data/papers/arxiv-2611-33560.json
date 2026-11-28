@@ -2,11 +2,11 @@
   "id": "arxiv-2611-33560",
   "source": "arxiv",
   "title": "Skeptic: Grounding Failure Diagnosis for Robot Skill Discovery",
-  "title_zh": "Skeptic: Grounding Failure Diagnosis for Robot Skill Discovery",
+  "title_zh": "Skeptic：面向机器人技能发现的 grounding 失败诊断",
   "abstract": "Robot agents discover reusable skills by revising programs from execution feedback and retaining experience for later tasks. This process can fail when an agent treats an unsuccessful program as evidence that the task is physically impossible, ending exploration with revision budget remaining. We study this failure in Qwen3.8-27B and examine two decisions that shape skill discovery: I) how execution failures are diagnosed, and II) which lessons enter the shared skill library. Failure diagnosis requires the agent to reconstruct physical action effects from multimodal traces, while independent reproduction of a proposed repair does not require adequate task performance from its source program. We introduce Skeptic, a training-free protocol that uses measured action outcomes to guide repair and measured task success to govern skill admission. A grounded event log reports action effects and object end states from depth images and proprioception, separating sensor observations from inferred diagnoses. Verified promotion adds a development-success requirement on the source program to the existing independent reproduction check. Across 60 audited tasks, the mean number of tasks with false impossibility judgments decreases from 19.5 to 8.5 per campaign. On 80 LIBERO-Pro tasks and seven Robosuite tasks, Skeptic improves held-out success by 14.9 and 11.7 percentage points, with frozen model weights and the same program-revision budget.",
-  "abstract_zh": "Robot agents discover reusable skills by revising programs from execution feedback and retaining experience for later tasks. This process can fail when an agent treats an unsuccessful program as evidence that the task is physically impossible, ending exploration with revision budget remaining. We study this failure in Qwen3.8-27B and examine two decisions that shape skill discovery: I) how execution failures are diagnosed, and II) which lessons enter the shared skill library. Failure diagnosis requires the agent to reconstruct physical action effects from multimodal traces, while independent reproduction of a proposed repair does not require adequate task performance from its source program. We introduce Skeptic, a training-free protocol that uses measured action outcomes to guide repair and measured task success to govern skill admission. A grounded event log reports action effects and object end states from depth images and proprioception, separating sensor observations from inferred diagnoses. Verified promotion adds a development-success requirement on the source program to the existing independent reproduction check. Across 60 audited tasks, the mean number of tasks with false impossibility judgments decreases from 19.5 to 8.5 per campaign. On 80 LIBERO-Pro tasks and seven Robosuite tasks, Skeptic improves held-out success by 14.9 and 11.7 percentage points, with frozen model weights and the same program-revision budget.",
-  "tldr_zh": "Robot agents discover reusable skills by revising programs f",
-  "cover_zh": "Robot agents discover reusable skills by revising programs f",
+  "abstract_zh": "机器人智能体通过根据执行反馈修正程序并保留经验以供后续任务使用来发现可重用技能。当智能体将不成功的程序视为任务物理上不可能的 evidence 时，这一过程可能会失败，导致在修订预算仍有剩余的情况下结束探索。我们在 Qwen3.8-27B 中研究了这种失败，并考察了影响技能发现的两个决策：I) 如何诊断执行失败，以及 II) 哪些经验进入共享技能库。失败诊断要求智能体从多模态轨迹中重建物理动作效果，而所提出修复的独立复现并不要求其源程序具有足够的任务性能。我们引入了 Skeptic，一种无需训练的协议，它使用测量到的动作结果来指导修复，并使用测量到的任务成功来管理技能准入。一个基于深度图像和本体感觉的 grounded 事件日志报告动作效果和物体最终状态，将传感器观察与推断诊断分开。验证提升在现有的独立复现检查基础上，增加了对源程序的开发成功要求。在 60 个审计任务中，出现错误不可能判断的任务平均数量从每轮 19.5 个减少到 8.5 个。在 80 个 LIBERO-Pro 任务和七个 Robosuite 任务上，Skeptic 将留出成功率分别提高了 14.9 和 11.7 个百分点，且模型权重冻结、程序修订预算相同。",
+  "tldr_zh": "Skeptic 协议通过 grounded 诊断和验证提升，减少机器人技能发现中的错误判断并提高成功率。",
+  "cover_zh": "机器人总误判任务不可能？这个协议让成功率飙升！",
   "authors": [
     {
       "name": "Wenfang Sun",
@@ -49,28 +49,17 @@
   "channels": [
     "manipulation"
   ],
-  "badges": [
-    {
-      "kind": "fresh",
-      "label": "⚡ 新鲜出炉"
-    }
-  ],
+  "badges": [],
   "related_links": [],
   "page_count": 17,
   "source_tags": [],
-  "score": 16,
+  "score": 6,
   "score_breakdown": [
     {
       "id": "keyword_density",
       "label": "关键词命中密集",
       "points": 3,
       "hint": "频道关键词命中 1 个（libero）"
-    },
-    {
-      "id": "freshness",
-      "label": "刚出锅 (≤2 天)",
-      "points": 10,
-      "hint": "投递于 2 天前"
     },
     {
       "id": "longer_paper",
@@ -80,8 +69,15 @@
     }
   ],
   "judge": {},
-  "institutions": [],
-  "method_tags": [],
+  "institutions": [
+    "University of Amsterdam",
+    "South China Normal University"
+  ],
+  "method_tags": [
+    "failure diagnosis",
+    "skill discovery",
+    "program revision"
+  ],
   "platform": [],
   "sim_stack": [],
   "method_family": "",
